@@ -125,6 +125,10 @@ function validPost(p) {
     if (!post.id) post.id = slug(post.title || q);
     post.date = "2026";
     if (haveIds.has(post.id) || !validPost(post)) continue;
+    // These are UNREVIEWED LLM drafts about visas, fees and exam rules — exactly the content
+    // where a fabricated number does real damage. publish-next-post.mjs refuses to publish a
+    // post unless `reviewed` is true, so a human must read it and flip this flag first.
+    post.reviewed = false;
     haveIds.add(post.id); added.push(post); queue.push(post);
     console.log(`  drafted: ${post.id}  ("${q}")`);
   }
@@ -132,4 +136,6 @@ function validPost(p) {
   if (!added.length) { console.log("No valid drafts produced this run."); process.exit(0); }
   writeFileSync(QUEUE, JSON.stringify(queue, null, 2) + "\n");
   console.log(`\nAdded ${added.length} auto-drafted post(s). Queue now ${queue.length}.`);
+  console.log(`⚠ All drafts are marked "reviewed": false and will NOT publish until a human`);
+  console.log(`  verifies the facts and sets "reviewed": true in blog-queue.json.`);
 })();

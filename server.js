@@ -2100,6 +2100,34 @@ app.get("/api/unsubscribe", (req, res) => {
 // ── Resilience: unknown API routes + central error handler ─────────────────────
 // Any /api/* path that no route matched → clean JSON 404 (never an HTML error page).
 app.use("/api", (req, res) => res.status(404).json({ error: "Not found", path: req.path }));
+
+// Any non-API path that matched no prerendered file → a branded 404 instead of Express's
+// bare "Cannot GET /x". Status stays 404 (never 200 with a friendly page — that is a soft
+// 404 and Google indexes it), and `noindex` keeps a stray crawl of a dead URL out of the
+// index. Registered AFTER express.static, so a real page always wins; this only ever runs
+// for URLs that genuinely do not exist. Self-contained markup: it must render even if the
+// asset that 404'd was the CSS itself.
+app.use((req, res) => {
+  res.status(404).type("html").send(`<!doctype html>
+<html lang="en"><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, follow" />
+<title>Page not found | LandingPrep</title></head>
+<body style="margin:0;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:#1f2937;background:#FBFCFE">
+<div style="max-width:560px;margin:12vh auto;padding:0 20px;text-align:center">
+  <div style="font-size:44px;line-height:1">🧭</div>
+  <h1 style="font-size:24px;margin:12px 0 8px">That page isn't here</h1>
+  <p style="color:#6b7280;margin:0 0 24px">The link may be out of date or mistyped. Everything on LandingPrep is free — try one of these:</p>
+  <p style="line-height:2.2">
+    <a href="/" style="color:#4338ca;font-weight:600;text-decoration:none">Home</a> &nbsp;·&nbsp;
+    <a href="/mock-test/ielts/" style="color:#4338ca;font-weight:600;text-decoration:none">Free IELTS mock test</a> &nbsp;·&nbsp;
+    <a href="/tools/university-eligibility-checker/" style="color:#4338ca;font-weight:600;text-decoration:none">University eligibility checker</a> &nbsp;·&nbsp;
+    <a href="/blog/" style="color:#4338ca;font-weight:600;text-decoration:none">Blog</a>
+  </p>
+</div>
+</body></html>`);
+});
+
 // Central error handler: a thrown error in ANY route lands here and returns a safe
 // 500 instead of hanging the request or crashing the process. Must have 4 args.
 // eslint-disable-next-line no-unused-vars

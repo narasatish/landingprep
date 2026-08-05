@@ -99,9 +99,11 @@
               ))}
             </div>
             <div className="fs-custom">
-              <input type="text" placeholder="Paste a YouTube link (flute, etc.)" value={customUrl} tabIndex={open ? 0 : -1}
+              {/* A placeholder is not an accessible name — it disappears on input and screen
+                  readers may not announce it. The ▶ glyph gives the button no name at all. */}
+              <input type="text" aria-label="YouTube link for focus music" placeholder="Paste a YouTube link (flute, etc.)" value={customUrl} tabIndex={open ? 0 : -1}
                 onChange={(e) => setCustomUrl(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") playCustom(); }} />
-              <button className="tool-btn" onClick={playCustom} tabIndex={open ? 0 : -1}>▶</button>
+              <button className="tool-btn" aria-label="Play this YouTube link" onClick={playCustom} tabIndex={open ? 0 : -1}>▶</button>
             </div>
             <p className="fs-note">Music streams from YouTube — tap once to start it. Tap Off to stop.</p>
           </div>

@@ -33017,6 +33017,7 @@ As you fill this in, common themes emerge\u2014which schools prioritize your goa
     },
     {
       "id": "ielts-vs-pte-which-is-easier-2026",
+      "canonicalTo": "ielts-vs-pte-which-easier-2026",
       "tag": "Comparison",
       "date": "2026",
       "title": "IELTS vs. PTE: Which Is Easier in 2026?",

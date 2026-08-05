@@ -591,8 +591,12 @@ function Home({ onGuide, onPractice, onNav }) {
       <section className="section reveal" style={{ paddingTop: 8, paddingBottom: 8 }}>
         <div className="shell">
           <div className="home-hero-photo">
-            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1600&q=72"
+            {/* w=1280/q=70 matches the destination photos and cuts ~40% off the 181 KB the
+                w=1600 version cost; width/height give the browser the intrinsic ratio so the
+                band reserves its space and cannot shift layout while the photo loads. */}
+            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1280&q=70"
                  alt="Graduates throwing their caps in celebration with a city skyline" loading="lazy"
+                 width="1280" height="853" decoding="async"
                  onError={(e) => { const p = e.target.closest(".home-hero-photo"); if (p) p.classList.add("no-photo"); }} />
             <div className="hhp-overlay" />
             <div className="hhp-cap">Join students worldwide preparing for their dream universities — 100% free.</div>

@@ -40,6 +40,16 @@ if (!post || typeof post.id !== "string" || typeof post.title !== "string" || !A
   console.error("First queued post is malformed (need id, title, sections[]). Leaving queue untouched.");
   process.exit(1);
 }
+// Human-review gate. auto-draft-posts.mjs tops the queue up with Gemini-written drafts about
+// visas, fees and exam rules; without this check they would publish themselves to production
+// and get pinged to IndexNow with nobody having read them. A post ships only once a human has
+// verified the facts and set "reviewed": true. No-op exit (not an error) so the daily workflow
+// stays green and simply publishes nothing.
+if (post.reviewed !== true) {
+  console.log(`Next queued post "${post.id}" is not marked reviewed — nothing published today.`);
+  console.log(`Verify its facts against official sources, then set "reviewed": true in blog-queue.json.`);
+  process.exit(0);
+}
 
 let blog = readFileSync(BLOG_PATH, "utf8");
 

@@ -57,6 +57,7 @@
       "input",
       {
         type: "text",
+        "aria-label": "YouTube link for focus music",
         placeholder: "Paste a YouTube link (flute, etc.)",
         value: customUrl,
         tabIndex: open ? 0 : -1,
@@ -65,7 +66,7 @@
           if (e.key === "Enter") playCustom();
         }
       }
-    ), /* @__PURE__ */ React.createElement("button", { className: "tool-btn", onClick: playCustom, tabIndex: open ? 0 : -1 }, "\u25B6")), /* @__PURE__ */ React.createElement("p", { className: "fs-note" }, "Music streams from YouTube \u2014 tap once to start it. Tap Off to stop.")), /* @__PURE__ */ React.createElement("button", { className: "focus-hide-link", onClick: () => F.setHidden(true), tabIndex: open ? 0 : -1 }, "Hide this button \u2014 bring it back from Tools \u2192 Focus Timer")));
+    ), /* @__PURE__ */ React.createElement("button", { className: "tool-btn", "aria-label": "Play this YouTube link", onClick: playCustom, tabIndex: open ? 0 : -1 }, "\u25B6")), /* @__PURE__ */ React.createElement("p", { className: "fs-note" }, "Music streams from YouTube \u2014 tap once to start it. Tap Off to stop.")), /* @__PURE__ */ React.createElement("button", { className: "focus-hide-link", onClick: () => F.setHidden(true), tabIndex: open ? 0 : -1 }, "Hide this button \u2014 bring it back from Tools \u2192 Focus Timer")));
   }
   window.LP_FocusWidget = FocusWidget;
 })();

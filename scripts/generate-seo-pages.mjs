@@ -18,10 +18,24 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const ORIGIN = "https://landingprep.com";
 const BRAND = "LandingPrep";
 const TODAY = "2026-05-30";
-// Build date (ISO yyyy-mm-dd) — used for sitemap <lastmod>, feed, and Article dateModified
-// (honest freshness signal: every page is regenerated on each build). Defined early so all
-// page builders can reference it.
+// Build date (ISO yyyy-mm-dd) — the date THIS build runs. Used for sitemap <lastmod> of
+// genuinely-changed pages, the feed, and build-time decisions (e.g. `expires`). Defined
+// early so all page builders can reference it.
 const BUILD_DATE = (() => { try { return new Date().toISOString().slice(0, 10); } catch (e) { return TODAY; } })();
+// Reader-facing "last updated" / "last verified" dates and JSON-LD dateModified must
+// reflect a REAL content change, not merely that a build ran. Stamping every page with
+// today on every deploy is a false freshness signal: Google expects dateModified to track
+// actual edits, and "last verified on X" asserts a check that never happened.
+//
+// So page builders emit this token wherever such a date belongs. It is resolved per page
+// at write time (see the write loop near the sitemap): if the page's HTML is byte-identical
+// to the previous build once the old date is normalised back to the token, the page did NOT
+// change and it keeps its previous date; otherwise it advances to BUILD_DATE. The previous
+// date comes from the existing sitemap (PRIOR_LASTMOD), so no extra state file is needed.
+//
+// Use BUILD_DATE directly ONLY for build-time logic or a true build timestamp — never for
+// a date the reader or a crawler will read as "when this content was last updated".
+const LASTMOD = "@@LP_LASTMOD@@";
 // Reusable schema entities. PUBLISHER.sameAs points to the brand's REAL, verified
 // social profile (Instagram @landing_prep) — a truthful entity signal that helps
 // Google + AI-search engines resolve "LandingPrep" as a known entity (stronger
@@ -433,8 +447,12 @@ function shortUni(name) {
   if (paren) return paren[1].trim();
   return UNI_ABBR[n] || n.replace(/^The /, "").replace(/^University of /, "").replace(/ University$/, "").trim();
 }
-function head({ title, desc, path, kw, jsonLdBlocks, robots }) {
+function head({ title, desc, path, kw, jsonLdBlocks, robots, canonical }) {
   const url = ORIGIN + path;
+  // `canonical` points this page at a different URL — used to consolidate a near-duplicate
+  // into the stronger page without deleting it (no 404, no lost backlinks). Prefer this over
+  // noindex for duplicates: noindex drops the page's link equity instead of passing it on.
+  const canonicalUrl = canonical || url;
   title = trimTitle(title);
   desc = trimDesc(desc);
   return `<!doctype html>
@@ -446,7 +464,7 @@ function head({ title, desc, path, kw, jsonLdBlocks, robots }) {
 <meta name="description" content="${esc(desc)}"/>
 <meta name="keywords" content="${esc(kw)}"/>
 <meta name="robots" content="${robots || "index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1"}"/>
-<link rel="canonical" href="${url}"/>
+<link rel="canonical" href="${canonicalUrl}"/>
 <link rel="alternate" type="application/rss+xml" title="LandingPrep Blog" href="${ORIGIN}/feed.xml"/>
 <link rel="alternate" hreflang="en" href="${url}"/>
 <link rel="alternate" hreflang="x-default" href="${url}"/>
@@ -641,6 +659,10 @@ function blogTiles(a) {
 
 const PAGES = []; // { path, html }
 const THIN_PATHS = new Set(); // thin pages → noindex,follow + excluded from sitemap (concentrates crawl budget on substantive pages)
+// Near-duplicates consolidated into a stronger page via rel=canonical. They stay live and
+// indexable-by-status (no noindex, so link equity still flows to the canonical target) but
+// are kept OUT of the sitemap — a sitemap should only list canonical URLs.
+const CANONICALISED_PATHS = new Set();
 const THIN_MIN_CHARS = 1500; // below this much unique <main> text = thin/templated
 // KEEP_INDEXED — exam×university + compare pages that the blanket prune wrongly noindexed despite
 // proven Search-Console traction: these 26 rank page 2–3 (positions 8–27) with real impressions
@@ -667,6 +689,17 @@ function emit(path, html, opts) {
   if (!KEEP_INDEXED.has(path) && ((opts && opts.thin) || uniqueContentLen(html) < THIN_MIN_CHARS)) {
     html = html.replace(/<meta name="robots" content="index,follow[^"]*"\/>/i, '<meta name="robots" content="noindex,follow"/>');
     THIN_PATHS.add(path);
+  }
+  // Two different builders can claim the same path (e.g. PR_COMBOS and PR_TARGETS both
+  // own /ielts-for-canada-pr/). On disk the later write silently wins, but PAGES kept
+  // BOTH — so the URL was listed twice in sitemap.xml. Keep last-wins (identical to the
+  // filesystem behaviour, so no page content changes) and replace the earlier entry
+  // instead of appending a duplicate. Warn loudly: a collision is usually unintended.
+  const dupe = PAGES.findIndex((p) => p.path === path);
+  if (dupe !== -1) {
+    console.warn(`  ⚠ DUPLICATE emit for ${path} — later page wins (check for two builders owning this route)`);
+    PAGES[dupe] = { path, html };
+    return;
   }
   PAGES.push({ path, html });
 }
@@ -1249,10 +1282,10 @@ function blogPage(a) {
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/#/blog">Blog</a> › ${esc(a.tag)}</p>
 <section class="hero">
-  <div class="badges"><span class="badge">${esc(a.tag)}</span><span class="badge">Updated ${esc(BUILD_DATE)}</span></div>
+  <div class="badges"><span class="badge">${esc(a.tag)}</span><span class="badge">Updated ${esc(LASTMOD)}</span></div>
   <h1>${esc(a.title)}</h1>
   <p class="lead">${esc(a.excerpt)}</p>
-  <p class="byline" style="font-size:13px;color:#64748b;margin:2px 0 10px">Written and reviewed by the <a href="/about/" style="color:#4338ca;font-weight:600">${BRAND} editorial team</a> · Last updated ${esc(BUILD_DATE)} · Sources are linked inline and verified against official test-maker, university and government pages.</p>
+  <p class="byline" style="font-size:13px;color:#64748b;margin:2px 0 10px">Written and reviewed by the <a href="/about/" style="color:#4338ca;font-weight:600">${BRAND} editorial team</a> · Last updated ${esc(LASTMOD)} · Sources are linked inline and verified against official test-maker, university and government pages.</p>
   <a class="cta" href="/#/colleges">▶ Free College Predictor &amp; study-abroad tools</a>
 </section>
 ${expiredBanner}${qaBlock}
@@ -1261,11 +1294,14 @@ ${sectionsHtml}
 ${faqs.length ? faqBlock(faqs) : ""}
 ${relatedArticles(a)}
 ${relatedGrid(blogTiles(a))}`;
-  emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
+  // a.canonicalTo = the id of the post this one should consolidate into (near-duplicate).
+  const canonical = a.canonicalTo ? `${ORIGIN}/blog/${a.canonicalTo}/` : undefined;
+  if (canonical) CANONICALISED_PATHS.add(path);
+  emit(path, head({ title, desc, path, kw, canonical, jsonLdBlocks: [
     jsonld({ "@context": "https://schema.org", "@type": "Article", headline: a.title, description: a.excerpt,
       author: AUTHOR_ORG,
       publisher: PUBLISHER,
-      datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      datePublished: "2026-01-01", dateModified: LASTMOD, mainEntityOfPage: canonical || ORIGIN + path, inLanguage: "en-IN" }),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Blog", path: "/#/blog" }, { name: a.title, path }]),
     jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
     ...(isHowTo ? [howToJsonLd(a)] : []),
@@ -1383,7 +1419,7 @@ ${relatedGrid([
     jsonld({ "@context": "https://schema.org", "@type": "Article", headline: s.title, description: s.metaDesc,
       author: AUTHOR_ORG,
       publisher: PUBLISHER,
-      datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      datePublished: "2026-01-01", dateModified: LASTMOD, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
     faqJsonLd(faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "SOP & LOR Samples", path: "/sop-samples/" }, { name: s.course, path }]),
   ] }) + shell(inner));
@@ -1450,7 +1486,7 @@ ${relatedGrid([
     jsonld({ "@context": "https://schema.org", "@type": "Article", headline: v.title, description: v.metaDesc,
       author: AUTHOR_ORG,
       publisher: PUBLISHER,
-      datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      datePublished: "2026-01-01", dateModified: LASTMOD, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
     faqJsonLd(v.faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Visa Interviews", path: "/visa-interview/" }, { name: v.country, path }]),
   ] }) + shell(inner));
@@ -1833,7 +1869,7 @@ function proofOfFundsCalculatorPage() {
     { q: "How much money do I need to show for a student visa?", a: "It depends on the country. Germany needs about EUR 11,904 in a blocked account; Canada about CAD 22,895 plus first-year tuition; the UK GBP 1,171–1,529 per month for up to 9 months plus tuition; Australia around AUD 29,710 per year plus tuition; Ireland about EUR 10,000 plus tuition; the USA has no fixed figure — you prove your Form I-20 cost of attendance. Use the calculator above for your exact total, then confirm with the official authority." },
     { q: "Does proof of funds include tuition?", a: "Usually yes for most countries — you show living costs AND your first-year tuition (or the unpaid balance). Germany's blocked account is the main exception, since public-university tuition there is typically near-zero." },
     { q: "Is the German blocked account or Canadian GIC a fee?", a: "No — both are your own money held as proof of funds. A German Sperrkonto releases about EUR 992 to you each month after arrival; a Canadian GIC is returned to you in instalments over your first year." },
-    { q: "How current are these figures?", a: `They are checked against each government's official page (linked in the table) and were last verified on ${BUILD_DATE}. Proof-of-funds amounts change every year — always confirm the current figure on the official authority's site before you transfer money.` },
+    { q: "How current are these figures?", a: `They are checked against each government's official page (linked in the table) and were last verified on ${LASTMOD}. Proof-of-funds amounts change every year — always confirm the current figure on the official authority's site before you transfer money.` },
   ];
   const calc = `
 <div class="card">
@@ -1886,7 +1922,7 @@ function proofOfFundsCalculatorPage() {
 ${calc}
 <div class="card"><h2>Proof-of-funds requirement by country (2026)</h2>
 <table style="width:100%;border-collapse:collapse" class="uni-table"><thead><tr><th>Country</th><th>Living / base requirement</th><th>Source</th></tr></thead><tbody>${refRows}</tbody></table>
-<p class="note"><strong>Last verified: ${esc(BUILD_DATE)}</strong> against each government's official page (linked above). Figures change yearly — confirm the current amount with the official authority before you apply or transfer money. For the full breakdown, see the <a href="/study-abroad-funding-facts-2026/">Study-Abroad Funding Facts 2026</a> data study.</p></div>
+<p class="note"><strong>Last verified: ${esc(LASTMOD)}</strong> against each government's official page (linked above). Figures change yearly — confirm the current amount with the official authority before you apply or transfer money. For the full breakdown, see the <a href="/study-abroad-funding-facts-2026/">Study-Abroad Funding Facts 2026</a> data study.</p></div>
 ${faqBlock(faqs)}
 ${affiliateBlock(["wise", "bookmyforex"], "Moving that money abroad")}
 ${relatedGrid([
@@ -2249,9 +2285,27 @@ ${relatedGrid([
 }
 
 // ── University-vs-University comparison pages (programmatic SEO) ─────────────
+// Titles are clamped to ~60 chars for SERP display. Full university names are long, so
+// "X vs Y: Fees, Ranking, IELTS & Admission Compared 2026" clamped away the "vs Y" — the
+// one part that makes a comparison page distinct — leaving two different URLs sharing the
+// title "Ludwig Maximilian University of Munich (LMU) | LandingPrep". Prefer a
+// parenthesised abbreviation when the name carries one, and keep the title short enough
+// that BOTH names survive the clamp.
+function compactUniName(name, id) {
+  const abbr = String(name).match(/\(([A-Za-z][A-Za-z0-9&.\-]{1,11})\)\s*$/);
+  if (abbr) return abbr[1];
+  const plain = String(name).replace(/^The\s+/i, "");
+  // BOTH names have to fit the clamp together, so a per-name length test is not enough
+  // ("University of Auckland" and "University of Otago" are each short-ish but collide).
+  // The route id is the site's own short handle — "ubc", "otago", "alberta" — and is also
+  // how people actually search ("UBC vs Alberta"). Full names still appear in the H1 and body.
+  const h = String(id || "").replace(/[^a-z0-9]/gi, "");
+  if (!h) return plain;
+  return h.length <= 4 ? h.toUpperCase() : h.charAt(0).toUpperCase() + h.slice(1);
+}
 function uniVsPage(a, b) {
   const path = `/compare/${a.id}-vs-${b.id}/`;
-  const title = `${a.name} vs ${b.name}: Fees, Ranking, IELTS & Admission Compared 2026 | ${BRAND}`;
+  const title = `${compactUniName(a.name, a.id)} vs ${compactUniName(b.name, b.id)}: Fees & Ranking 2026 | ${BRAND}`;
   const desc = `${a.name} vs ${b.name} — compare QS rank (#${a.rank} vs #${b.rank}), tuition (${a.feeNote} vs ${b.feeNote}), IELTS (${a.ielts} vs ${b.ielts}), acceptance rate and programs. Free side-by-side comparison.`;
   const kw = `${a.name.toLowerCase()} vs ${b.name.toLowerCase()}, ${a.name.toLowerCase()} or ${b.name.toLowerCase()}, compare ${a.name.toLowerCase()} ${b.name.toLowerCase()}, ${a.name.toLowerCase()} ${b.name.toLowerCase()} fees ranking`;
   const faqs = [
@@ -2866,7 +2920,7 @@ function fundingFactsPage() {
 <li>Model your repayment with the free <a href="/tools/education-loan-emi-calculator/">education-loan EMI calculator</a>, or read the guide to <a href="/blog/education-loan-without-collateral/">loans without collateral</a>.</li>
 </ul></div>
 
-<div class="card"><h2>Methodology &amp; sources</h2><p><strong>Last verified: ${esc(BUILD_DATE)}.</strong> Every figure is checked against the primary official authority linked in the tables above — the ${src("https://www.auswaertiges-amt.de/en/sperrkonto-388600", "German Federal Foreign Office")}, ${src("https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html", "IRCC (Canada)")}, ${src("https://www.gov.uk/student-visa/money", "UKVI (UK)")}, ${src("https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500", "Australian Department of Home Affairs")}, ${src("https://www.irishimmigration.ie/coming-to-study-in-ireland/", "Irish Immigration Service")} and ${src("https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html", "US Department of State")}. Requirements change every year and are set by each government, not by us — this page is a free reference, not legal advice. Confirm the exact current figure with the official authority before you apply or transfer money. You may cite this page with a link to ${ORIGIN}${path}.</p>
+<div class="card"><h2>Methodology &amp; sources</h2><p><strong>Last verified: ${esc(LASTMOD)}.</strong> Every figure is checked against the primary official authority linked in the tables above — the ${src("https://www.auswaertiges-amt.de/en/sperrkonto-388600", "German Federal Foreign Office")}, ${src("https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html", "IRCC (Canada)")}, ${src("https://www.gov.uk/student-visa/money", "UKVI (UK)")}, ${src("https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500", "Australian Department of Home Affairs")}, ${src("https://www.irishimmigration.ie/coming-to-study-in-ireland/", "Irish Immigration Service")} and ${src("https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html", "US Department of State")}. Requirements change every year and are set by each government, not by us — this page is a free reference, not legal advice. Confirm the exact current figure with the official authority before you apply or transfer money. You may cite this page with a link to ${ORIGIN}${path}.</p>
 <p class="note"><strong>Cite this study:</strong> LandingPrep (${esc(BUILD_DATE.slice(0, 4))}). <em>Study-Abroad Funding Facts 2026: Proof of Funds &amp; Post-Study Work by Country.</em> Retrieved from ${ORIGIN}${path}</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
@@ -2882,7 +2936,7 @@ ${relatedGrid([
     path,
     kw: "proof of funds student visa 2026, blocked account amount by country, post study work visa by country, how much money for student visa, germany sperrkonto canada gic, study abroad funding requirements",
     jsonLdBlocks: [
-      jsonld({ "@context": "https://schema.org", "@type": "Dataset", name: "Study-Abroad Funding Facts 2026", description: "Proof-of-funds requirements and post-study work visa durations for top study-abroad destinations, verified against official government sources, 2026.", isAccessibleForFree: true, creator: PUBLISHER, publisher: PUBLISHER, url: ORIGIN + path, license: "https://creativecommons.org/licenses/by/4.0/", dateModified: BUILD_DATE, temporalCoverage: "2026", spatialCoverage: ["Germany", "Canada", "United Kingdom", "Australia", "Ireland", "United States", "New Zealand"], variableMeasured: ["Student-visa proof-of-funds amount", "Post-study work visa duration"], creditText: "LandingPrep — Study-Abroad Funding Facts 2026", isBasedOn: ["https://www.auswaertiges-amt.de/en/sperrkonto-388600", "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html", "https://www.gov.uk/student-visa/money", "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500"] }),
+      jsonld({ "@context": "https://schema.org", "@type": "Dataset", name: "Study-Abroad Funding Facts 2026", description: "Proof-of-funds requirements and post-study work visa durations for top study-abroad destinations, verified against official government sources, 2026.", isAccessibleForFree: true, creator: PUBLISHER, publisher: PUBLISHER, url: ORIGIN + path, license: "https://creativecommons.org/licenses/by/4.0/", dateModified: LASTMOD, temporalCoverage: "2026", spatialCoverage: ["Germany", "Canada", "United Kingdom", "Australia", "Ireland", "United States", "New Zealand"], variableMeasured: ["Student-visa proof-of-funds amount", "Post-study work visa duration"], creditText: "LandingPrep — Study-Abroad Funding Facts 2026", isBasedOn: ["https://www.auswaertiges-amt.de/en/sperrkonto-388600", "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html", "https://www.gov.uk/student-visa/money", "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500"] }),
       faqJsonLd(faqs),
       breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Funding Facts 2026", path }]),
     ],
@@ -3057,7 +3111,7 @@ function germanyPillarPage() {
 <a href="/study-abroad/ms-engineering-in-germany/">MS Engineering</a> ·
 <a href="/study-abroad/ms-business-analytics-in-germany/">MS Business Analytics</a> ·
 <a href="/study-abroad/mba-in-germany/">MBA</a>.</p>
-<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)}. Figures (tuition contributions, blocked-account amount, work limits, post-study permits) are checked against official German sources and change over time — confirm the current details with your university and the German mission before you apply.</p></div>
+<p class="note"><strong>Last verified:</strong> ${esc(LASTMOD)}. Figures (tuition contributions, blocked-account amount, work limits, post-study permits) are checked against official German sources and change over time — confirm the current details with your university and the German mission before you apply.</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🧮 Proof-of-funds calculator`, href: `/tools/proof-of-funds-calculator/` },
@@ -3073,7 +3127,7 @@ ${relatedGrid([
     path,
     kw: "study in germany, study in germany for international students, study in germany for free, germany student visa 2026, germany blocked account amount, study in germany from india, aps certificate germany, germany post study work visa, ms in germany, cost of studying in germany",
     jsonLdBlocks: [
-      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Germany 2026: The Complete Guide for International Students", description: "Universities, admission, blocked account, student visa, working while studying and post-study work in Germany, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Germany 2026: The Complete Guide for International Students", description: "Universities, admission, blocked account, student visa, working while studying and post-study work in Germany, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: LASTMOD, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
       jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
       faqJsonLd(faqs),
       breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in Germany", path }]),
@@ -3142,7 +3196,7 @@ function switzerlandPillarPage() {
 
 <div class="card"><h2>Scholarships &amp; funding</h2>
 <p>Because tuition is already low, funding mainly targets living costs. The big names are the <strong>ETH Excellence Scholarship (ESOP)</strong> and <strong>EPFL Excellence Fellowships</strong> (competitive, partial-to-full support for outstanding Master's applicants), plus the <strong>Swiss Government Excellence Scholarships (ESKAS)</strong> for research and PhD study. Browse the wider <a href="/fully-funded-scholarships/">fully-funded scholarships database</a>, and if you need a loan, model repayments with the <a href="/tools/education-loan-emi-calculator/">education-loan EMI calculator</a>.</p>
-<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)}. Figures (tuition, living costs, cantonal proof-of-funds amounts, work limits and post-study permits) are checked against official Swiss sources and change over time — confirm the current details with your university and the relevant Swiss cantonal authority before you apply.</p></div>
+<p class="note"><strong>Last verified:</strong> ${esc(LASTMOD)}. Figures (tuition, living costs, cantonal proof-of-funds amounts, work limits and post-study permits) are checked against official Swiss sources and change over time — confirm the current details with your university and the relevant Swiss cantonal authority before you apply.</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🎓 Top universities in Switzerland`, href: `/study-abroad/top-universities-in-switzerland/` },
@@ -3158,7 +3212,7 @@ ${relatedGrid([
     path,
     kw: "study in switzerland, study in switzerland for international students, study in switzerland for free, switzerland student visa 2026, cost of studying in switzerland, study in switzerland from india, eth zurich admission, epfl admission, masters in switzerland in english, switzerland post study work",
     jsonLdBlocks: [
-      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Switzerland 2026: The Complete Guide for International Students", description: "Universities, English-taught admission, real costs, student visa, working while studying and post-study work in Switzerland, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-08-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Switzerland 2026: The Complete Guide for International Students", description: "Universities, English-taught admission, real costs, student visa, working while studying and post-study work in Switzerland, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-08-01", dateModified: LASTMOD, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
       jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
       faqJsonLd(faqs),
       breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in Switzerland", path }]),
@@ -3231,7 +3285,7 @@ function swedenPillarPage() {
 <a href="/study-abroad/ms-computer-science-in-sweden/">MS Computer Science</a> ·
 <a href="/study-abroad/ms-data-science-in-sweden/">MS Data Science</a> ·
 <a href="/study-abroad/mba-in-sweden/">MBA</a>.</p>
-<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)}. Figures (tuition ranges, the SEK 10,314/month maintenance amount, work rules and post-study permits) are checked against official Swedish sources and change over time — confirm the current details with your university and Migrationsverket before you apply.</p></div>
+<p class="note"><strong>Last verified:</strong> ${esc(LASTMOD)}. Figures (tuition ranges, the SEK 10,314/month maintenance amount, work rules and post-study permits) are checked against official Swedish sources and change over time — confirm the current details with your university and Migrationsverket before you apply.</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🎓 Top universities in Sweden`, href: `/study-abroad/top-universities-in-sweden/` },
@@ -3247,7 +3301,7 @@ ${relatedGrid([
     path,
     kw: "study in sweden, study in sweden for international students, is sweden free to study, sweden student visa 2026, sweden residence permit for studies, masters in sweden in english, cost of studying in sweden, sweden post study work permit, study in sweden from india, sweden scholarships",
     jsonLdBlocks: [
-      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Sweden 2026: The Complete Guide for International Students", description: "Universities, English-taught admission, tuition, residence permit, working while studying and post-study work in Sweden, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-08-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Sweden 2026: The Complete Guide for International Students", description: "Universities, English-taught admission, tuition, residence permit, working while studying and post-study work in Sweden, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-08-01", dateModified: LASTMOD, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
       jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
       faqJsonLd(faqs),
       breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in Sweden", path }]),
@@ -3309,7 +3363,7 @@ function hongKongPillarPage() {
 
 <div class="card"><h2>Scholarships &amp; funding</h2>
 <p>Hong Kong universities offer <strong>entrance and merit scholarships</strong> for strong international applicants, plus <strong>Belt and Road</strong> scholarships for students from participating regions and the highly competitive <strong>Hong Kong PhD Fellowship Scheme (HKPFS)</strong> for research students. Browse the wider <a href="/fully-funded-scholarships/">fully-funded scholarships database</a>, and if you need a loan, model repayments with the <a href="/tools/education-loan-emi-calculator/">education-loan EMI calculator</a>.</p>
-<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)}. Figures (tuition and living ranges, the IANG 24-month stay and the 7-year PR rule) are checked against official Hong Kong sources and change over time — confirm the current details with your university and the Hong Kong Immigration Department before you apply.</p></div>
+<p class="note"><strong>Last verified:</strong> ${esc(LASTMOD)}. Figures (tuition and living ranges, the IANG 24-month stay and the 7-year PR rule) are checked against official Hong Kong sources and change over time — confirm the current details with your university and the Hong Kong Immigration Department before you apply.</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🎓 Top universities in Hong Kong`, href: `/study-abroad/top-universities-in-hong-kong/` },
@@ -3325,7 +3379,7 @@ ${relatedGrid([
     path,
     kw: "study in hong kong, study in hong kong for international students, hong kong student visa 2026, iang visa hong kong, hong kong post study work, cost of studying in hong kong, masters in hong kong, hku admission, study in hong kong from india, hong kong permanent residency 7 years",
     jsonLdBlocks: [
-      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Hong Kong 2026: The Complete Guide for International Students", description: "Universities, English-medium admission, costs, student visa, the IANG stay-back and the 7-year PR path in Hong Kong, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-08-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Hong Kong 2026: The Complete Guide for International Students", description: "Universities, English-medium admission, costs, student visa, the IANG stay-back and the 7-year PR path in Hong Kong, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-08-01", dateModified: LASTMOD, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
       jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
       faqJsonLd(faqs),
       breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in Hong Kong", path }]),
@@ -3391,7 +3445,7 @@ function educationLoanPillarPage() {
 <li><strong>Model the EMI</strong> and see the saving from paying interest during study — <a href="/tools/education-loan-emi-calculator/">EMI calculator</a>.</li>
 <li><strong>Keep Section 80E in mind</strong> when you start repaying.</li>
 </ol>
-<p class="note"><strong>Last updated:</strong> ${esc(BUILD_DATE)}. This is general information, not financial advice; confirm current rates, limits and terms directly with lenders.</p></div>
+<p class="note"><strong>Last updated:</strong> ${esc(LASTMOD)}. This is general information, not financial advice; confirm current rates, limits and terms directly with lenders.</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🏦 EMI calculator`, href: `/tools/education-loan-emi-calculator/` },
@@ -3406,7 +3460,7 @@ ${relatedGrid([
     path,
     kw: "education loan for study abroad, education loan without collateral, collateral free education loan, unsecured education loan, is education loan secured or unsecured, nbfc education loan without collateral, study abroad loan, non collateral education loan",
     jsonLdBlocks: [
-      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Education Loan for Studying Abroad 2026: Secured vs Collateral-Free", description: "Secured vs unsecured education loans for Indian students going abroad — rates, limits, moratorium, tax and lenders.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Education Loan for Studying Abroad 2026: Secured vs Collateral-Free", description: "Secured vs unsecured education loans for Indian students going abroad — rates, limits, moratorium, tax and lenders.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: LASTMOD, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
       jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
       faqJsonLd(faqs),
       breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Tools", path: "/#/tools" }, { name: "Education Loan for Studying Abroad", path }]),
@@ -3466,7 +3520,7 @@ function canadaPillarPage() {
 <li><strong>PGWP:</strong> 8 months to 3 years by programme length (master's graduates can get 3 years); needs a language test since Nov 2024; non-degree grads need an eligible field of study. See the <a href="/blog/canada-pgwp-2026-guide/">Canada PGWP guide</a>.</li>
 <li><strong>Permanent residence:</strong> PGWP work experience counts toward the Canadian Experience Class under <a href="/blog/canada-pr-express-entry-basics/">Express Entry</a> — the main study-to-PR route.</li>
 </ul>
-<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)} against IRCC/canada.ca. Canadian immigration rules change frequently — always confirm the current details on the official IRCC site before you apply.</p></div>
+<p class="note"><strong>Last verified:</strong> ${esc(LASTMOD)} against IRCC/canada.ca. Canadian immigration rules change frequently — always confirm the current details on the official IRCC site before you apply.</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🧮 Proof-of-funds calculator`, href: `/tools/proof-of-funds-calculator/` },
@@ -3482,7 +3536,7 @@ ${relatedGrid([
     path,
     kw: "study in canada, study in canada for international students, canada student visa 2026, canada study permit requirements, canada proof of funds gic, provincial attestation letter pal, canada pgwp 2026, study in canada from india, cost of studying in canada",
     jsonLdBlocks: [
-      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Canada 2026: The Complete Guide for International Students", description: "Costs, proof of funds, the study-permit cap and PAL, the visa, working while studying and the PGWP-to-PR pathway in Canada, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Canada 2026: The Complete Guide for International Students", description: "Costs, proof of funds, the study-permit cap and PAL, the visa, working while studying and the PGWP-to-PR pathway in Canada, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: LASTMOD, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
       jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
       faqJsonLd(faqs),
       breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in Canada", path }]),
@@ -3533,7 +3587,7 @@ function ukPillarPage() {
 <li><strong>Dependants:</strong> since Jan 2024, taught-master's (and most) students cannot bring family; PhD/research students can.</li>
 <li><strong>After graduating:</strong> the <a href="/blog/uk-graduate-route-visa-2026/">Graduate Route</a> gives 2 years' work (3 for PhD) — reducing to 18 months for applications from January 2027. It can lead on to a Skilled Worker visa.</li>
 </ul>
-<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)} against <a href="https://www.gov.uk/student-visa" target="_blank" rel="nofollow noopener">gov.uk ↗</a>. UK rules change — confirm the current details before you apply.</p></div>
+<p class="note"><strong>Last verified:</strong> ${esc(LASTMOD)} against <a href="https://www.gov.uk/student-visa" target="_blank" rel="nofollow noopener">gov.uk ↗</a>. UK rules change — confirm the current details before you apply.</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🧮 Proof-of-funds calculator`, href: `/tools/proof-of-funds-calculator/` },
@@ -3543,7 +3597,7 @@ ${relatedGrid([
   { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
 ])}`;
   emit(path, head({ title: `Study in the UK 2026: Complete Guide (Costs, Visa, Graduate Route) | ${BRAND}`, desc: `Free complete guide to studying in the UK 2026: tuition & maintenance (GBP 1,171–1,529/mo), the student visa & CAS, 20 hrs/week work, the dependant rules, and the Graduate Route (2yr, 18mo from Jan 2027). Verified vs gov.uk.`, path, kw: "study in uk, study in uk for international students, uk student visa 2026, uk graduate route, cost of studying in uk, uk student visa requirements, study in uk from india, uk maintenance funds", jsonLdBlocks: [
-    jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in the UK 2026: The Complete Guide for International Students", description: "Costs, the student visa and CAS, working, dependant rules and the Graduate Route in the UK, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+    jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in the UK 2026: The Complete Guide for International Students", description: "Costs, the student visa and CAS, working, dependant rules and the Graduate Route in the UK, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: LASTMOD, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
     jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
     faqJsonLd(faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in the UK", path }]),
@@ -3590,7 +3644,7 @@ function australiaPillarPage() {
 <li><strong>485 visa:</strong> 2 years (bachelor/coursework master), longer for research degrees (research master's/doctorate) — the longer STEM extensions ended in July 2024.</li>
 <li><strong>PR:</strong> skilled work can lead to permanent residence via the points-tested skilled pathways. See <a href="/blog/australia-pr-international-students-points/">Australia PR points</a>.</li>
 </ul>
-<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)} against <a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500" target="_blank" rel="nofollow noopener">Home Affairs ↗</a>. Australian rules change frequently — confirm the current details before you apply.</p></div>
+<p class="note"><strong>Last verified:</strong> ${esc(LASTMOD)} against <a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500" target="_blank" rel="nofollow noopener">Home Affairs ↗</a>. Australian rules change frequently — confirm the current details before you apply.</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🧮 Proof-of-funds calculator`, href: `/tools/proof-of-funds-calculator/` },
@@ -3600,7 +3654,7 @@ ${relatedGrid([
   { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
 ])}`;
   emit(path, head({ title: `Study in Australia 2026: Complete Guide (Costs, Visa, 485, PR) | ${BRAND}`, desc: `Free complete guide to studying in Australia 2026: AUD 29,710 funds, the AUD 2,500 subclass 500 visa, 48 hrs/fortnight work, Genuine Student rule, IELTS 6.0, and the 485 post-study visa. Verified vs Home Affairs.`, path, kw: "study in australia, study in australia for international students, australia student visa 2026, subclass 500, australia 485 visa, genuine student requirement, cost of studying in australia, study in australia from india", jsonLdBlocks: [
-    jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Australia 2026: The Complete Guide for International Students", description: "Costs, the subclass 500 visa, Genuine Student rule, working, and the 485 post-study visa in Australia, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+    jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in Australia 2026: The Complete Guide for International Students", description: "Costs, the subclass 500 visa, Genuine Student rule, working, and the 485 post-study visa in Australia, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: LASTMOD, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
     jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
     faqJsonLd(faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in Australia", path }]),
@@ -3650,7 +3704,7 @@ function usaPillarPage() {
 <li><strong>CPT:</strong> course-related work, usually after one academic year.</li>
 <li><strong>OPT:</strong> 12 months after graduation; <strong>STEM OPT</strong> adds 24 months (up to 36 total). See the <a href="/blog/usa-f1-opt-2026/">F-1 OPT &amp; STEM extension guide</a>.</li>
 </ul>
-<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)} against <a href="https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html" target="_blank" rel="nofollow noopener">travel.state.gov ↗</a> and DHS SEVP. US rules change — confirm the current details with your school and local US embassy before you apply.</p></div>
+<p class="note"><strong>Last verified:</strong> ${esc(LASTMOD)} against <a href="https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html" target="_blank" rel="nofollow noopener">travel.state.gov ↗</a> and DHS SEVP. US rules change — confirm the current details with your school and local US embassy before you apply.</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `✅ Visa document checklist`, href: `/tools/student-visa-document-checklist/` },
@@ -3660,7 +3714,7 @@ ${relatedGrid([
   { label: `📊 Funding facts 2026`, href: `/study-abroad-funding-facts-2026/` },
 ])}`;
   emit(path, head({ title: `Study in the USA 2026: Complete F-1 Guide (I-20, Visa, OPT) | ${BRAND}`, desc: `Free complete guide to studying in the USA 2026: F-1 proof of funds (I-20 cost of attendance), SEVIS $350 + $185 visa fees, on-campus work, CPT, and OPT + 24-month STEM extension. Verified vs US gov sources.`, path, kw: "study in usa, study in usa for international students, f1 visa 2026, form i-20, sevis fee, opt stem extension, cost of studying in usa, study in usa from india, us student visa process", jsonLdBlocks: [
-    jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in the USA 2026: The Complete Guide for International Students", description: "F-1 costs, the I-20, the visa process, working, and OPT/STEM OPT in the USA, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+    jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Study in the USA 2026: The Complete Guide for International Students", description: "F-1 costs, the I-20, the visa process, working, and OPT/STEM OPT in the USA, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: LASTMOD, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
     jsonld({ "@context": "https://schema.org", "@type": "WebPage", url: ORIGIN + path, speakable: { "@type": "SpeakableSpecification", cssSelector: [".quick-answer", "h1"] } }),
     faqJsonLd(faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Study in the USA", path }]),
@@ -3874,7 +3928,7 @@ ${tool}
 <li><strong>Canadian study or work experience</strong> adds points and can qualify you for the Canadian Experience Class.</li>
 <li><strong>French</strong> (even as a second language at CLB 7+) adds up to 50 points.</li>
 </ul>
-<p class="note"><strong>Last verified:</strong> ${esc(BUILD_DATE)} against IRCC's official CRS criteria. Point values change — confirm your exact score and current draw cut-offs on the <a href="${OFFICIAL}" target="_blank" rel="nofollow noopener">official IRCC calculator ↗</a>.</p></div>
+<p class="note"><strong>Last verified:</strong> ${esc(LASTMOD)} against IRCC's official CRS criteria. Point values change — confirm your exact score and current draw cut-offs on the <a href="${OFFICIAL}" target="_blank" rel="nofollow noopener">official IRCC calculator ↗</a>.</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `📅 Latest Express Entry draws`, href: `/express-entry-draws-2026/` },
@@ -3926,7 +3980,7 @@ function expressEntryDrawsPage() {
 
 <div class="card"><h2>Recent Express Entry draws (2026)</h2>
 <table style="width:100%;border-collapse:collapse;font-size:14px"><thead><tr><th style="${th}">Date</th><th style="${th}">Category</th><th style="${th}">Invitations</th><th style="${th}">CRS cut-off</th></tr></thead><tbody>${rows}</tbody></table>
-<p class="note"><strong>Last updated: ${esc(data.lastUpdated || BUILD_DATE)}.</strong> Compiled from IRCC's <a href="${src}" target="_blank" rel="nofollow noopener">rounds of invitations ↗</a>. For the very latest round, always confirm on the official IRCC page.</p></div>
+<p class="note"><strong>Last updated: ${esc(data.lastUpdated || LASTMOD)}.</strong> Compiled from IRCC's <a href="${src}" target="_blank" rel="nofollow noopener">rounds of invitations ↗</a>. For the very latest round, always confirm on the official IRCC page.</p></div>
 
 <div class="card"><h2>What the 2026 numbers tell you</h2><ul class="bcheck">
 <li><strong>CEC draws</strong> have been steady around CRS ${cecRange} — the core route for candidates with Canadian work experience.</li>
@@ -3952,7 +4006,7 @@ ${relatedGrid([
     path,
     kw: "express entry draws 2026, latest express entry draw, canada pr draw, cec draw 2026, express entry cut off score, crs cut off 2026, express entry latest draw, canada invitation to apply",
     jsonLdBlocks: [
-      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Canada Express Entry Draws 2026: Latest Rounds & CRS Cut-offs", description: "Recent Canada Express Entry rounds of invitations with dates, categories, ITAs and CRS cut-offs, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: data.lastUpdated || BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+      jsonld({ "@context": "https://schema.org", "@type": "Article", headline: "Canada Express Entry Draws 2026: Latest Rounds & CRS Cut-offs", description: "Recent Canada Express Entry rounds of invitations with dates, categories, ITAs and CRS cut-offs, 2026.", author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: data.lastUpdated || LASTMOD, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
       faqJsonLd(faqs),
       breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study in Canada", path: "/study-in-canada/" }, { name: "Express Entry Draws", path }]),
     ],
@@ -4001,7 +4055,7 @@ function cheapestCountriesPage() {
 <li><strong>Work part-time</strong> within your visa's limit to offset living costs.</li>
 </ul></div>
 
-<div class="card"><h2>Methodology &amp; sources</h2><p><strong>Last verified: ${esc(BUILD_DATE)}.</strong> Ranking = indicative total first-year cost (typical public-university tuition + the official living-cost / proof-of-funds figure), converted to approximate US dollars. Living-cost and proof-of-funds figures are the official government amounts, verified against the German Federal Foreign Office, IRCC, UKVI, the Australian Department of Home Affairs, the Irish Immigration Service and the US Department of State (linked in the <a href="/study-abroad-funding-facts-2026/">funding facts</a>). Tuition ranges and USD conversions are indicative and change with exchange rates and by university. This is a free reference, not financial advice — confirm current figures before you rely on them.</p>
+<div class="card"><h2>Methodology &amp; sources</h2><p><strong>Last verified: ${esc(LASTMOD)}.</strong> Ranking = indicative total first-year cost (typical public-university tuition + the official living-cost / proof-of-funds figure), converted to approximate US dollars. Living-cost and proof-of-funds figures are the official government amounts, verified against the German Federal Foreign Office, IRCC, UKVI, the Australian Department of Home Affairs, the Irish Immigration Service and the US Department of State (linked in the <a href="/study-abroad-funding-facts-2026/">funding facts</a>). Tuition ranges and USD conversions are indicative and change with exchange rates and by university. This is a free reference, not financial advice — confirm current figures before you rely on them.</p>
 <p class="note"><strong>Cite this study:</strong> LandingPrep (${esc(BUILD_DATE.slice(0, 4))}). <em>Cheapest Countries to Study Abroad in 2026 (Ranked by Total Cost).</em> Retrieved from ${ORIGIN}${path}</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
@@ -4012,7 +4066,7 @@ ${relatedGrid([
   { label: `🏦 Education loan guide`, href: `/study-abroad-education-loan/` },
 ])}`;
   emit(path, head({ title: `Cheapest Countries to Study Abroad 2026 (Ranked by Total Cost) | ${BRAND}`, desc: `Free 2026 data study ranking the cheapest countries to study abroad by total first-year cost (tuition + official living funds): Germany, Ireland, Canada, Australia, UK, USA. Citable reference.`, path, kw: "cheapest countries to study abroad, cheapest country to study abroad 2026, affordable study abroad destinations, study abroad cost by country, cheapest place to study masters abroad, low cost study abroad", jsonLdBlocks: [
-    jsonld({ "@context": "https://schema.org", "@type": "Dataset", name: "Cheapest Countries to Study Abroad 2026", description: "Top study-abroad destinations ranked by indicative total first-year cost (public tuition + official living-cost figure), 2026.", isAccessibleForFree: true, creator: PUBLISHER, publisher: PUBLISHER, url: ORIGIN + path, license: "https://creativecommons.org/licenses/by/4.0/", dateModified: BUILD_DATE, temporalCoverage: "2026", spatialCoverage: ["Germany", "Ireland", "Canada", "Australia", "United Kingdom", "United States"], variableMeasured: ["Public-university tuition (indicative)", "Official living-cost / proof-of-funds", "Indicative total first-year cost"], creditText: "LandingPrep — Cheapest Countries to Study Abroad 2026" }),
+    jsonld({ "@context": "https://schema.org", "@type": "Dataset", name: "Cheapest Countries to Study Abroad 2026", description: "Top study-abroad destinations ranked by indicative total first-year cost (public tuition + official living-cost figure), 2026.", isAccessibleForFree: true, creator: PUBLISHER, publisher: PUBLISHER, url: ORIGIN + path, license: "https://creativecommons.org/licenses/by/4.0/", dateModified: LASTMOD, temporalCoverage: "2026", spatialCoverage: ["Germany", "Ireland", "Canada", "Australia", "United Kingdom", "United States"], variableMeasured: ["Public-university tuition (indicative)", "Official living-cost / proof-of-funds", "Indicative total first-year cost"], creditText: "LandingPrep — Cheapest Countries to Study Abroad 2026" }),
     faqJsonLd(faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Cheapest Countries 2026", path }]),
   ] }) + shell(inner));
@@ -4121,7 +4175,7 @@ ${relatedGrid([
         kw: `${n.title.toLowerCase()}, ${exam} ${n.section} notes, ${exam} ${n.section} tips`,
         jsonLdBlocks: [
           jsonld({ "@context": "https://schema.org", "@type": "LearningResource", name: n.title, description: n.summary, learningResourceType: "concept-map study notes", educationalUse: "self-study", teaches: n.conceptMap.central, timeRequired: `PT${n.estMinutes}M`, isAccessibleForFree: true, inLanguage: "en-IN", audience: { "@type": "EducationalAudience", educationalRole: "student" }, provider: PUBLISHER, url: ORIGIN + path }),
-          jsonld({ "@context": "https://schema.org", "@type": "Article", headline: n.title, description: n.summary, author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: BUILD_DATE, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
+          jsonld({ "@context": "https://schema.org", "@type": "Article", headline: n.title, description: n.summary, author: AUTHOR_ORG, publisher: PUBLISHER, datePublished: "2026-01-01", dateModified: LASTMOD, mainEntityOfPage: ORIGIN + path, inLanguage: "en-IN" }),
           faqJsonLd(faqs),
           breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: `${exam.toUpperCase()} Smart Notes`, path: `/learn/${exam}/` }, { name: n.title, path }]),
         ] }) + shell(inner));
@@ -5837,7 +5891,9 @@ buildHubs();
 // every build. So we only advance a page's lastmod when its rendered HTML actually
 // changed: diff the new HTML against the on-disk copy BEFORE overwriting, and reuse
 // the previous lastmod (read back from the existing sitemap) for unchanged pages.
-// BUILD_DATE is defined near the top of the file (reused here for sitemap <lastmod>).
+// This same prior-date map also resolves the reader-facing LASTMOD token (see its
+// definition near BUILD_DATE at the top of the file), so the visible "last updated"
+// date, the JSON-LD dateModified and the sitemap <lastmod> can never disagree.
 const PRIOR_LASTMOD = (() => {
   const map = new Map();
   try {
@@ -5849,22 +5905,55 @@ const PRIOR_LASTMOD = (() => {
 })();
 const lastmodFor = new Map();
 
-// Write files (capturing change status before overwriting)
+// Guard: two INDEXED pages sharing a <title> compete for the same query and look like
+// duplicates to Google. This is easy to reintroduce accidentally — the 60-char title clamp
+// can collapse two distinct long titles into the same string (it did, for the university
+// comparison pages). Noindexed/thin pages are excluded: they are not in the index to compete.
+{
+  const byTitle = new Map();
+  for (const { path, html } of PAGES) {
+    if (THIN_PATHS.has(path)) continue;
+    const t = (html.match(/<title>([^<]*)<\/title>/) || [])[1];
+    if (!t) continue;
+    if (!byTitle.has(t)) byTitle.set(t, []);
+    byTitle.get(t).push(path);
+  }
+  const clashes = [...byTitle.entries()].filter(([, paths]) => paths.length > 1);
+  if (clashes.length) {
+    console.warn(`\n  ⚠ DUPLICATE <title> across ${clashes.length} indexed page group(s):`);
+    for (const [t, paths] of clashes.slice(0, 10)) console.warn(`     "${t}"\n       ${paths.join("\n       ")}`);
+  }
+}
+
+// Write files, resolving the LASTMOD token and capturing change status before overwriting.
+//
+// The page's own "last updated" date is embedded in its HTML, so comparing raw HTML would
+// see a difference on every build whose date differs — the page would look changed purely
+// because it says it changed. To break that circularity we compare in TOKEN space: rewrite
+// the previous build's date back to the token, then diff. Identical => genuinely unchanged,
+// so the page keeps its previous date; different => real edit, advance to BUILD_DATE.
 PAGES.forEach(({ path, html }) => {
   const dir = join(ROOT, path);
   const file = join(dir, "index.html");
-  let changed = true;
-  try { changed = readFileSync(file, "utf8") !== html; } catch (e) { changed = true; /* new page */ }
   const loc = ORIGIN + path;
-  lastmodFor.set(loc, changed ? BUILD_DATE : (PRIOR_LASTMOD.get(loc) || BUILD_DATE));
+  const priorDate = PRIOR_LASTMOD.get(loc);
+  let prev = null;
+  try { prev = readFileSync(file, "utf8"); } catch (e) { /* new page */ }
+  // Normalise the previous build back to token space using the date it was stamped with.
+  // (Only used for the comparison — never written out — so an incidental match of that
+  // date elsewhere in the page cannot corrupt the emitted HTML.)
+  const prevTokenised = prev && priorDate ? prev.split(priorDate).join(LASTMOD) : null;
+  const unchanged = prevTokenised !== null && prevTokenised === html;
+  const resolved = unchanged ? priorDate : BUILD_DATE;
+  lastmodFor.set(loc, resolved);
   mkdirSync(dir, { recursive: true });
-  writeFileSafe(file, html);
+  writeFileSafe(file, html.split(LASTMOD).join(resolved));
 });
 
 // Sitemap
 const urls = [
   { loc: `${ORIGIN}/`, freq: "daily", pri: "1.0" },
-  ...PAGES.filter((p) => !THIN_PATHS.has(p.path)).map((p) => ({ loc: ORIGIN + p.path, freq: "weekly", pri: "0.8" })),
+  ...PAGES.filter((p) => !THIN_PATHS.has(p.path) && !CANONICALISED_PATHS.has(p.path)).map((p) => ({ loc: ORIGIN + p.path, freq: "weekly", pri: "0.8" })),
   // Standalone embeddable widget (hand-authored static file, not emitted via the generator).
   { loc: `${ORIGIN}/embed/proof-of-funds/`, freq: "monthly", pri: "0.6" },
   { loc: `${ORIGIN}/embed/score-converter/`, freq: "monthly", pri: "0.6" },
@@ -5877,7 +5966,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls.map((u) => `  <url>
     <loc>${u.loc}</loc>
-    <lastmod>${lastmodFor.get(u.loc) || BUILD_DATE}</lastmod>
+    <lastmod>${lastmodFor.get(u.loc) || PRIOR_LASTMOD.get(u.loc) || BUILD_DATE}</lastmod>
     <changefreq>${u.freq}</changefreq>
     <priority>${u.pri}</priority>
     <xhtml:link rel="alternate" hreflang="en-IN" href="${u.loc}"/>

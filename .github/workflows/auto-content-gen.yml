@@ -1,13 +1,16 @@
 name: Auto-Draft Blog Content
 
-# Closes the content loop so the blog NEVER runs dry: when the queue is low, this
-# finds real Google-Autocomplete search gaps, drafts snippet-friendly posts for them
-# with Gemini, validates each, and tops up blog-queue.json. The daily auto-blog then
-# publishes them one per day. Needs a GEMINI_API_KEY repo secret (no key → no-op).
+# Drafts posts for real Google-Autocomplete search gaps with Gemini and tops up
+# blog-queue.json. Drafts are written with "reviewed": false and publish-next-post.mjs
+# refuses to publish anything unreviewed, so a human must verify the facts and flip the
+# flag before a post can go live. Needs a GEMINI_API_KEY repo secret (no key → no-op).
+#
+# MANUAL ONLY — the weekly cron is deliberately removed. Unattended LLM drafting fed a
+# daily auto-publisher, which is the scaled-content pattern the March-2026 core update
+# penalises at the domain level, on visa/fee content where a fabricated figure misleads a
+# real applicant. Run it from the Actions tab when you actually want drafts to review.
 
 on:
-  schedule:
-    - cron: "0 5 * * 3"     # every Wednesday 05:00 UTC
   workflow_dispatch: {}
 
 permissions:

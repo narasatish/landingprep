@@ -1,5 +1,25 @@
 /* LandingPrep — clean editorial light theme. Mobile-first. */
 
+/* Skip link: off-screen until keyboard-focused, then pinned top-left. Not display:none —
+   that would remove it from the tab order entirely and defeat the purpose. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 10000;
+  padding: 10px 16px;
+  background: #4338ca;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 8px 0;
+}
+.skip-link:focus {
+  left: 0;
+  outline: 3px solid #fbbf24;
+  outline-offset: 2px;
+}
+
 :root {
   /* Surfaces — bright, modern, classy */
   --bg:        #FBFCFE;   /* near-white with cool tint */

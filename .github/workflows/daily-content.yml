@@ -1,10 +1,14 @@
 name: Daily Auto-Blog
 
-# Publishes ONE pre-vetted post from blog-queue.json every day, fully automatically:
-# publish-next-post.mjs moves a post into blog-data.jsx → npm run build prerenders
-# its /blog page + sitemap + RSS → commit & push (Render auto-deploys) → IndexNow
-# pings search engines. Refill blog-queue.json whenever it runs low to keep the
-# stream going. No live AI in CI — every post is human-reviewed before queueing.
+# Publishes ONE post from blog-queue.json per day: publish-next-post.mjs moves it into
+# blog-data.jsx → npm run build prerenders its /blog page + sitemap + RSS → commit & push
+# (Render auto-deploys) → IndexNow pings search engines. No live AI call in CI here.
+#
+# A post publishes ONLY if it carries "reviewed": true. Queue entries created by
+# auto-content-gen.yml are Gemini drafts marked "reviewed": false, so they sit in the queue
+# until a human verifies the facts. If the head of the queue is unreviewed, this job is a
+# no-op for the day. Never remove that gate: it is the only thing standing between an
+# LLM draft about visa rules and a live, IndexNow-submitted page.
 
 on:
   schedule:

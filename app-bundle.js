@@ -6329,9 +6329,12 @@ function Home({ onGuide, onPractice, onNav }) {
   } }, /* @__PURE__ */ React.createElement(Ic, { name: "rocket", size: 17, style: { marginRight: 7, verticalAlign: "-3px" } }), "Build my study-abroad plan"), /* @__PURE__ */ React.createElement("button", { className: "btn btn-lg", onClick: () => window.LP_REFERRAL && window.LP_REFERRAL.invite(), title: "Share free prep with a friend" }, "Invite a friend")), /* @__PURE__ */ React.createElement("div", { className: "hero-fine" }, /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "dot" }), " No registration to start"), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "dot" }), " 100% free, forever"), /* @__PURE__ */ React.createElement("span", null, /* @__PURE__ */ React.createElement("span", { className: "dot" }), " Browser-based \u2014 works anywhere"))))), /* @__PURE__ */ React.createElement("section", { className: "section reveal", style: { paddingTop: 8, paddingBottom: 8 } }, /* @__PURE__ */ React.createElement("div", { className: "shell" }, /* @__PURE__ */ React.createElement("div", { className: "home-hero-photo" }, /* @__PURE__ */ React.createElement(
     "img",
     {
-      src: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1600&q=72",
+      src: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1280&q=70",
       alt: "Graduates throwing their caps in celebration with a city skyline",
       loading: "lazy",
+      width: "1280",
+      height: "853",
+      decoding: "async",
       onError: (e) => {
         const p = e.target.closest(".home-hero-photo");
         if (p) p.classList.add("no-photo");
@@ -10268,6 +10271,7 @@ Student question: ${question}`;
       "input",
       {
         type: "text",
+        "aria-label": "YouTube link for focus music",
         placeholder: "Paste a YouTube link (flute, etc.)",
         value: customUrl,
         tabIndex: open ? 0 : -1,
@@ -10276,7 +10280,7 @@ Student question: ${question}`;
           if (e.key === "Enter") playCustom();
         }
       }
-    ), /* @__PURE__ */ React.createElement("button", { className: "tool-btn", onClick: playCustom, tabIndex: open ? 0 : -1 }, "\u25B6")), /* @__PURE__ */ React.createElement("p", { className: "fs-note" }, "Music streams from YouTube \u2014 tap once to start it. Tap Off to stop.")), /* @__PURE__ */ React.createElement("button", { className: "focus-hide-link", onClick: () => F.setHidden(true), tabIndex: open ? 0 : -1 }, "Hide this button \u2014 bring it back from Tools \u2192 Focus Timer")));
+    ), /* @__PURE__ */ React.createElement("button", { className: "tool-btn", "aria-label": "Play this YouTube link", onClick: playCustom, tabIndex: open ? 0 : -1 }, "\u25B6")), /* @__PURE__ */ React.createElement("p", { className: "fs-note" }, "Music streams from YouTube \u2014 tap once to start it. Tap Off to stop.")), /* @__PURE__ */ React.createElement("button", { className: "focus-hide-link", onClick: () => F.setHidden(true), tabIndex: open ? 0 : -1 }, "Hide this button \u2014 bring it back from Tools \u2192 Focus Timer")));
   }
   window.LP_FocusWidget = FocusWidget;
 })();
