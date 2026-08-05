@@ -38,10 +38,24 @@ for (const u of sitemapRoutes) {
   if (!diskRoutes.has(norm) && !diskRoutes.has(u)) errors.push(`SITEMAP→404: ${u} is in sitemap but has no prerendered page on disk`);
 }
 const ORPHAN_OK = new Set(["/", "/admin/"]); // root + private owner dashboard (noindex, not in sitemap)
-for (const [r] of diskRoutes) {
+// Being absent from the sitemap is usually DELIBERATE: thin pages are pruned to
+// noindex,follow, and near-duplicates are consolidated with rel=canonical to another URL.
+// Reporting those as warnings produced ~548 identical lines every build, which buried the
+// handful that actually matter — a page unintentionally missing from the sitemap. So we
+// read the page's own tags: noindex or a canonical pointing elsewhere IS the statement of
+// intent. Anything else missing from the sitemap is a real orphan and still warns.
+let intentionallyExcluded = 0;
+const isDeliberatelyOutOfSitemap = (file, route) => {
+  let html; try { html = fs.readFileSync(file, "utf8"); } catch (e) { return false; }
+  if (/<meta\s+name="robots"\s+content="[^"]*noindex/i.test(html)) return true;
+  const canon = (html.match(/<link\s+rel="canonical"\s+href="([^"]+)"/i) || [])[1];
+  return !!canon && canon !== BASE + route && canon !== BASE + route.replace(/\/$/, "");
+};
+for (const [r, file] of diskRoutes) {
   if (r === "/") continue;
   const variants = [r, r.replace(/\/$/, ""), BASE + r, BASE + r.replace(/\/$/, "")];
   if (!variants.some((v) => sitemapRoutes.has(v) || sitemapRoutes.has(v + "/")) && !ORPHAN_OK.has(r)) {
+    if (isDeliberatelyOutOfSitemap(file, r)) { intentionallyExcluded++; continue; }
     warnings.push(`ORPHAN: ${r} has a prerendered page but is not in sitemap.xml`);
   }
 }
@@ -126,6 +140,7 @@ console.log(`URLs in sitemap.xml       : ${sitemapRoutes.size}`);
 console.log(`Pages scanned             : ${pagesChecked}`);
 console.log(`Unique broken link targets: ${brokenLinkCounts.size}`);
 console.log(`Crawl-orphan pages (0 inbound links): ${crawlOrphans.length}`);
+console.log(`Out of sitemap ON PURPOSE (noindex / canonicalised elsewhere): ${intentionallyExcluded}`);
 console.log(`Warnings                  : ${warnings.length}`);
 console.log(`Errors                    : ${errors.length}\n`);
 
