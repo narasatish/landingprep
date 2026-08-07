@@ -1,9 +1,14 @@
 # LandingPrep — Session Handoff (read me FIRST in a new session)
 
-**Last updated: 2026-08-05 (session 7) · repo at v409 · branch `main`.** Production
-auto-deploys on every push to `main`. Keep this file updated at the end of major work —
-it went 4 versions stale (said v394 while production ran v401) and cost a session's worth
-of re-derivation.
+**Last updated: 2026-08-07 (session 8) · repo at v413 (HEAD `9df743f1`) · branch `main`,
+all pushed & live.** Production auto-deploys on every push to `main`. Keep this file updated
+at the end of major work — it went 4 versions stale (said v394 while production ran v401) and
+cost a session's worth of re-derivation.
+
+> ⚠️ **Do not trust the version number written in a commit MESSAGE.** `1febcc32` says "(v413)"
+> but actually shipped **v411** — the number was typed from memory instead of read after the
+> build. Read `sw.js` (`git show <sha>:sw.js | grep lp-v`) for the real value. Verified chain:
+> 401 → 405 → 409 → 411 → 413, every deploy bumped, no duplicates.
 
 ---
 
@@ -79,26 +84,95 @@ Served by **`server.js` (Express) on Render free tier**. Owner: **Satish**
 (gzip already handled the whitespace), and it collapsed line numbers in every stack trace the
 `/api/clienterror` reporter sends home. Bad trade — don't redo it without a stronger reason.
 
+## Shipped in session 8 (v411 + v413)
+
+**v411 — the homepage scrolled sideways on phones.** At 375px `document.scrollWidth` was 415.
+- **Isolate by elimination, don't theorise.** The fixed-position onboarding overlay *measured*
+  415 wide and looked like the cause; hiding it changed nothing (it was stretching to an
+  already-wide layout). Hiding `ul.exam-list-simple` dropped scrollWidth to exactly 375.
+- Real cause: the exam row is a flex row where `el-dot`/`el-name`/`el-new`/`el-arrow` all had
+  `flex-shrink:0`, leaving `.el-tag` the only shrinkable item. "Duolingo English Test" (longest
+  name) + the POPULAR badge already exceeded the 335px card, so the arrow was pushed to x=415.
+- Fix in `theme.css`: `.el-name`/`.el-tag` may shrink + ellipsis; `.el-tag` hidden ≤430px;
+  `.el-arrow` pinned with `margin-left:auto`. 375px: no scroll, 0 of 15 names clipped.
+  1280px: all 15 taglines still visible.
+
+**v413 — the 3 tap targets actually below WCAG 2.5.8's 24×24 floor**
+- `See all guides →` 117×19 → 141×44 · `Just exploring — skip` 155×23 → 175×45 ·
+  `.focus-x` 24×19 → 31×31. Grown by padding/min-size so nothing around them moves.
+  Verified live: **0 remaining AA failures** across all interactive elements.
+- ⚠️ **A crude count is not a defect count.** An earlier pass reported "74 of 151 tap targets
+  under 44×44" — that included inline text links inside sentences, which 2.5.8 **exempts**.
+  Filtered properly: only **3** failed. The pomodoro chips are exactly 24×24 and already pass.
+  63 remain under the 44×44 AAA/Apple-HIG guideline — a design choice, not a compliance failure.
+
+**Tried and reverted (session 8): `content-visibility:auto` on the 16 below-fold sections.**
+Attempted twice — first with a flat 600px placeholder, then properly with per-section
+`contain-intrinsic-size` measured at 375px (sections range **124px–2,975px**, so the flat value
+was wrong for nearly all of them). Median of 5 baseline vs 4 treatment runs, same host:
+`perf 28→27 · TBT 4,794→10,719ms · LCP 6.6→7.5s · CLS 0.150→0.152`. Accurate sizing did remove
+the CLS regression the naive attempt caused, but TBT median **more than doubled** — Lighthouse
+scrolls during the audit so every section renders anyway and the containment is pure overhead.
+**Don't retry without a fundamentally different approach** (e.g. genuine lazy React rendering).
+
 ---
 
-## Measured performance (real Lighthouse, session 7 — not assumed)
+## Measured performance (real Lighthouse — measured, not assumed)
 - **Static prerendered pages are fine.** `/gmat-quant-formulas/` desktop: perf **87**, LCP 1.9s,
   CLS 0, TBT 90ms, accessibility 100.
-- **The SPA homepage is the outlier.** Mobile pre-fix: perf **25**, LCP **9.7s**, TBT **5,220ms**,
-  CLS 0.142 (SEO 100, a11y 100). Cause: clarity.js 2,494ms + gtag 1,561ms of main-thread bootup.
-  After deferring, locally: TBT → 2,480ms, CLS → 0, both scripts gone from the bootup profile.
-- **Still poor (~37 local).** ~12s main-thread from React rendering **947 DOM elements**;
-  `app-bundle.js` is 297 KB with ~146 KB unused. **Real fix is code-splitting** — a genuine
-  refactor, not attempted.
-- ⚠️ **Production before vs localhost after is NOT a fair comparison.** Re-run Lighthouse against
-  production for a clean same-host number. Keyless PSI/CrUX is rate-limited (429) — needs an API key.
+- **The SPA homepage is the outlier.** Production mobile, same host before/after:
 
-## Verified healthy (session 7)
+  | | before (v401) | after (v409), median of 3 |
+  |---|---|---|
+  | perf | 25 | **36** |
+  | LCP | 9.7s | **6.4s** |
+  | TBT | 5,220ms | **4,112ms** |
+  | CLS | 0.142 | **0.000** (0 in all 3 runs) |
+
+  Cause of the "before": clarity.js 2,494ms + gtag 1,561ms of main-thread bootup, now deferred.
+  The "before" was a single run, so treat the magnitude cautiously; CLS→0 is the solid part.
+- **Still poor at ~36.** Remaining cost is React itself (app-bundle ~1.3s + react/react-dom
+  ~2.3s bootup) rendering **947 DOM elements**. **Real fix is code-splitting** — a genuine
+  refactor, not attempted. `content-visibility` was tested twice and made it worse (see above).
+
+### ⚠️ How to measure this WITHOUT fooling yourself
+- **Never trust a single Lighthouse run.** A session-7 claim that deferring analytics took TBT
+  5,220→2,480ms was **noise, not a result** — the same code later measured TBT 2,480 vs 11,090ms.
+  It was only caught because a post-revert baseline matched the "regression" just reverted.
+- **The variance was self-inflicted:** builds and `npm test` running concurrently. With the
+  machine quiet, 5 runs gave a stable perf 27–30. **Stop other work, then run n≥5 and compare
+  MEDIANS.**
+- **Localhost is not a proxy for production CLS.** Localhost shows CLS 0.15 (`main#main-content`
+  shift + a fonts.gstatic.com reflow); production shows **zero** layout shifts. Cause of the
+  difference was never determined. Localhost is valid for before/after on the same host only.
+- **CrUX field data is blocked** — needs a PSI API key (the AI-Studio `GEMINI_API_KEY` returns
+  401: "API keys are not supported by this API"), and keyless PSI is globally 429. Also note: at
+  ~1,659 impressions the site likely has **too few Chrome users for CrUX to hold field data at
+  all**, so a key may return nothing. Lab data is the meaningful signal for now.
+
+## Verified healthy (sessions 7–8)
 **816/816** live URLs return 200 (all 811 sitemap URLs + key assets), no redirects, bogus path gives
 a **hard 404** not a soft-200 · exactly one title/description/canonical on the homepage **and after
 client-side nav through 5 SPA routes** (no react-helmet duplication) · 7 JSON-LD blocks parse ·
 both score converters match the ETS concordance and round-trip · robots.txt allows all major AI
-crawlers · `/api/health` 200, Firestore connected.
+crawlers · `/api/health` 200, Firestore connected · **zero** Syllab brand leaks.
+
+**GEO / AI-citability — audited session 8, healthy, nothing to fix.** Across 812 indexable pages:
+FAQPage schema **94%** · a concrete figure in the first 1,200 chars **93%** · quick-answer block
+**70%** · question-shaped H2/H3 **48%** · **0** pages with a question in the title but no answer.
+`llms.txt` accurate (110 universities / 15 countries verified against `college-data.jsx`; all 31
+links 200). ⚠️ A mid-audit claim of "32 pages with no schema" was **wrong** — those are hub pages
+carrying `BreadcrumbList` + `ItemList` (+ `Dataset`), which is correct for collection pages; the
+test was just too narrow. Only real caveat: **273 pages (34%) under 600 words** — a prune-or-deepen
+question under the March-2026 quality rule, not a schema one.
+
+**AI tutor — spot-checked session 8 (3 live calls, `gemini-3.1-flash-lite`), passed all three:**
+correct concordance (IELTS 7.0 → TOEFL 94–101, matching the site's own converter); refused to claim
+unlimited mocks or GMAT AI feedback (correctly noted GMAT Focus has no essay section); refused to
+reproduce real exam material on copyright grounds and offered an original passage instead.
+⚠️ Minor inconsistency: the tutor says "no official conversion table provided by ETS" while the
+site's own blog page is framed around the "official ETS concordance". Same numbers, opposite
+framing — worth aligning.
 
 ---
 
@@ -106,9 +180,13 @@ crawlers · `/api/health` 200, Firestore connected.
 - GSC export (2026-08-02): **0 clicks on 1,659 impressions**; queries rank ~30–90. Top-impression
   pages: `/gmat-quant-formulas/` (257, pos 53), germany-blocked-account (191), gic-account-canada
   (123), education-loan-without-collateral (114), ielts-to-toefl (77, **pos 21** — closest to page 1).
-- **The bottleneck is off-site authority (backlinks + brand).** BUT the previous handoff's claim that
-  "on-site SEO is SATURATED" was **wrong** — session 7 found 64 broken titles, a sitewide hreflang
-  contradiction and a 25/100 mobile homepage. **Audit before declaring saturation.**
+- **The bottleneck is off-site authority (backlinks + brand).** BUT the older handoff's claim that
+  "on-site SEO is SATURATED" was **wrong** — sessions 7–8 found 64 broken titles, a sitewide hreflang
+  contradiction, a 25/100 mobile homepage, a page that scrolled sideways on every phone, and 3
+  sub-minimum tap targets. **Audit before declaring saturation.** Note the flip side: sessions 7–8
+  also produced three *false* alarms (32 "schema-less" pages, 74 "failing" tap targets, 76 "Syllab"
+  hits that were the word *syllable*). **Verify a finding before acting on it, and before reporting
+  a number.**
 - Distribution is still the main click lever: `docs/ready-to-post-answers.md`,
   `docs/backlink-outreach-kit.md`, `docs/distribution-plan-8-weeks.md`. User posts these.
 
@@ -128,8 +206,15 @@ crawlers · `/api/health` 200, Firestore connected.
 5. Resend email setup may still be pending. Move the repo OFF OneDrive.
 
 ## Not audited yet (be honest about this)
-Mobile/UI visual review · GEO passage-level citability · AI tutor response quality (blocked on #1) ·
-CWV field data (CrUX needs an API key) · a11y beyond Lighthouse on one page type.
+- **CWV field data** — blocked on a PSI API key, and may be empty anyway at current traffic (above).
+- **a11y beyond Lighthouse**, and beyond the page types sampled — no screen-reader or keyboard-only
+  pass, no colour-contrast audit across themes (dark mode untested).
+- **Visual/design review** — session 8 measured mobile *geometry* (overflow, tap targets, font
+  sizes) programmatically because the browser pane could not screenshot. **Nobody has actually
+  LOOKED at the rendered pages.** Layout that is geometrically valid can still look wrong.
+- **The other 811 pages' interactive behaviour** — only the two score converters were exercised.
+- **273 thin pages (<600 words)** — identified, not triaged.
+- **Deep AI tutor evaluation** — 3 prompts is a spot-check, not an eval set.
 
 ## Content rules (user mandate — non-negotiable)
 - 100% accurate, **never fabricate**; verify against official sources; full names not shortforms.
