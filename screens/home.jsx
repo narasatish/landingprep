@@ -365,7 +365,9 @@ function LatestGuides() {
           ))}
         </div>
         <div style={{ textAlign: "center", marginTop: 16 }}>
-          <a href="/blog/" style={{ color: "var(--accent)", fontWeight: 600 }}>See all guides →</a>
+          {/* inline-block + padding so the tap target clears WCAG 2.5.8's 24x24 minimum
+              (it rendered 117x19 on a phone — too small to hit reliably). */}
+          <a href="/blog/" style={{ color: "var(--accent)", fontWeight: 600, display: "inline-block", padding: "10px 12px", minHeight: 44, boxSizing: "border-box" }}>See all guides →</a>
         </div>
       </div>
     </section>
@@ -454,7 +456,9 @@ function GoalOnboarding({ onNav }) {
             </button>
           ))}
         </div>
-        <button onClick={() => done("skip")} style={{ display: "block", margin: "14px auto 0", background: "none", border: "none", color: "var(--ink-3, #667085)", fontSize: 14, cursor: "pointer", textDecoration: "underline" }}>Just exploring — skip</button>
+        {/* padding, not a size change: this rendered 155x23, one pixel under WCAG 2.5.8's
+            24x24 floor. It is centred with auto margins, so growing it shifts nothing. */}
+        <button onClick={() => done("skip")} style={{ display: "block", margin: "14px auto 0", background: "none", border: "none", color: "var(--ink-3, #667085)", fontSize: 14, cursor: "pointer", textDecoration: "underline", padding: "12px 16px", minHeight: 44 }}>Just exploring — skip</button>
       </div>
     </div>
   );
