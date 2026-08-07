@@ -1636,9 +1636,18 @@ img { max-width: 100%; display: block; }
   transform: translateY(-2px);
 }
 .exam-list-simple .el-dot { width: 12px; height: 12px; border-radius: 999px; flex-shrink: 0; }
-.exam-list-simple .el-name { font-family: var(--serif); font-size: 18px; letter-spacing: -0.01em; flex-shrink: 0; }
-.exam-list-simple .el-tag { color: var(--ink-3); font-size: 13px; flex: 1; }
-.exam-list-simple .el-arrow { color: var(--accent); font-size: 18px; transition: transform .2s ease; }
+/* el-name was flex-shrink:0, and so are el-dot/el-new/el-arrow — that left .el-tag as the
+   only shrinkable item in the row. On a 375px screen the longest name ("Duolingo English
+   Test") plus the POPULAR badge already exceeded the 335px card, so the row overflowed and
+   pushed the arrow to x=415, making the WHOLE PAGE scroll horizontally (a fixed-position
+   overlay elsewhere then stretched to 415 too, which made it look like the modal's fault).
+   Let the name shrink and ellipsis instead of forcing the row wider than the viewport. */
+.exam-list-simple .el-name { font-family: var(--serif); font-size: 18px; letter-spacing: -0.01em; flex-shrink: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.exam-list-simple .el-tag { color: var(--ink-3); font-size: 13px; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* Narrow phones: the secondary tagline is the least important thing in the row — drop it
+   rather than ellipsis every name down to a few characters. */
+@media (max-width: 430px) { .exam-list-simple .el-tag { display: none; } }
+.exam-list-simple .el-arrow { color: var(--accent); font-size: 18px; transition: transform .2s ease; flex-shrink: 0; margin-left: auto; }
 .exam-list-simple a:hover .el-arrow { transform: translateX(3px); }
 .exam-list-simple .el-new { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.06em; padding: 2px 7px; border-radius: 999px; background: linear-gradient(135deg, #16a34a, #0ea5e9); color: #fff; flex-shrink: 0; box-shadow: 0 2px 8px -2px rgba(14,165,233,0.5); }
 
