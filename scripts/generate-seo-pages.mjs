@@ -1433,10 +1433,22 @@ ${relatedGrid(blogTiles(a))}`;
 // ── Per-scholarship detail pages (auto-generated from scholarship-data) ─────
 function scholarshipDetailPage(s) {
   const path = `/scholarship/${s.id}/`;
-  const title = `${s.name} 2026 — Eligibility, Amount & Deadline | ${BRAND}`;
-  const desc = `${s.name}: ${s.amount} for ${s.level} in ${s.country}. Eligibility: ${s.who}. Deadline: ${s.deadline}. Free scholarship finder + study-abroad tools.`;
+  const dc = s.discontinued;
+  // A closed programme must never be titled/described as if you can still apply "2026" —
+  // that is the kind of page that wastes an applicant's time and earns a manual penalty.
+  const title = dc
+    ? `${dc.title || `${s.name} Discontinued`} | ${BRAND}`
+    : `${s.name} 2026 — Eligibility, Amount & Deadline | ${BRAND}`;
+  const desc = dc
+    ? (dc.desc || `The ${s.name} has been discontinued. It is replaced by the ${dc.replacedByName}: ${dc.replacedByAmount}.`)
+    : `${s.name}: ${s.amount} for ${s.level} in ${s.country}. Eligibility: ${s.who}. Deadline: ${s.deadline}. Free scholarship finder + study-abroad tools.`;
   const kw = `${s.name.toLowerCase()}, ${s.name.toLowerCase()} eligibility, ${s.name.toLowerCase()} deadline, ${s.name.toLowerCase()} amount, ${s.country.toLowerCase()} scholarship, fully funded scholarship ${s.country.toLowerCase()}`;
-  const faqs = [
+  const faqs = dc ? [
+    { q: `Can I still apply for the ${s.name}?`, a: `No. The ${s.name} has been discontinued — the final competition was ${dc.finalCompetition}. Applications are no longer accepted.` },
+    { q: `What replaced the ${s.name}?`, a: `The ${dc.replacedByName}, a harmonised programme from Canada's three federal research councils. It is worth ${dc.replacedByAmount}.` },
+    { q: `Who can apply for the ${dc.replacedByName}?`, a: `${dc.replacedByWho}` },
+    { q: `What is the deadline for the ${dc.replacedByName}?`, a: `${dc.replacedByDeadline}. Confirm the exact date on the official programme page, and check your own institution's internal deadline, which comes earlier.` },
+  ] : [
     { q: `Who is eligible for the ${s.name}?`, a: `${s.who}. It funds ${s.level} study in ${s.country}.` },
     { q: `How much does the ${s.name} cover?`, a: `${s.amount}. ${s.highlight}` },
     { q: `What is the ${s.name} deadline?`, a: `Typically ${s.deadline}. Always confirm exact dates on the official scholarship website.` },
@@ -1449,7 +1461,21 @@ function scholarshipDetailPage(s) {
   <p class="lead">${esc(s.highlight)} Compare it with other awards in the free Scholarship Finder.</p>
   <a class="cta" href="/#/colleges">▶ Open the free Scholarship Finder</a>
 </section>
-<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> The ${esc(s.name)} is a ${esc(s.type.toLowerCase())} scholarship for ${esc(s.level)} study in ${esc(s.country)}, worth ${esc(s.amount)}. It's open to ${esc(s.who)}, with applications typically due around ${esc(s.deadline)}. Always confirm the exact award, criteria and deadline on the official scholarship website, as they change each year.</div>
+${dc ? `<div class="callout" style="background:#fff7ed;border:1px solid #fed7aa;border-left:4px solid #ea580c;border-radius:12px;padding:14px 18px;margin:0 0 12px;color:#7c2d12"><strong>⛔ This scholarship no longer exists.</strong> The ${esc(s.name)} was discontinued — the final competition was ${esc(dc.finalCompetition)}. <strong>You cannot apply for it.</strong> It has been replaced by the <strong>${esc(dc.replacedByName)}</strong>, worth ${esc(dc.replacedByAmount)}. Details below.</div>
+<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> The ${esc(s.name)} is closed. Canada's three federal research councils replaced it with the ${esc(dc.replacedByName)}, worth ${esc(dc.replacedByAmount)}. Eligibility: ${esc(dc.replacedByWho)} The deadline is ${esc(dc.replacedByDeadline)}. Confirm everything on the official programme page before applying.</div>`
+: `<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> The ${esc(s.name)} is a ${esc(s.type.toLowerCase())} scholarship for ${esc(s.level)} study in ${esc(s.country)}, worth ${esc(s.amount)}. It's open to ${esc(s.who)}, with applications typically due around ${esc(s.deadline)}. Always confirm the exact award, criteria and deadline on the official scholarship website, as they change each year.</div>`}
+${dc ? `<div class="card">
+  <h2>What replaced the ${esc(s.name)}</h2>
+  <p>The Canadian Institutes of Health Research (CIHR), the Natural Sciences and Engineering Research Council (NSERC) and the Social Sciences and Humanities Research Council (SSHRC) merged several doctoral awards — including this one — into a single harmonised programme.</p>
+  <table style="width:100%;border-collapse:collapse" class="uni-table">
+    <tr><td><strong>Replacement</strong></td><td>${esc(dc.replacedByName)}</td></tr>
+    <tr><td><strong>Award</strong></td><td>${esc(dc.replacedByAmount)}</td></tr>
+    <tr><td><strong>Who can apply</strong></td><td>${esc(dc.replacedByWho)}</td></tr>
+    <tr><td><strong>Deadline</strong></td><td>${esc(dc.replacedByDeadline)}</td></tr>
+  </table>
+  <p><a class="cta" href="${esc(dc.replacedByUrl)}" target="_blank" rel="noopener">Open the official ${esc(dc.replacedByName)} page →</a></p>
+  <p class="note">External link to the awarding body. LandingPrep is not affiliated with it and does not process applications.</p>
+</div>` : ""}
 <div class="card">
   <h2>Key facts</h2>
   <table style="width:100%;border-collapse:collapse" class="uni-table">
@@ -1461,21 +1487,22 @@ function scholarshipDetailPage(s) {
     <tr><td><strong>Deadline</strong></td><td>${esc(s.deadline)}</td></tr>
   </table>
 </div>
-<div class="card">
+${dc ? "" : `<div class="card">
   <h2>What the ${esc(s.name)} covers — and why it's worth applying</h2>
   <p>${esc(s.highlight)} The award (${esc(s.amount)}) is aimed at ${esc(s.level)} study in ${esc(s.country)}, and goes to ${esc(s.who)}.</p>
   <p>Beyond the money, prestigious scholarships like this strengthen your CV, open alumni and professional networks, and can make your visa application stronger by proving your funding. Even if you're unsure you'll win, applying costs nothing here and the process sharpens your SOP for every other application.</p>
-</div>
+</div>`}
 <div class="card">
-  <h2>How to apply (and stand out)</h2>
+  <h2>How to apply${dc ? ` for the ${esc(dc.replacedByName)}` : " (and stand out)"}</h2>
+  ${dc ? `<p class="note">These steps are for the replacement programme. The ${esc(s.name)} itself is closed and cannot be applied for.</p>` : ""}
   <ol>
-    <li>Confirm you meet the eligibility: ${esc(s.who)}.</li>
+    <li>Confirm you meet the eligibility: ${esc(dc ? dc.replacedByWho : s.who)}.</li>
     <li>Read the official criteria carefully and note exactly what the scholarship values.</li>
     <li>Secure your university admission or nomination first, where it's required.</li>
     <li>Write a specific, story-led SOP that ties your goals to the scholarship's mission — build and refine yours free with our SOP tool.</li>
     <li>Line up strong, tailored recommendation letters early (referees need 2–3 weeks).</li>
     <li>Highlight leadership, impact and a clear plan for how you'll use the opportunity.</li>
-    <li>Submit well before the ${esc(s.deadline)} deadline, and prepare for an interview if you're shortlisted.</li>
+    <li>Submit well before the ${esc(dc ? dc.replacedByDeadline : s.deadline)} deadline, and prepare for an interview if you're shortlisted.</li>
   </ol>
   <p class="note">Always verify amounts, eligibility and deadlines on the official scholarship website — these change every year.</p>
 </div>

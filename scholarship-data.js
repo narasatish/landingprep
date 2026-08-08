@@ -38,7 +38,35 @@
     { id: "swiss-excellence", name: "Swiss Government Excellence", country: "Switzerland", level: "PhD & Research", type: "Government", amount: "Fully funded", who: "Researchers & postgrads from eligible countries", deadline: "Sep\u2013Dec", highlight: "Funds research/PhD at Swiss universities.", official: "https://www.sbfi.admin.ch/en/swiss-government-excellence-scholarships" },
     { id: "holland", name: "Holland Scholarship", country: "Netherlands", level: "UG & Master's", type: "Govt + University", amount: "\u20AC5,000 (year 1)", who: "Non-EEA students", deadline: "February/May", highlight: "Dutch government + university partial scholarship.", official: "https://www.studyinnl.org/finances/nl-scholarship" },
     // ─── Canada ───
-    { id: "vanier", name: "Vanier Canada Graduate Scholarship", country: "Canada", level: "PhD", type: "Government", amount: "CAD 50,000/yr (3 yrs)", who: "Doctoral students; leadership + research", deadline: "Sep\u2013Nov", highlight: "Canada's top doctoral scholarship." },
+    {
+      id: "vanier",
+      name: "Vanier Canada Graduate Scholarship",
+      country: "Canada",
+      level: "PhD",
+      type: "Government",
+      amount: "CAD 50,000/yr (3 yrs) \u2014 closed",
+      who: "Doctoral students; leadership + research",
+      deadline: "Closed \u2014 final competition fall 2024",
+      highlight: "Canada's former flagship doctoral scholarship, discontinued after the fall 2024 competition and replaced by the Canada Graduate Research Scholarship \u2013 Doctoral.",
+      // Verified 2026-08-08 against the University of Toronto SGS award page and the official
+      // NSERC funding-opportunity page. vanier.gc.ca no longer resolves. Kept (not deleted)
+      // because people still search "Vanier scholarship" and need to be told it is gone and
+      // what took its place — that is the most useful thing this URL can now do.
+      discontinued: {
+        // Explicit short title: the 60-char clamp ate the word "Discontinued" from the
+        // generated one, which is the single most important thing a searcher must see.
+        title: "Vanier Scholarship Discontinued (2025)",
+        // Explicit description too — the generated one ran past the 160-char budget and got
+        // clamped to "It is replaced by the…", losing the answer the searcher came for.
+        desc: "Vanier Canada Graduate Scholarship: discontinued after fall 2024. Replaced by the Canada Graduate Research Scholarship \u2013 Doctoral, CAD 40,000/yr.",
+        finalCompetition: "fall 2024 (results released mid-April 2025)",
+        replacedByName: "Canada Graduate Research Scholarship \u2013 Doctoral (CGRS-D)",
+        replacedByAmount: "CAD 40,000 per year for 36 months",
+        replacedByDeadline: "17 October (agency deadline; Canadian institutions set earlier internal dates)",
+        replacedByWho: "Doctoral applicants with no more than 36 months of full-time-equivalent doctoral study by 31 December of the application year. International applicants are eligible, but up to 15% of awards are available to them.",
+        replacedByUrl: "https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-doctoral-program"
+      }
+    },
     { id: "pearson", name: "Lester B. Pearson Scholarship", country: "Canada", level: "Undergraduate", type: "University", amount: "Fully funded", who: "Exceptional international undergrads (U of Toronto)", deadline: "November", highlight: "U of Toronto's premier international UG award.", official: "https://future.utoronto.ca/pearson-scholarships" },
     { id: "cgs", name: "Canada Graduate Scholarships", country: "Canada", level: "Master's & PhD", type: "Government", amount: "CAD 17,500\u201350,000", who: "Master's & doctoral students", deadline: "Dec", highlight: "Federal funding across Canadian universities.", official: "https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program" },
     // ─── Australia & NZ ───
