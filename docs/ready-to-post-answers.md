@@ -24,7 +24,97 @@
 
 ---
 
-## 1. GMAT formulas  ·  ~170 impressions/mo, currently pos ~65  ·  **your #1 demand**
+## 📊 Numbers refreshed against the 2026-08-08 GSC export (last 3 months)
+
+The per-topic figures in the headings below were **overstated** in the first draft and are now
+corrected. All six cited URLs re-checked: still 200.
+
+| Topic | was written as | actually |
+|---|---|---|
+| GMAT formulas | ~170/mo, pos ~65 | **~92/mo, pos 54** |
+| Germany blocked account | ~113/mo, pos ~35–42 | **~64/mo, pos 37** |
+| Non-collateral loan | ~56/mo, pos ~45 | **~38/mo, pos 44** |
+| Canada GIC | ~37/mo, pos ~40 | **~45/mo, pos 44** (the only one that grew) |
+| Student-visa checklist | ~66/mo, **pos ~23** | **~25/mo, page at pos 41** |
+
+⚠️ The checklist was billed as "your closest to page 1". It isn't — the **page** sits at pos 41.
+Only the exact query *"student visa checklist"* is at pos 24. Don't plan around the old number.
+
+**Be realistic about what these posts do.** At pos 37–54, none of topics 1–5 are close to page 1,
+and a forum answer will not move them there. Their value is **direct referral traffic + brand
+mentions**, which is still worth having — just don't expect a ranking jump from posting.
+
+---
+
+## ⭐ 7. University admission requirements — the cluster these drafts MISSED
+
+The fresh export shows the site's real strength is **university-specific long-tail**, not the
+big-ticket topics above. These already rank page one, unprompted:
+
+| query | position |
+|---|---|
+| "rmit university pte score requirement" | **5.4** |
+| "rwth aachen ielts requirement" | **6.0** |
+| "technical university of darmstadt application fee" | **6.7** |
+| "university college cork application fee" | **9.9** |
+| "ucc acceptance rate" | **10.3** |
+| "university of sydney ielts requirement" | **10.0** |
+
+This is the best forum-answer material you have, for three reasons: the questions get asked
+constantly ("what IELTS do I need for X?"), the site has 167 university pages with the actual
+numbers, and a specific factual answer is exactly what those subs reward.
+
+**Where:** r/gradadmissions, r/StudyAbroad, r/germany, r/IWantOut, r/AskAcademia, Quora
+**Target pages:** `https://landingprep.com/university/<id>/` · `https://landingprep.com/ielts-for-<id>/`
+(also `pte-for-` and `toefl-for-`). **Check the exact slug returns 200 before posting.**
+
+### The pattern (adapt per thread — never paste twice)
+
+> For [University], the published minimum is usually **IELTS [X]** (TOEFL [Y], PTE [Z]), but two
+> things trip people up:
+>
+> 1. **Course minimums beat university minimums.** The headline band is the floor; competitive
+>    programmes often sit 0.5 higher, and some cap the per-section minimum too. Check the course
+>    page, not just the international-admissions page.
+> 2. **The per-section minimum is what actually rejects people.** An overall 6.5 with a 5.5 in
+>    Writing usually fails. Aim ~0.5 above the overall AND clear every band.
+>
+> Acceptance rate is worth a sanity check too — [University] is around **[N]%**, so treat the
+> English score as necessary-not-sufficient and put the effort into the SOP.
+>
+> I pulled these from a free page we maintain per university: [link]. No signup.
+> *(disclosure: I help build that site)*
+
+**Why this beats topics 1–5 for you right now:** you are already on page one for these queries,
+so a forum answer compounds with a ranking that exists, instead of fighting from page 4.
+
+### Worked example — RWTH Aachen (you rank **pos 6** for "rwth aachen ielts requirement")
+
+Figures below were read off your own live page on 2026-08-08, not from memory. **Re-read the page
+before posting** — if the site is wrong, the post repeats the error to an audience that will
+correct you publicly.
+
+> RWTH Aachen's published minimum is **IELTS 6.5** (TOEFL 90, PTE 59) for most English-taught
+> Master's, but check your specific programme — several ask **IELTS 7.0**, and a few German-taught
+> courses want a DSH/TestDaF instead of English at all.
+>
+> Two things that catch people out:
+>
+> 1. **Per-section minimums.** An overall 6.5 with 5.5 in Writing still gets rejected. Clear every
+>    band, not just the average.
+> 2. **RWTH is genuinely selective** — roughly **10%** acceptance. The English score only gets you
+>    into the pile; the transcript and the motivation letter decide it. If your band is already at
+>    the minimum, put your remaining prep time into the application, not into a 0.5 band chase.
+>
+> Full requirement + fees breakdown here (free, no signup): https://landingprep.com/university/rwth/
+> *(disclosure: I help build that site)*
+
+**Slugs verified 200 on 2026-08-08:** `/university/rwth/` · `/university/ucc/` · `/ielts-for-rwth/`
+· `/pte-for-rmit/` · `/toefl-for-lse/`
+
+---
+
+## 1. GMAT formulas  ·  ~92 impressions/mo, pos ~54  ·  **still your #1 demand**
 
 **Where:** r/GMAT, r/GMATpreparation, Quora ("What are the must-know GMAT Quant formulas?")
 **Target page:** https://landingprep.com/gmat-quant-formulas/ (now has a **printable Save-as-PDF** sheet)
@@ -54,7 +144,7 @@
 
 ---
 
-## 2. Germany blocked account  ·  ~113 impressions/mo, pos ~35–42  ·  **your strongest topic**
+## 2. Germany blocked account  ·  ~64 impressions/mo, pos ~37  ·  **your strongest topic**
 
 **Where:** r/germany, r/germanstudentvisa, r/Indians_StudyAbroad, Quora ("How much for a German blocked account 2026?")
 **Target page:** https://landingprep.com/study-in-germany/ + https://landingprep.com/blog/germany-blocked-account-2026-guide/
@@ -81,7 +171,7 @@
 
 ---
 
-## 3. Non-collateral / unsecured education loan  ·  ~56 impressions/mo, pos ~45
+## 3. Non-collateral / unsecured education loan  ·  ~38 impressions/mo, pos ~44
 
 **Where:** r/StudyAbroad, r/india, r/IndianStudents, Quora ("Can I get an education loan without collateral?")
 **Target page:** https://landingprep.com/study-abroad-education-loan/ + the EMI calculator
@@ -105,7 +195,7 @@
 
 ---
 
-## 4. Canada GIC  ·  ~37 impressions/mo, pos ~40
+## 4. Canada GIC  ·  ~45 impressions/mo, pos ~44  ·  **the one topic that GREW**
 
 **Where:** r/ImmigrationCanada, r/studentvisacanada, r/CanadaStudyPermit, Quora ("How much is the GIC 2026?")
 **Target page:** https://landingprep.com/blog/gic-account-canada-2026-guide/
@@ -127,7 +217,7 @@
 
 ---
 
-## 5. Student-visa document checklist  ·  ~66 impressions/mo, pos ~23 (your closest to page 1)
+## 5. Student-visa document checklist  ·  ~25 impressions/mo, page at pos ~41
 
 **Where:** r/studyAbroad, r/gradadmissions, Quora ("What documents do I need for a student visa?")
 **Target page:** https://landingprep.com/tools/student-visa-document-checklist/ (interactive, tick-off tool)

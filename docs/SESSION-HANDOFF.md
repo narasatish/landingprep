@@ -1,7 +1,6 @@
 # LandingPrep — Session Handoff (read me FIRST in a new session)
 
-**Last updated: 2026-08-08 (session 9) · repo at v417 (HEAD `1b926a1c`) · branch `main`,
-all pushed & live.**
+**Last updated: 2026-08-08 (session 9) · repo at v421 · branch `main`, all pushed & live.**
 Production auto-deploys on every push to `main`. Keep this file updated at the end of major
 work — it went 4 versions stale (said v394 while production ran v401) and cost a session's
 worth of re-derivation.
@@ -17,8 +16,8 @@ worth of re-derivation.
 > production ran **v416**. The number gets typed from memory instead of read after the build,
 > and the warning did not stop it happening again. Read `sw.js`
 > (`git show <sha>:sw.js | grep lp-v`) for the real value, every time.
-> Verified chain: 401 → 405 → 409 → 411 → 413 → 415 → 416 → 417 — every deploy bumped, no
-> duplicates.
+> Verified chain: 401 → 405 → 409 → 411 → 413 → 415 → 416 → 417 → 421 — every deploy bumped,
+> no duplicates.
 
 ---
 
@@ -116,7 +115,7 @@ Served by **`server.js` (Express) on Render free tier**. Owner: **Satish**
   Filtered properly: only **3** failed. The pomodoro chips are exactly 24×24 and already pass.
   63 remain under the 44×44 AAA/Apple-HIG guideline — a design choice, not a compliance failure.
 
-## Shipped in session 9 (v415 → v417) — first session with real GSC data
+## Shipped in session 9 (v415 → v421) — first session with real GSC data
 
 **v415 — pruned 24 zero-traffic pages, every removal backed by the export**
 - 4 `/embed/<widget>/` → `noindex, follow` + out of sitemap. 73–89-word **iframe targets** for
@@ -162,13 +161,28 @@ URL as `url`/`sameAs`/`sponsor` so the entity resolves to the awarding body, not
   (`czech-republic-*`, `denmark-*`, `finland-*`, `poland-*`, …) likewise: their official
   addresses were not confidently known, and guessing is what the never-fabricate rule forbids.
 
-> 🚩 **OPEN CONTENT-ACCURACY ISSUE — `/scholarship/vanier/`.** The page presents the Vanier
-> Canada Graduate Scholarship at "CAD 50,000/yr" as current, but **`vanier.gc.ca` no longer
-> resolves on any variant tried**, and the programme appears restructured into the Canada
-> Graduate Research Scholarship (`nserc-crsng.canada.ca`, live). The figures were deliberately
-> NOT edited: correcting them means asserting unverified facts about the replacement programme.
-> **Someone must verify, then update or retire that page.** Worth a wider check too — nothing
-> else in `scholarship-data.jsx` has been re-verified against source since it was written.
+**v421 — the Vanier page was advertising a scholarship that no longer exists** ✅ RESOLVED
+It showed "CAD 50,000/yr" with a "Sep–Nov" deadline as though applications were open. Verified
+against the University of Toronto SGS award page and the official NSERC funding page: the
+programme is **discontinued** (final competition fall 2024, results April 2025), replaced by the
+**Canada Graduate Research Scholarship – Doctoral** (CAD 40,000/yr for 36 months, 17 Oct agency
+deadline, international applicants capped at 15% of awards). This is the worst error class this
+site can make — a real applicant could have prepared for a competition that no longer runs.
+- **Kept, not deleted.** People still search "Vanier"; the useful thing this URL can now do is
+  say it's gone and what replaced it. New `discontinued` field drives an unmissable ⛔ banner,
+  a replacement table, rewritten FAQs ("Can I still apply?" → "No"), how-to-apply steps that
+  describe the REPLACEMENT and say so, and suppression of "why it's worth applying". 403→731 words.
+- ⚠️ **Both clamps had to be overridden by hand.** The generated title clamped back to plain
+  "Vanier Canada Graduate Scholarship", dropping the word **Discontinued** — the one thing the
+  searcher must see. The description clamped mid-phrase at "It is replaced by the…". The
+  `discontinued` object therefore takes optional `title` and `desc` overrides. **Any future
+  closed programme should use them** rather than fight the clamp.
+
+> 🚩 **STILL OPEN — the rest of `scholarship-data.jsx` has never been re-verified.** Vanier was
+> found only because its official URL 404'd during the v417 link pass. **11 of 26 official URLs
+> had silently moved**, so amounts, deadlines and eligibility in that file are equally likely to
+> be stale. Nothing there has been checked against source since it was written. Treat every
+> figure as unverified until someone does a pass.
 
 **Tried and reverted (session 8): `content-visibility:auto` on the 16 below-fold sections.**
 Attempted twice — first with a flat 600px placeholder, then properly with per-section
@@ -300,7 +314,7 @@ for dangling "…Acceptance" on long names, chasing a defect that does not exist
    auto-publisher is the scaled-content pattern the March-2026 update penalises, on visa/fee content
    where a fabricated figure misleads a real applicant). `daily-content.yml` fires daily at 04:30 UTC
    and no-ops. Newest blog `datePublished` is 2026-01-01. **Owner's call — do not re-enable unilaterally.**
-5. **Verify `/scholarship/vanier/`** — its official domain is dead and the programme looks
+5. ~~Verify `/scholarship/vanier/`~~ — **DONE in v421** (discontinued; page now explains the replacement). But the REST of `scholarship-data.jsx` is still unverified — see the 🚩 above.
    restructured; figures deliberately left untouched (see the 🚩 above). Update or retire.
 6. Resend email setup may still be pending. Move the repo OFF OneDrive.
 
