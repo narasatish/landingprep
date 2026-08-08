@@ -6330,6 +6330,8 @@ function Home({ onGuide, onPractice, onNav }) {
     "img",
     {
       src: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1280&q=70",
+      srcSet: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=70&w=480 480w, https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=70&w=768 768w, https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=70&w=1024 1024w, https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=70&w=1280 1280w",
+      sizes: "(min-width: 1280px) 1176px, 92vw",
       alt: "Graduates throwing their caps in celebration with a city skyline",
       loading: "lazy",
       width: "1280",

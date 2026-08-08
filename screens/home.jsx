@@ -595,10 +595,22 @@ function Home({ onGuide, onPractice, onNav }) {
       <section className="section reveal" style={{ paddingTop: 8, paddingBottom: 8 }}>
         <div className="shell">
           <div className="home-hero-photo">
-            {/* w=1280/q=70 matches the destination photos and cuts ~40% off the 181 KB the
-                w=1600 version cost; width/height give the browser the intrinsic ratio so the
-                band reserves its space and cannot shift layout while the photo loads. */}
+            {/* width/height give the browser the intrinsic ratio so the band reserves its
+                space and cannot shift layout while the photo loads.
+
+                srcset/sizes added after PageSpeed flagged "Improve image delivery — 95 KiB":
+                every device was downloading the w=1280 file regardless of screen. Measured
+                render widths — 335 CSS px at a 375px viewport (671 device px at DPR 2) and
+                1176 CSS px inside the 1240px .shell on desktop — so a phone was fetching
+                roughly twice the pixels it can display. The 480/768/1024/1280 ladder lets the
+                browser pick: a DPR-2 phone now takes the 768 file instead of 1280.
+                `sizes` mirrors the measured layout, not a guess. */}
             <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1280&q=70"
+                 srcSet={"https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=70&w=480 480w, "
+                       + "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=70&w=768 768w, "
+                       + "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=70&w=1024 1024w, "
+                       + "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=70&w=1280 1280w"}
+                 sizes="(min-width: 1280px) 1176px, 92vw"
                  alt="Graduates throwing their caps in celebration with a city skyline" loading="lazy"
                  width="1280" height="853" decoding="async"
                  onError={(e) => { const p = e.target.closest(".home-hero-photo"); if (p) p.classList.add("no-photo"); }} />
