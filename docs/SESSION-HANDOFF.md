@@ -1,6 +1,6 @@
 # LandingPrep — Session Handoff (read me FIRST in a new session)
 
-**Last updated: 2026-08-08 (session 9) · repo at v417 · branch `main`, all pushed & live.**
+**Last updated: 2026-08-08 (session 9) · repo at v416 · branch `main`, all pushed & live.**
 Production auto-deploys on every push to `main`. Keep this file updated at the end of major
 work — it went 4 versions stale (said v394 while production ran v401) and cost a session's
 worth of re-derivation.
@@ -11,10 +11,12 @@ worth of re-derivation.
 > content-priority decision** — the session-9 export was the difference between pruning the
 > right 24 pages and destroying the site's best-performing family (see below).
 
-> ⚠️ **Do not trust the version number written in a commit MESSAGE.** `1febcc32` says "(v413)"
-> but actually shipped **v411** — the number was typed from memory instead of read after the
-> build. Read `sw.js` (`git show <sha>:sw.js | grep lp-v`) for the real value. Verified chain:
-> 401 → 405 → 409 → 411 → 413, every deploy bumped, no duplicates.
+> ⚠️ **Do not trust the version number written in a commit MESSAGE — or in this file.**
+> `1febcc32` says "(v413)" but shipped **v411**, and session 9 then wrote "v417" here while
+> production ran **v416**. The number gets typed from memory instead of read after the build,
+> and the warning did not stop it happening again. Read `sw.js`
+> (`git show <sha>:sw.js | grep lp-v`) for the real value, every time.
+> Verified chain: 401 → 405 → 409 → 411 → 413 → 415 → 416, every deploy bumped, no duplicates.
 
 ---
 
@@ -112,7 +114,7 @@ Served by **`server.js` (Express) on Render free tier**. Owner: **Satish**
   Filtered properly: only **3** failed. The pomodoro chips are exactly 24×24 and already pass.
   63 remain under the 44×44 AAA/Apple-HIG guideline — a design choice, not a compliance failure.
 
-## Shipped in session 9 (v415 + v417) — first session with real GSC data
+## Shipped in session 9 (v415 + v416) — first session with real GSC data
 
 **v415 — pruned 24 zero-traffic pages, every removal backed by the export**
 - 4 `/embed/<widget>/` → `noindex, follow` + out of sitemap. 73–89-word **iframe targets** for
@@ -132,7 +134,7 @@ Served by **`server.js` (Express) on Render free tier**. Owner: **Satish**
   (`/blog/express-entry-july-2026-draws-recap/`, whose `expires: 2026-08-07` passed and the
   existing auto-archive noindexed on schedule — `generate-seo-pages.mjs:1385`).
 
-**v417 — fed the proven exam×university pages**
+**v416 — fed the proven exam×university pages**
 GSC's best performers were the site's *worst* internally linked: `/pte-for-rmit/` had **1**
 inbound link on 93 impressions; `/academic-vocabulary-for-essays/` 2 on 62; `/compare/rwth-vs-kit/`
 2 on 55. Cause: the university related-grid linked **only** `/ielts-for-<id>/`, never the
