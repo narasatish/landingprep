@@ -32,12 +32,32 @@
 // your home country rather than direct, with deadlines set "per established country/award
 // deadlines". The stored entry already said all of this correctly.
 { id: "fulbright", name: "Fulbright Foreign Student Program", country: "USA", level: "Master's & PhD", type: "Government", amount: "Fully funded", who: "International students; apply via your home-country Fulbright commission or US Embassy", deadline: "Feb–Oct (varies by country)", highlight: "The flagship US government scholarship — tuition, living, airfare & insurance.", verified: "2026-08-08" , official: "https://foreign.fulbrightonline.org/"},
-    { id: "knight-hennessy", name: "Knight-Hennessy Scholars", country: "USA", level: "Master's & PhD", type: "University", amount: "Fully funded", who: "Any graduate programme at Stanford; strong leadership", deadline: "October", highlight: "Stanford's elite fully-funded graduate scholarship across all schools." , official: "https://knight-hennessy.stanford.edu/"},
+    // VERIFIED 2026-08-08 on knight-hennessy.stanford.edu/admission/eligibility (via browser —
+// WebFetch gets 403). Confirmed genuinely open: "no restrictions based on age, college or
+// university, field of study, or career aspiration", all nationalities, no institutional
+// endorsement needed, no regional quotas. The gate the entry omitted is that KHS is NOT a
+// standalone award — you must separately apply to, be accepted by and enrol in a full-time
+// Stanford graduate programme, starting both the same year. Scope is wider than "Master's &
+// PhD": DMA, JD, MA, MBA, MD, MFA, MPP, MS and PhD all qualify.
+{ id: "knight-hennessy", name: "Knight-Hennessy Scholars", country: "USA", level: "Any full-time Stanford graduate degree (MA, MS, MBA, JD, MD, MFA, MPP, PhD…)", type: "University", amount: "Fully funded", who: "Open to all nationalities and ages, no endorsement needed — but you must separately win admission to a full-time Stanford graduate programme and start both in the same year", deadline: "October", highlight: "Stanford's elite fully-funded graduate scholarship across all schools.", verified: "2026-08-08" , official: "https://knight-hennessy.stanford.edu/admission/eligibility"},
     { id: "aauw", name: "AAUW International Fellowships", country: "USA", level: "Master's & PhD", type: "Merit (Women)", amount: "$20,000–50,000", who: "Women who are not US citizens", deadline: "November", highlight: "Supports women pursuing graduate study in the US." },
-    { id: "fulbright-nehru", name: "Fulbright-Nehru Master's Fellowship", country: "USA", level: "Master's", type: "Government", amount: "Fully funded", who: "Indian citizens with 3+ yrs experience", deadline: "May", highlight: "India-specific Fulbright track — fully funded US master's." , official: "https://www.usief.org.in/"},
+    // VERIFIED 2026-08-08 on usief.org.in. The 3-years-experience gate was already right. What was
+// overstated is "Fully funded": USIEF states plainly that "USIEF funding may not cover all costs
+// and the fellow may need to supplement grant benefits with other resources." Also adds three
+// disqualifiers the entry never mentioned — a minimum of 55% marks, no existing US degree or
+// current enrolment in a US programme, and Indian government employees are ineligible.
+{ id: "fulbright-nehru", name: "Fulbright-Nehru Master's Fellowship", country: "USA", level: "Master's", type: "Government", amount: "Tuition & fees, living costs, round-trip economy airfare, J-1 support and insurance — but USIEF says it may not cover everything", who: "Indian citizens with a bachelor's at 55%+ and 3+ years of full-time paid work experience. NOT eligible if you already hold or are enrolled in a US degree, or work for an Indian government entity", deadline: "Mid-May", highlight: "India-specific Fulbright track for a US master's.", verified: "2026-08-08" , official: "https://www.usief.org.in/fulbright-nehru-masters-fellowships/"},
 
     // ─── UK ───
-    { id: "chevening", name: "Chevening Scholarship", country: "UK", level: "Master's", type: "Government", amount: "Fully funded", who: "Leadership potential + 2 yrs work experience", deadline: "November", highlight: "The UK government's global one-year master's scholarship." , official: "https://www.chevening.org/"},
+    // VERIFIED 2026-08-08 on chevening.org/scholarships/who-can-apply/eligibility (via browser —
+// WebFetch times out on this host). "Two years' work experience" was right but under-specified:
+// it is 2,800 HOURS, acquired AFTER the undergraduate degree. Two further gates were missing
+// entirely — you must apply to THREE different eligible UK courses and hold an unconditional
+// offer from one by the deadline, and you must commit to returning home for two years. Also
+// ineligible: British/dual-British citizens, UK residents at time of application, employees (and
+// close relatives) of a government department/British Council/partner university, and anyone
+// previously funded by a UK government scholarship.
+{ id: "chevening", name: "Chevening Scholarship", country: "UK", level: "Master's (one year, taught)", type: "Government", amount: "Fully funded", who: "2 years' work experience (2,800 hours) after your bachelor's; must apply to THREE UK courses and hold an unconditional offer from one; must return home for 2 years afterwards. Not open to British/dual-British citizens or UK residents", deadline: "Early November", highlight: "The UK government's global one-year master's scholarship.", verified: "2026-08-08" , official: "https://www.chevening.org/scholarships/who-can-apply/eligibility/"},
     // VERIFIED 2026-08-08 on cscuk.fcdo.gov.uk (Master's page): full approved tuition, living
 // allowance "£1,712 per month, or £2,000 per month for those at universities in the London
 // metropolitan area", return airfare, study-travel grant, child allowance. 42 Commonwealth
@@ -53,20 +73,35 @@
 // Rhodes covers the DPhil too (up to three years), not Master's only.
 { id: "rhodes", name: "Rhodes Scholarship", country: "UK", level: "Master's & DPhil", type: "University", amount: "Fully funded — Oxford fees + £20,400/yr stipend (2025-26), flights, visa & health surcharge", who: "Exceptional students from eligible countries (Oxford)", deadline: "July–September", highlight: "The world's oldest graduate scholarship, at Oxford.", verified: "2026-08-08" , official: "https://www.rhodeshouse.ox.ac.uk/scholarships/the-rhodes-scholarship/"},
     { id: "clarendon", name: "Clarendon Fund Scholarship", country: "UK", level: "Master's & PhD", type: "University", amount: "Fully funded", who: "Any graduate course at Oxford; academic excellence", deadline: "Jan (course deadline)", highlight: "Oxford's flagship merit scholarship — automatic consideration." },
-    { id: "great", name: "GREAT Scholarships", country: "UK", level: "Master's", type: "Govt + University", amount: "£10,000", who: "Select countries incl. India", deadline: "Varies by university", highlight: "British Council partial-funding for one-year master's." , official: "https://study-uk.britishcouncil.org/scholarships-funding/great-scholarships"},
+    // VERIFIED 2026-08-08 on study-uk.britishcouncil.org (via browser — WebFetch gets 403 here).
+// "£10,000 towards their tuition fees" — the bare "£10,000" could read as full funding, so it is
+// now explicit that it is a tuition contribution only, with living costs on you. 18 named
+// eligible countries; 140+ scholarships at 60+ UK universities for 2026-27; one-year TAUGHT
+// postgraduate courses; you apply to the university, not the British Council.
+{ id: "great", name: "GREAT Scholarships", country: "UK", level: "Master's (one year, taught)", type: "Govt + University", amount: "£10,000 towards tuition only — living costs not covered", who: "Citizens of 18 countries: Bangladesh, China, Egypt, France, Ghana, Greece, India, Indonesia, Italy, Kenya, Malaysia, Mexico, Nigeria, Pakistan, Spain, Thailand, Turkey, Vietnam", deadline: "Varies by university — apply to the university direct", highlight: "British Council partial-funding for a one-year master's.", verified: "2026-08-08" , official: "https://study-uk.britishcouncil.org/scholarships-funding/great-scholarships"},
 
     // ─── Germany & Europe ───
     // VERIFIED 2026-08-08 on daad.de itself (scholarship database, EPOS entry): "monthly payments
 // of 992 euros" for graduates and "1,300 euros (1,400 euros beginning with February 2026)" for
 // doctoral candidates. The stored €934 was an older rate — stale, not wrong-by-invention.
 { id: "daad", name: "DAAD Scholarships", country: "Germany", level: "Master's & PhD", type: "Government", amount: "€992/month (Master's) · €1,400/month (PhD from Feb 2026)", who: "International graduates", deadline: "Varies (often Oct)", highlight: "Germany's main funding body — monthly stipend, plus health/accident/liability insurance and a travel allowance.", verified: "2026-08-08" , official: "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/?detail=50076777"},
-    { id: "erasmus", name: "Erasmus Mundus Joint Masters", country: "Europe (Multiple)", level: "Master's", type: "EU Government", amount: "Fully funded", who: "Study in 2+ European countries", deadline: "Oct–Jan", highlight: "Prestigious multi-country EU master's, fully funded." , official: "https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters"},
+    // VERIFIED 2026-08-08 on erasmus-plus.ec.europa.eu: covers "participation costs" plus a
+// contribution to travel, visa and a living allowance; open worldwide to anyone holding (or
+// about to complete) a bachelor's. The "October and January" window matched what we had.
+// The EU page publishes NO euro figures centrally — each joint programme sets its own — so
+// the amount says that instead of implying a fixed sum.
+{ id: "erasmus", name: "Erasmus Mundus Joint Masters", country: "Europe (Multiple)", level: "Master's", type: "EU Government", amount: "Participation costs + travel, visa and a living allowance (each consortium sets its own figures)", who: "Worldwide; need a bachelor's, or be graduating before the course starts. Study in 2+ European countries", deadline: "Usually October–January, set per programme", highlight: "Prestigious multi-country EU master's.", verified: "2026-08-08" , official: "https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters"},
     // PARTIALLY VERIFIED 2026-08-08 on campusfrance.org. Confirmed: "Only applications submitted by
 // French higher education institutions are accepted" (you cannot self-apply), and age limits of
 // 29 for Master's / 35 for PhD. The €1,181 monthly figure is NOT stated on that page — it lives
 // in the annual "Eiffel Programme rules" PDF — so it stays flagged rather than asserted.
 { id: "eiffel", name: "Eiffel Excellence Scholarship", country: "France", level: "Master's & PhD", type: "Government", amount: "Monthly allowance (~€1,181 at Master's — confirm the current year's programme rules)", who: "Under 29 (Master's) / 35 (PhD); your French institution must nominate you — no self-application", deadline: "January", highlight: "French government scholarship for top international talent.", verified: "2026-08-08" , official: "https://www.campusfrance.org/en/france-excellence-eiffel-scholarship-program"},
-    { id: "swiss-excellence", name: "Swiss Government Excellence", country: "Switzerland", level: "PhD & Research", type: "Government", amount: "Fully funded", who: "Researchers & postgrads from eligible countries", deadline: "Sep–Dec", highlight: "Funds research/PhD at Swiss universities." , official: "https://www.sbfi.admin.ch/en/swiss-government-excellence-scholarships"},
+    // VERIFIED 2026-08-08 on sbfi.admin.ch: "CHF 2450.--/month" for both tracks. Two hard gates the
+// entry omitted — you must be UNDER 35, and for a Research Fellowship you must already hold a
+// Master's AND have secured an academic supervisor in Switzerland before applying. Applications
+// go through Swiss diplomatic representations, not direct, and are free of charge. Open from
+// 20 August 2026 for the 2027-28 round; decisions by 31 May. Open to 183 countries.
+{ id: "swiss-excellence", name: "Swiss Government Excellence", country: "Switzerland", level: "PhD & Research (also Master's in the arts track)", type: "Government", amount: "CHF 2,450/month", who: "Under 35; Research Fellowship needs a completed Master's AND a Swiss supervisor secured in advance. Apply via your Swiss embassy, not direct", deadline: "Opens 20 August; decisions by 31 May", highlight: "Funds research/PhD at Swiss universities.", verified: "2026-08-08" , official: "https://www.sbfi.admin.ch/en/swiss-government-excellence-scholarships"},
     // VERIFIED 2026-08-08 on studyinnl.org. Figures were already correct: "€5,000 ... in the first
 // year", one-off, non-EEA, bachelor's or master's, "not a full-tuition scholarship". Only the
 // NAME had changed — it is now the NL Scholarship. Deadlines are set per institution, not
@@ -109,8 +144,20 @@
 { id: "cgs", name: "Canada Graduate Research Scholarship (CGRS)", country: "Canada", level: "Master's & PhD", type: "Government", amount: "CAD 27,000 (Master's) · CAD 40,000/yr (Doctoral)", who: "Canadian citizens, permanent residents and Protected Persons ONLY — international students are not eligible", deadline: "1 December (20:00 ET)", highlight: "Canada's harmonised federal graduate award, replacing CGS-M/CGS-D and the Vanier CGS. Not open to international students.", verified: "2026-08-08" , official: "https://nserc-crsng.canada.ca/en/funding-opportunity/canada-graduate-research-scholarship-masters-program"},
 
     // ─── Australia & NZ ───
-    { id: "australia-awards", name: "Australia Awards", country: "Australia", level: "Master's", type: "Government", amount: "Fully funded", who: "Developing-country citizens", deadline: "April–June", highlight: "Australian govt scholarship — tuition, living, travel." , official: "https://www.dfat.gov.au/people-to-people/australia-awards"},
-    { id: "rtp", name: "Research Training Program (RTP)", country: "Australia", level: "Master's & PhD (research)", type: "Government", amount: "Fully funded + stipend", who: "Domestic & international research students", deadline: "Aug–Oct", highlight: "Funds research degrees at Australian universities." , official: "https://www.education.gov.au/research-block-grants/research-training-program"},
+    // VERIFIED 2026-08-08 on dfat.gov.au (via browser — WebFetch times out). Benefits confirmed:
+// full tuition, return economy airfare, a one-off establishment allowance, a fortnightly
+// Contribution to Living Expenses, the compulsory Introductory Academic Program, Overseas
+// Student Health Cover and pre-course English if needed. The LEVEL was wrong — it funds
+// "full time undergraduate or postgraduate study", not Master's only, and includes TAFE as well
+// as universities. Targeted at partner developing countries, particularly the Indo-Pacific.
+{ id: "australia-awards", name: "Australia Awards", country: "Australia", level: "UG / Master's / PhD (universities and TAFE)", type: "Government", amount: "Fully funded — tuition, return airfare, establishment allowance, fortnightly living contribution, health cover", who: "Citizens of partner developing countries, particularly in the Indo-Pacific", deadline: "April–June", highlight: "Australian govt scholarship — tuition, living, travel.", verified: "2026-08-08" , official: "https://www.dfat.gov.au/people-to-people/australia-awards/australia-awards-scholarships"},
+    // VERIFIED 2026-08-08 on education.gov.au (via browser — WebFetch times out). "Fully funded +
+// stipend" overstated it: a student "can be offered RTP scholarships for ONE OR MORE of the
+// following: tuition fees offset, a stipend for general living costs, allowances" — so a tuition
+// offset alone is a legitimate RTP award. Also, applications "cannot be made through the
+// Department of Education"; you apply to the university direct. Support runs 3–4 years, and it
+// does cover overseas as well as domestic HDR students.
+{ id: "rtp", name: "Research Training Program (RTP)", country: "Australia", level: "Master's & PhD (research/HDR only)", type: "Government", amount: "One or more of: tuition offset, living stipend, allowances — not guaranteed to be all three", who: "Domestic & overseas research students. Apply to the UNIVERSITY, not the Department of Education", deadline: "Set by each university (commonly Aug–Oct)", highlight: "Funds research degrees at Australian universities for 3–4 years.", verified: "2026-08-08" , official: "https://www.education.gov.au/research-block-grants/research-training-program"},
     // PARTIALLY VERIFIED 2026-08-08 on nzscholarships.govt.nz (now branded Manaaki New Zealand
 // Scholarships). Confirmed it funds "undergraduate and postgraduate study" — the stored
 // "Master's & PhD" wrongly excluded undergraduates — plus short-term training and English
@@ -140,7 +187,13 @@
 // 65% (Social Sciences/Humanities/Law/Fine Arts/Architecture) or 70% (Maths/Sciences/
 // Environment), and admission already in hand. The 2026 round is closed.
 { id: "inlaks", name: "Inlaks Shivdasani Scholarship", country: "USA / UK / Europe", level: "Master's", type: "Merit + Need", amount: "Up to USD 120,000 (tuition, living, one-way travel, visa, health)", who: "Indian passport holders resident in India, born on or after 1 Jan 1996, with admission already secured and 65–70% in their bachelor's (varies by discipline)", deadline: "Annual round; 2026 intake now closed", highlight: "Prestigious Indian scholarship for study at top global universities.", verified: "2026-08-08" , official: "https://inlaksfoundation.org/scholarships/"},
-    { id: "kc-mahindra", name: "KC Mahindra Scholarship", country: "Multiple", level: "Master's", type: "Merit + Need", amount: "Up to ₹10 lakh (interest-free)", who: "Indian graduates going abroad", deadline: "March–April", highlight: "Long-running Indian scholarship loan for overseas master's." , official: "https://www.kcmet.org/index.aspx"},
+    // VERIFIED 2026-08-08 on kcmet.org (via browser). "Up to ₹10 lakh" was true only for THREE
+// people: "Up to ₹10 lakh for the top 3 K. C. Mahindra Fellows / Up to ₹5 lakh for other
+// awardees", with at least 50 awards a year. Quoting the ₹10 lakh ceiling alone set a reader's
+// expectation at double the realistic figure. Also newly extended — it now covers postgraduate
+// study at select premier institutions WITHIN India, not only abroad. It is an interest-free
+// LOAN scholarship (repayable), which the entry did say. Requires a First-Class degree.
+{ id: "kc-mahindra", name: "KC Mahindra Scholarship", country: "Multiple", level: "Master's", type: "Merit + Need", amount: "Interest-free LOAN: up to ₹5 lakh for most awardees; up to ₹10 lakh for the top 3 Fellows only", who: "Indian citizens with a First-Class degree, for postgraduate study abroad — or now at select premier institutions in India", deadline: "March–April", highlight: "Long-running Indian interest-free loan scholarship — 50+ awards a year, 1,830+ scholars to date.", verified: "2026-08-08" , official: "https://www.kcmet.org/what-we-do-Scholarship-Grants.aspx?tab=0"},
     // VERIFIED 2026-08-08 on the.akdn: "structured as half grant and half loan – where you need to
 // repay 50 percent of the award amount" — the 50/50 split was right. Two things were not: PhD
 // support runs only "for the first two years, after which you are expected to find funding from
