@@ -309,8 +309,16 @@ app.use(express.static(__dirname, {
       // SEO/feed files regenerate ~hourly (auto-blog) — keep them fresh-ish.
       res.setHeader("Cache-Control", "public, max-age=3600");
     } else if (/\.(js|css|png|jpe?g|webp|gif|svg|woff2?|ttf|otf|ico|mp3|mp4|webm|pdf|json)$/.test(p)) {
-      // Assets are cache-busted via ?v=NNN on each deploy → safe to cache a day.
-      res.setHeader("Cache-Control", "public, max-age=86400");
+      // A day was leaving ~176 KiB re-fetched on repeat visits (PageSpeed Insights,
+      // 2026-08-08). Assets requested WITH a ?v=NNN tag are content-addressed by that tag —
+      // a new deploy bumps it and produces a different URL — so they can be immutable for a
+      // year. Requests WITHOUT the tag (someone hitting /theme.css directly, or an old cached
+      // HTML referencing the bare path) must NOT get a year, or they would pin stale bytes
+      // with no way to bust them. Hence the query check rather than a blanket max-age.
+      const versioned = /[?&]v=/.test((res.req && res.req.url) || "");
+      res.setHeader("Cache-Control", versioned
+        ? "public, max-age=31536000, immutable"
+        : "public, max-age=86400");
     }
   },
 }));

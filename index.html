@@ -297,14 +297,11 @@
   </script>
 
   <!-- â•â•â• Fonts â•â•â• -->
-  <link rel="preconnect" href="https://unpkg.com" />
-  <link rel="dns-prefetch" href="https://unpkg.com" />
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
   <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" media="print" onload="this.media='all';this.onload=null" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap" /></noscript>
 
   <!-- Apply saved theme before paint to avoid a flash of the wrong mode -->
   <script>try{var t=localStorage.getItem('lp_theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
@@ -336,8 +333,8 @@
     // Capture the install prompt so an in-app "Install app" button can fire it.
     window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); window.__lpInstall = e; window.dispatchEvent(new Event('lp-installable')); });
   </script>
-  <link rel="stylesheet" href="theme.css?v=425" />
-  <link rel="stylesheet" href="pro.css?v=425" />
+  <link rel="stylesheet" href="theme.css?v=428" />
+  <link rel="stylesheet" href="pro.css?v=428" />
 </head>
 <body>
   <!-- Keyboard users land on the nav first and would otherwise tab through every link
@@ -399,8 +396,8 @@
 
   <!-- React 18.3.1 PRODUCTION (minified), SELF-HOSTED: same-origin load avoids a third-party
        DNS+TLS handshake on first paint → faster LCP, and it's precached by the service worker. -->
-  <script src="vendor/react.production.min.js?v=425"></script>
-  <script src="vendor/react-dom.production.min.js?v=425"></script>
+  <script src="vendor/react.production.min.js?v=428"></script>
+  <script src="vendor/react-dom.production.min.js?v=428"></script>
   <!-- Failover: if the local copy ever fails to define React, boot from unpkg, then jsdelivr. -->
   <script>
     if (!window.React) document.write('<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"><\/script>');
@@ -410,7 +407,7 @@
   </script>
 
   <!-- Data layer -->
-  <script defer src="app-bundle.js?v=425"></script>
+  <script defer src="app-bundle.js?v=428"></script>
   <!-- data-questions.js (~142 KB) is lazy-loaded with the test runner via MockTestGate when a mock starts -->
 
   <!-- Auth + Smart Tutor + Chatbot (must load before screens) -->
