@@ -1479,6 +1479,12 @@ function scholarshipDetailPage(s) {
   </ol>
   <p class="note">Always verify amounts, eligibility and deadlines on the official scholarship website — these change every year.</p>
 </div>
+${s.official ? `<div class="card">
+  <h2>Official source</h2>
+  <p>Every figure on this page is indicative and the awarding body can change it without notice. Check the current amount, eligibility and deadline here before you apply:</p>
+  <p><a class="cta" href="${esc(s.official)}" target="_blank" rel="noopener">Open the official ${esc(s.name)} website →</a></p>
+  <p class="note">External link to the awarding body. LandingPrep is not affiliated with it and does not process applications.</p>
+</div>` : ""}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `💸 All scholarships (free finder)`, href: `/#/colleges` },
@@ -1490,6 +1496,16 @@ ${relatedGrid([
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     faqJsonLd(faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Scholarships", path: "/#/colleges" }, { name: s.name, path }]),
+    // MonetaryGrant describes what this page IS. Built strictly from fields already rendered
+    // above — no new claims — and `url` points at the awarding body's own site where one has
+    // been verified, so the entity resolves to the real programme rather than to us.
+    jsonld({
+      "@context": "https://schema.org", "@type": "MonetaryGrant",
+      name: s.name, description: s.highlight,
+      ...(s.official ? { url: s.official, sameAs: s.official } : { url: ORIGIN + path }),
+      funder: { "@type": "Organization", name: s.name.replace(/\s+Scholarships?$/i, "") },
+      ...(s.official ? { sponsor: { "@type": "Organization", name: s.name.replace(/\s+Scholarships?$/i, ""), url: s.official } } : {}),
+    }),
   ] }) + shell(inner));
 }
 
