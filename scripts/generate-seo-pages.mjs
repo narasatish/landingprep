@@ -2272,6 +2272,19 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+// The exam×university variants that KEEP_INDEXED vouches for, grouped by university id and
+// excluding "ielts" (the grid already links that one explicitly). Derived from KEEP_INDEXED
+// rather than hardcoded so the two can never drift apart.
+const PROVEN_EXAM_PAGES = (() => {
+  const m = {};
+  for (const p of KEEP_INDEXED) {
+    const mm = p.match(/^\/(pte|toefl)-for-([a-z0-9-]+)\/$/);
+    if (!mm) continue;
+    (m[mm[2]] = m[mm[2]] || []).push(mm[1]);
+  }
+  return m;
+})();
+
 // ── Per-university pages (long-tail SEO, auto-generated from college-data) ──
 function universityPage(c) {
   const ci = C_INFO[c.country] || {};
@@ -2389,6 +2402,13 @@ ${relatedGrid([
   { label: `🏛️ Top universities in ${c.country}`, href: `/study-abroad/top-universities-in-${(c.country || "").toLowerCase().replace(/\s+/g, "-")}/` },
   ...(UNI_VS_LINK[c.id] ? [UNI_VS_LINK[c.id]] : []),
   { label: `📊 IELTS score for ${c.name}`, href: `/ielts-for-${c.id}/` },
+  // Every university has ielts/pte/toefl variants, but this grid only ever linked the IELTS
+  // one — so the non-IELTS pages were starved despite being the site's best performers.
+  // GSC 2026-08-08: /pte-for-rmit/ ranks 15.4 on 93 impressions with exactly ONE inbound
+  // internal link; /toefl-for-lse/ 12.4 on 43; /toefl-for-ucd/ 13.6 on 28. Restricted to
+  // variants KEEP_INDEXED already vouches for, so this surfaces proven pages rather than
+  // blanket-linking 334 combos — link-stuffing is what the March-2026 update penalises.
+  ...(PROVEN_EXAM_PAGES[c.id] || []).map((e) => ({ label: `📊 ${e.toUpperCase()} score for ${c.name}`, href: `/${e}-for-${c.id}/` })),
   { label: `🎯 Free IELTS mock test`, href: `/mock-test/ielts/` },
   { label: `💸 Scholarships for ${c.country}`, href: `/#/colleges/scholarships/${encodeURIComponent(c.country)}` },
   { label: `✍️ Free SOP guide & samples`, href: `/blog/how-to-write-sop/` },

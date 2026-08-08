@@ -1,9 +1,15 @@
 # LandingPrep — Session Handoff (read me FIRST in a new session)
 
-**Last updated: 2026-08-07 (session 8) · repo at v413 (HEAD `9df743f1`) · branch `main`,
-all pushed & live.** Production auto-deploys on every push to `main`. Keep this file updated
-at the end of major work — it went 4 versions stale (said v394 while production ran v401) and
-cost a session's worth of re-derivation.
+**Last updated: 2026-08-08 (session 9) · repo at v417 · branch `main`, all pushed & live.**
+Production auto-deploys on every push to `main`. Keep this file updated at the end of major
+work — it went 4 versions stale (said v394 while production ran v401) and cost a session's
+worth of re-derivation.
+
+> 📊 **A real GSC export now exists** — `Performance on Search, 2026-08-08, last 3 months`
+> (28 clicks / 4,527 impressions / 302 pages). Everything in the "GSC reality" section below
+> is measured from it. **Ask the owner for a fresh export before any pruning or
+> content-priority decision** — the session-9 export was the difference between pruning the
+> right 24 pages and destroying the site's best-performing family (see below).
 
 > ⚠️ **Do not trust the version number written in a commit MESSAGE.** `1febcc32` says "(v413)"
 > but actually shipped **v411** — the number was typed from memory instead of read after the
@@ -106,6 +112,34 @@ Served by **`server.js` (Express) on Render free tier**. Owner: **Satish**
   Filtered properly: only **3** failed. The pomodoro chips are exactly 24×24 and already pass.
   63 remain under the 44×44 AAA/Apple-HIG guideline — a design choice, not a compliance failure.
 
+## Shipped in session 9 (v415 + v417) — first session with real GSC data
+
+**v415 — pruned 24 zero-traffic pages, every removal backed by the export**
+- 4 `/embed/<widget>/` → `noindex, follow` + out of sitemap. 73–89-word **iframe targets** for
+  other people's sites, but indexable and colliding head-on with the real tools
+  (`/embed/loan-emi/` "Free Education Loan EMI Calculator" vs
+  `/tools/education-loan-emi-calculator/`) — Google could rank the stub. **Zero impressions in
+  3 months**, so nothing forfeited. `follow` kept so equity flows; noindex does not affect
+  iframe rendering. **The `/embed/` HUB stays indexed** — it is a backlink-acquisition asset.
+- New `PRUNE_ZERO_TRAFFIC` set (checked in `emit()`, mirror of `KEEP_INDEXED`): 20 of the 22
+  `/scholarships-in-<country>/`. Family averages **56% five-gram sibling overlap** at ~500
+  words. Only 2 of 22 appear in GSC and both are excluded — `/scholarships-in-australia/`
+  (29 impr) and `/scholarships-in-switzerland/` (1 impr but **position 4**).
+- **Left alone deliberately:** the 44 `/scholarship/<named>/`. Same short+templated shape on
+  paper, but Rhodes/Chevening/DAAD are real demand and `/scholarship/daad/` ranks **position 5**.
+  These need DEEPENING, not deletion — the single best content investment available.
+- Sitemap 811 → 786. Diffed URL-by-URL: exactly 25 gone = the 24 above + one unrelated
+  (`/blog/express-entry-july-2026-draws-recap/`, whose `expires: 2026-08-07` passed and the
+  existing auto-archive noindexed on schedule — `generate-seo-pages.mjs:1385`).
+
+**v417 — fed the proven exam×university pages**
+GSC's best performers were the site's *worst* internally linked: `/pte-for-rmit/` had **1**
+inbound link on 93 impressions; `/academic-vocabulary-for-essays/` 2 on 62; `/compare/rwth-vs-kit/`
+2 on 55. Cause: the university related-grid linked **only** `/ielts-for-<id>/`, never the
+PTE/TOEFL variants, though all three exist for every university. New `PROVEN_EXAM_PAGES` is
+derived FROM `KEEP_INDEXED` (so they cannot drift) and surfaces only vouched-for variants —
+9 pages each gained an inbound link. Deliberately not blanket-linking all 334 combos.
+
 **Tried and reverted (session 8): `content-visibility:auto` on the 16 below-fold sections.**
 Attempted twice — first with a flat 600px placeholder, then properly with per-section
 `contain-intrinsic-size` measured at 375px (sections range **124px–2,975px**, so the flat value
@@ -177,9 +211,42 @@ framing — worth aligning.
 ---
 
 ## GSC reality + strategic conclusion
-- GSC export (2026-08-02): **0 clicks on 1,659 impressions**; queries rank ~30–90. Top-impression
-  pages: `/gmat-quant-formulas/` (257, pos 53), germany-blocked-account (191), gic-account-canada
-  (123), education-loan-without-collateral (114), ielts-to-toefl (77, **pos 21** — closest to page 1).
+**Measured from the 2026-08-08 export (last 3 months, Web): 28 clicks / 4,527 impressions /
+302 pages.** Desktop 21 clicks @ pos 36 · Mobile 6 @ pos 24.2 · Tablet 0. The homepage alone
+takes 14 of the 28 clicks (pos 8.6, branded).
+
+### What actually works — this reverses the old "prune the programmatic pages" instinct
+The **university long-tail is the site's engine.** `/university/`, `/<exam>-for-<uni>/` and
+`/compare/` occupy almost all of striking distance, and hold genuine page-one rankings:
+
+| query | pos |
+|---|---|
+| "rmit university pte score requirement" | **5.4** |
+| "rwth aachen ielts requirement" | **6.0** |
+| "technical university of darmstadt application fee" | **6.7** |
+| "university college cork application fee" | **9.9** |
+| "ucc acceptance rate" | **10.3** |
+| "university of sydney ielts requirement" | **10.0** |
+
+**Do NOT prune this family.** Session 9 nearly did, on a 4-page duplication sample. Across the
+full family the overlap is only 10%, 20 pages are already protected by `KEEP_INDEXED`, and
+`/pte-for-rmit/` ranks 15.4 on 93 impressions. Pruning would have destroyed the one thing working.
+
+### Highest-impression pages sitting on page 2–3 (the real targets)
+`/university/ucc/` 101 impr @ 28.6 · `/pte-for-rmit/` 93 @ 15.4 · `/blog/ielts-to-toefl-score-conversion-2026/`
+77 @ 21.4 · `/academic-vocabulary-for-essays/` 62 @ 18.8 · `/compare/rwth-vs-kit/` 55 @ 11.5 (2 clicks) ·
+`/ielts-for-ucd/` 55 @ 12.1 · `/university/manchester/` 53 @ 16.3.
+Biggest query-level volume in striking distance: "student visa checklist" (15 impr @ 24.2),
+"student visa document checklist" (13 @ 23.2), "sds visa requirements" (9 @ 17.9).
+
+### ⚠️ "Page-one rankings with zero clicks" is NOT a CTR problem — don't chase it
+Session 9 first framed ~15 page-one/zero-click queries as a title/snippet failure. Checked
+against standard position-CTR curves, those 9 page-one queries carry **~1.3 expected clicks in
+total** at their impression counts. Observing 0 is unremarkable. It is a VOLUME problem, not a
+CTR problem, and title micro-optimisation there is wasted effort. A reordered university title
+was simulated across all 110 universities and **rejected**: it traded a clean 88%-"Fee" title
+for dangling "…Acceptance" on long names, chasing a defect that does not exist.
+
 - **The bottleneck is off-site authority (backlinks + brand).** BUT the older handoff's claim that
   "on-site SEO is SATURATED" was **wrong** — sessions 7–8 found 64 broken titles, a sitewide hreflang
   contradiction, a 25/100 mobile homepage, a page that scrolled sideways on every phone, and 3
