@@ -1,6 +1,7 @@
 # LandingPrep — Session Handoff (read me FIRST in a new session)
 
-**Last updated: 2026-08-08 (session 9) · repo at v416 · branch `main`, all pushed & live.**
+**Last updated: 2026-08-08 (session 9) · repo at v417 (HEAD `1b926a1c`) · branch `main`,
+all pushed & live.**
 Production auto-deploys on every push to `main`. Keep this file updated at the end of major
 work — it went 4 versions stale (said v394 while production ran v401) and cost a session's
 worth of re-derivation.
@@ -16,7 +17,8 @@ worth of re-derivation.
 > production ran **v416**. The number gets typed from memory instead of read after the build,
 > and the warning did not stop it happening again. Read `sw.js`
 > (`git show <sha>:sw.js | grep lp-v`) for the real value, every time.
-> Verified chain: 401 → 405 → 409 → 411 → 413 → 415 → 416, every deploy bumped, no duplicates.
+> Verified chain: 401 → 405 → 409 → 411 → 413 → 415 → 416 → 417 — every deploy bumped, no
+> duplicates.
 
 ---
 
@@ -114,7 +116,7 @@ Served by **`server.js` (Express) on Render free tier**. Owner: **Satish**
   Filtered properly: only **3** failed. The pomodoro chips are exactly 24×24 and already pass.
   63 remain under the 44×44 AAA/Apple-HIG guideline — a design choice, not a compliance failure.
 
-## Shipped in session 9 (v415 + v416) — first session with real GSC data
+## Shipped in session 9 (v415 → v417) — first session with real GSC data
 
 **v415 — pruned 24 zero-traffic pages, every removal backed by the export**
 - 4 `/embed/<widget>/` → `noindex, follow` + out of sitemap. 73–89-word **iframe targets** for
@@ -141,6 +143,32 @@ inbound link on 93 impressions; `/academic-vocabulary-for-essays/` 2 on 62; `/co
 PTE/TOEFL variants, though all three exist for every university. New `PROVEN_EXAM_PAGES` is
 derived FROM `KEEP_INDEXED` (so they cannot drift) and surfaces only vouched-for variants —
 9 pages each gained an inbound link. Deliberately not blanket-linking all 334 combos.
+
+**v417 — the scholarship pages finally cite their own source**
+All 44 `/scholarship/<named>/` pages told the reader to "always confirm on the official
+scholarship website" and **not one linked it** — the reader's obvious next click, and the
+page's missing citation. 23 now render an "Official source" card (+ a not-affiliated note),
+plus `MonetaryGrant` JSON-LD built strictly from fields already on the page, with the official
+URL as `url`/`sameAs`/`sponsor` so the entity resolves to the awarding body, not to us.
+`/scholarship/daad/` 403 → 456 words.
+- **Verification changed the answer 11 of 26 times.** The obvious addresses redirect elsewhere:
+  Holland Scholarship is now the **NL Scholarship**, Aga Khan moved to `the.akdn`, Canada
+  Graduate Scholarships to `nserc-crsng.canada.ca`, GREAT under `/scholarships-funding/`. The
+  FINAL post-redirect URL ships, so nobody eats a hop. Links were then re-fetched **from the
+  built HTML** (not the source list): 23/23 returned 2xx.
+- **3 pages deliberately have NO link**: `aauw` + `clarendon` return persistent HTTP 403
+  (bot-blocked — probably fine for a human, but unverifiable, and an unverified outbound link
+  is worse than none), and `vanier` (below). The 18 country-prefixed scholarships
+  (`czech-republic-*`, `denmark-*`, `finland-*`, `poland-*`, …) likewise: their official
+  addresses were not confidently known, and guessing is what the never-fabricate rule forbids.
+
+> 🚩 **OPEN CONTENT-ACCURACY ISSUE — `/scholarship/vanier/`.** The page presents the Vanier
+> Canada Graduate Scholarship at "CAD 50,000/yr" as current, but **`vanier.gc.ca` no longer
+> resolves on any variant tried**, and the programme appears restructured into the Canada
+> Graduate Research Scholarship (`nserc-crsng.canada.ca`, live). The figures were deliberately
+> NOT edited: correcting them means asserting unverified facts about the replacement programme.
+> **Someone must verify, then update or retire that page.** Worth a wider check too — nothing
+> else in `scholarship-data.jsx` has been re-verified against source since it was written.
 
 **Tried and reverted (session 8): `content-visibility:auto` on the 16 below-fold sections.**
 Attempted twice — first with a flat 600px placeholder, then properly with per-section
@@ -272,7 +300,25 @@ for dangling "…Acceptance" on long names, chasing a defect that does not exist
    auto-publisher is the scaled-content pattern the March-2026 update penalises, on visa/fee content
    where a fabricated figure misleads a real applicant). `daily-content.yml` fires daily at 04:30 UTC
    and no-ops. Newest blog `datePublished` is 2026-01-01. **Owner's call — do not re-enable unilaterally.**
-5. Resend email setup may still be pending. Move the repo OFF OneDrive.
+5. **Verify `/scholarship/vanier/`** — its official domain is dead and the programme looks
+   restructured; figures deliberately left untouched (see the 🚩 above). Update or retire.
+6. Resend email setup may still be pending. Move the repo OFF OneDrive.
+
+## Next on-site work, in the order the data justifies
+1. **Deepen the `/scholarship/<named>/` pages properly.** v417 gave them a verified source and
+   schema, but they are still ~450 templated words with ~40% mutual overlap. Real depth needs
+   researched, per-scholarship facts (eligibility detail, selection criteria, timeline,
+   realistic odds) — each verified against the official site now linked from the page. **Do the
+   9 with GSC impressions first**: `inlaks` (18 impr), `cgs` (16), `gates-cambridge` (6),
+   `daad` (3, **position 5**), `uae-emirates-scholarship` (3), `fulbright-nehru` (2),
+   `france-bgf-scholarship`, `nz-scholarships`, `sweden-kth-excellence` (1 each).
+2. **Add official-source links to the remaining 21** (18 country-prefixed + aauw + clarendon)
+   — same method: fetch, follow redirects, ship only the final 2xx URL.
+3. **The striking-distance pages with real volume**, all needing RANKING not CTR work:
+   `/university/ucc/` (101 impr @ 28.6), `/pte-for-rmit/` (93 @ 15.4),
+   `/blog/ielts-to-toefl-score-conversion-2026/` (77 @ 21.4),
+   `/academic-vocabulary-for-essays/` (62 @ 18.8).
+4. **Homepage mobile perf (~36)** — needs code-splitting; `content-visibility` already failed twice.
 
 ## Not audited yet (be honest about this)
 - **CWV field data** — blocked on a PSI API key, and may be empty anyway at current traffic (above).
