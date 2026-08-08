@@ -1434,6 +1434,16 @@ ${relatedGrid(blogTiles(a))}`;
 function scholarshipDetailPage(s) {
   const path = `/scholarship/${s.id}/`;
   const dc = s.discontinued;
+  // UNVERIFIED = we publish precise money figures (stipends, tuition waivers, deadlines) with
+  // no official source behind them and no record of anyone checking. A student can act on those
+  // numbers. Two entries that WERE checked came back wrong — DAAD's stipend was a stale €934
+  // against an actual €992, and "Canada Graduate Scholarships" turned out to be closed to
+  // international students entirely — so the base rate of error here is not low.
+  // Until an entry carries `official` (a source the reader can check) or `verified` (a date
+  // someone checked it), it is kept OUT of the index rather than shown to search users as fact.
+  // Costs almost nothing: across all 20 such pages, GSC shows 5 impressions in three months.
+  // Fully reversible — add `verified: "YYYY-MM-DD"` after checking and it re-indexes next build.
+  const unverified = !s.official && !s.verified && !dc;
   // A closed programme must never be titled/described as if you can still apply "2026" —
   // that is the kind of page that wastes an applicant's time and earns a manual penalty.
   const title = dc
@@ -1461,6 +1471,7 @@ function scholarshipDetailPage(s) {
   <p class="lead">${esc(s.highlight)} Compare it with other awards in the free Scholarship Finder.</p>
   <a class="cta" href="/#/colleges">▶ Open the free Scholarship Finder</a>
 </section>
+${unverified ? `<div class="callout" style="background:#fffbeb;border:1px solid #fde68a;border-left:4px solid #d97706;border-radius:12px;padding:14px 18px;margin:0 0 12px;color:#78350f"><strong>⚠️ Figures on this page are unverified.</strong> We have not been able to confirm the award amount, eligibility or deadline below against an official source, so treat them as indicative only. <strong>Confirm with the awarding body before you rely on any of it.</strong> This page is deliberately excluded from search results until it is verified.</div>` : ""}
 ${dc ? `<div class="callout" style="background:#fff7ed;border:1px solid #fed7aa;border-left:4px solid #ea580c;border-radius:12px;padding:14px 18px;margin:0 0 12px;color:#7c2d12"><strong>⛔ This scholarship no longer exists.</strong> The ${esc(s.name)} was discontinued — the final competition was ${esc(dc.finalCompetition)}. <strong>You cannot apply for it.</strong> It has been replaced by the <strong>${esc(dc.replacedByName)}</strong>, worth ${esc(dc.replacedByAmount)}. Details below.</div>
 <div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> The ${esc(s.name)} is closed. Canada's three federal research councils replaced it with the ${esc(dc.replacedByName)}, worth ${esc(dc.replacedByAmount)}. Eligibility: ${esc(dc.replacedByWho)} The deadline is ${esc(dc.replacedByDeadline)}. Confirm everything on the official programme page before applying.</div>`
 : `<div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> The ${esc(s.name)} is a ${esc(s.type.toLowerCase())} scholarship for ${esc(s.level)} study in ${esc(s.country)}, worth ${esc(s.amount)}. It's open to ${esc(s.who)}, with applications typically due around ${esc(s.deadline)}. Always confirm the exact award, criteria and deadline on the official scholarship website, as they change each year.</div>`}
@@ -1533,7 +1544,7 @@ ${relatedGrid([
       funder: { "@type": "Organization", name: s.name.replace(/\s+Scholarships?$/i, "") },
       ...(s.official ? { sponsor: { "@type": "Organization", name: s.name.replace(/\s+Scholarships?$/i, ""), url: s.official } } : {}),
     }),
-  ] }) + shell(inner));
+  ] }) + shell(inner), unverified ? { thin: true } : undefined);
 }
 
 // ── SOP / LOR / motivation-letter sample library (high-intent, pairs with the SOP builder) ──
