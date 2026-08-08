@@ -751,6 +751,34 @@ const KEEP_INDEXED = new Set([
   "/compare/ubc-vs-alberta/", "/compare/rwth-vs-kit/", "/compare/unsw-vs-anu/", "/compare/auckland-vs-otago/",
   "/compare/lmu-vs-heidelberg/", "/compare/ucd-vs-ucc/",
 ]);
+// PRUNE_ZERO_TRAFFIC — the mirror image of KEEP_INDEXED. These pass the 1500-char length gate
+// but are near-duplicates of each other AND earned literally zero impressions in three months.
+//
+// Evidence (GSC export 2026-08-08, "Last 3 months", Web): the /scholarships-in-<country>/ family
+// is 22 indexable pages with 56% average 5-gram overlap between siblings (some pairs 61%) at
+// ~500 body words each — a templated country roundup. Only TWO of the 22 appear in the Pages
+// report at all: /scholarships-in-australia/ (29 impressions) and /scholarships-in-switzerland/
+// (1 impression, but position 4), and both are deliberately EXCLUDED from this list. The other
+// 20 have no impressions, so pruning them forfeits no traffic while raising the domain-level
+// helpful:unhelpful ratio the March-2026 core update keys on.
+//
+// Deliberately NOT pruned, though they matched the same "short + templated" shape:
+//   · /scholarship/<named>/ (44) — Rhodes, Chevening, DAAD, Gates Cambridge are real demand, and
+//     GSC shows DAAD at position 5. These need DEEPENING, not removal.
+//   · /<exam>-for-<uni>/ and /university/ — the site's BEST performers. GSC has /pte-for-rmit/ at
+//     position 15 on 93 impressions and page-1 rankings for "rwth aachen ielts requirement" (6),
+//     "ucc acceptance rate" (10), "university college cork application fee" (9.9). Pruning these
+//     would have destroyed the only thing currently working.
+// Fully reversible: remove a path here and it re-indexes on the next build.
+const PRUNE_ZERO_TRAFFIC = new Set([
+  "/scholarships-in-canada/", "/scholarships-in-china/", "/scholarships-in-czech-republic/",
+  "/scholarships-in-denmark/", "/scholarships-in-europe-multiple/", "/scholarships-in-finland/",
+  "/scholarships-in-france/", "/scholarships-in-germany/", "/scholarships-in-italy/",
+  "/scholarships-in-japan/", "/scholarships-in-multiple/", "/scholarships-in-netherlands/",
+  "/scholarships-in-new-zealand/", "/scholarships-in-poland/", "/scholarships-in-spain/",
+  "/scholarships-in-sweden/", "/scholarships-in-uk/", "/scholarships-in-united-arab-emirates/",
+  "/scholarships-in-usa/", "/scholarships-in-usa-uk-europe/",
+]);
 function uniqueContentLen(html) {
   const main = (html.match(/<main[\s\S]*?<\/main>/i) || [html])[0];
   return main.replace(/<script[\s\S]*?<\/script>/gi, "").replace(/<style[\s\S]*?<\/style>/gi, "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().length;
@@ -760,7 +788,7 @@ function emit(path, html, opts) {
   // (university-vs-university combos, competitor "alternative" doorways) that the March-2026 core
   // update penalises regardless of length. noindex + sitemap-exclusion raises the domain quality
   // ratio so the substantive pages rank better. Fully reversible (drop the flag to re-index).
-  if (!KEEP_INDEXED.has(path) && ((opts && opts.thin) || uniqueContentLen(html) < THIN_MIN_CHARS)) {
+  if (!KEEP_INDEXED.has(path) && (PRUNE_ZERO_TRAFFIC.has(path) || (opts && opts.thin) || uniqueContentLen(html) < THIN_MIN_CHARS)) {
     html = html.replace(/<meta name="robots" content="index,follow[^"]*"\/>/i, '<meta name="robots" content="noindex,follow"/>');
     THIN_PATHS.add(path);
   }
@@ -6073,11 +6101,12 @@ PAGES.forEach(({ path, html }) => {
 const urls = [
   { loc: `${ORIGIN}/`, freq: "daily", pri: "1.0" },
   ...PAGES.filter((p) => !THIN_PATHS.has(p.path) && !CANONICALISED_PATHS.has(p.path)).map((p) => ({ loc: ORIGIN + p.path, freq: "weekly", pri: "0.8" })),
-  // Standalone embeddable widget (hand-authored static file, not emitted via the generator).
-  { loc: `${ORIGIN}/embed/proof-of-funds/`, freq: "monthly", pri: "0.6" },
-  { loc: `${ORIGIN}/embed/score-converter/`, freq: "monthly", pri: "0.6" },
-  { loc: `${ORIGIN}/embed/gpa-converter/`, freq: "monthly", pri: "0.6" },
-  { loc: `${ORIGIN}/embed/loan-emi/`, freq: "monthly", pri: "0.6" },
+  // The four /embed/<widget>/ pages are hand-authored static iframe targets and are now
+  // noindex, so they must NOT be listed here — a sitemap should only contain URLs you want
+  // indexed. They were ~75-90 words each and collided head-on with the real tool pages
+  // ("Free Education Loan EMI Calculator" vs /tools/education-loan-emi-calculator/), so Google
+  // could rank the stub instead of the full page. The /embed/ HUB stays indexed and in the
+  // sitemap via PAGES above: it is a genuine linkable asset that exists to earn backlinks.
 ];
 // The SPA homepage ships a fresh build every deploy, so it legitimately changes.
 lastmodFor.set(`${ORIGIN}/`, BUILD_DATE);
