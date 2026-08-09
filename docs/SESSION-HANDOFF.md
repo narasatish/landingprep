@@ -1,9 +1,20 @@
 # LandingPrep — Session Handoff (read me FIRST in a new session)
 
-**Last updated: 2026-08-08 (session 9) · repo at v421 · branch `main`, all pushed & live.**
+**Last updated: 2026-08-08 (session 9) · repo at v432 · branch `main`, all pushed & live.**
 Production auto-deploys on every push to `main`. Keep this file updated at the end of major
 work — it went 4 versions stale (said v394 while production ran v401) and cost a session's
 worth of re-derivation.
+
+> 🛑 **READ THIS BEFORE OPTIMISING ANYTHING.** A query-level analysis of the GSC export showed
+> the ENTIRE on-page opportunity is worth **~1.8 clicks/month**: 20 queries sit in the winnable
+> band (position 8–30 with volume), totalling 34 impressions/month against **564 site-wide**.
+> The site has **767 indexed pages earning ~0.7 impressions/page/month**. It is technically
+> excellent — SEO 100, accessibility 100, every sitemap URL verified live, valid schema
+> throughout — and none of that is the problem.
+> **The constraint is authority (links + brand), which cannot be written into this repo.**
+> Sessions 7–9 shipped ~12 deploys of real fixes and moved clicks by approximately zero. Before
+> starting any SEO/perf task, ask what it is worth in clicks; usually the answer is "nothing,
+> the effort belongs in `docs/backlink-outreach-kit.md`".
 
 > 📊 **A real GSC export now exists** — `Performance on Search, 2026-08-08, last 3 months`
 > (28 clicks / 4,527 impressions / 302 pages). Everything in the "GSC reality" section below
@@ -16,15 +27,52 @@ worth of re-derivation.
 > production ran **v416**. The number gets typed from memory instead of read after the build,
 > and the warning did not stop it happening again. Read `sw.js`
 > (`git show <sha>:sw.js | grep lp-v`) for the real value, every time.
-> Verified chain: 401 → 405 → 409 → 411 → 413 → 415 → 416 → 417 → 421 — every deploy bumped,
-> no duplicates.
+> Verified chain: 401 → 405 → 409 → 411 → 413 → 415 → 416 → 417 → 421 → 423 → 425 → 428 → 431
+> → 432 — every deploy bumped, no duplicates.
+
+---
+
+## ⚠️ Dead ends already paid for — do NOT repeat these
+
+**1. CLS on the homepage is NOT measurable with local Lighthouse.** The metric is *bimodal*, not
+noisy: on unchanged code, 10 runs gave `0.000, 0.000, 0.004, 0.004, 0.145, 0.150, 0.150, 0.152,
+0.152, 0.156` — **6/10 contained the big shift**. A single run tells you nothing, and comparing
+two single runs is worthless. Session 9 burned ~12 experiments before establishing this.
+- Bisecting `<GoalOnboarding />` out gave 0.007 on ONE run, which looked like a smoking gun. Run
+  properly at n=10 it was **9/10 still shifting** — the modal was never the cause.
+- Four "fixes" measured and rejected: always-mount + animate opacity, instant opacity flip,
+  removing the full-viewport `backdrop-filter`, and revealing on first interaction (that one
+  measured *worse*, and was wrong anyway — only DISCRETE inputs open CLS's 500 ms exclusion
+  window, scroll does not, and Lighthouse's own scrolling/touch fired it mid-trace).
+- **If you attempt this again:** n≥10 per variant, compare the RATE of >0.1 shifts, and validate
+  against the owner's PageSpeed runs, not this machine.
+
+**2. Local Lighthouse timings on this machine are garbage.** It reported TBT 4,000–11,000 ms;
+real PSI says **50 ms mobile / 10 ms desktop**. Main-thread work was never a problem. Any local
+timing number in older notes should be discarded.
+
+**3. Do NOT write more "study abroad from <country>" pages.** The existing
+`/blog/study-abroad-from-nigeria-2026/` and `/blog/study-abroad-from-pakistan-2026/` have **zero
+impressions in 3 months**, and zero queries mention those countries. `keyword-suggest.mjs` flags
+Bangladesh/Nepal as gaps — they are gaps because there is no demand reaching this domain, not
+because the pages are missing. Writing them adds thin pages and nothing else.
+
+**4. theme.css is NOT a sitewide problem.** It is 302 KB raw / 50 KB gzipped and render-blocking,
+but it is loaded by **`index.html` only** — the SPA homepage. All 780+ prerendered SEO pages
+inline ~8.6 KB and load **no external stylesheet at all**, which is why a static page scores 87
+desktop while the homepage scores 61. So critical-CSS extraction would improve exactly one page,
+which receives mostly branded traffic. Low ROI, real FOUC risk. Left alone deliberately.
+
+**5. Minifying `app-bundle.js` was tried and reverted.** Saved 19 KB gzipped, no measurable TBT
+gain, and it collapses line numbers in every stack trace the `/api/clienterror` reporter sends
+home. Bad trade.
 
 ---
 
 ## What this project is
 **landingprep.com** — a 100%-free exam-prep (15 exams: IELTS, TOEFL, PTE, CELPIP, Duolingo,
 GRE, GMAT, OET, SAT, ACT…) + study-abroad SPA. **React via CDN, no framework build**; JSX is
-precompiled to `.js` by esbuild. ~1,357 prerendered pages on disk, **811 in the sitemap**
+precompiled to `.js` by esbuild. ~1,357 prerendered pages on disk, **767 in the sitemap** (was 811 before the session-9 pruning)
 (the rest are deliberately noindex/canonicalised), generated by `scripts/generate-seo-pages.mjs`.
 Served by **`server.js` (Express) on Render free tier**. Owner: **Satish**
 (narasatish966@gmail.com). Instagram @landing_prep (auto-poster in repo).
@@ -115,7 +163,7 @@ Served by **`server.js` (Express) on Render free tier**. Owner: **Satish**
   Filtered properly: only **3** failed. The pomodoro chips are exactly 24×24 and already pass.
   63 remain under the 44×44 AAA/Apple-HIG guideline — a design choice, not a compliance failure.
 
-## Shipped in session 9 (v415 → v421) — first session with real GSC data
+## Shipped in session 9 (v415 → v432) — first session with real GSC data
 
 **v415 — pruned 24 zero-traffic pages, every removal backed by the export**
 - 4 `/embed/<widget>/` → `noindex, follow` + out of sitemap. 73–89-word **iframe targets** for
@@ -229,7 +277,7 @@ scrolls during the audit so every section renders anyway and the containment is 
   all**, so a key may return nothing. Lab data is the meaningful signal for now.
 
 ## Verified healthy (sessions 7–8)
-**816/816** live URLs return 200 (all 811 sitemap URLs + key assets), no redirects, bogus path gives
+**816/816** live URLs returned 200 when measured at sitemap=811 (pre-pruning; now 767), no redirects, bogus path gives
 a **hard 404** not a soft-200 · exactly one title/description/canonical on the homepage **and after
 client-side nav through 5 SPA routes** (no react-helmet duplication) · 7 JSON-LD blocks parse ·
 both score converters match the ETS concordance and round-trip · robots.txt allows all major AI
@@ -319,6 +367,13 @@ for dangling "…Acceptance" on long names, chasing a defect that does not exist
 6. Resend email setup may still be pending. Move the repo OFF OneDrive.
 
 ## Next on-site work, in the order the data justifies
+> Re-read the 🛑 box at the top first. Everything in this list is worth a fraction of a click per
+> month. It is maintenance, not growth. If you have a choice between any item here and sending
+> five outreach emails, send the emails.
+
+0. **Nothing on this list beats `docs/backlink-outreach-kit.md`.** Tier 0 there (the embed
+   widgets) is the only asset that earns links without asking a favour, and §1b is the GMAT
+   formula sheet — ~62 impressions/month stuck at position 65-69, purely an authority gap.
 1. **Deepen the `/scholarship/<named>/` pages properly.** v417 gave them a verified source and
    schema, but they are still ~450 templated words with ~40% mutual overlap. Real depth needs
    researched, per-scholarship facts (eligibility detail, selection criteria, timeline,
@@ -332,7 +387,12 @@ for dangling "…Acceptance" on long names, chasing a defect that does not exist
    `/university/ucc/` (101 impr @ 28.6), `/pte-for-rmit/` (93 @ 15.4),
    `/blog/ielts-to-toefl-score-conversion-2026/` (77 @ 21.4),
    `/academic-vocabulary-for-essays/` (62 @ 18.8).
-4. **Homepage mobile perf (~36)** — needs code-splitting; `content-visibility` already failed twice.
+4. **Homepage mobile perf.** Real PSI (owner-supplied, 2026-08-08): mobile Perf **61**, LCP 6.3s,
+   FCP 4.1s, CLS 0.147, TBT 50ms; desktop **86**, LCP 1.9s, CLS 0.052. Fixed since: fonts made
+   non-blocking, preconnects 4→2, versioned assets `immutable`, hero photo given a srcset
+   (PSI's 95 KiB "improve image delivery" now passes). Remaining: "Reduce unused JavaScript
+   354 KiB" (needs code-splitting the 66-file bundle) and CLS — see the dead-ends section before
+   touching either. `content-visibility` failed twice; theme.css affects only the homepage.
 
 ## Not audited yet (be honest about this)
 - **CWV field data** — blocked on a PSI API key, and may be empty anyway at current traffic (above).
