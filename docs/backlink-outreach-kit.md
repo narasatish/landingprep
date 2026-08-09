@@ -51,6 +51,62 @@ librarians link to things they can verify, not to opinions.
 
 ---
 
+### ⭐ Tier 0 — the embed widgets: the only asset that earns links WITHOUT asking
+
+This kit previously never mentioned them, which was a miss — they are the one thing on the site
+**designed** to produce backlinks rather than rankings.
+
+| Widget | Embed page | Why a site embeds it |
+|---|---|---|
+| Student-visa **proof of funds** by country | landingprep.com/embed/ | The single most-asked question in every study-abroad group |
+| **IELTS ↔ TOEFL ↔ PTE** score converter | landingprep.com/embed/ | Every counsellor answers this daily |
+| **GPA converter** (% ↔ CGPA ↔ US 4.0) | landingprep.com/embed/ | Universal for anyone applying to the US |
+| **Education-loan EMI** calculator | landingprep.com/embed/ | High-intent, and consultancies love free calculators |
+
+**How it works:** one line of HTML, free forever, no signup, and the widget carries a visible
+"by LandingPrep" credit link back. The other site gets a genuinely useful tool for free; you get
+a contextual link from a relevant page. That is a fair trade, not link-building theatre.
+
+**Why this beats asking for a plain link:** you are not requesting a favour — you are giving them
+something their readers want. Resource-page and broken-link pitches ask a stranger to do you a
+favour; this one hands them working functionality.
+
+> ⚠️ **The four widget pages themselves are `noindex, follow` on purpose** (they are iframe
+> targets that duplicated the real tools' titles). That does NOT weaken this play — `follow`
+> means equity still flows, and the link the embedder places points at **landingprep.com**, not
+> at the widget. Pitch the **hub** (`/embed/`), which is indexed.
+
+**Who to pitch, in priority order**
+1. **Study-abroad consultancies with a blog** — they publish "cost of studying in X" posts constantly
+   and need a funds calculator. Search `"study abroad consultancy" + "cost of studying in canada"`.
+2. **University international-office / student-union pages** listing "useful tools for applicants".
+3. **Student bloggers and Substack writers** in the IELTS / study-abroad niche.
+4. **Country-specific student community sites** (Bangladesh, Nigeria, Nepal, Pakistan study-abroad portals) —
+   lower authority individually, far easier to land, and they compound.
+5. **Education-loan comparison blogs** — the EMI widget is directly on-topic for them.
+
+**Pitch template — embed offer** (short on purpose; long emails to strangers do not get read)
+
+> **Subject:** free {{widget}} you can embed on {{their page}}
+>
+> Hi {{name}},
+>
+> Your post on {{their page title}} is the one I keep sending people to when they ask about
+> {{topic}}. One thing readers always ask next is {{the question the widget answers}}.
+>
+> We maintain a free {{widget}} that answers exactly that, and it is embeddable in one line —
+> no signup, no tracking of your visitors, free permanently:
+> https://landingprep.com/embed/
+>
+> If it is useful, embed it. If not, no reply needed — genuinely.
+>
+> {{your name}}, LandingPrep (free exam-prep + study-abroad tools)
+
+**Do not** ask for a link in this email. The widget carries its own credit link; asking as well
+makes it a link request and halves the reply rate.
+
+---
+
 ## 1. Target list (where the links live) — work top-to-bottom by ROI
 
 ### Tier A — highest authority, value-first (do these first)
@@ -74,6 +130,45 @@ librarians link to things they can verify, not to opinions.
 8. **"Best free IELTS resources 2026" listicle authors** — ask to be included (you're free, that's the hook).
 9. **Unlinked brand mentions:** Google `"landingprep" -site:landingprep.com` monthly; where someone mentions
    you without linking, politely ask for the link. (Easiest links you'll ever get.)
+
+---
+
+## 1b. ⭐ The GMAT formula sheet — your single best demand signal, and it needs LINKS not content
+
+Measured from the 2026-08-08 GSC export, this is where the most unmet demand sits:
+
+| query | impressions/mo | position |
+|---|---|---|
+| gmat math formulas | 22.7 | **69.3** |
+| gmat formulas | 21.3 | **65.3** |
+| gmat formula sheet | 18.3 | **65.4** |
+| mock gmat | 6.7 | 78.3 |
+
+**~62 impressions/month on one topic — and the page sits six pages deep.** Google indexes it and
+has decided it does not trust it. That gap is authority. The page is already good: printable,
+Save-as-PDF, and free where competitors gate theirs. **Do not rewrite it.** No amount of editing
+moves position 65 → page 1; referring domains do.
+
+**Target page:** https://landingprep.com/gmat-quant-formulas/ (verified 200)
+
+**Why this one is worth concentrating effort on:** it is the only topic where the site has real
+volume AND a genuinely competitive asset. Everything else is either no-volume or outgunned.
+
+**Where GMAT links actually live**
+1. **r/GMAT and GMAT Club** — enormous, and both tolerate genuinely free resources shared by a
+   participating member. Post the sheet as a comment answer to "does anyone have a formula list",
+   after building real comment history. Never as a standalone promo thread.
+2. **MBA-admissions bloggers and consultants** — they publish "free GMAT resources" roundups.
+   You are free and printable; most listed alternatives are not.
+3. **University MBA-society / b-school club pages** — they maintain prep-resource lists.
+4. **YouTube GMAT creators** — offer the printable sheet as a free description-link resource for
+   a "formulas you must memorise" video. They need a giveaway; you need the link.
+
+**Realistic expectation, stated plainly:** even a successful campaign here is a 3–6 month move,
+and it may take the page to the middle of page 2 rather than page 1. At ~62 impressions/month,
+reaching position 5 is worth roughly **4–5 clicks/month**. That is small in absolute terms — but
+it is the largest single click opportunity the site has, which is itself the diagnosis: the
+constraint is demand and authority, not the pages.
 
 ---
 

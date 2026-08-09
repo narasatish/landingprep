@@ -744,6 +744,13 @@ const THIN_MIN_CHARS = 1500; // below this much unique <main> text = thin/templa
 // they are on the HELPFUL side of the quality ratio, not thin doorways. Re-indexing only the proven
 // performers (while ~440 zero-impression combos stay pruned) is "quality over quantity" done right.
 const KEEP_INDEXED = new Set([
+  // The AI Speaking checker is a real product feature, not a thin doorway — but its unique
+  // <main> text is 1,337 chars against the 1,500 gate, so the blanket prune noindexed it and
+  // dropped it from the sitemap. Its identical twin, the Writing checker, sits at 1,561 and is
+  // indexed. Same feature, same value to a reader, split by 163 characters. It is also pitched
+  // as a linkable asset in docs/backlink-outreach-kit.md, and earning links to a noindexed page
+  // wastes the outreach. This is exactly the "wrongly caught by the blanket prune" case.
+  "/ielts-speaking-checker/",
   "/ielts-for-tum/", "/ielts-for-sydney/", "/ielts-for-rwth/", "/ielts-for-ucd/", "/ielts-for-nyu/",
   "/ielts-for-ubc/", "/ielts-for-dalhousie/", "/ielts-for-vuw/", "/ielts-for-uiuc/", "/ielts-for-adelaide/",
   "/ielts-for-waterloo/", "/pte-for-rmit/", "/pte-for-canterbury/", "/pte-for-tum/", "/toefl-for-lse/",
