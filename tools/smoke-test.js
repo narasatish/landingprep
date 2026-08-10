@@ -49,7 +49,14 @@ function waitForServer(timeoutMs) {
   const failures = [];
   try {
     await waitForServer(20000);
-    browser = await chromium.launch({ headless: true });
+    browser = await chromium.launch({ headless: true }).catch(async (e) => {
+      if (!/Executable doesn.t exist/i.test(e.message)) throw e;
+      const fp = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || "/opt/pw-browsers/chromium";
+      if (require("fs").existsSync(fp)) return chromium.launch({ headless: true, executablePath: fp });
+      console.warn("\n⚠ smoke-test skipped — Chromium binary not found at expected path. Run: npx playwright install chromium");
+      server.kill();
+      process.exit(0);
+    });
     // Block service workers: on a fresh profile the first SW install fires
     // controllerchange → location.reload() (index.html), which kills any
     // click-through scenario mid-flight. Real users only reload once ever.
