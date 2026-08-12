@@ -153,7 +153,7 @@ function LPLogo({ size = 30 }) {
 // High-intent FAQ — mirrors the FAQPage JSON-LD in index.html for rich results.
 const FAQS = [
   { q: "Are the IELTS, TOEFL and PTE mock tests really free?",
-    a: "Yes — 100% free, forever. All 1,000+ mock tests across IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo English Test, GRE and GMAT Focus are free with no signup, no credit card and no paywall. Start any test directly from the homepage." },
+    a: "Yes — 100% free, forever. Every mock test across IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo English Test, GRE and GMAT Focus is free with no signup, no credit card and no paywall. Start any test directly from the homepage." },
   { q: "Do the mock tests use real exam patterns and timings?",
     a: "Every test mirrors the official 2026 format and timing — IELTS Listening 30+10 minutes, Reading 60, Writing 60; PTE Read Aloud, Repeat Sentence, Describe Image and Write Essay; GMAT Focus Quant, Verbal and Data Insights. We rebuild the formats and timing, never the copyrighted questions." },
   { q: "Can I practise IELTS and PTE speaking with a real voice?",
@@ -548,7 +548,7 @@ function Home({ onGuide, onPractice, onNav }) {
     if (!window.LP_SEO) return;
     window.LP_SEO.set({
       title: "Free IELTS, TOEFL, OET, PTE, GRE & GMAT Mock Tests | LandingPrep",
-      description: "1,000+ free practice tests across 15+ exams — IELTS, TOEFL, OET, PTE, GRE, GMAT, SAT & more. Real exam patterns, instant scoring & AI band feedback — no signup."
+      description: "5,400+ free practice questions across 15+ exams — IELTS, TOEFL, OET, PTE, GRE, GMAT, SAT & more. Real exam patterns, instant scoring & AI band feedback — no signup."
     });
   }, []);
   const faqActive = faqTab === "abroad" ? STUDY_FAQS : FAQS;
@@ -575,7 +575,7 @@ function Home({ onGuide, onPractice, onNav }) {
               Prep for your exam.<br />Land your <em className="grad">dream university</em> abroad.
             </h1>
             <p className="body-lg muted" style={{ maxWidth: 760, marginTop: 18, marginInline: "auto" }}>
-              1,000+ free mock tests across 15+ exams — IELTS, TOEFL, OET, PTE, GRE, GMAT, SAT &amp; more — plus a complete study-abroad toolkit: college predictor, scholarships, SOP &amp; visa guidance. All free, for students in every country.
+              5,400+ free practice questions in full-length mock tests across 15+ exams — IELTS, TOEFL, OET, PTE, GRE, GMAT, SAT &amp; more — plus a complete study-abroad toolkit: college predictor, scholarships, SOP &amp; visa guidance. All free, for students in every country.
             </p>
             <div className="hero-cta">
               <button className="btn btn-primary btn-lg" onClick={() => onNav("exam-prep")}>Browse all mock tests →</button>
@@ -624,7 +624,7 @@ function Home({ onGuide, onPractice, onNav }) {
       <section className="section lp-stats-section reveal" style={{ paddingTop: 24, paddingBottom: 8 }}>
         <div className="shell">
           <div className="lp-stats">
-            {[[exams.length + "+", "exams covered", "var(--accent)"], ["1,000+", "free mock tests", "#16a34a"], ["99", "universities", "#0284c7"], ["100%", "free, forever", "#b45309"], ["9", "study destinations", "#ec4899"]].map(([n, l, c]) => (
+            {[[exams.length + "+", "exams covered", "var(--accent)"], ["5,400+", "practice questions", "#16a34a"], ["99", "universities", "#0284c7"], ["100%", "free, forever", "#b45309"], ["9", "study destinations", "#ec4899"]].map(([n, l, c]) => (
               <div className="lp-stat" key={l}><span className="lp-stat-n" style={{ color: c }}>{n}</span><span className="lp-stat-l">{l}</span></div>
             ))}
           </div>
@@ -648,7 +648,7 @@ function Home({ onGuide, onPractice, onNav }) {
           </div>
           <div className="lp-pros reveal">
             {[
-              ["file", "accent", "1,000+ realistic mocks", "Real timings & patterns across all 15+ exams with instant scoring.", "exam-prep"],
+              ["file", "accent", "Realistic full-length mocks", "Real timings & patterns across all 15+ exams with instant scoring.", "exam-prep"],
               ["mic", "pink", "Speaking practice", "Speak into your mic, get live transcripts, follow-ups & fluency scoring.", "agents"],
               ["pen", "sky", "AI band-score checker", "Paste an essay or record a Part 2 — instant IELTS band, TR/CC/LR/GRA breakdown & Band 9 model.", "writing-checker"],
               ["building", "accent", "College Predictor", "99 top universities with fees, requirements & Safe/Target/Reach matches.", "colleges"],
@@ -933,7 +933,7 @@ function Home({ onGuide, onPractice, onNav }) {
             <summary>Free IELTS, TOEFL, PTE, GRE &amp; GMAT mock tests + a complete study-abroad toolkit</summary>
             <div className="seo-content-inner">
             <p>
-              <strong>LandingPrep</strong> is a 100% free platform that takes you from your first mock test all the way to your campus abroad. Practise <a href="#/exam-hub/ielts" onClick={(e)=>{e.preventDefault();onGuide(exams[0]);}}>IELTS</a>, TOEFL iBT, PTE Academic, CELPIP, the Duolingo English Test, GRE and GMAT Focus with 1,000+ full-length <a href="#/exam-prep" onClick={(e)=>{e.preventDefault();onNav("exam-prep");}}>mock tests</a> built on real exam timings and section-honest scoring — plus free speaking and writing practice with model answers. There is no signup, no credit card and no paywall.
+              <strong>LandingPrep</strong> is a 100% free platform that takes you from your first mock test all the way to your campus abroad. Practise <a href="#/exam-hub/ielts" onClick={(e)=>{e.preventDefault();onGuide(exams[0]);}}>IELTS</a>, TOEFL iBT, PTE Academic, CELPIP, the Duolingo English Test, GRE and GMAT Focus with full-length <a href="#/exam-prep" onClick={(e)=>{e.preventDefault();onNav("exam-prep");}}>mock tests</a> built on real exam timings and section-honest scoring — plus free speaking and writing practice with model answers. There is no signup, no credit card and no paywall.
             </p>
             <p>
               Beyond test prep, LandingPrep is a full <a href="#/colleges" onClick={(e)=>{e.preventDefault();onNav("colleges");}}>study-abroad</a> toolkit. Use the free <strong>College Predictor</strong> to find your Safe, Target and Reach universities across 99 top institutions in the USA, UK, Canada, Australia, Germany, Ireland, New Zealand, Singapore and the Netherlands. Compare universities and whole countries, find scholarships, build your <strong>SOP, LOR and resume</strong>, estimate cost and ROI, compare 10 education-loan lenders, practise your visa interview, and follow step-by-step immigration and PR roadmaps for every destination.

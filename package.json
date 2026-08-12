@@ -17,7 +17,7 @@
     "test:smoke": "node tools/smoke-test.js",
     "audit:freshness": "node tools/audit-freshness.mjs",
     "audit:expiring": "node tools/audit-expiring.mjs",
-    "test": "node tools/check-hooks.js && node tools/run-tests.js && node tools/exam-validation.mjs && node scripts/audit-seo.mjs && node tools/audit-answers.mjs && node tools/ig-pipeline.test.js && node tools/ig-full.test.js && node tools/validate-smart-notes.mjs && node tools/audit-freshness.mjs && node tools/audit-expiring.mjs && node tools/smoke-test.js",
+    "test": "node tools/check-hooks.js && node tools/run-tests.js && node tools/exam-validation.mjs && node scripts/audit-seo.mjs && node tools/audit-answers.mjs && node tools/ig-pipeline.test.js && node tools/ig-full.test.js && node tools/validate-smart-notes.mjs && node tools/audit-freshness.mjs && node tools/audit-expiring.mjs && node tools/audit-content-claims.mjs && node tools/smoke-test.js",
     "test:ig": "node tools/ig-pipeline.test.js",
     "check:ig": "node tools/ig-livecheck.mjs",
     "test:exams": "node tools/exam-validation.mjs",

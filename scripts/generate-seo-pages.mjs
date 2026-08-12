@@ -2701,7 +2701,7 @@ function aboutPage() {
 <div class="card">
   <h2>What we offer — all free</h2>
   <ul>
-    <li><strong>1,000+ mock tests</strong> across 7 exams with real timings, speaking & writing practice and model answers.</li>
+    <li><strong>5,400+ practice questions</strong> in full-length mock tests across 7 exams, with real timings, speaking &amp; writing practice and model answers.</li>
     <li><strong>College Predictor</strong> across 99 top universities with Safe/Target/Reach matches, fees and requirements.</li>
     <li><strong>Scholarship finder, SOP/LOR/resume builders, university & country comparison, loan & ROI calculators.</li>
     <li><strong>Visa-interview practice and step-by-step immigration & PR roadmaps for 9 destinations.</li>
@@ -6351,7 +6351,7 @@ ${featuredGuides}
 
 ## Core Services (All Free)
 
-### 1. Mock Tests & Practice (1,000+ full-length tests)
+### 1. Mock Tests & Practice (5,400+ practice questions)
 - **IELTS (Academic & General)**: Real exam timing, all 4 sections, instant band scoring (0–9)
 - **TOEFL iBT (2026 format)**: adaptive Reading & Listening + Writing & Speaking — scored on the new 1–6 band scale (a comparable 0–120 is shown during the 2026 transition)
 - **PTE Academic**: Speaking & Writing, Reading, Listening — scored 10–90

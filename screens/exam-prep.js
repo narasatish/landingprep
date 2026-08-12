@@ -40,7 +40,7 @@
     useEffect(() => {
       setSEO(
         "Free Mock Tests \u2014 IELTS, TOEFL, PTE, GRE, GMAT & more | LandingPrep",
-        "990+ free practice tests with answers across IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo, GRE and GMAT Focus. Real exam patterns, instant scoring."
+        "5,400+ free practice questions with answers across IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo, GRE and GMAT Focus. Real exam patterns, instant scoring."
       );
     }, []);
     return /* @__PURE__ */ React.createElement("div", { className: "ep-index" }, /* @__PURE__ */ React.createElement("div", { className: "home-hero-photo ep-hero-photo" }, /* @__PURE__ */ React.createElement(
@@ -54,7 +54,7 @@
           if (p) p.classList.add("no-photo");
         }
       }
-    ), /* @__PURE__ */ React.createElement("div", { className: "hhp-overlay" }), /* @__PURE__ */ React.createElement("div", { className: "ep-hero-cap" }, /* @__PURE__ */ React.createElement("h1", null, "Exam Prep"), /* @__PURE__ */ React.createElement("p", null, "990 free practice tests across 7 international exams. Pick an exam to start."))), /* @__PURE__ */ React.createElement("div", { className: "ep-exam-grid" }, EXAM_ORDER.map((eid) => {
+    ), /* @__PURE__ */ React.createElement("div", { className: "hhp-overlay" }), /* @__PURE__ */ React.createElement("div", { className: "ep-hero-cap" }, /* @__PURE__ */ React.createElement("h1", null, "Exam Prep"), /* @__PURE__ */ React.createElement("p", null, "5,400+ free practice questions across 7 international exams. Pick an exam to start."))), /* @__PURE__ */ React.createElement("div", { className: "ep-exam-grid" }, EXAM_ORDER.map((eid) => {
       const brand = EXAM_BRAND[eid];
       const c = (counts == null ? void 0 : counts[eid]) || { sections: {}, full: 0, total: 0 };
       return /* @__PURE__ */ React.createElement(

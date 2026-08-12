@@ -20,6 +20,12 @@
       "port": 5533
     },
     {
+      "name": "citedfirst",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "cd /d C:\\Users\\naras\\OneDrive\\Desktop\\CitedFirst && node server.js"],
+      "port": 8899
+    },
+    {
       "name": "applydash-platform",
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "5544", "--directory", "C:/Users/naras/OneDrive/Desktop/ApplyDash/platform-web"],

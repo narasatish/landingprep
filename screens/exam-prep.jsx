@@ -55,7 +55,7 @@
   function ExamIndex({ counts, onChooseExam }) {
     useEffect(() => {
       setSEO("Free Mock Tests — IELTS, TOEFL, PTE, GRE, GMAT & more | LandingPrep",
-        "990+ free practice tests with answers across IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo, GRE and GMAT Focus. Real exam patterns, instant scoring.");
+        "5,400+ free practice questions with answers across IELTS, TOEFL iBT, PTE Academic, CELPIP, Duolingo, GRE and GMAT Focus. Real exam patterns, instant scoring.");
     }, []);
     return (
       <div className="ep-index">
@@ -66,7 +66,7 @@
           <div className="hhp-overlay" />
           <div className="ep-hero-cap">
             <h1>Exam Prep</h1>
-            <p>990 free practice tests across 7 international exams. Pick an exam to start.</p>
+            <p>5,400+ free practice questions across 7 international exams. Pick an exam to start.</p>
           </div>
         </div>
         <div className="ep-exam-grid">
