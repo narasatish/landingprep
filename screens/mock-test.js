@@ -61,21 +61,49 @@ function ensureVoicesLoaded() {
     setTimeout(() => resolve(window.speechSynthesis.getVoices()), 1500);
   });
 }
+let geminiTtsHealthy = true;
+async function withTimeout(promise, ms) {
+  let t;
+  try {
+    return await Promise.race([
+      promise.then((v) => v, (e) => {
+        throw e;
+      }),
+      new Promise((res) => {
+        t = setTimeout(() => res("__timeout__"), ms);
+      })
+    ]);
+  } finally {
+    clearTimeout(t);
+  }
+}
 async function speakLine(text, opts = {}) {
-  if (!(text == null ? void 0 : text.trim())) return;
-  if (window.LP_TTS && window.LP_TTS.isEnabled && window.LP_TTS.isEnabled()) {
+  if (!(text == null ? void 0 : text.trim())) return true;
+  if (geminiTtsHealthy && window.LP_TTS && window.LP_TTS.isEnabled && window.LP_TTS.isEnabled()) {
     try {
       const voiceName = opts.geminiVoice || "Kore";
-      await window.LP_TTS.speakOne(text.trim(), voiceName, opts.signal);
-      return;
+      const r = await withTimeout(window.LP_TTS.speakOne(text.trim(), voiceName, opts.signal), 15e3);
+      if (r !== "__timeout__") return true;
+      geminiTtsHealthy = false;
+      console.warn("Gemini TTS stalled \u2014 using browser speech for the rest of this session.");
     } catch (e) {
-      console.warn("Gemini speakLine failed, falling back:", e.message);
+      geminiTtsHealthy = false;
+      console.warn("Gemini speakLine failed, falling back:", e && e.message);
     }
   }
   return new Promise((resolve) => {
     var _a, _b, _c;
     if (!window.speechSynthesis) {
-      resolve();
+      resolve(false);
+      return;
+    }
+    try {
+      if (!window.speechSynthesis.getVoices().length) {
+        resolve(false);
+        return;
+      }
+    } catch (e) {
+      resolve(false);
       return;
     }
     const utt = new SpeechSynthesisUtterance(text.trim());
@@ -84,28 +112,43 @@ async function speakLine(text, opts = {}) {
     utt.pitch = (_b = opts.pitch) != null ? _b : 1;
     utt.volume = (_c = opts.volume) != null ? _c : 1;
     utt.lang = opts.lang || "en-US";
-    utt.onend = resolve;
-    utt.onerror = resolve;
-    window.speechSynthesis.speak(utt);
+    let settled = false;
+    const finish = (ok) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(guard);
+      resolve(ok);
+    };
+    const guard = setTimeout(() => finish(false), Math.max(1e4, text.trim().length * 125));
+    utt.onend = () => finish(true);
+    utt.onerror = () => finish(false);
+    try {
+      window.speechSynthesis.speak(utt);
+    } catch (e) {
+      finish(false);
+    }
   });
 }
 async function playMultiVoiceScript(script, { onProgress, signal } = {}) {
-  if (window.LP_TTS && window.LP_TTS.isEnabled && window.LP_TTS.isEnabled()) {
+  if (geminiTtsHealthy && window.LP_TTS && window.LP_TTS.isEnabled && window.LP_TTS.isEnabled()) {
     try {
-      await window.LP_TTS.playScript(script, { onProgress, signal });
-      return;
+      const r = await withTimeout(window.LP_TTS.playScript(script, { onProgress, signal }), 3e5);
+      if (r !== "__timeout__") return true;
+      geminiTtsHealthy = false;
+      console.warn("Gemini playScript stalled \u2014 falling back to browser speech.");
     } catch (e) {
-      console.warn("Gemini TTS failed, falling back to browser TTS:", e.message);
+      geminiTtsHealthy = false;
+      console.warn("Gemini TTS failed, falling back to browser TTS:", e && e.message);
     }
   }
   const voices = getBestVoices();
   const speakerMap = {};
   let nextSlot = 0;
   const pool = [voices.female, voices.male, voices.neutral].filter(Boolean);
-  if (!pool.length) return;
+  if (!pool.length) return false;
   const lines = script.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
   for (let i = 0; i < lines.length; i++) {
-    if (signal == null ? void 0 : signal.aborted) return;
+    if (signal == null ? void 0 : signal.aborted) return true;
     const line = lines[i];
     const m = line.match(/^([A-Z][A-Za-z .'-]{1,30}):\s+(.+)$/);
     let speaker, text;
@@ -122,9 +165,10 @@ async function playMultiVoiceScript(script, { onProgress, signal } = {}) {
     }
     if (onProgress) onProgress({ lineIdx: i, total: lines.length, speaker, text });
     await speakLine(text, { voice: speakerMap[speaker], rate: 1 });
-    if (signal == null ? void 0 : signal.aborted) return;
+    if (signal == null ? void 0 : signal.aborted) return true;
     await new Promise((r) => setTimeout(r, 250));
   }
+  return true;
 }
 function stopAllSpeech() {
   try {
@@ -892,6 +936,7 @@ function ListeningSection({ sec, answers, setAnswer, sectionId, onRouteStage }) 
   const [played, setPlayed] = useStateT({});
   const [progress, setProgress] = useStateT(null);
   const [revealed, setRevealed] = useStateT({});
+  const [audioFailed, setAudioFailed] = useStateT(false);
   const abortRef = useRefT(null);
   const adaptiveGated = !!(sec.adaptive && !sec.adaptiveRouted);
   const parts = adaptiveGated ? (sec.parts || []).slice(0, sec.adaptive.stage1Count || 2) : sec.parts || [];
@@ -923,21 +968,29 @@ function ListeningSection({ sec, answers, setAnswer, sectionId, onRouteStage }) 
       const partNum = part.partNum || partIdx + 1;
       const clipLabel = part.scriptType ? part.scriptType === "conversation" ? `Conversation ${partIdx + 1}` : `Lecture ${partIdx + 1}` : `Part ${partNum}`;
       const intro = `Now beginning ${clipLabel}. You will hear the recording once only. Listen carefully and answer the questions.`;
+      let introOk = true;
       try {
-        await speakLine(intro, { geminiVoice: "Kore", signal: controller.signal });
+        introOk = await speakLine(intro, { geminiVoice: "Kore", signal: controller.signal });
       } catch (e) {
+        introOk = false;
       }
       if (controller.signal.aborted) {
         setPlaying(false);
         setProgress(null);
         return;
       }
+      if (introOk === false) {
+        setAudioFailed(true);
+        setPlaying(false);
+        setProgress(null);
+        return;
+      }
       await new Promise((r) => setTimeout(r, 600));
-      await playMultiVoiceScript(part.audioScript || part.script || "", {
+      const spoke = await playMultiVoiceScript(part.audioScript || part.script || "", {
         signal: controller.signal,
         onProgress: (p) => setProgress(p)
       });
-      if (!controller.signal.aborted) {
+      if (!controller.signal.aborted && spoke !== false) {
         await new Promise((r) => setTimeout(r, 400));
         const outro = `That is the end of ${clipLabel}. You now have time to check your answers before moving on.`;
         try {
@@ -945,9 +998,10 @@ function ListeningSection({ sec, answers, setAnswer, sectionId, onRouteStage }) 
         } catch (e) {
         }
       }
-      if (!controller.signal.aborted) {
+      if (!controller.signal.aborted && spoke !== false) {
         setPlayed((prev) => ({ ...prev, [part.id]: true }));
       }
+      if (spoke === false) setAudioFailed(true);
       setPlaying(false);
       setProgress(null);
     }, 900);
@@ -983,17 +1037,18 @@ function ListeningSection({ sec, answers, setAnswer, sectionId, onRouteStage }) 
       setProgress(null);
       return;
     }
-    await playMultiVoiceScript(current.audioScript || current.script || "", {
+    const spoke = await playMultiVoiceScript(current.audioScript || current.script || "", {
       signal: controller.signal,
       onProgress: (p) => setProgress(p)
     });
-    if (!controller.signal.aborted) {
+    if (!controller.signal.aborted && spoke !== false) {
       const outro = `End of Part ${partNum}.`;
       try {
         await speakLine(outro, { geminiVoice: "Kore", signal: controller.signal });
       } catch (e) {
       }
     }
+    if (spoke === false) setAudioFailed(true);
     setPlaying(false);
     setProgress(null);
   };
@@ -1020,7 +1075,7 @@ function ListeningSection({ sec, answers, setAnswer, sectionId, onRouteStage }) 
       /* @__PURE__ */ React.createElement("span", { className: "pp-label" }, pillLabel),
       /* @__PURE__ */ React.createElement("span", { className: "pp-meta" }, ans, "/", (p.questions || []).length)
     );
-  })), (!sec.isCelpip || !showQ) && /* @__PURE__ */ React.createElement(React.Fragment, null, current.scene && /* @__PURE__ */ React.createElement(SceneImage, { scene: current.scene }), /* @__PURE__ */ React.createElement("div", { className: "audio-panel" }, /* @__PURE__ */ React.createElement("div", { className: "ap-context" }, /* @__PURE__ */ React.createElement("div", { style: { fontWeight: 600, marginBottom: 4, color: "#fff" } }, current.scriptType ? (current.scriptType === "conversation" ? "Conversation" : "Lecture") + ` ${partIdx + 1}` : `Part ${current.partNum || partIdx + 1}`), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 13, color: "rgba(255,255,255,0.85)" } }, current.context), playing && /* @__PURE__ */ React.createElement("div", { style: { marginTop: 10, display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "rgba(255,255,255,0.7)" } }, /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " ", /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " ", /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " Audio in progress \u2014 do not refresh")), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 8, alignItems: "center" } }, /* @__PURE__ */ React.createElement(
+  })), (!sec.isCelpip || !showQ) && /* @__PURE__ */ React.createElement(React.Fragment, null, current.scene && /* @__PURE__ */ React.createElement(SceneImage, { scene: current.scene }), /* @__PURE__ */ React.createElement("div", { className: "audio-panel" }, /* @__PURE__ */ React.createElement("div", { className: "ap-context" }, /* @__PURE__ */ React.createElement("div", { style: { fontWeight: 600, marginBottom: 4, color: "#fff" } }, current.scriptType ? (current.scriptType === "conversation" ? "Conversation" : "Lecture") + ` ${partIdx + 1}` : `Part ${current.partNum || partIdx + 1}`), /* @__PURE__ */ React.createElement("div", { style: { fontSize: 13, color: "rgba(255,255,255,0.85)" } }, current.context), playing && /* @__PURE__ */ React.createElement("div", { style: { marginTop: 10, display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "rgba(255,255,255,0.7)" } }, /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " ", /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " ", /* @__PURE__ */ React.createElement("span", { className: "audio-wave-dot" }), " Audio in progress \u2014 do not refresh"), audioFailed && /* @__PURE__ */ React.createElement("div", { role: "alert", style: { marginTop: 10, padding: "10px 12px", borderRadius: 10, background: "rgba(255,237,213,0.95)", color: "#7c2d12", fontSize: 13, lineHeight: 1.5 } }, /* @__PURE__ */ React.createElement("strong", null, "\u26A0 No audio on this device."), " Your browser has no speech voices installed, so the recording could not play \u2014 this is not a problem with your answers. The part has", /* @__PURE__ */ React.createElement("strong", null, " not"), " been marked as played, so nothing is lost. Try Chrome or Edge on desktop, where voices are built in. You can still do the Reading and Writing sections here.")), /* @__PURE__ */ React.createElement("div", { style: { display: "flex", flexDirection: "column", gap: 8, alignItems: "center" } }, /* @__PURE__ */ React.createElement(
     "button",
     {
       className: "audio-btn",

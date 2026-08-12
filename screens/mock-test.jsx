@@ -75,32 +75,68 @@ function ensureVoicesLoaded() {
 // Speak a single line with optional voice + rate
 // Routes to Gemini TTS when a key is configured (natural quality),
 // otherwise falls back to browser SpeechSynthesis.
-async function speakLine(text, opts = {}) {
-  if (!text?.trim()) return;
+// Gemini TTS health, per page-load. Once it stalls or errors we stop routing audio through
+// it entirely and use the browser voice for the rest of the session — otherwise EVERY line
+// of a 40-question listening script pays the timeout again.
+let geminiTtsHealthy = true;
 
-  // Try Gemini TTS first
-  if (window.LP_TTS && window.LP_TTS.isEnabled && window.LP_TTS.isEnabled()) {
+// Await a promise but give up after `ms`. Returns "timeout" instead of hanging.
+// A try/catch cannot save you from a promise that never settles, and LP_TTS.speakOne was
+// measured doing exactly that (>8s, no resolve, no reject) — which froze the whole listening
+// section on "Audio in progress — do not refresh" with the exam timer still running.
+async function withTimeout(promise, ms) {
+  let t;
+  try {
+    return await Promise.race([
+      promise.then((v) => v, (e) => { throw e; }),
+      new Promise((res) => { t = setTimeout(() => res("__timeout__"), ms); }),
+    ]);
+  } finally { clearTimeout(t); }
+}
+
+async function speakLine(text, opts = {}) {
+  if (!text?.trim()) return true;
+
+  // Try Gemini TTS first — but never let it hang the test.
+  if (geminiTtsHealthy && window.LP_TTS && window.LP_TTS.isEnabled && window.LP_TTS.isEnabled()) {
     try {
       const voiceName = opts.geminiVoice || "Kore";  // default female examiner voice
-      await window.LP_TTS.speakOne(text.trim(), voiceName, opts.signal);
-      return;
+      // Generous per-line budget: real speech for one line is a few seconds.
+      const r = await withTimeout(window.LP_TTS.speakOne(text.trim(), voiceName, opts.signal), 15000);
+      if (r !== "__timeout__") return true;
+      geminiTtsHealthy = false;
+      console.warn("Gemini TTS stalled — using browser speech for the rest of this session.");
     } catch (e) {
-      console.warn("Gemini speakLine failed, falling back:", e.message);
+      geminiTtsHealthy = false;
+      console.warn("Gemini speakLine failed, falling back:", e && e.message);
     }
   }
 
-  // Fallback: browser SpeechSynthesis
+  // Fallback: browser SpeechSynthesis.
+  // Resolves TRUE if it actually spoke, FALSE if this device cannot.
   return new Promise((resolve) => {
-    if (!window.speechSynthesis) { resolve(); return; }
+    if (!window.speechSynthesis) { resolve(false); return; }
+    // If the device has no voices, speak() often fires NEITHER onend NOR onerror — the
+    // promise then never settles and the whole listening flow hangs with "Audio in
+    // progress — do not refresh" on screen while the section timer runs down. Bail out
+    // up front instead of awaiting an event that will never arrive.
+    try { if (!window.speechSynthesis.getVoices().length) { resolve(false); return; } } catch (e) { resolve(false); return; }
     const utt = new SpeechSynthesisUtterance(text.trim());
     if (opts.voice) utt.voice = opts.voice;
     utt.rate = opts.rate ?? 1.0;
     utt.pitch = opts.pitch ?? 1.0;
     utt.volume = opts.volume ?? 1.0;
     utt.lang = opts.lang || "en-US";
-    utt.onend = resolve;
-    utt.onerror = resolve;
-    window.speechSynthesis.speak(utt);
+    // Watchdog: even with voices present, a stalled speech engine can leave an utterance
+    // that never fires onend or onerror (a known browser failure mode after backgrounding
+    // a tab). Without this the candidate is stranded mid-test. Allow generous time —
+    // ~1s per 8 characters, floor 10s — then give up and report failure rather than hang.
+    let settled = false;
+    const finish = (ok) => { if (settled) return; settled = true; clearTimeout(guard); resolve(ok); };
+    const guard = setTimeout(() => finish(false), Math.max(10000, text.trim().length * 125));
+    utt.onend = () => finish(true);
+    utt.onerror = () => finish(false);
+    try { window.speechSynthesis.speak(utt); } catch (e) { finish(false); }
   });
 }
 
@@ -109,12 +145,19 @@ async function speakLine(text, opts = {}) {
 // browser SpeechSynthesis. Pauses between speakers feel natural.
 async function playMultiVoiceScript(script, { onProgress, signal } = {}) {
   // Prefer Gemini if a key is configured
-  if (window.LP_TTS && window.LP_TTS.isEnabled && window.LP_TTS.isEnabled()) {
+  // Returns TRUE if audio actually played, FALSE if this device could not produce any.
+  // The caller uses that to decide whether the part may be marked "played".
+  if (geminiTtsHealthy && window.LP_TTS && window.LP_TTS.isEnabled && window.LP_TTS.isEnabled()) {
     try {
-      await window.LP_TTS.playScript(script, { onProgress, signal });
-      return;
+      // A full script legitimately runs for minutes, so this budget is deliberately large —
+      // it exists only to stop an indefinite hang, not to police normal playback.
+      const r = await withTimeout(window.LP_TTS.playScript(script, { onProgress, signal }), 300000);
+      if (r !== "__timeout__") return true;
+      geminiTtsHealthy = false;
+      console.warn("Gemini playScript stalled — falling back to browser speech.");
     } catch (e) {
-      console.warn("Gemini TTS failed, falling back to browser TTS:", e.message);
+      geminiTtsHealthy = false;
+      console.warn("Gemini TTS failed, falling back to browser TTS:", e && e.message);
     }
   }
 
@@ -123,11 +166,18 @@ async function playMultiVoiceScript(script, { onProgress, signal } = {}) {
   const speakerMap = {};
   let nextSlot = 0;
   const pool = [voices.female, voices.male, voices.neutral].filter(Boolean);
-  if (!pool.length) return;
+  // No speech voices on this device — return FALSE rather than returning silently.
+  // This used to be a bare `return`, which meant the caller carried on, played a silent
+  // outro, and marked the part as PLAYED. On a Listening test that tells the candidate
+  // "you will hear the recording once only", they were then shown ten questions about
+  // audio that never existed, with the part greyed out as "✓ Played" and the section
+  // timer running. Devices without voices are not exotic: plenty of Android WebViews,
+  // Linux without speech-dispatcher, and privacy-hardened browsers ship none.
+  if (!pool.length) return false;
 
   const lines = script.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
   for (let i = 0; i < lines.length; i++) {
-    if (signal?.aborted) return;
+    if (signal?.aborted) return true;   // deliberate stop by the candidate, not a failure
     const line = lines[i];
     const m = line.match(/^([A-Z][A-Za-z .'-]{1,30}):\s+(.+)$/);
     let speaker, text;
@@ -140,9 +190,10 @@ async function playMultiVoiceScript(script, { onProgress, signal } = {}) {
     }
     if (onProgress) onProgress({ lineIdx: i, total: lines.length, speaker, text });
     await speakLine(text, { voice: speakerMap[speaker], rate: 1.0 });
-    if (signal?.aborted) return;
+    if (signal?.aborted) return true;   // deliberate stop, not a failure
     await new Promise(r => setTimeout(r, 250));
   }
+  return true;
 }
 
 function stopAllSpeech() {
@@ -983,6 +1034,9 @@ function ListeningSection({ sec, answers, setAnswer, sectionId, onRouteStage }) 
   const [played, setPlayed] = useStateT({});
   const [progress, setProgress] = useStateT(null);
   const [revealed, setRevealed] = useStateT({}); // CELPIP: which parts have moved to the answer phase
+  // Set when this device produced NO speech audio at all, so the candidate is told rather
+  // than left staring at questions about a recording they never heard.
+  const [audioFailed, setAudioFailed] = useStateT(false);
   const abortRef = useRefT(null);
   // TOEFL adaptive: only stage-1 parts are visible until stage 1 is submitted
   const adaptiveGated = !!(sec.adaptive && !sec.adaptiveRouted);
@@ -1019,24 +1073,33 @@ function ListeningSection({ sec, answers, setAnswer, sectionId, onRouteStage }) 
         ? (part.scriptType === "conversation" ? `Conversation ${partIdx + 1}` : `Lecture ${partIdx + 1}`)
         : `Part ${partNum}`;
       const intro = `Now beginning ${clipLabel}. You will hear the recording once only. Listen carefully and answer the questions.`;
-      try { await speakLine(intro, { geminiVoice: "Kore", signal: controller.signal }); } catch (e) {}
+      // The intro is the FIRST thing that speaks, so it is where a device with no working
+      // speech reveals itself. If it reports failure, stop here and tell the candidate —
+      // do not press on through a silent script and mark the part played.
+      let introOk = true;
+      try { introOk = await speakLine(intro, { geminiVoice: "Kore", signal: controller.signal }); } catch (e) { introOk = false; }
       if (controller.signal.aborted) { setPlaying(false); setProgress(null); return; }
+      if (introOk === false) { setAudioFailed(true); setPlaying(false); setProgress(null); return; }
       await new Promise(r => setTimeout(r, 600));
 
-      await playMultiVoiceScript(part.audioScript || part.script || "", {
+      const spoke = await playMultiVoiceScript(part.audioScript || part.script || "", {
         signal: controller.signal,
         onProgress: p => setProgress(p),
       });
 
-      if (!controller.signal.aborted) {
+      if (!controller.signal.aborted && spoke !== false) {
         await new Promise(r => setTimeout(r, 400));
         const outro = `That is the end of ${clipLabel}. You now have time to check your answers before moving on.`;
         try { await speakLine(outro, { geminiVoice: "Kore", signal: controller.signal }); } catch (e) {}
       }
 
-      if (!controller.signal.aborted) {
+      // Only mark the part played if audio ACTUALLY played. Marking a silent part as
+      // played greys out the replay button and tells the candidate they have had their
+      // one listen — the worst possible outcome on a Listening section.
+      if (!controller.signal.aborted && spoke !== false) {
         setPlayed(prev => ({ ...prev, [part.id]: true }));
       }
+      if (spoke === false) setAudioFailed(true);
       setPlaying(false);
       setProgress(null);
     }, 900);
@@ -1072,13 +1135,14 @@ function ListeningSection({ sec, answers, setAnswer, sectionId, onRouteStage }) 
     const intro = `Replaying Part ${partNum}.`;
     try { await speakLine(intro, { geminiVoice: "Kore", signal: controller.signal }); } catch (e) {}
     if (controller.signal.aborted) { setPlaying(false); setProgress(null); return; }
-    await playMultiVoiceScript(current.audioScript || current.script || "", {
+    const spoke = await playMultiVoiceScript(current.audioScript || current.script || "", {
       signal: controller.signal, onProgress: p => setProgress(p),
     });
-    if (!controller.signal.aborted) {
+    if (!controller.signal.aborted && spoke !== false) {
       const outro = `End of Part ${partNum}.`;
       try { await speakLine(outro, { geminiVoice: "Kore", signal: controller.signal }); } catch (e) {}
     }
+    if (spoke === false) setAudioFailed(true);
     setPlaying(false);
     setProgress(null);
   };
@@ -1128,6 +1192,14 @@ function ListeningSection({ sec, answers, setAnswer, sectionId, onRouteStage }) 
               {playing && (
                 <div style={{ marginTop: 10, display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "rgba(255,255,255,0.7)" }}>
                   <span className="audio-wave-dot" /> <span className="audio-wave-dot" /> <span className="audio-wave-dot" /> Audio in progress — do not refresh
+                </div>
+              )}
+              {audioFailed && (
+                <div role="alert" style={{ marginTop: 10, padding: "10px 12px", borderRadius: 10, background: "rgba(255,237,213,0.95)", color: "#7c2d12", fontSize: 13, lineHeight: 1.5 }}>
+                  <strong>⚠ No audio on this device.</strong> Your browser has no speech voices installed,
+                  so the recording could not play — this is not a problem with your answers. The part has
+                  <strong> not</strong> been marked as played, so nothing is lost. Try Chrome or Edge on
+                  desktop, where voices are built in. You can still do the Reading and Writing sections here.
                 </div>
               )}
             </div>
