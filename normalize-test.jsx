@@ -107,6 +107,22 @@
     return (opts || []).map(o => String(o || "").replace(/^[A-Z]\.\s*/, ""));
   }
 
+  function formFieldText(f) {
+    // Rebuild the form row the student saw, with the gap marked, e.g.
+    //   "Total cost: £_____"        (blank in the right column)
+    //   "_____ entrance road: Elm Street"  (blank in the left column)
+    const gap = "_____";
+    const left = f.labelBlank
+      ? gap + (f.labelSuffix || "")
+      : String(f.label || "").trim();
+    const right = f.labelBlank
+      ? String(f.rightContent || "").trim()
+      : (f.prefix || "") + gap + (f.suffix || "");
+    const l = left.trim(), r = right.trim();
+    if (l && r) return l + ": " + r;
+    return l || r || "";
+  }
+
   function letterFromAnswer(correctAnswer, options) {
     // ZIP may store the answer either as full text or letter; engine wants the letter.
     if (!correctAnswer) return "";
@@ -178,6 +194,9 @@
       base.labelSuffix = q.labelSuffix || "";
       base.rightContent= q.rightContent || "";
       base.num         = q.num || (idx + 1);
+      // The review screen and the AI tutor read `text`. Build it from the row the student
+      // actually saw — never from `prompt`, which some content files fill with a placeholder.
+      base.text = formFieldText(base) || base.text;
     } else if (t === "sent_fill") {
       // Sentence completion with inline blank — sentenceText contains __BLANK__
       base.answer = String(q.correctAnswer || "").trim();
@@ -186,6 +205,8 @@
       const rawSentence = q.sentenceText || q.prompt || q.text || "";
       base.sentenceText = rawSentence.replace(/_{3,}/g, "__BLANK__");
       base.num = q.num || (idx + 1);
+      // Same reason as form_field: the sentence is the question, `prompt` may be a placeholder.
+      if (base.sentenceText) base.text = base.sentenceText.replace(/__BLANK__/g, "_____");
     } else if (t === "fill") {
       base.answer = String(q.correctAnswer || "").trim();
       base.altAnswers = q.alternateAnswers || q.altAnswers || [];

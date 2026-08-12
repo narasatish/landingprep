@@ -140,8 +140,7 @@
       "rightContent": "",
       "answer": "22nd / 22",
       "explanation": "The answer \"22nd / 22\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the check-in time?",
-      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "prompt": "Visit date: _____ April",
       "partNumber": 1
     },
     {
@@ -158,8 +157,7 @@
       "rightContent": "",
       "answer": "Thursday",
       "explanation": "The answer \"Thursday\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Departure date: ___",
-      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "prompt": "Day of visit: _____",
       "partNumber": 1
     },
     {
@@ -176,8 +174,7 @@
       "rightContent": "",
       "answer": "28",
       "explanation": "The answer \"28\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the total cost?",
-      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "prompt": "Number of students: _____",
       "partNumber": 1
     },
     {
@@ -194,8 +191,7 @@
       "rightContent": "",
       "answer": "4.50",
       "explanation": "The answer \"4.50\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Meal plan: ___",
-      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "prompt": "Cost per student: £_____",
       "partNumber": 1
     },
     {
@@ -212,8 +208,7 @@
       "rightContent": "",
       "answer": "90",
       "explanation": "The answer \"90\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the breakfast option?",
-      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "prompt": "Tour duration: _____ minutes",
       "partNumber": 1
     },
     {
@@ -230,8 +225,7 @@
       "rightContent": "",
       "answer": "North",
       "explanation": "The answer \"North\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Arrival date: ___",
-      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "prompt": "Arrival gate: _____ Gate",
       "partNumber": 1
     },
     {
@@ -248,8 +242,7 @@
       "rightContent": "",
       "answer": "reference",
       "explanation": "The answer \"reference\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the room type?",
-      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "prompt": "Required to bring: booking _____",
       "partNumber": 1
     },
     {
@@ -266,8 +259,7 @@
       "rightContent": "",
       "answer": "Greenfield",
       "explanation": "The answer \"Greenfield\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Room number: ___",
-      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "prompt": "School name: _____ Primary School",
       "partNumber": 1
     },
     {
@@ -284,8 +276,7 @@
       "rightContent": "Mr. Adeyemi",
       "answer": "Lead",
       "explanation": "The answer \"Lead\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the cancellation policy?",
-      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "prompt": "_____ teacher surname: Mr. Adeyemi",
       "partNumber": 1
     },
     {
@@ -302,8 +293,7 @@
       "rightContent": "",
       "answer": "picnic",
       "explanation": "The answer \"picnic\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Special request: ___",
-      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
+      "prompt": "Lunch facility requested: _____ area",
       "partNumber": 1
     },
     {
@@ -730,8 +720,7 @@
       "sentenceText": "In 1928, Fleming observed that a __BLANK__ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
       "correctAnswer": "mould",
       "explanation": "The correct answer is: \"mould\".",
-      "prompt": "According to the lecturer, the first reason for this phenomenon is ___________.",
-      "audioContext": "A lecturer gives feedback on a history essay to a group of students.",
+      "prompt": "In 1928, Fleming observed that a _____ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
       "partNumber": 4
     },
     {
@@ -743,8 +732,7 @@
       "sentenceText": "Fleming's initial problem was that he could not __BLANK__ the active compound in sufficient quantities for clinical use.",
       "correctAnswer": "isolate / purify",
       "explanation": "The correct answer is: \"isolate / purify\".",
-      "prompt": "The speaker describes the current research of the topic.",
-      "audioContext": "A lecturer gives feedback on a history essay to a group of students.",
+      "prompt": "Fleming's initial problem was that he could not _____ the active compound in sufficient quantities for clinical use.",
       "partNumber": 4
     },
     {
@@ -756,8 +744,7 @@
       "sentenceText": "Florey and Chain, based at __BLANK__, were the first to purify penicillin and test it on a human patient.",
       "correctAnswer": "Oxford",
       "explanation": "The correct answer is: \"Oxford\".",
-      "prompt": "According to the lecturer, the third reason for this phenomenon is ___________.",
-      "audioContext": "A lecturer gives feedback on a history essay to a group of students.",
+      "prompt": "Florey and Chain, based at _____, were the first to purify penicillin and test it on a human patient.",
       "partNumber": 4
     },
     {
@@ -769,8 +756,7 @@
       "sentenceText": "__BLANK__ was the occupation of the first human patient treated with penicillin in 1941.",
       "correctAnswer": "Police officer",
       "explanation": "The correct answer is: \"Police officer\".",
-      "prompt": "The speaker describes the key challenge of the topic.",
-      "audioContext": "A lecturer gives feedback on a history essay to a group of students.",
+      "prompt": "_____ was the occupation of the first human patient treated with penicillin in 1941.",
       "partNumber": 4
     },
     {
@@ -782,8 +768,7 @@
       "sentenceText": "Mass production of penicillin during the Second World War required entirely new __BLANK__ techniques.",
       "correctAnswer": "fermentation",
       "explanation": "The correct answer is: \"fermentation\".",
-      "prompt": "According to the lecturer, the primary reason for this phenomenon is ___________.",
-      "audioContext": "A lecturer gives feedback on a history essay to a group of students.",
+      "prompt": "Mass production of penicillin during the Second World War required entirely new _____ techniques.",
       "partNumber": 4
     },
     {
@@ -872,7 +857,7 @@
       "partNumber": 1,
       "title": "Part 1: Museum Audio Guide",
       "audioDescription": "A recorded audio guide for visitors at the Natural History Museum.",
-      "context": "Guide describes the layout, exhibits, and special events at the museum.",
+      "context": "Museum Tour Booking",
       "questionRange": [
         1,
         10
@@ -882,7 +867,7 @@
       "partNumber": 2,
       "title": "Part 2: Community Sports Centre",
       "audioDescription": "An announcement about facilities and programmes at a newly opened sports centre.",
-      "context": "Manager explains membership options, class timetables, and booking procedures.",
+      "context": "Northgate Central Library — New Member Orientation",
       "questionRange": [
         11,
         20
@@ -892,7 +877,7 @@
       "partNumber": 3,
       "title": "Part 3: Research Project Discussion",
       "audioDescription": "Two students discuss their environmental science research project with their tutor.",
-      "context": "Students review methodology, data collection, and presentation structure.",
+      "context": "Discussion About a Research Project on Urban Noise",
       "questionRange": [
         21,
         30
@@ -902,7 +887,7 @@
       "partNumber": 4,
       "title": "Part 4: Assignment Feedback Session",
       "audioDescription": "A lecturer gives feedback on a history essay to a group of students.",
-      "context": "Discussion of argument structure, evidence quality, and referencing standards.",
+      "context": "Lecture: The History of Antibiotics",
       "questionRange": [
         31,
         40

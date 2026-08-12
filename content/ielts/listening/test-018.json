@@ -135,8 +135,7 @@
       "rightContent": "",
       "answer": "Anna Petrov",
       "explanation": "The answer \"Anna Petrov\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the check-in time?",
-      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "prompt": "Customer name: _____",
       "partNumber": 1
     },
     {
@@ -153,8 +152,7 @@
       "rightContent": "",
       "answer": "47",
       "explanation": "The answer \"47\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Departure date: ___",
-      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "prompt": "House number: _____ Chestnut Avenue",
       "partNumber": 1
     },
     {
@@ -171,8 +169,7 @@
       "rightContent": "",
       "answer": "BT4 8LD",
       "explanation": "The answer \"BT4 8LD\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the total cost?",
-      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "prompt": "Postcode: _____",
       "partNumber": 1
     },
     {
@@ -189,8 +186,7 @@
       "rightContent": "",
       "answer": "01622 793 450",
       "explanation": "The answer \"01622 793 450\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Meal plan: ___",
-      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "prompt": "Contact telephone: _____",
       "partNumber": 1
     },
     {
@@ -207,8 +203,7 @@
       "rightContent": "",
       "answer": "gas",
       "explanation": "The answer \"gas\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the breakfast option?",
-      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "prompt": "Boiler fuel type: _____ combi",
       "partNumber": 1
     },
     {
@@ -225,8 +220,7 @@
       "rightContent": "",
       "answer": "Vaillant",
       "explanation": "The answer \"Vaillant\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Arrival date: ___",
-      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "prompt": "Boiler brand: _____",
       "partNumber": 1
     },
     {
@@ -243,8 +237,7 @@
       "rightContent": "",
       "answer": "12",
       "explanation": "The answer \"12\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the room type?",
-      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "prompt": "Appointment window: 9 am to _____ pm",
       "partNumber": 1
     },
     {
@@ -261,8 +254,7 @@
       "rightContent": "",
       "answer": "65",
       "explanation": "The answer \"65\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Room number: ___",
-      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "prompt": "Call-out fee: £_____",
       "partNumber": 1
     },
     {
@@ -279,8 +271,7 @@
       "rightContent": "Marcus Webb",
       "answer": "Engineer",
       "explanation": "The answer \"Engineer\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the cancellation policy?",
-      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "prompt": "_____'s name: Marcus Webb",
       "partNumber": 1
     },
     {
@@ -297,8 +288,7 @@
       "rightContent": "",
       "answer": "text / text message",
       "explanation": "The answer \"text / text message\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Special request: ___",
-      "audioContext": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
+      "prompt": "Confirmation method: _____",
       "partNumber": 1
     },
     {
@@ -725,8 +715,7 @@
       "sentenceText": "Hydrothermal vents were first discovered in 1977 at a depth of __BLANK__ metres in the Galapagos Rift.",
       "correctAnswer": "2,400 / two thousand four hundred",
       "explanation": "The correct answer is: \"2,400 / two thousand four hundred\".",
-      "prompt": "According to the lecturer, the first reason for this phenomenon is ___________.",
-      "audioContext": "A new student registers at the university library and gets information about services.",
+      "prompt": "Hydrothermal vents were first discovered in 1977 at a depth of _____ metres in the Galapagos Rift.",
       "partNumber": 4
     },
     {
@@ -738,8 +727,7 @@
       "sentenceText": "The submersible __BLANK__ carried the researchers who made this landmark discovery.",
       "correctAnswer": "Alvin",
       "explanation": "The correct answer is: \"Alvin\".",
-      "prompt": "The speaker describes the current research of the topic.",
-      "audioContext": "A new student registers at the university library and gets information about services.",
+      "prompt": "The submersible _____ carried the researchers who made this landmark discovery.",
       "partNumber": 4
     },
     {
@@ -751,8 +739,7 @@
       "sentenceText": "Chemosynthetic bacteria use __BLANK__ released by vents to generate energy in the absence of sunlight.",
       "correctAnswer": "hydrogen sulphide",
       "explanation": "The correct answer is: \"hydrogen sulphide\".",
-      "prompt": "According to the lecturer, the third reason for this phenomenon is ___________.",
-      "audioContext": "A new student registers at the university library and gets information about services.",
+      "prompt": "Chemosynthetic bacteria use _____ released by vents to generate energy in the absence of sunlight.",
       "partNumber": 4
     },
     {
@@ -764,8 +751,7 @@
       "sentenceText": "__BLANK__, a constant fall of organic particles from surface waters, is the primary food source for most deep-sea benthic communities.",
       "correctAnswer": "Marine snow",
       "explanation": "The correct answer is: \"Marine snow\".",
-      "prompt": "The speaker describes the key challenge of the topic.",
-      "audioContext": "A new student registers at the university library and gets information about services.",
+      "prompt": "_____, a constant fall of organic particles from surface waters, is the primary food source for most deep-sea benthic communities.",
       "partNumber": 4
     },
     {
@@ -777,8 +763,7 @@
       "sentenceText": "It is estimated that up to __BLANK__ percent of all deep-sea creatures are capable of producing bioluminescence.",
       "correctAnswer": "90 / ninety",
       "explanation": "The correct answer is: \"90 / ninety\".",
-      "prompt": "According to the lecturer, the primary reason for this phenomenon is ___________.",
-      "audioContext": "A new student registers at the university library and gets information about services.",
+      "prompt": "It is estimated that up to _____ percent of all deep-sea creatures are capable of producing bioluminescence.",
       "partNumber": 4
     },
     {
@@ -867,7 +852,7 @@
       "partNumber": 1,
       "title": "Part 1: The History of Coffee Trade",
       "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Professor covers colonialism, coffee houses, and contemporary fair-trade movements.",
+      "context": "Arranging a Home Repair Service",
       "questionRange": [
         1,
         10
@@ -877,7 +862,7 @@
       "partNumber": 2,
       "title": "Part 2: Sleep and Memory Consolidation",
       "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "Researcher explains slow-wave sleep, hippocampal replay, and implications for learning.",
+      "context": "National Sports Academy — Facilities Tour",
       "questionRange": [
         11,
         20
@@ -887,7 +872,7 @@
       "partNumber": 3,
       "title": "Part 3: The History of Coffee Trade",
       "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Professor covers colonialism, coffee houses, and contemporary fair-trade movements.",
+      "context": "Seminar on Climate Change Adaptation in Agriculture",
       "questionRange": [
         21,
         30
@@ -897,7 +882,7 @@
       "partNumber": 4,
       "title": "Part 4: Sleep and Memory Consolidation",
       "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "Researcher explains slow-wave sleep, hippocampal replay, and implications for learning.",
+      "context": "Lecture: Deep-Sea Ecosystems",
       "questionRange": [
         31,
         40

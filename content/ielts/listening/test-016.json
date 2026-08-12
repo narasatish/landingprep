@@ -140,8 +140,7 @@
       "rightContent": "",
       "answer": "Thornton",
       "explanation": "The answer \"Thornton\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the check-in time?",
-      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "prompt": "Applicant surname: _____",
       "partNumber": 1
     },
     {
@@ -158,8 +157,7 @@
       "rightContent": "",
       "answer": "07823 441 096",
       "explanation": "The answer \"07823 441 096\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Departure date: ___",
-      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "prompt": "Telephone number: _____",
       "partNumber": 1
     },
     {
@@ -176,8 +174,7 @@
       "rightContent": "",
       "answer": "14th",
       "explanation": "The answer \"14th\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the total cost?",
-      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "prompt": "Start date: _____ March",
       "partNumber": 1
     },
     {
@@ -194,8 +191,7 @@
       "rightContent": "",
       "answer": "eight / 8",
       "explanation": "The answer \"eight / 8\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Meal plan: ___",
-      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "prompt": "Duration: _____ weeks",
       "partNumber": 1
     },
     {
@@ -212,8 +208,7 @@
       "rightContent": "",
       "answer": "240",
       "explanation": "The answer \"240\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the breakfast option?",
-      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "prompt": "Course fee: £_____",
       "partNumber": 1
     },
     {
@@ -230,8 +225,7 @@
       "rightContent": "",
       "answer": "7 / seven",
       "explanation": "The answer \"7 / seven\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Arrival date: ___",
-      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "prompt": "Class times: _____ to 9 pm",
       "partNumber": 1
     },
     {
@@ -248,8 +242,7 @@
       "rightContent": "",
       "answer": "14",
       "explanation": "The answer \"14\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the room type?",
-      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "prompt": "Room: Room _____",
       "partNumber": 1
     },
     {
@@ -266,8 +259,7 @@
       "rightContent": "",
       "answer": "March",
       "explanation": "The answer \"March\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Room number: ___",
-      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "prompt": "Registration deadline: 9th _____",
       "partNumber": 1
     },
     {
@@ -284,8 +276,7 @@
       "rightContent": "",
       "answer": "notepad",
       "explanation": "The answer \"notepad\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the cancellation policy?",
-      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "prompt": "Item to bring to first class: _____",
       "partNumber": 1
     },
     {
@@ -302,8 +293,7 @@
       "rightContent": "card / by card",
       "answer": "Payment",
       "explanation": "The answer \"Payment\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Special request: ___",
-      "audioContext": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
+      "prompt": "_____ method: card / by card",
       "partNumber": 1
     },
     {
@@ -730,8 +720,7 @@
       "sentenceText": "In 1928, Fleming observed that a __BLANK__ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
       "correctAnswer": "mould",
       "explanation": "The correct answer is: \"mould\".",
-      "prompt": "According to the lecturer, the first reason for this phenomenon is ___________.",
-      "audioContext": "An announcement about facilities and programmes at a newly opened sports centre.",
+      "prompt": "In 1928, Fleming observed that a _____ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
       "partNumber": 4
     },
     {
@@ -743,8 +732,7 @@
       "sentenceText": "Fleming's initial problem was that he could not __BLANK__ the active compound in sufficient quantities for clinical use.",
       "correctAnswer": "isolate / purify",
       "explanation": "The correct answer is: \"isolate / purify\".",
-      "prompt": "The speaker describes the current research of the topic.",
-      "audioContext": "An announcement about facilities and programmes at a newly opened sports centre.",
+      "prompt": "Fleming's initial problem was that he could not _____ the active compound in sufficient quantities for clinical use.",
       "partNumber": 4
     },
     {
@@ -756,8 +744,7 @@
       "sentenceText": "Florey and Chain, based at __BLANK__, were the first to purify penicillin and test it on a human patient.",
       "correctAnswer": "Oxford",
       "explanation": "The correct answer is: \"Oxford\".",
-      "prompt": "According to the lecturer, the third reason for this phenomenon is ___________.",
-      "audioContext": "An announcement about facilities and programmes at a newly opened sports centre.",
+      "prompt": "Florey and Chain, based at _____, were the first to purify penicillin and test it on a human patient.",
       "partNumber": 4
     },
     {
@@ -769,8 +756,7 @@
       "sentenceText": "__BLANK__ was the occupation of the first human patient treated with penicillin in 1941.",
       "correctAnswer": "Police officer",
       "explanation": "The correct answer is: \"Police officer\".",
-      "prompt": "The speaker describes the key challenge of the topic.",
-      "audioContext": "An announcement about facilities and programmes at a newly opened sports centre.",
+      "prompt": "_____ was the occupation of the first human patient treated with penicillin in 1941.",
       "partNumber": 4
     },
     {
@@ -782,8 +768,7 @@
       "sentenceText": "Mass production of penicillin during the Second World War required entirely new __BLANK__ techniques.",
       "correctAnswer": "fermentation",
       "explanation": "The correct answer is: \"fermentation\".",
-      "prompt": "According to the lecturer, the primary reason for this phenomenon is ___________.",
-      "audioContext": "An announcement about facilities and programmes at a newly opened sports centre.",
+      "prompt": "Mass production of penicillin during the Second World War required entirely new _____ techniques.",
       "partNumber": 4
     },
     {
@@ -872,7 +857,7 @@
       "partNumber": 1,
       "title": "Part 1: Hotel Booking",
       "audioDescription": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
-      "context": "Customer calls to book a room at the Grand View Hotel for a conference.",
+      "context": "Booking a Language Course",
       "questionRange": [
         1,
         10
@@ -882,7 +867,7 @@
       "partNumber": 2,
       "title": "Part 2: Library Registration",
       "audioDescription": "A new student registers at the university library and gets information about services.",
-      "context": "Library assistant explains membership cards, borrowing limits, and facilities.",
+      "context": "Westfield Shopping Complex — Visitor Orientation",
       "questionRange": [
         11,
         20
@@ -892,7 +877,7 @@
       "partNumber": 3,
       "title": "Part 3: Museum Audio Guide",
       "audioDescription": "A recorded audio guide for visitors at the Natural History Museum.",
-      "context": "Guide describes the layout, exhibits, and special events at the museum.",
+      "context": "Seminar on Climate Change Adaptation in Agriculture",
       "questionRange": [
         21,
         30
@@ -902,7 +887,7 @@
       "partNumber": 4,
       "title": "Part 4: Community Sports Centre",
       "audioDescription": "An announcement about facilities and programmes at a newly opened sports centre.",
-      "context": "Manager explains membership options, class timetables, and booking procedures.",
+      "context": "Lecture: The History of Antibiotics",
       "questionRange": [
         31,
         40

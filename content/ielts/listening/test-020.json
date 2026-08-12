@@ -135,8 +135,7 @@
       "rightContent": "",
       "answer": "Osei",
       "explanation": "The answer \"Osei\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the check-in time?",
-      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "prompt": "Surname: _____",
       "partNumber": 1
     },
     {
@@ -153,8 +152,7 @@
       "rightContent": "",
       "answer": "Maple Street",
       "explanation": "The answer \"Maple Street\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Departure date: ___",
-      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "prompt": "Address: Flat 3, 18 _____, Thornton",
       "partNumber": 1
     },
     {
@@ -171,8 +169,7 @@
       "rightContent": "",
       "answer": "TH6 2PQ",
       "explanation": "The answer \"TH6 2PQ\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the total cost?",
-      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "prompt": "Postcode: _____",
       "partNumber": 1
     },
     {
@@ -189,8 +186,7 @@
       "rightContent": "",
       "answer": "1994",
       "explanation": "The answer \"1994\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Meal plan: ___",
-      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "prompt": "Date of birth: 2nd August _____",
       "partNumber": 1
     },
     {
@@ -207,8 +203,7 @@
       "rightContent": "",
       "answer": "8 / eight",
       "explanation": "The answer \"8 / eight\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the breakfast option?",
-      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "prompt": "Maximum items allowed: up to _____ items",
       "partNumber": 1
     },
     {
@@ -225,8 +220,7 @@
       "rightContent": "",
       "answer": "3 / three",
       "explanation": "The answer \"3 / three\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Arrival date: ___",
-      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "prompt": "Standard loan period: _____ weeks",
       "partNumber": 1
     },
     {
@@ -243,8 +237,7 @@
       "rightContent": "10p / 10 pence",
       "answer": "Standard",
       "explanation": "The answer \"Standard\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the room type?",
-      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "prompt": "_____ fine per day: 10p / 10 pence",
       "partNumber": 1
     },
     {
@@ -261,8 +254,7 @@
       "rightContent": "",
       "answer": "20 / twenty",
       "explanation": "The answer \"20 / twenty\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Room number: ___",
-      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "prompt": "Reserved item fine (per day): _____p",
       "partNumber": 1
     },
     {
@@ -279,8 +271,7 @@
       "rightContent": "",
       "answer": "50 / fifty",
       "explanation": "The answer \"50 / fifty\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the cancellation policy?",
-      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "prompt": "Online reservation fee: _____p per item",
       "partNumber": 1
     },
     {
@@ -297,8 +288,7 @@
       "rightContent": "",
       "answer": "information desk",
       "explanation": "The answer \"information desk\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Special request: ___",
-      "audioContext": "A lecture on how engineers are using designs from nature to solve modern problems.",
+      "prompt": "Card collection point: _____",
       "partNumber": 1
     },
     {
@@ -725,8 +715,7 @@
       "sentenceText": "__BLANK__ is the traditional economic model in which individuals carefully weigh costs and benefits before making decisions.",
       "correctAnswer": "The rational actor model",
       "explanation": "The correct answer is: \"The rational actor model\".",
-      "prompt": "According to the lecturer, the first reason for this phenomenon is ___________.",
-      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "prompt": "_____ is the traditional economic model in which individuals carefully weigh costs and benefits before making decisions.",
       "partNumber": 4
     },
     {
@@ -738,8 +727,7 @@
       "sentenceText": "Kahneman and Tversky found that losses feel approximately __BLANK__ as painful as an equivalent financial gain.",
       "correctAnswer": "twice as",
       "explanation": "The correct answer is: \"twice as\".",
-      "prompt": "The speaker describes the current research of the topic.",
-      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "prompt": "Kahneman and Tversky found that losses feel approximately _____ as painful as an equivalent financial gain.",
       "partNumber": 4
     },
     {
@@ -751,8 +739,7 @@
       "sentenceText": "The tendency to remain in programmes one is automatically enrolled in is known as the __BLANK__.",
       "correctAnswer": "default effect",
       "explanation": "The correct answer is: \"default effect\".",
-      "prompt": "According to the lecturer, the third reason for this phenomenon is ___________.",
-      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "prompt": "The tendency to remain in programmes one is automatically enrolled in is known as the _____.",
       "partNumber": 4
     },
     {
@@ -764,8 +751,7 @@
       "sentenceText": "__BLANK__ describes our tendency to place too much weight on immediate rewards at the expense of future benefits.",
       "correctAnswer": "Present bias",
       "explanation": "The correct answer is: \"Present bias\".",
-      "prompt": "The speaker describes the key challenge of the topic.",
-      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "prompt": "_____ describes our tendency to place too much weight on immediate rewards at the expense of future benefits.",
       "partNumber": 4
     },
     {
@@ -777,8 +763,7 @@
       "sentenceText": "Thaler and Sunstein popularised nudge theory in a book published in __BLANK__.",
       "correctAnswer": "2008",
       "explanation": "The correct answer is: \"2008\".",
-      "prompt": "According to the lecturer, the primary reason for this phenomenon is ___________.",
-      "audioContext": "An academic talk on the neuroscience of memory formation during sleep.",
+      "prompt": "Thaler and Sunstein popularised nudge theory in a book published in _____.",
       "partNumber": 4
     },
     {
@@ -867,7 +852,7 @@
       "partNumber": 1,
       "title": "Part 1: Biomimicry in Engineering",
       "audioDescription": "A lecture on how engineers are using designs from nature to solve modern problems.",
-      "context": "Professor explains principles of biomimicry with examples from aeronautics and materials science.",
+      "context": "Library Membership and Book Loan",
       "questionRange": [
         1,
         10
@@ -877,7 +862,7 @@
       "partNumber": 2,
       "title": "Part 2: Urban Migration Patterns",
       "audioDescription": "An academic lecture on the causes and consequences of rural-to-urban migration.",
-      "context": "Speaker discusses push-pull factors, infrastructure challenges, and policy responses.",
+      "context": "Central Railway Station — Passenger Information",
       "questionRange": [
         11,
         20
@@ -887,7 +872,7 @@
       "partNumber": 3,
       "title": "Part 3: The History of Coffee Trade",
       "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Professor covers colonialism, coffee houses, and contemporary fair-trade movements.",
+      "context": "Seminar on Climate Change Adaptation in Agriculture",
       "questionRange": [
         21,
         30
@@ -897,7 +882,7 @@
       "partNumber": 4,
       "title": "Part 4: Sleep and Memory Consolidation",
       "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "Researcher explains slow-wave sleep, hippocampal replay, and implications for learning.",
+      "context": "Lecture: Behavioural Economics and Consumer Choice",
       "questionRange": [
         31,
         40

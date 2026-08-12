@@ -135,8 +135,7 @@
       "rightContent": "",
       "answer": "Kowalczyk",
       "explanation": "The answer \"Kowalczyk\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the check-in time?",
-      "audioContext": "Two students discuss their environmental science research project with their tutor.",
+      "prompt": "Member surname: _____",
       "partNumber": 1
     },
     {
@@ -153,8 +152,7 @@
       "rightContent": "",
       "answer": "1989",
       "explanation": "The answer \"1989\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Departure date: ___",
-      "audioContext": "Two students discuss their environmental science research project with their tutor.",
+      "prompt": "Date of birth: 14th June _____",
       "partNumber": 1
     },
     {
@@ -171,8 +169,7 @@
       "rightContent": "",
       "answer": "six",
       "explanation": "The answer \"six\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the total cost?",
-      "audioContext": "Two students discuss their environmental science research project with their tutor.",
+      "prompt": "Membership chosen: _____-monthly",
       "partNumber": 1
     },
     {
@@ -189,8 +186,7 @@
       "rightContent": "",
       "answer": "300",
       "explanation": "The answer \"300\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Meal plan: ___",
-      "audioContext": "Two students discuss their environmental science research project with their tutor.",
+      "prompt": "Total cost: £_____",
       "partNumber": 1
     },
     {
@@ -207,8 +203,7 @@
       "rightContent": "",
       "answer": "padlock",
       "explanation": "The answer \"padlock\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the breakfast option?",
-      "audioContext": "Two students discuss their environmental science research project with their tutor.",
+      "prompt": "Item to bring: own _____",
       "partNumber": 1
     },
     {
@@ -225,8 +220,7 @@
       "rightContent": "",
       "answer": "rear",
       "explanation": "The answer \"rear\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Arrival date: ___",
-      "audioContext": "Two students discuss their environmental science research project with their tutor.",
+      "prompt": "Parking area: _____ car park",
       "partNumber": 1
     },
     {
@@ -243,8 +237,7 @@
       "rightContent": "Elm Street",
       "answer": "Parking",
       "explanation": "The answer \"Parking\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the room type?",
-      "audioContext": "Two students discuss their environmental science research project with their tutor.",
+      "prompt": "_____ entrance road: Elm Street",
       "partNumber": 1
     },
     {
@@ -261,8 +254,7 @@
       "rightContent": "",
       "answer": "Friday",
       "explanation": "The answer \"Friday\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Room number: ___",
-      "audioContext": "Two students discuss their environmental science research project with their tutor.",
+      "prompt": "Card ready from: _____",
       "partNumber": 1
     },
     {
@@ -279,8 +271,7 @@
       "rightContent": "",
       "answer": "david.k",
       "explanation": "The answer \"david.k\" is stated in the conversation.",
-      "prompt": "According to the recording, what is the cancellation policy?",
-      "audioContext": "Two students discuss their environmental science research project with their tutor.",
+      "prompt": "Email: _____@greenmail.net",
       "partNumber": 1
     },
     {
@@ -297,8 +288,7 @@
       "rightContent": "",
       "answer": "yes / included",
       "explanation": "The answer \"yes / included\" is stated in the conversation.",
-      "prompt": "Complete the booking details: Name: ___; Phone: ___; Special request: ___",
-      "audioContext": "Two students discuss their environmental science research project with their tutor.",
+      "prompt": "Swimming pool access: _____",
       "partNumber": 1
     },
     {
@@ -725,8 +715,7 @@
       "sentenceText": "In 1928, Fleming observed that a __BLANK__ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
       "correctAnswer": "mould",
       "explanation": "The correct answer is: \"mould\".",
-      "prompt": "According to the lecturer, the first reason for this phenomenon is ___________.",
-      "audioContext": "An academic lecture on the causes and consequences of rural-to-urban migration.",
+      "prompt": "In 1928, Fleming observed that a _____ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
       "partNumber": 4
     },
     {
@@ -738,8 +727,7 @@
       "sentenceText": "Fleming's initial problem was that he could not __BLANK__ the active compound in sufficient quantities for clinical use.",
       "correctAnswer": "isolate / purify",
       "explanation": "The correct answer is: \"isolate / purify\".",
-      "prompt": "The speaker describes the current research of the topic.",
-      "audioContext": "An academic lecture on the causes and consequences of rural-to-urban migration.",
+      "prompt": "Fleming's initial problem was that he could not _____ the active compound in sufficient quantities for clinical use.",
       "partNumber": 4
     },
     {
@@ -751,8 +739,7 @@
       "sentenceText": "Florey and Chain, based at __BLANK__, were the first to purify penicillin and test it on a human patient.",
       "correctAnswer": "Oxford",
       "explanation": "The correct answer is: \"Oxford\".",
-      "prompt": "According to the lecturer, the third reason for this phenomenon is ___________.",
-      "audioContext": "An academic lecture on the causes and consequences of rural-to-urban migration.",
+      "prompt": "Florey and Chain, based at _____, were the first to purify penicillin and test it on a human patient.",
       "partNumber": 4
     },
     {
@@ -764,8 +751,7 @@
       "sentenceText": "__BLANK__ was the occupation of the first human patient treated with penicillin in 1941.",
       "correctAnswer": "Police officer",
       "explanation": "The correct answer is: \"Police officer\".",
-      "prompt": "The speaker describes the key challenge of the topic.",
-      "audioContext": "An academic lecture on the causes and consequences of rural-to-urban migration.",
+      "prompt": "_____ was the occupation of the first human patient treated with penicillin in 1941.",
       "partNumber": 4
     },
     {
@@ -777,8 +763,7 @@
       "sentenceText": "Mass production of penicillin during the Second World War required entirely new __BLANK__ techniques.",
       "correctAnswer": "fermentation",
       "explanation": "The correct answer is: \"fermentation\".",
-      "prompt": "According to the lecturer, the primary reason for this phenomenon is ___________.",
-      "audioContext": "An academic lecture on the causes and consequences of rural-to-urban migration.",
+      "prompt": "Mass production of penicillin during the Second World War required entirely new _____ techniques.",
       "partNumber": 4
     },
     {
@@ -867,7 +852,7 @@
       "partNumber": 1,
       "title": "Part 1: Research Project Discussion",
       "audioDescription": "Two students discuss their environmental science research project with their tutor.",
-      "context": "Students review methodology, data collection, and presentation structure.",
+      "context": "Enquiry About a Sports Centre Membership",
       "questionRange": [
         1,
         10
@@ -877,7 +862,7 @@
       "partNumber": 2,
       "title": "Part 2: Assignment Feedback Session",
       "audioDescription": "A lecturer gives feedback on a history essay to a group of students.",
-      "context": "Discussion of argument structure, evidence quality, and referencing standards.",
+      "context": "St. Mary's General Hospital — Visitor Orientation",
       "questionRange": [
         11,
         20
@@ -887,7 +872,7 @@
       "partNumber": 3,
       "title": "Part 3: Biomimicry in Engineering",
       "audioDescription": "A lecture on how engineers are using designs from nature to solve modern problems.",
-      "context": "Professor explains principles of biomimicry with examples from aeronautics and materials science.",
+      "context": "Discussion About a Research Project on Urban Noise",
       "questionRange": [
         21,
         30
@@ -897,7 +882,7 @@
       "partNumber": 4,
       "title": "Part 4: Urban Migration Patterns",
       "audioDescription": "An academic lecture on the causes and consequences of rural-to-urban migration.",
-      "context": "Speaker discusses push-pull factors, infrastructure challenges, and policy responses.",
+      "context": "Lecture: The History of Antibiotics",
       "questionRange": [
         31,
         40

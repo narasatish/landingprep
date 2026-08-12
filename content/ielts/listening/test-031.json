@@ -497,7 +497,6 @@
       "difficulty": "hard",
       "topic": "volunteer project",
       "prompt": "Choose the letter that matches the opinion expressed about data collection.",
-      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
       "partNumber": 3
     },
     {
@@ -521,7 +520,6 @@
       "difficulty": "hard",
       "topic": "volunteer project",
       "prompt": "What does the tutor say about the timeline?",
-      "audioContext": "A recorded audio guide for visitors at the Natural History Museum.",
       "partNumber": 3
     },
     {
@@ -719,7 +717,7 @@
       "partNumber": 1,
       "title": "Part 1: Hotel Booking",
       "audioDescription": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
-      "context": "Customer calls to book a room at the Grand View Hotel for a conference.",
+      "context": "Renting a flat — phone enquiry",
       "questionRange": [
         1,
         10
@@ -729,7 +727,7 @@
       "partNumber": 2,
       "title": "Part 2: Library Registration",
       "audioDescription": "A new student registers at the university library and gets information about services.",
-      "context": "Library assistant explains membership cards, borrowing limits, and facilities.",
+      "context": "Community centre activities talk",
       "questionRange": [
         11,
         20
@@ -739,7 +737,7 @@
       "partNumber": 3,
       "title": "Part 3: Museum Audio Guide",
       "audioDescription": "A recorded audio guide for visitors at the Natural History Museum.",
-      "context": "Guide describes the layout, exhibits, and special events at the museum.",
+      "context": "Workplace volunteer project discussion",
       "questionRange": [
         21,
         30
@@ -749,7 +747,7 @@
       "partNumber": 4,
       "title": "Part 4: Community Sports Centre",
       "audioDescription": "An announcement about facilities and programmes at a newly opened sports centre.",
-      "context": "Manager explains membership options, class timetables, and booking procedures.",
+      "context": "Talk on the history of coffee",
       "questionRange": [
         31,
         40

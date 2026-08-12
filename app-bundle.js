@@ -2726,6 +2726,14 @@
   function normaliseOptionLabels(opts) {
     return (opts || []).map((o) => String(o || "").replace(/^[A-Z]\.\s*/, ""));
   }
+  function formFieldText(f) {
+    const gap = "_____";
+    const left = f.labelBlank ? gap + (f.labelSuffix || "") : String(f.label || "").trim();
+    const right = f.labelBlank ? String(f.rightContent || "").trim() : (f.prefix || "") + gap + (f.suffix || "");
+    const l = left.trim(), r = right.trim();
+    if (l && r) return l + ": " + r;
+    return l || r || "";
+  }
   function letterFromAnswer(correctAnswer, options) {
     if (!correctAnswer) return "";
     const ca = String(correctAnswer).trim();
@@ -2783,12 +2791,14 @@
       base.labelSuffix = q.labelSuffix || "";
       base.rightContent = q.rightContent || "";
       base.num = q.num || idx + 1;
+      base.text = formFieldText(base) || base.text;
     } else if (t === "sent_fill") {
       base.answer = String(q.correctAnswer || "").trim();
       base.altAnswers = q.alternateAnswers || q.altAnswers || [];
       const rawSentence = q.sentenceText || q.prompt || q.text || "";
       base.sentenceText = rawSentence.replace(/_{3,}/g, "__BLANK__");
       base.num = q.num || idx + 1;
+      if (base.sentenceText) base.text = base.sentenceText.replace(/__BLANK__/g, "_____");
     } else if (t === "fill") {
       base.answer = String(q.correctAnswer || "").trim();
       base.altAnswers = q.alternateAnswers || q.altAnswers || [];
