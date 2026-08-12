@@ -762,12 +762,15 @@ I would therefore encourage the council to invest in the library project, as its
       setAiFb(null);
       const examName = exam && exam.name || "IELTS";
       const rb = RUBRICS[exam && exam.id || "ielts"] || RUBRICS.ielts;
+      const MAX_CHARS = 9e3;
+      const sent = text.slice(0, MAX_CHARS);
+      const truncated = text.length > MAX_CHARS;
       const prompt = `You are a certified ${examName} writing examiner. Score the candidate's response strictly against the OFFICIAL ${examName} rubric and give a calibrated, realistic result (do not be generous).
 
 TASK: ${currentPrompt.prompt || currentPrompt.label || "Writing task"}
 
-CANDIDATE RESPONSE (${wordCount} words):
-"""${text.slice(0, 3500)}"""
+CANDIDATE RESPONSE (${wordCount} words${truncated ? `, shown here truncated to the first ${MAX_CHARS} characters \u2014 do NOT penalise the ending or a missing conclusion` : ""}):
+"""${sent}"""
 
 Reply in under 260 words as plain text with these EXACT labelled sections:
 OVERALL: (the overall ${rb.scale} score, with a one-line justification)

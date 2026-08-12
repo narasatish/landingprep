@@ -567,14 +567,16 @@ async function emailReadyPosts(ig, dueEntries) {
 }
 // AI verification of one caption (best-effort; NEVER blocks posting). Returns { ok, issues[] }.
 async function geminiVerifyCaption(caption) {
-  if (!GEMINI_API_KEY || !caption) return { ok: true, issues: [] };
+  if (!AI_KEYS.length || !caption) return { ok: true, issues: [] };
   const prompt = "You are a strict fact-checker for a study-abroad Instagram brand for Indian students. " +
     "Review this caption ONLY for: (1) clear factual errors about exams, visas, universities or countries; " +
     "(2) obviously cut-off / incomplete sentences; (3) anything misleading. Ignore style and tone. " +
     "If it is fine, reply with exactly: OK. Otherwise reply with a short bullet list of the specific problems.\n\nCAPTION:\n" + caption;
   try {
+    // Via the ladder (free key first, cheapest model first) — this used to call geminiPost
+    // with no key, which defaults to the PAID key on every caption check.
     const r = await Promise.race([
-      geminiPost("gemini-2.5-flash", { contents: [{ parts: [{ text: prompt }] }], generationConfig: { temperature: 0, thinkingConfig: { thinkingBudget: 0 } } }),
+      geminiWithLadder(() => ({ contents: [{ parts: [{ text: prompt }] }], generationConfig: { temperature: 0, thinkingConfig: { thinkingBudget: 0 } } })),
       new Promise((_, rej) => setTimeout(() => rej(new Error("timeout")), 15000)),
     ]);
     const txt = String((r && r.text) || "").trim();
@@ -839,7 +841,7 @@ app.all("/api/ig/post-daily", async (req, res) => {
 // proxies to Gemini 2.5 TTS using the server key and returns base64 audio. This
 // is what gives the natural human examiner/listening voice across the site.
 app.post("/api/tts", async (req, res) => {
-  if (!GEMINI_API_KEY) return res.status(503).json({ error: "TTS unavailable (no key)" });
+  if (!AI_KEYS.length) return res.status(503).json({ error: "TTS unavailable (no key)" });
   const text = String((req.body && req.body.text) || "").slice(0, 2000);
   const voice = (String((req.body && req.body.voice) || "Kore").replace(/[^A-Za-z]/g, "").slice(0, 24)) || "Kore";
   const lang = String((req.body && req.body.lang) || "en").toLowerCase().slice(0, 2);
@@ -853,19 +855,37 @@ app.post("/api/tts", async (req, res) => {
   };
   const instr = INSTR[lang] || "Say the following naturally in a warm, friendly voice: ";
   try {
-    const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=" + GEMINI_API_KEY;
-    const r = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: instr + text }] }],
-        generationConfig: { responseModalities: ["AUDIO"], speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: voice } } } },
-      }),
+    // Free key first, paid only as a fallback — same ladder as the text models. This used
+    // to call GEMINI_API_KEY directly, which meant every listening/examiner voice billed the
+    // paid key, and setting ONLY the free key (what the startup warning asks for) returned
+    // 503 and silently killed all audio on the site.
+    aiRollDay();
+    const body = JSON.stringify({
+      contents: [{ parts: [{ text: instr + text }] }],
+      generationConfig: { responseModalities: ["AUDIO"], speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: voice } } } },
     });
-    if (!r.ok) { const e = await r.text(); return res.status(502).json({ error: "tts upstream " + r.status, detail: e.slice(0, 160) }); }
-    const j = await r.json();
-    const b64 = j && j.candidates && j.candidates[0] && j.candidates[0].content && j.candidates[0].content.parts && j.candidates[0].content.parts[0] && j.candidates[0].content.parts[0].inlineData && j.candidates[0].content.parts[0].inlineData.data;
-    if (!b64) return res.status(502).json({ error: "empty audio" });
+    let b64 = null, lastErr = null;
+    for (const cred of AI_KEYS) {
+      if (cred.paid && AI_SPEND.paidCalls >= AI_PAID_RPD) {
+        lastErr = `paid daily cap reached (${AI_PAID_RPD})`;
+        continue;
+      }
+      const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=" + cred.key;
+      let r;
+      try {
+        r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body });
+      } catch (e) { lastErr = scrubSecrets(e && e.message); continue; }
+      if (!r.ok) {
+        lastErr = "upstream " + r.status + " " + (await r.text()).slice(0, 120);
+        console.warn(`[tts] ${cred.label} failed: ${lastErr}`);
+        continue; // rate-limited / quota-exhausted on this tier — try the next credential
+      }
+      const j = await r.json();
+      b64 = j?.candidates?.[0]?.content?.parts?.[0]?.inlineData?.data || null;
+      if (b64) { if (cred.paid) AI_SPEND.paidCalls++; else AI_SPEND.freeCalls++; break; }
+      lastErr = "empty audio";
+    }
+    if (!b64) return res.status(502).json({ error: "tts failed", detail: String(lastErr || "no audio").slice(0, 160) });
     // Cache so the next request for the same audio is instant + free (bounded LRU).
     try { TTS_CACHE.set(_ttsKey(req.body || {}), { audio: b64, ts: Date.now() }); if (TTS_CACHE.size > 400) TTS_CACHE.delete(TTS_CACHE.keys().next().value); } catch (e) {}
     res.set("Cache-Control", "public, max-age=86400");
@@ -1239,6 +1259,12 @@ app.post("/api/ai-tutor/generate", async (req, res) => {
 // a JSON file. The frontend uses this when reachable and falls back to localStorage
 // otherwise, so the site works either way.
 const AUTH_SECRET = process.env.AUTH_SECRET || crypto.createHash("sha256").update(GEMINI_API_KEY + "|landingprep-auth").digest("hex");
+if (!process.env.AUTH_SECRET) {
+  // The fallback is derived from GEMINI_API_KEY, so rotating or removing that key silently
+  // changes the signing secret and logs EVERY user out. Set AUTH_SECRET explicitly to
+  // decouple sessions from the AI billing key — especially before moving to the free key.
+  console.warn("⚠️  AUTH_SECRET not set — session signing is derived from GEMINI_API_KEY, so changing that key will log out every user. Set AUTH_SECRET in the environment.");
+}
 const STORE_PATH = path.join(__dirname, "data", "auth-store.json");
 let STORE = { users: {}, history: {}, subscribers: {} };
 (function loadStore() {

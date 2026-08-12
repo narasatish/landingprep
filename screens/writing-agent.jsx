@@ -585,10 +585,17 @@
       setAiLoading(true); setAiFb(null);
       const examName = (exam && exam.name) || "IELTS";
       const rb = RUBRICS[(exam && exam.id) || "ielts"] || RUBRICS.ielts;
+      // Long responses (GRE issue essays run past 600 words) were silently cut at 3,500
+      // chars while the header still claimed the full word count — so the examiner graded a
+      // partial essay and marked it down for an ending it never saw. Give it room, and say
+      // so explicitly on the rare occasion the cap is still hit.
+      const MAX_CHARS = 9000;
+      const sent = text.slice(0, MAX_CHARS);
+      const truncated = text.length > MAX_CHARS;
       const prompt =
         `You are a certified ${examName} writing examiner. Score the candidate's response strictly against the OFFICIAL ${examName} rubric and give a calibrated, realistic result (do not be generous).\n\n` +
         `TASK: ${currentPrompt.prompt || currentPrompt.label || "Writing task"}\n\n` +
-        `CANDIDATE RESPONSE (${wordCount} words):\n"""${text.slice(0, 3500)}"""\n\n` +
+        `CANDIDATE RESPONSE (${wordCount} words${truncated ? `, shown here truncated to the first ${MAX_CHARS} characters — do NOT penalise the ending or a missing conclusion` : ""}):\n"""${sent}"""\n\n` +
         `Reply in under 260 words as plain text with these EXACT labelled sections:\n` +
         `OVERALL: (the overall ${rb.scale} score, with a one-line justification)\n` +
         rb.criteria.map(c => `${c.toUpperCase()}: (sub-score on ${rb.scale} + one specific comment)`).join("\n") + `\n` +
