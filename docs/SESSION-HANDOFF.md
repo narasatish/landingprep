@@ -1,6 +1,6 @@
 # LandingPrep — Session Handoff (read me FIRST in a new session)
 
-**Last updated: 2026-08-08 (session 9) · repo at v432 · branch `main`, all pushed & live.**
+**Last updated: 2026-08-12 (session 10) · repo at v438 · branch `main`, all pushed & live.**
 Production auto-deploys on every push to `main`. Keep this file updated at the end of major
 work — it went 4 versions stale (said v394 while production ran v401) and cost a session's
 worth of re-derivation.
@@ -28,7 +28,55 @@ worth of re-derivation.
 > and the warning did not stop it happening again. Read `sw.js`
 > (`git show <sha>:sw.js | grep lp-v`) for the real value, every time.
 > Verified chain: 401 → 405 → 409 → 411 → 413 → 415 → 416 → 417 → 421 → 423 → 425 → 428 → 431
-> → 432 — every deploy bumped, no duplicates.
+> → 432 → 436 → 437 → 438 — every deploy bumped, no duplicates.
+
+> 🔎 **Session 10 changed where the effort should go.** Sessions 7–9 concluded the on-site work
+> was exhausted and only authority remained. That is still true *for SEO* — but it was never
+> true for the PRODUCT. One hour of actually using the app (rather than auditing it) turned up
+> a broken IELTS Listening player, then 450 questions whose review screen showed a question the
+> student never saw, then a test library advertising ~3.5x more material than it holds. None of
+> these appear in any audit, because every page renders, every test passes and every URL is
+> 200. **Use the product before auditing it.**
+
+---
+
+## 📉 The test library holds far less material than the file count suggests
+
+Measured 2026-08-12. `content/` has **1,019 `test-NNN.json` files** and **5,420 distinct
+questions** across 18,735 instances — **each question is shown ~3.5x**. Per section, counting
+for each test how much material had NOT appeared in an earlier-numbered test of that section:
+
+| section | files | tests' worth of material | tests adding NOTHING new |
+|---|---|---|---|
+| `celpip/reading` | 30 | ~1.1 | 15 |
+| `gmat/verbal` | 30 | ~1.3 | 27 |
+| `gmat/quant` | 30 | ~1.9 | 28 |
+| `toefl/listening` | 30 | ~2.1 | 27 |
+| `ielts/reading` | 60 | ~4.0 | **54** |
+| `ielts/listening` | 61 | ~5.7 | 50 |
+| `pte/listening` | 60 | ~6.1 | 47 |
+| `celpip/listening` | 60 | ~6.9 | 50 |
+
+Genuinely varied, leave alone: `toefl/reading` (95% new), `oet`/`sat`/`act` (97–99%),
+`pte/speaking-writing` (74%), `duolingo/literacy` + `comprehension` (71%), `celpip/writing`
+(70%), `ielts/writing` (69%), `gre/quant` (60%).
+
+The copy was fixed to advertise **5,400+ practice questions** instead of "1,000+ mock tests",
+and `tools/audit-content-claims.mjs` (in `npm test`) now fails the build if any advertised
+number exceeds the measured total. **The content itself was NOT fixed** — writing real
+questions for the eight sections above is the outstanding job, and it is the one that would
+actually make the product good. Do not "fix" it by deleting files: the full mocks reference
+section tests by filename (`mock-014` → `test-014.json`), so deletions must rewire those.
+
+### ⚠️ Three wrong measurements of this, in order — do not repeat them
+1. **Hashing question stems only** → "513 duplicate files". Wrong: ignores passages.
+2. **Hashing whole files** → "almost no duplicates". Wrong: defeated by supersets —
+   `celpip/reading/test-002` contains *every* string in `test-001` plus 38 more, so the two
+   hash differently while offering a student nothing new.
+3. **Hashing full mocks with `file` refs stripped** → "29 of 30 add nothing". Wrong and nearly
+   caused 387 deletions: full mocks are 1 KB compositions whose entire identity IS the section
+   files they point at. They are distinct.
+   The metric that survived: **novel substantial strings per test, in order**.
 
 ---
 
@@ -240,6 +288,36 @@ was wrong for nearly all of them). Median of 5 baseline vs 4 treatment runs, sam
 the CLS regression the naive attempt caused, but TBT median **more than doubled** — Lighthouse
 scrolls during the audit so every section renders anyway and the containment is pure overhead.
 **Don't retry without a fundamentally different approach** (e.g. genuine lazy React rendering).
+
+---
+
+## Shipped in session 10 (v436 → v438) — found by USING the product
+
+**v436 — IELTS Listening could hang forever on "Audio in progress".** Gemini TTS with no
+timeout and no failure path; if it stalled, the section was unusable and the student could not
+proceed. Added `withTimeout()`, a `geminiTtsHealthy` circuit breaker, a settle-once guard with
+a length-scaled watchdog, a bail-out when `getVoices()` is empty, and a visible `role="alert"`
+warning. `setPlayed()` no longer fires when playback failed.
+
+**v437 — the answer review showed a question the student never saw.** 450 of 1,240 IELTS
+listening questions carried a `prompt` field filled with placeholder text about an unrelated
+hotel booking — 15 distinct strings, each repeated 30x across the 31 files. The test screen
+was always right (it renders the real label); the *review* renders `text`, which
+`normalize-test.jsx` built from `prompt`. So test-001 showed *"what is the check-in time?"*
+above the answer **"Thornton"** (real question: "Applicant surname"). That same `text` is fed
+to the AI tutor's explain call, so the tutor was justifying answers against the wrong question.
+Fixed both halves: all 450 prompts rewritten by *deriving* from each question's own
+`label`/`sentenceText` (0 answers changed, 0 labels changed, verified against HEAD), and the
+normalizer now builds `text` from the field that holds the question so a bad prompt can never
+reach the review or the tutor again. Dropped 452 placeholder `audioContext` fields (read by no
+screen) and aligned dead `parts[].context` values to the real script titles.
+
+**v438 — the headline claim outran the content.** See the section above.
+
+### Where to look next (same method: use it, don't audit it)
+Still unexercised: the **Writing and Speaking AI checkers** (do they return feedback that
+references the student's actual text, or a generic paragraph?), **signup/login**, and the
+**College Predictor**. Given what one hour of real use turned up, assume there is more.
 
 ---
 
