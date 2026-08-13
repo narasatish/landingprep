@@ -53,6 +53,10 @@ const AUTHOR_ORG = { "@type": "Organization", name: BRAND + " editorial team", u
 // UNKNOWN and abort the whole generation. Retry with a short back-off; if the existing
 // file is locked, unlink it first (drops the mapping) so the next write creates fresh.
 function writeFileSafe(file, data) {
+  // Skip files whose content is already identical. The repo lives on OneDrive, where each
+  // write can hit EBUSY/UNKNOWN and fall into the blocking back-off below — rewriting all
+  // ~1,357 pages when a handful changed is what makes a build take minutes.
+  try { if (readFileSync(file, "utf8") === data) return; } catch (_) { /* new file */ }
   for (let attempt = 1; ; attempt++) {
     try { writeFileSync(file, data); return; }
     catch (e) {
@@ -587,6 +591,9 @@ ul{padding-left:20px}li{margin:6px 0}
 footer{border-top:1px solid var(--line);background:#fff;margin-top:40px;padding:26px 0;color:var(--muted);font-size:14px}
 .hubnav{margin:0 0 14px;line-height:1.9;font-size:13px}.hubnav a{color:var(--brand);font-weight:600}
 .crumb{font-size:13px;color:var(--muted);margin:14px 0}
+/* Explicit colour, not var(--muted): at 13px the muted token measures 4.51:1 on the page
+   background — it passes AA by 0.01, so any future tweak to the token would silently break it. */
+.updated{margin:26px 0 4px;padding-top:12px;border-top:1px solid var(--line,#e5e7eb);color:#475569;font-size:13px}
 .note{font-size:14px;color:var(--muted);font-style:italic}
 .backlink{display:inline-flex;align-items:center;gap:6px;margin:18px 0 0;padding:7px 15px 7px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink);font-weight:600;font-size:14px}
 .backlink:hover{background:var(--brand);color:#fff;border-color:var(--brand);text-decoration:none}
@@ -790,6 +797,71 @@ function uniqueContentLen(html) {
   const main = (html.match(/<main[\s\S]*?<\/main>/i) || [html])[0];
   return main.replace(/<script[\s\S]*?<\/script>/gi, "").replace(/<style[\s\S]*?<\/style>/gi, "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().length;
 }
+// ── Honest "last updated" stamps ─────────────────────────────────────────────
+// Generated pages carried NO freshness signal at all: no visible date, no
+// datePublished, no dateModified. That is a real handicap for AI answer engines and for
+// query types where recency matters ("IELTS band 6 requirements 2026").
+//
+// The date must be TRUE, so it is keyed to the page's own content: we store a hash per
+// path and only move the date when that hash actually changes. Stamping today's date on
+// every page each build would be fake freshness — precisely what Google penalises.
+const PAGE_DATES_FILE = join(ROOT, "content", "page-dates.json");
+let PAGE_DATES = {};
+try { if (existsSync(PAGE_DATES_FILE)) PAGE_DATES = JSON.parse(readFileSync(PAGE_DATES_FILE, "utf8")); } catch { PAGE_DATES = {}; }
+const STAMP_TODAY = new Date().toISOString().slice(0, 10);
+let datesChanged = 0;
+const datesChangedPaths = [];
+
+function contentFingerprint(html) {
+  const main = (html.match(/<main[\s\S]*?<\/main>/i) || [html])[0];
+  const text = main.replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  let h = 5381;
+  for (let i = 0; i < text.length; i++) h = ((h * 33) ^ text.charCodeAt(i)) >>> 0;
+  return h.toString(36) + "-" + text.length;
+}
+function pageUpdatedOn(path, html) {
+  const fp = contentFingerprint(html);
+  const prev = PAGE_DATES[path];
+  if (prev && prev.hash === fp) return prev.updated;   // unchanged → keep the real date
+  PAGE_DATES[path] = { hash: fp, updated: STAMP_TODAY };
+  datesChanged++;
+  if (prev) datesChangedPaths.push(path); // changed (not brand new) — the interesting case
+  return STAMP_TODAY;
+}
+const prettyDate = (iso) =>
+  new Date(iso + "T00:00:00Z").toLocaleDateString("en-GB", { month: "long", year: "numeric", timeZone: "UTC" });
+
+// Applied at WRITE time, not emit time: six paths are claimed by two builders each (see the
+// duplicate warning in emit) and only the last write wins. Stamping per-emit made those six
+// flip hashes every run and re-date themselves on every build — fake freshness, the exact
+// thing this is meant to avoid. Stamp only what actually reaches disk.
+function stampFreshness(path, html) {
+  if (!/<\/main>/i.test(html)) return html;
+  const updated = pageUpdatedOn(path, html);
+  return html.replace(
+    /<\/main>/i,
+    `<p class="updated"><small>Last updated: <time datetime="${updated}">${prettyDate(updated)}</time></small></p>\n` +
+    jsonld({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      url: ORIGIN + path,
+      dateModified: updated,
+      publisher: { "@type": "Organization", name: BRAND, url: ORIGIN },
+    }) +
+    `\n</main>`
+  );
+}
+
+function savePageDates() {
+  try {
+    writeFileSync(PAGE_DATES_FILE, JSON.stringify(PAGE_DATES, null, 2) + "\n");
+    console.log(`  Freshness stamps: ${datesChanged} page(s) changed content this run (dates for the rest kept as-is)`);
+    if (datesChangedPaths.length) {
+      console.log(`    re-dated: ${datesChangedPaths.slice(0, 12).join(", ")}${datesChangedPaths.length > 12 ? ` … +${datesChangedPaths.length - 12}` : ""}`);
+    }
+  } catch (e) { console.warn("  ⚠ could not save page-dates.json:", e.message); }
+}
+
 function emit(path, html, opts) {
   // opts.thin forces noindex,follow even on >1500-char pages — for SCALED/programmatic clusters
   // (university-vs-university combos, competitor "alternative" doorways) that the March-2026 core
@@ -6144,7 +6216,13 @@ const lastmodFor = new Map();
     else {
       const bare = dec.replace(/\s*\|\s*LandingPrep\s*$/, "");
       if (STRANDED_WORD.test(bare)) malformed.push([path, dec, "ends on a stranded function word"]);
-      else if (STRANDED_MODIFIER.test(bare)) malformed.push([path, dec, "ends on a stranded modifier"]);
+      // "MS in Computer Science SOP Sample" is a complete compound noun, not a truncation of
+      // "Sample <something>". When the flagged word follows an ALL-CAPS term (SOP, LOR, CV,
+      // GRE…) it is the head of the phrase, so don't cry wolf — the warning is only useful
+      // if every line in it is real.
+      else if (STRANDED_MODIFIER.test(bare) && !/\b[A-Z]{2,}\s+\w+$/.test(bare)) {
+        malformed.push([path, dec, "ends on a stranded modifier"]);
+      }
     }
   }
   if (malformed.length) {
@@ -6161,6 +6239,7 @@ const lastmodFor = new Map();
 // the previous build's date back to the token, then diff. Identical => genuinely unchanged,
 // so the page keeps its previous date; different => real edit, advance to BUILD_DATE.
 PAGES.forEach(({ path, html }) => {
+  html = stampFreshness(path, html);
   const dir = join(ROOT, path);
   const file = join(dir, "index.html");
   const loc = ORIGIN + path;
@@ -6177,6 +6256,7 @@ PAGES.forEach(({ path, html }) => {
   mkdirSync(dir, { recursive: true });
   writeFileSafe(file, html.split(LASTMOD).join(resolved));
 });
+savePageDates();
 
 // Sitemap
 const urls = [
