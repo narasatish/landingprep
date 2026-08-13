@@ -5,37 +5,51 @@
   "type": "section",
   "title": "OET Reading Practice Test 1",
   "durationSeconds": 3600,
-  "questionCount": 30,
+  "questionCount": 42,
   "instructions": "OET Reading has three parts. Part A: rapid reading across short healthcare texts. Part B: short workplace texts. Part C: two longer healthcare texts. Choose the best answer for each question.",
   "parts": [
     {
       "part": 1,
       "title": "Part A — Expeditious Reading",
-      "questions": 6,
+      "questions": 20,
       "time": "15 min",
       "description": "Four short texts on a single healthcare topic; locate specific information quickly."
     },
     {
       "part": 2,
       "title": "Part B — Workplace Texts",
-      "questions": 8,
+      "questions": 6,
       "time": "20 min",
-      "description": "Short workplace documents (policies, manuals, guidelines, emails); identify the main point or purpose."
+      "description": "Short workplace documents (policies, manuals, notices); one multiple-choice question each."
     },
     {
       "part": 3,
-      "title": "Part C — Presentation Texts",
+      "title": "Part C — Presentation of Opinion",
       "questions": 16,
       "time": "25 min",
-      "description": "Two longer texts; detailed comprehension of opinion, attitude and meaning."
+      "description": "Two long texts; detailed comprehension of opinion, attitude and argument."
     }
   ],
   "passages": [
     {
-      "id": "oet-reading-001-p1",
-      "part": 1,
-      "title": "Wound Care Management",
-      "text": "Proper wound assessment is essential for all healthcare professionals working in acute and community settings. A basic assessment should include wound size, depth, colour, odour, exudate type and drainage. Clean wounds with normal saline and apply appropriate dressings based on wound type. Infected wounds require increased dressing frequency and possible antibiotic therapy. Healthcare workers must report signs of infection such as increased pain, redness, or purulent discharge to the supervising physician immediately. Sterile technique should always be maintained during dressing changes to prevent secondary infection. Documentation of wound progress should occur at every dressing change."
+      "id": "oet-reading-001-pa-a",
+      "title": "Text A: Risk assessment",
+      "text": "Every patient should be screened for pressure injury risk within eight hours of admission and re-screened whenever their condition changes. The Braden Scale remains the most widely used instrument, scoring six domains: sensory perception, moisture, activity, mobility, nutrition and friction/shear. Total scores range from 6 to 23; a score of 18 or below indicates risk in most acute settings. A numerical score never replaces clinical judgement — a patient with an acceptable total but severe immobility should still be treated as at risk. Document the score, the date and the actions taken in the patient's record."
+    },
+    {
+      "id": "oet-reading-001-pa-b",
+      "title": "Text B: Repositioning and support surfaces",
+      "text": "Reposition at-risk patients at least every two hours when in bed and every hour when seated, unless a validated support surface allows a longer interval. Use the 30-degree tilt rather than lying the patient directly on the trochanter, and avoid raising the head of the bed above 30 degrees where possible, as this increases shear at the sacrum. Heels should be offloaded completely, with a pillow placed lengthways under the calves. Do not use ring cushions or donut devices: they concentrate pressure at the rim and reduce perfusion to the tissue they encircle."
+    },
+    {
+      "id": "oet-reading-001-pa-c",
+      "title": "Text C: Skin care and nutrition",
+      "text": "Inspect the skin at every shift change, paying particular attention to bony prominences — sacrum, heels, elbows, occiput. Non-blanching erythema is the earliest visible sign and requires immediate action. Keep skin clean and dry; use a pH-balanced cleanser rather than soap, and apply a barrier product where there is incontinence. Do not massage reddened areas, as this may damage fragile capillaries. Malnutrition is an independent risk factor: refer any patient with unintentional weight loss, poor oral intake or a BMI below 18.5 to the dietitian for assessment."
+    },
+    {
+      "id": "oet-reading-001-pa-d",
+      "title": "Text D: Classification",
+      "text": "Pressure injuries are staged by the deepest tissue visible. Stage 1 is intact skin with non-blanching redness. Stage 2 involves partial-thickness loss of dermis, presenting as a shallow open ulcer or an intact serum-filled blister. Stage 3 shows full-thickness loss with subcutaneous fat visible, but bone, tendon and muscle are not exposed. Stage 4 exposes bone, tendon or muscle. Where the wound bed is obscured by slough or eschar the injury is unstageable, and depth cannot be determined until the base is exposed. Stages are not reversed as the wound heals; a healing Stage 4 is described as a healing Stage 4."
     },
     {
       "id": "oet-reading-001-p2a",
@@ -65,91 +79,349 @@
   "questions": [
     {
       "id": "oet-reading-001-q01",
-      "passageId": "oet-reading-001-p1",
       "part": 1,
-      "topic": "Wound Assessment",
-      "questionType": "multiple_choice_single",
-      "prompt": "According to the passage, what should be included in a basic wound assessment?",
+      "topic": "Pressure Injury Prevention",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about which patients should be referred to a dietitian?",
+      "question": "In which text can you find information about which patients should be referred to a dietitian?",
+      "correctAnswer": "C",
+      "explanation": "Text C names unintentional weight loss, poor oral intake or a BMI below 18.5 as triggers for dietitian referral.",
+      "difficulty": "medium",
       "options": [
-        "Only wound size and depth measurement",
-        "Wound size, depth, colour, odour, exudate type and drainage",
-        "Patient's pain level and antibiotic history",
-        "Dressing type and frequency of changes"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "Wound size, depth, colour, odour, exudate type and drainage",
-      "explanation": "The passage explicitly states these six elements are essential in a basic assessment.",
-      "difficulty": "easy"
+      "passageId": "oet-reading-001-pa-c",
+      "questionNumber": 1
     },
     {
       "id": "oet-reading-001-q02",
-      "passageId": "oet-reading-001-p1",
       "part": 1,
-      "topic": "Wound Care",
-      "questionType": "multiple_choice_single",
-      "prompt": "What should healthcare workers do if they notice signs of infection in a wound?",
+      "topic": "Pressure Injury Prevention",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about how deep a Stage 3 injury extends?",
+      "question": "In which text can you find information about how deep a Stage 3 injury extends?",
+      "correctAnswer": "D",
+      "explanation": "Text D defines Stage 3 as full-thickness loss with subcutaneous fat visible but no exposed bone, tendon or muscle.",
+      "difficulty": "medium",
       "options": [
-        "Increase dressing frequency and monitor for improvement",
-        "Change the dressing type without consulting the physician",
-        "Apply antibiotic cream and document findings",
-        "Report signs such as increased pain, redness, or purulent discharge to the supervising physician immediately"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "Report signs such as increased pain, redness, or purulent discharge to the supervising physician immediately",
-      "explanation": "The passage states that these signs must be reported immediately to the supervising physician.",
-      "difficulty": "easy"
+      "passageId": "oet-reading-001-pa-d",
+      "questionNumber": 2
     },
     {
       "id": "oet-reading-001-q03",
-      "passageId": "oet-reading-001-p1",
       "part": 1,
-      "topic": "Wound Documentation",
-      "questionType": "multiple_choice_single",
-      "prompt": "When should wound progress be documented?",
+      "topic": "Pressure Injury Prevention",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about how often a seated patient should be moved?",
+      "question": "In which text can you find information about how often a seated patient should be moved?",
+      "correctAnswer": "B",
+      "explanation": "Text B specifies repositioning every hour when seated.",
+      "difficulty": "medium",
       "options": [
-        "Once per week",
-        "At every dressing change",
-        "Only when infection is suspected",
-        "At the end of each shift"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "At every dressing change",
-      "explanation": "The passage explicitly states documentation should occur at every dressing change.",
-      "difficulty": "easy"
+      "passageId": "oet-reading-001-pa-b",
+      "questionNumber": 3
     },
     {
       "id": "oet-reading-001-q04",
-      "passageId": "oet-reading-001-p1",
       "part": 1,
-      "topic": "Sterile Technique",
-      "questionType": "multiple_choice_single",
-      "prompt": "Why is sterile technique important during wound dressing changes?",
+      "topic": "Pressure Injury Prevention",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about when a patient must first be screened?",
+      "question": "In which text can you find information about when a patient must first be screened?",
+      "correctAnswer": "A",
+      "explanation": "Text A requires screening within eight hours of admission.",
+      "difficulty": "medium",
       "options": [
-        "To reduce pain for the patient",
-        "To make the procedure faster",
-        "To reduce the cost of supplies",
-        "To prevent secondary infection"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "To prevent secondary infection",
-      "explanation": "The passage states that sterile technique must be maintained to prevent secondary infection.",
-      "difficulty": "medium"
+      "passageId": "oet-reading-001-pa-a",
+      "questionNumber": 4
     },
     {
       "id": "oet-reading-001-q05",
-      "passageId": "oet-reading-001-p1",
       "part": 1,
-      "topic": "Wound Cleaning",
-      "questionType": "multiple_choice_single",
-      "prompt": "What solution is recommended for cleaning wounds?",
+      "topic": "Pressure Injury Prevention",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about a device that should not be used?",
+      "question": "In which text can you find information about a device that should not be used?",
+      "correctAnswer": "B",
+      "explanation": "Text B warns against ring cushions or donut devices.",
+      "difficulty": "medium",
       "options": [
-        "Hydrogen peroxide",
-        "Normal saline",
-        "Povidone-iodine",
-        "Sterile water"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "Normal saline",
-      "explanation": "The passage specifies that wounds should be cleaned with normal saline.",
-      "difficulty": "easy"
+      "passageId": "oet-reading-001-pa-b",
+      "questionNumber": 5
     },
     {
       "id": "oet-reading-001-q06",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about what the earliest visible sign of damage is?",
+      "question": "In which text can you find information about what the earliest visible sign of damage is?",
+      "correctAnswer": "C",
+      "explanation": "Text C identifies non-blanching erythema as the earliest visible sign.",
+      "difficulty": "medium",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "passageId": "oet-reading-001-pa-c",
+      "questionNumber": 6
+    },
+    {
+      "id": "oet-reading-001-q07",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about what score suggests a patient is at risk?",
+      "question": "In which text can you find information about what score suggests a patient is at risk?",
+      "correctAnswer": "A",
+      "explanation": "Text A gives a Braden score of 18 or below as indicating risk in most acute settings.",
+      "difficulty": "medium",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "passageId": "oet-reading-001-pa-a",
+      "questionNumber": 7
+    },
+    {
+      "id": "oet-reading-001-q08",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "short_answer",
+      "prompt": "How many domains does the Braden Scale score?",
+      "question": "How many domains does the Braden Scale score?",
+      "correctAnswer": "six",
+      "explanation": "Text A lists six domains: sensory perception, moisture, activity, mobility, nutrition and friction/shear.",
+      "difficulty": "medium",
+      "alternateAnswers": [
+        "6"
+      ],
+      "passageId": "oet-reading-001-pa-a",
+      "questionNumber": 8
+    },
+    {
+      "id": "oet-reading-001-q09",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "short_answer",
+      "prompt": "What tilt position should be used instead of lying a patient on the trochanter?",
+      "question": "What tilt position should be used instead of lying a patient on the trochanter?",
+      "correctAnswer": "30-degree tilt",
+      "explanation": "Text B directs staff to use the 30-degree tilt rather than the trochanter.",
+      "difficulty": "medium",
+      "alternateAnswers": [
+        "30 degree tilt",
+        "the 30-degree tilt",
+        "30-degree"
+      ],
+      "passageId": "oet-reading-001-pa-b",
+      "questionNumber": 9
+    },
+    {
+      "id": "oet-reading-001-q10",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "short_answer",
+      "prompt": "What should be placed lengthways under the calves to offload the heels?",
+      "question": "What should be placed lengthways under the calves to offload the heels?",
+      "correctAnswer": "a pillow",
+      "explanation": "Text B specifies a pillow placed lengthways under the calves.",
+      "difficulty": "medium",
+      "alternateAnswers": [
+        "pillow"
+      ],
+      "passageId": "oet-reading-001-pa-b",
+      "questionNumber": 10
+    },
+    {
+      "id": "oet-reading-001-q11",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "short_answer",
+      "prompt": "What type of cleanser should be used rather than soap?",
+      "question": "What type of cleanser should be used rather than soap?",
+      "correctAnswer": "pH-balanced cleanser",
+      "explanation": "Text C recommends a pH-balanced cleanser rather than soap.",
+      "difficulty": "medium",
+      "alternateAnswers": [
+        "a pH-balanced cleanser",
+        "pH balanced cleanser",
+        "pH-balanced"
+      ],
+      "passageId": "oet-reading-001-pa-c",
+      "questionNumber": 11
+    },
+    {
+      "id": "oet-reading-001-q12",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "short_answer",
+      "prompt": "What term describes an injury whose wound bed is obscured by slough or eschar?",
+      "question": "What term describes an injury whose wound bed is obscured by slough or eschar?",
+      "correctAnswer": "unstageable",
+      "explanation": "Text D states that such an injury is unstageable until the base is exposed.",
+      "difficulty": "medium",
+      "alternateAnswers": [
+        "unstageable injury"
+      ],
+      "passageId": "oet-reading-001-pa-d",
+      "questionNumber": 12
+    },
+    {
+      "id": "oet-reading-001-q13",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "short_answer",
+      "prompt": "Which tissues are exposed in a Stage 4 injury?",
+      "question": "Which tissues are exposed in a Stage 4 injury?",
+      "correctAnswer": "bone, tendon or muscle",
+      "explanation": "Text D defines Stage 4 as exposing bone, tendon or muscle.",
+      "difficulty": "medium",
+      "alternateAnswers": [
+        "bone tendon or muscle",
+        "bone, tendon and muscle"
+      ],
+      "passageId": "oet-reading-001-pa-d",
+      "questionNumber": 13
+    },
+    {
+      "id": "oet-reading-001-q14",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "short_answer",
+      "prompt": "Below what BMI should a patient be referred for nutritional assessment?",
+      "question": "Below what BMI should a patient be referred for nutritional assessment?",
+      "correctAnswer": "18.5",
+      "explanation": "Text C gives a BMI below 18.5 as a referral trigger.",
+      "difficulty": "medium",
+      "alternateAnswers": [
+        "a BMI below 18.5",
+        "BMI 18.5"
+      ],
+      "passageId": "oet-reading-001-pa-c",
+      "questionNumber": 14
+    },
+    {
+      "id": "oet-reading-001-q15",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "sentence_completion",
+      "prompt": "Raising the head of the bed above 30 degrees increases _______ at the sacrum.",
+      "question": "Raising the head of the bed above 30 degrees increases _______ at the sacrum.",
+      "correctAnswer": "shear",
+      "explanation": "Text B warns this increases shear at the sacrum.",
+      "difficulty": "medium",
+      "alternateAnswers": [],
+      "passageId": "oet-reading-001-pa-b",
+      "questionNumber": 15
+    },
+    {
+      "id": "oet-reading-001-q16",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "sentence_completion",
+      "prompt": "Reddened areas should not be _______, as this may damage fragile capillaries.",
+      "question": "Reddened areas should not be _______, as this may damage fragile capillaries.",
+      "correctAnswer": "massaged",
+      "explanation": "Text C instructs staff not to massage reddened areas.",
+      "difficulty": "medium",
+      "alternateAnswers": [
+        "massage"
+      ],
+      "passageId": "oet-reading-001-pa-c",
+      "questionNumber": 16
+    },
+    {
+      "id": "oet-reading-001-q17",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "sentence_completion",
+      "prompt": "A numerical score never replaces _______.",
+      "question": "A numerical score never replaces _______.",
+      "correctAnswer": "clinical judgement",
+      "explanation": "Text A states a numerical score never replaces clinical judgement.",
+      "difficulty": "medium",
+      "alternateAnswers": [
+        "clinical judgment"
+      ],
+      "passageId": "oet-reading-001-pa-a",
+      "questionNumber": 17
+    },
+    {
+      "id": "oet-reading-001-q18",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "sentence_completion",
+      "prompt": "Stage 2 may present as a shallow open ulcer or an intact _______ blister.",
+      "question": "Stage 2 may present as a shallow open ulcer or an intact _______ blister.",
+      "correctAnswer": "serum-filled",
+      "explanation": "Text D describes an intact serum-filled blister.",
+      "difficulty": "medium",
+      "alternateAnswers": [
+        "serum filled"
+      ],
+      "passageId": "oet-reading-001-pa-d",
+      "questionNumber": 18
+    },
+    {
+      "id": "oet-reading-001-q19",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "sentence_completion",
+      "prompt": "Ring cushions reduce _______ to the tissue they encircle.",
+      "question": "Ring cushions reduce _______ to the tissue they encircle.",
+      "correctAnswer": "perfusion",
+      "explanation": "Text B says they reduce perfusion to the encircled tissue.",
+      "difficulty": "medium",
+      "alternateAnswers": [],
+      "passageId": "oet-reading-001-pa-b",
+      "questionNumber": 19
+    },
+    {
+      "id": "oet-reading-001-q20",
+      "part": 1,
+      "topic": "Pressure Injury Prevention",
+      "questionType": "sentence_completion",
+      "prompt": "Skin should be inspected at every _______.",
+      "question": "Skin should be inspected at every _______.",
+      "correctAnswer": "shift change",
+      "explanation": "Text C requires inspection at every shift change.",
+      "difficulty": "medium",
+      "alternateAnswers": [
+        "shift"
+      ],
+      "passageId": "oet-reading-001-pa-c",
+      "questionNumber": 20
+    },
+    {
+      "id": "oet-reading-001-q21",
       "passageId": "oet-reading-001-p2a",
       "part": 2,
       "topic": "Hand Hygiene",
@@ -163,10 +435,11 @@
       ],
       "correctAnswer": "Before and after patient contact, and after touching bodily fluids",
       "explanation": "The policy explicitly requires hand hygiene at these three critical times.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 21
     },
     {
-      "id": "oet-reading-001-q07",
+      "id": "oet-reading-001-q22",
       "passageId": "oet-reading-001-p2a",
       "part": 2,
       "topic": "Standard Precautions",
@@ -180,10 +453,11 @@
       ],
       "correctAnswer": "Hand hygiene",
       "explanation": "The policy states that hand hygiene is the most effective measure to prevent cross-infection.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 22
     },
     {
-      "id": "oet-reading-001-q08",
+      "id": "oet-reading-001-q23",
       "passageId": "oet-reading-001-p2a",
       "part": 2,
       "topic": "Sharps Safety",
@@ -197,10 +471,11 @@
       ],
       "correctAnswer": "In designated sharps containers immediately after use",
       "explanation": "The policy explicitly requires sharps to be disposed of in designated containers immediately.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 23
     },
     {
-      "id": "oet-reading-001-q09",
+      "id": "oet-reading-001-q24",
       "passageId": "oet-reading-001-p2b",
       "part": 2,
       "topic": "Five Rights of Medication",
@@ -214,10 +489,11 @@
       ],
       "correctAnswer": "Right price",
       "explanation": "The five rights are: patient, drug, dose, route, and time. Price is not one of them.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "questionNumber": 24
     },
     {
-      "id": "oet-reading-001-q10",
+      "id": "oet-reading-001-q25",
       "passageId": "oet-reading-001-p2b",
       "part": 2,
       "topic": "Missed Medications",
@@ -231,282 +507,11 @@
       ],
       "correctAnswer": "Do not double the next dose",
       "explanation": "The guidelines explicitly state not to double the next dose if one is missed.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-001-q11",
-      "passageId": "oet-reading-001-p3a",
-      "part": 3,
-      "topic": "Falls Risk",
-      "questionType": "multiple_choice_single",
-      "prompt": "According to the passage, which groups of patients are identified as high-risk for falls?",
-      "options": [
-        "Only patients over 75 years old",
-        "Patients on sedating medications, with history of falls, or with cognitive impairment",
-        "All hospitalised patients without exception",
-        "Only patients with hip fractures"
-      ],
-      "correctAnswer": "Patients on sedating medications, with history of falls, or with cognitive impairment",
-      "explanation": "The passage explicitly lists these three categories as high-risk patients.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-001-q12",
-      "passageId": "oet-reading-001-p3a",
-      "part": 3,
-      "topic": "Environmental Modifications",
-      "questionType": "multiple_choice_single",
-      "prompt": "What environmental modifications are recommended to prevent falls?",
-      "options": [
-        "Restricting patient movement",
-        "Removing trip hazards, ensuring adequate lighting, installing grab bars, and maintaining clear pathways",
-        "Keeping patients in bed",
-        "Removing all mobility aids"
-      ],
-      "correctAnswer": "Removing trip hazards, ensuring adequate lighting, installing grab bars, and maintaining clear pathways",
-      "explanation": "The passage lists these specific environmental modifications as crucial for falls prevention.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-001-q13",
-      "passageId": "oet-reading-001-p3a",
-      "part": 3,
-      "topic": "Falls Interventions",
-      "questionType": "multiple_choice_single",
-      "prompt": "According to the passage, by how much can multifactorial interventions reduce falls?",
-      "options": [
-        "Up to 10%",
-        "Up to 30%",
-        "Up to 20%",
-        "Up to 50%"
-      ],
-      "correctAnswer": "Up to 30%",
-      "explanation": "The passage states that multifactorial interventions reduce falls by up to 30%.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-001-q14",
-      "passageId": "oet-reading-001-p3a",
-      "part": 3,
-      "topic": "Falls Consequences",
-      "questionType": "multiple_choice_single",
-      "prompt": "What are the serious consequences of falls in older adults mentioned in the passage?",
-      "options": [
-        "Only temporary bruising",
-        "Hip fractures, head injuries, and loss of independence",
-        "Primarily psychological distress",
-        "Only prolonged hospital stays"
-      ],
-      "correctAnswer": "Hip fractures, head injuries, and loss of independence",
-      "explanation": "The passage explicitly lists these three serious consequences of falls.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-001-q15",
-      "passageId": "oet-reading-001-p3b",
-      "part": 3,
-      "topic": "COPD Diagnosis",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is the gold standard diagnostic test for COPD?",
-      "options": [
-        "Chest X-ray",
-        "Spirometry",
-        "CT scan",
-        "Pulse oximetry"
-      ],
-      "correctAnswer": "Spirometry",
-      "explanation": "The passage states that spirometry is the gold standard diagnostic test for COPD.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-001-q16",
-      "passageId": "oet-reading-001-p3b",
-      "part": 3,
-      "topic": "COPD First-Line Treatment",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is the first-line therapy for COPD according to the passage?",
-      "options": [
-        "Oral steroids",
-        "Inhaled bronchodilators",
-        "Inhaled corticosteroids",
-        "Oxygen therapy"
-      ],
-      "correctAnswer": "Inhaled bronchodilators",
-      "explanation": "The passage explicitly states that inhaled bronchodilators are first-line therapy.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-001-q17",
-      "passageId": "oet-reading-001-p3b",
-      "part": 3,
-      "topic": "COPD Symptoms",
-      "questionType": "multiple_choice_single",
-      "prompt": "Which of the following is NOT mentioned as a symptom of COPD?",
-      "options": [
-        "Chronic cough",
-        "High fever",
-        "Reduced exercise tolerance",
-        "Dyspnoea"
-      ],
-      "correctAnswer": "High fever",
-      "explanation": "The passage lists chronic cough, dyspnoea, and reduced exercise tolerance, but not high fever.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-001-q18",
-      "passageId": "oet-reading-001-p3b",
-      "part": 3,
-      "topic": "COPD Prevention",
-      "questionType": "multiple_choice_single",
-      "prompt": "What can significantly slow COPD progression?",
-      "options": [
-        "Regular exercise alone",
-        "Smoking cessation",
-        "Dietary changes",
-        "Stress management"
-      ],
-      "correctAnswer": "Smoking cessation",
-      "explanation": "The passage explicitly states that smoking cessation can slow disease progression significantly.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-001-q19",
-      "passageId": "oet-reading-001-p3b",
-      "part": 3,
-      "topic": "COPD Rehabilitation",
-      "questionType": "multiple_choice_single",
-      "prompt": "What does pulmonary rehabilitation combine according to the passage?",
-      "options": [
-        "Medication and oxygen therapy only",
-        "Exercise, education, and psychosocial support",
-        "Surgery and medication",
-        "Rest and dietary supplements"
-      ],
-      "correctAnswer": "Exercise, education, and psychosocial support",
-      "explanation": "The passage explicitly lists these three components of pulmonary rehabilitation.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-001-q20",
-      "passageId": "oet-reading-001-p3b",
-      "part": 3,
-      "topic": "COPD Exacerbations",
-      "questionType": "multiple_choice_single",
-      "prompt": "What are common triggers for COPD exacerbations mentioned in the passage?",
-      "options": [
-        "Only exercise",
-        "Only weather changes",
-        "Infections and air pollution",
-        "Primarily dietary factors"
-      ],
-      "correctAnswer": "Infections and air pollution",
-      "explanation": "The passage states that exacerbations are often triggered by infections or air pollution.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-001-q21",
-      "passageId": "oet-reading-001-p3a",
-      "part": 3,
-      "topic": "Multifactorial Interventions Components",
-      "questionType": "multiple_choice_single",
-      "prompt": "Which of the following is NOT mentioned as part of multifactorial falls interventions?",
-      "options": [
-        "Assessment and exercise",
-        "Medication review",
-        "Environmental changes",
-        "Strict bed rest"
-      ],
-      "correctAnswer": "Strict bed rest",
-      "explanation": "The passage lists assessment, exercise, medication review, and environmental changes but not bed rest as an intervention.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-001-q22",
-      "passageId": "oet-reading-001-p3a",
-      "part": 3,
-      "topic": "Mobility Aids Role",
-      "questionType": "multiple_choice_single",
-      "prompt": "What does the passage suggest about mobility aids in falls prevention?",
-      "options": [
-        "They should be avoided to encourage independence",
-        "They are only for long-term patients",
-        "They are ineffective for elderly patients",
-        "Staff should encourage their use"
-      ],
-      "correctAnswer": "Staff should encourage their use",
-      "explanation": "The passage states staff should encourage use of mobility aids as part of prevention strategy.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-001-q23",
-      "passageId": "oet-reading-001-p3b",
-      "part": 3,
-      "topic": "COPD Medication Escalation",
-      "questionType": "multiple_choice_single",
-      "prompt": "When are inhaled corticosteroids added to COPD therapy?",
-      "options": [
-        "For all patients from diagnosis",
-        "For mild disease only",
-        "Only as a last resort before oxygen therapy",
-        "For moderate to severe disease with frequent exacerbations"
-      ],
-      "correctAnswer": "For moderate to severe disease with frequent exacerbations",
-      "explanation": "The passage states corticosteroids are added for moderate to severe disease with frequent exacerbations.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-001-q24",
-      "passageId": "oet-reading-001-p3b",
-      "part": 3,
-      "topic": "FEV1 Measurement",
-      "questionType": "multiple_choice_single",
-      "prompt": "What does spirometry measure in COPD diagnosis?",
-      "options": [
-        "Only oxygen saturation",
-        "Patient symptoms only",
-        "Only exercise tolerance",
-        "Forced expiratory volume in one second (FEV1)"
-      ],
-      "correctAnswer": "Forced expiratory volume in one second (FEV1)",
-      "explanation": "The passage states spirometry measures FEV1 as the gold standard test.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-001-q25",
-      "passageId": "oet-reading-001-p3b",
-      "part": 3,
-      "topic": "Pulmonary Rehabilitation Benefits",
-      "questionType": "multiple_choice_single",
-      "prompt": "According to the passage, what are the benefits of pulmonary rehabilitation?",
-      "options": [
-        "Only exercise improvement",
-        "Temporary symptom relief only",
-        "Only pain management",
-        "Improved quality of life and reduced hospital admissions"
-      ],
-      "correctAnswer": "Improved quality of life and reduced hospital admissions",
-      "explanation": "The passage states rehabilitation improves quality of life and reduces hospital admissions.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 25
     },
     {
       "id": "oet-reading-001-q26",
-      "passageId": "oet-reading-001-p1",
-      "part": 1,
-      "topic": "Infection Signs Reporting",
-      "questionType": "multiple_choice_single",
-      "prompt": "Who should signs of wound infection be reported to?",
-      "options": [
-        "The nurse manager",
-        "The pharmacist",
-        "The patient's family",
-        "The supervising physician"
-      ],
-      "correctAnswer": "The supervising physician",
-      "explanation": "The passage explicitly states signs must be reported to the supervising physician immediately.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-001-q27",
       "passageId": "oet-reading-001-p2a",
       "part": 2,
       "topic": "PPE Circumstances",
@@ -520,44 +525,281 @@
       ],
       "correctAnswer": "When exposure to blood or bodily fluids is anticipated",
       "explanation": "The policy states PPE should be worn when exposure is anticipated.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 26
+    },
+    {
+      "id": "oet-reading-001-q27",
+      "passageId": "oet-reading-001-p3a",
+      "part": 3,
+      "topic": "Falls Risk",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the passage, which groups of patients are identified as high-risk for falls?",
+      "options": [
+        "Only patients over 75 years old",
+        "Patients on sedating medications, with history of falls, or with cognitive impairment",
+        "All hospitalised patients without exception",
+        "Only patients with hip fractures"
+      ],
+      "correctAnswer": "Patients on sedating medications, with history of falls, or with cognitive impairment",
+      "explanation": "The passage explicitly lists these three categories as high-risk patients.",
+      "difficulty": "medium",
+      "questionNumber": 27
     },
     {
       "id": "oet-reading-001-q28",
-      "passageId": "oet-reading-001-p2b",
-      "part": 2,
-      "topic": "Medication Documentation",
+      "passageId": "oet-reading-001-p3a",
+      "part": 3,
+      "topic": "Environmental Modifications",
       "questionType": "multiple_choice_single",
-      "prompt": "What information must be documented when medications are given?",
+      "prompt": "What environmental modifications are recommended to prevent falls?",
       "options": [
-        "Only patient name and time",
-        "Time and patient's condition",
-        "Only the drug name and dose",
-        "Patient name, drug name, dose, route, time, and signature"
+        "Restricting patient movement",
+        "Removing trip hazards, ensuring adequate lighting, installing grab bars, and maintaining clear pathways",
+        "Keeping patients in bed",
+        "Removing all mobility aids"
       ],
-      "correctAnswer": "Patient name, drug name, dose, route, time, and signature",
-      "explanation": "The passage lists all these elements as required documentation.",
-      "difficulty": "easy"
+      "correctAnswer": "Removing trip hazards, ensuring adequate lighting, installing grab bars, and maintaining clear pathways",
+      "explanation": "The passage lists these specific environmental modifications as crucial for falls prevention.",
+      "difficulty": "medium",
+      "questionNumber": 28
     },
     {
       "id": "oet-reading-001-q29",
-      "passageId": "oet-reading-001-p2b",
-      "part": 2,
-      "topic": "Adverse Reaction Reporting",
+      "passageId": "oet-reading-001-p3a",
+      "part": 3,
+      "topic": "Falls Interventions",
       "questionType": "multiple_choice_single",
-      "prompt": "Within what timeframe should adverse reactions be reported?",
+      "prompt": "According to the passage, by how much can multifactorial interventions reduce falls?",
       "options": [
-        "Within 24 hours",
-        "Within 6 hours",
-        "At the end of shift",
-        "Within two hours"
+        "Up to 10%",
+        "Up to 30%",
+        "Up to 20%",
+        "Up to 50%"
       ],
-      "correctAnswer": "Within two hours",
-      "explanation": "The guidelines state adverse reactions must be reported within two hours.",
-      "difficulty": "easy"
+      "correctAnswer": "Up to 30%",
+      "explanation": "The passage states that multifactorial interventions reduce falls by up to 30%.",
+      "difficulty": "easy",
+      "questionNumber": 29
     },
     {
       "id": "oet-reading-001-q30",
+      "passageId": "oet-reading-001-p3a",
+      "part": 3,
+      "topic": "Falls Consequences",
+      "questionType": "multiple_choice_single",
+      "prompt": "What are the serious consequences of falls in older adults mentioned in the passage?",
+      "options": [
+        "Only temporary bruising",
+        "Hip fractures, head injuries, and loss of independence",
+        "Primarily psychological distress",
+        "Only prolonged hospital stays"
+      ],
+      "correctAnswer": "Hip fractures, head injuries, and loss of independence",
+      "explanation": "The passage explicitly lists these three serious consequences of falls.",
+      "difficulty": "easy",
+      "questionNumber": 30
+    },
+    {
+      "id": "oet-reading-001-q31",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD Diagnosis",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the gold standard diagnostic test for COPD?",
+      "options": [
+        "Chest X-ray",
+        "Spirometry",
+        "CT scan",
+        "Pulse oximetry"
+      ],
+      "correctAnswer": "Spirometry",
+      "explanation": "The passage states that spirometry is the gold standard diagnostic test for COPD.",
+      "difficulty": "easy",
+      "questionNumber": 31
+    },
+    {
+      "id": "oet-reading-001-q32",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD First-Line Treatment",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the first-line therapy for COPD according to the passage?",
+      "options": [
+        "Oral steroids",
+        "Inhaled bronchodilators",
+        "Inhaled corticosteroids",
+        "Oxygen therapy"
+      ],
+      "correctAnswer": "Inhaled bronchodilators",
+      "explanation": "The passage explicitly states that inhaled bronchodilators are first-line therapy.",
+      "difficulty": "medium",
+      "questionNumber": 32
+    },
+    {
+      "id": "oet-reading-001-q33",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD Symptoms",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which of the following is NOT mentioned as a symptom of COPD?",
+      "options": [
+        "Chronic cough",
+        "High fever",
+        "Reduced exercise tolerance",
+        "Dyspnoea"
+      ],
+      "correctAnswer": "High fever",
+      "explanation": "The passage lists chronic cough, dyspnoea, and reduced exercise tolerance, but not high fever.",
+      "difficulty": "medium",
+      "questionNumber": 33
+    },
+    {
+      "id": "oet-reading-001-q34",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD Prevention",
+      "questionType": "multiple_choice_single",
+      "prompt": "What can significantly slow COPD progression?",
+      "options": [
+        "Regular exercise alone",
+        "Smoking cessation",
+        "Dietary changes",
+        "Stress management"
+      ],
+      "correctAnswer": "Smoking cessation",
+      "explanation": "The passage explicitly states that smoking cessation can slow disease progression significantly.",
+      "difficulty": "easy",
+      "questionNumber": 34
+    },
+    {
+      "id": "oet-reading-001-q35",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD Rehabilitation",
+      "questionType": "multiple_choice_single",
+      "prompt": "What does pulmonary rehabilitation combine according to the passage?",
+      "options": [
+        "Medication and oxygen therapy only",
+        "Exercise, education, and psychosocial support",
+        "Surgery and medication",
+        "Rest and dietary supplements"
+      ],
+      "correctAnswer": "Exercise, education, and psychosocial support",
+      "explanation": "The passage explicitly lists these three components of pulmonary rehabilitation.",
+      "difficulty": "easy",
+      "questionNumber": 35
+    },
+    {
+      "id": "oet-reading-001-q36",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD Exacerbations",
+      "questionType": "multiple_choice_single",
+      "prompt": "What are common triggers for COPD exacerbations mentioned in the passage?",
+      "options": [
+        "Only exercise",
+        "Only weather changes",
+        "Infections and air pollution",
+        "Primarily dietary factors"
+      ],
+      "correctAnswer": "Infections and air pollution",
+      "explanation": "The passage states that exacerbations are often triggered by infections or air pollution.",
+      "difficulty": "medium",
+      "questionNumber": 36
+    },
+    {
+      "id": "oet-reading-001-q37",
+      "passageId": "oet-reading-001-p3a",
+      "part": 3,
+      "topic": "Multifactorial Interventions Components",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which of the following is NOT mentioned as part of multifactorial falls interventions?",
+      "options": [
+        "Assessment and exercise",
+        "Medication review",
+        "Environmental changes",
+        "Strict bed rest"
+      ],
+      "correctAnswer": "Strict bed rest",
+      "explanation": "The passage lists assessment, exercise, medication review, and environmental changes but not bed rest as an intervention.",
+      "difficulty": "medium",
+      "questionNumber": 37
+    },
+    {
+      "id": "oet-reading-001-q38",
+      "passageId": "oet-reading-001-p3a",
+      "part": 3,
+      "topic": "Mobility Aids Role",
+      "questionType": "multiple_choice_single",
+      "prompt": "What does the passage suggest about mobility aids in falls prevention?",
+      "options": [
+        "They should be avoided to encourage independence",
+        "They are only for long-term patients",
+        "They are ineffective for elderly patients",
+        "Staff should encourage their use"
+      ],
+      "correctAnswer": "Staff should encourage their use",
+      "explanation": "The passage states staff should encourage use of mobility aids as part of prevention strategy.",
+      "difficulty": "medium",
+      "questionNumber": 38
+    },
+    {
+      "id": "oet-reading-001-q39",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "COPD Medication Escalation",
+      "questionType": "multiple_choice_single",
+      "prompt": "When are inhaled corticosteroids added to COPD therapy?",
+      "options": [
+        "For all patients from diagnosis",
+        "For mild disease only",
+        "Only as a last resort before oxygen therapy",
+        "For moderate to severe disease with frequent exacerbations"
+      ],
+      "correctAnswer": "For moderate to severe disease with frequent exacerbations",
+      "explanation": "The passage states corticosteroids are added for moderate to severe disease with frequent exacerbations.",
+      "difficulty": "medium",
+      "questionNumber": 39
+    },
+    {
+      "id": "oet-reading-001-q40",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "FEV1 Measurement",
+      "questionType": "multiple_choice_single",
+      "prompt": "What does spirometry measure in COPD diagnosis?",
+      "options": [
+        "Only oxygen saturation",
+        "Patient symptoms only",
+        "Only exercise tolerance",
+        "Forced expiratory volume in one second (FEV1)"
+      ],
+      "correctAnswer": "Forced expiratory volume in one second (FEV1)",
+      "explanation": "The passage states spirometry measures FEV1 as the gold standard test.",
+      "difficulty": "medium",
+      "questionNumber": 40
+    },
+    {
+      "id": "oet-reading-001-q41",
+      "passageId": "oet-reading-001-p3b",
+      "part": 3,
+      "topic": "Pulmonary Rehabilitation Benefits",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the passage, what are the benefits of pulmonary rehabilitation?",
+      "options": [
+        "Only exercise improvement",
+        "Temporary symptom relief only",
+        "Only pain management",
+        "Improved quality of life and reduced hospital admissions"
+      ],
+      "correctAnswer": "Improved quality of life and reduced hospital admissions",
+      "explanation": "The passage states rehabilitation improves quality of life and reduces hospital admissions.",
+      "difficulty": "easy",
+      "questionNumber": 41
+    },
+    {
+      "id": "oet-reading-001-q42",
       "passageId": "oet-reading-001-p3a",
       "part": 3,
       "topic": "Falls Risk Assessment Timing",
@@ -571,7 +813,8 @@
       ],
       "correctAnswer": "At admission and regularly thereafter",
       "explanation": "The passage states risk assessment should be performed at admission and regularly thereafter.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 42
     }
   ]
 }
