@@ -462,7 +462,13 @@ function dropDanglingTail(base, source) {
       // after a colon, drop the whole colon clause rather than leave a trailing "Title:".
       // A "?" is kept — "Which English Test Should I Take?" is complete on its own.
       const at = Math.max(out.lastIndexOf(","), out.lastIndexOf(":"), out.lastIndexOf("?"));
-      if (at > 20) out = out.slice(0, out[at] === "?" ? at + 1 : at);
+      // Stop retreating once the title is only the generic head. Because this loop runs to a
+      // fixed point, an unguarded fallback walks back through every comma to the first colon:
+      // "IELTS Speaking Part 2: Cue Cards, Structure & Model Answers" collapsed all the way to
+      // "IELTS Speaking Part 2" — which then collided with a DIFFERENT page trimmed to the same
+      // stub. A slightly long title is harmless; two pages sharing one title is not.
+      const KEEP_MIN = 30;
+      if (at > 20 && at >= KEEP_MIN) out = out.slice(0, out[at] === "?" ? at + 1 : at);
     }
     // Cut landed mid-phrase (the source continues straight into another word).
     if (/^\s*[A-Za-z0-9]/.test(source.slice(out.length))) out = out.replace(STRANDED_MODIFIER, "");
@@ -504,6 +510,14 @@ const UNI_ABBR = {
   "RMIT University": "RMIT", "RWTH Aachen University": "RWTH Aachen",
   "Nanyang Technological University": "NTU", "University College Cork": "UCC",
   "Karlsruhe Institute of Technology": "KIT",
+  // The three UC campuses shared ONE <title> — "University of California" — because
+  // trimTitle's 60-char clamp cut mid-word and dropDanglingTail then fell back to the last
+  // comma, which for these names is part of the name, not a list separator. Three distinct
+  // campuses competing on an identical title is a duplicate-content problem of our own
+  // making. These abbreviations are also what people actually search for.
+  "University of California, Berkeley": "UC Berkeley",
+  "University of California, Los Angeles": "UCLA",
+  "University of California, San Diego": "UC San Diego",
 };
 function shortUni(name) {
   const n = String(name || "").trim();
@@ -2423,7 +2437,11 @@ function universityPage(c) {
   const ci = C_INFO[c.country] || {};
   const proc = C_PROC[c.country] || [];
   const path = `/university/${c.id}/`;
-  const title = `${c.name} — Fees, IELTS/GRE Requirements & Admission 2026 | ${BRAND}`;
+  // Explicit abbreviations ONLY — not shortUni(), whose generic rules would rewrite 88 of
+  // 110 titles and make several worse ("New York University" -> "New York"). The map exists
+  // precisely for names the 60-char clamp cannot shorten safely on its own.
+  const titleName = UNI_ABBR[c.name] || c.name;
+  const title = `${titleName} — Fees, IELTS/GRE Requirements & Admission 2026 | ${BRAND}`;
   const ranked = typeof c.rank === "number" && c.rank < 1000;
   const desc = `${c.name} (${c.city}, ${c.country}${ranked ? ", QS #" + c.rank : ""}): tuition ${c.feeNote}, IELTS ${c.ielts}, GRE ${c.gre}, ${c.acceptance}% acceptance. Programs, scholarships, intakes & admission process — free.`;
   const kw = `${c.name.toLowerCase()} admission, ${c.name.toLowerCase()} fees, ${c.name.toLowerCase()} ielts requirement, ${c.name.toLowerCase()} ms requirements, ${c.name.toLowerCase()} acceptance rate, study at ${c.name.toLowerCase()}, ${c.name.toLowerCase()} scholarships`;
@@ -3111,7 +3129,8 @@ privacyPage();
 termsPage();
 linksPage();
 embedPage();
-PR_COMBOS.forEach(prExamPage);
+// PR_COMBOS is generated further down, once PR_TARGETS exists to be compared against —
+// see the note next to PR_TARGETS.forEach.
 Object.keys(EXAMS).forEach((id) => { mockPage(id); practicePage(id); });
 COUNTRY_DATA.forEach((co) => { costPage(co); SEO_FIELDS.forEach((f) => studyFieldPage(f, co)); });
 // Map each top-ranked university to one "vs" comparison page, so the (already-existing)
@@ -4339,7 +4358,11 @@ ${relatedGrid([
   { label: `💸 Fully-funded scholarships`, href: `/fully-funded-scholarships/` },
   { label: `🏦 Education loan guide`, href: `/study-abroad-education-loan/` },
 ])}`;
-  emit(path, head({ title: `Cheapest Countries to Study Abroad 2026 (Ranked by Total Cost) | ${BRAND}`, desc: `Free 2026 data study ranking the cheapest countries to study abroad by total first-year cost (tuition + official living funds): Germany, Ireland, Canada, Australia, UK, USA. Citable reference.`, path, kw: "cheapest countries to study abroad, cheapest country to study abroad 2026, affordable study abroad destinations, study abroad cost by country, cheapest place to study masters abroad, low cost study abroad", jsonLdBlocks: [
+  // Was "Cheapest Countries to Study Abroad 2026 (Ranked by Total Cost)": the parenthetical —
+  // the only thing distinguishing it from /blog/cheapest-countries-to-study-abroad/ — did not
+  // survive the 60-char clamp, so two indexed pages shipped an identical title and competed
+  // with each other. This one is the citable cost DATASET, so say that inside the budget.
+  emit(path, head({ title: `Cheapest Study Abroad Countries: 2026 Costs | ${BRAND}`, desc: `Free 2026 data study ranking the cheapest countries to study abroad by total first-year cost (tuition + official living funds): Germany, Ireland, Canada, Australia, UK, USA. Citable reference.`, path, kw: "cheapest countries to study abroad, cheapest country to study abroad 2026, affordable study abroad destinations, study abroad cost by country, cheapest place to study masters abroad, low cost study abroad", jsonLdBlocks: [
     jsonld({ "@context": "https://schema.org", "@type": "Dataset", name: "Cheapest Countries to Study Abroad 2026", description: "Top study-abroad destinations ranked by indicative total first-year cost (public tuition + official living-cost figure), 2026.", isAccessibleForFree: true, creator: PUBLISHER, publisher: PUBLISHER, url: ORIGIN + path, license: "https://creativecommons.org/licenses/by/4.0/", dateModified: LASTMOD, temporalCoverage: "2026", spatialCoverage: ["Germany", "Ireland", "Canada", "Australia", "United Kingdom", "United States"], variableMeasured: ["Public-university tuition (indicative)", "Official living-cost / proof-of-funds", "Indicative total first-year cost"], creditText: "LandingPrep — Cheapest Countries to Study Abroad 2026" }),
     faqJsonLd(faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: "Cheapest Countries 2026", path }]),
@@ -5482,6 +5505,14 @@ COLLEGES.forEach(examForUniPage);
 COLLEGES.forEach((c) => ALT_EXAMS.forEach((ex) => altExamForUniPage(c, ex)));
 scholarshipCountryPages();
 PR_TARGETS.forEach(examForPRPage);
+// PR_COMBOS and PR_TARGETS both claimed six slugs (/ielts-for-canada-pr/ and friends). Both
+// pages were built every run; the later one silently overwrote the earlier on disk, which
+// happened to be the right outcome — the PR_TARGETS page is the substantially richer one
+// (2,669–3,089 chars of unique copy vs 1,529–1,778). Relying on emit order for that is a
+// trap, so PR_COMBOS now runs AFTER PR_TARGETS and yields any slug PR_TARGETS owns. It
+// still contributes its two unique pages, /ielts-for-uk-visa/ and /pte-for-uk-visa/.
+const PR_TARGET_SLUGS = new Set(PR_TARGETS.map((t) => t.slug));
+PR_COMBOS.filter((c) => !PR_TARGET_SLUGS.has(c.slug)).forEach(prExamPage);
 PRO_REG.forEach(examForRolePage);
 
 // ── Hub / topic-cluster pages (run LAST: group already-emitted spokes) ──────────
@@ -6220,7 +6251,10 @@ const lastmodFor = new Map();
       // "Sample <something>". When the flagged word follows an ALL-CAPS term (SOP, LOR, CV,
       // GRE…) it is the head of the phrase, so don't cry wolf — the warning is only useful
       // if every line in it is real.
-      else if (STRANDED_MODIFIER.test(bare) && !/\b[A-Z]{2,}\s+\w+$/.test(bare)) {
+      // Two shapes where the flagged word is the head of its phrase, not a severed modifier:
+      //   "…SOP Sample"        — follows an ALL-CAPS term, so it is a compound noun
+      //   "Read and Complete"  — coordinated pair; this is the actual name of a DET task
+      else if (STRANDED_MODIFIER.test(bare) && !/\b[A-Z]{2,}\s+\w+$/.test(bare) && !/\b(?:and|or)\s+\w+$/i.test(bare)) {
         malformed.push([path, dec, "ends on a stranded modifier"]);
       }
     }
