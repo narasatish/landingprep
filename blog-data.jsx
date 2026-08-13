@@ -19532,6 +19532,75 @@
       "metaDesc": "Try GMAT Focus free: new 2-hour format, AI scoring & question types. Free mock test, study plan & score predictions for MS/MBA prep."
     },
     {
+      "id": "toefl-2026-adaptive-format-changes",
+      "tag": "TOEFL",
+      "date": "2026",
+      "title": "TOEFL 2026: Adaptive Format & 1–6 Scores",
+      "excerpt": "From 21 January 2026 the TOEFL iBT is adaptive in Reading and Listening, reports a 1–6 banded score, and adds collaborative question types. Here is what actually changed, and what it means for how you prepare.",
+      "kw": "TOEFL 2026 format, TOEFL adaptive test, TOEFL new score scale 1-6, TOEFL iBT changes January 2026, TOEFL multistage adaptive, TOEFL 0-120 transition, new TOEFL question types, TOEFL update 2026",
+      "metaDesc": "TOEFL iBT changed on 21 Jan 2026: adaptive Reading & Listening, a 1–6 score with 0–120 still reported for two years. Free practice on the new format.",
+      "sections": [
+        {
+          "h": "What changed on 21 January 2026",
+          "body": "ETS launched the updated TOEFL iBT worldwide on **21 January 2026**. Three things changed that affect how you prepare:\n\n1. **Reading and Listening are now adaptive.** ETS describes a *multistage adaptive format* that adjusts \"in real time midway through each section\" based on how you are performing.\n2. **Scoring moved to a 1–6 banded scale**, reported for each of the four sections and overall.\n3. **New question types** were added that ETS says \"reflect the reality of today's highly collaborative academic environments\" — including group discussions and project work.\n\nThe test still has four sections in the same order — Reading, Listening, Speaking, Writing — and still takes roughly two hours. What is no longer fixed is the exact number of items you will see."
+        },
+        {
+          "h": "How multistage adaptive actually works",
+          "body": "This is the change most likely to catch people out, because it is not the same as the question-by-question adaptivity of the GRE or the digital SAT's module system.\n\nIn a multistage adaptive test, you work through a first block of questions at a standard difficulty. Partway through the section the test evaluates your performance and routes you into a second block calibrated to that estimate. Do well and the second block is harder; struggle and it is easier.\n\nTwo practical consequences:\n\n- **Harder questions are not a bad sign.** If the second half of your Reading section feels noticeably tougher, that usually means the first half went well. Candidates who read this as failure and panic tend to lose marks they had already earned.\n- **You cannot bank time by rushing the first block.** Early questions do more than score you; they decide which version of the section you get. Accuracy early is worth more than speed early."
+        },
+        {
+          "h": "Why nobody can tell you the exact question count",
+          "body": "You will find sites quoting a precise number of Reading or Listening items for the 2026 test. Treat those with caution.\n\nETS's own wording is that \"as the test adapts, test time and items may vary.\" That is not vagueness on their part — it is a direct consequence of the adaptive design. The route you take through the section determines how many items you answer.\n\nThis is worth saying plainly because exam-prep sites have a habit of publishing a confident number and leaving it up years after it stops being true. If a source gives you an exact item count for an adaptive section without saying it varies, that source is not reading the specification."
+        },
+        {
+          "h": "The 1–6 score scale, and why 0–120 has not disappeared",
+          "body": "From January 2026 you receive a **1–6 banded score** for each section and overall.\n\nBecause thousands of universities publish requirements in the old currency — \"TOEFL 90 minimum\", \"100 for direct entry\" — ETS is also reporting a **comparable overall score on the 0–120 scale for a two-year transition period**.\n\nWhat this means in practice:\n\n- **Check what your university actually asks for.** Most admissions pages will still quote 0–120 for some time. Your report will carry both, so you can satisfy either.\n- **Do not convert informally.** A banded 1–6 score compresses a wide range into a single figure. Quote the number your score report gives, not an arithmetic guess.\n- **Older scores stay valid** on the terms they were issued under — TOEFL scores are valid for two years from the test date."
+        },
+        {
+          "h": "The new collaborative question types",
+          "body": "ETS added tasks modelled on \"group discussions and project work\". This is a continuation of a direction the test has been moving in for several years: away from isolated academic exercises and towards the things students actually do in a seminar.\n\nIf you have prepared for the TOEFL Writing \"academic discussion\" task, you already know the shape of this. You are shown a discussion thread — an instructor's question and one or two classmates' responses — and asked to contribute something that engages with what has already been said rather than restating the prompt.\n\nThe skill being tested is not vocabulary. It is whether you can **respond to a specific point someone made** and add to it. A contribution that would make sense pasted into any discussion at all will score poorly, however clean the grammar."
+        },
+        {
+          "h": "How to prepare for an adaptive test",
+          "body": "Preparation changes less than people expect, but it does change.\n\n**Accuracy early beats speed early.** In a multistage test, the first block routes you. Getting through it quickly and carelessly puts you into an easier second block with a lower score ceiling.\n\n**Do not skip and return the way you might have on the old test.** Section navigation rules differ; plan to answer as you go.\n\n**Practise at full section length.** The adaptivity is within the section, so stamina still matters. Practising in ten-minute fragments trains the wrong thing.\n\n**Expect difficulty to move.** This is the single biggest psychological difference. On a fixed-form test, a run of hard questions means bad luck. On an adaptive test it is feedback."
+        },
+        {
+          "h": "Practising on the current format",
+          "body": "The practical risk right now is not the exam — it is the prep material. A large amount of TOEFL practice online was written for the pre-2026 test and has not been revised. Working through it will train you for section timings and a score scale that no longer apply.\n\nOur [free TOEFL practice tests](/mock-test/toefl/) are built to the current specification, with the section timings and adaptive structure the 2026 test uses. They are free, with no signup.\n\nIf you are choosing between tests, the [IELTS ↔ TOEFL ↔ PTE score converter](/tools/) will show you roughly where a target score in one exam lands in another — useful when a university lists a requirement in a currency you have not tested in."
+        }
+      ],
+      "faqs": [
+        [
+          "When did the new TOEFL format start?",
+          "The updated TOEFL iBT launched worldwide on 21 January 2026. Tests taken before that date used the previous format, and those scores remain valid for two years from the test date."
+        ],
+        [
+          "Is the whole TOEFL adaptive now?",
+          "No. ETS applies a multistage adaptive format to the Reading and Listening sections, which adjust midway through based on your performance. Speaking and Writing are not adaptive in this way."
+        ],
+        [
+          "How many questions are in the 2026 TOEFL Reading section?",
+          "There is no single fixed number. Because the section adapts, ETS states that test time and items may vary. Be sceptical of any source quoting an exact item count without that caveat."
+        ],
+        [
+          "What is the new TOEFL score scale?",
+          "Scores are reported on a 1–6 banded scale for each section and overall. For a two-year transition period, ETS also reports a comparable overall score on the familiar 0–120 scale."
+        ],
+        [
+          "Will universities still accept 0–120 scores?",
+          "Yes. Most institutions still publish requirements on the 0–120 scale, and score reports carry both during the transition. Always check the requirement on your specific programme's admissions page."
+        ],
+        [
+          "Does the new format make the TOEFL harder?",
+          "Not inherently. Adaptive tests aim to measure your level more efficiently, which is part of why the test is shorter. If questions feel harder as a section progresses, that usually indicates you are performing well."
+        ],
+        [
+          "How long is the 2026 TOEFL iBT?",
+          "Approximately two hours in total, across Reading, Listening, Speaking and Writing. Exact timing can vary slightly because the test adapts."
+        ]
+      ]
+    },
+    {
       "id": "gre-format-2026-complete-guide",
       "tag": "GRE",
       "date": "2026",
