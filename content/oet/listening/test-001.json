@@ -5,238 +5,425 @@
   "type": "section",
   "title": "OET Listening Practice Test 1",
   "durationSeconds": 2700,
-  "questionCount": 30,
+  "questionCount": 42,
   "instructions": "OET Listening has three parts. Part A: Consultation Extracts (note-taking style). Part B: Short Workplace Extracts (main point identification). Part C: Presentation Extracts (detailed comprehension). Listen carefully and choose the best answer.",
   "parts": [
     {
       "part": 1,
       "title": "Part A — Consultation Extracts",
-      "questions": 18,
+      "questions": 24,
       "time": "12 min",
-      "description": "Doctor-patient consultations. Listen and take notes to answer questions about specific information."
+      "description": "Two consultation extracts. Complete the clinical notes with the information you hear."
     },
     {
       "part": 2,
-      "title": "Part B — Short Workplace Extracts",
-      "questions": 8,
+      "title": "Part B — Workplace Extracts",
+      "questions": 6,
       "time": "8 min",
-      "description": "Workplace briefings, handovers, phone calls. Identify the main point or purpose."
+      "description": "Short workplace extracts; one multiple-choice question each."
     },
     {
       "part": 3,
       "title": "Part C — Presentation Extracts",
-      "questions": 4,
-      "time": "10 min",
-      "description": "Healthcare presentations or talks. Comprehend main ideas and supporting details."
+      "questions": 12,
+      "time": "12 min",
+      "description": "Presentation and interview extracts; detailed comprehension of opinion and argument."
     }
   ],
   "questions": [
     {
       "id": "oet-listening-001-q01",
-      "passageId": "oet-listening-001-p1a",
       "part": 1,
-      "topic": "GP Consultation - BP Reading",
-      "questionType": "multiple_choice_single",
-      "prompt": "What was Mrs Chen's blood pressure reading during the consultation?",
-      "options": [
-        "158 over 98",
-        "148 over 88",
-        "168 over 100",
-        "138 over 78"
+      "topic": "Consultation 1 — Hypertension review",
+      "questionType": "short_answer",
+      "prompt": "Symptom reported on waking: _______",
+      "question": "Symptom reported on waking: _______",
+      "correctAnswer": "headaches",
+      "alternateAnswers": [
+        "morning headaches",
+        "headache"
       ],
-      "correctAnswer": "158 over 98",
-      "explanation": "The doctor states the reading is 158 over 98 during the examination.",
-      "difficulty": "easy"
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 1,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
     },
     {
       "id": "oet-listening-001-q02",
-      "passageId": "oet-listening-001-p1a",
       "part": 1,
-      "topic": "Hypertension Causes",
-      "questionType": "multiple_choice_single",
-      "prompt": "What stressors has Mrs Chen experienced recently?",
-      "options": [
-        "Only work stress",
-        "Health issues of family members",
-        "Her daughter's wedding and kitchen renovation",
-        "Financial difficulties alone"
+      "topic": "Consultation 1 — Hypertension review",
+      "questionType": "short_answer",
+      "prompt": "Patient also feels _______ most of the time",
+      "question": "Patient also feels _______ most of the time",
+      "correctAnswer": "tired",
+      "alternateAnswers": [
+        "fatigued"
       ],
-      "correctAnswer": "Her daughter's wedding and kitchen renovation",
-      "explanation": "Mrs Chen mentions her daughter's wedding in three weeks and kitchen renovation as stressors.",
-      "difficulty": "easy"
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 2,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
     },
     {
       "id": "oet-listening-001-q03",
-      "passageId": "oet-listening-001-p1a",
       "part": 1,
-      "topic": "Exercise Recommendation",
-      "questionType": "multiple_choice_single",
-      "prompt": "How much daily exercise did the doctor recommend?",
-      "options": [
-        "At least 30 minutes",
-        "At least 20 minutes",
-        "At least 45 minutes",
-        "At least 60 minutes"
-      ],
-      "correctAnswer": "At least 30 minutes",
-      "explanation": "The doctor states the patient should exercise regularly—at least 30 minutes daily.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Hypertension review",
+      "questionType": "short_answer",
+      "prompt": "Husband reports she has been _______",
+      "question": "Husband reports she has been _______",
+      "correctAnswer": "irritable",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 3,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
     },
     {
       "id": "oet-listening-001-q04",
-      "passageId": "oet-listening-001-p1a",
       "part": 1,
-      "topic": "Follow-up Timing",
-      "questionType": "multiple_choice_single",
-      "prompt": "When should Mrs Chen return for blood pressure recheck?",
-      "options": [
-        "In one week",
-        "In one month",
-        "In two weeks",
-        "In six weeks"
-      ],
-      "correctAnswer": "In two weeks",
-      "explanation": "The doctor says 'Come back in two weeks so we can recheck.'",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Hypertension review",
+      "questionType": "short_answer",
+      "prompt": "Family event in three weeks: daughter's _______",
+      "question": "Family event in three weeks: daughter's _______",
+      "correctAnswer": "wedding",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 4,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
     },
     {
       "id": "oet-listening-001-q05",
-      "passageId": "oet-listening-001-p1b",
       "part": 1,
-      "topic": "Otitis Media Diagnosis",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is Tommy's diagnosis?",
-      "options": [
-        "Acute otitis media",
-        "Chronic ear infection",
-        "Eustachian tube dysfunction",
-        "Conductive hearing loss"
-      ],
-      "correctAnswer": "Acute otitis media",
-      "explanation": "The doctor explicitly states 'He has acute otitis media.'",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Hypertension review",
+      "questionType": "short_answer",
+      "prompt": "Home disruption: renovating the _______",
+      "question": "Home disruption: renovating the _______",
+      "correctAnswer": "kitchen",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 5,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
     },
     {
       "id": "oet-listening-001-q06",
-      "passageId": "oet-listening-001-p1b",
       "part": 1,
-      "topic": "Antibiotic Course Duration",
-      "questionType": "multiple_choice_single",
-      "prompt": "For how long should Tommy take the amoxicillin?",
-      "options": [
-        "Three days",
-        "Five days",
-        "Seven days",
-        "Ten days"
+      "topic": "Consultation 1 — Hypertension review",
+      "questionType": "short_answer",
+      "prompt": "Sleep: patient reports sleeping _______",
+      "question": "Sleep: patient reports sleeping _______",
+      "correctAnswer": "badly",
+      "alternateAnswers": [
+        "poorly"
       ],
-      "correctAnswer": "Seven days",
-      "explanation": "The doctor prescribes amoxicillin for seven days.",
-      "difficulty": "easy"
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 6,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
     },
     {
       "id": "oet-listening-001-q07",
-      "passageId": "oet-listening-001-p1b",
       "part": 1,
-      "topic": "Antibiotic Dosage",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is the prescribed dosage of amoxicillin for Tommy?",
-      "options": [
-        "Two tablets three times daily",
-        "Two tablets twice daily",
-        "One tablet three times daily",
-        "Three tablets once daily"
+      "topic": "Consultation 1 — Hypertension review",
+      "questionType": "short_answer",
+      "prompt": "Blood pressure today: _______",
+      "question": "Blood pressure today: _______",
+      "correctAnswer": "158 over 98",
+      "alternateAnswers": [
+        "158/98",
+        "158 over 98 mmHg"
       ],
-      "correctAnswer": "Two tablets three times daily",
-      "explanation": "The doctor states 'Two tablets three times daily.'",
-      "difficulty": "easy"
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 7,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
     },
     {
       "id": "oet-listening-001-q08",
-      "passageId": "oet-listening-001-p1c",
       "part": 1,
-      "topic": "Medication Timing",
-      "questionType": "multiple_choice_single",
-      "prompt": "When should Mr Patel take his simvastatin?",
-      "options": [
-        "In the morning with breakfast",
-        "At midday with lunch",
-        "In the evening with food",
-        "At bedtime without food"
+      "topic": "Consultation 1 — Hypertension review",
+      "questionType": "short_answer",
+      "prompt": "Treatment started: low-dose _______",
+      "question": "Treatment started: low-dose _______",
+      "correctAnswer": "antihypertensive",
+      "alternateAnswers": [
+        "antihypertensive medication"
       ],
-      "correctAnswer": "In the evening with food",
-      "explanation": "The pharmacist states simvastatin should be taken in the evening with food.",
-      "difficulty": "easy"
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 8,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
     },
     {
       "id": "oet-listening-001-q09",
-      "passageId": "oet-listening-001-p1c",
       "part": 1,
-      "topic": "Metformin Issue",
-      "questionType": "multiple_choice_single",
-      "prompt": "What side effect has Mr Patel experienced with metformin?",
-      "options": [
-        "Stomach discomfort",
-        "Dizziness",
-        "Headaches",
-        "Muscle pain"
-      ],
-      "correctAnswer": "Stomach discomfort",
-      "explanation": "Mr Patel says he has been getting stomach discomfort.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Hypertension review",
+      "questionType": "short_answer",
+      "prompt": "Dietary advice: reduce _______",
+      "question": "Dietary advice: reduce _______",
+      "correctAnswer": "salt",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 9,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
     },
     {
       "id": "oet-listening-001-q10",
-      "passageId": "oet-listening-001-p1c",
       "part": 1,
-      "topic": "Supplementation",
-      "questionType": "multiple_choice_single",
-      "prompt": "What supplement is Mr Patel taking?",
-      "options": [
-        "Calcium",
-        "Vitamin D",
-        "Vitamin B12",
-        "Iron"
+      "topic": "Consultation 1 — Hypertension review",
+      "questionType": "short_answer",
+      "prompt": "Exercise advised: at least _______ daily",
+      "question": "Exercise advised: at least _______ daily",
+      "correctAnswer": "30 minutes",
+      "alternateAnswers": [
+        "thirty minutes"
       ],
-      "correctAnswer": "Vitamin D",
-      "explanation": "Mr Patel states he is taking vitamin D.",
-      "difficulty": "easy"
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 10,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
     },
     {
       "id": "oet-listening-001-q11",
-      "passageId": "oet-listening-001-p1c",
       "part": 1,
-      "topic": "Follow-up Appointment",
-      "questionType": "multiple_choice_single",
-      "prompt": "When should Mr Patel return for medication review?",
-      "options": [
-        "In two weeks",
-        "In three weeks",
-        "In four weeks",
-        "In six weeks"
+      "topic": "Consultation 1 — Hypertension review",
+      "questionType": "short_answer",
+      "prompt": "Review appointment in _______",
+      "question": "Review appointment in _______",
+      "correctAnswer": "two weeks",
+      "alternateAnswers": [
+        "2 weeks"
       ],
-      "correctAnswer": "In four weeks",
-      "explanation": "The pharmacist says 'Come back in four weeks so we can check how you're getting on.'",
-      "difficulty": "easy"
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 11,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
     },
     {
       "id": "oet-listening-001-q12",
-      "passageId": "oet-listening-001-p1c",
       "part": 1,
-      "topic": "Lisinopril Dose",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is Mr Patel's lisinopril dose?",
-      "options": [
-        "5 milligrams daily",
-        "20 milligrams daily",
-        "10 milligrams daily",
-        "40 milligrams daily"
-      ],
-      "correctAnswer": "10 milligrams daily",
-      "explanation": "The pharmacist confirms lisinopril 10 milligrams daily.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Hypertension review",
+      "questionType": "short_answer",
+      "prompt": "Possible early side effects: fatigue or _______",
+      "question": "Possible early side effects: fatigue or _______",
+      "correctAnswer": "dizziness",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 12,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
     },
     {
       "id": "oet-listening-001-q13",
+      "part": 1,
+      "topic": "Consultation 2 — Paediatric ear infection",
+      "questionType": "short_answer",
+      "prompt": "Presenting behaviour: constantly _______ at his ears",
+      "question": "Presenting behaviour: constantly _______ at his ears",
+      "correctAnswer": "pulling",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 13,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
+    },
+    {
+      "id": "oet-listening-001-q14",
+      "part": 1,
+      "topic": "Consultation 2 — Paediatric ear infection",
+      "questionType": "short_answer",
+      "prompt": "Fever has lasted _______",
+      "question": "Fever has lasted _______",
+      "correctAnswer": "two days",
+      "alternateAnswers": [
+        "2 days"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 14,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
+    },
+    {
+      "id": "oet-listening-001-q15",
+      "part": 1,
+      "topic": "Consultation 2 — Paediatric ear infection",
+      "questionType": "short_answer",
+      "prompt": "Fever partially controlled with _______",
+      "question": "Fever partially controlled with _______",
+      "correctAnswer": "paracetamol",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 15,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
+    },
+    {
+      "id": "oet-listening-001-q16",
+      "part": 1,
+      "topic": "Consultation 2 — Paediatric ear infection",
+      "questionType": "short_answer",
+      "prompt": "Examination finding: redness in the left ear _______",
+      "question": "Examination finding: redness in the left ear _______",
+      "correctAnswer": "canal",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 16,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
+    },
+    {
+      "id": "oet-listening-001-q17",
+      "part": 1,
+      "topic": "Consultation 2 — Paediatric ear infection",
+      "questionType": "short_answer",
+      "prompt": "Diagnosis: acute _______",
+      "question": "Diagnosis: acute _______",
+      "correctAnswer": "otitis media",
+      "alternateAnswers": [
+        "otitis"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 17,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
+    },
+    {
+      "id": "oet-listening-001-q18",
+      "part": 1,
+      "topic": "Consultation 2 — Paediatric ear infection",
+      "questionType": "short_answer",
+      "prompt": "Antibiotic prescribed: _______",
+      "question": "Antibiotic prescribed: _______",
+      "correctAnswer": "amoxicillin",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 18,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
+    },
+    {
+      "id": "oet-listening-001-q19",
+      "part": 1,
+      "topic": "Consultation 2 — Paediatric ear infection",
+      "questionType": "short_answer",
+      "prompt": "Course length: _______ days",
+      "question": "Course length: _______ days",
+      "correctAnswer": "seven",
+      "alternateAnswers": [
+        "7"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 19,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
+    },
+    {
+      "id": "oet-listening-001-q20",
+      "part": 1,
+      "topic": "Consultation 2 — Paediatric ear infection",
+      "questionType": "short_answer",
+      "prompt": "Dose: two tablets _______ times daily",
+      "question": "Dose: two tablets _______ times daily",
+      "correctAnswer": "three",
+      "alternateAnswers": [
+        "3"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 20,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
+    },
+    {
+      "id": "oet-listening-001-q21",
+      "part": 1,
+      "topic": "Consultation 2 — Paediatric ear infection",
+      "questionType": "short_answer",
+      "prompt": "Warning sign requiring the drug to be stopped: _______",
+      "question": "Warning sign requiring the drug to be stopped: _______",
+      "correctAnswer": "rash",
+      "alternateAnswers": [
+        "a rash"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 21,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
+    },
+    {
+      "id": "oet-listening-001-q22",
+      "part": 1,
+      "topic": "Consultation 2 — Paediatric ear infection",
+      "questionType": "short_answer",
+      "prompt": "Pain should improve within _______ hours",
+      "question": "Pain should improve within _______ hours",
+      "correctAnswer": "24 to 48",
+      "alternateAnswers": [
+        "24-48",
+        "24 to 48 hours"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 22,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
+    },
+    {
+      "id": "oet-listening-001-q23",
+      "part": 1,
+      "topic": "Consultation 2 — Paediatric ear infection",
+      "questionType": "short_answer",
+      "prompt": "Advise avoiding _______ in the ear while bathing",
+      "question": "Advise avoiding _______ in the ear while bathing",
+      "correctAnswer": "water",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 23,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
+    },
+    {
+      "id": "oet-listening-001-q24",
+      "part": 1,
+      "topic": "Consultation 2 — Paediatric ear infection",
+      "questionType": "short_answer",
+      "prompt": "Return if no improvement after _______ days",
+      "question": "Return if no improvement after _______ days",
+      "correctAnswer": "five",
+      "alternateAnswers": [
+        "5"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 24,
+      "passageId": "oet-listening-001-part1",
+      "scriptId": "oet-listening-001-part1"
+    },
+    {
+      "id": "oet-listening-001-q25",
       "passageId": "oet-listening-001-p2a",
       "part": 2,
       "topic": "Ward Round - Post-op Day",
@@ -250,10 +437,11 @@
       ],
       "correctAnswer": "Day 2",
       "explanation": "The charge nurse states Mrs Williams is post-op day two after hip replacement.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 25
     },
     {
-      "id": "oet-listening-001-q14",
+      "id": "oet-listening-001-q26",
       "passageId": "oet-listening-001-p2a",
       "part": 2,
       "topic": "Oxygen Therapy Change",
@@ -267,10 +455,11 @@
       ],
       "correctAnswer": "3 litres via nasal cannula",
       "explanation": "The charge nurse states he's on 3 litres instead of 5.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 26
     },
     {
-      "id": "oet-listening-001-q15",
+      "id": "oet-listening-001-q27",
       "passageId": "oet-listening-001-p2a",
       "part": 2,
       "topic": "Migraine Management",
@@ -284,10 +473,11 @@
       ],
       "correctAnswer": "A quiet environment with low lighting and reduced noise",
       "explanation": "The charge nurse specifies she needs a quiet environment with low lighting and reduced noise.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "questionNumber": 27
     },
     {
-      "id": "oet-listening-001-q16",
+      "id": "oet-listening-001-q28",
       "passageId": "oet-listening-001-p2b",
       "part": 2,
       "topic": "Suspension Storage",
@@ -301,10 +491,11 @@
       ],
       "correctAnswer": "At room temperature",
       "explanation": "The pharmacist states cephalexin suspension should be stored at room temperature, not refrigerated.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 28
     },
     {
-      "id": "oet-listening-001-q17",
+      "id": "oet-listening-001-q29",
       "passageId": "oet-listening-001-p2b",
       "part": 2,
       "topic": "Suspension Shelf Life",
@@ -318,163 +509,11 @@
       ],
       "correctAnswer": "14 days",
       "explanation": "The pharmacist states it's only good for 14 days after dispensing.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 29
     },
     {
-      "id": "oet-listening-001-q18",
-      "passageId": "oet-listening-001-p3a",
-      "part": 3,
-      "topic": "Compliance Rates",
-      "questionType": "multiple_choice_single",
-      "prompt": "What are typical hand hygiene compliance rates in healthcare settings?",
-      "options": [
-        "Between 20 and 40 percent",
-        "Between 60 and 80 percent",
-        "Between 40 and 60 percent",
-        "Between 80 and 100 percent"
-      ],
-      "correctAnswer": "Between 40 and 60 percent",
-      "explanation": "The speaker states compliance rates remain between 40 and 60 percent.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-listening-001-q19",
-      "passageId": "oet-listening-001-p3a",
-      "part": 3,
-      "topic": "Successful Interventions",
-      "questionType": "multiple_choice_single",
-      "prompt": "Which of the following is NOT mentioned as part of effective hand hygiene programmes?",
-      "options": [
-        "Accessible alcohol-based sanitizers",
-        "Mandatory training",
-        "Punishment of non-compliant staff",
-        "Visual reminders and posters"
-      ],
-      "correctAnswer": "Punishment of non-compliant staff",
-      "explanation": "The speaker mentions sanitizers, training, visual reminders, and feedback, but not punishment.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-listening-001-q20",
-      "passageId": "oet-listening-001-p3a",
-      "part": 3,
-      "topic": "Compliance Improvement",
-      "questionType": "multiple_choice_single",
-      "prompt": "To what level did successful programmes increase compliance?",
-      "options": [
-        "Over 70 percent",
-        "Over 85 percent",
-        "Over 75 percent",
-        "Over 95 percent"
-      ],
-      "correctAnswer": "Over 85 percent",
-      "explanation": "The speaker states compliance increased from 50 percent to over 85 percent within one year.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-001-q21",
-      "passageId": "oet-listening-001-p1a",
-      "part": 1,
-      "topic": "Dietary Recommendations",
-      "questionType": "multiple_choice_single",
-      "prompt": "What dietary advice did the doctor give Mrs Chen?",
-      "options": [
-        "Reduce salt and eat fresh produce",
-        "Increase salt intake",
-        "Eat more processed foods",
-        "No dietary changes needed"
-      ],
-      "correctAnswer": "Reduce salt and eat fresh produce",
-      "explanation": "The doctor recommends reducing salt and eating plenty of fresh produce.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-001-q22",
-      "passageId": "oet-listening-001-p1a",
-      "part": 1,
-      "topic": "Stress Factors",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is causing Mrs Chen's sleep problems?",
-      "options": [
-        "Stress from wedding and kitchen renovation",
-        "Her work schedule",
-        "Only medication side effects",
-        "Medical condition only"
-      ],
-      "correctAnswer": "Stress from wedding and kitchen renovation",
-      "explanation": "Mrs Chen attributes her sleep problems to stress from these two events.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-001-q23",
-      "passageId": "oet-listening-001-p1b",
-      "part": 1,
-      "topic": "Otitis Media Cause",
-      "questionType": "multiple_choice_single",
-      "prompt": "What causes acute otitis media according to the doctor?",
-      "options": [
-        "Viral infections leading to fluid accumulation and bacterial infection",
-        "Trauma to the ear",
-        "Allergy to food",
-        "Exposure to loud noise"
-      ],
-      "correctAnswer": "Viral infections leading to fluid accumulation and bacterial infection",
-      "explanation": "The doctor explains viral infections lead to fluid accumulation, which bacteria then infect.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-listening-001-q24",
-      "passageId": "oet-listening-001-p1b",
-      "part": 1,
-      "topic": "Symptom Improvement Timeline",
-      "questionType": "multiple_choice_single",
-      "prompt": "When should Tommy's pain improve?",
-      "options": [
-        "Within 24 to 48 hours",
-        "Immediately",
-        "After 1 week",
-        "After 2 weeks"
-      ],
-      "correctAnswer": "Within 24 to 48 hours",
-      "explanation": "The doctor states pain should improve within 24 to 48 hours.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-001-q25",
-      "passageId": "oet-listening-001-p1c",
-      "part": 1,
-      "topic": "Blood Pressure Medication",
-      "questionType": "multiple_choice_single",
-      "prompt": "For what condition is lisinopril prescribed to Mr Patel?",
-      "options": [
-        "High blood pressure",
-        "High cholesterol",
-        "Diabetes",
-        "Heart arrhythmia"
-      ],
-      "correctAnswer": "High blood pressure",
-      "explanation": "The pharmacist states lisinopril is for blood pressure control.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-001-q26",
-      "passageId": "oet-listening-001-p1c",
-      "part": 1,
-      "topic": "Metformin Extended Release",
-      "questionType": "multiple_choice_single",
-      "prompt": "Why might switching to extended-release metformin help Mr Patel?",
-      "options": [
-        "To reduce stomach upset",
-        "To reduce dose frequency",
-        "To improve diabetes control",
-        "To reduce drug cost"
-      ],
-      "correctAnswer": "To reduce stomach upset",
-      "explanation": "The pharmacist offers this option because Mr Patel is experiencing stomach discomfort.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-001-q27",
+      "id": "oet-listening-001-q30",
       "passageId": "oet-listening-001-p2a",
       "part": 2,
       "topic": "Post-op Drainage",
@@ -488,44 +527,65 @@
       ],
       "correctAnswer": "It was producing less fluid",
       "explanation": "The charge nurse notes the drain is producing less fluid, which is a good sign.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 30
     },
     {
-      "id": "oet-listening-001-q28",
-      "passageId": "oet-listening-001-p2a",
-      "part": 2,
-      "topic": "Pneumonia Improvement",
+      "id": "oet-listening-001-q31",
+      "passageId": "oet-listening-001-p3a",
+      "part": 3,
+      "topic": "Compliance Rates",
       "questionType": "multiple_choice_single",
-      "prompt": "How do we know Mr Kumar's pneumonia is improving?",
+      "prompt": "What are typical hand hygiene compliance rates in healthcare settings?",
       "options": [
-        "His oxygen saturation improved and antibiotics are working well",
-        "He is eating well",
-        "He no longer needs monitoring",
-        "He requested discharge"
+        "Between 20 and 40 percent",
+        "Between 60 and 80 percent",
+        "Between 40 and 60 percent",
+        "Between 80 and 100 percent"
       ],
-      "correctAnswer": "His oxygen saturation improved and antibiotics are working well",
-      "explanation": "The charge nurse reports improved saturation and effective antibiotics as signs of improvement.",
-      "difficulty": "easy"
+      "correctAnswer": "Between 40 and 60 percent",
+      "explanation": "The speaker states compliance rates remain between 40 and 60 percent.",
+      "difficulty": "medium",
+      "questionNumber": 31
     },
     {
-      "id": "oet-listening-001-q29",
-      "passageId": "oet-listening-001-p2b",
-      "part": 2,
-      "topic": "Medication Shake Instructions",
+      "id": "oet-listening-001-q32",
+      "passageId": "oet-listening-001-p3a",
+      "part": 3,
+      "topic": "Successful Interventions",
       "questionType": "multiple_choice_single",
-      "prompt": "Why is it important to shake the cephalexin suspension?",
+      "prompt": "Which of the following is NOT mentioned as part of effective hand hygiene programmes?",
       "options": [
-        "To ensure proper mixing before each dose",
-        "To warm it",
-        "To improve taste",
-        "To check for contamination"
+        "Accessible alcohol-based sanitizers",
+        "Mandatory training",
+        "Punishment of non-compliant staff",
+        "Visual reminders and posters"
       ],
-      "correctAnswer": "To ensure proper mixing before each dose",
-      "explanation": "The pharmacist states the suspension should be shaken well before each dose for proper mixing.",
-      "difficulty": "easy"
+      "correctAnswer": "Punishment of non-compliant staff",
+      "explanation": "The speaker mentions sanitizers, training, visual reminders, and feedback, but not punishment.",
+      "difficulty": "medium",
+      "questionNumber": 32
     },
     {
-      "id": "oet-listening-001-q30",
+      "id": "oet-listening-001-q33",
+      "passageId": "oet-listening-001-p3a",
+      "part": 3,
+      "topic": "Compliance Improvement",
+      "questionType": "multiple_choice_single",
+      "prompt": "To what level did successful programmes increase compliance?",
+      "options": [
+        "Over 70 percent",
+        "Over 85 percent",
+        "Over 75 percent",
+        "Over 95 percent"
+      ],
+      "correctAnswer": "Over 85 percent",
+      "explanation": "The speaker states compliance increased from 50 percent to over 85 percent within one year.",
+      "difficulty": "easy",
+      "questionNumber": 33
+    },
+    {
+      "id": "oet-listening-001-q34",
       "passageId": "oet-listening-001-p3a",
       "part": 3,
       "topic": "Antibiotic Resistance Connection",
@@ -539,7 +599,168 @@
       ],
       "correctAnswer": "Linked through reduced infection incidence with better hygiene",
       "explanation": "The speaker notes the programme addresses both hand hygiene and antibiotic resistance together.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "questionNumber": 34
+    },
+    {
+      "id": "oet-listening-001-q35",
+      "part": 3,
+      "passageId": "oet-listening-001-part3",
+      "scriptId": "oet-listening-001-part3",
+      "topic": "Hand Hygiene",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the speaker, why do many staff resist hand hygiene protocols?",
+      "question": "According to the speaker, why do many staff resist hand hygiene protocols?",
+      "options": [
+        "They believe alcohol gel damages the skin",
+        "They perceive the protocols as bureaucratic and time-consuming",
+        "They have not been given written guidelines",
+        "They think infection rates are already low"
+      ],
+      "correctAnswer": "They perceive the protocols as bureaucratic and time-consuming",
+      "explanation": "The speaker gives this as the second reason for poor compliance.",
+      "difficulty": "medium",
+      "questionNumber": 35
+    },
+    {
+      "id": "oet-listening-001-q36",
+      "part": 3,
+      "passageId": "oet-listening-001-part3",
+      "scriptId": "oet-listening-001-part3",
+      "topic": "Hand Hygiene",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which group does the speaker single out as having particularly low compliance?",
+      "question": "Which group does the speaker single out as having particularly low compliance?",
+      "options": [
+        "Physicians",
+        "Cleaning staff",
+        "Student nurses",
+        "Visitors"
+      ],
+      "correctAnswer": "Physicians",
+      "explanation": "The speaker says compliance is especially low among physicians.",
+      "difficulty": "medium",
+      "questionNumber": 36
+    },
+    {
+      "id": "oet-listening-001-q37",
+      "part": 3,
+      "passageId": "oet-listening-001-part3",
+      "scriptId": "oet-listening-001-part3",
+      "topic": "Hand Hygiene",
+      "questionType": "multiple_choice_single",
+      "prompt": "What does the speaker identify as the third reason for poor compliance?",
+      "question": "What does the speaker identify as the third reason for poor compliance?",
+      "options": [
+        "Insufficient sinks on the ward",
+        "A lack of awareness about the consequences of lapses",
+        "Shortages of alcohol gel",
+        "Poor supervision at night"
+      ],
+      "correctAnswer": "A lack of awareness about the consequences of lapses",
+      "explanation": "The speaker lists lack of awareness of serious consequences as the third reason.",
+      "difficulty": "medium",
+      "questionNumber": 37
+    },
+    {
+      "id": "oet-listening-001-q38",
+      "part": 3,
+      "passageId": "oet-listening-001-part3",
+      "scriptId": "oet-listening-001-part3",
+      "topic": "Hand Hygiene",
+      "questionType": "multiple_choice_single",
+      "prompt": "How does the speaker describe hand hygiene at the start of the talk?",
+      "question": "How does the speaker describe hand hygiene at the start of the talk?",
+      "options": [
+        "One of several equally useful measures",
+        "The single most important practice for preventing healthcare-associated infections",
+        "A practice whose value is now disputed",
+        "A measure mainly relevant to surgical wards"
+      ],
+      "correctAnswer": "The single most important practice for preventing healthcare-associated infections",
+      "explanation": "The speaker opens by calling it the single most important practice.",
+      "difficulty": "medium",
+      "questionNumber": 38
+    },
+    {
+      "id": "oet-listening-001-q39",
+      "part": 3,
+      "passageId": "oet-listening-001-part3",
+      "scriptId": "oet-listening-001-part3",
+      "topic": "Hand Hygiene",
+      "questionType": "multiple_choice_single",
+      "prompt": "Where does the speaker say alcohol-based sanitiser should be provided?",
+      "question": "Where does the speaker say alcohol-based sanitiser should be provided?",
+      "options": [
+        "At each ward entrance",
+        "At each patient's bed",
+        "In every staff room",
+        "At the hospital reception"
+      ],
+      "correctAnswer": "At each patient's bed",
+      "explanation": "The speaker specifies provision at each patient's bed.",
+      "difficulty": "medium",
+      "questionNumber": 39
+    },
+    {
+      "id": "oet-listening-001-q40",
+      "part": 3,
+      "passageId": "oet-listening-001-part3",
+      "scriptId": "oet-listening-001-part3",
+      "topic": "Hand Hygiene",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the World Health Organization figure quoted, how many people are affected globally each year?",
+      "question": "According to the World Health Organization figure quoted, how many people are affected globally each year?",
+      "options": [
+        "Tens of thousands",
+        "Hundreds of thousands",
+        "Hundreds of millions",
+        "Several billion"
+      ],
+      "correctAnswer": "Hundreds of millions",
+      "explanation": "The speaker cites a WHO estimate of hundreds of millions of people each year.",
+      "difficulty": "medium",
+      "questionNumber": 40
+    },
+    {
+      "id": "oet-listening-001-q41",
+      "part": 3,
+      "passageId": "oet-listening-001-part3",
+      "scriptId": "oet-listening-001-part3",
+      "topic": "Hand Hygiene",
+      "questionType": "multiple_choice_single",
+      "prompt": "Over what period did successful institutions achieve their improvement?",
+      "question": "Over what period did successful institutions achieve their improvement?",
+      "options": [
+        "Within one month",
+        "Within six months",
+        "Within one year",
+        "Within five years"
+      ],
+      "correctAnswer": "Within one year",
+      "explanation": "The speaker states compliance rose to over 85 percent within one year.",
+      "difficulty": "medium",
+      "questionNumber": 41
+    },
+    {
+      "id": "oet-listening-001-q42",
+      "part": 3,
+      "passageId": "oet-listening-001-part3",
+      "scriptId": "oet-listening-001-part3",
+      "topic": "Hand Hygiene",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the speaker's concluding argument?",
+      "question": "What is the speaker's concluding argument?",
+      "options": [
+        "Hand hygiene is primarily an individual responsibility",
+        "Hand hygiene is a system-wide commitment requiring everyone",
+        "Hand hygiene matters less than antibiotic stewardship",
+        "Compliance targets should be relaxed"
+      ],
+      "correctAnswer": "Hand hygiene is a system-wide commitment requiring everyone",
+      "explanation": "The conclusion states it is not just individual responsibility but a system-wide commitment.",
+      "difficulty": "medium",
+      "questionNumber": 42
     }
   ],
   "listeningScripts": [
