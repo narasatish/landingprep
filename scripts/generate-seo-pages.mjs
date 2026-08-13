@@ -138,6 +138,17 @@ const EXAMS = {
               for: "healthcare registration & migration (nurses, doctors, pharmacists & more)",
               accepted: "healthcare boards in the UK, Ireland, Australia, New Zealand, Canada, USA & more",
               sections: "Listening, Reading, Writing, Speaking" },
+  // ACT and SAT had full practice content in content/ and NO landing page of their own, so
+  // neither could rank for anything. Section figures are ACT's own published numbers for the
+  // enhanced test (English 50q/35min, Math 45q/50min, Reading 36q/40min, Science optional).
+  act:      { name: "ACT", short: "ACT", score: "1–36 Composite", scale: "composite", appPath: "act",
+              for: "undergraduate admission to US & Canadian universities",
+              accepted: "all US universities and many colleges in Canada",
+              sections: "English, Mathematics, Reading (Science & Writing optional)" },
+  sat:      { name: "Digital SAT", short: "SAT", score: "400–1600", scale: "points", appPath: "sat",
+              for: "undergraduate admission to US universities & scholarship consideration",
+              accepted: "US universities plus a growing number in the UK, Canada & Australia",
+              sections: "Reading & Writing, Math (adaptive modules)" },
 };
 
 // ── Country eligibility data (typical minimums; advisory, verify official) ──
