@@ -1,6 +1,6 @@
 # LandingPrep — Session Handoff (read me FIRST in a new session)
 
-**Last updated: 2026-08-13 (session 10) · repo at v443 · branch `main`, all pushed & live.**
+**Last updated: 2026-08-13 (session 10) · repo at v456 · branch `main`, all pushed & live.**
 Production auto-deploys on every push to `main`. Keep this file updated at the end of major
 work — it went 4 versions stale (said v394 while production ran v401) and cost a session's
 worth of re-derivation.
@@ -28,7 +28,7 @@ worth of re-derivation.
 > and the warning did not stop it happening again. Read `sw.js`
 > (`git show <sha>:sw.js | grep lp-v`) for the real value, every time.
 > Verified chain: 401 → 405 → 409 → 411 → 413 → 415 → 416 → 417 → 421 → 423 → 425 → 428 → 431
-> → 432 → 436 → 437 → 438 → 439 → 443 — every deploy bumped, no duplicates.
+> → 432 → 436 → 437 → 438 → 439 → 443 → 445 → 448 → 451 → 452 → 453 → 454 → 456 — every deploy bumped, no duplicates.
 
 > 🔎 **Session 10 changed where the effort should go.** Sessions 7–9 concluded the on-site work
 > was exhausted and only authority remained. That is still true *for SEO* — but it was never
@@ -37,6 +37,42 @@ worth of re-derivation.
 > student never saw, then a test library advertising ~3.5x more material than it holds. None of
 > these appear in any audit, because every page renders, every test passes and every URL is
 > 200. **Use the product before auditing it.**
+
+---
+
+## ▶️ FINISH THIS FIRST — the build in progress (session 10 stopped here on context)
+
+Queued in deliberate order; each item is one focused pass. Nothing below needs re-deriving.
+
+**1. Two more exam-format blog posts** — the highest-value content play on this site, because
+recency is the one axis where a domain with no backlinks outranks an incumbent. 127 posts and
+none covered a 2025/26 format change until `toefl-2026-adaptive-format-changes`.
+   - **Enhanced ACT (2025)** — 50q/35min English, 45q/50min Math, 36q/40min Reading,
+     40q/40min Science. The content already implements it.
+   - **Digital SAT** — adaptive modules.
+
+   **Method is non-negotiable: WebSearch/WebFetch the exam board's OWN page first and write
+   only what is sourced.** Session 10 encoded the retired ACT and pre-2026 TOEFL formats from
+   memory and "corrected" 210 correct files against them. Where the board publishes no fixed
+   number, say so in the post — that is both honest and the differentiator.
+
+   Template: copy the shape of `toefl-2026-adaptive-format-changes` in `blog-data.jsx`.
+   Two traps it hit: `metaDesc` must be ≤160 chars, and the title must be ≤46 chars before
+   " | LandingPrep" or `trimTitle` silently eats the keyword.
+
+**2. OET Listening tests 2 and 3** — the last format-conformance gap in the library.
+   Test 1 is the template: Part A = 24 note-completion items over two consultation extracts,
+   every answer keyed verbatim to the existing script.
+   **Use `questionType: "short_answer"`, NOT `note_completion`** — the compiled normalizer does
+   not convert the latter and renders it as an empty multiple choice (caught only by running
+   the real normalizer and reading the output types).
+
+**3. celpip/reading** — worst duplication in the library: 30 files holding ~1 test's worth of
+   material, 4% new. Template: `content/ielts/reading/test-007.json` (100% new material).
+
+**Ship rule for all three:** `npm test` must stay green — it now guards answerability with
+`--strict` — and every free-text answer must be found verbatim in its own passage before
+committing. That single check caught every real content defect this session.
 
 ---
 
