@@ -19601,6 +19601,67 @@
       ]
     },
     {
+      "id": "enhanced-act-format-changes",
+      "tag": "ACT",
+      "date": "2026",
+      "title": "Enhanced ACT: Shorter Test, Optional Science",
+      "excerpt": "The enhanced ACT is shorter, and science is now an optional add-on that does not count towards your Composite. Here is the exact section-by-section structure, and what it changes about how you prepare.",
+      "kw": "enhanced ACT format, ACT 2025 changes, ACT optional science, ACT section timing, ACT number of questions, ACT composite score sections, new ACT structure, ACT English 50 questions",
+      "metaDesc": "Enhanced ACT: English 50q/35min, Math 45q/50min, Reading 36q/40min. Science is now optional and excluded from your Composite. Free practice on this format.",
+      "sections": [
+        {
+          "h": "The structure, section by section",
+          "body": "These are ACT's own published figures for the enhanced test:\n\n| Section | Questions | Time | Counts towards Composite? |\n|---|---|---|---|\n| English | 50 | 35 min | Yes |\n| Mathematics | 45 | 50 min | Yes |\n| Reading | 36 | 40 min | Yes |\n| Science | 40 | 40 min | **No — optional add-on** |\n| Writing | 1 prompt | 40 min | **No — optional add-on** |\n\nThe three core sections together are **131 questions in 165 minutes**. Adding both optional sections adds 80 minutes.\n\nIf you prepared from materials describing a 75-question English section or a 60-question Math section, those are the retired format. The enhanced test is meaningfully shorter."
+        },
+        {
+          "h": "The biggest change: science is optional",
+          "body": "This is the change that alters decisions rather than just timings. **Science and Writing are optional add-ons, and neither affects your Composite score.**\n\nThat creates a genuine choice, and the right answer is not the same for everyone:\n\n- **Take Science if** you are applying to engineering, health sciences, or any programme that asks for it — some do, and a missing score cannot be added later.\n- **Take Science if** it is one of your stronger areas and you want the evidence on your report, even where it is not required.\n- **Skip it if** no target programme requires it and your preparation time is better spent lifting the three sections that do count.\n\nThe deciding factor should be your actual university list, not a general rule. Check each programme's admissions page and confirm before test day — the decision is made at registration, not afterwards."
+        },
+        {
+          "h": "More time per question, and what that changes",
+          "body": "The enhanced test gives students more time per question than the retired format. ACT also notes that while English, Math and Reading must be completed in one sitting, schools have flexibility to allow a break so students can return rested.\n\nThe practical effect is subtle but real. On the old ACT, the binding constraint for most students was speed — a large number of candidates simply ran out of time, particularly in Reading and Science. With more time per question, the test discriminates less on pace and more on accuracy.\n\nWhat that means for preparation:\n\n- **Rushed-accuracy drills matter less.** The old advice to sacrifice careful reading for pace is weaker now.\n- **Careless errors cost more.** When time pressure eases, the students who separate themselves are the ones who do not give away marks they had already earned.\n- **Full-length stamina still matters.** 165 minutes of core testing is a long sitting, even at a gentler pace."
+        },
+        {
+          "h": "What this means for your prep material",
+          "body": "The practical risk right now is not the exam — it is the material. A large amount of ACT practice online still describes the retired format: 75 English questions, 60 Math questions, a compulsory Science section.\n\nWorking through it will train you for the wrong section lengths and the wrong pacing, and will leave you believing Science is mandatory when it is a decision you get to make.\n\nWhen you evaluate any ACT resource — including ours — check one thing first: **does its English section have 50 questions or 75?** That single number tells you whether it was written for the current test.\n\nOur [free practice tests](/#/exam-prep) are built to the enhanced structure and section timings above. They are free, with no signup."
+        },
+        {
+          "h": "Choosing between the ACT and the SAT",
+          "body": "Both tests are accepted essentially everywhere in the US, and no university prefers one. The enhanced ACT changes the comparison slightly:\n\n- **The ACT is now shorter** in its core form, and its science section — historically the part that pushed students towards the SAT — is optional.\n- **The digital SAT is adaptive**; the ACT is not. Some students strongly prefer a fixed form where the difficulty does not move under them.\n- **The ACT still rewards pace more than the SAT**, even with the extra time per question.\n\nIf you are undecided, sit one full practice test of each under real timing and compare how you actually feel, not how the formats look on paper."
+        }
+      ],
+      "faqs": [
+        [
+          "How many questions are on the enhanced ACT?",
+          "The three core sections total 131 questions: English 50, Mathematics 45, and Reading 36. Adding the optional Science section brings it to 171 multiple-choice questions."
+        ],
+        [
+          "How long is the enhanced ACT?",
+          "The core English, Math and Reading sections take 165 minutes. Adding both optional sections — Science and Writing, 40 minutes each — adds 80 minutes."
+        ],
+        [
+          "Is the ACT science section still required?",
+          "No. Science is an optional add-on and does not affect your Composite score. Whether you should take it depends on your target programmes — some still ask for it, so check each admissions page before you register."
+        ],
+        [
+          "Does the ACT writing section count towards my Composite?",
+          "No. Like Science, Writing is an optional add-on reported separately and excluded from the Composite score."
+        ],
+        [
+          "How long is each ACT section?",
+          "English is 35 minutes, Mathematics 50 minutes, Reading 40 minutes, and the optional Science and Writing sections are 40 minutes each."
+        ],
+        [
+          "Is the enhanced ACT easier than the old one?",
+          "It is shorter and allows more time per question, so time pressure is lower. That does not make the content easier — it shifts what the test rewards from speed towards accuracy."
+        ],
+        [
+          "How do I know if my ACT prep material is out of date?",
+          "Check the English section. The enhanced test has 50 English questions; the retired format had 75. Any resource still showing 75 was written for the old test."
+        ]
+      ]
+    },
+    {
       "id": "gre-format-2026-complete-guide",
       "tag": "GRE",
       "date": "2026",
