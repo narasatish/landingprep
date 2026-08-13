@@ -2,6 +2,11 @@
 .env
 .env.*
 data/                 # auth password hashes + community/leaderboard json (local only)
+# .gitignore does NOT apply to files git is already tracking, and data/auth-store.json was
+# tracked despite the rule above — so scrypt password hashes were being published to this
+# PUBLIC repo on every commit. Untracked via `git rm --cached`. If it ever reappears in
+# `git ls-files data/`, untrack it again rather than editing it.
+data/auth-store.json
 backups/              # Firestore dumps — contain user emails + password hashes, NEVER commit
 *.backup.json
 
