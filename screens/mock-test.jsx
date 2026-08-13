@@ -2522,7 +2522,7 @@ function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
         {q.passage && <div className="passage-block" style={{ maxHeight: 200, marginBottom: 12 }}><p style={{ margin: 0 }}>{q.passage}</p></div>}
         <div className="q-options">
           {(q.options || []).map((opt, oi) => {
-            const letter = ["A","B","C","D","E"][oi];
+            const letter = String.fromCharCode(65 + oi); // was a fixed list — see match_heading
             const isSelected = answer === letter;
             return (
               <div
@@ -2658,7 +2658,7 @@ function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
         <div className="q-text">{q.text}</div>
         <div className="q-options">
           {(q.options || []).map((opt, oi) => {
-            const letter = ["A","B","C","D","E","F","G"][oi];
+            const letter = String.fromCharCode(65 + oi); // was a fixed list — see match_heading
             const isSelected = selected.includes(letter);
             return (
               <div
@@ -2732,7 +2732,12 @@ function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
         <div className="q-text">{q.text}</div>
         <div className="q-options">
           {(q.options || []).map((opt, oi) => {
-            const letter = ["A","B","C","D","E"][oi];
+            // Derive the label from the index. This was a fixed 5-letter list, but an IELTS
+            // heading bank offers 8-10 options: everything past the fifth rendered with an
+            // undefined letter and called onAnswer(undefined), so it could not be selected.
+            // 227 matching-headings questions had their CORRECT heading in that dead zone and
+            // were impossible to answer.
+            const letter = String.fromCharCode(65 + oi);
             return (
               <div
                 key={oi}
@@ -2740,7 +2745,10 @@ function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
                 onClick={() => onAnswer(letter)}
               >
                 <span className="opt-letter">{letter}</span>
-                <span>{opt.replace(/^[A-E]\.\s*/,"")}</span>
+                {/* Heading banks store their own "i." / "ii." numbering, and the engine adds
+                    its own letter, so options rendered as "J x. The economic cost…". Strip a
+                    leading roman numeral or letter and let the engine's label stand alone. */}
+                <span>{opt.replace(/^\s*(?:[A-Z]|[ivxlcdm]+)[.)]\s*/i,"")}</span>
               </div>
             );
           })}
@@ -2815,7 +2823,7 @@ function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
       ))}
       <div className="q-options" style={{ marginTop: 12 }}>
         {(q.options || []).map((opt, oi) => {
-          const letter = ["A","B","C","D","E"][oi];
+          const letter = String.fromCharCode(65 + oi); // was a fixed list — see match_heading
           return (
             <div
               key={oi}

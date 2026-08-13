@@ -1920,7 +1920,7 @@ function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
       const max = Math.max.apply(null, q.chart.values) || 1;
       return /* @__PURE__ */ React.createElement("div", { key: i, className: "di-bar-col" }, /* @__PURE__ */ React.createElement("div", { className: "di-bar-val" }, q.chart.values[i]), /* @__PURE__ */ React.createElement("div", { className: "di-bar", style: { height: Math.round(q.chart.values[i] / max * 90) + 6 + "px" } }), /* @__PURE__ */ React.createElement("div", { className: "di-bar-label" }, lab));
     }))), /* @__PURE__ */ React.createElement("div", { className: "q-text" }, q.text), q.dataTable && /* @__PURE__ */ React.createElement("div", { className: "di-table-wrap" }, q.dataTable.caption && /* @__PURE__ */ React.createElement("div", { className: "di-table-caption" }, q.dataTable.caption), /* @__PURE__ */ React.createElement("table", { className: "di-table" }, /* @__PURE__ */ React.createElement("thead", null, /* @__PURE__ */ React.createElement("tr", null, (q.dataTable.headers || []).map((h, i) => /* @__PURE__ */ React.createElement("th", { key: i }, h)))), /* @__PURE__ */ React.createElement("tbody", null, (q.dataTable.rows || []).map((row, ri) => /* @__PURE__ */ React.createElement("tr", { key: ri }, (row || []).map((cell, ci) => ci === 0 ? /* @__PURE__ */ React.createElement("th", { key: ci, scope: "row" }, cell) : /* @__PURE__ */ React.createElement("td", { key: ci }, cell))))))), q.visual && window.LP_VisualRenderer && /* @__PURE__ */ React.createElement(window.LP_VisualRenderer, { task: { visual: q.visual, prompt: q.text } }), q.passage && /* @__PURE__ */ React.createElement("div", { className: "passage-block", style: { maxHeight: 200, marginBottom: 12 } }, /* @__PURE__ */ React.createElement("p", { style: { margin: 0 } }, q.passage)), /* @__PURE__ */ React.createElement("div", { className: "q-options" }, (q.options || []).map((opt, oi) => {
-      const letter = ["A", "B", "C", "D", "E"][oi];
+      const letter = String.fromCharCode(65 + oi);
       const isSelected = answer === letter;
       return /* @__PURE__ */ React.createElement(
         "div",
@@ -1995,7 +1995,7 @@ function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
       onAnswer(next.sort());
     };
     return /* @__PURE__ */ React.createElement("div", { className: "q-card" }, /* @__PURE__ */ React.createElement("div", { className: "q-num" }, "Question ", q.num || qi + 1), !hideInstruction && /* @__PURE__ */ React.createElement("div", { className: "q-instruction" }, /* @__PURE__ */ React.createElement("em", null, "Mark ", /* @__PURE__ */ React.createElement("strong", null, ["", "ONE", "TWO", "THREE", "FOUR", "FIVE"][maxSelect] || maxSelect), " letter", maxSelect > 1 ? "s" : "", " that represent the correct answer", maxSelect > 1 ? "s" : "", ".")), /* @__PURE__ */ React.createElement("div", { className: "q-text" }, q.text), /* @__PURE__ */ React.createElement("div", { className: "q-options" }, (q.options || []).map((opt, oi) => {
-      const letter = ["A", "B", "C", "D", "E", "F", "G"][oi];
+      const letter = String.fromCharCode(65 + oi);
       const isSelected = selected.includes(letter);
       return /* @__PURE__ */ React.createElement(
         "div",
@@ -2035,7 +2035,7 @@ function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
   }
   if (q.type === "match_heading") {
     return /* @__PURE__ */ React.createElement("div", { className: "q-card" }, /* @__PURE__ */ React.createElement("div", { className: "q-num" }, "Question ", q.num || qi + 1, " \u2014 ", q.matchHeadings ? "Matching headings" : "Matching"), /* @__PURE__ */ React.createElement("div", { className: "q-text" }, q.text), /* @__PURE__ */ React.createElement("div", { className: "q-options" }, (q.options || []).map((opt, oi) => {
-      const letter = ["A", "B", "C", "D", "E"][oi];
+      const letter = String.fromCharCode(65 + oi);
       return /* @__PURE__ */ React.createElement(
         "div",
         {
@@ -2044,7 +2044,7 @@ function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
           onClick: () => onAnswer(letter)
         },
         /* @__PURE__ */ React.createElement("span", { className: "opt-letter" }, letter),
-        /* @__PURE__ */ React.createElement("span", null, opt.replace(/^[A-E]\.\s*/, ""))
+        /* @__PURE__ */ React.createElement("span", null, opt.replace(/^\s*(?:[A-Z]|[ivxlcdm]+)[.)]\s*/i, ""))
       );
     })));
   }
@@ -2081,7 +2081,7 @@ function QuestionCard({ q, qi, sectionId, answer, onAnswer, hideInstruction }) {
     )));
   }
   return /* @__PURE__ */ React.createElement("div", { className: "q-card" }, /* @__PURE__ */ React.createElement("div", { className: "q-num" }, "Question ", q.num || qi + 1, q.subtype ? ` \u2014 ${q.subtype}` : ""), q.passage && /* @__PURE__ */ React.createElement("div", { style: { fontSize: 14, color: "var(--ink-2)", lineHeight: 1.65, marginBottom: 12, background: "var(--tint)", padding: "12px 14px", borderRadius: "var(--r-md)", border: "1px solid var(--line)" } }, q.passage), /* @__PURE__ */ React.createElement("div", { className: "q-text" }, q.text), q.statements && q.statements.map((s, si) => /* @__PURE__ */ React.createElement("div", { key: si, style: { fontSize: 14, color: "var(--ink-2)", margin: "4px 0", paddingLeft: 8, borderLeft: "3px solid var(--line)" } }, s)), /* @__PURE__ */ React.createElement("div", { className: "q-options", style: { marginTop: 12 } }, (q.options || []).map((opt, oi) => {
-    const letter = ["A", "B", "C", "D", "E"][oi];
+    const letter = String.fromCharCode(65 + oi);
     return /* @__PURE__ */ React.createElement(
       "div",
       {
