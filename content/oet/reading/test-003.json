@@ -5,37 +5,51 @@
   "type": "section",
   "title": "OET Reading Practice Test 3",
   "durationSeconds": 3600,
-  "questionCount": 30,
+  "questionCount": 42,
   "instructions": "OET Reading has three parts. Part A: rapid reading across short healthcare texts. Part B: short workplace texts. Part C: two longer healthcare texts. Choose the best answer for each question.",
   "parts": [
     {
       "part": 1,
       "title": "Part A — Expeditious Reading",
-      "questions": 7,
+      "questions": 20,
       "time": "15 min",
       "description": "Four short texts on a single healthcare topic; locate specific information quickly."
     },
     {
       "part": 2,
       "title": "Part B — Workplace Texts",
-      "questions": 9,
+      "questions": 6,
       "time": "20 min",
-      "description": "Short workplace documents (policies, manuals, guidelines, emails); identify the main point or purpose."
+      "description": "Short workplace documents (policies, manuals, notices); one multiple-choice question each."
     },
     {
       "part": 3,
-      "title": "Part C — Presentation Texts",
-      "questions": 14,
+      "title": "Part C — Presentation of Opinion",
+      "questions": 16,
       "time": "25 min",
-      "description": "Two longer texts; detailed comprehension of opinion, attitude and meaning."
+      "description": "Two long texts; detailed comprehension of opinion, attitude and argument."
     }
   ],
   "passages": [
     {
-      "id": "oet-reading-003-p1",
-      "part": 1,
-      "title": "Dehydration in Elderly Patients",
-      "text": "Dehydration is a common but often overlooked condition in older adults, contributing to confusion, falls, and hospital admissions. Elderly patients have reduced thirst sensation and may forget to drink, making them vulnerable to fluid loss. Common causes include diuretic medications, diarrhoea, vomiting, and reduced intake during acute illness. Signs of dehydration include dry mucous membranes, poor skin turgor, decreased urine output, and elevated serum sodium levels. Confusion and delirium may be the only presenting symptom in frail elderly patients. Prevention through regular fluid intake, monitoring urine colour, and reducing diuretic use where possible is essential. Caregivers should offer fluids regularly with meals and snacks. Mild dehydration often responds to oral rehydration solutions, whilst moderate to severe cases require intravenous fluids and hospital monitoring."
+      "id": "oet-reading-003-pa-a",
+      "title": "Text A: Warfarin monitoring",
+      "text": "Warfarin requires regular monitoring of the International Normalised Ratio. For most indications, including atrial fibrillation and venous thromboembolism, the target INR is 2.5, with an acceptable range of 2.0 to 3.0. Patients with a mechanical mitral valve need a higher target of 3.0. The effect of a dose change is not seen for two to three days, so doses should never be adjusted daily. Numerous drugs interact: antibiotics, amiodarone and azole antifungals potentiate warfarin, while carbamazepine and rifampicin reduce its effect. Advise consistency rather than avoidance in dietary vitamin K."
+    },
+    {
+      "id": "oet-reading-003-pa-b",
+      "title": "Text B: Direct oral anticoagulants",
+      "text": "Direct oral anticoagulants do not require routine INR monitoring, which is their principal practical advantage. They do, however, require renal function to be checked at least annually, and more often in older patients or where creatinine clearance is falling, because all are cleared renally to some degree. Dabigatran is the most dependent on renal clearance and is contraindicated below a creatinine clearance of 30 mL/min. Unlike warfarin, these agents have short half-lives, so a missed dose leaves the patient unprotected within a day — adherence matters more, not less."
+    },
+    {
+      "id": "oet-reading-003-pa-c",
+      "title": "Text C: Managing bleeding",
+      "text": "Assess any bleeding by site and haemodynamic effect rather than by volume alone. For minor bleeding on warfarin with an INR above range, withholding one or two doses is usually sufficient. Major bleeding requires prothrombin complex concentrate together with intravenous vitamin K; fresh frozen plasma is no longer recommended as first-line reversal because it is slower and requires large volumes. For dabigatran, idarucizumab provides rapid specific reversal. Andexanet alfa reverses apixaban and rivaroxaban but is not universally stocked, so local protocols must be checked before it is relied upon."
+    },
+    {
+      "id": "oet-reading-003-pa-d",
+      "title": "Text D: Procedures and patient education",
+      "text": "Before an invasive procedure, establish the bleeding risk of the procedure itself and the patient's thrombotic risk, and document who authorised any interruption. Warfarin is typically stopped five days beforehand; direct oral anticoagulants are usually stopped one to two days before, longer where renal function is impaired. Bridging with low molecular weight heparin is now reserved for genuinely high thrombotic risk, as routine bridging increased bleeding without reducing thrombosis. Every patient should leave with an anticoagulant alert card and be told to report black stools, unexplained bruising or a severe headache immediately."
     },
     {
       "id": "oet-reading-003-p2a",
@@ -65,91 +79,342 @@
   "questions": [
     {
       "id": "oet-reading-003-q01",
-      "passageId": "oet-reading-003-p1",
       "part": 1,
-      "topic": "Dehydration Definition",
-      "questionType": "multiple_choice_single",
-      "prompt": "According to the passage, why are elderly patients vulnerable to dehydration?",
+      "topic": "Anticoagulation Safety",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about how long before surgery warfarin should be stopped?",
+      "question": "In which text can you find information about how long before surgery warfarin should be stopped?",
+      "correctAnswer": "D",
+      "explanation": "Text D states warfarin is typically stopped five days beforehand.",
+      "difficulty": "medium",
+      "questionNumber": 1,
       "options": [
-        "They exercise too much",
-        "They take too many supplements",
-        "They live in hot climates",
-        "They have reduced thirst sensation and may forget to drink"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "They have reduced thirst sensation and may forget to drink",
-      "explanation": "The passage states that elderly have reduced thirst sensation and may forget to drink, making them vulnerable.",
-      "difficulty": "easy"
+      "passageId": "oet-reading-003-pa-d"
     },
     {
       "id": "oet-reading-003-q02",
-      "passageId": "oet-reading-003-p1",
       "part": 1,
-      "topic": "Dehydration Causes",
-      "questionType": "multiple_choice_single",
-      "prompt": "Which is NOT listed as a common cause of dehydration in elderly patients?",
+      "topic": "Anticoagulation Safety",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about which drug is most dependent on the kidneys?",
+      "question": "In which text can you find information about which drug is most dependent on the kidneys?",
+      "correctAnswer": "B",
+      "explanation": "Text B identifies dabigatran as the most dependent on renal clearance.",
+      "difficulty": "medium",
+      "questionNumber": 2,
       "options": [
-        "Diuretic medications",
-        "Excessive fluid intake",
-        "Diarrhoea",
-        "Vomiting"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "Excessive fluid intake",
-      "explanation": "The passage lists diuretics, diarrhoea, and vomiting as causes, but not excessive fluid intake.",
-      "difficulty": "medium"
+      "passageId": "oet-reading-003-pa-b"
     },
     {
       "id": "oet-reading-003-q03",
-      "passageId": "oet-reading-003-p1",
       "part": 1,
-      "topic": "Dehydration Signs",
-      "questionType": "multiple_choice_single",
-      "prompt": "What are physical signs of dehydration mentioned in the passage?",
+      "topic": "Anticoagulation Safety",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about the target INR for a mechanical mitral valve?",
+      "question": "In which text can you find information about the target INR for a mechanical mitral valve?",
+      "correctAnswer": "A",
+      "explanation": "Text A gives a higher target of 3.0 for a mechanical mitral valve.",
+      "difficulty": "medium",
+      "questionNumber": 3,
       "options": [
-        "Low blood pressure only",
-        "Bright pink skin",
-        "Excessive sweating",
-        "Dry mucous membranes, poor skin turgor, decreased urine output"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "Dry mucous membranes, poor skin turgor, decreased urine output",
-      "explanation": "The passage lists these three physical signs as indicators of dehydration.",
-      "difficulty": "easy"
+      "passageId": "oet-reading-003-pa-a"
     },
     {
       "id": "oet-reading-003-q04",
-      "passageId": "oet-reading-003-p1",
       "part": 1,
-      "topic": "Dehydration in Frail Elderly",
-      "questionType": "multiple_choice_single",
-      "prompt": "What may be the only presenting symptom of dehydration in frail elderly patients?",
+      "topic": "Anticoagulation Safety",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about a reversal agent that may not be stocked locally?",
+      "question": "In which text can you find information about a reversal agent that may not be stocked locally?",
+      "correctAnswer": "C",
+      "explanation": "Text C notes andexanet alfa is not universally stocked.",
+      "difficulty": "medium",
+      "questionNumber": 4,
       "options": [
-        "Fever",
-        "Confusion and delirium",
-        "Thirst",
-        "Abdominal pain"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "Confusion and delirium",
-      "explanation": "The passage states that confusion and delirium may be the only symptom in frail elderly.",
-      "difficulty": "medium"
+      "passageId": "oet-reading-003-pa-c"
     },
     {
       "id": "oet-reading-003-q05",
-      "passageId": "oet-reading-003-p1",
       "part": 1,
-      "topic": "Dehydration Treatment",
-      "questionType": "multiple_choice_single",
-      "prompt": "How should mild dehydration typically be treated?",
+      "topic": "Anticoagulation Safety",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about symptoms a patient should report immediately?",
+      "question": "In which text can you find information about symptoms a patient should report immediately?",
+      "correctAnswer": "D",
+      "explanation": "Text D lists black stools, unexplained bruising or severe headache.",
+      "difficulty": "medium",
+      "questionNumber": 5,
       "options": [
-        "With intravenous fluids only",
-        "With medication only",
-        "With hospitalization",
-        "With oral rehydration solutions"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "With oral rehydration solutions",
-      "explanation": "The passage states mild dehydration often responds to oral rehydration solutions.",
-      "difficulty": "easy"
+      "passageId": "oet-reading-003-pa-d"
     },
     {
       "id": "oet-reading-003-q06",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about which drugs increase the effect of warfarin?",
+      "question": "In which text can you find information about which drugs increase the effect of warfarin?",
+      "correctAnswer": "A",
+      "explanation": "Text A names antibiotics, amiodarone and azole antifungals as potentiating warfarin.",
+      "difficulty": "medium",
+      "questionNumber": 6,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "passageId": "oet-reading-003-pa-a"
+    },
+    {
+      "id": "oet-reading-003-q07",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about why fresh frozen plasma is no longer first-line?",
+      "question": "In which text can you find information about why fresh frozen plasma is no longer first-line?",
+      "correctAnswer": "C",
+      "explanation": "Text C explains it is slower and requires large volumes.",
+      "difficulty": "medium",
+      "questionNumber": 7,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "passageId": "oet-reading-003-pa-c"
+    },
+    {
+      "id": "oet-reading-003-q08",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "short_answer",
+      "prompt": "What is the target INR for most indications?",
+      "question": "What is the target INR for most indications?",
+      "correctAnswer": "2.5",
+      "explanation": "Text A gives a target INR of 2.5 for most indications.",
+      "difficulty": "medium",
+      "questionNumber": 8,
+      "alternateAnswers": [
+        "an INR of 2.5"
+      ],
+      "passageId": "oet-reading-003-pa-a"
+    },
+    {
+      "id": "oet-reading-003-q09",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "short_answer",
+      "prompt": "How often must renal function be checked on a direct oral anticoagulant?",
+      "question": "How often must renal function be checked on a direct oral anticoagulant?",
+      "correctAnswer": "at least annually",
+      "explanation": "Text B requires renal function checked at least annually.",
+      "difficulty": "medium",
+      "questionNumber": 9,
+      "alternateAnswers": [
+        "annually",
+        "once a year"
+      ],
+      "passageId": "oet-reading-003-pa-b"
+    },
+    {
+      "id": "oet-reading-003-q10",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "short_answer",
+      "prompt": "Below what creatinine clearance is dabigatran contraindicated?",
+      "question": "Below what creatinine clearance is dabigatran contraindicated?",
+      "correctAnswer": "30 mL/min",
+      "explanation": "Text B contraindicates dabigatran below a creatinine clearance of 30 mL/min.",
+      "difficulty": "medium",
+      "questionNumber": 10,
+      "alternateAnswers": [
+        "30ml/min",
+        "30 ml per minute"
+      ],
+      "passageId": "oet-reading-003-pa-b"
+    },
+    {
+      "id": "oet-reading-003-q11",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "short_answer",
+      "prompt": "Which agent provides rapid specific reversal of dabigatran?",
+      "question": "Which agent provides rapid specific reversal of dabigatran?",
+      "correctAnswer": "idarucizumab",
+      "explanation": "Text C names idarucizumab for rapid specific reversal of dabigatran.",
+      "difficulty": "medium",
+      "questionNumber": 11,
+      "alternateAnswers": [],
+      "passageId": "oet-reading-003-pa-c"
+    },
+    {
+      "id": "oet-reading-003-q12",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "short_answer",
+      "prompt": "What should every patient leave with?",
+      "question": "What should every patient leave with?",
+      "correctAnswer": "an anticoagulant alert card",
+      "explanation": "Text D requires every patient to leave with an anticoagulant alert card.",
+      "difficulty": "medium",
+      "questionNumber": 12,
+      "alternateAnswers": [
+        "anticoagulant alert card",
+        "alert card"
+      ],
+      "passageId": "oet-reading-003-pa-d"
+    },
+    {
+      "id": "oet-reading-003-q13",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "short_answer",
+      "prompt": "How long does it take to see the effect of a warfarin dose change?",
+      "question": "How long does it take to see the effect of a warfarin dose change?",
+      "correctAnswer": "two to three days",
+      "explanation": "Text A states the effect is not seen for two to three days.",
+      "difficulty": "medium",
+      "questionNumber": 13,
+      "alternateAnswers": [
+        "2 to 3 days",
+        "two or three days"
+      ],
+      "passageId": "oet-reading-003-pa-a"
+    },
+    {
+      "id": "oet-reading-003-q14",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "short_answer",
+      "prompt": "What is given alongside prothrombin complex concentrate in major bleeding?",
+      "question": "What is given alongside prothrombin complex concentrate in major bleeding?",
+      "correctAnswer": "intravenous vitamin K",
+      "explanation": "Text C pairs prothrombin complex concentrate with intravenous vitamin K.",
+      "difficulty": "medium",
+      "questionNumber": 14,
+      "alternateAnswers": [
+        "IV vitamin K",
+        "vitamin K"
+      ],
+      "passageId": "oet-reading-003-pa-c"
+    },
+    {
+      "id": "oet-reading-003-q15",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "sentence_completion",
+      "prompt": "Advise consistency rather than avoidance in dietary _______.",
+      "question": "Advise consistency rather than avoidance in dietary _______.",
+      "correctAnswer": "vitamin K",
+      "explanation": "Text A advises consistency rather than avoidance in dietary vitamin K.",
+      "difficulty": "medium",
+      "questionNumber": 15,
+      "alternateAnswers": [],
+      "passageId": "oet-reading-003-pa-a"
+    },
+    {
+      "id": "oet-reading-003-q16",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "sentence_completion",
+      "prompt": "Bridging is now reserved for genuinely high _______ risk.",
+      "question": "Bridging is now reserved for genuinely high _______ risk.",
+      "correctAnswer": "thrombotic",
+      "explanation": "Text D reserves bridging for genuinely high thrombotic risk.",
+      "difficulty": "medium",
+      "questionNumber": 16,
+      "alternateAnswers": [],
+      "passageId": "oet-reading-003-pa-d"
+    },
+    {
+      "id": "oet-reading-003-q17",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "sentence_completion",
+      "prompt": "Assess bleeding by site and _______ effect rather than by volume alone.",
+      "question": "Assess bleeding by site and _______ effect rather than by volume alone.",
+      "correctAnswer": "haemodynamic",
+      "explanation": "Text C directs assessment by site and haemodynamic effect.",
+      "difficulty": "medium",
+      "questionNumber": 17,
+      "alternateAnswers": [
+        "hemodynamic"
+      ],
+      "passageId": "oet-reading-003-pa-c"
+    },
+    {
+      "id": "oet-reading-003-q18",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "sentence_completion",
+      "prompt": "A missed dose of a direct oral anticoagulant leaves the patient unprotected within a _______.",
+      "question": "A missed dose of a direct oral anticoagulant leaves the patient unprotected within a _______.",
+      "correctAnswer": "day",
+      "explanation": "Text B warns the patient is unprotected within a day.",
+      "difficulty": "medium",
+      "questionNumber": 18,
+      "alternateAnswers": [],
+      "passageId": "oet-reading-003-pa-b"
+    },
+    {
+      "id": "oet-reading-003-q19",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "sentence_completion",
+      "prompt": "Carbamazepine and rifampicin _______ warfarin's effect.",
+      "question": "Carbamazepine and rifampicin _______ warfarin's effect.",
+      "correctAnswer": "reduce",
+      "explanation": "Text A states carbamazepine and rifampicin reduce warfarin's effect.",
+      "difficulty": "medium",
+      "questionNumber": 19,
+      "alternateAnswers": [],
+      "passageId": "oet-reading-003-pa-a"
+    },
+    {
+      "id": "oet-reading-003-q20",
+      "part": 1,
+      "topic": "Anticoagulation Safety",
+      "questionType": "sentence_completion",
+      "prompt": "Document who _______ any interruption before a procedure.",
+      "question": "Document who _______ any interruption before a procedure.",
+      "correctAnswer": "authorised",
+      "explanation": "Text D requires documenting who authorised the interruption.",
+      "difficulty": "medium",
+      "questionNumber": 20,
+      "alternateAnswers": [
+        "authorized"
+      ],
+      "passageId": "oet-reading-003-pa-d"
+    },
+    {
+      "id": "oet-reading-003-q21",
       "passageId": "oet-reading-003-p2a",
       "part": 2,
       "topic": "Outbreak Definition",
@@ -163,10 +428,11 @@
       ],
       "correctAnswer": "When three or more residents develop symptoms within 72 hours",
       "explanation": "The facility protocol specifies activation with three or more residents symptomatic within 72 hours.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 21
     },
     {
-      "id": "oet-reading-003-q07",
+      "id": "oet-reading-003-q22",
       "passageId": "oet-reading-003-p2a",
       "part": 2,
       "topic": "Influenza Vaccination",
@@ -180,10 +446,11 @@
       ],
       "correctAnswer": "Mandatory for all staff and recommended for all residents",
       "explanation": "The protocol states vaccination is mandatory for staff and recommended for residents.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 22
     },
     {
-      "id": "oet-reading-003-q08",
+      "id": "oet-reading-003-q23",
       "passageId": "oet-reading-003-p2a",
       "part": 2,
       "topic": "Outbreak Reporting",
@@ -197,10 +464,11 @@
       ],
       "correctAnswer": "Within 24 hours",
       "explanation": "The protocol requires reporting to local health authority within 24 hours.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 23
     },
     {
-      "id": "oet-reading-003-q09",
+      "id": "oet-reading-003-q24",
       "passageId": "oet-reading-003-p2b",
       "part": 2,
       "topic": "Catheterisation Indications",
@@ -214,10 +482,11 @@
       ],
       "correctAnswer": "Acute urinary retention",
       "explanation": "The protocol lists acute urinary retention as a valid indication for catheterisation.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 24
     },
     {
-      "id": "oet-reading-003-q10",
+      "id": "oet-reading-003-q25",
       "passageId": "oet-reading-003-p2b",
       "part": 2,
       "topic": "Catheter Removal Timing",
@@ -231,214 +500,11 @@
       ],
       "correctAnswer": "As soon as clinically appropriate, preferably within 48 hours",
       "explanation": "The protocol states catheters should be removed as soon as possible, preferably within 48 hours.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 25
     },
     {
-      "id": "oet-reading-003-q11",
-      "passageId": "oet-reading-003-p3a",
-      "part": 3,
-      "topic": "Medication Adherence Rates",
-      "questionType": "multiple_choice_single",
-      "prompt": "According to the passage, what percentage of patients take medications as prescribed?",
-      "options": [
-        "25%",
-        "90%",
-        "75%",
-        "50%"
-      ],
-      "correctAnswer": "50%",
-      "explanation": "The passage states that only 50% of patients take their medications as prescribed.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-003-q12",
-      "passageId": "oet-reading-003-p3a",
-      "part": 3,
-      "topic": "Barriers to Adherence",
-      "questionType": "multiple_choice_single",
-      "prompt": "Which are reasons for medication non-adherence mentioned in the passage?",
-      "options": [
-        "Only forgetfulness",
-        "Only financial barriers",
-        "Primarily lack of trust",
-        "Side effects, cost, complexity, forgetfulness, and lack of understanding"
-      ],
-      "correctAnswer": "Side effects, cost, complexity, forgetfulness, and lack of understanding",
-      "explanation": "The passage lists these five multifactorial reasons for non-adherence.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-003-q13",
-      "passageId": "oet-reading-003-p3a",
-      "part": 3,
-      "topic": "Adherence Strategies",
-      "questionType": "multiple_choice_single",
-      "prompt": "Which strategy for improving adherence is mentioned in the passage?",
-      "options": [
-        "Forcing patients to take medication",
-        "Restricting patient information",
-        "Increasing medication doses",
-        "Using pill organisers, reminder systems, and mobile applications"
-      ],
-      "correctAnswer": "Using pill organisers, reminder systems, and mobile applications",
-      "explanation": "The passage specifically mentions these tools as effective strategies to improve adherence.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-003-q14",
-      "passageId": "oet-reading-003-p3a",
-      "part": 3,
-      "topic": "Shared Decision-Making",
-      "questionType": "multiple_choice_single",
-      "prompt": "What impact does shared decision-making have on medication adherence?",
-      "options": [
-        "No significant impact",
-        "Slightly improves adherence",
-        "Decreases adherence",
-        "Significantly improves adherence rates"
-      ],
-      "correctAnswer": "Significantly improves adherence rates",
-      "explanation": "The passage states that shared decision-making significantly improves adherence rates.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-003-q15",
-      "passageId": "oet-reading-003-p3b",
-      "part": 3,
-      "topic": "Respiratory Transmission",
-      "questionType": "multiple_choice_single",
-      "prompt": "How do respiratory infections primarily spread according to the passage?",
-      "options": [
-        "Through blood contact",
-        "Through contaminated food",
-        "Through skin contact",
-        "Through droplets from coughing or sneezing"
-      ],
-      "correctAnswer": "Through droplets from coughing or sneezing",
-      "explanation": "The passage states respiratory infections spread primarily through droplets from coughs and sneezes.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-003-q16",
-      "passageId": "oet-reading-003-p3b",
-      "part": 3,
-      "topic": "Cough Etiquette",
-      "questionType": "multiple_choice_single",
-      "prompt": "What should be done if tissues are unavailable when coughing?",
-      "options": [
-        "Cough into bare hands",
-        "Do not cover at all",
-        "Cough into the air",
-        "Cough into the elbow"
-      ],
-      "correctAnswer": "Cough into the elbow",
-      "explanation": "The passage states that coughing into the elbow is preferable to bare hands when tissues are unavailable.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-003-q17",
-      "passageId": "oet-reading-003-p3b",
-      "part": 3,
-      "topic": "Physical Distancing",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is the recommended distance for individuals with respiratory symptoms?",
-      "options": [
-        "No distance required",
-        "Five metres minimum",
-        "At least two metres",
-        "At least one metre from others"
-      ],
-      "correctAnswer": "At least one metre from others",
-      "explanation": "The passage recommends maintaining at least one metre distance when symptomatic.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-003-q18",
-      "passageId": "oet-reading-003-p3b",
-      "part": 3,
-      "topic": "Surgical Masks Effectiveness",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is the primary function of surgical masks according to the passage?",
-      "options": [
-        "Complete protection of the wearer",
-        "Improving breathing capacity",
-        "Preventing all infections",
-        "Blocking large respiratory droplets from symptomatic individuals"
-      ],
-      "correctAnswer": "Blocking large respiratory droplets from symptomatic individuals",
-      "explanation": "The passage states surgical masks block large respiratory droplets when worn by symptomatic people.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-003-q19",
-      "passageId": "oet-reading-003-p3b",
-      "part": 3,
-      "topic": "N95 Respirators",
-      "questionType": "multiple_choice_single",
-      "prompt": "When should N95 respirators be used?",
-      "options": [
-        "For all public interactions",
-        "Never necessary",
-        "For cosmetic purposes only",
-        "By healthcare workers in close contact with confirmed or suspected cases"
-      ],
-      "correctAnswer": "By healthcare workers in close contact with confirmed or suspected cases",
-      "explanation": "The passage specifies N95 use by healthcare workers in close contact with confirmed/suspected cases.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-003-q20",
-      "passageId": "oet-reading-003-p3b",
-      "part": 3,
-      "topic": "Mask Effectiveness During Epidemics",
-      "questionType": "multiple_choice_single",
-      "prompt": "By how much can mask use in public settings reduce disease transmission during epidemics?",
-      "options": [
-        "Up to 50%",
-        "Up to 25%",
-        "Up to 10%",
-        "Up to 75%"
-      ],
-      "correctAnswer": "Up to 50%",
-      "explanation": "The passage states that mask use in public settings reduces transmission by up to 50% during epidemics.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-003-q21",
-      "passageId": "oet-reading-003-p1",
-      "part": 1,
-      "topic": "Dehydration Prevention",
-      "questionType": "multiple_choice_single",
-      "prompt": "How can caregivers help prevent dehydration in elderly patients?",
-      "options": [
-        "By restricting fluid intake",
-        "By offering fluids regularly with meals and snacks",
-        "By using IV fluids only",
-        "By monitoring electrolytes constantly"
-      ],
-      "correctAnswer": "By offering fluids regularly with meals and snacks",
-      "explanation": "The passage states caregivers should offer fluids regularly with meals and snacks.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-003-q22",
-      "passageId": "oet-reading-003-p1",
-      "part": 1,
-      "topic": "Intravenous Hydration",
-      "questionType": "multiple_choice_single",
-      "prompt": "When is intravenous hydration required?",
-      "options": [
-        "For all dehydrated patients",
-        "For moderate to severe cases requiring hospital monitoring",
-        "For mild dehydration only",
-        "Never recommended"
-      ],
-      "correctAnswer": "For moderate to severe cases requiring hospital monitoring",
-      "explanation": "The passage states IV fluids are needed for moderate to severe cases with hospital monitoring.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-003-q23",
+      "id": "oet-reading-003-q26",
       "passageId": "oet-reading-003-p2a",
       "part": 2,
       "topic": "High-Touch Surfaces Cleaning",
@@ -452,61 +518,191 @@
       ],
       "correctAnswer": "Doorknobs, handrails, and bed rails",
       "explanation": "The policy specifies these high-touch surfaces require daily disinfection.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-003-q24",
-      "passageId": "oet-reading-003-p2a",
-      "part": 2,
-      "topic": "Visitor Screening",
-      "questionType": "multiple_choice_single",
-      "prompt": "How should visitors be managed according to the facility policy?",
-      "options": [
-        "No restrictions allowed",
-        "Screening for symptoms and masking if visiting",
-        "No screening needed",
-        "Visitors banned entirely"
-      ],
-      "correctAnswer": "Screening for symptoms and masking if visiting",
-      "explanation": "The policy states visitors should be screened and wear masks if they visit.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-003-q25",
-      "passageId": "oet-reading-003-p2b",
-      "part": 2,
-      "topic": "Catheter Gauge Selection",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is the typical catheter size used in most adults?",
-      "options": [
-        "8-10 French",
-        "12-14 French gauge",
-        "16-18 French",
-        "20 French or larger"
-      ],
-      "correctAnswer": "12-14 French gauge",
-      "explanation": "The protocol states the smallest appropriate size for most adults is 12-14 French.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-003-q26",
-      "passageId": "oet-reading-003-p2b",
-      "part": 2,
-      "topic": "Catheter Care Components",
-      "questionType": "multiple_choice_single",
-      "prompt": "What does daily catheter care include?",
-      "options": [
-        "Only checking urine colour",
-        "Perineal cleansing and inspection for infection signs",
-        "Flushing with solution only",
-        "No daily care needed"
-      ],
-      "correctAnswer": "Perineal cleansing and inspection for infection signs",
-      "explanation": "The protocol specifies daily care includes perineal cleansing and inspection.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 26
     },
     {
       "id": "oet-reading-003-q27",
+      "passageId": "oet-reading-003-p3a",
+      "part": 3,
+      "topic": "Medication Adherence Rates",
+      "questionType": "multiple_choice_single",
+      "prompt": "According to the passage, what percentage of patients take medications as prescribed?",
+      "options": [
+        "25%",
+        "90%",
+        "75%",
+        "50%"
+      ],
+      "correctAnswer": "50%",
+      "explanation": "The passage states that only 50% of patients take their medications as prescribed.",
+      "difficulty": "easy",
+      "questionNumber": 27
+    },
+    {
+      "id": "oet-reading-003-q28",
+      "passageId": "oet-reading-003-p3a",
+      "part": 3,
+      "topic": "Barriers to Adherence",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which are reasons for medication non-adherence mentioned in the passage?",
+      "options": [
+        "Only forgetfulness",
+        "Only financial barriers",
+        "Primarily lack of trust",
+        "Side effects, cost, complexity, forgetfulness, and lack of understanding"
+      ],
+      "correctAnswer": "Side effects, cost, complexity, forgetfulness, and lack of understanding",
+      "explanation": "The passage lists these five multifactorial reasons for non-adherence.",
+      "difficulty": "medium",
+      "questionNumber": 28
+    },
+    {
+      "id": "oet-reading-003-q29",
+      "passageId": "oet-reading-003-p3a",
+      "part": 3,
+      "topic": "Adherence Strategies",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which strategy for improving adherence is mentioned in the passage?",
+      "options": [
+        "Forcing patients to take medication",
+        "Restricting patient information",
+        "Increasing medication doses",
+        "Using pill organisers, reminder systems, and mobile applications"
+      ],
+      "correctAnswer": "Using pill organisers, reminder systems, and mobile applications",
+      "explanation": "The passage specifically mentions these tools as effective strategies to improve adherence.",
+      "difficulty": "easy",
+      "questionNumber": 29
+    },
+    {
+      "id": "oet-reading-003-q30",
+      "passageId": "oet-reading-003-p3a",
+      "part": 3,
+      "topic": "Shared Decision-Making",
+      "questionType": "multiple_choice_single",
+      "prompt": "What impact does shared decision-making have on medication adherence?",
+      "options": [
+        "No significant impact",
+        "Slightly improves adherence",
+        "Decreases adherence",
+        "Significantly improves adherence rates"
+      ],
+      "correctAnswer": "Significantly improves adherence rates",
+      "explanation": "The passage states that shared decision-making significantly improves adherence rates.",
+      "difficulty": "medium",
+      "questionNumber": 30
+    },
+    {
+      "id": "oet-reading-003-q31",
+      "passageId": "oet-reading-003-p3b",
+      "part": 3,
+      "topic": "Respiratory Transmission",
+      "questionType": "multiple_choice_single",
+      "prompt": "How do respiratory infections primarily spread according to the passage?",
+      "options": [
+        "Through blood contact",
+        "Through contaminated food",
+        "Through skin contact",
+        "Through droplets from coughing or sneezing"
+      ],
+      "correctAnswer": "Through droplets from coughing or sneezing",
+      "explanation": "The passage states respiratory infections spread primarily through droplets from coughs and sneezes.",
+      "difficulty": "easy",
+      "questionNumber": 31
+    },
+    {
+      "id": "oet-reading-003-q32",
+      "passageId": "oet-reading-003-p3b",
+      "part": 3,
+      "topic": "Cough Etiquette",
+      "questionType": "multiple_choice_single",
+      "prompt": "What should be done if tissues are unavailable when coughing?",
+      "options": [
+        "Cough into bare hands",
+        "Do not cover at all",
+        "Cough into the air",
+        "Cough into the elbow"
+      ],
+      "correctAnswer": "Cough into the elbow",
+      "explanation": "The passage states that coughing into the elbow is preferable to bare hands when tissues are unavailable.",
+      "difficulty": "easy",
+      "questionNumber": 32
+    },
+    {
+      "id": "oet-reading-003-q33",
+      "passageId": "oet-reading-003-p3b",
+      "part": 3,
+      "topic": "Physical Distancing",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the recommended distance for individuals with respiratory symptoms?",
+      "options": [
+        "No distance required",
+        "Five metres minimum",
+        "At least two metres",
+        "At least one metre from others"
+      ],
+      "correctAnswer": "At least one metre from others",
+      "explanation": "The passage recommends maintaining at least one metre distance when symptomatic.",
+      "difficulty": "easy",
+      "questionNumber": 33
+    },
+    {
+      "id": "oet-reading-003-q34",
+      "passageId": "oet-reading-003-p3b",
+      "part": 3,
+      "topic": "Surgical Masks Effectiveness",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the primary function of surgical masks according to the passage?",
+      "options": [
+        "Complete protection of the wearer",
+        "Improving breathing capacity",
+        "Preventing all infections",
+        "Blocking large respiratory droplets from symptomatic individuals"
+      ],
+      "correctAnswer": "Blocking large respiratory droplets from symptomatic individuals",
+      "explanation": "The passage states surgical masks block large respiratory droplets when worn by symptomatic people.",
+      "difficulty": "medium",
+      "questionNumber": 34
+    },
+    {
+      "id": "oet-reading-003-q35",
+      "passageId": "oet-reading-003-p3b",
+      "part": 3,
+      "topic": "N95 Respirators",
+      "questionType": "multiple_choice_single",
+      "prompt": "When should N95 respirators be used?",
+      "options": [
+        "For all public interactions",
+        "Never necessary",
+        "For cosmetic purposes only",
+        "By healthcare workers in close contact with confirmed or suspected cases"
+      ],
+      "correctAnswer": "By healthcare workers in close contact with confirmed or suspected cases",
+      "explanation": "The passage specifies N95 use by healthcare workers in close contact with confirmed/suspected cases.",
+      "difficulty": "medium",
+      "questionNumber": 35
+    },
+    {
+      "id": "oet-reading-003-q36",
+      "passageId": "oet-reading-003-p3b",
+      "part": 3,
+      "topic": "Mask Effectiveness During Epidemics",
+      "questionType": "multiple_choice_single",
+      "prompt": "By how much can mask use in public settings reduce disease transmission during epidemics?",
+      "options": [
+        "Up to 50%",
+        "Up to 25%",
+        "Up to 10%",
+        "Up to 75%"
+      ],
+      "correctAnswer": "Up to 50%",
+      "explanation": "The passage states that mask use in public settings reduces transmission by up to 50% during epidemics.",
+      "difficulty": "medium",
+      "questionNumber": 36
+    },
+    {
+      "id": "oet-reading-003-q37",
       "passageId": "oet-reading-003-p3a",
       "part": 3,
       "topic": "Non-Compliance Exploration",
@@ -520,10 +716,11 @@
       ],
       "correctAnswer": "Explore barriers rather than assuming deliberate non-compliance",
       "explanation": "The passage states professionals should explore barriers instead of assuming non-compliance is deliberate.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "questionNumber": 37
     },
     {
-      "id": "oet-reading-003-q28",
+      "id": "oet-reading-003-q38",
       "passageId": "oet-reading-003-p3a",
       "part": 3,
       "topic": "Regimen Simplification",
@@ -537,10 +734,11 @@
       ],
       "correctAnswer": "Through combination therapies or once-daily formulations",
       "explanation": "The passage states simplification through combination or once-daily drugs improves adherence.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 38
     },
     {
-      "id": "oet-reading-003-q29",
+      "id": "oet-reading-003-q39",
       "passageId": "oet-reading-003-p3a",
       "part": 3,
       "topic": "Technology and Adherence",
@@ -554,10 +752,11 @@
       ],
       "correctAnswer": "Medication reminders through mobile phone applications",
       "explanation": "The passage mentions mobile phone reminder applications as an effective strategy.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 39
     },
     {
-      "id": "oet-reading-003-q30",
+      "id": "oet-reading-003-q40",
       "passageId": "oet-reading-003-p3a",
       "part": 3,
       "topic": "Comprehensive Adherence Approach",
@@ -571,7 +770,46 @@
       ],
       "correctAnswer": "Combination of education, simplified regimens, reminders, and ongoing support",
       "explanation": "The passage states the most effective approach combines all these elements.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "questionNumber": 40
+    },
+    {
+      "id": "oet-reading-003-q41",
+      "part": 3,
+      "questionType": "multiple_choice_single",
+      "question": "According to the text, what proportion of patients take their medications as prescribed?",
+      "difficulty": "medium",
+      "questionNumber": 41,
+      "passageId": "oet-reading-003-p3a",
+      "topic": "Medication Adherence",
+      "prompt": "According to the text, what proportion of patients take their medications as prescribed?",
+      "options": [
+        "About 25%",
+        "About 50%",
+        "About 75%",
+        "Almost all patients"
+      ],
+      "correctAnswer": "About 50%",
+      "explanation": "The text states that studies indicate only 50% of patients take their medications as prescribed."
+    },
+    {
+      "id": "oet-reading-003-q42",
+      "part": 3,
+      "questionType": "multiple_choice_single",
+      "question": "What does the text recommend if no tissue is available when coughing?",
+      "difficulty": "medium",
+      "questionNumber": 42,
+      "passageId": "oet-reading-003-p3b",
+      "topic": "Respiratory Hygiene",
+      "prompt": "What does the text recommend if no tissue is available when coughing?",
+      "options": [
+        "Cough into bare hands",
+        "Cough into the elbow",
+        "Hold the breath until a tissue is found",
+        "Turn away without covering"
+      ],
+      "correctAnswer": "Cough into the elbow",
+      "explanation": "The text states that if tissues are unavailable, coughing into the elbow is preferable to bare hands."
     }
   ]
 }

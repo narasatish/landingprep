@@ -5,37 +5,51 @@
   "type": "section",
   "title": "OET Reading Practice Test 2",
   "durationSeconds": 3600,
-  "questionCount": 30,
+  "questionCount": 42,
   "instructions": "OET Reading has three parts. Part A: rapid reading across short healthcare texts. Part B: short workplace texts. Part C: two longer healthcare texts. Choose the best answer for each question.",
   "parts": [
     {
       "part": 1,
       "title": "Part A — Expeditious Reading",
-      "questions": 7,
+      "questions": 20,
       "time": "15 min",
       "description": "Four short texts on a single healthcare topic; locate specific information quickly."
     },
     {
       "part": 2,
       "title": "Part B — Workplace Texts",
-      "questions": 7,
+      "questions": 6,
       "time": "20 min",
-      "description": "Short workplace documents (policies, manuals, guidelines, emails); identify the main point or purpose."
+      "description": "Short workplace documents (policies, manuals, notices); one multiple-choice question each."
     },
     {
       "part": 3,
-      "title": "Part C — Presentation Texts",
+      "title": "Part C — Presentation of Opinion",
       "questions": 16,
       "time": "25 min",
-      "description": "Two longer texts; detailed comprehension of opinion, attitude and meaning."
+      "description": "Two long texts; detailed comprehension of opinion, attitude and argument."
     }
   ],
   "passages": [
     {
-      "id": "oet-reading-002-p1",
-      "part": 1,
-      "title": "Paediatric Asthma Management",
-      "text": "Asthma in children requires early recognition and prompt management to prevent serious complications. Common symptoms include recurrent coughing, especially at night or during play, wheezing, and breathlessness. Parents should keep an asthma action plan with their child's school and healthcare provider. Inhalers are the primary treatment, with blue (reliever) inhalers used for acute symptoms and brown or orange (preventer) inhalers used daily for maintenance. Spacers with face masks are essential for young children to ensure proper medication delivery. Triggers such as allergens, viral infections, and exercise should be identified and minimised. Regular review of symptom control every three months helps optimise therapy. Emergency signs requiring immediate hospital visit include severe wheeze, inability to speak in sentences, and persistent high oxygen requirements."
+      "id": "oet-reading-002-pa-a",
+      "title": "Text A: Recognising hypoglycaemia",
+      "text": "Hypoglycaemia is defined as a blood glucose level below 4.0 mmol/L. Early autonomic symptoms include sweating, tremor, palpitations and hunger; these arise from adrenaline release and usually give the patient warning. Neuroglycopenic symptoms — confusion, slurred speech, drowsiness, behavioural change — appear as glucose falls further and indicate that the brain itself is deprived. Patients with long-standing diabetes may develop impaired awareness, losing the autonomic warning stage entirely and presenting first with confusion. Always confirm with a capillary glucose reading before treating, unless the patient is unconscious and delay would be dangerous."
+    },
+    {
+      "id": "oet-reading-002-pa-b",
+      "title": "Text B: Treating the conscious patient",
+      "text": "For a conscious patient able to swallow, give 15 to 20 grams of fast-acting carbohydrate: 150 mL of pure fruit juice, five glucose tablets, or four to five jelly babies. Chocolate is not suitable, as its fat content slows absorption. Recheck the capillary glucose after 15 minutes and repeat the treatment if the level remains below 4.0 mmol/L. Once above 4.0, give a long-acting carbohydrate such as two biscuits or a slice of toast to prevent recurrence, unless the patient is about to eat a meal or is receiving a continuous feed."
+    },
+    {
+      "id": "oet-reading-002-pa-c",
+      "title": "Text C: The unconscious or uncooperative patient",
+      "text": "Never give oral carbohydrate to a patient who is unconscious or unable to protect their airway. If intravenous access is available, administer 100 mL of 20% glucose over 15 minutes; if not, give 1 mg glucagon intramuscularly. Glucagon works by mobilising hepatic glycogen and will therefore be ineffective in a malnourished patient, in advanced liver disease, or where alcohol is the precipitant. Place the patient in the recovery position and recheck glucose after 10 minutes. Once conscious and able to swallow, follow with long-acting carbohydrate as for the conscious patient."
+    },
+    {
+      "id": "oet-reading-002-pa-d",
+      "title": "Text D: Preventing recurrence",
+      "text": "Every episode requires a documented review of its cause before the patient is discharged or handed over. Common precipitants are a missed or delayed meal, an unusual amount of exercise, excess alcohol, and an insulin or sulfonylurea dose that no longer matches the patient's intake. Review the timing of insulin against meals rather than simply reducing the dose. Patients experiencing recurrent episodes, or those with impaired awareness, should be referred to the diabetes specialist team; impaired awareness can often be reversed by scrupulously avoiding hypoglycaemia for several weeks."
     },
     {
       "id": "oet-reading-002-p2a",
@@ -65,91 +79,346 @@
   "questions": [
     {
       "id": "oet-reading-002-q01",
-      "passageId": "oet-reading-002-p1",
       "part": 1,
-      "topic": "Paediatric Asthma Symptoms",
-      "questionType": "multiple_choice_single",
-      "prompt": "What are common symptoms of asthma in children according to the passage?",
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about a treatment that will not work if the patient has liver disease?",
+      "question": "In which text can you find information about a treatment that will not work if the patient has liver disease?",
+      "correctAnswer": "C",
+      "explanation": "Text C states glucagon is ineffective in advanced liver disease.",
+      "difficulty": "medium",
+      "questionNumber": 1,
       "options": [
-        "Recurrent coughing, wheezing, and breathlessness",
-        "Only high fever and vomiting",
-        "Persistent headaches and weakness",
-        "Primarily diarrhoea and abdominal pain"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "Recurrent coughing, wheezing, and breathlessness",
-      "explanation": "The passage explicitly lists these three as common asthma symptoms in children.",
-      "difficulty": "easy"
+      "passageId": "oet-reading-002-pa-c"
     },
     {
       "id": "oet-reading-002-q02",
-      "passageId": "oet-reading-002-p1",
       "part": 1,
-      "topic": "Asthma Inhalers",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is the difference between blue and brown/orange inhalers?",
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about the glucose level that defines the condition?",
+      "question": "In which text can you find information about the glucose level that defines the condition?",
+      "correctAnswer": "A",
+      "explanation": "Text A defines hypoglycaemia as a blood glucose below 4.0 mmol/L.",
+      "difficulty": "medium",
+      "questionNumber": 2,
       "options": [
-        "Blue is stronger than brown/orange",
-        "Brown/orange is for emergency use",
-        "Blue is for acute symptoms; brown/orange is for daily maintenance",
-        "There is no difference in function"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "Blue is for acute symptoms; brown/orange is for daily maintenance",
-      "explanation": "The passage clearly distinguishes reliever (blue) for acute use and preventer (brown/orange) for daily maintenance.",
-      "difficulty": "easy"
+      "passageId": "oet-reading-002-pa-a"
     },
     {
       "id": "oet-reading-002-q03",
-      "passageId": "oet-reading-002-p1",
       "part": 1,
-      "topic": "Asthma Spacers",
-      "questionType": "multiple_choice_single",
-      "prompt": "Why are spacers with face masks essential for young children?",
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about a food that should not be used to treat an episode?",
+      "question": "In which text can you find information about a food that should not be used to treat an episode?",
+      "correctAnswer": "B",
+      "explanation": "Text B says chocolate is unsuitable because fat slows absorption.",
+      "difficulty": "medium",
+      "questionNumber": 3,
       "options": [
-        "To ensure proper medication delivery",
-        "To reduce side effects of medication",
-        "To protect other children from infection",
-        "To make treatment less frightening"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "To ensure proper medication delivery",
-      "explanation": "The passage states spacers are essential to ensure proper medication delivery in young children.",
-      "difficulty": "easy"
+      "passageId": "oet-reading-002-pa-b"
     },
     {
       "id": "oet-reading-002-q04",
-      "passageId": "oet-reading-002-p1",
       "part": 1,
-      "topic": "Asthma Triggers",
-      "questionType": "multiple_choice_single",
-      "prompt": "Which of these is NOT mentioned as an asthma trigger?",
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about how long to wait before rechecking after oral treatment?",
+      "question": "In which text can you find information about how long to wait before rechecking after oral treatment?",
+      "correctAnswer": "B",
+      "explanation": "Text B directs a recheck after 15 minutes.",
+      "difficulty": "medium",
+      "questionNumber": 4,
       "options": [
-        "Allergens",
-        "Viral infections",
-        "Cold water exposure",
-        "Exercise"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "Cold water exposure",
-      "explanation": "The passage mentions allergens, viral infections, and exercise but not cold water exposure.",
-      "difficulty": "medium"
+      "passageId": "oet-reading-002-pa-b"
     },
     {
       "id": "oet-reading-002-q05",
-      "passageId": "oet-reading-002-p1",
       "part": 1,
-      "topic": "Asthma Monitoring",
-      "questionType": "multiple_choice_single",
-      "prompt": "How frequently should asthma symptom control be reviewed?",
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about what should be reviewed before the patient is discharged?",
+      "question": "In which text can you find information about what should be reviewed before the patient is discharged?",
+      "correctAnswer": "D",
+      "explanation": "Text D requires a documented review of the cause before discharge or handover.",
+      "difficulty": "medium",
+      "questionNumber": 5,
       "options": [
-        "Every three months",
-        "Every month",
-        "Every six months",
-        "Annually"
+        "A",
+        "B",
+        "C",
+        "D"
       ],
-      "correctAnswer": "Every three months",
-      "explanation": "The passage states that regular review of symptom control every three months helps optimise therapy.",
-      "difficulty": "easy"
+      "passageId": "oet-reading-002-pa-d"
     },
     {
       "id": "oet-reading-002-q06",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about symptoms indicating the brain is deprived of glucose?",
+      "question": "In which text can you find information about symptoms indicating the brain is deprived of glucose?",
+      "correctAnswer": "A",
+      "explanation": "Text A describes neuroglycopenic symptoms as indicating brain deprivation.",
+      "difficulty": "medium",
+      "questionNumber": 6,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "passageId": "oet-reading-002-pa-a"
+    },
+    {
+      "id": "oet-reading-002-q07",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "matching",
+      "prompt": "In which text can you find information about how to position a patient who cannot swallow?",
+      "question": "In which text can you find information about how to position a patient who cannot swallow?",
+      "correctAnswer": "C",
+      "explanation": "Text C instructs placing the patient in the recovery position.",
+      "difficulty": "medium",
+      "questionNumber": 7,
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "passageId": "oet-reading-002-pa-c"
+    },
+    {
+      "id": "oet-reading-002-q08",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "short_answer",
+      "prompt": "How many grams of fast-acting carbohydrate should a conscious patient receive?",
+      "question": "How many grams of fast-acting carbohydrate should a conscious patient receive?",
+      "correctAnswer": "15 to 20 grams",
+      "explanation": "Text B specifies 15 to 20 grams of fast-acting carbohydrate.",
+      "difficulty": "medium",
+      "questionNumber": 8,
+      "alternateAnswers": [
+        "15-20 grams",
+        "15 to 20",
+        "15-20g"
+      ],
+      "passageId": "oet-reading-002-pa-b"
+    },
+    {
+      "id": "oet-reading-002-q09",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "short_answer",
+      "prompt": "What volume of pure fruit juice is given as fast-acting carbohydrate?",
+      "question": "What volume of pure fruit juice is given as fast-acting carbohydrate?",
+      "correctAnswer": "150 mL",
+      "explanation": "Text B lists 150 mL of pure fruit juice.",
+      "difficulty": "medium",
+      "questionNumber": 9,
+      "alternateAnswers": [
+        "150ml",
+        "150 ml"
+      ],
+      "passageId": "oet-reading-002-pa-b"
+    },
+    {
+      "id": "oet-reading-002-q10",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "short_answer",
+      "prompt": "What dose of glucagon is given intramuscularly?",
+      "question": "What dose of glucagon is given intramuscularly?",
+      "correctAnswer": "1 mg",
+      "explanation": "Text C gives 1 mg glucagon intramuscularly.",
+      "difficulty": "medium",
+      "questionNumber": 10,
+      "alternateAnswers": [
+        "1mg",
+        "one mg"
+      ],
+      "passageId": "oet-reading-002-pa-c"
+    },
+    {
+      "id": "oet-reading-002-q11",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "short_answer",
+      "prompt": "Which two drug classes are named as causing dose mismatch?",
+      "question": "Which two drug classes are named as causing dose mismatch?",
+      "correctAnswer": "insulin or sulfonylurea",
+      "explanation": "Text D names an insulin or sulfonylurea dose that no longer matches intake.",
+      "difficulty": "medium",
+      "questionNumber": 11,
+      "alternateAnswers": [
+        "insulin and sulfonylurea",
+        "insulin or sulphonylurea"
+      ],
+      "passageId": "oet-reading-002-pa-d"
+    },
+    {
+      "id": "oet-reading-002-q12",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "short_answer",
+      "prompt": "Which team should patients with recurrent episodes be referred to?",
+      "question": "Which team should patients with recurrent episodes be referred to?",
+      "correctAnswer": "the diabetes specialist team",
+      "explanation": "Text D directs referral to the diabetes specialist team.",
+      "difficulty": "medium",
+      "questionNumber": 12,
+      "alternateAnswers": [
+        "diabetes specialist team",
+        "diabetes team"
+      ],
+      "passageId": "oet-reading-002-pa-d"
+    },
+    {
+      "id": "oet-reading-002-q13",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "short_answer",
+      "prompt": "What concentration of intravenous glucose is used?",
+      "question": "What concentration of intravenous glucose is used?",
+      "correctAnswer": "20%",
+      "explanation": "Text C specifies 100 mL of 20% glucose.",
+      "difficulty": "medium",
+      "questionNumber": 13,
+      "alternateAnswers": [
+        "20 %",
+        "20% glucose"
+      ],
+      "passageId": "oet-reading-002-pa-c"
+    },
+    {
+      "id": "oet-reading-002-q14",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "short_answer",
+      "prompt": "What causes the early autonomic symptoms?",
+      "question": "What causes the early autonomic symptoms?",
+      "correctAnswer": "adrenaline release",
+      "explanation": "Text A attributes autonomic symptoms to adrenaline release.",
+      "difficulty": "medium",
+      "questionNumber": 14,
+      "alternateAnswers": [
+        "adrenaline"
+      ],
+      "passageId": "oet-reading-002-pa-a"
+    },
+    {
+      "id": "oet-reading-002-q15",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "sentence_completion",
+      "prompt": "Glucagon works by mobilising hepatic _______.",
+      "question": "Glucagon works by mobilising hepatic _______.",
+      "correctAnswer": "glycogen",
+      "explanation": "Text C explains glucagon mobilises hepatic glycogen.",
+      "difficulty": "medium",
+      "questionNumber": 15,
+      "alternateAnswers": [],
+      "passageId": "oet-reading-002-pa-c"
+    },
+    {
+      "id": "oet-reading-002-q16",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "sentence_completion",
+      "prompt": "Patients with long-standing diabetes may develop impaired _______.",
+      "question": "Patients with long-standing diabetes may develop impaired _______.",
+      "correctAnswer": "awareness",
+      "explanation": "Text A describes impaired awareness in long-standing diabetes.",
+      "difficulty": "medium",
+      "questionNumber": 16,
+      "alternateAnswers": [],
+      "passageId": "oet-reading-002-pa-a"
+    },
+    {
+      "id": "oet-reading-002-q17",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "sentence_completion",
+      "prompt": "After glucose rises above 4.0, give a _______ carbohydrate.",
+      "question": "After glucose rises above 4.0, give a _______ carbohydrate.",
+      "correctAnswer": "long-acting",
+      "explanation": "Text B directs long-acting carbohydrate once above 4.0.",
+      "difficulty": "medium",
+      "questionNumber": 17,
+      "alternateAnswers": [
+        "long acting"
+      ],
+      "passageId": "oet-reading-002-pa-b"
+    },
+    {
+      "id": "oet-reading-002-q18",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "sentence_completion",
+      "prompt": "Review the timing of insulin against _______ rather than simply reducing the dose.",
+      "question": "Review the timing of insulin against _______ rather than simply reducing the dose.",
+      "correctAnswer": "meals",
+      "explanation": "Text D says to review insulin timing against meals.",
+      "difficulty": "medium",
+      "questionNumber": 18,
+      "alternateAnswers": [],
+      "passageId": "oet-reading-002-pa-d"
+    },
+    {
+      "id": "oet-reading-002-q19",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "sentence_completion",
+      "prompt": "Recheck glucose after _______ minutes in the unconscious patient.",
+      "question": "Recheck glucose after _______ minutes in the unconscious patient.",
+      "correctAnswer": "10",
+      "explanation": "Text C directs a recheck after 10 minutes.",
+      "difficulty": "medium",
+      "questionNumber": 19,
+      "alternateAnswers": [
+        "ten"
+      ],
+      "passageId": "oet-reading-002-pa-c"
+    },
+    {
+      "id": "oet-reading-002-q20",
+      "part": 1,
+      "topic": "Hypoglycaemia in Diabetes Care",
+      "questionType": "sentence_completion",
+      "prompt": "Impaired awareness can often be reversed by scrupulously avoiding hypoglycaemia for several _______.",
+      "question": "Impaired awareness can often be reversed by scrupulously avoiding hypoglycaemia for several _______.",
+      "correctAnswer": "weeks",
+      "explanation": "Text D says avoiding hypoglycaemia for several weeks can reverse impaired awareness.",
+      "difficulty": "medium",
+      "questionNumber": 20,
+      "alternateAnswers": [],
+      "passageId": "oet-reading-002-pa-d"
+    },
+    {
+      "id": "oet-reading-002-q21",
       "passageId": "oet-reading-002-p2a",
       "part": 2,
       "topic": "Mental Health Screening",
@@ -163,10 +432,11 @@
       ],
       "correctAnswer": "Within one hour",
       "explanation": "The protocol explicitly states screening must occur within one hour of arrival.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 21
     },
     {
-      "id": "oet-reading-002-q07",
+      "id": "oet-reading-002-q22",
       "passageId": "oet-reading-002-p2a",
       "part": 2,
       "topic": "Suicidal Patient Care",
@@ -180,10 +450,11 @@
       ],
       "correctAnswer": "Continuous one-to-one observation",
       "explanation": "The protocol states patients expressing suicidal intent must be placed under continuous one-to-one observation.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 22
     },
     {
-      "id": "oet-reading-002-q08",
+      "id": "oet-reading-002-q23",
       "passageId": "oet-reading-002-p2a",
       "part": 2,
       "topic": "Psychiatry Consultation",
@@ -197,10 +468,11 @@
       ],
       "correctAnswer": "Within two hours",
       "explanation": "The protocol specifies that psychiatry should be consulted within two hours for high-risk cases.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 23
     },
     {
-      "id": "oet-reading-002-q09",
+      "id": "oet-reading-002-q24",
       "passageId": "oet-reading-002-p2b",
       "part": 2,
       "topic": "Blood Transfusion Safety",
@@ -214,10 +486,11 @@
       ],
       "correctAnswer": "Two identifiers",
       "explanation": "The checklist explicitly requires patient identity to be verified using two identifiers.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 24
     },
     {
-      "id": "oet-reading-002-q10",
+      "id": "oet-reading-002-q25",
       "passageId": "oet-reading-002-p2b",
       "part": 2,
       "topic": "Transfusion Reactions",
@@ -231,214 +504,11 @@
       ],
       "correctAnswer": "Stop transfusion immediately and inform the physician",
       "explanation": "The checklist states to stop transfusion immediately and inform the physician if reaction occurs.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 25
     },
     {
-      "id": "oet-reading-002-q11",
-      "passageId": "oet-reading-002-p3a",
-      "part": 3,
-      "topic": "Pressure Injury Risk Factors",
-      "questionType": "multiple_choice_single",
-      "prompt": "According to the passage, which are recognised risk factors for pressure injuries?",
-      "options": [
-        "Only advanced age",
-        "Primarily young age and high mobility",
-        "Immobility, poor nutrition, incontinence, and advanced age",
-        "Only poor nutrition"
-      ],
-      "correctAnswer": "Immobility, poor nutrition, incontinence, and advanced age",
-      "explanation": "The passage explicitly lists these four risk factors.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-002-q12",
-      "passageId": "oet-reading-002-p3a",
-      "part": 3,
-      "topic": "Braden Scale",
-      "questionType": "multiple_choice_single",
-      "prompt": "What does the Braden Scale assess?",
-      "options": [
-        "Patient age and weight",
-        "Only skin colour",
-        "Sensory perception, moisture, activity, mobility, nutrition, and friction",
-        "Infection risk only"
-      ],
-      "correctAnswer": "Sensory perception, moisture, activity, mobility, nutrition, and friction",
-      "explanation": "The passage lists these six factors assessed by the Braden Scale.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-002-q13",
-      "passageId": "oet-reading-002-p3a",
-      "part": 3,
-      "topic": "Pressure Injury Stages",
-      "questionType": "multiple_choice_single",
-      "prompt": "What characterises a Stage 2 pressure injury?",
-      "options": [
-        "Non-blanching redness only",
-        "Full-thickness skin loss",
-        "Partial-thickness skin loss with a pink wound bed",
-        "Tissue necrosis"
-      ],
-      "correctAnswer": "Partial-thickness skin loss with a pink wound bed",
-      "explanation": "The passage describes Stage 2 as partial-thickness skin loss with a pink wound bed.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-002-q14",
-      "passageId": "oet-reading-002-p3a",
-      "part": 3,
-      "topic": "Repositioning Frequency",
-      "questionType": "multiple_choice_single",
-      "prompt": "How often should high-risk patients be repositioned?",
-      "options": [
-        "Every 4 hours",
-        "Every 3 hours",
-        "Every 2 hours",
-        "Every 6 hours"
-      ],
-      "correctAnswer": "Every 2 hours",
-      "explanation": "The passage states regular repositioning should occur every two hours for high-risk patients.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-002-q15",
-      "passageId": "oet-reading-002-p3b",
-      "part": 3,
-      "topic": "Diabetes Education Impact",
-      "questionType": "multiple_choice_single",
-      "prompt": "By how much can structured diabetes education reduce HbA1c levels?",
-      "options": [
-        "Up to 0.5%",
-        "Up to 1%",
-        "Up to 1.5%",
-        "Up to 2%"
-      ],
-      "correctAnswer": "Up to 1.5%",
-      "explanation": "The passage states that education programmes can reduce HbA1c by up to 1.5%.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-002-q16",
-      "passageId": "oet-reading-002-p3b",
-      "part": 3,
-      "topic": "Hypoglycaemia Symptoms",
-      "questionType": "multiple_choice_single",
-      "prompt": "Which are recognised symptoms of hypoglycaemia mentioned in the passage?",
-      "options": [
-        "Only slow heartbeat",
-        "Only excessive thirst",
-        "Tremor, sweating, and confusion",
-        "Primarily numbness in extremities"
-      ],
-      "correctAnswer": "Tremor, sweating, and confusion",
-      "explanation": "The passage lists tremor, sweating, and confusion as hypoglycaemic symptoms.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-002-q17",
-      "passageId": "oet-reading-002-p3b",
-      "part": 3,
-      "topic": "Blood Glucose Monitoring",
-      "questionType": "multiple_choice_single",
-      "prompt": "How frequently should insulin users test their blood glucose?",
-      "options": [
-        "Twice daily",
-        "Three times daily",
-        "Four times daily",
-        "Once daily"
-      ],
-      "correctAnswer": "Four times daily",
-      "explanation": "The passage states that insulin users should test four times daily.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-002-q18",
-      "passageId": "oet-reading-002-p3b",
-      "part": 3,
-      "topic": "Insulin Injection Technique",
-      "questionType": "multiple_choice_single",
-      "prompt": "Why is it important to rotate insulin injection sites?",
-      "options": [
-        "To reduce pain",
-        "To improve absorption",
-        "To prevent lipodystrophy",
-        "To reduce bruising"
-      ],
-      "correctAnswer": "To prevent lipodystrophy",
-      "explanation": "The passage states that rotation of injection sites prevents lipodystrophy.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-002-q19",
-      "passageId": "oet-reading-002-p3b",
-      "part": 3,
-      "topic": "Physical Activity Recommendations",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is the recommended frequency and intensity of physical activity for diabetic patients?",
-      "options": [
-        "100 minutes per week at vigorous intensity",
-        "75 minutes per week at moderate intensity",
-        "150 minutes per week at moderate intensity",
-        "200 minutes per week at any intensity"
-      ],
-      "correctAnswer": "150 minutes per week at moderate intensity",
-      "explanation": "The passage recommends at least 150 minutes per week at moderate intensity.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-002-q20",
-      "passageId": "oet-reading-002-p3b",
-      "part": 3,
-      "topic": "Diabetes Complications Screening",
-      "questionType": "multiple_choice_single",
-      "prompt": "Which is NOT mentioned as part of annual complications screening?",
-      "options": [
-        "Eye assessment for retinopathy",
-        "Liver function testing",
-        "Monofilament testing for neuropathy",
-        "Urine albumin testing"
-      ],
-      "correctAnswer": "Liver function testing",
-      "explanation": "The passage mentions retinopathy, nephropathy, and neuropathy screening, but not liver testing.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-reading-002-q21",
-      "passageId": "oet-reading-002-p1",
-      "part": 1,
-      "topic": "Asthma Action Plan",
-      "questionType": "multiple_choice_single",
-      "prompt": "Where should an asthma action plan be kept?",
-      "options": [
-        "With school and healthcare provider",
-        "At home only",
-        "In a hospital file",
-        "Only with the GP"
-      ],
-      "correctAnswer": "With school and healthcare provider",
-      "explanation": "The passage states parents should keep an action plan with their child's school and healthcare provider.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-002-q22",
-      "passageId": "oet-reading-002-p1",
-      "part": 1,
-      "topic": "Spacer Importance",
-      "questionType": "multiple_choice_single",
-      "prompt": "Why is a face mask important with an inhaler spacer?",
-      "options": [
-        "To ensure proper medication delivery in young children",
-        "To prevent contamination",
-        "To reduce side effects",
-        "To improve drug taste"
-      ],
-      "correctAnswer": "To ensure proper medication delivery in young children",
-      "explanation": "The passage emphasizes that spacers with face masks are essential to ensure proper medication delivery.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-reading-002-q23",
+      "id": "oet-reading-002-q26",
       "passageId": "oet-reading-002-p2a",
       "part": 2,
       "topic": "Mental Health Documentation",
@@ -452,27 +522,191 @@
       ],
       "correctAnswer": "Patient quotes where possible for documentation",
       "explanation": "The protocol requires thorough documentation with patient quotes where possible.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 26
     },
     {
-      "id": "oet-reading-002-q24",
-      "passageId": "oet-reading-002-p2b",
-      "part": 2,
-      "topic": "Blood Unit Inspection",
+      "id": "oet-reading-002-q27",
+      "passageId": "oet-reading-002-p3a",
+      "part": 3,
+      "topic": "Pressure Injury Risk Factors",
       "questionType": "multiple_choice_single",
-      "prompt": "What should be done if gas bubbles are found in a blood bag?",
+      "prompt": "According to the passage, which are recognised risk factors for pressure injuries?",
       "options": [
-        "Return to blood bank immediately",
-        "Remove bubbles and continue",
-        "Proceed with transfusion carefully",
-        "Warm the bag first"
+        "Only advanced age",
+        "Primarily young age and high mobility",
+        "Immobility, poor nutrition, incontinence, and advanced age",
+        "Only poor nutrition"
       ],
-      "correctAnswer": "Return to blood bank immediately",
-      "explanation": "The checklist states to return any contaminated blood to the blood bank immediately.",
-      "difficulty": "easy"
+      "correctAnswer": "Immobility, poor nutrition, incontinence, and advanced age",
+      "explanation": "The passage explicitly lists these four risk factors.",
+      "difficulty": "easy",
+      "questionNumber": 27
     },
     {
-      "id": "oet-reading-002-q25",
+      "id": "oet-reading-002-q28",
+      "passageId": "oet-reading-002-p3a",
+      "part": 3,
+      "topic": "Braden Scale",
+      "questionType": "multiple_choice_single",
+      "prompt": "What does the Braden Scale assess?",
+      "options": [
+        "Patient age and weight",
+        "Only skin colour",
+        "Sensory perception, moisture, activity, mobility, nutrition, and friction",
+        "Infection risk only"
+      ],
+      "correctAnswer": "Sensory perception, moisture, activity, mobility, nutrition, and friction",
+      "explanation": "The passage lists these six factors assessed by the Braden Scale.",
+      "difficulty": "medium",
+      "questionNumber": 28
+    },
+    {
+      "id": "oet-reading-002-q29",
+      "passageId": "oet-reading-002-p3a",
+      "part": 3,
+      "topic": "Pressure Injury Stages",
+      "questionType": "multiple_choice_single",
+      "prompt": "What characterises a Stage 2 pressure injury?",
+      "options": [
+        "Non-blanching redness only",
+        "Full-thickness skin loss",
+        "Partial-thickness skin loss with a pink wound bed",
+        "Tissue necrosis"
+      ],
+      "correctAnswer": "Partial-thickness skin loss with a pink wound bed",
+      "explanation": "The passage describes Stage 2 as partial-thickness skin loss with a pink wound bed.",
+      "difficulty": "medium",
+      "questionNumber": 29
+    },
+    {
+      "id": "oet-reading-002-q30",
+      "passageId": "oet-reading-002-p3a",
+      "part": 3,
+      "topic": "Repositioning Frequency",
+      "questionType": "multiple_choice_single",
+      "prompt": "How often should high-risk patients be repositioned?",
+      "options": [
+        "Every 4 hours",
+        "Every 3 hours",
+        "Every 2 hours",
+        "Every 6 hours"
+      ],
+      "correctAnswer": "Every 2 hours",
+      "explanation": "The passage states regular repositioning should occur every two hours for high-risk patients.",
+      "difficulty": "easy",
+      "questionNumber": 30
+    },
+    {
+      "id": "oet-reading-002-q31",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Diabetes Education Impact",
+      "questionType": "multiple_choice_single",
+      "prompt": "By how much can structured diabetes education reduce HbA1c levels?",
+      "options": [
+        "Up to 0.5%",
+        "Up to 1%",
+        "Up to 1.5%",
+        "Up to 2%"
+      ],
+      "correctAnswer": "Up to 1.5%",
+      "explanation": "The passage states that education programmes can reduce HbA1c by up to 1.5%.",
+      "difficulty": "easy",
+      "questionNumber": 31
+    },
+    {
+      "id": "oet-reading-002-q32",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Hypoglycaemia Symptoms",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which are recognised symptoms of hypoglycaemia mentioned in the passage?",
+      "options": [
+        "Only slow heartbeat",
+        "Only excessive thirst",
+        "Tremor, sweating, and confusion",
+        "Primarily numbness in extremities"
+      ],
+      "correctAnswer": "Tremor, sweating, and confusion",
+      "explanation": "The passage lists tremor, sweating, and confusion as hypoglycaemic symptoms.",
+      "difficulty": "easy",
+      "questionNumber": 32
+    },
+    {
+      "id": "oet-reading-002-q33",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Blood Glucose Monitoring",
+      "questionType": "multiple_choice_single",
+      "prompt": "How frequently should insulin users test their blood glucose?",
+      "options": [
+        "Twice daily",
+        "Three times daily",
+        "Four times daily",
+        "Once daily"
+      ],
+      "correctAnswer": "Four times daily",
+      "explanation": "The passage states that insulin users should test four times daily.",
+      "difficulty": "easy",
+      "questionNumber": 33
+    },
+    {
+      "id": "oet-reading-002-q34",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Insulin Injection Technique",
+      "questionType": "multiple_choice_single",
+      "prompt": "Why is it important to rotate insulin injection sites?",
+      "options": [
+        "To reduce pain",
+        "To improve absorption",
+        "To prevent lipodystrophy",
+        "To reduce bruising"
+      ],
+      "correctAnswer": "To prevent lipodystrophy",
+      "explanation": "The passage states that rotation of injection sites prevents lipodystrophy.",
+      "difficulty": "medium",
+      "questionNumber": 34
+    },
+    {
+      "id": "oet-reading-002-q35",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Physical Activity Recommendations",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is the recommended frequency and intensity of physical activity for diabetic patients?",
+      "options": [
+        "100 minutes per week at vigorous intensity",
+        "75 minutes per week at moderate intensity",
+        "150 minutes per week at moderate intensity",
+        "200 minutes per week at any intensity"
+      ],
+      "correctAnswer": "150 minutes per week at moderate intensity",
+      "explanation": "The passage recommends at least 150 minutes per week at moderate intensity.",
+      "difficulty": "easy",
+      "questionNumber": 35
+    },
+    {
+      "id": "oet-reading-002-q36",
+      "passageId": "oet-reading-002-p3b",
+      "part": 3,
+      "topic": "Diabetes Complications Screening",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which is NOT mentioned as part of annual complications screening?",
+      "options": [
+        "Eye assessment for retinopathy",
+        "Liver function testing",
+        "Monofilament testing for neuropathy",
+        "Urine albumin testing"
+      ],
+      "correctAnswer": "Liver function testing",
+      "explanation": "The passage mentions retinopathy, nephropathy, and neuropathy screening, but not liver testing.",
+      "difficulty": "medium",
+      "questionNumber": 36
+    },
+    {
+      "id": "oet-reading-002-q37",
       "passageId": "oet-reading-002-p3a",
       "part": 3,
       "topic": "Pressure Injury Treatment",
@@ -486,10 +720,11 @@
       ],
       "correctAnswer": "Prevention is always superior to treatment",
       "explanation": "The passage states that prevention is always superior to treatment.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 37
     },
     {
-      "id": "oet-reading-002-q26",
+      "id": "oet-reading-002-q38",
       "passageId": "oet-reading-002-p3a",
       "part": 3,
       "topic": "Stage 1 Pressure Injury",
@@ -503,10 +738,11 @@
       ],
       "correctAnswer": "Non-blanching redness over a bony prominence",
       "explanation": "The passage describes Stage 1 as non-blanching redness over a bony prominence.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 38
     },
     {
-      "id": "oet-reading-002-q27",
+      "id": "oet-reading-002-q39",
       "passageId": "oet-reading-002-p3a",
       "part": 3,
       "topic": "Stage 4 Pressure Injury",
@@ -520,10 +756,11 @@
       ],
       "correctAnswer": "Tissue necrosis",
       "explanation": "The passage states Stage 4 involves tissue necrosis.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 39
     },
     {
-      "id": "oet-reading-002-q28",
+      "id": "oet-reading-002-q40",
       "passageId": "oet-reading-002-p3b",
       "part": 3,
       "topic": "Diabetes Education Elements",
@@ -537,10 +774,11 @@
       ],
       "correctAnswer": "Carbohydrate awareness, portion control, and regular meal timing",
       "explanation": "The passage recommends focus on carbohydrate awareness, portion control, and regular timing.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 40
     },
     {
-      "id": "oet-reading-002-q29",
+      "id": "oet-reading-002-q41",
       "passageId": "oet-reading-002-p3b",
       "part": 3,
       "topic": "Foot Care Importance",
@@ -554,10 +792,11 @@
       ],
       "correctAnswer": "Daily inspection, appropriate footwear, and prompt reporting of sores",
       "explanation": "The passage includes these elements as essential foot care components.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 41
     },
     {
-      "id": "oet-reading-002-q30",
+      "id": "oet-reading-002-q42",
       "passageId": "oet-reading-002-p3a",
       "part": 3,
       "topic": "Reverse Staging Recommendation",
@@ -571,7 +810,8 @@
       ],
       "correctAnswer": "It is not recommended as it does not reflect healing",
       "explanation": "The passage explicitly states reverse staging is not recommended as it does not reflect healing.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "questionNumber": 42
     }
   ]
 }
