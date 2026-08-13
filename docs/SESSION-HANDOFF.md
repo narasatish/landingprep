@@ -1,6 +1,6 @@
 # LandingPrep — Session Handoff (read me FIRST in a new session)
 
-**Last updated: 2026-08-12 (session 10) · repo at v438 · branch `main`, all pushed & live.**
+**Last updated: 2026-08-13 (session 10) · repo at v443 · branch `main`, all pushed & live.**
 Production auto-deploys on every push to `main`. Keep this file updated at the end of major
 work — it went 4 versions stale (said v394 while production ran v401) and cost a session's
 worth of re-derivation.
@@ -28,7 +28,7 @@ worth of re-derivation.
 > and the warning did not stop it happening again. Read `sw.js`
 > (`git show <sha>:sw.js | grep lp-v`) for the real value, every time.
 > Verified chain: 401 → 405 → 409 → 411 → 413 → 415 → 416 → 417 → 421 → 423 → 425 → 428 → 431
-> → 432 → 436 → 437 → 438 — every deploy bumped, no duplicates.
+> → 432 → 436 → 437 → 438 → 439 → 443 — every deploy bumped, no duplicates.
 
 > 🔎 **Session 10 changed where the effort should go.** Sessions 7–9 concluded the on-site work
 > was exhausted and only authority remained. That is still true *for SEO* — but it was never
@@ -291,7 +291,7 @@ scrolls during the audit so every section renders anyway and the containment is 
 
 ---
 
-## Shipped in session 10 (v436 → v438) — found by USING the product
+## Shipped in session 10 (v436 → v443) — found by USING the product
 
 **v436 — IELTS Listening could hang forever on "Audio in progress".** Gemini TTS with no
 timeout and no failure path; if it stalled, the section was unusable and the student could not
@@ -314,10 +314,63 @@ screen) and aligned dead `parts[].context` values to the real script titles.
 
 **v438 — the headline claim outran the content.** See the section above.
 
+**v439 — the paid Gemini key was billing for work the free tier can do, and a trap was
+armed.** `/api/tts` built its URL from `GEMINI_API_KEY` and *gated availability on it*. So
+setting ONLY `GEMINI_API_KEY_FREE` — exactly what the server's own startup warning instructs —
+would have returned 503 on every TTS request and silently killed all audio on the site: the
+listening player, the examiner voice, the speaking partner. `geminiVerifyCaption()` had the
+same shape (gated on the paid key, called `geminiPost()` with no key so it defaulted to paid).
+Both now walk `AI_KEYS` free-first, respect the paid daily cap, fall through on 429/quota, and
+book spend to the tier that served the request. Also fixed: the writing checker silently cut
+essays at 3,500 chars while printing the full word count, so a 700-word GRE essay was graded
+on ~600 words and marked down for a conclusion the examiner never saw (now 9,000, and it says
+so if the cap is hit).
+
+**v443 — every generated page now carries an honest "last updated" date.** ~700 indexed pages
+had no freshness signal at all. Dates are keyed to a per-path fingerprint of the page's
+`<main>` text (`content/page-dates.json`) and move ONLY when that text changes — stamping
+today's date every build is fake freshness. Also made builds 6x faster (600s+ → 102s) by
+skipping identical writes in `writeFileSafe`, and stopped the malformed-title check crying
+wolf on "…SOP Sample".
+
+### ⚠️ AUTH_SECRET is coupled to the Gemini key — read before rotating keys
+`AUTH_SECRET` falls back to a hash of `GEMINI_API_KEY`, so changing or removing that key
+**logs out every user**. This is live right now while migrating to the free key. Set
+`AUTH_SECRET` explicitly in Render FIRST, then change the Gemini key. The derivation itself was
+deliberately left alone (changing it would log everyone out immediately); a startup warning
+now fires when it is unset.
+
+### Checked in session 10 and found genuinely healthy — do not re-audit
+- **Writing checker feedback** is really about the submitted text: a deliberately flawed essay
+  came back quoting its own errors ("lifes", "technology have"), naming the missing
+  counter-argument, and rewriting one of its own sentences. 6/6 on targeted checks.
+- **College Predictor** uses all four inputs and quotes the user's real numbers back;
+  `overBudget` is computed *and* rendered.
+- **Speaking examiner** sends the live topic, last 8 turns, and the candidate's actual words.
+- **Auth**: scrypt + random salt, `timingSafeEqual`, HMAC tokens with expiry, generic signin
+  error (no user enumeration), reset codes that expire and lock, `/api/auth/` rate-limited to
+  20 attempts / 15 min. Production Firestore reports **connected**, so accounts are durable.
+- **Live SEO invariants**: 45 sitemap URLs sampled across the whole file — 0 redirects, 0
+  non-200, exactly 1 title / description / canonical each, canonical == sitemap URL, 0 JSON-LD
+  parse failures. Checked again in the *hydrated* DOM and after two client-side navigations:
+  still exactly 1 of each (no react-helmet duplication).
+- **GEO**: every major AI crawler explicitly allowed in robots.txt, sitemap declared, llms.txt
+  live (11 KB) with no stale claims.
+
+### 📏 Thin content: the policy and the gate disagree by ~6x
+Measured across all 766 indexed pages (unique `<main>` text): median **644 words**; **22% under
+400 words**; only **13% meet the 1,500-word policy** in CLAUDE.md. The enforcement gate is
+`THIN_MIN_CHARS = 1500` — 1,500 *characters*, roughly 250 words.
+**Do not "fix" this by tightening the gate**: `/pte-for-rmit/` is 257 words and holds a
+page-one ranking ("rmit university pte score requirement", position 5.4). Thin here does not
+mean worthless. Deepening the highest-potential pages is the real work; mass-pruning would
+repeat the session-9 near-miss.
+
 ### Where to look next (same method: use it, don't audit it)
-Still unexercised: the **Writing and Speaking AI checkers** (do they return feedback that
-references the student's actual text, or a generic paragraph?), **signup/login**, and the
-**College Predictor**. Given what one hour of real use turned up, assume there is more.
+The AI checkers, College Predictor, auth and SEO invariants are now covered (above). Still
+unexercised: **the signup → progress-saving → history round trip in a real browser** (the code
+and rate limits check out, but nobody has driven the flow), the **PTE/CELPIP/Duolingo section
+renderers**, and the **error notebook / progress analytics**.
 
 ---
 
