@@ -997,6 +997,10 @@ function practicePage(id) {
     { q: `How can I practise ${e.short} for free?`, a: `Open ${BRAND}, pick ${e.name}, and choose a full mock or a single section. Everything is free with instant feedback.` },
     { q: `Which ${e.short} sections can I practise?`, a: `All of them: ${e.sections}. Each section can be practised on its own or as part of a full test.` },
     { q: `Do I get answer explanations?`, a: `Yes — every objective question shows the correct answer, and you can ask the smart tutor to explain the reasoning.` },
+    { q: `Is section practice better than full mock tests?`, a: `They do different jobs. A full mock tells you where you stand; section practice is how you improve, because it isolates one skill instead of averaging your strengths and weaknesses into a single score. Sit a mock first to find your weakest section, drill that section, then re-test every two to three weeks.` },
+    { q: `Should I practise ${e.short} with or without a timer?`, a: `Without one at first. Build accuracy while you can still think through each question, then add timing once your accuracy is stable. Adding pressure too early trains you to rush past the reasoning you are trying to learn.` },
+    { q: `How many ${e.short} practice tests should I do?`, a: `Fewer than most people think, reviewed far more carefully than most people do. Two or three full mocks with thorough review beats ten sat back to back, because the learning happens in the review screen rather than in the attempt.` },
+    { q: `Is there any penalty for a wrong answer in ${e.short}?`, a: `No — there is no negative marking, so never leave a question blank. An unanswered question scores zero for certain, while a guess does not.` },
   ];
   const inner = `
 <p class="crumb"><a href="/">Home</a> › <a href="/#/exam-prep">Mock Tests</a> › ${e.name} practice</p>
@@ -1015,6 +1019,36 @@ function practicePage(id) {
     <li>smart tutor for instant doubt-solving on any question</li>
     <li>Progress tracking, streaks and a personalised study plan</li>
   </ul>
+</div>
+<div class="card">
+  <h2>How to use section practice properly</h2>
+  <p>Most candidates practise by sitting full mocks back to back. That measures where you are, but it is a slow way to improve, because a full test mixes your strong and weak skills together and gives you one number at the end. Section practice is the opposite: it isolates one skill so you can see exactly what is going wrong.</p>
+  <p>A pattern that works for ${e.short}:</p>
+  <ol>
+    <li><strong>Sit one full mock first.</strong> You cannot target a weakness you have not identified. Use the <a href="/mock-test/${id}/">free ${e.short} mock test</a> and note your score per section, not just the total.</li>
+    <li><strong>Take your weakest section and drill it untimed.</strong> Accuracy before speed, always. A candidate who is fast and wrong has a harder problem to fix than one who is slow and right.</li>
+    <li><strong>Read every explanation, including the ones you got right.</strong> A correct guess and a correct answer look identical on your score report and are completely different in what they predict.</li>
+    <li><strong>Reintroduce the clock.</strong> Only once your accuracy is stable. Timing pressure applied too early teaches you to rush past the reasoning you are trying to build.</li>
+    <li><strong>Re-sit a full mock every two to three weeks</strong>, not every day. Frequent full tests eat study time and mostly re-measure what you already know.</li>
+  </ol>
+  <p>The review screen is where the learning happens. If you finish a section and immediately start another, you have practised ${e.short}; you have not studied it.</p>
+</div>
+<div class="card">
+  <h2>What each ${e.short} section actually tests</h2>
+  <p>${e.name} covers ${e.sections}, and the sections reward different things. Reading and listening sections test whether you can locate and interpret information under time pressure — the vocabulary matters less than the ability to find the part of the text that answers the question. Writing and speaking sections are marked against a published rubric, which means the examiner is looking for specific, nameable features rather than a general impression of fluency.</p>
+  <p>That distinction changes how you should prepare. For objective sections, volume of practice with careful review works. For rated sections, volume alone does very little: repeating the same essay structure fifty times cements whatever is wrong with it. You need feedback against the rubric, which is why every writing and speaking task here is scored with rubric-referenced comments and a model answer rather than a bare number.</p>
+  <p>If you are still deciding which exam to take, the <a href="/tools/english-test-score-converter/">score converter</a> shows roughly where a target score in ${e.short} lands in the other major tests, and <a href="/eligibility/">eligibility by country</a> lists what institutions typically ask for.</p>
+</div>
+<div class="card">
+  <h2>Mistakes that cost the most marks</h2>
+  <ul>
+    <li><strong>Practising without timing, then never adding it.</strong> Untimed work builds accuracy; it does not build the pacing judgement the real test requires. Both stages are necessary.</li>
+    <li><strong>Ignoring the instructions.</strong> Word limits in particular — an answer over the limit scores zero however correct it is, and this is one of the most common avoidable losses in ${e.short}.</li>
+    <li><strong>Reviewing only wrong answers.</strong> You learn as much from a right answer you were unsure of.</li>
+    <li><strong>Studying the sections you enjoy.</strong> Almost everyone over-practises their strongest skill because it feels productive. Your score is dragged down by the weakest one.</li>
+    <li><strong>Leaving blanks.</strong> There is no negative marking, so an unanswered question is a guaranteed zero where a guess is not.</li>
+  </ul>
+  <p>Everything on ${BRAND} is free and unlimited, so none of the above needs to be rationed. Start with a <a href="/mock-test/${id}/">full ${e.short} mock</a>, or jump straight into <a href="/#/exam-prep/${e.appPath}">section practice</a>.</p>
 </div>
 ${faqBlock(faqs)}
 ${relatedGrid([
