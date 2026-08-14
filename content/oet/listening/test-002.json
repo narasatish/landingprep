@@ -5,238 +5,413 @@
   "type": "section",
   "title": "OET Listening Practice Test 2",
   "durationSeconds": 2700,
-  "questionCount": 30,
+  "questionCount": 42,
   "instructions": "OET Listening has three parts. Part A: Consultation Extracts (note-taking style). Part B: Short Workplace Extracts (main point identification). Part C: Presentation Extracts (detailed comprehension). Listen carefully and choose the best answer.",
   "parts": [
     {
       "part": 1,
       "title": "Part A — Consultation Extracts",
-      "questions": 18,
+      "questions": 24,
       "time": "12 min",
-      "description": "Doctor-patient consultations. Listen and take notes to answer questions about specific information."
+      "description": "Two consultation extracts. Complete the clinical notes with the information you hear."
     },
     {
       "part": 2,
-      "title": "Part B — Short Workplace Extracts",
-      "questions": 7,
+      "title": "Part B — Workplace Extracts",
+      "questions": 6,
       "time": "8 min",
-      "description": "Workplace briefings, handovers, phone calls. Identify the main point or purpose."
+      "description": "Short workplace extracts; one multiple-choice question each."
     },
     {
       "part": 3,
       "title": "Part C — Presentation Extracts",
-      "questions": 5,
-      "time": "10 min",
-      "description": "Healthcare presentations or talks. Comprehend main ideas and supporting details."
+      "questions": 12,
+      "time": "12 min",
+      "description": "Presentation and interview extracts; detailed comprehension of opinion and argument."
     }
   ],
   "questions": [
     {
       "id": "oet-listening-002-q01",
-      "passageId": "oet-listening-002-p1a",
       "part": 1,
-      "topic": "Knee Injury Onset",
-      "questionType": "multiple_choice_single",
-      "prompt": "When did the patient's knee injury occur?",
-      "options": [
-        "Yesterday",
-        "Last Tuesday playing football",
-        "Two weeks ago",
-        "One month ago"
-      ],
-      "correctAnswer": "Last Tuesday playing football",
-      "explanation": "The patient states the injury started last Tuesday when they twisted it playing football.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Physiotherapy, knee injury",
+      "questionType": "short_answer",
+      "prompt": "Pain location: on the side, below the _______",
+      "question": "Pain location: on the side, below the _______",
+      "correctAnswer": "kneecap",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 1,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
     },
     {
       "id": "oet-listening-002-q02",
-      "passageId": "oet-listening-002-p1a",
       "part": 1,
-      "topic": "Pain Location",
-      "questionType": "multiple_choice_single",
-      "prompt": "Where is the patient's knee pain located?",
-      "options": [
-        "In the centre of the kneecap",
-        "In the upper thigh",
-        "Behind the knee",
-        "On the side, below the kneecap"
-      ],
-      "correctAnswer": "On the side, below the kneecap",
-      "explanation": "The patient points out that the pain is on the side, below the kneecap.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Physiotherapy, knee injury",
+      "questionType": "short_answer",
+      "prompt": "Injury occurred last _______",
+      "question": "Injury occurred last _______",
+      "correctAnswer": "Tuesday",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 2,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
     },
     {
       "id": "oet-listening-002-q03",
-      "passageId": "oet-listening-002-p1a",
       "part": 1,
-      "topic": "Swelling Pattern",
-      "questionType": "multiple_choice_single",
-      "prompt": "When is the knee swelling most noticeable?",
-      "options": [
-        "In the afternoon",
-        "In the morning",
-        "After exercise",
-        "Constantly throughout the day"
-      ],
-      "correctAnswer": "In the morning",
-      "explanation": "The patient notes the swelling is especially bad in the morning.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Physiotherapy, knee injury",
+      "questionType": "short_answer",
+      "prompt": "Mechanism: twisted it playing _______",
+      "question": "Mechanism: twisted it playing _______",
+      "correctAnswer": "football",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 3,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
     },
     {
       "id": "oet-listening-002-q04",
-      "passageId": "oet-listening-002-p1a",
       "part": 1,
-      "topic": "Suspected Diagnosis",
-      "questionType": "multiple_choice_single",
-      "prompt": "What does the physiotherapist suspect?",
-      "options": [
-        "A torn meniscus",
-        "Osteoarthritis",
-        "A fracture",
-        "A ligament strain, possibly to the medial collateral ligament"
-      ],
-      "correctAnswer": "A ligament strain, possibly to the medial collateral ligament",
-      "explanation": "The physiotherapist states the suspected diagnosis is a ligament strain to the MCL.",
-      "difficulty": "medium"
+      "topic": "Consultation 1 — Physiotherapy, knee injury",
+      "questionType": "short_answer",
+      "prompt": "Gait since injury: patient has been _______",
+      "question": "Gait since injury: patient has been _______",
+      "correctAnswer": "limping",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 4,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
     },
     {
       "id": "oet-listening-002-q05",
-      "passageId": "oet-listening-002-p1a",
       "part": 1,
-      "topic": "Treatment Frequency",
-      "questionType": "multiple_choice_single",
-      "prompt": "How often should the patient attend physiotherapy?",
-      "options": [
-        "Once a week for 4 weeks",
-        "Twice a week for 4 weeks",
-        "Three times a week for 6 weeks",
-        "Daily for 2 weeks"
-      ],
-      "correctAnswer": "Twice a week for 4 weeks",
-      "explanation": "The physiotherapist states 'I want to see you twice a week for four weeks.'",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Physiotherapy, knee injury",
+      "questionType": "short_answer",
+      "prompt": "Swelling worst in the _______",
+      "question": "Swelling worst in the _______",
+      "correctAnswer": "morning",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 5,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
     },
     {
       "id": "oet-listening-002-q06",
-      "passageId": "oet-listening-002-p1a",
       "part": 1,
-      "topic": "Return to Sport",
-      "questionType": "multiple_choice_single",
-      "prompt": "When can the patient return to football?",
-      "options": [
-        "After 2 weeks",
-        "After 4 weeks",
-        "After 8 weeks",
-        "After 6 weeks minimum if progressing well"
+      "topic": "Consultation 1 — Physiotherapy, knee injury",
+      "questionType": "short_answer",
+      "prompt": "Self-management so far: patient has been _______ it",
+      "question": "Self-management so far: patient has been _______ it",
+      "correctAnswer": "icing",
+      "alternateAnswers": [
+        "icing it"
       ],
-      "correctAnswer": "After 6 weeks minimum if progressing well",
-      "explanation": "The physiotherapist recommends return to football gradually after six weeks minimum if progress is good.",
-      "difficulty": "easy"
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 6,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
     },
     {
       "id": "oet-listening-002-q07",
-      "passageId": "oet-listening-002-p1b",
       "part": 1,
-      "topic": "Depression Duration",
-      "questionType": "multiple_choice_single",
-      "prompt": "For how long has Marcus been feeling depressed?",
-      "options": [
-        "One month",
-        "Three months",
-        "Two months",
-        "Six months"
-      ],
-      "correctAnswer": "Three months",
-      "explanation": "Marcus states he's been feeling low for about three months, since losing his job.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Physiotherapy, knee injury",
+      "questionType": "short_answer",
+      "prompt": "Knee felt _______ when going up stairs",
+      "question": "Knee felt _______ when going up stairs",
+      "correctAnswer": "unstable",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 7,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
     },
     {
       "id": "oet-listening-002-q08",
-      "passageId": "oet-listening-002-p1b",
       "part": 1,
-      "topic": "Weight Loss",
-      "questionType": "multiple_choice_single",
-      "prompt": "How much weight has Marcus lost?",
-      "options": [
-        "About 4 kilos",
-        "About 6 kilos",
-        "About 10 kilos",
-        "About 8 kilos"
-      ],
-      "correctAnswer": "About 8 kilos",
-      "explanation": "Marcus says he's probably lost about 8 kilos.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Physiotherapy, knee injury",
+      "questionType": "short_answer",
+      "prompt": "Suspected injury: strain of the medial collateral _______",
+      "question": "Suspected injury: strain of the medial collateral _______",
+      "correctAnswer": "ligament",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 8,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
     },
     {
       "id": "oet-listening-002-q09",
-      "passageId": "oet-listening-002-p1b",
       "part": 1,
-      "topic": "Previous Mental Health History",
-      "questionType": "multiple_choice_single",
-      "prompt": "When did Marcus have a previous episode of depression?",
-      "options": [
-        "5 years ago",
-        "10 years ago",
-        "15 years ago",
-        "He has never had depression before"
-      ],
-      "correctAnswer": "10 years ago",
-      "explanation": "Marcus states he had a previous episode about ten years ago.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Physiotherapy, knee injury",
+      "questionType": "short_answer",
+      "prompt": "First-week management: rest, ice, compression and _______",
+      "question": "First-week management: rest, ice, compression and _______",
+      "correctAnswer": "elevation",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 9,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
     },
     {
       "id": "oet-listening-002-q10",
-      "passageId": "oet-listening-002-p1c",
       "part": 1,
-      "topic": "Root Canal Success",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is the estimated success rate for another root canal treatment?",
-      "options": [
-        "20 percent",
-        "10 percent",
-        "50 percent",
-        "70 percent"
-      ],
-      "correctAnswer": "20 percent",
-      "explanation": "The dentist states the success rate would be very low, perhaps 20 percent.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Physiotherapy, knee injury",
+      "questionType": "short_answer",
+      "prompt": "Analgesia advised: _______",
+      "question": "Analgesia advised: _______",
+      "correctAnswer": "paracetamol",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 10,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
     },
     {
       "id": "oet-listening-002-q11",
-      "passageId": "oet-listening-002-p1c",
       "part": 1,
-      "topic": "Extraction Appointment",
-      "questionType": "multiple_choice_single",
-      "prompt": "What day and time is the extraction scheduled?",
-      "options": [
-        "Next Monday at 9 AM",
-        "Next Thursday at 10 AM",
-        "Next Wednesday at 2 PM",
-        "Next Friday at 3 PM"
+      "topic": "Consultation 1 — Physiotherapy, knee injury",
+      "questionType": "short_answer",
+      "prompt": "Review frequency: twice a week for _______ weeks",
+      "question": "Review frequency: twice a week for _______ weeks",
+      "correctAnswer": "four",
+      "alternateAnswers": [
+        "4"
       ],
-      "correctAnswer": "Next Thursday at 10 AM",
-      "explanation": "The dentist offers an appointment next Thursday at 10 AM.",
-      "difficulty": "easy"
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 11,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
     },
     {
       "id": "oet-listening-002-q12",
-      "passageId": "oet-listening-002-p1c",
       "part": 1,
-      "topic": "Healing Timeline",
-      "questionType": "multiple_choice_single",
-      "prompt": "How long before the extraction site has healed enough to discuss replacement options?",
-      "options": [
-        "1 to 2 months",
-        "3 to 4 months",
-        "5 to 6 months",
-        "6 to 8 months"
-      ],
-      "correctAnswer": "3 to 4 months",
-      "explanation": "The dentist states the extraction site takes three to four months to heal.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Physiotherapy, knee injury",
+      "questionType": "short_answer",
+      "prompt": "Investigation if no improvement: _______ scan",
+      "question": "Investigation if no improvement: _______ scan",
+      "correctAnswer": "MRI",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 12,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
     },
     {
       "id": "oet-listening-002-q13",
+      "part": 1,
+      "topic": "Consultation 2 — Community mental health",
+      "questionType": "short_answer",
+      "prompt": "Duration of low mood: about _______ months",
+      "question": "Duration of low mood: about _______ months",
+      "correctAnswer": "three",
+      "alternateAnswers": [
+        "3"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 13,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
+    },
+    {
+      "id": "oet-listening-002-q14",
+      "part": 1,
+      "topic": "Consultation 2 — Community mental health",
+      "questionType": "short_answer",
+      "prompt": "Trigger: patient lost his _______",
+      "question": "Trigger: patient lost his _______",
+      "correctAnswer": "job",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 14,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
+    },
+    {
+      "id": "oet-listening-002-q15",
+      "part": 1,
+      "topic": "Consultation 2 — Community mental health",
+      "questionType": "short_answer",
+      "prompt": "Previous episode: about _______ years ago",
+      "question": "Previous episode: about _______ years ago",
+      "correctAnswer": "ten",
+      "alternateAnswers": [
+        "10"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 15,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
+    },
+    {
+      "id": "oet-listening-002-q16",
+      "part": 1,
+      "topic": "Consultation 2 — Community mental health",
+      "questionType": "short_answer",
+      "prompt": "Previously recovered with medication and _______",
+      "question": "Previously recovered with medication and _______",
+      "correctAnswer": "counselling",
+      "alternateAnswers": [
+        "counseling"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 16,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
+    },
+    {
+      "id": "oet-listening-002-q17",
+      "part": 1,
+      "topic": "Consultation 2 — Community mental health",
+      "questionType": "short_answer",
+      "prompt": "Sleep: wakes at _______ and cannot return to sleep",
+      "question": "Sleep: wakes at _______ and cannot return to sleep",
+      "correctAnswer": "3 AM",
+      "alternateAnswers": [
+        "3am",
+        "3 am"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 17,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
+    },
+    {
+      "id": "oet-listening-002-q18",
+      "part": 1,
+      "topic": "Consultation 2 — Community mental health",
+      "questionType": "short_answer",
+      "prompt": "Weight loss: approximately _______ kilos",
+      "question": "Weight loss: approximately _______ kilos",
+      "correctAnswer": "8",
+      "alternateAnswers": [
+        "eight"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 18,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
+    },
+    {
+      "id": "oet-listening-002-q19",
+      "part": 1,
+      "topic": "Consultation 2 — Community mental health",
+      "questionType": "short_answer",
+      "prompt": "Thoughts of self-harm: _______",
+      "question": "Thoughts of self-harm: _______",
+      "correctAnswer": "no",
+      "alternateAnswers": [
+        "none"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 19,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
+    },
+    {
+      "id": "oet-listening-002-q20",
+      "part": 1,
+      "topic": "Consultation 2 — Community mental health",
+      "questionType": "short_answer",
+      "prompt": "Describes feeling _______ at times",
+      "question": "Describes feeling _______ at times",
+      "correctAnswer": "hopeless",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 20,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
+    },
+    {
+      "id": "oet-listening-002-q21",
+      "part": 1,
+      "topic": "Consultation 2 — Community mental health",
+      "questionType": "short_answer",
+      "prompt": "Home support: _______ and two children",
+      "question": "Home support: _______ and two children",
+      "correctAnswer": "wife",
+      "alternateAnswers": [
+        "his wife"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 21,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
+    },
+    {
+      "id": "oet-listening-002-q22",
+      "part": 1,
+      "topic": "Consultation 2 — Community mental health",
+      "questionType": "short_answer",
+      "prompt": "Patient's main worry: being a _______",
+      "question": "Patient's main worry: being a _______",
+      "correctAnswer": "burden",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 22,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
+    },
+    {
+      "id": "oet-listening-002-q23",
+      "part": 1,
+      "topic": "Consultation 2 — Community mental health",
+      "questionType": "short_answer",
+      "prompt": "Referral for medication review: back to the _______",
+      "question": "Referral for medication review: back to the _______",
+      "correctAnswer": "psychiatrist",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 23,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
+    },
+    {
+      "id": "oet-listening-002-q24",
+      "part": 1,
+      "topic": "Consultation 2 — Community mental health",
+      "questionType": "short_answer",
+      "prompt": "Counselling to be arranged: _______",
+      "question": "Counselling to be arranged: _______",
+      "correctAnswer": "weekly",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 24,
+      "passageId": "oet-listening-002-part1",
+      "scriptId": "oet-listening-002-part1"
+    },
+    {
+      "id": "oet-listening-002-q25",
       "passageId": "oet-listening-002-p2a",
       "part": 2,
       "topic": "PPE Requirement",
@@ -250,10 +425,11 @@
       ],
       "correctAnswer": "When entering patient rooms, regardless of diagnosis",
       "explanation": "The manager states all staff must wear FFP2 masks when entering patient rooms, regardless of diagnosis.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 25
     },
     {
-      "id": "oet-listening-002-q14",
+      "id": "oet-listening-002-q26",
       "passageId": "oet-listening-002-p2a",
       "part": 2,
       "topic": "Training Deadline",
@@ -267,10 +443,11 @@
       ],
       "correctAnswer": "By the end of this month",
       "explanation": "The manager states training must be completed by the end of this month.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 26
     },
     {
-      "id": "oet-listening-002-q15",
+      "id": "oet-listening-002-q27",
       "passageId": "oet-listening-002-p2b",
       "part": 2,
       "topic": "Surgery Type",
@@ -284,10 +461,11 @@
       ],
       "correctAnswer": "Hip replacement",
       "explanation": "The nurse states Robert had a total hip replacement five days ago.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 27
     },
     {
-      "id": "oet-listening-002-q16",
+      "id": "oet-listening-002-q28",
       "passageId": "oet-listening-002-p2b",
       "part": 2,
       "topic": "Discharge Planning Timeline",
@@ -301,180 +479,11 @@
       ],
       "correctAnswer": "Tomorrow",
       "explanation": "Nurse A says 'We'd like to discharge him tomorrow.'",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 28
     },
     {
-      "id": "oet-listening-002-q17",
-      "passageId": "oet-listening-002-p3a",
-      "part": 3,
-      "topic": "Programme Target Population",
-      "questionType": "multiple_choice_single",
-      "prompt": "Which groups are the vaccination programme designed for?",
-      "options": [
-        "All healthcare workers",
-        "Immunocompromised patients with conditions like HIV or post-chemotherapy",
-        "Elderly patients only",
-        "Children and pregnant women"
-      ],
-      "correctAnswer": "Immunocompromised patients with conditions like HIV or post-chemotherapy",
-      "explanation": "The speaker describes the programme as for immunocompromised patients, including those with HIV and post-chemotherapy.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-listening-002-q18",
-      "passageId": "oet-listening-002-p3a",
-      "part": 3,
-      "topic": "Historical Uptake Rates",
-      "questionType": "multiple_choice_single",
-      "prompt": "What were historical vaccine uptake rates in this population?",
-      "options": [
-        "10 to 20 percent",
-        "30 to 40 percent",
-        "50 to 60 percent",
-        "70 to 80 percent"
-      ],
-      "correctAnswer": "30 to 40 percent",
-      "explanation": "The speaker mentions historical uptake rates were 30 to 40 percent.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-002-q19",
-      "passageId": "oet-listening-002-p3a",
-      "part": 3,
-      "topic": "Pilot Programme Results",
-      "questionType": "multiple_choice_single",
-      "prompt": "What was the uptake rate in the pilot programme?",
-      "options": [
-        "70 percent",
-        "80 percent",
-        "75 percent",
-        "95 percent"
-      ],
-      "correctAnswer": "80 percent",
-      "explanation": "The speaker states the pilot showed 95 percent identification and 80 percent uptake.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-002-q20",
-      "passageId": "oet-listening-002-p3a",
-      "part": 3,
-      "topic": "Implementation Timeline",
-      "questionType": "multiple_choice_single",
-      "prompt": "When does the programme rollout begin?",
-      "options": [
-        "This month",
-        "In three months",
-        "Next month",
-        "In six months"
-      ],
-      "correctAnswer": "Next month",
-      "explanation": "The speaker states 'Roll-out begins next month across all practices in the region.'",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-002-q21",
-      "passageId": "oet-listening-002-p1a",
-      "part": 1,
-      "topic": "Knee Stability Test",
-      "questionType": "multiple_choice_single",
-      "prompt": "What did the physiotherapy test reveal about the knee?",
-      "options": [
-        "Complete stability",
-        "Normal function",
-        "Severe fracture",
-        "Some laxity indicating ligament injury"
-      ],
-      "correctAnswer": "Some laxity indicating ligament injury",
-      "explanation": "The physiotherapist confirms laxity found during special tests.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-listening-002-q22",
-      "passageId": "oet-listening-002-p1a",
-      "part": 1,
-      "topic": "Weight-Bearing Restriction",
-      "questionType": "multiple_choice_single",
-      "prompt": "What activity restriction is recommended initially?",
-      "options": [
-        "No restrictions",
-        "Full activity immediately",
-        "Complete immobility for 4 weeks",
-        "Avoid weight-bearing for now"
-      ],
-      "correctAnswer": "Avoid weight-bearing for now",
-      "explanation": "The physiotherapist recommends avoiding weight-bearing initially.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-002-q23",
-      "passageId": "oet-listening-002-p1b",
-      "part": 1,
-      "topic": "Depression Trigger",
-      "questionType": "multiple_choice_single",
-      "prompt": "What was the trigger for Marcus's depression?",
-      "options": [
-        "Medical illness",
-        "Financial crisis",
-        "Relationship problems",
-        "Loss of job"
-      ],
-      "correctAnswer": "Loss of job",
-      "explanation": "Marcus states his depression started when he lost his job.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-002-q24",
-      "passageId": "oet-listening-002-p1b",
-      "part": 1,
-      "topic": "Support System",
-      "questionType": "multiple_choice_single",
-      "prompt": "Who provides support to Marcus at home?",
-      "options": [
-        "Healthcare professionals only",
-        "Only his friends",
-        "He lives alone",
-        "His wife and two children"
-      ],
-      "correctAnswer": "His wife and two children",
-      "explanation": "Marcus mentions his wife is supportive and they have two children.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-002-q25",
-      "passageId": "oet-listening-002-p1c",
-      "part": 1,
-      "topic": "Tooth Status",
-      "questionType": "multiple_choice_single",
-      "prompt": "Why won't Mr Sato feel pain during extraction?",
-      "options": [
-        "He requested general anaesthesia",
-        "He has a high pain threshold",
-        "He takes pain medication",
-        "The tooth is non-vital"
-      ],
-      "correctAnswer": "The tooth is non-vital",
-      "explanation": "The dentist states the tooth is non-vital, so extraction won't cause pain.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-listening-002-q26",
-      "passageId": "oet-listening-002-p1c",
-      "part": 1,
-      "topic": "Post-Extraction Care",
-      "questionType": "multiple_choice_single",
-      "prompt": "What post-operative advice did the dentist give?",
-      "options": [
-        "Eat hot foods immediately",
-        "Rinse vigorously to clean the socket",
-        "Sleep on the affected side",
-        "Avoid hot foods for a few days and don't rinse vigorously"
-      ],
-      "correctAnswer": "Avoid hot foods for a few days and don't rinse vigorously",
-      "explanation": "The dentist gives these specific post-operative instructions.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-002-q27",
+      "id": "oet-listening-002-q29",
       "passageId": "oet-listening-002-p2a",
       "part": 2,
       "topic": "Disciplinary Response",
@@ -488,10 +497,11 @@
       ],
       "correctAnswer": "Addressed through disciplinary procedures",
       "explanation": "The manager states breaches will be addressed through disciplinary procedures.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 29
     },
     {
-      "id": "oet-listening-002-q28",
+      "id": "oet-listening-002-q30",
       "passageId": "oet-listening-002-p2a",
       "part": 2,
       "topic": "Measure Review Period",
@@ -505,27 +515,83 @@
       ],
       "correctAnswer": "After 6 weeks",
       "explanation": "The manager states the measures will be reviewed in six weeks.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 30
     },
     {
-      "id": "oet-listening-002-q29",
-      "passageId": "oet-listening-002-p2b",
-      "part": 2,
-      "topic": "Discharge Appropriateness",
+      "id": "oet-listening-002-q31",
+      "passageId": "oet-listening-002-p3a",
+      "part": 3,
+      "topic": "Programme Target Population",
       "questionType": "multiple_choice_single",
-      "prompt": "Why is discharging Robert Thompson on day 5 post-op considered appropriate?",
+      "prompt": "Which groups are the vaccination programme designed for?",
       "options": [
-        "It's always appropriate for cost reasons",
-        "The hospital is overcrowded",
-        "Standard protocol requires early discharge",
-        "He's progressing well and has family support"
+        "All healthcare workers",
+        "Immunocompromised patients with conditions like HIV or post-chemotherapy",
+        "Elderly patients only",
+        "Children and pregnant women"
       ],
-      "correctAnswer": "He's progressing well and has family support",
-      "explanation": "The nurses note his good progress and his daughter's daily visit as supporting early discharge.",
-      "difficulty": "medium"
+      "correctAnswer": "Immunocompromised patients with conditions like HIV or post-chemotherapy",
+      "explanation": "The speaker describes the programme as for immunocompromised patients, including those with HIV and post-chemotherapy.",
+      "difficulty": "medium",
+      "questionNumber": 31
     },
     {
-      "id": "oet-listening-002-q30",
+      "id": "oet-listening-002-q32",
+      "passageId": "oet-listening-002-p3a",
+      "part": 3,
+      "topic": "Historical Uptake Rates",
+      "questionType": "multiple_choice_single",
+      "prompt": "What were historical vaccine uptake rates in this population?",
+      "options": [
+        "10 to 20 percent",
+        "30 to 40 percent",
+        "50 to 60 percent",
+        "70 to 80 percent"
+      ],
+      "correctAnswer": "30 to 40 percent",
+      "explanation": "The speaker mentions historical uptake rates were 30 to 40 percent.",
+      "difficulty": "easy",
+      "questionNumber": 32
+    },
+    {
+      "id": "oet-listening-002-q33",
+      "passageId": "oet-listening-002-p3a",
+      "part": 3,
+      "topic": "Pilot Programme Results",
+      "questionType": "multiple_choice_single",
+      "prompt": "What was the uptake rate in the pilot programme?",
+      "options": [
+        "70 percent",
+        "80 percent",
+        "75 percent",
+        "95 percent"
+      ],
+      "correctAnswer": "80 percent",
+      "explanation": "The speaker states the pilot showed 95 percent identification and 80 percent uptake.",
+      "difficulty": "easy",
+      "questionNumber": 33
+    },
+    {
+      "id": "oet-listening-002-q34",
+      "passageId": "oet-listening-002-p3a",
+      "part": 3,
+      "topic": "Implementation Timeline",
+      "questionType": "multiple_choice_single",
+      "prompt": "When does the programme rollout begin?",
+      "options": [
+        "This month",
+        "In three months",
+        "Next month",
+        "In six months"
+      ],
+      "correctAnswer": "Next month",
+      "explanation": "The speaker states 'Roll-out begins next month across all practices in the region.'",
+      "difficulty": "easy",
+      "questionNumber": 34
+    },
+    {
+      "id": "oet-listening-002-q35",
       "passageId": "oet-listening-002-p3a",
       "part": 3,
       "topic": "Barriers to Vaccine Uptake",
@@ -539,7 +605,148 @@
       ],
       "correctAnswer": "Lack of awareness, inconvenient scheduling, and patient fears about safety",
       "explanation": "The speaker identifies these three specific barriers that were addressed.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "questionNumber": 35
+    },
+    {
+      "id": "oet-listening-002-q36",
+      "part": 3,
+      "passageId": "oet-listening-002-part3",
+      "scriptId": "oet-listening-002-part3",
+      "topic": "Vaccination Programme",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which group is the vaccination programme aimed at?",
+      "question": "Which group is the vaccination programme aimed at?",
+      "options": [
+        "Children under five",
+        "Immunosuppressed populations",
+        "Pregnant women",
+        "Healthcare workers"
+      ],
+      "correctAnswer": "Immunosuppressed populations",
+      "explanation": "The speaker opens by stating the rollout is for immunosuppressed populations.",
+      "difficulty": "medium",
+      "questionNumber": 36
+    },
+    {
+      "id": "oet-listening-002-q37",
+      "part": 3,
+      "passageId": "oet-listening-002-part3",
+      "scriptId": "oet-listening-002-part3",
+      "topic": "Vaccination Programme",
+      "questionType": "multiple_choice_single",
+      "prompt": "What does the speaker describe as the key innovation?",
+      "question": "What does the speaker describe as the key innovation?",
+      "options": [
+        "A new combined vaccine",
+        "A pre-vaccination assessment of baseline immunity",
+        "A mobile vaccination unit",
+        "An electronic reminder system"
+      ],
+      "correctAnswer": "A pre-vaccination assessment of baseline immunity",
+      "explanation": "The speaker calls the pre-vaccination assessment measuring baseline immunity the key innovation.",
+      "difficulty": "medium",
+      "questionNumber": 37
+    },
+    {
+      "id": "oet-listening-002-q38",
+      "part": 3,
+      "passageId": "oet-listening-002-part3",
+      "scriptId": "oet-listening-002-part3",
+      "topic": "Vaccination Programme",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is used to tailor vaccine type and timing?",
+      "question": "What is used to tailor vaccine type and timing?",
+      "options": [
+        "Patient age and weight",
+        "CD4 counts and other markers",
+        "Postcode of residence",
+        "Previous vaccination dates only"
+      ],
+      "correctAnswer": "CD4 counts and other markers",
+      "explanation": "The speaker says tailoring is based on CD4 counts and other markers.",
+      "difficulty": "medium",
+      "questionNumber": 38
+    },
+    {
+      "id": "oet-listening-002-q39",
+      "part": 3,
+      "passageId": "oet-listening-002-part3",
+      "scriptId": "oet-listening-002-part3",
+      "topic": "Vaccination Programme",
+      "questionType": "multiple_choice_single",
+      "prompt": "When can patients receive live vaccines?",
+      "question": "When can patients receive live vaccines?",
+      "options": [
+        "Immediately on diagnosis",
+        "Only after immune recovery",
+        "Only in hospital settings",
+        "At the same time as inactivated vaccines"
+      ],
+      "correctAnswer": "Only after immune recovery",
+      "explanation": "The speaker states some patients require live vaccines only after immune recovery.",
+      "difficulty": "medium",
+      "questionNumber": 39
+    },
+    {
+      "id": "oet-listening-002-q40",
+      "part": 3,
+      "passageId": "oet-listening-002-part3",
+      "scriptId": "oet-listening-002-part3",
+      "topic": "Vaccination Programme",
+      "questionType": "multiple_choice_single",
+      "prompt": "What uptake did the pilot achieve?",
+      "question": "What uptake did the pilot achieve?",
+      "options": [
+        "30 percent",
+        "40 percent",
+        "80 percent",
+        "95 percent"
+      ],
+      "correctAnswer": "80 percent",
+      "explanation": "Pilot data showed 95 percent identification of eligible patients and 80 percent uptake.",
+      "difficulty": "medium",
+      "questionNumber": 40
+    },
+    {
+      "id": "oet-listening-002-q41",
+      "part": 3,
+      "passageId": "oet-listening-002-part3",
+      "scriptId": "oet-listening-002-part3",
+      "topic": "Vaccination Programme",
+      "questionType": "multiple_choice_single",
+      "prompt": "What were historical uptake rates?",
+      "question": "What were historical uptake rates?",
+      "options": [
+        "10 to 20 percent",
+        "30 to 40 percent",
+        "50 to 60 percent",
+        "70 to 80 percent"
+      ],
+      "correctAnswer": "30 to 40 percent",
+      "explanation": "The speaker contrasts the pilot with historical rates of 30 to 40 percent.",
+      "difficulty": "medium",
+      "questionNumber": 41
+    },
+    {
+      "id": "oet-listening-002-q42",
+      "part": 3,
+      "passageId": "oet-listening-002-part3",
+      "scriptId": "oet-listening-002-part3",
+      "topic": "Vaccination Programme",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which barrier did the speaker NOT identify?",
+      "question": "Which barrier did the speaker NOT identify?",
+      "options": [
+        "Lack of awareness",
+        "Inconvenient appointment scheduling",
+        "Patient fears about vaccine safety",
+        "Shortage of vaccine supply"
+      ],
+      "correctAnswer": "Shortage of vaccine supply",
+      "explanation": "The three barriers named are awareness, scheduling and safety fears; supply shortage is not mentioned.",
+      "difficulty": "medium",
+      "questionNumber": 42
     }
   ],
   "listeningScripts": [
