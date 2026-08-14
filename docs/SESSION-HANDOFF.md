@@ -1,6 +1,6 @@
 # LandingPrep — Session Handoff (read me FIRST in a new session)
 
-**Last updated: 2026-08-13 (session 10) · repo at v456 · branch `main`, all pushed & live.**
+**Last updated: 2026-08-13 (session 10) · repo at v462 · branch `main`, all pushed & live.**
 Production auto-deploys on every push to `main`. Keep this file updated at the end of major
 work — it went 4 versions stale (said v394 while production ran v401) and cost a session's
 worth of re-derivation.
@@ -28,7 +28,7 @@ worth of re-derivation.
 > and the warning did not stop it happening again. Read `sw.js`
 > (`git show <sha>:sw.js | grep lp-v`) for the real value, every time.
 > Verified chain: 401 → 405 → 409 → 411 → 413 → 415 → 416 → 417 → 421 → 423 → 425 → 428 → 431
-> → 432 → 436 → 437 → 438 → 439 → 443 → 445 → 448 → 451 → 452 → 453 → 454 → 456 — every deploy bumped, no duplicates.
+> → 432 → 436 → 437 → 438 → 439 → 443 → 445 → 448 → 451 → 452 → 453 → 454 → 456 → 458 → 459 → 460 → 461 → 462 — every deploy bumped, no duplicates.
 
 > 🔎 **Session 10 changed where the effort should go.** Sessions 7–9 concluded the on-site work
 > was exhausted and only authority remained. That is still true *for SEO* — but it was never
@@ -44,7 +44,10 @@ worth of re-derivation.
 
 Queued in deliberate order; each item is one focused pass. Nothing below needs re-deriving.
 
-**1. Two more exam-format blog posts** — the highest-value content play on this site, because
+**1. ~~Two more exam-format blog posts~~ DONE (9fb99d71 ACT, 032e6fd5 SAT). Next: deepen /practice/* pages, now 10 exams incl. the new ACT/SAT.**
+
+Original note kept for method:
+**Two more exam-format blog posts** — the highest-value content play on this site, because
 recency is the one axis where a domain with no backlinks outranks an incumbent. 127 posts and
 none covered a 2025/26 format change until `toefl-2026-adaptive-format-changes`.
    - **Enhanced ACT (2025)** — 50q/35min English, 45q/50min Math, 36q/40min Reading,
@@ -60,7 +63,7 @@ none covered a 2025/26 format change until `toefl-2026-adaptive-format-changes`.
    Two traps it hit: `metaDesc` must be ≤160 chars, and the title must be ≤46 chars before
    " | LandingPrep" or `trimTitle` silently eats the keyword.
 
-**2. OET Listening tests 2 and 3** — the last format-conformance gap in the library.
+**2. ~~OET Listening tests 2 and 3~~ DONE (d6547ec0, 8d5e00c0) — format conformance is now COMPLETE across all 1,019 tests.**
    Test 1 is the template: Part A = 24 note-completion items over two consultation extracts,
    every answer keyed verbatim to the existing script.
    **Use `questionType: "short_answer"`, NOT `note_completion`** — the compiled normalizer does
@@ -69,6 +72,36 @@ none covered a 2025/26 format change until `toefl-2026-adaptive-format-changes`.
 
 **3. celpip/reading** — worst duplication in the library: 30 files holding ~1 test's worth of
    material, 4% new. Template: `content/ielts/reading/test-007.json` (100% new material).
+
+### celpip/reading — scoped, not started (the next big job)
+
+**It is already FORMAT-conformant.** 38 questions split 11/8/9/10, 3360s — that is the real
+CELPIP Reading structure (Correspondence 11, Diagram 8, Information 9, Viewpoints 10) and
+`validate-tests.js` passes it. The problem is purely **duplication**: all 30 files share one
+test's worth of material, 4% new, 15 of them adding literally nothing.
+
+**Why it is the hardest test in the library to author.** Each of the four parts uses a
+DIFFERENT passage shape, not a block of prose:
+
+| Part | Type | Passage field | Questions |
+|---|---|---|---|
+| 1 | `correspondence` | `emails: [{from, to, …}]` — a threaded exchange | 11 |
+| 2 | diagram | (check `passages[1]` before writing) | 8 |
+| 3 | information | (check `passages[2]`) | 9 |
+| 4 | viewpoints | (check `passages[3]`) | 10 |
+
+So a new test is four differently-shaped artefacts plus 38 questions, every answer verified
+against its own passage. Budget a full focused session for ONE test; do not attempt it with
+partial context, and do not template it from another exam.
+
+**Order of attack:** author `test-002` first (currently a byte-clone of test-001). That moves
+the section from ~1.1 to ~2 tests' worth of material and proves the shape before the rest.
+
+**Verification, same as every other authored test:** every free-text answer found verbatim in
+its own passage, every MCQ answer present among its options, no option reused as the answer
+across a part, numbering gapless, then `npm test` green and
+`node tools/audit-test-uniqueness.mjs` to confirm the section's percentage actually moved.
+
 
 **Ship rule for all three:** `npm test` must stay green — it now guards answerability with
 `--strict` — and every free-text answer must be found verbatim in its own passage before
