@@ -21703,6 +21703,77 @@ The skill being tested is not vocabulary. It is whether you can **respond to a s
       ]
     },
     {
+      "id": "digital-sat-adaptive-modules",
+      "tag": "SAT",
+      "date": "2026",
+      "title": "Digital SAT: How the Adaptive Modules Work",
+      "excerpt": "The digital SAT is 98 questions in 2 hours 14 minutes, and each section splits into two modules where your first-module performance decides the difficulty of the second. Here is what that changes about how you take it.",
+      "kw": "digital SAT format, SAT adaptive modules, SAT module 1 module 2, digital SAT timing, SAT 98 questions, SAT reading and writing 54 questions, SAT math 44 questions, how digital SAT adaptive works",
+      "metaDesc": "Digital SAT: 98 questions in 2h14m. Reading & Writing 54q/64min, Math 44q/70min, each split into two adaptive modules. Free practice on this format.",
+      "sections": [
+        {
+          "h": "The structure",
+          "body": "College Board's published structure for the digital SAT:\n\n| Section | Questions | Time | Modules |\n|---|---|---|---|\n| Reading and Writing | 54 | 64 min | two 32-minute modules |\n| Mathematics | 44 | 70 min | two 35-minute modules |\n| **Total** | **98** | **2 hr 14 min** | |\n\nThere is a **10-minute break** between the Reading and Writing section and the Math section. Most questions are multiple choice, though some Math questions ask you to enter the answer rather than select it.\n\nReading and Writing always comes first. You cannot choose the order."
+        },
+        {
+          "h": "How the adaptive modules actually work",
+          "body": `This is the part that most changes how the test behaves, and it is worth being precise about because it is widely described loosely.
+
+Each section is split into **two equal-length modules**. You take Module 1, and then \u2014 in College Board's own words \u2014 "based on how you perform on the first module, the second module of questions will either be more difficult or less difficult."
+
+So the adaptivity is **between modules, not between questions**. This matters:
+
+- Within a module, the difficulty does not react to individual answers. You can move back and forth freely inside a module and change answers.
+- The routing decision happens **once per section**, after Module 1.
+- It is not the GRE's question-by-question model, and it is not a fixed-form paper test either.
+
+The practical consequence: **Module 1 carries weight beyond its own marks.** It decides which version of Module 2 you see, and therefore the score range realistically available to you in that section.`
+        },
+        {
+          "h": "If Module 2 feels harder, that is usually good news",
+          "body": 'The single most common way students hurt themselves on an adaptive test is misreading difficulty as failure.\n\nIf your second Math module feels noticeably tougher than the first, the most likely explanation is that you did well enough in Module 1 to be routed into the harder version. Students who interpret that as "I am failing" and rush or panic give back marks they had already earned.\n\nThe inverse is also worth knowing, and is less comfortable: if Module 2 feels easy, you may be in the lower-difficulty version. Nothing is gained by dwelling on it mid-test \u2014 the only useful response is to answer every question in front of you as accurately as you can, because your score still depends on how you perform in the module you are actually in.'
+        },
+        {
+          "h": "What this changes about preparation",
+          "body": "**Front-load your accuracy.** On a fixed-form test, a mark is a mark wherever you earn it. Here, Module 1 both scores you and routes you. Careless early errors cost twice.\n\n**Practise whole sections, not question sets.** The routing only exists at section scale. Ten-question drills cannot reproduce it, and they train a pacing instinct that does not match the real thing.\n\n**Use the in-module freedom.** Because difficulty does not move within a module, the old technique of flagging a hard question and returning to it still works. Do not leave marks behind out of a mistaken belief that the test is watching each answer.\n\n**Get the timing into your body.** 64 minutes then 70 minutes, with a 10-minute break, is a specific rhythm. Practising at other lengths trains the wrong stamina."
+        },
+        {
+          "h": "Digital SAT or ACT?",
+          "body": "Both are accepted essentially everywhere in the US and no university prefers one. The two tests have moved in different directions, which makes the choice more meaningful than it used to be:\n\n- **The SAT is adaptive**; the enhanced ACT is not. Some students strongly prefer a fixed form whose difficulty does not shift under them.\n- **The ACT's Science section is now optional** and excluded from its Composite \u2014 see our [enhanced ACT guide](/blog/enhanced-act-format-changes/). The SAT has no science section at all.\n- **The SAT is 98 questions in 2h14m**; the ACT's three core sections are 131 questions in 165 minutes. The SAT asks fewer questions with more time each.\n\nThe only reliable way to choose is to sit one full timed practice test of each and compare how you actually performed \u2014 not how the formats look described on a page.\n\nOur [free practice tests](/#/exam-prep) are built to the current structure and timings for both."
+        }
+      ],
+      "faqs": [
+        [
+          "How many questions are on the digital SAT?",
+          "98 in total: 54 in Reading and Writing and 44 in Math."
+        ],
+        [
+          "How long is the digital SAT?",
+          "2 hours and 14 minutes of testing \u2014 64 minutes for Reading and Writing and 70 minutes for Math \u2014 plus a 10-minute break between the two sections."
+        ],
+        [
+          "What does adaptive mean on the SAT?",
+          "Each section has two modules. Your performance on the first module determines whether the second module is more or less difficult. The adaptivity is between modules, not between individual questions."
+        ],
+        [
+          "Can I go back and change answers on the digital SAT?",
+          "Within a module, yes. Difficulty does not react to individual answers inside a module, so you can move between its questions and revise them. You cannot return to Module 1 once Module 2 begins."
+        ],
+        [
+          "Does Module 1 matter more than Module 2?",
+          "It carries extra weight in one specific sense: as well as being scored, it decides which version of Module 2 you receive, and therefore the score range realistically available in that section."
+        ],
+        [
+          "Is it bad if the second module feels harder?",
+          "Usually the opposite. Being routed to the more difficult second module generally means you performed well on the first."
+        ],
+        [
+          "Is the digital SAT easier than the old paper SAT?",
+          "It is shorter and asks fewer questions with more time each. That changes what the test rewards \u2014 accuracy over speed \u2014 rather than making the content easier."
+        ]
+      ]
+    },
+    {
       "id": "gre-format-2026-complete-guide",
       "tag": "GRE",
       "date": "2026",
