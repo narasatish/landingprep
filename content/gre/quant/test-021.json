@@ -15,11 +15,11 @@
       "prompt": "If 9 painters can paint 9 walls in 9 days, how many days would it take 9 painters to paint 9 walls?",
       "difficulty": "medium",
       "options": [
+        "9",
         "8",
         "10",
         "1",
-        "18",
-        "9"
+        "18"
       ],
       "correctAnswer": "9",
       "explanation": "Each painter paints 1 wall in 9 days. 9 painters painting 9 walls (one each) still take 9 days.",
@@ -32,11 +32,11 @@
       "prompt": "If 2/5 of a number is 56, what is 3/7 of that number?",
       "difficulty": "medium",
       "options": [
-        "80",
         "116",
         "60",
         "140",
-        "56"
+        "56",
+        "80"
       ],
       "correctAnswer": "60",
       "explanation": "The number is 56 ÷ 2/5 = 140. Then 3/7 × 140 = 60.",
@@ -49,11 +49,11 @@
       "prompt": "The perimeter of a rectangle is 70 and its area is 216. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
-        "27",
         "10",
         "19",
         "8",
-        "35"
+        "35",
+        "27"
       ],
       "correctAnswer": "8",
       "explanation": "Sides sum to 35 and multiply to 216. They are 8 and 27; the shorter side is 8.",
@@ -66,11 +66,11 @@
       "prompt": "The average of a and b is 60, and the average of b and c is 34. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "52",
-        "54",
         "-52",
         "26",
-        "94"
+        "94",
+        "52",
+        "54"
       ],
       "correctAnswer": "52",
       "explanation": "a+b = 120 and b+c = 68. Subtracting: a − c = 120 − 68 = 52.",
@@ -83,11 +83,11 @@
       "prompt": "A survey of 590 workers found 150 commute by car, 90 by public transit, and 60 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "25.4%",
+        "44.2%",
         "54.2%",
         "15.3%",
-        "49.2%",
-        "25.4%",
-        "44.2%"
+        "49.2%"
       ],
       "correctAnswer": "49.2%",
       "explanation": "Work from home = 590 − 150 − 90 − 60 = 290. As a percentage: 290/590 = 49.2%.",
@@ -100,11 +100,11 @@
       "prompt": "5^x + 5^x + 5^x + 5^x + 5^x = ?",
       "difficulty": "medium",
       "options": [
-        "20^x",
         "5^(x+1)",
         "25^x",
         "5^(5x)",
-        "5^x"
+        "5^x",
+        "20^x"
       ],
       "correctAnswer": "5^(x+1)",
       "explanation": "Adding 5 copies of 5^x gives 5 × 5^x = 5^1 × 5^x = 5^(x+1).",
@@ -151,11 +151,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 2 remain; divided among 8 children, 2 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
-        "1",
         "0",
         "2",
         "3",
-        "4"
+        "4",
+        "1"
       ],
       "correctAnswer": "4",
       "explanation": "The only n in range with n≡2 (mod 7) and n≡2 (mod 8) is 58. Then 58 ÷ 9 leaves remainder 4.",
@@ -168,11 +168,11 @@
       "prompt": "What is 20% of 390?",
       "difficulty": "medium",
       "options": [
-        "78",
         "410",
         "780",
         "156",
-        "370"
+        "370",
+        "78"
       ],
       "correctAnswer": "78",
       "explanation": "20% of 390 = 20/100 × 390 = 78.",
@@ -185,11 +185,11 @@
       "prompt": "The average of 4 numbers is 8. If one number equal to 2 is removed, what is the average of the remaining 3 numbers?",
       "difficulty": "medium",
       "options": [
+        "10",
         "8",
         "11",
         "2",
-        "9",
-        "10"
+        "9"
       ],
       "correctAnswer": "10",
       "explanation": "Total = 4×8 = 32. Remove 2: remaining total 30 over 3 numbers = 10.",
@@ -202,11 +202,11 @@
       "prompt": "What is the sum of all integers x such that -42 < x ≤ 27?",
       "difficulty": "medium",
       "options": [
-        "-525",
         "-510",
         "-483",
         "483",
-        "-456"
+        "-456",
+        "-525"
       ],
       "correctAnswer": "-483",
       "explanation": "The integers run from -41 to 27. Pairing/series sum = -483.",
@@ -219,11 +219,11 @@
       "prompt": "A jacket priced at $100 is discounted by 10% and then taxed at 10%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$90",
         "$109",
         "$99",
         "$110.00",
-        "$100",
-        "$90"
+        "$100"
       ],
       "correctAnswer": "$99",
       "explanation": "After 10% off: $90. After 10% tax: $90 × 1.1 = $99.",
@@ -270,11 +270,11 @@
       "prompt": "The perimeter of a rectangle is 88 and its area is 459. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
-        "27",
         "17",
         "10",
         "19",
-        "44"
+        "44",
+        "27"
       ],
       "correctAnswer": "17",
       "explanation": "Sides sum to 44 and multiply to 459. They are 17 and 27; the shorter side is 17.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "A right triangle has legs of length 6 and 8. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
-        "10",
         "12",
         "14",
         "9",
-        "11"
+        "11",
+        "10"
       ],
       "correctAnswer": "10",
       "explanation": "Hypotenuse = √(6² + 8²) = √100 = 10.",
@@ -352,11 +352,11 @@
       "prompt": "In a class of 30 students, the ratio of those who passed to those who failed is 4:6. How many students passed?",
       "difficulty": "medium",
       "options": [
-        "9",
-        "30",
         "12",
         "15",
-        "18"
+        "18",
+        "9",
+        "30"
       ],
       "correctAnswer": "12",
       "explanation": "Total parts = 10, each part = 30/10 = 3. Passed = 4 × 3 = 12.",
@@ -369,11 +369,11 @@
       "prompt": "If 4x + 1 = 3x + 10, what is the value of x²?",
       "difficulty": "medium",
       "options": [
-        "18",
-        "80",
         "9",
         "81",
-        "90"
+        "90",
+        "18",
+        "80"
       ],
       "correctAnswer": "81",
       "explanation": "4x − 3x = 10 − 1 → 1x = 9 → x = 9. So x² = 81.",
@@ -386,11 +386,11 @@
       "prompt": "A right triangle has legs of length 9 and 12. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
-        "16",
         "21",
         "17",
         "15",
-        "14"
+        "14",
+        "16"
       ],
       "correctAnswer": "15",
       "explanation": "Hypotenuse = √(9² + 12²) = √225 = 15.",
@@ -420,11 +420,11 @@
       "prompt": "Which discipline had the highest completion rate in 2024?",
       "difficulty": "medium",
       "options": [
-        "Engineering",
-        "Business",
         "Liberal Arts",
         "Computer Science",
-        "Engineering and Business tied"
+        "Engineering and Business tied",
+        "Engineering",
+        "Business"
       ],
       "correctAnswer": "Business",
       "explanation": "2024 rates: Engineering 88%, Business 91%, Liberal Arts 88%, Computer Science 86%",
@@ -477,11 +477,11 @@
       "prompt": "What is the average completion rate for Computer Science across all four years?",
       "difficulty": "medium",
       "options": [
-        "82%",
         "83%",
         "83.5%",
         "84%",
-        "84.5%"
+        "84.5%",
+        "82%"
       ],
       "correctAnswer": "83%",
       "explanation": "(80+82+84+86)/4 = 332/4 = 83%",

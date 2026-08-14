@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's correct last name spelling?",
       "options": [
-        "A-N-D-E-R-S-E-N",
         "A-N-D-E-R-S-O-N",
         "A-N-D-R-E-S-O-N",
-        "A-N-D-E-R-T-O-N"
+        "A-N-D-E-R-T-O-N",
+        "A-N-D-E-R-S-E-N"
       ],
       "correctAnswer": "A-N-D-E-R-S-O-N",
       "explanation": "Diner specifies the correct spelling as 'A-N-D-E-R-S-O-N.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "How many people are in the party?",
       "options": [
+        "Seven",
         "Four",
         "Five",
-        "Six",
-        "Seven"
+        "Six"
       ],
       "correctAnswer": "Six",
       "explanation": "Diner states 'Six of us' in response to the manager's question about party size.",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What special seating request did the customer make?",
       "options": [
-        "Near the kitchen",
         "By the bar",
         "A quiet area away from the bar",
-        "Close to the entrance"
+        "Close to the entrance",
+        "Near the kitchen"
       ],
       "correctAnswer": "A quiet area away from the bar",
       "explanation": "Diner requests 'a quiet table' and manager notes 'a quieter area away from the bar.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What is the restaurant's cancellation policy?",
       "options": [
+        "48 hours notice required",
         "6 hours notice required",
         "12 hours notice required",
-        "24 hours notice required",
-        "48 hours notice required"
+        "24 hours notice required"
       ],
       "correctAnswer": "24 hours notice required",
       "explanation": "Manager states 'We require 24 hours notice for cancellations.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has it been since Sarah and Michael last saw each other?",
       "options": [
-        "Two months",
-        "Four months",
         "Six months",
-        "A year"
+        "A year",
+        "Two months",
+        "Four months"
       ],
       "correctAnswer": "Six months",
       "explanation": "Michael says 'Must be like six months since we last hung out' and Sarah agrees.",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "Where did Michael travel?",
       "options": [
-        "Toronto",
         "Montreal",
         "Vancouver",
-        "Calgary"
+        "Calgary",
+        "Toronto"
       ],
       "correctAnswer": "Vancouver",
       "explanation": "Sarah asks 'How was your trip to Vancouver?' confirming Michael's destination.",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "What type of restaurant does Sarah suggest?",
       "options": [
-        "Mexican",
-        "Italian",
         "Japanese",
-        "Indian"
+        "Indian",
+        "Mexican",
+        "Italian"
       ],
       "correctAnswer": "Italian",
       "explanation": "Sarah mentions 'that new Italian place downtown.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What day do they plan to meet?",
       "options": [
-        "Tuesday",
-        "Wednesday",
         "Thursday",
-        "Friday"
+        "Friday",
+        "Tuesday",
+        "Wednesday"
       ],
       "correctAnswer": "Thursday",
       "explanation": "Michael suggests 'Thursday' and Sarah confirms 'Thursday works for me.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the lost luggage reimbursement limit in the Standard plan?",
       "options": [
-        "$500",
-        "$1,000",
         "$1,500",
-        "$2,500"
+        "$2,500",
+        "$500",
+        "$1,000"
       ],
       "correctAnswer": "$1,000",
       "explanation": "The guide mentions 'lost luggage reimbursement up to one thousand dollars' in the Standard plan.",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the Premium plan's lost luggage coverage limit?",
       "options": [
+        "$2,500",
         "$1,000",
         "$1,500",
-        "$2,000",
-        "$2,500"
+        "$2,000"
       ],
       "correctAnswer": "$2,500",
       "explanation": "The Premium plan includes 'upgrade to two thousand five hundred dollars for lost luggage.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "How long do you have to file a claim after an incident?",
       "options": [
-        "30 days",
         "60 days",
         "90 days",
-        "120 days"
+        "120 days",
+        "30 days"
       ],
       "correctAnswer": "90 days",
       "explanation": "The guide states 'Claims must be filed within ninety days of the incident.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "What is the toll-free claims phone number?",
       "options": [
+        "1-800-555-0417",
         "1-800-555-0140",
         "1-800-555-0147",
-        "1-800-555-0174",
-        "1-800-555-0417"
+        "1-800-555-0174"
       ],
       "correctAnswer": "1-800-555-0147",
       "explanation": "The guide provides 'call our toll-free number at 1-800-555-0147.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the annual value of the agricultural export agreement?",
       "options": [
+        "380 million dollars",
         "250 million dollars",
         "290 million dollars",
-        "340 million dollars",
-        "380 million dollars"
+        "340 million dollars"
       ],
       "correctAnswer": "340 million dollars",
       "explanation": "The deal is valued at approximately 340 million dollars annually.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "By what percentage will Japanese importers increase their purchases?",
       "options": [
-        "15 percent",
-        "20 percent",
         "25 percent",
-        "30 percent"
+        "30 percent",
+        "15 percent",
+        "20 percent"
       ],
       "correctAnswer": "25 percent",
       "explanation": "Importers have committed to increasing purchases by 25 percent over the next five years.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How much canola does Manitoba produce annually?",
       "options": [
-        "5 million tonnes",
         "7 million tonnes",
         "8 million tonnes",
-        "10 million tonnes"
+        "10 million tonnes",
+        "5 million tonnes"
       ],
       "correctAnswer": "8 million tonnes",
       "explanation": "Manitoba produces approximately 8 million tonnes of canola annually.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How many jobs are expected to be created?",
       "options": [
+        "500 jobs",
         "200 jobs",
         "300 jobs",
-        "400 jobs",
-        "500 jobs"
+        "400 jobs"
       ],
       "correctAnswer": "400 jobs",
       "explanation": "The deal is expected to create 400 additional jobs in agriculture and food processing.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the total budget for the renovation?",
       "options": [
-        "5.2 million dollars",
-        "6.0 million dollars",
         "6.8 million dollars",
-        "7.5 million dollars"
+        "7.5 million dollars",
+        "5.2 million dollars",
+        "6.0 million dollars"
       ],
       "correctAnswer": "6.8 million dollars",
       "explanation": "The renovation project is budgeted at 6.8 million dollars.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "How long is the renovation expected to take?",
       "options": [
-        "12 months",
         "15 months",
         "18 months",
-        "24 months"
+        "24 months",
+        "12 months"
       ],
       "correctAnswer": "18 months",
       "explanation": "The project should take about 18 months to complete.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What are the three main components of the renovation?",
       "options": [
+        "Cafe, library, fitness center",
         "Pool, gym, parking lot",
         "Fitness center, pool upgrade, youth spaces",
-        "Gym, parking, offices",
-        "Cafe, library, fitness center"
+        "Gym, parking, offices"
       ],
       "correctAnswer": "Fitness center, pool upgrade, youth spaces",
       "explanation": "Plans include a new fitness center, pool upgrade, and additional youth programming spaces.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What is Robert's main concern?",
       "options": [
+        "Parking during renovation",
         "Noise during construction",
         "Cost of the project",
-        "Where his kids' programs will go",
-        "Parking during renovation"
+        "Where his kids' programs will go"
       ],
       "correctAnswer": "Where his kids' programs will go",
       "explanation": "Robert worries about where after-school programs will be located during construction.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "Where does Susan plan to relocate programs during construction?",
       "options": [
-        "A temporary building",
         "The community room and outdoor spaces",
         "A school gym",
-        "A local fitness facility"
+        "A local fitness facility",
+        "A temporary building"
       ],
       "correctAnswer": "The community room and outdoor spaces",
       "explanation": "Susan plans to maintain and use the community room and outdoor spaces for programs.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What concern does Jason raise about using outdoor space?",
       "options": [
+        "Noise complaints",
         "Weather damage",
         "Limited room for physical activities",
-        "Theft concerns",
-        "Noise complaints"
+        "Theft concerns"
       ],
       "correctAnswer": "Limited room for physical activities",
       "explanation": "Jason notes that if programs move outdoors, there will be limited space for sports and recreation.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What suggestion does Jason make for outdoor activities?",
       "options": [
+        "Move all programs indoors",
         "Build a temporary gym",
         "Close programs temporarily",
-        "Use a local park",
-        "Move all programs indoors"
+        "Use a local park"
       ],
       "correctAnswer": "Use a local park",
       "explanation": "Jason suggests using a local park for outdoor programming during construction.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "Mental health is covered more than physical",
         "Physical health is covered more than mental health",
         "They're equally covered",
-        "Neither is adequately covered"
+        "Neither is adequately covered",
+        "Mental health is covered more than physical"
       ],
       "correctAnswer": "Physical health is covered more than mental health",
       "explanation": "The speaker states mental health is covered at lower rates than physical health.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What is the source of these costs according to the speaker?",
       "options": [
-        "Insurance premiums only",
-        "Lost productivity, emergency services, and hospitalizations",
         "Medication costs",
-        "Administrative expenses"
+        "Administrative expenses",
+        "Insurance premiums only",
+        "Lost productivity, emergency services, and hospitalizations"
       ],
       "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
       "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "It's cheaper than physical health",
         "Early treatment has positive ROI",
         "It reduces insurance profits",
-        "It's cost-neutral"
+        "It's cost-neutral",
+        "It's cheaper than physical health"
       ],
       "correctAnswer": "Early treatment has positive ROI",
       "explanation": "The speaker argues mental health coverage has a positive return on investment.",

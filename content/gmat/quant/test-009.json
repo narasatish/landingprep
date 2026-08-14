@@ -15,11 +15,11 @@
       "section": "quant",
       "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
       "options": [
-        "96",
-        "120",
         "136",
         "140",
-        "152"
+        "152",
+        "96",
+        "120"
       ],
       "correctAnswer": "136",
       "answer": "C",
@@ -33,11 +33,11 @@
       "section": "quant",
       "prompt": "What is the value of 2^5 × 2^3?",
       "options": [
-        "64",
         "128",
         "256",
         "512",
-        "1024"
+        "1024",
+        "64"
       ],
       "correctAnswer": "256",
       "answer": "C",
@@ -51,11 +51,11 @@
       "section": "quant",
       "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
       "options": [
+        "30",
         "18",
         "21",
         "24",
-        "27",
-        "30"
+        "27"
       ],
       "correctAnswer": "21",
       "answer": "B",
@@ -69,11 +69,11 @@
       "section": "quant",
       "prompt": "What is 15% of 15% of 400?",
       "options": [
+        "15",
+        "18",
         "6",
         "9",
-        "12",
-        "15",
-        "18"
+        "12"
       ],
       "correctAnswer": "9",
       "answer": "B",
@@ -87,11 +87,11 @@
       "section": "quant",
       "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
       "options": [
+        "$66",
+        "$70",
         "$57",
         "$60",
-        "$63",
-        "$66",
-        "$70"
+        "$63"
       ],
       "correctAnswer": "$63",
       "answer": "C",
@@ -105,11 +105,11 @@
       "section": "quant",
       "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
       "options": [
-        "120 miles",
-        "135 miles",
         "150 miles",
         "165 miles",
-        "180 miles"
+        "180 miles",
+        "120 miles",
+        "135 miles"
       ],
       "correctAnswer": "150 miles",
       "answer": "C",
@@ -141,11 +141,11 @@
       "section": "quant",
       "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
       "options": [
-        "1/5",
         "2/5",
         "1/2",
         "3/5",
-        "2/3"
+        "2/3",
+        "1/5"
       ],
       "correctAnswer": "3/5",
       "answer": "D",
@@ -159,11 +159,11 @@
       "section": "quant",
       "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
       "options": [
+        "38",
         "29",
         "30",
         "32",
-        "35",
-        "38"
+        "35"
       ],
       "correctAnswer": "32",
       "answer": "C",
@@ -177,11 +177,11 @@
       "section": "quant",
       "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
       "options": [
+        "1300",
         "1175",
         "1225",
         "1250",
-        "1275",
-        "1300"
+        "1275"
       ],
       "correctAnswer": "1275",
       "answer": "D",
@@ -195,11 +195,11 @@
       "section": "quant",
       "prompt": "If x = 5, what is the value of x² − 9?",
       "options": [
-        "12",
-        "14",
         "16",
         "18",
-        "20"
+        "20",
+        "12",
+        "14"
       ],
       "correctAnswer": "16",
       "answer": "C",
@@ -231,11 +231,11 @@
       "section": "quant",
       "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
       "options": [
+        "16 days",
         "8 days",
         "9 days",
         "10 days",
-        "11 days",
-        "16 days"
+        "11 days"
       ],
       "correctAnswer": "9 days",
       "answer": "B",
@@ -249,11 +249,11 @@
       "section": "quant",
       "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
       "options": [
+        "18",
         "13",
         "14",
         "15",
-        "16",
-        "18"
+        "16"
       ],
       "correctAnswer": "15",
       "answer": "C",
@@ -267,11 +267,11 @@
       "section": "quant",
       "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
       "options": [
+        "35%",
         "15%",
         "20%",
         "25%",
-        "30%",
-        "35%"
+        "30%"
       ],
       "correctAnswer": "30%",
       "answer": "D",
@@ -285,11 +285,11 @@
       "section": "quant",
       "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
       "options": [
-        "7",
         "9",
         "10",
         "11",
-        "12"
+        "12",
+        "7"
       ],
       "correctAnswer": "9",
       "answer": "B",
@@ -303,11 +303,11 @@
       "section": "quant",
       "prompt": "If 3x = 18, what is the value of x² + x?",
       "options": [
-        "36",
         "40",
         "42",
         "48",
-        "54"
+        "54",
+        "36"
       ],
       "correctAnswer": "42",
       "answer": "C",
@@ -339,11 +339,11 @@
       "section": "quant",
       "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
       "options": [
+        "176",
         "132",
         "144",
         "154",
-        "168",
-        "176"
+        "168"
       ],
       "correctAnswer": "154",
       "answer": "C",
@@ -357,11 +357,11 @@
       "section": "quant",
       "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
       "options": [
+        "22 litres",
+        "24 litres",
         "16 litres",
         "18 litres",
-        "20 litres",
-        "22 litres",
-        "24 litres"
+        "20 litres"
       ],
       "correctAnswer": "20 litres",
       "answer": "C",
@@ -375,11 +375,11 @@
       "section": "quant",
       "prompt": "What is the value of 5! (5 factorial)?",
       "options": [
-        "60",
-        "100",
         "120",
         "150",
-        "720"
+        "720",
+        "60",
+        "100"
       ],
       "correctAnswer": "120",
       "answer": "C",

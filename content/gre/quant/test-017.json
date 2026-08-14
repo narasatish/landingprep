@@ -32,11 +32,11 @@
       "prompt": "The average of 6 numbers is 9. If one number equal to 19 is removed, what is the average of the remaining 5 numbers?",
       "difficulty": "medium",
       "options": [
+        "6",
         "7",
         "19",
         "8",
-        "9",
-        "6"
+        "9"
       ],
       "correctAnswer": "7",
       "explanation": "Total = 6×9 = 54. Remove 19: remaining total 35 over 5 numbers = 7.",
@@ -49,11 +49,11 @@
       "prompt": "What is the sum of all integers x such that -24 < x ≤ 30?",
       "difficulty": "medium",
       "options": [
+        "165",
         "159",
         "189",
         "-189",
-        "219",
-        "165"
+        "219"
       ],
       "correctAnswer": "189",
       "explanation": "The integers run from -23 to 30. Pairing/series sum = 189.",
@@ -66,11 +66,11 @@
       "prompt": "A jacket priced at $250 is discounted by 30% and then taxed at 5%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$262.50",
+        "$175",
         "$193.75",
         "$183.75",
-        "$250",
-        "$262.50",
-        "$175"
+        "$250"
       ],
       "correctAnswer": "$183.75",
       "explanation": "After 30% off: $175. After 5% tax: $175 × 1.05 = $183.75.",
@@ -83,11 +83,11 @@
       "prompt": "If 9 painters can paint 9 walls in 9 days, how many days would it take 9 painters to paint 9 walls?",
       "difficulty": "medium",
       "options": [
-        "10",
-        "9",
         "1",
         "18",
-        "8"
+        "8",
+        "10",
+        "9"
       ],
       "correctAnswer": "9",
       "explanation": "Each painter paints 1 wall in 9 days. 9 painters painting 9 walls (one each) still take 9 days.",
@@ -100,11 +100,11 @@
       "prompt": "If 3/4 of a number is 30, what is 4/5 of that number?",
       "difficulty": "medium",
       "options": [
-        "30",
-        "40",
         "32",
         "62",
-        "8"
+        "8",
+        "30",
+        "40"
       ],
       "correctAnswer": "32",
       "explanation": "The number is 30 ÷ 3/4 = 40. Then 4/5 × 40 = 32.",
@@ -117,11 +117,11 @@
       "prompt": "The perimeter of a rectangle is 72 and its area is 224. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
+        "36",
         "8",
         "28",
         "10",
-        "20",
-        "36"
+        "20"
       ],
       "correctAnswer": "8",
       "explanation": "Sides sum to 36 and multiply to 224. They are 8 and 28; the shorter side is 8.",
@@ -134,11 +134,11 @@
       "prompt": "The average of a and b is 45, and the average of b and c is 31. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "-28",
         "30",
         "14",
         "28",
-        "76"
+        "76",
+        "-28"
       ],
       "correctAnswer": "28",
       "explanation": "a+b = 90 and b+c = 62. Subtracting: a − c = 90 − 62 = 28.",
@@ -151,11 +151,11 @@
       "prompt": "A survey of 520 workers found 150 commute by car, 70 by public transit, and 30 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "46.9%",
         "13.5%",
         "56.9%",
         "51.9%",
-        "28.8%",
-        "46.9%"
+        "28.8%"
       ],
       "correctAnswer": "51.9%",
       "explanation": "Work from home = 520 − 150 − 70 − 30 = 270. As a percentage: 270/520 = 51.9%.",
@@ -168,11 +168,11 @@
       "prompt": "3^x + 3^x + 3^x = ?",
       "difficulty": "medium",
       "options": [
+        "3^x",
+        "3^(3x)",
         "9^x",
         "12^x",
-        "3^(x+1)",
-        "3^x",
-        "3^(3x)"
+        "3^(x+1)"
       ],
       "correctAnswer": "3^(x+1)",
       "explanation": "Adding 3 copies of 3^x gives 3 × 3^x = 3^1 × 3^x = 3^(x+1).",
@@ -185,11 +185,11 @@
       "prompt": "Sofia can assemble a bookcase 3 times as fast as Marcus. Working together they finish one in 20 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
+        "26.666666666666668",
+        "20",
         "15",
         "40",
-        "80",
-        "26.666666666666668",
-        "20"
+        "80"
       ],
       "correctAnswer": "26.666666666666668",
       "explanation": "Let Marcus's rate be r. Sofia's is 3r, so together (4)r = 1/20, giving r = 1/80. Sofia's rate 3r = 3/80 = 1/26.666666666666668, so Sofia alone takes 26.666666666666668 hours.",
@@ -202,11 +202,11 @@
       "prompt": "The ratio of blue to red marbles is 3 to 7. If 16 blue marbles are added, the ratio becomes 31 to 35. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
+        "31",
+        "35",
         "19",
         "15",
-        "51",
-        "31",
-        "35"
+        "51"
       ],
       "correctAnswer": "35",
       "explanation": "Let blue = 3k and red = 7k. After adding 16: (3k+16)/(7k) = 31/35, which gives k = 5. Red = 7×5 = 35.",
@@ -236,11 +236,11 @@
       "prompt": "What is 15% of 60?",
       "difficulty": "medium",
       "options": [
-        "9",
-        "18",
         "90",
         "45",
-        "75"
+        "75",
+        "9",
+        "18"
       ],
       "correctAnswer": "9",
       "explanation": "15% of 60 = 15/100 × 60 = 9.",
@@ -253,11 +253,11 @@
       "prompt": "The average of 6 numbers is 6. If one number equal to 16 is removed, what is the average of the remaining 5 numbers?",
       "difficulty": "medium",
       "options": [
+        "3",
+        "6",
         "16",
         "5",
-        "4",
-        "3",
-        "6"
+        "4"
       ],
       "correctAnswer": "4",
       "explanation": "Total = 6×6 = 36. Remove 16: remaining total 20 over 5 numbers = 4.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -352,11 +352,11 @@
       "prompt": "A right triangle has legs of length 3 and 4. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "5",
+        "4",
         "7",
         "8",
-        "6",
-        "5",
-        "4"
+        "6"
       ],
       "correctAnswer": "5",
       "explanation": "Hypotenuse = √(3² + 4²) = √25 = 5.",
@@ -369,11 +369,11 @@
       "prompt": "In a class of 66 students, the ratio of those who passed to those who failed is 6:5. How many students passed?",
       "difficulty": "medium",
       "options": [
-        "42",
-        "66",
         "30",
         "36",
-        "40"
+        "40",
+        "42",
+        "66"
       ],
       "correctAnswer": "36",
       "explanation": "Total parts = 11, each part = 66/11 = 6. Passed = 6 × 6 = 36.",
@@ -386,11 +386,11 @@
       "prompt": "If 3x + 4 = 1x + 16, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "6",
         "12",
         "36",
         "35",
-        "42",
-        "6"
+        "42"
       ],
       "correctAnswer": "36",
       "explanation": "3x − 1x = 16 − 4 → 2x = 12 → x = 6. So x² = 36.",
@@ -420,11 +420,11 @@
       "prompt": "What are the total unit sales for Electronics across all four weeks?",
       "difficulty": "medium",
       "options": [
+        "5650",
+        "5750",
         "5400",
         "5500",
-        "5550",
-        "5650",
-        "5750"
+        "5550"
       ],
       "correctAnswer": "5550",
       "explanation": "Electronics: 1200 + 1400 + 1350 + 1600 = 5550 units",
@@ -477,11 +477,11 @@
       "prompt": "In Week 4, Books represented what fraction of total Week 4 sales?",
       "difficulty": "medium",
       "options": [
-        "1/12",
-        "1/10",
         "1/9",
         "1/8",
-        "1/7"
+        "1/7",
+        "1/12",
+        "1/10"
       ],
       "correctAnswer": "1/9",
       "explanation": "Week 4 total: 1600+1100+400+800=3900. Books: 400/3900 ≈ 0.1026 ≈ 1/9.75 (closest 1/9)",
@@ -534,11 +534,11 @@
       "prompt": "Which category had the smallest total sales across all four weeks?",
       "difficulty": "medium",
       "options": [
-        "Electronics",
         "Clothing",
         "Books",
         "Home",
-        "Books and Home tied"
+        "Books and Home tied",
+        "Electronics"
       ],
       "correctAnswer": "Books",
       "explanation": "Books: 1370; Home: 2750; Clothing: 3750; Electronics: 5550",

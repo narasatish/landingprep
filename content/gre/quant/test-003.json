@@ -15,11 +15,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 5 remain; divided among 8 children, 4 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
+        "5",
+        "3",
         "2",
         "1",
-        "0",
-        "5",
-        "3"
+        "0"
       ],
       "correctAnswer": "5",
       "explanation": "The only n in range with n≡5 (mod 7) and n≡4 (mod 8) is 68. Then 68 ÷ 9 leaves remainder 5.",
@@ -32,11 +32,11 @@
       "prompt": "What is 10% of 360?",
       "difficulty": "medium",
       "options": [
-        "350",
         "72",
         "36",
         "370",
-        "360"
+        "360",
+        "350"
       ],
       "correctAnswer": "36",
       "explanation": "10% of 360 = 10/100 × 360 = 36.",
@@ -66,11 +66,11 @@
       "prompt": "What is the sum of all integers x such that -42 < x ≤ 25?",
       "difficulty": "medium",
       "options": [
+        "-511",
+        "-561",
         "536",
         "-536",
-        "-578",
-        "-511",
-        "-561"
+        "-578"
       ],
       "correctAnswer": "-536",
       "explanation": "The integers run from -41 to 25. Pairing/series sum = -536.",
@@ -83,11 +83,11 @@
       "prompt": "A jacket priced at $100 is discounted by 40% and then taxed at 5%. What is the final price?",
       "difficulty": "medium",
       "options": [
-        "$63",
         "$73",
         "$105",
         "$100",
-        "$60"
+        "$60",
+        "$63"
       ],
       "correctAnswer": "$63",
       "explanation": "After 40% off: $60. After 5% tax: $60 × 1.05 = $63.",
@@ -100,11 +100,11 @@
       "prompt": "If 9 painters can paint 9 walls in 9 days, how many days would it take 9 painters to paint 9 walls?",
       "difficulty": "medium",
       "options": [
-        "18",
-        "1",
         "9",
         "10",
-        "8"
+        "8",
+        "18",
+        "1"
       ],
       "correctAnswer": "9",
       "explanation": "Each painter paints 1 wall in 9 days. 9 painters painting 9 walls (one each) still take 9 days.",
@@ -117,11 +117,11 @@
       "prompt": "If 2/3 of a number is 24, what is 1/4 of that number?",
       "difficulty": "medium",
       "options": [
-        "36",
         "24",
         "9",
         "33",
-        "27"
+        "27",
+        "36"
       ],
       "correctAnswer": "9",
       "explanation": "The number is 24 ÷ 2/3 = 36. Then 1/4 × 36 = 9.",
@@ -134,11 +134,11 @@
       "prompt": "The perimeter of a rectangle is 88 and its area is 448. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
+        "18",
+        "12",
         "16",
         "44",
-        "28",
-        "18",
-        "12"
+        "28"
       ],
       "correctAnswer": "16",
       "explanation": "Sides sum to 44 and multiply to 448. They are 16 and 28; the shorter side is 16.",
@@ -151,11 +151,11 @@
       "prompt": "The average of a and b is 31, and the average of b and c is 20. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "22",
-        "51",
         "11",
         "24",
-        "-22"
+        "-22",
+        "22",
+        "51"
       ],
       "correctAnswer": "22",
       "explanation": "a+b = 62 and b+c = 40. Subtracting: a − c = 62 − 40 = 22.",
@@ -168,11 +168,11 @@
       "prompt": "A survey of 550 workers found 150 commute by car, 80 by public transit, and 30 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "14.5%",
+        "47.7%",
         "57.7%",
         "27.3%",
-        "52.7%",
-        "14.5%",
-        "47.7%"
+        "52.7%"
       ],
       "correctAnswer": "52.7%",
       "explanation": "Work from home = 550 − 150 − 80 − 30 = 290. As a percentage: 290/550 = 52.7%.",
@@ -202,11 +202,11 @@
       "prompt": "Sofia can assemble a bookcase 3 times as fast as Marcus. Working together they finish one in 20 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
+        "80",
         "26.666666666666668",
         "40",
         "20",
-        "15",
-        "80"
+        "15"
       ],
       "correctAnswer": "26.666666666666668",
       "explanation": "Let Marcus's rate be r. Sofia's is 3r, so together (4)r = 1/20, giving r = 1/80. Sofia's rate 3r = 3/80 = 1/26.666666666666668, so Sofia alone takes 26.666666666666668 hours.",
@@ -219,11 +219,11 @@
       "prompt": "The ratio of blue to red marbles is 2 to 7. If 18 blue marbles are added, the ratio becomes 13 to 14. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
+        "8",
+        "10",
         "28",
         "46",
-        "26",
-        "8",
-        "10"
+        "26"
       ],
       "correctAnswer": "28",
       "explanation": "Let blue = 2k and red = 7k. After adding 18: (2k+18)/(7k) = 13/14, which gives k = 4. Red = 7×4 = 28.",
@@ -236,11 +236,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 6 remain; divided among 8 children, 1 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
+        "2",
         "3",
         "1",
         "5",
-        "0",
-        "2"
+        "0"
       ],
       "correctAnswer": "5",
       "explanation": "The only n in range with n≡6 (mod 7) and n≡1 (mod 8) is 41. Then 41 ÷ 9 leaves remainder 5.",
@@ -253,11 +253,11 @@
       "prompt": "What is 15% of 220?",
       "difficulty": "medium",
       "options": [
+        "235",
         "330",
         "66",
         "205",
-        "33",
-        "235"
+        "33"
       ],
       "correctAnswer": "33",
       "explanation": "15% of 220 = 15/100 × 220 = 33.",
@@ -270,11 +270,11 @@
       "prompt": "The average of 5 numbers is 8. If one number equal to 28 is removed, what is the average of the remaining 4 numbers?",
       "difficulty": "medium",
       "options": [
-        "8",
         "3",
         "2",
         "28",
-        "4"
+        "4",
+        "8"
       ],
       "correctAnswer": "3",
       "explanation": "Total = 5×8 = 40. Remove 28: remaining total 12 over 4 numbers = 3.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "A right triangle has legs of length 6 and 8. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "9",
+        "11",
         "14",
         "12",
-        "10",
-        "9",
-        "11"
+        "10"
       ],
       "correctAnswer": "10",
       "explanation": "Hypotenuse = √(6² + 8²) = √100 = 10.",
@@ -352,11 +352,11 @@
       "prompt": "In a class of 32 students, the ratio of those who passed to those who failed is 6:2. How many students passed?",
       "difficulty": "medium",
       "options": [
-        "32",
-        "8",
         "24",
         "20",
-        "28"
+        "28",
+        "32",
+        "8"
       ],
       "correctAnswer": "24",
       "explanation": "Total parts = 8, each part = 32/8 = 4. Passed = 6 × 4 = 24.",
@@ -369,11 +369,11 @@
       "prompt": "If 6x + 6 = 1x + 36, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "6",
         "36",
         "12",
         "35",
-        "42",
-        "6"
+        "42"
       ],
       "correctAnswer": "36",
       "explanation": "6x − 1x = 36 − 6 → 5x = 30 → x = 6. So x² = 36.",
@@ -386,11 +386,11 @@
       "prompt": "A right triangle has legs of length 8 and 15. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
-        "16",
-        "23",
         "18",
         "19",
-        "17"
+        "17",
+        "16",
+        "23"
       ],
       "correctAnswer": "17",
       "explanation": "Hypotenuse = √(8² + 15²) = √289 = 17.",
@@ -420,11 +420,11 @@
       "prompt": "What was the total page views for Opinion category across all four months?",
       "difficulty": "medium",
       "options": [
-        "550 thousand",
-        "570 thousand",
         "590 thousand",
         "610 thousand",
-        "630 thousand"
+        "630 thousand",
+        "550 thousand",
+        "570 thousand"
       ],
       "correctAnswer": "570 thousand",
       "explanation": "Opinion: 120 + 140 + 150 + 160 = 570 thousand",
@@ -477,11 +477,11 @@
       "prompt": "In April, Sports pages represented approximately what percent of total April traffic?",
       "difficulty": "medium",
       "options": [
-        "18%",
-        "21%",
         "25%",
         "27%",
-        "30%"
+        "30%",
+        "18%",
+        "21%"
       ],
       "correctAnswer": "25%",
       "explanation": "April total: 300+220+160+200=880. Sports 220/880 = 0.25 = 25%",
@@ -534,11 +534,11 @@
       "prompt": "Which category showed the largest absolute growth from January to April?",
       "difficulty": "medium",
       "options": [
+        "News and Opinion tied",
         "News",
         "Sports",
         "Opinion",
-        "Lifestyle",
-        "News and Opinion tied"
+        "Lifestyle"
       ],
       "correctAnswer": "News",
       "explanation": "News: 300-240=60; Sports: 220-180=40; Opinion: 160-120=40; Lifestyle: 200-160=40",

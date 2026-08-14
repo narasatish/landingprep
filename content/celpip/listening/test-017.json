@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the rental agreement number?",
       "options": [
-        "CR-824447",
         "CR-892447",
         "CR-894247",
-        "CR-824294"
+        "CR-824294",
+        "CR-824447"
       ],
       "correctAnswer": "CR-892447",
       "explanation": "Customer provides the rental agreement number as 'CR-892447.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What damage was visible in the pickup photos?",
       "options": [
-        "A scratch on the driver's door",
-        "A dent on the back bumper",
         "A broken side mirror",
-        "No damage"
+        "No damage",
+        "A scratch on the driver's door",
+        "A dent on the back bumper"
       ],
       "correctAnswer": "A dent on the back bumper",
       "explanation": "Agent confirms 'there is a dent visible in the corner of the back bumper' in the pickup photos.",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When was the vehicle returned?",
       "options": [
+        "4 PM today",
         "1 PM today",
         "2 PM today",
-        "3 PM today",
-        "4 PM today"
+        "3 PM today"
       ],
       "correctAnswer": "4 PM today",
       "explanation": "Customer states 'I returned the vehicle just now, at 4 PM today.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What was the daily cost of the damage waiver insurance?",
       "options": [
-        "$12 per day",
         "$15 per day",
         "$18 per day",
-        "$20 per day"
+        "$20 per day",
+        "$12 per day"
       ],
       "correctAnswer": "$18 per day",
       "explanation": "Customer mentions purchasing damage waiver for 'the extra $18 per day.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What new damage was found on the vehicle?",
       "options": [
+        "A damaged side mirror",
         "A dent on the front bumper",
         "A scratch on the driver's door",
-        "A broken window",
-        "A damaged side mirror"
+        "A broken window"
       ],
       "correctAnswer": "A scratch on the driver's door",
       "explanation": "Agent mentions 'The damage report lists a scratch on the driver's door.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "Is the customer responsible for paying for the new damage?",
       "options": [
+        "Not clear from the conversation",
         "Yes, full amount",
         "Yes, 50% of the cost",
-        "No, it's covered by the damage waiver",
-        "Not clear from the conversation"
+        "No, it's covered by the damage waiver"
       ],
       "correctAnswer": "No, it's covered by the damage waiver",
       "explanation": "Agent confirms the damage waiver covers the new scratch and customer is not responsible.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has it been since Sarah and Michael last saw each other?",
       "options": [
-        "Two months",
-        "Four months",
         "Six months",
-        "A year"
+        "A year",
+        "Two months",
+        "Four months"
       ],
       "correctAnswer": "Six months",
       "explanation": "Michael says 'Must be like six months since we last hung out' and Sarah agrees.",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "Where did Michael travel?",
       "options": [
-        "Toronto",
         "Montreal",
         "Vancouver",
-        "Calgary"
+        "Calgary",
+        "Toronto"
       ],
       "correctAnswer": "Vancouver",
       "explanation": "Sarah asks 'How was your trip to Vancouver?' confirming Michael's destination.",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "What type of restaurant does Sarah suggest?",
       "options": [
-        "Mexican",
-        "Italian",
         "Japanese",
-        "Indian"
+        "Indian",
+        "Mexican",
+        "Italian"
       ],
       "correctAnswer": "Italian",
       "explanation": "Sarah mentions 'that new Italian place downtown.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What day do they plan to meet?",
       "options": [
-        "Tuesday",
-        "Wednesday",
         "Thursday",
-        "Friday"
+        "Friday",
+        "Tuesday",
+        "Wednesday"
       ],
       "correctAnswer": "Thursday",
       "explanation": "Michael suggests 'Thursday' and Sarah confirms 'Thursday works for me.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What should NOT be used during evacuation?",
       "options": [
-        "Stairs",
         "Emergency exits",
         "Elevators",
-        "Hallways"
+        "Hallways",
+        "Stairs"
       ],
       "correctAnswer": "Elevators",
       "explanation": "The training explicitly states 'Do not use elevators under any circumstances.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "Where is the designated assembly point?",
       "options": [
+        "The rooftop",
         "The main lobby",
         "The parking lot north of the building",
-        "The south entrance",
-        "The rooftop"
+        "The south entrance"
       ],
       "correctAnswer": "The parking lot north of the building",
       "explanation": "The guide specifies 'the designated assembly point in the parking lot north of the building.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "How often are fire drills conducted?",
       "options": [
+        "Annually",
         "Monthly",
         "Bi-monthly",
-        "Quarterly",
-        "Annually"
+        "Quarterly"
       ],
       "correctAnswer": "Quarterly",
       "explanation": "The training states 'Fire drills occur quarterly on the first Friday of March, June, September, and December.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "At what time are fire drills held?",
       "options": [
-        "10 AM",
-        "1 PM",
         "2 PM",
-        "3 PM"
+        "3 PM",
+        "10 AM",
+        "1 PM"
       ],
       "correctAnswer": "2 PM",
       "explanation": "The guide specifies drills are 'at 2 PM.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "How frequently are fire extinguishers located along hallways?",
       "options": [
-        "Every 10 meters",
         "Every 15 meters",
         "Every 25 meters",
-        "Every 50 meters"
+        "Every 50 meters",
+        "Every 10 meters"
       ],
       "correctAnswer": "Every 25 meters",
       "explanation": "The training states 'Fire extinguishers are located every twenty-five meters along hallways.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How many homes and businesses are targeted for solar installation?",
       "options": [
+        "60,000",
         "30,000",
         "40,000",
-        "50,000",
-        "60,000"
+        "50,000"
       ],
       "correctAnswer": "50,000",
       "explanation": "The SolarON program aims to install solar panels on 50,000 homes and businesses.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "What percentage of installation costs do subsidies cover?",
       "options": [
-        "25 percent",
-        "30 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent",
+        "30 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "The government provides subsidies covering up to 40 percent of installation costs.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "What is the maximum homeowner rebate?",
       "options": [
+        "10,000 dollars",
         "5,000 dollars",
         "6,000 dollars",
-        "8,000 dollars",
-        "10,000 dollars"
+        "8,000 dollars"
       ],
       "correctAnswer": "8,000 dollars",
       "explanation": "A rebate program offers homeowners up to 8,000 dollars.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "How many small business loans has the bank approved this year?",
       "options": [
-        "250 loans",
-        "270 loans",
         "285 loans",
-        "300 loans"
+        "300 loans",
+        "250 loans",
+        "270 loans"
       ],
       "correctAnswer": "285 loans",
       "explanation": "The bank has approved 285 loans this year.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What is the total amount of loans approved?",
       "options": [
-        "35 million dollars",
         "39 million dollars",
         "42 million dollars",
-        "48 million dollars"
+        "48 million dollars",
+        "35 million dollars"
       ],
       "correctAnswer": "42 million dollars",
       "explanation": "The loans approved total 42 million dollars.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "Why does Lisa oppose tightening lending criteria?",
       "options": [
-        "It's too expensive",
-        "It would exclude new entrepreneurs",
         "It would reduce profitability",
-        "It would increase default rates"
+        "It would increase default rates",
+        "It's too expensive",
+        "It would exclude new entrepreneurs"
       ],
       "correctAnswer": "It would exclude new entrepreneurs",
       "explanation": "Lisa warns that stricter criteria would only serve well-established businesses, defeating the purpose.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What challenge did Marcus face when starting his business?",
       "options": [
-        "Lack of experience",
-        "No customers",
         "Banks wouldn't lend to him",
-        "High interest rates"
+        "High interest rates",
+        "Lack of experience",
+        "No customers"
       ],
       "correctAnswer": "Banks wouldn't lend to him",
       "explanation": "Marcus says traditional banks wouldn't lend because he lacked assets and track record.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "How many people does Marcus's restaurant currently employ?",
       "options": [
-        "8 people",
         "10 people",
         "12 people",
-        "15 people"
+        "15 people",
+        "8 people"
       ],
       "correctAnswer": "12 people",
       "explanation": "Marcus's restaurant now employs 12 people.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What alternative solution does Marcus propose?",
       "options": [
+        "No collateral requirements",
         "Lower interest rates",
         "Mentorship and financial coaching programs",
-        "Shorter loan terms",
-        "No collateral requirements"
+        "Shorter loan terms"
       ],
       "correctAnswer": "Mentorship and financial coaching programs",
       "explanation": "Marcus suggests focus on better support systems like mentorship and financial coaching after lending.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "Who does Chris propose to partner with for business support?",
       "options": [
+        "Large corporations",
         "Universities",
         "Government agencies",
-        "Business development organizations",
-        "Large corporations"
+        "Business development organizations"
       ],
       "correctAnswer": "Business development organizations",
       "explanation": "Chris proposes partnering with business development organizations for mentoring and training.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
-        "Temporary welfare assistance",
-        "Government loans with repayment",
         "Regular unconditional cash payment to all citizens",
-        "Employer-provided income supplements"
+        "Employer-provided income supplements",
+        "Temporary welfare assistance",
+        "Government loans with repayment"
       ],
       "correctAnswer": "Regular unconditional cash payment to all citizens",
       "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What economic effect does the speaker claim UBI would have?",
       "options": [
+        "It would increase unemployment",
         "It would decrease spending",
         "Providing financial security would stimulate spending and job creation",
-        "It would reduce business activity",
-        "It would increase unemployment"
+        "It would reduce business activity"
       ],
       "correctAnswer": "Providing financial security would stimulate spending and job creation",
       "explanation": "The speaker argues that putting money in people's hands stimulates the economy and creates jobs.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "By what percentage did business formation increase in the Kenya pilot?",
       "options": [
+        "38 percent",
         "22 percent",
         "27 percent",
-        "32 percent",
-        "38 percent"
+        "32 percent"
       ],
       "correctAnswer": "32 percent",
       "explanation": "The speaker mentions that business formation in Kenya increased by 32 percent.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Increased energy",
         "Better mental health and less anxiety",
         "Improved sleep",
-        "Reduced medication needs"
+        "Reduced medication needs",
+        "Increased energy"
       ],
       "correctAnswer": "Better mental health and less anxiety",
       "explanation": "In Finland, participants reported better mental health and less anxiety.",

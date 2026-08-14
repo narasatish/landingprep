@@ -430,10 +430,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How many days post-op is Mrs Williams?",
       "options": [
-        "Day 1",
-        "Day 3",
         "Day 2",
-        "Day 5"
+        "Day 5",
+        "Day 1",
+        "Day 3"
       ],
       "correctAnswer": "Day 2",
       "explanation": "The charge nurse states Mrs Williams is post-op day two after hip replacement.",
@@ -448,10 +448,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What oxygen delivery has Mr Kumar improved to overnight?",
       "options": [
-        "1 litre via nasal cannula",
         "2 litres via nasal cannula",
         "3 litres via nasal cannula",
-        "5 litres via nasal cannula"
+        "5 litres via nasal cannula",
+        "1 litre via nasal cannula"
       ],
       "correctAnswer": "3 litres via nasal cannula",
       "explanation": "The charge nurse states he's on 3 litres instead of 5.",
@@ -484,10 +484,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How should cephalexin suspension be stored?",
       "options": [
+        "In a dark cupboard",
         "In the refrigerator",
         "In the freezer",
-        "At room temperature",
-        "In a dark cupboard"
+        "At room temperature"
       ],
       "correctAnswer": "At room temperature",
       "explanation": "The pharmacist states cephalexin suspension should be stored at room temperature, not refrigerated.",
@@ -502,10 +502,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What is the shelf life of cephalexin suspension after dispensing?",
       "options": [
-        "7 days",
-        "10 days",
         "14 days",
-        "30 days"
+        "30 days",
+        "7 days",
+        "10 days"
       ],
       "correctAnswer": "14 days",
       "explanation": "The pharmacist states it's only good for 14 days after dispensing.",
@@ -520,10 +520,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What positive sign was noted about Mrs Williams' surgical drain?",
       "options": [
+        "It blocked completely",
         "It was producing less fluid",
         "It was removed",
-        "It became infected",
-        "It blocked completely"
+        "It became infected"
       ],
       "correctAnswer": "It was producing less fluid",
       "explanation": "The charge nurse notes the drain is producing less fluid, which is a good sign.",
@@ -556,10 +556,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which of the following is NOT mentioned as part of effective hand hygiene programmes?",
       "options": [
+        "Visual reminders and posters",
         "Accessible alcohol-based sanitizers",
         "Mandatory training",
-        "Punishment of non-compliant staff",
-        "Visual reminders and posters"
+        "Punishment of non-compliant staff"
       ],
       "correctAnswer": "Punishment of non-compliant staff",
       "explanation": "The speaker mentions sanitizers, training, visual reminders, and feedback, but not punishment.",
@@ -574,10 +574,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "To what level did successful programmes increase compliance?",
       "options": [
-        "Over 70 percent",
         "Over 85 percent",
         "Over 75 percent",
-        "Over 95 percent"
+        "Over 95 percent",
+        "Over 70 percent"
       ],
       "correctAnswer": "Over 85 percent",
       "explanation": "The speaker states compliance increased from 50 percent to over 85 percent within one year.",
@@ -612,10 +612,10 @@
       "prompt": "According to the speaker, why do many staff resist hand hygiene protocols?",
       "question": "According to the speaker, why do many staff resist hand hygiene protocols?",
       "options": [
+        "They think infection rates are already low",
         "They believe alcohol gel damages the skin",
         "They perceive the protocols as bureaucratic and time-consuming",
-        "They have not been given written guidelines",
-        "They think infection rates are already low"
+        "They have not been given written guidelines"
       ],
       "correctAnswer": "They perceive the protocols as bureaucratic and time-consuming",
       "explanation": "The speaker gives this as the second reason for poor compliance.",
@@ -632,10 +632,10 @@
       "prompt": "Which group does the speaker single out as having particularly low compliance?",
       "question": "Which group does the speaker single out as having particularly low compliance?",
       "options": [
-        "Physicians",
         "Cleaning staff",
         "Student nurses",
-        "Visitors"
+        "Visitors",
+        "Physicians"
       ],
       "correctAnswer": "Physicians",
       "explanation": "The speaker says compliance is especially low among physicians.",
@@ -652,10 +652,10 @@
       "prompt": "What does the speaker identify as the third reason for poor compliance?",
       "question": "What does the speaker identify as the third reason for poor compliance?",
       "options": [
-        "Insufficient sinks on the ward",
         "A lack of awareness about the consequences of lapses",
         "Shortages of alcohol gel",
-        "Poor supervision at night"
+        "Poor supervision at night",
+        "Insufficient sinks on the ward"
       ],
       "correctAnswer": "A lack of awareness about the consequences of lapses",
       "explanation": "The speaker lists lack of awareness of serious consequences as the third reason.",
@@ -692,10 +692,10 @@
       "prompt": "Where does the speaker say alcohol-based sanitiser should be provided?",
       "question": "Where does the speaker say alcohol-based sanitiser should be provided?",
       "options": [
+        "At the hospital reception",
         "At each ward entrance",
         "At each patient's bed",
-        "In every staff room",
-        "At the hospital reception"
+        "In every staff room"
       ],
       "correctAnswer": "At each patient's bed",
       "explanation": "The speaker specifies provision at each patient's bed.",
@@ -712,10 +712,10 @@
       "prompt": "According to the World Health Organization figure quoted, how many people are affected globally each year?",
       "question": "According to the World Health Organization figure quoted, how many people are affected globally each year?",
       "options": [
+        "Several billion",
         "Tens of thousands",
         "Hundreds of thousands",
-        "Hundreds of millions",
-        "Several billion"
+        "Hundreds of millions"
       ],
       "correctAnswer": "Hundreds of millions",
       "explanation": "The speaker cites a WHO estimate of hundreds of millions of people each year.",
@@ -732,10 +732,10 @@
       "prompt": "Over what period did successful institutions achieve their improvement?",
       "question": "Over what period did successful institutions achieve their improvement?",
       "options": [
-        "Within one month",
-        "Within six months",
         "Within one year",
-        "Within five years"
+        "Within five years",
+        "Within one month",
+        "Within six months"
       ],
       "correctAnswer": "Within one year",
       "explanation": "The speaker states compliance rose to over 85 percent within one year.",

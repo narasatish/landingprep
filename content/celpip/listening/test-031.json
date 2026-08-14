@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "Why does the member want to cancel?",
       "options": [
-        "The facility is too crowded",
         "They're relocating to British Columbia for work",
         "They want to join a different gym",
-        "They're not satisfied with the equipment"
+        "They're not satisfied with the equipment",
+        "The facility is too crowded"
       ],
       "correctAnswer": "They're relocating to British Columbia for work",
       "explanation": "Member states 'I'm relocating to British Columbia for work.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the monthly membership fee?",
       "options": [
+        "$99",
         "$69",
         "$79",
-        "$89",
-        "$99"
+        "$89"
       ],
       "correctAnswer": "$89",
       "explanation": "Rep states 'you're on our premium monthly plan at $89 per month.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When will the membership end?",
       "options": [
-        "June 17th",
         "June 24th",
         "July 1st",
-        "July 3rd"
+        "July 3rd",
+        "June 17th"
       ],
       "correctAnswer": "June 24th",
       "explanation": "Rep confirms 'That would be June 24th' for three weeks from the conversation date.",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What is the original early termination fee?",
       "options": [
-        "$100",
         "$125",
         "$150",
-        "$200"
+        "$200",
+        "$100"
       ],
       "correctAnswer": "$150",
       "explanation": "Rep states 'There is a $150 early termination fee.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What is the reduced early termination fee offered?",
       "options": [
-        "$50",
-        "$75",
         "$100",
-        "$125"
+        "$125",
+        "$50",
+        "$75"
       ],
       "correctAnswer": "$75",
       "explanation": "Rep offers to reduce the fee 'to $75' as a gesture of loyalty.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the monthly rent?",
       "options": [
-        "$1,000",
-        "$1,100",
         "$1,200",
-        "$1,300"
+        "$1,300",
+        "$1,000",
+        "$1,100"
       ],
       "correctAnswer": "$1,200",
       "explanation": "Landlord states 'The rent is $1,200 per month.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "Is parking included in the rent?",
       "options": [
+        "Not available",
         "No, extra cost",
         "Yes, one spot",
-        "Two spots",
-        "Not available"
+        "Two spots"
       ],
       "correctAnswer": "Yes, one spot",
       "explanation": "Landlord confirms 'one dedicated parking spot' is 'included in the rent.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "When can the renter move in?",
       "options": [
+        "July 8",
         "June 15",
         "June 24",
-        "July 1",
-        "July 8"
+        "July 1"
       ],
       "correctAnswer": "July 1",
       "explanation": "Landlord states 'you can move in on July 1st.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What is the pet deposit for the cat?",
       "options": [
-        "$100",
-        "$125",
         "$150",
-        "$200"
+        "$200",
+        "$100",
+        "$125"
       ],
       "correctAnswer": "$150",
       "explanation": "Landlord specifies 'a one-time pet deposit of $150.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What should NOT be used during evacuation?",
       "options": [
-        "Stairs",
         "Emergency exits",
         "Elevators",
-        "Hallways"
+        "Hallways",
+        "Stairs"
       ],
       "correctAnswer": "Elevators",
       "explanation": "The training explicitly states 'Do not use elevators under any circumstances.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "Where is the designated assembly point?",
       "options": [
+        "The rooftop",
         "The main lobby",
         "The parking lot north of the building",
-        "The south entrance",
-        "The rooftop"
+        "The south entrance"
       ],
       "correctAnswer": "The parking lot north of the building",
       "explanation": "The guide specifies 'the designated assembly point in the parking lot north of the building.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "How often are fire drills conducted?",
       "options": [
+        "Annually",
         "Monthly",
         "Bi-monthly",
-        "Quarterly",
-        "Annually"
+        "Quarterly"
       ],
       "correctAnswer": "Quarterly",
       "explanation": "The training states 'Fire drills occur quarterly on the first Friday of March, June, September, and December.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "At what time are fire drills held?",
       "options": [
-        "10 AM",
-        "1 PM",
         "2 PM",
-        "3 PM"
+        "3 PM",
+        "10 AM",
+        "1 PM"
       ],
       "correctAnswer": "2 PM",
       "explanation": "The guide specifies drills are 'at 2 PM.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "How frequently are fire extinguishers located along hallways?",
       "options": [
-        "Every 10 meters",
         "Every 15 meters",
         "Every 25 meters",
-        "Every 50 meters"
+        "Every 50 meters",
+        "Every 10 meters"
       ],
       "correctAnswer": "Every 25 meters",
       "explanation": "The training states 'Fire extinguishers are located every twenty-five meters along hallways.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How many workers does the union represent?",
       "options": [
-        "8,000 workers",
-        "10,000 workers",
         "12,000 workers",
-        "15,000 workers"
+        "15,000 workers",
+        "8,000 workers",
+        "10,000 workers"
       ],
       "correctAnswer": "10,000 workers",
       "explanation": "The report explicitly states the union represents over 10,000 workers.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "What percentage pay increase is the union requesting?",
       "options": [
-        "2.5 percent",
-        "3.0 percent",
         "4.25 percent",
-        "5.0 percent"
+        "5.0 percent",
+        "2.5 percent",
+        "3.0 percent"
       ],
       "correctAnswer": "4.25 percent",
       "explanation": "Union spokesperson Maria Chen states members are seeking a 4.25 percent pay increase.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "What is the TTC's wage offer?",
       "options": [
+        "1.5 percent over three years",
         "2.5 percent over three years",
         "3.5 percent over two years",
-        "4.25 percent over four years",
-        "1.5 percent over three years"
+        "4.25 percent over four years"
       ],
       "correctAnswer": "2.5 percent over three years",
       "explanation": "The report states the TTC counters with 2.5 percent over three years.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "How much has foot traffic in downtown businesses decreased?",
       "options": [
+        "50 percent",
         "20 percent",
         "30 percent",
-        "40 percent",
-        "50 percent"
+        "40 percent"
       ],
       "correctAnswer": "30 percent",
       "explanation": "Downtown businesses report a 30 percent drop in foot traffic since Monday.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "When are emergency mediation sessions expected to resume?",
       "options": [
-        "Tonight",
-        "Tomorrow morning",
         "Next week",
-        "In two days"
+        "In two days",
+        "Tonight",
+        "Tomorrow morning"
       ],
       "correctAnswer": "Tomorrow morning",
       "explanation": "City Council has called for emergency mediation sessions to resume tomorrow morning.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "How many small business loans has the bank approved this year?",
       "options": [
-        "250 loans",
-        "270 loans",
         "285 loans",
-        "300 loans"
+        "300 loans",
+        "250 loans",
+        "270 loans"
       ],
       "correctAnswer": "285 loans",
       "explanation": "The bank has approved 285 loans this year.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What is the total amount of loans approved?",
       "options": [
-        "35 million dollars",
         "39 million dollars",
         "42 million dollars",
-        "48 million dollars"
+        "48 million dollars",
+        "35 million dollars"
       ],
       "correctAnswer": "42 million dollars",
       "explanation": "The loans approved total 42 million dollars.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "Why does Lisa oppose tightening lending criteria?",
       "options": [
-        "It's too expensive",
-        "It would exclude new entrepreneurs",
         "It would reduce profitability",
-        "It would increase default rates"
+        "It would increase default rates",
+        "It's too expensive",
+        "It would exclude new entrepreneurs"
       ],
       "correctAnswer": "It would exclude new entrepreneurs",
       "explanation": "Lisa warns that stricter criteria would only serve well-established businesses, defeating the purpose.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What challenge did Marcus face when starting his business?",
       "options": [
-        "Lack of experience",
-        "No customers",
         "Banks wouldn't lend to him",
-        "High interest rates"
+        "High interest rates",
+        "Lack of experience",
+        "No customers"
       ],
       "correctAnswer": "Banks wouldn't lend to him",
       "explanation": "Marcus says traditional banks wouldn't lend because he lacked assets and track record.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "How many people does Marcus's restaurant currently employ?",
       "options": [
-        "8 people",
         "10 people",
         "12 people",
-        "15 people"
+        "15 people",
+        "8 people"
       ],
       "correctAnswer": "12 people",
       "explanation": "Marcus's restaurant now employs 12 people.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What alternative solution does Marcus propose?",
       "options": [
+        "No collateral requirements",
         "Lower interest rates",
         "Mentorship and financial coaching programs",
-        "Shorter loan terms",
-        "No collateral requirements"
+        "Shorter loan terms"
       ],
       "correctAnswer": "Mentorship and financial coaching programs",
       "explanation": "Marcus suggests focus on better support systems like mentorship and financial coaching after lending.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "Who does Chris propose to partner with for business support?",
       "options": [
+        "Large corporations",
         "Universities",
         "Government agencies",
-        "Business development organizations",
-        "Large corporations"
+        "Business development organizations"
       ],
       "correctAnswer": "Business development organizations",
       "explanation": "Chris proposes partnering with business development organizations for mentoring and training.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "It's too expensive",
         "It has gone too far in terms of surveillance",
         "It doesn't improve security",
-        "It's ineffective"
+        "It's ineffective",
+        "It's too expensive"
       ],
       "correctAnswer": "It has gone too far in terms of surveillance",
       "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
+        "They communicate better",
         "They work harder",
         "It creates anxiety and erodes trust",
-        "They become more efficient",
-        "They communicate better"
+        "They become more efficient"
       ],
       "correctAnswer": "It creates anxiety and erodes trust",
       "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
-        "It increases productivity",
-        "It decreases productivity and morale",
         "It has no effect",
-        "It improves communication"
+        "It improves communication",
+        "It increases productivity",
+        "It decreases productivity and morale"
       ],
       "correctAnswer": "It decreases productivity and morale",
       "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What solution does the speaker propose?",
       "options": [
-        "No monitoring at all",
-        "Complete transparency monitoring",
         "Targeted monitoring only where necessary",
-        "Random monitoring"
+        "Random monitoring",
+        "No monitoring at all",
+        "Complete transparency monitoring"
       ],
       "correctAnswer": "Targeted monitoring only where necessary",
       "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",

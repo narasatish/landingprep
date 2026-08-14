@@ -15,11 +15,11 @@
       "section": "quant",
       "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
       "options": [
+        "24",
+        "48",
         "12",
         "16",
-        "20",
-        "24",
-        "48"
+        "20"
       ],
       "correctAnswer": "24",
       "answer": "D",
@@ -33,11 +33,11 @@
       "section": "quant",
       "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
       "options": [
-        "6",
         "8",
         "12",
         "18",
-        "24"
+        "24",
+        "6"
       ],
       "correctAnswer": "12",
       "answer": "C",
@@ -69,11 +69,11 @@
       "section": "quant",
       "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
       "options": [
+        "3 : 5",
+        "8 : 5",
         "2 : 5",
         "8 : 15",
-        "6 : 5",
-        "3 : 5",
-        "8 : 5"
+        "6 : 5"
       ],
       "correctAnswer": "8 : 15",
       "answer": "B",
@@ -87,11 +87,11 @@
       "section": "quant",
       "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
       "options": [
+        "36",
         "9",
         "12",
         "18",
-        "24",
-        "36"
+        "24"
       ],
       "correctAnswer": "24",
       "answer": "D",
@@ -105,11 +105,11 @@
       "section": "quant",
       "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
       "options": [
-        "480",
-        "540",
         "600",
         "640",
-        "720"
+        "720",
+        "480",
+        "540"
       ],
       "correctAnswer": "600",
       "answer": "C",
@@ -159,11 +159,11 @@
       "section": "quant",
       "prompt": "If 5 identical pens cost $20, how much do 8 of the same pens cost?",
       "options": [
+        "$40",
         "$28",
         "$30",
         "$32",
-        "$36",
-        "$40"
+        "$36"
       ],
       "correctAnswer": "$32",
       "answer": "C",
@@ -177,11 +177,11 @@
       "section": "quant",
       "prompt": "A tank is 3/5 full. Adding 20 litres makes it 4/5 full. What is the tank's total capacity?",
       "options": [
+        "110 litres",
+        "120 litres",
         "80 litres",
         "90 litres",
-        "100 litres",
-        "110 litres",
-        "120 litres"
+        "100 litres"
       ],
       "correctAnswer": "100 litres",
       "answer": "C",
@@ -195,11 +195,11 @@
       "section": "quant",
       "prompt": "What is the value of √144 + √81?",
       "options": [
+        "21",
+        "25",
         "15",
         "18",
-        "20",
-        "21",
-        "25"
+        "20"
       ],
       "correctAnswer": "21",
       "answer": "D",
@@ -213,11 +213,11 @@
       "section": "quant",
       "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
       "options": [
-        "$14.00",
         "$18.50",
         "$21.50",
         "$19.25",
-        "$20.00"
+        "$20.00",
+        "$14.00"
       ],
       "correctAnswer": "$21.50",
       "answer": "C",
@@ -267,11 +267,11 @@
       "section": "quant",
       "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
       "options": [
+        "21 hours",
         "3 hours",
         "12 hours",
         "15 hours",
-        "18 hours",
-        "21 hours"
+        "18 hours"
       ],
       "correctAnswer": "18 hours",
       "answer": "D",
@@ -285,11 +285,11 @@
       "section": "quant",
       "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
       "options": [
-        "$170",
         "$180",
         "$190",
         "$200",
-        "$210"
+        "$210",
+        "$170"
       ],
       "correctAnswer": "$180",
       "answer": "B",
@@ -321,11 +321,11 @@
       "section": "quant",
       "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
       "options": [
+        "20",
         "12",
         "15",
         "16",
-        "18",
-        "20"
+        "18"
       ],
       "correctAnswer": "15",
       "answer": "B",
@@ -339,11 +339,11 @@
       "section": "quant",
       "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
       "options": [
+        "24",
         "8",
         "12",
         "16",
-        "20",
-        "24"
+        "20"
       ],
       "correctAnswer": "16",
       "answer": "C",
@@ -357,11 +357,11 @@
       "section": "quant",
       "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
       "options": [
+        "140",
+        "152",
         "96",
         "120",
-        "136",
-        "140",
-        "152"
+        "136"
       ],
       "correctAnswer": "136",
       "answer": "C",
@@ -375,11 +375,11 @@
       "section": "quant",
       "prompt": "What is the value of 2^5 × 2^3?",
       "options": [
-        "64",
-        "128",
         "256",
         "512",
-        "1024"
+        "1024",
+        "64",
+        "128"
       ],
       "correctAnswer": "256",
       "answer": "C",

@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's account number?",
       "options": [
-        "5834-291-7456",
         "5834-291-7465",
         "5834-192-7465",
-        "5843-291-7465"
+        "5843-291-7465",
+        "5834-291-7456"
       ],
       "correctAnswer": "5834-291-7465",
       "explanation": "Customer provides their account number as '5834-291-7465.'",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "How much money was withdrawn in total?",
       "options": [
-        "$900",
-        "$1,200",
         "$1,500",
-        "$1,800"
+        "$1,800",
+        "$900",
+        "$1,200"
       ],
       "correctAnswer": "$1,800",
       "explanation": "Customer states there are 'four withdrawals totaling $1,800.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "Where were the ATM withdrawals made?",
       "options": [
-        "Montreal",
-        "Bloor Street in Toronto",
         "Downtown Toronto",
-        "The airport"
+        "The airport",
+        "Montreal",
+        "Bloor Street in Toronto"
       ],
       "correctAnswer": "Bloor Street in Toronto",
       "explanation": "Officer states 'These are ATM withdrawals, all from a machine on Bloor Street in Toronto.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "Where is the customer actually located?",
       "options": [
-        "Toronto",
         "Montreal",
         "Ottawa",
-        "Vancouver"
+        "Vancouver",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "Customer confirms 'No, I'm in Montreal. I haven't been to Toronto in months.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "How long will it take to see the credit for the unauthorized transactions?",
       "options": [
-        "1 to 2 business days",
         "3 to 5 business days",
         "5 to 7 business days",
-        "10 to 14 business days"
+        "10 to 14 business days",
+        "1 to 2 business days"
       ],
       "correctAnswer": "5 to 7 business days",
       "explanation": "Officer states 'You should see a credit back within 5 to 7 business days.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What is being mailed to the customer?",
       "options": [
+        "A fraud report",
         "A new PIN",
         "A new debit card",
-        "Account statements",
-        "A fraud report"
+        "Account statements"
       ],
       "correctAnswer": "A new debit card",
       "explanation": "Officer states 'We'll mail you a new debit card as a precaution.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What immediate action is recommended for online banking?",
       "options": [
+        "Disable online banking",
         "Contact the bank branch",
         "Close the account",
-        "Change your online banking password right away",
-        "Disable online banking"
+        "Change your online banking password right away"
       ],
       "correctAnswer": "Change your online banking password right away",
       "explanation": "Officer states 'I'm also recommending you change your online banking password right away.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has Rebecca lived in the neighbourhood?",
       "options": [
+        "Five years",
         "Two years",
         "Three years",
-        "Four years",
-        "Five years"
+        "Four years"
       ],
       "correctAnswer": "Five years",
       "explanation": "Rebecca states 'About five years now.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "When did David move to the neighbourhood?",
       "options": [
-        "One week ago",
         "Two weeks ago",
         "Last month",
-        "Two months ago"
+        "Two months ago",
+        "One week ago"
       ],
       "correctAnswer": "Last month",
       "explanation": "David says 'Just moved here last month.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "What is the best season in this neighbourhood?",
       "options": [
+        "Winter",
         "Spring",
         "Summer",
-        "Fall",
-        "Winter"
+        "Fall"
       ],
       "correctAnswer": "Summer",
       "explanation": "Rebecca states 'The summer's the best season here.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "Where is the farmer's market held?",
       "options": [
+        "Oak and Queen",
         "Main and Queen",
         "Main and King",
-        "Main and Oak",
-        "Oak and Queen"
+        "Main and Oak"
       ],
       "correctAnswer": "Main and Oak",
       "explanation": "Rebecca mentions 'at the corner of Main and Oak.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What type of community does Rebecca describe?",
       "options": [
-        "Business-focused",
         "Very friendly",
         "Quiet and isolated",
-        "Fast-paced"
+        "Fast-paced",
+        "Business-focused"
       ],
       "correctAnswer": "Very friendly",
       "explanation": "Rebecca says 'It's a very friendly community.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "In which room are Group of Seven paintings displayed?",
       "options": [
+        "Room 106",
         "Room 101",
         "Room 102",
-        "Room 104",
-        "Room 106"
+        "Room 104"
       ],
       "correctAnswer": "Room 102",
       "explanation": "The guide says 'We'll start with the Group of Seven landscape paintings in Room 102.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What region did Emily Carr primarily focus on?",
       "options": [
+        "Prairie provinces",
         "Ontario",
         "Quebec",
-        "British Columbia",
-        "Prairie provinces"
+        "British Columbia"
       ],
       "correctAnswer": "British Columbia",
       "explanation": "The guide mentions 'Emily Carr's totem pole paintings from British Columbia.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What artistic movement were Borduas and Riopelle part of?",
       "options": [
-        "Cubism",
         "Automatiste",
         "Impressionism",
-        "Surrealism"
+        "Surrealism",
+        "Cubism"
       ],
       "correctAnswer": "Automatiste",
       "explanation": "The guide states these 'Montreal-based artists were part of the Automatiste movement.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "Which city were Borduas and Riopelle based in?",
       "options": [
-        "Toronto",
         "Vancouver",
         "Montreal",
-        "Ottawa"
+        "Ottawa",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "The guide identifies them as 'Montreal-based artists.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How much is being invested in recruitment and retention?",
       "options": [
+        "40 million dollars",
         "25 million dollars",
         "30 million dollars",
-        "35 million dollars",
-        "40 million dollars"
+        "35 million dollars"
       ],
       "correctAnswer": "35 million dollars",
       "explanation": "The province has announced a 35 million dollar investment.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How many nursing positions are currently unfilled?",
       "options": [
-        "600 positions",
-        "700 positions",
         "800 positions",
-        "900 positions"
+        "900 positions",
+        "600 positions",
+        "700 positions"
       ],
       "correctAnswer": "800 positions",
       "explanation": "There are over 800 unfilled nursing positions.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "By what percentage are starting salaries for nurses increasing?",
       "options": [
-        "8 percent",
         "10 percent",
         "12 percent",
-        "15 percent"
+        "15 percent",
+        "8 percent"
       ],
       "correctAnswer": "12 percent",
       "explanation": "Starting salaries for nurses are being increased by 12 percent.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "What percentage of vacant positions are expected to be filled in 18 months?",
       "options": [
+        "75 percent",
         "40 percent",
         "50 percent",
-        "60 percent",
-        "75 percent"
+        "60 percent"
       ],
       "correctAnswer": "60 percent",
       "explanation": "Officials estimate it will take approximately 18 months to fill 60 percent of positions.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What does Sarah believe about mentorship in remote work settings?",
       "options": [
-        "Mentorship works better online",
         "Newer staff miss out on mentorship opportunities",
         "Mentorship is not important",
-        "Remote mentorship is equally effective"
+        "Remote mentorship is equally effective",
+        "Mentorship works better online"
       ],
       "correctAnswer": "Newer staff miss out on mentorship opportunities",
       "explanation": "Sarah explicitly states she worries about newer staff missing out on mentorship opportunities.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage has James's productivity increased working remotely?",
       "options": [
-        "25 percent",
         "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James states his productivity has increased by about 40 percent since working remotely.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What reason does James give for his increased productivity?",
       "options": [
+        "More flexible schedule",
         "Better equipment at home",
         "Fewer interruptions",
-        "Shorter work hours",
-        "More flexible schedule"
+        "Shorter work hours"
       ],
       "correctAnswer": "Fewer interruptions",
       "explanation": "James mentions fewer interruptions allow him to focus better on complex projects.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Tom identify as the main finding in the HR data?",
       "options": [
-        "Remote work is always better",
-        "Mixed results depending on the team",
         "Office work is most productive",
-        "Remote work decreases productivity"
+        "Remote work decreases productivity",
+        "Remote work is always better",
+        "Mixed results depending on the team"
       ],
       "correctAnswer": "Mixed results depending on the team",
       "explanation": "Tom says the data shows mixed results, with some teams more productive remotely while others struggle.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of team does Tom suggest might work better in person?",
       "options": [
-        "Software developers",
-        "Marketing teams",
         "Customer service teams",
-        "Finance teams"
+        "Finance teams",
+        "Software developers",
+        "Marketing teams"
       ],
       "correctAnswer": "Customer service teams",
       "explanation": "Tom suggests customer service teams probably need more in-person interaction.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What solution does Tom propose?",
       "options": [
-        "All employees back in office",
         "Completely remote for all",
         "Hybrid approach with flexibility",
-        "No change to current policy"
+        "No change to current policy",
+        "All employees back in office"
       ],
       "correctAnswer": "Hybrid approach with flexibility",
       "explanation": "Tom proposes a hybrid approach that gives managers flexibility based on their team's needs.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "According to Sarah, what does collaboration depend on?",
       "options": [
+        "Email efficiency",
         "Video call quality",
         "People being in the same space",
-        "Written communication",
-        "Email efficiency"
+        "Written communication"
       ],
       "correctAnswer": "People being in the same space",
       "explanation": "Sarah believes collaboration happens more naturally when people are in the same space.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "How does James stay connected with colleagues remotely?",
       "options": [
+        "Monthly meetings only",
         "Phone calls only",
         "Email messages only",
-        "Video calls and shared documents",
-        "Monthly meetings only"
+        "Video calls and shared documents"
       ],
       "correctAnswer": "Video calls and shared documents",
       "explanation": "James mentions collaborating through video calls and shared documents.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "It's too expensive",
         "It has gone too far in terms of surveillance",
         "It doesn't improve security",
-        "It's ineffective"
+        "It's ineffective",
+        "It's too expensive"
       ],
       "correctAnswer": "It has gone too far in terms of surveillance",
       "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
+        "They communicate better",
         "They work harder",
         "It creates anxiety and erodes trust",
-        "They become more efficient",
-        "They communicate better"
+        "They become more efficient"
       ],
       "correctAnswer": "It creates anxiety and erodes trust",
       "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
-        "It increases productivity",
-        "It decreases productivity and morale",
         "It has no effect",
-        "It improves communication"
+        "It improves communication",
+        "It increases productivity",
+        "It decreases productivity and morale"
       ],
       "correctAnswer": "It decreases productivity and morale",
       "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What solution does the speaker propose?",
       "options": [
-        "No monitoring at all",
-        "Complete transparency monitoring",
         "Targeted monitoring only where necessary",
-        "Random monitoring"
+        "Random monitoring",
+        "No monitoring at all",
+        "Complete transparency monitoring"
       ],
       "correctAnswer": "Targeted monitoring only where necessary",
       "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",

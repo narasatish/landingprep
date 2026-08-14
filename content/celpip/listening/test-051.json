@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's phone number?",
       "options": [
-        "416-555-0243",
         "416-555-0234",
         "416-555-0342",
-        "416-555-0423"
+        "416-555-0423",
+        "416-555-0243"
       ],
       "correctAnswer": "416-555-0234",
       "explanation": "Customer provides their phone number as '416-555-0234.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What is the cost of the current plan?",
       "options": [
+        "$55 per month",
         "$25 per month",
         "$35 per month",
-        "$45 per month",
-        "$55 per month"
+        "$45 per month"
       ],
       "correctAnswer": "$35 per month",
       "explanation": "Support confirms 'your basic plan is 2 GB per month at $35.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "How many calling minutes does the customer's current plan have?",
       "options": [
+        "Unlimited",
         "100 minutes",
         "150 minutes",
-        "200 minutes",
-        "Unlimited"
+        "200 minutes"
       ],
       "correctAnswer": "200 minutes",
       "explanation": "Support states 'Your current plan has 200 minutes.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What data plan does the customer ultimately choose?",
       "options": [
-        "5 GB plan",
         "8 GB plan",
         "10 GB plan",
-        "15 GB plan"
+        "15 GB plan",
+        "5 GB plan"
       ],
       "correctAnswer": "8 GB plan",
       "explanation": "Customer asks 'do you have an 8 GB plan?' and accepts it, stating 'Perfect, I'll take that.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "When does the new plan take effect on the bill?",
       "options": [
-        "June 15th",
         "June 22nd",
         "July 1st",
-        "July 8th"
+        "July 8th",
+        "June 15th"
       ],
       "correctAnswer": "July 8th",
       "explanation": "Support states 'Your bill will reflect the change next billing cycle, which is on July 8th.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the title of the book being discussed?",
       "options": [
-        "The Hidden Case",
-        "The Silent Detective",
         "The Silent Case",
-        "The Missing Detective"
+        "The Missing Detective",
+        "The Hidden Case",
+        "The Silent Detective"
       ],
       "correctAnswer": "The Silent Case",
       "explanation": "Liam identifies the book as 'The Silent Case.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "Where is the detective in the novel?",
       "options": [
-        "Toronto",
         "Vancouver",
         "Montreal",
-        "Calgary"
+        "Calgary",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "Emma describes it as 'the mystery novel' about 'the detective in Montreal.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "What award did the book win?",
       "options": [
+        "The Atwood Prize",
         "The Giller Prize",
         "The Governor General's Award",
-        "The Scotiabank Prize",
-        "The Atwood Prize"
+        "The Scotiabank Prize"
       ],
       "correctAnswer": "The Governor General's Award",
       "explanation": "Emma states it 'won the Governor General's Award last year.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "How long did Emma wait for the book from the library?",
       "options": [
+        "Six months",
         "One month",
         "Two months",
-        "Three months",
-        "Six months"
+        "Three months"
       ],
       "correctAnswer": "Three months",
       "explanation": "Emma states 'I put a hold on it three months ago.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How long will Liam have to wait for the book?",
       "options": [
-        "Two to three weeks",
-        "Three to four weeks",
         "Four to six weeks",
-        "Eight to ten weeks"
+        "Eight to ten weeks",
+        "Two to three weeks",
+        "Three to four weeks"
       ],
       "correctAnswer": "Four to six weeks",
       "explanation": "Emma estimates 'You should get it in maybe four to six weeks.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "Where should you get your student photo ID?",
       "options": [
-        "The Student Centre",
-        "The Services Office",
         "The IT support desk",
-        "Student Health Services"
+        "Student Health Services",
+        "The Student Centre",
+        "The Services Office"
       ],
       "correctAnswer": "The Services Office",
       "explanation": "The guide states 'get your student photo ID taken at the Services Office.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What are the hours for photo ID service?",
       "options": [
-        "8 AM to 5 PM",
         "9 AM to 4 PM",
         "10 AM to 3 PM",
-        "8 AM to 6 PM"
+        "8 AM to 6 PM",
+        "8 AM to 5 PM"
       ],
       "correctAnswer": "9 AM to 4 PM",
       "explanation": "The guide mentions 'between 9 and 4 on any day this week.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the estimated budget for books and materials?",
       "options": [
-        "One hundred dollars",
         "Two hundred dollars",
         "Three hundred dollars",
-        "Four hundred dollars"
+        "Four hundred dollars",
+        "One hundred dollars"
       ],
       "correctAnswer": "Three hundred dollars",
       "explanation": "The guide states 'budget about three hundred dollars for books and materials.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "When is the Welcome Social?",
       "options": [
+        "Sunday afternoon",
         "Thursday evening",
         "Friday evening",
-        "Saturday afternoon",
-        "Sunday afternoon"
+        "Saturday afternoon"
       ],
       "correctAnswer": "Friday evening",
       "explanation": "The guide mentions 'The Welcome Social on Friday evening in the gymnasium.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How many workers does the union represent?",
       "options": [
-        "8,000 workers",
-        "10,000 workers",
         "12,000 workers",
-        "15,000 workers"
+        "15,000 workers",
+        "8,000 workers",
+        "10,000 workers"
       ],
       "correctAnswer": "10,000 workers",
       "explanation": "The report explicitly states the union represents over 10,000 workers.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "What percentage pay increase is the union requesting?",
       "options": [
-        "2.5 percent",
-        "3.0 percent",
         "4.25 percent",
-        "5.0 percent"
+        "5.0 percent",
+        "2.5 percent",
+        "3.0 percent"
       ],
       "correctAnswer": "4.25 percent",
       "explanation": "Union spokesperson Maria Chen states members are seeking a 4.25 percent pay increase.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "What is the TTC's wage offer?",
       "options": [
+        "1.5 percent over three years",
         "2.5 percent over three years",
         "3.5 percent over two years",
-        "4.25 percent over four years",
-        "1.5 percent over three years"
+        "4.25 percent over four years"
       ],
       "correctAnswer": "2.5 percent over three years",
       "explanation": "The report states the TTC counters with 2.5 percent over three years.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "How much has foot traffic in downtown businesses decreased?",
       "options": [
+        "50 percent",
         "20 percent",
         "30 percent",
-        "40 percent",
-        "50 percent"
+        "40 percent"
       ],
       "correctAnswer": "30 percent",
       "explanation": "Downtown businesses report a 30 percent drop in foot traffic since Monday.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "When are emergency mediation sessions expected to resume?",
       "options": [
-        "Tonight",
-        "Tomorrow morning",
         "Next week",
-        "In two days"
+        "In two days",
+        "Tonight",
+        "Tomorrow morning"
       ],
       "correctAnswer": "Tomorrow morning",
       "explanation": "City Council has called for emergency mediation sessions to resume tomorrow morning.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the cost of the engineering program expansion?",
       "options": [
-        "1.8 million dollars",
-        "2.0 million dollars",
         "2.4 million dollars",
-        "2.8 million dollars"
+        "2.8 million dollars",
+        "1.8 million dollars",
+        "2.0 million dollars"
       ],
       "correctAnswer": "2.4 million dollars",
       "explanation": "The cost would be approximately 2.4 million dollars over two years.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "How many potential students did the university lose last year?",
       "options": [
-        "100 students",
         "125 students",
         "150 students",
-        "175 students"
+        "175 students",
+        "100 students"
       ],
       "correctAnswer": "150 students",
       "explanation": "Professor Elena mentions they lost 150 potential engineering students.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "Why are some students not enrolling at this university?",
       "options": [
+        "Bad location",
         "Poor faculty",
         "Weak renewable energy program options",
-        "High tuition fees",
-        "Bad location"
+        "High tuition fees"
       ],
       "correctAnswer": "Weak renewable energy program options",
       "explanation": "They're losing students to competing universities with stronger renewable energy options.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Diana believe about tuition revenue from additional students?",
       "options": [
-        "It will decrease overall costs",
-        "It would exceed expansion costs within three years",
         "It wouldn't help the budget",
-        "It takes longer than expected"
+        "It takes longer than expected",
+        "It will decrease overall costs",
+        "It would exceed expansion costs within three years"
       ],
       "correctAnswer": "It would exceed expansion costs within three years",
       "explanation": "Diana states tuition revenue from 200 additional students would exceed expansion costs within three years.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of partnership does Diana mention exploring?",
       "options": [
-        "International universities",
-        "Government agencies",
         "Renewable energy companies",
-        "Tech startups"
+        "Tech startups",
+        "International universities",
+        "Government agencies"
       ],
       "correctAnswer": "Renewable energy companies",
       "explanation": "Diana mentions conversations with renewable energy companies about funding contributions.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What would companies receive in exchange for supporting the program?",
       "options": [
-        "University branding",
         "Free equipment",
         "Access to graduates for recruitment",
-        "Research funding"
+        "Research funding",
+        "University branding"
       ],
       "correctAnswer": "Access to graduates for recruitment",
       "explanation": "Companies want access to graduates for recruitment in exchange for contributions.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What specific position does Professor Elena hold on the expansion?",
       "options": [
-        "She opposes it",
-        "She strongly supports it",
         "She wants to wait",
-        "She's uncertain"
+        "She's uncertain",
+        "She opposes it",
+        "She strongly supports it"
       ],
       "correctAnswer": "She strongly supports it",
       "explanation": "Elena argues the university is losing enrollment without this program and needs to expand now.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "It's too expensive",
         "It has gone too far in terms of surveillance",
         "It doesn't improve security",
-        "It's ineffective"
+        "It's ineffective",
+        "It's too expensive"
       ],
       "correctAnswer": "It has gone too far in terms of surveillance",
       "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
+        "They communicate better",
         "They work harder",
         "It creates anxiety and erodes trust",
-        "They become more efficient",
-        "They communicate better"
+        "They become more efficient"
       ],
       "correctAnswer": "It creates anxiety and erodes trust",
       "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
-        "It increases productivity",
-        "It decreases productivity and morale",
         "It has no effect",
-        "It improves communication"
+        "It improves communication",
+        "It increases productivity",
+        "It decreases productivity and morale"
       ],
       "correctAnswer": "It decreases productivity and morale",
       "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What solution does the speaker propose?",
       "options": [
-        "No monitoring at all",
-        "Complete transparency monitoring",
         "Targeted monitoring only where necessary",
-        "Random monitoring"
+        "Random monitoring",
+        "No monitoring at all",
+        "Complete transparency monitoring"
       ],
       "correctAnswer": "Targeted monitoring only where necessary",
       "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",

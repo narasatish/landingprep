@@ -15,11 +15,11 @@
       "section": "quant",
       "prompt": "If 5 identical pens cost $20, how much do 8 of the same pens cost?",
       "options": [
-        "$28",
-        "$30",
         "$32",
         "$36",
-        "$40"
+        "$40",
+        "$28",
+        "$30"
       ],
       "correctAnswer": "$32",
       "answer": "C",
@@ -33,11 +33,11 @@
       "section": "quant",
       "prompt": "A tank is 3/5 full. Adding 20 litres makes it 4/5 full. What is the tank's total capacity?",
       "options": [
-        "80 litres",
         "90 litres",
         "100 litres",
         "110 litres",
-        "120 litres"
+        "120 litres",
+        "80 litres"
       ],
       "correctAnswer": "100 litres",
       "answer": "C",
@@ -51,11 +51,11 @@
       "section": "quant",
       "prompt": "What is the value of √144 + √81?",
       "options": [
-        "15",
         "18",
         "20",
         "21",
-        "25"
+        "25",
+        "15"
       ],
       "correctAnswer": "21",
       "answer": "D",
@@ -69,11 +69,11 @@
       "section": "quant",
       "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
       "options": [
+        "$20.00",
         "$14.00",
         "$18.50",
         "$21.50",
-        "$19.25",
-        "$20.00"
+        "$19.25"
       ],
       "correctAnswer": "$21.50",
       "answer": "C",
@@ -87,11 +87,11 @@
       "section": "quant",
       "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
       "options": [
+        "65 mph",
+        "70 mph",
         "55 mph",
         "58 mph",
-        "60 mph",
-        "65 mph",
-        "70 mph"
+        "60 mph"
       ],
       "correctAnswer": "60 mph",
       "answer": "C",
@@ -105,11 +105,11 @@
       "section": "quant",
       "prompt": "If 40% of a number is 64, what is 75% of that number?",
       "options": [
+        "120",
+        "128",
         "96",
         "100",
-        "108",
-        "120",
-        "128"
+        "108"
       ],
       "correctAnswer": "120",
       "answer": "D",
@@ -123,11 +123,11 @@
       "section": "quant",
       "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
       "options": [
-        "3 hours",
-        "12 hours",
         "15 hours",
         "18 hours",
-        "21 hours"
+        "21 hours",
+        "3 hours",
+        "12 hours"
       ],
       "correctAnswer": "18 hours",
       "answer": "D",
@@ -141,11 +141,11 @@
       "section": "quant",
       "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
       "options": [
+        "$210",
         "$170",
         "$180",
         "$190",
-        "$200",
-        "$210"
+        "$200"
       ],
       "correctAnswer": "$180",
       "answer": "B",
@@ -159,11 +159,11 @@
       "section": "quant",
       "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
       "options": [
+        "$240",
+        "$260",
         "$200",
         "$210",
-        "$220",
-        "$240",
-        "$260"
+        "$220"
       ],
       "correctAnswer": "$210",
       "answer": "B",
@@ -177,11 +177,11 @@
       "section": "quant",
       "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
       "options": [
-        "12",
-        "15",
         "16",
         "18",
-        "20"
+        "20",
+        "12",
+        "15"
       ],
       "correctAnswer": "15",
       "answer": "B",
@@ -195,11 +195,11 @@
       "section": "quant",
       "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
       "options": [
-        "8",
-        "12",
         "16",
         "20",
-        "24"
+        "24",
+        "8",
+        "12"
       ],
       "correctAnswer": "16",
       "answer": "C",
@@ -213,11 +213,11 @@
       "section": "quant",
       "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
       "options": [
-        "96",
         "120",
         "136",
         "140",
-        "152"
+        "152",
+        "96"
       ],
       "correctAnswer": "136",
       "answer": "C",
@@ -249,11 +249,11 @@
       "section": "quant",
       "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
       "options": [
+        "27",
+        "30",
         "18",
         "21",
-        "24",
-        "27",
-        "30"
+        "24"
       ],
       "correctAnswer": "21",
       "answer": "B",
@@ -267,11 +267,11 @@
       "section": "quant",
       "prompt": "What is 15% of 15% of 400?",
       "options": [
-        "6",
-        "9",
         "12",
         "15",
-        "18"
+        "18",
+        "6",
+        "9"
       ],
       "correctAnswer": "9",
       "answer": "B",
@@ -285,11 +285,11 @@
       "section": "quant",
       "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
       "options": [
-        "$57",
-        "$60",
         "$63",
         "$66",
-        "$70"
+        "$70",
+        "$57",
+        "$60"
       ],
       "correctAnswer": "$63",
       "answer": "C",
@@ -303,11 +303,11 @@
       "section": "quant",
       "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
       "options": [
-        "120 miles",
         "135 miles",
         "150 miles",
         "165 miles",
-        "180 miles"
+        "180 miles",
+        "120 miles"
       ],
       "correctAnswer": "150 miles",
       "answer": "C",
@@ -321,11 +321,11 @@
       "section": "quant",
       "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
       "options": [
+        "16",
         "8",
         "10",
         "12",
-        "15",
-        "16"
+        "15"
       ],
       "correctAnswer": "10",
       "answer": "B",
@@ -357,11 +357,11 @@
       "section": "quant",
       "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
       "options": [
+        "35",
+        "38",
         "29",
         "30",
-        "32",
-        "35",
-        "38"
+        "32"
       ],
       "correctAnswer": "32",
       "answer": "C",
@@ -375,11 +375,11 @@
       "section": "quant",
       "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
       "options": [
+        "1275",
+        "1300",
         "1175",
         "1225",
-        "1250",
-        "1275",
-        "1300"
+        "1250"
       ],
       "correctAnswer": "1275",
       "answer": "D",

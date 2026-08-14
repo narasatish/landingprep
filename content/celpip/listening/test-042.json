@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's phone number?",
       "options": [
-        "416-555-0243",
         "416-555-0234",
         "416-555-0342",
-        "416-555-0423"
+        "416-555-0423",
+        "416-555-0243"
       ],
       "correctAnswer": "416-555-0234",
       "explanation": "Customer provides their phone number as '416-555-0234.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What is the cost of the current plan?",
       "options": [
+        "$55 per month",
         "$25 per month",
         "$35 per month",
-        "$45 per month",
-        "$55 per month"
+        "$45 per month"
       ],
       "correctAnswer": "$35 per month",
       "explanation": "Support confirms 'your basic plan is 2 GB per month at $35.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "How many calling minutes does the customer's current plan have?",
       "options": [
+        "Unlimited",
         "100 minutes",
         "150 minutes",
-        "200 minutes",
-        "Unlimited"
+        "200 minutes"
       ],
       "correctAnswer": "200 minutes",
       "explanation": "Support states 'Your current plan has 200 minutes.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What data plan does the customer ultimately choose?",
       "options": [
-        "5 GB plan",
         "8 GB plan",
         "10 GB plan",
-        "15 GB plan"
+        "15 GB plan",
+        "5 GB plan"
       ],
       "correctAnswer": "8 GB plan",
       "explanation": "Customer asks 'do you have an 8 GB plan?' and accepts it, stating 'Perfect, I'll take that.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "When does the new plan take effect on the bill?",
       "options": [
-        "June 15th",
         "June 22nd",
         "July 1st",
-        "July 8th"
+        "July 8th",
+        "June 15th"
       ],
       "correctAnswer": "July 8th",
       "explanation": "Support states 'Your bill will reflect the change next billing cycle, which is on July 8th.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long have the dishes been in the sink?",
       "options": [
-        "One day",
-        "Two days",
         "Three days",
-        "Four days"
+        "Four days",
+        "One day",
+        "Two days"
       ],
       "correctAnswer": "Three days",
       "explanation": "Alex states 'it's been sitting there for three days.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "How much is the internet bill this month?",
       "options": [
+        "$80",
         "$65",
         "$70",
-        "$75",
-        "$80"
+        "$75"
       ],
       "correctAnswer": "$75",
       "explanation": "Alex states 'the internet bill is due next week. It's $75 this month.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "By how much did the internet bill increase?",
       "options": [
-        "$3",
         "$5",
         "$10",
-        "$15"
+        "$15",
+        "$3"
       ],
       "correctAnswer": "$5",
       "explanation": "Alex explains 'they increased the plan by five dollars.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "Is there a cost for a library card?",
       "options": [
-        "Yes, $10",
         "Yes, $20",
         "No, it's free",
-        "Yes, $5"
+        "Yes, $5",
+        "Yes, $10"
       ],
       "correctAnswer": "No, it's free",
       "explanation": "The guide states 'Registration is free and open to all residents.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the Sunday operating hour?",
       "options": [
-        "10 AM to 6 PM",
-        "1 PM to 5 PM",
         "12 PM to 4 PM",
-        "2 PM to 6 PM"
+        "2 PM to 6 PM",
+        "10 AM to 6 PM",
+        "1 PM to 5 PM"
       ],
       "correctAnswer": "1 PM to 5 PM",
       "explanation": "The guide specifies 'Sunday 1 to 5 PM.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the maximum number of items you can borrow?",
       "options": [
-        "Ten",
-        "Fifteen",
         "Twenty",
-        "Twenty-five"
+        "Twenty-five",
+        "Ten",
+        "Fifteen"
       ],
       "correctAnswer": "Twenty",
       "explanation": "The guide states 'You're allowed up to twenty items at a time.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "What is the late fee per day for books?",
       "options": [
-        "10 cents",
         "15 cents",
         "20 cents",
-        "25 cents"
+        "25 cents",
+        "10 cents"
       ],
       "correctAnswer": "25 cents",
       "explanation": "The guide states 'Late fees are twenty-five cents per day for books.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the size of TechHub Prairie?",
       "options": [
+        "60,000 square meters",
         "30,000 square meters",
         "40,000 square meters",
-        "50,000 square meters",
-        "60,000 square meters"
+        "50,000 square meters"
       ],
       "correctAnswer": "50,000 square meters",
       "explanation": "The report states TechHub Prairie is a 50,000-square-meter innovation center.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How much did the facility cost to construct?",
       "options": [
-        "75 million dollars",
-        "80 million dollars",
         "85 million dollars",
-        "90 million dollars"
+        "90 million dollars",
+        "75 million dollars",
+        "80 million dollars"
       ],
       "correctAnswer": "85 million dollars",
       "explanation": "The facility cost 85 million dollars to construct.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many new jobs are expected to be created?",
       "options": [
-        "800 jobs",
         "1,000 jobs",
         "1,200 jobs",
-        "1,500 jobs"
+        "1,500 jobs",
+        "800 jobs"
       ],
       "correctAnswer": "1,200 jobs",
       "explanation": "It is expected to create 1,200 new jobs over the next two years.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "Which of the following is NOT mentioned as available at the campus?",
       "options": [
+        "Startup incubator units",
         "Office space",
         "Research laboratories",
-        "Residential apartments",
-        "Startup incubator units"
+        "Residential apartments"
       ],
       "correctAnswer": "Residential apartments",
       "explanation": "The report mentions office space, laboratories, and incubators, but not apartments.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the proposed investment for the training program redesign?",
       "options": [
-        "2.5 million dollars",
-        "3.0 million dollars",
         "3.5 million dollars",
-        "4.0 million dollars"
+        "4.0 million dollars",
+        "2.5 million dollars",
+        "3.0 million dollars"
       ],
       "correctAnswer": "3.5 million dollars",
       "explanation": "The investment would be about 3.5 million dollars over three years.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage can personalized learning increase retention?",
       "options": [
-        "20 percent",
-        "25 percent",
         "30 percent",
-        "35 percent"
+        "35 percent",
+        "20 percent",
+        "25 percent"
       ],
       "correctAnswer": "35 percent",
       "explanation": "Studies show this approach increases employee retention by up to 35 percent.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What is the current training approach at the company?",
       "options": [
+        "Self-paced learning",
         "Online learning modules",
         "One-size-fits-all classroom training",
-        "Mentorship programs",
-        "Self-paced learning"
+        "Mentorship programs"
       ],
       "correctAnswer": "One-size-fits-all classroom training",
       "explanation": "The current approach is one-size-fits-all classroom training.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "When do employee engagement scores typically improve?",
       "options": [
+        "Within one year",
         "Immediately",
         "Within three months",
-        "Within six months",
-        "Within one year"
+        "Within six months"
       ],
       "correctAnswer": "Within six months",
       "explanation": "Nina mentions engagement scores improve within six months of launching personalized learning.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "When do retention improvements typically occur?",
       "options": [
-        "6-9 months",
         "12-18 months",
         "18-24 months",
-        "2-3 years"
+        "2-3 years",
+        "6-9 months"
       ],
       "correctAnswer": "12-18 months",
       "explanation": "Retention improvements typically follow within 12 to 18 months.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What development approach will replace classroom training?",
       "options": [
+        "Self-study materials",
         "Online courses only",
         "Personalized learning paths and micro-credentials",
-        "Conference attendance",
-        "Self-study materials"
+        "Conference attendance"
       ],
       "correctAnswer": "Personalized learning paths and micro-credentials",
       "explanation": "The program will move toward personalized learning paths and micro-credentials.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What is David's main concern about the program?",
       "options": [
+        "Lack of support",
         "Too expensive",
         "Takes too long",
-        "Measurable metrics and accountability",
-        "Lack of support"
+        "Measurable metrics and accountability"
       ],
       "correctAnswer": "Measurable metrics and accountability",
       "explanation": "David wants to ensure accountability and asks Nina to outline measurable metrics.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
-        "Temporary welfare assistance",
-        "Government loans with repayment",
         "Regular unconditional cash payment to all citizens",
-        "Employer-provided income supplements"
+        "Employer-provided income supplements",
+        "Temporary welfare assistance",
+        "Government loans with repayment"
       ],
       "correctAnswer": "Regular unconditional cash payment to all citizens",
       "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What economic effect does the speaker claim UBI would have?",
       "options": [
+        "It would increase unemployment",
         "It would decrease spending",
         "Providing financial security would stimulate spending and job creation",
-        "It would reduce business activity",
-        "It would increase unemployment"
+        "It would reduce business activity"
       ],
       "correctAnswer": "Providing financial security would stimulate spending and job creation",
       "explanation": "The speaker argues that putting money in people's hands stimulates the economy and creates jobs.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "By what percentage did business formation increase in the Kenya pilot?",
       "options": [
+        "38 percent",
         "22 percent",
         "27 percent",
-        "32 percent",
-        "38 percent"
+        "32 percent"
       ],
       "correctAnswer": "32 percent",
       "explanation": "The speaker mentions that business formation in Kenya increased by 32 percent.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Increased energy",
         "Better mental health and less anxiety",
         "Improved sleep",
-        "Reduced medication needs"
+        "Reduced medication needs",
+        "Increased energy"
       ],
       "correctAnswer": "Better mental health and less anxiety",
       "explanation": "In Finland, participants reported better mental health and less anxiety.",

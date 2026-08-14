@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the rental agreement number?",
       "options": [
-        "CR-824447",
         "CR-892447",
         "CR-894247",
-        "CR-824294"
+        "CR-824294",
+        "CR-824447"
       ],
       "correctAnswer": "CR-892447",
       "explanation": "Customer provides the rental agreement number as 'CR-892447.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What damage was visible in the pickup photos?",
       "options": [
-        "A scratch on the driver's door",
-        "A dent on the back bumper",
         "A broken side mirror",
-        "No damage"
+        "No damage",
+        "A scratch on the driver's door",
+        "A dent on the back bumper"
       ],
       "correctAnswer": "A dent on the back bumper",
       "explanation": "Agent confirms 'there is a dent visible in the corner of the back bumper' in the pickup photos.",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When was the vehicle returned?",
       "options": [
+        "4 PM today",
         "1 PM today",
         "2 PM today",
-        "3 PM today",
-        "4 PM today"
+        "3 PM today"
       ],
       "correctAnswer": "4 PM today",
       "explanation": "Customer states 'I returned the vehicle just now, at 4 PM today.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What was the daily cost of the damage waiver insurance?",
       "options": [
-        "$12 per day",
         "$15 per day",
         "$18 per day",
-        "$20 per day"
+        "$20 per day",
+        "$12 per day"
       ],
       "correctAnswer": "$18 per day",
       "explanation": "Customer mentions purchasing damage waiver for 'the extra $18 per day.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What new damage was found on the vehicle?",
       "options": [
+        "A damaged side mirror",
         "A dent on the front bumper",
         "A scratch on the driver's door",
-        "A broken window",
-        "A damaged side mirror"
+        "A broken window"
       ],
       "correctAnswer": "A scratch on the driver's door",
       "explanation": "Agent mentions 'The damage report lists a scratch on the driver's door.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "Is the customer responsible for paying for the new damage?",
       "options": [
+        "Not clear from the conversation",
         "Yes, full amount",
         "Yes, 50% of the cost",
-        "No, it's covered by the damage waiver",
-        "Not clear from the conversation"
+        "No, it's covered by the damage waiver"
       ],
       "correctAnswer": "No, it's covered by the damage waiver",
       "explanation": "Agent confirms the damage waiver covers the new scratch and customer is not responsible.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the first restaurant Marcus suggests?",
       "options": [
-        "Thai food",
-        "Italian food",
         "Sushi",
-        "Indian food"
+        "Indian food",
+        "Thai food",
+        "Italian food"
       ],
       "correctAnswer": "Sushi",
       "explanation": "Marcus suggests 'that new sushi place across the street.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "When does the Thai restaurant get busy?",
       "options": [
+        "2 PM",
         "11 AM",
         "Noon",
-        "1 PM",
-        "2 PM"
+        "1 PM"
       ],
       "correctAnswer": "Noon",
       "explanation": "Jessica warns 'it gets busy after noon.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "What dish does Jessica mention?",
       "options": [
-        "Tom yum soup",
-        "Pad thai",
         "Spring rolls",
-        "Green curry"
+        "Green curry",
+        "Tom yum soup",
+        "Pad thai"
       ],
       "correctAnswer": "Pad thai",
       "explanation": "Jessica states 'They have great pad thai.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How soon do they plan to meet?",
       "options": [
-        "Immediately",
         "In five minutes downstairs",
         "In ten minutes",
-        "In fifteen minutes"
+        "In fifteen minutes",
+        "Immediately"
       ],
       "correctAnswer": "In five minutes downstairs",
       "explanation": "Jessica says 'See you in five minutes downstairs.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the lost luggage reimbursement limit in the Standard plan?",
       "options": [
-        "$500",
-        "$1,000",
         "$1,500",
-        "$2,500"
+        "$2,500",
+        "$500",
+        "$1,000"
       ],
       "correctAnswer": "$1,000",
       "explanation": "The guide mentions 'lost luggage reimbursement up to one thousand dollars' in the Standard plan.",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the Premium plan's lost luggage coverage limit?",
       "options": [
+        "$2,500",
         "$1,000",
         "$1,500",
-        "$2,000",
-        "$2,500"
+        "$2,000"
       ],
       "correctAnswer": "$2,500",
       "explanation": "The Premium plan includes 'upgrade to two thousand five hundred dollars for lost luggage.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "How long do you have to file a claim after an incident?",
       "options": [
-        "30 days",
         "60 days",
         "90 days",
-        "120 days"
+        "120 days",
+        "30 days"
       ],
       "correctAnswer": "90 days",
       "explanation": "The guide states 'Claims must be filed within ninety days of the incident.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "What is the toll-free claims phone number?",
       "options": [
+        "1-800-555-0417",
         "1-800-555-0140",
         "1-800-555-0147",
-        "1-800-555-0174",
-        "1-800-555-0417"
+        "1-800-555-0174"
       ],
       "correctAnswer": "1-800-555-0147",
       "explanation": "The guide provides 'call our toll-free number at 1-800-555-0147.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How many active fires are currently being responded to?",
       "options": [
+        "140 fires",
         "100 fires",
         "115 fires",
-        "127 fires",
-        "140 fires"
+        "127 fires"
       ],
       "correctAnswer": "127 fires",
       "explanation": "Crews have already responded to 127 active fires across the province.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "Why is the fire season starting early this year?",
       "options": [
-        "Increased lightning activity",
         "Unusually warm and dry spring",
         "Poor fire prevention policies",
-        "Higher temperatures in August"
+        "Higher temperatures in August",
+        "Increased lightning activity"
       ],
       "correctAnswer": "Unusually warm and dry spring",
       "explanation": "The unusually warm and dry spring is blamed for the early start.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many hectares were burned during last summer's fire season?",
       "options": [
-        "1.8 million hectares",
         "2.0 million hectares",
         "2.4 million hectares",
-        "2.8 million hectares"
+        "2.8 million hectares",
+        "1.8 million hectares"
       ],
       "correctAnswer": "2.4 million hectares",
       "explanation": "Over 2.4 million hectares were burned during last summer's worst fire season on record.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How many new helicopters are being deployed?",
       "options": [
+        "Seven helicopters",
         "Three helicopters",
         "Four helicopters",
-        "Five helicopters",
-        "Seven helicopters"
+        "Five helicopters"
       ],
       "correctAnswer": "Five helicopters",
       "explanation": "Five new helicopters equipped with water-dropping technology are being deployed.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the total budget for the renovation?",
       "options": [
-        "5.2 million dollars",
-        "6.0 million dollars",
         "6.8 million dollars",
-        "7.5 million dollars"
+        "7.5 million dollars",
+        "5.2 million dollars",
+        "6.0 million dollars"
       ],
       "correctAnswer": "6.8 million dollars",
       "explanation": "The renovation project is budgeted at 6.8 million dollars.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "How long is the renovation expected to take?",
       "options": [
-        "12 months",
         "15 months",
         "18 months",
-        "24 months"
+        "24 months",
+        "12 months"
       ],
       "correctAnswer": "18 months",
       "explanation": "The project should take about 18 months to complete.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What are the three main components of the renovation?",
       "options": [
+        "Cafe, library, fitness center",
         "Pool, gym, parking lot",
         "Fitness center, pool upgrade, youth spaces",
-        "Gym, parking, offices",
-        "Cafe, library, fitness center"
+        "Gym, parking, offices"
       ],
       "correctAnswer": "Fitness center, pool upgrade, youth spaces",
       "explanation": "Plans include a new fitness center, pool upgrade, and additional youth programming spaces.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What is Robert's main concern?",
       "options": [
+        "Parking during renovation",
         "Noise during construction",
         "Cost of the project",
-        "Where his kids' programs will go",
-        "Parking during renovation"
+        "Where his kids' programs will go"
       ],
       "correctAnswer": "Where his kids' programs will go",
       "explanation": "Robert worries about where after-school programs will be located during construction.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "Where does Susan plan to relocate programs during construction?",
       "options": [
-        "A temporary building",
         "The community room and outdoor spaces",
         "A school gym",
-        "A local fitness facility"
+        "A local fitness facility",
+        "A temporary building"
       ],
       "correctAnswer": "The community room and outdoor spaces",
       "explanation": "Susan plans to maintain and use the community room and outdoor spaces for programs.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What concern does Jason raise about using outdoor space?",
       "options": [
+        "Noise complaints",
         "Weather damage",
         "Limited room for physical activities",
-        "Theft concerns",
-        "Noise complaints"
+        "Theft concerns"
       ],
       "correctAnswer": "Limited room for physical activities",
       "explanation": "Jason notes that if programs move outdoors, there will be limited space for sports and recreation.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What suggestion does Jason make for outdoor activities?",
       "options": [
+        "Move all programs indoors",
         "Build a temporary gym",
         "Close programs temporarily",
-        "Use a local park",
-        "Move all programs indoors"
+        "Use a local park"
       ],
       "correctAnswer": "Use a local park",
       "explanation": "Jason suggests using a local park for outdoor programming during construction.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What causes is the speaker attributing to forced migration?",
       "options": [
-        "Economic opportunity",
         "Rising sea levels, extreme weather, and changing precipitation",
         "Political conflicts",
-        "Educational opportunities"
+        "Educational opportunities",
+        "Economic opportunity"
       ],
       "correctAnswer": "Rising sea levels, extreme weather, and changing precipitation",
       "explanation": "The speaker identifies these climate factors as forcing migration.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "What examples does the speaker provide of current migration impacts?",
       "options": [
-        "Agricultural improvements",
         "Reduced urbanization",
         "Small island nations disappearing and coastal flooding",
-        "Increased employment"
+        "Increased employment",
+        "Agricultural improvements"
       ],
       "correctAnswer": "Small island nations disappearing and coastal flooding",
       "explanation": "The speaker cites disappearing island nations and increased coastal flooding as current impacts.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What consequences does the speaker warn about with unplanned migration?",
       "options": [
+        "Better job opportunities",
         "Economic growth",
         "Overcrowded cities, slums, and resource conflicts",
-        "Improved infrastructure",
-        "Better job opportunities"
+        "Improved infrastructure"
       ],
       "correctAnswer": "Overcrowded cities, slums, and resource conflicts",
       "explanation": "The speaker warns that unplanned migration creates overcrowding, slums, and conflicts.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "Which regions does the speaker believe will become more desirable?",
       "options": [
+        "Coastal areas",
         "Equatorial regions",
         "Small island nations",
-        "Canada and northern regions",
-        "Coastal areas"
+        "Canada and northern regions"
       ],
       "correctAnswer": "Canada and northern regions",
       "explanation": "The speaker states Canada and northern regions will likely become more desirable.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate for regarding climate-safe regions?",
       "options": [
-        "Restricting population growth",
         "Expanding housing, infrastructure, and economic capacity",
         "Limiting migration",
-        "Maintaining current conditions"
+        "Maintaining current conditions",
+        "Restricting population growth"
       ],
       "correctAnswer": "Expanding housing, infrastructure, and economic capacity",
       "explanation": "The speaker advocates proactively expanding housing, infrastructure, and economic capacity.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What is the speaker's main position on climate migration?",
       "options": [
-        "It won't happen",
         "It should be stopped",
         "It's inevitable and should be managed responsibly",
-        "It's not a real problem"
+        "It's not a real problem",
+        "It won't happen"
       ],
       "correctAnswer": "It's inevitable and should be managed responsibly",
       "explanation": "The speaker argues migration is inevitable and emphasizes the need for responsible planning.",

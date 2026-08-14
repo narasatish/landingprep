@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the main problem with the refrigerator?",
       "options": [
-        "The compressor is broken completely",
         "The ice maker isn't working and there's a strange noise from the compressor",
         "The door seal is damaged",
-        "The temperature control panel is faulty"
+        "The temperature control panel is faulty",
+        "The compressor is broken completely"
       ],
       "correctAnswer": "The ice maker isn't working and there's a strange noise from the compressor",
       "explanation": "The customer explicitly states both issues in their opening complaint.",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "How long has the customer owned the refrigerator?",
       "options": [
-        "Three days",
         "One week",
         "Six days",
-        "Two weeks"
+        "Two weeks",
+        "Three days"
       ],
       "correctAnswer": "Six days",
       "explanation": "Customer states 'I've had it six days' and bought it Tuesday morning.",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What was the purchase price?",
       "options": [
-        "$999",
         "$1,099",
         "$1,199",
-        "$1,299"
+        "$1,299",
+        "$999"
       ],
       "correctAnswer": "$1,299",
       "explanation": "Customer clearly states the purchase price was $1,299.",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the return window policy mentioned?",
       "options": [
+        "Ten days",
         "Three days",
         "Five days",
-        "Seven days",
-        "Ten days"
+        "Seven days"
       ],
       "correctAnswer": "Seven days",
       "explanation": "Agent mentions 'within the seven-day return window.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "Where was the refrigerator purchased?",
       "options": [
-        "The mall location",
         "The downtown store",
         "Online",
-        "A second-hand seller"
+        "A second-hand seller",
+        "The mall location"
       ],
       "correctAnswer": "The downtown store",
       "explanation": "Customer says they bought it from 'your downtown store.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What refund method does the customer prefer?",
       "options": [
-        "Store credit",
         "Exchange for another model",
         "Cash back",
-        "Check by mail"
+        "Check by mail",
+        "Store credit"
       ],
       "correctAnswer": "Cash back",
       "explanation": "Customer explicitly states 'I'd rather have a refund.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "When will the refund appear in the customer's account?",
       "options": [
+        "Within 2 weeks",
         "Within 2 business days",
         "Within 5 to 7 business days",
-        "Within 10 business days",
-        "Within 2 weeks"
+        "Within 10 business days"
       ],
       "correctAnswer": "Within 5 to 7 business days",
       "explanation": "Agent states 'the refund will appear in your account within five to seven business days.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What time window is available for pickup?",
       "options": [
-        "8 AM to 12 PM",
-        "10 AM to 2 PM",
         "12 PM to 4 PM",
-        "2 PM to 6 PM"
+        "2 PM to 6 PM",
+        "8 AM to 12 PM",
+        "10 AM to 2 PM"
       ],
       "correctAnswer": "10 AM to 2 PM",
       "explanation": "Agent offers pickup 'between 10 and 2 PM' tomorrow morning.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has Rebecca lived in the neighbourhood?",
       "options": [
+        "Five years",
         "Two years",
         "Three years",
-        "Four years",
-        "Five years"
+        "Four years"
       ],
       "correctAnswer": "Five years",
       "explanation": "Rebecca states 'About five years now.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "When did David move to the neighbourhood?",
       "options": [
-        "One week ago",
         "Two weeks ago",
         "Last month",
-        "Two months ago"
+        "Two months ago",
+        "One week ago"
       ],
       "correctAnswer": "Last month",
       "explanation": "David says 'Just moved here last month.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "What is the best season in this neighbourhood?",
       "options": [
+        "Winter",
         "Spring",
         "Summer",
-        "Fall",
-        "Winter"
+        "Fall"
       ],
       "correctAnswer": "Summer",
       "explanation": "Rebecca states 'The summer's the best season here.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "Where is the farmer's market held?",
       "options": [
+        "Oak and Queen",
         "Main and Queen",
         "Main and King",
-        "Main and Oak",
-        "Oak and Queen"
+        "Main and Oak"
       ],
       "correctAnswer": "Main and Oak",
       "explanation": "Rebecca mentions 'at the corner of Main and Oak.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What type of community does Rebecca describe?",
       "options": [
-        "Business-focused",
         "Very friendly",
         "Quiet and isolated",
-        "Fast-paced"
+        "Fast-paced",
+        "Business-focused"
       ],
       "correctAnswer": "Very friendly",
       "explanation": "Rebecca says 'It's a very friendly community.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "Is there a cost for a library card?",
       "options": [
-        "Yes, $10",
         "Yes, $20",
         "No, it's free",
-        "Yes, $5"
+        "Yes, $5",
+        "Yes, $10"
       ],
       "correctAnswer": "No, it's free",
       "explanation": "The guide states 'Registration is free and open to all residents.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the Sunday operating hour?",
       "options": [
-        "10 AM to 6 PM",
-        "1 PM to 5 PM",
         "12 PM to 4 PM",
-        "2 PM to 6 PM"
+        "2 PM to 6 PM",
+        "10 AM to 6 PM",
+        "1 PM to 5 PM"
       ],
       "correctAnswer": "1 PM to 5 PM",
       "explanation": "The guide specifies 'Sunday 1 to 5 PM.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the maximum number of items you can borrow?",
       "options": [
-        "Ten",
-        "Fifteen",
         "Twenty",
-        "Twenty-five"
+        "Twenty-five",
+        "Ten",
+        "Fifteen"
       ],
       "correctAnswer": "Twenty",
       "explanation": "The guide states 'You're allowed up to twenty items at a time.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "What is the late fee per day for books?",
       "options": [
-        "10 cents",
         "15 cents",
         "20 cents",
-        "25 cents"
+        "25 cents",
+        "10 cents"
       ],
       "correctAnswer": "25 cents",
       "explanation": "The guide states 'Late fees are twenty-five cents per day for books.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the cost of the expansion project?",
       "options": [
+        "105 million dollars",
         "75 million dollars",
         "85 million dollars",
-        "95 million dollars",
-        "105 million dollars"
+        "95 million dollars"
       ],
       "correctAnswer": "95 million dollars",
       "explanation": "The museum is embarking on a 95 million dollar expansion.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How long is the expansion project expected to take?",
       "options": [
-        "Three years",
-        "Four years",
         "Five years",
-        "Six years"
+        "Six years",
+        "Three years",
+        "Four years"
       ],
       "correctAnswer": "Five years",
       "explanation": "The project is spanning five years.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many construction jobs will be generated?",
       "options": [
-        "400 jobs",
         "500 jobs",
         "600 jobs",
-        "700 jobs"
+        "700 jobs",
+        "400 jobs"
       ],
       "correctAnswer": "600 jobs",
       "explanation": "The expansion will generate approximately 600 construction jobs.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "What percentage of Albertans surveyed support the project?",
       "options": [
+        "85 percent",
         "65 percent",
         "72 percent",
-        "78 percent",
-        "85 percent"
+        "78 percent"
       ],
       "correctAnswer": "78 percent",
       "explanation": "78 percent of surveyed Albertans favor the project.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the proposed investment for the training program redesign?",
       "options": [
-        "2.5 million dollars",
-        "3.0 million dollars",
         "3.5 million dollars",
-        "4.0 million dollars"
+        "4.0 million dollars",
+        "2.5 million dollars",
+        "3.0 million dollars"
       ],
       "correctAnswer": "3.5 million dollars",
       "explanation": "The investment would be about 3.5 million dollars over three years.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage can personalized learning increase retention?",
       "options": [
-        "20 percent",
-        "25 percent",
         "30 percent",
-        "35 percent"
+        "35 percent",
+        "20 percent",
+        "25 percent"
       ],
       "correctAnswer": "35 percent",
       "explanation": "Studies show this approach increases employee retention by up to 35 percent.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What is the current training approach at the company?",
       "options": [
+        "Self-paced learning",
         "Online learning modules",
         "One-size-fits-all classroom training",
-        "Mentorship programs",
-        "Self-paced learning"
+        "Mentorship programs"
       ],
       "correctAnswer": "One-size-fits-all classroom training",
       "explanation": "The current approach is one-size-fits-all classroom training.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "When do employee engagement scores typically improve?",
       "options": [
+        "Within one year",
         "Immediately",
         "Within three months",
-        "Within six months",
-        "Within one year"
+        "Within six months"
       ],
       "correctAnswer": "Within six months",
       "explanation": "Nina mentions engagement scores improve within six months of launching personalized learning.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "When do retention improvements typically occur?",
       "options": [
-        "6-9 months",
         "12-18 months",
         "18-24 months",
-        "2-3 years"
+        "2-3 years",
+        "6-9 months"
       ],
       "correctAnswer": "12-18 months",
       "explanation": "Retention improvements typically follow within 12 to 18 months.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What development approach will replace classroom training?",
       "options": [
+        "Self-study materials",
         "Online courses only",
         "Personalized learning paths and micro-credentials",
-        "Conference attendance",
-        "Self-study materials"
+        "Conference attendance"
       ],
       "correctAnswer": "Personalized learning paths and micro-credentials",
       "explanation": "The program will move toward personalized learning paths and micro-credentials.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What is David's main concern about the program?",
       "options": [
+        "Lack of support",
         "Too expensive",
         "Takes too long",
-        "Measurable metrics and accountability",
-        "Lack of support"
+        "Measurable metrics and accountability"
       ],
       "correctAnswer": "Measurable metrics and accountability",
       "explanation": "David wants to ensure accountability and asks Nina to outline measurable metrics.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What causes is the speaker attributing to forced migration?",
       "options": [
-        "Economic opportunity",
         "Rising sea levels, extreme weather, and changing precipitation",
         "Political conflicts",
-        "Educational opportunities"
+        "Educational opportunities",
+        "Economic opportunity"
       ],
       "correctAnswer": "Rising sea levels, extreme weather, and changing precipitation",
       "explanation": "The speaker identifies these climate factors as forcing migration.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "What examples does the speaker provide of current migration impacts?",
       "options": [
-        "Agricultural improvements",
         "Reduced urbanization",
         "Small island nations disappearing and coastal flooding",
-        "Increased employment"
+        "Increased employment",
+        "Agricultural improvements"
       ],
       "correctAnswer": "Small island nations disappearing and coastal flooding",
       "explanation": "The speaker cites disappearing island nations and increased coastal flooding as current impacts.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What consequences does the speaker warn about with unplanned migration?",
       "options": [
+        "Better job opportunities",
         "Economic growth",
         "Overcrowded cities, slums, and resource conflicts",
-        "Improved infrastructure",
-        "Better job opportunities"
+        "Improved infrastructure"
       ],
       "correctAnswer": "Overcrowded cities, slums, and resource conflicts",
       "explanation": "The speaker warns that unplanned migration creates overcrowding, slums, and conflicts.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "Which regions does the speaker believe will become more desirable?",
       "options": [
+        "Coastal areas",
         "Equatorial regions",
         "Small island nations",
-        "Canada and northern regions",
-        "Coastal areas"
+        "Canada and northern regions"
       ],
       "correctAnswer": "Canada and northern regions",
       "explanation": "The speaker states Canada and northern regions will likely become more desirable.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate for regarding climate-safe regions?",
       "options": [
-        "Restricting population growth",
         "Expanding housing, infrastructure, and economic capacity",
         "Limiting migration",
-        "Maintaining current conditions"
+        "Maintaining current conditions",
+        "Restricting population growth"
       ],
       "correctAnswer": "Expanding housing, infrastructure, and economic capacity",
       "explanation": "The speaker advocates proactively expanding housing, infrastructure, and economic capacity.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What is the speaker's main position on climate migration?",
       "options": [
-        "It won't happen",
         "It should be stopped",
         "It's inevitable and should be managed responsibly",
-        "It's not a real problem"
+        "It's not a real problem",
+        "It won't happen"
       ],
       "correctAnswer": "It's inevitable and should be managed responsibly",
       "explanation": "The speaker argues migration is inevitable and emphasizes the need for responsible planning.",

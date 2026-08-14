@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "Why does the member want to cancel?",
       "options": [
-        "The facility is too crowded",
         "They're relocating to British Columbia for work",
         "They want to join a different gym",
-        "They're not satisfied with the equipment"
+        "They're not satisfied with the equipment",
+        "The facility is too crowded"
       ],
       "correctAnswer": "They're relocating to British Columbia for work",
       "explanation": "Member states 'I'm relocating to British Columbia for work.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the monthly membership fee?",
       "options": [
+        "$99",
         "$69",
         "$79",
-        "$89",
-        "$99"
+        "$89"
       ],
       "correctAnswer": "$89",
       "explanation": "Rep states 'you're on our premium monthly plan at $89 per month.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When will the membership end?",
       "options": [
-        "June 17th",
         "June 24th",
         "July 1st",
-        "July 3rd"
+        "July 3rd",
+        "June 17th"
       ],
       "correctAnswer": "June 24th",
       "explanation": "Rep confirms 'That would be June 24th' for three weeks from the conversation date.",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What is the original early termination fee?",
       "options": [
-        "$100",
         "$125",
         "$150",
-        "$200"
+        "$200",
+        "$100"
       ],
       "correctAnswer": "$150",
       "explanation": "Rep states 'There is a $150 early termination fee.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What is the reduced early termination fee offered?",
       "options": [
-        "$50",
-        "$75",
         "$100",
-        "$125"
+        "$125",
+        "$50",
+        "$75"
       ],
       "correctAnswer": "$75",
       "explanation": "Rep offers to reduce the fee 'to $75' as a gesture of loyalty.",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "How long is the class?",
       "options": [
-        "30 minutes",
-        "45 minutes",
         "60 minutes",
-        "90 minutes"
+        "90 minutes",
+        "30 minutes",
+        "45 minutes"
       ],
       "correctAnswer": "60 minutes",
       "explanation": "Trainer states 'It's 60 minutes total.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How many classes per week does Maya plan to attend?",
       "options": [
-        "Once a week",
-        "Twice a week",
         "Three times a week",
-        "Daily"
+        "Daily",
+        "Once a week",
+        "Twice a week"
       ],
       "correctAnswer": "Twice a week",
       "explanation": "Maya states 'I'll start with twice a week and see how it goes.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What is the time period of the art featured in this exhibition?",
       "options": [
-        "1900-1920",
         "1920-1960",
         "1960-1980",
-        "1980-2000"
+        "1980-2000",
+        "1900-1920"
       ],
       "correctAnswer": "1920-1960",
       "explanation": "The guide states we're exploring 'paintings and sculptures created by Canadian artists from the 1920s to 1960s.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What artistic movement were Borduas and Riopelle part of?",
       "options": [
-        "Cubism",
-        "Automatiste",
         "Impressionism",
-        "Surrealism"
+        "Surrealism",
+        "Cubism",
+        "Automatiste"
       ],
       "correctAnswer": "Automatiste",
       "explanation": "The guide states these 'Montreal-based artists were part of the Automatiste movement.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "Which city were Borduas and Riopelle based in?",
       "options": [
-        "Toronto",
-        "Vancouver",
         "Montreal",
-        "Ottawa"
+        "Ottawa",
+        "Toronto",
+        "Vancouver"
       ],
       "correctAnswer": "Montreal",
       "explanation": "The guide identifies them as 'Montreal-based artists.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "Until what date does this exhibition run?",
       "options": [
-        "August 31st",
         "September 15th",
         "September 30th",
-        "October 15th"
+        "October 15th",
+        "August 31st"
       ],
       "correctAnswer": "September 30th",
       "explanation": "The guide states 'This exhibition runs through September 30th.'",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How much did the facility cost to construct?",
       "options": [
+        "90 million dollars",
         "75 million dollars",
         "80 million dollars",
-        "85 million dollars",
-        "90 million dollars"
+        "85 million dollars"
       ],
       "correctAnswer": "85 million dollars",
       "explanation": "The facility cost 85 million dollars to construct.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many new jobs are expected to be created?",
       "options": [
-        "800 jobs",
-        "1,000 jobs",
         "1,200 jobs",
-        "1,500 jobs"
+        "1,500 jobs",
+        "800 jobs",
+        "1,000 jobs"
       ],
       "correctAnswer": "1,200 jobs",
       "explanation": "It is expected to create 1,200 new jobs over the next two years.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "How much provincial funding was provided?",
       "options": [
-        "10 million dollars",
         "12 million dollars",
         "15 million dollars",
-        "20 million dollars"
+        "20 million dollars",
+        "10 million dollars"
       ],
       "correctAnswer": "15 million dollars",
       "explanation": "The provincial government provided 15 million dollars in funding.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What does Sarah believe about mentorship in remote work settings?",
       "options": [
-        "Mentorship works better online",
-        "Newer staff miss out on mentorship opportunities",
         "Mentorship is not important",
-        "Remote mentorship is equally effective"
+        "Remote mentorship is equally effective",
+        "Mentorship works better online",
+        "Newer staff miss out on mentorship opportunities"
       ],
       "correctAnswer": "Newer staff miss out on mentorship opportunities",
       "explanation": "Sarah explicitly states she worries about newer staff missing out on mentorship opportunities.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage has James's productivity increased working remotely?",
       "options": [
-        "25 percent",
-        "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent",
+        "35 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James states his productivity has increased by about 40 percent since working remotely.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Tom identify as the main finding in the HR data?",
       "options": [
+        "Remote work decreases productivity",
         "Remote work is always better",
         "Mixed results depending on the team",
-        "Office work is most productive",
-        "Remote work decreases productivity"
+        "Office work is most productive"
       ],
       "correctAnswer": "Mixed results depending on the team",
       "explanation": "Tom says the data shows mixed results, with some teams more productive remotely while others struggle.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of team does Tom suggest might work better in person?",
       "options": [
+        "Finance teams",
         "Software developers",
         "Marketing teams",
-        "Customer service teams",
-        "Finance teams"
+        "Customer service teams"
       ],
       "correctAnswer": "Customer service teams",
       "explanation": "Tom suggests customer service teams probably need more in-person interaction.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What solution does Tom propose?",
       "options": [
-        "All employees back in office",
-        "Completely remote for all",
         "Hybrid approach with flexibility",
-        "No change to current policy"
+        "No change to current policy",
+        "All employees back in office",
+        "Completely remote for all"
       ],
       "correctAnswer": "Hybrid approach with flexibility",
       "explanation": "Tom proposes a hybrid approach that gives managers flexibility based on their team's needs.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
+        "Employer-provided income supplements",
         "Temporary welfare assistance",
         "Government loans with repayment",
-        "Regular unconditional cash payment to all citizens",
-        "Employer-provided income supplements"
+        "Regular unconditional cash payment to all citizens"
       ],
       "correctAnswer": "Regular unconditional cash payment to all citizens",
       "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "How could UBI reduce government costs according to the speaker?",
       "options": [
-        "By reducing salaries",
         "By replacing expensive welfare programs",
         "By cutting military spending",
-        "By reducing taxes"
+        "By reducing taxes",
+        "By reducing salaries"
       ],
       "correctAnswer": "By replacing expensive welfare programs",
       "explanation": "The speaker argues UBI could replace many existing welfare programs and reduce administrative costs.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Increased energy",
-        "Better mental health and less anxiety",
         "Improved sleep",
-        "Reduced medication needs"
+        "Reduced medication needs",
+        "Increased energy",
+        "Better mental health and less anxiety"
       ],
       "correctAnswer": "Better mental health and less anxiety",
       "explanation": "In Finland, participants reported better mental health and less anxiety.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What concern does the speaker directly address about UBI?",
       "options": [
-        "It would increase inflation",
         "It would make people lazy",
         "It would reduce work motivation",
-        "Both B and C"
+        "Both B and C",
+        "It would increase inflation"
       ],
       "correctAnswer": "It would make people lazy",
       "explanation": "The speaker specifically addresses the concern that UBI would make people lazy and disputes this.",

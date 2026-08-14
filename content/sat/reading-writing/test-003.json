@@ -287,10 +287,10 @@
       "topic": "Central Ideas",
       "prompt": "The passage primarily argues that algorithmic bias demonstrates",
       "options": [
-        "technology improves every year",
-        "artificial intelligence is superior to human decision-making",
         "technology is shaped by the biases of its creators and training data",
-        "facial recognition should be banned completely"
+        "facial recognition should be banned completely",
+        "technology improves every year",
+        "artificial intelligence is superior to human decision-making"
       ],
       "correctAnswer": "technology is shaped by the biases of its creators and training data",
       "explanation": "The passage illustrates how bias in training data creates biased technology output, concluding that technology encodes prejudices rather than being neutral.",
@@ -304,10 +304,10 @@
       "topic": "Vocabulary in Context",
       "prompt": "As used in the passage, 'financial inclusion' most nearly means",
       "options": [
+        "increasing transparency in financial regulations",
         "providing banking and financial services to unbanked populations",
         "excluding people from banking systems",
-        "investment in cryptocurrency companies",
-        "increasing transparency in financial regulations"
+        "investment in cryptocurrency companies"
       ],
       "correctAnswer": "providing banking and financial services to unbanked populations",
       "explanation": "Financial inclusion means bringing unbanked populations into the financial system, allowing them access to banking services they previously lacked.",
@@ -338,10 +338,10 @@
       "topic": "Command of Evidence",
       "prompt": "The passage uses research findings to",
       "options": [
-        "support the claim that high inequality creates negative social and economic outcomes",
         "prove that inequality is beneficial for economic growth",
         "demonstrate that policy interventions never work",
-        "argue that poor health is unrelated to inequality"
+        "argue that poor health is unrelated to inequality",
+        "support the claim that high inequality creates negative social and economic outcomes"
       ],
       "correctAnswer": "support the claim that high inequality creates negative social and economic outcomes",
       "explanation": "The passage cites research linking inequality to negative outcomes (reduced mobility, worse health, decreased growth) to support its main claim about inequality's harms.",
@@ -355,10 +355,10 @@
       "topic": "Vocabulary in Context",
       "prompt": "In the passage, 'latency' most nearly means",
       "options": [
-        "the ability to send and receive data",
-        "the distance between transmitters",
         "delay in response time",
-        "the total amount of data transmitted"
+        "the total amount of data transmitted",
+        "the ability to send and receive data",
+        "the distance between transmitters"
       ],
       "correctAnswer": "delay in response time",
       "explanation": "In telecommunications, latency refers to the delay between sending and receiving data. Lower latency means faster response times.",
@@ -372,10 +372,10 @@
       "topic": "Text Structure",
       "prompt": "The passage primarily presents healthcare access as a problem involving",
       "options": [
+        "lack of need for healthcare in rural areas",
         "geographic inequities and barriers that telemedicine could partially address",
         "too many medical specialists in urban areas",
-        "government overspending on health services",
-        "lack of need for healthcare in rural areas"
+        "government overspending on health services"
       ],
       "correctAnswer": "geographic inequities and barriers that telemedicine could partially address",
       "explanation": "The passage identifies rural lack of facility access as creating disparities and presents telemedicine as a potential solution despite remaining barriers.",
@@ -406,10 +406,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively corrects the subject-verb agreement error?",
       "options": [
-        "Mental health conditions cost",
         "Mental health conditions costs",
         "Mental health condition costs",
-        "Mental health conditions is costing"
+        "Mental health conditions is costing",
+        "Mental health conditions cost"
       ],
       "correctAnswer": "Mental health conditions cost",
       "explanation": "'Conditions' is plural and requires the plural verb 'cost,' not singular 'costs.' Option B is correct.",
@@ -423,10 +423,10 @@
       "topic": "Central Ideas",
       "prompt": "The passage suggests that addressing plastic pollution requires",
       "options": [
-        "eliminating plastic use completely",
-        "relying only on consumer recycling efforts",
         "changes across production, consumer behavior, and policy levels",
-        "accepting the problem as unsolvable"
+        "accepting the problem as unsolvable",
+        "eliminating plastic use completely",
+        "relying only on consumer recycling efforts"
       ],
       "correctAnswer": "changes across production, consumer behavior, and policy levels",
       "explanation": "The passage explicitly states that addressing plastic pollution requires change in 'production practices, consumer behavior, and policy enforcement.'",
@@ -440,10 +440,10 @@
       "topic": "Vocabulary in Context",
       "prompt": "As used in the passage, 'prototype' most nearly means",
       "options": [
-        "theoretical idea",
-        "rejected design",
         "final manufactured product",
-        "first working example or model"
+        "first working example or model",
+        "theoretical idea",
+        "rejected design"
       ],
       "correctAnswer": "first working example or model",
       "explanation": "A prototype is the first functional model or example of something, preceding full-scale production or clinical use.",
@@ -457,10 +457,10 @@
       "topic": "Inferences",
       "prompt": "The passage suggests that reforming social media algorithms is challenging because",
       "options": [
-        "platforms have economic incentives to keep engagement-optimized algorithms and technical difficulties exist",
-        "the technology is too simple to modify",
         "algorithms work too well and users like polarizing content",
-        "only governments can regulate algorithms"
+        "only governments can regulate algorithms",
+        "platforms have economic incentives to keep engagement-optimized algorithms and technical difficulties exist",
+        "the technology is too simple to modify"
       ],
       "correctAnswer": "platforms have economic incentives to keep engagement-optimized algorithms and technical difficulties exist",
       "explanation": "The passage indicates challenges are 'technically and commercially challenging,' implying both technical and profit-based barriers to reform.",
@@ -474,10 +474,10 @@
       "topic": "Transitions",
       "prompt": "The word 'despite' in the second sentence primarily serves to",
       "options": [
-        "present a surprising contrast",
         "introduce supporting evidence",
         "list chronological events",
-        "emphasize importance"
+        "emphasize importance",
+        "present a surprising contrast"
       ],
       "correctAnswer": "present a surprising contrast",
       "explanation": "'Despite previous warnings' creates a contrast—the crisis revealed gaps in preparedness that should have been known and addressed before.",
@@ -508,10 +508,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively corrects the errors in the passage?",
       "options": [
+        "Data privacy concerns intensifies as companies collect",
         "Data privacy concerns intensify as companies collect",
         "Data privacy concerns intensify as companies collects",
-        "Data privacy concerns intensifies as companies collects",
-        "Data privacy concerns intensifies as companies collect"
+        "Data privacy concerns intensifies as companies collects"
       ],
       "correctAnswer": "Data privacy concerns intensify as companies collect",
       "explanation": "'Concerns' (plural) requires 'intensify,' and 'companies' (plural) requires 'collect.' Option C provides correct subject-verb agreement in both clauses.",
@@ -525,10 +525,10 @@
       "topic": "Inferences",
       "prompt": "The passage implies that income inequality may worsen if",
       "options": [
-        "government does not intervene to support displaced workers",
-        "job training programs are expanded",
         "technology stops advancing",
-        "manufacturing increases"
+        "manufacturing increases",
+        "government does not intervene to support displaced workers",
+        "job training programs are expanded"
       ],
       "correctAnswer": "government does not intervene to support displaced workers",
       "explanation": "The passage states that 'income inequality may widen absent policy interventions,' directly indicating that lack of government support worsens inequality.",
@@ -542,10 +542,10 @@
       "topic": "Central Ideas",
       "prompt": "The passage primarily presents the microbiome as important because it",
       "options": [
-        "plays multiple roles in human health including immunity and mental function",
         "is primarily located in the digestive system",
         "contains dangerous bacteria that cause disease",
-        "proves that antibiotics are ineffective"
+        "proves that antibiotics are ineffective",
+        "plays multiple roles in human health including immunity and mental function"
       ],
       "correctAnswer": "plays multiple roles in human health including immunity and mental function",
       "explanation": "The passage lists multiple crucial functions (digestion, immunity, mental health) and notes dysbiosis relates to various conditions, establishing the microbiome's broad importance.",
@@ -576,10 +576,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively corrects the subject-verb agreement error?",
       "options": [
+        "Emerging neurotechnologies enabling",
         "Emerging neurotechnologies enable",
         "Emerging neurotechnologies enables",
-        "Emerging neurotechnology enables",
-        "Emerging neurotechnologies enabling"
+        "Emerging neurotechnology enables"
       ],
       "correctAnswer": "Emerging neurotechnologies enable",
       "explanation": "'Neurotechnologies' is plural and requires the plural verb 'enable,' not singular 'enables.' Option B is correct.",
@@ -593,10 +593,10 @@
       "topic": "Inferences",
       "prompt": "The passage suggests that gig economy worker protections depend partly on",
       "options": [
-        "their legal classification as employee or contractor",
-        "the worker's skill level",
         "their age and experience",
-        "whether they choose to work full-time or part-time"
+        "whether they choose to work full-time or part-time",
+        "their legal classification as employee or contractor",
+        "the worker's skill level"
       ],
       "correctAnswer": "their legal classification as employee or contractor",
       "explanation": "The passage states that 'classification as independent contractors rather than employees affects whether labor protections apply,' showing classification determines protections.",
@@ -627,10 +627,10 @@
       "topic": "Text Structure",
       "prompt": "The passage presents quantum computers by focusing on",
       "options": [
-        "their long history of development",
-        "their complete superiority over all other computers",
         "their current limitations and theoretical potential",
-        "why they should not be developed"
+        "why they should not be developed",
+        "their long history of development",
+        "their complete superiority over all other computers"
       ],
       "correctAnswer": "their current limitations and theoretical potential",
       "explanation": "The passage describes theoretical potential (revolutionizing multiple fields) while noting current limitations (error rates, coherence maintenance).",
@@ -644,10 +644,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively corrects the error in the passage?",
       "options": [
-        "Treatment approaches includes medication",
         "Treatment approach includes medication",
         "Treatment approaches include medication",
-        "Treatment approaches is including medication"
+        "Treatment approaches is including medication",
+        "Treatment approaches includes medication"
       ],
       "correctAnswer": "Treatment approaches include medication",
       "explanation": "'Approaches' is plural and requires the plural verb 'include,' not singular 'includes.' Option B is correct.",
@@ -678,10 +678,10 @@
       "topic": "Inferences",
       "prompt": "The passage suggests that sleep deprivation research has improved treatment because understanding sleep's function enabled",
       "options": [
+        "elimination of the need for sleep medication",
         "better understanding of consciousness",
         "increased knowledge of why humans need dreams",
-        "development of treatments for sleep disorders",
-        "elimination of the need for sleep medication"
+        "development of treatments for sleep disorders"
       ],
       "correctAnswer": "development of treatments for sleep disorders",
       "explanation": "The passage states 'Understanding sleep's neurological basis has led to treatments for insomnia and other sleep disorders,' directly linking understanding to treatment development.",
@@ -695,10 +695,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively corrects the subject-verb agreement error?",
       "options": [
-        "Renewable energy sources like wind and solar faces",
-        "Renewable energy sources like wind or solar faces",
         "Renewable energy sources like wind and solar face",
-        "Renewable energy source like wind and solar faces"
+        "Renewable energy source like wind and solar faces",
+        "Renewable energy sources like wind and solar faces",
+        "Renewable energy sources like wind or solar faces"
       ],
       "correctAnswer": "Renewable energy sources like wind and solar face",
       "explanation": "'Sources' is plural and requires the plural verb 'face,' not singular 'faces.' Option B is correct.",
@@ -712,10 +712,10 @@
       "topic": "Central Ideas",
       "prompt": "The passage presents precision medicine as significant because it",
       "options": [
-        "relies solely on genetic information",
         "rejects all conventional medical approaches",
         "personalizes treatment based on individual characteristics rather than applying uniform protocols",
-        "works only for genetic diseases"
+        "works only for genetic diseases",
+        "relies solely on genetic information"
       ],
       "correctAnswer": "personalizes treatment based on individual characteristics rather than applying uniform protocols",
       "explanation": "The passage distinguishes precision medicine from conventional one-size-fits-all approaches, emphasizing individualization based on multiple patient factors.",
@@ -746,10 +746,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively corrects the subject-verb agreement error?",
       "options": [
+        "Aging populations in developed nations is creating economic pressure",
         "Aging populations in developed nations creates economic pressure",
         "Aging population in developed nations creates economic pressure",
-        "Aging populations in developed nations create economic pressure",
-        "Aging populations in developed nations is creating economic pressure"
+        "Aging populations in developed nations create economic pressure"
       ],
       "correctAnswer": "Aging populations in developed nations create economic pressure",
       "explanation": "'Populations' is plural and requires the plural verb 'create,' not singular 'creates.' Option B is correct.",
@@ -763,10 +763,10 @@
       "topic": "Vocabulary in Context",
       "prompt": "As used in the passage, 'alternative' most nearly means",
       "options": [
-        "less desirable than original",
-        "having a choice between options",
         "substitutes for the original option",
-        "unusual or unconventional"
+        "unusual or unconventional",
+        "less desirable than original",
+        "having a choice between options"
       ],
       "correctAnswer": "substitutes for the original option",
       "explanation": "'Alternative proteins' are substitutes for traditional animal proteins, presented as potential solutions to food security challenges.",
@@ -780,10 +780,10 @@
       "topic": "Text Structure",
       "prompt": "The passage presents CRISPR gene editing by emphasizing both its",
       "options": [
-        "accuracy and speed in research",
-        "historical development and future applications",
         "cost and accessibility",
-        "potential benefits and ethical concerns"
+        "potential benefits and ethical concerns",
+        "accuracy and speed in research",
+        "historical development and future applications"
       ],
       "correctAnswer": "potential benefits and ethical concerns",
       "explanation": "The passage notes possibilities for treating diseases and technical capability while also identifying concerns about heritable modification and designer babies.",
@@ -797,10 +797,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively corrects the subject-verb agreement error?",
       "options": [
-        "Workers with technical skills benefit disproportionately",
-        "Workers with technical skills benefits disproportionately",
         "Worker with technical skills benefits disproportionately",
-        "Workers with technical skills benefiting disproportionately"
+        "Workers with technical skills benefiting disproportionately",
+        "Workers with technical skills benefit disproportionately",
+        "Workers with technical skills benefits disproportionately"
       ],
       "correctAnswer": "Workers with technical skills benefit disproportionately",
       "explanation": "'Workers' is plural and requires the plural verb 'benefit,' not singular 'benefits.' Option B is correct.",
@@ -814,10 +814,10 @@
       "topic": "Inferences",
       "prompt": "The passage suggests that rare disease patients face challenges partly because",
       "options": [
-        "limited patient populations reduce research funding and drug development incentives",
         "drug companies are unethical",
         "treatments for rare diseases are more harmful than beneficial",
-        "all orphan drugs are unproven"
+        "all orphan drugs are unproven",
+        "limited patient populations reduce research funding and drug development incentives"
       ],
       "correctAnswer": "limited patient populations reduce research funding and drug development incentives",
       "explanation": "The passage explains that orphan diseases 'lack commercial viability,' creating limited profit incentives for research and treatment development.",
@@ -848,10 +848,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively corrects the errors in the passage?",
       "options": [
+        "Economic growth models are attempting to predict future output",
         "Economic growth models attempt to predict future output",
         "Economic growth models attempts to predict future output",
-        "Economic growth model attempts to predict future output",
-        "Economic growth models are attempting to predict future output"
+        "Economic growth model attempts to predict future output"
       ],
       "correctAnswer": "Economic growth models attempt to predict future output",
       "explanation": "'Models' is plural and requires the plural verb 'attempt.' Option B is correct.",
@@ -865,10 +865,10 @@
       "topic": "Central Ideas",
       "prompt": "The passage suggests that pandemic prevention requires addressing",
       "options": [
-        "the interfaces where humans and wildlife interact to reduce transmission risk",
-        "only government health policies",
         "urban areas exclusively",
-        "only pharmaceutical interventions"
+        "only pharmaceutical interventions",
+        "the interfaces where humans and wildlife interact to reduce transmission risk",
+        "only government health policies"
       ],
       "correctAnswer": "the interfaces where humans and wildlife interact to reduce transmission risk",
       "explanation": "The passage identifies human-wildlife contact through deforestation and industrial agriculture as amplifying risk, requiring attention to these interfaces.",
@@ -882,10 +882,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively completes the passage with consistent grammar?",
       "options": [
-        "Such volatility limits cryptocurrencies' usefulness as stable stores",
         "Such volatility limit cryptocurrencies' usefulness as stable stores",
         "Such volatility limits cryptocurrency's usefulness as stable stores",
-        "Such volatility limits cryptocurrencies's usefulness as stable stores"
+        "Such volatility limits cryptocurrencies's usefulness as stable stores",
+        "Such volatility limits cryptocurrencies' usefulness as stable stores"
       ],
       "correctAnswer": "Such volatility limits cryptocurrencies' usefulness as stable stores",
       "explanation": "'Volatility' (singular subject) requires 'limits.' The plural possessive 'cryptocurrencies'' is correct for multiple cryptocurrencies. Option A is correct.",
@@ -916,10 +916,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively corrects the subject-verb agreement error?",
       "options": [
+        "Recent disruptions to global supply chains is demonstrating",
         "Recent disruptions to global supply chains demonstrate",
         "Recent disruptions to global supply chains demonstrates",
-        "Recent disruption to global supply chains demonstrates",
-        "Recent disruptions to global supply chains is demonstrating"
+        "Recent disruption to global supply chains demonstrates"
       ],
       "correctAnswer": "Recent disruptions to global supply chains demonstrate",
       "explanation": "'Disruptions' is plural and requires the plural verb 'demonstrate,' not singular 'demonstrates.' Option B is correct.",
@@ -933,10 +933,10 @@
       "topic": "Text Structure",
       "prompt": "The passage presents digital mental health interventions by acknowledging",
       "options": [
-        "both their potential benefits and significant limitations",
-        "they work only for mild conditions",
         "they are completely superior to traditional therapy",
-        "that they require no clinical validation"
+        "that they require no clinical validation",
+        "both their potential benefits and significant limitations",
+        "they work only for mild conditions"
       ],
       "correctAnswer": "both their potential benefits and significant limitations",
       "explanation": "The passage notes expansion of access and convenience while also noting lack of human connection and inability to replace traditional therapy.",
@@ -967,10 +967,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively corrects the errors in the passage?",
       "options": [
-        "International bioethics frameworks attempts to establish standards",
-        "International bioethics framework attempts to establish standards",
         "International bioethics frameworks attempt to establish standards",
-        "International bioethics frameworks are attempting to establish standards"
+        "International bioethics frameworks are attempting to establish standards",
+        "International bioethics frameworks attempts to establish standards",
+        "International bioethics framework attempts to establish standards"
       ],
       "correctAnswer": "International bioethics frameworks attempt to establish standards",
       "explanation": "'Frameworks' is plural and requires the plural verb 'attempt.' Option B is correct.",
@@ -984,10 +984,10 @@
       "topic": "Inferences",
       "prompt": "The passage suggests that addressing metabolic syndrome effectively requires",
       "options": [
-        "only individual behavioral changes",
         "only medication",
         "both individual-level and structural policy-level interventions",
-        "no medical treatment"
+        "no medical treatment",
+        "only individual behavioral changes"
       ],
       "correctAnswer": "both individual-level and structural policy-level interventions",
       "explanation": "The passage states addressing metabolic syndrome 'requires interventions at multiple levels from individual to policy,' indicating both personal and structural changes are needed.",
@@ -1018,10 +1018,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively corrects the subject-verb agreement error?",
       "options": [
+        "Tech industry workers often facing unrealistic deadline",
         "Tech industry workers often faces unrealistic deadline",
         "Tech industry worker often faces unrealistic deadline",
-        "Tech industry workers often face unrealistic deadline",
-        "Tech industry workers often facing unrealistic deadline"
+        "Tech industry workers often face unrealistic deadline"
       ],
       "correctAnswer": "Tech industry workers often face unrealistic deadline",
       "explanation": "'Workers' is plural and requires the plural verb 'face,' not singular 'faces.' Option B is correct.",
@@ -1035,10 +1035,10 @@
       "topic": "Vocabulary in Context",
       "prompt": "In the passage, 'complications' most nearly means",
       "options": [
-        "unexpected occurrences",
-        "situations that are difficult to understand",
         "secondary conditions resulting from a primary disease",
-        "medication side effects"
+        "medication side effects",
+        "unexpected occurrences",
+        "situations that are difficult to understand"
       ],
       "correctAnswer": "secondary conditions resulting from a primary disease",
       "explanation": "Diabetes complications are secondary health conditions (retinopathy, nephropathy) that result from prolonged high blood glucose.",
@@ -1052,10 +1052,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively completes the passage with consistent grammar?",
       "options": [
-        "Collisions with debris endangers operational satellites",
         "Collision with debris endangers operational satellites",
         "Collisions with debris endanger operational satellites",
-        "Collisions with debris endangering operational satellites"
+        "Collisions with debris endangering operational satellites",
+        "Collisions with debris endangers operational satellites"
       ],
       "correctAnswer": "Collisions with debris endanger operational satellites",
       "explanation": "'Collisions' is plural and requires the plural verb 'endanger,' not singular 'endangers.' Option B is correct.",
@@ -1086,10 +1086,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively completes the passage with consistent grammar?",
       "options": [
+        "Carbon sequestration technologies is capturing carbon dioxide",
         "Carbon sequestration technologies captures carbon dioxide",
         "Carbon sequestration technology captures carbon dioxide",
-        "Carbon sequestration technologies capture carbon dioxide",
-        "Carbon sequestration technologies is capturing carbon dioxide"
+        "Carbon sequestration technologies capture carbon dioxide"
       ],
       "correctAnswer": "Carbon sequestration technologies capture carbon dioxide",
       "explanation": "'Technologies' is plural and requires the plural verb 'capture,' not singular 'captures.' Option B is correct.",
@@ -1103,10 +1103,10 @@
       "topic": "Vocabulary in Context",
       "prompt": "As used in the passage, 'preserve' most nearly means",
       "options": [
-        "keep in storage",
-        "maintain in good condition",
         "protect or maintain for future use",
-        "conserve resources"
+        "conserve resources",
+        "keep in storage",
+        "maintain in good condition"
       ],
       "correctAnswer": "protect or maintain for future use",
       "explanation": "Fertility preservation means protecting or maintaining reproductive capacity for future use, allowing delayed childbearing.",
@@ -1120,10 +1120,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively corrects the errors in the passage?",
       "options": [
-        "Trade policies including tariffs affects consumer prices",
-        "Trade policies including tariffs are affecting consumer prices",
         "Trade policy including tariffs affects consumer prices",
-        "Trade policies including tariffs affect consumer prices"
+        "Trade policies including tariffs affect consumer prices",
+        "Trade policies including tariffs affects consumer prices",
+        "Trade policies including tariffs are affecting consumer prices"
       ],
       "correctAnswer": "Trade policies including tariffs affect consumer prices",
       "explanation": "'Policies' is plural and requires the plural verb 'affect,' not singular 'affects.' Option B is correct.",
@@ -1137,10 +1137,10 @@
       "topic": "Text Structure",
       "prompt": "The passage presents migraine research by emphasizing",
       "options": [
-        "understanding mechanisms translates into improved clinical treatment",
-        "migraines are not a real medical condition",
         "migraine research is less important than other medical research",
-        "migraines can be completely cured by understanding their biology"
+        "migraines can be completely cured by understanding their biology",
+        "understanding mechanisms translates into improved clinical treatment",
+        "migraines are not a real medical condition"
       ],
       "correctAnswer": "understanding mechanisms translates into improved clinical treatment",
       "explanation": "The passage illustrates how understanding neurobiological mechanisms led to novel preventive treatments, showing the value of basic research.",
@@ -1154,10 +1154,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively completes the passage with correct subject-verb agreement?",
       "options": [
-        "Union membership in private sector declines steadily",
         "Union membership in private sector decline steadily",
         "Union memberships in private sector declines steadily",
-        "Union membership in private sector is declining steadily"
+        "Union membership in private sector is declining steadily",
+        "Union membership in private sector declines steadily"
       ],
       "correctAnswer": "Union membership in private sector declines steadily",
       "explanation": "'Membership' (singular) requires the singular verb 'declines.' Option A is correct, describing the overall shift as a continuing process.",
@@ -1188,10 +1188,10 @@
       "topic": "Grammar - Conventions",
       "prompt": "Which choice most effectively corrects the errors in the passage?",
       "options": [
+        "Economic growth models are attempting to predict future output",
         "Economic growth models attempt to predict future output",
         "Economic growth models attempts to predict future output",
-        "Economic growth model attempts to predict future output",
-        "Economic growth models are attempting to predict future output"
+        "Economic growth model attempts to predict future output"
       ],
       "correctAnswer": "Economic growth models attempt to predict future output",
       "explanation": "'Models' is plural and requires the plural verb 'attempt.' Option B is correct and the passage shows models often underestimate innovation's role.",

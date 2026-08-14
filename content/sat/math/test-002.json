@@ -14,10 +14,10 @@
       "topic": "Algebra",
       "prompt": "Solve for x: 4x - 9 = 15",
       "options": [
-        "4",
-        "8",
         "6",
-        "12"
+        "12",
+        "4",
+        "8"
       ],
       "correctAnswer": "6",
       "explanation": "Add 9 to both sides: 4x = 24. Divide by 4: x = 6.",
@@ -30,10 +30,10 @@
       "topic": "Algebra",
       "prompt": "Which inequality is equivalent to -2x + 5 > 13?",
       "options": [
+        "x > 4",
         "x < -4",
         "x > -4",
-        "x < 4",
-        "x > 4"
+        "x < 4"
       ],
       "correctAnswer": "x < -4",
       "explanation": "Subtract 5: -2x > 8. Divide by -2 (reverse inequality): x < -4.",
@@ -62,10 +62,10 @@
       "topic": "Algebra",
       "prompt": "What is the x-intercept of y = 2x - 8?",
       "options": [
-        "4",
         "2",
         "8",
-        "-8"
+        "-8",
+        "4"
       ],
       "correctAnswer": "4",
       "explanation": "Set y = 0: 0 = 2x - 8 → 2x = 8 → x = 4.",
@@ -78,10 +78,10 @@
       "topic": "Algebra",
       "prompt": "Solve: 3(x + 2) = 21",
       "options": [
-        "9",
-        "7",
         "5",
-        "11"
+        "11",
+        "9",
+        "7"
       ],
       "correctAnswer": "5",
       "explanation": "Divide by 3: x + 2 = 7. Subtract 2: x = 5.",
@@ -94,10 +94,10 @@
       "topic": "Algebra",
       "prompt": "Solve the system: 2x + y = 8 and x - y = 1",
       "options": [
+        "x = 1, y = 6",
         "x = 3, y = 2",
         "x = 2, y = 4",
-        "x = 4, y = 0",
-        "x = 1, y = 6"
+        "x = 4, y = 0"
       ],
       "correctAnswer": "x = 3, y = 2",
       "explanation": "Add the equations: (2x + y) + (x - y) = 8 + 1 → 3x = 9 → x = 3. Then y = x - 1 = 2. Check: 2·3 + 2 = 8 ✓ and 3 - 2 = 1 ✓.",
@@ -126,10 +126,10 @@
       "topic": "Algebra",
       "prompt": "If 2(3x - 1) = 4x + 6, what is x?",
       "options": [
-        "4",
         "2",
         "6",
-        "8"
+        "8",
+        "4"
       ],
       "correctAnswer": "4",
       "explanation": "Expand: 6x - 2 = 4x + 6. Subtract 4x: 2x - 2 = 6. Add 2: 2x = 8. Divide by 2: x = 4.",
@@ -142,10 +142,10 @@
       "topic": "Advanced Math",
       "prompt": "If 2x = 32, what is x?",
       "options": [
-        "4",
-        "6",
         "5",
-        "8"
+        "8",
+        "4",
+        "6"
       ],
       "correctAnswer": "5",
       "explanation": "2x = 32 means x = log₂(32). Since 2⁵ = 32, x = 5.",
@@ -158,10 +158,10 @@
       "topic": "Advanced Math",
       "prompt": "Simplify: (√25)(√4)",
       "options": [
-        "200",
-        "20",
         "100",
-        "10"
+        "10",
+        "200",
+        "20"
       ],
       "correctAnswer": "10",
       "explanation": "(√25)(√4) = 5 × 2 = 10.",
@@ -174,10 +174,10 @@
       "topic": "Advanced Math",
       "prompt": "What is the value of 3⁻²?",
       "options": [
-        "1/9",
-        "1/6",
         "6",
-        "9"
+        "9",
+        "1/9",
+        "1/6"
       ],
       "correctAnswer": "1/9",
       "explanation": "3⁻² = 1/(3²) = 1/9.",
@@ -190,10 +190,10 @@
       "topic": "Advanced Math",
       "prompt": "What is the product of the roots of x² + 4x + 3 = 0?",
       "options": [
-        "3",
         "-3",
         "-4",
-        "4"
+        "4",
+        "3"
       ],
       "correctAnswer": "3",
       "explanation": "Using Vieta's formulas, product of roots = c/a = 3/1 = 3.",
@@ -222,10 +222,10 @@
       "topic": "Advanced Math",
       "prompt": "Factor: x² - 9",
       "options": [
+        "(x - 9)(x + 1)",
         "(x - 3)(x + 3)",
         "(x - 3)²",
-        "(x + 3)²",
-        "(x - 9)(x + 1)"
+        "(x + 3)²"
       ],
       "correctAnswer": "(x - 3)(x + 3)",
       "explanation": "x² - 9 is a difference of squares: x² - 3² = (x - 3)(x + 3).",
@@ -238,10 +238,10 @@
       "topic": "Advanced Math",
       "prompt": "Solve: x² + 6x + 8 = 0",
       "options": [
-        "x = -2 or x = -4",
-        "x = 2 or x = 4",
         "x = -2 or x = 4",
-        "x = 2 or x = -4"
+        "x = 2 or x = -4",
+        "x = -2 or x = -4",
+        "x = 2 or x = 4"
       ],
       "correctAnswer": "x = -2 or x = -4",
       "explanation": "Factor: (x + 2)(x + 4) = 0 → x = -2 or x = -4.",
@@ -254,10 +254,10 @@
       "topic": "Advanced Math",
       "prompt": "What is the value of √64?",
       "options": [
-        "8",
         "6",
         "4",
-        "16"
+        "16",
+        "8"
       ],
       "correctAnswer": "8",
       "explanation": "√64 = 8 because 8² = 64.",
@@ -286,10 +286,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "A cyclist travels 120 km in 3 hours. What is the average speed in km/h?",
       "options": [
+        "60",
         "40",
         "30",
-        "50",
-        "60"
+        "50"
       ],
       "correctAnswer": "40",
       "explanation": "Average speed = distance / time = 120 km / 3 hours = 40 km/h.",
@@ -302,10 +302,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "The ratio of dogs to cats in a shelter is 2:7. If there are 16 dogs, how many cats are there?",
       "options": [
-        "56",
-        "36",
         "48",
-        "28"
+        "28",
+        "56",
+        "36"
       ],
       "correctAnswer": "56",
       "explanation": "If dogs:cats = 2:7 and dogs = 16, then 16/cats = 2/7 → cats = 16 × 7/2 = 56.",
@@ -334,10 +334,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "The ages of five people are 22, 25, 28, 30, and x. If the mean age is 27, what is x?",
       "options": [
-        "25",
-        "27",
         "30",
-        "32"
+        "32",
+        "25",
+        "27"
       ],
       "correctAnswer": "30",
       "explanation": "Mean = (22 + 25 + 28 + 30 + x) / 5 = 27 → 105 + x = 135 → x = 30.",
@@ -350,10 +350,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "A recipe uses flour and sugar in a 4:3 ratio. If you use 12 cups of flour, how much sugar do you need?",
       "options": [
-        "8",
         "12",
         "9",
-        "16"
+        "16",
+        "8"
       ],
       "correctAnswer": "9",
       "explanation": "If flour:sugar = 4:3 and flour = 12, then 12/sugar = 4/3 → sugar = 12 × 3/4 = 9.",
@@ -382,10 +382,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "A data set contains 10, 15, 20, 25, and 30. What is the median?",
       "options": [
+        "25",
         "17.5",
         "22.5",
-        "20",
-        "25"
+        "20"
       ],
       "correctAnswer": "20",
       "explanation": "The median is the middle value when the data is ordered. With 5 values, the median is the 3rd value: 20.",
@@ -398,10 +398,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "What is the area of a square with side length 12?",
       "options": [
-        "24",
-        "48",
         "144",
-        "288"
+        "288",
+        "24",
+        "48"
       ],
       "correctAnswer": "144",
       "explanation": "Area = side² = 12² = 144.",
@@ -414,10 +414,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "A triangle has sides of length 5, 12, and 13. Is it a right triangle?",
       "options": [
-        "Yes, 5 + 12 = 17",
         "No, the sides are not equal",
         "Yes, 5² + 12² = 13²",
-        "No, we need more information"
+        "No, we need more information",
+        "Yes, 5 + 12 = 17"
       ],
       "correctAnswer": "Yes, 5² + 12² = 13²",
       "explanation": "Check Pythagorean theorem: 5² + 12² = 25 + 144 = 169 = 13². So yes, it is a right triangle.",
@@ -446,10 +446,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "A circle has area 36π. What is its radius?",
       "options": [
+        "12",
         "3",
         "9",
-        "6",
-        "12"
+        "6"
       ],
       "correctAnswer": "6",
       "explanation": "Area = πr² = 36π → r² = 36 → r = 6.",
@@ -462,10 +462,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "In a right triangle, one leg is 6 and the other leg is 8. What is the hypotenuse?",
       "options": [
-        "14",
-        "12",
         "10",
-        "16"
+        "16",
+        "14",
+        "12"
       ],
       "correctAnswer": "10",
       "explanation": "Using Pythagorean theorem: c² = 6² + 8² = 36 + 64 = 100 → c = 10.",
@@ -478,10 +478,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "The sum of two angles in a triangle is 120°. What is the third angle?",
       "options": [
-        "30°",
-        "40°",
         "120°",
-        "60°"
+        "60°",
+        "30°",
+        "40°"
       ],
       "correctAnswer": "60°",
       "explanation": "The sum of all angles in a triangle is 180°. Third angle = 180° - 120° = 60°.",
@@ -494,10 +494,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "In a 45-45-90 triangle, if each leg has length 5, what is the hypotenuse?",
       "options": [
-        "5√2",
-        "5",
         "10",
-        "10√2"
+        "10√2",
+        "5√2",
+        "5"
       ],
       "correctAnswer": "5√2",
       "explanation": "In a 45-45-90 triangle, the sides are in ratio 1:1:√2. If each leg is 5, the hypotenuse is 5√2.",
@@ -510,10 +510,10 @@
       "topic": "Algebra",
       "prompt": "Solve: |2x - 3| = 7",
       "options": [
-        "x = -2 or x = 5",
         "x = 2 or x = 5",
         "x = 2 or x = -2",
-        "x = 5 or x = -5"
+        "x = 5 or x = -5",
+        "x = -2 or x = 5"
       ],
       "correctAnswer": "x = -2 or x = 5",
       "explanation": "|2x - 3| = 7 means 2x - 3 = 7 or 2x - 3 = -7. From first: 2x = 10 → x = 5. From second: 2x = -4 → x = -2.",
@@ -542,10 +542,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "If 45% of a number is 90, what is the number?",
       "options": [
+        "405",
         "200",
         "135",
-        "40.5",
-        "405"
+        "40.5"
       ],
       "correctAnswer": "200",
       "explanation": "Let the number be x. Then 0.45x = 90 → x = 90 / 0.45 = 200.",
@@ -558,10 +558,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "A rectangular prism has length 6, width 4, and height 3. What is its volume?",
       "options": [
-        "72",
-        "26",
         "52",
-        "13"
+        "13",
+        "72",
+        "26"
       ],
       "correctAnswer": "72",
       "explanation": "Volume = length × width × height = 6 × 4 × 3 = 72.",
@@ -574,10 +574,10 @@
       "topic": "Algebra",
       "prompt": "If h(x) = -3x + 4 and h(x) = 10, what is x?",
       "options": [
-        "-2",
         "-1",
         "2",
-        "4"
+        "4",
+        "-2"
       ],
       "correctAnswer": "-2",
       "explanation": "-3x + 4 = 10 → -3x = 6 → x = -2.",
@@ -606,10 +606,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "If 8 workers can complete a job in 5 days, how many days will it take 10 workers?",
       "options": [
+        "8",
         "4",
         "4.5",
-        "6.25",
-        "8"
+        "6.25"
       ],
       "correctAnswer": "4",
       "explanation": "Total work = 8 workers × 5 days = 40 worker-days. Time for 10 workers = 40 / 10 = 4 days.",
@@ -622,10 +622,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "Two congruent triangles have corresponding sides in the ratio 1:1. If the first triangle has a side of 8, what is the corresponding side in the second triangle?",
       "options": [
-        "8",
-        "6",
         "4",
-        "16"
+        "16",
+        "8",
+        "6"
       ],
       "correctAnswer": "8",
       "explanation": "Since the ratio is 1:1 (congruent), the corresponding sides are equal. If one side is 8, the other is also 8.",
@@ -654,10 +654,10 @@
       "topic": "Algebra",
       "prompt": "If 5(x - 2) = 2x + 11, what is x?",
       "options": [
-        "1",
-        "3",
         "7",
-        "5"
+        "5",
+        "1",
+        "3"
       ],
       "correctAnswer": "7",
       "explanation": "Expand: 5x - 10 = 2x + 11. Subtract 2x: 3x - 10 = 11. Add 10: 3x = 21. Divide by 3: x = 7.",
@@ -670,10 +670,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "A student's test scores are 88, 92, and 85. What is the average score?",
       "options": [
-        "85",
         "88",
         "88.3",
-        "92"
+        "92",
+        "85"
       ],
       "correctAnswer": "88.3",
       "explanation": "Average = (88 + 92 + 85) / 3 = 265 / 3 ≈ 88.3.",
@@ -702,10 +702,10 @@
       "topic": "Advanced Math",
       "prompt": "What is the value of log₃(27)?",
       "options": [
+        "81",
         "2",
         "9",
-        "3",
-        "81"
+        "3"
       ],
       "correctAnswer": "3",
       "explanation": "log₃(27) asks: 3 to what power equals 27? Since 3³ = 27, the answer is 3.",

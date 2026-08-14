@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "Why does the member want to cancel?",
       "options": [
-        "The facility is too crowded",
         "They're relocating to British Columbia for work",
         "They want to join a different gym",
-        "They're not satisfied with the equipment"
+        "They're not satisfied with the equipment",
+        "The facility is too crowded"
       ],
       "correctAnswer": "They're relocating to British Columbia for work",
       "explanation": "Member states 'I'm relocating to British Columbia for work.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the monthly membership fee?",
       "options": [
+        "$99",
         "$69",
         "$79",
-        "$89",
-        "$99"
+        "$89"
       ],
       "correctAnswer": "$89",
       "explanation": "Rep states 'you're on our premium monthly plan at $89 per month.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When will the membership end?",
       "options": [
-        "June 17th",
         "June 24th",
         "July 1st",
-        "July 3rd"
+        "July 3rd",
+        "June 17th"
       ],
       "correctAnswer": "June 24th",
       "explanation": "Rep confirms 'That would be June 24th' for three weeks from the conversation date.",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What is the original early termination fee?",
       "options": [
-        "$100",
         "$125",
         "$150",
-        "$200"
+        "$200",
+        "$100"
       ],
       "correctAnswer": "$150",
       "explanation": "Rep states 'There is a $150 early termination fee.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What is the reduced early termination fee offered?",
       "options": [
-        "$50",
-        "$75",
         "$100",
-        "$125"
+        "$125",
+        "$50",
+        "$75"
       ],
       "correctAnswer": "$75",
       "explanation": "Rep offers to reduce the fee 'to $75' as a gesture of loyalty.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What type of concert is it?",
       "options": [
-        "Classical music",
-        "Hip-hop festival",
         "Indie rock festival",
-        "Country music show"
+        "Country music show",
+        "Classical music",
+        "Hip-hop festival"
       ],
       "correctAnswer": "Indie rock festival",
       "explanation": "Alex mentions 'The indie rock festival at the waterfront.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "How much is each ticket?",
       "options": [
-        "$25",
         "$35",
         "$40",
-        "$50"
+        "$50",
+        "$25"
       ],
       "correctAnswer": "$40",
       "explanation": "Alex states 'They're forty dollars each.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "Who is the headliner?",
       "options": [
-        "The Eastern Stars",
-        "The Northern Stars",
         "The Southern Lights",
-        "The Western Dream"
+        "The Western Dream",
+        "The Eastern Stars",
+        "The Northern Stars"
       ],
       "correctAnswer": "The Northern Stars",
       "explanation": "Alex identifies 'The headliner is The Northern Stars.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What time does the concert end?",
       "options": [
-        "9 PM",
-        "10 PM",
         "11 PM",
-        "Midnight"
+        "Midnight",
+        "9 PM",
+        "10 PM"
       ],
       "correctAnswer": "11 PM",
       "explanation": "Alex estimates 'It should wrap up around eleven.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "When does Route 95 begin service?",
       "options": [
-        "August 1st",
         "August 15th",
         "September 1st",
-        "September 15th"
+        "September 15th",
+        "August 1st"
       ],
       "correctAnswer": "September 1st",
       "explanation": "The announcement states 'The new Route 95 Express connects downtown to the northern suburbs' effective 'September 1st.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "What is the frequency of peak hour service?",
       "options": [
+        "Every 30 minutes",
         "Every 10 minutes",
         "Every 15 minutes",
-        "Every 20 minutes",
-        "Every 30 minutes"
+        "Every 20 minutes"
       ],
       "correctAnswer": "Every 15 minutes",
       "explanation": "The guide specifies 'departures every fifteen minutes during peak hours.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "How much travel time is saved with Route 95?",
       "options": [
+        "30 minutes",
         "15 minutes",
         "20 minutes",
-        "23 minutes",
-        "30 minutes"
+        "23 minutes"
       ],
       "correctAnswer": "23 minutes",
       "explanation": "The guide states travel time reduces 'from forty-five minutes to approximately twenty-two minutes,' which is approximately 23 minutes saved.",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the cost of a single trip?",
       "options": [
-        "$2.50",
-        "$3.00",
         "$3.50",
-        "$4.00"
+        "$4.00",
+        "$2.50",
+        "$3.00"
       ],
       "correctAnswer": "$3.50",
       "explanation": "The guide states 'single trip is three dollars fifty cents.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the monthly pass cost?",
       "options": [
-        "$75",
         "$80",
         "$90",
-        "$100"
+        "$100",
+        "$75"
       ],
       "correctAnswer": "$90",
       "explanation": "The guide specifies 'a monthly pass is ninety dollars.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How much is allocated for the fisheries management plan?",
       "options": [
+        "75 million dollars",
         "50 million dollars",
         "58 million dollars",
-        "67 million dollars",
-        "75 million dollars"
+        "67 million dollars"
       ],
       "correctAnswer": "67 million dollars",
       "explanation": "The plan allocates 67 million dollars over five years.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "By what percentage have Atlantic salmon populations declined?",
       "options": [
-        "35 percent",
-        "42 percent",
         "48 percent",
-        "55 percent"
+        "55 percent",
+        "35 percent",
+        "42 percent"
       ],
       "correctAnswer": "48 percent",
       "explanation": "Atlantic salmon populations have declined by 48 percent over the past two decades.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "What is the maximum subsidy for vessel upgrades?",
       "options": [
-        "150,000 dollars",
         "175,000 dollars",
         "200,000 dollars",
-        "250,000 dollars"
+        "250,000 dollars",
+        "150,000 dollars"
       ],
       "correctAnswer": "200,000 dollars",
       "explanation": "Subsidies reach up to 200,000 dollars for eco-friendly equipment upgrades.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How many marine scientists will the research center employ?",
       "options": [
+        "150 scientists",
         "80 scientists",
         "100 scientists",
-        "120 scientists",
-        "150 scientists"
+        "120 scientists"
       ],
       "correctAnswer": "120 scientists",
       "explanation": "The research center will employ 120 marine scientists.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "How many workplace injuries were reported this year?",
       "options": [
-        "25 injuries",
-        "29 injuries",
         "34 injuries",
-        "39 injuries"
+        "39 injuries",
+        "25 injuries",
+        "29 injuries"
       ],
       "correctAnswer": "34 injuries",
       "explanation": "Tom reports 34 workplace injuries this year.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What is the percentage increase in injuries from last year?",
       "options": [
-        "10 percent",
         "12 percent",
         "15 percent",
-        "18 percent"
+        "18 percent",
+        "10 percent"
       ],
       "correctAnswer": "15 percent",
       "explanation": "The number of injuries is up 15 percent from last year.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What type of incident accounts for most injuries?",
       "options": [
+        "Back injuries from lifting",
         "Equipment failures",
         "Slips, trips, and falls",
-        "Chemical exposure",
-        "Back injuries from lifting"
+        "Chemical exposure"
       ],
       "correctAnswer": "Slips, trips, and falls",
       "explanation": "Most incidents are slips, trips, and falls in warehouse areas.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What is Tom's proposed safety training frequency?",
       "options": [
-        "Quarterly",
-        "Twice yearly",
         "Annually",
-        "Every two years"
+        "Every two years",
+        "Quarterly",
+        "Twice yearly"
       ],
       "correctAnswer": "Twice yearly",
       "explanation": "Tom proposes mandatory training every six months, not annually.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What is David's main concern about the training proposal?",
       "options": [
-        "Training effectiveness",
-        "Cost of training",
         "Time away from work affecting productivity",
-        "Staff availability"
+        "Staff availability",
+        "Training effectiveness",
+        "Cost of training"
       ],
       "correctAnswer": "Time away from work affecting productivity",
       "explanation": "David worries that frequent training time away will affect productivity.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What additional benefit does Angela mention about training?",
       "options": [
-        "Increased wages",
-        "Improved morale",
         "Reduced hours",
-        "Better equipment"
+        "Better equipment",
+        "Increased wages",
+        "Improved morale"
       ],
       "correctAnswer": "Improved morale",
       "explanation": "Angela believes regular training improves morale because workers feel the company cares.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "Mental health is covered more than physical",
         "Physical health is covered more than mental health",
         "They're equally covered",
-        "Neither is adequately covered"
+        "Neither is adequately covered",
+        "Mental health is covered more than physical"
       ],
       "correctAnswer": "Physical health is covered more than mental health",
       "explanation": "The speaker states mental health is covered at lower rates than physical health.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What is the source of these costs according to the speaker?",
       "options": [
-        "Insurance premiums only",
-        "Lost productivity, emergency services, and hospitalizations",
         "Medication costs",
-        "Administrative expenses"
+        "Administrative expenses",
+        "Insurance premiums only",
+        "Lost productivity, emergency services, and hospitalizations"
       ],
       "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
       "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "It's cheaper than physical health",
         "Early treatment has positive ROI",
         "It reduces insurance profits",
-        "It's cost-neutral"
+        "It's cost-neutral",
+        "It's cheaper than physical health"
       ],
       "correctAnswer": "Early treatment has positive ROI",
       "explanation": "The speaker argues mental health coverage has a positive return on investment.",

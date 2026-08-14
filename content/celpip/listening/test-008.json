@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the rental agreement number?",
       "options": [
-        "CR-824447",
         "CR-892447",
         "CR-894247",
-        "CR-824294"
+        "CR-824294",
+        "CR-824447"
       ],
       "correctAnswer": "CR-892447",
       "explanation": "Customer provides the rental agreement number as 'CR-892447.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What damage was visible in the pickup photos?",
       "options": [
-        "A scratch on the driver's door",
-        "A dent on the back bumper",
         "A broken side mirror",
-        "No damage"
+        "No damage",
+        "A scratch on the driver's door",
+        "A dent on the back bumper"
       ],
       "correctAnswer": "A dent on the back bumper",
       "explanation": "Agent confirms 'there is a dent visible in the corner of the back bumper' in the pickup photos.",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When was the vehicle returned?",
       "options": [
+        "4 PM today",
         "1 PM today",
         "2 PM today",
-        "3 PM today",
-        "4 PM today"
+        "3 PM today"
       ],
       "correctAnswer": "4 PM today",
       "explanation": "Customer states 'I returned the vehicle just now, at 4 PM today.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What was the daily cost of the damage waiver insurance?",
       "options": [
-        "$12 per day",
         "$15 per day",
         "$18 per day",
-        "$20 per day"
+        "$20 per day",
+        "$12 per day"
       ],
       "correctAnswer": "$18 per day",
       "explanation": "Customer mentions purchasing damage waiver for 'the extra $18 per day.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What new damage was found on the vehicle?",
       "options": [
+        "A damaged side mirror",
         "A dent on the front bumper",
         "A scratch on the driver's door",
-        "A broken window",
-        "A damaged side mirror"
+        "A broken window"
       ],
       "correctAnswer": "A scratch on the driver's door",
       "explanation": "Agent mentions 'The damage report lists a scratch on the driver's door.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "Is the customer responsible for paying for the new damage?",
       "options": [
+        "Not clear from the conversation",
         "Yes, full amount",
         "Yes, 50% of the cost",
-        "No, it's covered by the damage waiver",
-        "Not clear from the conversation"
+        "No, it's covered by the damage waiver"
       ],
       "correctAnswer": "No, it's covered by the damage waiver",
       "explanation": "Agent confirms the damage waiver covers the new scratch and customer is not responsible.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What type of concert is it?",
       "options": [
-        "Classical music",
-        "Hip-hop festival",
         "Indie rock festival",
-        "Country music show"
+        "Country music show",
+        "Classical music",
+        "Hip-hop festival"
       ],
       "correctAnswer": "Indie rock festival",
       "explanation": "Alex mentions 'The indie rock festival at the waterfront.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "How much is each ticket?",
       "options": [
-        "$25",
         "$35",
         "$40",
-        "$50"
+        "$50",
+        "$25"
       ],
       "correctAnswer": "$40",
       "explanation": "Alex states 'They're forty dollars each.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "Who is the headliner?",
       "options": [
-        "The Eastern Stars",
-        "The Northern Stars",
         "The Southern Lights",
-        "The Western Dream"
+        "The Western Dream",
+        "The Eastern Stars",
+        "The Northern Stars"
       ],
       "correctAnswer": "The Northern Stars",
       "explanation": "Alex identifies 'The headliner is The Northern Stars.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What time does the concert end?",
       "options": [
-        "9 PM",
-        "10 PM",
         "11 PM",
-        "Midnight"
+        "Midnight",
+        "9 PM",
+        "10 PM"
       ],
       "correctAnswer": "11 PM",
       "explanation": "Alex estimates 'It should wrap up around eleven.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "In which room are Group of Seven paintings displayed?",
       "options": [
+        "Room 106",
         "Room 101",
         "Room 102",
-        "Room 104",
-        "Room 106"
+        "Room 104"
       ],
       "correctAnswer": "Room 102",
       "explanation": "The guide says 'We'll start with the Group of Seven landscape paintings in Room 102.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What region did Emily Carr primarily focus on?",
       "options": [
+        "Prairie provinces",
         "Ontario",
         "Quebec",
-        "British Columbia",
-        "Prairie provinces"
+        "British Columbia"
       ],
       "correctAnswer": "British Columbia",
       "explanation": "The guide mentions 'Emily Carr's totem pole paintings from British Columbia.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What artistic movement were Borduas and Riopelle part of?",
       "options": [
-        "Cubism",
         "Automatiste",
         "Impressionism",
-        "Surrealism"
+        "Surrealism",
+        "Cubism"
       ],
       "correctAnswer": "Automatiste",
       "explanation": "The guide states these 'Montreal-based artists were part of the Automatiste movement.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "Which city were Borduas and Riopelle based in?",
       "options": [
-        "Toronto",
         "Vancouver",
         "Montreal",
-        "Ottawa"
+        "Ottawa",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "The guide identifies them as 'Montreal-based artists.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the cost of the expansion project?",
       "options": [
+        "105 million dollars",
         "75 million dollars",
         "85 million dollars",
-        "95 million dollars",
-        "105 million dollars"
+        "95 million dollars"
       ],
       "correctAnswer": "95 million dollars",
       "explanation": "The museum is embarking on a 95 million dollar expansion.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How long is the expansion project expected to take?",
       "options": [
-        "Three years",
-        "Four years",
         "Five years",
-        "Six years"
+        "Six years",
+        "Three years",
+        "Four years"
       ],
       "correctAnswer": "Five years",
       "explanation": "The project is spanning five years.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many construction jobs will be generated?",
       "options": [
-        "400 jobs",
         "500 jobs",
         "600 jobs",
-        "700 jobs"
+        "700 jobs",
+        "400 jobs"
       ],
       "correctAnswer": "600 jobs",
       "explanation": "The expansion will generate approximately 600 construction jobs.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "What percentage of Albertans surveyed support the project?",
       "options": [
+        "85 percent",
         "65 percent",
         "72 percent",
-        "78 percent",
-        "85 percent"
+        "78 percent"
       ],
       "correctAnswer": "78 percent",
       "explanation": "78 percent of surveyed Albertans favor the project.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What does Sarah believe about mentorship in remote work settings?",
       "options": [
-        "Mentorship works better online",
         "Newer staff miss out on mentorship opportunities",
         "Mentorship is not important",
-        "Remote mentorship is equally effective"
+        "Remote mentorship is equally effective",
+        "Mentorship works better online"
       ],
       "correctAnswer": "Newer staff miss out on mentorship opportunities",
       "explanation": "Sarah explicitly states she worries about newer staff missing out on mentorship opportunities.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage has James's productivity increased working remotely?",
       "options": [
-        "25 percent",
         "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James states his productivity has increased by about 40 percent since working remotely.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What reason does James give for his increased productivity?",
       "options": [
+        "More flexible schedule",
         "Better equipment at home",
         "Fewer interruptions",
-        "Shorter work hours",
-        "More flexible schedule"
+        "Shorter work hours"
       ],
       "correctAnswer": "Fewer interruptions",
       "explanation": "James mentions fewer interruptions allow him to focus better on complex projects.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Tom identify as the main finding in the HR data?",
       "options": [
-        "Remote work is always better",
-        "Mixed results depending on the team",
         "Office work is most productive",
-        "Remote work decreases productivity"
+        "Remote work decreases productivity",
+        "Remote work is always better",
+        "Mixed results depending on the team"
       ],
       "correctAnswer": "Mixed results depending on the team",
       "explanation": "Tom says the data shows mixed results, with some teams more productive remotely while others struggle.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of team does Tom suggest might work better in person?",
       "options": [
-        "Software developers",
-        "Marketing teams",
         "Customer service teams",
-        "Finance teams"
+        "Finance teams",
+        "Software developers",
+        "Marketing teams"
       ],
       "correctAnswer": "Customer service teams",
       "explanation": "Tom suggests customer service teams probably need more in-person interaction.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What solution does Tom propose?",
       "options": [
-        "All employees back in office",
         "Completely remote for all",
         "Hybrid approach with flexibility",
-        "No change to current policy"
+        "No change to current policy",
+        "All employees back in office"
       ],
       "correctAnswer": "Hybrid approach with flexibility",
       "explanation": "Tom proposes a hybrid approach that gives managers flexibility based on their team's needs.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "According to Sarah, what does collaboration depend on?",
       "options": [
+        "Email efficiency",
         "Video call quality",
         "People being in the same space",
-        "Written communication",
-        "Email efficiency"
+        "Written communication"
       ],
       "correctAnswer": "People being in the same space",
       "explanation": "Sarah believes collaboration happens more naturally when people are in the same space.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "How does James stay connected with colleagues remotely?",
       "options": [
+        "Monthly meetings only",
         "Phone calls only",
         "Email messages only",
-        "Video calls and shared documents",
-        "Monthly meetings only"
+        "Video calls and shared documents"
       ],
       "correctAnswer": "Video calls and shared documents",
       "explanation": "James mentions collaborating through video calls and shared documents.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What causes is the speaker attributing to forced migration?",
       "options": [
-        "Economic opportunity",
         "Rising sea levels, extreme weather, and changing precipitation",
         "Political conflicts",
-        "Educational opportunities"
+        "Educational opportunities",
+        "Economic opportunity"
       ],
       "correctAnswer": "Rising sea levels, extreme weather, and changing precipitation",
       "explanation": "The speaker identifies these climate factors as forcing migration.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "What examples does the speaker provide of current migration impacts?",
       "options": [
-        "Agricultural improvements",
         "Reduced urbanization",
         "Small island nations disappearing and coastal flooding",
-        "Increased employment"
+        "Increased employment",
+        "Agricultural improvements"
       ],
       "correctAnswer": "Small island nations disappearing and coastal flooding",
       "explanation": "The speaker cites disappearing island nations and increased coastal flooding as current impacts.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What consequences does the speaker warn about with unplanned migration?",
       "options": [
+        "Better job opportunities",
         "Economic growth",
         "Overcrowded cities, slums, and resource conflicts",
-        "Improved infrastructure",
-        "Better job opportunities"
+        "Improved infrastructure"
       ],
       "correctAnswer": "Overcrowded cities, slums, and resource conflicts",
       "explanation": "The speaker warns that unplanned migration creates overcrowding, slums, and conflicts.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "Which regions does the speaker believe will become more desirable?",
       "options": [
+        "Coastal areas",
         "Equatorial regions",
         "Small island nations",
-        "Canada and northern regions",
-        "Coastal areas"
+        "Canada and northern regions"
       ],
       "correctAnswer": "Canada and northern regions",
       "explanation": "The speaker states Canada and northern regions will likely become more desirable.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate for regarding climate-safe regions?",
       "options": [
-        "Restricting population growth",
         "Expanding housing, infrastructure, and economic capacity",
         "Limiting migration",
-        "Maintaining current conditions"
+        "Maintaining current conditions",
+        "Restricting population growth"
       ],
       "correctAnswer": "Expanding housing, infrastructure, and economic capacity",
       "explanation": "The speaker advocates proactively expanding housing, infrastructure, and economic capacity.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What is the speaker's main position on climate migration?",
       "options": [
-        "It won't happen",
         "It should be stopped",
         "It's inevitable and should be managed responsibly",
-        "It's not a real problem"
+        "It's not a real problem",
+        "It won't happen"
       ],
       "correctAnswer": "It's inevitable and should be managed responsibly",
       "explanation": "The speaker argues migration is inevitable and emphasizes the need for responsible planning.",

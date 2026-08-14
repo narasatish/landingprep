@@ -14,10 +14,10 @@
       "topic": "Algebra",
       "prompt": "If 3x + 7 = 22, what is the value of x?",
       "options": [
+        "5",
         "3",
         "9",
-        "6",
-        "5"
+        "6"
       ],
       "correctAnswer": "5",
       "explanation": "Start with 3x + 7 = 22. Subtract 7 from both sides: 3x = 15. Divide by 3: x = 5.",
@@ -46,10 +46,10 @@
       "topic": "Algebra",
       "prompt": "A line passes through the points (2, 5) and (4, 9). What is the slope?",
       "options": [
-        "1",
         "4",
         "3",
-        "2"
+        "2",
+        "1"
       ],
       "correctAnswer": "2",
       "explanation": "Slope = (y₂ - y₁)/(x₂ - x₁) = (9 - 5)/(4 - 2) = 4/2 = 2.",
@@ -62,10 +62,10 @@
       "topic": "Algebra",
       "prompt": "What is the y-intercept of the line y = 3x - 7?",
       "options": [
-        "3",
-        "-7",
         "7",
-        "-3"
+        "-3",
+        "3",
+        "-7"
       ],
       "correctAnswer": "-7",
       "explanation": "The line is in the form y = mx + b where m is the slope and b is the y-intercept. Here, b = -7.",
@@ -78,10 +78,10 @@
       "topic": "Algebra",
       "prompt": "Solve: x/4 + 3 = 11",
       "options": [
+        "32",
         "8",
         "56",
-        "44",
-        "32"
+        "44"
       ],
       "correctAnswer": "32",
       "explanation": "Start with x/4 + 3 = 11. Subtract 3: x/4 = 8. Multiply by 4: x = 32.",
@@ -110,10 +110,10 @@
       "topic": "Algebra",
       "prompt": "If a rectangle has length 3x and width (x + 2), and its perimeter is 28, what is x?",
       "options": [
-        "2",
         "5",
         "4",
-        "3"
+        "3",
+        "2"
       ],
       "correctAnswer": "3",
       "explanation": "Perimeter = 2(length + width) = 2(3x + x + 2) = 28. So 2(4x + 2) = 28 → 8x + 4 = 28 → 8x = 24 → x = 3.",
@@ -126,10 +126,10 @@
       "topic": "Algebra",
       "prompt": "A coffee shop sells coffee for $5 per cup and tea for $3 per cup. If 40 total drinks were sold for $160, how many coffees were sold?",
       "options": [
-        "25",
-        "20",
         "30",
-        "35"
+        "35",
+        "25",
+        "20"
       ],
       "correctAnswer": "20",
       "explanation": "Let c = coffees, t = teas. Set up: c + t = 40 and 5c + 3t = 160. From first: t = 40 - c. Substitute: 5c + 3(40 - c) = 160 → 5c + 120 - 3c = 160 → 2c = 40 → c = 20.",
@@ -142,10 +142,10 @@
       "topic": "Advanced Math",
       "prompt": "If x² = 36, what are the possible values of x?",
       "options": [
+        "6 and -6",
         "6 only",
         "-6 only",
-        "0 and 6",
-        "6 and -6"
+        "0 and 6"
       ],
       "correctAnswer": "6 and -6",
       "explanation": "x² = 36 means x = √36 or x = -√36. Both 6² = 36 and (-6)² = 36, so x = 6 or x = -6.",
@@ -158,10 +158,10 @@
       "topic": "Advanced Math",
       "prompt": "What is the value of 2⁴ × 2³?",
       "options": [
-        "2⁷",
         "64",
         "128",
-        "32"
+        "32",
+        "2⁷"
       ],
       "correctAnswer": "128",
       "explanation": "Using the rule aᵐ × aⁿ = aᵐ⁺ⁿ: 2⁴ × 2³ = 2⁷ = 128.",
@@ -174,10 +174,10 @@
       "topic": "Advanced Math",
       "prompt": "Simplify: √(16 × 9)",
       "options": [
-        "36",
         "25",
         "144",
-        "12"
+        "12",
+        "36"
       ],
       "correctAnswer": "12",
       "explanation": "√(16 × 9) = √16 × √9 = 4 × 3 = 12.",
@@ -206,10 +206,10 @@
       "topic": "Advanced Math",
       "prompt": "If f(x) = 2x² - 3x + 1, what is f(2)?",
       "options": [
+        "3",
         "1",
         "7",
-        "5",
-        "3"
+        "5"
       ],
       "correctAnswer": "3",
       "explanation": "f(2) = 2(2)² - 3(2) + 1 = 2(4) - 6 + 1 = 8 - 6 + 1 = 3.",
@@ -222,10 +222,10 @@
       "topic": "Advanced Math",
       "prompt": "Which expression is equivalent to (3x + 2)²?",
       "options": [
-        "9x² + 4",
-        "3x² + 12x + 4",
         "9x² + 6x + 4",
-        "9x² + 12x + 4"
+        "9x² + 12x + 4",
+        "9x² + 4",
+        "3x² + 12x + 4"
       ],
       "correctAnswer": "9x² + 12x + 4",
       "explanation": "Using (a + b)² = a² + 2ab + b²: (3x + 2)² = (3x)² + 2(3x)(2) + 2² = 9x² + 12x + 4.",
@@ -238,10 +238,10 @@
       "topic": "Advanced Math",
       "prompt": "Solve: x² - 7x + 10 = 0",
       "options": [
-        "x = -2 or x = -5",
         "x = 1 or x = 10",
         "x = 3 or x = 4",
-        "x = 2 or x = 5"
+        "x = 2 or x = 5",
+        "x = -2 or x = -5"
       ],
       "correctAnswer": "x = 2 or x = 5",
       "explanation": "Factor: (x - 2)(x - 5) = 0, so x = 2 or x = 5.",
@@ -270,10 +270,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "A store offers a 20% discount on an item originally priced at $50. What is the sale price?",
       "options": [
+        "$40",
         "$10",
         "$30",
-        "$45",
-        "$40"
+        "$45"
       ],
       "correctAnswer": "$40",
       "explanation": "Discount = 20% of $50 = 0.20 × $50 = $10. Sale price = $50 - $10 = $40.",
@@ -286,10 +286,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "If a car travels 300 miles in 5 hours, what is its average speed in miles per hour?",
       "options": [
-        "50",
-        "90",
         "75",
-        "60"
+        "60",
+        "50",
+        "90"
       ],
       "correctAnswer": "60",
       "explanation": "Average speed = distance / time = 300 miles / 5 hours = 60 mph.",
@@ -302,10 +302,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "The ratio of boys to girls in a class is 3:5. If there are 24 boys, how many girls are there?",
       "options": [
-        "30",
         "35",
         "45",
-        "40"
+        "40",
+        "30"
       ],
       "correctAnswer": "40",
       "explanation": "If boys:girls = 3:5 and there are 24 boys, then 24/boys = 3k for some k. So 24 = 3k → k = 8. Girls = 5k = 5(8) = 40.",
@@ -318,10 +318,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "A bag contains 3 red balls, 2 blue balls, and 5 green balls. What is the probability of drawing a red ball?",
       "options": [
-        "3/10",
         "2/10",
         "5/10",
-        "1/4"
+        "1/4",
+        "3/10"
       ],
       "correctAnswer": "3/10",
       "explanation": "Total balls = 3 + 2 + 5 = 10. Probability of red = 3/10.",
@@ -334,10 +334,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "The mean of the numbers 4, 8, 12, 16, and x is 10. What is x?",
       "options": [
-        "5",
         "10",
         "15",
-        "20"
+        "20",
+        "5"
       ],
       "correctAnswer": "10",
       "explanation": "Mean = (4 + 8 + 12 + 16 + x) / 5 = 10. So 40 + x = 50. Thus x = 10.",
@@ -366,10 +366,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "If the price of an item increases from $80 to $100, what is the percent increase?",
       "options": [
+        "40%",
         "20%",
         "25%",
-        "30%",
-        "40%"
+        "30%"
       ],
       "correctAnswer": "25%",
       "explanation": "Percent increase = (new - old) / old × 100% = (100 - 80) / 80 × 100% = 20/80 × 100% = 25%.",
@@ -382,10 +382,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "A data set has a median of 15. If the data set is 8, 12, 15, 18, 25, what is the mean?",
       "options": [
-        "15",
-        "15.6",
         "17.6",
-        "18"
+        "18",
+        "15",
+        "15.6"
       ],
       "correctAnswer": "15.6",
       "explanation": "Mean = (8 + 12 + 15 + 18 + 25) / 5 = 78 / 5 = 15.6.",
@@ -398,10 +398,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "What is the area of a rectangle with length 8 and width 5?",
       "options": [
-        "13",
         "40",
         "26",
-        "64"
+        "64",
+        "13"
       ],
       "correctAnswer": "40",
       "explanation": "Area = length × width = 8 × 5 = 40.",
@@ -430,10 +430,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "What is the circumference of a circle with radius 7?",
       "options": [
+        "98π",
         "7π",
         "14π",
-        "49π",
-        "98π"
+        "49π"
       ],
       "correctAnswer": "14π",
       "explanation": "Circumference = 2πr = 2π(7) = 14π.",
@@ -446,10 +446,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "What is the area of a circle with radius 5?",
       "options": [
-        "5π",
-        "25π",
         "10π",
-        "50π"
+        "50π",
+        "5π",
+        "25π"
       ],
       "correctAnswer": "25π",
       "explanation": "Area = πr² = π(5)² = 25π.",
@@ -462,10 +462,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "In a right triangle, one leg is 3 and the other leg is 4. What is the hypotenuse?",
       "options": [
-        "6",
         "5",
         "7",
-        "8"
+        "8",
+        "6"
       ],
       "correctAnswer": "5",
       "explanation": "Using the Pythagorean theorem: c² = 3² + 4² = 9 + 16 = 25. So c = 5.",
@@ -478,10 +478,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "The angles in a triangle are x, 2x, and 3x. What is the value of x?",
       "options": [
+        "90°",
         "30°",
         "45°",
-        "60°",
-        "90°"
+        "60°"
       ],
       "correctAnswer": "30°",
       "explanation": "The sum of angles in a triangle is 180°. So x + 2x + 3x = 180° → 6x = 180° → x = 30°.",
@@ -494,10 +494,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "In a right triangle with a 30° angle, the side opposite the 30° angle is 5. What is the hypotenuse?",
       "options": [
-        "5",
         "5√3",
         "10√3",
-        "10"
+        "10",
+        "5"
       ],
       "correctAnswer": "10",
       "explanation": "In a 30-60-90 triangle, the sides are in ratio 1:√3:2. If the side opposite 30° is 5, then the hypotenuse is 2 × 5 = 10.",
@@ -526,10 +526,10 @@
       "topic": "Advanced Math",
       "prompt": "If the vertex of y = x² - 4x + 3 is at (a, b), what is a + b?",
       "options": [
+        "1",
         "-2",
         "-1",
-        "0",
-        "1"
+        "0"
       ],
       "correctAnswer": "1",
       "explanation": "The vertex x-coordinate is x = -(-4)/(2·1) = 2. Then y = 2² - 4·2 + 3 = 4 - 8 + 3 = -1. The vertex is (2, -1), so a + b = 2 + (-1) = 1.",
@@ -542,10 +542,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "A survey of 200 people found that 60% prefer coffee. How many people prefer coffee?",
       "options": [
-        "80",
-        "100",
         "140",
-        "120"
+        "120",
+        "80",
+        "100"
       ],
       "correctAnswer": "120",
       "explanation": "Number = 60% × 200 = 0.60 × 200 = 120.",
@@ -558,10 +558,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "The volume of a rectangular box is 120. If the length is 5 and the width is 4, what is the height?",
       "options": [
-        "4",
         "5",
         "8",
-        "6"
+        "6",
+        "4"
       ],
       "correctAnswer": "6",
       "explanation": "Volume = length × width × height. So 120 = 5 × 4 × h → 120 = 20h → h = 6.",
@@ -590,10 +590,10 @@
       "topic": "Advanced Math",
       "prompt": "What is the product of the solutions to x² - 3x - 10 = 0?",
       "options": [
+        "-10",
         "10",
         "-3",
-        "3",
-        "-10"
+        "3"
       ],
       "correctAnswer": "-10",
       "explanation": "Using Vieta's formulas for x² - 3x - 10 = 0, the product of roots = c/a = -10/1 = -10.",
@@ -606,10 +606,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "If 3 apples cost $2.40, what is the cost of 5 apples?",
       "options": [
-        "$5.00",
-        "$4.50",
         "$4.80",
-        "$4.00"
+        "$4.00",
+        "$5.00",
+        "$4.50"
       ],
       "correctAnswer": "$4.00",
       "explanation": "Cost per apple = $2.40 / 3 = $0.80. Cost of 5 apples = 5 × $0.80 = $4.00.",
@@ -622,10 +622,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "Two similar triangles have corresponding sides in the ratio 2:3. If the smaller triangle has a side of length 4, what is the length of the corresponding side in the larger triangle?",
       "options": [
-        "12",
         "8",
         "9",
-        "6"
+        "6",
+        "12"
       ],
       "correctAnswer": "6",
       "explanation": "If the ratio is 2:3 and the smaller side is 4, then 4/x = 2/3 → x = 4 × 3/2 = 6.",
@@ -638,10 +638,10 @@
       "topic": "Advanced Math",
       "prompt": "Simplify: (x³ × x²) / x⁴",
       "options": [
-        "x",
         "1",
         "x²",
-        "x⁵"
+        "x⁵",
+        "x"
       ],
       "correctAnswer": "x",
       "explanation": "(x³ × x²)/x⁴ = x⁵/x⁴ = x^(5-4) = x.",
@@ -654,10 +654,10 @@
       "topic": "Algebra",
       "prompt": "If 5(x - 2) = 3x + 4, what is x?",
       "options": [
-        "9",
         "7",
         "11",
-        "14"
+        "14",
+        "9"
       ],
       "correctAnswer": "7",
       "explanation": "Expand: 5x - 10 = 3x + 4. Subtract 3x: 2x - 10 = 4. Add 10: 2x = 14. Divide by 2: x = 7.",
@@ -686,10 +686,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "A circle has a diameter of 14. What is its radius?",
       "options": [
+        "28",
         "14",
         "7",
-        "21",
-        "28"
+        "21"
       ],
       "correctAnswer": "7",
       "explanation": "Radius = diameter / 2 = 14 / 2 = 7.",
@@ -702,10 +702,10 @@
       "topic": "Advanced Math",
       "prompt": "What is the value of log₂(8)?",
       "options": [
-        "1",
-        "3",
         "2",
-        "4"
+        "4",
+        "1",
+        "3"
       ],
       "correctAnswer": "3",
       "explanation": "log₂(8) asks: 2 to what power equals 8? Since 2³ = 8, the answer is 3.",

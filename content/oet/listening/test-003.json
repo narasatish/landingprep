@@ -441,10 +441,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What is Mrs Johnson's FiO2 level on mechanical ventilation?",
       "options": [
+        "80 percent",
         "60 percent",
         "50 percent",
-        "40 percent",
-        "80 percent"
+        "40 percent"
       ],
       "correctAnswer": "60 percent",
       "explanation": "The nurse states her FiO2 is at 60 percent.",
@@ -459,10 +459,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How frequently should Mrs Johnson be repositioned?",
       "options": [
-        "Every 2 hours",
-        "Every hour",
         "Every 4 hours",
-        "Every 6 hours"
+        "Every 6 hours",
+        "Every 2 hours",
+        "Every hour"
       ],
       "correctAnswer": "Every 2 hours",
       "explanation": "The nurse recommends repositioning frequency be increased to every two hours.",
@@ -477,10 +477,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How long has Sarah been off work?",
       "options": [
-        "Two weeks",
         "One week",
         "Three weeks",
-        "One month"
+        "One month",
+        "Two weeks"
       ],
       "correctAnswer": "Two weeks",
       "explanation": "The manager mentions Sarah has been off sick for two weeks.",
@@ -495,10 +495,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What indicates poor prognosis for Mrs Johnson in the ICU?",
       "options": [
-        "Good blood pressure",
-        "Normal lactate levels",
         "Elevated lactate suggesting ongoing tissue hypoxia",
-        "Successful extubation"
+        "Successful extubation",
+        "Good blood pressure",
+        "Normal lactate levels"
       ],
       "correctAnswer": "Elevated lactate suggesting ongoing tissue hypoxia",
       "explanation": "The nurse notes elevated lactate indicates tissue hypoxia, a sign of severity.",
@@ -513,10 +513,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What return-to-work approach is suggested for Sarah?",
       "options": [
-        "Full shifts immediately",
         "Permanent leave recommended",
         "Phased return with reduced hours and flexible shifts initially",
-        "No accommodation possible"
+        "No accommodation possible",
+        "Full shifts immediately"
       ],
       "correctAnswer": "Phased return with reduced hours and flexible shifts initially",
       "explanation": "The manager proposes a phased approach starting with three days a week.",
@@ -531,10 +531,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What is a consequence of antimicrobial resistance?",
       "options": [
-        "Limited treatment options and higher mortality",
-        "Lower costs of healthcare",
         "Faster recovery times",
-        "Reduced need for healthcare"
+        "Reduced need for healthcare",
+        "Limited treatment options and higher mortality",
+        "Lower costs of healthcare"
       ],
       "correctAnswer": "Limited treatment options and higher mortality",
       "explanation": "The speaker states resistant organisms cause severe infections with limited treatment options and higher mortality.",
@@ -549,10 +549,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which is NOT mentioned as a pillar of stewardship?",
       "options": [
-        "Medication pricing control",
         "Infection prevention",
         "Optimising prescribing decisions",
-        "Surveillance of resistance patterns"
+        "Surveillance of resistance patterns",
+        "Medication pricing control"
       ],
       "correctAnswer": "Medication pricing control",
       "explanation": "The three pillars are optimising prescribing, infection prevention, and surveillance; pricing is not mentioned.",
@@ -585,10 +585,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "By how much did resistant organism infections decrease?",
       "options": [
-        "15 percent",
-        "20 percent",
         "30 percent",
-        "25 percent"
+        "25 percent",
+        "15 percent",
+        "20 percent"
       ],
       "correctAnswer": "25 percent",
       "explanation": "The speaker states resistant organism infections decreased by 25 percent.",
@@ -641,10 +641,10 @@
       "prompt": "How many pillars does the stewardship programme have?",
       "question": "How many pillars does the stewardship programme have?",
       "options": [
-        "Two",
         "Three",
         "Four",
-        "Five"
+        "Five",
+        "Two"
       ],
       "correctAnswer": "Three",
       "explanation": "The speaker states the programme has three pillars: optimising prescribing, infection prevention, and surveillance.",
@@ -661,10 +661,10 @@
       "prompt": "By how much did inappropriate prescribing fall over two years?",
       "question": "By how much did inappropriate prescribing fall over two years?",
       "options": [
-        "15 percent",
         "25 percent",
         "40 percent",
-        "60 percent"
+        "60 percent",
+        "15 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "The speaker reports inappropriate prescribing decreased by 40 percent over two years.",
@@ -681,10 +681,10 @@
       "prompt": "By how much did resistant organism infections fall?",
       "question": "By how much did resistant organism infections fall?",
       "options": [
+        "55 percent",
         "10 percent",
         "25 percent",
-        "40 percent",
-        "55 percent"
+        "40 percent"
       ],
       "correctAnswer": "25 percent",
       "explanation": "Resistant organism infections decreased by 25 percent.",
@@ -701,10 +701,10 @@
       "prompt": "Which is given as the second pillar?",
       "question": "Which is given as the second pillar?",
       "options": [
-        "Surveillance of resistance patterns",
-        "Infection prevention",
         "Optimising prescribing decisions",
-        "Point-of-care diagnostics"
+        "Point-of-care diagnostics",
+        "Surveillance of resistance patterns",
+        "Infection prevention"
       ],
       "correctAnswer": "Infection prevention",
       "explanation": "The second pillar is infection prevention - hand hygiene, isolation protocols and device care.",
@@ -721,10 +721,10 @@
       "prompt": "Why is the programme being extended to primary care?",
       "question": "Why is the programme being extended to primary care?",
       "options": [
-        "It has fewer resistant organisms",
         "Most antibiotics are prescribed there",
         "It has more laboratory capacity",
-        "Hospital prescribing is already optimal"
+        "Hospital prescribing is already optimal",
+        "It has fewer resistant organisms"
       ],
       "correctAnswer": "Most antibiotics are prescribed there",
       "explanation": "The speaker says the programme is extending to primary care, where most antibiotics are prescribed.",

@@ -47,10 +47,10 @@
       "topic": "Data Interpretation",
       "prompt": "According to Table 1, at what exercise intensity was the mean heart rate 130 bpm?",
       "options": [
-        "50% VO2 max",
         "65% VO2 max",
         "80% VO2 max",
-        "95% VO2 max"
+        "95% VO2 max",
+        "50% VO2 max"
       ],
       "correctAnswer": "65% VO2 max",
       "explanation": "Table 1 shows heart rates of 78, 98, 112, 130, 152, and 175 bpm at intensities 20, 35, 50, 65, 80, and 95% VO2 max respectively. Mean heart rate of 130 bpm corresponds to 65% VO2 max.",
@@ -64,10 +64,10 @@
       "topic": "Data Interpretation",
       "prompt": "How much did mean heart rate increase from 35% to 80% exercise intensity?",
       "options": [
-        "32 bpm",
-        "152 bpm",
         "98 bpm",
-        "54 bpm"
+        "54 bpm",
+        "32 bpm",
+        "152 bpm"
       ],
       "correctAnswer": "54 bpm",
       "explanation": "At 35% intensity, mean heart rate = 98 bpm; at 80% intensity = 152 bpm. Increase = 152 - 98 = 54 bpm.",
@@ -81,10 +81,10 @@
       "topic": "Trends",
       "prompt": "The passage states the relationship between intensity and heart rate was 'approximately linear.' Which observation best supports this characterization?",
       "options": [
+        "Heart rate decreased above 80% intensity",
         "Heart rate increased exponentially with intensity",
         "Heart rate increased by roughly similar amounts with each increase in intensity",
-        "Heart rate remained constant at higher intensities",
-        "Heart rate decreased above 80% intensity"
+        "Heart rate remained constant at higher intensities"
       ],
       "correctAnswer": "Heart rate increased by roughly similar amounts with each increase in intensity",
       "explanation": "A linear relationship means equal changes in the independent variable (intensity) produce roughly equal changes in the dependent variable (heart rate). From 20% to 95% (75% increase), heart rate goes from 78 to 175 (97 bpm increase), averaging ~1.3 bpm per %VO2 max increase—approximately constant.",
@@ -115,10 +115,10 @@
       "topic": "Inference",
       "prompt": "Based on the linear relationship shown, what heart rate would be expected at 40% VO2 max?",
       "options": [
-        "88 bpm",
         "105 bpm",
         "112 bpm",
-        "125 bpm"
+        "125 bpm",
+        "88 bpm"
       ],
       "correctAnswer": "105 bpm",
       "explanation": "The relationship increases ~1.3 bpm per %VO2 max. From 35% (98 bpm) to 40% (5% increase): 98 + (5 × 1.3) = 98 + 6.5 ≈ 105 bpm.",
@@ -132,10 +132,10 @@
       "topic": "Data Interpretation",
       "prompt": "The ratio of mean heart rate at 95% to mean heart rate at 20% intensity is approximately:",
       "options": [
-        "1.2:1",
-        "1.5:1",
         "2.8:1",
-        "2.2:1"
+        "2.2:1",
+        "1.2:1",
+        "1.5:1"
       ],
       "correctAnswer": "2.2:1",
       "explanation": "Heart rate at 95% = 175 bpm; at 20% = 78 bpm. Ratio = 175 / 78 = 2.24, approximately 2.2:1.",
@@ -149,10 +149,10 @@
       "topic": "Experimental Design",
       "prompt": "The study recorded heart rate 'after reaching steady state' at each intensity. This design choice ensured that:",
       "options": [
+        "all participants had the same baseline fitness",
         "heart rate would not vary among participants",
         "measurements reflected stable heart rate responses to intensity rather than transient initial changes",
-        "the treadmill speed remained constant",
-        "all participants had the same baseline fitness"
+        "the treadmill speed remained constant"
       ],
       "correctAnswer": "measurements reflected stable heart rate responses to intensity rather than transient initial changes",
       "explanation": "Waiting for steady state eliminates the variable period where heart rate is still increasing as the body adjusts. Measuring at steady state provides stable, comparable values reflecting the heart's response to that intensity level.",
@@ -183,10 +183,10 @@
       "topic": "Data Interpretation",
       "prompt": "The difference in polyp viability between control and severe stress conditions was:",
       "options": [
-        "23%",
         "67%",
         "28%",
-        "95%"
+        "95%",
+        "23%"
       ],
       "correctAnswer": "67%",
       "explanation": "Control group: 95% viable; Severe stress group: 28% viable. Difference = 95 - 28 = 67%.",
@@ -200,10 +200,10 @@
       "topic": "Inference",
       "prompt": "The passage associates coral bleaching with loss of zooxanthellae. Which statement best explains why this matters?",
       "options": [
+        "bleached coral cannot reproduce",
         "zooxanthellae provide nutrients to coral through photosynthesis",
         "zooxanthellae are predators that damage coral tissue",
-        "zooxanthellae are toxic at elevated temperatures",
-        "bleached coral cannot reproduce"
+        "zooxanthellae are toxic at elevated temperatures"
       ],
       "correctAnswer": "zooxanthellae provide nutrients to coral through photosynthesis",
       "explanation": "Zooxanthellae are symbiotic algae (described as such in the passage). Corals rely on them for photosynthetically-derived nutrients. Their loss during bleaching explains why coral health declines—the corals lose their energy source.",
@@ -217,10 +217,10 @@
       "topic": "Data Interpretation",
       "prompt": "At 31°C (severe stress), what percentage of colonies retained zooxanthellae?",
       "options": [
+        "85%",
         "28%",
         "15%",
-        "72%",
-        "85%"
+        "72%"
       ],
       "correctAnswer": "15%",
       "explanation": "The passage states: 'Severe stress (31°C): 28% of polyps viable; 15% of colonies retained zooxanthellae.'",
@@ -234,10 +234,10 @@
       "topic": "Inference",
       "prompt": "The results show that elevated temperature impaired both polyp viability and zooxanthellae retention. This suggests that:",
       "options": [
-        "temperature affects polyps and zooxanthellae independently",
-        "temperature stress affects both the coral host and its symbiotic algae",
         "zooxanthellae loss directly causes polyp death",
-        "corals cannot survive without zooxanthellae"
+        "corals cannot survive without zooxanthellae",
+        "temperature affects polyps and zooxanthellae independently",
+        "temperature stress affects both the coral host and its symbiotic algae"
       ],
       "correctAnswer": "temperature stress affects both the coral host and its symbiotic algae",
       "explanation": "Both polyp viability and algal retention declined with temperature, suggesting temperature harms both the coral tissue and the algal symbiont. This indicates widespread thermal stress affecting the entire symbiotic system.",
@@ -251,10 +251,10 @@
       "topic": "Data Interpretation",
       "prompt": "According to Table 2, the bacterial population at hour 8 was:",
       "options": [
-        "78 × 10³ CFU/mL",
         "155 × 10³ CFU/mL",
         "310 × 10³ CFU/mL",
-        "620 × 10³ CFU/mL"
+        "620 × 10³ CFU/mL",
+        "78 × 10³ CFU/mL"
       ],
       "correctAnswer": "155 × 10³ CFU/mL",
       "explanation": "Table 2 shows that at 8 hours, population = 155 × 10³ CFU/mL.",
@@ -285,10 +285,10 @@
       "topic": "Data Interpretation",
       "prompt": "From hour 16 to hour 24, the population remained relatively stable around 1,500 × 10³ CFU/mL. This stability indicates:",
       "options": [
+        "the culture was contaminated",
         "bacteria stopped reproducing",
         "the stationary phase had been reached due to nutrient limitation",
-        "bacteria died at the same rate as new cells were produced",
-        "the culture was contaminated"
+        "bacteria died at the same rate as new cells were produced"
       ],
       "correctAnswer": "the stationary phase had been reached due to nutrient limitation",
       "explanation": "The passage explains that from hours 12-24, 'the growth rate slowed and population stabilized...representing the stationary phase when nutrient depletion or waste accumulation limited further growth.'",
@@ -302,10 +302,10 @@
       "topic": "Data Interpretation",
       "prompt": "What was the increase in population from hour 4 to hour 8?",
       "options": [
-        "38 × 10³ CFU/mL",
-        "115 × 10³ CFU/mL",
         "78 × 10³ CFU/mL",
-        "195 × 10³ CFU/mL"
+        "195 × 10³ CFU/mL",
+        "38 × 10³ CFU/mL",
+        "115 × 10³ CFU/mL"
       ],
       "correctAnswer": "115 × 10³ CFU/mL",
       "explanation": "At hour 4: 40 × 10³ CFU/mL; at hour 8: 155 × 10³ CFU/mL. Increase = 155 - 40 = 115 × 10³ CFU/mL.",
@@ -319,10 +319,10 @@
       "topic": "Conflicting Viewpoints",
       "prompt": "Biochemist A's 'Kok clock' mechanism predicts:",
       "options": [
-        "random, unpredictable oxidation of water",
         "a stepwise, regular progression of manganese oxidation states",
         "the central role of tyrosine radicals in catalysis",
-        "that oxygen is not produced by water splitting"
+        "that oxygen is not produced by water splitting",
+        "random, unpredictable oxidation of water"
       ],
       "correctAnswer": "a stepwise, regular progression of manganese oxidation states",
       "explanation": "The passage describes A's hypothesis as 'a clock-like progression of oxidation states' where 'each photon absorbed causes the manganese cluster to advance one step in this catalytic cycle.' This describes regular, stepwise progression.",
@@ -353,10 +353,10 @@
       "topic": "Conflicting Viewpoints",
       "prompt": "Which observation would distinguish between Biochemist A's and Biochemist B's mechanisms?",
       "options": [
+        "Observing that manganese is essential for photosynthesis",
         "Both would predict 4 photons required per O2",
         "Detecting oscillations in manganese oxidation states (supporting A) versus detecting tyrosine radical formation (supporting B)",
-        "Measuring water splitting efficiency",
-        "Observing that manganese is essential for photosynthesis"
+        "Measuring water splitting efficiency"
       ],
       "correctAnswer": "Detecting oscillations in manganese oxidation states (supporting A) versus detecting tyrosine radical formation (supporting B)",
       "explanation": "A emphasizes 'oscillations' in manganese's oxidation states as the central clock mechanism. B emphasizes tyrosine radical chemistry. Direct detection of one mechanism over the other would distinguish the hypotheses.",
@@ -370,10 +370,10 @@
       "topic": "Conflicting Viewpoints",
       "prompt": "Both biochemists agree that:",
       "options": [
+        "light is not required for water splitting",
         "tyrosine radicals are the primary catalysts for water splitting",
         "water splitting occurs without multiple oxidation states",
-        "a manganese cluster is essential for water splitting",
-        "light is not required for water splitting"
+        "a manganese cluster is essential for water splitting"
       ],
       "correctAnswer": "a manganese cluster is essential for water splitting",
       "explanation": "The passage states: 'Both biochemists agree that a manganese cluster is essential for water splitting and that the process involves multiple oxidation states.'",
@@ -387,10 +387,10 @@
       "topic": "Data Interpretation",
       "prompt": "According to Table 3, after sleep deprivation, performance on the working memory task was:",
       "options": [
+        "73%",
         "68%",
         "92%",
-        "81%",
-        "73%"
+        "81%"
       ],
       "correctAnswer": "73%",
       "explanation": "Table 3 shows that working memory performance after sleep deprivation was 73% correct.",
@@ -404,10 +404,10 @@
       "topic": "Data Interpretation",
       "prompt": "Which cognitive task showed the smallest performance decline after sleep deprivation?",
       "options": [
-        "Sustained Attention",
-        "Working Memory",
         "All three declined equally",
-        "Decision-Making Speed"
+        "Decision-Making Speed",
+        "Sustained Attention",
+        "Working Memory"
       ],
       "correctAnswer": "Decision-Making Speed",
       "explanation": "Performance declines were 20%, 19%, and 14% for sustained attention, working memory, and decision speed respectively. Decision-making speed showed the smallest decline at 14%.",
@@ -421,10 +421,10 @@
       "topic": "Data Interpretation",
       "prompt": "The baseline performance on sustained attention (88%) was what percentage higher than after sleep deprivation (68%)?",
       "options": [
-        "129%",
         "29%",
         "79%",
-        "20 percentage points"
+        "20 percentage points",
+        "129%"
       ],
       "correctAnswer": "20 percentage points",
       "explanation": "88% - 68% = 20 percentage points difference. (Note: the decline was 20 percentage points, or a 22.7% relative decline.)",
@@ -455,10 +455,10 @@
       "topic": "Data Interpretation",
       "prompt": "Across all three tasks, what was the average performance decline due to sleep deprivation?",
       "options": [
+        "17.7%",
         "14%",
         "18%",
-        "20%",
-        "17.7%"
+        "20%"
       ],
       "correctAnswer": "17.7%",
       "explanation": "Declines were 20%, 19%, and 14%. Average = (20 + 19 + 14) / 3 = 53 / 3 = 17.67%, approximately 17.7%.",
@@ -472,10 +472,10 @@
       "topic": "Inference",
       "prompt": "If the sleep deprivation experiment were extended to 48 hours instead of 36 hours, based on the results, we would most likely expect:",
       "options": [
-        "performance to improve on all tasks",
-        "decision-making speed to be unaffected",
         "sustained attention to improve while working memory declines",
-        "further declines in cognitive performance"
+        "further declines in cognitive performance",
+        "performance to improve on all tasks",
+        "decision-making speed to be unaffected"
       ],
       "correctAnswer": "further declines in cognitive performance",
       "explanation": "After 36 hours, all three tasks showed substantial declines (14-20%). Extending sleep deprivation to 48 hours would likely cause additional fatigue and cognitive impairment, worsening performance further.",
@@ -489,10 +489,10 @@
       "topic": "Data Interpretation",
       "prompt": "According to Table 4, nitrogen availability was highest at which soil pH?",
       "options": [
-        "pH 6.5",
         "pH 9.5",
         "pH 8.5",
-        "pH 7.5"
+        "pH 7.5",
+        "pH 6.5"
       ],
       "correctAnswer": "pH 7.5",
       "explanation": "Table 4 shows nitrogen availability of 15, 25, 45, 52, 48, and 38 mg/kg at pH 4.5, 5.5, 6.5, 7.5, 8.5, and 9.5 respectively. The highest value is 52 mg/kg at pH 7.5.",
@@ -523,10 +523,10 @@
       "topic": "Data Interpretation",
       "prompt": "At pH 6.5, which nutrient showed the highest availability?",
       "options": [
+        "Potassium (160 mg/kg)",
         "Nitrogen (45 mg/kg)",
         "Phosphorus (35 mg/kg)",
-        "Magnesium (65 mg/kg)",
-        "Potassium (160 mg/kg)"
+        "Magnesium (65 mg/kg)"
       ],
       "correctAnswer": "Potassium (160 mg/kg)",
       "explanation": "At pH 6.5, the passage shows availability values: N = 45, P = 35, K = 160, Mg = 65 mg/kg. Potassium at 160 mg/kg is the highest.",
@@ -540,10 +540,10 @@
       "topic": "Trends",
       "prompt": "The passage states that 'optimal availability typically occurs near pH 6.5-7.5.' Which observation best supports this?",
       "options": [
-        "Potassium is the only available nutrient at this pH",
         "Nutrients become unavailable below pH 6.5",
         "All four nutrients show peak availability in the pH 6.5-7.5 range",
-        "Availability increases indefinitely with pH"
+        "Availability increases indefinitely with pH",
+        "Potassium is the only available nutrient at this pH"
       ],
       "correctAnswer": "All four nutrients show peak availability in the pH 6.5-7.5 range",
       "explanation": "Looking at the data: N peaks at 7.5 (52), P peaks at 7.5 (42), K peaks at 7.5 (175), Mg peaks at 7.5 (78). All four nutrients show maximum availability in this pH range, supporting the statement.",
@@ -557,10 +557,10 @@
       "topic": "Data Interpretation",
       "prompt": "Magnesium availability decreased from pH 7.5 to pH 9.5 by:",
       "options": [
+        "78 mg/kg",
         "17 mg/kg",
         "23 mg/kg",
-        "55 mg/kg",
-        "78 mg/kg"
+        "55 mg/kg"
       ],
       "correctAnswer": "23 mg/kg",
       "explanation": "Magnesium at pH 7.5 = 78 mg/kg; at pH 9.5 = 55 mg/kg. Decrease = 78 - 55 = 23 mg/kg.",
@@ -574,10 +574,10 @@
       "topic": "Inference",
       "prompt": "Athletes monitoring their heart rate during training often use the linear relationship between exercise intensity and heart rate to estimate their effort level. This works because:",
       "options": [
-        "heart rate directly causes increases in exercise intensity",
-        "higher heart rate reliably indicates higher exercise intensity",
         "exercise intensity causes fatigue",
-        "all athletes have identical heart rates at the same intensity"
+        "all athletes have identical heart rates at the same intensity",
+        "heart rate directly causes increases in exercise intensity",
+        "higher heart rate reliably indicates higher exercise intensity"
       ],
       "correctAnswer": "higher heart rate reliably indicates higher exercise intensity",
       "explanation": "The data show a consistent linear relationship where heart rate increases reliably with intensity. Athletes can reverse-engineer this: by measuring their heart rate, they can estimate what percentage of their max effort they're working at.",
@@ -591,10 +591,10 @@
       "topic": "Inference",
       "prompt": "Based on the coral experiment, if global ocean temperatures rise by 2°C above current ambient (26°C), what polyp viability would be predicted?",
       "options": [
-        "approximately 95%",
         "between 95% and 72%",
         "between 72% and 28%",
-        "below 28%"
+        "below 28%",
+        "approximately 95%"
       ],
       "correctAnswer": "between 95% and 72%",
       "explanation": "A 2°C rise would bring temperature to 28°C, which is between the moderate stress condition (29°C, 72% viable) and control (26°C, 95% viable). Predicted viability would fall between these two values.",
@@ -625,10 +625,10 @@
       "topic": "Conflicting Viewpoints",
       "prompt": "If experiments showed that mutations in tyrosine residues (amino acids) of the photosynthesis complex severely impaired water splitting, this would most strongly support:",
       "options": [
+        "neither hypothesis",
         "Biochemist A's clock mechanism hypothesis",
         "Biochemist B's radical-coupled mechanism hypothesis",
-        "both hypotheses equally",
-        "neither hypothesis"
+        "both hypotheses equally"
       ],
       "correctAnswer": "Biochemist B's radical-coupled mechanism hypothesis",
       "explanation": "B's hypothesis centers on tyrosine radicals as essential electron shuttles. If mutations in tyrosines impaired the process, this would directly support B's mechanism. A's hypothesis emphasizes the manganese clock, not tyrosines.",
@@ -642,10 +642,10 @@
       "topic": "Data Interpretation",
       "prompt": "Working memory baseline performance (92%) was higher than sustained attention baseline (88%) by:",
       "options": [
-        "4.5%",
-        "4 percentage points",
         "9.2%",
-        "16%"
+        "16%",
+        "4.5%",
+        "4 percentage points"
       ],
       "correctAnswer": "4 percentage points",
       "explanation": "Working memory baseline = 92%; sustained attention baseline = 88%. Difference = 92 - 88 = 4 percentage points.",
@@ -659,10 +659,10 @@
       "topic": "Inference",
       "prompt": "A farmer wants to maximize plant nutrient availability. Based on Table 4, the soil pH should be adjusted to approximately:",
       "options": [
-        "4.5",
         "7.5",
         "6.5",
-        "9.5"
+        "9.5",
+        "4.5"
       ],
       "correctAnswer": "7.5",
       "explanation": "Table 4 shows that pH 7.5 provides peak availability for all four nutrients (N, P, K, and Mg), making it the optimal pH for maximizing overall nutrient availability.",
@@ -693,10 +693,10 @@
       "topic": "Data Interpretation",
       "prompt": "What is the size (spread) of the heart rate range at 95% intensity (160-188 bpm)?",
       "options": [
+        "103 bpm",
         "16 bpm",
         "28 bpm",
-        "88 bpm",
-        "103 bpm"
+        "88 bpm"
       ],
       "correctAnswer": "28 bpm",
       "explanation": "The range at 95% intensity spans 160 to 188 bpm, so its size is 188 - 160 = 28 bpm.",
@@ -710,10 +710,10 @@
       "topic": "Inference",
       "prompt": "The experiment used a single coral species (A. millepora). To strengthen the conclusions about coral thermal sensitivity, the researchers should:",
       "options": [
+        "measure only polyp viability, not zooxanthellae retention",
         "use only the control temperature in future studies",
         "increase water temperatures beyond 31°C",
-        "test multiple coral species to see if all show similar thermal sensitivity",
-        "measure only polyp viability, not zooxanthellae retention"
+        "test multiple coral species to see if all show similar thermal sensitivity"
       ],
       "correctAnswer": "test multiple coral species to see if all show similar thermal sensitivity",
       "explanation": "Testing a single species limits generalizability. To strengthen claims about coral thermal sensitivity broadly, testing multiple species would determine whether the response is species-specific or representative of corals generally.",

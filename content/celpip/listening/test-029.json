@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "How long has the customer's internet been down?",
       "options": [
-        "One hour",
-        "Two hours",
         "Three hours",
-        "Four hours"
+        "Four hours",
+        "One hour",
+        "Two hours"
       ],
       "correctAnswer": "Three hours",
       "explanation": "Customer states 'my internet's been down for three hours now.'",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "What is the customer's account number?",
       "options": [
+        "4427-98165",
         "4472-89156",
         "4427-89165",
-        "4472-98156",
-        "4427-98165"
+        "4472-98156"
       ],
       "correctAnswer": "4472-89156",
       "explanation": "Customer provides the account number as '4472-89156.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What caused the outage?",
       "options": [
+        "A software update",
         "A router malfunction",
         "A fiber cut",
-        "A power surge",
-        "A software update"
+        "A power surge"
       ],
       "correctAnswer": "A fiber cut",
       "explanation": "Agent explains there's 'a known outage' due to 'a fiber cut about two hours ago.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "When is the outage estimated to be fixed?",
       "options": [
+        "5:00 PM",
         "2:00 PM",
         "3:00 PM",
-        "4:30 PM",
-        "5:00 PM"
+        "4:30 PM"
       ],
       "correctAnswer": "4:30 PM",
       "explanation": "Agent estimates the repair will be complete 'around 4:30 PM at the latest.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What is the automatic credit amount for the outage?",
       "options": [
-        "$15",
-        "$20",
         "$25",
-        "$30"
+        "$30",
+        "$15",
+        "$20"
       ],
       "correctAnswer": "$25",
       "explanation": "Agent states 'I'll apply a $25 credit to your next bill automatically.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What is the total compensation being offered?",
       "options": [
+        "$35",
         "$25",
         "$28.50",
-        "$32",
-        "$35"
+        "$32"
       ],
       "correctAnswer": "$28.50",
       "explanation": "Agent calculates 'Combined with the $25 credit, that's $28.50 total compensation.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "In how many hours should the repair be complete?",
       "options": [
-        "1 to 2 hours",
-        "2 to 3 hours",
         "3 to 4 hours",
-        "4 to 5 hours"
+        "4 to 5 hours",
+        "1 to 2 hours",
+        "2 to 3 hours"
       ],
       "correctAnswer": "2 to 3 hours",
       "explanation": "Agent estimates 'two to three more hours' of repair work remaining.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the first restaurant Marcus suggests?",
       "options": [
-        "Thai food",
-        "Italian food",
         "Sushi",
-        "Indian food"
+        "Indian food",
+        "Thai food",
+        "Italian food"
       ],
       "correctAnswer": "Sushi",
       "explanation": "Marcus suggests 'that new sushi place across the street.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "When does the Thai restaurant get busy?",
       "options": [
+        "2 PM",
         "11 AM",
         "Noon",
-        "1 PM",
-        "2 PM"
+        "1 PM"
       ],
       "correctAnswer": "Noon",
       "explanation": "Jessica warns 'it gets busy after noon.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "What dish does Jessica mention?",
       "options": [
-        "Tom yum soup",
-        "Pad thai",
         "Spring rolls",
-        "Green curry"
+        "Green curry",
+        "Tom yum soup",
+        "Pad thai"
       ],
       "correctAnswer": "Pad thai",
       "explanation": "Jessica states 'They have great pad thai.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How soon do they plan to meet?",
       "options": [
-        "Immediately",
         "In five minutes downstairs",
         "In ten minutes",
-        "In fifteen minutes"
+        "In fifteen minutes",
+        "Immediately"
       ],
       "correctAnswer": "In five minutes downstairs",
       "explanation": "Jessica says 'See you in five minutes downstairs.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "In which room are Group of Seven paintings displayed?",
       "options": [
+        "Room 106",
         "Room 101",
         "Room 102",
-        "Room 104",
-        "Room 106"
+        "Room 104"
       ],
       "correctAnswer": "Room 102",
       "explanation": "The guide says 'We'll start with the Group of Seven landscape paintings in Room 102.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What region did Emily Carr primarily focus on?",
       "options": [
+        "Prairie provinces",
         "Ontario",
         "Quebec",
-        "British Columbia",
-        "Prairie provinces"
+        "British Columbia"
       ],
       "correctAnswer": "British Columbia",
       "explanation": "The guide mentions 'Emily Carr's totem pole paintings from British Columbia.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What artistic movement were Borduas and Riopelle part of?",
       "options": [
-        "Cubism",
         "Automatiste",
         "Impressionism",
-        "Surrealism"
+        "Surrealism",
+        "Cubism"
       ],
       "correctAnswer": "Automatiste",
       "explanation": "The guide states these 'Montreal-based artists were part of the Automatiste movement.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "Which city were Borduas and Riopelle based in?",
       "options": [
-        "Toronto",
         "Vancouver",
         "Montreal",
-        "Ottawa"
+        "Ottawa",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "The guide identifies them as 'Montreal-based artists.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the total investment in transit modernization?",
       "options": [
+        "500 million dollars",
         "350 million dollars",
         "400 million dollars",
-        "450 million dollars",
-        "500 million dollars"
+        "450 million dollars"
       ],
       "correctAnswer": "450 million dollars",
       "explanation": "The city has approved a 450 million dollar investment.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How many new electric buses will be purchased?",
       "options": [
-        "200 buses",
-        "250 buses",
         "300 buses",
-        "350 buses"
+        "350 buses",
+        "200 buses",
+        "250 buses"
       ],
       "correctAnswer": "300 buses",
       "explanation": "The city plans to purchase 300 new electric buses.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many tonnes of carbon emissions will be eliminated annually?",
       "options": [
-        "6,500 tonnes",
         "7,500 tonnes",
         "8,500 tonnes",
-        "9,500 tonnes"
+        "9,500 tonnes",
+        "6,500 tonnes"
       ],
       "correctAnswer": "8,500 tonnes",
       "explanation": "The transition will eliminate approximately 8,500 tonnes of annual carbon emissions.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How many new transit stations will be built?",
       "options": [
+        "15 stations",
         "8 stations",
         "10 stations",
-        "12 stations",
-        "15 stations"
+        "12 stations"
       ],
       "correctAnswer": "12 stations",
       "explanation": "The project includes construction of 12 new transit stations.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What does Sarah believe about mentorship in remote work settings?",
       "options": [
-        "Mentorship works better online",
         "Newer staff miss out on mentorship opportunities",
         "Mentorship is not important",
-        "Remote mentorship is equally effective"
+        "Remote mentorship is equally effective",
+        "Mentorship works better online"
       ],
       "correctAnswer": "Newer staff miss out on mentorship opportunities",
       "explanation": "Sarah explicitly states she worries about newer staff missing out on mentorship opportunities.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage has James's productivity increased working remotely?",
       "options": [
-        "25 percent",
         "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James states his productivity has increased by about 40 percent since working remotely.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What reason does James give for his increased productivity?",
       "options": [
+        "More flexible schedule",
         "Better equipment at home",
         "Fewer interruptions",
-        "Shorter work hours",
-        "More flexible schedule"
+        "Shorter work hours"
       ],
       "correctAnswer": "Fewer interruptions",
       "explanation": "James mentions fewer interruptions allow him to focus better on complex projects.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Tom identify as the main finding in the HR data?",
       "options": [
-        "Remote work is always better",
-        "Mixed results depending on the team",
         "Office work is most productive",
-        "Remote work decreases productivity"
+        "Remote work decreases productivity",
+        "Remote work is always better",
+        "Mixed results depending on the team"
       ],
       "correctAnswer": "Mixed results depending on the team",
       "explanation": "Tom says the data shows mixed results, with some teams more productive remotely while others struggle.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of team does Tom suggest might work better in person?",
       "options": [
-        "Software developers",
-        "Marketing teams",
         "Customer service teams",
-        "Finance teams"
+        "Finance teams",
+        "Software developers",
+        "Marketing teams"
       ],
       "correctAnswer": "Customer service teams",
       "explanation": "Tom suggests customer service teams probably need more in-person interaction.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What solution does Tom propose?",
       "options": [
-        "All employees back in office",
         "Completely remote for all",
         "Hybrid approach with flexibility",
-        "No change to current policy"
+        "No change to current policy",
+        "All employees back in office"
       ],
       "correctAnswer": "Hybrid approach with flexibility",
       "explanation": "Tom proposes a hybrid approach that gives managers flexibility based on their team's needs.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "According to Sarah, what does collaboration depend on?",
       "options": [
+        "Email efficiency",
         "Video call quality",
         "People being in the same space",
-        "Written communication",
-        "Email efficiency"
+        "Written communication"
       ],
       "correctAnswer": "People being in the same space",
       "explanation": "Sarah believes collaboration happens more naturally when people are in the same space.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "How does James stay connected with colleagues remotely?",
       "options": [
+        "Monthly meetings only",
         "Phone calls only",
         "Email messages only",
-        "Video calls and shared documents",
-        "Monthly meetings only"
+        "Video calls and shared documents"
       ],
       "correctAnswer": "Video calls and shared documents",
       "explanation": "James mentions collaborating through video calls and shared documents.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "They're not programmed correctly",
         "They're trained on historical data that includes human bias",
         "They lack computing power",
-        "They're intentionally designed to discriminate"
+        "They're intentionally designed to discriminate",
+        "They're not programmed correctly"
       ],
       "correctAnswer": "They're trained on historical data that includes human bias",
       "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What was the issue with Google's recruiting algorithm?",
       "options": [
+        "It was too expensive",
         "It was too strict",
         "It showed bias against applicants from historically black colleges",
-        "It wasn't identifying talent",
-        "It was too expensive"
+        "It wasn't identifying talent"
       ],
       "correctAnswer": "It showed bias against applicants from historically black colleges",
       "explanation": "Google's algorithm showed bias against applicants from historically black colleges.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What key point does the speaker make about data?",
       "options": [
-        "Data is always objective",
-        "Data is never neutral and includes bias",
         "Data should never be used in hiring",
-        "Data is a recent invention"
+        "Data is a recent invention",
+        "Data is always objective",
+        "Data is never neutral and includes bias"
       ],
       "correctAnswer": "Data is never neutral and includes bias",
       "explanation": "The speaker argues data is never neutral and carries historical bias.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
-        "Use them immediately",
-        "Train employees on algorithms",
         "Conduct rigorous bias testing and external auditing",
-        "Ignore algorithm concerns"
+        "Ignore algorithm concerns",
+        "Use them immediately",
+        "Train employees on algorithms"
       ],
       "correctAnswer": "Conduct rigorous bias testing and external auditing",
       "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",

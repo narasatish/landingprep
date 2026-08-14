@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's correct last name spelling?",
       "options": [
-        "A-N-D-E-R-S-E-N",
         "A-N-D-E-R-S-O-N",
         "A-N-D-R-E-S-O-N",
-        "A-N-D-E-R-T-O-N"
+        "A-N-D-E-R-T-O-N",
+        "A-N-D-E-R-S-E-N"
       ],
       "correctAnswer": "A-N-D-E-R-S-O-N",
       "explanation": "Diner specifies the correct spelling as 'A-N-D-E-R-S-O-N.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "How many people are in the party?",
       "options": [
+        "Seven",
         "Four",
         "Five",
-        "Six",
-        "Seven"
+        "Six"
       ],
       "correctAnswer": "Six",
       "explanation": "Diner states 'Six of us' in response to the manager's question about party size.",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What special seating request did the customer make?",
       "options": [
-        "Near the kitchen",
         "By the bar",
         "A quiet area away from the bar",
-        "Close to the entrance"
+        "Close to the entrance",
+        "Near the kitchen"
       ],
       "correctAnswer": "A quiet area away from the bar",
       "explanation": "Diner requests 'a quiet table' and manager notes 'a quieter area away from the bar.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What is the restaurant's cancellation policy?",
       "options": [
+        "48 hours notice required",
         "6 hours notice required",
         "12 hours notice required",
-        "24 hours notice required",
-        "48 hours notice required"
+        "24 hours notice required"
       ],
       "correctAnswer": "24 hours notice required",
       "explanation": "Manager states 'We require 24 hours notice for cancellations.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has Rebecca lived in the neighbourhood?",
       "options": [
+        "Five years",
         "Two years",
         "Three years",
-        "Four years",
-        "Five years"
+        "Four years"
       ],
       "correctAnswer": "Five years",
       "explanation": "Rebecca states 'About five years now.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "When did David move to the neighbourhood?",
       "options": [
-        "One week ago",
         "Two weeks ago",
         "Last month",
-        "Two months ago"
+        "Two months ago",
+        "One week ago"
       ],
       "correctAnswer": "Last month",
       "explanation": "David says 'Just moved here last month.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "What is the best season in this neighbourhood?",
       "options": [
+        "Winter",
         "Spring",
         "Summer",
-        "Fall",
-        "Winter"
+        "Fall"
       ],
       "correctAnswer": "Summer",
       "explanation": "Rebecca states 'The summer's the best season here.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "Where is the farmer's market held?",
       "options": [
+        "Oak and Queen",
         "Main and Queen",
         "Main and King",
-        "Main and Oak",
-        "Oak and Queen"
+        "Main and Oak"
       ],
       "correctAnswer": "Main and Oak",
       "explanation": "Rebecca mentions 'at the corner of Main and Oak.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What type of community does Rebecca describe?",
       "options": [
-        "Business-focused",
         "Very friendly",
         "Quiet and isolated",
-        "Fast-paced"
+        "Fast-paced",
+        "Business-focused"
       ],
       "correctAnswer": "Very friendly",
       "explanation": "Rebecca says 'It's a very friendly community.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What should NOT be used during evacuation?",
       "options": [
-        "Stairs",
         "Emergency exits",
         "Elevators",
-        "Hallways"
+        "Hallways",
+        "Stairs"
       ],
       "correctAnswer": "Elevators",
       "explanation": "The training explicitly states 'Do not use elevators under any circumstances.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "Where is the designated assembly point?",
       "options": [
+        "The rooftop",
         "The main lobby",
         "The parking lot north of the building",
-        "The south entrance",
-        "The rooftop"
+        "The south entrance"
       ],
       "correctAnswer": "The parking lot north of the building",
       "explanation": "The guide specifies 'the designated assembly point in the parking lot north of the building.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "How often are fire drills conducted?",
       "options": [
+        "Annually",
         "Monthly",
         "Bi-monthly",
-        "Quarterly",
-        "Annually"
+        "Quarterly"
       ],
       "correctAnswer": "Quarterly",
       "explanation": "The training states 'Fire drills occur quarterly on the first Friday of March, June, September, and December.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "At what time are fire drills held?",
       "options": [
-        "10 AM",
-        "1 PM",
         "2 PM",
-        "3 PM"
+        "3 PM",
+        "10 AM",
+        "1 PM"
       ],
       "correctAnswer": "2 PM",
       "explanation": "The guide specifies drills are 'at 2 PM.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "How frequently are fire extinguishers located along hallways?",
       "options": [
-        "Every 10 meters",
         "Every 15 meters",
         "Every 25 meters",
-        "Every 50 meters"
+        "Every 50 meters",
+        "Every 10 meters"
       ],
       "correctAnswer": "Every 25 meters",
       "explanation": "The training states 'Fire extinguishers are located every twenty-five meters along hallways.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the size of TechHub Prairie?",
       "options": [
+        "60,000 square meters",
         "30,000 square meters",
         "40,000 square meters",
-        "50,000 square meters",
-        "60,000 square meters"
+        "50,000 square meters"
       ],
       "correctAnswer": "50,000 square meters",
       "explanation": "The report states TechHub Prairie is a 50,000-square-meter innovation center.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How much did the facility cost to construct?",
       "options": [
-        "75 million dollars",
-        "80 million dollars",
         "85 million dollars",
-        "90 million dollars"
+        "90 million dollars",
+        "75 million dollars",
+        "80 million dollars"
       ],
       "correctAnswer": "85 million dollars",
       "explanation": "The facility cost 85 million dollars to construct.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many new jobs are expected to be created?",
       "options": [
-        "800 jobs",
         "1,000 jobs",
         "1,200 jobs",
-        "1,500 jobs"
+        "1,500 jobs",
+        "800 jobs"
       ],
       "correctAnswer": "1,200 jobs",
       "explanation": "It is expected to create 1,200 new jobs over the next two years.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "Which of the following is NOT mentioned as available at the campus?",
       "options": [
+        "Startup incubator units",
         "Office space",
         "Research laboratories",
-        "Residential apartments",
-        "Startup incubator units"
+        "Residential apartments"
       ],
       "correctAnswer": "Residential apartments",
       "explanation": "The report mentions office space, laboratories, and incubators, but not apartments.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "How many small business loans has the bank approved this year?",
       "options": [
-        "250 loans",
-        "270 loans",
         "285 loans",
-        "300 loans"
+        "300 loans",
+        "250 loans",
+        "270 loans"
       ],
       "correctAnswer": "285 loans",
       "explanation": "The bank has approved 285 loans this year.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What is the total amount of loans approved?",
       "options": [
-        "35 million dollars",
         "39 million dollars",
         "42 million dollars",
-        "48 million dollars"
+        "48 million dollars",
+        "35 million dollars"
       ],
       "correctAnswer": "42 million dollars",
       "explanation": "The loans approved total 42 million dollars.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "Why does Lisa oppose tightening lending criteria?",
       "options": [
-        "It's too expensive",
-        "It would exclude new entrepreneurs",
         "It would reduce profitability",
-        "It would increase default rates"
+        "It would increase default rates",
+        "It's too expensive",
+        "It would exclude new entrepreneurs"
       ],
       "correctAnswer": "It would exclude new entrepreneurs",
       "explanation": "Lisa warns that stricter criteria would only serve well-established businesses, defeating the purpose.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What challenge did Marcus face when starting his business?",
       "options": [
-        "Lack of experience",
-        "No customers",
         "Banks wouldn't lend to him",
-        "High interest rates"
+        "High interest rates",
+        "Lack of experience",
+        "No customers"
       ],
       "correctAnswer": "Banks wouldn't lend to him",
       "explanation": "Marcus says traditional banks wouldn't lend because he lacked assets and track record.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "How many people does Marcus's restaurant currently employ?",
       "options": [
-        "8 people",
         "10 people",
         "12 people",
-        "15 people"
+        "15 people",
+        "8 people"
       ],
       "correctAnswer": "12 people",
       "explanation": "Marcus's restaurant now employs 12 people.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What alternative solution does Marcus propose?",
       "options": [
+        "No collateral requirements",
         "Lower interest rates",
         "Mentorship and financial coaching programs",
-        "Shorter loan terms",
-        "No collateral requirements"
+        "Shorter loan terms"
       ],
       "correctAnswer": "Mentorship and financial coaching programs",
       "explanation": "Marcus suggests focus on better support systems like mentorship and financial coaching after lending.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "Who does Chris propose to partner with for business support?",
       "options": [
+        "Large corporations",
         "Universities",
         "Government agencies",
-        "Business development organizations",
-        "Large corporations"
+        "Business development organizations"
       ],
       "correctAnswer": "Business development organizations",
       "explanation": "Chris proposes partnering with business development organizations for mentoring and training.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
-        "Temporary welfare assistance",
-        "Government loans with repayment",
         "Regular unconditional cash payment to all citizens",
-        "Employer-provided income supplements"
+        "Employer-provided income supplements",
+        "Temporary welfare assistance",
+        "Government loans with repayment"
       ],
       "correctAnswer": "Regular unconditional cash payment to all citizens",
       "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What economic effect does the speaker claim UBI would have?",
       "options": [
+        "It would increase unemployment",
         "It would decrease spending",
         "Providing financial security would stimulate spending and job creation",
-        "It would reduce business activity",
-        "It would increase unemployment"
+        "It would reduce business activity"
       ],
       "correctAnswer": "Providing financial security would stimulate spending and job creation",
       "explanation": "The speaker argues that putting money in people's hands stimulates the economy and creates jobs.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "By what percentage did business formation increase in the Kenya pilot?",
       "options": [
+        "38 percent",
         "22 percent",
         "27 percent",
-        "32 percent",
-        "38 percent"
+        "32 percent"
       ],
       "correctAnswer": "32 percent",
       "explanation": "The speaker mentions that business formation in Kenya increased by 32 percent.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Increased energy",
         "Better mental health and less anxiety",
         "Improved sleep",
-        "Reduced medication needs"
+        "Reduced medication needs",
+        "Increased energy"
       ],
       "correctAnswer": "Better mental health and less anxiety",
       "explanation": "In Finland, participants reported better mental health and less anxiety.",

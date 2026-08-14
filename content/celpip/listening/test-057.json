@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "From which city did the passenger fly?",
       "options": [
-        "Calgary",
         "Vancouver",
         "Edmonton",
-        "Toronto"
+        "Toronto",
+        "Calgary"
       ],
       "correctAnswer": "Vancouver",
       "explanation": "Passenger states 'my baggage didn't arrive on my flight from Vancouver.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What color is the passenger's luggage?",
       "options": [
+        "Red Samsonite roller",
         "Blue Samsonite roller",
         "Black Samsonite roller",
-        "Black leather bag",
-        "Red Samsonite roller"
+        "Black leather bag"
       ],
       "correctAnswer": "Black Samsonite roller",
       "explanation": "Agent confirms 'Your bag is a black Samsonite roller, correct?' and passenger agrees.",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "Where was the bag mistakenly sent?",
       "options": [
+        "Montreal",
         "Vancouver",
         "Toronto",
-        "Edmonton",
-        "Montreal"
+        "Edmonton"
       ],
       "correctAnswer": "Edmonton",
       "explanation": "Agent explains the bag 'was misrouted to Edmonton by mistake.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When does the return flight arrive in Calgary?",
       "options": [
-        "4:15 PM",
-        "5:15 PM",
         "6:15 PM",
-        "7:15 PM"
+        "7:15 PM",
+        "4:15 PM",
+        "5:15 PM"
       ],
       "correctAnswer": "6:15 PM",
       "explanation": "Agent states 'It's on the next flight back to Calgary, which arrives at 6:15 PM tonight.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "By what time will the bag be delivered to the hotel?",
       "options": [
-        "6:00 PM",
         "7:00 PM",
         "8:00 PM",
-        "9:00 PM"
+        "9:00 PM",
+        "6:00 PM"
       ],
       "correctAnswer": "8:00 PM",
       "explanation": "Agent promises 'we'll have it delivered to your hotel by 8 PM.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "Which hotel is the passenger staying at?",
       "options": [
+        "The Shangri-La",
         "The Sandman Calgary",
         "The Fairmont Palliser",
-        "The Bow Tower",
-        "The Shangri-La"
+        "The Bow Tower"
       ],
       "correctAnswer": "The Fairmont Palliser",
       "explanation": "Passenger states they're staying at 'The Fairmont Palliser downtown.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What compensation is offered for the baggage delay?",
       "options": [
+        "$75 travel voucher",
         "$25 travel voucher",
         "$35 travel voucher",
-        "$50 travel voucher",
-        "$75 travel voucher"
+        "$50 travel voucher"
       ],
       "correctAnswer": "$50 travel voucher",
       "explanation": "Agent offers 'a $50 travel voucher for your next flight with us.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has it been since Sarah and Michael last saw each other?",
       "options": [
-        "Two months",
-        "Four months",
         "Six months",
-        "A year"
+        "A year",
+        "Two months",
+        "Four months"
       ],
       "correctAnswer": "Six months",
       "explanation": "Michael says 'Must be like six months since we last hung out' and Sarah agrees.",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "Where did Michael travel?",
       "options": [
-        "Toronto",
         "Montreal",
         "Vancouver",
-        "Calgary"
+        "Calgary",
+        "Toronto"
       ],
       "correctAnswer": "Vancouver",
       "explanation": "Sarah asks 'How was your trip to Vancouver?' confirming Michael's destination.",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "What type of restaurant does Sarah suggest?",
       "options": [
-        "Mexican",
-        "Italian",
         "Japanese",
-        "Indian"
+        "Indian",
+        "Mexican",
+        "Italian"
       ],
       "correctAnswer": "Italian",
       "explanation": "Sarah mentions 'that new Italian place downtown.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What day do they plan to meet?",
       "options": [
-        "Tuesday",
-        "Wednesday",
         "Thursday",
-        "Friday"
+        "Friday",
+        "Tuesday",
+        "Wednesday"
       ],
       "correctAnswer": "Thursday",
       "explanation": "Michael suggests 'Thursday' and Sarah confirms 'Thursday works for me.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "In which room are Group of Seven paintings displayed?",
       "options": [
+        "Room 106",
         "Room 101",
         "Room 102",
-        "Room 104",
-        "Room 106"
+        "Room 104"
       ],
       "correctAnswer": "Room 102",
       "explanation": "The guide says 'We'll start with the Group of Seven landscape paintings in Room 102.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What region did Emily Carr primarily focus on?",
       "options": [
+        "Prairie provinces",
         "Ontario",
         "Quebec",
-        "British Columbia",
-        "Prairie provinces"
+        "British Columbia"
       ],
       "correctAnswer": "British Columbia",
       "explanation": "The guide mentions 'Emily Carr's totem pole paintings from British Columbia.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What artistic movement were Borduas and Riopelle part of?",
       "options": [
-        "Cubism",
         "Automatiste",
         "Impressionism",
-        "Surrealism"
+        "Surrealism",
+        "Cubism"
       ],
       "correctAnswer": "Automatiste",
       "explanation": "The guide states these 'Montreal-based artists were part of the Automatiste movement.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "Which city were Borduas and Riopelle based in?",
       "options": [
-        "Toronto",
         "Vancouver",
         "Montreal",
-        "Ottawa"
+        "Ottawa",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "The guide identifies them as 'Montreal-based artists.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How many homes and businesses are targeted for solar installation?",
       "options": [
+        "60,000",
         "30,000",
         "40,000",
-        "50,000",
-        "60,000"
+        "50,000"
       ],
       "correctAnswer": "50,000",
       "explanation": "The SolarON program aims to install solar panels on 50,000 homes and businesses.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "What percentage of installation costs do subsidies cover?",
       "options": [
-        "25 percent",
-        "30 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent",
+        "30 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "The government provides subsidies covering up to 40 percent of installation costs.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "What is the maximum homeowner rebate?",
       "options": [
+        "10,000 dollars",
         "5,000 dollars",
         "6,000 dollars",
-        "8,000 dollars",
-        "10,000 dollars"
+        "8,000 dollars"
       ],
       "correctAnswer": "8,000 dollars",
       "explanation": "A rebate program offers homeowners up to 8,000 dollars.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What does Sarah believe about mentorship in remote work settings?",
       "options": [
-        "Mentorship works better online",
         "Newer staff miss out on mentorship opportunities",
         "Mentorship is not important",
-        "Remote mentorship is equally effective"
+        "Remote mentorship is equally effective",
+        "Mentorship works better online"
       ],
       "correctAnswer": "Newer staff miss out on mentorship opportunities",
       "explanation": "Sarah explicitly states she worries about newer staff missing out on mentorship opportunities.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage has James's productivity increased working remotely?",
       "options": [
-        "25 percent",
         "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James states his productivity has increased by about 40 percent since working remotely.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What reason does James give for his increased productivity?",
       "options": [
+        "More flexible schedule",
         "Better equipment at home",
         "Fewer interruptions",
-        "Shorter work hours",
-        "More flexible schedule"
+        "Shorter work hours"
       ],
       "correctAnswer": "Fewer interruptions",
       "explanation": "James mentions fewer interruptions allow him to focus better on complex projects.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Tom identify as the main finding in the HR data?",
       "options": [
-        "Remote work is always better",
-        "Mixed results depending on the team",
         "Office work is most productive",
-        "Remote work decreases productivity"
+        "Remote work decreases productivity",
+        "Remote work is always better",
+        "Mixed results depending on the team"
       ],
       "correctAnswer": "Mixed results depending on the team",
       "explanation": "Tom says the data shows mixed results, with some teams more productive remotely while others struggle.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of team does Tom suggest might work better in person?",
       "options": [
-        "Software developers",
-        "Marketing teams",
         "Customer service teams",
-        "Finance teams"
+        "Finance teams",
+        "Software developers",
+        "Marketing teams"
       ],
       "correctAnswer": "Customer service teams",
       "explanation": "Tom suggests customer service teams probably need more in-person interaction.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What solution does Tom propose?",
       "options": [
-        "All employees back in office",
         "Completely remote for all",
         "Hybrid approach with flexibility",
-        "No change to current policy"
+        "No change to current policy",
+        "All employees back in office"
       ],
       "correctAnswer": "Hybrid approach with flexibility",
       "explanation": "Tom proposes a hybrid approach that gives managers flexibility based on their team's needs.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "According to Sarah, what does collaboration depend on?",
       "options": [
+        "Email efficiency",
         "Video call quality",
         "People being in the same space",
-        "Written communication",
-        "Email efficiency"
+        "Written communication"
       ],
       "correctAnswer": "People being in the same space",
       "explanation": "Sarah believes collaboration happens more naturally when people are in the same space.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "How does James stay connected with colleagues remotely?",
       "options": [
+        "Monthly meetings only",
         "Phone calls only",
         "Email messages only",
-        "Video calls and shared documents",
-        "Monthly meetings only"
+        "Video calls and shared documents"
       ],
       "correctAnswer": "Video calls and shared documents",
       "explanation": "James mentions collaborating through video calls and shared documents.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
-        "Temporary welfare assistance",
-        "Government loans with repayment",
         "Regular unconditional cash payment to all citizens",
-        "Employer-provided income supplements"
+        "Employer-provided income supplements",
+        "Temporary welfare assistance",
+        "Government loans with repayment"
       ],
       "correctAnswer": "Regular unconditional cash payment to all citizens",
       "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What economic effect does the speaker claim UBI would have?",
       "options": [
+        "It would increase unemployment",
         "It would decrease spending",
         "Providing financial security would stimulate spending and job creation",
-        "It would reduce business activity",
-        "It would increase unemployment"
+        "It would reduce business activity"
       ],
       "correctAnswer": "Providing financial security would stimulate spending and job creation",
       "explanation": "The speaker argues that putting money in people's hands stimulates the economy and creates jobs.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "By what percentage did business formation increase in the Kenya pilot?",
       "options": [
+        "38 percent",
         "22 percent",
         "27 percent",
-        "32 percent",
-        "38 percent"
+        "32 percent"
       ],
       "correctAnswer": "32 percent",
       "explanation": "The speaker mentions that business formation in Kenya increased by 32 percent.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Increased energy",
         "Better mental health and less anxiety",
         "Improved sleep",
-        "Reduced medication needs"
+        "Reduced medication needs",
+        "Increased energy"
       ],
       "correctAnswer": "Better mental health and less anxiety",
       "explanation": "In Finland, participants reported better mental health and less anxiety.",

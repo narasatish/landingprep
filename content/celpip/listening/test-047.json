@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "How long has the customer's internet been down?",
       "options": [
-        "One hour",
-        "Two hours",
         "Three hours",
-        "Four hours"
+        "Four hours",
+        "One hour",
+        "Two hours"
       ],
       "correctAnswer": "Three hours",
       "explanation": "Customer states 'my internet's been down for three hours now.'",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "What is the customer's account number?",
       "options": [
+        "4427-98165",
         "4472-89156",
         "4427-89165",
-        "4472-98156",
-        "4427-98165"
+        "4472-98156"
       ],
       "correctAnswer": "4472-89156",
       "explanation": "Customer provides the account number as '4472-89156.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What caused the outage?",
       "options": [
+        "A software update",
         "A router malfunction",
         "A fiber cut",
-        "A power surge",
-        "A software update"
+        "A power surge"
       ],
       "correctAnswer": "A fiber cut",
       "explanation": "Agent explains there's 'a known outage' due to 'a fiber cut about two hours ago.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "When is the outage estimated to be fixed?",
       "options": [
+        "5:00 PM",
         "2:00 PM",
         "3:00 PM",
-        "4:30 PM",
-        "5:00 PM"
+        "4:30 PM"
       ],
       "correctAnswer": "4:30 PM",
       "explanation": "Agent estimates the repair will be complete 'around 4:30 PM at the latest.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What is the automatic credit amount for the outage?",
       "options": [
-        "$15",
-        "$20",
         "$25",
-        "$30"
+        "$30",
+        "$15",
+        "$20"
       ],
       "correctAnswer": "$25",
       "explanation": "Agent states 'I'll apply a $25 credit to your next bill automatically.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What is the total compensation being offered?",
       "options": [
+        "$35",
         "$25",
         "$28.50",
-        "$32",
-        "$35"
+        "$32"
       ],
       "correctAnswer": "$28.50",
       "explanation": "Agent calculates 'Combined with the $25 credit, that's $28.50 total compensation.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "In how many hours should the repair be complete?",
       "options": [
-        "1 to 2 hours",
-        "2 to 3 hours",
         "3 to 4 hours",
-        "4 to 5 hours"
+        "4 to 5 hours",
+        "1 to 2 hours",
+        "2 to 3 hours"
       ],
       "correctAnswer": "2 to 3 hours",
       "explanation": "Agent estimates 'two to three more hours' of repair work remaining.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the monthly rent?",
       "options": [
-        "$1,000",
-        "$1,100",
         "$1,200",
-        "$1,300"
+        "$1,300",
+        "$1,000",
+        "$1,100"
       ],
       "correctAnswer": "$1,200",
       "explanation": "Landlord states 'The rent is $1,200 per month.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "Is parking included in the rent?",
       "options": [
+        "Not available",
         "No, extra cost",
         "Yes, one spot",
-        "Two spots",
-        "Not available"
+        "Two spots"
       ],
       "correctAnswer": "Yes, one spot",
       "explanation": "Landlord confirms 'one dedicated parking spot' is 'included in the rent.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "When can the renter move in?",
       "options": [
+        "July 8",
         "June 15",
         "June 24",
-        "July 1",
-        "July 8"
+        "July 1"
       ],
       "correctAnswer": "July 1",
       "explanation": "Landlord states 'you can move in on July 1st.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What is the pet deposit for the cat?",
       "options": [
-        "$100",
-        "$125",
         "$150",
-        "$200"
+        "$200",
+        "$100",
+        "$125"
       ],
       "correctAnswer": "$150",
       "explanation": "Landlord specifies 'a one-time pet deposit of $150.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "When does Route 95 begin service?",
       "options": [
-        "August 1st",
         "August 15th",
         "September 1st",
-        "September 15th"
+        "September 15th",
+        "August 1st"
       ],
       "correctAnswer": "September 1st",
       "explanation": "The announcement states 'The new Route 95 Express connects downtown to the northern suburbs' effective 'September 1st.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "What is the frequency of peak hour service?",
       "options": [
+        "Every 30 minutes",
         "Every 10 minutes",
         "Every 15 minutes",
-        "Every 20 minutes",
-        "Every 30 minutes"
+        "Every 20 minutes"
       ],
       "correctAnswer": "Every 15 minutes",
       "explanation": "The guide specifies 'departures every fifteen minutes during peak hours.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "How much travel time is saved with Route 95?",
       "options": [
+        "30 minutes",
         "15 minutes",
         "20 minutes",
-        "23 minutes",
-        "30 minutes"
+        "23 minutes"
       ],
       "correctAnswer": "23 minutes",
       "explanation": "The guide states travel time reduces 'from forty-five minutes to approximately twenty-two minutes,' which is approximately 23 minutes saved.",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the cost of a single trip?",
       "options": [
-        "$2.50",
-        "$3.00",
         "$3.50",
-        "$4.00"
+        "$4.00",
+        "$2.50",
+        "$3.00"
       ],
       "correctAnswer": "$3.50",
       "explanation": "The guide states 'single trip is three dollars fifty cents.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the monthly pass cost?",
       "options": [
-        "$75",
         "$80",
         "$90",
-        "$100"
+        "$100",
+        "$75"
       ],
       "correctAnswer": "$90",
       "explanation": "The guide specifies 'a monthly pass is ninety dollars.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How many homes and businesses are targeted for solar installation?",
       "options": [
+        "60,000",
         "30,000",
         "40,000",
-        "50,000",
-        "60,000"
+        "50,000"
       ],
       "correctAnswer": "50,000",
       "explanation": "The SolarON program aims to install solar panels on 50,000 homes and businesses.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "What percentage of installation costs do subsidies cover?",
       "options": [
-        "25 percent",
-        "30 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent",
+        "30 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "The government provides subsidies covering up to 40 percent of installation costs.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "What is the maximum homeowner rebate?",
       "options": [
+        "10,000 dollars",
         "5,000 dollars",
         "6,000 dollars",
-        "8,000 dollars",
-        "10,000 dollars"
+        "8,000 dollars"
       ],
       "correctAnswer": "8,000 dollars",
       "explanation": "A rebate program offers homeowners up to 8,000 dollars.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "How many workplace injuries were reported this year?",
       "options": [
-        "25 injuries",
-        "29 injuries",
         "34 injuries",
-        "39 injuries"
+        "39 injuries",
+        "25 injuries",
+        "29 injuries"
       ],
       "correctAnswer": "34 injuries",
       "explanation": "Tom reports 34 workplace injuries this year.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What is the percentage increase in injuries from last year?",
       "options": [
-        "10 percent",
         "12 percent",
         "15 percent",
-        "18 percent"
+        "18 percent",
+        "10 percent"
       ],
       "correctAnswer": "15 percent",
       "explanation": "The number of injuries is up 15 percent from last year.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What type of incident accounts for most injuries?",
       "options": [
+        "Back injuries from lifting",
         "Equipment failures",
         "Slips, trips, and falls",
-        "Chemical exposure",
-        "Back injuries from lifting"
+        "Chemical exposure"
       ],
       "correctAnswer": "Slips, trips, and falls",
       "explanation": "Most incidents are slips, trips, and falls in warehouse areas.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What is Tom's proposed safety training frequency?",
       "options": [
-        "Quarterly",
-        "Twice yearly",
         "Annually",
-        "Every two years"
+        "Every two years",
+        "Quarterly",
+        "Twice yearly"
       ],
       "correctAnswer": "Twice yearly",
       "explanation": "Tom proposes mandatory training every six months, not annually.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What is David's main concern about the training proposal?",
       "options": [
-        "Training effectiveness",
-        "Cost of training",
         "Time away from work affecting productivity",
-        "Staff availability"
+        "Staff availability",
+        "Training effectiveness",
+        "Cost of training"
       ],
       "correctAnswer": "Time away from work affecting productivity",
       "explanation": "David worries that frequent training time away will affect productivity.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What additional benefit does Angela mention about training?",
       "options": [
-        "Increased wages",
-        "Improved morale",
         "Reduced hours",
-        "Better equipment"
+        "Better equipment",
+        "Increased wages",
+        "Improved morale"
       ],
       "correctAnswer": "Improved morale",
       "explanation": "Angela believes regular training improves morale because workers feel the company cares.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
-        "Temporary welfare assistance",
-        "Government loans with repayment",
         "Regular unconditional cash payment to all citizens",
-        "Employer-provided income supplements"
+        "Employer-provided income supplements",
+        "Temporary welfare assistance",
+        "Government loans with repayment"
       ],
       "correctAnswer": "Regular unconditional cash payment to all citizens",
       "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What economic effect does the speaker claim UBI would have?",
       "options": [
+        "It would increase unemployment",
         "It would decrease spending",
         "Providing financial security would stimulate spending and job creation",
-        "It would reduce business activity",
-        "It would increase unemployment"
+        "It would reduce business activity"
       ],
       "correctAnswer": "Providing financial security would stimulate spending and job creation",
       "explanation": "The speaker argues that putting money in people's hands stimulates the economy and creates jobs.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "By what percentage did business formation increase in the Kenya pilot?",
       "options": [
+        "38 percent",
         "22 percent",
         "27 percent",
-        "32 percent",
-        "38 percent"
+        "32 percent"
       ],
       "correctAnswer": "32 percent",
       "explanation": "The speaker mentions that business formation in Kenya increased by 32 percent.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Increased energy",
         "Better mental health and less anxiety",
         "Improved sleep",
-        "Reduced medication needs"
+        "Reduced medication needs",
+        "Increased energy"
       ],
       "correctAnswer": "Better mental health and less anxiety",
       "explanation": "In Finland, participants reported better mental health and less anxiety.",

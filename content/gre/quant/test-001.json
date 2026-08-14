@@ -15,11 +15,11 @@
       "prompt": "Sofia can assemble a bookcase 3 times as fast as Marcus. Working together they finish one in 24 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
-        "24",
-        "48",
         "32",
         "18",
-        "96"
+        "96",
+        "24",
+        "48"
       ],
       "correctAnswer": "32",
       "explanation": "Let Marcus's rate be r. Sofia's is 3r, so together (4)r = 1/24, giving r = 1/96. Sofia's rate 3r = 3/96 = 1/32, so Sofia alone takes 32 hours.",
@@ -32,11 +32,11 @@
       "prompt": "The ratio of blue to red marbles is 3 to 5. If 20 blue marbles are added, the ratio becomes 8 to 5. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
-        "0",
         "12",
         "20",
         "32",
-        "40"
+        "40",
+        "0"
       ],
       "correctAnswer": "20",
       "explanation": "Let blue = 3k and red = 5k. After adding 20: (3k+20)/(5k) = 8/5, which gives k = 4. Red = 5×4 = 20.",
@@ -49,11 +49,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 1 remain; divided among 8 children, 2 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
-        "0",
         "3",
         "2",
         "5",
-        "1"
+        "1",
+        "0"
       ],
       "correctAnswer": "5",
       "explanation": "The only n in range with n≡1 (mod 7) and n≡2 (mod 8) is 50. Then 50 ÷ 9 leaves remainder 5.",
@@ -66,11 +66,11 @@
       "prompt": "What is 20% of 340?",
       "difficulty": "medium",
       "options": [
+        "136",
+        "680",
         "320",
         "68",
-        "360",
-        "136",
-        "680"
+        "360"
       ],
       "correctAnswer": "68",
       "explanation": "20% of 340 = 20/100 × 340 = 68.",
@@ -83,11 +83,11 @@
       "prompt": "The average of 4 numbers is 7. If one number equal to -8 is removed, what is the average of the remaining 3 numbers?",
       "difficulty": "medium",
       "options": [
-        "12",
         "13",
         "7",
         "-8",
-        "11"
+        "11",
+        "12"
       ],
       "correctAnswer": "12",
       "explanation": "Total = 4×7 = 28. Remove -8: remaining total 36 over 3 numbers = 12.",
@@ -100,11 +100,11 @@
       "prompt": "What is the sum of all integers x such that -30 < x ≤ 39?",
       "difficulty": "medium",
       "options": [
+        "345",
+        "306",
         "384",
         "-345",
-        "315",
-        "345",
-        "306"
+        "315"
       ],
       "correctAnswer": "345",
       "explanation": "The integers run from -29 to 39. Pairing/series sum = 345.",
@@ -117,11 +117,11 @@
       "prompt": "A jacket priced at $160 is discounted by 20% and then taxed at 5%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$128",
+        "$134.40",
         "$144.40",
         "$160",
-        "$168",
-        "$128",
-        "$134.40"
+        "$168"
       ],
       "correctAnswer": "$134.40",
       "explanation": "After 20% off: $128. After 5% tax: $128 × 1.05 = $134.40.",
@@ -134,11 +134,11 @@
       "prompt": "If 10 painters can paint 10 walls in 10 days, how many days would it take 10 painters to paint 10 walls?",
       "difficulty": "medium",
       "options": [
-        "1",
-        "20",
         "9",
         "11",
-        "10"
+        "10",
+        "1",
+        "20"
       ],
       "correctAnswer": "10",
       "explanation": "Each painter paints 1 wall in 10 days. 10 painters painting 10 walls (one each) still take 10 days.",
@@ -151,11 +151,11 @@
       "prompt": "If 2/3 of a number is 48, what is 2/6 of that number?",
       "difficulty": "medium",
       "options": [
-        "27",
         "72",
         "48",
         "12",
-        "24"
+        "24",
+        "27"
       ],
       "correctAnswer": "24",
       "explanation": "The number is 48 ÷ 2/3 = 72. Then 2/6 × 72 = 24.",
@@ -168,11 +168,11 @@
       "prompt": "The perimeter of a rectangle is 70 and its area is 216. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
+        "35",
         "19",
         "10",
         "27",
-        "8",
-        "35"
+        "8"
       ],
       "correctAnswer": "8",
       "explanation": "Sides sum to 35 and multiply to 216. They are 8 and 27; the shorter side is 8.",
@@ -202,11 +202,11 @@
       "prompt": "A survey of 330 workers found 80 commute by car, 70 by public transit, and 50 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "21.2%",
+        "39.4%",
         "24.2%",
         "44.4%",
-        "34.4%",
-        "21.2%",
-        "39.4%"
+        "34.4%"
       ],
       "correctAnswer": "39.4%",
       "explanation": "Work from home = 330 − 80 − 70 − 50 = 130. As a percentage: 130/330 = 39.4%.",
@@ -236,11 +236,11 @@
       "prompt": "Sofia can assemble a bookcase twice as fast as Marcus. Working together they finish one in 16 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
-        "16",
         "32",
         "48",
         "11",
-        "24"
+        "24",
+        "16"
       ],
       "correctAnswer": "24",
       "explanation": "Let Marcus's rate be r. Sofia's is 2r, so together (3)r = 1/16, giving r = 1/48. Sofia's rate 2r = 2/48 = 1/24, so Sofia alone takes 24 hours.",
@@ -253,11 +253,11 @@
       "prompt": "The ratio of blue to red marbles is 2 to 3. If 16 blue marbles are added, the ratio becomes 26 to 15. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
+        "31",
+        "-1",
         "26",
         "10",
-        "15",
-        "31",
-        "-1"
+        "15"
       ],
       "correctAnswer": "15",
       "explanation": "Let blue = 2k and red = 3k. After adding 16: (2k+16)/(3k) = 26/15, which gives k = 5. Red = 3×5 = 15.",
@@ -270,11 +270,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 3 remain; divided among 8 children, 2 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
-        "1",
-        "4",
         "3",
         "0",
-        "2"
+        "2",
+        "1",
+        "4"
       ],
       "correctAnswer": "3",
       "explanation": "The only n in range with n≡3 (mod 7) and n≡2 (mod 8) is 66. Then 66 ÷ 9 leaves remainder 3.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "In a class of 50 students, the ratio of those who passed to those who failed is 7:3. How many students passed?",
       "difficulty": "medium",
       "options": [
-        "35",
         "30",
         "15",
         "40",
-        "50"
+        "50",
+        "35"
       ],
       "correctAnswer": "35",
       "explanation": "Total parts = 10, each part = 50/10 = 5. Passed = 7 × 5 = 35.",
@@ -352,11 +352,11 @@
       "prompt": "If 2x + 4 = 1x + 12, what is the value of x²?",
       "difficulty": "medium",
       "options": [
-        "63",
-        "16",
         "64",
         "8",
-        "72"
+        "72",
+        "63",
+        "16"
       ],
       "correctAnswer": "64",
       "explanation": "2x − 1x = 12 − 4 → 1x = 8 → x = 8. So x² = 64.",
@@ -386,11 +386,11 @@
       "prompt": "In a class of 80 students, the ratio of those who passed to those who failed is 6:4. How many students passed?",
       "difficulty": "medium",
       "options": [
-        "32",
         "80",
         "40",
         "48",
-        "56"
+        "56",
+        "32"
       ],
       "correctAnswer": "48",
       "explanation": "Total parts = 10, each part = 80/10 = 8. Passed = 6 × 8 = 48.",
@@ -403,11 +403,11 @@
       "prompt": "If 5x + 9 = 4x + 17, what is the value of x²?",
       "difficulty": "medium",
       "options": [
-        "8",
         "16",
         "63",
         "72",
-        "64"
+        "64",
+        "8"
       ],
       "correctAnswer": "64",
       "explanation": "5x − 4x = 17 − 9 → 1x = 8 → x = 8. So x² = 64.",
@@ -420,11 +420,11 @@
       "prompt": "What is the total revenue for the East region across all four quarters?",
       "difficulty": "medium",
       "options": [
-        "270 million",
-        "280 million",
         "290 million",
         "300 million",
-        "310 million"
+        "310 million",
+        "270 million",
+        "280 million"
       ],
       "correctAnswer": "280 million",
       "explanation": "East revenue: 62 + 68 + 72 + 78 = 280 million",
@@ -477,11 +477,11 @@
       "prompt": "By how much did the North region's revenue increase from Q1 to Q4?",
       "difficulty": "medium",
       "options": [
-        "15 million",
-        "18 million",
         "20 million",
         "22 million",
-        "25 million"
+        "25 million",
+        "15 million",
+        "18 million"
       ],
       "correctAnswer": "20 million",
       "explanation": "North Q4 (65) - North Q1 (45) = 20 million",
@@ -534,11 +534,11 @@
       "prompt": "Which region had the highest total revenue across all quarters?",
       "difficulty": "medium",
       "options": [
-        "North",
         "South",
         "East",
         "West",
-        "North and West tied"
+        "North and West tied",
+        "North"
       ],
       "correctAnswer": "East",
       "explanation": "East: 280 million; North: 220 million; South: 164 million; West: 255 million",

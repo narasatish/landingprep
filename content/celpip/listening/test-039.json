@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "From which city did the passenger fly?",
       "options": [
-        "Calgary",
         "Vancouver",
         "Edmonton",
-        "Toronto"
+        "Toronto",
+        "Calgary"
       ],
       "correctAnswer": "Vancouver",
       "explanation": "Passenger states 'my baggage didn't arrive on my flight from Vancouver.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What color is the passenger's luggage?",
       "options": [
+        "Red Samsonite roller",
         "Blue Samsonite roller",
         "Black Samsonite roller",
-        "Black leather bag",
-        "Red Samsonite roller"
+        "Black leather bag"
       ],
       "correctAnswer": "Black Samsonite roller",
       "explanation": "Agent confirms 'Your bag is a black Samsonite roller, correct?' and passenger agrees.",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "Where was the bag mistakenly sent?",
       "options": [
+        "Montreal",
         "Vancouver",
         "Toronto",
-        "Edmonton",
-        "Montreal"
+        "Edmonton"
       ],
       "correctAnswer": "Edmonton",
       "explanation": "Agent explains the bag 'was misrouted to Edmonton by mistake.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When does the return flight arrive in Calgary?",
       "options": [
-        "4:15 PM",
-        "5:15 PM",
         "6:15 PM",
-        "7:15 PM"
+        "7:15 PM",
+        "4:15 PM",
+        "5:15 PM"
       ],
       "correctAnswer": "6:15 PM",
       "explanation": "Agent states 'It's on the next flight back to Calgary, which arrives at 6:15 PM tonight.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "By what time will the bag be delivered to the hotel?",
       "options": [
-        "6:00 PM",
         "7:00 PM",
         "8:00 PM",
-        "9:00 PM"
+        "9:00 PM",
+        "6:00 PM"
       ],
       "correctAnswer": "8:00 PM",
       "explanation": "Agent promises 'we'll have it delivered to your hotel by 8 PM.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "Which hotel is the passenger staying at?",
       "options": [
+        "The Shangri-La",
         "The Sandman Calgary",
         "The Fairmont Palliser",
-        "The Bow Tower",
-        "The Shangri-La"
+        "The Bow Tower"
       ],
       "correctAnswer": "The Fairmont Palliser",
       "explanation": "Passenger states they're staying at 'The Fairmont Palliser downtown.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What compensation is offered for the baggage delay?",
       "options": [
+        "$75 travel voucher",
         "$25 travel voucher",
         "$35 travel voucher",
-        "$50 travel voucher",
-        "$75 travel voucher"
+        "$50 travel voucher"
       ],
       "correctAnswer": "$50 travel voucher",
       "explanation": "Agent offers 'a $50 travel voucher for your next flight with us.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the monthly rent?",
       "options": [
-        "$1,000",
-        "$1,100",
         "$1,200",
-        "$1,300"
+        "$1,300",
+        "$1,000",
+        "$1,100"
       ],
       "correctAnswer": "$1,200",
       "explanation": "Landlord states 'The rent is $1,200 per month.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "Is parking included in the rent?",
       "options": [
+        "Not available",
         "No, extra cost",
         "Yes, one spot",
-        "Two spots",
-        "Not available"
+        "Two spots"
       ],
       "correctAnswer": "Yes, one spot",
       "explanation": "Landlord confirms 'one dedicated parking spot' is 'included in the rent.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "When can the renter move in?",
       "options": [
+        "July 8",
         "June 15",
         "June 24",
-        "July 1",
-        "July 8"
+        "July 1"
       ],
       "correctAnswer": "July 1",
       "explanation": "Landlord states 'you can move in on July 1st.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What is the pet deposit for the cat?",
       "options": [
-        "$100",
-        "$125",
         "$150",
-        "$200"
+        "$200",
+        "$100",
+        "$125"
       ],
       "correctAnswer": "$150",
       "explanation": "Landlord specifies 'a one-time pet deposit of $150.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the lost luggage reimbursement limit in the Standard plan?",
       "options": [
-        "$500",
-        "$1,000",
         "$1,500",
-        "$2,500"
+        "$2,500",
+        "$500",
+        "$1,000"
       ],
       "correctAnswer": "$1,000",
       "explanation": "The guide mentions 'lost luggage reimbursement up to one thousand dollars' in the Standard plan.",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the Premium plan's lost luggage coverage limit?",
       "options": [
+        "$2,500",
         "$1,000",
         "$1,500",
-        "$2,000",
-        "$2,500"
+        "$2,000"
       ],
       "correctAnswer": "$2,500",
       "explanation": "The Premium plan includes 'upgrade to two thousand five hundred dollars for lost luggage.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "How long do you have to file a claim after an incident?",
       "options": [
-        "30 days",
         "60 days",
         "90 days",
-        "120 days"
+        "120 days",
+        "30 days"
       ],
       "correctAnswer": "90 days",
       "explanation": "The guide states 'Claims must be filed within ninety days of the incident.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "What is the toll-free claims phone number?",
       "options": [
+        "1-800-555-0417",
         "1-800-555-0140",
         "1-800-555-0147",
-        "1-800-555-0174",
-        "1-800-555-0417"
+        "1-800-555-0174"
       ],
       "correctAnswer": "1-800-555-0147",
       "explanation": "The guide provides 'call our toll-free number at 1-800-555-0147.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the total investment in transit modernization?",
       "options": [
+        "500 million dollars",
         "350 million dollars",
         "400 million dollars",
-        "450 million dollars",
-        "500 million dollars"
+        "450 million dollars"
       ],
       "correctAnswer": "450 million dollars",
       "explanation": "The city has approved a 450 million dollar investment.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How many new electric buses will be purchased?",
       "options": [
-        "200 buses",
-        "250 buses",
         "300 buses",
-        "350 buses"
+        "350 buses",
+        "200 buses",
+        "250 buses"
       ],
       "correctAnswer": "300 buses",
       "explanation": "The city plans to purchase 300 new electric buses.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many tonnes of carbon emissions will be eliminated annually?",
       "options": [
-        "6,500 tonnes",
         "7,500 tonnes",
         "8,500 tonnes",
-        "9,500 tonnes"
+        "9,500 tonnes",
+        "6,500 tonnes"
       ],
       "correctAnswer": "8,500 tonnes",
       "explanation": "The transition will eliminate approximately 8,500 tonnes of annual carbon emissions.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How many new transit stations will be built?",
       "options": [
+        "15 stations",
         "8 stations",
         "10 stations",
-        "12 stations",
-        "15 stations"
+        "12 stations"
       ],
       "correctAnswer": "12 stations",
       "explanation": "The project includes construction of 12 new transit stations.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the total budget for the renovation?",
       "options": [
-        "5.2 million dollars",
-        "6.0 million dollars",
         "6.8 million dollars",
-        "7.5 million dollars"
+        "7.5 million dollars",
+        "5.2 million dollars",
+        "6.0 million dollars"
       ],
       "correctAnswer": "6.8 million dollars",
       "explanation": "The renovation project is budgeted at 6.8 million dollars.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "How long is the renovation expected to take?",
       "options": [
-        "12 months",
         "15 months",
         "18 months",
-        "24 months"
+        "24 months",
+        "12 months"
       ],
       "correctAnswer": "18 months",
       "explanation": "The project should take about 18 months to complete.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What are the three main components of the renovation?",
       "options": [
+        "Cafe, library, fitness center",
         "Pool, gym, parking lot",
         "Fitness center, pool upgrade, youth spaces",
-        "Gym, parking, offices",
-        "Cafe, library, fitness center"
+        "Gym, parking, offices"
       ],
       "correctAnswer": "Fitness center, pool upgrade, youth spaces",
       "explanation": "Plans include a new fitness center, pool upgrade, and additional youth programming spaces.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What is Robert's main concern?",
       "options": [
+        "Parking during renovation",
         "Noise during construction",
         "Cost of the project",
-        "Where his kids' programs will go",
-        "Parking during renovation"
+        "Where his kids' programs will go"
       ],
       "correctAnswer": "Where his kids' programs will go",
       "explanation": "Robert worries about where after-school programs will be located during construction.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "Where does Susan plan to relocate programs during construction?",
       "options": [
-        "A temporary building",
         "The community room and outdoor spaces",
         "A school gym",
-        "A local fitness facility"
+        "A local fitness facility",
+        "A temporary building"
       ],
       "correctAnswer": "The community room and outdoor spaces",
       "explanation": "Susan plans to maintain and use the community room and outdoor spaces for programs.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What concern does Jason raise about using outdoor space?",
       "options": [
+        "Noise complaints",
         "Weather damage",
         "Limited room for physical activities",
-        "Theft concerns",
-        "Noise complaints"
+        "Theft concerns"
       ],
       "correctAnswer": "Limited room for physical activities",
       "explanation": "Jason notes that if programs move outdoors, there will be limited space for sports and recreation.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What suggestion does Jason make for outdoor activities?",
       "options": [
+        "Move all programs indoors",
         "Build a temporary gym",
         "Close programs temporarily",
-        "Use a local park",
-        "Move all programs indoors"
+        "Use a local park"
       ],
       "correctAnswer": "Use a local park",
       "explanation": "Jason suggests using a local park for outdoor programming during construction.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "They're not programmed correctly",
         "They're trained on historical data that includes human bias",
         "They lack computing power",
-        "They're intentionally designed to discriminate"
+        "They're intentionally designed to discriminate",
+        "They're not programmed correctly"
       ],
       "correctAnswer": "They're trained on historical data that includes human bias",
       "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What was the issue with Google's recruiting algorithm?",
       "options": [
+        "It was too expensive",
         "It was too strict",
         "It showed bias against applicants from historically black colleges",
-        "It wasn't identifying talent",
-        "It was too expensive"
+        "It wasn't identifying talent"
       ],
       "correctAnswer": "It showed bias against applicants from historically black colleges",
       "explanation": "Google's algorithm showed bias against applicants from historically black colleges.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What key point does the speaker make about data?",
       "options": [
-        "Data is always objective",
-        "Data is never neutral and includes bias",
         "Data should never be used in hiring",
-        "Data is a recent invention"
+        "Data is a recent invention",
+        "Data is always objective",
+        "Data is never neutral and includes bias"
       ],
       "correctAnswer": "Data is never neutral and includes bias",
       "explanation": "The speaker argues data is never neutral and carries historical bias.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
-        "Use them immediately",
-        "Train employees on algorithms",
         "Conduct rigorous bias testing and external auditing",
-        "Ignore algorithm concerns"
+        "Ignore algorithm concerns",
+        "Use them immediately",
+        "Train employees on algorithms"
       ],
       "correctAnswer": "Conduct rigorous bias testing and external auditing",
       "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",

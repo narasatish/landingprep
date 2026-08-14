@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "How long has the customer's internet been down?",
       "options": [
-        "One hour",
-        "Two hours",
         "Three hours",
-        "Four hours"
+        "Four hours",
+        "One hour",
+        "Two hours"
       ],
       "correctAnswer": "Three hours",
       "explanation": "Customer states 'my internet's been down for three hours now.'",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "What is the customer's account number?",
       "options": [
+        "4427-98165",
         "4472-89156",
         "4427-89165",
-        "4472-98156",
-        "4427-98165"
+        "4472-98156"
       ],
       "correctAnswer": "4472-89156",
       "explanation": "Customer provides the account number as '4472-89156.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What caused the outage?",
       "options": [
+        "A software update",
         "A router malfunction",
         "A fiber cut",
-        "A power surge",
-        "A software update"
+        "A power surge"
       ],
       "correctAnswer": "A fiber cut",
       "explanation": "Agent explains there's 'a known outage' due to 'a fiber cut about two hours ago.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "When is the outage estimated to be fixed?",
       "options": [
+        "5:00 PM",
         "2:00 PM",
         "3:00 PM",
-        "4:30 PM",
-        "5:00 PM"
+        "4:30 PM"
       ],
       "correctAnswer": "4:30 PM",
       "explanation": "Agent estimates the repair will be complete 'around 4:30 PM at the latest.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What is the automatic credit amount for the outage?",
       "options": [
-        "$15",
-        "$20",
         "$25",
-        "$30"
+        "$30",
+        "$15",
+        "$20"
       ],
       "correctAnswer": "$25",
       "explanation": "Agent states 'I'll apply a $25 credit to your next bill automatically.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What is the total compensation being offered?",
       "options": [
+        "$35",
         "$25",
         "$28.50",
-        "$32",
-        "$35"
+        "$32"
       ],
       "correctAnswer": "$28.50",
       "explanation": "Agent calculates 'Combined with the $25 credit, that's $28.50 total compensation.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "In how many hours should the repair be complete?",
       "options": [
-        "1 to 2 hours",
-        "2 to 3 hours",
         "3 to 4 hours",
-        "4 to 5 hours"
+        "4 to 5 hours",
+        "1 to 2 hours",
+        "2 to 3 hours"
       ],
       "correctAnswer": "2 to 3 hours",
       "explanation": "Agent estimates 'two to three more hours' of repair work remaining.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What type of concert is it?",
       "options": [
-        "Classical music",
-        "Hip-hop festival",
         "Indie rock festival",
-        "Country music show"
+        "Country music show",
+        "Classical music",
+        "Hip-hop festival"
       ],
       "correctAnswer": "Indie rock festival",
       "explanation": "Alex mentions 'The indie rock festival at the waterfront.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "How much is each ticket?",
       "options": [
-        "$25",
         "$35",
         "$40",
-        "$50"
+        "$50",
+        "$25"
       ],
       "correctAnswer": "$40",
       "explanation": "Alex states 'They're forty dollars each.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "Who is the headliner?",
       "options": [
-        "The Eastern Stars",
-        "The Northern Stars",
         "The Southern Lights",
-        "The Western Dream"
+        "The Western Dream",
+        "The Eastern Stars",
+        "The Northern Stars"
       ],
       "correctAnswer": "The Northern Stars",
       "explanation": "Alex identifies 'The headliner is The Northern Stars.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What time does the concert end?",
       "options": [
-        "9 PM",
-        "10 PM",
         "11 PM",
-        "Midnight"
+        "Midnight",
+        "9 PM",
+        "10 PM"
       ],
       "correctAnswer": "11 PM",
       "explanation": "Alex estimates 'It should wrap up around eleven.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "Is there a cost for a library card?",
       "options": [
-        "Yes, $10",
         "Yes, $20",
         "No, it's free",
-        "Yes, $5"
+        "Yes, $5",
+        "Yes, $10"
       ],
       "correctAnswer": "No, it's free",
       "explanation": "The guide states 'Registration is free and open to all residents.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the Sunday operating hour?",
       "options": [
-        "10 AM to 6 PM",
-        "1 PM to 5 PM",
         "12 PM to 4 PM",
-        "2 PM to 6 PM"
+        "2 PM to 6 PM",
+        "10 AM to 6 PM",
+        "1 PM to 5 PM"
       ],
       "correctAnswer": "1 PM to 5 PM",
       "explanation": "The guide specifies 'Sunday 1 to 5 PM.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the maximum number of items you can borrow?",
       "options": [
-        "Ten",
-        "Fifteen",
         "Twenty",
-        "Twenty-five"
+        "Twenty-five",
+        "Ten",
+        "Fifteen"
       ],
       "correctAnswer": "Twenty",
       "explanation": "The guide states 'You're allowed up to twenty items at a time.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "What is the late fee per day for books?",
       "options": [
-        "10 cents",
         "15 cents",
         "20 cents",
-        "25 cents"
+        "25 cents",
+        "10 cents"
       ],
       "correctAnswer": "25 cents",
       "explanation": "The guide states 'Late fees are twenty-five cents per day for books.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How much is being invested in recruitment and retention?",
       "options": [
+        "40 million dollars",
         "25 million dollars",
         "30 million dollars",
-        "35 million dollars",
-        "40 million dollars"
+        "35 million dollars"
       ],
       "correctAnswer": "35 million dollars",
       "explanation": "The province has announced a 35 million dollar investment.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How many nursing positions are currently unfilled?",
       "options": [
-        "600 positions",
-        "700 positions",
         "800 positions",
-        "900 positions"
+        "900 positions",
+        "600 positions",
+        "700 positions"
       ],
       "correctAnswer": "800 positions",
       "explanation": "There are over 800 unfilled nursing positions.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "By what percentage are starting salaries for nurses increasing?",
       "options": [
-        "8 percent",
         "10 percent",
         "12 percent",
-        "15 percent"
+        "15 percent",
+        "8 percent"
       ],
       "correctAnswer": "12 percent",
       "explanation": "Starting salaries for nurses are being increased by 12 percent.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "What percentage of vacant positions are expected to be filled in 18 months?",
       "options": [
+        "75 percent",
         "40 percent",
         "50 percent",
-        "60 percent",
-        "75 percent"
+        "60 percent"
       ],
       "correctAnswer": "60 percent",
       "explanation": "Officials estimate it will take approximately 18 months to fill 60 percent of positions.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the proposed investment for the training program redesign?",
       "options": [
-        "2.5 million dollars",
-        "3.0 million dollars",
         "3.5 million dollars",
-        "4.0 million dollars"
+        "4.0 million dollars",
+        "2.5 million dollars",
+        "3.0 million dollars"
       ],
       "correctAnswer": "3.5 million dollars",
       "explanation": "The investment would be about 3.5 million dollars over three years.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage can personalized learning increase retention?",
       "options": [
-        "20 percent",
-        "25 percent",
         "30 percent",
-        "35 percent"
+        "35 percent",
+        "20 percent",
+        "25 percent"
       ],
       "correctAnswer": "35 percent",
       "explanation": "Studies show this approach increases employee retention by up to 35 percent.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What is the current training approach at the company?",
       "options": [
+        "Self-paced learning",
         "Online learning modules",
         "One-size-fits-all classroom training",
-        "Mentorship programs",
-        "Self-paced learning"
+        "Mentorship programs"
       ],
       "correctAnswer": "One-size-fits-all classroom training",
       "explanation": "The current approach is one-size-fits-all classroom training.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "When do employee engagement scores typically improve?",
       "options": [
+        "Within one year",
         "Immediately",
         "Within three months",
-        "Within six months",
-        "Within one year"
+        "Within six months"
       ],
       "correctAnswer": "Within six months",
       "explanation": "Nina mentions engagement scores improve within six months of launching personalized learning.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "When do retention improvements typically occur?",
       "options": [
-        "6-9 months",
         "12-18 months",
         "18-24 months",
-        "2-3 years"
+        "2-3 years",
+        "6-9 months"
       ],
       "correctAnswer": "12-18 months",
       "explanation": "Retention improvements typically follow within 12 to 18 months.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What development approach will replace classroom training?",
       "options": [
+        "Self-study materials",
         "Online courses only",
         "Personalized learning paths and micro-credentials",
-        "Conference attendance",
-        "Self-study materials"
+        "Conference attendance"
       ],
       "correctAnswer": "Personalized learning paths and micro-credentials",
       "explanation": "The program will move toward personalized learning paths and micro-credentials.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What is David's main concern about the program?",
       "options": [
+        "Lack of support",
         "Too expensive",
         "Takes too long",
-        "Measurable metrics and accountability",
-        "Lack of support"
+        "Measurable metrics and accountability"
       ],
       "correctAnswer": "Measurable metrics and accountability",
       "explanation": "David wants to ensure accountability and asks Nina to outline measurable metrics.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "It's too expensive",
         "It has gone too far in terms of surveillance",
         "It doesn't improve security",
-        "It's ineffective"
+        "It's ineffective",
+        "It's too expensive"
       ],
       "correctAnswer": "It has gone too far in terms of surveillance",
       "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
+        "They communicate better",
         "They work harder",
         "It creates anxiety and erodes trust",
-        "They become more efficient",
-        "They communicate better"
+        "They become more efficient"
       ],
       "correctAnswer": "It creates anxiety and erodes trust",
       "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
-        "It increases productivity",
-        "It decreases productivity and morale",
         "It has no effect",
-        "It improves communication"
+        "It improves communication",
+        "It increases productivity",
+        "It decreases productivity and morale"
       ],
       "correctAnswer": "It decreases productivity and morale",
       "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What solution does the speaker propose?",
       "options": [
-        "No monitoring at all",
-        "Complete transparency monitoring",
         "Targeted monitoring only where necessary",
-        "Random monitoring"
+        "Random monitoring",
+        "No monitoring at all",
+        "Complete transparency monitoring"
       ],
       "correctAnswer": "Targeted monitoring only where necessary",
       "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",

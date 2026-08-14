@@ -15,11 +15,11 @@
       "prompt": "The ratio of blue to red marbles is 2 to 7. If 15 blue marbles are added, the ratio becomes 29 to 49. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
-        "34",
-        "64",
         "49",
         "14",
-        "29"
+        "29",
+        "34",
+        "64"
       ],
       "correctAnswer": "49",
       "explanation": "Let blue = 2k and red = 7k. After adding 15: (2k+15)/(7k) = 29/49, which gives k = 7. Red = 7×7 = 49.",
@@ -32,11 +32,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 0 remain; divided among 8 children, 1 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
-        "0",
-        "3",
         "2",
         "4",
-        "1"
+        "1",
+        "0",
+        "3"
       ],
       "correctAnswer": "4",
       "explanation": "The only n in range with n≡0 (mod 7) and n≡1 (mod 8) is 49. Then 49 ÷ 9 leaves remainder 4.",
@@ -49,11 +49,11 @@
       "prompt": "What is 20% of 350?",
       "difficulty": "medium",
       "options": [
+        "700",
+        "370",
         "70",
         "330",
-        "140",
-        "700",
-        "370"
+        "140"
       ],
       "correctAnswer": "70",
       "explanation": "20% of 350 = 20/100 × 350 = 70.",
@@ -66,11 +66,11 @@
       "prompt": "The average of 4 numbers is 14. If one number equal to 20 is removed, what is the average of the remaining 3 numbers?",
       "difficulty": "medium",
       "options": [
+        "11",
+        "13",
         "20",
         "12",
-        "14",
-        "11",
-        "13"
+        "14"
       ],
       "correctAnswer": "12",
       "explanation": "Total = 4×14 = 56. Remove 20: remaining total 36 over 3 numbers = 12.",
@@ -83,11 +83,11 @@
       "prompt": "What is the sum of all integers x such that -41 < x ≤ 39?",
       "difficulty": "medium",
       "options": [
+        "40",
         "-1",
         "-79",
         "-81",
-        "-40",
-        "40"
+        "-40"
       ],
       "correctAnswer": "-40",
       "explanation": "The integers run from -40 to 39. Pairing/series sum = -40.",
@@ -100,11 +100,11 @@
       "prompt": "A jacket priced at $180 is discounted by 25% and then taxed at 10%. What is the final price?",
       "difficulty": "medium",
       "options": [
-        "$135",
         "$148.50",
         "$198.00",
         "$180",
-        "$158.50"
+        "$158.50",
+        "$135"
       ],
       "correctAnswer": "$148.50",
       "explanation": "After 25% off: $135. After 10% tax: $135 × 1.1 = $148.50.",
@@ -117,11 +117,11 @@
       "prompt": "If 12 painters can paint 12 walls in 12 days, how many days would it take 12 painters to paint 12 walls?",
       "difficulty": "medium",
       "options": [
+        "13",
         "12",
         "1",
         "24",
-        "11",
-        "13"
+        "11"
       ],
       "correctAnswer": "12",
       "explanation": "Each painter paints 1 wall in 12 days. 12 painters painting 12 walls (one each) still take 12 days.",
@@ -134,11 +134,11 @@
       "prompt": "If 5/6 of a number is 120, what is 4/6 of that number?",
       "difficulty": "medium",
       "options": [
+        "216",
         "144",
         "96",
         "120",
-        "48",
-        "216"
+        "48"
       ],
       "correctAnswer": "96",
       "explanation": "The number is 120 ÷ 5/6 = 144. Then 4/6 × 144 = 96.",
@@ -151,11 +151,11 @@
       "prompt": "The perimeter of a rectangle is 64 and its area is 175. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
-        "18",
         "9",
         "32",
         "25",
-        "7"
+        "7",
+        "18"
       ],
       "correctAnswer": "7",
       "explanation": "Sides sum to 32 and multiply to 175. They are 7 and 25; the shorter side is 7.",
@@ -168,11 +168,11 @@
       "prompt": "The average of a and b is 49, and the average of b and c is 41. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "16",
         "90",
         "-16",
         "8",
-        "18"
+        "18",
+        "16"
       ],
       "correctAnswer": "16",
       "explanation": "a+b = 98 and b+c = 82. Subtracting: a − c = 98 − 82 = 16.",
@@ -185,11 +185,11 @@
       "prompt": "A survey of 400 workers found 80 commute by car, 100 by public transit, and 60 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "40%",
         "35%",
         "20%",
         "25%",
-        "45%",
-        "40%"
+        "45%"
       ],
       "correctAnswer": "40%",
       "explanation": "Work from home = 400 − 80 − 100 − 60 = 160. As a percentage: 160/400 = 40%.",
@@ -219,11 +219,11 @@
       "prompt": "Sofia can assemble a bookcase 3 times as fast as Marcus. Working together they finish one in 12 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
+        "9",
         "12",
         "16",
         "24",
-        "48",
-        "9"
+        "48"
       ],
       "correctAnswer": "16",
       "explanation": "Let Marcus's rate be r. Sofia's is 3r, so together (4)r = 1/12, giving r = 1/48. Sofia's rate 3r = 3/48 = 1/16, so Sofia alone takes 16 hours.",
@@ -236,11 +236,11 @@
       "prompt": "The ratio of blue to red marbles is 5 to 8. If 17 blue marbles are added, the ratio becomes 21 to 20. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
+        "57",
+        "25",
         "23",
         "40",
-        "42",
-        "57",
-        "25"
+        "42"
       ],
       "correctAnswer": "40",
       "explanation": "Let blue = 5k and red = 8k. After adding 17: (5k+17)/(8k) = 21/20, which gives k = 5. Red = 8×5 = 40.",
@@ -253,11 +253,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 5 remain; divided among 8 children, 1 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
+        "3",
         "0",
         "1",
         "2",
-        "6",
-        "3"
+        "6"
       ],
       "correctAnswer": "6",
       "explanation": "The only n in range with n≡5 (mod 7) and n≡1 (mod 8) is 33. Then 33 ÷ 9 leaves remainder 6.",
@@ -270,11 +270,11 @@
       "prompt": "What is 10% of 160?",
       "difficulty": "medium",
       "options": [
+        "16",
         "170",
         "32",
         "160",
-        "150",
-        "16"
+        "150"
       ],
       "correctAnswer": "16",
       "explanation": "10% of 160 = 10/100 × 160 = 16.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "If 3x + 9 = 1x + 15, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "6",
+        "3",
         "12",
         "8",
-        "9",
-        "6",
-        "3"
+        "9"
       ],
       "correctAnswer": "9",
       "explanation": "3x − 1x = 15 − 9 → 2x = 6 → x = 3. So x² = 9.",
@@ -352,11 +352,11 @@
       "prompt": "A right triangle has legs of length 8 and 15. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
-        "19",
         "17",
         "18",
         "23",
-        "16"
+        "16",
+        "19"
       ],
       "correctAnswer": "17",
       "explanation": "Hypotenuse = √(8² + 15²) = √289 = 17.",
@@ -386,11 +386,11 @@
       "prompt": "If 6x + 3 = 5x + 5, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "3",
+        "9",
         "4",
         "2",
-        "6",
-        "3",
-        "9"
+        "6"
       ],
       "correctAnswer": "4",
       "explanation": "6x − 5x = 5 − 3 → 1x = 2 → x = 2. So x² = 4.",
@@ -403,11 +403,11 @@
       "prompt": "A right triangle has legs of length 7 and 24. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "31",
+        "26",
         "24",
         "25",
-        "27",
-        "31",
-        "26"
+        "27"
       ],
       "correctAnswer": "25",
       "explanation": "Hypotenuse = √(7² + 24²) = √625 = 25.",
@@ -524,11 +524,11 @@
       "prompt": "By how many students did total enrollment grow from 2022 to 2023?",
       "difficulty": "medium",
       "options": [
-        "250",
         "300",
         "350",
         "400",
-        "450"
+        "450",
+        "250"
       ],
       "correctAnswer": "350",
       "explanation": "2023 total (4700) - 2022 total (4350) = 350 students",

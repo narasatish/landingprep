@@ -418,10 +418,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "When must staff wear FFP2 masks?",
       "options": [
-        "Only for infectious disease patients",
         "When entering patient rooms, regardless of diagnosis",
         "Only during outbreak periods",
-        "Optional for experienced staff"
+        "Optional for experienced staff",
+        "Only for infectious disease patients"
       ],
       "correctAnswer": "When entering patient rooms, regardless of diagnosis",
       "explanation": "The manager states all staff must wear FFP2 masks when entering patient rooms, regardless of diagnosis.",
@@ -454,10 +454,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What surgery did Robert Thompson have?",
       "options": [
+        "Spinal surgery",
         "Knee replacement",
         "Hip replacement",
-        "Ankle surgery",
-        "Spinal surgery"
+        "Ankle surgery"
       ],
       "correctAnswer": "Hip replacement",
       "explanation": "The nurse states Robert had a total hip replacement five days ago.",
@@ -472,10 +472,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "When is Robert Thompson's discharge planned?",
       "options": [
-        "Today",
-        "Tomorrow",
         "In 2 days",
-        "In 1 week"
+        "In 1 week",
+        "Today",
+        "Tomorrow"
       ],
       "correctAnswer": "Tomorrow",
       "explanation": "Nurse A says 'We'd like to discharge him tomorrow.'",
@@ -490,10 +490,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What will happen if staff breach the new infection control measures?",
       "options": [
+        "Addressed through disciplinary procedures",
         "Informal reminders only",
         "Reassignment only",
-        "No consequences",
-        "Addressed through disciplinary procedures"
+        "No consequences"
       ],
       "correctAnswer": "Addressed through disciplinary procedures",
       "explanation": "The manager states breaches will be addressed through disciplinary procedures.",
@@ -508,10 +508,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "When will the new infection control measures be reviewed?",
       "options": [
-        "After 2 weeks",
-        "After 1 month",
         "After 3 months",
-        "After 6 weeks"
+        "After 6 weeks",
+        "After 2 weeks",
+        "After 1 month"
       ],
       "correctAnswer": "After 6 weeks",
       "explanation": "The manager states the measures will be reviewed in six weeks.",
@@ -526,10 +526,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which groups are the vaccination programme designed for?",
       "options": [
+        "Children and pregnant women",
         "All healthcare workers",
         "Immunocompromised patients with conditions like HIV or post-chemotherapy",
-        "Elderly patients only",
-        "Children and pregnant women"
+        "Elderly patients only"
       ],
       "correctAnswer": "Immunocompromised patients with conditions like HIV or post-chemotherapy",
       "explanation": "The speaker describes the programme as for immunocompromised patients, including those with HIV and post-chemotherapy.",
@@ -544,10 +544,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What were historical vaccine uptake rates in this population?",
       "options": [
-        "10 to 20 percent",
-        "30 to 40 percent",
         "50 to 60 percent",
-        "70 to 80 percent"
+        "70 to 80 percent",
+        "10 to 20 percent",
+        "30 to 40 percent"
       ],
       "correctAnswer": "30 to 40 percent",
       "explanation": "The speaker mentions historical uptake rates were 30 to 40 percent.",
@@ -562,10 +562,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What was the uptake rate in the pilot programme?",
       "options": [
-        "70 percent",
         "80 percent",
         "75 percent",
-        "95 percent"
+        "95 percent",
+        "70 percent"
       ],
       "correctAnswer": "80 percent",
       "explanation": "The speaker states the pilot showed 95 percent identification and 80 percent uptake.",
@@ -580,10 +580,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "When does the programme rollout begin?",
       "options": [
-        "This month",
         "In three months",
         "Next month",
-        "In six months"
+        "In six months",
+        "This month"
       ],
       "correctAnswer": "Next month",
       "explanation": "The speaker states 'Roll-out begins next month across all practices in the region.'",
@@ -618,10 +618,10 @@
       "prompt": "Which group is the vaccination programme aimed at?",
       "question": "Which group is the vaccination programme aimed at?",
       "options": [
-        "Children under five",
-        "Immunosuppressed populations",
         "Pregnant women",
-        "Healthcare workers"
+        "Healthcare workers",
+        "Children under five",
+        "Immunosuppressed populations"
       ],
       "correctAnswer": "Immunosuppressed populations",
       "explanation": "The speaker opens by stating the rollout is for immunosuppressed populations.",
@@ -638,10 +638,10 @@
       "prompt": "What does the speaker describe as the key innovation?",
       "question": "What does the speaker describe as the key innovation?",
       "options": [
-        "A new combined vaccine",
         "A pre-vaccination assessment of baseline immunity",
         "A mobile vaccination unit",
-        "An electronic reminder system"
+        "An electronic reminder system",
+        "A new combined vaccine"
       ],
       "correctAnswer": "A pre-vaccination assessment of baseline immunity",
       "explanation": "The speaker calls the pre-vaccination assessment measuring baseline immunity the key innovation.",
@@ -678,10 +678,10 @@
       "prompt": "When can patients receive live vaccines?",
       "question": "When can patients receive live vaccines?",
       "options": [
+        "At the same time as inactivated vaccines",
         "Immediately on diagnosis",
         "Only after immune recovery",
-        "Only in hospital settings",
-        "At the same time as inactivated vaccines"
+        "Only in hospital settings"
       ],
       "correctAnswer": "Only after immune recovery",
       "explanation": "The speaker states some patients require live vaccines only after immune recovery.",
@@ -698,10 +698,10 @@
       "prompt": "What uptake did the pilot achieve?",
       "question": "What uptake did the pilot achieve?",
       "options": [
+        "95 percent",
         "30 percent",
         "40 percent",
-        "80 percent",
-        "95 percent"
+        "80 percent"
       ],
       "correctAnswer": "80 percent",
       "explanation": "Pilot data showed 95 percent identification of eligible patients and 80 percent uptake.",
@@ -718,10 +718,10 @@
       "prompt": "What were historical uptake rates?",
       "question": "What were historical uptake rates?",
       "options": [
-        "10 to 20 percent",
         "30 to 40 percent",
         "50 to 60 percent",
-        "70 to 80 percent"
+        "70 to 80 percent",
+        "10 to 20 percent"
       ],
       "correctAnswer": "30 to 40 percent",
       "explanation": "The speaker contrasts the pilot with historical rates of 30 to 40 percent.",
@@ -738,10 +738,10 @@
       "prompt": "Which barrier did the speaker NOT identify?",
       "question": "Which barrier did the speaker NOT identify?",
       "options": [
-        "Lack of awareness",
-        "Inconvenient appointment scheduling",
         "Patient fears about vaccine safety",
-        "Shortage of vaccine supply"
+        "Shortage of vaccine supply",
+        "Lack of awareness",
+        "Inconvenient appointment scheduling"
       ],
       "correctAnswer": "Shortage of vaccine supply",
       "explanation": "The three barriers named are awareness, scheduling and safety fears; supply shortage is not mentioned.",

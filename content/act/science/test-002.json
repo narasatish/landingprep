@@ -47,10 +47,10 @@
       "topic": "Data Interpretation",
       "prompt": "According to Table 1, at what pH did pepsin reach maximum activity?",
       "options": [
-        "pH 2.0",
-        "pH 4.0",
         "pH 3.0",
-        "pH 5.0"
+        "pH 5.0",
+        "pH 2.0",
+        "pH 4.0"
       ],
       "correctAnswer": "pH 3.0",
       "explanation": "Table 1 shows enzyme activity values of 8.4, 12.7, 15.3, 9.2, 2.1, and 0.3 at pH 1.0-6.0 respectively. The maximum value is 15.3 µmol/min at pH 3.0.",
@@ -64,10 +64,10 @@
       "topic": "Data Interpretation",
       "prompt": "How much did pepsin activity decrease from pH 3.0 to pH 5.0?",
       "options": [
+        "17.4 µmol/min",
         "13.2 µmol/min",
         "7.1 µmol/min",
-        "15.3 µmol/min",
-        "17.4 µmol/min"
+        "15.3 µmol/min"
       ],
       "correctAnswer": "13.2 µmol/min",
       "explanation": "At pH 3.0, activity = 15.3 µmol/min; at pH 5.0, activity = 2.1 µmol/min. Decrease = 15.3 - 2.1 = 13.2 µmol/min.",
@@ -98,10 +98,10 @@
       "topic": "Data Interpretation",
       "prompt": "At which pH value was the standard error smallest?",
       "options": [
-        "pH 6.0",
         "pH 3.0",
         "pH 5.0",
-        "pH 1.0"
+        "pH 1.0",
+        "pH 6.0"
       ],
       "correctAnswer": "pH 6.0",
       "explanation": "Standard errors were 0.4, 0.6, 0.7, 0.5, 0.3, and 0.1 at pH 1.0-6.0 respectively. The smallest is 0.1 at pH 6.0.",
@@ -115,10 +115,10 @@
       "topic": "Inference",
       "prompt": "If pepsin were placed in a neutral pH environment (pH 7), its activity would most likely be:",
       "options": [
-        "higher than at pH 6.0",
-        "equal to pH 5.0 activity",
         "lower than at pH 6.0",
-        "unable to be predicted from this data"
+        "unable to be predicted from this data",
+        "higher than at pH 6.0",
+        "equal to pH 5.0 activity"
       ],
       "correctAnswer": "lower than at pH 6.0",
       "explanation": "Activity at pH 6.0 is already very low (0.3 µmol/min). The enzyme becomes progressively inactive above its optimum of pH 3.0. At pH 7 (more alkaline), activity would likely be even lower, following the trend shown.",
@@ -132,10 +132,10 @@
       "topic": "Data Interpretation",
       "prompt": "The ratio of pepsin activity at pH 3.0 to pH 1.0 is approximately:",
       "options": [
+        "0.5:1",
         "1.8:1",
         "1.5:1",
-        "0.9:1",
-        "0.5:1"
+        "0.9:1"
       ],
       "correctAnswer": "1.8:1",
       "explanation": "Activity at pH 3.0 = 15.3 µmol/min; at pH 1.0 = 8.4 µmol/min. Ratio = 15.3 / 8.4 = 1.82, approximately 1.8:1.",
@@ -166,10 +166,10 @@
       "topic": "Data Interpretation",
       "prompt": "Under normal gravity (1g), the average root length after 14 days was:",
       "options": [
-        "8.5 cm",
         "7.2 cm",
         "14 cm",
-        "15.7 cm"
+        "15.7 cm",
+        "8.5 cm"
       ],
       "correctAnswer": "8.5 cm",
       "explanation": "The passage states: 'Under normal gravity (1g): ...Average root length after 14 days: 8.5 cm.'",
@@ -183,10 +183,10 @@
       "topic": "Experimental Design",
       "prompt": "What was the purpose of using a clinostat device in this experiment?",
       "options": [
-        "To increase root growth rate",
-        "To measure root angle more accurately",
         "To simulate zero gravity by preventing gravity from exerting directional force",
-        "To provide light to the growing seedlings"
+        "To provide light to the growing seedlings",
+        "To increase root growth rate",
+        "To measure root angle more accurately"
       ],
       "correctAnswer": "To simulate zero gravity by preventing gravity from exerting directional force",
       "explanation": "The passage explains: 'Seedlings...were grown in a horizontal position (simulating altered gravity of 0g) using a clinostat device that continuously rotates the growth chamber to prevent gravity from exerting a directional force.'",
@@ -200,10 +200,10 @@
       "topic": "Data Interpretation",
       "prompt": "The difference in average root length between 1g and 0g conditions was:",
       "options": [
-        "15.7 cm",
-        "7.2 cm",
         "8.5 cm",
-        "1.3 cm"
+        "1.3 cm",
+        "15.7 cm",
+        "7.2 cm"
       ],
       "correctAnswer": "1.3 cm",
       "explanation": "Under 1g: 8.5 cm; under 0g: 7.2 cm. Difference = 8.5 - 7.2 = 1.3 cm.",
@@ -217,10 +217,10 @@
       "topic": "Inference",
       "prompt": "The passage states that gravity 'promotes slightly faster root elongation.' This conclusion is based on:",
       "options": [
-        "longer average root length under 1g (8.5 cm) compared to 0g (7.2 cm)",
-        "roots growing at wider angles under 0g",
         "random root growth under 0g",
-        "the clinostat rotating more under 1g"
+        "the clinostat rotating more under 1g",
+        "longer average root length under 1g (8.5 cm) compared to 0g (7.2 cm)",
+        "roots growing at wider angles under 0g"
       ],
       "correctAnswer": "longer average root length under 1g (8.5 cm) compared to 0g (7.2 cm)",
       "explanation": "The passage explicitly states: 'Gravity also promotes slightly faster root elongation, as evidenced by the longer average length under 1g' (8.5 cm vs 7.2 cm).",
@@ -234,10 +234,10 @@
       "topic": "Data Interpretation",
       "prompt": "Under simulated 0g, root tips showed angles ranging from 0-360°. This range indicates:",
       "options": [
-        "roots grew in all directions with no preferred direction",
         "some roots grew downward and some upward",
         "measurement error in the experiment",
-        "the roots were damaged by the clinostat"
+        "the roots were damaged by the clinostat",
+        "roots grew in all directions with no preferred direction"
       ],
       "correctAnswer": "roots grew in all directions with no preferred direction",
       "explanation": "The 0-360° range means roots pointed in all compass directions equally, demonstrating random growth without gravitational orientation. Under 1g, roots consistently pointed downward (0-10°), showing directional preference.",
@@ -268,10 +268,10 @@
       "topic": "Trends",
       "prompt": "As water hardness increased from 0 to 250 ppm, foam height decreased by:",
       "options": [
+        "9.4 cm",
         "7.6 cm",
         "0.9 cm",
-        "8.5 cm",
-        "9.4 cm"
+        "8.5 cm"
       ],
       "correctAnswer": "7.6 cm",
       "explanation": "Foam height at 0 ppm = 8.5 cm; at 250 ppm = 0.9 cm. Decrease = 8.5 - 0.9 = 7.6 cm.",
@@ -285,10 +285,10 @@
       "topic": "Data Interpretation",
       "prompt": "How long did foam remain stable (50% dissipation time) in water with 100 ppm hardness?",
       "options": [
-        "4.9 minutes",
-        "5.8 minutes",
         "6.2 minutes",
-        "8.7 minutes"
+        "8.7 minutes",
+        "4.9 minutes",
+        "5.8 minutes"
       ],
       "correctAnswer": "4.9 minutes",
       "explanation": "Table 2 shows foam stability (time to 50% dissipation) of 6.2, 5.8, 4.9, 3.5, 1.8, and 0.5 minutes at hardness levels 0, 50, 100, 150, 200, and 250 ppm respectively. At 100 ppm, stability is 4.9 minutes.",
@@ -302,10 +302,10 @@
       "topic": "Inference",
       "prompt": "The passage explains that calcium and magnesium ions form insoluble compounds with soap. This explains why:",
       "options": [
-        "hard water ions reduce soap's availability to clean by precipitating it as insoluble compounds",
         "hard water contains more oxygen than soft water",
         "soap molecules are destroyed in hard water",
-        "hard water has a higher boiling point than soft water"
+        "hard water has a higher boiling point than soft water",
+        "hard water ions reduce soap's availability to clean by precipitating it as insoluble compounds"
       ],
       "correctAnswer": "hard water ions reduce soap's availability to clean by precipitating it as insoluble compounds",
       "explanation": "When Ca²⁺ and Mg²⁺ form insoluble compounds with soap, the soap is chemically bound and unavailable for its cleaning function. This reduction in available soap explains decreased lather and cleaning effectiveness.",
@@ -336,10 +336,10 @@
       "topic": "Conflicting Viewpoints",
       "prompt": "Paleontologist A's hypothesis emphasizes gradual accumulation of mutations. Paleontologist B's hypothesis emphasizes coordinated genetic changes. The key evidence that would distinguish between these two hypotheses would be:",
       "options": [
+        "documenting that whale ancestors were semi-aquatic",
         "fossil evidence showing either gradual transitions or distinct morphological gaps in whale limb evolution",
         "finding that whale flippers are homologous to mammalian forelimbs",
-        "observing that natural selection favors hydrodynamic flippers",
-        "documenting that whale ancestors were semi-aquatic"
+        "observing that natural selection favors hydrodynamic flippers"
       ],
       "correctAnswer": "fossil evidence showing either gradual transitions or distinct morphological gaps in whale limb evolution",
       "explanation": "A predicts a continuous gradual fossil record; B predicts gaps and rapid changes. Fossil evidence of transition rates directly tests the core disagreement about tempo and mode of evolution.",
@@ -353,10 +353,10 @@
       "topic": "Conflicting Viewpoints",
       "prompt": "Paleontologist B cites 'distinct morphological gaps' in the fossil record between early and later whales. What does this observation suggest?",
       "options": [
-        "whale evolution was not gradual",
-        "fossil records are always incomplete",
         "early whales were more complex than later whales",
-        "the missing fossils represent failed evolutionary experiments"
+        "the missing fossils represent failed evolutionary experiments",
+        "whale evolution was not gradual",
+        "fossil records are always incomplete"
       ],
       "correctAnswer": "whale evolution was not gradual",
       "explanation": "B uses morphological gaps as evidence for episodic (non-gradual) change. If evolution were gradual with continuous mutation accumulation (A's view), we would expect transitional fossils filling the gaps, not distinct gaps.",
@@ -387,10 +387,10 @@
       "topic": "Data Interpretation",
       "prompt": "According to Table 3, at what ampicillin concentration was the bacterial survival rate approximately 1.5%?",
       "options": [
-        "50 µg/mL",
-        "150 µg/mL",
         "100 µg/mL",
-        "200 µg/mL"
+        "200 µg/mL",
+        "50 µg/mL",
+        "150 µg/mL"
       ],
       "correctAnswer": "100 µg/mL",
       "explanation": "Table 3 shows survival rates of 100%, 79%, 41%, 6%, 1.5%, and 0.08% at ampicillin concentrations 0, 10, 20, 50, 100, and 200 µg/mL respectively. The 1.5% survival rate occurs at 100 µg/mL.",
@@ -404,10 +404,10 @@
       "topic": "Data Interpretation",
       "prompt": "How many colonies survived at 200 µg/mL ampicillin?",
       "options": [
-        "0.08",
         "35",
         "2",
-        "150"
+        "150",
+        "0.08"
       ],
       "correctAnswer": "2",
       "explanation": "Table 3 shows that at 200 µg/mL, the average colony count was 2.",
@@ -438,10 +438,10 @@
       "topic": "Data Interpretation",
       "prompt": "What percentage reduction in bacterial colonies occurred from 0 to 50 µg/mL?",
       "options": [
+        "99.92%",
         "37.5%",
         "62.5%",
-        "93.75%",
-        "99.92%"
+        "93.75%"
       ],
       "correctAnswer": "93.75%",
       "explanation": "At 0 µg/mL: 2,400 colonies; at 50 µg/mL: 150 colonies. Reduction = (2,400 - 150) / 2,400 = 2,250 / 2,400 = 0.9375 = 93.75%.",
@@ -455,10 +455,10 @@
       "topic": "Inference",
       "prompt": "The passage mentions that a small number of bacteria survived at high antibiotic concentrations, 'likely representing antibiotic-resistant strains.' What does this suggest about antibiotic resistance?",
       "options": [
-        "resistant bacteria are immune to all antibiotics",
-        "resistance is acquired during the experiment",
         "some bacteria possess genetic mutations conferring resistance",
-        "antibiotics become ineffective over time"
+        "antibiotics become ineffective over time",
+        "resistant bacteria are immune to all antibiotics",
+        "resistance is acquired during the experiment"
       ],
       "correctAnswer": "some bacteria possess genetic mutations conferring resistance",
       "explanation": "The passage states: 'likely representing antibiotic-resistant strains that possess genetic mutations conferring resistance.' These mutations existed before the experiment; the antibiotic simply selected for their survival.",
@@ -472,10 +472,10 @@
       "topic": "Data Interpretation",
       "prompt": "The difference in colony count between 20 µg/mL and 50 µg/mL was:",
       "options": [
-        "1,130 colonies",
         "980 colonies",
         "830 colonies",
-        "2,380 colonies"
+        "2,380 colonies",
+        "1,130 colonies"
       ],
       "correctAnswer": "830 colonies",
       "explanation": "At 20 µg/mL: 980 colonies; at 50 µg/mL: 150 colonies. Difference = 980 - 150 = 830 colonies.",
@@ -506,10 +506,10 @@
       "topic": "Data Interpretation",
       "prompt": "How much does the boiling point of water decrease when atmospheric pressure drops from 101.3 kPa to 50 kPa?",
       "options": [
+        "78°C",
         "12°C",
         "50°C",
-        "22°C",
-        "78°C"
+        "22°C"
       ],
       "correctAnswer": "22°C",
       "explanation": "At 101.3 kPa: 100°C; at 50 kPa: 78°C. Decrease = 100 - 78 = 22°C.",
@@ -523,10 +523,10 @@
       "topic": "Trends",
       "prompt": "The inverse relationship between atmospheric pressure and boiling point means that:",
       "options": [
-        "higher pressure always increases boiling point",
-        "boiling point is independent of atmospheric pressure",
         "lower pressure allows water molecules to escape as vapor at lower temperatures",
-        "water molecules move faster at higher altitudes"
+        "water molecules move faster at higher altitudes",
+        "higher pressure always increases boiling point",
+        "boiling point is independent of atmospheric pressure"
       ],
       "correctAnswer": "lower pressure allows water molecules to escape as vapor at lower temperatures",
       "explanation": "The passage explains: 'lower atmospheric pressure means fewer air molecules pushing down on the liquid surface, so water molecules need less kinetic energy (lower temperature) to escape as vapor.'",
@@ -540,10 +540,10 @@
       "topic": "Data Interpretation",
       "prompt": "At 30 kPa atmospheric pressure, the boiling point of water is:",
       "options": [
-        "45°C",
-        "96°C",
         "88°C",
-        "65°C"
+        "65°C",
+        "45°C",
+        "96°C"
       ],
       "correctAnswer": "65°C",
       "explanation": "Table 4 shows that at 30 kPa, the boiling point is 65°C.",
@@ -557,10 +557,10 @@
       "topic": "Inference",
       "prompt": "Based on the data in Table 4, if atmospheric pressure were 15 kPa, the boiling point would most likely be:",
       "options": [
-        "50°C",
-        "35°C",
         "40°C",
-        "30°C"
+        "30°C",
+        "50°C",
+        "35°C"
       ],
       "correctAnswer": "50°C",
       "explanation": "From Table 4, 10 kPa gives 45°C and 30 kPa gives 65°C. At 15 kPa, linear interpolation gives 45 + (5/20)×20 = 50°C. (35°C is impossible: 15 kPa is above 10 kPa, so the boiling point must exceed 45°C.)",
@@ -574,10 +574,10 @@
       "topic": "Data Interpretation",
       "prompt": "What is the difference in boiling point between 71 kPa and 10 kPa?",
       "options": [
-        "43°C",
         "35°C",
         "45°C",
-        "88°C"
+        "88°C",
+        "43°C"
       ],
       "correctAnswer": "43°C",
       "explanation": "At 71 kPa, boiling point = 88°C; at 10 kPa, boiling point = 45°C. Difference = 88 - 45 = 43°C.",
@@ -591,10 +591,10 @@
       "topic": "Inference",
       "prompt": "The enzyme pepsin evolved to work optimally at pH 3.0 because:",
       "options": [
-        "pH 3.0 is the safest pH for all proteins",
         "this pH matches the natural acidic environment where pepsin functions physiologically",
         "pH 3.0 provides maximum energy for enzyme reactions",
-        "pepsin cannot denature at pH 3.0"
+        "pepsin cannot denature at pH 3.0",
+        "pH 3.0 is the safest pH for all proteins"
       ],
       "correctAnswer": "this pH matches the natural acidic environment where pepsin functions physiologically",
       "explanation": "The passage explains that pepsin's optimal pH reflects its 'natural acidic environment in the stomach (pH 2-3).' Enzymes are adapted to function in their physiological environment.",
@@ -608,10 +608,10 @@
       "topic": "Inference",
       "prompt": "To maintain the same level of cleansing in hard water as in soft water, a consumer would likely need to:",
       "options": [
-        "use less soap",
-        "use hotter water",
         "add calcium ions",
-        "use more soap"
+        "use more soap",
+        "use less soap",
+        "use hotter water"
       ],
       "correctAnswer": "use more soap",
       "explanation": "Since hard water ions reduce soap effectiveness by precipitating it, using more soap would compensate for the amount lost to precipitation and maintain cleansing ability.",
@@ -625,10 +625,10 @@
       "topic": "Experimental Design",
       "prompt": "The experiment was carefully designed to keep light, temperature, water, and nutrients identical between conditions. The purpose of this design feature was to:",
       "options": [
+        "allow comparison of different plant species",
         "make plant roots grow faster",
         "ensure that differences in root growth were due to gravity alone",
-        "prevent the clinostat from rotating too fast",
-        "allow comparison of different plant species"
+        "prevent the clinostat from rotating too fast"
       ],
       "correctAnswer": "ensure that differences in root growth were due to gravity alone",
       "explanation": "By controlling all other variables, the experimenter isolated gravity as the independent variable, allowing valid comparison of its specific effects on root growth and orientation.",
@@ -659,10 +659,10 @@
       "topic": "Data Interpretation",
       "prompt": "The percentage reduction in bacteria from 0 to 200 µg/mL ampicillin was:",
       "options": [
-        "0.08%",
         "99.92%",
         "99.98%",
-        "199.92%"
+        "199.92%",
+        "0.08%"
       ],
       "correctAnswer": "99.92%",
       "explanation": "At 0 µg/mL: 2,400 colonies; at 200 µg/mL: 2 colonies. Reduction = (2,400 - 2) / 2,400 = 2,398 / 2,400 = 0.9992 = 99.92%.",
@@ -676,10 +676,10 @@
       "topic": "Inference",
       "prompt": "The passage defines boiling point as 'the temperature at which vapor pressure equals atmospheric pressure.' This definition implies that:",
       "options": [
-        "boiling requires continuous heating",
-        "liquid can only become gas at the boiling point",
         "atmospheric pressure has no effect on boiling",
-        "lower atmospheric pressure allows liquid to boil at lower temperatures"
+        "lower atmospheric pressure allows liquid to boil at lower temperatures",
+        "boiling requires continuous heating",
+        "liquid can only become gas at the boiling point"
       ],
       "correctAnswer": "lower atmospheric pressure allows liquid to boil at lower temperatures",
       "explanation": "If boiling occurs when vapor pressure equals atmospheric pressure, then lower atmospheric pressure means vapor pressure reaches equality at a lower temperature, allowing boiling to occur at lower temperatures.",
@@ -693,10 +693,10 @@
       "topic": "Data Interpretation",
       "prompt": "The activity of pepsin at pH 4.0 was what percentage of its activity at pH 3.0?",
       "options": [
+        "167%",
         "40%",
         "60%",
-        "64%",
-        "167%"
+        "64%"
       ],
       "correctAnswer": "60%",
       "explanation": "At pH 4.0: 9.2 µmol/min; at pH 3.0: 15.3 µmol/min. Percentage = (9.2 / 15.3) × 100 = 60.1%, approximately 60%.",

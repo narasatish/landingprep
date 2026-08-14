@@ -15,11 +15,11 @@
       "prompt": "What is the sum of all integers x such that -27 < x ≤ 22?",
       "difficulty": "medium",
       "options": [
-        "-120",
         "-98",
         "98",
         "-76",
-        "-125"
+        "-125",
+        "-120"
       ],
       "correctAnswer": "-98",
       "explanation": "The integers run from -26 to 22. Pairing/series sum = -98.",
@@ -32,11 +32,11 @@
       "prompt": "A jacket priced at $150 is discounted by 20% and then taxed at 8%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$120",
         "$129.60",
         "$139.60",
         "$162",
-        "$150",
-        "$120"
+        "$150"
       ],
       "correctAnswer": "$129.60",
       "explanation": "After 20% off: $120. After 8% tax: $120 × 1.08 = $129.60.",
@@ -49,11 +49,11 @@
       "prompt": "If 10 painters can paint 10 walls in 10 days, how many days would it take 10 painters to paint 10 walls?",
       "difficulty": "medium",
       "options": [
+        "11",
+        "9",
         "10",
         "1",
-        "20",
-        "11",
-        "9"
+        "20"
       ],
       "correctAnswer": "10",
       "explanation": "Each painter paints 1 wall in 10 days. 10 painters painting 10 walls (one each) still take 10 days.",
@@ -66,11 +66,11 @@
       "prompt": "If 1/3 of a number is 10, what is 3/5 of that number?",
       "difficulty": "medium",
       "options": [
+        "30",
         "28",
         "12",
         "18",
-        "10",
-        "30"
+        "10"
       ],
       "correctAnswer": "18",
       "explanation": "The number is 10 ÷ 1/3 = 30. Then 3/5 × 30 = 18.",
@@ -100,11 +100,11 @@
       "prompt": "The average of a and b is 54, and the average of b and c is 26. What is a − c?",
       "difficulty": "medium",
       "options": [
+        "56",
         "28",
         "-56",
         "80",
-        "58",
-        "56"
+        "58"
       ],
       "correctAnswer": "56",
       "explanation": "a+b = 108 and b+c = 52. Subtracting: a − c = 108 − 52 = 56.",
@@ -151,11 +151,11 @@
       "prompt": "Sofia can assemble a bookcase 3 times as fast as Marcus. Working together they finish one in 16 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
+        "32",
+        "64",
         "16",
         "21.333333333333332",
-        "12",
-        "32",
-        "64"
+        "12"
       ],
       "correctAnswer": "21.333333333333332",
       "explanation": "Let Marcus's rate be r. Sofia's is 3r, so together (4)r = 1/16, giving r = 1/64. Sofia's rate 3r = 3/64 = 1/21.333333333333332, so Sofia alone takes 21.333333333333332 hours.",
@@ -185,11 +185,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 1 remain; divided among 8 children, 1 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
-        "4",
-        "0",
         "3",
         "1",
-        "2"
+        "2",
+        "4",
+        "0"
       ],
       "correctAnswer": "3",
       "explanation": "The only n in range with n≡1 (mod 7) and n≡1 (mod 8) is 57. Then 57 ÷ 9 leaves remainder 3.",
@@ -202,11 +202,11 @@
       "prompt": "What is 25% of 340?",
       "difficulty": "medium",
       "options": [
+        "170",
+        "85",
         "315",
         "365",
-        "850",
-        "170",
-        "85"
+        "850"
       ],
       "correctAnswer": "85",
       "explanation": "25% of 340 = 25/100 × 340 = 85.",
@@ -219,11 +219,11 @@
       "prompt": "The average of 5 numbers is 14. If one number equal to 34 is removed, what is the average of the remaining 4 numbers?",
       "difficulty": "medium",
       "options": [
+        "8",
+        "14",
         "9",
         "34",
-        "10",
-        "8",
-        "14"
+        "10"
       ],
       "correctAnswer": "9",
       "explanation": "Total = 5×14 = 70. Remove 34: remaining total 36 over 4 numbers = 9.",
@@ -253,11 +253,11 @@
       "prompt": "A jacket priced at $290 is discounted by 30% and then taxed at 8%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$229.24",
         "$290",
         "$203",
         "$313.20",
-        "$219.24",
-        "$229.24"
+        "$219.24"
       ],
       "correctAnswer": "$219.24",
       "explanation": "After 30% off: $203. After 8% tax: $203 × 1.08 = $219.24.",
@@ -270,11 +270,11 @@
       "prompt": "If 9 painters can paint 9 walls in 9 days, how many days would it take 9 painters to paint 9 walls?",
       "difficulty": "medium",
       "options": [
-        "8",
         "9",
         "10",
         "18",
-        "1"
+        "1",
+        "8"
       ],
       "correctAnswer": "9",
       "explanation": "Each painter paints 1 wall in 9 days. 9 painters painting 9 walls (one each) still take 9 days.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "A right triangle has legs of length 6 and 8. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "11",
+        "12",
         "14",
         "9",
-        "10",
-        "11",
-        "12"
+        "10"
       ],
       "correctAnswer": "10",
       "explanation": "Hypotenuse = √(6² + 8²) = √100 = 10.",
@@ -369,11 +369,11 @@
       "prompt": "If 5x + 6 = 4x + 14, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "72",
+        "64",
         "16",
         "63",
-        "8",
-        "72",
-        "64"
+        "8"
       ],
       "correctAnswer": "64",
       "explanation": "5x − 4x = 14 − 6 → 1x = 8 → x = 8. So x² = 64.",
@@ -403,11 +403,11 @@
       "prompt": "In a class of 91 students, the ratio of those who passed to those who failed is 7:6. How many students passed?",
       "difficulty": "medium",
       "options": [
+        "56",
+        "53",
         "91",
         "49",
-        "42",
-        "56",
-        "53"
+        "42"
       ],
       "correctAnswer": "49",
       "explanation": "Total parts = 13, each part = 91/13 = 7. Passed = 7 × 7 = 49.",
@@ -420,11 +420,11 @@
       "prompt": "What is the total number of downloads across both platforms over the six months?",
       "difficulty": "medium",
       "options": [
+        "739 thousand",
+        "759 thousand",
         "680 thousand",
         "699 thousand",
-        "719 thousand",
-        "739 thousand",
-        "759 thousand"
+        "719 thousand"
       ],
       "correctAnswer": "719 thousand",
       "explanation": "Sum of all months: 80+95+113+128+143+160 = 719 thousand",
@@ -484,11 +484,11 @@
       "prompt": "By approximately what percentage did total downloads increase from January to June?",
       "difficulty": "medium",
       "options": [
-        "80%",
-        "90%",
         "100%",
         "110%",
-        "120%"
+        "120%",
+        "80%",
+        "90%"
       ],
       "correctAnswer": "100%",
       "explanation": "(160-80)/80 = 80/80 = 1.0 = 100%",
@@ -548,11 +548,11 @@
       "prompt": "In which month did iOS downloads first exceed 70 thousand?",
       "difficulty": "medium",
       "options": [
-        "March",
         "April",
         "May",
         "June",
-        "February"
+        "February",
+        "March"
       ],
       "correctAnswer": "May",
       "explanation": "iOS: January 45, February 52, March 61, April 68, May 75 (first time >70)",

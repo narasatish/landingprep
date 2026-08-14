@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "From which city did the passenger fly?",
       "options": [
-        "Calgary",
         "Vancouver",
         "Edmonton",
-        "Toronto"
+        "Toronto",
+        "Calgary"
       ],
       "correctAnswer": "Vancouver",
       "explanation": "Passenger states 'my baggage didn't arrive on my flight from Vancouver.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What color is the passenger's luggage?",
       "options": [
+        "Red Samsonite roller",
         "Blue Samsonite roller",
         "Black Samsonite roller",
-        "Black leather bag",
-        "Red Samsonite roller"
+        "Black leather bag"
       ],
       "correctAnswer": "Black Samsonite roller",
       "explanation": "Agent confirms 'Your bag is a black Samsonite roller, correct?' and passenger agrees.",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "Where was the bag mistakenly sent?",
       "options": [
+        "Montreal",
         "Vancouver",
         "Toronto",
-        "Edmonton",
-        "Montreal"
+        "Edmonton"
       ],
       "correctAnswer": "Edmonton",
       "explanation": "Agent explains the bag 'was misrouted to Edmonton by mistake.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When does the return flight arrive in Calgary?",
       "options": [
-        "4:15 PM",
-        "5:15 PM",
         "6:15 PM",
-        "7:15 PM"
+        "7:15 PM",
+        "4:15 PM",
+        "5:15 PM"
       ],
       "correctAnswer": "6:15 PM",
       "explanation": "Agent states 'It's on the next flight back to Calgary, which arrives at 6:15 PM tonight.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "By what time will the bag be delivered to the hotel?",
       "options": [
-        "6:00 PM",
         "7:00 PM",
         "8:00 PM",
-        "9:00 PM"
+        "9:00 PM",
+        "6:00 PM"
       ],
       "correctAnswer": "8:00 PM",
       "explanation": "Agent promises 'we'll have it delivered to your hotel by 8 PM.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "Which hotel is the passenger staying at?",
       "options": [
+        "The Shangri-La",
         "The Sandman Calgary",
         "The Fairmont Palliser",
-        "The Bow Tower",
-        "The Shangri-La"
+        "The Bow Tower"
       ],
       "correctAnswer": "The Fairmont Palliser",
       "explanation": "Passenger states they're staying at 'The Fairmont Palliser downtown.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What compensation is offered for the baggage delay?",
       "options": [
+        "$75 travel voucher",
         "$25 travel voucher",
         "$35 travel voucher",
-        "$50 travel voucher",
-        "$75 travel voucher"
+        "$50 travel voucher"
       ],
       "correctAnswer": "$50 travel voucher",
       "explanation": "Agent offers 'a $50 travel voucher for your next flight with us.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the first restaurant Marcus suggests?",
       "options": [
-        "Thai food",
-        "Italian food",
         "Sushi",
-        "Indian food"
+        "Indian food",
+        "Thai food",
+        "Italian food"
       ],
       "correctAnswer": "Sushi",
       "explanation": "Marcus suggests 'that new sushi place across the street.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "When does the Thai restaurant get busy?",
       "options": [
+        "2 PM",
         "11 AM",
         "Noon",
-        "1 PM",
-        "2 PM"
+        "1 PM"
       ],
       "correctAnswer": "Noon",
       "explanation": "Jessica warns 'it gets busy after noon.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "What dish does Jessica mention?",
       "options": [
-        "Tom yum soup",
-        "Pad thai",
         "Spring rolls",
-        "Green curry"
+        "Green curry",
+        "Tom yum soup",
+        "Pad thai"
       ],
       "correctAnswer": "Pad thai",
       "explanation": "Jessica states 'They have great pad thai.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How soon do they plan to meet?",
       "options": [
-        "Immediately",
         "In five minutes downstairs",
         "In ten minutes",
-        "In fifteen minutes"
+        "In fifteen minutes",
+        "Immediately"
       ],
       "correctAnswer": "In five minutes downstairs",
       "explanation": "Jessica says 'See you in five minutes downstairs.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "Is there a cost for a library card?",
       "options": [
-        "Yes, $10",
         "Yes, $20",
         "No, it's free",
-        "Yes, $5"
+        "Yes, $5",
+        "Yes, $10"
       ],
       "correctAnswer": "No, it's free",
       "explanation": "The guide states 'Registration is free and open to all residents.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the Sunday operating hour?",
       "options": [
-        "10 AM to 6 PM",
-        "1 PM to 5 PM",
         "12 PM to 4 PM",
-        "2 PM to 6 PM"
+        "2 PM to 6 PM",
+        "10 AM to 6 PM",
+        "1 PM to 5 PM"
       ],
       "correctAnswer": "1 PM to 5 PM",
       "explanation": "The guide specifies 'Sunday 1 to 5 PM.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the maximum number of items you can borrow?",
       "options": [
-        "Ten",
-        "Fifteen",
         "Twenty",
-        "Twenty-five"
+        "Twenty-five",
+        "Ten",
+        "Fifteen"
       ],
       "correctAnswer": "Twenty",
       "explanation": "The guide states 'You're allowed up to twenty items at a time.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "What is the late fee per day for books?",
       "options": [
-        "10 cents",
         "15 cents",
         "20 cents",
-        "25 cents"
+        "25 cents",
+        "10 cents"
       ],
       "correctAnswer": "25 cents",
       "explanation": "The guide states 'Late fees are twenty-five cents per day for books.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How many workers does the union represent?",
       "options": [
-        "8,000 workers",
-        "10,000 workers",
         "12,000 workers",
-        "15,000 workers"
+        "15,000 workers",
+        "8,000 workers",
+        "10,000 workers"
       ],
       "correctAnswer": "10,000 workers",
       "explanation": "The report explicitly states the union represents over 10,000 workers.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "What percentage pay increase is the union requesting?",
       "options": [
-        "2.5 percent",
-        "3.0 percent",
         "4.25 percent",
-        "5.0 percent"
+        "5.0 percent",
+        "2.5 percent",
+        "3.0 percent"
       ],
       "correctAnswer": "4.25 percent",
       "explanation": "Union spokesperson Maria Chen states members are seeking a 4.25 percent pay increase.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "What is the TTC's wage offer?",
       "options": [
+        "1.5 percent over three years",
         "2.5 percent over three years",
         "3.5 percent over two years",
-        "4.25 percent over four years",
-        "1.5 percent over three years"
+        "4.25 percent over four years"
       ],
       "correctAnswer": "2.5 percent over three years",
       "explanation": "The report states the TTC counters with 2.5 percent over three years.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "How much has foot traffic in downtown businesses decreased?",
       "options": [
+        "50 percent",
         "20 percent",
         "30 percent",
-        "40 percent",
-        "50 percent"
+        "40 percent"
       ],
       "correctAnswer": "30 percent",
       "explanation": "Downtown businesses report a 30 percent drop in foot traffic since Monday.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "When are emergency mediation sessions expected to resume?",
       "options": [
-        "Tonight",
-        "Tomorrow morning",
         "Next week",
-        "In two days"
+        "In two days",
+        "Tonight",
+        "Tomorrow morning"
       ],
       "correctAnswer": "Tomorrow morning",
       "explanation": "City Council has called for emergency mediation sessions to resume tomorrow morning.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the proposed investment for the training program redesign?",
       "options": [
-        "2.5 million dollars",
-        "3.0 million dollars",
         "3.5 million dollars",
-        "4.0 million dollars"
+        "4.0 million dollars",
+        "2.5 million dollars",
+        "3.0 million dollars"
       ],
       "correctAnswer": "3.5 million dollars",
       "explanation": "The investment would be about 3.5 million dollars over three years.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage can personalized learning increase retention?",
       "options": [
-        "20 percent",
-        "25 percent",
         "30 percent",
-        "35 percent"
+        "35 percent",
+        "20 percent",
+        "25 percent"
       ],
       "correctAnswer": "35 percent",
       "explanation": "Studies show this approach increases employee retention by up to 35 percent.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What is the current training approach at the company?",
       "options": [
+        "Self-paced learning",
         "Online learning modules",
         "One-size-fits-all classroom training",
-        "Mentorship programs",
-        "Self-paced learning"
+        "Mentorship programs"
       ],
       "correctAnswer": "One-size-fits-all classroom training",
       "explanation": "The current approach is one-size-fits-all classroom training.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "When do employee engagement scores typically improve?",
       "options": [
+        "Within one year",
         "Immediately",
         "Within three months",
-        "Within six months",
-        "Within one year"
+        "Within six months"
       ],
       "correctAnswer": "Within six months",
       "explanation": "Nina mentions engagement scores improve within six months of launching personalized learning.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "When do retention improvements typically occur?",
       "options": [
-        "6-9 months",
         "12-18 months",
         "18-24 months",
-        "2-3 years"
+        "2-3 years",
+        "6-9 months"
       ],
       "correctAnswer": "12-18 months",
       "explanation": "Retention improvements typically follow within 12 to 18 months.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What development approach will replace classroom training?",
       "options": [
+        "Self-study materials",
         "Online courses only",
         "Personalized learning paths and micro-credentials",
-        "Conference attendance",
-        "Self-study materials"
+        "Conference attendance"
       ],
       "correctAnswer": "Personalized learning paths and micro-credentials",
       "explanation": "The program will move toward personalized learning paths and micro-credentials.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What is David's main concern about the program?",
       "options": [
+        "Lack of support",
         "Too expensive",
         "Takes too long",
-        "Measurable metrics and accountability",
-        "Lack of support"
+        "Measurable metrics and accountability"
       ],
       "correctAnswer": "Measurable metrics and accountability",
       "explanation": "David wants to ensure accountability and asks Nina to outline measurable metrics.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "It's too expensive",
         "It has gone too far in terms of surveillance",
         "It doesn't improve security",
-        "It's ineffective"
+        "It's ineffective",
+        "It's too expensive"
       ],
       "correctAnswer": "It has gone too far in terms of surveillance",
       "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
+        "They communicate better",
         "They work harder",
         "It creates anxiety and erodes trust",
-        "They become more efficient",
-        "They communicate better"
+        "They become more efficient"
       ],
       "correctAnswer": "It creates anxiety and erodes trust",
       "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
-        "It increases productivity",
-        "It decreases productivity and morale",
         "It has no effect",
-        "It improves communication"
+        "It improves communication",
+        "It increases productivity",
+        "It decreases productivity and morale"
       ],
       "correctAnswer": "It decreases productivity and morale",
       "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What solution does the speaker propose?",
       "options": [
-        "No monitoring at all",
-        "Complete transparency monitoring",
         "Targeted monitoring only where necessary",
-        "Random monitoring"
+        "Random monitoring",
+        "No monitoring at all",
+        "Complete transparency monitoring"
       ],
       "correctAnswer": "Targeted monitoring only where necessary",
       "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",

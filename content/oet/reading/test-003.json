@@ -421,10 +421,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "According to the protocol, when should an outbreak protocol be activated?",
       "options": [
-        "When one resident shows symptoms",
         "When three or more residents develop symptoms within 72 hours",
         "When two residents show symptoms",
-        "When all residents show symptoms"
+        "When all residents show symptoms",
+        "When one resident shows symptoms"
       ],
       "correctAnswer": "When three or more residents develop symptoms within 72 hours",
       "explanation": "The facility protocol specifies activation with three or more residents symptomatic within 72 hours.",
@@ -439,10 +439,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What is required regarding annual influenza vaccination?",
       "options": [
-        "Optional for all staff",
-        "Mandatory for staff and optional for residents",
         "Not required in aged care",
-        "Mandatory for all staff and recommended for all residents"
+        "Mandatory for all staff and recommended for all residents",
+        "Optional for all staff",
+        "Mandatory for staff and optional for residents"
       ],
       "correctAnswer": "Mandatory for all staff and recommended for all residents",
       "explanation": "The protocol states vaccination is mandatory for staff and recommended for residents.",
@@ -457,10 +457,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Within what timeframe must suspected outbreaks be reported to health authorities?",
       "options": [
+        "Within 48 hours",
         "Immediately",
         "Within 24 hours",
-        "Within 12 hours",
-        "Within 48 hours"
+        "Within 12 hours"
       ],
       "correctAnswer": "Within 24 hours",
       "explanation": "The protocol requires reporting to local health authority within 24 hours.",
@@ -493,10 +493,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What is the recommended timeframe for catheter removal?",
       "options": [
-        "After 1 week",
-        "After 2 weeks",
         "As soon as clinically appropriate, preferably within 48 hours",
-        "Catheters should remain indefinitely"
+        "Catheters should remain indefinitely",
+        "After 1 week",
+        "After 2 weeks"
       ],
       "correctAnswer": "As soon as clinically appropriate, preferably within 48 hours",
       "explanation": "The protocol states catheters should be removed as soon as possible, preferably within 48 hours.",
@@ -529,10 +529,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "According to the passage, what percentage of patients take medications as prescribed?",
       "options": [
-        "25%",
         "90%",
         "75%",
-        "50%"
+        "50%",
+        "25%"
       ],
       "correctAnswer": "50%",
       "explanation": "The passage states that only 50% of patients take their medications as prescribed.",
@@ -565,10 +565,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which strategy for improving adherence is mentioned in the passage?",
       "options": [
+        "Using pill organisers, reminder systems, and mobile applications",
         "Forcing patients to take medication",
         "Restricting patient information",
-        "Increasing medication doses",
-        "Using pill organisers, reminder systems, and mobile applications"
+        "Increasing medication doses"
       ],
       "correctAnswer": "Using pill organisers, reminder systems, and mobile applications",
       "explanation": "The passage specifically mentions these tools as effective strategies to improve adherence.",
@@ -583,10 +583,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What impact does shared decision-making have on medication adherence?",
       "options": [
-        "No significant impact",
-        "Slightly improves adherence",
         "Decreases adherence",
-        "Significantly improves adherence rates"
+        "Significantly improves adherence rates",
+        "No significant impact",
+        "Slightly improves adherence"
       ],
       "correctAnswer": "Significantly improves adherence rates",
       "explanation": "The passage states that shared decision-making significantly improves adherence rates.",
@@ -601,10 +601,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How do respiratory infections primarily spread according to the passage?",
       "options": [
-        "Through blood contact",
         "Through contaminated food",
         "Through skin contact",
-        "Through droplets from coughing or sneezing"
+        "Through droplets from coughing or sneezing",
+        "Through blood contact"
       ],
       "correctAnswer": "Through droplets from coughing or sneezing",
       "explanation": "The passage states respiratory infections spread primarily through droplets from coughs and sneezes.",
@@ -637,10 +637,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What is the recommended distance for individuals with respiratory symptoms?",
       "options": [
+        "At least one metre from others",
         "No distance required",
         "Five metres minimum",
-        "At least two metres",
-        "At least one metre from others"
+        "At least two metres"
       ],
       "correctAnswer": "At least one metre from others",
       "explanation": "The passage recommends maintaining at least one metre distance when symptomatic.",
@@ -655,10 +655,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What is the primary function of surgical masks according to the passage?",
       "options": [
-        "Complete protection of the wearer",
-        "Improving breathing capacity",
         "Preventing all infections",
-        "Blocking large respiratory droplets from symptomatic individuals"
+        "Blocking large respiratory droplets from symptomatic individuals",
+        "Complete protection of the wearer",
+        "Improving breathing capacity"
       ],
       "correctAnswer": "Blocking large respiratory droplets from symptomatic individuals",
       "explanation": "The passage states surgical masks block large respiratory droplets when worn by symptomatic people.",
@@ -673,10 +673,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "When should N95 respirators be used?",
       "options": [
-        "For all public interactions",
         "Never necessary",
         "For cosmetic purposes only",
-        "By healthcare workers in close contact with confirmed or suspected cases"
+        "By healthcare workers in close contact with confirmed or suspected cases",
+        "For all public interactions"
       ],
       "correctAnswer": "By healthcare workers in close contact with confirmed or suspected cases",
       "explanation": "The passage specifies N95 use by healthcare workers in close contact with confirmed/suspected cases.",
@@ -691,10 +691,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "By how much can mask use in public settings reduce disease transmission during epidemics?",
       "options": [
-        "Up to 50%",
         "Up to 25%",
         "Up to 10%",
-        "Up to 75%"
+        "Up to 75%",
+        "Up to 50%"
       ],
       "correctAnswer": "Up to 50%",
       "explanation": "The passage states that mask use in public settings reduces transmission by up to 50% during epidemics.",
@@ -709,10 +709,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How should healthcare professionals approach medication non-adherence?",
       "options": [
-        "Assume patients are deliberately non-compliant",
         "Explore barriers rather than assuming deliberate non-compliance",
         "Ignore the problem",
-        "Only prescribe simple regimens"
+        "Only prescribe simple regimens",
+        "Assume patients are deliberately non-compliant"
       ],
       "correctAnswer": "Explore barriers rather than assuming deliberate non-compliance",
       "explanation": "The passage states professionals should explore barriers instead of assuming non-compliance is deliberate.",
@@ -745,10 +745,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which technology-based strategy is mentioned for improving medication adherence?",
       "options": [
+        "No technology helps adherence",
         "Video monitoring only",
         "Medication reminders through mobile phone applications",
-        "Automated doctor visits",
-        "No technology helps adherence"
+        "Automated doctor visits"
       ],
       "correctAnswer": "Medication reminders through mobile phone applications",
       "explanation": "The passage mentions mobile phone reminder applications as an effective strategy.",
@@ -763,10 +763,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "According to the passage, what is the most effective approach to medication adherence?",
       "options": [
-        "Combination of education, simplified regimens, reminders, and ongoing support",
         "Medication changes only",
         "Education alone",
-        "Punishment for non-compliance"
+        "Punishment for non-compliance",
+        "Combination of education, simplified regimens, reminders, and ongoing support"
       ],
       "correctAnswer": "Combination of education, simplified regimens, reminders, and ongoing support",
       "explanation": "The passage states the most effective approach combines all these elements.",
@@ -784,10 +784,10 @@
       "topic": "Medication Adherence",
       "prompt": "According to the text, what proportion of patients take their medications as prescribed?",
       "options": [
-        "About 25%",
         "About 50%",
         "About 75%",
-        "Almost all patients"
+        "Almost all patients",
+        "About 25%"
       ],
       "correctAnswer": "About 50%",
       "explanation": "The text states that studies indicate only 50% of patients take their medications as prescribed."

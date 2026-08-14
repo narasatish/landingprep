@@ -15,11 +15,11 @@
       "prompt": "The average of a and b is 49, and the average of b and c is 48. What is a − c?",
       "difficulty": "medium",
       "options": [
+        "2",
+        "97",
         "1",
         "4",
-        "-2",
-        "2",
-        "97"
+        "-2"
       ],
       "correctAnswer": "2",
       "explanation": "a+b = 98 and b+c = 96. Subtracting: a − c = 98 − 96 = 2.",
@@ -32,11 +32,11 @@
       "prompt": "A survey of 510 workers found 170 commute by car, 70 by public transit, and 20 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
-        "44%",
         "33.3%",
         "49%",
         "13.7%",
-        "54%"
+        "54%",
+        "44%"
       ],
       "correctAnswer": "49%",
       "explanation": "Work from home = 510 − 170 − 70 − 20 = 250. As a percentage: 250/510 = 49%.",
@@ -49,11 +49,11 @@
       "prompt": "4^x + 4^x + 4^x + 4^x = ?",
       "difficulty": "medium",
       "options": [
-        "4^(4x)",
-        "16^x",
         "4^x",
         "4^(2x)",
-        "4^(x+1)"
+        "4^(x+1)",
+        "4^(4x)",
+        "16^x"
       ],
       "correctAnswer": "4^(x+1)",
       "explanation": "Adding 4 copies of 4^x gives 4 × 4^x = 4^1 × 4^x = 4^(x+1).",
@@ -66,11 +66,11 @@
       "prompt": "Sofia can assemble a bookcase 3 times as fast as Marcus. Working together they finish one in 18 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
+        "36",
+        "18",
         "14",
         "24",
-        "72",
-        "36",
-        "18"
+        "72"
       ],
       "correctAnswer": "24",
       "explanation": "Let Marcus's rate be r. Sofia's is 3r, so together (4)r = 1/18, giving r = 1/72. Sofia's rate 3r = 3/72 = 1/24, so Sofia alone takes 24 hours.",
@@ -83,11 +83,11 @@
       "prompt": "The ratio of blue to red marbles is 4 to 5. If 19 blue marbles are added, the ratio becomes 7 to 4. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
-        "20",
         "16",
         "1",
         "39",
-        "35"
+        "35",
+        "20"
       ],
       "correctAnswer": "20",
       "explanation": "Let blue = 4k and red = 5k. After adding 19: (4k+19)/(5k) = 7/4, which gives k = 4. Red = 5×4 = 20.",
@@ -100,11 +100,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 4 remain; divided among 8 children, 5 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
-        "0",
         "8",
         "2",
         "1",
-        "3"
+        "3",
+        "0"
       ],
       "correctAnswer": "8",
       "explanation": "The only n in range with n≡4 (mod 7) and n≡5 (mod 8) is 53. Then 53 ÷ 9 leaves remainder 8.",
@@ -134,11 +134,11 @@
       "prompt": "The average of 6 numbers is 6. If one number equal to 31 is removed, what is the average of the remaining 5 numbers?",
       "difficulty": "medium",
       "options": [
+        "31",
+        "0",
         "1",
         "6",
-        "2",
-        "31",
-        "0"
+        "2"
       ],
       "correctAnswer": "1",
       "explanation": "Total = 6×6 = 36. Remove 31: remaining total 5 over 5 numbers = 1.",
@@ -151,11 +151,11 @@
       "prompt": "What is the sum of all integers x such that -43 < x ≤ 39?",
       "difficulty": "medium",
       "options": [
-        "-162",
         "-84",
         "-166",
         "123",
-        "-123"
+        "-123",
+        "-162"
       ],
       "correctAnswer": "-123",
       "explanation": "The integers run from -42 to 39. Pairing/series sum = -123.",
@@ -168,11 +168,11 @@
       "prompt": "A jacket priced at $200 is discounted by 25% and then taxed at 5%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$167.50",
         "$210",
         "$150",
         "$200",
-        "$157.50",
-        "$167.50"
+        "$157.50"
       ],
       "correctAnswer": "$157.50",
       "explanation": "After 25% off: $150. After 5% tax: $150 × 1.05 = $157.50.",
@@ -185,11 +185,11 @@
       "prompt": "If 6 painters can paint 6 walls in 6 days, how many days would it take 6 painters to paint 6 walls?",
       "difficulty": "medium",
       "options": [
+        "6",
+        "1",
         "7",
         "12",
-        "5",
-        "6",
-        "1"
+        "5"
       ],
       "correctAnswer": "6",
       "explanation": "Each painter paints 1 wall in 6 days. 6 painters painting 6 walls (one each) still take 6 days.",
@@ -202,11 +202,11 @@
       "prompt": "If 3/5 of a number is 24, what is 2/4 of that number?",
       "difficulty": "medium",
       "options": [
+        "10",
+        "20",
         "24",
         "44",
-        "40",
-        "10",
-        "20"
+        "40"
       ],
       "correctAnswer": "20",
       "explanation": "The number is 24 ÷ 3/5 = 40. Then 2/4 × 40 = 20.",
@@ -219,11 +219,11 @@
       "prompt": "The perimeter of a rectangle is 84 and its area is 341. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
-        "13",
         "31",
         "42",
         "11",
-        "20"
+        "20",
+        "13"
       ],
       "correctAnswer": "11",
       "explanation": "Sides sum to 42 and multiply to 341. They are 11 and 31; the shorter side is 11.",
@@ -236,11 +236,11 @@
       "prompt": "The average of a and b is 42, and the average of b and c is 38. What is a − c?",
       "difficulty": "medium",
       "options": [
+        "10",
+        "-8",
         "4",
         "8",
-        "80",
-        "10",
-        "-8"
+        "80"
       ],
       "correctAnswer": "8",
       "explanation": "a+b = 84 and b+c = 76. Subtracting: a − c = 84 − 76 = 8.",
@@ -253,11 +253,11 @@
       "prompt": "A survey of 380 workers found 160 commute by car, 70 by public transit, and 20 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
-        "34.2%",
         "39.2%",
         "42.1%",
         "18.4%",
-        "29.200000000000003%"
+        "29.200000000000003%",
+        "34.2%"
       ],
       "correctAnswer": "34.2%",
       "explanation": "Work from home = 380 − 160 − 70 − 20 = 130. As a percentage: 130/380 = 34.2%.",
@@ -270,11 +270,11 @@
       "prompt": "6^x + 6^x + 6^x + 6^x + 6^x + 6^x = ?",
       "difficulty": "medium",
       "options": [
+        "6^(x+1)",
         "24^x",
         "36^x",
         "6^x",
-        "6^(6x)",
-        "6^(x+1)"
+        "6^(6x)"
       ],
       "correctAnswer": "6^(x+1)",
       "explanation": "Adding 6 copies of 6^x gives 6 × 6^x = 6^1 × 6^x = 6^(x+1).",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "If 3x + 9 = 2x + 12, what is the value of x²?",
       "difficulty": "medium",
       "options": [
-        "9",
         "6",
         "3",
         "8",
-        "12"
+        "12",
+        "9"
       ],
       "correctAnswer": "9",
       "explanation": "3x − 2x = 12 − 9 → 1x = 3 → x = 3. So x² = 9.",
@@ -352,11 +352,11 @@
       "prompt": "A right triangle has legs of length 8 and 15. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
-        "18",
         "17",
         "23",
         "19",
-        "16"
+        "16",
+        "18"
       ],
       "correctAnswer": "17",
       "explanation": "Hypotenuse = √(8² + 15²) = √289 = 17.",
@@ -369,11 +369,11 @@
       "prompt": "In a class of 72 students, the ratio of those who passed to those who failed is 7:2. How many students passed?",
       "difficulty": "medium",
       "options": [
+        "48",
         "56",
         "72",
         "64",
-        "16",
-        "48"
+        "16"
       ],
       "correctAnswer": "56",
       "explanation": "Total parts = 9, each part = 72/9 = 8. Passed = 7 × 8 = 56.",
@@ -386,11 +386,11 @@
       "prompt": "If 3x + 2 = 2x + 4, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "9",
+        "2",
         "4",
         "6",
-        "3",
-        "9",
-        "2"
+        "3"
       ],
       "correctAnswer": "4",
       "explanation": "3x − 2x = 4 − 2 → 1x = 2 → x = 2. So x² = 4.",
@@ -403,11 +403,11 @@
       "prompt": "A right triangle has legs of length 6 and 8. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "14",
+        "9",
         "11",
         "10",
-        "12",
-        "14",
-        "9"
+        "12"
       ],
       "correctAnswer": "10",
       "explanation": "Hypotenuse = √(6² + 8²) = √100 = 10.",
@@ -420,11 +420,11 @@
       "prompt": "What is the total user base across all platforms in Q4?",
       "difficulty": "medium",
       "options": [
+        "950 million",
         "840 million",
         "880 million",
         "900 million",
-        "920 million",
-        "950 million"
+        "920 million"
       ],
       "correctAnswer": "920 million",
       "explanation": "Q4 total: 320+228+200+165 = 913 million (closest option: 920 million)",
@@ -477,11 +477,11 @@
       "prompt": "Platform A's user growth from Q1 to Q4 is approximately what percent?",
       "difficulty": "medium",
       "options": [
-        "24%",
         "28%",
         "32%",
         "36%",
-        "40%"
+        "40%",
+        "24%"
       ],
       "correctAnswer": "28%",
       "explanation": "(320-250)/250 = 70/250 = 0.28 = 28%",

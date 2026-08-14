@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's phone number?",
       "options": [
-        "416-555-0243",
         "416-555-0234",
         "416-555-0342",
-        "416-555-0423"
+        "416-555-0423",
+        "416-555-0243"
       ],
       "correctAnswer": "416-555-0234",
       "explanation": "Customer provides their phone number as '416-555-0234.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What is the cost of the current plan?",
       "options": [
+        "$55 per month",
         "$25 per month",
         "$35 per month",
-        "$45 per month",
-        "$55 per month"
+        "$45 per month"
       ],
       "correctAnswer": "$35 per month",
       "explanation": "Support confirms 'your basic plan is 2 GB per month at $35.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "How many calling minutes does the customer's current plan have?",
       "options": [
+        "Unlimited",
         "100 minutes",
         "150 minutes",
-        "200 minutes",
-        "Unlimited"
+        "200 minutes"
       ],
       "correctAnswer": "200 minutes",
       "explanation": "Support states 'Your current plan has 200 minutes.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What data plan does the customer ultimately choose?",
       "options": [
-        "5 GB plan",
         "8 GB plan",
         "10 GB plan",
-        "15 GB plan"
+        "15 GB plan",
+        "5 GB plan"
       ],
       "correctAnswer": "8 GB plan",
       "explanation": "Customer asks 'do you have an 8 GB plan?' and accepts it, stating 'Perfect, I'll take that.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "When does the new plan take effect on the bill?",
       "options": [
-        "June 15th",
         "June 22nd",
         "July 1st",
-        "July 8th"
+        "July 8th",
+        "June 15th"
       ],
       "correctAnswer": "July 8th",
       "explanation": "Support states 'Your bill will reflect the change next billing cycle, which is on July 8th.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What type of concert is it?",
       "options": [
-        "Classical music",
-        "Hip-hop festival",
         "Indie rock festival",
-        "Country music show"
+        "Country music show",
+        "Classical music",
+        "Hip-hop festival"
       ],
       "correctAnswer": "Indie rock festival",
       "explanation": "Alex mentions 'The indie rock festival at the waterfront.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "How much is each ticket?",
       "options": [
-        "$25",
         "$35",
         "$40",
-        "$50"
+        "$50",
+        "$25"
       ],
       "correctAnswer": "$40",
       "explanation": "Alex states 'They're forty dollars each.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "Who is the headliner?",
       "options": [
-        "The Eastern Stars",
-        "The Northern Stars",
         "The Southern Lights",
-        "The Western Dream"
+        "The Western Dream",
+        "The Eastern Stars",
+        "The Northern Stars"
       ],
       "correctAnswer": "The Northern Stars",
       "explanation": "Alex identifies 'The headliner is The Northern Stars.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What time does the concert end?",
       "options": [
-        "9 PM",
-        "10 PM",
         "11 PM",
-        "Midnight"
+        "Midnight",
+        "9 PM",
+        "10 PM"
       ],
       "correctAnswer": "11 PM",
       "explanation": "Alex estimates 'It should wrap up around eleven.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What should NOT be used during evacuation?",
       "options": [
-        "Stairs",
         "Emergency exits",
         "Elevators",
-        "Hallways"
+        "Hallways",
+        "Stairs"
       ],
       "correctAnswer": "Elevators",
       "explanation": "The training explicitly states 'Do not use elevators under any circumstances.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "Where is the designated assembly point?",
       "options": [
+        "The rooftop",
         "The main lobby",
         "The parking lot north of the building",
-        "The south entrance",
-        "The rooftop"
+        "The south entrance"
       ],
       "correctAnswer": "The parking lot north of the building",
       "explanation": "The guide specifies 'the designated assembly point in the parking lot north of the building.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "How often are fire drills conducted?",
       "options": [
+        "Annually",
         "Monthly",
         "Bi-monthly",
-        "Quarterly",
-        "Annually"
+        "Quarterly"
       ],
       "correctAnswer": "Quarterly",
       "explanation": "The training states 'Fire drills occur quarterly on the first Friday of March, June, September, and December.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "At what time are fire drills held?",
       "options": [
-        "10 AM",
-        "1 PM",
         "2 PM",
-        "3 PM"
+        "3 PM",
+        "10 AM",
+        "1 PM"
       ],
       "correctAnswer": "2 PM",
       "explanation": "The guide specifies drills are 'at 2 PM.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "How frequently are fire extinguishers located along hallways?",
       "options": [
-        "Every 10 meters",
         "Every 15 meters",
         "Every 25 meters",
-        "Every 50 meters"
+        "Every 50 meters",
+        "Every 10 meters"
       ],
       "correctAnswer": "Every 25 meters",
       "explanation": "The training states 'Fire extinguishers are located every twenty-five meters along hallways.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the bill number for the education reform?",
       "options": [
-        "Bill 235",
-        "Bill 247",
         "Bill 250",
-        "Bill 260"
+        "Bill 260",
+        "Bill 235",
+        "Bill 247"
       ],
       "correctAnswer": "Bill 247",
       "explanation": "The legislation is identified as Bill 247.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "When will mandatory digital literacy courses begin?",
       "options": [
-        "This year",
         "Next September",
         "January 2027",
-        "September 2027"
+        "September 2027",
+        "This year"
       ],
       "correctAnswer": "Next September",
       "explanation": "High schools will introduce mandatory digital literacy courses starting next September.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "By what percentage are teacher salaries being increased?",
       "options": [
-        "5 percent",
         "6 percent",
         "8 percent",
-        "10 percent"
+        "10 percent",
+        "5 percent"
       ],
       "correctAnswer": "8 percent",
       "explanation": "Teacher salaries will be increased by 8 percent over four years.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How much money is allocated for infrastructure improvements?",
       "options": [
+        "2.5 billion dollars",
         "1.5 billion dollars",
         "1.8 billion dollars",
-        "2.1 billion dollars",
-        "2.5 billion dollars"
+        "2.1 billion dollars"
       ],
       "correctAnswer": "2.1 billion dollars",
       "explanation": "The bill allocates 2.1 billion dollars for infrastructure improvements.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "How many small business loans has the bank approved this year?",
       "options": [
-        "250 loans",
-        "270 loans",
         "285 loans",
-        "300 loans"
+        "300 loans",
+        "250 loans",
+        "270 loans"
       ],
       "correctAnswer": "285 loans",
       "explanation": "The bank has approved 285 loans this year.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What is the total amount of loans approved?",
       "options": [
-        "35 million dollars",
         "39 million dollars",
         "42 million dollars",
-        "48 million dollars"
+        "48 million dollars",
+        "35 million dollars"
       ],
       "correctAnswer": "42 million dollars",
       "explanation": "The loans approved total 42 million dollars.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "Why does Lisa oppose tightening lending criteria?",
       "options": [
-        "It's too expensive",
-        "It would exclude new entrepreneurs",
         "It would reduce profitability",
-        "It would increase default rates"
+        "It would increase default rates",
+        "It's too expensive",
+        "It would exclude new entrepreneurs"
       ],
       "correctAnswer": "It would exclude new entrepreneurs",
       "explanation": "Lisa warns that stricter criteria would only serve well-established businesses, defeating the purpose.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What challenge did Marcus face when starting his business?",
       "options": [
-        "Lack of experience",
-        "No customers",
         "Banks wouldn't lend to him",
-        "High interest rates"
+        "High interest rates",
+        "Lack of experience",
+        "No customers"
       ],
       "correctAnswer": "Banks wouldn't lend to him",
       "explanation": "Marcus says traditional banks wouldn't lend because he lacked assets and track record.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "How many people does Marcus's restaurant currently employ?",
       "options": [
-        "8 people",
         "10 people",
         "12 people",
-        "15 people"
+        "15 people",
+        "8 people"
       ],
       "correctAnswer": "12 people",
       "explanation": "Marcus's restaurant now employs 12 people.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What alternative solution does Marcus propose?",
       "options": [
+        "No collateral requirements",
         "Lower interest rates",
         "Mentorship and financial coaching programs",
-        "Shorter loan terms",
-        "No collateral requirements"
+        "Shorter loan terms"
       ],
       "correctAnswer": "Mentorship and financial coaching programs",
       "explanation": "Marcus suggests focus on better support systems like mentorship and financial coaching after lending.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "Who does Chris propose to partner with for business support?",
       "options": [
+        "Large corporations",
         "Universities",
         "Government agencies",
-        "Business development organizations",
-        "Large corporations"
+        "Business development organizations"
       ],
       "correctAnswer": "Business development organizations",
       "explanation": "Chris proposes partnering with business development organizations for mentoring and training.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "They're not programmed correctly",
         "They're trained on historical data that includes human bias",
         "They lack computing power",
-        "They're intentionally designed to discriminate"
+        "They're intentionally designed to discriminate",
+        "They're not programmed correctly"
       ],
       "correctAnswer": "They're trained on historical data that includes human bias",
       "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What was the issue with Google's recruiting algorithm?",
       "options": [
+        "It was too expensive",
         "It was too strict",
         "It showed bias against applicants from historically black colleges",
-        "It wasn't identifying talent",
-        "It was too expensive"
+        "It wasn't identifying talent"
       ],
       "correctAnswer": "It showed bias against applicants from historically black colleges",
       "explanation": "Google's algorithm showed bias against applicants from historically black colleges.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What key point does the speaker make about data?",
       "options": [
-        "Data is always objective",
-        "Data is never neutral and includes bias",
         "Data should never be used in hiring",
-        "Data is a recent invention"
+        "Data is a recent invention",
+        "Data is always objective",
+        "Data is never neutral and includes bias"
       ],
       "correctAnswer": "Data is never neutral and includes bias",
       "explanation": "The speaker argues data is never neutral and carries historical bias.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
-        "Use them immediately",
-        "Train employees on algorithms",
         "Conduct rigorous bias testing and external auditing",
-        "Ignore algorithm concerns"
+        "Ignore algorithm concerns",
+        "Use them immediately",
+        "Train employees on algorithms"
       ],
       "correctAnswer": "Conduct rigorous bias testing and external auditing",
       "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",

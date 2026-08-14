@@ -15,11 +15,11 @@
       "prompt": "The ratio of blue to red marbles is 2 to 3. If 21 blue marbles are added, the ratio becomes 5 to 3. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
-        "14",
-        "0",
         "21",
         "35",
-        "42"
+        "42",
+        "14",
+        "0"
       ],
       "correctAnswer": "21",
       "explanation": "Let blue = 2k and red = 3k. After adding 21: (2k+21)/(3k) = 5/3, which gives k = 7. Red = 3×7 = 21.",
@@ -32,11 +32,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 4 remain; divided among 8 children, 3 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
-        "0",
         "2",
         "4",
         "1",
-        "3"
+        "3",
+        "0"
       ],
       "correctAnswer": "4",
       "explanation": "The only n in range with n≡4 (mod 7) and n≡3 (mod 8) is 67. Then 67 ÷ 9 leaves remainder 4.",
@@ -49,11 +49,11 @@
       "prompt": "What is 20% of 400?",
       "difficulty": "medium",
       "options": [
+        "420",
         "800",
         "80",
         "160",
-        "380",
-        "420"
+        "380"
       ],
       "correctAnswer": "80",
       "explanation": "20% of 400 = 20/100 × 400 = 80.",
@@ -66,11 +66,11 @@
       "prompt": "The average of 5 numbers is 8. If one number equal to -8 is removed, what is the average of the remaining 4 numbers?",
       "difficulty": "medium",
       "options": [
-        "11",
         "8",
         "13",
         "-8",
-        "12"
+        "12",
+        "11"
       ],
       "correctAnswer": "12",
       "explanation": "Total = 5×8 = 40. Remove -8: remaining total 48 over 4 numbers = 12.",
@@ -83,11 +83,11 @@
       "prompt": "What is the sum of all integers x such that -39 < x ≤ 28?",
       "difficulty": "medium",
       "options": [
+        "-307",
+        "-374",
         "-363",
         "335",
-        "-335",
-        "-307",
-        "-374"
+        "-335"
       ],
       "correctAnswer": "-335",
       "explanation": "The integers run from -38 to 28. Pairing/series sum = -335.",
@@ -100,11 +100,11 @@
       "prompt": "A jacket priced at $190 is discounted by 25% and then taxed at 5%. What is the final price?",
       "difficulty": "medium",
       "options": [
-        "$190",
         "$149.63",
         "$199.50",
         "$142.50",
-        "$159.63"
+        "$159.63",
+        "$190"
       ],
       "correctAnswer": "$149.63",
       "explanation": "After 25% off: $142.50. After 5% tax: $142.50 × 1.05 = $149.63.",
@@ -117,11 +117,11 @@
       "prompt": "If 6 painters can paint 6 walls in 6 days, how many days would it take 6 painters to paint 6 walls?",
       "difficulty": "medium",
       "options": [
+        "12",
         "6",
         "5",
         "7",
-        "1",
-        "12"
+        "1"
       ],
       "correctAnswer": "6",
       "explanation": "Each painter paints 1 wall in 6 days. 6 painters painting 6 walls (one each) still take 6 days.",
@@ -134,11 +134,11 @@
       "prompt": "If 2/4 of a number is 48, what is 4/6 of that number?",
       "difficulty": "medium",
       "options": [
-        "96",
         "32",
         "112",
         "64",
-        "48"
+        "48",
+        "96"
       ],
       "correctAnswer": "64",
       "explanation": "The number is 48 ÷ 2/4 = 96. Then 4/6 × 96 = 64.",
@@ -151,11 +151,11 @@
       "prompt": "The perimeter of a rectangle is 76 and its area is 261. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
-        "20",
         "11",
         "38",
         "29",
-        "9"
+        "9",
+        "20"
       ],
       "correctAnswer": "9",
       "explanation": "Sides sum to 38 and multiply to 261. They are 9 and 29; the shorter side is 9.",
@@ -185,11 +185,11 @@
       "prompt": "A survey of 480 workers found 80 commute by car, 110 by public transit, and 60 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "47.9%",
+        "16.7%",
         "52.9%",
         "42.9%",
-        "22.9%",
-        "47.9%",
-        "16.7%"
+        "22.9%"
       ],
       "correctAnswer": "47.9%",
       "explanation": "Work from home = 480 − 80 − 110 − 60 = 230. As a percentage: 230/480 = 47.9%.",
@@ -236,11 +236,11 @@
       "prompt": "The ratio of blue to red marbles is 2 to 7. If 18 blue marbles are added, the ratio becomes 40 to 77. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
-        "77",
-        "22",
         "95",
         "59",
-        "40"
+        "40",
+        "77",
+        "22"
       ],
       "correctAnswer": "77",
       "explanation": "Let blue = 2k and red = 7k. After adding 18: (2k+18)/(7k) = 40/77, which gives k = 11. Red = 7×11 = 77.",
@@ -253,11 +253,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 2 remain; divided among 8 children, 4 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
+        "2",
         "0",
         "1",
         "3",
-        "8",
-        "2"
+        "8"
       ],
       "correctAnswer": "8",
       "explanation": "The only n in range with n≡2 (mod 7) and n≡4 (mod 8) is 44. Then 44 ÷ 9 leaves remainder 8.",
@@ -270,11 +270,11 @@
       "prompt": "What is 24% of 110?",
       "difficulty": "medium",
       "options": [
+        "26.4",
         "52.8",
         "134",
         "264",
-        "86",
-        "26.4"
+        "86"
       ],
       "correctAnswer": "26.4",
       "explanation": "24% of 110 = 24/100 × 110 = 26.4.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -369,11 +369,11 @@
       "prompt": "If 6x + 4 = 1x + 34, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "6",
         "36",
         "12",
         "35",
-        "42",
-        "6"
+        "42"
       ],
       "correctAnswer": "36",
       "explanation": "6x − 1x = 34 − 4 → 5x = 30 → x = 6. So x² = 36.",
@@ -386,11 +386,11 @@
       "prompt": "A right triangle has legs of length 5 and 12. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
-        "17",
         "15",
         "14",
         "13",
-        "12"
+        "12",
+        "17"
       ],
       "correctAnswer": "13",
       "explanation": "Hypotenuse = √(5² + 12²) = √169 = 13.",
@@ -403,11 +403,11 @@
       "prompt": "In a class of 25 students, the ratio of those who passed to those who failed is 3:2. How many students passed?",
       "difficulty": "medium",
       "options": [
+        "20",
+        "10",
         "19",
         "15",
-        "25",
-        "20",
-        "10"
+        "25"
       ],
       "correctAnswer": "15",
       "explanation": "Total parts = 5, each part = 25/5 = 5. Passed = 3 × 5 = 15.",
@@ -420,11 +420,11 @@
       "prompt": "What was the total page views for Opinion category across all four months?",
       "difficulty": "medium",
       "options": [
-        "550 thousand",
-        "570 thousand",
         "590 thousand",
         "610 thousand",
-        "630 thousand"
+        "630 thousand",
+        "550 thousand",
+        "570 thousand"
       ],
       "correctAnswer": "570 thousand",
       "explanation": "Opinion: 120 + 140 + 150 + 160 = 570 thousand",
@@ -477,11 +477,11 @@
       "prompt": "In April, Sports pages represented approximately what percent of total April traffic?",
       "difficulty": "medium",
       "options": [
-        "18%",
-        "21%",
         "25%",
         "27%",
-        "30%"
+        "30%",
+        "18%",
+        "21%"
       ],
       "correctAnswer": "25%",
       "explanation": "April total: 300+220+160+200=880. Sports 220/880 = 0.25 = 25%",
@@ -534,11 +534,11 @@
       "prompt": "Which category showed the largest absolute growth from January to April?",
       "difficulty": "medium",
       "options": [
+        "News and Opinion tied",
         "News",
         "Sports",
         "Opinion",
-        "Lifestyle",
-        "News and Opinion tied"
+        "Lifestyle"
       ],
       "correctAnswer": "News",
       "explanation": "News: 300-240=60; Sports: 220-180=40; Opinion: 160-120=40; Lifestyle: 200-160=40",

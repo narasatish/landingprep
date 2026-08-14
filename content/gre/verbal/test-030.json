@@ -169,11 +169,11 @@
       "topic": "science",
       "prompt": "Despite decades of research, the drug's mechanism remained ____; scientists could describe its effects but not explain why it worked.",
       "options": [
+        "redundant",
+        "measurable",
         "elusive",
         "apparent",
-        "trivial",
-        "redundant",
-        "measurable"
+        "trivial"
       ],
       "correctAnswer": "elusive",
       "explanation": "Elusive = difficult to understand or define.",
@@ -229,10 +229,10 @@
       "passage": "The deep ocean — defined as water below 200 metres — covers more than half of the Earth's surface, yet it remains among the least explored environments on the planet. For much of scientific history, researchers assumed that the deep sea was a biological desert, too cold, dark, and pressurised to support complex life. This assumption was overturned decisively in the 1970s when research submersibles discovered hydrothermal vents teeming with tube worms, clams, and chemosynthetic bacteria that derive energy not from sunlight but from chemical reactions involving hydrogen sulphide released by the vents.\n\nThis discovery fundamentally altered the definition of habitable environment. If life could thrive without sunlight, the range of potentially habitable zones expanded enormously — not only in Earth's own oceans but in extraterrestrial environments such as the subsurface oceans of Jupiter's moon Europa and Saturn's moon Enceladus, where liquid water is thought to exist beneath thick ice layers.\n\nCritics of exobiology note that chemosynthesis is still far more limited than photosynthesis in terms of the biomass it can support. The deep-sea vent ecosystems, while diverse, are small and geographically constrained. Nevertheless, the very existence of life in such extreme conditions has shifted the scientific community's view of what biology is capable of.",
       "prompt": "What was the prevailing assumption about the deep ocean prior to the 1970s?",
       "options": [
-        "It was a biological desert",
         "It contained photosynthetic organisms",
         "It was warmer than surface water",
-        "It lacked mineral resources"
+        "It lacked mineral resources",
+        "It was a biological desert"
       ],
       "correctAnswer": "It was a biological desert",
       "explanation": "The passage states researchers assumed the deep sea was too hostile to support complex life.",
@@ -246,10 +246,10 @@
       "passage": "The deep ocean — defined as water below 200 metres — covers more than half of the Earth's surface, yet it remains among the least explored environments on the planet. For much of scientific history, researchers assumed that the deep sea was a biological desert, too cold, dark, and pressurised to support complex life. This assumption was overturned decisively in the 1970s when research submersibles discovered hydrothermal vents teeming with tube worms, clams, and chemosynthetic bacteria that derive energy not from sunlight but from chemical reactions involving hydrogen sulphide released by the vents.\n\nThis discovery fundamentally altered the definition of habitable environment. If life could thrive without sunlight, the range of potentially habitable zones expanded enormously — not only in Earth's own oceans but in extraterrestrial environments such as the subsurface oceans of Jupiter's moon Europa and Saturn's moon Enceladus, where liquid water is thought to exist beneath thick ice layers.\n\nCritics of exobiology note that chemosynthesis is still far more limited than photosynthesis in terms of the biomass it can support. The deep-sea vent ecosystems, while diverse, are small and geographically constrained. Nevertheless, the very existence of life in such extreme conditions has shifted the scientific community's view of what biology is capable of.",
       "prompt": "What energy source do chemosynthetic bacteria near hydrothermal vents use?",
       "options": [
-        "Sunlight",
-        "Oxygen",
         "Hydrogen sulphide chemical reactions",
-        "Carbon dioxide"
+        "Carbon dioxide",
+        "Sunlight",
+        "Oxygen"
       ],
       "correctAnswer": "Hydrogen sulphide chemical reactions",
       "explanation": "The passage explicitly states energy comes from chemical reactions involving hydrogen sulphide.",
@@ -297,10 +297,10 @@
       "passage": "The scientific revolution of the seventeenth century is often credited with establishing the empirical method as the foundation of modern knowledge. Yet historians of science have increasingly questioned whether this narrative of rupture is accurate. Many of the mathematical and observational techniques associated with Galileo, Kepler, and Newton had precedents in Islamic scholarship of the ninth to thirteenth centuries, in the work of scholars such as Ibn al-Haytham — whose geometric optics directly influenced European Renaissance scientists — and in the astronomical observations of the Maragha School in Persia.\n\nWhat the seventeenth century did introduce, however, was a distinctive social and institutional infrastructure: learned societies, printed journals, and a culture of peer criticism that allowed scientific claims to be tested, challenged, and refined across national boundaries. The knowledge was arguably not new; the machinery for validating and propagating it was.\n\nThis institutional dimension is often overlooked in popular accounts that focus exclusively on the genius of individual scientists. By treating Newton as the originator rather than the synthesiser of classical mechanics, for instance, popular history effaces the collaborative and cumulative nature of scientific knowledge.",
       "prompt": "What claim do historians of science increasingly question?",
       "options": [
-        "That Ibn al-Haytham existed",
-        "That the seventeenth century introduced a complete break from prior knowledge",
         "That Galileo used mathematics",
-        "That peer review is effective"
+        "That peer review is effective",
+        "That Ibn al-Haytham existed",
+        "That the seventeenth century introduced a complete break from prior knowledge"
       ],
       "correctAnswer": "That the seventeenth century introduced a complete break from prior knowledge",
       "explanation": "The passage says historians question whether the narrative of rupture from prior knowledge is accurate.",
@@ -314,10 +314,10 @@
       "passage": "The scientific revolution of the seventeenth century is often credited with establishing the empirical method as the foundation of modern knowledge. Yet historians of science have increasingly questioned whether this narrative of rupture is accurate. Many of the mathematical and observational techniques associated with Galileo, Kepler, and Newton had precedents in Islamic scholarship of the ninth to thirteenth centuries, in the work of scholars such as Ibn al-Haytham — whose geometric optics directly influenced European Renaissance scientists — and in the astronomical observations of the Maragha School in Persia.\n\nWhat the seventeenth century did introduce, however, was a distinctive social and institutional infrastructure: learned societies, printed journals, and a culture of peer criticism that allowed scientific claims to be tested, challenged, and refined across national boundaries. The knowledge was arguably not new; the machinery for validating and propagating it was.\n\nThis institutional dimension is often overlooked in popular accounts that focus exclusively on the genius of individual scientists. By treating Newton as the originator rather than the synthesiser of classical mechanics, for instance, popular history effaces the collaborative and cumulative nature of scientific knowledge.",
       "prompt": "According to the passage, what was genuinely new about the seventeenth century scientific revolution?",
       "options": [
-        "Mathematical techniques",
-        "Astronomical observations",
         "Social and institutional infrastructure for validating knowledge",
-        "The concept of empiricism"
+        "The concept of empiricism",
+        "Mathematical techniques",
+        "Astronomical observations"
       ],
       "correctAnswer": "Social and institutional infrastructure for validating knowledge",
       "explanation": "The passage states the seventeenth century introduced learned societies, journals, and peer criticism — not the knowledge itself.",
@@ -331,10 +331,10 @@
       "passage": "The scientific revolution of the seventeenth century is often credited with establishing the empirical method as the foundation of modern knowledge. Yet historians of science have increasingly questioned whether this narrative of rupture is accurate. Many of the mathematical and observational techniques associated with Galileo, Kepler, and Newton had precedents in Islamic scholarship of the ninth to thirteenth centuries, in the work of scholars such as Ibn al-Haytham — whose geometric optics directly influenced European Renaissance scientists — and in the astronomical observations of the Maragha School in Persia.\n\nWhat the seventeenth century did introduce, however, was a distinctive social and institutional infrastructure: learned societies, printed journals, and a culture of peer criticism that allowed scientific claims to be tested, challenged, and refined across national boundaries. The knowledge was arguably not new; the machinery for validating and propagating it was.\n\nThis institutional dimension is often overlooked in popular accounts that focus exclusively on the genius of individual scientists. By treating Newton as the originator rather than the synthesiser of classical mechanics, for instance, popular history effaces the collaborative and cumulative nature of scientific knowledge.",
       "prompt": "The passage suggests that popular accounts of science tend to:",
       "options": [
-        "Overemphasise institutional factors",
         "Undervalue Islamic scholarship",
         "Focus excessively on individual genius",
-        "Ignore astronomical discoveries"
+        "Ignore astronomical discoveries",
+        "Overemphasise institutional factors"
       ],
       "correctAnswer": "Focus excessively on individual genius",
       "explanation": "The passage explicitly criticises popular history for treating Newton as originator rather than synthesiser, ignoring collaborative nature.",
@@ -348,10 +348,10 @@
       "passage": "The scientific revolution of the seventeenth century is often credited with establishing the empirical method as the foundation of modern knowledge. Yet historians of science have increasingly questioned whether this narrative of rupture is accurate. Many of the mathematical and observational techniques associated with Galileo, Kepler, and Newton had precedents in Islamic scholarship of the ninth to thirteenth centuries, in the work of scholars such as Ibn al-Haytham — whose geometric optics directly influenced European Renaissance scientists — and in the astronomical observations of the Maragha School in Persia.\n\nWhat the seventeenth century did introduce, however, was a distinctive social and institutional infrastructure: learned societies, printed journals, and a culture of peer criticism that allowed scientific claims to be tested, challenged, and refined across national boundaries. The knowledge was arguably not new; the machinery for validating and propagating it was.\n\nThis institutional dimension is often overlooked in popular accounts that focus exclusively on the genius of individual scientists. By treating Newton as the originator rather than the synthesiser of classical mechanics, for instance, popular history effaces the collaborative and cumulative nature of scientific knowledge.",
       "prompt": "The word 'effaces' as used in the final sentence most nearly means:",
       "options": [
+        "Exaggerates",
         "Celebrates",
         "Erases",
-        "Complicates",
-        "Exaggerates"
+        "Complicates"
       ],
       "correctAnswer": "Erases",
       "explanation": "Effaces = wipes out or obscures — popular history erases the collaborative nature by focusing on individual geniuses.",

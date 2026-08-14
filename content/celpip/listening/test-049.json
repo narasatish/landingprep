@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "Why does the member want to cancel?",
       "options": [
-        "The facility is too crowded",
         "They're relocating to British Columbia for work",
         "They want to join a different gym",
-        "They're not satisfied with the equipment"
+        "They're not satisfied with the equipment",
+        "The facility is too crowded"
       ],
       "correctAnswer": "They're relocating to British Columbia for work",
       "explanation": "Member states 'I'm relocating to British Columbia for work.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the monthly membership fee?",
       "options": [
+        "$99",
         "$69",
         "$79",
-        "$89",
-        "$99"
+        "$89"
       ],
       "correctAnswer": "$89",
       "explanation": "Rep states 'you're on our premium monthly plan at $89 per month.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When will the membership end?",
       "options": [
-        "June 17th",
         "June 24th",
         "July 1st",
-        "July 3rd"
+        "July 3rd",
+        "June 17th"
       ],
       "correctAnswer": "June 24th",
       "explanation": "Rep confirms 'That would be June 24th' for three weeks from the conversation date.",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What is the original early termination fee?",
       "options": [
-        "$100",
         "$125",
         "$150",
-        "$200"
+        "$200",
+        "$100"
       ],
       "correctAnswer": "$150",
       "explanation": "Rep states 'There is a $150 early termination fee.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What is the reduced early termination fee offered?",
       "options": [
-        "$50",
-        "$75",
         "$100",
-        "$125"
+        "$125",
+        "$50",
+        "$75"
       ],
       "correctAnswer": "$75",
       "explanation": "Rep offers to reduce the fee 'to $75' as a gesture of loyalty.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has it been since Sarah and Michael last saw each other?",
       "options": [
-        "Two months",
-        "Four months",
         "Six months",
-        "A year"
+        "A year",
+        "Two months",
+        "Four months"
       ],
       "correctAnswer": "Six months",
       "explanation": "Michael says 'Must be like six months since we last hung out' and Sarah agrees.",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "Where did Michael travel?",
       "options": [
-        "Toronto",
         "Montreal",
         "Vancouver",
-        "Calgary"
+        "Calgary",
+        "Toronto"
       ],
       "correctAnswer": "Vancouver",
       "explanation": "Sarah asks 'How was your trip to Vancouver?' confirming Michael's destination.",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "What type of restaurant does Sarah suggest?",
       "options": [
-        "Mexican",
-        "Italian",
         "Japanese",
-        "Indian"
+        "Indian",
+        "Mexican",
+        "Italian"
       ],
       "correctAnswer": "Italian",
       "explanation": "Sarah mentions 'that new Italian place downtown.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What day do they plan to meet?",
       "options": [
-        "Tuesday",
-        "Wednesday",
         "Thursday",
-        "Friday"
+        "Friday",
+        "Tuesday",
+        "Wednesday"
       ],
       "correctAnswer": "Thursday",
       "explanation": "Michael suggests 'Thursday' and Sarah confirms 'Thursday works for me.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "Is there a cost for a library card?",
       "options": [
-        "Yes, $10",
         "Yes, $20",
         "No, it's free",
-        "Yes, $5"
+        "Yes, $5",
+        "Yes, $10"
       ],
       "correctAnswer": "No, it's free",
       "explanation": "The guide states 'Registration is free and open to all residents.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the Sunday operating hour?",
       "options": [
-        "10 AM to 6 PM",
-        "1 PM to 5 PM",
         "12 PM to 4 PM",
-        "2 PM to 6 PM"
+        "2 PM to 6 PM",
+        "10 AM to 6 PM",
+        "1 PM to 5 PM"
       ],
       "correctAnswer": "1 PM to 5 PM",
       "explanation": "The guide specifies 'Sunday 1 to 5 PM.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the maximum number of items you can borrow?",
       "options": [
-        "Ten",
-        "Fifteen",
         "Twenty",
-        "Twenty-five"
+        "Twenty-five",
+        "Ten",
+        "Fifteen"
       ],
       "correctAnswer": "Twenty",
       "explanation": "The guide states 'You're allowed up to twenty items at a time.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "What is the late fee per day for books?",
       "options": [
-        "10 cents",
         "15 cents",
         "20 cents",
-        "25 cents"
+        "25 cents",
+        "10 cents"
       ],
       "correctAnswer": "25 cents",
       "explanation": "The guide states 'Late fees are twenty-five cents per day for books.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the total investment in transit modernization?",
       "options": [
+        "500 million dollars",
         "350 million dollars",
         "400 million dollars",
-        "450 million dollars",
-        "500 million dollars"
+        "450 million dollars"
       ],
       "correctAnswer": "450 million dollars",
       "explanation": "The city has approved a 450 million dollar investment.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How many new electric buses will be purchased?",
       "options": [
-        "200 buses",
-        "250 buses",
         "300 buses",
-        "350 buses"
+        "350 buses",
+        "200 buses",
+        "250 buses"
       ],
       "correctAnswer": "300 buses",
       "explanation": "The city plans to purchase 300 new electric buses.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many tonnes of carbon emissions will be eliminated annually?",
       "options": [
-        "6,500 tonnes",
         "7,500 tonnes",
         "8,500 tonnes",
-        "9,500 tonnes"
+        "9,500 tonnes",
+        "6,500 tonnes"
       ],
       "correctAnswer": "8,500 tonnes",
       "explanation": "The transition will eliminate approximately 8,500 tonnes of annual carbon emissions.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How many new transit stations will be built?",
       "options": [
+        "15 stations",
         "8 stations",
         "10 stations",
-        "12 stations",
-        "15 stations"
+        "12 stations"
       ],
       "correctAnswer": "12 stations",
       "explanation": "The project includes construction of 12 new transit stations.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the proposed investment for the training program redesign?",
       "options": [
-        "2.5 million dollars",
-        "3.0 million dollars",
         "3.5 million dollars",
-        "4.0 million dollars"
+        "4.0 million dollars",
+        "2.5 million dollars",
+        "3.0 million dollars"
       ],
       "correctAnswer": "3.5 million dollars",
       "explanation": "The investment would be about 3.5 million dollars over three years.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage can personalized learning increase retention?",
       "options": [
-        "20 percent",
-        "25 percent",
         "30 percent",
-        "35 percent"
+        "35 percent",
+        "20 percent",
+        "25 percent"
       ],
       "correctAnswer": "35 percent",
       "explanation": "Studies show this approach increases employee retention by up to 35 percent.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What is the current training approach at the company?",
       "options": [
+        "Self-paced learning",
         "Online learning modules",
         "One-size-fits-all classroom training",
-        "Mentorship programs",
-        "Self-paced learning"
+        "Mentorship programs"
       ],
       "correctAnswer": "One-size-fits-all classroom training",
       "explanation": "The current approach is one-size-fits-all classroom training.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "When do employee engagement scores typically improve?",
       "options": [
+        "Within one year",
         "Immediately",
         "Within three months",
-        "Within six months",
-        "Within one year"
+        "Within six months"
       ],
       "correctAnswer": "Within six months",
       "explanation": "Nina mentions engagement scores improve within six months of launching personalized learning.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "When do retention improvements typically occur?",
       "options": [
-        "6-9 months",
         "12-18 months",
         "18-24 months",
-        "2-3 years"
+        "2-3 years",
+        "6-9 months"
       ],
       "correctAnswer": "12-18 months",
       "explanation": "Retention improvements typically follow within 12 to 18 months.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What development approach will replace classroom training?",
       "options": [
+        "Self-study materials",
         "Online courses only",
         "Personalized learning paths and micro-credentials",
-        "Conference attendance",
-        "Self-study materials"
+        "Conference attendance"
       ],
       "correctAnswer": "Personalized learning paths and micro-credentials",
       "explanation": "The program will move toward personalized learning paths and micro-credentials.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What is David's main concern about the program?",
       "options": [
+        "Lack of support",
         "Too expensive",
         "Takes too long",
-        "Measurable metrics and accountability",
-        "Lack of support"
+        "Measurable metrics and accountability"
       ],
       "correctAnswer": "Measurable metrics and accountability",
       "explanation": "David wants to ensure accountability and asks Nina to outline measurable metrics.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "They're not programmed correctly",
         "They're trained on historical data that includes human bias",
         "They lack computing power",
-        "They're intentionally designed to discriminate"
+        "They're intentionally designed to discriminate",
+        "They're not programmed correctly"
       ],
       "correctAnswer": "They're trained on historical data that includes human bias",
       "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What was the issue with Google's recruiting algorithm?",
       "options": [
+        "It was too expensive",
         "It was too strict",
         "It showed bias against applicants from historically black colleges",
-        "It wasn't identifying talent",
-        "It was too expensive"
+        "It wasn't identifying talent"
       ],
       "correctAnswer": "It showed bias against applicants from historically black colleges",
       "explanation": "Google's algorithm showed bias against applicants from historically black colleges.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What key point does the speaker make about data?",
       "options": [
-        "Data is always objective",
-        "Data is never neutral and includes bias",
         "Data should never be used in hiring",
-        "Data is a recent invention"
+        "Data is a recent invention",
+        "Data is always objective",
+        "Data is never neutral and includes bias"
       ],
       "correctAnswer": "Data is never neutral and includes bias",
       "explanation": "The speaker argues data is never neutral and carries historical bias.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
-        "Use them immediately",
-        "Train employees on algorithms",
         "Conduct rigorous bias testing and external auditing",
-        "Ignore algorithm concerns"
+        "Ignore algorithm concerns",
+        "Use them immediately",
+        "Train employees on algorithms"
       ],
       "correctAnswer": "Conduct rigorous bias testing and external auditing",
       "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",

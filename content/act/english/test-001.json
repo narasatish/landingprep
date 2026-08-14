@@ -32,10 +32,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"influential\". Given the context, which choice is most appropriate?",
       "options": [
-        "influences",
         "influential",
         "influentially",
-        "influencing"
+        "influencing",
+        "influences"
       ],
       "correctAnswer": "influential",
       "explanation": "The adjective 'influential' correctly modifies 'mediums' and describes the quality of photography as a communication medium.",
@@ -49,10 +49,10 @@
       "topic": "Sentence Structure",
       "prompt": "At the location of [2], which choice best connects the two ideas about early and modern photography?",
       "options": [
-        "Today's",
-        "Furthermore, today's",
         "Still, today's",
-        "By contrast, today's"
+        "By contrast, today's",
+        "Today's",
+        "Furthermore, today's"
       ],
       "correctAnswer": "By contrast, today's",
       "explanation": "A transitional phrase is needed to show the contrast between the 8-hour exposure time of early photography and today's rapid capture rates.",
@@ -66,10 +66,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"shift\". Which revision is most appropriate in this context?",
       "options": [
+        "shifting",
         "shifts",
         "shift",
-        "shifted",
-        "shifting"
+        "shifted"
       ],
       "correctAnswer": "shift",
       "explanation": "The noun 'shift' is correct here. The sentence structure calls for a noun object after 'the dramatic.'",
@@ -100,10 +100,10 @@
       "topic": "Organization",
       "prompt": "The previous sentence mentions that color photography wasn't widely available until the 1930s. At [5], which choice best elaborates on this point?",
       "options": [
-        "Before this innovation, only professional studios could produce color photographs.",
         "NO CHANGE",
         "Many people preferred black and white.",
-        "Color film was expensive."
+        "Color film was expensive.",
+        "Before this innovation, only professional studios could produce color photographs."
       ],
       "correctAnswer": "NO CHANGE",
       "explanation": "The current sentence effectively explains that professional exclusivity preceded the Kodachrome innovation, logically supporting the main idea.",
@@ -117,10 +117,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined phrase is \"from film to digital technology in the late 20th century marked\". Which revision best corrects this?",
       "options": [
-        "from film to digital technology in the late 20th century marked",
-        "from film to digital technology in the late 20th century has marked",
         "from film to digital technology marking the late 20th century",
-        "The transition from film to digital technology in the late 20th century marked"
+        "The transition from film to digital technology in the late 20th century marked",
+        "from film to digital technology in the late 20th century marked",
+        "from film to digital technology in the late 20th century has marked"
       ],
       "correctAnswer": "The transition from film to digital technology in the late 20th century marked",
       "explanation": "The original fragment lacks a clear subject for the verb 'marked.' Adding 'The transition' provides the necessary subject.",
@@ -134,10 +134,10 @@
       "topic": "Punctuation",
       "prompt": "At [7], the sentence about smartphones is best improved by which choice?",
       "options": [
+        "Smartphones made the camera ubiquitous, with billions of people now carrying a device that can capture professional-quality images.",
         "Smartphones have made the camera ubiquitous, with billions of people now carrying a device that can capture professional-quality images.",
         "NO CHANGE",
-        "Smartphones have made cameras ubiquitous; with billions of people now carrying devices that can capture professional-quality images.",
-        "Smartphones made the camera ubiquitous, with billions of people now carrying a device that can capture professional-quality images."
+        "Smartphones have made cameras ubiquitous; with billions of people now carrying devices that can capture professional-quality images."
       ],
       "correctAnswer": "NO CHANGE",
       "explanation": "The original sentence is grammatically correct and logically sound. The verb tense is consistent with the passage's timeline.",
@@ -168,10 +168,10 @@
       "topic": "Sentence Structure",
       "prompt": "At [9], how should the sentence about Instagram be revised for clarity?",
       "options": [
-        "Instagram, founded in 2010 and became a cultural phenomenon where millions of users upload photographs daily.",
         "Instagram, founded in 2010, became a cultural phenomenon where millions of users upload photographs daily.",
         "Instagram founded in 2010, became a cultural phenomenon; millions of users upload photographs daily.",
-        "NO CHANGE"
+        "NO CHANGE",
+        "Instagram, founded in 2010 and became a cultural phenomenon where millions of users upload photographs daily."
       ],
       "correctAnswer": "Instagram, founded in 2010, became a cultural phenomenon where millions of users upload photographs daily.",
       "explanation": "This version correctly sets off the participial phrase with commas and maintains parallel structure.",
@@ -185,10 +185,10 @@
       "topic": "Style",
       "prompt": "Which choice best maintains the formal tone established in this passage?",
       "options": [
+        "The whole thing has raised questions about lies in digital photos.",
         "The democratization of photography has also raised important questions about authenticity, privacy, and the manipulation of images in the digital age.",
         "Basically, photography going digital has raised questions about real vs. fake images.",
-        "Photography's digital turn has like raised questions about truth and fake images.",
-        "The whole thing has raised questions about lies in digital photos."
+        "Photography's digital turn has like raised questions about truth and fake images."
       ],
       "correctAnswer": "The democratization of photography has also raised important questions about authenticity, privacy, and the manipulation of images in the digital age.",
       "explanation": "This option maintains the academic tone and precise vocabulary established throughout the passage.",
@@ -202,10 +202,10 @@
       "topic": "Organization",
       "prompt": "At [11], which choice most effectively introduces the paradox mentioned in the next sentence?",
       "options": [
+        "Professional photographers no longer have exclusive control.",
         "The profession of photography has fundamentally changed.",
         "Professional photographers now compete with amateurs in ways that were unimaginable just decades ago.",
-        "Today, anyone can be a photographer.",
-        "Professional photographers no longer have exclusive control."
+        "Today, anyone can be a photographer."
       ],
       "correctAnswer": "Professional photographers now compete with amateurs in ways that were unimaginable just decades ago.",
       "explanation": "This sentence best sets up the paradox about abundance devaluing individual photographs by establishing competition between professionals and amateurs.",
@@ -219,10 +219,10 @@
       "topic": "Punctuation",
       "prompt": "The underlined portion is \"Yet paradoxically,\". Which choice is most appropriate?",
       "options": [
-        "Yet, paradoxically",
-        "Yet paradoxically,",
         "Yet paradoxically",
-        "Yet; paradoxically,"
+        "Yet; paradoxically,",
+        "Yet, paradoxically",
+        "Yet paradoxically,"
       ],
       "correctAnswer": "Yet paradoxically,",
       "explanation": "The comma after 'paradoxically' is correct because this introductory adverbial phrase needs to be set off from the main clause.",
@@ -236,10 +236,10 @@
       "topic": "Grammar & Usage",
       "prompt": "At [13], which transition word best connects this statement to the previous paradox?",
       "options": [
-        "Moreover,",
         "Nevertheless,",
         "Clearly,",
-        "Similarly,"
+        "Similarly,",
+        "Moreover,"
       ],
       "correctAnswer": "Nevertheless,",
       "explanation": "'Nevertheless' correctly introduces a contrasting idea—despite the devaluation of images, photography remains powerful—which counters the previous paradox.",
@@ -270,10 +270,10 @@
       "topic": "Organization",
       "prompt": "For the passage as a whole, which statement best describes the author's primary purpose?",
       "options": [
+        "To explain how to use a digital camera",
         "To argue that digital photography is superior to film photography",
         "To trace the evolution of photography from its invention to the present and examine how technological advances have democratized and transformed the medium",
-        "To criticize people for taking too many photographs",
-        "To explain how to use a digital camera"
+        "To criticize people for taking too many photographs"
       ],
       "correctAnswer": "To trace the evolution of photography from its invention to the present and examine how technological advances have democratized and transformed the medium",
       "explanation": "This answer accurately captures the passage's structure, moving chronologically from early photography to modern social media and addressing the broader impact on society.",
@@ -287,10 +287,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"consolidating memories and enhancing learning\". Which choice is most appropriate?",
       "options": [
-        "consolidate memories and enhance learning",
-        "consolidating memories and enhancing learning",
         "to consolidate memories and enhance learning",
-        "consolidation of memories and enhancement of learning"
+        "consolidation of memories and enhancement of learning",
+        "consolidate memories and enhance learning",
+        "consolidating memories and enhancing learning"
       ],
       "correctAnswer": "consolidating memories and enhancing learning",
       "explanation": "The gerund forms are correct here; they function as the object of the preposition 'in' and maintain parallel structure.",
@@ -304,10 +304,10 @@
       "topic": "Punctuation",
       "prompt": "At [17], which punctuation is most appropriate after 'complex process'?",
       "options": [
-        "process.",
         "process,",
         "process;",
-        "process—"
+        "process—",
+        "process."
       ],
       "correctAnswer": "process,",
       "explanation": "A comma is needed here to separate the independent clause from the following explanatory phrase about information transfer.",
@@ -338,10 +338,10 @@
       "topic": "Organization",
       "prompt": "At [19], which transition best introduces the implications mentioned?",
       "options": [
+        "As a result, this finding has important implications for educational institutions and parents.",
         "However, this finding troubles many educators.",
         "This finding has important implications for educational institutions and parents.",
-        "Surprisingly, this finding applies everywhere.",
-        "As a result, this finding has important implications for educational institutions and parents."
+        "Surprisingly, this finding applies everywhere."
       ],
       "correctAnswer": "This finding has important implications for educational institutions and parents.",
       "explanation": "This statement directly and logically follows the research findings. The simple declaration effectively introduces the implications.",
@@ -355,10 +355,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"teenagers get far less due to\". Which revision is most appropriate?",
       "options": [
+        "teenagers gets far less due to school schedules and social activities.",
         "teenagers get far less due to school schedules and social activities.",
         "teenagers are getting far less due to school schedules and social activities.",
-        "many teenagers get far less due to school schedules and social activities.",
-        "teenagers gets far less due to school schedules and social activities."
+        "many teenagers get far less due to school schedules and social activities."
       ],
       "correctAnswer": "many teenagers get far less due to school schedules and social activities.",
       "explanation": "Adding 'many' clarifies that not all teenagers fall into this category, making the statement more precise.",
@@ -372,10 +372,10 @@
       "topic": "Punctuation",
       "prompt": "At [21], which choice best punctuates the list of consequences?",
       "options": [
+        "decreased attention, slower reaction times, and impaired decision-making skills.",
         "decreased attention, slower reaction times; impaired decision-making skills.",
         "decreased attention slower reaction times and impaired decision-making skills.",
-        "decreased attention; slower reaction times; and impaired decision-making skills.",
-        "decreased attention, slower reaction times, and impaired decision-making skills."
+        "decreased attention; slower reaction times; and impaired decision-making skills."
       ],
       "correctAnswer": "decreased attention, slower reaction times, and impaired decision-making skills.",
       "explanation": "The series needs commas between items, including the Oxford comma before 'and'—the standard in academic writing.",
@@ -389,10 +389,10 @@
       "topic": "Organization",
       "prompt": "At [22], which sentence best transitions from consequences to proposed solutions?",
       "options": [
-        "Sleep is important.",
-        "Schools could help by providing better beds.",
         "Teenagers should go to bed earlier.",
-        "Many schools have begun adjusting start times to later in the morning, recognizing that adolescent circadian rhythms naturally shift toward a later sleep schedule."
+        "Many schools have begun adjusting start times to later in the morning, recognizing that adolescent circadian rhythms naturally shift toward a later sleep schedule.",
+        "Sleep is important.",
+        "Schools could help by providing better beds."
       ],
       "correctAnswer": "Many schools have begun adjusting start times to later in the morning, recognizing that adolescent circadian rhythms naturally shift toward a later sleep schedule.",
       "explanation": "This sentence effectively introduces practical solutions to the sleep deprivation problem by discussing school policy changes.",
@@ -406,10 +406,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"these changes have seen improvements\". Which choice is most appropriate?",
       "options": [
-        "these changes have seen improvements",
         "these changes sees improvements",
         "these changes have seen improvement",
-        "implementing these changes has seen improvements"
+        "implementing these changes has seen improvements",
+        "these changes have seen improvements"
       ],
       "correctAnswer": "implementing these changes has seen improvements",
       "explanation": "The subject of the verb should be 'implementing these changes,' which is singular and requires 'has seen.'",
@@ -440,10 +440,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"Sleep is not a luxury but a biological necessity, as vital as food and water for human survival.\". Which choice best emphasizes this point?",
       "options": [
+        "Sleep is not a luxury but a biological necessity, as vital as food and water for human survival.",
         "Sleep is vital; it is a necessity.",
         "Sleep isn't a luxury but something very important.",
-        "Sleep being not luxury but necessity for humans.",
-        "Sleep is not a luxury but a biological necessity, as vital as food and water for human survival."
+        "Sleep being not luxury but necessity for humans."
       ],
       "correctAnswer": "Sleep is not a luxury but a biological necessity, as vital as food and water for human survival.",
       "explanation": "The original sentence uses strong, parallel language and a sophisticated comparison that effectively emphasizes sleep's importance.",
@@ -457,10 +457,10 @@
       "topic": "Organization",
       "prompt": "At [26], which phrase is most appropriate in context?",
       "options": [
-        "very vital",
-        "so vital",
         "quite vital",
-        "as vital"
+        "as vital",
+        "very vital",
+        "so vital"
       ],
       "correctAnswer": "as vital",
       "explanation": "'As vital as' correctly sets up the comparison to food and water, maintaining parallel structure.",
@@ -474,10 +474,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"During REM sleep, also known as the rapid eye movement stage, the brain consolidates emotional memories and processes complex information.\". Which revision is needed?",
       "options": [
-        "During REM sleep, also known as the rapid eye movement stage, the brain consolidates emotional memories and processes complex information.",
         "During REM sleep (also known as the rapid eye movement stage), the brain consolidates emotional memories and processes complex information.",
         "During REM sleep, also known as the rapid eye movement stage; the brain consolidates emotional memories and processes complex information.",
-        "NO CHANGE"
+        "NO CHANGE",
+        "During REM sleep, also known as the rapid eye movement stage, the brain consolidates emotional memories and processes complex information."
       ],
       "correctAnswer": "NO CHANGE",
       "explanation": "The original sentence is correctly punctuated with a restrictive appositive phrase set off by commas, and all verbs are parallel.",
@@ -508,10 +508,10 @@
       "topic": "Organization",
       "prompt": "At [29], which statement best transitions to the discussion of sleep disruptions?",
       "options": [
+        "The architecture of sleep consists of multiple cycles, each lasting approximately 90 minutes.",
         "Sleep is very complicated.",
         "Sleep cycles repeat throughout the night.",
-        "People need different amounts of sleep.",
-        "The architecture of sleep consists of multiple cycles, each lasting approximately 90 minutes."
+        "People need different amounts of sleep."
       ],
       "correctAnswer": "The architecture of sleep consists of multiple cycles, each lasting approximately 90 minutes.",
       "explanation": "This sentence provides specific structural information about sleep that logically leads to discussion of disruptions to normal patterns.",
@@ -525,10 +525,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"Disruptions to normal sleep patterns can cause serious health problems, including obesity, diabetes, cardiovascular disease, and depression.\". Which choice is most appropriate?",
       "options": [
-        "could cause serious health problems",
         "causes serious health problems",
         "can cause serious health problems",
-        "have caused serious health problems"
+        "have caused serious health problems",
+        "could cause serious health problems"
       ],
       "correctAnswer": "can cause serious health problems",
       "explanation": "The plural subject 'Disruptions' requires 'can cause,' which expresses general capability and is consistent with the formal, factual tone.",
@@ -542,10 +542,10 @@
       "topic": "Punctuation",
       "prompt": "At [31], how should the list in this sentence be punctuated?",
       "options": [
+        "sleep hygiene, promoting regular bedtimes limiting screen time before sleep and creating dark, quiet sleeping environments.",
         "sleep hygiene; promoting regular bedtimes; limiting screen time before sleep; and creating dark, quiet sleeping environments.",
         "sleep hygiene, promoting regular bedtimes, limiting screen time before sleep, and creating dark, quiet sleeping environments.",
-        "sleep hygiene promoting regular bedtimes limiting screen time before sleep and creating dark quiet sleeping environments.",
-        "sleep hygiene, promoting regular bedtimes limiting screen time before sleep and creating dark, quiet sleeping environments."
+        "sleep hygiene promoting regular bedtimes limiting screen time before sleep and creating dark quiet sleeping environments."
       ],
       "correctAnswer": "sleep hygiene, promoting regular bedtimes, limiting screen time before sleep, and creating dark, quiet sleeping environments.",
       "explanation": "Commas properly separate the items in a series, including the Oxford comma, and the phrase 'dark, quiet' correctly uses commas for coordinate adjectives.",
@@ -559,10 +559,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"benefit from consistent sleep schedules that allow their developing brains to function optimally.\". Which choice is most appropriate?",
       "options": [
-        "allows their developing brains to function optimally",
-        "allow their developing brains to function optimally",
         "allows their developing brain to function optimally",
-        "allow their developing brain to function optimally"
+        "allow their developing brain to function optimally",
+        "allows their developing brains to function optimally",
+        "allow their developing brains to function optimally"
       ],
       "correctAnswer": "allow their developing brains to function optimally",
       "explanation": "The plural 'schedules' requires the plural verb 'allow,' and 'brains' is the plural form that correctly refers to teenagers' brains.",
@@ -576,10 +576,10 @@
       "topic": "Organization",
       "prompt": "At [33], which transition best introduces the concluding statement?",
       "options": [
-        "Interestingly, understanding the science of sleep has revolutionized",
         "Understanding the science of sleep has revolutionized",
         "Finally, understanding the science of sleep has revolutionized",
-        "Conversely, understanding the science of sleep has revolutionized"
+        "Conversely, understanding the science of sleep has revolutionized",
+        "Interestingly, understanding the science of sleep has revolutionized"
       ],
       "correctAnswer": "Understanding the science of sleep has revolutionized",
       "explanation": "The simple statement without a transition word works best here, as the sentence concludes the discussion without needing a transition from the previous point.",
@@ -610,10 +610,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"we must not neglect the fundamental importance of restorative sleep for cognitive function and overall well-being.\". Which choice is most appropriate?",
       "options": [
+        "not must neglect",
         "must neglect not",
         "must not neglect",
-        "cannot neglect",
-        "not must neglect"
+        "cannot neglect"
       ],
       "correctAnswer": "must not neglect",
       "explanation": "'Must not neglect' is the correct word order for expressing strong negative obligation in standard English.",
@@ -627,10 +627,10 @@
       "topic": "Organization",
       "prompt": "For the passage as a whole, which statement best describes the author's primary purpose?",
       "options": [
-        "To argue that all schools should start at 10 AM",
-        "To explain why teenagers need more sleep and discuss how sleep deprivation affects health and academic performance, while offering practical solutions",
         "To prove that sleep studies are scientifically accurate",
-        "To criticize teenagers for staying up too late"
+        "To criticize teenagers for staying up too late",
+        "To argue that all schools should start at 10 AM",
+        "To explain why teenagers need more sleep and discuss how sleep deprivation affects health and academic performance, while offering practical solutions"
       ],
       "correctAnswer": "To explain why teenagers need more sleep and discuss how sleep deprivation affects health and academic performance, while offering practical solutions",
       "explanation": "This answer accurately captures the passage's structure and main ideas, from the science of sleep through its effects and practical solutions.",
@@ -644,10 +644,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"minimize environmental impact while maximizing occupant well-being.\". Which choice is most appropriate?",
       "options": [
-        "minimize environmental impact, while maximizing occupant well-being",
         "minimize environmental impact while maximizing occupant well-being",
         "minimizes environmental impact while maximizes occupant well-being",
-        "minimizing environmental impact while maximizing occupant well-being"
+        "minimizing environmental impact while maximizing occupant well-being",
+        "minimize environmental impact, while maximizing occupant well-being"
       ],
       "correctAnswer": "minimize environmental impact while maximizing occupant well-being",
       "explanation": "The infinitive forms correctly follow the preposition 'to' from 'to minimize.' The parallel structure is also preserved.",
@@ -678,10 +678,10 @@
       "topic": "Sentence Structure",
       "prompt": "At [39], which revision best creates a smooth transition between sentences?",
       "options": [
+        "However, modern approaches are different.",
         "This is a problem.",
         "Modern sustainable buildings address these issues.",
-        "NO CHANGE",
-        "However, modern approaches are different."
+        "NO CHANGE"
       ],
       "correctAnswer": "Modern sustainable buildings address these issues.",
       "explanation": "This choice creates a clear contrast with the previous sentence about traditional construction, smoothly introducing the discussion of sustainable alternatives.",
@@ -695,10 +695,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"employ renewable energy sources such as solar panels and wind turbines\". Which choice is most appropriate?",
       "options": [
+        "are employing renewable energy sources such as solar panels and wind turbines",
         "employing renewable energy sources such as solar panels and wind turbines",
         "employs renewable energy sources such as solar panels and wind turbines",
-        "employ renewable energy sources such as solar panels and wind turbines",
-        "are employing renewable energy sources such as solar panels and wind turbines"
+        "employ renewable energy sources such as solar panels and wind turbines"
       ],
       "correctAnswer": "employ renewable energy sources such as solar panels and wind turbines",
       "explanation": "The plural subject 'Modern sustainable buildings' requires the plural verb 'employ,' maintaining proper subject-verb agreement.",
@@ -712,10 +712,10 @@
       "topic": "Punctuation",
       "prompt": "At [41], which punctuation is most appropriate after 'turbines'?",
       "options": [
+        "turbines to reduce",
         "turbines; to reduce",
         "turbines, to reduce",
-        "turbines—to reduce",
-        "turbines to reduce"
+        "turbines—to reduce"
       ],
       "correctAnswer": "turbines to reduce",
       "explanation": "No punctuation is needed before the infinitive phrase 'to reduce,' which functions as part of the verb phrase.",
@@ -729,10 +729,10 @@
       "topic": "Organization",
       "prompt": "At [42], which list best completes the description of sustainable building features?",
       "options": [
-        "green roofs and permeable pavements; that reduce runoff and promote groundwater recharge.",
-        "green roofs and permeable pavements that reduce runoff and promote groundwater recharge.",
         "green roofs, and permeable pavements, that reduce runoff and promote groundwater recharge.",
-        "green roofs, and permeable pavements that reduce runoff and promote groundwater recharge."
+        "green roofs, and permeable pavements that reduce runoff and promote groundwater recharge.",
+        "green roofs and permeable pavements; that reduce runoff and promote groundwater recharge.",
+        "green roofs and permeable pavements that reduce runoff and promote groundwater recharge."
       ],
       "correctAnswer": "green roofs, and permeable pavements that reduce runoff and promote groundwater recharge.",
       "explanation": "The series uses commas correctly, and the restrictive clause 'that reduce runoff' requires no comma before it.",
@@ -746,10 +746,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined phrase is \"One exemplary project is the Bullitt Center in Seattle, a six-story office building that produces\". Which choice is most appropriate?",
       "options": [
-        "a six story office building that produces",
         "a six-story office building which produces",
         "a six-story office building, which produces",
-        "a six-story office building that produces"
+        "a six-story office building that produces",
+        "a six story office building that produces"
       ],
       "correctAnswer": "a six-story office building that produces",
       "explanation": "The restrictive relative clause 'that produces' requires no comma. 'That' (not 'which') is correct for restrictive clauses. 'Six-story' is correctly hyphenated as a compound adjective.",
@@ -780,10 +780,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"The building also features rainwater collection systems that provide all water needed for occupant use.\". Which choice is most appropriate?",
       "options": [
+        "features rainwater collection systems that provide",
         "features rainwater-collecting systems that provides",
         "features rainwater collection systems which provide",
-        "feature rainwater collection systems that provide",
-        "features rainwater collection systems that provide"
+        "feature rainwater collection systems that provide"
       ],
       "correctAnswer": "features rainwater collection systems that provide",
       "explanation": "The singular subject 'The building' requires the singular verb 'features,' and 'that provide' correctly uses a plural verb to agree with 'systems.'",
@@ -797,10 +797,10 @@
       "topic": "Organization",
       "prompt": "At [46], which phrase best introduces the discussion of green building certifications?",
       "options": [
-        "NO CHANGE",
-        "Green certifications, including LEED, also known as Leadership in Energy and Environmental Design,",
         "Several green certifications such as LEED or Leadership in Energy and Environmental Design",
-        "Green certifications, such as LEED (Leadership in Energy and Environmental Design),"
+        "Green certifications, such as LEED (Leadership in Energy and Environmental Design),",
+        "NO CHANGE",
+        "Green certifications, including LEED, also known as Leadership in Energy and Environmental Design,"
       ],
       "correctAnswer": "Green certifications, such as LEED (Leadership in Energy and Environmental Design),",
       "explanation": "This version clearly introduces the certification standards using appropriate punctuation for the acronym expansion.",
@@ -814,10 +814,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"have become industry standards for evaluating sustainable buildings.\". Which choice is most appropriate?",
       "options": [
-        "are becoming industry standards",
         "has become industry standards",
         "become industry standards",
-        "have become industry standards"
+        "have become industry standards",
+        "are becoming industry standards"
       ],
       "correctAnswer": "have become industry standards",
       "explanation": "The plural subject 'Green certifications' requires the plural auxiliary verb 'have,' and 'become' is the correct participle form.",
@@ -848,10 +848,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"compared to conventional structures.\". Which choice is most appropriate?",
       "options": [
+        "compared to conventional structures.",
         "compared conventional structures.",
         "compared with conventional structures.",
-        "in comparison to conventional structures.",
-        "compared to conventional structures."
+        "in comparison to conventional structures."
       ],
       "correctAnswer": "compared to conventional structures.",
       "explanation": "'Compared to' is the standard usage in this context for indicating similarity. Both 'to' and 'with' are grammatically acceptable, but 'to' is more common.",
@@ -865,10 +865,10 @@
       "topic": "Organization",
       "prompt": "At [50], which transition best introduces the discussion that goes beyond technical systems?",
       "options": [
-        "In summary, sustainability in architecture",
         "Moreover, sustainability in architecture",
         "However, sustainability in architecture",
-        "Furthermore, sustainability in architecture"
+        "Furthermore, sustainability in architecture",
+        "In summary, sustainability in architecture"
       ],
       "correctAnswer": "However, sustainability in architecture",
       "explanation": "'However' correctly signals a shift from technical measures to broader social and environmental considerations.",

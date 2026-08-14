@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's phone number?",
       "options": [
-        "416-555-0243",
         "416-555-0234",
         "416-555-0342",
-        "416-555-0423"
+        "416-555-0423",
+        "416-555-0243"
       ],
       "correctAnswer": "416-555-0234",
       "explanation": "Customer provides their phone number as '416-555-0234.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What is the cost of the current plan?",
       "options": [
+        "$55 per month",
         "$25 per month",
         "$35 per month",
-        "$45 per month",
-        "$55 per month"
+        "$45 per month"
       ],
       "correctAnswer": "$35 per month",
       "explanation": "Support confirms 'your basic plan is 2 GB per month at $35.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "How many calling minutes does the customer's current plan have?",
       "options": [
+        "Unlimited",
         "100 minutes",
         "150 minutes",
-        "200 minutes",
-        "Unlimited"
+        "200 minutes"
       ],
       "correctAnswer": "200 minutes",
       "explanation": "Support states 'Your current plan has 200 minutes.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What data plan does the customer ultimately choose?",
       "options": [
-        "5 GB plan",
         "8 GB plan",
         "10 GB plan",
-        "15 GB plan"
+        "15 GB plan",
+        "5 GB plan"
       ],
       "correctAnswer": "8 GB plan",
       "explanation": "Customer asks 'do you have an 8 GB plan?' and accepts it, stating 'Perfect, I'll take that.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "When does the new plan take effect on the bill?",
       "options": [
-        "June 15th",
         "June 22nd",
         "July 1st",
-        "July 8th"
+        "July 8th",
+        "June 15th"
       ],
       "correctAnswer": "July 8th",
       "explanation": "Support states 'Your bill will reflect the change next billing cycle, which is on July 8th.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has Rebecca lived in the neighbourhood?",
       "options": [
+        "Five years",
         "Two years",
         "Three years",
-        "Four years",
-        "Five years"
+        "Four years"
       ],
       "correctAnswer": "Five years",
       "explanation": "Rebecca states 'About five years now.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "When did David move to the neighbourhood?",
       "options": [
-        "One week ago",
         "Two weeks ago",
         "Last month",
-        "Two months ago"
+        "Two months ago",
+        "One week ago"
       ],
       "correctAnswer": "Last month",
       "explanation": "David says 'Just moved here last month.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "What is the best season in this neighbourhood?",
       "options": [
+        "Winter",
         "Spring",
         "Summer",
-        "Fall",
-        "Winter"
+        "Fall"
       ],
       "correctAnswer": "Summer",
       "explanation": "Rebecca states 'The summer's the best season here.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "Where is the farmer's market held?",
       "options": [
+        "Oak and Queen",
         "Main and Queen",
         "Main and King",
-        "Main and Oak",
-        "Oak and Queen"
+        "Main and Oak"
       ],
       "correctAnswer": "Main and Oak",
       "explanation": "Rebecca mentions 'at the corner of Main and Oak.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What type of community does Rebecca describe?",
       "options": [
-        "Business-focused",
         "Very friendly",
         "Quiet and isolated",
-        "Fast-paced"
+        "Fast-paced",
+        "Business-focused"
       ],
       "correctAnswer": "Very friendly",
       "explanation": "Rebecca says 'It's a very friendly community.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the lost luggage reimbursement limit in the Standard plan?",
       "options": [
-        "$500",
-        "$1,000",
         "$1,500",
-        "$2,500"
+        "$2,500",
+        "$500",
+        "$1,000"
       ],
       "correctAnswer": "$1,000",
       "explanation": "The guide mentions 'lost luggage reimbursement up to one thousand dollars' in the Standard plan.",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the Premium plan's lost luggage coverage limit?",
       "options": [
+        "$2,500",
         "$1,000",
         "$1,500",
-        "$2,000",
-        "$2,500"
+        "$2,000"
       ],
       "correctAnswer": "$2,500",
       "explanation": "The Premium plan includes 'upgrade to two thousand five hundred dollars for lost luggage.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "How long do you have to file a claim after an incident?",
       "options": [
-        "30 days",
         "60 days",
         "90 days",
-        "120 days"
+        "120 days",
+        "30 days"
       ],
       "correctAnswer": "90 days",
       "explanation": "The guide states 'Claims must be filed within ninety days of the incident.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "What is the toll-free claims phone number?",
       "options": [
+        "1-800-555-0417",
         "1-800-555-0140",
         "1-800-555-0147",
-        "1-800-555-0174",
-        "1-800-555-0417"
+        "1-800-555-0174"
       ],
       "correctAnswer": "1-800-555-0147",
       "explanation": "The guide provides 'call our toll-free number at 1-800-555-0147.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How much is allocated for the fisheries management plan?",
       "options": [
+        "75 million dollars",
         "50 million dollars",
         "58 million dollars",
-        "67 million dollars",
-        "75 million dollars"
+        "67 million dollars"
       ],
       "correctAnswer": "67 million dollars",
       "explanation": "The plan allocates 67 million dollars over five years.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "By what percentage have Atlantic salmon populations declined?",
       "options": [
-        "35 percent",
-        "42 percent",
         "48 percent",
-        "55 percent"
+        "55 percent",
+        "35 percent",
+        "42 percent"
       ],
       "correctAnswer": "48 percent",
       "explanation": "Atlantic salmon populations have declined by 48 percent over the past two decades.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "What is the maximum subsidy for vessel upgrades?",
       "options": [
-        "150,000 dollars",
         "175,000 dollars",
         "200,000 dollars",
-        "250,000 dollars"
+        "250,000 dollars",
+        "150,000 dollars"
       ],
       "correctAnswer": "200,000 dollars",
       "explanation": "Subsidies reach up to 200,000 dollars for eco-friendly equipment upgrades.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How many marine scientists will the research center employ?",
       "options": [
+        "150 scientists",
         "80 scientists",
         "100 scientists",
-        "120 scientists",
-        "150 scientists"
+        "120 scientists"
       ],
       "correctAnswer": "120 scientists",
       "explanation": "The research center will employ 120 marine scientists.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the total budget for the renovation?",
       "options": [
-        "5.2 million dollars",
-        "6.0 million dollars",
         "6.8 million dollars",
-        "7.5 million dollars"
+        "7.5 million dollars",
+        "5.2 million dollars",
+        "6.0 million dollars"
       ],
       "correctAnswer": "6.8 million dollars",
       "explanation": "The renovation project is budgeted at 6.8 million dollars.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "How long is the renovation expected to take?",
       "options": [
-        "12 months",
         "15 months",
         "18 months",
-        "24 months"
+        "24 months",
+        "12 months"
       ],
       "correctAnswer": "18 months",
       "explanation": "The project should take about 18 months to complete.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What are the three main components of the renovation?",
       "options": [
+        "Cafe, library, fitness center",
         "Pool, gym, parking lot",
         "Fitness center, pool upgrade, youth spaces",
-        "Gym, parking, offices",
-        "Cafe, library, fitness center"
+        "Gym, parking, offices"
       ],
       "correctAnswer": "Fitness center, pool upgrade, youth spaces",
       "explanation": "Plans include a new fitness center, pool upgrade, and additional youth programming spaces.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What is Robert's main concern?",
       "options": [
+        "Parking during renovation",
         "Noise during construction",
         "Cost of the project",
-        "Where his kids' programs will go",
-        "Parking during renovation"
+        "Where his kids' programs will go"
       ],
       "correctAnswer": "Where his kids' programs will go",
       "explanation": "Robert worries about where after-school programs will be located during construction.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "Where does Susan plan to relocate programs during construction?",
       "options": [
-        "A temporary building",
         "The community room and outdoor spaces",
         "A school gym",
-        "A local fitness facility"
+        "A local fitness facility",
+        "A temporary building"
       ],
       "correctAnswer": "The community room and outdoor spaces",
       "explanation": "Susan plans to maintain and use the community room and outdoor spaces for programs.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What concern does Jason raise about using outdoor space?",
       "options": [
+        "Noise complaints",
         "Weather damage",
         "Limited room for physical activities",
-        "Theft concerns",
-        "Noise complaints"
+        "Theft concerns"
       ],
       "correctAnswer": "Limited room for physical activities",
       "explanation": "Jason notes that if programs move outdoors, there will be limited space for sports and recreation.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What suggestion does Jason make for outdoor activities?",
       "options": [
+        "Move all programs indoors",
         "Build a temporary gym",
         "Close programs temporarily",
-        "Use a local park",
-        "Move all programs indoors"
+        "Use a local park"
       ],
       "correctAnswer": "Use a local park",
       "explanation": "Jason suggests using a local park for outdoor programming during construction.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "Mental health is covered more than physical",
         "Physical health is covered more than mental health",
         "They're equally covered",
-        "Neither is adequately covered"
+        "Neither is adequately covered",
+        "Mental health is covered more than physical"
       ],
       "correctAnswer": "Physical health is covered more than mental health",
       "explanation": "The speaker states mental health is covered at lower rates than physical health.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What is the source of these costs according to the speaker?",
       "options": [
-        "Insurance premiums only",
-        "Lost productivity, emergency services, and hospitalizations",
         "Medication costs",
-        "Administrative expenses"
+        "Administrative expenses",
+        "Insurance premiums only",
+        "Lost productivity, emergency services, and hospitalizations"
       ],
       "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
       "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "It's cheaper than physical health",
         "Early treatment has positive ROI",
         "It reduces insurance profits",
-        "It's cost-neutral"
+        "It's cost-neutral",
+        "It's cheaper than physical health"
       ],
       "correctAnswer": "Early treatment has positive ROI",
       "explanation": "The speaker argues mental health coverage has a positive return on investment.",

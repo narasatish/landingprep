@@ -54,10 +54,10 @@
       "topic": "Detail",
       "prompt": "What does the letter Elena receives contain?",
       "options": [
-        "instructions on how to read maps",
         "her father's final wishes and instructions for his funeral",
         "a location between 41 and 42 degrees North latitude",
-        "a confession about her great-grandmother"
+        "a confession about her great-grandmother",
+        "instructions on how to read maps"
       ],
       "correctAnswer": "a location between 41 and 42 degrees North latitude",
       "explanation": "The passage states: 'Inside was a single line: \"The coast between 41 and 42 degrees North latitude holds what you're searching for.\"'",
@@ -71,10 +71,10 @@
       "topic": "Inference",
       "prompt": "Which of the following best explains why Elena had not previously recognized her desire to explore?",
       "options": [
-        "she had built a practical life that suppressed this deeper need",
-        "she was afraid of travel",
         "her father had forbidden her from exploring",
-        "she did not have access to maps"
+        "she did not have access to maps",
+        "she had built a practical life that suppressed this deeper need",
+        "she was afraid of travel"
       ],
       "correctAnswer": "she had built a practical life that suppressed this deeper need",
       "explanation": "The passage explains that Elena is 'a practical person who renders languages into other languages' working in a profession 'that required no imagination, only accuracy.' This practical life contrasts with her deeper need to explore, implying she had built a life that suppressed this instinct.",
@@ -88,10 +88,10 @@
       "topic": "Vocabulary in Context",
       "prompt": "In the passage, the phrase 'as steady as a compass needle' most nearly means:",
       "options": [
+        "made of metal",
         "moving back and forth rapidly",
         "pointing in a specific direction",
-        "unwavering and constant in direction",
-        "made of metal"
+        "unwavering and constant in direction"
       ],
       "correctAnswer": "unwavering and constant in direction",
       "explanation": "A compass needle points in one unwavering direction. By comparing her father's hand to a compass needle, the author emphasizes its steadiness and unwavering focus, not mere movement.",
@@ -122,10 +122,10 @@
       "topic": "Detail",
       "prompt": "How many years after her father's death does Elena receive his letter?",
       "options": [
-        "the passage does not specify",
         "six months",
         "seven years",
-        "one year"
+        "one year",
+        "the passage does not specify"
       ],
       "correctAnswer": "seven years",
       "explanation": "The passage states: 'It was sealed with wax, addressed in a handwriting that made her heart stop—his handwriting, though he had been dead for seven years.'",
@@ -139,10 +139,10 @@
       "topic": "Inference",
       "prompt": "What can be inferred about Elena's great-grandmother based on the passage?",
       "options": [
-        "she was an adventurous explorer who documented her observations",
-        "she was a cartographer like Elena's father",
         "she was a renowned scientist",
-        "she lived her entire life in Cornwall"
+        "she lived her entire life in Cornwall",
+        "she was an adventurous explorer who documented her observations",
+        "she was a cartographer like Elena's father"
       ],
       "correctAnswer": "she was an adventurous explorer who documented her observations",
       "explanation": "The passage describes her as an 'explorer's companion' who 'had traveled the world and recorded her observations in meticulous detail,' establishing her as adventurous and observant.",
@@ -156,10 +156,10 @@
       "topic": "Comparison",
       "prompt": "How does Elena's reaction to her father's message differ from what might be expected?",
       "options": [
+        "the passage does not indicate any difference",
         "she is angry rather than curious",
         "she decides to ignore his advice and stay in her job",
-        "she immediately travels to Cornwall rather than dismissing it",
-        "the passage does not indicate any difference"
+        "she immediately travels to Cornwall rather than dismissing it"
       ],
       "correctAnswer": "she immediately travels to Cornwall rather than dismissing it",
       "explanation": "Rather than treating a mysterious letter from a dead father as strange or dismissing it, Elena takes it seriously enough to spend six months preparing a journey to the location mentioned, showing she accepts her father's mysterious communication.",
@@ -224,10 +224,10 @@
       "topic": "Detail",
       "prompt": "What theory about disease transmission did Dr. John Snow's work disprove?",
       "options": [
+        "that disease patterns could be mapped geographically",
         "that contaminated water spreads disease",
         "that disease is connected to environmental conditions",
-        "that cholera was caused by bad air (miasma)",
-        "that disease patterns could be mapped geographically"
+        "that cholera was caused by bad air (miasma)"
       ],
       "correctAnswer": "that cholera was caused by bad air (miasma)",
       "explanation": "The passage states: 'Snow discovered they clustered around the Broad Street pump, leading him to theorize that contaminated water, rather than the prevailing belief in \"miasma\" (bad air), caused the disease.'",
@@ -241,10 +241,10 @@
       "topic": "Inference",
       "prompt": "Based on the passage, why were sanitary improvements effective at reducing disease mortality even before antibiotics were discovered?",
       "options": [
-        "because they were more effective than antibiotics",
-        "because people became stronger through proper sanitation",
         "because they removed the source of infection by improving environmental conditions",
-        "the passage does not explain this"
+        "the passage does not explain this",
+        "because they were more effective than antibiotics",
+        "because people became stronger through proper sanitation"
       ],
       "correctAnswer": "because they removed the source of infection by improving environmental conditions",
       "explanation": "The passage explains that improvements in 'sewage systems, clean water supplies, and waste management infrastructure' along with 'better nutrition and housing, significantly reduced mortality rates' by addressing environmental causes of disease.",
@@ -258,10 +258,10 @@
       "topic": "Vocabulary in Context",
       "prompt": "In the passage, the word 'systematized' most nearly means:",
       "options": [
-        "made mandatory by government",
         "made ineffective",
         "made orderly and organized",
-        "made more expensive"
+        "made more expensive",
+        "made mandatory by government"
       ],
       "correctAnswer": "made orderly and organized",
       "explanation": "In context, 'Vaccinations became systematized and mandatory in many countries' indicates they were organized into an organized system, not haphazard or individual actions.",
@@ -292,10 +292,10 @@
       "topic": "Detail",
       "prompt": "According to the passage, what did Dr. John Snow do to investigate the 1854 cholera outbreak?",
       "options": [
+        "he interviewed victims about their diets",
         "he studied microscopic organisms",
         "he tested the contaminated water in his laboratory",
-        "he mapped cholera deaths geographically",
-        "he interviewed victims about their diets"
+        "he mapped cholera deaths geographically"
       ],
       "correctAnswer": "he mapped cholera deaths geographically",
       "explanation": "The passage states: 'By mapping cholera deaths geographically, Snow discovered they clustered around the Broad Street pump.'",
@@ -309,10 +309,10 @@
       "topic": "Inference",
       "prompt": "What does the passage suggest about the relationship between social factors and health?",
       "options": [
-        "social factors have no impact on health outcomes",
-        "health is determined entirely by genetics and biology",
         "social factors like living standards and environmental conditions significantly influence disease patterns and health outcomes",
-        "wealth has no relationship to health"
+        "wealth has no relationship to health",
+        "social factors have no impact on health outcomes",
+        "health is determined entirely by genetics and biology"
       ],
       "correctAnswer": "social factors like living standards and environmental conditions significantly influence disease patterns and health outcomes",
       "explanation": "The passage emphasizes that disease is 'connected to environmental conditions, living standards, and community welfare,' and that public health must address 'social determinants of health,' establishing the link between social factors and health.",
@@ -326,10 +326,10 @@
       "topic": "Comparison",
       "prompt": "How do contemporary public health challenges differ from nineteenth-century challenges?",
       "options": [
-        "nineteenth-century challenges were more serious",
         "contemporary challenges are purely biological with no social component",
         "contemporary challenges are more complex and require addressing root causes of health inequality, not just eliminating diseases",
-        "there is no difference"
+        "there is no difference",
+        "nineteenth-century challenges were more serious"
       ],
       "correctAnswer": "contemporary challenges are more complex and require addressing root causes of health inequality, not just eliminating diseases",
       "explanation": "The passage contrasts the narrow focus on infectious disease with modern approaches that address 'antibiotic-resistant bacteria, emerging infectious diseases, health disparities' and 'root causes of health inequality,' showing increased complexity.",
@@ -360,10 +360,10 @@
       "topic": "Author's Purpose",
       "prompt": "The passage's opening reference to cholera epidemics serves primarily to:",
       "options": [
-        "show that cholera is the most dangerous disease",
-        "establish the historical catalyst that prompted the development of public health as a discipline",
         "prove that industrial cities are unhealthy",
-        "explain why antibiotics were invented"
+        "explain why antibiotics were invented",
+        "show that cholera is the most dangerous disease",
+        "establish the historical catalyst that prompted the development of public health as a discipline"
       ],
       "correctAnswer": "establish the historical catalyst that prompted the development of public health as a discipline",
       "explanation": "The passage begins with cholera epidemics 'demonstrated that disease was not a purely individual affliction but a social phenomenon,' establishing this crisis as the trigger for developing public health science.",
@@ -394,10 +394,10 @@
       "topic": "Detail",
       "prompt": "According to the passage, what are Indigenous Australian songlines?",
       "options": [
+        "dance performances that accompany storytelling",
         "poetic compositions that encode geographic and historical knowledge",
         "musical instruments used in ceremonies",
-        "spoken languages with no written form",
-        "dance performances that accompany storytelling"
+        "spoken languages with no written form"
       ],
       "correctAnswer": "poetic compositions that encode geographic and historical knowledge",
       "explanation": "The passage states: 'Indigenous Australian songlines similarly encoded geographic knowledge, historical narratives, and spiritual teachings in poetic form, allowing singers to navigate vast territories.'",
@@ -411,10 +411,10 @@
       "topic": "Inference",
       "prompt": "What does the passage suggest about why early anthropologists dismissed oral traditions?",
       "options": [
-        "because of cultural bias viewing writing as superior to orality",
-        "because anthropologists could not understand languages other than written languages",
         "because oral traditions were actually unreliable",
-        "because oral traditions contained no useful information"
+        "because oral traditions contained no useful information",
+        "because of cultural bias viewing writing as superior to orality",
+        "because anthropologists could not understand languages other than written languages"
       ],
       "correctAnswer": "because of cultural bias viewing writing as superior to orality",
       "explanation": "The passage describes dismissal as 'one of the discipline's most significant blindnesses,' suggesting it was based on bias rather than actual deficiency. Later it shows oral traditions were sophisticated and reliable.",
@@ -428,10 +428,10 @@
       "topic": "Vocabulary in Context",
       "prompt": "In the passage, the word 'mnemonic' most nearly means:",
       "options": [
-        "memory-assisting",
         "musical",
         "complicated",
-        "ancient"
+        "ancient",
+        "memory-assisting"
       ],
       "correctAnswer": "memory-assisting",
       "explanation": "The passage states that oral traditions functioned 'through sophisticated mnemonic devices and narrative structures that made memorization possible,' indicating mnemonics are devices that assist memory.",
@@ -462,10 +462,10 @@
       "topic": "Comparison",
       "prompt": "How does the passage distinguish between knowledge in oral versus literate cultures?",
       "options": [
+        "there is no difference between the two",
         "in oral cultures, knowledge is person-based and authority comes from individuals; in literate cultures, knowledge is textual and detached from individuals",
         "oral cultures have more knowledge than literate cultures",
-        "literate cultures reject all oral knowledge",
-        "there is no difference between the two"
+        "literate cultures reject all oral knowledge"
       ],
       "correctAnswer": "in oral cultures, knowledge is person-based and authority comes from individuals; in literate cultures, knowledge is textual and detached from individuals",
       "explanation": "The passage explicitly contrasts these: 'In oral cultures, knowledge resides in persons... In literate cultures, knowledge becomes textual, detached from the individual.'",
@@ -479,10 +479,10 @@
       "topic": "Detail",
       "prompt": "According to the passage, what have modern scholars discovered about historical details embedded in oral epics?",
       "options": [
-        "they contain precise historical information that has been corroborated by archaeological evidence",
-        "they are purely fictional and have no basis in reality",
         "they contain no historical information",
-        "they are more accurate than written historical records"
+        "they are more accurate than written historical records",
+        "they contain precise historical information that has been corroborated by archaeological evidence",
+        "they are purely fictional and have no basis in reality"
       ],
       "correctAnswer": "they contain precise historical information that has been corroborated by archaeological evidence",
       "explanation": "The passage states: 'Archaeological findings consistently corroborate details preserved in oral accounts that had been dismissed as purely mythological.'",
@@ -496,10 +496,10 @@
       "topic": "Inference",
       "prompt": "Based on the passage, what can be inferred about Indigenous knowledge systems?",
       "options": [
-        "they contain valuable practical knowledge relevant to contemporary environmental and health challenges",
         "they are outdated and irrelevant to modern problems",
         "they should be preserved only as cultural artifacts",
-        "they are less reliable than Western scientific knowledge"
+        "they are less reliable than Western scientific knowledge",
+        "they contain valuable practical knowledge relevant to contemporary environmental and health challenges"
       ],
       "correctAnswer": "they contain valuable practical knowledge relevant to contemporary environmental and health challenges",
       "explanation": "The passage states that Indigenous knowledge 'have proven invaluable for environmental management, medicinal practices, and agricultural techniques,' indicating contemporary practical value.",
@@ -564,10 +564,10 @@
       "topic": "Detail",
       "prompt": "According to the passage, what is the frequency range within which humans have maximum hearing sensitivity?",
       "options": [
+        "15,000 to 20,000 hertz",
         "20 to 100 hertz",
         "100 to 500 hertz",
-        "2,000 to 4,000 hertz",
-        "15,000 to 20,000 hertz"
+        "2,000 to 4,000 hertz"
       ],
       "correctAnswer": "2,000 to 4,000 hertz",
       "explanation": "The passage explicitly states: 'with maximum sensitivity in the range of 2,000 to 4,000 hertz where human speech and music typically occur.'",
@@ -581,10 +581,10 @@
       "topic": "Vocabulary in Context",
       "prompt": "In the passage, the word 'amplify' most nearly means:",
       "options": [
-        "increase in volume through speakers",
-        "make louder through electronic means",
         "increase in strength or intensity",
-        "reduce in size"
+        "reduce in size",
+        "increase in volume through speakers",
+        "make louder through electronic means"
       ],
       "correctAnswer": "increase in strength or intensity",
       "explanation": "In context, the ossicles 'mechanically amplify vibrations about thirty times,' meaning they increase the strength of the vibrations being transmitted, not through electronics but mechanically.",
@@ -598,10 +598,10 @@
       "topic": "Inference",
       "prompt": "Based on the passage, why might the human ear be particularly sensitive to frequencies in the 2,000 to 4,000 hertz range?",
       "options": [
-        "these frequencies are the loudest in nature",
         "higher frequencies are harmful to humans",
         "this range corresponds to human speech and music, sounds important for survival and communication",
-        "this is the only range humans can hear"
+        "this is the only range humans can hear",
+        "these frequencies are the loudest in nature"
       ],
       "correctAnswer": "this range corresponds to human speech and music, sounds important for survival and communication",
       "explanation": "The passage explains this sensitivity reflects 'evolutionary adaptation to the vocal range and environmental sounds significant to human survival and communication,' showing the evolutionary basis for this sensitivity.",
@@ -632,10 +632,10 @@
       "topic": "Author's Purpose",
       "prompt": "The passage's explanation of the 'cocktail party effect' serves primarily to:",
       "options": [
+        "prove that background noise is harmful",
         "show that human hearing is imperfect",
         "explain why people should avoid parties with loud music",
-        "illustrate the brain's remarkable ability to process complex auditory information and selectively focus attention",
-        "prove that background noise is harmful"
+        "illustrate the brain's remarkable ability to process complex auditory information and selectively focus attention"
       ],
       "correctAnswer": "illustrate the brain's remarkable ability to process complex auditory information and selectively focus attention",
       "explanation": "By explaining how the brain can isolate a single conversation in a noisy environment, the author demonstrates the sophisticated processing capabilities of the auditory system.",

@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "Why does the member want to cancel?",
       "options": [
-        "The facility is too crowded",
         "They're relocating to British Columbia for work",
         "They want to join a different gym",
-        "They're not satisfied with the equipment"
+        "They're not satisfied with the equipment",
+        "The facility is too crowded"
       ],
       "correctAnswer": "They're relocating to British Columbia for work",
       "explanation": "Member states 'I'm relocating to British Columbia for work.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the monthly membership fee?",
       "options": [
+        "$99",
         "$69",
         "$79",
-        "$89",
-        "$99"
+        "$89"
       ],
       "correctAnswer": "$89",
       "explanation": "Rep states 'you're on our premium monthly plan at $89 per month.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When will the membership end?",
       "options": [
-        "June 17th",
         "June 24th",
         "July 1st",
-        "July 3rd"
+        "July 3rd",
+        "June 17th"
       ],
       "correctAnswer": "June 24th",
       "explanation": "Rep confirms 'That would be June 24th' for three weeks from the conversation date.",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What is the original early termination fee?",
       "options": [
-        "$100",
         "$125",
         "$150",
-        "$200"
+        "$200",
+        "$100"
       ],
       "correctAnswer": "$150",
       "explanation": "Rep states 'There is a $150 early termination fee.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What is the reduced early termination fee offered?",
       "options": [
-        "$50",
-        "$75",
         "$100",
-        "$125"
+        "$125",
+        "$50",
+        "$75"
       ],
       "correctAnswer": "$75",
       "explanation": "Rep offers to reduce the fee 'to $75' as a gesture of loyalty.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the first restaurant Marcus suggests?",
       "options": [
-        "Thai food",
-        "Italian food",
         "Sushi",
-        "Indian food"
+        "Indian food",
+        "Thai food",
+        "Italian food"
       ],
       "correctAnswer": "Sushi",
       "explanation": "Marcus suggests 'that new sushi place across the street.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "When does the Thai restaurant get busy?",
       "options": [
+        "2 PM",
         "11 AM",
         "Noon",
-        "1 PM",
-        "2 PM"
+        "1 PM"
       ],
       "correctAnswer": "Noon",
       "explanation": "Jessica warns 'it gets busy after noon.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "What dish does Jessica mention?",
       "options": [
-        "Tom yum soup",
-        "Pad thai",
         "Spring rolls",
-        "Green curry"
+        "Green curry",
+        "Tom yum soup",
+        "Pad thai"
       ],
       "correctAnswer": "Pad thai",
       "explanation": "Jessica states 'They have great pad thai.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How soon do they plan to meet?",
       "options": [
-        "Immediately",
         "In five minutes downstairs",
         "In ten minutes",
-        "In fifteen minutes"
+        "In fifteen minutes",
+        "Immediately"
       ],
       "correctAnswer": "In five minutes downstairs",
       "explanation": "Jessica says 'See you in five minutes downstairs.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What are the visiting hours?",
       "options": [
-        "8 AM to 6 PM",
         "9 AM to 7 PM",
         "10 AM to 8 PM",
-        "11 AM to 9 PM"
+        "11 AM to 9 PM",
+        "8 AM to 6 PM"
       ],
       "correctAnswer": "10 AM to 8 PM",
       "explanation": "The guide states 'Visiting hours are 10 AM to 8 PM daily.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "How many visitors can be in a patient's room at one time?",
       "options": [
+        "Four",
         "One",
         "Two",
-        "Three",
-        "Four"
+        "Three"
       ],
       "correctAnswer": "Two",
       "explanation": "The guide specifies 'Each patient can have a maximum of two visitors at a time in their room.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the minimum age for unaccompanied visits?",
       "options": [
+        "Fourteen years old",
         "Eight years old",
         "Ten years old",
-        "Twelve years old",
-        "Fourteen years old"
+        "Twelve years old"
       ],
       "correctAnswer": "Twelve years old",
       "explanation": "The guide states 'Children under twelve must be accompanied by an adult.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the parking fee per visit?",
       "options": [
+        "$5",
         "$2",
         "$3",
-        "$4",
-        "$5"
+        "$4"
       ],
       "correctAnswer": "$5",
       "explanation": "The guide mentions 'Parking is available in the north lot at five dollars per visit.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "Who must approve outside food before it's given to a patient?",
       "options": [
-        "The visitor",
         "The patient",
         "The nursing staff",
-        "The hospital administrator"
+        "The hospital administrator",
+        "The visitor"
       ],
       "correctAnswer": "The nursing staff",
       "explanation": "The guide states 'Food brought from outside is permitted only if approved by nursing staff.'",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "Why is the fire season starting early this year?",
       "options": [
-        "Increased lightning activity",
-        "Unusually warm and dry spring",
         "Poor fire prevention policies",
-        "Higher temperatures in August"
+        "Higher temperatures in August",
+        "Increased lightning activity",
+        "Unusually warm and dry spring"
       ],
       "correctAnswer": "Unusually warm and dry spring",
       "explanation": "The unusually warm and dry spring is blamed for the early start.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many hectares were burned during last summer's fire season?",
       "options": [
-        "1.8 million hectares",
-        "2.0 million hectares",
         "2.4 million hectares",
-        "2.8 million hectares"
+        "2.8 million hectares",
+        "1.8 million hectares",
+        "2.0 million hectares"
       ],
       "correctAnswer": "2.4 million hectares",
       "explanation": "Over 2.4 million hectares were burned during last summer's worst fire season on record.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "What is the firefighting budget for this year?",
       "options": [
-        "400 million dollars",
         "480 million dollars",
         "560 million dollars",
-        "600 million dollars"
+        "600 million dollars",
+        "400 million dollars"
       ],
       "correctAnswer": "560 million dollars",
       "explanation": "This year's budget for firefighting has been increased to 560 million dollars.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What components are included in the local food initiative?",
       "options": [
-        "Grocery stores and restaurants",
         "Farmers market and delivery programs",
         "Government subsidies",
-        "Large distribution centers"
+        "Large distribution centers",
+        "Grocery stores and restaurants"
       ],
       "correctAnswer": "Farmers market and delivery programs",
       "explanation": "The initiative proposes farmers market expansion and direct-to-consumer delivery programs.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What advantage of local food does Dr. Sarah emphasize?",
       "options": [
-        "Lower cost",
-        "Improved freshness and food safety",
         "More variety",
-        "Better storage"
+        "Better storage",
+        "Lower cost",
+        "Improved freshness and food safety"
       ],
       "correctAnswer": "Improved freshness and food safety",
       "explanation": "Reducing transportation improves food safety and nutrition through fresher products.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "How much of his production does James currently sell to farmers market?",
       "options": [
-        "25 percent",
-        "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent",
+        "35 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James currently sells about 40 percent of production to the farmers market.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What infrastructure limitation does James identify?",
       "options": [
-        "Limited land",
         "Transportation issues",
         "Packaging and distribution",
-        "Workforce availability"
+        "Workforce availability",
+        "Limited land"
       ],
       "correctAnswer": "Packaging and distribution",
       "explanation": "James lacks infrastructure for packaging and distribution to expand sales.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What causes is the speaker attributing to forced migration?",
       "options": [
-        "Economic opportunity",
-        "Rising sea levels, extreme weather, and changing precipitation",
         "Political conflicts",
-        "Educational opportunities"
+        "Educational opportunities",
+        "Economic opportunity",
+        "Rising sea levels, extreme weather, and changing precipitation"
       ],
       "correctAnswer": "Rising sea levels, extreme weather, and changing precipitation",
       "explanation": "The speaker identifies these climate factors as forcing migration.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "What examples does the speaker provide of current migration impacts?",
       "options": [
-        "Agricultural improvements",
-        "Reduced urbanization",
         "Small island nations disappearing and coastal flooding",
-        "Increased employment"
+        "Increased employment",
+        "Agricultural improvements",
+        "Reduced urbanization"
       ],
       "correctAnswer": "Small island nations disappearing and coastal flooding",
       "explanation": "The speaker cites disappearing island nations and increased coastal flooding as current impacts.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate for regarding climate-safe regions?",
       "options": [
-        "Restricting population growth",
-        "Expanding housing, infrastructure, and economic capacity",
         "Limiting migration",
-        "Maintaining current conditions"
+        "Maintaining current conditions",
+        "Restricting population growth",
+        "Expanding housing, infrastructure, and economic capacity"
       ],
       "correctAnswer": "Expanding housing, infrastructure, and economic capacity",
       "explanation": "The speaker advocates proactively expanding housing, infrastructure, and economic capacity.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What is the speaker's main position on climate migration?",
       "options": [
-        "It won't happen",
-        "It should be stopped",
         "It's inevitable and should be managed responsibly",
-        "It's not a real problem"
+        "It's not a real problem",
+        "It won't happen",
+        "It should be stopped"
       ],
       "correctAnswer": "It's inevitable and should be managed responsibly",
       "explanation": "The speaker argues migration is inevitable and emphasizes the need for responsible planning.",

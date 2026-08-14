@@ -15,11 +15,11 @@
       "prompt": "A jacket priced at $210 is discounted by 30% and then taxed at 8%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$158.76",
         "$147",
         "$168.76",
         "$226.80",
-        "$210",
-        "$158.76"
+        "$210"
       ],
       "correctAnswer": "$158.76",
       "explanation": "After 30% off: $147. After 8% tax: $147 × 1.08 = $158.76.",
@@ -32,11 +32,11 @@
       "prompt": "If 12 painters can paint 12 walls in 12 days, how many days would it take 12 painters to paint 12 walls?",
       "difficulty": "medium",
       "options": [
+        "13",
+        "12",
         "11",
         "24",
-        "1",
-        "13",
-        "12"
+        "1"
       ],
       "correctAnswer": "12",
       "explanation": "Each painter paints 1 wall in 12 days. 12 painters painting 12 walls (one each) still take 12 days.",
@@ -49,11 +49,11 @@
       "prompt": "If 1/6 of a number is 16, what is 3/4 of that number?",
       "difficulty": "medium",
       "options": [
-        "24",
-        "16",
         "96",
         "88",
-        "72"
+        "72",
+        "24",
+        "16"
       ],
       "correctAnswer": "72",
       "explanation": "The number is 16 ÷ 1/6 = 96. Then 3/4 × 96 = 72.",
@@ -66,11 +66,11 @@
       "prompt": "The perimeter of a rectangle is 82 and its area is 348. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
+        "14",
+        "17",
         "41",
         "12",
-        "29",
-        "14",
-        "17"
+        "29"
       ],
       "correctAnswer": "12",
       "explanation": "Sides sum to 41 and multiply to 348. They are 12 and 29; the shorter side is 12.",
@@ -83,11 +83,11 @@
       "prompt": "The average of a and b is 60, and the average of b and c is 38. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "44",
         "46",
         "-44",
         "22",
-        "98"
+        "98",
+        "44"
       ],
       "correctAnswer": "44",
       "explanation": "a+b = 120 and b+c = 76. Subtracting: a − c = 120 − 76 = 44.",
@@ -100,11 +100,11 @@
       "prompt": "A survey of 340 workers found 110 commute by car, 70 by public transit, and 20 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "41.2%",
+        "20.6%",
         "36.2%",
         "32.4%",
-        "46.2%",
-        "41.2%",
-        "20.6%"
+        "46.2%"
       ],
       "correctAnswer": "41.2%",
       "explanation": "Work from home = 340 − 110 − 70 − 20 = 140. As a percentage: 140/340 = 41.2%.",
@@ -134,11 +134,11 @@
       "prompt": "Sofia can assemble a bookcase twice as fast as Marcus. Working together they finish one in 18 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
+        "18",
+        "12",
         "27",
         "36",
-        "54",
-        "18",
-        "12"
+        "54"
       ],
       "correctAnswer": "27",
       "explanation": "Let Marcus's rate be r. Sofia's is 2r, so together (3)r = 1/18, giving r = 1/54. Sofia's rate 2r = 2/54 = 1/27, so Sofia alone takes 27 hours.",
@@ -151,11 +151,11 @@
       "prompt": "The ratio of blue to red marbles is 3 to 5. If 21 blue marbles are added, the ratio becomes 54 to 55. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
+        "34",
+        "76",
         "54",
         "55",
-        "33",
-        "34",
-        "76"
+        "33"
       ],
       "correctAnswer": "55",
       "explanation": "Let blue = 3k and red = 5k. After adding 21: (3k+21)/(5k) = 54/55, which gives k = 11. Red = 5×11 = 55.",
@@ -185,11 +185,11 @@
       "prompt": "What is 15% of 90?",
       "difficulty": "medium",
       "options": [
+        "13.5",
+        "75",
         "105",
         "135",
-        "27",
-        "13.5",
-        "75"
+        "27"
       ],
       "correctAnswer": "13.5",
       "explanation": "15% of 90 = 15/100 × 90 = 13.5.",
@@ -219,11 +219,11 @@
       "prompt": "What is the sum of all integers x such that -32 < x ≤ 29?",
       "difficulty": "medium",
       "options": [
+        "-90",
         "-93",
         "-61",
         "-32",
-        "61",
-        "-90"
+        "61"
       ],
       "correctAnswer": "-61",
       "explanation": "The integers run from -31 to 29. Pairing/series sum = -61.",
@@ -236,11 +236,11 @@
       "prompt": "A jacket priced at $200 is discounted by 10% and then taxed at 5%. What is the final price?",
       "difficulty": "medium",
       "options": [
-        "$210",
         "$199",
         "$200",
         "$180",
-        "$189"
+        "$189",
+        "$210"
       ],
       "correctAnswer": "$189",
       "explanation": "After 10% off: $180. After 5% tax: $180 × 1.05 = $189.",
@@ -253,11 +253,11 @@
       "prompt": "If 9 painters can paint 9 walls in 9 days, how many days would it take 9 painters to paint 9 walls?",
       "difficulty": "medium",
       "options": [
+        "10",
         "8",
         "1",
         "18",
-        "9",
-        "10"
+        "9"
       ],
       "correctAnswer": "9",
       "explanation": "Each painter paints 1 wall in 9 days. 9 painters painting 9 walls (one each) still take 9 days.",
@@ -270,11 +270,11 @@
       "prompt": "If 3/6 of a number is 24, what is 5/8 of that number?",
       "difficulty": "medium",
       "options": [
+        "30",
         "24",
         "48",
         "54",
-        "18",
-        "30"
+        "18"
       ],
       "correctAnswer": "30",
       "explanation": "The number is 24 ÷ 3/6 = 48. Then 5/8 × 48 = 30.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "If 4x + 5 = 3x + 11, what is the value of x²?",
       "difficulty": "medium",
       "options": [
-        "42",
-        "36",
         "12",
         "35",
-        "6"
+        "6",
+        "42",
+        "36"
       ],
       "correctAnswer": "36",
       "explanation": "4x − 3x = 11 − 5 → 1x = 6 → x = 6. So x² = 36.",
@@ -352,11 +352,11 @@
       "prompt": "A right triangle has legs of length 6 and 8. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "10",
+        "12",
         "11",
         "14",
-        "9",
-        "10",
-        "12"
+        "9"
       ],
       "correctAnswer": "10",
       "explanation": "Hypotenuse = √(6² + 8²) = √100 = 10.",
@@ -369,11 +369,11 @@
       "prompt": "In a class of 35 students, the ratio of those who passed to those who failed is 3:4. How many students passed?",
       "difficulty": "medium",
       "options": [
+        "20",
+        "15",
         "10",
         "35",
-        "17",
-        "20",
-        "15"
+        "17"
       ],
       "correctAnswer": "15",
       "explanation": "Total parts = 7, each part = 35/7 = 5. Passed = 3 × 5 = 15.",
@@ -386,11 +386,11 @@
       "prompt": "If 3x + 8 = 1x + 20, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "6",
+        "35",
         "36",
         "42",
-        "12",
-        "6",
-        "35"
+        "12"
       ],
       "correctAnswer": "36",
       "explanation": "3x − 1x = 20 − 8 → 2x = 12 → x = 6. So x² = 36.",
@@ -403,11 +403,11 @@
       "prompt": "A right triangle has legs of length 7 and 24. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "27",
         "26",
         "24",
         "25",
-        "31",
-        "27"
+        "31"
       ],
       "correctAnswer": "25",
       "explanation": "Hypotenuse = √(7² + 24²) = √625 = 25.",
@@ -420,11 +420,11 @@
       "prompt": "What is the total revenue across all channels for Week 3?",
       "difficulty": "medium",
       "options": [
+        "380 thousand",
+        "420 thousand",
         "300 thousand",
         "320 thousand",
-        "350 thousand",
-        "380 thousand",
-        "420 thousand"
+        "350 thousand"
       ],
       "correctAnswer": "350 thousand",
       "explanation": "Week 3 total: 170 + 110 + 70 = 350 thousand dollars",
@@ -472,11 +472,11 @@
       "prompt": "Mobile App sales grew by what percentage from Week 1 to Week 4?",
       "difficulty": "medium",
       "options": [
+        "125%",
+        "150%",
         "100%",
         "110%",
-        "120%",
-        "125%",
-        "150%"
+        "120%"
       ],
       "correctAnswer": "125%",
       "explanation": "(90-40)/40 = 50/40 = 1.25 = 125%",

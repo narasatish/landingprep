@@ -1,1 +1,338 @@
-{"id":"pte-reading-003","exam":"pte","section":"reading","title":"PTE Academic Reading Practice Test 3","durationSeconds":1740,"questionCount":15,"questions":[{"id":"pte-reading-003-01-rwfib","questionType":"reading_writing_fill_blanks","passage":"The global transition to renewable energy sources represents one of the most __1__ industrial transformations in human history. Solar photovoltaic costs have fallen by more than 90 per cent over the past decade, making solar the cheapest __2__ of electricity ever recorded in many markets. Wind energy has experienced similarly dramatic cost __3__, with offshore wind now competing directly with fossil-fuel __4__ in northern Europe. Despite this progress, the intermittent __5__ of renewable sources remains a significant challenge for grid operators.","blanks":[1,2,3,4,5],"wordBank":["ambitious","source","reductions","plants","nature","expensive","minor","generation","stable","intermittent"],"correctAnswers":["ambitious","source","reductions","plants","nature"],"explanation":"Renewables have seen dramatic cost falls but intermittency remains a grid challenge.","prompt":"Read the passage about the development of international trade law and select the correct word from each drop-down list to complete the text. Each blank has only one correct answer."},{"id":"pte-reading-003-02","questionType":"reading_writing_fill_blanks","passage":"The global transition to renewable energy sources represents one of the most __1__ industrial transformations in human history. Solar photovoltaic costs have fallen by more than 90 per cent over the past decade, making solar the cheapest __2__ of electricity ever recorded in many markets. Wind energy has experienced similarly dramatic cost __3__, with offshore wind now competing directly with fossil-fuel __4__ in northern Europe. Despite this progress, the intermittent __5__ of renewable sources remains a significant challenge for grid operators.","blanks":[1,2,3,4,5],"wordBank":["ambitious","source","reductions","plants","nature","expensive","minor","generation","stable","intermittent"],"correctAnswers":["ambitious","source","reductions","plants","nature"],"explanation":"Renewables have seen dramatic cost falls but intermittency remains a grid challenge.","prompt":"Read the passage about carbon sequestration in tropical rainforests and select the correct word from each drop-down list to complete the text. Each blank has only one correct answer."},{"id":"pte-reading-003-03-fib","questionType":"fill_in_blanks","topic":"Renewable energy","prompt":"Read the text about renewable energy and select the correct word for each blank from the dropdown list.","passage":"Renewable sources such as wind and solar power are increasingly used to __1[generate|consume|waste]__ electricity. Unlike fossil fuels, they produce very few __2[emissions|profits|machines]__ and will not run out. Their main __3[limitation|advantage|purpose]__ is that output varies with the weather, so engineers are developing better ways to __4[store|burn|sell]__ the energy they produce.","blanks":[1,2,3,4],"correctAnswers":["generate","emissions","limitation","store"],"explanation":"The blanks are completed, in order, with: generate, emissions, limitation, store. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."},{"id":"pte-reading-003-04","questionType":"fill_in_blanks","topic":"Coral reefs","prompt":"Read the text about coral reefs and select the correct word for each blank from the dropdown list.","passage":"Coral reefs are among the most __1[diverse|barren|silent]__ ecosystems on the planet, supporting thousands of species. The corals themselves rely on tiny algae that live in their tissues and __2[provide|steal|block]__ food through photosynthesis. When ocean temperatures rise too high, the corals expel these algae and __3[bleach|grow|migrate]__, a process that can be __4[fatal|helpful|temporary]__ if it lasts too long.","blanks":[1,2,3,4],"correctAnswers":["diverse","provide","bleach","fatal"],"explanation":"The blanks are completed, in order, with: diverse, provide, bleach, fatal. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."},{"id":"pte-reading-003-05-reorder","questionType":"reorder_paragraphs","sentences":[{"id":"D","text":"Smart meters and time-of-use tariffs are practical tools for implementing demand-side management."},{"id":"C","text":"One solution is demand-side management, which incentivises consumers to shift usage to off-peak hours."},{"id":"B","text":"Renewable energy sources such as wind and solar generate power intermittently, complicating this balance."},{"id":"E","text":"Together with storage technologies, demand management can enable high penetrations of renewables."},{"id":"A","text":"Grid operators must constantly balance electricity supply with demand to prevent blackouts."}],"correctOrder":["A","B","C","D","E"],"explanation":"Arrange the sentences so that they form a coherent, logical paragraph.","prompt":"The text about cognitive theories of language acquisition has been scrambled. Arrange the text boxes below in the correct order to form a coherent passage."},{"id":"pte-reading-003-06","questionType":"reorder_paragraphs","sentences":[{"id":"A","text":"Grid operators must constantly balance electricity supply with demand to prevent blackouts."},{"id":"B","text":"Renewable energy sources such as wind and solar generate power intermittently, complicating this balance."},{"id":"C","text":"One solution is demand-side management, which incentivises consumers to shift usage to off-peak hours."},{"id":"D","text":"Smart meters and time-of-use tariffs are practical tools for implementing demand-side management."},{"id":"E","text":"Together with storage technologies, demand management can enable high penetrations of renewables."}],"correctOrder":["A","B","C","D","E"],"explanation":"Arrange the sentences so that they form a coherent, logical paragraph.","prompt":"The text about urban biodiversity and ecological corridors has been scrambled. Arrange the text boxes below in the correct order to form a coherent passage."},{"id":"pte-reading-003-07-mcqm","questionType":"multiple_choice_multiple","passage":"Hydrogen produced via electrolysis using surplus renewable electricity — often called 'green hydrogen' — is attracting significant investment as a potential solution for decarbonising sectors that cannot easily be electrified directly, such as heavy industry, shipping, and aviation. Unlike battery electric vehicles, hydrogen fuel-cell vehicles emit only water vapour. However, the current production cost of green hydrogen remains two to three times higher than fossil-fuel-derived 'grey' hydrogen, and significant infrastructure investment is required before wide deployment is feasible.","question":"Which TWO statements about green hydrogen are supported by the passage?","options":["It is currently cheaper to produce than grey hydrogen","It emits only water vapour when used in fuel cells","It requires substantial infrastructure investment","It is already widely deployed in the shipping sector","It is produced by burning natural gas"],"correctAnswers":["It emits only water vapour when used in fuel cells","It requires substantial infrastructure investment"],"requiredCount":2,"explanation":"Correct: It emits only water vapour when used in fuel cells; It requires substantial infrastructure investment","prompt":"Read the passage and answer the question. More than one response is correct. Select all that apply.","correctAnswer":"C"},{"id":"pte-reading-003-08-mcqs","questionType":"multiple_choice_single","passage":"Feed-in tariffs, which guarantee renewable energy producers a fixed price for electricity fed into the grid, were instrumental in driving the early growth of solar and wind power in Germany, Spain, and the United Kingdom. By reducing investment risk, feed-in tariffs encouraged households and businesses to install generating capacity that might otherwise have been considered uneconomic. Critics argue that poorly designed schemes imposed excessive costs on consumers; proponents contend that these costs were justified by the long-term industrial and environmental benefits.","question":"What was the primary purpose of feed-in tariffs, according to the passage?","options":["To penalise fossil fuel producers","To reduce investment risk for renewable energy producers","To fund government research into battery technology","To lower electricity prices for consumers immediately"],"correctAnswer":"To reduce investment risk for renewable energy producers","explanation":"Correct answer: To reduce investment risk for renewable energy producers","prompt":"Read the passage and select the best answer from the choices below."},{"questionType":"reading_writing_fill_blanks","correctAnswer":"A","difficulty":"medium","topic":"academic","prompt":"Read the passage about innovations in medical imaging technology and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.","options":["A. consequently","B. therefore","C. however","D. moreover"],"id":"pte-reading-003-q09","explanation":"The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."},{"questionType":"reading_writing_fill_blanks","correctAnswer":"A","difficulty":"medium","topic":"academic","prompt":"Read the passage about the science of materials under extreme conditions and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.","options":["A. consequently","B. therefore","C. however","D. moreover"],"id":"pte-reading-003-q10","explanation":"The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."},{"questionType":"reading_writing_fill_blanks","correctAnswer":"A","difficulty":"medium","topic":"academic","prompt":"Read the passage about urban biodiversity and ecological corridors and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.","options":["A. consequently","B. therefore","C. however","D. moreover"],"id":"pte-reading-003-q11","explanation":"The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."},{"id":"pte-reading-003-q12","questionType":"fill_in_blanks","topic":"The printing press","prompt":"Read the text about the printing press and select the correct word for each blank from the dropdown list.","passage":"The invention of the printing press in the fifteenth century __1[transformed|delayed|hid]__ the spread of information. Before it, books were copied by hand, making them rare and __2[expensive|colourful|short]__. Printing allowed identical copies to be produced __3[quickly|secretly|poorly]__ and cheaply, which helped ideas spread across Europe and __4[accelerated|prevented|reversed]__ the growth of literacy.","blanks":[1,2,3,4],"correctAnswers":["transformed","expensive","quickly","accelerated"],"explanation":"The blanks are completed, in order, with: transformed, expensive, quickly, accelerated. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."},{"id":"pte-reading-003-q13","questionType":"fill_in_blanks","topic":"Urban planning","prompt":"Read the text about urban planning and select the correct word for each blank from the dropdown list.","passage":"Good urban planning aims to make cities both functional and __1[livable|crowded|distant]__. Planners try to balance housing, transport and green space so that residents can move around __2[easily|rarely|blindly]__. Well-designed public spaces also __3[encourage|prevent|ignore]__ social interaction, while sensible zoning reduces pollution and helps a city grow in a __4[sustainable|sudden|hidden]__ way.","blanks":[1,2,3,4],"correctAnswers":["livable","easily","encourage","sustainable"],"explanation":"The blanks are completed, in order, with: livable, easily, encourage, sustainable. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."},{"questionType":"multiple_choice_multiple","correctAnswer":"A, E","difficulty":"medium","topic":"academic","prompt":"According to the passage, which factors contribute to income inequality? (Choose TWO answers)","options":["A. Loss of biodiversity in surrounding areas","B. Disruption of traditional livelihoods","C. Increased rainfall in the region","D. Improved water quality downstream","E. Soil erosion and land degradation"],"id":"pte-reading-003-q14","explanation":"The correct answer is “A, E” — it is the option directly supported by the passage/recording; the others are not."},{"questionType":"multiple_choice_single","correctAnswer":"B","difficulty":"medium","topic":"academic","prompt":"What is the main purpose of this passage?","options":["A. To argue that current policies are insufficient","B. To describe a problem and propose potential solutions","C. To compare two opposing scientific theories","D. To demonstrate that technological progress is inevitable"],"id":"pte-reading-003-q15","explanation":"The correct answer is “B” — it is the option directly supported by the passage."}]}
+{
+  "id": "pte-reading-003",
+  "exam": "pte",
+  "section": "reading",
+  "title": "PTE Academic Reading Practice Test 3",
+  "durationSeconds": 1740,
+  "questionCount": 15,
+  "questions": [
+    {
+      "id": "pte-reading-003-01-rwfib",
+      "questionType": "reading_writing_fill_blanks",
+      "passage": "The global transition to renewable energy sources represents one of the most __1__ industrial transformations in human history. Solar photovoltaic costs have fallen by more than 90 per cent over the past decade, making solar the cheapest __2__ of electricity ever recorded in many markets. Wind energy has experienced similarly dramatic cost __3__, with offshore wind now competing directly with fossil-fuel __4__ in northern Europe. Despite this progress, the intermittent __5__ of renewable sources remains a significant challenge for grid operators.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "wordBank": [
+        "ambitious",
+        "source",
+        "reductions",
+        "plants",
+        "nature",
+        "expensive",
+        "minor",
+        "generation",
+        "stable",
+        "intermittent"
+      ],
+      "correctAnswers": [
+        "ambitious",
+        "source",
+        "reductions",
+        "plants",
+        "nature"
+      ],
+      "explanation": "Renewables have seen dramatic cost falls but intermittency remains a grid challenge.",
+      "prompt": "Read the passage about the development of international trade law and select the correct word from each drop-down list to complete the text. Each blank has only one correct answer."
+    },
+    {
+      "id": "pte-reading-003-02",
+      "questionType": "reading_writing_fill_blanks",
+      "passage": "The global transition to renewable energy sources represents one of the most __1__ industrial transformations in human history. Solar photovoltaic costs have fallen by more than 90 per cent over the past decade, making solar the cheapest __2__ of electricity ever recorded in many markets. Wind energy has experienced similarly dramatic cost __3__, with offshore wind now competing directly with fossil-fuel __4__ in northern Europe. Despite this progress, the intermittent __5__ of renewable sources remains a significant challenge for grid operators.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "wordBank": [
+        "ambitious",
+        "source",
+        "reductions",
+        "plants",
+        "nature",
+        "expensive",
+        "minor",
+        "generation",
+        "stable",
+        "intermittent"
+      ],
+      "correctAnswers": [
+        "ambitious",
+        "source",
+        "reductions",
+        "plants",
+        "nature"
+      ],
+      "explanation": "Renewables have seen dramatic cost falls but intermittency remains a grid challenge.",
+      "prompt": "Read the passage about carbon sequestration in tropical rainforests and select the correct word from each drop-down list to complete the text. Each blank has only one correct answer."
+    },
+    {
+      "id": "pte-reading-003-03-fib",
+      "questionType": "fill_in_blanks",
+      "topic": "Renewable energy",
+      "prompt": "Read the text about renewable energy and select the correct word for each blank from the dropdown list.",
+      "passage": "Renewable sources such as wind and solar power are increasingly used to __1[generate|consume|waste]__ electricity. Unlike fossil fuels, they produce very few __2[emissions|profits|machines]__ and will not run out. Their main __3[limitation|advantage|purpose]__ is that output varies with the weather, so engineers are developing better ways to __4[store|burn|sell]__ the energy they produce.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "correctAnswers": [
+        "generate",
+        "emissions",
+        "limitation",
+        "store"
+      ],
+      "explanation": "The blanks are completed, in order, with: generate, emissions, limitation, store. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
+    },
+    {
+      "id": "pte-reading-003-04",
+      "questionType": "fill_in_blanks",
+      "topic": "Coral reefs",
+      "prompt": "Read the text about coral reefs and select the correct word for each blank from the dropdown list.",
+      "passage": "Coral reefs are among the most __1[diverse|barren|silent]__ ecosystems on the planet, supporting thousands of species. The corals themselves rely on tiny algae that live in their tissues and __2[provide|steal|block]__ food through photosynthesis. When ocean temperatures rise too high, the corals expel these algae and __3[bleach|grow|migrate]__, a process that can be __4[fatal|helpful|temporary]__ if it lasts too long.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "correctAnswers": [
+        "diverse",
+        "provide",
+        "bleach",
+        "fatal"
+      ],
+      "explanation": "The blanks are completed, in order, with: diverse, provide, bleach, fatal. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
+    },
+    {
+      "id": "pte-reading-003-05-reorder",
+      "questionType": "reorder_paragraphs",
+      "sentences": [
+        {
+          "id": "D",
+          "text": "Smart meters and time-of-use tariffs are practical tools for implementing demand-side management."
+        },
+        {
+          "id": "C",
+          "text": "One solution is demand-side management, which incentivises consumers to shift usage to off-peak hours."
+        },
+        {
+          "id": "B",
+          "text": "Renewable energy sources such as wind and solar generate power intermittently, complicating this balance."
+        },
+        {
+          "id": "E",
+          "text": "Together with storage technologies, demand management can enable high penetrations of renewables."
+        },
+        {
+          "id": "A",
+          "text": "Grid operators must constantly balance electricity supply with demand to prevent blackouts."
+        }
+      ],
+      "correctOrder": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "explanation": "Arrange the sentences so that they form a coherent, logical paragraph.",
+      "prompt": "The text about cognitive theories of language acquisition has been scrambled. Arrange the text boxes below in the correct order to form a coherent passage."
+    },
+    {
+      "id": "pte-reading-003-06",
+      "questionType": "reorder_paragraphs",
+      "sentences": [
+        {
+          "id": "A",
+          "text": "Grid operators must constantly balance electricity supply with demand to prevent blackouts."
+        },
+        {
+          "id": "B",
+          "text": "Renewable energy sources such as wind and solar generate power intermittently, complicating this balance."
+        },
+        {
+          "id": "C",
+          "text": "One solution is demand-side management, which incentivises consumers to shift usage to off-peak hours."
+        },
+        {
+          "id": "D",
+          "text": "Smart meters and time-of-use tariffs are practical tools for implementing demand-side management."
+        },
+        {
+          "id": "E",
+          "text": "Together with storage technologies, demand management can enable high penetrations of renewables."
+        }
+      ],
+      "correctOrder": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "explanation": "Arrange the sentences so that they form a coherent, logical paragraph.",
+      "prompt": "The text about urban biodiversity and ecological corridors has been scrambled. Arrange the text boxes below in the correct order to form a coherent passage."
+    },
+    {
+      "id": "pte-reading-003-07-mcqm",
+      "questionType": "multiple_choice_multiple",
+      "passage": "Hydrogen produced via electrolysis using surplus renewable electricity — often called 'green hydrogen' — is attracting significant investment as a potential solution for decarbonising sectors that cannot easily be electrified directly, such as heavy industry, shipping, and aviation. Unlike battery electric vehicles, hydrogen fuel-cell vehicles emit only water vapour. However, the current production cost of green hydrogen remains two to three times higher than fossil-fuel-derived 'grey' hydrogen, and significant infrastructure investment is required before wide deployment is feasible.",
+      "question": "Which TWO statements about green hydrogen are supported by the passage?",
+      "options": [
+        "It is currently cheaper to produce than grey hydrogen",
+        "It emits only water vapour when used in fuel cells",
+        "It requires substantial infrastructure investment",
+        "It is already widely deployed in the shipping sector",
+        "It is produced by burning natural gas"
+      ],
+      "correctAnswers": [
+        "It emits only water vapour when used in fuel cells",
+        "It requires substantial infrastructure investment"
+      ],
+      "requiredCount": 2,
+      "explanation": "Correct: It emits only water vapour when used in fuel cells; It requires substantial infrastructure investment",
+      "prompt": "Read the passage and answer the question. More than one response is correct. Select all that apply.",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "pte-reading-003-08-mcqs",
+      "questionType": "multiple_choice_single",
+      "passage": "Feed-in tariffs, which guarantee renewable energy producers a fixed price for electricity fed into the grid, were instrumental in driving the early growth of solar and wind power in Germany, Spain, and the United Kingdom. By reducing investment risk, feed-in tariffs encouraged households and businesses to install generating capacity that might otherwise have been considered uneconomic. Critics argue that poorly designed schemes imposed excessive costs on consumers; proponents contend that these costs were justified by the long-term industrial and environmental benefits.",
+      "question": "What was the primary purpose of feed-in tariffs, according to the passage?",
+      "options": [
+        "To reduce investment risk for renewable energy producers",
+        "To fund government research into battery technology",
+        "To lower electricity prices for consumers immediately",
+        "To penalise fossil fuel producers"
+      ],
+      "correctAnswer": "To reduce investment risk for renewable energy producers",
+      "explanation": "Correct answer: To reduce investment risk for renewable energy producers",
+      "prompt": "Read the passage and select the best answer from the choices below."
+    },
+    {
+      "questionType": "reading_writing_fill_blanks",
+      "correctAnswer": "A",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about innovations in medical imaging technology and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.",
+      "options": [
+        "A. consequently",
+        "B. therefore",
+        "C. however",
+        "D. moreover"
+      ],
+      "id": "pte-reading-003-q09",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
+    },
+    {
+      "questionType": "reading_writing_fill_blanks",
+      "correctAnswer": "A",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about the science of materials under extreme conditions and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.",
+      "options": [
+        "A. consequently",
+        "B. therefore",
+        "C. however",
+        "D. moreover"
+      ],
+      "id": "pte-reading-003-q10",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
+    },
+    {
+      "questionType": "reading_writing_fill_blanks",
+      "correctAnswer": "A",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "Read the passage about urban biodiversity and ecological corridors and select the correct word from the drop-down list to fill each gap. Each blank accepts only one answer.",
+      "options": [
+        "A. consequently",
+        "B. therefore",
+        "C. however",
+        "D. moreover"
+      ],
+      "id": "pte-reading-003-q11",
+      "explanation": "The correct answer is “A” — it is the option directly supported by the passage/recording; the others are not."
+    },
+    {
+      "id": "pte-reading-003-q12",
+      "questionType": "fill_in_blanks",
+      "topic": "The printing press",
+      "prompt": "Read the text about the printing press and select the correct word for each blank from the dropdown list.",
+      "passage": "The invention of the printing press in the fifteenth century __1[transformed|delayed|hid]__ the spread of information. Before it, books were copied by hand, making them rare and __2[expensive|colourful|short]__. Printing allowed identical copies to be produced __3[quickly|secretly|poorly]__ and cheaply, which helped ideas spread across Europe and __4[accelerated|prevented|reversed]__ the growth of literacy.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "correctAnswers": [
+        "transformed",
+        "expensive",
+        "quickly",
+        "accelerated"
+      ],
+      "explanation": "The blanks are completed, in order, with: transformed, expensive, quickly, accelerated. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
+    },
+    {
+      "id": "pte-reading-003-q13",
+      "questionType": "fill_in_blanks",
+      "topic": "Urban planning",
+      "prompt": "Read the text about urban planning and select the correct word for each blank from the dropdown list.",
+      "passage": "Good urban planning aims to make cities both functional and __1[livable|crowded|distant]__. Planners try to balance housing, transport and green space so that residents can move around __2[easily|rarely|blindly]__. Well-designed public spaces also __3[encourage|prevent|ignore]__ social interaction, while sensible zoning reduces pollution and helps a city grow in a __4[sustainable|sudden|hidden]__ way.",
+      "blanks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "correctAnswers": [
+        "livable",
+        "easily",
+        "encourage",
+        "sustainable"
+      ],
+      "explanation": "The blanks are completed, in order, with: livable, easily, encourage, sustainable. Each is the word that best fits the meaning and grammar of its sentence; the other dropdown options do not fit the context."
+    },
+    {
+      "questionType": "multiple_choice_multiple",
+      "correctAnswer": "A, E",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "According to the passage, which factors contribute to income inequality? (Choose TWO answers)",
+      "options": [
+        "A. Loss of biodiversity in surrounding areas",
+        "B. Disruption of traditional livelihoods",
+        "C. Increased rainfall in the region",
+        "D. Improved water quality downstream",
+        "E. Soil erosion and land degradation"
+      ],
+      "id": "pte-reading-003-q14",
+      "explanation": "The correct answer is “A, E” — it is the option directly supported by the passage/recording; the others are not."
+    },
+    {
+      "questionType": "multiple_choice_single",
+      "correctAnswer": "B",
+      "difficulty": "medium",
+      "topic": "academic",
+      "prompt": "What is the main purpose of this passage?",
+      "options": [
+        "A. To argue that current policies are insufficient",
+        "B. To describe a problem and propose potential solutions",
+        "C. To compare two opposing scientific theories",
+        "D. To demonstrate that technological progress is inevitable"
+      ],
+      "id": "pte-reading-003-q15",
+      "explanation": "The correct answer is “B” — it is the option directly supported by the passage."
+    }
+  ]
+}

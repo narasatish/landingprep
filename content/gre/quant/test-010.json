@@ -15,11 +15,11 @@
       "prompt": "The perimeter of a rectangle is 72 and its area is 299. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
-        "23",
         "13",
         "10",
         "15",
-        "36"
+        "36",
+        "23"
       ],
       "correctAnswer": "13",
       "explanation": "Sides sum to 36 and multiply to 299. They are 13 and 23; the shorter side is 13.",
@@ -32,11 +32,11 @@
       "prompt": "The average of a and b is 45, and the average of b and c is 29. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "74",
-        "34",
         "16",
         "32",
-        "-32"
+        "-32",
+        "74",
+        "34"
       ],
       "correctAnswer": "32",
       "explanation": "a+b = 90 and b+c = 58. Subtracting: a − c = 90 − 58 = 32.",
@@ -49,11 +49,11 @@
       "prompt": "A survey of 410 workers found 120 commute by car, 70 by public transit, and 50 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "36.5%",
         "29.3%",
         "41.5%",
         "46.5%",
-        "17.1%",
-        "36.5%"
+        "17.1%"
       ],
       "correctAnswer": "41.5%",
       "explanation": "Work from home = 410 − 120 − 70 − 50 = 170. As a percentage: 170/410 = 41.5%.",
@@ -66,11 +66,11 @@
       "prompt": "4^x + 4^x + 4^x + 4^x = ?",
       "difficulty": "medium",
       "options": [
-        "16^x",
         "4^(2x)",
         "4^x",
         "4^(4x)",
-        "4^(x+1)"
+        "4^(x+1)",
+        "16^x"
       ],
       "correctAnswer": "4^(x+1)",
       "explanation": "Adding 4 copies of 4^x gives 4 × 4^x = 4^1 × 4^x = 4^(x+1).",
@@ -83,11 +83,11 @@
       "prompt": "Sofia can assemble a bookcase 3 times as fast as Marcus. Working together they finish one in 12 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
-        "48",
-        "16",
         "12",
         "9",
-        "24"
+        "24",
+        "48",
+        "16"
       ],
       "correctAnswer": "16",
       "explanation": "Let Marcus's rate be r. Sofia's is 3r, so together (4)r = 1/12, giving r = 1/48. Sofia's rate 3r = 3/48 = 1/16, so Sofia alone takes 16 hours.",
@@ -100,11 +100,11 @@
       "prompt": "The ratio of blue to red marbles is 5 to 8. If 16 blue marbles are added, the ratio becomes 41 to 40. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
-        "56",
         "40",
         "41",
         "24",
-        "25"
+        "25",
+        "56"
       ],
       "correctAnswer": "40",
       "explanation": "Let blue = 5k and red = 8k. After adding 16: (5k+16)/(8k) = 41/40, which gives k = 5. Red = 8×5 = 40.",
@@ -117,11 +117,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 2 remain; divided among 8 children, 1 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
+        "1",
         "2",
         "0",
         "3",
-        "4",
-        "1"
+        "4"
       ],
       "correctAnswer": "2",
       "explanation": "The only n in range with n≡2 (mod 7) and n≡1 (mod 8) is 65. Then 65 ÷ 9 leaves remainder 2.",
@@ -134,11 +134,11 @@
       "prompt": "What is 20% of 170?",
       "difficulty": "medium",
       "options": [
+        "340",
+        "68",
         "34",
         "190",
-        "150",
-        "340",
-        "68"
+        "150"
       ],
       "correctAnswer": "34",
       "explanation": "20% of 170 = 20/100 × 170 = 34.",
@@ -151,11 +151,11 @@
       "prompt": "The average of 6 numbers is 10. If one number equal to 20 is removed, what is the average of the remaining 5 numbers?",
       "difficulty": "medium",
       "options": [
+        "10",
         "9",
         "20",
         "8",
-        "7",
-        "10"
+        "7"
       ],
       "correctAnswer": "8",
       "explanation": "Total = 6×10 = 60. Remove 20: remaining total 40 over 5 numbers = 8.",
@@ -185,11 +185,11 @@
       "prompt": "A jacket priced at $290 is discounted by 25% and then taxed at 8%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$234.90",
+        "$290",
         "$217.50",
         "$313.20",
-        "$244.90",
-        "$234.90",
-        "$290"
+        "$244.90"
       ],
       "correctAnswer": "$234.90",
       "explanation": "After 25% off: $217.50. After 8% tax: $217.50 × 1.08 = $234.90.",
@@ -202,11 +202,11 @@
       "prompt": "If 10 painters can paint 10 walls in 10 days, how many days would it take 10 painters to paint 10 walls?",
       "difficulty": "medium",
       "options": [
-        "9",
-        "11",
         "1",
         "10",
-        "20"
+        "20",
+        "9",
+        "11"
       ],
       "correctAnswer": "10",
       "explanation": "Each painter paints 1 wall in 10 days. 10 painters painting 10 walls (one each) still take 10 days.",
@@ -219,11 +219,11 @@
       "prompt": "If 3/6 of a number is 12, what is 3/4 of that number?",
       "difficulty": "medium",
       "options": [
-        "24",
         "30",
         "12",
         "18",
-        "6"
+        "6",
+        "24"
       ],
       "correctAnswer": "18",
       "explanation": "The number is 12 ÷ 3/6 = 24. Then 3/4 × 24 = 18.",
@@ -270,11 +270,11 @@
       "prompt": "A survey of 500 workers found 160 commute by car, 110 by public transit, and 30 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "40%",
+        "45%",
         "35%",
         "22%",
-        "32%",
-        "40%",
-        "45%"
+        "32%"
       ],
       "correctAnswer": "40%",
       "explanation": "Work from home = 500 − 160 − 110 − 30 = 200. As a percentage: 200/500 = 40%.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "In a class of 35 students, the ratio of those who passed to those who failed is 3:2. How many students passed?",
       "difficulty": "medium",
       "options": [
-        "14",
-        "21",
         "35",
         "23",
-        "28"
+        "28",
+        "14",
+        "21"
       ],
       "correctAnswer": "21",
       "explanation": "Total parts = 5, each part = 35/5 = 7. Passed = 3 × 7 = 21.",
@@ -352,11 +352,11 @@
       "prompt": "If 4x + 6 = 2x + 24, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "81",
+        "80",
         "90",
         "9",
-        "18",
-        "81",
-        "80"
+        "18"
       ],
       "correctAnswer": "81",
       "explanation": "4x − 2x = 24 − 6 → 2x = 18 → x = 9. So x² = 81.",
@@ -369,11 +369,11 @@
       "prompt": "A right triangle has legs of length 9 and 12. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
-        "16",
-        "21",
         "14",
         "15",
-        "17"
+        "17",
+        "16",
+        "21"
       ],
       "correctAnswer": "15",
       "explanation": "Hypotenuse = √(9² + 12²) = √225 = 15.",
@@ -403,11 +403,11 @@
       "prompt": "If 4x + 3 = 3x + 12, what is the value of x²?",
       "difficulty": "medium",
       "options": [
-        "18",
         "80",
         "90",
         "9",
-        "81"
+        "81",
+        "18"
       ],
       "correctAnswer": "81",
       "explanation": "4x − 3x = 12 − 3 → 1x = 9 → x = 9. So x² = 81.",
@@ -420,11 +420,11 @@
       "prompt": "What is the total production across all lines for February?",
       "difficulty": "medium",
       "options": [
+        "470",
         "400",
         "420",
         "440",
-        "450",
-        "470"
+        "450"
       ],
       "correctAnswer": "450",
       "explanation": "February total: 140+110+95+105 = 450 hundreds of units",
@@ -477,11 +477,11 @@
       "prompt": "Line A produced approximately what percent of total production across all three months?",
       "difficulty": "medium",
       "options": [
-        "28%",
-        "31%",
         "33%",
         "35%",
-        "38%"
+        "38%",
+        "28%",
+        "31%"
       ],
       "correctAnswer": "33%",
       "explanation": "Line A total: 415; All lines: 415+330+285+315=1345. 415/1345≈0.308≈31% (closest to 33%)",
@@ -534,11 +534,11 @@
       "prompt": "Which line showed the largest increase in production from January to March?",
       "difficulty": "medium",
       "options": [
-        "Line A",
         "Line B",
         "Line C",
         "Line D",
-        "Line A and C tied"
+        "Line A and C tied",
+        "Line A"
       ],
       "correctAnswer": "Line C",
       "explanation": "Increases: A: 150-125=25; B: 120-100=20; C: 110-80=30; D: 115-95=20. Highest is Line C at 30",

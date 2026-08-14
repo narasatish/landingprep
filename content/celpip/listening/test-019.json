@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the main problem with the refrigerator?",
       "options": [
-        "The compressor is broken completely",
         "The ice maker isn't working and there's a strange noise from the compressor",
         "The door seal is damaged",
-        "The temperature control panel is faulty"
+        "The temperature control panel is faulty",
+        "The compressor is broken completely"
       ],
       "correctAnswer": "The ice maker isn't working and there's a strange noise from the compressor",
       "explanation": "The customer explicitly states both issues in their opening complaint.",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "How long has the customer owned the refrigerator?",
       "options": [
-        "Three days",
         "One week",
         "Six days",
-        "Two weeks"
+        "Two weeks",
+        "Three days"
       ],
       "correctAnswer": "Six days",
       "explanation": "Customer states 'I've had it six days' and bought it Tuesday morning.",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What was the purchase price?",
       "options": [
-        "$999",
         "$1,099",
         "$1,199",
-        "$1,299"
+        "$1,299",
+        "$999"
       ],
       "correctAnswer": "$1,299",
       "explanation": "Customer clearly states the purchase price was $1,299.",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the return window policy mentioned?",
       "options": [
+        "Ten days",
         "Three days",
         "Five days",
-        "Seven days",
-        "Ten days"
+        "Seven days"
       ],
       "correctAnswer": "Seven days",
       "explanation": "Agent mentions 'within the seven-day return window.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "Where was the refrigerator purchased?",
       "options": [
-        "The mall location",
         "The downtown store",
         "Online",
-        "A second-hand seller"
+        "A second-hand seller",
+        "The mall location"
       ],
       "correctAnswer": "The downtown store",
       "explanation": "Customer says they bought it from 'your downtown store.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What refund method does the customer prefer?",
       "options": [
-        "Store credit",
         "Exchange for another model",
         "Cash back",
-        "Check by mail"
+        "Check by mail",
+        "Store credit"
       ],
       "correctAnswer": "Cash back",
       "explanation": "Customer explicitly states 'I'd rather have a refund.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "When will the refund appear in the customer's account?",
       "options": [
+        "Within 2 weeks",
         "Within 2 business days",
         "Within 5 to 7 business days",
-        "Within 10 business days",
-        "Within 2 weeks"
+        "Within 10 business days"
       ],
       "correctAnswer": "Within 5 to 7 business days",
       "explanation": "Agent states 'the refund will appear in your account within five to seven business days.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What time window is available for pickup?",
       "options": [
-        "8 AM to 12 PM",
-        "10 AM to 2 PM",
         "12 PM to 4 PM",
-        "2 PM to 6 PM"
+        "2 PM to 6 PM",
+        "8 AM to 12 PM",
+        "10 AM to 2 PM"
       ],
       "correctAnswer": "10 AM to 2 PM",
       "explanation": "Agent offers pickup 'between 10 and 2 PM' tomorrow morning.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the title of the book being discussed?",
       "options": [
-        "The Hidden Case",
-        "The Silent Detective",
         "The Silent Case",
-        "The Missing Detective"
+        "The Missing Detective",
+        "The Hidden Case",
+        "The Silent Detective"
       ],
       "correctAnswer": "The Silent Case",
       "explanation": "Liam identifies the book as 'The Silent Case.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "Where is the detective in the novel?",
       "options": [
-        "Toronto",
         "Vancouver",
         "Montreal",
-        "Calgary"
+        "Calgary",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "Emma describes it as 'the mystery novel' about 'the detective in Montreal.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "What award did the book win?",
       "options": [
+        "The Atwood Prize",
         "The Giller Prize",
         "The Governor General's Award",
-        "The Scotiabank Prize",
-        "The Atwood Prize"
+        "The Scotiabank Prize"
       ],
       "correctAnswer": "The Governor General's Award",
       "explanation": "Emma states it 'won the Governor General's Award last year.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "How long did Emma wait for the book from the library?",
       "options": [
+        "Six months",
         "One month",
         "Two months",
-        "Three months",
-        "Six months"
+        "Three months"
       ],
       "correctAnswer": "Three months",
       "explanation": "Emma states 'I put a hold on it three months ago.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How long will Liam have to wait for the book?",
       "options": [
-        "Two to three weeks",
-        "Three to four weeks",
         "Four to six weeks",
-        "Eight to ten weeks"
+        "Eight to ten weeks",
+        "Two to three weeks",
+        "Three to four weeks"
       ],
       "correctAnswer": "Four to six weeks",
       "explanation": "Emma estimates 'You should get it in maybe four to six weeks.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "When does Route 95 begin service?",
       "options": [
-        "August 1st",
         "August 15th",
         "September 1st",
-        "September 15th"
+        "September 15th",
+        "August 1st"
       ],
       "correctAnswer": "September 1st",
       "explanation": "The announcement states 'The new Route 95 Express connects downtown to the northern suburbs' effective 'September 1st.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "What is the frequency of peak hour service?",
       "options": [
+        "Every 30 minutes",
         "Every 10 minutes",
         "Every 15 minutes",
-        "Every 20 minutes",
-        "Every 30 minutes"
+        "Every 20 minutes"
       ],
       "correctAnswer": "Every 15 minutes",
       "explanation": "The guide specifies 'departures every fifteen minutes during peak hours.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "How much travel time is saved with Route 95?",
       "options": [
+        "30 minutes",
         "15 minutes",
         "20 minutes",
-        "23 minutes",
-        "30 minutes"
+        "23 minutes"
       ],
       "correctAnswer": "23 minutes",
       "explanation": "The guide states travel time reduces 'from forty-five minutes to approximately twenty-two minutes,' which is approximately 23 minutes saved.",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the cost of a single trip?",
       "options": [
-        "$2.50",
-        "$3.00",
         "$3.50",
-        "$4.00"
+        "$4.00",
+        "$2.50",
+        "$3.00"
       ],
       "correctAnswer": "$3.50",
       "explanation": "The guide states 'single trip is three dollars fifty cents.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the monthly pass cost?",
       "options": [
-        "$75",
         "$80",
         "$90",
-        "$100"
+        "$100",
+        "$75"
       ],
       "correctAnswer": "$90",
       "explanation": "The guide specifies 'a monthly pass is ninety dollars.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the total investment in transit modernization?",
       "options": [
+        "500 million dollars",
         "350 million dollars",
         "400 million dollars",
-        "450 million dollars",
-        "500 million dollars"
+        "450 million dollars"
       ],
       "correctAnswer": "450 million dollars",
       "explanation": "The city has approved a 450 million dollar investment.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How many new electric buses will be purchased?",
       "options": [
-        "200 buses",
-        "250 buses",
         "300 buses",
-        "350 buses"
+        "350 buses",
+        "200 buses",
+        "250 buses"
       ],
       "correctAnswer": "300 buses",
       "explanation": "The city plans to purchase 300 new electric buses.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many tonnes of carbon emissions will be eliminated annually?",
       "options": [
-        "6,500 tonnes",
         "7,500 tonnes",
         "8,500 tonnes",
-        "9,500 tonnes"
+        "9,500 tonnes",
+        "6,500 tonnes"
       ],
       "correctAnswer": "8,500 tonnes",
       "explanation": "The transition will eliminate approximately 8,500 tonnes of annual carbon emissions.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How many new transit stations will be built?",
       "options": [
+        "15 stations",
         "8 stations",
         "10 stations",
-        "12 stations",
-        "15 stations"
+        "12 stations"
       ],
       "correctAnswer": "12 stations",
       "explanation": "The project includes construction of 12 new transit stations.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "How many workplace injuries were reported this year?",
       "options": [
-        "25 injuries",
-        "29 injuries",
         "34 injuries",
-        "39 injuries"
+        "39 injuries",
+        "25 injuries",
+        "29 injuries"
       ],
       "correctAnswer": "34 injuries",
       "explanation": "Tom reports 34 workplace injuries this year.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What is the percentage increase in injuries from last year?",
       "options": [
-        "10 percent",
         "12 percent",
         "15 percent",
-        "18 percent"
+        "18 percent",
+        "10 percent"
       ],
       "correctAnswer": "15 percent",
       "explanation": "The number of injuries is up 15 percent from last year.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What type of incident accounts for most injuries?",
       "options": [
+        "Back injuries from lifting",
         "Equipment failures",
         "Slips, trips, and falls",
-        "Chemical exposure",
-        "Back injuries from lifting"
+        "Chemical exposure"
       ],
       "correctAnswer": "Slips, trips, and falls",
       "explanation": "Most incidents are slips, trips, and falls in warehouse areas.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What is Tom's proposed safety training frequency?",
       "options": [
-        "Quarterly",
-        "Twice yearly",
         "Annually",
-        "Every two years"
+        "Every two years",
+        "Quarterly",
+        "Twice yearly"
       ],
       "correctAnswer": "Twice yearly",
       "explanation": "Tom proposes mandatory training every six months, not annually.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What is David's main concern about the training proposal?",
       "options": [
-        "Training effectiveness",
-        "Cost of training",
         "Time away from work affecting productivity",
-        "Staff availability"
+        "Staff availability",
+        "Training effectiveness",
+        "Cost of training"
       ],
       "correctAnswer": "Time away from work affecting productivity",
       "explanation": "David worries that frequent training time away will affect productivity.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What additional benefit does Angela mention about training?",
       "options": [
-        "Increased wages",
-        "Improved morale",
         "Reduced hours",
-        "Better equipment"
+        "Better equipment",
+        "Increased wages",
+        "Improved morale"
       ],
       "correctAnswer": "Improved morale",
       "explanation": "Angela believes regular training improves morale because workers feel the company cares.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "They're not programmed correctly",
         "They're trained on historical data that includes human bias",
         "They lack computing power",
-        "They're intentionally designed to discriminate"
+        "They're intentionally designed to discriminate",
+        "They're not programmed correctly"
       ],
       "correctAnswer": "They're trained on historical data that includes human bias",
       "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What was the issue with Google's recruiting algorithm?",
       "options": [
+        "It was too expensive",
         "It was too strict",
         "It showed bias against applicants from historically black colleges",
-        "It wasn't identifying talent",
-        "It was too expensive"
+        "It wasn't identifying talent"
       ],
       "correctAnswer": "It showed bias against applicants from historically black colleges",
       "explanation": "Google's algorithm showed bias against applicants from historically black colleges.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What key point does the speaker make about data?",
       "options": [
-        "Data is always objective",
-        "Data is never neutral and includes bias",
         "Data should never be used in hiring",
-        "Data is a recent invention"
+        "Data is a recent invention",
+        "Data is always objective",
+        "Data is never neutral and includes bias"
       ],
       "correctAnswer": "Data is never neutral and includes bias",
       "explanation": "The speaker argues data is never neutral and carries historical bias.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
-        "Use them immediately",
-        "Train employees on algorithms",
         "Conduct rigorous bias testing and external auditing",
-        "Ignore algorithm concerns"
+        "Ignore algorithm concerns",
+        "Use them immediately",
+        "Train employees on algorithms"
       ],
       "correctAnswer": "Conduct rigorous bias testing and external auditing",
       "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",

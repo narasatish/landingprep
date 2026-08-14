@@ -51,10 +51,10 @@
       "questionType": "gist_content",
       "prompt": "What are the students mainly discussing?",
       "options": [
-        "A lecture they attended",
         "Planning their psychology research experiment",
         "Studying for an upcoming exam",
-        "Choosing a psychology elective course"
+        "Choosing a psychology elective course",
+        "A lecture they attended"
       ],
       "correctAnswer": "Planning their psychology research experiment",
       "explanation": "The entire conversation is about designing their psychology experiment."
@@ -81,10 +81,10 @@
       "questionType": "inference",
       "prompt": "Why do the students prefer within-subjects design?",
       "options": [
+        "It requires no consent forms",
         "It requires fewer statistical tests",
         "Each participant acts as their own control, reducing variability",
-        "It is faster to complete",
-        "It requires no consent forms"
+        "It is faster to complete"
       ],
       "correctAnswer": "Each participant acts as their own control, reducing variability",
       "explanation": "The passage states they chose within-subjects 'so that each participant serves as their own control.'"
@@ -96,10 +96,10 @@
       "questionType": "function",
       "prompt": "Why does one student mention needing 30 participants?",
       "options": [
-        "University rules require that number",
-        "To ensure statistical significance",
         "Because they only have 30 consent forms",
-        "The professor assigned exactly 30 slots"
+        "The professor assigned exactly 30 slots",
+        "University rules require that number",
+        "To ensure statistical significance"
       ],
       "correctAnswer": "To ensure statistical significance",
       "explanation": "The student explicitly raises the concern about needing 30 participants 'for statistical significance.'"
@@ -111,10 +111,10 @@
       "questionType": "attitude",
       "prompt": "How does the second student respond to the concern about participant numbers?",
       "options": [
-        "By dismissing it as unimportant",
         "By suggesting they recruit from the psychology participant pool",
         "By saying they should reduce the sample size",
-        "By recommending a different study type"
+        "By recommending a different study type",
+        "By dismissing it as unimportant"
       ],
       "correctAnswer": "By suggesting they recruit from the psychology participant pool",
       "explanation": "The second student reassures by noting the participant pool should meet requirements."
@@ -141,10 +141,10 @@
       "questionType": "detail",
       "prompt": "What specific problem does the professor identify with the essay?",
       "options": [
+        "The essay covered the wrong topic",
         "It was too long",
         "It lacked a clear thesis and had disconnected paragraphs",
-        "The student used the wrong citation style",
-        "The essay covered the wrong topic"
+        "The student used the wrong citation style"
       ],
       "correctAnswer": "It lacked a clear thesis and had disconnected paragraphs",
       "explanation": "The professor cites a missing thesis and disconnected body paragraphs as the main issues."
@@ -156,10 +156,10 @@
       "questionType": "inference",
       "prompt": "What can be inferred from the student admitting he wrote the essay the night before?",
       "options": [
-        "He is a strong student who works quickly",
-        "Rushed preparation contributed to the essay's weaknesses",
         "The deadline was unfair",
-        "He always writes essays that way successfully"
+        "He always writes essays that way successfully",
+        "He is a strong student who works quickly",
+        "Rushed preparation contributed to the essay's weaknesses"
       ],
       "correctAnswer": "Rushed preparation contributed to the essay's weaknesses",
       "explanation": "The timing admission implies the essay problems resulted from lack of adequate preparation."
@@ -171,10 +171,10 @@
       "questionType": "detail",
       "prompt": "What is the maximum grade the student can receive for the revised essay?",
       "options": [
-        "50 percent",
-        "60 percent",
         "70 percent",
-        "100 percent"
+        "100 percent",
+        "50 percent",
+        "60 percent"
       ],
       "correctAnswer": "70 percent",
       "explanation": "The professor offers to accept a revision 'with a maximum score of 70 percent.'"
@@ -201,10 +201,10 @@
       "questionType": "gist_content",
       "prompt": "What is the lecture mainly about?",
       "options": [
+        "The history of fire suppression policy only",
         "How to fight forest fires",
         "The ecological role and management of fire in forests",
-        "Why all forests should be burned",
-        "The history of fire suppression policy only"
+        "Why all forests should be burned"
       ],
       "correctAnswer": "The ecological role and management of fire in forests",
       "explanation": "The lecture covers fire's ecological role, the consequences of suppression, and modern management."
@@ -216,10 +216,10 @@
       "questionType": "detail",
       "prompt": "What does the professor say was the consequence of total fire suppression?",
       "options": [
-        "Forests became more diverse",
-        "Fuel loads built up to abnormal levels",
         "Wildlife populations increased dramatically",
-        "Water quality improved"
+        "Water quality improved",
+        "Forests became more diverse",
+        "Fuel loads built up to abnormal levels"
       ],
       "correctAnswer": "Fuel loads built up to abnormal levels",
       "explanation": "Suppression allowed dead wood and brush to accumulate, increasing catastrophic fire risk."
@@ -231,10 +231,10 @@
       "questionType": "function",
       "prompt": "Why does the professor mention giant sequoia cones?",
       "options": [
-        "To show that sequoias are endangered",
         "To illustrate how some species depend on fire for reproduction",
         "To compare California with other forest regions",
-        "To criticise fire suppression policies"
+        "To criticise fire suppression policies",
+        "To show that sequoias are endangered"
       ],
       "correctAnswer": "To illustrate how some species depend on fire for reproduction",
       "explanation": "The sequoia example demonstrates fire-dependency in reproduction — cones open only in fire-generated heat."
@@ -276,10 +276,10 @@
       "questionType": "organization",
       "prompt": "How does the professor organise the lecture?",
       "options": [
-        "By listing unrelated facts about fire",
-        "By moving from historical policy to ecological concepts to a management solution",
         "By presenting a debate between two scientists",
-        "By describing only one case study in detail"
+        "By describing only one case study in detail",
+        "By listing unrelated facts about fire",
+        "By moving from historical policy to ecological concepts to a management solution"
       ],
       "correctAnswer": "By moving from historical policy to ecological concepts to a management solution",
       "explanation": "The lecture progresses from suppression history → fire regime concept → examples → modern management."
@@ -291,10 +291,10 @@
       "questionType": "gist_content",
       "prompt": "(17) What is the lecture mainly about?",
       "options": [
-        "How to make better financial investments",
         "The neuroscience and psychology of human decision-making",
         "A critique of the work of Daniel Kahneman",
-        "Brain surgery for decision disorders"
+        "Brain surgery for decision disorders",
+        "How to make better financial investments"
       ],
       "correctAnswer": "The neuroscience and psychology of human decision-making",
       "explanation": "The lecture covers the psychology and neuroscience of how humans make decisions."
@@ -336,10 +336,10 @@
       "questionType": "inference",
       "prompt": "What does the amygdala damage research suggest about risk-taking?",
       "options": [
-        "Fear responses are completely unrelated to financial decisions",
-        "Normal fear and loss aversion help regulate financial risk-taking",
         "People without amygdalas make better investments",
-        "Risk-taking is controlled only by the prefrontal cortex"
+        "Risk-taking is controlled only by the prefrontal cortex",
+        "Fear responses are completely unrelated to financial decisions",
+        "Normal fear and loss aversion help regulate financial risk-taking"
       ],
       "correctAnswer": "Normal fear and loss aversion help regulate financial risk-taking",
       "explanation": "Amygdala-damaged patients take excessive risks, suggesting the amygdala normally limits risk-taking."
@@ -351,10 +351,10 @@
       "questionType": "detail",
       "prompt": "What does the professor say about the rational actor model?",
       "options": [
-        "It accurately predicts all human choices",
         "Human behaviour frequently violates it in systematic ways",
         "It was developed by neuroscientists",
-        "It explains loss aversion perfectly"
+        "It explains loss aversion perfectly",
+        "It accurately predicts all human choices"
       ],
       "correctAnswer": "Human behaviour frequently violates it in systematic ways",
       "explanation": "The professor states people 'frequently violate this model in systematic, predictable ways.'"
@@ -366,10 +366,10 @@
       "questionType": "connecting_content",
       "prompt": "According to the lecture, what is the relationship between emotion and reasoning in decision-making?",
       "options": [
-        "They are entirely separate processes",
         "Emotion always overrides reasoning",
         "They continuously interact in producing decisions",
-        "Reasoning always controls emotion"
+        "Reasoning always controls emotion",
+        "They are entirely separate processes"
       ],
       "correctAnswer": "They continuously interact in producing decisions",
       "explanation": "The professor concludes that decision-making 'involves a continuous interaction between deliberate, slow reasoning and faster, automatic emotional responses.'"
@@ -381,10 +381,10 @@
       "questionType": "gist_content",
       "prompt": "(23) What is the lecture mainly about?",
       "options": [
+        "A biography of Edward Jenner",
         "The dangers of modern vaccines",
         "The history and immunological basis of vaccination",
-        "How to manufacture vaccines",
-        "A biography of Edward Jenner"
+        "How to manufacture vaccines"
       ],
       "correctAnswer": "The history and immunological basis of vaccination",
       "explanation": "The lecture traces vaccination from early history through modern immunology."
@@ -396,10 +396,10 @@
       "questionType": "detail",
       "prompt": "According to the lecture, what was the mortality rate of variolation?",
       "options": [
-        "About 0.1 percent",
-        "About 2 percent",
         "About 10 percent",
-        "About 30 percent"
+        "About 30 percent",
+        "About 0.1 percent",
+        "About 2 percent"
       ],
       "correctAnswer": "About 2 percent",
       "explanation": "The professor states variolation killed 'approximately 2 percent of those variolated.'"
@@ -411,10 +411,10 @@
       "questionType": "function",
       "prompt": "Why does the professor mention James Phipps?",
       "options": [
-        "To show that Jenner's methods were unethical",
         "To illustrate the experimental basis of Jenner's vaccination discovery",
         "To argue that children should not be vaccinated",
-        "To compare Jenner's work with Pasteur's"
+        "To compare Jenner's work with Pasteur's",
+        "To show that Jenner's methods were unethical"
       ],
       "correctAnswer": "To illustrate the experimental basis of Jenner's vaccination discovery",
       "explanation": "The Phipps case is Jenner's key experimental proof that cowpox exposure prevented smallpox."
@@ -426,10 +426,10 @@
       "questionType": "vocabulary_in_context",
       "prompt": "The word 'attenuated' as used in the lecture is closest in meaning to:",
       "options": [
-        "strengthened",
         "eliminated",
         "weakened",
-        "concentrated"
+        "concentrated",
+        "strengthened"
       ],
       "correctAnswer": "weakened",
       "explanation": "Pasteur worked with 'attenuated — weakened — pathogens.'"
@@ -441,10 +441,10 @@
       "questionType": "inference",
       "prompt": "What can be inferred about herd immunity and measles?",
       "options": [
+        "Herd immunity only applies to polio",
         "Only 50 percent immunity is needed to stop measles",
         "Measles requires a higher vaccination rate than most diseases to achieve herd immunity",
-        "Measles has no herd immunity threshold",
-        "Herd immunity only applies to polio"
+        "Measles has no herd immunity threshold"
       ],
       "correctAnswer": "Measles requires a higher vaccination rate than most diseases to achieve herd immunity",
       "explanation": "Measles requires ~95% immunity versus ~80-85% for polio, indicating it needs a higher threshold."
@@ -456,10 +456,10 @@
       "questionType": "connecting_content",
       "prompt": "How are Jenner's and Pasteur's contributions to vaccination related?",
       "options": [
-        "They worked together on the same vaccines",
-        "Jenner developed the concept; Pasteur extended it to other diseases using weakened pathogens",
         "Pasteur discovered vaccines; Jenner improved them",
-        "They had conflicting theories about immunity"
+        "They had conflicting theories about immunity",
+        "They worked together on the same vaccines",
+        "Jenner developed the concept; Pasteur extended it to other diseases using weakened pathogens"
       ],
       "correctAnswer": "Jenner developed the concept; Pasteur extended it to other diseases using weakened pathogens",
       "explanation": "The lecture presents Jenner as the founder and Pasteur as extending the approach systematically."

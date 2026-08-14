@@ -32,11 +32,11 @@
       "prompt": "Sofia can assemble a bookcase 3 times as fast as Marcus. Working together they finish one in 16 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
-        "16",
         "32",
         "21.333333333333332",
         "64",
-        "12"
+        "12",
+        "16"
       ],
       "correctAnswer": "21.333333333333332",
       "explanation": "Let Marcus's rate be r. Sofia's is 3r, so together (4)r = 1/16, giving r = 1/64. Sofia's rate 3r = 3/64 = 1/21.333333333333332, so Sofia alone takes 21.333333333333332 hours.",
@@ -49,11 +49,11 @@
       "prompt": "The ratio of blue to red marbles is 5 to 8. If 25 blue marbles are added, the ratio becomes 15 to 16. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
+        "105",
+        "75",
         "80",
         "55",
-        "50",
-        "105",
-        "75"
+        "50"
       ],
       "correctAnswer": "80",
       "explanation": "Let blue = 5k and red = 8k. After adding 25: (5k+25)/(8k) = 15/16, which gives k = 10. Red = 8×10 = 80.",
@@ -66,11 +66,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 1 remain; divided among 8 children, 2 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
+        "3",
+        "0",
         "2",
         "5",
-        "1",
-        "3",
-        "0"
+        "1"
       ],
       "correctAnswer": "5",
       "explanation": "The only n in range with n≡1 (mod 7) and n≡2 (mod 8) is 50. Then 50 ÷ 9 leaves remainder 5.",
@@ -83,11 +83,11 @@
       "prompt": "What is 20% of 370?",
       "difficulty": "medium",
       "options": [
+        "148",
+        "350",
         "740",
         "390",
-        "74",
-        "148",
-        "350"
+        "74"
       ],
       "correctAnswer": "74",
       "explanation": "20% of 370 = 20/100 × 370 = 74.",
@@ -151,11 +151,11 @@
       "prompt": "If 8 painters can paint 8 walls in 8 days, how many days would it take 8 painters to paint 8 walls?",
       "difficulty": "medium",
       "options": [
-        "7",
         "16",
         "9",
         "1",
-        "8"
+        "8",
+        "7"
       ],
       "correctAnswer": "8",
       "explanation": "Each painter paints 1 wall in 8 days. 8 painters painting 8 walls (one each) still take 8 days.",
@@ -168,11 +168,11 @@
       "prompt": "If 2/4 of a number is 20, what is 4/5 of that number?",
       "difficulty": "medium",
       "options": [
+        "52",
         "8",
         "40",
         "20",
-        "32",
-        "52"
+        "32"
       ],
       "correctAnswer": "32",
       "explanation": "The number is 20 ÷ 2/4 = 40. Then 4/5 × 40 = 32.",
@@ -185,11 +185,11 @@
       "prompt": "The perimeter of a rectangle is 90 and its area is 464. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
+        "16",
         "13",
         "29",
         "45",
-        "18",
-        "16"
+        "18"
       ],
       "correctAnswer": "16",
       "explanation": "Sides sum to 45 and multiply to 464. They are 16 and 29; the shorter side is 16.",
@@ -202,11 +202,11 @@
       "prompt": "The average of a and b is 49, and the average of b and c is 40. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "89",
-        "20",
         "9",
         "18",
-        "-18"
+        "-18",
+        "89",
+        "20"
       ],
       "correctAnswer": "18",
       "explanation": "a+b = 98 and b+c = 80. Subtracting: a − c = 98 − 80 = 18.",
@@ -219,11 +219,11 @@
       "prompt": "A survey of 560 workers found 130 commute by car, 60 by public transit, and 40 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "23.2%",
+        "63.9%",
         "58.9%",
         "53.9%",
-        "10.7%",
-        "23.2%",
-        "63.9%"
+        "10.7%"
       ],
       "correctAnswer": "58.9%",
       "explanation": "Work from home = 560 − 130 − 60 − 40 = 330. As a percentage: 330/560 = 58.9%.",
@@ -236,11 +236,11 @@
       "prompt": "3^x + 3^x + 3^x = ?",
       "difficulty": "medium",
       "options": [
+        "9^x",
         "3^x",
         "3^(3x)",
         "3^(x+1)",
-        "12^x",
-        "9^x"
+        "12^x"
       ],
       "correctAnswer": "3^(x+1)",
       "explanation": "Adding 3 copies of 3^x gives 3 × 3^x = 3^1 × 3^x = 3^(x+1).",
@@ -270,11 +270,11 @@
       "prompt": "The ratio of blue to red marbles is 4 to 5. If 17 blue marbles are added, the ratio becomes 41 to 30. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
+        "30",
         "24",
         "41",
         "47",
-        "13",
-        "30"
+        "13"
       ],
       "correctAnswer": "30",
       "explanation": "Let blue = 4k and red = 5k. After adding 17: (4k+17)/(5k) = 41/30, which gives k = 6. Red = 5×6 = 30.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "If 6x + 6 = 5x + 12, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "6",
+        "35",
         "42",
         "12",
-        "36",
-        "6",
-        "35"
+        "36"
       ],
       "correctAnswer": "36",
       "explanation": "6x − 5x = 12 − 6 → 1x = 6 → x = 6. So x² = 36.",
@@ -352,11 +352,11 @@
       "prompt": "A right triangle has legs of length 8 and 15. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "17",
         "16",
         "19",
         "23",
-        "18",
-        "17"
+        "18"
       ],
       "correctAnswer": "17",
       "explanation": "Hypotenuse = √(8² + 15²) = √289 = 17.",
@@ -369,11 +369,11 @@
       "prompt": "In a class of 27 students, the ratio of those who passed to those who failed is 7:2. How many students passed?",
       "difficulty": "medium",
       "options": [
-        "27",
         "18",
         "21",
         "6",
-        "24"
+        "24",
+        "27"
       ],
       "correctAnswer": "21",
       "explanation": "Total parts = 9, each part = 27/9 = 3. Passed = 7 × 3 = 21.",
@@ -386,11 +386,11 @@
       "prompt": "If 4x + 6 = 3x + 13, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "14",
+        "7",
         "49",
         "48",
-        "56",
-        "14",
-        "7"
+        "56"
       ],
       "correctAnswer": "49",
       "explanation": "4x − 3x = 13 − 6 → 1x = 7 → x = 7. So x² = 49.",
@@ -403,11 +403,11 @@
       "prompt": "A right triangle has legs of length 3 and 4. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "11",
         "7",
         "6",
         "5",
-        "4",
-        "11"
+        "4"
       ],
       "correctAnswer": "5",
       "explanation": "Hypotenuse = √(3² + 4²) = √25 = 5.",
@@ -524,11 +524,11 @@
       "prompt": "By how many students did total enrollment grow from 2022 to 2023?",
       "difficulty": "medium",
       "options": [
-        "250",
         "300",
         "350",
         "400",
-        "450"
+        "450",
+        "250"
       ],
       "correctAnswer": "350",
       "explanation": "2023 total (4700) - 2022 total (4350) = 350 students",

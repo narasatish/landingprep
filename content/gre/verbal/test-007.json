@@ -92,11 +92,11 @@
       "topic": "rhetoric",
       "prompt": "The professor's lecture, though praised for its breadth, struck many students as oddly ____, touching on each topic just long enough to confirm how much remained unexplored.",
       "options": [
-        "exhaustive",
         "desultory",
         "cogent",
         "pedantic",
-        "incisive"
+        "incisive",
+        "exhaustive"
       ],
       "correctAnswer": "desultory",
       "explanation": "Desultory = lacking a plan or purpose, going from topic to topic without clear direction.",
@@ -255,10 +255,10 @@
       "passage": "Urbanisation has accelerated globally at a pace that has outstripped the capacity of many city governments to provide basic services. In sub-Saharan Africa, it is estimated that more than 60 percent of urban residents live in informal settlements — areas characterised by inadequate sanitation, insecure land tenure, and limited access to clean water. The conventional policy response has been slum clearance and relocation, moving residents to formal housing developments on the urban periphery.\n\nCritics argue that this approach consistently fails because it disregards the economic and social networks that informal settlements generate. Street vendors, repair workshops, childcare cooperatives, and informal credit systems create dense webs of mutual support that are not replicated in the standardised housing blocks to which residents are relocated. When communities are broken up by relocation, the social capital that sustained individual households is destroyed along with the physical structures.\n\nAn alternative approach — in-situ upgrading — involves improving services and tenure security within existing settlements rather than demolishing them. Studies from Brazil, India, and South Africa suggest that in-situ upgrading produces better health outcomes, stronger economic integration, and higher rates of resident satisfaction than relocation programmes.",
       "prompt": "What is the main criticism of slum clearance as a policy approach?",
       "options": [
+        "It requires international funding",
         "It is too expensive",
         "It ignores the social and economic networks informal settlements create",
-        "It relocates residents too far from city centres",
-        "It requires international funding"
+        "It relocates residents too far from city centres"
       ],
       "correctAnswer": "It ignores the social and economic networks informal settlements create",
       "explanation": "The passage says clearance disregards economic and social networks that informal settlements generate.",
@@ -272,10 +272,10 @@
       "passage": "Urbanisation has accelerated globally at a pace that has outstripped the capacity of many city governments to provide basic services. In sub-Saharan Africa, it is estimated that more than 60 percent of urban residents live in informal settlements — areas characterised by inadequate sanitation, insecure land tenure, and limited access to clean water. The conventional policy response has been slum clearance and relocation, moving residents to formal housing developments on the urban periphery.\n\nCritics argue that this approach consistently fails because it disregards the economic and social networks that informal settlements generate. Street vendors, repair workshops, childcare cooperatives, and informal credit systems create dense webs of mutual support that are not replicated in the standardised housing blocks to which residents are relocated. When communities are broken up by relocation, the social capital that sustained individual households is destroyed along with the physical structures.\n\nAn alternative approach — in-situ upgrading — involves improving services and tenure security within existing settlements rather than demolishing them. Studies from Brazil, India, and South Africa suggest that in-situ upgrading produces better health outcomes, stronger economic integration, and higher rates of resident satisfaction than relocation programmes.",
       "prompt": "According to the passage, what is 'social capital' in this context?",
       "options": [
-        "Financial savings held in community banks",
-        "The collective networks and relationships that support individuals",
         "Government funding allocated to social services",
-        "Educational qualifications of urban residents"
+        "Educational qualifications of urban residents",
+        "Financial savings held in community banks",
+        "The collective networks and relationships that support individuals"
       ],
       "correctAnswer": "The collective networks and relationships that support individuals",
       "explanation": "The passage describes social capital as the web of mutual support — networks, cooperatives, informal credit — that sustains households.",
@@ -289,10 +289,10 @@
       "passage": "Urbanisation has accelerated globally at a pace that has outstripped the capacity of many city governments to provide basic services. In sub-Saharan Africa, it is estimated that more than 60 percent of urban residents live in informal settlements — areas characterised by inadequate sanitation, insecure land tenure, and limited access to clean water. The conventional policy response has been slum clearance and relocation, moving residents to formal housing developments on the urban periphery.\n\nCritics argue that this approach consistently fails because it disregards the economic and social networks that informal settlements generate. Street vendors, repair workshops, childcare cooperatives, and informal credit systems create dense webs of mutual support that are not replicated in the standardised housing blocks to which residents are relocated. When communities are broken up by relocation, the social capital that sustained individual households is destroyed along with the physical structures.\n\nAn alternative approach — in-situ upgrading — involves improving services and tenure security within existing settlements rather than demolishing them. Studies from Brazil, India, and South Africa suggest that in-situ upgrading produces better health outcomes, stronger economic integration, and higher rates of resident satisfaction than relocation programmes.",
       "prompt": "What does 'in-situ upgrading' involve?",
       "options": [
-        "Demolishing informal settlements and building modern housing",
         "Improving services within existing settlements",
         "Relocating residents to peripheral areas",
-        "Privatising urban land"
+        "Privatising urban land",
+        "Demolishing informal settlements and building modern housing"
       ],
       "correctAnswer": "Improving services within existing settlements",
       "explanation": "The passage defines in-situ upgrading as improving services and tenure security within existing settlements rather than demolishing them.",
@@ -306,10 +306,10 @@
       "passage": "Urbanisation has accelerated globally at a pace that has outstripped the capacity of many city governments to provide basic services. In sub-Saharan Africa, it is estimated that more than 60 percent of urban residents live in informal settlements — areas characterised by inadequate sanitation, insecure land tenure, and limited access to clean water. The conventional policy response has been slum clearance and relocation, moving residents to formal housing developments on the urban periphery.\n\nCritics argue that this approach consistently fails because it disregards the economic and social networks that informal settlements generate. Street vendors, repair workshops, childcare cooperatives, and informal credit systems create dense webs of mutual support that are not replicated in the standardised housing blocks to which residents are relocated. When communities are broken up by relocation, the social capital that sustained individual households is destroyed along with the physical structures.\n\nAn alternative approach — in-situ upgrading — involves improving services and tenure security within existing settlements rather than demolishing them. Studies from Brazil, India, and South Africa suggest that in-situ upgrading produces better health outcomes, stronger economic integration, and higher rates of resident satisfaction than relocation programmes.",
       "prompt": "Which of the following can be inferred from the passage?",
       "options": [
-        "Urbanisation is slowing in sub-Saharan Africa",
         "Relocation programmes have been universally abandoned",
         "In-situ upgrading has been studied in multiple countries",
-        "Informal settlements lack any economic activity"
+        "Informal settlements lack any economic activity",
+        "Urbanisation is slowing in sub-Saharan Africa"
       ],
       "correctAnswer": "In-situ upgrading has been studied in multiple countries",
       "explanation": "The passage explicitly mentions studies from Brazil, India, and South Africa.",
@@ -323,10 +323,10 @@
       "passage": "The deep ocean — defined as water below 200 metres — covers more than half of the Earth's surface, yet it remains among the least explored environments on the planet. For much of scientific history, researchers assumed that the deep sea was a biological desert, too cold, dark, and pressurised to support complex life. This assumption was overturned decisively in the 1970s when research submersibles discovered hydrothermal vents teeming with tube worms, clams, and chemosynthetic bacteria that derive energy not from sunlight but from chemical reactions involving hydrogen sulphide released by the vents.\n\nThis discovery fundamentally altered the definition of habitable environment. If life could thrive without sunlight, the range of potentially habitable zones expanded enormously — not only in Earth's own oceans but in extraterrestrial environments such as the subsurface oceans of Jupiter's moon Europa and Saturn's moon Enceladus, where liquid water is thought to exist beneath thick ice layers.\n\nCritics of exobiology note that chemosynthesis is still far more limited than photosynthesis in terms of the biomass it can support. The deep-sea vent ecosystems, while diverse, are small and geographically constrained. Nevertheless, the very existence of life in such extreme conditions has shifted the scientific community's view of what biology is capable of.",
       "prompt": "What was the prevailing assumption about the deep ocean prior to the 1970s?",
       "options": [
-        "It was a biological desert",
-        "It contained photosynthetic organisms",
         "It was warmer than surface water",
-        "It lacked mineral resources"
+        "It lacked mineral resources",
+        "It was a biological desert",
+        "It contained photosynthetic organisms"
       ],
       "correctAnswer": "It was a biological desert",
       "explanation": "The passage states researchers assumed the deep sea was too hostile to support complex life.",
@@ -340,10 +340,10 @@
       "passage": "The deep ocean — defined as water below 200 metres — covers more than half of the Earth's surface, yet it remains among the least explored environments on the planet. For much of scientific history, researchers assumed that the deep sea was a biological desert, too cold, dark, and pressurised to support complex life. This assumption was overturned decisively in the 1970s when research submersibles discovered hydrothermal vents teeming with tube worms, clams, and chemosynthetic bacteria that derive energy not from sunlight but from chemical reactions involving hydrogen sulphide released by the vents.\n\nThis discovery fundamentally altered the definition of habitable environment. If life could thrive without sunlight, the range of potentially habitable zones expanded enormously — not only in Earth's own oceans but in extraterrestrial environments such as the subsurface oceans of Jupiter's moon Europa and Saturn's moon Enceladus, where liquid water is thought to exist beneath thick ice layers.\n\nCritics of exobiology note that chemosynthesis is still far more limited than photosynthesis in terms of the biomass it can support. The deep-sea vent ecosystems, while diverse, are small and geographically constrained. Nevertheless, the very existence of life in such extreme conditions has shifted the scientific community's view of what biology is capable of.",
       "prompt": "What energy source do chemosynthetic bacteria near hydrothermal vents use?",
       "options": [
+        "Carbon dioxide",
         "Sunlight",
         "Oxygen",
-        "Hydrogen sulphide chemical reactions",
-        "Carbon dioxide"
+        "Hydrogen sulphide chemical reactions"
       ],
       "correctAnswer": "Hydrogen sulphide chemical reactions",
       "explanation": "The passage explicitly states energy comes from chemical reactions involving hydrogen sulphide.",
@@ -357,10 +357,10 @@
       "passage": "The deep ocean — defined as water below 200 metres — covers more than half of the Earth's surface, yet it remains among the least explored environments on the planet. For much of scientific history, researchers assumed that the deep sea was a biological desert, too cold, dark, and pressurised to support complex life. This assumption was overturned decisively in the 1970s when research submersibles discovered hydrothermal vents teeming with tube worms, clams, and chemosynthetic bacteria that derive energy not from sunlight but from chemical reactions involving hydrogen sulphide released by the vents.\n\nThis discovery fundamentally altered the definition of habitable environment. If life could thrive without sunlight, the range of potentially habitable zones expanded enormously — not only in Earth's own oceans but in extraterrestrial environments such as the subsurface oceans of Jupiter's moon Europa and Saturn's moon Enceladus, where liquid water is thought to exist beneath thick ice layers.\n\nCritics of exobiology note that chemosynthesis is still far more limited than photosynthesis in terms of the biomass it can support. The deep-sea vent ecosystems, while diverse, are small and geographically constrained. Nevertheless, the very existence of life in such extreme conditions has shifted the scientific community's view of what biology is capable of.",
       "prompt": "Why does the passage mention Europa and Enceladus?",
       "options": [
-        "To give examples of uninhabitable environments",
         "To illustrate how the discovery expanded the concept of habitability",
         "To contrast ocean chemistry with Earth",
-        "To argue against space exploration"
+        "To argue against space exploration",
+        "To give examples of uninhabitable environments"
       ],
       "correctAnswer": "To illustrate how the discovery expanded the concept of habitability",
       "explanation": "The passage uses Europa and Enceladus as examples of where life might exist if chemosynthesis is possible without sunlight.",
@@ -374,10 +374,10 @@
       "passage": "The deep ocean — defined as water below 200 metres — covers more than half of the Earth's surface, yet it remains among the least explored environments on the planet. For much of scientific history, researchers assumed that the deep sea was a biological desert, too cold, dark, and pressurised to support complex life. This assumption was overturned decisively in the 1970s when research submersibles discovered hydrothermal vents teeming with tube worms, clams, and chemosynthetic bacteria that derive energy not from sunlight but from chemical reactions involving hydrogen sulphide released by the vents.\n\nThis discovery fundamentally altered the definition of habitable environment. If life could thrive without sunlight, the range of potentially habitable zones expanded enormously — not only in Earth's own oceans but in extraterrestrial environments such as the subsurface oceans of Jupiter's moon Europa and Saturn's moon Enceladus, where liquid water is thought to exist beneath thick ice layers.\n\nCritics of exobiology note that chemosynthesis is still far more limited than photosynthesis in terms of the biomass it can support. The deep-sea vent ecosystems, while diverse, are small and geographically constrained. Nevertheless, the very existence of life in such extreme conditions has shifted the scientific community's view of what biology is capable of.",
       "prompt": "What criticism of exobiology does the passage present?",
       "options": [
-        "Chemosynthesis is impossible in space",
         "Deep-sea vents do not actually contain life",
         "Chemosynthesis supports far less biomass than photosynthesis",
-        "Europa lacks liquid water"
+        "Europa lacks liquid water",
+        "Chemosynthesis is impossible in space"
       ],
       "correctAnswer": "Chemosynthesis supports far less biomass than photosynthesis",
       "explanation": "Critics note chemosynthesis is more limited in terms of biomass it can support.",

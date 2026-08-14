@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's correct last name spelling?",
       "options": [
-        "A-N-D-E-R-S-E-N",
         "A-N-D-E-R-S-O-N",
         "A-N-D-R-E-S-O-N",
-        "A-N-D-E-R-T-O-N"
+        "A-N-D-E-R-T-O-N",
+        "A-N-D-E-R-S-E-N"
       ],
       "correctAnswer": "A-N-D-E-R-S-O-N",
       "explanation": "Diner specifies the correct spelling as 'A-N-D-E-R-S-O-N.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "How many people are in the party?",
       "options": [
+        "Seven",
         "Four",
         "Five",
-        "Six",
-        "Seven"
+        "Six"
       ],
       "correctAnswer": "Six",
       "explanation": "Diner states 'Six of us' in response to the manager's question about party size.",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What special seating request did the customer make?",
       "options": [
-        "Near the kitchen",
         "By the bar",
         "A quiet area away from the bar",
-        "Close to the entrance"
+        "Close to the entrance",
+        "Near the kitchen"
       ],
       "correctAnswer": "A quiet area away from the bar",
       "explanation": "Diner requests 'a quiet table' and manager notes 'a quieter area away from the bar.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What is the restaurant's cancellation policy?",
       "options": [
+        "48 hours notice required",
         "6 hours notice required",
         "12 hours notice required",
-        "24 hours notice required",
-        "48 hours notice required"
+        "24 hours notice required"
       ],
       "correctAnswer": "24 hours notice required",
       "explanation": "Manager states 'We require 24 hours notice for cancellations.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What type of concert is it?",
       "options": [
-        "Classical music",
-        "Hip-hop festival",
         "Indie rock festival",
-        "Country music show"
+        "Country music show",
+        "Classical music",
+        "Hip-hop festival"
       ],
       "correctAnswer": "Indie rock festival",
       "explanation": "Alex mentions 'The indie rock festival at the waterfront.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "How much is each ticket?",
       "options": [
-        "$25",
         "$35",
         "$40",
-        "$50"
+        "$50",
+        "$25"
       ],
       "correctAnswer": "$40",
       "explanation": "Alex states 'They're forty dollars each.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "Who is the headliner?",
       "options": [
-        "The Eastern Stars",
-        "The Northern Stars",
         "The Southern Lights",
-        "The Western Dream"
+        "The Western Dream",
+        "The Eastern Stars",
+        "The Northern Stars"
       ],
       "correctAnswer": "The Northern Stars",
       "explanation": "Alex identifies 'The headliner is The Northern Stars.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What time does the concert end?",
       "options": [
-        "9 PM",
-        "10 PM",
         "11 PM",
-        "Midnight"
+        "Midnight",
+        "9 PM",
+        "10 PM"
       ],
       "correctAnswer": "11 PM",
       "explanation": "Alex estimates 'It should wrap up around eleven.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "Where should you get your student photo ID?",
       "options": [
-        "The Student Centre",
-        "The Services Office",
         "The IT support desk",
-        "Student Health Services"
+        "Student Health Services",
+        "The Student Centre",
+        "The Services Office"
       ],
       "correctAnswer": "The Services Office",
       "explanation": "The guide states 'get your student photo ID taken at the Services Office.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What are the hours for photo ID service?",
       "options": [
-        "8 AM to 5 PM",
         "9 AM to 4 PM",
         "10 AM to 3 PM",
-        "8 AM to 6 PM"
+        "8 AM to 6 PM",
+        "8 AM to 5 PM"
       ],
       "correctAnswer": "9 AM to 4 PM",
       "explanation": "The guide mentions 'between 9 and 4 on any day this week.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the estimated budget for books and materials?",
       "options": [
-        "One hundred dollars",
         "Two hundred dollars",
         "Three hundred dollars",
-        "Four hundred dollars"
+        "Four hundred dollars",
+        "One hundred dollars"
       ],
       "correctAnswer": "Three hundred dollars",
       "explanation": "The guide states 'budget about three hundred dollars for books and materials.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "When is the Welcome Social?",
       "options": [
+        "Sunday afternoon",
         "Thursday evening",
         "Friday evening",
-        "Saturday afternoon",
-        "Sunday afternoon"
+        "Saturday afternoon"
       ],
       "correctAnswer": "Friday evening",
       "explanation": "The guide mentions 'The Welcome Social on Friday evening in the gymnasium.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How much is being invested in recruitment and retention?",
       "options": [
+        "40 million dollars",
         "25 million dollars",
         "30 million dollars",
-        "35 million dollars",
-        "40 million dollars"
+        "35 million dollars"
       ],
       "correctAnswer": "35 million dollars",
       "explanation": "The province has announced a 35 million dollar investment.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How many nursing positions are currently unfilled?",
       "options": [
-        "600 positions",
-        "700 positions",
         "800 positions",
-        "900 positions"
+        "900 positions",
+        "600 positions",
+        "700 positions"
       ],
       "correctAnswer": "800 positions",
       "explanation": "There are over 800 unfilled nursing positions.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "By what percentage are starting salaries for nurses increasing?",
       "options": [
-        "8 percent",
         "10 percent",
         "12 percent",
-        "15 percent"
+        "15 percent",
+        "8 percent"
       ],
       "correctAnswer": "12 percent",
       "explanation": "Starting salaries for nurses are being increased by 12 percent.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "What percentage of vacant positions are expected to be filled in 18 months?",
       "options": [
+        "75 percent",
         "40 percent",
         "50 percent",
-        "60 percent",
-        "75 percent"
+        "60 percent"
       ],
       "correctAnswer": "60 percent",
       "explanation": "Officials estimate it will take approximately 18 months to fill 60 percent of positions.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the cost of the engineering program expansion?",
       "options": [
-        "1.8 million dollars",
-        "2.0 million dollars",
         "2.4 million dollars",
-        "2.8 million dollars"
+        "2.8 million dollars",
+        "1.8 million dollars",
+        "2.0 million dollars"
       ],
       "correctAnswer": "2.4 million dollars",
       "explanation": "The cost would be approximately 2.4 million dollars over two years.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "How many potential students did the university lose last year?",
       "options": [
-        "100 students",
         "125 students",
         "150 students",
-        "175 students"
+        "175 students",
+        "100 students"
       ],
       "correctAnswer": "150 students",
       "explanation": "Professor Elena mentions they lost 150 potential engineering students.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "Why are some students not enrolling at this university?",
       "options": [
+        "Bad location",
         "Poor faculty",
         "Weak renewable energy program options",
-        "High tuition fees",
-        "Bad location"
+        "High tuition fees"
       ],
       "correctAnswer": "Weak renewable energy program options",
       "explanation": "They're losing students to competing universities with stronger renewable energy options.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Diana believe about tuition revenue from additional students?",
       "options": [
-        "It will decrease overall costs",
-        "It would exceed expansion costs within three years",
         "It wouldn't help the budget",
-        "It takes longer than expected"
+        "It takes longer than expected",
+        "It will decrease overall costs",
+        "It would exceed expansion costs within three years"
       ],
       "correctAnswer": "It would exceed expansion costs within three years",
       "explanation": "Diana states tuition revenue from 200 additional students would exceed expansion costs within three years.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of partnership does Diana mention exploring?",
       "options": [
-        "International universities",
-        "Government agencies",
         "Renewable energy companies",
-        "Tech startups"
+        "Tech startups",
+        "International universities",
+        "Government agencies"
       ],
       "correctAnswer": "Renewable energy companies",
       "explanation": "Diana mentions conversations with renewable energy companies about funding contributions.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What would companies receive in exchange for supporting the program?",
       "options": [
-        "University branding",
         "Free equipment",
         "Access to graduates for recruitment",
-        "Research funding"
+        "Research funding",
+        "University branding"
       ],
       "correctAnswer": "Access to graduates for recruitment",
       "explanation": "Companies want access to graduates for recruitment in exchange for contributions.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What specific position does Professor Elena hold on the expansion?",
       "options": [
-        "She opposes it",
-        "She strongly supports it",
         "She wants to wait",
-        "She's uncertain"
+        "She's uncertain",
+        "She opposes it",
+        "She strongly supports it"
       ],
       "correctAnswer": "She strongly supports it",
       "explanation": "Elena argues the university is losing enrollment without this program and needs to expand now.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "It's too expensive",
         "It has gone too far in terms of surveillance",
         "It doesn't improve security",
-        "It's ineffective"
+        "It's ineffective",
+        "It's too expensive"
       ],
       "correctAnswer": "It has gone too far in terms of surveillance",
       "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
+        "They communicate better",
         "They work harder",
         "It creates anxiety and erodes trust",
-        "They become more efficient",
-        "They communicate better"
+        "They become more efficient"
       ],
       "correctAnswer": "It creates anxiety and erodes trust",
       "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
-        "It increases productivity",
-        "It decreases productivity and morale",
         "It has no effect",
-        "It improves communication"
+        "It improves communication",
+        "It increases productivity",
+        "It decreases productivity and morale"
       ],
       "correctAnswer": "It decreases productivity and morale",
       "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What solution does the speaker propose?",
       "options": [
-        "No monitoring at all",
-        "Complete transparency monitoring",
         "Targeted monitoring only where necessary",
-        "Random monitoring"
+        "Random monitoring",
+        "No monitoring at all",
+        "Complete transparency monitoring"
       ],
       "correctAnswer": "Targeted monitoring only where necessary",
       "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",

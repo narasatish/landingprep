@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "From which city did the passenger fly?",
       "options": [
-        "Calgary",
         "Vancouver",
         "Edmonton",
-        "Toronto"
+        "Toronto",
+        "Calgary"
       ],
       "correctAnswer": "Vancouver",
       "explanation": "Passenger states 'my baggage didn't arrive on my flight from Vancouver.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What color is the passenger's luggage?",
       "options": [
+        "Red Samsonite roller",
         "Blue Samsonite roller",
         "Black Samsonite roller",
-        "Black leather bag",
-        "Red Samsonite roller"
+        "Black leather bag"
       ],
       "correctAnswer": "Black Samsonite roller",
       "explanation": "Agent confirms 'Your bag is a black Samsonite roller, correct?' and passenger agrees.",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "Where was the bag mistakenly sent?",
       "options": [
+        "Montreal",
         "Vancouver",
         "Toronto",
-        "Edmonton",
-        "Montreal"
+        "Edmonton"
       ],
       "correctAnswer": "Edmonton",
       "explanation": "Agent explains the bag 'was misrouted to Edmonton by mistake.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When does the return flight arrive in Calgary?",
       "options": [
-        "4:15 PM",
-        "5:15 PM",
         "6:15 PM",
-        "7:15 PM"
+        "7:15 PM",
+        "4:15 PM",
+        "5:15 PM"
       ],
       "correctAnswer": "6:15 PM",
       "explanation": "Agent states 'It's on the next flight back to Calgary, which arrives at 6:15 PM tonight.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "By what time will the bag be delivered to the hotel?",
       "options": [
-        "6:00 PM",
         "7:00 PM",
         "8:00 PM",
-        "9:00 PM"
+        "9:00 PM",
+        "6:00 PM"
       ],
       "correctAnswer": "8:00 PM",
       "explanation": "Agent promises 'we'll have it delivered to your hotel by 8 PM.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "Which hotel is the passenger staying at?",
       "options": [
+        "The Shangri-La",
         "The Sandman Calgary",
         "The Fairmont Palliser",
-        "The Bow Tower",
-        "The Shangri-La"
+        "The Bow Tower"
       ],
       "correctAnswer": "The Fairmont Palliser",
       "explanation": "Passenger states they're staying at 'The Fairmont Palliser downtown.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What compensation is offered for the baggage delay?",
       "options": [
+        "$75 travel voucher",
         "$25 travel voucher",
         "$35 travel voucher",
-        "$50 travel voucher",
-        "$75 travel voucher"
+        "$50 travel voucher"
       ],
       "correctAnswer": "$50 travel voucher",
       "explanation": "Agent offers 'a $50 travel voucher for your next flight with us.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has Rebecca lived in the neighbourhood?",
       "options": [
+        "Five years",
         "Two years",
         "Three years",
-        "Four years",
-        "Five years"
+        "Four years"
       ],
       "correctAnswer": "Five years",
       "explanation": "Rebecca states 'About five years now.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "When did David move to the neighbourhood?",
       "options": [
-        "One week ago",
         "Two weeks ago",
         "Last month",
-        "Two months ago"
+        "Two months ago",
+        "One week ago"
       ],
       "correctAnswer": "Last month",
       "explanation": "David says 'Just moved here last month.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "What is the best season in this neighbourhood?",
       "options": [
+        "Winter",
         "Spring",
         "Summer",
-        "Fall",
-        "Winter"
+        "Fall"
       ],
       "correctAnswer": "Summer",
       "explanation": "Rebecca states 'The summer's the best season here.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "Where is the farmer's market held?",
       "options": [
+        "Oak and Queen",
         "Main and Queen",
         "Main and King",
-        "Main and Oak",
-        "Oak and Queen"
+        "Main and Oak"
       ],
       "correctAnswer": "Main and Oak",
       "explanation": "Rebecca mentions 'at the corner of Main and Oak.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What type of community does Rebecca describe?",
       "options": [
-        "Business-focused",
         "Very friendly",
         "Quiet and isolated",
-        "Fast-paced"
+        "Fast-paced",
+        "Business-focused"
       ],
       "correctAnswer": "Very friendly",
       "explanation": "Rebecca says 'It's a very friendly community.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "When does Route 95 begin service?",
       "options": [
-        "August 1st",
         "August 15th",
         "September 1st",
-        "September 15th"
+        "September 15th",
+        "August 1st"
       ],
       "correctAnswer": "September 1st",
       "explanation": "The announcement states 'The new Route 95 Express connects downtown to the northern suburbs' effective 'September 1st.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "What is the frequency of peak hour service?",
       "options": [
+        "Every 30 minutes",
         "Every 10 minutes",
         "Every 15 minutes",
-        "Every 20 minutes",
-        "Every 30 minutes"
+        "Every 20 minutes"
       ],
       "correctAnswer": "Every 15 minutes",
       "explanation": "The guide specifies 'departures every fifteen minutes during peak hours.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "How much travel time is saved with Route 95?",
       "options": [
+        "30 minutes",
         "15 minutes",
         "20 minutes",
-        "23 minutes",
-        "30 minutes"
+        "23 minutes"
       ],
       "correctAnswer": "23 minutes",
       "explanation": "The guide states travel time reduces 'from forty-five minutes to approximately twenty-two minutes,' which is approximately 23 minutes saved.",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the cost of a single trip?",
       "options": [
-        "$2.50",
-        "$3.00",
         "$3.50",
-        "$4.00"
+        "$4.00",
+        "$2.50",
+        "$3.00"
       ],
       "correctAnswer": "$3.50",
       "explanation": "The guide states 'single trip is three dollars fifty cents.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the monthly pass cost?",
       "options": [
-        "$75",
         "$80",
         "$90",
-        "$100"
+        "$100",
+        "$75"
       ],
       "correctAnswer": "$90",
       "explanation": "The guide specifies 'a monthly pass is ninety dollars.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the size of TechHub Prairie?",
       "options": [
+        "60,000 square meters",
         "30,000 square meters",
         "40,000 square meters",
-        "50,000 square meters",
-        "60,000 square meters"
+        "50,000 square meters"
       ],
       "correctAnswer": "50,000 square meters",
       "explanation": "The report states TechHub Prairie is a 50,000-square-meter innovation center.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How much did the facility cost to construct?",
       "options": [
-        "75 million dollars",
-        "80 million dollars",
         "85 million dollars",
-        "90 million dollars"
+        "90 million dollars",
+        "75 million dollars",
+        "80 million dollars"
       ],
       "correctAnswer": "85 million dollars",
       "explanation": "The facility cost 85 million dollars to construct.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many new jobs are expected to be created?",
       "options": [
-        "800 jobs",
         "1,000 jobs",
         "1,200 jobs",
-        "1,500 jobs"
+        "1,500 jobs",
+        "800 jobs"
       ],
       "correctAnswer": "1,200 jobs",
       "explanation": "It is expected to create 1,200 new jobs over the next two years.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "Which of the following is NOT mentioned as available at the campus?",
       "options": [
+        "Startup incubator units",
         "Office space",
         "Research laboratories",
-        "Residential apartments",
-        "Startup incubator units"
+        "Residential apartments"
       ],
       "correctAnswer": "Residential apartments",
       "explanation": "The report mentions office space, laboratories, and incubators, but not apartments.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "How many workplace injuries were reported this year?",
       "options": [
-        "25 injuries",
-        "29 injuries",
         "34 injuries",
-        "39 injuries"
+        "39 injuries",
+        "25 injuries",
+        "29 injuries"
       ],
       "correctAnswer": "34 injuries",
       "explanation": "Tom reports 34 workplace injuries this year.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What is the percentage increase in injuries from last year?",
       "options": [
-        "10 percent",
         "12 percent",
         "15 percent",
-        "18 percent"
+        "18 percent",
+        "10 percent"
       ],
       "correctAnswer": "15 percent",
       "explanation": "The number of injuries is up 15 percent from last year.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What type of incident accounts for most injuries?",
       "options": [
+        "Back injuries from lifting",
         "Equipment failures",
         "Slips, trips, and falls",
-        "Chemical exposure",
-        "Back injuries from lifting"
+        "Chemical exposure"
       ],
       "correctAnswer": "Slips, trips, and falls",
       "explanation": "Most incidents are slips, trips, and falls in warehouse areas.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What is Tom's proposed safety training frequency?",
       "options": [
-        "Quarterly",
-        "Twice yearly",
         "Annually",
-        "Every two years"
+        "Every two years",
+        "Quarterly",
+        "Twice yearly"
       ],
       "correctAnswer": "Twice yearly",
       "explanation": "Tom proposes mandatory training every six months, not annually.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What is David's main concern about the training proposal?",
       "options": [
-        "Training effectiveness",
-        "Cost of training",
         "Time away from work affecting productivity",
-        "Staff availability"
+        "Staff availability",
+        "Training effectiveness",
+        "Cost of training"
       ],
       "correctAnswer": "Time away from work affecting productivity",
       "explanation": "David worries that frequent training time away will affect productivity.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What additional benefit does Angela mention about training?",
       "options": [
-        "Increased wages",
-        "Improved morale",
         "Reduced hours",
-        "Better equipment"
+        "Better equipment",
+        "Increased wages",
+        "Improved morale"
       ],
       "correctAnswer": "Improved morale",
       "explanation": "Angela believes regular training improves morale because workers feel the company cares.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
-        "Temporary welfare assistance",
-        "Government loans with repayment",
         "Regular unconditional cash payment to all citizens",
-        "Employer-provided income supplements"
+        "Employer-provided income supplements",
+        "Temporary welfare assistance",
+        "Government loans with repayment"
       ],
       "correctAnswer": "Regular unconditional cash payment to all citizens",
       "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What economic effect does the speaker claim UBI would have?",
       "options": [
+        "It would increase unemployment",
         "It would decrease spending",
         "Providing financial security would stimulate spending and job creation",
-        "It would reduce business activity",
-        "It would increase unemployment"
+        "It would reduce business activity"
       ],
       "correctAnswer": "Providing financial security would stimulate spending and job creation",
       "explanation": "The speaker argues that putting money in people's hands stimulates the economy and creates jobs.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "By what percentage did business formation increase in the Kenya pilot?",
       "options": [
+        "38 percent",
         "22 percent",
         "27 percent",
-        "32 percent",
-        "38 percent"
+        "32 percent"
       ],
       "correctAnswer": "32 percent",
       "explanation": "The speaker mentions that business formation in Kenya increased by 32 percent.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Increased energy",
         "Better mental health and less anxiety",
         "Improved sleep",
-        "Reduced medication needs"
+        "Reduced medication needs",
+        "Increased energy"
       ],
       "correctAnswer": "Better mental health and less anxiety",
       "explanation": "In Finland, participants reported better mental health and less anxiety.",

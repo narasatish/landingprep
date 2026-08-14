@@ -15,11 +15,11 @@
       "prompt": "The perimeter of a rectangle is 74 and its area is 300. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
+        "12",
+        "13",
         "37",
         "25",
-        "14",
-        "12",
-        "13"
+        "14"
       ],
       "correctAnswer": "12",
       "explanation": "Sides sum to 37 and multiply to 300. They are 12 and 25; the shorter side is 12.",
@@ -32,11 +32,11 @@
       "prompt": "The average of a and b is 32, and the average of b and c is 31. What is a − c?",
       "difficulty": "medium",
       "options": [
+        "4",
         "2",
         "-2",
         "1",
-        "63",
-        "4"
+        "63"
       ],
       "correctAnswer": "2",
       "explanation": "a+b = 64 and b+c = 62. Subtracting: a − c = 64 − 62 = 2.",
@@ -49,11 +49,11 @@
       "prompt": "A survey of 590 workers found 200 commute by car, 70 by public transit, and 20 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
-        "45.8%",
-        "55.8%",
         "11.9%",
         "33.9%",
-        "50.8%"
+        "50.8%",
+        "45.8%",
+        "55.8%"
       ],
       "correctAnswer": "50.8%",
       "explanation": "Work from home = 590 − 200 − 70 − 20 = 300. As a percentage: 300/590 = 50.8%.",
@@ -66,11 +66,11 @@
       "prompt": "5^x + 5^x + 5^x + 5^x + 5^x = ?",
       "difficulty": "medium",
       "options": [
-        "25^x",
         "20^x",
         "5^(5x)",
         "5^x",
-        "5^(x+1)"
+        "5^(x+1)",
+        "25^x"
       ],
       "correctAnswer": "5^(x+1)",
       "explanation": "Adding 5 copies of 5^x gives 5 × 5^x = 5^1 × 5^x = 5^(x+1).",
@@ -100,11 +100,11 @@
       "prompt": "The ratio of blue to red marbles is 4 to 5. If 5 blue marbles are added, the ratio becomes 9 to 10. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
-        "40",
-        "51",
         "50",
         "55",
-        "45"
+        "45",
+        "40",
+        "51"
       ],
       "correctAnswer": "50",
       "explanation": "Let blue = 4k and red = 5k. After adding 5: (4k+5)/(5k) = 9/10, which gives k = 10. Red = 5×10 = 50.",
@@ -117,11 +117,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 3 remain; divided among 8 children, 6 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
-        "3",
-        "0",
         "1",
         "2",
-        "4"
+        "4",
+        "3",
+        "0"
       ],
       "correctAnswer": "2",
       "explanation": "The only n in range with n≡3 (mod 7) and n≡6 (mod 8) is 38. Then 38 ÷ 9 leaves remainder 2.",
@@ -134,11 +134,11 @@
       "prompt": "What is 25% of 100?",
       "difficulty": "medium",
       "options": [
-        "75",
         "125",
         "250",
         "25",
-        "50"
+        "50",
+        "75"
       ],
       "correctAnswer": "25",
       "explanation": "25% of 100 = 25/100 × 100 = 25.",
@@ -151,11 +151,11 @@
       "prompt": "The average of 4 numbers is 9. If one number equal to 3 is removed, what is the average of the remaining 3 numbers?",
       "difficulty": "medium",
       "options": [
+        "3",
+        "9",
         "10",
         "11",
-        "12",
-        "3",
-        "9"
+        "12"
       ],
       "correctAnswer": "11",
       "explanation": "Total = 4×9 = 36. Remove 3: remaining total 33 over 3 numbers = 11.",
@@ -168,11 +168,11 @@
       "prompt": "What is the sum of all integers x such that -35 < x ≤ 39?",
       "difficulty": "medium",
       "options": [
+        "150",
         "224",
         "146",
         "-185",
-        "185",
-        "150"
+        "185"
       ],
       "correctAnswer": "185",
       "explanation": "The integers run from -34 to 39. Pairing/series sum = 185.",
@@ -185,11 +185,11 @@
       "prompt": "A jacket priced at $140 is discounted by 25% and then taxed at 8%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$113.40",
         "$151.20",
         "$140",
         "$123.40",
-        "$105",
-        "$113.40"
+        "$105"
       ],
       "correctAnswer": "$113.40",
       "explanation": "After 25% off: $105. After 8% tax: $105 × 1.08 = $113.40.",
@@ -236,11 +236,11 @@
       "prompt": "The perimeter of a rectangle is 52 and its area is 160. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
-        "16",
         "6",
         "26",
         "12",
-        "10"
+        "10",
+        "16"
       ],
       "correctAnswer": "10",
       "explanation": "Sides sum to 26 and multiply to 160. They are 10 and 16; the shorter side is 10.",
@@ -253,11 +253,11 @@
       "prompt": "The average of a and b is 39, and the average of b and c is 27. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "-24",
-        "24",
         "26",
         "66",
-        "12"
+        "12",
+        "-24",
+        "24"
       ],
       "correctAnswer": "24",
       "explanation": "a+b = 78 and b+c = 54. Subtracting: a − c = 78 − 54 = 24.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "If 5x + 7 = 2x + 22, what is the value of x²?",
       "difficulty": "medium",
       "options": [
-        "25",
         "30",
         "5",
         "24",
-        "10"
+        "10",
+        "25"
       ],
       "correctAnswer": "25",
       "explanation": "5x − 2x = 22 − 7 → 3x = 15 → x = 5. So x² = 25.",
@@ -352,11 +352,11 @@
       "prompt": "A right triangle has legs of length 5 and 12. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
-        "17",
         "13",
         "15",
         "12",
-        "14"
+        "14",
+        "17"
       ],
       "correctAnswer": "13",
       "explanation": "Hypotenuse = √(5² + 12²) = √169 = 13.",
@@ -369,11 +369,11 @@
       "prompt": "In a class of 28 students, the ratio of those who passed to those who failed is 3:4. How many students passed?",
       "difficulty": "medium",
       "options": [
-        "13",
-        "8",
         "16",
         "12",
-        "28"
+        "28",
+        "13",
+        "8"
       ],
       "correctAnswer": "12",
       "explanation": "Total parts = 7, each part = 28/7 = 4. Passed = 3 × 4 = 12.",
@@ -386,11 +386,11 @@
       "prompt": "If 4x + 8 = 1x + 26, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "12",
         "6",
         "36",
         "42",
-        "35",
-        "12"
+        "35"
       ],
       "correctAnswer": "36",
       "explanation": "4x − 1x = 26 − 8 → 3x = 18 → x = 6. So x² = 36.",
@@ -403,11 +403,11 @@
       "prompt": "A right triangle has legs of length 9 and 12. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "21",
         "17",
         "14",
         "15",
-        "16",
-        "21"
+        "16"
       ],
       "correctAnswer": "15",
       "explanation": "Hypotenuse = √(9² + 12²) = √225 = 15.",
@@ -420,11 +420,11 @@
       "prompt": "What is the total user base across all platforms in Q4?",
       "difficulty": "medium",
       "options": [
+        "950 million",
         "840 million",
         "880 million",
         "900 million",
-        "920 million",
-        "950 million"
+        "920 million"
       ],
       "correctAnswer": "920 million",
       "explanation": "Q4 total: 320+228+200+165 = 913 million (closest option: 920 million)",
@@ -477,11 +477,11 @@
       "prompt": "Platform A's user growth from Q1 to Q4 is approximately what percent?",
       "difficulty": "medium",
       "options": [
-        "24%",
         "28%",
         "32%",
         "36%",
-        "40%"
+        "40%",
+        "24%"
       ],
       "correctAnswer": "28%",
       "explanation": "(320-250)/250 = 70/250 = 0.28 = 28%",

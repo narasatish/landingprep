@@ -109,11 +109,11 @@
       "topic": "critical_thinking",
       "prompt": "The scientist's analysis was not reductive; it was deliberately ____ because the data supported multiple interpretations simultaneously.",
       "options": [
+        "erratic",
         "nuanced",
         "careless",
         "identical",
-        "mechanical",
-        "erratic"
+        "mechanical"
       ],
       "correctAnswer": "nuanced",
       "explanation": "Nuanced = showing fine distinctions; fits 'multiple interpretations.'",
@@ -126,11 +126,11 @@
       "topic": "philosophy",
       "prompt": "The council's decision was seen as ____ by critics who argued that it favoured one group at the expense of all others.",
       "options": [
+        "transparent",
         "equitable",
         "capricious",
         "judicious",
-        "deliberate",
-        "transparent"
+        "deliberate"
       ],
       "correctAnswer": "capricious",
       "explanation": "Capricious = given to sudden changes of mood or behaviour; implies arbitrariness.",
@@ -221,10 +221,10 @@
       "passage": "The scientific revolution of the seventeenth century is often credited with establishing the empirical method as the foundation of modern knowledge. Yet historians of science have increasingly questioned whether this narrative of rupture is accurate. Many of the mathematical and observational techniques associated with Galileo, Kepler, and Newton had precedents in Islamic scholarship of the ninth to thirteenth centuries, in the work of scholars such as Ibn al-Haytham — whose geometric optics directly influenced European Renaissance scientists — and in the astronomical observations of the Maragha School in Persia.\n\nWhat the seventeenth century did introduce, however, was a distinctive social and institutional infrastructure: learned societies, printed journals, and a culture of peer criticism that allowed scientific claims to be tested, challenged, and refined across national boundaries. The knowledge was arguably not new; the machinery for validating and propagating it was.\n\nThis institutional dimension is often overlooked in popular accounts that focus exclusively on the genius of individual scientists. By treating Newton as the originator rather than the synthesiser of classical mechanics, for instance, popular history effaces the collaborative and cumulative nature of scientific knowledge.",
       "prompt": "What claim do historians of science increasingly question?",
       "options": [
-        "That Ibn al-Haytham existed",
-        "That the seventeenth century introduced a complete break from prior knowledge",
         "That Galileo used mathematics",
-        "That peer review is effective"
+        "That peer review is effective",
+        "That Ibn al-Haytham existed",
+        "That the seventeenth century introduced a complete break from prior knowledge"
       ],
       "correctAnswer": "That the seventeenth century introduced a complete break from prior knowledge",
       "explanation": "The passage says historians question whether the narrative of rupture from prior knowledge is accurate.",
@@ -238,10 +238,10 @@
       "passage": "The scientific revolution of the seventeenth century is often credited with establishing the empirical method as the foundation of modern knowledge. Yet historians of science have increasingly questioned whether this narrative of rupture is accurate. Many of the mathematical and observational techniques associated with Galileo, Kepler, and Newton had precedents in Islamic scholarship of the ninth to thirteenth centuries, in the work of scholars such as Ibn al-Haytham — whose geometric optics directly influenced European Renaissance scientists — and in the astronomical observations of the Maragha School in Persia.\n\nWhat the seventeenth century did introduce, however, was a distinctive social and institutional infrastructure: learned societies, printed journals, and a culture of peer criticism that allowed scientific claims to be tested, challenged, and refined across national boundaries. The knowledge was arguably not new; the machinery for validating and propagating it was.\n\nThis institutional dimension is often overlooked in popular accounts that focus exclusively on the genius of individual scientists. By treating Newton as the originator rather than the synthesiser of classical mechanics, for instance, popular history effaces the collaborative and cumulative nature of scientific knowledge.",
       "prompt": "According to the passage, what was genuinely new about the seventeenth century scientific revolution?",
       "options": [
-        "Mathematical techniques",
-        "Astronomical observations",
         "Social and institutional infrastructure for validating knowledge",
-        "The concept of empiricism"
+        "The concept of empiricism",
+        "Mathematical techniques",
+        "Astronomical observations"
       ],
       "correctAnswer": "Social and institutional infrastructure for validating knowledge",
       "explanation": "The passage states the seventeenth century introduced learned societies, journals, and peer criticism — not the knowledge itself.",
@@ -255,10 +255,10 @@
       "passage": "The scientific revolution of the seventeenth century is often credited with establishing the empirical method as the foundation of modern knowledge. Yet historians of science have increasingly questioned whether this narrative of rupture is accurate. Many of the mathematical and observational techniques associated with Galileo, Kepler, and Newton had precedents in Islamic scholarship of the ninth to thirteenth centuries, in the work of scholars such as Ibn al-Haytham — whose geometric optics directly influenced European Renaissance scientists — and in the astronomical observations of the Maragha School in Persia.\n\nWhat the seventeenth century did introduce, however, was a distinctive social and institutional infrastructure: learned societies, printed journals, and a culture of peer criticism that allowed scientific claims to be tested, challenged, and refined across national boundaries. The knowledge was arguably not new; the machinery for validating and propagating it was.\n\nThis institutional dimension is often overlooked in popular accounts that focus exclusively on the genius of individual scientists. By treating Newton as the originator rather than the synthesiser of classical mechanics, for instance, popular history effaces the collaborative and cumulative nature of scientific knowledge.",
       "prompt": "The passage suggests that popular accounts of science tend to:",
       "options": [
-        "Overemphasise institutional factors",
         "Undervalue Islamic scholarship",
         "Focus excessively on individual genius",
-        "Ignore astronomical discoveries"
+        "Ignore astronomical discoveries",
+        "Overemphasise institutional factors"
       ],
       "correctAnswer": "Focus excessively on individual genius",
       "explanation": "The passage explicitly criticises popular history for treating Newton as originator rather than synthesiser, ignoring collaborative nature.",
@@ -272,10 +272,10 @@
       "passage": "The scientific revolution of the seventeenth century is often credited with establishing the empirical method as the foundation of modern knowledge. Yet historians of science have increasingly questioned whether this narrative of rupture is accurate. Many of the mathematical and observational techniques associated with Galileo, Kepler, and Newton had precedents in Islamic scholarship of the ninth to thirteenth centuries, in the work of scholars such as Ibn al-Haytham — whose geometric optics directly influenced European Renaissance scientists — and in the astronomical observations of the Maragha School in Persia.\n\nWhat the seventeenth century did introduce, however, was a distinctive social and institutional infrastructure: learned societies, printed journals, and a culture of peer criticism that allowed scientific claims to be tested, challenged, and refined across national boundaries. The knowledge was arguably not new; the machinery for validating and propagating it was.\n\nThis institutional dimension is often overlooked in popular accounts that focus exclusively on the genius of individual scientists. By treating Newton as the originator rather than the synthesiser of classical mechanics, for instance, popular history effaces the collaborative and cumulative nature of scientific knowledge.",
       "prompt": "The word 'effaces' as used in the final sentence most nearly means:",
       "options": [
+        "Exaggerates",
         "Celebrates",
         "Erases",
-        "Complicates",
-        "Exaggerates"
+        "Complicates"
       ],
       "correctAnswer": "Erases",
       "explanation": "Effaces = wipes out or obscures — popular history erases the collaborative nature by focusing on individual geniuses.",
@@ -289,10 +289,10 @@
       "passage": "Urbanisation has accelerated globally at a pace that has outstripped the capacity of many city governments to provide basic services. In sub-Saharan Africa, it is estimated that more than 60 percent of urban residents live in informal settlements — areas characterised by inadequate sanitation, insecure land tenure, and limited access to clean water. The conventional policy response has been slum clearance and relocation, moving residents to formal housing developments on the urban periphery.\n\nCritics argue that this approach consistently fails because it disregards the economic and social networks that informal settlements generate. Street vendors, repair workshops, childcare cooperatives, and informal credit systems create dense webs of mutual support that are not replicated in the standardised housing blocks to which residents are relocated. When communities are broken up by relocation, the social capital that sustained individual households is destroyed along with the physical structures.\n\nAn alternative approach — in-situ upgrading — involves improving services and tenure security within existing settlements rather than demolishing them. Studies from Brazil, India, and South Africa suggest that in-situ upgrading produces better health outcomes, stronger economic integration, and higher rates of resident satisfaction than relocation programmes.",
       "prompt": "What is the main criticism of slum clearance as a policy approach?",
       "options": [
-        "It is too expensive",
-        "It ignores the social and economic networks informal settlements create",
         "It relocates residents too far from city centres",
-        "It requires international funding"
+        "It requires international funding",
+        "It is too expensive",
+        "It ignores the social and economic networks informal settlements create"
       ],
       "correctAnswer": "It ignores the social and economic networks informal settlements create",
       "explanation": "The passage says clearance disregards economic and social networks that informal settlements generate.",
@@ -306,10 +306,10 @@
       "passage": "Urbanisation has accelerated globally at a pace that has outstripped the capacity of many city governments to provide basic services. In sub-Saharan Africa, it is estimated that more than 60 percent of urban residents live in informal settlements — areas characterised by inadequate sanitation, insecure land tenure, and limited access to clean water. The conventional policy response has been slum clearance and relocation, moving residents to formal housing developments on the urban periphery.\n\nCritics argue that this approach consistently fails because it disregards the economic and social networks that informal settlements generate. Street vendors, repair workshops, childcare cooperatives, and informal credit systems create dense webs of mutual support that are not replicated in the standardised housing blocks to which residents are relocated. When communities are broken up by relocation, the social capital that sustained individual households is destroyed along with the physical structures.\n\nAn alternative approach — in-situ upgrading — involves improving services and tenure security within existing settlements rather than demolishing them. Studies from Brazil, India, and South Africa suggest that in-situ upgrading produces better health outcomes, stronger economic integration, and higher rates of resident satisfaction than relocation programmes.",
       "prompt": "According to the passage, what is 'social capital' in this context?",
       "options": [
-        "Financial savings held in community banks",
         "The collective networks and relationships that support individuals",
         "Government funding allocated to social services",
-        "Educational qualifications of urban residents"
+        "Educational qualifications of urban residents",
+        "Financial savings held in community banks"
       ],
       "correctAnswer": "The collective networks and relationships that support individuals",
       "explanation": "The passage describes social capital as the web of mutual support — networks, cooperatives, informal credit — that sustains households.",

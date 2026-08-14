@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "Why does the member want to cancel?",
       "options": [
-        "The facility is too crowded",
         "They're relocating to British Columbia for work",
         "They want to join a different gym",
-        "They're not satisfied with the equipment"
+        "They're not satisfied with the equipment",
+        "The facility is too crowded"
       ],
       "correctAnswer": "They're relocating to British Columbia for work",
       "explanation": "Member states 'I'm relocating to British Columbia for work.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the monthly membership fee?",
       "options": [
+        "$99",
         "$69",
         "$79",
-        "$89",
-        "$99"
+        "$89"
       ],
       "correctAnswer": "$89",
       "explanation": "Rep states 'you're on our premium monthly plan at $89 per month.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When will the membership end?",
       "options": [
-        "June 17th",
         "June 24th",
         "July 1st",
-        "July 3rd"
+        "July 3rd",
+        "June 17th"
       ],
       "correctAnswer": "June 24th",
       "explanation": "Rep confirms 'That would be June 24th' for three weeks from the conversation date.",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What is the original early termination fee?",
       "options": [
-        "$100",
         "$125",
         "$150",
-        "$200"
+        "$200",
+        "$100"
       ],
       "correctAnswer": "$150",
       "explanation": "Rep states 'There is a $150 early termination fee.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What is the reduced early termination fee offered?",
       "options": [
-        "$50",
-        "$75",
         "$100",
-        "$125"
+        "$125",
+        "$50",
+        "$75"
       ],
       "correctAnswer": "$75",
       "explanation": "Rep offers to reduce the fee 'to $75' as a gesture of loyalty.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has Rebecca lived in the neighbourhood?",
       "options": [
+        "Five years",
         "Two years",
         "Three years",
-        "Four years",
-        "Five years"
+        "Four years"
       ],
       "correctAnswer": "Five years",
       "explanation": "Rebecca states 'About five years now.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "When did David move to the neighbourhood?",
       "options": [
-        "One week ago",
         "Two weeks ago",
         "Last month",
-        "Two months ago"
+        "Two months ago",
+        "One week ago"
       ],
       "correctAnswer": "Last month",
       "explanation": "David says 'Just moved here last month.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "What is the best season in this neighbourhood?",
       "options": [
+        "Winter",
         "Spring",
         "Summer",
-        "Fall",
-        "Winter"
+        "Fall"
       ],
       "correctAnswer": "Summer",
       "explanation": "Rebecca states 'The summer's the best season here.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "Where is the farmer's market held?",
       "options": [
+        "Oak and Queen",
         "Main and Queen",
         "Main and King",
-        "Main and Oak",
-        "Oak and Queen"
+        "Main and Oak"
       ],
       "correctAnswer": "Main and Oak",
       "explanation": "Rebecca mentions 'at the corner of Main and Oak.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What type of community does Rebecca describe?",
       "options": [
-        "Business-focused",
         "Very friendly",
         "Quiet and isolated",
-        "Fast-paced"
+        "Fast-paced",
+        "Business-focused"
       ],
       "correctAnswer": "Very friendly",
       "explanation": "Rebecca says 'It's a very friendly community.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the lost luggage reimbursement limit in the Standard plan?",
       "options": [
-        "$500",
-        "$1,000",
         "$1,500",
-        "$2,500"
+        "$2,500",
+        "$500",
+        "$1,000"
       ],
       "correctAnswer": "$1,000",
       "explanation": "The guide mentions 'lost luggage reimbursement up to one thousand dollars' in the Standard plan.",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the Premium plan's lost luggage coverage limit?",
       "options": [
+        "$2,500",
         "$1,000",
         "$1,500",
-        "$2,000",
-        "$2,500"
+        "$2,000"
       ],
       "correctAnswer": "$2,500",
       "explanation": "The Premium plan includes 'upgrade to two thousand five hundred dollars for lost luggage.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "How long do you have to file a claim after an incident?",
       "options": [
-        "30 days",
         "60 days",
         "90 days",
-        "120 days"
+        "120 days",
+        "30 days"
       ],
       "correctAnswer": "90 days",
       "explanation": "The guide states 'Claims must be filed within ninety days of the incident.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "What is the toll-free claims phone number?",
       "options": [
+        "1-800-555-0417",
         "1-800-555-0140",
         "1-800-555-0147",
-        "1-800-555-0174",
-        "1-800-555-0417"
+        "1-800-555-0174"
       ],
       "correctAnswer": "1-800-555-0147",
       "explanation": "The guide provides 'call our toll-free number at 1-800-555-0147.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the bill number for the education reform?",
       "options": [
-        "Bill 235",
-        "Bill 247",
         "Bill 250",
-        "Bill 260"
+        "Bill 260",
+        "Bill 235",
+        "Bill 247"
       ],
       "correctAnswer": "Bill 247",
       "explanation": "The legislation is identified as Bill 247.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "When will mandatory digital literacy courses begin?",
       "options": [
-        "This year",
         "Next September",
         "January 2027",
-        "September 2027"
+        "September 2027",
+        "This year"
       ],
       "correctAnswer": "Next September",
       "explanation": "High schools will introduce mandatory digital literacy courses starting next September.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "By what percentage are teacher salaries being increased?",
       "options": [
-        "5 percent",
         "6 percent",
         "8 percent",
-        "10 percent"
+        "10 percent",
+        "5 percent"
       ],
       "correctAnswer": "8 percent",
       "explanation": "Teacher salaries will be increased by 8 percent over four years.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How much money is allocated for infrastructure improvements?",
       "options": [
+        "2.5 billion dollars",
         "1.5 billion dollars",
         "1.8 billion dollars",
-        "2.1 billion dollars",
-        "2.5 billion dollars"
+        "2.1 billion dollars"
       ],
       "correctAnswer": "2.1 billion dollars",
       "explanation": "The bill allocates 2.1 billion dollars for infrastructure improvements.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the total budget for the renovation?",
       "options": [
-        "5.2 million dollars",
-        "6.0 million dollars",
         "6.8 million dollars",
-        "7.5 million dollars"
+        "7.5 million dollars",
+        "5.2 million dollars",
+        "6.0 million dollars"
       ],
       "correctAnswer": "6.8 million dollars",
       "explanation": "The renovation project is budgeted at 6.8 million dollars.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "How long is the renovation expected to take?",
       "options": [
-        "12 months",
         "15 months",
         "18 months",
-        "24 months"
+        "24 months",
+        "12 months"
       ],
       "correctAnswer": "18 months",
       "explanation": "The project should take about 18 months to complete.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What are the three main components of the renovation?",
       "options": [
+        "Cafe, library, fitness center",
         "Pool, gym, parking lot",
         "Fitness center, pool upgrade, youth spaces",
-        "Gym, parking, offices",
-        "Cafe, library, fitness center"
+        "Gym, parking, offices"
       ],
       "correctAnswer": "Fitness center, pool upgrade, youth spaces",
       "explanation": "Plans include a new fitness center, pool upgrade, and additional youth programming spaces.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What is Robert's main concern?",
       "options": [
+        "Parking during renovation",
         "Noise during construction",
         "Cost of the project",
-        "Where his kids' programs will go",
-        "Parking during renovation"
+        "Where his kids' programs will go"
       ],
       "correctAnswer": "Where his kids' programs will go",
       "explanation": "Robert worries about where after-school programs will be located during construction.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "Where does Susan plan to relocate programs during construction?",
       "options": [
-        "A temporary building",
         "The community room and outdoor spaces",
         "A school gym",
-        "A local fitness facility"
+        "A local fitness facility",
+        "A temporary building"
       ],
       "correctAnswer": "The community room and outdoor spaces",
       "explanation": "Susan plans to maintain and use the community room and outdoor spaces for programs.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What concern does Jason raise about using outdoor space?",
       "options": [
+        "Noise complaints",
         "Weather damage",
         "Limited room for physical activities",
-        "Theft concerns",
-        "Noise complaints"
+        "Theft concerns"
       ],
       "correctAnswer": "Limited room for physical activities",
       "explanation": "Jason notes that if programs move outdoors, there will be limited space for sports and recreation.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What suggestion does Jason make for outdoor activities?",
       "options": [
+        "Move all programs indoors",
         "Build a temporary gym",
         "Close programs temporarily",
-        "Use a local park",
-        "Move all programs indoors"
+        "Use a local park"
       ],
       "correctAnswer": "Use a local park",
       "explanation": "Jason suggests using a local park for outdoor programming during construction.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "They're not programmed correctly",
         "They're trained on historical data that includes human bias",
         "They lack computing power",
-        "They're intentionally designed to discriminate"
+        "They're intentionally designed to discriminate",
+        "They're not programmed correctly"
       ],
       "correctAnswer": "They're trained on historical data that includes human bias",
       "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What was the issue with Google's recruiting algorithm?",
       "options": [
+        "It was too expensive",
         "It was too strict",
         "It showed bias against applicants from historically black colleges",
-        "It wasn't identifying talent",
-        "It was too expensive"
+        "It wasn't identifying talent"
       ],
       "correctAnswer": "It showed bias against applicants from historically black colleges",
       "explanation": "Google's algorithm showed bias against applicants from historically black colleges.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What key point does the speaker make about data?",
       "options": [
-        "Data is always objective",
-        "Data is never neutral and includes bias",
         "Data should never be used in hiring",
-        "Data is a recent invention"
+        "Data is a recent invention",
+        "Data is always objective",
+        "Data is never neutral and includes bias"
       ],
       "correctAnswer": "Data is never neutral and includes bias",
       "explanation": "The speaker argues data is never neutral and carries historical bias.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
-        "Use them immediately",
-        "Train employees on algorithms",
         "Conduct rigorous bias testing and external auditing",
-        "Ignore algorithm concerns"
+        "Ignore algorithm concerns",
+        "Use them immediately",
+        "Train employees on algorithms"
       ],
       "correctAnswer": "Conduct rigorous bias testing and external auditing",
       "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",

@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the main problem with the refrigerator?",
       "options": [
-        "The compressor is broken completely",
         "The ice maker isn't working and there's a strange noise from the compressor",
         "The door seal is damaged",
-        "The temperature control panel is faulty"
+        "The temperature control panel is faulty",
+        "The compressor is broken completely"
       ],
       "correctAnswer": "The ice maker isn't working and there's a strange noise from the compressor",
       "explanation": "The customer explicitly states both issues in their opening complaint.",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "How long has the customer owned the refrigerator?",
       "options": [
-        "Three days",
         "One week",
         "Six days",
-        "Two weeks"
+        "Two weeks",
+        "Three days"
       ],
       "correctAnswer": "Six days",
       "explanation": "Customer states 'I've had it six days' and bought it Tuesday morning.",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What was the purchase price?",
       "options": [
-        "$999",
         "$1,099",
         "$1,199",
-        "$1,299"
+        "$1,299",
+        "$999"
       ],
       "correctAnswer": "$1,299",
       "explanation": "Customer clearly states the purchase price was $1,299.",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the return window policy mentioned?",
       "options": [
+        "Ten days",
         "Three days",
         "Five days",
-        "Seven days",
-        "Ten days"
+        "Seven days"
       ],
       "correctAnswer": "Seven days",
       "explanation": "Agent mentions 'within the seven-day return window.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "Where was the refrigerator purchased?",
       "options": [
-        "The mall location",
         "The downtown store",
         "Online",
-        "A second-hand seller"
+        "A second-hand seller",
+        "The mall location"
       ],
       "correctAnswer": "The downtown store",
       "explanation": "Customer says they bought it from 'your downtown store.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What refund method does the customer prefer?",
       "options": [
-        "Store credit",
         "Exchange for another model",
         "Cash back",
-        "Check by mail"
+        "Check by mail",
+        "Store credit"
       ],
       "correctAnswer": "Cash back",
       "explanation": "Customer explicitly states 'I'd rather have a refund.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "When will the refund appear in the customer's account?",
       "options": [
+        "Within 2 weeks",
         "Within 2 business days",
         "Within 5 to 7 business days",
-        "Within 10 business days",
-        "Within 2 weeks"
+        "Within 10 business days"
       ],
       "correctAnswer": "Within 5 to 7 business days",
       "explanation": "Agent states 'the refund will appear in your account within five to seven business days.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What time window is available for pickup?",
       "options": [
-        "8 AM to 12 PM",
-        "10 AM to 2 PM",
         "12 PM to 4 PM",
-        "2 PM to 6 PM"
+        "2 PM to 6 PM",
+        "8 AM to 12 PM",
+        "10 AM to 2 PM"
       ],
       "correctAnswer": "10 AM to 2 PM",
       "explanation": "Agent offers pickup 'between 10 and 2 PM' tomorrow morning.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has it been since Sarah and Michael last saw each other?",
       "options": [
-        "Two months",
-        "Four months",
         "Six months",
-        "A year"
+        "A year",
+        "Two months",
+        "Four months"
       ],
       "correctAnswer": "Six months",
       "explanation": "Michael says 'Must be like six months since we last hung out' and Sarah agrees.",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "Where did Michael travel?",
       "options": [
-        "Toronto",
         "Montreal",
         "Vancouver",
-        "Calgary"
+        "Calgary",
+        "Toronto"
       ],
       "correctAnswer": "Vancouver",
       "explanation": "Sarah asks 'How was your trip to Vancouver?' confirming Michael's destination.",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "What type of restaurant does Sarah suggest?",
       "options": [
-        "Mexican",
-        "Italian",
         "Japanese",
-        "Indian"
+        "Indian",
+        "Mexican",
+        "Italian"
       ],
       "correctAnswer": "Italian",
       "explanation": "Sarah mentions 'that new Italian place downtown.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What day do they plan to meet?",
       "options": [
-        "Tuesday",
-        "Wednesday",
         "Thursday",
-        "Friday"
+        "Friday",
+        "Tuesday",
+        "Wednesday"
       ],
       "correctAnswer": "Thursday",
       "explanation": "Michael suggests 'Thursday' and Sarah confirms 'Thursday works for me.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "In which room are Group of Seven paintings displayed?",
       "options": [
+        "Room 106",
         "Room 101",
         "Room 102",
-        "Room 104",
-        "Room 106"
+        "Room 104"
       ],
       "correctAnswer": "Room 102",
       "explanation": "The guide says 'We'll start with the Group of Seven landscape paintings in Room 102.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What region did Emily Carr primarily focus on?",
       "options": [
+        "Prairie provinces",
         "Ontario",
         "Quebec",
-        "British Columbia",
-        "Prairie provinces"
+        "British Columbia"
       ],
       "correctAnswer": "British Columbia",
       "explanation": "The guide mentions 'Emily Carr's totem pole paintings from British Columbia.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What artistic movement were Borduas and Riopelle part of?",
       "options": [
-        "Cubism",
         "Automatiste",
         "Impressionism",
-        "Surrealism"
+        "Surrealism",
+        "Cubism"
       ],
       "correctAnswer": "Automatiste",
       "explanation": "The guide states these 'Montreal-based artists were part of the Automatiste movement.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "Which city were Borduas and Riopelle based in?",
       "options": [
-        "Toronto",
         "Vancouver",
         "Montreal",
-        "Ottawa"
+        "Ottawa",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "The guide identifies them as 'Montreal-based artists.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How many workers does the union represent?",
       "options": [
-        "8,000 workers",
-        "10,000 workers",
         "12,000 workers",
-        "15,000 workers"
+        "15,000 workers",
+        "8,000 workers",
+        "10,000 workers"
       ],
       "correctAnswer": "10,000 workers",
       "explanation": "The report explicitly states the union represents over 10,000 workers.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "What percentage pay increase is the union requesting?",
       "options": [
-        "2.5 percent",
-        "3.0 percent",
         "4.25 percent",
-        "5.0 percent"
+        "5.0 percent",
+        "2.5 percent",
+        "3.0 percent"
       ],
       "correctAnswer": "4.25 percent",
       "explanation": "Union spokesperson Maria Chen states members are seeking a 4.25 percent pay increase.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "What is the TTC's wage offer?",
       "options": [
+        "1.5 percent over three years",
         "2.5 percent over three years",
         "3.5 percent over two years",
-        "4.25 percent over four years",
-        "1.5 percent over three years"
+        "4.25 percent over four years"
       ],
       "correctAnswer": "2.5 percent over three years",
       "explanation": "The report states the TTC counters with 2.5 percent over three years.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "How much has foot traffic in downtown businesses decreased?",
       "options": [
+        "50 percent",
         "20 percent",
         "30 percent",
-        "40 percent",
-        "50 percent"
+        "40 percent"
       ],
       "correctAnswer": "30 percent",
       "explanation": "Downtown businesses report a 30 percent drop in foot traffic since Monday.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "When are emergency mediation sessions expected to resume?",
       "options": [
-        "Tonight",
-        "Tomorrow morning",
         "Next week",
-        "In two days"
+        "In two days",
+        "Tonight",
+        "Tomorrow morning"
       ],
       "correctAnswer": "Tomorrow morning",
       "explanation": "City Council has called for emergency mediation sessions to resume tomorrow morning.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What does Sarah believe about mentorship in remote work settings?",
       "options": [
-        "Mentorship works better online",
         "Newer staff miss out on mentorship opportunities",
         "Mentorship is not important",
-        "Remote mentorship is equally effective"
+        "Remote mentorship is equally effective",
+        "Mentorship works better online"
       ],
       "correctAnswer": "Newer staff miss out on mentorship opportunities",
       "explanation": "Sarah explicitly states she worries about newer staff missing out on mentorship opportunities.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage has James's productivity increased working remotely?",
       "options": [
-        "25 percent",
         "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James states his productivity has increased by about 40 percent since working remotely.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What reason does James give for his increased productivity?",
       "options": [
+        "More flexible schedule",
         "Better equipment at home",
         "Fewer interruptions",
-        "Shorter work hours",
-        "More flexible schedule"
+        "Shorter work hours"
       ],
       "correctAnswer": "Fewer interruptions",
       "explanation": "James mentions fewer interruptions allow him to focus better on complex projects.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Tom identify as the main finding in the HR data?",
       "options": [
-        "Remote work is always better",
-        "Mixed results depending on the team",
         "Office work is most productive",
-        "Remote work decreases productivity"
+        "Remote work decreases productivity",
+        "Remote work is always better",
+        "Mixed results depending on the team"
       ],
       "correctAnswer": "Mixed results depending on the team",
       "explanation": "Tom says the data shows mixed results, with some teams more productive remotely while others struggle.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of team does Tom suggest might work better in person?",
       "options": [
-        "Software developers",
-        "Marketing teams",
         "Customer service teams",
-        "Finance teams"
+        "Finance teams",
+        "Software developers",
+        "Marketing teams"
       ],
       "correctAnswer": "Customer service teams",
       "explanation": "Tom suggests customer service teams probably need more in-person interaction.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What solution does Tom propose?",
       "options": [
-        "All employees back in office",
         "Completely remote for all",
         "Hybrid approach with flexibility",
-        "No change to current policy"
+        "No change to current policy",
+        "All employees back in office"
       ],
       "correctAnswer": "Hybrid approach with flexibility",
       "explanation": "Tom proposes a hybrid approach that gives managers flexibility based on their team's needs.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "According to Sarah, what does collaboration depend on?",
       "options": [
+        "Email efficiency",
         "Video call quality",
         "People being in the same space",
-        "Written communication",
-        "Email efficiency"
+        "Written communication"
       ],
       "correctAnswer": "People being in the same space",
       "explanation": "Sarah believes collaboration happens more naturally when people are in the same space.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "How does James stay connected with colleagues remotely?",
       "options": [
+        "Monthly meetings only",
         "Phone calls only",
         "Email messages only",
-        "Video calls and shared documents",
-        "Monthly meetings only"
+        "Video calls and shared documents"
       ],
       "correctAnswer": "Video calls and shared documents",
       "explanation": "James mentions collaborating through video calls and shared documents.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "It's too expensive",
         "It has gone too far in terms of surveillance",
         "It doesn't improve security",
-        "It's ineffective"
+        "It's ineffective",
+        "It's too expensive"
       ],
       "correctAnswer": "It has gone too far in terms of surveillance",
       "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
+        "They communicate better",
         "They work harder",
         "It creates anxiety and erodes trust",
-        "They become more efficient",
-        "They communicate better"
+        "They become more efficient"
       ],
       "correctAnswer": "It creates anxiety and erodes trust",
       "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
-        "It increases productivity",
-        "It decreases productivity and morale",
         "It has no effect",
-        "It improves communication"
+        "It improves communication",
+        "It increases productivity",
+        "It decreases productivity and morale"
       ],
       "correctAnswer": "It decreases productivity and morale",
       "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What solution does the speaker propose?",
       "options": [
-        "No monitoring at all",
-        "Complete transparency monitoring",
         "Targeted monitoring only where necessary",
-        "Random monitoring"
+        "Random monitoring",
+        "No monitoring at all",
+        "Complete transparency monitoring"
       ],
       "correctAnswer": "Targeted monitoring only where necessary",
       "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",

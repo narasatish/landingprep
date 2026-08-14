@@ -14,13 +14,13 @@
       "num": 1,
       "prompt": "A graph showing training completion rates in the employee performance sector presents the following data: Sales: 91%, Operations: 73%, HR: 88%, Finance: 95%, IT: 82%. According to the graph, which segment/period shows the highest value?",
       "options": [
-        "A. The first listed value",
-        "B. The last listed value",
-        "C. The middle-ranked value",
-        "D. The value closest to the overall average",
-        "E. Cannot be determined from the data"
+        "A. Cannot be determined from the data",
+        "B. The first listed value",
+        "C. The last listed value",
+        "D. The middle-ranked value",
+        "E. The value closest to the overall average"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "This graphics_interpretation question tests ability to interpret employee performance data on training completion rates.",
       "difficulty": "easy",
       "topic": "data_interpretation",
@@ -60,13 +60,13 @@
       "num": 2,
       "prompt": "Based on the chart of property price indices data (City centre: 148, Suburbs: 112, Rural: 89, Coastal: 167), which TWO values would combine to equal approximately the average?",
       "options": [
-        "A. Values 1 and 3",
-        "B. Values 2 and 4",
-        "C. Values 1 and 4",
-        "D. Values 2 and 5",
-        "E. Values 3 and 5"
+        "A. Values 2 and 5",
+        "B. Values 3 and 5",
+        "C. Values 1 and 3",
+        "D. Values 2 and 4",
+        "E. Values 1 and 4"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "This graphics_interpretation question tests ability to interpret real estate data on property price indices.",
       "difficulty": "easy",
       "topic": "data_interpretation",
@@ -104,13 +104,13 @@
       "num": 3,
       "prompt": "A scatter plot comparing clinical trial outcomes across pharmaceutical categories shows: Complete response: 34%, Partial response: 28%, Stable disease: 21%, Progression: 17%. If the trend continued, which projection is most consistent?",
       "options": [
-        "A. The first listed value",
-        "B. The last listed value",
-        "C. The middle-ranked value",
-        "D. The value closest to the overall average",
-        "E. Cannot be determined from the data"
+        "A. The middle-ranked value",
+        "B. The value closest to the overall average",
+        "C. Cannot be determined from the data",
+        "D. The first listed value",
+        "E. The last listed value"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "This graphics_interpretation question tests ability to interpret pharmaceutical data on clinical trial outcomes.",
       "difficulty": "easy",
       "topic": "data_interpretation",
@@ -148,13 +148,13 @@
       "num": 4,
       "prompt": "A graph showing on-time performance by route in the airline operations sector presents the following data: Domestic short: 88%, Domestic long: 79%, International: 71%, Regional: 84%. According to the graph, which segment/period shows the highest value?",
       "options": [
-        "A. Values 1 and 3",
-        "B. Values 2 and 4",
-        "C. Values 1 and 4",
-        "D. Values 2 and 5",
-        "E. Values 3 and 5"
+        "A. Values 2 and 4",
+        "B. Values 1 and 4",
+        "C. Values 2 and 5",
+        "D. Values 3 and 5",
+        "E. Values 1 and 3"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "E",
       "explanation": "This graphics_interpretation question tests ability to interpret airline operations data on on-time performance by route.",
       "difficulty": "easy",
       "topic": "data_interpretation",
@@ -214,13 +214,13 @@
       "num": 6,
       "prompt": "Given manufacturing defect rates by production line data: Line A: 0.8%, Line B: 1.4%, Line C: 0.5%, Line D: 2.1%. In the left column select the highest-performing category; in the right column select the category that improved most year-over-year.",
       "options": [
-        "A. See table row A",
-        "B. See table row B",
-        "C. See table row C",
-        "D. See table row D",
-        "E. See table row E"
+        "A. See table row E",
+        "B. See table row A",
+        "C. See table row B",
+        "D. See table row C",
+        "E. See table row D"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "This two_part_analysis question tests ability to interpret manufacturing data on defect rates by production line.",
       "difficulty": "easy",
       "topic": "data_interpretation",
@@ -236,13 +236,13 @@
       "num": 7,
       "prompt": "A banking manager reviews loan approval rates: Personal: 64%, Mortgage: 71%, Business: 48%, Auto: 79%, Student: 85%. Select: (1) the category requiring immediate attention and (2) the category that exceeds the target of the average by the greatest margin.",
       "options": [
-        "A. See table row A",
-        "B. See table row B",
-        "C. See table row C",
-        "D. See table row D",
-        "E. See table row E"
+        "A. See table row D",
+        "B. See table row E",
+        "C. See table row A",
+        "D. See table row B",
+        "E. See table row C"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "This two_part_analysis question tests ability to interpret banking data on loan approval rates.",
       "difficulty": "easy",
       "topic": "data_interpretation",
@@ -258,13 +258,13 @@
       "num": 8,
       "prompt": "Analysis of campaign conversion rates in marketing: Email: 3.2%, Social: 1.8%, Search: 4.7%, Display: 0.9%, Referral: 6.1%. Select the value closest to the median AND the value that represents the greatest deviation from the mean.",
       "options": [
-        "A. See table row A",
-        "B. See table row B",
-        "C. See table row C",
-        "D. See table row D",
-        "E. See table row E"
+        "A. See table row C",
+        "B. See table row D",
+        "C. See table row E",
+        "D. See table row A",
+        "E. See table row B"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "This two_part_analysis question tests ability to interpret marketing data on campaign conversion rates.",
       "difficulty": "medium",
       "topic": "data_interpretation",
@@ -280,13 +280,13 @@
       "num": 9,
       "prompt": "Three data sources on telecommunications subscriber churn rates are provided: (Memo) Overall performance improved this quarter. (Table) Postpaid: 2.1%, Prepaid: 8.4%, Broadband: 1.7%, Enterprise: 0.8%. (Email) Stakeholders express concern about outliers. Which source most directly supports the memo's claim?",
       "options": [
-        "A. Source 1 (Report) only",
-        "B. Source 2 (Email) only",
-        "C. Source 3 (Table) only",
-        "D. Sources 1 and 3 together",
-        "E. All three sources are equally relevant"
+        "A. Source 2 (Email) only",
+        "B. Source 3 (Table) only",
+        "C. Sources 1 and 3 together",
+        "D. All three sources are equally relevant",
+        "E. Source 1 (Report) only"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "E",
       "explanation": "This multi_source_reasoning question tests ability to interpret telecommunications data on subscriber churn rates.",
       "difficulty": "medium",
       "topic": "data_interpretation",
@@ -324,13 +324,13 @@
       "num": 11,
       "prompt": "Reviewing insurance records: Source A shows claims processing times: Auto: 8.2 days, Home: 14.5 days, Health: 6.1 days, Life: 21.3 days. Source B notes the average. Source C flags values more than 25% above or below average. Which values would Source C flag?",
       "options": [
-        "A. Source 1 (Report) only",
-        "B. Source 2 (Email) only",
-        "C. Source 3 (Table) only",
-        "D. Sources 1 and 3 together",
-        "E. All three sources are equally relevant"
+        "A. All three sources are equally relevant",
+        "B. Source 1 (Report) only",
+        "C. Source 2 (Email) only",
+        "D. Source 3 (Table) only",
+        "E. Sources 1 and 3 together"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "This multi_source_reasoning question tests ability to interpret insurance data on claims processing times.",
       "difficulty": "medium",
       "topic": "data_interpretation",
@@ -346,13 +346,13 @@
       "num": 12,
       "prompt": "Three data sources on construction project completion on schedule are provided: (Memo) Overall performance improved this quarter. (Table) Residential: 58%, Commercial: 44%, Infrastructure: 37%, Industrial: 51%. (Email) Stakeholders express concern about outliers. Which source most directly supports the memo's claim?",
       "options": [
-        "A. Source 1 (Report) only",
-        "B. Source 2 (Email) only",
-        "C. Source 3 (Table) only",
-        "D. Sources 1 and 3 together",
-        "E. All three sources are equally relevant"
+        "A. Sources 1 and 3 together",
+        "B. All three sources are equally relevant",
+        "C. Source 1 (Report) only",
+        "D. Source 2 (Email) only",
+        "E. Source 3 (Table) only"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "This multi_source_reasoning question tests ability to interpret construction data on project completion on schedule.",
       "difficulty": "medium",
       "topic": "data_interpretation",
@@ -368,13 +368,13 @@
       "num": 13,
       "prompt": "What is the relative ranking of categories in agriculture crop yield indices? (1) Wheat: 108. (2) The remaining values follow a consistent trend.",
       "options": [
-        "A. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
-        "B. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
-        "C. Both statements together are sufficient, but neither alone is sufficient",
-        "D. Each statement alone is sufficient",
-        "E. Neither statement alone nor together is sufficient"
+        "A. Both statements together are sufficient, but neither alone is sufficient",
+        "B. Each statement alone is sufficient",
+        "C. Neither statement alone nor together is sufficient",
+        "D. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "E. Statement (2) alone is sufficient, but statement (1) alone is not sufficient"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "This data_sufficiency question tests ability to interpret agriculture data on crop yield indices.",
       "difficulty": "medium",
       "topic": "data_interpretation",
@@ -390,13 +390,13 @@
       "num": 14,
       "prompt": "Is the e-commerce return rates by product category above the industry benchmark of the median? (1) Electronics: 12%. (2) The range of all values is 15%.",
       "options": [
-        "A. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
-        "B. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
-        "C. Both statements together are sufficient, but neither alone is sufficient",
-        "D. Each statement alone is sufficient",
-        "E. Neither statement alone nor together is sufficient"
+        "A. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "B. Both statements together are sufficient, but neither alone is sufficient",
+        "C. Each statement alone is sufficient",
+        "D. Neither statement alone nor together is sufficient",
+        "E. Statement (1) alone is sufficient, but statement (2) alone is not sufficient"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "E",
       "explanation": "This data_sufficiency question tests ability to interpret e-commerce data on return rates by product category.",
       "difficulty": "medium",
       "topic": "data_interpretation",
@@ -434,13 +434,13 @@
       "num": 16,
       "prompt": "What is the relative ranking of categories in tourism visitor spending by activity? (1) Accommodation: 38%. (2) The remaining values follow a consistent trend.",
       "options": [
-        "A. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
-        "B. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
-        "C. Both statements together are sufficient, but neither alone is sufficient",
-        "D. Each statement alone is sufficient",
-        "E. Neither statement alone nor together is sufficient"
+        "A. Neither statement alone nor together is sufficient",
+        "B. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
+        "C. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
+        "D. Both statements together are sufficient, but neither alone is sufficient",
+        "E. Each statement alone is sufficient"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "This data_sufficiency question tests ability to interpret tourism data on visitor spending by activity.",
       "difficulty": "hard",
       "topic": "data_interpretation",
@@ -456,13 +456,13 @@
       "num": 17,
       "prompt": "Sort the recruitment time-to-hire by department table: Engineering: 47 days, Marketing: 31 days, Finance: 28 days, Sales: 22 days, HR: 19 days. Which statement is accurate?",
       "options": [
-        "A. The first row ranks highest",
-        "B. The second row ranks highest",
-        "C. The third row ranks highest",
-        "D. The ranking depends on the sort criterion",
-        "E. Insufficient data to determine rank"
+        "A. The ranking depends on the sort criterion",
+        "B. Insufficient data to determine rank",
+        "C. The first row ranks highest",
+        "D. The second row ranks highest",
+        "E. The third row ranks highest"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "This table_analysis question tests ability to interpret recruitment data on time-to-hire by department.",
       "difficulty": "hard",
       "topic": "data_interpretation",
@@ -508,13 +508,13 @@
       "num": 18,
       "prompt": "A table comparing environmental emissions reduction by sector shows: Energy: -14%, Transport: -8%, Industry: -6%, Agriculture: -3%, Buildings: -11%. Indicate whether each statement is true, false, or cannot be determined.",
       "options": [
-        "A. The first row ranks highest",
-        "B. The second row ranks highest",
-        "C. The third row ranks highest",
-        "D. The ranking depends on the sort criterion",
-        "E. Insufficient data to determine rank"
+        "A. The third row ranks highest",
+        "B. The ranking depends on the sort criterion",
+        "C. Insufficient data to determine rank",
+        "D. The first row ranks highest",
+        "E. The second row ranks highest"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "This table_analysis question tests ability to interpret environmental data on emissions reduction by sector.",
       "difficulty": "hard",
       "topic": "data_interpretation",
@@ -560,13 +560,13 @@
       "num": 19,
       "prompt": "Based on the retail banking product penetration rates table (Current accounts: 100%, Savings: 74%, Credit cards: 52%, Investments: 31%, Mortgages: 28%), sort by the criteria given and identify which column would rank first.",
       "options": [
-        "A. The first row ranks highest",
-        "B. The second row ranks highest",
-        "C. The third row ranks highest",
-        "D. The ranking depends on the sort criterion",
-        "E. Insufficient data to determine rank"
+        "A. The second row ranks highest",
+        "B. The third row ranks highest",
+        "C. The ranking depends on the sort criterion",
+        "D. Insufficient data to determine rank",
+        "E. The first row ranks highest"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "E",
       "explanation": "This table_analysis question tests ability to interpret retail banking data on product penetration rates.",
       "difficulty": "hard",
       "topic": "data_interpretation",

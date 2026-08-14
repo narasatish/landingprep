@@ -49,10 +49,10 @@
       "topic": "Sentence Structure",
       "prompt": "At [2], which revision best combines the ideas about the Renaissance?",
       "options": [
-        "This period marked the transition from medieval to modern thought and emphasized",
         "This period, marking the transition from medieval to modern thought, emphasized",
         "This period marked the transition from medieval to modern thought, emphasizing",
-        "NO CHANGE"
+        "NO CHANGE",
+        "This period marked the transition from medieval to modern thought and emphasized"
       ],
       "correctAnswer": "This period marked the transition from medieval to modern thought, emphasizing",
       "explanation": "The participial phrase 'emphasizing' creates a smooth connection between the transition and the values emphasized during this period.",
@@ -66,10 +66,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"emphasizing\". Which choice is most appropriate?",
       "options": [
-        "emphasizing",
-        "emphasized",
         "emphasize",
-        "which emphasized"
+        "which emphasized",
+        "emphasizing",
+        "emphasized"
       ],
       "correctAnswer": "emphasizing",
       "explanation": "The participial form 'emphasizing' functions as a modifier and maintains parallel structure with other descriptions of the period.",
@@ -83,10 +83,10 @@
       "topic": "Organization",
       "prompt": "At [4], which transition best introduces the contrast between periods?",
       "options": [
+        "NO CHANGE",
         "In contrast, the Middle Ages, which",
         "While the Middle Ages, which",
-        "Unlike the Middle Ages, which",
-        "NO CHANGE"
+        "Unlike the Middle Ages, which"
       ],
       "correctAnswer": "Unlike the Middle Ages, which",
       "explanation": "'Unlike' directly establishes the contrast being discussed and is the most concise option.",
@@ -117,10 +117,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"The rediscovery of classical texts during this era proved transformative for philosophy, literature, and science.\". Which choice is most appropriate?",
       "options": [
-        "was proving transformative",
         "proves transformative",
         "proved transformative",
-        "proves to be transformative"
+        "proves to be transformative",
+        "was proving transformative"
       ],
       "correctAnswer": "proved transformative",
       "explanation": "The simple past tense 'proved' is consistent with the historical narrative of the passage.",
@@ -134,10 +134,10 @@
       "topic": "Sentence Structure",
       "prompt": "At [7], which revision best provides the transition to the printing press?",
       "options": [
-        "Scholars and artists drew inspiration from these ancient sources to reimagine their contemporary world.",
-        "Scholars and artists drew inspiration from these ancient sources to reimagine their contemporary world, but technology also played a crucial role.",
         "Scholars and artists drew inspiration from these ancient sources to reimagine their contemporary world, and the printing press accelerated this transformation.",
-        "NO CHANGE"
+        "NO CHANGE",
+        "Scholars and artists drew inspiration from these ancient sources to reimagine their contemporary world.",
+        "Scholars and artists drew inspiration from these ancient sources to reimagine their contemporary world, but technology also played a crucial role."
       ],
       "correctAnswer": "Scholars and artists drew inspiration from these ancient sources to reimagine their contemporary world.",
       "explanation": "The current sentence sets up the intellectual foundation before the next sentence introduces the printing press as a technological enabler.",
@@ -151,10 +151,10 @@
       "topic": "Organization",
       "prompt": "At [8], which transition best introduces the printing press information?",
       "options": [
+        "Additionally, the printing press, invented by Johannes Gutenberg around 1440, revolutionized",
         "Moreover, the printing press, invented by Johannes Gutenberg around 1440, revolutionized",
         "As the printing press, invented by Johannes Gutenberg around 1440, revolutionized",
-        "The printing press, invented by Johannes Gutenberg around 1440, revolutionized",
-        "Additionally, the printing press, invented by Johannes Gutenberg around 1440, revolutionized"
+        "The printing press, invented by Johannes Gutenberg around 1440, revolutionized"
       ],
       "correctAnswer": "The printing press, invented by Johannes Gutenberg around 1440, revolutionized",
       "explanation": "The simple statement without a transition is appropriate here; the printing press is a natural continuation of the discussion about sources of inspiration.",
@@ -219,10 +219,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"Leonardo da Vinci, Michelangelo, and Niccolò Machiavelli, each of whom\". Which choice is most appropriate?",
       "options": [
+        "Leonardo da Vinci, Michelangelo, and Niccolò Machiavelli; each of whom",
         "Leonardo da Vinci, Michelangelo, and Niccolò Machiavelli, each one of them",
         "Leonardo da Vinci, Michelangelo, and Niccolò Machiavelli, who each",
-        "Leonardo da Vinci, Michelangelo, and Niccolò Machiavelli, each of whom",
-        "Leonardo da Vinci, Michelangelo, and Niccolò Machiavelli; each of whom"
+        "Leonardo da Vinci, Michelangelo, and Niccolò Machiavelli, each of whom"
       ],
       "correctAnswer": "Leonardo da Vinci, Michelangelo, and Niccolò Machiavelli, each of whom",
       "explanation": "The phrase 'each of whom' correctly refers to the three individuals and is properly punctuated with a comma.",
@@ -236,10 +236,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"each of whom contributed\". Which choice is most appropriate?",
       "options": [
-        "has contributed groundbreaking ideas",
-        "contributes groundbreaking ideas",
         "contributed groundbreaking ideas",
-        "were contributing groundbreaking ideas"
+        "were contributing groundbreaking ideas",
+        "has contributed groundbreaking ideas",
+        "contributes groundbreaking ideas"
       ],
       "correctAnswer": "contributed groundbreaking ideas",
       "explanation": "The simple past tense 'contributed' is consistent with the historical context and the verb tense used elsewhere in the passage.",
@@ -253,10 +253,10 @@
       "topic": "Organization",
       "prompt": "At [14], which phrase best introduces the specific example of Leonardo?",
       "options": [
-        "Leonardo's anatomical drawings—based on careful observation and dissection—advanced",
         "Leonardo's anatomical drawings were based on careful observation and dissection and advanced",
         "Leonardo's anatomical drawings, based on careful observation and dissection, advanced",
-        "NO CHANGE"
+        "NO CHANGE",
+        "Leonardo's anatomical drawings—based on careful observation and dissection—advanced"
       ],
       "correctAnswer": "Leonardo's anatomical drawings, based on careful observation and dissection, advanced",
       "explanation": "Commas correctly set off the descriptive phrase, creating a smooth presentation of Leonardo's contributions.",
@@ -287,10 +287,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"cover only about six percent of Earth's land surface, yet they harbor\". Which choice is most appropriate?",
       "options": [
+        "though they harbor",
         "yet harboring",
         "and they harbor",
-        "yet they harbor",
-        "though they harbor"
+        "yet they harbor"
       ],
       "correctAnswer": "yet they harbor",
       "explanation": "'Yet' correctly introduces the contrasting idea that despite small area, rainforests contain great biodiversity.",
@@ -304,10 +304,10 @@
       "topic": "Punctuation",
       "prompt": "At [24], which punctuation is most appropriate before 'This extraordinary concentration'?",
       "options": [
-        "surface, this extraordinary concentration",
-        "surface; this extraordinary concentration",
         "surface. This extraordinary concentration",
-        "surface—this extraordinary concentration"
+        "surface—this extraordinary concentration",
+        "surface, this extraordinary concentration",
+        "surface; this extraordinary concentration"
       ],
       "correctAnswer": "surface. This extraordinary concentration",
       "explanation": "A period correctly separates two independent sentences.",
@@ -321,10 +321,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"This extraordinary concentration of biodiversity results\". Which choice is most appropriate?",
       "options": [
-        "results from the region's warm temperatures, high rainfalls, and complex ecosystem structures.",
         "result from the region's warm temperature, high rainfall, and complex ecosystem structure.",
         "results from the region's warm temperature, high rainfall, and complex ecosystem structure.",
-        "result from the region's warm temperatures, high rainfalls, and complex ecosystem structures."
+        "result from the region's warm temperatures, high rainfalls, and complex ecosystem structures.",
+        "results from the region's warm temperatures, high rainfalls, and complex ecosystem structures."
       ],
       "correctAnswer": "results from the region's warm temperature, high rainfall, and complex ecosystem structure.",
       "explanation": "The singular subject 'concentration' requires 'results,' and the singular nouns are appropriate in this context.",
@@ -355,10 +355,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"allowing countless organisms to coexist in the same geographic area.\". Which choice is most appropriate?",
       "options": [
-        "allowing countless organisms coexisting",
-        "allowing countless organisms to coexist",
         "allowing countless organisms are coexisting",
-        "allowing countless organism to coexist"
+        "allowing countless organism to coexist",
+        "allowing countless organisms coexisting",
+        "allowing countless organisms to coexist"
       ],
       "correctAnswer": "allowing countless organisms to coexist",
       "explanation": "The infinitive 'to coexist' correctly follows 'allowing' and maintains parallel structure.",
@@ -389,10 +389,10 @@
       "topic": "Punctuation",
       "prompt": "At [30], which punctuation best introduces the list of destructive activities?",
       "options": [
+        "NO CHANGE",
         "are destroying these vital ecosystems at an alarming rate, eliminating species before scientists have even identified them.",
         "are destroying: these vital ecosystems at an alarming rate, eliminating species before scientists have even identified them.",
-        "are destroying these vital ecosystems at an alarming rate; they eliminate species before scientists have even identified them.",
-        "NO CHANGE"
+        "are destroying these vital ecosystems at an alarming rate; they eliminate species before scientists have even identified them."
       ],
       "correctAnswer": "are destroying these vital ecosystems at an alarming rate, eliminating species before scientists have even identified them.",
       "explanation": "The current structure uses commas appropriately; no additional punctuation is needed.",
@@ -406,10 +406,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"eliminating species before scientists have even identified them.\". Which choice is most appropriate?",
       "options": [
-        "eliminating species before scientists have even identified them",
-        "eliminating species before scientists have even identified it",
         "eliminating species before scientists even identify them",
-        "to eliminate species before scientists have even identified them"
+        "to eliminate species before scientists have even identified them",
+        "eliminating species before scientists have even identified them",
+        "eliminating species before scientists have even identified it"
       ],
       "correctAnswer": "eliminating species before scientists have even identified them",
       "explanation": "The participial phrase 'eliminating' is correct, and 'them' correctly refers to the plural 'species.'",
@@ -423,10 +423,10 @@
       "topic": "Sentence Structure",
       "prompt": "At [32], which revision best connects the loss of habitat to its consequences?",
       "options": [
-        "The loss of rainforest habitat has profound consequences for global biodiversity, climate regulation, and human communities that depend on the forest for survival.",
         "The loss of rainforest habitat—having profound consequences—affects global biodiversity, climate regulation, and human communities that depend on the forest for survival.",
         "Since the loss of rainforest habitat has profound consequences, global biodiversity, climate regulation, and human communities that depend on the forest for survival are affected.",
-        "NO CHANGE"
+        "NO CHANGE",
+        "The loss of rainforest habitat has profound consequences for global biodiversity, climate regulation, and human communities that depend on the forest for survival."
       ],
       "correctAnswer": "The loss of rainforest habitat has profound consequences for global biodiversity, climate regulation, and human communities that depend on the forest for survival.",
       "explanation": "The original sentence clearly and directly states the connection between habitat loss and multiple consequences.",
@@ -457,10 +457,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"developing deep knowledge of forest ecology and plant properties.\". Which choice is most appropriate?",
       "options": [
+        "who develop deep knowledge",
         "developing deep knowledge",
         "they developed deep knowledge",
-        "developed deep knowledge",
-        "who develop deep knowledge"
+        "developed deep knowledge"
       ],
       "correctAnswer": "developing deep knowledge",
       "explanation": "The participial phrase 'developing' correctly modifies 'Indigenous peoples' and shows the result of their long habitation.",
@@ -474,10 +474,10 @@
       "topic": "Organization",
       "prompt": "At [37], which transition best introduces the discussion of medicinal benefits?",
       "options": [
-        "Many pharmaceutical compounds derived from rainforest plants have revolutionized",
-        "Additionally, many pharmaceutical compounds derived from rainforest plants have revolutionized",
         "Furthermore, many pharmaceutical compounds derived from rainforest plants have revolutionized",
-        "NO CHANGE"
+        "NO CHANGE",
+        "Many pharmaceutical compounds derived from rainforest plants have revolutionized",
+        "Additionally, many pharmaceutical compounds derived from rainforest plants have revolutionized"
       ],
       "correctAnswer": "Many pharmaceutical compounds derived from rainforest plants have revolutionized",
       "explanation": "The simple statement effectively transitions to a new point about the practical benefits of rainforest preservation.",
@@ -491,10 +491,10 @@
       "topic": "Punctuation",
       "prompt": "At [38], which punctuation is most appropriate after 'rainforest plants'?",
       "options": [
-        "plants have revolutionized",
         "plants; have revolutionized",
         "plants, have revolutionized",
-        "plants—have revolutionized"
+        "plants—have revolutionized",
+        "plants have revolutionized"
       ],
       "correctAnswer": "plants have revolutionized",
       "explanation": "No punctuation is needed; the sentence structure is correct with the verb directly following the subject phrase.",
@@ -559,10 +559,10 @@
       "topic": "Punctuation",
       "prompt": "At [55], which punctuation is most appropriate after 'the U.S. Department of Defense funded'?",
       "options": [
+        "funded—the development",
         "funded; the development",
         "funded, the development",
-        "funded the development",
-        "funded—the development"
+        "funded the development"
       ],
       "correctAnswer": "funded the development",
       "explanation": "No punctuation is needed; 'the development' is the direct object of the verb 'funded.'",
@@ -576,10 +576,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"the development of a decentralized communication network resistant to nuclear attack.\". Which choice is most appropriate?",
       "options": [
-        "which was resistant to nuclear attack",
-        "that was resistant to nuclear attack",
         "resistant to nuclear attack",
-        "being resistant to nuclear attack"
+        "being resistant to nuclear attack",
+        "which was resistant to nuclear attack",
+        "that was resistant to nuclear attack"
       ],
       "correctAnswer": "resistant to nuclear attack",
       "explanation": "The adjective 'resistant' correctly modifies 'network' and is concise and clear.",
@@ -593,10 +593,10 @@
       "topic": "Punctuation",
       "prompt": "At [57], which punctuation best separates the introductory phrase from the main clause?",
       "options": [
-        "ARPANET; the precursor to the modern Internet; was",
         "ARPANET the precursor to the modern Internet was",
         "ARPANET, the precursor to the modern Internet, was",
-        "ARPANET (the precursor to the modern Internet) was"
+        "ARPANET (the precursor to the modern Internet) was",
+        "ARPANET; the precursor to the modern Internet; was"
       ],
       "correctAnswer": "ARPANET, the precursor to the modern Internet, was",
       "explanation": "Commas correctly set off the appositive phrase that defines ARPANET.",
@@ -627,10 +627,10 @@
       "topic": "Organization",
       "prompt": "At [60], which transition best introduces the discussion of technological developments?",
       "options": [
+        "NO CHANGE",
         "Significantly, the development of key technologies, including the TCP/IP protocol and the World Wide Web, transformed",
         "Moreover, the development of key technologies, including the TCP/IP protocol and the World Wide Web, transformed",
-        "The development of key technologies, including the TCP/IP protocol and the World Wide Web, transformed",
-        "NO CHANGE"
+        "The development of key technologies, including the TCP/IP protocol and the World Wide Web, transformed"
       ],
       "correctAnswer": "The development of key technologies, including the TCP/IP protocol and the World Wide Web, transformed",
       "explanation": "The simple statement is appropriate here; the technologies are naturally presented as the next stage in Internet development.",
@@ -644,10 +644,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"transformed ARPANET from a specialized research network into a global communication platform.\". Which choice is most appropriate?",
       "options": [
-        "transformed ARPANET from being a specialized research network to",
-        "transformed ARPANET from a specialized research network to",
         "transformed ARPANET from a specialized research network into",
-        "transformed ARPANET, from a specialized research network, to"
+        "transformed ARPANET, from a specialized research network, to",
+        "transformed ARPANET from being a specialized research network to",
+        "transformed ARPANET from a specialized research network to"
       ],
       "correctAnswer": "transformed ARPANET from a specialized research network into",
       "explanation": "'From...into' is the standard parallel construction for showing transformation or change of state.",
@@ -661,10 +661,10 @@
       "topic": "Sentence Structure",
       "prompt": "At [62], which revision best introduces Tim Berners-Lee's invention?",
       "options": [
-        "Tim Berners-Lee invented the World Wide Web in 1989; this creation",
         "Tim Berners-Lee invented the World Wide Web in 1989. He created",
         "Tim Berners-Lee invented the World Wide Web in 1989, creating",
-        "NO CHANGE"
+        "NO CHANGE",
+        "Tim Berners-Lee invented the World Wide Web in 1989; this creation"
       ],
       "correctAnswer": "Tim Berners-Lee invented the World Wide Web in 1989, creating",
       "explanation": "The participial phrase 'creating' concisely shows what his invention accomplished.",
@@ -695,10 +695,10 @@
       "topic": "Organization",
       "prompt": "At [65], which phrase best emphasizes the impact of Berners-Lee's innovation?",
       "options": [
-        "His innovation made the Internet easier, changing how",
-        "His innovation made the Internet accessible to the general public, revolutionizing",
         "What he did made the Internet work better for",
-        "His innovation made the Internet accessible to people, transforming how"
+        "His innovation made the Internet accessible to people, transforming how",
+        "His innovation made the Internet easier, changing how",
+        "His innovation made the Internet accessible to the general public, revolutionizing"
       ],
       "correctAnswer": "His innovation made the Internet accessible to the general public, revolutionizing",
       "explanation": "This option maintains formal tone and effectively emphasizes both accessibility and the revolutionary nature of the impact.",
@@ -729,10 +729,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"In the 1990s, the proliferation of personal computers and commercial Internet service providers accelerated\". Which choice is most appropriate?",
       "options": [
+        "accelerates the adoption",
         "accelerated the adoption",
         "accelerated adoption",
-        "have accelerated the adoption",
-        "accelerates the adoption"
+        "have accelerated the adoption"
       ],
       "correctAnswer": "accelerated the adoption",
       "explanation": "The simple past tense is consistent with the historical narrative, and 'the adoption' is the appropriate object.",
@@ -746,10 +746,10 @@
       "topic": "Sentence Structure",
       "prompt": "At [68], which revision best connects the growth of personal computers to Internet adoption?",
       "options": [
-        "accelerated the adoption of Internet technology among households and businesses.",
-        "accelerated the adoption of Internet technology among households and businesses, which transformed society.",
         "accelerated the adoption of Internet technology among households and businesses because it became more affordable.",
-        "NO CHANGE"
+        "NO CHANGE",
+        "accelerated the adoption of Internet technology among households and businesses.",
+        "accelerated the adoption of Internet technology among households and businesses, which transformed society."
       ],
       "correctAnswer": "accelerated the adoption of Internet technology among households and businesses.",
       "explanation": "The current sentence is clear and effective; additional explanation is provided in subsequent sentences.",
@@ -763,10 +763,10 @@
       "topic": "Organization",
       "prompt": "At [69], which transition best introduces the emergence of web-based services?",
       "options": [
-        "The rise of the World Wide Web led to the emergence of",
         "As the World Wide Web rose, websites and digital communities",
         "With the rise of the World Wide Web came",
-        "NO CHANGE"
+        "NO CHANGE",
+        "The rise of the World Wide Web led to the emergence of"
       ],
       "correctAnswer": "The rise of the World Wide Web led to the emergence of",
       "explanation": "This phrasing clearly shows causation and introduces the examples of websites, commerce, and communities.",
@@ -797,10 +797,10 @@
       "topic": "Organization",
       "prompt": "At [71], which transition best introduces the discussion of email?",
       "options": [
+        "NO CHANGE",
         "Email became the dominant mode of business communication, replacing",
         "As time passed, email became the dominant mode of business communication, replacing",
-        "Email, becoming the dominant mode of business communication, replaced",
-        "NO CHANGE"
+        "Email, becoming the dominant mode of business communication, replaced"
       ],
       "correctAnswer": "Email became the dominant mode of business communication, replacing",
       "explanation": "The simple statement effectively presents email as another example of Internet impact on communication.",
@@ -814,10 +814,10 @@
       "topic": "Grammar & Usage",
       "prompt": "The underlined portion is \"replacing traditional correspondence and making information exchange instantaneous.\". Which choice is most appropriate?",
       "options": [
-        "replacing traditional correspondence and making",
-        "replacing traditional correspondence while making",
         "replacing traditional correspondence; it made",
-        "which replaced traditional correspondence and made"
+        "which replaced traditional correspondence and made",
+        "replacing traditional correspondence and making",
+        "replacing traditional correspondence while making"
       ],
       "correctAnswer": "replacing traditional correspondence and making",
       "explanation": "The parallel participles 'replacing' and 'making' create a balanced structure describing email's effects.",
@@ -831,10 +831,10 @@
       "topic": "Organization",
       "prompt": "At [73], which transition best shifts from positive impacts to emerging concerns?",
       "options": [
-        "As the Internet grew, concerns about security, privacy, and digital divide between wealthy and developing nations became",
         "However, as the Internet grew, concerns about security, privacy, and digital divide between wealthy and developing nations became",
         "Importantly, as the Internet grew, concerns about security, privacy, and digital divide between wealthy and developing nations became",
-        "NO CHANGE"
+        "NO CHANGE",
+        "As the Internet grew, concerns about security, privacy, and digital divide between wealthy and developing nations became"
       ],
       "correctAnswer": "As the Internet grew, concerns about security, privacy, and digital divide between wealthy and developing nations became",
       "explanation": "'As the Internet grew' naturally introduces the next phase of Internet history and the problems that emerged.",

@@ -14,10 +14,10 @@
       "topic": "Algebra",
       "prompt": "Solve: 5x + 3 = 28",
       "options": [
-        "3",
         "5",
         "4",
-        "6"
+        "6",
+        "3"
       ],
       "correctAnswer": "5",
       "explanation": "Subtract 3: 5x = 25. Divide by 5: x = 5.",
@@ -30,10 +30,10 @@
       "topic": "Algebra",
       "prompt": "Which inequality describes the solution to -3x + 2 ≤ 11?",
       "options": [
-        "x ≤ -3",
-        "x ≥ 3",
         "x ≤ 3",
-        "x ≥ -3"
+        "x ≥ -3",
+        "x ≤ -3",
+        "x ≥ 3"
       ],
       "correctAnswer": "x ≥ -3",
       "explanation": "Subtract 2: -3x ≤ 9. Divide by -3 (reverse inequality): x ≥ -3.",
@@ -46,10 +46,10 @@
       "topic": "Algebra",
       "prompt": "A line passes through (0, 2) and (4, 6). What is the slope?",
       "options": [
+        "3",
         "0.5",
         "1",
-        "2",
-        "3"
+        "2"
       ],
       "correctAnswer": "1",
       "explanation": "Slope = (6 - 2) / (4 - 0) = 4 / 4 = 1.",
@@ -78,10 +78,10 @@
       "topic": "Algebra",
       "prompt": "Solve: x/6 - 2 = 4",
       "options": [
-        "12",
         "36",
         "24",
-        "48"
+        "48",
+        "12"
       ],
       "correctAnswer": "36",
       "explanation": "Add 2: x/6 = 6. Multiply by 6: x = 36.",
@@ -94,10 +94,10 @@
       "topic": "Algebra",
       "prompt": "Solve the system: x + 3y = 11 and 2x - y = 1",
       "options": [
-        "x = 5, y = 2",
-        "x = 1, y = 3.33",
         "x = 3, y = 2.67",
-        "x = 2, y = 3"
+        "x = 2, y = 3",
+        "x = 5, y = 2",
+        "x = 1, y = 3.33"
       ],
       "correctAnswer": "x = 2, y = 3",
       "explanation": "From the second equation, y = 2x - 1. Substitute: x + 3(2x - 1) = 11 → 7x - 3 = 11 → 7x = 14 → x = 2, so y = 3. Check: 2 + 9 = 11 ✓ and 4 - 3 = 1 ✓.",
@@ -110,10 +110,10 @@
       "topic": "Algebra",
       "prompt": "A bakery sells cupcakes for $3 each and brownies for $2 each. If 50 items were sold for $130, how many cupcakes were sold?",
       "options": [
+        "40",
         "20",
         "30",
-        "25",
-        "40"
+        "25"
       ],
       "correctAnswer": "30",
       "explanation": "Let c = cupcakes, b = brownies. Then c + b = 50 and 3c + 2b = 130. From first: b = 50 - c. Substitute: 3c + 2(50 - c) = 130 → 3c + 100 - 2c = 130 → c = 30.",
@@ -142,10 +142,10 @@
       "topic": "Advanced Math",
       "prompt": "If 5x = 125, what is x?",
       "options": [
-        "2",
         "3",
         "4",
-        "5"
+        "5",
+        "2"
       ],
       "correctAnswer": "3",
       "explanation": "5x = 125 means x = log₅(125). Since 5³ = 125, x = 3.",
@@ -158,10 +158,10 @@
       "topic": "Advanced Math",
       "prompt": "Simplify: √(49 × 4)",
       "options": [
+        "196",
         "14",
         "28",
-        "53",
-        "196"
+        "53"
       ],
       "correctAnswer": "14",
       "explanation": "√(49 × 4) = √49 × √4 = 7 × 2 = 14.",
@@ -174,10 +174,10 @@
       "topic": "Advanced Math",
       "prompt": "What is the value of 2⁻³?",
       "options": [
+        "8",
         "1/6",
         "1/8",
-        "6",
-        "8"
+        "6"
       ],
       "correctAnswer": "1/8",
       "explanation": "2⁻³ = 1/(2³) = 1/8.",
@@ -190,10 +190,10 @@
       "topic": "Advanced Math",
       "prompt": "What is the sum of the roots of x² - 8x + 12 = 0?",
       "options": [
-        "-12",
-        "8",
         "-8",
-        "12"
+        "12",
+        "-12",
+        "8"
       ],
       "correctAnswer": "8",
       "explanation": "Using Vieta's formulas, sum of roots = -b/a = -(-8)/1 = 8.",
@@ -206,10 +206,10 @@
       "topic": "Advanced Math",
       "prompt": "If p(x) = 3x - 5, what is p(4)?",
       "options": [
-        "12",
         "7",
         "17",
-        "19"
+        "19",
+        "12"
       ],
       "correctAnswer": "7",
       "explanation": "p(4) = 3(4) - 5 = 12 - 5 = 7.",
@@ -238,10 +238,10 @@
       "topic": "Advanced Math",
       "prompt": "Solve: x² - 3x - 18 = 0",
       "options": [
+        "x = 9 or x = -2",
         "x = 3 or x = -6",
         "x = 6 or x = -3",
-        "x = 2 or x = -9",
-        "x = 9 or x = -2"
+        "x = 2 or x = -9"
       ],
       "correctAnswer": "x = 6 or x = -3",
       "explanation": "Factor: (x - 6)(x + 3) = 0 → x = 6 or x = -3.",
@@ -254,10 +254,10 @@
       "topic": "Advanced Math",
       "prompt": "What is the value of √121?",
       "options": [
-        "10",
-        "11",
         "12",
-        "13"
+        "13",
+        "10",
+        "11"
       ],
       "correctAnswer": "11",
       "explanation": "√121 = 11 because 11² = 121.",
@@ -270,10 +270,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "A jacket costs $80 and is discounted by 30%. What is the sale price?",
       "options": [
-        "$50",
         "$56",
         "$64",
-        "$74"
+        "$74",
+        "$50"
       ],
       "correctAnswer": "$56",
       "explanation": "Discount = 30% of $80 = 0.30 × $80 = $24. Sale price = $80 - $24 = $56.",
@@ -302,10 +302,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "The ratio of apples to oranges is 4:5. If there are 32 apples, how many oranges are there?",
       "options": [
+        "30",
         "25",
         "40",
-        "35",
-        "30"
+        "35"
       ],
       "correctAnswer": "40",
       "explanation": "If apples:oranges = 4:5 and apples = 32, then 32/oranges = 4/5 → oranges = 32 × 5/4 = 40.",
@@ -318,10 +318,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "A jar contains 2 red marbles, 3 blue marbles, and 5 green marbles. What is the probability of drawing a blue marble?",
       "options": [
+        "1/2",
         "1/4",
         "1/3",
-        "3/10",
-        "1/2"
+        "3/10"
       ],
       "correctAnswer": "3/10",
       "explanation": "Total marbles = 2 + 3 + 5 = 10. Probability of blue = 3/10.",
@@ -334,10 +334,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "The average of 6 numbers is 12. What is their sum?",
       "options": [
+        "72",
         "6",
         "18",
-        "84",
-        "72"
+        "84"
       ],
       "correctAnswer": "72",
       "explanation": "Sum = average × count = 12 × 6 = 72.",
@@ -350,10 +350,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "A paint mixture uses red and blue in a 3:2 ratio. If you use 9 units of red, how much blue do you need?",
       "options": [
-        "4",
-        "5",
         "7",
-        "6"
+        "6",
+        "4",
+        "5"
       ],
       "correctAnswer": "6",
       "explanation": "If red:blue = 3:2 and red = 9, then 9/blue = 3/2 → blue = 9 × 2/3 = 6.",
@@ -366,10 +366,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "A population increases from 1,000 to 1,250. What is the percent increase?",
       "options": [
-        "20%",
         "35%",
         "30%",
-        "25%"
+        "25%",
+        "20%"
       ],
       "correctAnswer": "25%",
       "explanation": "Percent increase = (1,250 - 1,000) / 1,000 × 100% = 250 / 1,000 × 100% = 25%.",
@@ -398,10 +398,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "What is the area of a triangle with base 14 and height 8?",
       "options": [
+        "56",
         "22",
         "44",
-        "112",
-        "56"
+        "112"
       ],
       "correctAnswer": "56",
       "explanation": "Area = (1/2) × base × height = (1/2) × 14 × 8 = 56.",
@@ -414,10 +414,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "A circle has radius 10. What is its circumference in terms of π?",
       "options": [
-        "10π",
-        "100π",
         "50π",
-        "20π"
+        "20π",
+        "10π",
+        "100π"
       ],
       "correctAnswer": "20π",
       "explanation": "Circumference = 2πr = 2π(10) = 20π.",
@@ -430,10 +430,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "A circle has area 64π. What is its radius?",
       "options": [
-        "4",
         "32",
         "16",
-        "8"
+        "8",
+        "4"
       ],
       "correctAnswer": "8",
       "explanation": "Area = πr² = 64π → r² = 64 → r = 8.",
@@ -462,10 +462,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "The angles in a quadrilateral are 80°, 100°, and 110°. What is the fourth angle?",
       "options": [
+        "70°",
         "110°",
         "80°",
-        "90°",
-        "70°"
+        "90°"
       ],
       "correctAnswer": "70°",
       "explanation": "The sum of angles in a quadrilateral is 360°. Fourth angle = 360° - 80° - 100° - 110° = 70°.",
@@ -478,10 +478,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "In a right triangle, one leg is 7 and the hypotenuse is 25. What is the other leg?",
       "options": [
-        "18",
         "20",
         "24",
-        "32"
+        "32",
+        "18"
       ],
       "correctAnswer": "24",
       "explanation": "Using Pythagorean theorem: 7² + b² = 25² → 49 + b² = 625 → b² = 576 → b = 24.",
@@ -494,10 +494,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "In a 30-60-90 triangle, the side opposite the 60° angle is 8√3. What is the hypotenuse?",
       "options": [
+        "24",
         "8",
         "16",
-        "16√3",
-        "24"
+        "16√3"
       ],
       "correctAnswer": "16",
       "explanation": "In a 30-60-90 triangle, sides are in ratio 1:√3:2. If side opposite 60° is 8√3, then hypotenuse = 2 × 8 = 16.",
@@ -510,10 +510,10 @@
       "topic": "Algebra",
       "prompt": "Solve: |3x + 2| = 11",
       "options": [
-        "x = 3 or x = -3",
-        "x = 3 or x = -13/3",
         "x = 2 or x = -4",
-        "x = 1 or x = -1"
+        "x = 1 or x = -1",
+        "x = 3 or x = -3",
+        "x = 3 or x = -13/3"
       ],
       "correctAnswer": "x = 3 or x = -13/3",
       "explanation": "|3x + 2| = 11 means 3x + 2 = 11 or 3x + 2 = -11. From first: 3x = 9 → x = 3. From second: 3x = -13 → x = -13/3.",
@@ -526,10 +526,10 @@
       "topic": "Advanced Math",
       "prompt": "What is the vertex of f(x) = 2(x - 1)² - 3?",
       "options": [
-        "(-1, -3)",
         "(1, -3)",
         "(1, 3)",
-        "(-1, 3)"
+        "(-1, 3)",
+        "(-1, -3)"
       ],
       "correctAnswer": "(1, -3)",
       "explanation": "The vertex form is f(x) = a(x - h)² + k where vertex is (h, k). Here h = 1 and k = -3, so vertex is (1, -3).",
@@ -558,10 +558,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "A rectangular prism has volume 180. If length = 9 and width = 5, what is the height?",
       "options": [
+        "8",
         "5",
         "4",
-        "6",
-        "8"
+        "6"
       ],
       "correctAnswer": "4",
       "explanation": "Volume = length × width × height → 180 = 9 × 5 × h → 180 = 45h → h = 4.",
@@ -574,10 +574,10 @@
       "topic": "Algebra",
       "prompt": "If f(x) = 4x - 7 and f(x) = 5, what is x?",
       "options": [
-        "1",
-        "3",
         "2",
-        "4"
+        "4",
+        "1",
+        "3"
       ],
       "correctAnswer": "3",
       "explanation": "4x - 7 = 5 → 4x = 12 → x = 3.",
@@ -590,10 +590,10 @@
       "topic": "Advanced Math",
       "prompt": "What is the product of the roots of 3x² - 9x + 6 = 0?",
       "options": [
-        "-6",
         "2",
         "-3",
-        "6"
+        "6",
+        "-6"
       ],
       "correctAnswer": "2",
       "explanation": "Using Vieta's formulas, product of roots = c/a = 6/3 = 2.",
@@ -622,10 +622,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "Triangle A has a side of 6 and Triangle B (similar to A) has a corresponding side of 9. What is the ratio of similarity?",
       "options": [
+        "3:2",
         "1:1.5",
         "2:3",
-        "1:3",
-        "3:2"
+        "1:3"
       ],
       "correctAnswer": "2:3",
       "explanation": "The ratio of corresponding sides is 6:9 = 2:3.",
@@ -638,10 +638,10 @@
       "topic": "Advanced Math",
       "prompt": "Simplify: (b⁴ × b²) / b⁵",
       "options": [
+        "b⁶",
         "b³",
         "b²",
-        "b",
-        "b⁶"
+        "b"
       ],
       "correctAnswer": "b",
       "explanation": "(b⁴ × b²) / b⁵ = b⁶ / b⁵ = b.",
@@ -654,10 +654,10 @@
       "topic": "Algebra",
       "prompt": "If 4(x + 5) = 3x + 35, what is x?",
       "options": [
+        "15",
         "5",
         "10",
-        "20",
-        "15"
+        "20"
       ],
       "correctAnswer": "15",
       "explanation": "Expand: 4x + 20 = 3x + 35. Subtract 3x: x + 20 = 35. Subtract 20: x = 15.",
@@ -670,10 +670,10 @@
       "topic": "Problem-Solving & Data Analysis",
       "prompt": "A student's grades are 92, 88, 95, and 85. What is the average?",
       "options": [
-        "87.5",
-        "92.5",
         "91",
-        "90"
+        "90",
+        "87.5",
+        "92.5"
       ],
       "correctAnswer": "90",
       "explanation": "Average = (92 + 88 + 95 + 85) / 4 = 360 / 4 = 90.",
@@ -686,10 +686,10 @@
       "topic": "Geometry & Trigonometry",
       "prompt": "A circle has a circumference of 18π. What is its radius?",
       "options": [
-        "6",
         "18",
         "12",
-        "9"
+        "9",
+        "6"
       ],
       "correctAnswer": "9",
       "explanation": "Circumference = 2πr = 18π → r = 9.",

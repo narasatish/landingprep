@@ -198,10 +198,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Why does Kevin want a community garden plot?",
       "options": [
-        "He wants to start a small business selling vegetables",
         "He has no outdoor space at his apartment",
         "He recently moved to a house with a broken garden",
-        "He is doing research on urban farming"
+        "He is doing research on urban farming",
+        "He wants to start a small business selling vegetables"
       ],
       "correctAnswer": "He has no outdoor space at his apartment",
       "explanation": "Kevin says they do not have outdoor space at their apartment.",
@@ -215,10 +215,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How long has Kevin been living in Riverdale?",
       "options": [
-        "Two weeks",
         "Three months",
         "Six months",
-        "Over a year"
+        "Over a year",
+        "Two weeks"
       ],
       "correctAnswer": "Six months",
       "explanation": "Kevin says he and his partner moved to Riverdale six months ago.",
@@ -249,10 +249,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How much does the small plot cost per season?",
       "options": [
-        "Forty dollars",
-        "Eighty dollars",
         "One hundred and forty dollars",
-        "Two hundred dollars"
+        "Two hundred dollars",
+        "Forty dollars",
+        "Eighty dollars"
       ],
       "correctAnswer": "Eighty dollars",
       "explanation": "Rosa says the small plot of four square metres costs eighty dollars per season.",
@@ -266,10 +266,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What does the fee include, according to Rosa?",
       "options": [
-        "Only water connection",
         "Shared tools, water connections, and a compost bin allocation",
         "A storage shed and weekly instruction",
-        "Unlimited tool rental and parking"
+        "Unlimited tool rental and parking",
+        "Only water connection"
       ],
       "correctAnswer": "Shared tools, water connections, and a compost bin allocation",
       "explanation": "Rosa lists shared tools, water, and a compost bin allocation as what the fee includes.",
@@ -317,10 +317,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "When is the monthly garden social held?",
       "options": [
+        "Every Sunday morning",
         "First Friday of each month",
         "Second Saturday of each month",
-        "Last Saturday of each month",
-        "Every Sunday morning"
+        "Last Saturday of each month"
       ],
       "correctAnswer": "Last Saturday of each month",
       "explanation": "Rosa says the garden social is on the last Saturday of each month.",
@@ -334,10 +334,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Who is welcome at the garden socials?",
       "options": [
-        "Only current plot holders",
-        "Members who have held a plot for at least one year",
         "Newcomers, even before having their own plot",
-        "Only people who have paid their fees"
+        "Only people who have paid their fees",
+        "Only current plot holders",
+        "Members who have held a plot for at least one year"
       ],
       "correctAnswer": "Newcomers, even before having their own plot",
       "explanation": "Rosa says newcomers are welcome even before they have their own plot.",
@@ -368,10 +368,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What is the purpose of Rosa's email?",
       "options": [
+        "To offer him a plot immediately",
         "To reject Kevin's application",
         "To answer his questions and explain the process",
-        "To invite him to a specific event",
-        "To offer him a plot immediately"
+        "To invite him to a specific event"
       ],
       "correctAnswer": "To answer his questions and explain the process",
       "explanation": "Rosa's email answers Kevin's questions about the wait, fees, and registration process.",
@@ -385,10 +385,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "A 70-year-old woman wants to try an art class. Which programme is most suitable?",
       "options": [
-        "Gentle Yoga on Monday morning",
-        "Seniors' Art Class on Tuesday morning",
         "Community Dance on Thursday evening",
-        "Lunchtime Stretch on Wednesday"
+        "Lunchtime Stretch on Wednesday",
+        "Gentle Yoga on Monday morning",
+        "Seniors' Art Class on Tuesday morning"
       ],
       "correctAnswer": "Seniors' Art Class on Tuesday morning",
       "explanation": "The Seniors' Art Class on Tuesday is for ages 60+ and includes materials.",
@@ -402,10 +402,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which programmes require advance registration?",
       "options": [
-        "Drop-in Basketball and Family Swim",
         "Gentle Yoga and Aqua Fitness",
         "Open Badminton and Lunchtime Stretch",
-        "Parent & Tot Swim and Teen Gaming Club"
+        "Parent & Tot Swim and Teen Gaming Club",
+        "Drop-in Basketball and Family Swim"
       ],
       "correctAnswer": "Gentle Yoga and Aqua Fitness",
       "explanation": "Only programmes marked with (R) require registration. Both Gentle Yoga and Aqua Fitness are marked (R).",
@@ -436,10 +436,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which pool programme is available to families with young children on a Sunday?",
       "options": [
-        "Aqua Fitness",
         "Adult Swimming Lessons",
         "Parent & Tot Swim",
-        "Family Swim"
+        "Family Swim",
+        "Aqua Fitness"
       ],
       "correctAnswer": "Family Swim",
       "explanation": "Family Swim is held on Sundays and is for families with children.",
@@ -453,10 +453,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How long does the Community Dance programme last?",
       "options": [
+        "Two hours thirty minutes",
         "One hour",
         "One hour thirty minutes",
-        "Two hours",
-        "Two hours thirty minutes"
+        "Two hours"
       ],
       "correctAnswer": "Two hours",
       "explanation": "Community Dance runs from 7:00–9:00 pm, which is two hours.",
@@ -470,10 +470,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which programme can someone attend without planning ahead on a Wednesday lunchtime?",
       "options": [
-        "Aqua Fitness",
-        "Gentle Yoga",
         "Lunchtime Stretch",
-        "Seniors' Art Class"
+        "Seniors' Art Class",
+        "Aqua Fitness",
+        "Gentle Yoga"
       ],
       "correctAnswer": "Lunchtime Stretch",
       "explanation": "Lunchtime Stretch on Wednesday is explicitly listed as drop-in with no registration needed.",
@@ -487,10 +487,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which location is used for the most programmes?",
       "options": [
-        "Studio A",
-        "Craft Room",
         "Gymnasium",
-        "Pool"
+        "Pool",
+        "Studio A",
+        "Craft Room"
       ],
       "correctAnswer": "Pool",
       "explanation": "The Pool is used for Aqua Fitness, Adult Swimming Lessons, Parent & Tot Swim, and Family Swim — more than any other location.",
@@ -521,10 +521,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What was the main criticism of the previous version of Canada's Food Guide?",
       "options": [
-        "It was too complicated for most people to follow",
-        "It placed too much emphasis on dairy and meat",
         "It did not include enough vegetables",
-        "It was not updated frequently enough"
+        "It was not updated frequently enough",
+        "It was too complicated for most people to follow",
+        "It placed too much emphasis on dairy and meat"
       ],
       "correctAnswer": "It placed too much emphasis on dairy and meat",
       "explanation": "The passage says the previous guide was criticised for placing too much emphasis on dairy and meat.",
@@ -538,10 +538,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "According to the 2019 guide, what should make up roughly half of every meal?",
       "options": [
-        "Whole grain foods",
-        "Protein foods",
         "Vegetables and fruit",
-        "Dairy products"
+        "Dairy products",
+        "Whole grain foods",
+        "Protein foods"
       ],
       "correctAnswer": "Vegetables and fruit",
       "explanation": "The plate model shows roughly half of every meal should be vegetables and fruit.",
@@ -555,10 +555,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Where is dairy placed in the 2019 Food Guide?",
       "options": [
-        "In its own separate category",
         "Under the vegetables and fruit category",
         "Within the broader protein food category",
-        "It was removed entirely from the guide"
+        "It was removed entirely from the guide",
+        "In its own separate category"
       ],
       "correctAnswer": "Within the broader protein food category",
       "explanation": "The 2019 guide merged dairy into the broader protein food category.",
@@ -572,10 +572,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What evidence influenced the repositioning of dairy?",
       "options": [
+        "Findings that dairy increases cholesterol",
         "Studies showing dairy is harmful to children",
         "Evidence that high dairy consumption is not necessary for adult bone health",
-        "Research showing dairy increases obesity",
-        "Findings that dairy increases cholesterol"
+        "Research showing dairy increases obesity"
       ],
       "correctAnswer": "Evidence that high dairy consumption is not necessary for adult bone health",
       "explanation": "The passage says growing evidence showed high dairy consumption is not necessary for bone health in adults.",
@@ -606,10 +606,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What is one social dimension of eating that the new guide encourages?",
       "options": [
-        "Eating a large breakfast",
-        "Joining a cooking class",
         "Eating meals with others",
-        "Following a specific diet plan"
+        "Following a specific diet plan",
+        "Eating a large breakfast",
+        "Joining a cooking class"
       ],
       "correctAnswer": "Eating meals with others",
       "explanation": "The guide encourages eating meals with others as part of its social dimension.",
@@ -623,10 +623,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What criticism was raised about the 2019 guide regarding Indigenous communities?",
       "options": [
+        "It was not translated into enough Indigenous languages",
         "It ignored traditional dietary patterns relying on land-based foods",
         "It recommended too many imported foods",
-        "It contained inaccurate information about wild game",
-        "It was not translated into enough Indigenous languages"
+        "It contained inaccurate information about wild game"
       ],
       "correctAnswer": "It ignored traditional dietary patterns relying on land-based foods",
       "explanation": "Critics said the guide largely ignored Indigenous communities' traditional land-based dietary patterns.",
@@ -640,10 +640,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How did the government respond to the criticism about Indigenous food patterns?",
       "options": [
+        "By consulting Indigenous elders to revise the plate model",
         "By rewriting the whole guide",
         "By acknowledging the gap and committing to developing supplementary resources",
-        "By adding a new food category for game meats",
-        "By consulting Indigenous elders to revise the plate model"
+        "By adding a new food category for game meats"
       ],
       "correctAnswer": "By acknowledging the gap and committing to developing supplementary resources",
       "explanation": "The government acknowledged the gap and committed to developing supplementary resources.",
@@ -674,10 +674,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which speaker believes the ban is both necessary and overdue?",
       "options": [
-        "Jordan Lee",
-        "Dr. Marcus Webb",
         "Amelia Chen",
-        "Sandra Kowalski"
+        "Sandra Kowalski",
+        "Jordan Lee",
+        "Dr. Marcus Webb"
       ],
       "correctAnswer": "Amelia Chen",
       "explanation": "Amelia Chen says a complete ban is 'both necessary and overdue.'",
@@ -708,10 +708,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which speaker raises a concern about microplastics in the human body?",
       "options": [
-        "Amelia Chen",
         "Sandra Kowalski",
         "Jordan Lee",
-        "Dr. Marcus Webb"
+        "Dr. Marcus Webb",
+        "Amelia Chen"
       ],
       "correctAnswer": "Dr. Marcus Webb",
       "explanation": "Dr. Webb mentions microplastics found in human blood, breast milk, and lung tissue.",
@@ -725,10 +725,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What does Sandra Kowalski say about compostable packaging?",
       "options": [
-        "It is always better than plastic",
-        "It is only beneficial if it is actually composted",
         "It is currently too expensive for most cities",
-        "It has already solved the plastic problem in other cities"
+        "It has already solved the plastic problem in other cities",
+        "It is always better than plastic",
+        "It is only beneficial if it is actually composted"
       ],
       "correctAnswer": "It is only beneficial if it is actually composted",
       "explanation": "Sandra says compostable packaging is only beneficial if composted — in landfill it may produce methane.",
@@ -742,10 +742,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What percentage of eligible organic waste does Sandra's city currently compost?",
       "options": [
-        "Less than ten percent",
-        "About twenty percent",
         "Less than thirty percent",
-        "Over fifty percent"
+        "Over fifty percent",
+        "Less than ten percent",
+        "About twenty percent"
       ],
       "correctAnswer": "Less than thirty percent",
       "explanation": "Sandra says the city currently composts less than thirty percent of eligible organic waste.",
@@ -759,10 +759,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How does Amelia Chen respond to concerns about cost impacts on low-income consumers?",
       "options": [
-        "She acknowledges it is a valid concern",
         "She says alternatives cost two to four times more",
         "She says reusable options save money over time",
-        "She suggests the government should subsidise alternatives"
+        "She suggests the government should subsidise alternatives",
+        "She acknowledges it is a valid concern"
       ],
       "correctAnswer": "She says reusable options save money over time",
       "explanation": "Amelia says studies show reusable options save money over time, contradicting the cost concern.",
@@ -776,10 +776,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which speaker is most focused on the immediate economic impact on small businesses?",
       "options": [
+        "Sandra Kowalski",
         "Amelia Chen",
         "Jordan Lee",
-        "Dr. Marcus Webb",
-        "Sandra Kowalski"
+        "Dr. Marcus Webb"
       ],
       "correctAnswer": "Jordan Lee",
       "explanation": "Jordan Lee focuses on how bans disproportionately hurt small retailers.",
@@ -793,10 +793,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What principle does Dr. Webb invoke to argue for action?",
       "options": [
-        "The economic efficiency principle",
-        "The precautionary principle",
         "The free market principle",
-        "The public interest principle"
+        "The public interest principle",
+        "The economic efficiency principle",
+        "The precautionary principle"
       ],
       "correctAnswer": "The precautionary principle",
       "explanation": "Dr. Webb says the precautionary principle demands acting in the face of uncertain health risks.",
@@ -810,10 +810,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which two speakers would most likely agree that a simple, immediate ban is the wrong approach?",
       "options": [
-        "Amelia Chen and Dr. Marcus Webb",
         "Jordan Lee and Sandra Kowalski",
         "Amelia Chen and Sandra Kowalski",
-        "Dr. Marcus Webb and Jordan Lee"
+        "Dr. Marcus Webb and Jordan Lee",
+        "Amelia Chen and Dr. Marcus Webb"
       ],
       "correctAnswer": "Jordan Lee and Sandra Kowalski",
       "explanation": "Jordan Lee wants a phased approach and Sandra wants infrastructure first — both oppose an immediate ban.",

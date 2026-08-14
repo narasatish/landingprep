@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the main problem with the refrigerator?",
       "options": [
-        "The compressor is broken completely",
         "The ice maker isn't working and there's a strange noise from the compressor",
         "The door seal is damaged",
-        "The temperature control panel is faulty"
+        "The temperature control panel is faulty",
+        "The compressor is broken completely"
       ],
       "correctAnswer": "The ice maker isn't working and there's a strange noise from the compressor",
       "explanation": "The customer explicitly states both issues in their opening complaint.",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "How long has the customer owned the refrigerator?",
       "options": [
-        "Three days",
         "One week",
         "Six days",
-        "Two weeks"
+        "Two weeks",
+        "Three days"
       ],
       "correctAnswer": "Six days",
       "explanation": "Customer states 'I've had it six days' and bought it Tuesday morning.",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What was the purchase price?",
       "options": [
-        "$999",
         "$1,099",
         "$1,199",
-        "$1,299"
+        "$1,299",
+        "$999"
       ],
       "correctAnswer": "$1,299",
       "explanation": "Customer clearly states the purchase price was $1,299.",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the return window policy mentioned?",
       "options": [
+        "Ten days",
         "Three days",
         "Five days",
-        "Seven days",
-        "Ten days"
+        "Seven days"
       ],
       "correctAnswer": "Seven days",
       "explanation": "Agent mentions 'within the seven-day return window.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "Where was the refrigerator purchased?",
       "options": [
-        "The mall location",
         "The downtown store",
         "Online",
-        "A second-hand seller"
+        "A second-hand seller",
+        "The mall location"
       ],
       "correctAnswer": "The downtown store",
       "explanation": "Customer says they bought it from 'your downtown store.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What refund method does the customer prefer?",
       "options": [
-        "Store credit",
         "Exchange for another model",
         "Cash back",
-        "Check by mail"
+        "Check by mail",
+        "Store credit"
       ],
       "correctAnswer": "Cash back",
       "explanation": "Customer explicitly states 'I'd rather have a refund.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "When will the refund appear in the customer's account?",
       "options": [
+        "Within 2 weeks",
         "Within 2 business days",
         "Within 5 to 7 business days",
-        "Within 10 business days",
-        "Within 2 weeks"
+        "Within 10 business days"
       ],
       "correctAnswer": "Within 5 to 7 business days",
       "explanation": "Agent states 'the refund will appear in your account within five to seven business days.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What time window is available for pickup?",
       "options": [
-        "8 AM to 12 PM",
-        "10 AM to 2 PM",
         "12 PM to 4 PM",
-        "2 PM to 6 PM"
+        "2 PM to 6 PM",
+        "8 AM to 12 PM",
+        "10 AM to 2 PM"
       ],
       "correctAnswer": "10 AM to 2 PM",
       "explanation": "Agent offers pickup 'between 10 and 2 PM' tomorrow morning.",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "How long is the class?",
       "options": [
-        "30 minutes",
-        "45 minutes",
         "60 minutes",
-        "90 minutes"
+        "90 minutes",
+        "30 minutes",
+        "45 minutes"
       ],
       "correctAnswer": "60 minutes",
       "explanation": "Trainer states 'It's 60 minutes total.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How many classes per week does Maya plan to attend?",
       "options": [
-        "Once a week",
-        "Twice a week",
         "Three times a week",
-        "Daily"
+        "Daily",
+        "Once a week",
+        "Twice a week"
       ],
       "correctAnswer": "Twice a week",
       "explanation": "Maya states 'I'll start with twice a week and see how it goes.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "How many travel insurance plans are offered?",
       "options": [
-        "Two",
         "Three",
         "Four",
-        "Five"
+        "Five",
+        "Two"
       ],
       "correctAnswer": "Three",
       "explanation": "The guide states 'We offer three plans: Basic, Standard, and Premium.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "What is the cost of the Basic plan for two weeks?",
       "options": [
-        "$50",
         "$60",
         "$75",
-        "$85"
+        "$85",
+        "$50"
       ],
       "correctAnswer": "$75",
       "explanation": "The guide specifies 'Cost is seventy-five dollars for two weeks' for the Basic plan.",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the lost luggage reimbursement limit in the Standard plan?",
       "options": [
+        "$2,500",
         "$500",
         "$1,000",
-        "$1,500",
-        "$2,500"
+        "$1,500"
       ],
       "correctAnswer": "$1,000",
       "explanation": "The guide mentions 'lost luggage reimbursement up to one thousand dollars' in the Standard plan.",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "How long do you have to file a claim after an incident?",
       "options": [
-        "30 days",
-        "60 days",
         "90 days",
-        "120 days"
+        "120 days",
+        "30 days",
+        "60 days"
       ],
       "correctAnswer": "90 days",
       "explanation": "The guide states 'Claims must be filed within ninety days of the incident.'",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How many nursing positions are currently unfilled?",
       "options": [
+        "900 positions",
         "600 positions",
         "700 positions",
-        "800 positions",
-        "900 positions"
+        "800 positions"
       ],
       "correctAnswer": "800 positions",
       "explanation": "There are over 800 unfilled nursing positions.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "By what percentage are starting salaries for nurses increasing?",
       "options": [
-        "8 percent",
-        "10 percent",
         "12 percent",
-        "15 percent"
+        "15 percent",
+        "8 percent",
+        "10 percent"
       ],
       "correctAnswer": "12 percent",
       "explanation": "Starting salaries for nurses are being increased by 12 percent.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "What is the maximum signing bonus for rural relocations?",
       "options": [
-        "10,000 dollars",
         "12,000 dollars",
         "15,000 dollars",
-        "20,000 dollars"
+        "20,000 dollars",
+        "10,000 dollars"
       ],
       "correctAnswer": "15,000 dollars",
       "explanation": "Signing bonuses of up to 15,000 dollars are offered for rural relocations.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the total budget for the renovation?",
       "options": [
+        "7.5 million dollars",
         "5.2 million dollars",
         "6.0 million dollars",
-        "6.8 million dollars",
-        "7.5 million dollars"
+        "6.8 million dollars"
       ],
       "correctAnswer": "6.8 million dollars",
       "explanation": "The renovation project is budgeted at 6.8 million dollars.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "How long is the renovation expected to take?",
       "options": [
-        "12 months",
-        "15 months",
         "18 months",
-        "24 months"
+        "24 months",
+        "12 months",
+        "15 months"
       ],
       "correctAnswer": "18 months",
       "explanation": "The project should take about 18 months to complete.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "Where does Susan plan to relocate programs during construction?",
       "options": [
-        "A temporary building",
-        "The community room and outdoor spaces",
         "A school gym",
-        "A local fitness facility"
+        "A local fitness facility",
+        "A temporary building",
+        "The community room and outdoor spaces"
       ],
       "correctAnswer": "The community room and outdoor spaces",
       "explanation": "Susan plans to maintain and use the community room and outdoor spaces for programs.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What additional facility is Susan negotiating with?",
       "options": [
-        "A private gym",
         "The school district",
         "A local park",
-        "A nearby library"
+        "A nearby library",
+        "A private gym"
       ],
       "correctAnswer": "The school district",
       "explanation": "Susan mentions negotiating with the school district for backup facility use.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "It's too expensive",
-        "It has gone too far in terms of surveillance",
         "It doesn't improve security",
-        "It's ineffective"
+        "It's ineffective",
+        "It's too expensive",
+        "It has gone too far in terms of surveillance"
       ],
       "correctAnswer": "It has gone too far in terms of surveillance",
       "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "According to the speaker, what is the claimed reason for workplace monitoring?",
       "options": [
-        "To reduce wages",
         "To improve productivity and security",
         "To prevent theft",
-        "To track attendance"
+        "To track attendance",
+        "To reduce wages"
       ],
       "correctAnswer": "To improve productivity and security",
       "explanation": "The speaker mentions that companies argue monitoring improves productivity and security.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
+        "It improves communication",
         "It increases productivity",
         "It decreases productivity and morale",
-        "It has no effect",
-        "It improves communication"
+        "It has no effect"
       ],
       "correctAnswer": "It decreases productivity and morale",
       "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What solution does the speaker propose?",
       "options": [
+        "Random monitoring",
         "No monitoring at all",
         "Complete transparency monitoring",
-        "Targeted monitoring only where necessary",
-        "Random monitoring"
+        "Targeted monitoring only where necessary"
       ],
       "correctAnswer": "Targeted monitoring only where necessary",
       "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What do companies with less invasive monitoring report?",
       "options": [
-        "Lower profits",
         "Higher employee satisfaction and retention",
         "More security issues",
-        "Reduced efficiency"
+        "Reduced efficiency",
+        "Lower profits"
       ],
       "correctAnswer": "Higher employee satisfaction and retention",
       "explanation": "The speaker mentions companies with less invasive monitoring report higher satisfaction and retention.",

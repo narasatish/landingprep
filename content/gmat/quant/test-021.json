@@ -15,11 +15,11 @@
       "section": "quant",
       "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
       "options": [
-        "8 days",
         "9 days",
         "10 days",
         "11 days",
-        "16 days"
+        "16 days",
+        "8 days"
       ],
       "correctAnswer": "9 days",
       "answer": "B",
@@ -33,11 +33,11 @@
       "section": "quant",
       "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
       "options": [
-        "13",
         "14",
         "15",
         "16",
-        "18"
+        "18",
+        "13"
       ],
       "correctAnswer": "15",
       "answer": "C",
@@ -51,11 +51,11 @@
       "section": "quant",
       "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
       "options": [
-        "15%",
         "20%",
         "25%",
         "30%",
-        "35%"
+        "35%",
+        "15%"
       ],
       "correctAnswer": "30%",
       "answer": "D",
@@ -69,11 +69,11 @@
       "section": "quant",
       "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
       "options": [
+        "11",
+        "12",
         "7",
         "9",
-        "10",
-        "11",
-        "12"
+        "10"
       ],
       "correctAnswer": "9",
       "answer": "B",
@@ -87,11 +87,11 @@
       "section": "quant",
       "prompt": "If 3x = 18, what is the value of x² + x?",
       "options": [
+        "48",
+        "54",
         "36",
         "40",
-        "42",
-        "48",
-        "54"
+        "42"
       ],
       "correctAnswer": "42",
       "answer": "C",
@@ -105,11 +105,11 @@
       "section": "quant",
       "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
       "options": [
-        "24",
-        "28",
         "30",
         "36",
-        "60"
+        "60",
+        "24",
+        "28"
       ],
       "correctAnswer": "30",
       "answer": "C",
@@ -123,11 +123,11 @@
       "section": "quant",
       "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
       "options": [
-        "132",
         "144",
         "154",
         "168",
-        "176"
+        "176",
+        "132"
       ],
       "correctAnswer": "154",
       "answer": "C",
@@ -159,11 +159,11 @@
       "section": "quant",
       "prompt": "What is the value of 5! (5 factorial)?",
       "options": [
+        "720",
         "60",
         "100",
         "120",
-        "150",
-        "720"
+        "150"
       ],
       "correctAnswer": "120",
       "answer": "C",
@@ -177,11 +177,11 @@
       "section": "quant",
       "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
       "options": [
+        "48",
         "12",
         "16",
         "20",
-        "24",
-        "48"
+        "24"
       ],
       "correctAnswer": "24",
       "answer": "D",
@@ -195,11 +195,11 @@
       "section": "quant",
       "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
       "options": [
-        "6",
-        "8",
         "12",
         "18",
-        "24"
+        "24",
+        "6",
+        "8"
       ],
       "correctAnswer": "12",
       "answer": "C",
@@ -213,11 +213,11 @@
       "section": "quant",
       "prompt": "Three-quarters of a number is 60. What is the number?",
       "options": [
-        "70",
         "75",
         "80",
         "85",
-        "90"
+        "90",
+        "70"
       ],
       "correctAnswer": "80",
       "answer": "C",
@@ -231,11 +231,11 @@
       "section": "quant",
       "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
       "options": [
+        "8 : 5",
         "2 : 5",
         "8 : 15",
         "6 : 5",
-        "3 : 5",
-        "8 : 5"
+        "3 : 5"
       ],
       "correctAnswer": "8 : 15",
       "answer": "B",
@@ -267,11 +267,11 @@
       "section": "quant",
       "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
       "options": [
+        "640",
+        "720",
         "480",
         "540",
-        "600",
-        "640",
-        "720"
+        "600"
       ],
       "correctAnswer": "600",
       "answer": "C",
@@ -285,11 +285,11 @@
       "section": "quant",
       "prompt": "A traveller drives to a town at 60 mph and returns along the same road at 40 mph. What is the average speed for the round trip?",
       "options": [
-        "45 mph",
         "48 mph",
         "50 mph",
         "52 mph",
-        "55 mph"
+        "55 mph",
+        "45 mph"
       ],
       "correctAnswer": "48 mph",
       "answer": "B",
@@ -303,11 +303,11 @@
       "section": "quant",
       "prompt": "What is the simple interest on $2,000 at 5% per year for 3 years?",
       "options": [
-        "$200",
         "$250",
         "$300",
         "$350",
-        "$400"
+        "$400",
+        "$200"
       ],
       "correctAnswer": "$300",
       "answer": "C",
@@ -339,11 +339,11 @@
       "section": "quant",
       "prompt": "A tank is 3/5 full. Adding 20 litres makes it 4/5 full. What is the tank's total capacity?",
       "options": [
+        "120 litres",
         "80 litres",
         "90 litres",
         "100 litres",
-        "110 litres",
-        "120 litres"
+        "110 litres"
       ],
       "correctAnswer": "100 litres",
       "answer": "C",
@@ -357,11 +357,11 @@
       "section": "quant",
       "prompt": "What is the value of √144 + √81?",
       "options": [
+        "25",
         "15",
         "18",
         "20",
-        "21",
-        "25"
+        "21"
       ],
       "correctAnswer": "21",
       "answer": "D",
@@ -375,11 +375,11 @@
       "section": "quant",
       "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
       "options": [
-        "$14.00",
-        "$18.50",
         "$21.50",
         "$19.25",
-        "$20.00"
+        "$20.00",
+        "$14.00",
+        "$18.50"
       ],
       "correctAnswer": "$21.50",
       "answer": "C",

@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's account number?",
       "options": [
-        "5834-291-7456",
         "5834-291-7465",
         "5834-192-7465",
-        "5843-291-7465"
+        "5843-291-7465",
+        "5834-291-7456"
       ],
       "correctAnswer": "5834-291-7465",
       "explanation": "Customer provides their account number as '5834-291-7465.'",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "How much money was withdrawn in total?",
       "options": [
-        "$900",
-        "$1,200",
         "$1,500",
-        "$1,800"
+        "$1,800",
+        "$900",
+        "$1,200"
       ],
       "correctAnswer": "$1,800",
       "explanation": "Customer states there are 'four withdrawals totaling $1,800.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "Where were the ATM withdrawals made?",
       "options": [
-        "Montreal",
-        "Bloor Street in Toronto",
         "Downtown Toronto",
-        "The airport"
+        "The airport",
+        "Montreal",
+        "Bloor Street in Toronto"
       ],
       "correctAnswer": "Bloor Street in Toronto",
       "explanation": "Officer states 'These are ATM withdrawals, all from a machine on Bloor Street in Toronto.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "Where is the customer actually located?",
       "options": [
-        "Toronto",
         "Montreal",
         "Ottawa",
-        "Vancouver"
+        "Vancouver",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "Customer confirms 'No, I'm in Montreal. I haven't been to Toronto in months.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "How long will it take to see the credit for the unauthorized transactions?",
       "options": [
-        "1 to 2 business days",
         "3 to 5 business days",
         "5 to 7 business days",
-        "10 to 14 business days"
+        "10 to 14 business days",
+        "1 to 2 business days"
       ],
       "correctAnswer": "5 to 7 business days",
       "explanation": "Officer states 'You should see a credit back within 5 to 7 business days.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What is being mailed to the customer?",
       "options": [
+        "A fraud report",
         "A new PIN",
         "A new debit card",
-        "Account statements",
-        "A fraud report"
+        "Account statements"
       ],
       "correctAnswer": "A new debit card",
       "explanation": "Officer states 'We'll mail you a new debit card as a precaution.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What immediate action is recommended for online banking?",
       "options": [
+        "Disable online banking",
         "Contact the bank branch",
         "Close the account",
-        "Change your online banking password right away",
-        "Disable online banking"
+        "Change your online banking password right away"
       ],
       "correctAnswer": "Change your online banking password right away",
       "explanation": "Officer states 'I'm also recommending you change your online banking password right away.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long have the dishes been in the sink?",
       "options": [
-        "One day",
-        "Two days",
         "Three days",
-        "Four days"
+        "Four days",
+        "One day",
+        "Two days"
       ],
       "correctAnswer": "Three days",
       "explanation": "Alex states 'it's been sitting there for three days.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "How much is the internet bill this month?",
       "options": [
+        "$80",
         "$65",
         "$70",
-        "$75",
-        "$80"
+        "$75"
       ],
       "correctAnswer": "$75",
       "explanation": "Alex states 'the internet bill is due next week. It's $75 this month.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "By how much did the internet bill increase?",
       "options": [
-        "$3",
         "$5",
         "$10",
-        "$15"
+        "$15",
+        "$3"
       ],
       "correctAnswer": "$5",
       "explanation": "Alex explains 'they increased the plan by five dollars.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the lost luggage reimbursement limit in the Standard plan?",
       "options": [
-        "$500",
-        "$1,000",
         "$1,500",
-        "$2,500"
+        "$2,500",
+        "$500",
+        "$1,000"
       ],
       "correctAnswer": "$1,000",
       "explanation": "The guide mentions 'lost luggage reimbursement up to one thousand dollars' in the Standard plan.",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the Premium plan's lost luggage coverage limit?",
       "options": [
+        "$2,500",
         "$1,000",
         "$1,500",
-        "$2,000",
-        "$2,500"
+        "$2,000"
       ],
       "correctAnswer": "$2,500",
       "explanation": "The Premium plan includes 'upgrade to two thousand five hundred dollars for lost luggage.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "How long do you have to file a claim after an incident?",
       "options": [
-        "30 days",
         "60 days",
         "90 days",
-        "120 days"
+        "120 days",
+        "30 days"
       ],
       "correctAnswer": "90 days",
       "explanation": "The guide states 'Claims must be filed within ninety days of the incident.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "What is the toll-free claims phone number?",
       "options": [
+        "1-800-555-0417",
         "1-800-555-0140",
         "1-800-555-0147",
-        "1-800-555-0174",
-        "1-800-555-0417"
+        "1-800-555-0174"
       ],
       "correctAnswer": "1-800-555-0147",
       "explanation": "The guide provides 'call our toll-free number at 1-800-555-0147.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the cost of the expansion project?",
       "options": [
+        "105 million dollars",
         "75 million dollars",
         "85 million dollars",
-        "95 million dollars",
-        "105 million dollars"
+        "95 million dollars"
       ],
       "correctAnswer": "95 million dollars",
       "explanation": "The museum is embarking on a 95 million dollar expansion.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How long is the expansion project expected to take?",
       "options": [
-        "Three years",
-        "Four years",
         "Five years",
-        "Six years"
+        "Six years",
+        "Three years",
+        "Four years"
       ],
       "correctAnswer": "Five years",
       "explanation": "The project is spanning five years.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many construction jobs will be generated?",
       "options": [
-        "400 jobs",
         "500 jobs",
         "600 jobs",
-        "700 jobs"
+        "700 jobs",
+        "400 jobs"
       ],
       "correctAnswer": "600 jobs",
       "explanation": "The expansion will generate approximately 600 construction jobs.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "What percentage of Albertans surveyed support the project?",
       "options": [
+        "85 percent",
         "65 percent",
         "72 percent",
-        "78 percent",
-        "85 percent"
+        "78 percent"
       ],
       "correctAnswer": "78 percent",
       "explanation": "78 percent of surveyed Albertans favor the project.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the total budget for the renovation?",
       "options": [
-        "5.2 million dollars",
-        "6.0 million dollars",
         "6.8 million dollars",
-        "7.5 million dollars"
+        "7.5 million dollars",
+        "5.2 million dollars",
+        "6.0 million dollars"
       ],
       "correctAnswer": "6.8 million dollars",
       "explanation": "The renovation project is budgeted at 6.8 million dollars.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "How long is the renovation expected to take?",
       "options": [
-        "12 months",
         "15 months",
         "18 months",
-        "24 months"
+        "24 months",
+        "12 months"
       ],
       "correctAnswer": "18 months",
       "explanation": "The project should take about 18 months to complete.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What are the three main components of the renovation?",
       "options": [
+        "Cafe, library, fitness center",
         "Pool, gym, parking lot",
         "Fitness center, pool upgrade, youth spaces",
-        "Gym, parking, offices",
-        "Cafe, library, fitness center"
+        "Gym, parking, offices"
       ],
       "correctAnswer": "Fitness center, pool upgrade, youth spaces",
       "explanation": "Plans include a new fitness center, pool upgrade, and additional youth programming spaces.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What is Robert's main concern?",
       "options": [
+        "Parking during renovation",
         "Noise during construction",
         "Cost of the project",
-        "Where his kids' programs will go",
-        "Parking during renovation"
+        "Where his kids' programs will go"
       ],
       "correctAnswer": "Where his kids' programs will go",
       "explanation": "Robert worries about where after-school programs will be located during construction.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "Where does Susan plan to relocate programs during construction?",
       "options": [
-        "A temporary building",
         "The community room and outdoor spaces",
         "A school gym",
-        "A local fitness facility"
+        "A local fitness facility",
+        "A temporary building"
       ],
       "correctAnswer": "The community room and outdoor spaces",
       "explanation": "Susan plans to maintain and use the community room and outdoor spaces for programs.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What concern does Jason raise about using outdoor space?",
       "options": [
+        "Noise complaints",
         "Weather damage",
         "Limited room for physical activities",
-        "Theft concerns",
-        "Noise complaints"
+        "Theft concerns"
       ],
       "correctAnswer": "Limited room for physical activities",
       "explanation": "Jason notes that if programs move outdoors, there will be limited space for sports and recreation.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What suggestion does Jason make for outdoor activities?",
       "options": [
+        "Move all programs indoors",
         "Build a temporary gym",
         "Close programs temporarily",
-        "Use a local park",
-        "Move all programs indoors"
+        "Use a local park"
       ],
       "correctAnswer": "Use a local park",
       "explanation": "Jason suggests using a local park for outdoor programming during construction.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What causes is the speaker attributing to forced migration?",
       "options": [
-        "Economic opportunity",
         "Rising sea levels, extreme weather, and changing precipitation",
         "Political conflicts",
-        "Educational opportunities"
+        "Educational opportunities",
+        "Economic opportunity"
       ],
       "correctAnswer": "Rising sea levels, extreme weather, and changing precipitation",
       "explanation": "The speaker identifies these climate factors as forcing migration.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "What examples does the speaker provide of current migration impacts?",
       "options": [
-        "Agricultural improvements",
         "Reduced urbanization",
         "Small island nations disappearing and coastal flooding",
-        "Increased employment"
+        "Increased employment",
+        "Agricultural improvements"
       ],
       "correctAnswer": "Small island nations disappearing and coastal flooding",
       "explanation": "The speaker cites disappearing island nations and increased coastal flooding as current impacts.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What consequences does the speaker warn about with unplanned migration?",
       "options": [
+        "Better job opportunities",
         "Economic growth",
         "Overcrowded cities, slums, and resource conflicts",
-        "Improved infrastructure",
-        "Better job opportunities"
+        "Improved infrastructure"
       ],
       "correctAnswer": "Overcrowded cities, slums, and resource conflicts",
       "explanation": "The speaker warns that unplanned migration creates overcrowding, slums, and conflicts.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "Which regions does the speaker believe will become more desirable?",
       "options": [
+        "Coastal areas",
         "Equatorial regions",
         "Small island nations",
-        "Canada and northern regions",
-        "Coastal areas"
+        "Canada and northern regions"
       ],
       "correctAnswer": "Canada and northern regions",
       "explanation": "The speaker states Canada and northern regions will likely become more desirable.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate for regarding climate-safe regions?",
       "options": [
-        "Restricting population growth",
         "Expanding housing, infrastructure, and economic capacity",
         "Limiting migration",
-        "Maintaining current conditions"
+        "Maintaining current conditions",
+        "Restricting population growth"
       ],
       "correctAnswer": "Expanding housing, infrastructure, and economic capacity",
       "explanation": "The speaker advocates proactively expanding housing, infrastructure, and economic capacity.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What is the speaker's main position on climate migration?",
       "options": [
-        "It won't happen",
         "It should be stopped",
         "It's inevitable and should be managed responsibly",
-        "It's not a real problem"
+        "It's not a real problem",
+        "It won't happen"
       ],
       "correctAnswer": "It's inevitable and should be managed responsibly",
       "explanation": "The speaker argues migration is inevitable and emphasizes the need for responsible planning.",

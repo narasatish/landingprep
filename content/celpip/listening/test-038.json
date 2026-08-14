@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "How long has the customer's internet been down?",
       "options": [
-        "One hour",
-        "Two hours",
         "Three hours",
-        "Four hours"
+        "Four hours",
+        "One hour",
+        "Two hours"
       ],
       "correctAnswer": "Three hours",
       "explanation": "Customer states 'my internet's been down for three hours now.'",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "What is the customer's account number?",
       "options": [
+        "4427-98165",
         "4472-89156",
         "4427-89165",
-        "4472-98156",
-        "4427-98165"
+        "4472-98156"
       ],
       "correctAnswer": "4472-89156",
       "explanation": "Customer provides the account number as '4472-89156.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What caused the outage?",
       "options": [
+        "A software update",
         "A router malfunction",
         "A fiber cut",
-        "A power surge",
-        "A software update"
+        "A power surge"
       ],
       "correctAnswer": "A fiber cut",
       "explanation": "Agent explains there's 'a known outage' due to 'a fiber cut about two hours ago.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "When is the outage estimated to be fixed?",
       "options": [
+        "5:00 PM",
         "2:00 PM",
         "3:00 PM",
-        "4:30 PM",
-        "5:00 PM"
+        "4:30 PM"
       ],
       "correctAnswer": "4:30 PM",
       "explanation": "Agent estimates the repair will be complete 'around 4:30 PM at the latest.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What is the automatic credit amount for the outage?",
       "options": [
-        "$15",
-        "$20",
         "$25",
-        "$30"
+        "$30",
+        "$15",
+        "$20"
       ],
       "correctAnswer": "$25",
       "explanation": "Agent states 'I'll apply a $25 credit to your next bill automatically.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What is the total compensation being offered?",
       "options": [
+        "$35",
         "$25",
         "$28.50",
-        "$32",
-        "$35"
+        "$32"
       ],
       "correctAnswer": "$28.50",
       "explanation": "Agent calculates 'Combined with the $25 credit, that's $28.50 total compensation.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "In how many hours should the repair be complete?",
       "options": [
-        "1 to 2 hours",
-        "2 to 3 hours",
         "3 to 4 hours",
-        "4 to 5 hours"
+        "4 to 5 hours",
+        "1 to 2 hours",
+        "2 to 3 hours"
       ],
       "correctAnswer": "2 to 3 hours",
       "explanation": "Agent estimates 'two to three more hours' of repair work remaining.",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "How long is the class?",
       "options": [
-        "30 minutes",
-        "45 minutes",
         "60 minutes",
-        "90 minutes"
+        "90 minutes",
+        "30 minutes",
+        "45 minutes"
       ],
       "correctAnswer": "60 minutes",
       "explanation": "Trainer states 'It's 60 minutes total.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How many classes per week does Maya plan to attend?",
       "options": [
-        "Once a week",
-        "Twice a week",
         "Three times a week",
-        "Daily"
+        "Daily",
+        "Once a week",
+        "Twice a week"
       ],
       "correctAnswer": "Twice a week",
       "explanation": "Maya states 'I'll start with twice a week and see how it goes.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What should NOT be used during evacuation?",
       "options": [
-        "Stairs",
-        "Emergency exits",
         "Elevators",
-        "Hallways"
+        "Hallways",
+        "Stairs",
+        "Emergency exits"
       ],
       "correctAnswer": "Elevators",
       "explanation": "The training explicitly states 'Do not use elevators under any circumstances.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "At what time are fire drills held?",
       "options": [
+        "3 PM",
         "10 AM",
         "1 PM",
-        "2 PM",
-        "3 PM"
+        "2 PM"
       ],
       "correctAnswer": "2 PM",
       "explanation": "The guide specifies drills are 'at 2 PM.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "How frequently are fire extinguishers located along hallways?",
       "options": [
-        "Every 10 meters",
-        "Every 15 meters",
         "Every 25 meters",
-        "Every 50 meters"
+        "Every 50 meters",
+        "Every 10 meters",
+        "Every 15 meters"
       ],
       "correctAnswer": "Every 25 meters",
       "explanation": "The training states 'Fire extinguishers are located every twenty-five meters along hallways.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "What should employees do if they find a blocked exit?",
       "options": [
-        "Move it themselves",
         "Ignore it",
         "Report it to maintenance immediately",
-        "Wait for management"
+        "Wait for management",
+        "Move it themselves"
       ],
       "correctAnswer": "Report it to maintenance immediately",
       "explanation": "The guide instructs to 'Report any fire hazards such as blocked exits or damaged equipment to maintenance immediately.'",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How long is the expansion project expected to take?",
       "options": [
+        "Six years",
         "Three years",
         "Four years",
-        "Five years",
-        "Six years"
+        "Five years"
       ],
       "correctAnswer": "Five years",
       "explanation": "The project is spanning five years.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many construction jobs will be generated?",
       "options": [
-        "400 jobs",
-        "500 jobs",
         "600 jobs",
-        "700 jobs"
+        "700 jobs",
+        "400 jobs",
+        "500 jobs"
       ],
       "correctAnswer": "600 jobs",
       "explanation": "The expansion will generate approximately 600 construction jobs.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "How many visitors does the museum currently attract annually?",
       "options": [
-        "350,000 visitors",
         "420,000 visitors",
         "480,000 visitors",
-        "520,000 visitors"
+        "520,000 visitors",
+        "350,000 visitors"
       ],
       "correctAnswer": "480,000 visitors",
       "explanation": "The museum currently attracts 480,000 visitors annually.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "How many small business loans has the bank approved this year?",
       "options": [
+        "300 loans",
         "250 loans",
         "270 loans",
-        "285 loans",
-        "300 loans"
+        "285 loans"
       ],
       "correctAnswer": "285 loans",
       "explanation": "The bank has approved 285 loans this year.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What is the total amount of loans approved?",
       "options": [
-        "35 million dollars",
-        "39 million dollars",
         "42 million dollars",
-        "48 million dollars"
+        "48 million dollars",
+        "35 million dollars",
+        "39 million dollars"
       ],
       "correctAnswer": "42 million dollars",
       "explanation": "The loans approved total 42 million dollars.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What is the bank's current loan default rate?",
       "options": [
-        "2.5 percent",
         "3.2 percent",
         "4.2 percent",
-        "5.5 percent"
+        "5.5 percent",
+        "2.5 percent"
       ],
       "correctAnswer": "4.2 percent",
       "explanation": "The default rate is approximately 4.2 percent.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "Why does Lisa oppose tightening lending criteria?",
       "options": [
+        "It would increase default rates",
         "It's too expensive",
         "It would exclude new entrepreneurs",
-        "It would reduce profitability",
-        "It would increase default rates"
+        "It would reduce profitability"
       ],
       "correctAnswer": "It would exclude new entrepreneurs",
       "explanation": "Lisa warns that stricter criteria would only serve well-established businesses, defeating the purpose.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What challenge did Marcus face when starting his business?",
       "options": [
+        "High interest rates",
         "Lack of experience",
         "No customers",
-        "Banks wouldn't lend to him",
-        "High interest rates"
+        "Banks wouldn't lend to him"
       ],
       "correctAnswer": "Banks wouldn't lend to him",
       "explanation": "Marcus says traditional banks wouldn't lend because he lacked assets and track record.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "How many people does Marcus's restaurant currently employ?",
       "options": [
-        "8 people",
-        "10 people",
         "12 people",
-        "15 people"
+        "15 people",
+        "8 people",
+        "10 people"
       ],
       "correctAnswer": "12 people",
       "explanation": "Marcus's restaurant now employs 12 people.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What causes is the speaker attributing to forced migration?",
       "options": [
-        "Economic opportunity",
-        "Rising sea levels, extreme weather, and changing precipitation",
         "Political conflicts",
-        "Educational opportunities"
+        "Educational opportunities",
+        "Economic opportunity",
+        "Rising sea levels, extreme weather, and changing precipitation"
       ],
       "correctAnswer": "Rising sea levels, extreme weather, and changing precipitation",
       "explanation": "The speaker identifies these climate factors as forcing migration.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "What examples does the speaker provide of current migration impacts?",
       "options": [
-        "Agricultural improvements",
-        "Reduced urbanization",
         "Small island nations disappearing and coastal flooding",
-        "Increased employment"
+        "Increased employment",
+        "Agricultural improvements",
+        "Reduced urbanization"
       ],
       "correctAnswer": "Small island nations disappearing and coastal flooding",
       "explanation": "The speaker cites disappearing island nations and increased coastal flooding as current impacts.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate for regarding climate-safe regions?",
       "options": [
-        "Restricting population growth",
-        "Expanding housing, infrastructure, and economic capacity",
         "Limiting migration",
-        "Maintaining current conditions"
+        "Maintaining current conditions",
+        "Restricting population growth",
+        "Expanding housing, infrastructure, and economic capacity"
       ],
       "correctAnswer": "Expanding housing, infrastructure, and economic capacity",
       "explanation": "The speaker advocates proactively expanding housing, infrastructure, and economic capacity.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What is the speaker's main position on climate migration?",
       "options": [
-        "It won't happen",
-        "It should be stopped",
         "It's inevitable and should be managed responsibly",
-        "It's not a real problem"
+        "It's not a real problem",
+        "It won't happen",
+        "It should be stopped"
       ],
       "correctAnswer": "It's inevitable and should be managed responsibly",
       "explanation": "The speaker argues migration is inevitable and emphasizes the need for responsible planning.",

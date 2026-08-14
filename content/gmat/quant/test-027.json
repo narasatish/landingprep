@@ -15,11 +15,11 @@
       "section": "quant",
       "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
       "options": [
-        "132",
-        "144",
         "154",
         "168",
-        "176"
+        "176",
+        "132",
+        "144"
       ],
       "correctAnswer": "154",
       "answer": "C",
@@ -33,11 +33,11 @@
       "section": "quant",
       "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
       "options": [
-        "16 litres",
         "18 litres",
         "20 litres",
         "22 litres",
-        "24 litres"
+        "24 litres",
+        "16 litres"
       ],
       "correctAnswer": "20 litres",
       "answer": "C",
@@ -87,11 +87,11 @@
       "section": "quant",
       "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
       "options": [
+        "18",
+        "24",
         "6",
         "8",
-        "12",
-        "18",
-        "24"
+        "12"
       ],
       "correctAnswer": "12",
       "answer": "C",
@@ -105,11 +105,11 @@
       "section": "quant",
       "prompt": "Three-quarters of a number is 60. What is the number?",
       "options": [
-        "70",
-        "75",
         "80",
         "85",
-        "90"
+        "90",
+        "70",
+        "75"
       ],
       "correctAnswer": "80",
       "answer": "C",
@@ -141,11 +141,11 @@
       "section": "quant",
       "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
       "options": [
-        "9",
         "12",
         "18",
         "24",
-        "36"
+        "36",
+        "9"
       ],
       "correctAnswer": "24",
       "answer": "D",
@@ -159,11 +159,11 @@
       "section": "quant",
       "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
       "options": [
+        "720",
         "480",
         "540",
         "600",
-        "640",
-        "720"
+        "640"
       ],
       "correctAnswer": "600",
       "answer": "C",
@@ -177,11 +177,11 @@
       "section": "quant",
       "prompt": "A traveller drives to a town at 60 mph and returns along the same road at 40 mph. What is the average speed for the round trip?",
       "options": [
-        "45 mph",
-        "48 mph",
         "50 mph",
         "52 mph",
-        "55 mph"
+        "55 mph",
+        "45 mph",
+        "48 mph"
       ],
       "correctAnswer": "48 mph",
       "answer": "B",
@@ -195,11 +195,11 @@
       "section": "quant",
       "prompt": "What is the simple interest on $2,000 at 5% per year for 3 years?",
       "options": [
-        "$200",
-        "$250",
         "$300",
         "$350",
-        "$400"
+        "$400",
+        "$200",
+        "$250"
       ],
       "correctAnswer": "$300",
       "answer": "C",
@@ -213,11 +213,11 @@
       "section": "quant",
       "prompt": "If 5 identical pens cost $20, how much do 8 of the same pens cost?",
       "options": [
-        "$28",
         "$30",
         "$32",
         "$36",
-        "$40"
+        "$40",
+        "$28"
       ],
       "correctAnswer": "$32",
       "answer": "C",
@@ -267,11 +267,11 @@
       "section": "quant",
       "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
       "options": [
+        "$19.25",
+        "$20.00",
         "$14.00",
         "$18.50",
-        "$21.50",
-        "$19.25",
-        "$20.00"
+        "$21.50"
       ],
       "correctAnswer": "$21.50",
       "answer": "C",
@@ -285,11 +285,11 @@
       "section": "quant",
       "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
       "options": [
-        "55 mph",
-        "58 mph",
         "60 mph",
         "65 mph",
-        "70 mph"
+        "70 mph",
+        "55 mph",
+        "58 mph"
       ],
       "correctAnswer": "60 mph",
       "answer": "C",
@@ -303,11 +303,11 @@
       "section": "quant",
       "prompt": "If 40% of a number is 64, what is 75% of that number?",
       "options": [
-        "96",
-        "100",
         "108",
         "120",
-        "128"
+        "128",
+        "96",
+        "100"
       ],
       "correctAnswer": "120",
       "answer": "D",
@@ -321,11 +321,11 @@
       "section": "quant",
       "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
       "options": [
-        "3 hours",
         "12 hours",
         "15 hours",
         "18 hours",
-        "21 hours"
+        "21 hours",
+        "3 hours"
       ],
       "correctAnswer": "18 hours",
       "answer": "D",
@@ -339,11 +339,11 @@
       "section": "quant",
       "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
       "options": [
+        "$200",
+        "$210",
         "$170",
         "$180",
-        "$190",
-        "$200",
-        "$210"
+        "$190"
       ],
       "correctAnswer": "$180",
       "answer": "B",
@@ -357,11 +357,11 @@
       "section": "quant",
       "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
       "options": [
-        "$200",
-        "$210",
         "$220",
         "$240",
-        "$260"
+        "$260",
+        "$200",
+        "$210"
       ],
       "correctAnswer": "$210",
       "answer": "B",
@@ -375,11 +375,11 @@
       "section": "quant",
       "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
       "options": [
-        "12",
         "15",
         "16",
         "18",
-        "20"
+        "20",
+        "12"
       ],
       "correctAnswer": "15",
       "answer": "B",

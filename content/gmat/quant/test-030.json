@@ -15,11 +15,11 @@
       "section": "quant",
       "prompt": "What is the value of 2^5 × 2^3?",
       "options": [
-        "64",
-        "128",
         "256",
         "512",
-        "1024"
+        "1024",
+        "64",
+        "128"
       ],
       "correctAnswer": "256",
       "answer": "C",
@@ -51,11 +51,11 @@
       "section": "quant",
       "prompt": "What is 15% of 15% of 400?",
       "options": [
+        "18",
         "6",
         "9",
         "12",
-        "15",
-        "18"
+        "15"
       ],
       "correctAnswer": "9",
       "answer": "B",
@@ -69,11 +69,11 @@
       "section": "quant",
       "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
       "options": [
+        "$70",
         "$57",
         "$60",
         "$63",
-        "$66",
-        "$70"
+        "$66"
       ],
       "correctAnswer": "$63",
       "answer": "C",
@@ -87,11 +87,11 @@
       "section": "quant",
       "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
       "options": [
+        "165 miles",
+        "180 miles",
         "120 miles",
         "135 miles",
-        "150 miles",
-        "165 miles",
-        "180 miles"
+        "150 miles"
       ],
       "correctAnswer": "150 miles",
       "answer": "C",
@@ -105,11 +105,11 @@
       "section": "quant",
       "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
       "options": [
-        "8",
         "10",
         "12",
         "15",
-        "16"
+        "16",
+        "8"
       ],
       "correctAnswer": "10",
       "answer": "B",
@@ -123,11 +123,11 @@
       "section": "quant",
       "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
       "options": [
-        "1/5",
-        "2/5",
         "1/2",
         "3/5",
-        "2/3"
+        "2/3",
+        "1/5",
+        "2/5"
       ],
       "correctAnswer": "3/5",
       "answer": "D",
@@ -177,11 +177,11 @@
       "section": "quant",
       "prompt": "If x = 5, what is the value of x² − 9?",
       "options": [
+        "18",
+        "20",
         "12",
         "14",
-        "16",
-        "18",
-        "20"
+        "16"
       ],
       "correctAnswer": "16",
       "answer": "C",
@@ -195,11 +195,11 @@
       "section": "quant",
       "prompt": "30 is what percent of 120?",
       "options": [
-        "20%",
         "25%",
         "30%",
         "35%",
-        "40%"
+        "40%",
+        "20%"
       ],
       "correctAnswer": "25%",
       "answer": "B",
@@ -267,11 +267,11 @@
       "section": "quant",
       "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
       "options": [
-        "7",
-        "9",
         "10",
         "11",
-        "12"
+        "12",
+        "7",
+        "9"
       ],
       "correctAnswer": "9",
       "answer": "B",
@@ -285,11 +285,11 @@
       "section": "quant",
       "prompt": "If 3x = 18, what is the value of x² + x?",
       "options": [
-        "36",
-        "40",
         "42",
         "48",
-        "54"
+        "54",
+        "36",
+        "40"
       ],
       "correctAnswer": "42",
       "answer": "C",
@@ -303,11 +303,11 @@
       "section": "quant",
       "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
       "options": [
-        "24",
         "28",
         "30",
         "36",
-        "60"
+        "60",
+        "24"
       ],
       "correctAnswer": "30",
       "answer": "C",
@@ -339,11 +339,11 @@
       "section": "quant",
       "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
       "options": [
+        "24 litres",
         "16 litres",
         "18 litres",
         "20 litres",
-        "22 litres",
-        "24 litres"
+        "22 litres"
       ],
       "correctAnswer": "20 litres",
       "answer": "C",
@@ -357,11 +357,11 @@
       "section": "quant",
       "prompt": "What is the value of 5! (5 factorial)?",
       "options": [
+        "150",
+        "720",
         "60",
         "100",
-        "120",
-        "150",
-        "720"
+        "120"
       ],
       "correctAnswer": "120",
       "answer": "C",
@@ -375,11 +375,11 @@
       "section": "quant",
       "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
       "options": [
+        "24",
+        "48",
         "12",
         "16",
-        "20",
-        "24",
-        "48"
+        "20"
       ],
       "correctAnswer": "24",
       "answer": "D",

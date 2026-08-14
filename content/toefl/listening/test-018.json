@@ -51,10 +51,10 @@
       "questionType": "gist_content",
       "prompt": "What is the main topic of this conversation?",
       "options": [
-        "Undergraduate course selection",
         "Graduate thesis research design",
         "A funding application",
-        "A completed research paper"
+        "A completed research paper",
+        "Undergraduate course selection"
       ],
       "correctAnswer": "Graduate thesis research design",
       "explanation": "The conversation is about narrowing and designing the student's thesis research."
@@ -66,10 +66,10 @@
       "questionType": "detail",
       "prompt": "Why does the supervisor recommend narrowing the topic?",
       "options": [
-        "The broader topic is not interesting",
         "Community solar is more important than other renewables",
         "The broader topic would be too large for a master's thesis",
-        "The library lacks resources on renewables"
+        "The library lacks resources on renewables",
+        "The broader topic is not interesting"
       ],
       "correctAnswer": "The broader topic would be too large for a master's thesis",
       "explanation": "The supervisor explicitly states the broader topic 'would be too large for a master's thesis.'"
@@ -81,10 +81,10 @@
       "questionType": "function",
       "prompt": "Why does the supervisor recommend pilot-testing the survey?",
       "options": [
+        "To earn extra credit in the research course",
         "To reduce the number of participants needed",
         "To check for and identify ambiguous questions",
-        "To satisfy journal publication requirements",
-        "To earn extra credit in the research course"
+        "To satisfy journal publication requirements"
       ],
       "correctAnswer": "To check for and identify ambiguous questions",
       "explanation": "He recommends pilot-testing 'to check for ambiguous questions.'"
@@ -96,10 +96,10 @@
       "questionType": "inference",
       "prompt": "What can be inferred about the IRB approval process?",
       "options": [
-        "It is automatic and takes only a day",
-        "It takes much longer than students often expect",
         "The university rarely approves student research",
-        "It is optional for graduate students"
+        "It is optional for graduate students",
+        "It is automatic and takes only a day",
+        "It takes much longer than students often expect"
       ],
       "correctAnswer": "It takes much longer than students often expect",
       "explanation": "The supervisor's advice to 'apply immediately' since it takes 6-8 weeks implies students underestimate the time."
@@ -111,10 +111,10 @@
       "questionType": "attitude",
       "prompt": "How does the supervisor react to the student's mixed-methods proposal?",
       "options": [
-        "He rejects it entirely",
         "He is enthusiastic but suggests a refinement",
         "He says only quantitative methods should be used",
-        "He is indifferent"
+        "He is indifferent",
+        "He rejects it entirely"
       ],
       "correctAnswer": "He is enthusiastic but suggests a refinement",
       "explanation": "The supervisor 'is enthusiastic' but recommends the pilot-test refinement."
@@ -141,10 +141,10 @@
       "questionType": "detail",
       "prompt": "According to the advisor, which courses would the student need to add?",
       "options": [
-        "Two specialist environmental law courses",
-        "Three biology laboratory courses",
         "A foreign language requirement",
-        "One graduate-level seminar"
+        "One graduate-level seminar",
+        "Two specialist environmental law courses",
+        "Three biology laboratory courses"
       ],
       "correctAnswer": "Two specialist environmental law courses",
       "explanation": "The advisor specifies two environmental law courses as new requirements."
@@ -156,10 +156,10 @@
       "questionType": "inference",
       "prompt": "What can be inferred about the student's main concern?",
       "options": [
-        "She does not like her current professors",
-        "She is worried about delaying graduation",
         "She is unhappy with the career options in biology",
-        "She cannot afford the tuition fees"
+        "She cannot afford the tuition fees",
+        "She does not like her current professors",
+        "She is worried about delaying graduation"
       ],
       "correctAnswer": "She is worried about delaying graduation",
       "explanation": "The student's expressed concern is whether the switch would delay graduation."
@@ -171,10 +171,10 @@
       "questionType": "attitude",
       "prompt": "What is the advisor's overall attitude toward the student's request?",
       "options": [
-        "Strongly discouraging",
         "Supportive and informative",
         "Dismissive",
-        "Uncertain and confused"
+        "Uncertain and confused",
+        "Strongly discouraging"
       ],
       "correctAnswer": "Supportive and informative",
       "explanation": "The advisor assures the student, provides information, and confirms the switch is feasible."
@@ -186,10 +186,10 @@
       "questionType": "detail",
       "prompt": "What does the advisor say about career prospects in environmental consulting?",
       "options": [
-        "Demand is declining",
         "The field is too competitive",
         "Demand has been consistently strong",
-        "Salaries are very low"
+        "Salaries are very low",
+        "Demand is declining"
       ],
       "correctAnswer": "Demand has been consistently strong",
       "explanation": "The advisor notes environmental consulting 'has shown consistent demand.'"
@@ -201,10 +201,10 @@
       "questionType": "gist_content",
       "prompt": "What is the main topic of this lecture?",
       "options": [
+        "How coral reefs are formed",
         "How to reduce ocean pollution",
         "The causes and ecological effects of ocean acidification",
-        "Ocean temperature changes only",
-        "How coral reefs are formed"
+        "Ocean temperature changes only"
       ],
       "correctAnswer": "The causes and ecological effects of ocean acidification",
       "explanation": "The lecture covers the chemistry of acidification and its effects on marine life."
@@ -216,10 +216,10 @@
       "questionType": "detail",
       "prompt": "According to the professor, what has happened to ocean pH since the industrial revolution?",
       "options": [
-        "It has risen from 8.1 to 8.2",
-        "It has fallen from 8.2 to 8.1",
         "It has remained stable at 8.0",
-        "It has dropped to 7.5"
+        "It has dropped to 7.5",
+        "It has risen from 8.1 to 8.2",
+        "It has fallen from 8.2 to 8.1"
       ],
       "correctAnswer": "It has fallen from 8.2 to 8.1",
       "explanation": "The professor states pH has 'fallen from approximately 8.2 to 8.1 since the industrial revolution.'"
@@ -231,10 +231,10 @@
       "questionType": "function",
       "prompt": "Why does the professor note the logarithmic nature of the pH scale?",
       "options": [
-        "To confuse students with mathematics",
         "To explain why the 0.1 pH change is more significant than it sounds",
         "To argue that acidification is not real",
-        "To convert between temperature and acidity"
+        "To convert between temperature and acidity",
+        "To confuse students with mathematics"
       ],
       "correctAnswer": "To explain why the 0.1 pH change is more significant than it sounds",
       "explanation": "The logarithmic scale means 0.1 pH change = 26% increase in hydrogen ions — much larger than the number implies."
@@ -276,10 +276,10 @@
       "questionType": "attitude",
       "prompt": "What is the professor's view on local solutions to ocean acidification?",
       "options": [
+        "Individual consumer choices are the best solution",
         "Local action can solve the problem",
         "Local fixes are unnecessary",
-        "There is no local fix — it requires global CO2 reduction",
-        "Individual consumer choices are the best solution"
+        "There is no local fix — it requires global CO2 reduction"
       ],
       "correctAnswer": "There is no local fix — it requires global CO2 reduction",
       "explanation": "The professor explicitly states 'there is no local fix for a global problem driven by fossil fuel combustion.'"
@@ -291,10 +291,10 @@
       "questionType": "gist_content",
       "prompt": "What concept is the lecture mainly about?",
       "options": [
-        "Individual psychological memory",
         "Collective memory and how groups maintain narratives of the past",
         "Digital archives and their limitations",
-        "A biography of Maurice Halbwachs"
+        "A biography of Maurice Halbwachs",
+        "Individual psychological memory"
       ],
       "correctAnswer": "Collective memory and how groups maintain narratives of the past",
       "explanation": "The lecture is primarily about collective memory and how social groups shape historical narratives."
@@ -321,10 +321,10 @@
       "questionType": "rhetorical_purpose",
       "prompt": "Why does the professor compare World War II memory in the US, Japan, and Germany?",
       "options": [
+        "To prove that all war memory is false",
         "To argue that only Germany has accurate war memory",
         "To show how collective memories of the same events differ across national groups",
-        "To criticise American war memory",
-        "To prove that all war memory is false"
+        "To criticise American war memory"
       ],
       "correctAnswer": "To show how collective memories of the same events differ across national groups",
       "explanation": "The comparison illustrates that the same historical event can be remembered very differently by different societies."
@@ -336,10 +336,10 @@
       "questionType": "vocabulary_in_context",
       "prompt": "The German word Erinnerungskultur as used in the lecture refers to:",
       "options": [
-        "A policy of war reparations",
-        "A culture of active remembrance and confrontation with historical responsibility",
         "A festival celebrating German victory",
-        "Denial of wartime atrocities"
+        "Denial of wartime atrocities",
+        "A policy of war reparations",
+        "A culture of active remembrance and confrontation with historical responsibility"
       ],
       "correctAnswer": "A culture of active remembrance and confrontation with historical responsibility",
       "explanation": "The professor defines it as 'a culture of remembrance — that explicitly confronts German responsibility for the Holocaust.'"
@@ -351,10 +351,10 @@
       "questionType": "inference",
       "prompt": "What can be inferred from the lecture about collective memories?",
       "options": [
-        "They are objective records of historical truth",
-        "They are always controlled by governments",
         "They reflect present-day values and can change over time",
-        "They are fixed once established and never contested"
+        "They are fixed once established and never contested",
+        "They are objective records of historical truth",
+        "They are always controlled by governments"
       ],
       "correctAnswer": "They reflect present-day values and can change over time",
       "explanation": "The lecture shows collective memory changes as societies' values change — e.g., statue debates."
@@ -381,10 +381,10 @@
       "questionType": "gist_content",
       "prompt": "What is the main topic of the lecture?",
       "options": [
+        "The evolution of flowers and pollinators",
         "How to classify organisms by kingdom",
         "The forms and functions of symbiotic relationships between species",
-        "A comparison of parasite life cycles only",
-        "The evolution of flowers and pollinators"
+        "A comparison of parasite life cycles only"
       ],
       "correctAnswer": "The forms and functions of symbiotic relationships between species",
       "explanation": "The lecture defines and illustrates the three main types of symbiosis and their evolutionary significance."
@@ -396,10 +396,10 @@
       "questionType": "detail",
       "prompt": "How does the professor define mutualism?",
       "options": [
-        "A relationship where one species benefits at another's expense",
-        "A relationship where both species benefit",
         "A relationship where one benefits and the other is unaffected",
-        "Any interaction between two species"
+        "Any interaction between two species",
+        "A relationship where one species benefits at another's expense",
+        "A relationship where both species benefit"
       ],
       "correctAnswer": "A relationship where both species benefit",
       "explanation": "The professor defines mutualism as relationships 'in which both species benefit.'"
@@ -441,10 +441,10 @@
       "questionType": "detail",
       "prompt": "According to the professor, what is the significance of mitochondria in symbiosis?",
       "options": [
+        "They demonstrate commensalism in cells",
         "They are an example of a destructive parasitic relationship",
         "They evolved from engulfed bacteria in an ancient mutualistic event",
-        "They are only found in parasitic organisms",
-        "They demonstrate commensalism in cells"
+        "They are only found in parasitic organisms"
       ],
       "correctAnswer": "They evolved from engulfed bacteria in an ancient mutualistic event",
       "explanation": "Mitochondria are presented as the most consequential ancient endosymbiotic mutualism."
@@ -456,10 +456,10 @@
       "questionType": "attitude",
       "prompt": "What is the professor's view on the prevalence of parasitism?",
       "options": [
-        "Parasitism is rare and ecologically unimportant",
-        "Parasitism is the most common mode of symbiosis — most species are parasitic at some stage",
         "Parasitism only affects plants",
-        "Parasitism has been eliminated by evolution"
+        "Parasitism has been eliminated by evolution",
+        "Parasitism is rare and ecologically unimportant",
+        "Parasitism is the most common mode of symbiosis — most species are parasitic at some stage"
       ],
       "correctAnswer": "Parasitism is the most common mode of symbiosis — most species are parasitic at some stage",
       "explanation": "The professor states 'at least half of all species are parasitic at some stage of their life cycle.'"

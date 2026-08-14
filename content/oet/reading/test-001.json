@@ -428,10 +428,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "According to the Infection Control Policy, when should hand hygiene be performed?",
       "options": [
+        "Before and after patient contact, and after touching bodily fluids",
         "Only before patient contact",
         "Only when visibly soiled",
-        "At the beginning and end of each shift",
-        "Before and after patient contact, and after touching bodily fluids"
+        "At the beginning and end of each shift"
       ],
       "correctAnswer": "Before and after patient contact, and after touching bodily fluids",
       "explanation": "The policy explicitly requires hand hygiene at these three critical times.",
@@ -464,10 +464,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How should sharps be disposed of?",
       "options": [
-        "In regular waste bins",
         "In separate plastic bags",
         "In bleach solution overnight",
-        "In designated sharps containers immediately after use"
+        "In designated sharps containers immediately after use",
+        "In regular waste bins"
       ],
       "correctAnswer": "In designated sharps containers immediately after use",
       "explanation": "The policy explicitly requires sharps to be disposed of in designated containers immediately.",
@@ -482,10 +482,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What is NOT one of the five rights of medication administration?",
       "options": [
-        "Right dose",
-        "Right price",
         "Right patient",
-        "Right route"
+        "Right route",
+        "Right dose",
+        "Right price"
       ],
       "correctAnswer": "Right price",
       "explanation": "The five rights are: patient, drug, dose, route, and time. Price is not one of them.",
@@ -518,10 +518,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "When should PPE be worn according to the Infection Control Policy?",
       "options": [
-        "Always, with every patient",
-        "Only in isolation rooms",
         "During shift handover only",
-        "When exposure to blood or bodily fluids is anticipated"
+        "When exposure to blood or bodily fluids is anticipated",
+        "Always, with every patient",
+        "Only in isolation rooms"
       ],
       "correctAnswer": "When exposure to blood or bodily fluids is anticipated",
       "explanation": "The policy states PPE should be worn when exposure is anticipated.",
@@ -536,10 +536,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "According to the passage, which groups of patients are identified as high-risk for falls?",
       "options": [
+        "Only patients with hip fractures",
         "Only patients over 75 years old",
         "Patients on sedating medications, with history of falls, or with cognitive impairment",
-        "All hospitalised patients without exception",
-        "Only patients with hip fractures"
+        "All hospitalised patients without exception"
       ],
       "correctAnswer": "Patients on sedating medications, with history of falls, or with cognitive impairment",
       "explanation": "The passage explicitly lists these three categories as high-risk patients.",
@@ -554,10 +554,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What environmental modifications are recommended to prevent falls?",
       "options": [
-        "Restricting patient movement",
-        "Removing trip hazards, ensuring adequate lighting, installing grab bars, and maintaining clear pathways",
         "Keeping patients in bed",
-        "Removing all mobility aids"
+        "Removing all mobility aids",
+        "Restricting patient movement",
+        "Removing trip hazards, ensuring adequate lighting, installing grab bars, and maintaining clear pathways"
       ],
       "correctAnswer": "Removing trip hazards, ensuring adequate lighting, installing grab bars, and maintaining clear pathways",
       "explanation": "The passage lists these specific environmental modifications as crucial for falls prevention.",
@@ -572,10 +572,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "According to the passage, by how much can multifactorial interventions reduce falls?",
       "options": [
-        "Up to 10%",
         "Up to 30%",
         "Up to 20%",
-        "Up to 50%"
+        "Up to 50%",
+        "Up to 10%"
       ],
       "correctAnswer": "Up to 30%",
       "explanation": "The passage states that multifactorial interventions reduce falls by up to 30%.",
@@ -608,10 +608,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What is the gold standard diagnostic test for COPD?",
       "options": [
+        "Pulse oximetry",
         "Chest X-ray",
         "Spirometry",
-        "CT scan",
-        "Pulse oximetry"
+        "CT scan"
       ],
       "correctAnswer": "Spirometry",
       "explanation": "The passage states that spirometry is the gold standard diagnostic test for COPD.",
@@ -626,10 +626,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What is the first-line therapy for COPD according to the passage?",
       "options": [
-        "Oral steroids",
-        "Inhaled bronchodilators",
         "Inhaled corticosteroids",
-        "Oxygen therapy"
+        "Oxygen therapy",
+        "Oral steroids",
+        "Inhaled bronchodilators"
       ],
       "correctAnswer": "Inhaled bronchodilators",
       "explanation": "The passage explicitly states that inhaled bronchodilators are first-line therapy.",
@@ -644,10 +644,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which of the following is NOT mentioned as a symptom of COPD?",
       "options": [
-        "Chronic cough",
         "High fever",
         "Reduced exercise tolerance",
-        "Dyspnoea"
+        "Dyspnoea",
+        "Chronic cough"
       ],
       "correctAnswer": "High fever",
       "explanation": "The passage lists chronic cough, dyspnoea, and reduced exercise tolerance, but not high fever.",
@@ -680,10 +680,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What does pulmonary rehabilitation combine according to the passage?",
       "options": [
+        "Rest and dietary supplements",
         "Medication and oxygen therapy only",
         "Exercise, education, and psychosocial support",
-        "Surgery and medication",
-        "Rest and dietary supplements"
+        "Surgery and medication"
       ],
       "correctAnswer": "Exercise, education, and psychosocial support",
       "explanation": "The passage explicitly lists these three components of pulmonary rehabilitation.",
@@ -698,10 +698,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What are common triggers for COPD exacerbations mentioned in the passage?",
       "options": [
+        "Primarily dietary factors",
         "Only exercise",
         "Only weather changes",
-        "Infections and air pollution",
-        "Primarily dietary factors"
+        "Infections and air pollution"
       ],
       "correctAnswer": "Infections and air pollution",
       "explanation": "The passage states that exacerbations are often triggered by infections or air pollution.",
@@ -716,10 +716,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which of the following is NOT mentioned as part of multifactorial falls interventions?",
       "options": [
+        "Strict bed rest",
         "Assessment and exercise",
         "Medication review",
-        "Environmental changes",
-        "Strict bed rest"
+        "Environmental changes"
       ],
       "correctAnswer": "Strict bed rest",
       "explanation": "The passage lists assessment, exercise, medication review, and environmental changes but not bed rest as an intervention.",
@@ -734,10 +734,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What does the passage suggest about mobility aids in falls prevention?",
       "options": [
-        "They should be avoided to encourage independence",
-        "They are only for long-term patients",
         "They are ineffective for elderly patients",
-        "Staff should encourage their use"
+        "Staff should encourage their use",
+        "They should be avoided to encourage independence",
+        "They are only for long-term patients"
       ],
       "correctAnswer": "Staff should encourage their use",
       "explanation": "The passage states staff should encourage use of mobility aids as part of prevention strategy.",
@@ -752,10 +752,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "When are inhaled corticosteroids added to COPD therapy?",
       "options": [
-        "For all patients from diagnosis",
         "For mild disease only",
         "Only as a last resort before oxygen therapy",
-        "For moderate to severe disease with frequent exacerbations"
+        "For moderate to severe disease with frequent exacerbations",
+        "For all patients from diagnosis"
       ],
       "correctAnswer": "For moderate to severe disease with frequent exacerbations",
       "explanation": "The passage states corticosteroids are added for moderate to severe disease with frequent exacerbations.",
@@ -788,10 +788,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "According to the passage, what are the benefits of pulmonary rehabilitation?",
       "options": [
+        "Improved quality of life and reduced hospital admissions",
         "Only exercise improvement",
         "Temporary symptom relief only",
-        "Only pain management",
-        "Improved quality of life and reduced hospital admissions"
+        "Only pain management"
       ],
       "correctAnswer": "Improved quality of life and reduced hospital admissions",
       "explanation": "The passage states rehabilitation improves quality of life and reduces hospital admissions.",
@@ -806,10 +806,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "When should falls risk assessment occur according to the passage?",
       "options": [
-        "Only at admission",
         "Weekly only",
         "At admission and regularly thereafter",
-        "Only for symptomatic patients"
+        "Only for symptomatic patients",
+        "Only at admission"
       ],
       "correctAnswer": "At admission and regularly thereafter",
       "explanation": "The passage states risk assessment should be performed at admission and regularly thereafter.",

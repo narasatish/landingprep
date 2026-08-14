@@ -32,11 +32,11 @@
       "prompt": "The average of 5 numbers is 13. If one number equal to 1 is removed, what is the average of the remaining 4 numbers?",
       "difficulty": "medium",
       "options": [
-        "1",
-        "13",
         "15",
         "16",
-        "17"
+        "17",
+        "1",
+        "13"
       ],
       "correctAnswer": "16",
       "explanation": "Total = 5×13 = 65. Remove 1: remaining total 64 over 4 numbers = 16.",
@@ -49,11 +49,11 @@
       "prompt": "What is the sum of all integers x such that -25 < x ≤ 37?",
       "difficulty": "medium",
       "options": [
-        "440",
         "378",
         "-403",
         "403",
-        "366"
+        "366",
+        "440"
       ],
       "correctAnswer": "403",
       "explanation": "The integers run from -24 to 37. Pairing/series sum = 403.",
@@ -66,11 +66,11 @@
       "prompt": "A jacket priced at $130 is discounted by 20% and then taxed at 5%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$136.50",
+        "$119.20",
         "$104",
         "$109.20",
-        "$130",
-        "$136.50",
-        "$119.20"
+        "$130"
       ],
       "correctAnswer": "$109.20",
       "explanation": "After 20% off: $104. After 5% tax: $104 × 1.05 = $109.20.",
@@ -83,11 +83,11 @@
       "prompt": "If 10 painters can paint 10 walls in 10 days, how many days would it take 10 painters to paint 10 walls?",
       "difficulty": "medium",
       "options": [
+        "1",
+        "20",
         "11",
         "9",
-        "10",
-        "1",
-        "20"
+        "10"
       ],
       "correctAnswer": "10",
       "explanation": "Each painter paints 1 wall in 10 days. 10 painters painting 10 walls (one each) still take 10 days.",
@@ -117,11 +117,11 @@
       "prompt": "The perimeter of a rectangle is 96 and its area is 540. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
-        "30",
-        "20",
         "12",
         "18",
-        "48"
+        "48",
+        "30",
+        "20"
       ],
       "correctAnswer": "18",
       "explanation": "Sides sum to 48 and multiply to 540. They are 18 and 30; the shorter side is 18.",
@@ -134,11 +134,11 @@
       "prompt": "The average of a and b is 37, and the average of b and c is 25. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "62",
         "12",
         "26",
         "24",
-        "-24"
+        "-24",
+        "62"
       ],
       "correctAnswer": "24",
       "explanation": "a+b = 74 and b+c = 50. Subtracting: a − c = 74 − 50 = 24.",
@@ -151,11 +151,11 @@
       "prompt": "A survey of 370 workers found 140 commute by car, 100 by public transit, and 60 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
-        "18.9%",
-        "23.9%",
         "27%",
         "13.899999999999999%",
-        "37.8%"
+        "37.8%",
+        "18.9%",
+        "23.9%"
       ],
       "correctAnswer": "18.9%",
       "explanation": "Work from home = 370 − 140 − 100 − 60 = 70. As a percentage: 70/370 = 18.9%.",
@@ -168,11 +168,11 @@
       "prompt": "3^x + 3^x + 3^x = ?",
       "difficulty": "medium",
       "options": [
+        "12^x",
+        "3^x",
         "9^x",
         "3^(3x)",
-        "3^(x+1)",
-        "12^x",
-        "3^x"
+        "3^(x+1)"
       ],
       "correctAnswer": "3^(x+1)",
       "explanation": "Adding 3 copies of 3^x gives 3 × 3^x = 3^1 × 3^x = 3^(x+1).",
@@ -202,11 +202,11 @@
       "prompt": "The ratio of blue to red marbles is 4 to 5. If 10 blue marbles are added, the ratio becomes 1 to 1. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
+        "40",
+        "50",
         "60",
         "54",
-        "55",
-        "40",
-        "50"
+        "55"
       ],
       "correctAnswer": "50",
       "explanation": "Let blue = 4k and red = 5k. After adding 10: (4k+10)/(5k) = 1/1, which gives k = 10. Red = 5×10 = 50.",
@@ -236,11 +236,11 @@
       "prompt": "What is 40% of 390?",
       "difficulty": "medium",
       "options": [
+        "1560",
+        "430",
         "312",
         "156",
-        "350",
-        "1560",
-        "430"
+        "350"
       ],
       "correctAnswer": "156",
       "explanation": "40% of 390 = 40/100 × 390 = 156.",
@@ -253,11 +253,11 @@
       "prompt": "The average of 6 numbers is 12. If one number equal to -13 is removed, what is the average of the remaining 5 numbers?",
       "difficulty": "medium",
       "options": [
+        "18",
         "12",
         "16",
         "-13",
-        "17",
-        "18"
+        "17"
       ],
       "correctAnswer": "17",
       "explanation": "Total = 6×12 = 72. Remove -13: remaining total 85 over 5 numbers = 17.",
@@ -270,11 +270,11 @@
       "prompt": "What is the sum of all integers x such that -21 < x ≤ 28?",
       "difficulty": "medium",
       "options": [
+        "196",
         "-196",
         "224",
         "175",
-        "168",
-        "196"
+        "168"
       ],
       "correctAnswer": "196",
       "explanation": "The integers run from -20 to 28. Pairing/series sum = 196.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -369,11 +369,11 @@
       "prompt": "If 2x + 8 = 1x + 11, what is the value of x²?",
       "difficulty": "medium",
       "options": [
-        "3",
-        "6",
         "8",
         "9",
-        "12"
+        "12",
+        "3",
+        "6"
       ],
       "correctAnswer": "9",
       "explanation": "2x − 1x = 11 − 8 → 1x = 3 → x = 3. So x² = 9.",
@@ -386,11 +386,11 @@
       "prompt": "A right triangle has legs of length 6 and 8. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "14",
         "11",
         "10",
         "9",
-        "12",
-        "14"
+        "12"
       ],
       "correctAnswer": "10",
       "explanation": "Hypotenuse = √(6² + 8²) = √100 = 10.",
@@ -403,11 +403,11 @@
       "prompt": "In a class of 48 students, the ratio of those who passed to those who failed is 3:3. How many students passed?",
       "difficulty": "medium",
       "options": [
+        "26",
         "48",
         "32",
         "24",
-        "16",
-        "26"
+        "16"
       ],
       "correctAnswer": "24",
       "explanation": "Total parts = 6, each part = 48/6 = 8. Passed = 3 × 8 = 24.",
@@ -420,11 +420,11 @@
       "prompt": "What is the total number of downloads across both platforms over the six months?",
       "difficulty": "medium",
       "options": [
+        "739 thousand",
+        "759 thousand",
         "680 thousand",
         "699 thousand",
-        "719 thousand",
-        "739 thousand",
-        "759 thousand"
+        "719 thousand"
       ],
       "correctAnswer": "719 thousand",
       "explanation": "Sum of all months: 80+95+113+128+143+160 = 719 thousand",
@@ -484,11 +484,11 @@
       "prompt": "By approximately what percentage did total downloads increase from January to June?",
       "difficulty": "medium",
       "options": [
-        "80%",
-        "90%",
         "100%",
         "110%",
-        "120%"
+        "120%",
+        "80%",
+        "90%"
       ],
       "correctAnswer": "100%",
       "explanation": "(160-80)/80 = 80/80 = 1.0 = 100%",
@@ -548,11 +548,11 @@
       "prompt": "In which month did iOS downloads first exceed 70 thousand?",
       "difficulty": "medium",
       "options": [
-        "March",
         "April",
         "May",
         "June",
-        "February"
+        "February",
+        "March"
       ],
       "correctAnswer": "May",
       "explanation": "iOS: January 45, February 52, March 61, April 68, May 75 (first time >70)",

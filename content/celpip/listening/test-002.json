@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "How long has the customer's internet been down?",
       "options": [
-        "One hour",
-        "Two hours",
         "Three hours",
-        "Four hours"
+        "Four hours",
+        "One hour",
+        "Two hours"
       ],
       "correctAnswer": "Three hours",
       "explanation": "Customer states 'my internet's been down for three hours now.'",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "What is the customer's account number?",
       "options": [
+        "4427-98165",
         "4472-89156",
         "4427-89165",
-        "4472-98156",
-        "4427-98165"
+        "4472-98156"
       ],
       "correctAnswer": "4472-89156",
       "explanation": "Customer provides the account number as '4472-89156.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What caused the outage?",
       "options": [
+        "A software update",
         "A router malfunction",
         "A fiber cut",
-        "A power surge",
-        "A software update"
+        "A power surge"
       ],
       "correctAnswer": "A fiber cut",
       "explanation": "Agent explains there's 'a known outage' due to 'a fiber cut about two hours ago.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "When is the outage estimated to be fixed?",
       "options": [
+        "5:00 PM",
         "2:00 PM",
         "3:00 PM",
-        "4:30 PM",
-        "5:00 PM"
+        "4:30 PM"
       ],
       "correctAnswer": "4:30 PM",
       "explanation": "Agent estimates the repair will be complete 'around 4:30 PM at the latest.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What is the automatic credit amount for the outage?",
       "options": [
-        "$15",
-        "$20",
         "$25",
-        "$30"
+        "$30",
+        "$15",
+        "$20"
       ],
       "correctAnswer": "$25",
       "explanation": "Agent states 'I'll apply a $25 credit to your next bill automatically.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What is the total compensation being offered?",
       "options": [
+        "$35",
         "$25",
         "$28.50",
-        "$32",
-        "$35"
+        "$32"
       ],
       "correctAnswer": "$28.50",
       "explanation": "Agent calculates 'Combined with the $25 credit, that's $28.50 total compensation.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "In how many hours should the repair be complete?",
       "options": [
-        "1 to 2 hours",
-        "2 to 3 hours",
         "3 to 4 hours",
-        "4 to 5 hours"
+        "4 to 5 hours",
+        "1 to 2 hours",
+        "2 to 3 hours"
       ],
       "correctAnswer": "2 to 3 hours",
       "explanation": "Agent estimates 'two to three more hours' of repair work remaining.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long have the dishes been in the sink?",
       "options": [
-        "One day",
-        "Two days",
         "Three days",
-        "Four days"
+        "Four days",
+        "One day",
+        "Two days"
       ],
       "correctAnswer": "Three days",
       "explanation": "Alex states 'it's been sitting there for three days.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "How much is the internet bill this month?",
       "options": [
+        "$80",
         "$65",
         "$70",
-        "$75",
-        "$80"
+        "$75"
       ],
       "correctAnswer": "$75",
       "explanation": "Alex states 'the internet bill is due next week. It's $75 this month.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "By how much did the internet bill increase?",
       "options": [
-        "$3",
         "$5",
         "$10",
-        "$15"
+        "$15",
+        "$3"
       ],
       "correctAnswer": "$5",
       "explanation": "Alex explains 'they increased the plan by five dollars.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "Where should you get your student photo ID?",
       "options": [
-        "The Student Centre",
-        "The Services Office",
         "The IT support desk",
-        "Student Health Services"
+        "Student Health Services",
+        "The Student Centre",
+        "The Services Office"
       ],
       "correctAnswer": "The Services Office",
       "explanation": "The guide states 'get your student photo ID taken at the Services Office.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What are the hours for photo ID service?",
       "options": [
-        "8 AM to 5 PM",
         "9 AM to 4 PM",
         "10 AM to 3 PM",
-        "8 AM to 6 PM"
+        "8 AM to 6 PM",
+        "8 AM to 5 PM"
       ],
       "correctAnswer": "9 AM to 4 PM",
       "explanation": "The guide mentions 'between 9 and 4 on any day this week.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the estimated budget for books and materials?",
       "options": [
-        "One hundred dollars",
         "Two hundred dollars",
         "Three hundred dollars",
-        "Four hundred dollars"
+        "Four hundred dollars",
+        "One hundred dollars"
       ],
       "correctAnswer": "Three hundred dollars",
       "explanation": "The guide states 'budget about three hundred dollars for books and materials.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "When is the Welcome Social?",
       "options": [
+        "Sunday afternoon",
         "Thursday evening",
         "Friday evening",
-        "Saturday afternoon",
-        "Sunday afternoon"
+        "Saturday afternoon"
       ],
       "correctAnswer": "Friday evening",
       "explanation": "The guide mentions 'The Welcome Social on Friday evening in the gymnasium.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the size of TechHub Prairie?",
       "options": [
+        "60,000 square meters",
         "30,000 square meters",
         "40,000 square meters",
-        "50,000 square meters",
-        "60,000 square meters"
+        "50,000 square meters"
       ],
       "correctAnswer": "50,000 square meters",
       "explanation": "The report states TechHub Prairie is a 50,000-square-meter innovation center.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How much did the facility cost to construct?",
       "options": [
-        "75 million dollars",
-        "80 million dollars",
         "85 million dollars",
-        "90 million dollars"
+        "90 million dollars",
+        "75 million dollars",
+        "80 million dollars"
       ],
       "correctAnswer": "85 million dollars",
       "explanation": "The facility cost 85 million dollars to construct.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many new jobs are expected to be created?",
       "options": [
-        "800 jobs",
         "1,000 jobs",
         "1,200 jobs",
-        "1,500 jobs"
+        "1,500 jobs",
+        "800 jobs"
       ],
       "correctAnswer": "1,200 jobs",
       "explanation": "It is expected to create 1,200 new jobs over the next two years.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "Which of the following is NOT mentioned as available at the campus?",
       "options": [
+        "Startup incubator units",
         "Office space",
         "Research laboratories",
-        "Residential apartments",
-        "Startup incubator units"
+        "Residential apartments"
       ],
       "correctAnswer": "Residential apartments",
       "explanation": "The report mentions office space, laboratories, and incubators, but not apartments.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the cost of the engineering program expansion?",
       "options": [
-        "1.8 million dollars",
-        "2.0 million dollars",
         "2.4 million dollars",
-        "2.8 million dollars"
+        "2.8 million dollars",
+        "1.8 million dollars",
+        "2.0 million dollars"
       ],
       "correctAnswer": "2.4 million dollars",
       "explanation": "The cost would be approximately 2.4 million dollars over two years.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "How many potential students did the university lose last year?",
       "options": [
-        "100 students",
         "125 students",
         "150 students",
-        "175 students"
+        "175 students",
+        "100 students"
       ],
       "correctAnswer": "150 students",
       "explanation": "Professor Elena mentions they lost 150 potential engineering students.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "Why are some students not enrolling at this university?",
       "options": [
+        "Bad location",
         "Poor faculty",
         "Weak renewable energy program options",
-        "High tuition fees",
-        "Bad location"
+        "High tuition fees"
       ],
       "correctAnswer": "Weak renewable energy program options",
       "explanation": "They're losing students to competing universities with stronger renewable energy options.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Diana believe about tuition revenue from additional students?",
       "options": [
-        "It will decrease overall costs",
-        "It would exceed expansion costs within three years",
         "It wouldn't help the budget",
-        "It takes longer than expected"
+        "It takes longer than expected",
+        "It will decrease overall costs",
+        "It would exceed expansion costs within three years"
       ],
       "correctAnswer": "It would exceed expansion costs within three years",
       "explanation": "Diana states tuition revenue from 200 additional students would exceed expansion costs within three years.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of partnership does Diana mention exploring?",
       "options": [
-        "International universities",
-        "Government agencies",
         "Renewable energy companies",
-        "Tech startups"
+        "Tech startups",
+        "International universities",
+        "Government agencies"
       ],
       "correctAnswer": "Renewable energy companies",
       "explanation": "Diana mentions conversations with renewable energy companies about funding contributions.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What would companies receive in exchange for supporting the program?",
       "options": [
-        "University branding",
         "Free equipment",
         "Access to graduates for recruitment",
-        "Research funding"
+        "Research funding",
+        "University branding"
       ],
       "correctAnswer": "Access to graduates for recruitment",
       "explanation": "Companies want access to graduates for recruitment in exchange for contributions.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What specific position does Professor Elena hold on the expansion?",
       "options": [
-        "She opposes it",
-        "She strongly supports it",
         "She wants to wait",
-        "She's uncertain"
+        "She's uncertain",
+        "She opposes it",
+        "She strongly supports it"
       ],
       "correctAnswer": "She strongly supports it",
       "explanation": "Elena argues the university is losing enrollment without this program and needs to expand now.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
-        "Temporary welfare assistance",
-        "Government loans with repayment",
         "Regular unconditional cash payment to all citizens",
-        "Employer-provided income supplements"
+        "Employer-provided income supplements",
+        "Temporary welfare assistance",
+        "Government loans with repayment"
       ],
       "correctAnswer": "Regular unconditional cash payment to all citizens",
       "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What economic effect does the speaker claim UBI would have?",
       "options": [
+        "It would increase unemployment",
         "It would decrease spending",
         "Providing financial security would stimulate spending and job creation",
-        "It would reduce business activity",
-        "It would increase unemployment"
+        "It would reduce business activity"
       ],
       "correctAnswer": "Providing financial security would stimulate spending and job creation",
       "explanation": "The speaker argues that putting money in people's hands stimulates the economy and creates jobs.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "By what percentage did business formation increase in the Kenya pilot?",
       "options": [
+        "38 percent",
         "22 percent",
         "27 percent",
-        "32 percent",
-        "38 percent"
+        "32 percent"
       ],
       "correctAnswer": "32 percent",
       "explanation": "The speaker mentions that business formation in Kenya increased by 32 percent.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Increased energy",
         "Better mental health and less anxiety",
         "Improved sleep",
-        "Reduced medication needs"
+        "Reduced medication needs",
+        "Increased energy"
       ],
       "correctAnswer": "Better mental health and less anxiety",
       "explanation": "In Finland, participants reported better mental health and less anxiety.",

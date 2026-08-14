@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's phone number?",
       "options": [
-        "416-555-0243",
         "416-555-0234",
         "416-555-0342",
-        "416-555-0423"
+        "416-555-0423",
+        "416-555-0243"
       ],
       "correctAnswer": "416-555-0234",
       "explanation": "Customer provides their phone number as '416-555-0234.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What is the cost of the current plan?",
       "options": [
+        "$55 per month",
         "$25 per month",
         "$35 per month",
-        "$45 per month",
-        "$55 per month"
+        "$45 per month"
       ],
       "correctAnswer": "$35 per month",
       "explanation": "Support confirms 'your basic plan is 2 GB per month at $35.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "How many calling minutes does the customer's current plan have?",
       "options": [
+        "Unlimited",
         "100 minutes",
         "150 minutes",
-        "200 minutes",
-        "Unlimited"
+        "200 minutes"
       ],
       "correctAnswer": "200 minutes",
       "explanation": "Support states 'Your current plan has 200 minutes.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What data plan does the customer ultimately choose?",
       "options": [
-        "5 GB plan",
         "8 GB plan",
         "10 GB plan",
-        "15 GB plan"
+        "15 GB plan",
+        "5 GB plan"
       ],
       "correctAnswer": "8 GB plan",
       "explanation": "Customer asks 'do you have an 8 GB plan?' and accepts it, stating 'Perfect, I'll take that.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "When does the new plan take effect on the bill?",
       "options": [
-        "June 15th",
         "June 22nd",
         "July 1st",
-        "July 8th"
+        "July 8th",
+        "June 15th"
       ],
       "correctAnswer": "July 8th",
       "explanation": "Support states 'Your bill will reflect the change next billing cycle, which is on July 8th.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "How long is the class?",
       "options": [
-        "30 minutes",
-        "45 minutes",
         "60 minutes",
-        "90 minutes"
+        "90 minutes",
+        "30 minutes",
+        "45 minutes"
       ],
       "correctAnswer": "60 minutes",
       "explanation": "Trainer states 'It's 60 minutes total.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How many classes per week does Maya plan to attend?",
       "options": [
-        "Once a week",
-        "Twice a week",
         "Three times a week",
-        "Daily"
+        "Daily",
+        "Once a week",
+        "Twice a week"
       ],
       "correctAnswer": "Twice a week",
       "explanation": "Maya states 'I'll start with twice a week and see how it goes.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What are the visiting hours?",
       "options": [
-        "8 AM to 6 PM",
-        "9 AM to 7 PM",
         "10 AM to 8 PM",
-        "11 AM to 9 PM"
+        "11 AM to 9 PM",
+        "8 AM to 6 PM",
+        "9 AM to 7 PM"
       ],
       "correctAnswer": "10 AM to 8 PM",
       "explanation": "The guide states 'Visiting hours are 10 AM to 8 PM daily.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "Who must approve outside food before it's given to a patient?",
       "options": [
-        "The visitor",
-        "The patient",
         "The nursing staff",
-        "The hospital administrator"
+        "The hospital administrator",
+        "The visitor",
+        "The patient"
       ],
       "correctAnswer": "The nursing staff",
       "explanation": "The guide states 'Food brought from outside is permitted only if approved by nursing staff.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How much is being invested in recruitment and retention?",
       "options": [
-        "25 million dollars",
         "30 million dollars",
         "35 million dollars",
-        "40 million dollars"
+        "40 million dollars",
+        "25 million dollars"
       ],
       "correctAnswer": "35 million dollars",
       "explanation": "The province has announced a 35 million dollar investment.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "By what percentage are starting salaries for nurses increasing?",
       "options": [
+        "15 percent",
         "8 percent",
         "10 percent",
-        "12 percent",
-        "15 percent"
+        "12 percent"
       ],
       "correctAnswer": "12 percent",
       "explanation": "Starting salaries for nurses are being increased by 12 percent.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "What is the maximum signing bonus for rural relocations?",
       "options": [
-        "10,000 dollars",
-        "12,000 dollars",
         "15,000 dollars",
-        "20,000 dollars"
+        "20,000 dollars",
+        "10,000 dollars",
+        "12,000 dollars"
       ],
       "correctAnswer": "15,000 dollars",
       "explanation": "Signing bonuses of up to 15,000 dollars are offered for rural relocations.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "What percentage of vacant positions are expected to be filled in 18 months?",
       "options": [
-        "40 percent",
         "50 percent",
         "60 percent",
-        "75 percent"
+        "75 percent",
+        "40 percent"
       ],
       "correctAnswer": "60 percent",
       "explanation": "Officials estimate it will take approximately 18 months to fill 60 percent of positions.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What percentage of food is currently imported from outside the province?",
       "options": [
-        "75 percent",
         "80 percent",
         "85 percent",
-        "87 percent"
+        "87 percent",
+        "75 percent"
       ],
       "correctAnswer": "87 percent",
       "explanation": "Maria states about 87 percent of food is imported from outside the province.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What components are included in the local food initiative?",
       "options": [
-        "Grocery stores and restaurants",
-        "Farmers market and delivery programs",
         "Government subsidies",
-        "Large distribution centers"
+        "Large distribution centers",
+        "Grocery stores and restaurants",
+        "Farmers market and delivery programs"
       ],
       "correctAnswer": "Farmers market and delivery programs",
       "explanation": "The initiative proposes farmers market expansion and direct-to-consumer delivery programs.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What is Paul's primary concern about local food?",
       "options": [
-        "Product quality",
         "Pricing and consistency",
         "Customer demand",
-        "Storage requirements"
+        "Storage requirements",
+        "Product quality"
       ],
       "correctAnswer": "Pricing and consistency",
       "explanation": "Paul is concerned local producers can't compete on price and have seasonal limitations.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "According to Dr. Sarah, what percentage increase in fresh produce consumption is shown?",
       "options": [
-        "15 percent",
         "20 percent",
         "22 percent",
-        "25 percent"
+        "25 percent",
+        "15 percent"
       ],
       "correctAnswer": "22 percent",
       "explanation": "Communities with stronger local food networks show 22 percent higher fresh produce consumption.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What advantage of local food does Dr. Sarah emphasize?",
       "options": [
+        "Better storage",
         "Lower cost",
         "Improved freshness and food safety",
-        "More variety",
-        "Better storage"
+        "More variety"
       ],
       "correctAnswer": "Improved freshness and food safety",
       "explanation": "Reducing transportation improves food safety and nutrition through fresher products.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "How much of his production does James currently sell to farmers market?",
       "options": [
+        "50 percent",
         "25 percent",
         "35 percent",
-        "40 percent",
-        "50 percent"
+        "40 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James currently sells about 40 percent of production to the farmers market.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What infrastructure limitation does James identify?",
       "options": [
-        "Limited land",
-        "Transportation issues",
         "Packaging and distribution",
-        "Workforce availability"
+        "Workforce availability",
+        "Limited land",
+        "Transportation issues"
       ],
       "correctAnswer": "Packaging and distribution",
       "explanation": "James lacks infrastructure for packaging and distribution to expand sales.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "By what percentage could James increase production if he had distribution support?",
       "options": [
-        "40 percent",
         "50 percent",
         "60 percent",
-        "70 percent"
+        "70 percent",
+        "40 percent"
       ],
       "correctAnswer": "60 percent",
       "explanation": "James states he could increase production by 60 percent with distribution support.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
+        "It's ineffective",
         "It's too expensive",
         "It has gone too far in terms of surveillance",
-        "It doesn't improve security",
-        "It's ineffective"
+        "It doesn't improve security"
       ],
       "correctAnswer": "It has gone too far in terms of surveillance",
       "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "According to the speaker, what is the claimed reason for workplace monitoring?",
       "options": [
-        "To reduce wages",
-        "To improve productivity and security",
         "To prevent theft",
-        "To track attendance"
+        "To track attendance",
+        "To reduce wages",
+        "To improve productivity and security"
       ],
       "correctAnswer": "To improve productivity and security",
       "explanation": "The speaker mentions that companies argue monitoring improves productivity and security.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
-        "They work harder",
         "It creates anxiety and erodes trust",
         "They become more efficient",
-        "They communicate better"
+        "They communicate better",
+        "They work harder"
       ],
       "correctAnswer": "It creates anxiety and erodes trust",
       "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What do companies with less invasive monitoring report?",
       "options": [
-        "Lower profits",
-        "Higher employee satisfaction and retention",
         "More security issues",
-        "Reduced efficiency"
+        "Reduced efficiency",
+        "Lower profits",
+        "Higher employee satisfaction and retention"
       ],
       "correctAnswer": "Higher employee satisfaction and retention",
       "explanation": "The speaker mentions companies with less invasive monitoring report higher satisfaction and retention.",

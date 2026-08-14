@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the main problem with the refrigerator?",
       "options": [
-        "The compressor is broken completely",
         "The ice maker isn't working and there's a strange noise from the compressor",
         "The door seal is damaged",
-        "The temperature control panel is faulty"
+        "The temperature control panel is faulty",
+        "The compressor is broken completely"
       ],
       "correctAnswer": "The ice maker isn't working and there's a strange noise from the compressor",
       "explanation": "The customer explicitly states both issues in their opening complaint.",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "How long has the customer owned the refrigerator?",
       "options": [
-        "Three days",
         "One week",
         "Six days",
-        "Two weeks"
+        "Two weeks",
+        "Three days"
       ],
       "correctAnswer": "Six days",
       "explanation": "Customer states 'I've had it six days' and bought it Tuesday morning.",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What was the purchase price?",
       "options": [
-        "$999",
         "$1,099",
         "$1,199",
-        "$1,299"
+        "$1,299",
+        "$999"
       ],
       "correctAnswer": "$1,299",
       "explanation": "Customer clearly states the purchase price was $1,299.",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the return window policy mentioned?",
       "options": [
+        "Ten days",
         "Three days",
         "Five days",
-        "Seven days",
-        "Ten days"
+        "Seven days"
       ],
       "correctAnswer": "Seven days",
       "explanation": "Agent mentions 'within the seven-day return window.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "Where was the refrigerator purchased?",
       "options": [
-        "The mall location",
         "The downtown store",
         "Online",
-        "A second-hand seller"
+        "A second-hand seller",
+        "The mall location"
       ],
       "correctAnswer": "The downtown store",
       "explanation": "Customer says they bought it from 'your downtown store.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What refund method does the customer prefer?",
       "options": [
-        "Store credit",
         "Exchange for another model",
         "Cash back",
-        "Check by mail"
+        "Check by mail",
+        "Store credit"
       ],
       "correctAnswer": "Cash back",
       "explanation": "Customer explicitly states 'I'd rather have a refund.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "When will the refund appear in the customer's account?",
       "options": [
+        "Within 2 weeks",
         "Within 2 business days",
         "Within 5 to 7 business days",
-        "Within 10 business days",
-        "Within 2 weeks"
+        "Within 10 business days"
       ],
       "correctAnswer": "Within 5 to 7 business days",
       "explanation": "Agent states 'the refund will appear in your account within five to seven business days.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What time window is available for pickup?",
       "options": [
-        "8 AM to 12 PM",
-        "10 AM to 2 PM",
         "12 PM to 4 PM",
-        "2 PM to 6 PM"
+        "2 PM to 6 PM",
+        "8 AM to 12 PM",
+        "10 AM to 2 PM"
       ],
       "correctAnswer": "10 AM to 2 PM",
       "explanation": "Agent offers pickup 'between 10 and 2 PM' tomorrow morning.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the first restaurant Marcus suggests?",
       "options": [
-        "Thai food",
-        "Italian food",
         "Sushi",
-        "Indian food"
+        "Indian food",
+        "Thai food",
+        "Italian food"
       ],
       "correctAnswer": "Sushi",
       "explanation": "Marcus suggests 'that new sushi place across the street.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "When does the Thai restaurant get busy?",
       "options": [
+        "2 PM",
         "11 AM",
         "Noon",
-        "1 PM",
-        "2 PM"
+        "1 PM"
       ],
       "correctAnswer": "Noon",
       "explanation": "Jessica warns 'it gets busy after noon.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "What dish does Jessica mention?",
       "options": [
-        "Tom yum soup",
-        "Pad thai",
         "Spring rolls",
-        "Green curry"
+        "Green curry",
+        "Tom yum soup",
+        "Pad thai"
       ],
       "correctAnswer": "Pad thai",
       "explanation": "Jessica states 'They have great pad thai.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How soon do they plan to meet?",
       "options": [
-        "Immediately",
         "In five minutes downstairs",
         "In ten minutes",
-        "In fifteen minutes"
+        "In fifteen minutes",
+        "Immediately"
       ],
       "correctAnswer": "In five minutes downstairs",
       "explanation": "Jessica says 'See you in five minutes downstairs.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "Where should you get your student photo ID?",
       "options": [
-        "The Student Centre",
-        "The Services Office",
         "The IT support desk",
-        "Student Health Services"
+        "Student Health Services",
+        "The Student Centre",
+        "The Services Office"
       ],
       "correctAnswer": "The Services Office",
       "explanation": "The guide states 'get your student photo ID taken at the Services Office.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What are the hours for photo ID service?",
       "options": [
-        "8 AM to 5 PM",
         "9 AM to 4 PM",
         "10 AM to 3 PM",
-        "8 AM to 6 PM"
+        "8 AM to 6 PM",
+        "8 AM to 5 PM"
       ],
       "correctAnswer": "9 AM to 4 PM",
       "explanation": "The guide mentions 'between 9 and 4 on any day this week.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the estimated budget for books and materials?",
       "options": [
-        "One hundred dollars",
         "Two hundred dollars",
         "Three hundred dollars",
-        "Four hundred dollars"
+        "Four hundred dollars",
+        "One hundred dollars"
       ],
       "correctAnswer": "Three hundred dollars",
       "explanation": "The guide states 'budget about three hundred dollars for books and materials.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "When is the Welcome Social?",
       "options": [
+        "Sunday afternoon",
         "Thursday evening",
         "Friday evening",
-        "Saturday afternoon",
-        "Sunday afternoon"
+        "Saturday afternoon"
       ],
       "correctAnswer": "Friday evening",
       "explanation": "The guide mentions 'The Welcome Social on Friday evening in the gymnasium.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How many homes and businesses are targeted for solar installation?",
       "options": [
+        "60,000",
         "30,000",
         "40,000",
-        "50,000",
-        "60,000"
+        "50,000"
       ],
       "correctAnswer": "50,000",
       "explanation": "The SolarON program aims to install solar panels on 50,000 homes and businesses.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "What percentage of installation costs do subsidies cover?",
       "options": [
-        "25 percent",
-        "30 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent",
+        "30 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "The government provides subsidies covering up to 40 percent of installation costs.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "What is the maximum homeowner rebate?",
       "options": [
+        "10,000 dollars",
         "5,000 dollars",
         "6,000 dollars",
-        "8,000 dollars",
-        "10,000 dollars"
+        "8,000 dollars"
       ],
       "correctAnswer": "8,000 dollars",
       "explanation": "A rebate program offers homeowners up to 8,000 dollars.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the cost of the engineering program expansion?",
       "options": [
-        "1.8 million dollars",
-        "2.0 million dollars",
         "2.4 million dollars",
-        "2.8 million dollars"
+        "2.8 million dollars",
+        "1.8 million dollars",
+        "2.0 million dollars"
       ],
       "correctAnswer": "2.4 million dollars",
       "explanation": "The cost would be approximately 2.4 million dollars over two years.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "How many potential students did the university lose last year?",
       "options": [
-        "100 students",
         "125 students",
         "150 students",
-        "175 students"
+        "175 students",
+        "100 students"
       ],
       "correctAnswer": "150 students",
       "explanation": "Professor Elena mentions they lost 150 potential engineering students.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "Why are some students not enrolling at this university?",
       "options": [
+        "Bad location",
         "Poor faculty",
         "Weak renewable energy program options",
-        "High tuition fees",
-        "Bad location"
+        "High tuition fees"
       ],
       "correctAnswer": "Weak renewable energy program options",
       "explanation": "They're losing students to competing universities with stronger renewable energy options.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Diana believe about tuition revenue from additional students?",
       "options": [
-        "It will decrease overall costs",
-        "It would exceed expansion costs within three years",
         "It wouldn't help the budget",
-        "It takes longer than expected"
+        "It takes longer than expected",
+        "It will decrease overall costs",
+        "It would exceed expansion costs within three years"
       ],
       "correctAnswer": "It would exceed expansion costs within three years",
       "explanation": "Diana states tuition revenue from 200 additional students would exceed expansion costs within three years.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of partnership does Diana mention exploring?",
       "options": [
-        "International universities",
-        "Government agencies",
         "Renewable energy companies",
-        "Tech startups"
+        "Tech startups",
+        "International universities",
+        "Government agencies"
       ],
       "correctAnswer": "Renewable energy companies",
       "explanation": "Diana mentions conversations with renewable energy companies about funding contributions.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What would companies receive in exchange for supporting the program?",
       "options": [
-        "University branding",
         "Free equipment",
         "Access to graduates for recruitment",
-        "Research funding"
+        "Research funding",
+        "University branding"
       ],
       "correctAnswer": "Access to graduates for recruitment",
       "explanation": "Companies want access to graduates for recruitment in exchange for contributions.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What specific position does Professor Elena hold on the expansion?",
       "options": [
-        "She opposes it",
-        "She strongly supports it",
         "She wants to wait",
-        "She's uncertain"
+        "She's uncertain",
+        "She opposes it",
+        "She strongly supports it"
       ],
       "correctAnswer": "She strongly supports it",
       "explanation": "Elena argues the university is losing enrollment without this program and needs to expand now.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
-        "Temporary welfare assistance",
-        "Government loans with repayment",
         "Regular unconditional cash payment to all citizens",
-        "Employer-provided income supplements"
+        "Employer-provided income supplements",
+        "Temporary welfare assistance",
+        "Government loans with repayment"
       ],
       "correctAnswer": "Regular unconditional cash payment to all citizens",
       "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What economic effect does the speaker claim UBI would have?",
       "options": [
+        "It would increase unemployment",
         "It would decrease spending",
         "Providing financial security would stimulate spending and job creation",
-        "It would reduce business activity",
-        "It would increase unemployment"
+        "It would reduce business activity"
       ],
       "correctAnswer": "Providing financial security would stimulate spending and job creation",
       "explanation": "The speaker argues that putting money in people's hands stimulates the economy and creates jobs.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "By what percentage did business formation increase in the Kenya pilot?",
       "options": [
+        "38 percent",
         "22 percent",
         "27 percent",
-        "32 percent",
-        "38 percent"
+        "32 percent"
       ],
       "correctAnswer": "32 percent",
       "explanation": "The speaker mentions that business formation in Kenya increased by 32 percent.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Increased energy",
         "Better mental health and less anxiety",
         "Improved sleep",
-        "Reduced medication needs"
+        "Reduced medication needs",
+        "Increased energy"
       ],
       "correctAnswer": "Better mental health and less anxiety",
       "explanation": "In Finland, participants reported better mental health and less anxiety.",

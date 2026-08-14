@@ -15,11 +15,11 @@
       "prompt": "What is 12% of 190?",
       "difficulty": "medium",
       "options": [
+        "22.8",
         "178",
         "228",
         "45.6",
-        "202",
-        "22.8"
+        "202"
       ],
       "correctAnswer": "22.8",
       "explanation": "12% of 190 = 12/100 × 190 = 22.8.",
@@ -32,11 +32,11 @@
       "prompt": "The average of 6 numbers is 6. If one number equal to -19 is removed, what is the average of the remaining 5 numbers?",
       "difficulty": "medium",
       "options": [
-        "12",
         "10",
         "11",
         "-19",
-        "6"
+        "6",
+        "12"
       ],
       "correctAnswer": "11",
       "explanation": "Total = 6×6 = 36. Remove -19: remaining total 55 over 5 numbers = 11.",
@@ -49,11 +49,11 @@
       "prompt": "What is the sum of all integers x such that -31 < x ≤ 37?",
       "difficulty": "medium",
       "options": [
-        "207",
         "-238",
         "201",
         "238",
-        "275"
+        "275",
+        "207"
       ],
       "correctAnswer": "238",
       "explanation": "The integers run from -30 to 37. Pairing/series sum = 238.",
@@ -66,11 +66,11 @@
       "prompt": "A jacket priced at $150 is discounted by 10% and then taxed at 8%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$155.80",
+        "$162",
         "$135",
         "$145.80",
-        "$150",
-        "$155.80",
-        "$162"
+        "$150"
       ],
       "correctAnswer": "$145.80",
       "explanation": "After 10% off: $135. After 8% tax: $135 × 1.08 = $145.80.",
@@ -83,11 +83,11 @@
       "prompt": "If 7 painters can paint 7 walls in 7 days, how many days would it take 7 painters to paint 7 walls?",
       "difficulty": "medium",
       "options": [
+        "14",
         "8",
         "6",
         "1",
-        "7",
-        "14"
+        "7"
       ],
       "correctAnswer": "7",
       "explanation": "Each painter paints 1 wall in 7 days. 7 painters painting 7 walls (one each) still take 7 days.",
@@ -100,11 +100,11 @@
       "prompt": "If 1/4 of a number is 6, what is 2/6 of that number?",
       "difficulty": "medium",
       "options": [
+        "8",
         "24",
         "6",
         "16",
-        "14",
-        "8"
+        "14"
       ],
       "correctAnswer": "8",
       "explanation": "The number is 6 ÷ 1/4 = 24. Then 2/6 × 24 = 8.",
@@ -134,11 +134,11 @@
       "prompt": "The average of a and b is 39, and the average of b and c is 44. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "-5",
         "-8",
         "83",
         "-10",
-        "10"
+        "10",
+        "-5"
       ],
       "correctAnswer": "-10",
       "explanation": "a+b = 78 and b+c = 88. Subtracting: a − c = 78 − 88 = -10.",
@@ -151,11 +151,11 @@
       "prompt": "A survey of 490 workers found 190 commute by car, 80 by public transit, and 40 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "16.3%",
+        "38.8%",
         "41.7%",
         "36.7%",
-        "31.700000000000003%",
-        "16.3%",
-        "38.8%"
+        "31.700000000000003%"
       ],
       "correctAnswer": "36.7%",
       "explanation": "Work from home = 490 − 190 − 80 − 40 = 180. As a percentage: 180/490 = 36.7%.",
@@ -168,11 +168,11 @@
       "prompt": "4^x + 4^x + 4^x + 4^x = ?",
       "difficulty": "medium",
       "options": [
+        "4^x",
+        "16^x",
         "4^(2x)",
         "4^(4x)",
-        "4^(x+1)",
-        "4^x",
-        "16^x"
+        "4^(x+1)"
       ],
       "correctAnswer": "4^(x+1)",
       "explanation": "Adding 4 copies of 4^x gives 4 × 4^x = 4^1 × 4^x = 4^(x+1).",
@@ -185,11 +185,11 @@
       "prompt": "Sofia can assemble a bookcase twice as fast as Marcus. Working together they finish one in 20 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
-        "60",
         "30",
         "40",
         "20",
-        "13"
+        "13",
+        "60"
       ],
       "correctAnswer": "30",
       "explanation": "Let Marcus's rate be r. Sofia's is 2r, so together (3)r = 1/20, giving r = 1/60. Sofia's rate 2r = 2/60 = 1/30, so Sofia alone takes 30 hours.",
@@ -202,11 +202,11 @@
       "prompt": "The ratio of blue to red marbles is 4 to 7. If 12 blue marbles are added, the ratio becomes 40 to 49. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
-        "40",
         "61",
         "49",
         "28",
-        "37"
+        "37",
+        "40"
       ],
       "correctAnswer": "49",
       "explanation": "Let blue = 4k and red = 7k. After adding 12: (4k+12)/(7k) = 40/49, which gives k = 7. Red = 7×7 = 49.",
@@ -236,11 +236,11 @@
       "prompt": "What is 24% of 400?",
       "difficulty": "medium",
       "options": [
-        "960",
         "424",
         "192",
         "376",
-        "96"
+        "96",
+        "960"
       ],
       "correctAnswer": "96",
       "explanation": "24% of 400 = 24/100 × 400 = 96.",
@@ -253,11 +253,11 @@
       "prompt": "The average of 4 numbers is 14. If one number equal to 20 is removed, what is the average of the remaining 3 numbers?",
       "difficulty": "medium",
       "options": [
+        "11",
+        "13",
         "20",
         "14",
-        "12",
-        "11",
-        "13"
+        "12"
       ],
       "correctAnswer": "12",
       "explanation": "Total = 4×14 = 56. Remove 20: remaining total 36 over 3 numbers = 12.",
@@ -270,11 +270,11 @@
       "prompt": "What is the sum of all integers x such that -39 < x ≤ 28?",
       "difficulty": "medium",
       "options": [
+        "-335",
         "335",
         "-307",
         "-363",
-        "-374",
-        "-335"
+        "-374"
       ],
       "correctAnswer": "-335",
       "explanation": "The integers run from -38 to 28. Pairing/series sum = -335.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "In a class of 42 students, the ratio of those who passed to those who failed is 3:4. How many students passed?",
       "difficulty": "medium",
       "options": [
+        "24",
         "22",
         "12",
         "42",
-        "18",
-        "24"
+        "18"
       ],
       "correctAnswer": "18",
       "explanation": "Total parts = 7, each part = 42/7 = 6. Passed = 3 × 6 = 18.",
@@ -352,11 +352,11 @@
       "prompt": "If 6x + 3 = 1x + 28, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "25",
         "10",
         "5",
         "24",
-        "30",
-        "25"
+        "30"
       ],
       "correctAnswer": "25",
       "explanation": "6x − 1x = 28 − 3 → 5x = 25 → x = 5. So x² = 25.",
@@ -369,11 +369,11 @@
       "prompt": "A right triangle has legs of length 3 and 4. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
-        "7",
-        "8",
         "6",
         "5",
-        "4"
+        "4",
+        "7",
+        "8"
       ],
       "correctAnswer": "5",
       "explanation": "Hypotenuse = √(3² + 4²) = √25 = 5.",
@@ -386,11 +386,11 @@
       "prompt": "In a class of 48 students, the ratio of those who passed to those who failed is 6:6. How many students passed?",
       "difficulty": "medium",
       "options": [
+        "26",
         "28",
         "24",
         "48",
-        "20",
-        "26"
+        "20"
       ],
       "correctAnswer": "24",
       "explanation": "Total parts = 12, each part = 48/12 = 4. Passed = 6 × 4 = 24.",
@@ -403,11 +403,11 @@
       "prompt": "If 5x + 1 = 3x + 19, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "80",
+        "90",
         "9",
         "81",
-        "18",
-        "80",
-        "90"
+        "18"
       ],
       "correctAnswer": "81",
       "explanation": "5x − 3x = 19 − 1 → 2x = 18 → x = 9. So x² = 81.",
@@ -420,11 +420,11 @@
       "prompt": "Which city had the highest total rainfall across the three years?",
       "difficulty": "medium",
       "options": [
-        "Mumbai",
         "Delhi",
         "Bangalore",
         "Chennai",
-        "Kolkata"
+        "Kolkata",
+        "Mumbai"
       ],
       "correctAnswer": "Mumbai",
       "explanation": "Mumbai: 2200+2400+2100=6700mm; Kolkata: 1500+1620+1480=4600mm (highest among others listed)",
@@ -536,11 +536,11 @@
       "prompt": "What is the average annual rainfall for Delhi across the three years?",
       "difficulty": "medium",
       "options": [
-        "714 mm",
-        "728 mm",
         "750 mm",
         "761 mm",
-        "782 mm"
+        "782 mm",
+        "714 mm",
+        "728 mm"
       ],
       "correctAnswer": "761 mm",
       "explanation": "(714 + 820 + 750) / 3 = 2284 / 3 ≈ 761 mm",

@@ -49,11 +49,11 @@
       "prompt": "Sofia can assemble a bookcase twice as fast as Marcus. Working together they finish one in 12 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
+        "12",
         "8",
         "18",
         "24",
-        "36",
-        "12"
+        "36"
       ],
       "correctAnswer": "18",
       "explanation": "Let Marcus's rate be r. Sofia's is 2r, so together (3)r = 1/12, giving r = 1/36. Sofia's rate 2r = 2/36 = 1/18, so Sofia alone takes 18 hours.",
@@ -66,11 +66,11 @@
       "prompt": "The ratio of blue to red marbles is 3 to 4. If 11 blue marbles are added, the ratio becomes 1 to 1. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
+        "33",
+        "48",
         "50",
         "44",
-        "55",
-        "33",
-        "48"
+        "55"
       ],
       "correctAnswer": "44",
       "explanation": "Let blue = 3k and red = 4k. After adding 11: (3k+11)/(4k) = 1/1, which gives k = 11. Red = 4×11 = 44.",
@@ -83,11 +83,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 3 remain; divided among 8 children, 3 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
+        "3",
+        "1",
         "0",
         "2",
-        "5",
-        "3",
-        "1"
+        "5"
       ],
       "correctAnswer": "5",
       "explanation": "The only n in range with n≡3 (mod 7) and n≡3 (mod 8) is 59. Then 59 ÷ 9 leaves remainder 5.",
@@ -100,11 +100,11 @@
       "prompt": "What is 15% of 200?",
       "difficulty": "medium",
       "options": [
+        "30",
+        "185",
         "60",
         "300",
-        "215",
-        "30",
-        "185"
+        "215"
       ],
       "correctAnswer": "30",
       "explanation": "15% of 200 = 15/100 × 200 = 30.",
@@ -117,11 +117,11 @@
       "prompt": "The average of 6 numbers is 7. If one number equal to 17 is removed, what is the average of the remaining 5 numbers?",
       "difficulty": "medium",
       "options": [
+        "17",
+        "5",
         "6",
         "7",
-        "4",
-        "17",
-        "5"
+        "4"
       ],
       "correctAnswer": "5",
       "explanation": "Total = 6×7 = 42. Remove 17: remaining total 25 over 5 numbers = 5.",
@@ -134,11 +134,11 @@
       "prompt": "What is the sum of all integers x such that -35 < x ≤ 34?",
       "difficulty": "medium",
       "options": [
-        "-1",
-        "34",
         "-35",
         "-34",
-        "0"
+        "0",
+        "-1",
+        "34"
       ],
       "correctAnswer": "0",
       "explanation": "The integers run from -34 to 34. Pairing/series sum = 0.",
@@ -168,11 +168,11 @@
       "prompt": "If 8 painters can paint 8 walls in 8 days, how many days would it take 8 painters to paint 8 walls?",
       "difficulty": "medium",
       "options": [
+        "9",
         "7",
         "1",
         "16",
-        "8",
-        "9"
+        "8"
       ],
       "correctAnswer": "8",
       "explanation": "Each painter paints 1 wall in 8 days. 8 painters painting 8 walls (one each) still take 8 days.",
@@ -185,11 +185,11 @@
       "prompt": "If 6/7 of a number is 90, what is 2/5 of that number?",
       "difficulty": "medium",
       "options": [
+        "42",
         "63",
         "132",
         "105",
-        "90",
-        "42"
+        "90"
       ],
       "correctAnswer": "42",
       "explanation": "The number is 90 ÷ 6/7 = 105. Then 2/5 × 105 = 42.",
@@ -202,11 +202,11 @@
       "prompt": "The perimeter of a rectangle is 88 and its area is 384. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
-        "20",
         "44",
         "12",
         "14",
-        "32"
+        "32",
+        "20"
       ],
       "correctAnswer": "12",
       "explanation": "Sides sum to 44 and multiply to 384. They are 12 and 32; the shorter side is 12.",
@@ -219,11 +219,11 @@
       "prompt": "The average of a and b is 39, and the average of b and c is 30. What is a − c?",
       "difficulty": "medium",
       "options": [
+        "-18",
         "20",
         "18",
         "9",
-        "69",
-        "-18"
+        "69"
       ],
       "correctAnswer": "18",
       "explanation": "a+b = 78 and b+c = 60. Subtracting: a − c = 78 − 60 = 18.",
@@ -236,11 +236,11 @@
       "prompt": "A survey of 560 workers found 190 commute by car, 70 by public transit, and 40 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "33.9%",
+        "12.5%",
         "41.4%",
         "46.4%",
-        "51.4%",
-        "33.9%",
-        "12.5%"
+        "51.4%"
       ],
       "correctAnswer": "46.4%",
       "explanation": "Work from home = 560 − 190 − 70 − 40 = 260. As a percentage: 260/560 = 46.4%.",
@@ -253,11 +253,11 @@
       "prompt": "4^x + 4^x + 4^x + 4^x = ?",
       "difficulty": "medium",
       "options": [
+        "16^x",
         "4^(2x)",
         "4^(4x)",
         "4^x",
-        "4^(x+1)",
-        "16^x"
+        "4^(x+1)"
       ],
       "correctAnswer": "4^(x+1)",
       "explanation": "Adding 4 copies of 4^x gives 4 × 4^x = 4^1 × 4^x = 4^(x+1).",
@@ -270,11 +270,11 @@
       "prompt": "Sofia can assemble a bookcase twice as fast as Marcus. Working together they finish one in 24 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
-        "24",
         "36",
         "72",
         "16",
-        "48"
+        "48",
+        "24"
       ],
       "correctAnswer": "36",
       "explanation": "Let Marcus's rate be r. Sofia's is 2r, so together (3)r = 1/24, giving r = 1/72. Sofia's rate 2r = 2/72 = 1/36, so Sofia alone takes 36 hours.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -352,11 +352,11 @@
       "prompt": "If 3x + 3 = 1x + 13, what is the value of x²?",
       "difficulty": "medium",
       "options": [
-        "5",
         "25",
         "24",
         "30",
-        "10"
+        "10",
+        "5"
       ],
       "correctAnswer": "25",
       "explanation": "3x − 1x = 13 − 3 → 2x = 10 → x = 5. So x² = 25.",
@@ -369,11 +369,11 @@
       "prompt": "A right triangle has legs of length 8 and 15. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "23",
         "17",
         "19",
         "18",
-        "16",
-        "23"
+        "16"
       ],
       "correctAnswer": "17",
       "explanation": "Hypotenuse = √(8² + 15²) = √289 = 17.",
@@ -386,11 +386,11 @@
       "prompt": "In a class of 63 students, the ratio of those who passed to those who failed is 4:5. How many students passed?",
       "difficulty": "medium",
       "options": [
+        "63",
         "35",
         "28",
         "31",
-        "21",
-        "63"
+        "21"
       ],
       "correctAnswer": "28",
       "explanation": "Total parts = 9, each part = 63/9 = 7. Passed = 4 × 7 = 28.",
@@ -420,11 +420,11 @@
       "prompt": "What is the total revenue for the East region across all four quarters?",
       "difficulty": "medium",
       "options": [
-        "270 million",
-        "280 million",
         "290 million",
         "300 million",
-        "310 million"
+        "310 million",
+        "270 million",
+        "280 million"
       ],
       "correctAnswer": "280 million",
       "explanation": "East revenue: 62 + 68 + 72 + 78 = 280 million",
@@ -477,11 +477,11 @@
       "prompt": "By how much did the North region's revenue increase from Q1 to Q4?",
       "difficulty": "medium",
       "options": [
-        "15 million",
-        "18 million",
         "20 million",
         "22 million",
-        "25 million"
+        "25 million",
+        "15 million",
+        "18 million"
       ],
       "correctAnswer": "20 million",
       "explanation": "North Q4 (65) - North Q1 (45) = 20 million",
@@ -534,11 +534,11 @@
       "prompt": "Which region had the highest total revenue across all quarters?",
       "difficulty": "medium",
       "options": [
-        "North",
         "South",
         "East",
         "West",
-        "North and West tied"
+        "North and West tied",
+        "North"
       ],
       "correctAnswer": "East",
       "explanation": "East: 280 million; North: 220 million; South: 164 million; West: 255 million",

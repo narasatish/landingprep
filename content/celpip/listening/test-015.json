@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's phone number?",
       "options": [
-        "416-555-0243",
         "416-555-0234",
         "416-555-0342",
-        "416-555-0423"
+        "416-555-0423",
+        "416-555-0243"
       ],
       "correctAnswer": "416-555-0234",
       "explanation": "Customer provides their phone number as '416-555-0234.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What is the cost of the current plan?",
       "options": [
+        "$55 per month",
         "$25 per month",
         "$35 per month",
-        "$45 per month",
-        "$55 per month"
+        "$45 per month"
       ],
       "correctAnswer": "$35 per month",
       "explanation": "Support confirms 'your basic plan is 2 GB per month at $35.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "How many calling minutes does the customer's current plan have?",
       "options": [
+        "Unlimited",
         "100 minutes",
         "150 minutes",
-        "200 minutes",
-        "Unlimited"
+        "200 minutes"
       ],
       "correctAnswer": "200 minutes",
       "explanation": "Support states 'Your current plan has 200 minutes.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What data plan does the customer ultimately choose?",
       "options": [
-        "5 GB plan",
         "8 GB plan",
         "10 GB plan",
-        "15 GB plan"
+        "15 GB plan",
+        "5 GB plan"
       ],
       "correctAnswer": "8 GB plan",
       "explanation": "Customer asks 'do you have an 8 GB plan?' and accepts it, stating 'Perfect, I'll take that.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "When does the new plan take effect on the bill?",
       "options": [
-        "June 15th",
         "June 22nd",
         "July 1st",
-        "July 8th"
+        "July 8th",
+        "June 15th"
       ],
       "correctAnswer": "July 8th",
       "explanation": "Support states 'Your bill will reflect the change next billing cycle, which is on July 8th.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the monthly rent?",
       "options": [
-        "$1,000",
-        "$1,100",
         "$1,200",
-        "$1,300"
+        "$1,300",
+        "$1,000",
+        "$1,100"
       ],
       "correctAnswer": "$1,200",
       "explanation": "Landlord states 'The rent is $1,200 per month.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "Is parking included in the rent?",
       "options": [
+        "Not available",
         "No, extra cost",
         "Yes, one spot",
-        "Two spots",
-        "Not available"
+        "Two spots"
       ],
       "correctAnswer": "Yes, one spot",
       "explanation": "Landlord confirms 'one dedicated parking spot' is 'included in the rent.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "When can the renter move in?",
       "options": [
+        "July 8",
         "June 15",
         "June 24",
-        "July 1",
-        "July 8"
+        "July 1"
       ],
       "correctAnswer": "July 1",
       "explanation": "Landlord states 'you can move in on July 1st.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What is the pet deposit for the cat?",
       "options": [
-        "$100",
-        "$125",
         "$150",
-        "$200"
+        "$200",
+        "$100",
+        "$125"
       ],
       "correctAnswer": "$150",
       "explanation": "Landlord specifies 'a one-time pet deposit of $150.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "In which room are Group of Seven paintings displayed?",
       "options": [
+        "Room 106",
         "Room 101",
         "Room 102",
-        "Room 104",
-        "Room 106"
+        "Room 104"
       ],
       "correctAnswer": "Room 102",
       "explanation": "The guide says 'We'll start with the Group of Seven landscape paintings in Room 102.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What region did Emily Carr primarily focus on?",
       "options": [
+        "Prairie provinces",
         "Ontario",
         "Quebec",
-        "British Columbia",
-        "Prairie provinces"
+        "British Columbia"
       ],
       "correctAnswer": "British Columbia",
       "explanation": "The guide mentions 'Emily Carr's totem pole paintings from British Columbia.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What artistic movement were Borduas and Riopelle part of?",
       "options": [
-        "Cubism",
         "Automatiste",
         "Impressionism",
-        "Surrealism"
+        "Surrealism",
+        "Cubism"
       ],
       "correctAnswer": "Automatiste",
       "explanation": "The guide states these 'Montreal-based artists were part of the Automatiste movement.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "Which city were Borduas and Riopelle based in?",
       "options": [
-        "Toronto",
         "Vancouver",
         "Montreal",
-        "Ottawa"
+        "Ottawa",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "The guide identifies them as 'Montreal-based artists.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the annual value of the agricultural export agreement?",
       "options": [
+        "380 million dollars",
         "250 million dollars",
         "290 million dollars",
-        "340 million dollars",
-        "380 million dollars"
+        "340 million dollars"
       ],
       "correctAnswer": "340 million dollars",
       "explanation": "The deal is valued at approximately 340 million dollars annually.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "By what percentage will Japanese importers increase their purchases?",
       "options": [
-        "15 percent",
-        "20 percent",
         "25 percent",
-        "30 percent"
+        "30 percent",
+        "15 percent",
+        "20 percent"
       ],
       "correctAnswer": "25 percent",
       "explanation": "Importers have committed to increasing purchases by 25 percent over the next five years.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How much canola does Manitoba produce annually?",
       "options": [
-        "5 million tonnes",
         "7 million tonnes",
         "8 million tonnes",
-        "10 million tonnes"
+        "10 million tonnes",
+        "5 million tonnes"
       ],
       "correctAnswer": "8 million tonnes",
       "explanation": "Manitoba produces approximately 8 million tonnes of canola annually.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How many jobs are expected to be created?",
       "options": [
+        "500 jobs",
         "200 jobs",
         "300 jobs",
-        "400 jobs",
-        "500 jobs"
+        "400 jobs"
       ],
       "correctAnswer": "400 jobs",
       "explanation": "The deal is expected to create 400 additional jobs in agriculture and food processing.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What does Sarah believe about mentorship in remote work settings?",
       "options": [
-        "Mentorship works better online",
         "Newer staff miss out on mentorship opportunities",
         "Mentorship is not important",
-        "Remote mentorship is equally effective"
+        "Remote mentorship is equally effective",
+        "Mentorship works better online"
       ],
       "correctAnswer": "Newer staff miss out on mentorship opportunities",
       "explanation": "Sarah explicitly states she worries about newer staff missing out on mentorship opportunities.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage has James's productivity increased working remotely?",
       "options": [
-        "25 percent",
         "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James states his productivity has increased by about 40 percent since working remotely.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What reason does James give for his increased productivity?",
       "options": [
+        "More flexible schedule",
         "Better equipment at home",
         "Fewer interruptions",
-        "Shorter work hours",
-        "More flexible schedule"
+        "Shorter work hours"
       ],
       "correctAnswer": "Fewer interruptions",
       "explanation": "James mentions fewer interruptions allow him to focus better on complex projects.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Tom identify as the main finding in the HR data?",
       "options": [
-        "Remote work is always better",
-        "Mixed results depending on the team",
         "Office work is most productive",
-        "Remote work decreases productivity"
+        "Remote work decreases productivity",
+        "Remote work is always better",
+        "Mixed results depending on the team"
       ],
       "correctAnswer": "Mixed results depending on the team",
       "explanation": "Tom says the data shows mixed results, with some teams more productive remotely while others struggle.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of team does Tom suggest might work better in person?",
       "options": [
-        "Software developers",
-        "Marketing teams",
         "Customer service teams",
-        "Finance teams"
+        "Finance teams",
+        "Software developers",
+        "Marketing teams"
       ],
       "correctAnswer": "Customer service teams",
       "explanation": "Tom suggests customer service teams probably need more in-person interaction.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What solution does Tom propose?",
       "options": [
-        "All employees back in office",
         "Completely remote for all",
         "Hybrid approach with flexibility",
-        "No change to current policy"
+        "No change to current policy",
+        "All employees back in office"
       ],
       "correctAnswer": "Hybrid approach with flexibility",
       "explanation": "Tom proposes a hybrid approach that gives managers flexibility based on their team's needs.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "According to Sarah, what does collaboration depend on?",
       "options": [
+        "Email efficiency",
         "Video call quality",
         "People being in the same space",
-        "Written communication",
-        "Email efficiency"
+        "Written communication"
       ],
       "correctAnswer": "People being in the same space",
       "explanation": "Sarah believes collaboration happens more naturally when people are in the same space.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "How does James stay connected with colleagues remotely?",
       "options": [
+        "Monthly meetings only",
         "Phone calls only",
         "Email messages only",
-        "Video calls and shared documents",
-        "Monthly meetings only"
+        "Video calls and shared documents"
       ],
       "correctAnswer": "Video calls and shared documents",
       "explanation": "James mentions collaborating through video calls and shared documents.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "Mental health is covered more than physical",
         "Physical health is covered more than mental health",
         "They're equally covered",
-        "Neither is adequately covered"
+        "Neither is adequately covered",
+        "Mental health is covered more than physical"
       ],
       "correctAnswer": "Physical health is covered more than mental health",
       "explanation": "The speaker states mental health is covered at lower rates than physical health.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What is the source of these costs according to the speaker?",
       "options": [
-        "Insurance premiums only",
-        "Lost productivity, emergency services, and hospitalizations",
         "Medication costs",
-        "Administrative expenses"
+        "Administrative expenses",
+        "Insurance premiums only",
+        "Lost productivity, emergency services, and hospitalizations"
       ],
       "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
       "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "It's cheaper than physical health",
         "Early treatment has positive ROI",
         "It reduces insurance profits",
-        "It's cost-neutral"
+        "It's cost-neutral",
+        "It's cheaper than physical health"
       ],
       "correctAnswer": "Early treatment has positive ROI",
       "explanation": "The speaker argues mental health coverage has a positive return on investment.",

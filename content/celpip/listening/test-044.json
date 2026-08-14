@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the rental agreement number?",
       "options": [
-        "CR-824447",
         "CR-892447",
         "CR-894247",
-        "CR-824294"
+        "CR-824294",
+        "CR-824447"
       ],
       "correctAnswer": "CR-892447",
       "explanation": "Customer provides the rental agreement number as 'CR-892447.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What damage was visible in the pickup photos?",
       "options": [
-        "A scratch on the driver's door",
-        "A dent on the back bumper",
         "A broken side mirror",
-        "No damage"
+        "No damage",
+        "A scratch on the driver's door",
+        "A dent on the back bumper"
       ],
       "correctAnswer": "A dent on the back bumper",
       "explanation": "Agent confirms 'there is a dent visible in the corner of the back bumper' in the pickup photos.",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When was the vehicle returned?",
       "options": [
+        "4 PM today",
         "1 PM today",
         "2 PM today",
-        "3 PM today",
-        "4 PM today"
+        "3 PM today"
       ],
       "correctAnswer": "4 PM today",
       "explanation": "Customer states 'I returned the vehicle just now, at 4 PM today.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What was the daily cost of the damage waiver insurance?",
       "options": [
-        "$12 per day",
         "$15 per day",
         "$18 per day",
-        "$20 per day"
+        "$20 per day",
+        "$12 per day"
       ],
       "correctAnswer": "$18 per day",
       "explanation": "Customer mentions purchasing damage waiver for 'the extra $18 per day.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What new damage was found on the vehicle?",
       "options": [
+        "A damaged side mirror",
         "A dent on the front bumper",
         "A scratch on the driver's door",
-        "A broken window",
-        "A damaged side mirror"
+        "A broken window"
       ],
       "correctAnswer": "A scratch on the driver's door",
       "explanation": "Agent mentions 'The damage report lists a scratch on the driver's door.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "Is the customer responsible for paying for the new damage?",
       "options": [
+        "Not clear from the conversation",
         "Yes, full amount",
         "Yes, 50% of the cost",
-        "No, it's covered by the damage waiver",
-        "Not clear from the conversation"
+        "No, it's covered by the damage waiver"
       ],
       "correctAnswer": "No, it's covered by the damage waiver",
       "explanation": "Agent confirms the damage waiver covers the new scratch and customer is not responsible.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has Rebecca lived in the neighbourhood?",
       "options": [
+        "Five years",
         "Two years",
         "Three years",
-        "Four years",
-        "Five years"
+        "Four years"
       ],
       "correctAnswer": "Five years",
       "explanation": "Rebecca states 'About five years now.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "When did David move to the neighbourhood?",
       "options": [
-        "One week ago",
         "Two weeks ago",
         "Last month",
-        "Two months ago"
+        "Two months ago",
+        "One week ago"
       ],
       "correctAnswer": "Last month",
       "explanation": "David says 'Just moved here last month.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "What is the best season in this neighbourhood?",
       "options": [
+        "Winter",
         "Spring",
         "Summer",
-        "Fall",
-        "Winter"
+        "Fall"
       ],
       "correctAnswer": "Summer",
       "explanation": "Rebecca states 'The summer's the best season here.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "Where is the farmer's market held?",
       "options": [
+        "Oak and Queen",
         "Main and Queen",
         "Main and King",
-        "Main and Oak",
-        "Oak and Queen"
+        "Main and Oak"
       ],
       "correctAnswer": "Main and Oak",
       "explanation": "Rebecca mentions 'at the corner of Main and Oak.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What type of community does Rebecca describe?",
       "options": [
-        "Business-focused",
         "Very friendly",
         "Quiet and isolated",
-        "Fast-paced"
+        "Fast-paced",
+        "Business-focused"
       ],
       "correctAnswer": "Very friendly",
       "explanation": "Rebecca says 'It's a very friendly community.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "Where should you get your student photo ID?",
       "options": [
-        "The Student Centre",
-        "The Services Office",
         "The IT support desk",
-        "Student Health Services"
+        "Student Health Services",
+        "The Student Centre",
+        "The Services Office"
       ],
       "correctAnswer": "The Services Office",
       "explanation": "The guide states 'get your student photo ID taken at the Services Office.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What are the hours for photo ID service?",
       "options": [
-        "8 AM to 5 PM",
         "9 AM to 4 PM",
         "10 AM to 3 PM",
-        "8 AM to 6 PM"
+        "8 AM to 6 PM",
+        "8 AM to 5 PM"
       ],
       "correctAnswer": "9 AM to 4 PM",
       "explanation": "The guide mentions 'between 9 and 4 on any day this week.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the estimated budget for books and materials?",
       "options": [
-        "One hundred dollars",
         "Two hundred dollars",
         "Three hundred dollars",
-        "Four hundred dollars"
+        "Four hundred dollars",
+        "One hundred dollars"
       ],
       "correctAnswer": "Three hundred dollars",
       "explanation": "The guide states 'budget about three hundred dollars for books and materials.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "When is the Welcome Social?",
       "options": [
+        "Sunday afternoon",
         "Thursday evening",
         "Friday evening",
-        "Saturday afternoon",
-        "Sunday afternoon"
+        "Saturday afternoon"
       ],
       "correctAnswer": "Friday evening",
       "explanation": "The guide mentions 'The Welcome Social on Friday evening in the gymnasium.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the bill number for the education reform?",
       "options": [
-        "Bill 235",
-        "Bill 247",
         "Bill 250",
-        "Bill 260"
+        "Bill 260",
+        "Bill 235",
+        "Bill 247"
       ],
       "correctAnswer": "Bill 247",
       "explanation": "The legislation is identified as Bill 247.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "When will mandatory digital literacy courses begin?",
       "options": [
-        "This year",
         "Next September",
         "January 2027",
-        "September 2027"
+        "September 2027",
+        "This year"
       ],
       "correctAnswer": "Next September",
       "explanation": "High schools will introduce mandatory digital literacy courses starting next September.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "By what percentage are teacher salaries being increased?",
       "options": [
-        "5 percent",
         "6 percent",
         "8 percent",
-        "10 percent"
+        "10 percent",
+        "5 percent"
       ],
       "correctAnswer": "8 percent",
       "explanation": "Teacher salaries will be increased by 8 percent over four years.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How much money is allocated for infrastructure improvements?",
       "options": [
+        "2.5 billion dollars",
         "1.5 billion dollars",
         "1.8 billion dollars",
-        "2.1 billion dollars",
-        "2.5 billion dollars"
+        "2.1 billion dollars"
       ],
       "correctAnswer": "2.1 billion dollars",
       "explanation": "The bill allocates 2.1 billion dollars for infrastructure improvements.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the cost of the engineering program expansion?",
       "options": [
-        "1.8 million dollars",
-        "2.0 million dollars",
         "2.4 million dollars",
-        "2.8 million dollars"
+        "2.8 million dollars",
+        "1.8 million dollars",
+        "2.0 million dollars"
       ],
       "correctAnswer": "2.4 million dollars",
       "explanation": "The cost would be approximately 2.4 million dollars over two years.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "How many potential students did the university lose last year?",
       "options": [
-        "100 students",
         "125 students",
         "150 students",
-        "175 students"
+        "175 students",
+        "100 students"
       ],
       "correctAnswer": "150 students",
       "explanation": "Professor Elena mentions they lost 150 potential engineering students.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "Why are some students not enrolling at this university?",
       "options": [
+        "Bad location",
         "Poor faculty",
         "Weak renewable energy program options",
-        "High tuition fees",
-        "Bad location"
+        "High tuition fees"
       ],
       "correctAnswer": "Weak renewable energy program options",
       "explanation": "They're losing students to competing universities with stronger renewable energy options.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Diana believe about tuition revenue from additional students?",
       "options": [
-        "It will decrease overall costs",
-        "It would exceed expansion costs within three years",
         "It wouldn't help the budget",
-        "It takes longer than expected"
+        "It takes longer than expected",
+        "It will decrease overall costs",
+        "It would exceed expansion costs within three years"
       ],
       "correctAnswer": "It would exceed expansion costs within three years",
       "explanation": "Diana states tuition revenue from 200 additional students would exceed expansion costs within three years.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of partnership does Diana mention exploring?",
       "options": [
-        "International universities",
-        "Government agencies",
         "Renewable energy companies",
-        "Tech startups"
+        "Tech startups",
+        "International universities",
+        "Government agencies"
       ],
       "correctAnswer": "Renewable energy companies",
       "explanation": "Diana mentions conversations with renewable energy companies about funding contributions.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What would companies receive in exchange for supporting the program?",
       "options": [
-        "University branding",
         "Free equipment",
         "Access to graduates for recruitment",
-        "Research funding"
+        "Research funding",
+        "University branding"
       ],
       "correctAnswer": "Access to graduates for recruitment",
       "explanation": "Companies want access to graduates for recruitment in exchange for contributions.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What specific position does Professor Elena hold on the expansion?",
       "options": [
-        "She opposes it",
-        "She strongly supports it",
         "She wants to wait",
-        "She's uncertain"
+        "She's uncertain",
+        "She opposes it",
+        "She strongly supports it"
       ],
       "correctAnswer": "She strongly supports it",
       "explanation": "Elena argues the university is losing enrollment without this program and needs to expand now.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "They're not programmed correctly",
         "They're trained on historical data that includes human bias",
         "They lack computing power",
-        "They're intentionally designed to discriminate"
+        "They're intentionally designed to discriminate",
+        "They're not programmed correctly"
       ],
       "correctAnswer": "They're trained on historical data that includes human bias",
       "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What was the issue with Google's recruiting algorithm?",
       "options": [
+        "It was too expensive",
         "It was too strict",
         "It showed bias against applicants from historically black colleges",
-        "It wasn't identifying talent",
-        "It was too expensive"
+        "It wasn't identifying talent"
       ],
       "correctAnswer": "It showed bias against applicants from historically black colleges",
       "explanation": "Google's algorithm showed bias against applicants from historically black colleges.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What key point does the speaker make about data?",
       "options": [
-        "Data is always objective",
-        "Data is never neutral and includes bias",
         "Data should never be used in hiring",
-        "Data is a recent invention"
+        "Data is a recent invention",
+        "Data is always objective",
+        "Data is never neutral and includes bias"
       ],
       "correctAnswer": "Data is never neutral and includes bias",
       "explanation": "The speaker argues data is never neutral and carries historical bias.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
-        "Use them immediately",
-        "Train employees on algorithms",
         "Conduct rigorous bias testing and external auditing",
-        "Ignore algorithm concerns"
+        "Ignore algorithm concerns",
+        "Use them immediately",
+        "Train employees on algorithms"
       ],
       "correctAnswer": "Conduct rigorous bias testing and external auditing",
       "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",

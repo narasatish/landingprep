@@ -15,11 +15,11 @@
       "prompt": "A survey of 400 workers found 160 commute by car, 110 by public transit, and 40 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "22.5%",
+        "27.5%",
         "17.5%",
         "77.5%",
-        "40%",
-        "22.5%",
-        "27.5%"
+        "40%"
       ],
       "correctAnswer": "22.5%",
       "explanation": "Work from home = 400 − 160 − 110 − 40 = 90. As a percentage: 90/400 = 22.5%.",
@@ -32,11 +32,11 @@
       "prompt": "5^x + 5^x + 5^x + 5^x + 5^x = ?",
       "difficulty": "medium",
       "options": [
+        "20^x",
+        "5^(x+1)",
         "5^x",
         "5^(5x)",
-        "25^x",
-        "20^x",
-        "5^(x+1)"
+        "25^x"
       ],
       "correctAnswer": "5^(x+1)",
       "explanation": "Adding 5 copies of 5^x gives 5 × 5^x = 5^1 × 5^x = 5^(x+1).",
@@ -49,11 +49,11 @@
       "prompt": "Sofia can assemble a bookcase twice as fast as Marcus. Working together they finish one in 24 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
+        "72",
         "24",
         "36",
         "48",
-        "16",
-        "72"
+        "16"
       ],
       "correctAnswer": "36",
       "explanation": "Let Marcus's rate be r. Sofia's is 2r, so together (3)r = 1/24, giving r = 1/72. Sofia's rate 2r = 2/72 = 1/36, so Sofia alone takes 36 hours.",
@@ -66,11 +66,11 @@
       "prompt": "The ratio of blue to red marbles is 3 to 5. If 15 blue marbles are added, the ratio becomes 9 to 10. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
+        "35",
         "45",
         "30",
         "50",
-        "65",
-        "35"
+        "65"
       ],
       "correctAnswer": "50",
       "explanation": "Let blue = 3k and red = 5k. After adding 15: (3k+15)/(5k) = 9/10, which gives k = 10. Red = 5×10 = 50.",
@@ -83,11 +83,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 6 remain; divided among 8 children, 0 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
+        "0",
+        "4",
         "1",
         "2",
-        "3",
-        "0",
-        "4"
+        "3"
       ],
       "correctAnswer": "3",
       "explanation": "The only n in range with n≡6 (mod 7) and n≡0 (mod 8) is 48. Then 48 ÷ 9 leaves remainder 3.",
@@ -100,11 +100,11 @@
       "prompt": "What is 20% of 180?",
       "difficulty": "medium",
       "options": [
-        "160",
         "36",
         "360",
         "72",
-        "200"
+        "200",
+        "160"
       ],
       "correctAnswer": "36",
       "explanation": "20% of 180 = 20/100 × 180 = 36.",
@@ -117,11 +117,11 @@
       "prompt": "The average of 6 numbers is 14. If one number equal to -11 is removed, what is the average of the remaining 5 numbers?",
       "difficulty": "medium",
       "options": [
-        "20",
         "18",
         "19",
         "-11",
-        "14"
+        "14",
+        "20"
       ],
       "correctAnswer": "19",
       "explanation": "Total = 6×14 = 84. Remove -11: remaining total 95 over 5 numbers = 19.",
@@ -134,11 +134,11 @@
       "prompt": "What is the sum of all integers x such that -39 < x ≤ 36?",
       "difficulty": "medium",
       "options": [
+        "-39",
         "-111",
         "-75",
         "75",
-        "-114",
-        "-39"
+        "-114"
       ],
       "correctAnswer": "-75",
       "explanation": "The integers run from -38 to 36. Pairing/series sum = -75.",
@@ -168,11 +168,11 @@
       "prompt": "If 12 painters can paint 12 walls in 12 days, how many days would it take 12 painters to paint 12 walls?",
       "difficulty": "medium",
       "options": [
-        "12",
         "1",
         "24",
         "13",
-        "11"
+        "11",
+        "12"
       ],
       "correctAnswer": "12",
       "explanation": "Each painter paints 1 wall in 12 days. 12 painters painting 12 walls (one each) still take 12 days.",
@@ -185,11 +185,11 @@
       "prompt": "If 2/4 of a number is 42, what is 1/7 of that number?",
       "difficulty": "medium",
       "options": [
-        "42",
-        "84",
         "12",
         "54",
-        "72"
+        "72",
+        "42",
+        "84"
       ],
       "correctAnswer": "12",
       "explanation": "The number is 42 ÷ 2/4 = 84. Then 1/7 × 84 = 12.",
@@ -202,11 +202,11 @@
       "prompt": "The perimeter of a rectangle is 84 and its area is 341. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
-        "31",
         "13",
         "11",
         "20",
-        "42"
+        "42",
+        "31"
       ],
       "correctAnswer": "11",
       "explanation": "Sides sum to 42 and multiply to 341. They are 11 and 31; the shorter side is 11.",
@@ -219,11 +219,11 @@
       "prompt": "The average of a and b is 60, and the average of b and c is 41. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "101",
-        "40",
         "-38",
         "19",
-        "38"
+        "38",
+        "101",
+        "40"
       ],
       "correctAnswer": "38",
       "explanation": "a+b = 120 and b+c = 82. Subtracting: a − c = 120 − 82 = 38.",
@@ -236,11 +236,11 @@
       "prompt": "A survey of 400 workers found 120 commute by car, 110 by public transit, and 40 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "27.5%",
         "37.5%",
         "30%",
         "32.5%",
-        "67.5%",
-        "27.5%"
+        "67.5%"
       ],
       "correctAnswer": "32.5%",
       "explanation": "Work from home = 400 − 120 − 110 − 40 = 130. As a percentage: 130/400 = 32.5%.",
@@ -253,11 +253,11 @@
       "prompt": "6^x + 6^x + 6^x + 6^x + 6^x + 6^x = ?",
       "difficulty": "medium",
       "options": [
-        "6^(x+1)",
         "6^x",
         "24^x",
         "36^x",
-        "6^(6x)"
+        "6^(6x)",
+        "6^(x+1)"
       ],
       "correctAnswer": "6^(x+1)",
       "explanation": "Adding 6 copies of 6^x gives 6 × 6^x = 6^1 × 6^x = 6^(x+1).",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "A right triangle has legs of length 5 and 12. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "14",
+        "15",
         "17",
         "12",
-        "13",
-        "14",
-        "15"
+        "13"
       ],
       "correctAnswer": "13",
       "explanation": "Hypotenuse = √(5² + 12²) = √169 = 13.",
@@ -369,11 +369,11 @@
       "prompt": "If 3x + 1 = 2x + 5, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "4",
+        "16",
         "15",
         "20",
-        "8",
-        "4",
-        "16"
+        "8"
       ],
       "correctAnswer": "16",
       "explanation": "3x − 2x = 5 − 1 → 1x = 4 → x = 4. So x² = 16.",
@@ -386,11 +386,11 @@
       "prompt": "A right triangle has legs of length 7 and 24. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
-        "24",
         "27",
         "26",
         "25",
-        "31"
+        "31",
+        "24"
       ],
       "correctAnswer": "25",
       "explanation": "Hypotenuse = √(7² + 24²) = √625 = 25.",
@@ -403,11 +403,11 @@
       "prompt": "In a class of 30 students, the ratio of those who passed to those who failed is 3:2. How many students passed?",
       "difficulty": "medium",
       "options": [
+        "12",
         "30",
         "19",
         "18",
-        "24",
-        "12"
+        "24"
       ],
       "correctAnswer": "18",
       "explanation": "Total parts = 5, each part = 30/5 = 6. Passed = 3 × 6 = 18.",
@@ -420,11 +420,11 @@
       "prompt": "What is the total energy consumption across all sectors in 2023?",
       "difficulty": "medium",
       "options": [
-        "12400",
-        "12600",
         "13000",
         "13400",
-        "13800"
+        "13800",
+        "12400",
+        "12600"
       ],
       "correctAnswer": "12600",
       "explanation": "2023 total: 4800+2400+2000+3400 = 12600",
@@ -477,11 +477,11 @@
       "prompt": "By what percentage did Industrial sector consumption increase from 2021 to 2024?",
       "difficulty": "medium",
       "options": [
-        "9%",
         "10%",
         "11%",
         "12%",
-        "13%"
+        "13%",
+        "9%"
       ],
       "correctAnswer": "10%",
       "explanation": "(4950-4500)/4500 = 450/4500 = 0.1 = 10%",
@@ -534,11 +534,11 @@
       "prompt": "In 2024, Residential and Transportation sectors combined represent what fraction of total 2024 consumption?",
       "difficulty": "medium",
       "options": [
-        "40%",
         "45%",
         "46%",
         "52%",
-        "55%"
+        "55%",
+        "40%"
       ],
       "correctAnswer": "46%",
       "explanation": "2024 total: 4950+2500+2100+3500=13050. Residential+Transportation: 2500+3500=6000. 6000/13050≈0.459≈46%",

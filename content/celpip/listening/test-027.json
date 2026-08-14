@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's account number?",
       "options": [
-        "5834-291-7456",
         "5834-291-7465",
         "5834-192-7465",
-        "5843-291-7465"
+        "5843-291-7465",
+        "5834-291-7456"
       ],
       "correctAnswer": "5834-291-7465",
       "explanation": "Customer provides their account number as '5834-291-7465.'",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "How much money was withdrawn in total?",
       "options": [
-        "$900",
-        "$1,200",
         "$1,500",
-        "$1,800"
+        "$1,800",
+        "$900",
+        "$1,200"
       ],
       "correctAnswer": "$1,800",
       "explanation": "Customer states there are 'four withdrawals totaling $1,800.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "Where were the ATM withdrawals made?",
       "options": [
-        "Montreal",
-        "Bloor Street in Toronto",
         "Downtown Toronto",
-        "The airport"
+        "The airport",
+        "Montreal",
+        "Bloor Street in Toronto"
       ],
       "correctAnswer": "Bloor Street in Toronto",
       "explanation": "Officer states 'These are ATM withdrawals, all from a machine on Bloor Street in Toronto.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "Where is the customer actually located?",
       "options": [
-        "Toronto",
         "Montreal",
         "Ottawa",
-        "Vancouver"
+        "Vancouver",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "Customer confirms 'No, I'm in Montreal. I haven't been to Toronto in months.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "How long will it take to see the credit for the unauthorized transactions?",
       "options": [
-        "1 to 2 business days",
         "3 to 5 business days",
         "5 to 7 business days",
-        "10 to 14 business days"
+        "10 to 14 business days",
+        "1 to 2 business days"
       ],
       "correctAnswer": "5 to 7 business days",
       "explanation": "Officer states 'You should see a credit back within 5 to 7 business days.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What is being mailed to the customer?",
       "options": [
+        "A fraud report",
         "A new PIN",
         "A new debit card",
-        "Account statements",
-        "A fraud report"
+        "Account statements"
       ],
       "correctAnswer": "A new debit card",
       "explanation": "Officer states 'We'll mail you a new debit card as a precaution.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What immediate action is recommended for online banking?",
       "options": [
+        "Disable online banking",
         "Contact the bank branch",
         "Close the account",
-        "Change your online banking password right away",
-        "Disable online banking"
+        "Change your online banking password right away"
       ],
       "correctAnswer": "Change your online banking password right away",
       "explanation": "Officer states 'I'm also recommending you change your online banking password right away.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the title of the book being discussed?",
       "options": [
-        "The Hidden Case",
-        "The Silent Detective",
         "The Silent Case",
-        "The Missing Detective"
+        "The Missing Detective",
+        "The Hidden Case",
+        "The Silent Detective"
       ],
       "correctAnswer": "The Silent Case",
       "explanation": "Liam identifies the book as 'The Silent Case.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "Where is the detective in the novel?",
       "options": [
-        "Toronto",
         "Vancouver",
         "Montreal",
-        "Calgary"
+        "Calgary",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "Emma describes it as 'the mystery novel' about 'the detective in Montreal.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "What award did the book win?",
       "options": [
+        "The Atwood Prize",
         "The Giller Prize",
         "The Governor General's Award",
-        "The Scotiabank Prize",
-        "The Atwood Prize"
+        "The Scotiabank Prize"
       ],
       "correctAnswer": "The Governor General's Award",
       "explanation": "Emma states it 'won the Governor General's Award last year.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "How long did Emma wait for the book from the library?",
       "options": [
+        "Six months",
         "One month",
         "Two months",
-        "Three months",
-        "Six months"
+        "Three months"
       ],
       "correctAnswer": "Three months",
       "explanation": "Emma states 'I put a hold on it three months ago.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How long will Liam have to wait for the book?",
       "options": [
-        "Two to three weeks",
-        "Three to four weeks",
         "Four to six weeks",
-        "Eight to ten weeks"
+        "Eight to ten weeks",
+        "Two to three weeks",
+        "Three to four weeks"
       ],
       "correctAnswer": "Four to six weeks",
       "explanation": "Emma estimates 'You should get it in maybe four to six weeks.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What are the visiting hours?",
       "options": [
-        "8 AM to 6 PM",
         "9 AM to 7 PM",
         "10 AM to 8 PM",
-        "11 AM to 9 PM"
+        "11 AM to 9 PM",
+        "8 AM to 6 PM"
       ],
       "correctAnswer": "10 AM to 8 PM",
       "explanation": "The guide states 'Visiting hours are 10 AM to 8 PM daily.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "How many visitors can be in a patient's room at one time?",
       "options": [
+        "Four",
         "One",
         "Two",
-        "Three",
-        "Four"
+        "Three"
       ],
       "correctAnswer": "Two",
       "explanation": "The guide specifies 'Each patient can have a maximum of two visitors at a time in their room.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the minimum age for unaccompanied visits?",
       "options": [
+        "Fourteen years old",
         "Eight years old",
         "Ten years old",
-        "Twelve years old",
-        "Fourteen years old"
+        "Twelve years old"
       ],
       "correctAnswer": "Twelve years old",
       "explanation": "The guide states 'Children under twelve must be accompanied by an adult.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the parking fee per visit?",
       "options": [
+        "$5",
         "$2",
         "$3",
-        "$4",
-        "$5"
+        "$4"
       ],
       "correctAnswer": "$5",
       "explanation": "The guide mentions 'Parking is available in the north lot at five dollars per visit.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "Who must approve outside food before it's given to a patient?",
       "options": [
-        "The visitor",
         "The patient",
         "The nursing staff",
-        "The hospital administrator"
+        "The hospital administrator",
+        "The visitor"
       ],
       "correctAnswer": "The nursing staff",
       "explanation": "The guide states 'Food brought from outside is permitted only if approved by nursing staff.'",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "What percentage of installation costs do subsidies cover?",
       "options": [
+        "50 percent",
         "25 percent",
         "30 percent",
-        "40 percent",
-        "50 percent"
+        "40 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "The government provides subsidies covering up to 40 percent of installation costs.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "What is the current percentage of Ontario's electricity from solar power?",
       "options": [
-        "0.8 percent",
         "1.2 percent",
         "2.0 percent",
-        "2.5 percent"
+        "2.5 percent",
+        "0.8 percent"
       ],
       "correctAnswer": "1.2 percent",
       "explanation": "Solar power currently accounts for only 1.2 percent of Ontario's electricity generation.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "How many new installation technicians will be trained?",
       "options": [
-        "1,500 technicians",
         "2,000 technicians",
         "2,500 technicians",
-        "3,000 technicians"
+        "3,000 technicians",
+        "1,500 technicians"
       ],
       "correctAnswer": "2,500 technicians",
       "explanation": "Training programs aim to develop 2,500 new solar installation technicians.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What components are included in the local food initiative?",
       "options": [
-        "Grocery stores and restaurants",
         "Farmers market and delivery programs",
         "Government subsidies",
-        "Large distribution centers"
+        "Large distribution centers",
+        "Grocery stores and restaurants"
       ],
       "correctAnswer": "Farmers market and delivery programs",
       "explanation": "The initiative proposes farmers market expansion and direct-to-consumer delivery programs.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What advantage of local food does Dr. Sarah emphasize?",
       "options": [
-        "Lower cost",
-        "Improved freshness and food safety",
         "More variety",
-        "Better storage"
+        "Better storage",
+        "Lower cost",
+        "Improved freshness and food safety"
       ],
       "correctAnswer": "Improved freshness and food safety",
       "explanation": "Reducing transportation improves food safety and nutrition through fresher products.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "How much of his production does James currently sell to farmers market?",
       "options": [
-        "25 percent",
-        "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent",
+        "35 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James currently sells about 40 percent of production to the farmers market.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What infrastructure limitation does James identify?",
       "options": [
-        "Limited land",
         "Transportation issues",
         "Packaging and distribution",
-        "Workforce availability"
+        "Workforce availability",
+        "Limited land"
       ],
       "correctAnswer": "Packaging and distribution",
       "explanation": "James lacks infrastructure for packaging and distribution to expand sales.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What is the basic concept of Universal Basic Income according to the speaker?",
       "options": [
+        "Employer-provided income supplements",
         "Temporary welfare assistance",
         "Government loans with repayment",
-        "Regular unconditional cash payment to all citizens",
-        "Employer-provided income supplements"
+        "Regular unconditional cash payment to all citizens"
       ],
       "correctAnswer": "Regular unconditional cash payment to all citizens",
       "explanation": "The speaker defines UBI as every citizen receiving a regular, unconditional cash payment.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "How could UBI reduce government costs according to the speaker?",
       "options": [
-        "By reducing salaries",
         "By replacing expensive welfare programs",
         "By cutting military spending",
-        "By reducing taxes"
+        "By reducing taxes",
+        "By reducing salaries"
       ],
       "correctAnswer": "By replacing expensive welfare programs",
       "explanation": "The speaker argues UBI could replace many existing welfare programs and reduce administrative costs.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What health benefit did participants report in the Finland pilot?",
       "options": [
-        "Increased energy",
-        "Better mental health and less anxiety",
         "Improved sleep",
-        "Reduced medication needs"
+        "Reduced medication needs",
+        "Increased energy",
+        "Better mental health and less anxiety"
       ],
       "correctAnswer": "Better mental health and less anxiety",
       "explanation": "In Finland, participants reported better mental health and less anxiety.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What concern does the speaker directly address about UBI?",
       "options": [
-        "It would increase inflation",
         "It would make people lazy",
         "It would reduce work motivation",
-        "Both B and C"
+        "Both B and C",
+        "It would increase inflation"
       ],
       "correctAnswer": "It would make people lazy",
       "explanation": "The speaker specifically addresses the concern that UBI would make people lazy and disputes this.",

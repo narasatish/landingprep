@@ -48,11 +48,11 @@
       "topic": "Pre-Algebra",
       "prompt": "What is 30% of 50?",
       "options": [
-        "0.6",
         "1.5",
         "30",
         "15",
-        "150"
+        "150",
+        "0.6"
       ],
       "correctAnswer": "15",
       "explanation": "30% of 50 = 0.30 × 50 = 15.",
@@ -65,11 +65,11 @@
       "topic": "Elementary Algebra",
       "prompt": "Simplify: (x + 3)(x - 2)",
       "options": [
+        "x² + x + 6",
+        "x² - 5x - 6",
         "x² - 2x + 3",
         "x² + x - 6",
-        "x² - x - 6",
-        "x² + x + 6",
-        "x² - 5x - 6"
+        "x² - x - 6"
       ],
       "correctAnswer": "x² + x - 6",
       "explanation": "(x + 3)(x - 2) = x² - 2x + 3x - 6 = x² + x - 6.",
@@ -99,11 +99,11 @@
       "topic": "Elementary Algebra",
       "prompt": "If 3a = 21, what is 2a + 4?",
       "options": [
+        "18",
+        "25",
         "10",
         "14",
-        "21",
-        "18",
-        "25"
+        "21"
       ],
       "correctAnswer": "18",
       "explanation": "3a = 21 → a = 7. Then 2a + 4 = 2(7) + 4 = 14 + 4 = 18.",
@@ -116,11 +116,11 @@
       "topic": "Pre-Algebra",
       "prompt": "What is the greatest common factor of 24 and 36?",
       "options": [
+        "18",
+        "12",
         "4",
         "6",
-        "8",
-        "18",
-        "12"
+        "8"
       ],
       "correctAnswer": "12",
       "explanation": "Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. GCF = 12.",
@@ -133,11 +133,11 @@
       "topic": "Elementary Algebra",
       "prompt": "Solve: 2x - 3 = x + 5",
       "options": [
-        "2",
-        "4",
         "13",
         "9",
-        "8"
+        "8",
+        "2",
+        "4"
       ],
       "correctAnswer": "8",
       "explanation": "2x - 3 = x + 5 → 2x - x = 5 + 3 → x = 8.",
@@ -150,11 +150,11 @@
       "topic": "Pre-Algebra",
       "prompt": "What is √64?",
       "options": [
-        "6",
         "128",
         "32",
         "64",
-        "8"
+        "8",
+        "6"
       ],
       "correctAnswer": "8",
       "explanation": "√64 = 8 because 8 × 8 = 64.",
@@ -201,11 +201,11 @@
       "topic": "Coordinate Geometry",
       "prompt": "What is the slope of the line passing through (2, 3) and (5, 9)?",
       "options": [
-        "1",
         "3",
         "2",
         "4",
-        "6"
+        "6",
+        "1"
       ],
       "correctAnswer": "2",
       "explanation": "Slope = (9 - 3) / (5 - 2) = 6 / 3 = 2.",
@@ -218,11 +218,11 @@
       "topic": "Plane Geometry",
       "prompt": "The perimeter of a square with side length 7 is:",
       "options": [
+        "49",
+        "56",
         "28",
         "14",
-        "7",
-        "49",
-        "56"
+        "7"
       ],
       "correctAnswer": "28",
       "explanation": "Perimeter = 4 × side = 4 × 7 = 28.",
@@ -235,11 +235,11 @@
       "topic": "Plane Geometry",
       "prompt": "The area of a circle with radius 5 is:",
       "options": [
+        "50π",
         "5π",
         "10π",
         "25π",
-        "20π",
-        "50π"
+        "20π"
       ],
       "correctAnswer": "25π",
       "explanation": "Area = πr² = π(5)² = 25π.",
@@ -252,11 +252,11 @@
       "topic": "Plane Geometry",
       "prompt": "A triangle has sides of length 3, 4, and 5. What type of triangle is it?",
       "options": [
+        "Equilateral",
         "Acute",
         "Isosceles",
         "Obtuse",
-        "Right",
-        "Equilateral"
+        "Right"
       ],
       "correctAnswer": "Right",
       "explanation": "3² + 4² = 9 + 16 = 25 = 5². This satisfies the Pythagorean theorem, so it is a right triangle.",
@@ -269,11 +269,11 @@
       "topic": "Elementary Algebra",
       "prompt": "What is the value of 3⁴?",
       "options": [
-        "12",
         "81",
         "64",
         "27",
-        "243"
+        "243",
+        "12"
       ],
       "correctAnswer": "81",
       "explanation": "3⁴ = 3 × 3 × 3 × 3 = 81.",
@@ -286,11 +286,11 @@
       "topic": "Intermediate Algebra",
       "prompt": "Simplify: √72",
       "options": [
-        "8√2",
         "6√3",
         "6√2",
         "9√2",
-        "12√2"
+        "12√2",
+        "8√2"
       ],
       "correctAnswer": "6√2",
       "explanation": "√72 = √(36 × 2) = 6√2.",
@@ -303,11 +303,11 @@
       "topic": "Coordinate Geometry",
       "prompt": "What is the distance between (0, 0) and (3, 4)?",
       "options": [
-        "49",
-        "7",
         "12",
         "25",
-        "5"
+        "5",
+        "49",
+        "7"
       ],
       "correctAnswer": "5",
       "explanation": "Using the distance formula: √[(3-0)² + (4-0)²] = √[9 + 16] = √25 = 5.",
@@ -320,11 +320,11 @@
       "topic": "Pre-Algebra",
       "prompt": "Which of the following is divisible by 6?",
       "options": [
-        "42",
-        "32",
         "25",
         "55",
-        "68"
+        "68",
+        "42",
+        "32"
       ],
       "correctAnswer": "42",
       "explanation": "42 = 6 × 7, so it is divisible by 6. (42 ÷ 6 = 7)",
@@ -337,11 +337,11 @@
       "topic": "Elementary Algebra",
       "prompt": "Solve: 4(x - 2) = 20",
       "options": [
-        "3",
-        "7",
         "5",
         "9",
-        "13"
+        "13",
+        "3",
+        "7"
       ],
       "correctAnswer": "7",
       "explanation": "4(x - 2) = 20 → x - 2 = 5 → x = 7.",
@@ -354,11 +354,11 @@
       "topic": "Intermediate Algebra",
       "prompt": "What is the equation of the line with slope 2 passing through (1, 3)?",
       "options": [
-        "y = 2x + 5",
-        "y = 2x + 3",
         "y = 2x + 1",
         "y = 2x - 1",
-        "y = 2x"
+        "y = 2x",
+        "y = 2x + 5",
+        "y = 2x + 3"
       ],
       "correctAnswer": "y = 2x + 1",
       "explanation": "Using point-slope form: y - 3 = 2(x - 1) → y - 3 = 2x - 2 → y = 2x + 1.",
@@ -371,11 +371,11 @@
       "topic": "Plane Geometry",
       "prompt": "What is the area of a rectangle with length 8 and width 5?",
       "options": [
-        "13",
-        "26",
         "30",
         "40",
-        "64"
+        "64",
+        "13",
+        "26"
       ],
       "correctAnswer": "40",
       "explanation": "Area = length × width = 8 × 5 = 40.",
@@ -388,11 +388,11 @@
       "topic": "Pre-Algebra",
       "prompt": "What is 2/3 of 18?",
       "options": [
+        "6",
+        "18",
         "12",
         "8",
-        "10",
-        "6",
-        "18"
+        "10"
       ],
       "correctAnswer": "12",
       "explanation": "2/3 × 18 = (2 × 18) / 3 = 36 / 3 = 12.",
@@ -405,11 +405,11 @@
       "topic": "Elementary Algebra",
       "prompt": "Factor: x² + 5x + 4",
       "options": [
+        "(x + 2)(x + 4)",
         "(x - 1)(x - 4)",
         "(x + 2)(x + 2)",
         "(x + 1)(x + 4)",
-        "(x + 1)(x + 3)",
-        "(x + 2)(x + 4)"
+        "(x + 1)(x + 3)"
       ],
       "correctAnswer": "(x + 1)(x + 4)",
       "explanation": "x² + 5x + 4 = (x + 1)(x + 4) because 1 × 4 = 4 and 1 + 4 = 5.",
@@ -422,11 +422,11 @@
       "topic": "Coordinate Geometry",
       "prompt": "Which point lies on the line y = 3x - 1?",
       "options": [
+        "(3, 8)",
+        "(4, 10)",
         "(0, 1)",
         "(1, 2)",
-        "(2, 5)",
-        "(3, 8)",
-        "(4, 10)"
+        "(2, 5)"
       ],
       "correctAnswer": "(2, 5)",
       "explanation": "Testing (2, 5): y = 3(2) - 1 = 6 - 1 = 5. ✓",
@@ -456,11 +456,11 @@
       "topic": "Plane Geometry",
       "prompt": "What is the sum of interior angles in a triangle?",
       "options": [
-        "90°",
         "120°",
         "180°",
         "270°",
-        "360°"
+        "360°",
+        "90°"
       ],
       "correctAnswer": "180°",
       "explanation": "The sum of interior angles in any triangle is always 180°.",
@@ -473,11 +473,11 @@
       "topic": "Elementary Algebra",
       "prompt": "Solve: 5x + 2 = 3x + 12",
       "options": [
-        "1",
         "3",
         "7",
         "5",
-        "9"
+        "9",
+        "1"
       ],
       "correctAnswer": "5",
       "explanation": "5x + 2 = 3x + 12 → 2x = 10 → x = 5.",
@@ -490,11 +490,11 @@
       "topic": "Pre-Algebra",
       "prompt": "What is the least common multiple of 4 and 6?",
       "options": [
-        "12",
-        "4",
         "6",
         "2",
-        "24"
+        "24",
+        "12",
+        "4"
       ],
       "correctAnswer": "12",
       "explanation": "Multiples of 4: 4, 8, 12, 16... Multiples of 6: 6, 12, 18... LCM = 12.",
@@ -507,11 +507,11 @@
       "topic": "Intermediate Algebra",
       "prompt": "What is the value of x in 2^x = 16?",
       "options": [
-        "2",
-        "4",
         "3",
         "5",
-        "8"
+        "8",
+        "2",
+        "4"
       ],
       "correctAnswer": "4",
       "explanation": "2⁴ = 2 × 2 × 2 × 2 = 16, so x = 4.",
@@ -524,11 +524,11 @@
       "topic": "Coordinate Geometry",
       "prompt": "What is the midpoint of the segment from (2, 4) to (8, 10)?",
       "options": [
+        "(5, 7)",
+        "(16, 20)",
         "(3, 5)",
         "(10, 14)",
-        "(6, 8)",
-        "(5, 7)",
-        "(16, 20)"
+        "(6, 8)"
       ],
       "correctAnswer": "(5, 7)",
       "explanation": "Midpoint = ((2+8)/2, (4+10)/2) = (10/2, 14/2) = (5, 7).",
@@ -541,11 +541,11 @@
       "topic": "Plane Geometry",
       "prompt": "The volume of a cube with side length 3 is:",
       "options": [
-        "9",
         "36",
         "27",
         "54",
-        "81"
+        "81",
+        "9"
       ],
       "correctAnswer": "27",
       "explanation": "Volume = s³ = 3³ = 27.",
@@ -575,11 +575,11 @@
       "topic": "Pre-Algebra",
       "prompt": "If a = 2 and b = 3, what is 2a² + b?",
       "options": [
-        "7",
         "8",
         "17",
         "13",
-        "11"
+        "11",
+        "7"
       ],
       "correctAnswer": "11",
       "explanation": "2a² + b = 2(2)² + 3 = 2(4) + 3 = 8 + 3 = 11.",
@@ -592,11 +592,11 @@
       "topic": "Intermediate Algebra",
       "prompt": "Solve: |x - 4| = 3",
       "options": [
-        "x = 1",
-        "x = 1 or x = 7",
         "x = 7",
         "x = -1 or x = 7",
-        "x = 4 or x = 7"
+        "x = 4 or x = 7",
+        "x = 1",
+        "x = 1 or x = 7"
       ],
       "correctAnswer": "x = 1 or x = 7",
       "explanation": "|x - 4| = 3 means x - 4 = 3 or x - 4 = -3 → x = 7 or x = 1.",
@@ -609,11 +609,11 @@
       "topic": "Trigonometry",
       "prompt": "cos(60°) = ?",
       "options": [
+        "1/2",
+        "0",
         "√3",
         "√3/2",
-        "√2/2",
-        "1/2",
-        "0"
+        "√2/2"
       ],
       "correctAnswer": "1/2",
       "explanation": "cos(60°) = 1/2 (standard trigonometric value).",
@@ -626,11 +626,11 @@
       "topic": "Plane Geometry",
       "prompt": "A circle has diameter 12. What is its circumference?",
       "options": [
+        "144π",
         "12π",
         "6π",
         "24π",
-        "36π",
-        "144π"
+        "36π"
       ],
       "correctAnswer": "12π",
       "explanation": "Circumference = πd = π(12) = 12π.",
@@ -643,11 +643,11 @@
       "topic": "Elementary Algebra",
       "prompt": "Simplify: 3x + 4x - 2x",
       "options": [
+        "8x",
+        "9x",
         "5x",
         "6x",
-        "7x",
-        "8x",
-        "9x"
+        "7x"
       ],
       "correctAnswer": "5x",
       "explanation": "3x + 4x - 2x = (3 + 4 - 2)x = 5x.",
@@ -660,11 +660,11 @@
       "topic": "Pre-Algebra",
       "prompt": "What is -5 + 3 - 2?",
       "options": [
+        "-3",
+        "-2",
         "-10",
         "-4",
-        "-5",
-        "-3",
-        "-2"
+        "-5"
       ],
       "correctAnswer": "-4",
       "explanation": "-5 + 3 - 2 = -2 - 2 = -4.",
@@ -677,11 +677,11 @@
       "topic": "Intermediate Algebra",
       "prompt": "What is the slope of a line perpendicular to y = 2x + 3?",
       "options": [
+        "3",
         "-2",
         "2",
         "1/2",
-        "-1/2",
-        "3"
+        "-1/2"
       ],
       "correctAnswer": "-1/2",
       "explanation": "If a line has slope m, a perpendicular line has slope -1/m. So perpendicular to slope 2 is -1/2.",
@@ -694,11 +694,11 @@
       "topic": "Coordinate Geometry",
       "prompt": "What is the x-intercept of the line y = 2x - 6?",
       "options": [
-        "-6",
-        "-3",
         "3",
         "0",
-        "6"
+        "6",
+        "-6",
+        "-3"
       ],
       "correctAnswer": "3",
       "explanation": "At the x-intercept, y = 0: 0 = 2x - 6 → 2x = 6 → x = 3.",
@@ -711,11 +711,11 @@
       "topic": "Plane Geometry",
       "prompt": "The area of a triangle with base 10 and height 6 is:",
       "options": [
-        "16",
         "40",
         "30",
         "60",
-        "120"
+        "120",
+        "16"
       ],
       "correctAnswer": "30",
       "explanation": "Area = (1/2) × base × height = (1/2) × 10 × 6 = 30.",
@@ -728,11 +728,11 @@
       "topic": "Elementary Algebra",
       "prompt": "If 3x - 5 = 10, what is x?",
       "options": [
+        "10",
+        "15",
         "5",
         "3",
-        "7",
-        "10",
-        "15"
+        "7"
       ],
       "correctAnswer": "5",
       "explanation": "3x - 5 = 10 → 3x = 15 → x = 5.",
@@ -745,11 +745,11 @@
       "topic": "Pre-Algebra",
       "prompt": "What is the decimal equivalent of 3/8?",
       "options": [
-        "0.375",
-        "0.25",
         "0.5",
         "0.625",
-        "0.75"
+        "0.75",
+        "0.375",
+        "0.25"
       ],
       "correctAnswer": "0.375",
       "explanation": "3 ÷ 8 = 0.375.",
@@ -762,11 +762,11 @@
       "topic": "Intermediate Algebra",
       "prompt": "Solve: x² = 49",
       "options": [
-        "x = 7",
-        "x = 7 or x = -7",
         "x = -7",
         "x = 49",
-        "x = 24.5"
+        "x = 24.5",
+        "x = 7",
+        "x = 7 or x = -7"
       ],
       "correctAnswer": "x = 7 or x = -7",
       "explanation": "x² = 49 → x = ±7.",

@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the patient's ID?",
       "options": [
-        "P-8479",
         "P-9847",
         "P-9748",
-        "P-8794"
+        "P-8794",
+        "P-8479"
       ],
       "correctAnswer": "P-9847",
       "explanation": "Patient provides their ID as 'P-9847.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the new appointment date and time?",
       "options": [
+        "Friday, June 20th at 8:30 AM",
         "Friday, June 6th at 8:30 AM",
         "Friday, June 12th at 8:30 AM",
-        "Friday, June 13th at 8:30 AM",
-        "Friday, June 20th at 8:30 AM"
+        "Friday, June 13th at 8:30 AM"
       ],
       "correctAnswer": "Friday, June 13th at 8:30 AM",
       "explanation": "Receptionist books the new appointment for 'Friday, June 13th at 8:30 AM.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What should the patient do to prepare for the appointment?",
       "options": [
-        "Fast for 12 hours",
-        "Bring insurance documents only",
         "Arrive ten minutes early to fill out updated forms",
-        "Call to confirm the day before"
+        "Call to confirm the day before",
+        "Fast for 12 hours",
+        "Bring insurance documents only"
       ],
       "correctAnswer": "Arrive ten minutes early to fill out updated forms",
       "explanation": "Receptionist states 'You'll need to arrive ten minutes early to fill out any updated forms.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "Who is the patient's doctor?",
       "options": [
-        "Dr. Kumar",
-        "Dr. Singh",
         "Dr. Patel",
-        "Dr. Sharma"
+        "Dr. Sharma",
+        "Dr. Kumar",
+        "Dr. Singh"
       ],
       "correctAnswer": "Dr. Singh",
       "explanation": "Patient mentions wanting to reschedule with 'Dr. Singh' throughout the conversation.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long have the dishes been in the sink?",
       "options": [
-        "One day",
-        "Two days",
         "Three days",
-        "Four days"
+        "Four days",
+        "One day",
+        "Two days"
       ],
       "correctAnswer": "Three days",
       "explanation": "Alex states 'it's been sitting there for three days.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "How much is the internet bill this month?",
       "options": [
+        "$80",
         "$65",
         "$70",
-        "$75",
-        "$80"
+        "$75"
       ],
       "correctAnswer": "$75",
       "explanation": "Alex states 'the internet bill is due next week. It's $75 this month.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "By how much did the internet bill increase?",
       "options": [
-        "$3",
         "$5",
         "$10",
-        "$15"
+        "$15",
+        "$3"
       ],
       "correctAnswer": "$5",
       "explanation": "Alex explains 'they increased the plan by five dollars.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "In which room are Group of Seven paintings displayed?",
       "options": [
+        "Room 106",
         "Room 101",
         "Room 102",
-        "Room 104",
-        "Room 106"
+        "Room 104"
       ],
       "correctAnswer": "Room 102",
       "explanation": "The guide says 'We'll start with the Group of Seven landscape paintings in Room 102.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What region did Emily Carr primarily focus on?",
       "options": [
+        "Prairie provinces",
         "Ontario",
         "Quebec",
-        "British Columbia",
-        "Prairie provinces"
+        "British Columbia"
       ],
       "correctAnswer": "British Columbia",
       "explanation": "The guide mentions 'Emily Carr's totem pole paintings from British Columbia.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What artistic movement were Borduas and Riopelle part of?",
       "options": [
-        "Cubism",
         "Automatiste",
         "Impressionism",
-        "Surrealism"
+        "Surrealism",
+        "Cubism"
       ],
       "correctAnswer": "Automatiste",
       "explanation": "The guide states these 'Montreal-based artists were part of the Automatiste movement.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "Which city were Borduas and Riopelle based in?",
       "options": [
-        "Toronto",
         "Vancouver",
         "Montreal",
-        "Ottawa"
+        "Ottawa",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "The guide identifies them as 'Montreal-based artists.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How much is allocated for the fisheries management plan?",
       "options": [
+        "75 million dollars",
         "50 million dollars",
         "58 million dollars",
-        "67 million dollars",
-        "75 million dollars"
+        "67 million dollars"
       ],
       "correctAnswer": "67 million dollars",
       "explanation": "The plan allocates 67 million dollars over five years.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "By what percentage have Atlantic salmon populations declined?",
       "options": [
-        "35 percent",
-        "42 percent",
         "48 percent",
-        "55 percent"
+        "55 percent",
+        "35 percent",
+        "42 percent"
       ],
       "correctAnswer": "48 percent",
       "explanation": "Atlantic salmon populations have declined by 48 percent over the past two decades.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "What is the maximum subsidy for vessel upgrades?",
       "options": [
-        "150,000 dollars",
         "175,000 dollars",
         "200,000 dollars",
-        "250,000 dollars"
+        "250,000 dollars",
+        "150,000 dollars"
       ],
       "correctAnswer": "200,000 dollars",
       "explanation": "Subsidies reach up to 200,000 dollars for eco-friendly equipment upgrades.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How many marine scientists will the research center employ?",
       "options": [
+        "150 scientists",
         "80 scientists",
         "100 scientists",
-        "120 scientists",
-        "150 scientists"
+        "120 scientists"
       ],
       "correctAnswer": "120 scientists",
       "explanation": "The research center will employ 120 marine scientists.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What does Sarah believe about mentorship in remote work settings?",
       "options": [
-        "Mentorship works better online",
         "Newer staff miss out on mentorship opportunities",
         "Mentorship is not important",
-        "Remote mentorship is equally effective"
+        "Remote mentorship is equally effective",
+        "Mentorship works better online"
       ],
       "correctAnswer": "Newer staff miss out on mentorship opportunities",
       "explanation": "Sarah explicitly states she worries about newer staff missing out on mentorship opportunities.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage has James's productivity increased working remotely?",
       "options": [
-        "25 percent",
         "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James states his productivity has increased by about 40 percent since working remotely.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What reason does James give for his increased productivity?",
       "options": [
+        "More flexible schedule",
         "Better equipment at home",
         "Fewer interruptions",
-        "Shorter work hours",
-        "More flexible schedule"
+        "Shorter work hours"
       ],
       "correctAnswer": "Fewer interruptions",
       "explanation": "James mentions fewer interruptions allow him to focus better on complex projects.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Tom identify as the main finding in the HR data?",
       "options": [
-        "Remote work is always better",
-        "Mixed results depending on the team",
         "Office work is most productive",
-        "Remote work decreases productivity"
+        "Remote work decreases productivity",
+        "Remote work is always better",
+        "Mixed results depending on the team"
       ],
       "correctAnswer": "Mixed results depending on the team",
       "explanation": "Tom says the data shows mixed results, with some teams more productive remotely while others struggle.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of team does Tom suggest might work better in person?",
       "options": [
-        "Software developers",
-        "Marketing teams",
         "Customer service teams",
-        "Finance teams"
+        "Finance teams",
+        "Software developers",
+        "Marketing teams"
       ],
       "correctAnswer": "Customer service teams",
       "explanation": "Tom suggests customer service teams probably need more in-person interaction.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What solution does Tom propose?",
       "options": [
-        "All employees back in office",
         "Completely remote for all",
         "Hybrid approach with flexibility",
-        "No change to current policy"
+        "No change to current policy",
+        "All employees back in office"
       ],
       "correctAnswer": "Hybrid approach with flexibility",
       "explanation": "Tom proposes a hybrid approach that gives managers flexibility based on their team's needs.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "According to Sarah, what does collaboration depend on?",
       "options": [
+        "Email efficiency",
         "Video call quality",
         "People being in the same space",
-        "Written communication",
-        "Email efficiency"
+        "Written communication"
       ],
       "correctAnswer": "People being in the same space",
       "explanation": "Sarah believes collaboration happens more naturally when people are in the same space.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "How does James stay connected with colleagues remotely?",
       "options": [
+        "Monthly meetings only",
         "Phone calls only",
         "Email messages only",
-        "Video calls and shared documents",
-        "Monthly meetings only"
+        "Video calls and shared documents"
       ],
       "correctAnswer": "Video calls and shared documents",
       "explanation": "James mentions collaborating through video calls and shared documents.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "Mental health is covered more than physical",
         "Physical health is covered more than mental health",
         "They're equally covered",
-        "Neither is adequately covered"
+        "Neither is adequately covered",
+        "Mental health is covered more than physical"
       ],
       "correctAnswer": "Physical health is covered more than mental health",
       "explanation": "The speaker states mental health is covered at lower rates than physical health.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What is the source of these costs according to the speaker?",
       "options": [
-        "Insurance premiums only",
-        "Lost productivity, emergency services, and hospitalizations",
         "Medication costs",
-        "Administrative expenses"
+        "Administrative expenses",
+        "Insurance premiums only",
+        "Lost productivity, emergency services, and hospitalizations"
       ],
       "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
       "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "It's cheaper than physical health",
         "Early treatment has positive ROI",
         "It reduces insurance profits",
-        "It's cost-neutral"
+        "It's cost-neutral",
+        "It's cheaper than physical health"
       ],
       "correctAnswer": "Early treatment has positive ROI",
       "explanation": "The speaker argues mental health coverage has a positive return on investment.",

@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the main problem with the refrigerator?",
       "options": [
-        "The compressor is broken completely",
         "The ice maker isn't working and there's a strange noise from the compressor",
         "The door seal is damaged",
-        "The temperature control panel is faulty"
+        "The temperature control panel is faulty",
+        "The compressor is broken completely"
       ],
       "correctAnswer": "The ice maker isn't working and there's a strange noise from the compressor",
       "explanation": "The customer explicitly states both issues in their opening complaint.",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "How long has the customer owned the refrigerator?",
       "options": [
-        "Three days",
         "One week",
         "Six days",
-        "Two weeks"
+        "Two weeks",
+        "Three days"
       ],
       "correctAnswer": "Six days",
       "explanation": "Customer states 'I've had it six days' and bought it Tuesday morning.",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What was the purchase price?",
       "options": [
-        "$999",
         "$1,099",
         "$1,199",
-        "$1,299"
+        "$1,299",
+        "$999"
       ],
       "correctAnswer": "$1,299",
       "explanation": "Customer clearly states the purchase price was $1,299.",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the return window policy mentioned?",
       "options": [
+        "Ten days",
         "Three days",
         "Five days",
-        "Seven days",
-        "Ten days"
+        "Seven days"
       ],
       "correctAnswer": "Seven days",
       "explanation": "Agent mentions 'within the seven-day return window.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "Where was the refrigerator purchased?",
       "options": [
-        "The mall location",
         "The downtown store",
         "Online",
-        "A second-hand seller"
+        "A second-hand seller",
+        "The mall location"
       ],
       "correctAnswer": "The downtown store",
       "explanation": "Customer says they bought it from 'your downtown store.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What refund method does the customer prefer?",
       "options": [
-        "Store credit",
         "Exchange for another model",
         "Cash back",
-        "Check by mail"
+        "Check by mail",
+        "Store credit"
       ],
       "correctAnswer": "Cash back",
       "explanation": "Customer explicitly states 'I'd rather have a refund.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "When will the refund appear in the customer's account?",
       "options": [
+        "Within 2 weeks",
         "Within 2 business days",
         "Within 5 to 7 business days",
-        "Within 10 business days",
-        "Within 2 weeks"
+        "Within 10 business days"
       ],
       "correctAnswer": "Within 5 to 7 business days",
       "explanation": "Agent states 'the refund will appear in your account within five to seven business days.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What time window is available for pickup?",
       "options": [
-        "8 AM to 12 PM",
-        "10 AM to 2 PM",
         "12 PM to 4 PM",
-        "2 PM to 6 PM"
+        "2 PM to 6 PM",
+        "8 AM to 12 PM",
+        "10 AM to 2 PM"
       ],
       "correctAnswer": "10 AM to 2 PM",
       "explanation": "Agent offers pickup 'between 10 and 2 PM' tomorrow morning.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the monthly rent?",
       "options": [
-        "$1,000",
-        "$1,100",
         "$1,200",
-        "$1,300"
+        "$1,300",
+        "$1,000",
+        "$1,100"
       ],
       "correctAnswer": "$1,200",
       "explanation": "Landlord states 'The rent is $1,200 per month.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "Is parking included in the rent?",
       "options": [
+        "Not available",
         "No, extra cost",
         "Yes, one spot",
-        "Two spots",
-        "Not available"
+        "Two spots"
       ],
       "correctAnswer": "Yes, one spot",
       "explanation": "Landlord confirms 'one dedicated parking spot' is 'included in the rent.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "When can the renter move in?",
       "options": [
+        "July 8",
         "June 15",
         "June 24",
-        "July 1",
-        "July 8"
+        "July 1"
       ],
       "correctAnswer": "July 1",
       "explanation": "Landlord states 'you can move in on July 1st.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What is the pet deposit for the cat?",
       "options": [
-        "$100",
-        "$125",
         "$150",
-        "$200"
+        "$200",
+        "$100",
+        "$125"
       ],
       "correctAnswer": "$150",
       "explanation": "Landlord specifies 'a one-time pet deposit of $150.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What are the visiting hours?",
       "options": [
-        "8 AM to 6 PM",
         "9 AM to 7 PM",
         "10 AM to 8 PM",
-        "11 AM to 9 PM"
+        "11 AM to 9 PM",
+        "8 AM to 6 PM"
       ],
       "correctAnswer": "10 AM to 8 PM",
       "explanation": "The guide states 'Visiting hours are 10 AM to 8 PM daily.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "How many visitors can be in a patient's room at one time?",
       "options": [
+        "Four",
         "One",
         "Two",
-        "Three",
-        "Four"
+        "Three"
       ],
       "correctAnswer": "Two",
       "explanation": "The guide specifies 'Each patient can have a maximum of two visitors at a time in their room.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the minimum age for unaccompanied visits?",
       "options": [
+        "Fourteen years old",
         "Eight years old",
         "Ten years old",
-        "Twelve years old",
-        "Fourteen years old"
+        "Twelve years old"
       ],
       "correctAnswer": "Twelve years old",
       "explanation": "The guide states 'Children under twelve must be accompanied by an adult.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the parking fee per visit?",
       "options": [
+        "$5",
         "$2",
         "$3",
-        "$4",
-        "$5"
+        "$4"
       ],
       "correctAnswer": "$5",
       "explanation": "The guide mentions 'Parking is available in the north lot at five dollars per visit.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "Who must approve outside food before it's given to a patient?",
       "options": [
-        "The visitor",
         "The patient",
         "The nursing staff",
-        "The hospital administrator"
+        "The hospital administrator",
+        "The visitor"
       ],
       "correctAnswer": "The nursing staff",
       "explanation": "The guide states 'Food brought from outside is permitted only if approved by nursing staff.'",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "By what percentage will Japanese importers increase their purchases?",
       "options": [
+        "30 percent",
         "15 percent",
         "20 percent",
-        "25 percent",
-        "30 percent"
+        "25 percent"
       ],
       "correctAnswer": "25 percent",
       "explanation": "Importers have committed to increasing purchases by 25 percent over the next five years.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How much canola does Manitoba produce annually?",
       "options": [
-        "5 million tonnes",
-        "7 million tonnes",
         "8 million tonnes",
-        "10 million tonnes"
+        "10 million tonnes",
+        "5 million tonnes",
+        "7 million tonnes"
       ],
       "correctAnswer": "8 million tonnes",
       "explanation": "Manitoba produces approximately 8 million tonnes of canola annually.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "How many tonnes of pulse crops are produced?",
       "options": [
-        "2.0 million tonnes",
         "2.4 million tonnes",
         "2.8 million tonnes",
-        "3.2 million tonnes"
+        "3.2 million tonnes",
+        "2.0 million tonnes"
       ],
       "correctAnswer": "2.8 million tonnes",
       "explanation": "Pulse crops account for 2.8 million tonnes of production.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What components are included in the local food initiative?",
       "options": [
-        "Grocery stores and restaurants",
         "Farmers market and delivery programs",
         "Government subsidies",
-        "Large distribution centers"
+        "Large distribution centers",
+        "Grocery stores and restaurants"
       ],
       "correctAnswer": "Farmers market and delivery programs",
       "explanation": "The initiative proposes farmers market expansion and direct-to-consumer delivery programs.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What advantage of local food does Dr. Sarah emphasize?",
       "options": [
-        "Lower cost",
-        "Improved freshness and food safety",
         "More variety",
-        "Better storage"
+        "Better storage",
+        "Lower cost",
+        "Improved freshness and food safety"
       ],
       "correctAnswer": "Improved freshness and food safety",
       "explanation": "Reducing transportation improves food safety and nutrition through fresher products.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "How much of his production does James currently sell to farmers market?",
       "options": [
-        "25 percent",
-        "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent",
+        "35 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James currently sells about 40 percent of production to the farmers market.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What infrastructure limitation does James identify?",
       "options": [
-        "Limited land",
         "Transportation issues",
         "Packaging and distribution",
-        "Workforce availability"
+        "Workforce availability",
+        "Limited land"
       ],
       "correctAnswer": "Packaging and distribution",
       "explanation": "James lacks infrastructure for packaging and distribution to expand sales.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "Mental health is covered more than physical",
-        "Physical health is covered more than mental health",
         "They're equally covered",
-        "Neither is adequately covered"
+        "Neither is adequately covered",
+        "Mental health is covered more than physical",
+        "Physical health is covered more than mental health"
       ],
       "correctAnswer": "Physical health is covered more than mental health",
       "explanation": "The speaker states mental health is covered at lower rates than physical health.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "What example does the speaker use to illustrate the disparity?",
       "options": [
-        "Cancer treatment vs. therapy",
         "Broken arm coverage vs. limited mental health sessions",
         "Hospital stays vs. doctor visits",
-        "Prescription drugs vs. counseling"
+        "Prescription drugs vs. counseling",
+        "Cancer treatment vs. therapy"
       ],
       "correctAnswer": "Broken arm coverage vs. limited mental health sessions",
       "explanation": "The speaker uses physical therapy for broken arms compared to limited therapy sessions.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What is the annual economic cost of mental health issues in Canada?",
       "options": [
-        "25 billion dollars",
         "38 billion dollars",
         "51 billion dollars",
-        "67 billion dollars"
+        "67 billion dollars",
+        "25 billion dollars"
       ],
       "correctAnswer": "51 billion dollars",
       "explanation": "Mental health issues cost 51 billion dollars annually in Canada.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What is the source of these costs according to the speaker?",
       "options": [
+        "Administrative expenses",
         "Insurance premiums only",
         "Lost productivity, emergency services, and hospitalizations",
-        "Medication costs",
-        "Administrative expenses"
+        "Medication costs"
       ],
       "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
       "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "It's cheaper than physical health",
-        "Early treatment has positive ROI",
         "It reduces insurance profits",
-        "It's cost-neutral"
+        "It's cost-neutral",
+        "It's cheaper than physical health",
+        "Early treatment has positive ROI"
       ],
       "correctAnswer": "Early treatment has positive ROI",
       "explanation": "The speaker argues mental health coverage has a positive return on investment.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate companies implement?",
       "options": [
-        "Lower coverage for mental health",
         "Mandatory parity in coverage",
         "Removal of all limits",
-        "Voluntary coverage only"
+        "Voluntary coverage only",
+        "Lower coverage for mental health"
       ],
       "correctAnswer": "Mandatory parity in coverage",
       "explanation": "The speaker advocates for mandatory parity—equal coverage for mental and physical health.",

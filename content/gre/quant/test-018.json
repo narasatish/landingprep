@@ -32,11 +32,11 @@
       "prompt": "What is the sum of all integers x such that -25 < x ≤ 26?",
       "difficulty": "medium",
       "options": [
+        "25",
         "51",
         "-51",
         "26",
-        "77",
-        "25"
+        "77"
       ],
       "correctAnswer": "51",
       "explanation": "The integers run from -24 to 26. Pairing/series sum = 51.",
@@ -49,11 +49,11 @@
       "prompt": "A jacket priced at $200 is discounted by 25% and then taxed at 8%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$150",
         "$172",
         "$162",
         "$216",
-        "$200",
-        "$150"
+        "$200"
       ],
       "correctAnswer": "$162",
       "explanation": "After 25% off: $150. After 8% tax: $150 × 1.08 = $162.",
@@ -66,11 +66,11 @@
       "prompt": "If 12 painters can paint 12 walls in 12 days, how many days would it take 12 painters to paint 12 walls?",
       "difficulty": "medium",
       "options": [
-        "24",
         "1",
         "13",
         "11",
-        "12"
+        "12",
+        "24"
       ],
       "correctAnswer": "12",
       "explanation": "Each painter paints 1 wall in 12 days. 12 painters painting 12 walls (one each) still take 12 days.",
@@ -83,11 +83,11 @@
       "prompt": "If 1/3 of a number is 8, what is 7/8 of that number?",
       "difficulty": "medium",
       "options": [
-        "8",
-        "21",
         "29",
         "3",
-        "24"
+        "24",
+        "8",
+        "21"
       ],
       "correctAnswer": "21",
       "explanation": "The number is 8 ÷ 1/3 = 24. Then 7/8 × 24 = 21.",
@@ -100,11 +100,11 @@
       "prompt": "The perimeter of a rectangle is 58 and its area is 198. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
-        "18",
-        "7",
         "11",
         "29",
-        "13"
+        "13",
+        "18",
+        "7"
       ],
       "correctAnswer": "11",
       "explanation": "Sides sum to 29 and multiply to 198. They are 11 and 18; the shorter side is 11.",
@@ -117,11 +117,11 @@
       "prompt": "The average of a and b is 37, and the average of b and c is 39. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "76",
         "4",
         "-4",
         "-6",
-        "-2"
+        "-2",
+        "76"
       ],
       "correctAnswer": "-4",
       "explanation": "a+b = 74 and b+c = 78. Subtracting: a − c = 74 − 78 = -4.",
@@ -168,11 +168,11 @@
       "prompt": "Sofia can assemble a bookcase 3 times as fast as Marcus. Working together they finish one in 20 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
-        "20",
-        "26.666666666666668",
         "40",
         "80",
-        "15"
+        "15",
+        "20",
+        "26.666666666666668"
       ],
       "correctAnswer": "26.666666666666668",
       "explanation": "Let Marcus's rate be r. Sofia's is 3r, so together (4)r = 1/20, giving r = 1/80. Sofia's rate 3r = 3/80 = 1/26.666666666666668, so Sofia alone takes 26.666666666666668 hours.",
@@ -185,11 +185,11 @@
       "prompt": "The ratio of blue to red marbles is 2 to 3. If 10 blue marbles are added, the ratio becomes 8 to 7. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
-        "14",
-        "24",
         "21",
         "31",
-        "11"
+        "11",
+        "14",
+        "24"
       ],
       "correctAnswer": "21",
       "explanation": "Let blue = 2k and red = 3k. After adding 10: (2k+10)/(3k) = 8/7, which gives k = 7. Red = 3×7 = 21.",
@@ -202,11 +202,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 5 remain; divided among 8 children, 7 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
-        "0",
         "1",
         "2",
         "3",
-        "4"
+        "4",
+        "0"
       ],
       "correctAnswer": "2",
       "explanation": "The only n in range with n≡5 (mod 7) and n≡7 (mod 8) is 47. Then 47 ÷ 9 leaves remainder 2.",
@@ -219,11 +219,11 @@
       "prompt": "What is 40% of 50?",
       "difficulty": "medium",
       "options": [
-        "90",
-        "10",
         "40",
         "200",
-        "20"
+        "20",
+        "90",
+        "10"
       ],
       "correctAnswer": "20",
       "explanation": "40% of 50 = 40/100 × 50 = 20.",
@@ -236,11 +236,11 @@
       "prompt": "The average of 5 numbers is 13. If one number equal to -7 is removed, what is the average of the remaining 4 numbers?",
       "difficulty": "medium",
       "options": [
-        "13",
         "19",
         "17",
         "-7",
-        "18"
+        "18",
+        "13"
       ],
       "correctAnswer": "18",
       "explanation": "Total = 5×13 = 65. Remove -7: remaining total 72 over 4 numbers = 18.",
@@ -253,11 +253,11 @@
       "prompt": "What is the sum of all integers x such that -39 < x ≤ 30?",
       "difficulty": "medium",
       "options": [
+        "-306",
+        "276",
         "-315",
         "-246",
-        "-276",
-        "-306",
-        "276"
+        "-276"
       ],
       "correctAnswer": "-276",
       "explanation": "The integers run from -38 to 30. Pairing/series sum = -276.",
@@ -270,11 +270,11 @@
       "prompt": "A jacket priced at $100 is discounted by 40% and then taxed at 10%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$66",
         "$110.00",
         "$60",
         "$100",
-        "$76",
-        "$66"
+        "$76"
       ],
       "correctAnswer": "$66",
       "explanation": "After 40% off: $60. After 10% tax: $60 × 1.1 = $66.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "A right triangle has legs of length 6 and 8. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "9",
+        "11",
         "14",
         "12",
-        "10",
-        "9",
-        "11"
+        "10"
       ],
       "correctAnswer": "10",
       "explanation": "Hypotenuse = √(6² + 8²) = √100 = 10.",
@@ -352,11 +352,11 @@
       "prompt": "In a class of 77 students, the ratio of those who passed to those who failed is 5:6. How many students passed?",
       "difficulty": "medium",
       "options": [
+        "35",
+        "28",
         "77",
         "42",
-        "36",
-        "35",
-        "28"
+        "36"
       ],
       "correctAnswer": "35",
       "explanation": "Total parts = 11, each part = 77/11 = 7. Passed = 5 × 7 = 35.",
@@ -369,11 +369,11 @@
       "prompt": "If 5x + 8 = 2x + 35, what is the value of x²?",
       "difficulty": "medium",
       "options": [
-        "9",
         "18",
         "81",
         "80",
-        "90"
+        "90",
+        "9"
       ],
       "correctAnswer": "81",
       "explanation": "5x − 2x = 35 − 8 → 3x = 27 → x = 9. So x² = 81.",
@@ -386,11 +386,11 @@
       "prompt": "A right triangle has legs of length 3 and 4. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
-        "8",
         "7",
         "4",
         "5",
-        "6"
+        "6",
+        "8"
       ],
       "correctAnswer": "5",
       "explanation": "Hypotenuse = √(3² + 4²) = √25 = 5.",
@@ -403,11 +403,11 @@
       "prompt": "In a class of 30 students, the ratio of those who passed to those who failed is 6:4. How many students passed?",
       "difficulty": "medium",
       "options": [
-        "18",
-        "21",
         "15",
         "30",
-        "12"
+        "12",
+        "18",
+        "21"
       ],
       "correctAnswer": "18",
       "explanation": "Total parts = 10, each part = 30/10 = 3. Passed = 6 × 3 = 18.",
@@ -420,11 +420,11 @@
       "prompt": "What is the total number of downloads across both platforms over the six months?",
       "difficulty": "medium",
       "options": [
+        "739 thousand",
+        "759 thousand",
         "680 thousand",
         "699 thousand",
-        "719 thousand",
-        "739 thousand",
-        "759 thousand"
+        "719 thousand"
       ],
       "correctAnswer": "719 thousand",
       "explanation": "Sum of all months: 80+95+113+128+143+160 = 719 thousand",
@@ -484,11 +484,11 @@
       "prompt": "By approximately what percentage did total downloads increase from January to June?",
       "difficulty": "medium",
       "options": [
-        "80%",
-        "90%",
         "100%",
         "110%",
-        "120%"
+        "120%",
+        "80%",
+        "90%"
       ],
       "correctAnswer": "100%",
       "explanation": "(160-80)/80 = 80/80 = 1.0 = 100%",
@@ -548,11 +548,11 @@
       "prompt": "In which month did iOS downloads first exceed 70 thousand?",
       "difficulty": "medium",
       "options": [
-        "March",
         "April",
         "May",
         "June",
-        "February"
+        "February",
+        "March"
       ],
       "correctAnswer": "May",
       "explanation": "iOS: January 45, February 52, March 61, April 68, May 75 (first time >70)",

@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the patient's ID?",
       "options": [
-        "P-8479",
         "P-9847",
         "P-9748",
-        "P-8794"
+        "P-8794",
+        "P-8479"
       ],
       "correctAnswer": "P-9847",
       "explanation": "Patient provides their ID as 'P-9847.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the new appointment date and time?",
       "options": [
+        "Friday, June 20th at 8:30 AM",
         "Friday, June 6th at 8:30 AM",
         "Friday, June 12th at 8:30 AM",
-        "Friday, June 13th at 8:30 AM",
-        "Friday, June 20th at 8:30 AM"
+        "Friday, June 13th at 8:30 AM"
       ],
       "correctAnswer": "Friday, June 13th at 8:30 AM",
       "explanation": "Receptionist books the new appointment for 'Friday, June 13th at 8:30 AM.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What should the patient do to prepare for the appointment?",
       "options": [
-        "Fast for 12 hours",
-        "Bring insurance documents only",
         "Arrive ten minutes early to fill out updated forms",
-        "Call to confirm the day before"
+        "Call to confirm the day before",
+        "Fast for 12 hours",
+        "Bring insurance documents only"
       ],
       "correctAnswer": "Arrive ten minutes early to fill out updated forms",
       "explanation": "Receptionist states 'You'll need to arrive ten minutes early to fill out any updated forms.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "Who is the patient's doctor?",
       "options": [
-        "Dr. Kumar",
-        "Dr. Singh",
         "Dr. Patel",
-        "Dr. Sharma"
+        "Dr. Sharma",
+        "Dr. Kumar",
+        "Dr. Singh"
       ],
       "correctAnswer": "Dr. Singh",
       "explanation": "Patient mentions wanting to reschedule with 'Dr. Singh' throughout the conversation.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has it been since Sarah and Michael last saw each other?",
       "options": [
-        "Two months",
-        "Four months",
         "Six months",
-        "A year"
+        "A year",
+        "Two months",
+        "Four months"
       ],
       "correctAnswer": "Six months",
       "explanation": "Michael says 'Must be like six months since we last hung out' and Sarah agrees.",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "Where did Michael travel?",
       "options": [
-        "Toronto",
         "Montreal",
         "Vancouver",
-        "Calgary"
+        "Calgary",
+        "Toronto"
       ],
       "correctAnswer": "Vancouver",
       "explanation": "Sarah asks 'How was your trip to Vancouver?' confirming Michael's destination.",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "What type of restaurant does Sarah suggest?",
       "options": [
-        "Mexican",
-        "Italian",
         "Japanese",
-        "Indian"
+        "Indian",
+        "Mexican",
+        "Italian"
       ],
       "correctAnswer": "Italian",
       "explanation": "Sarah mentions 'that new Italian place downtown.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What day do they plan to meet?",
       "options": [
-        "Tuesday",
-        "Wednesday",
         "Thursday",
-        "Friday"
+        "Friday",
+        "Tuesday",
+        "Wednesday"
       ],
       "correctAnswer": "Thursday",
       "explanation": "Michael suggests 'Thursday' and Sarah confirms 'Thursday works for me.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What are the visiting hours?",
       "options": [
-        "8 AM to 6 PM",
         "9 AM to 7 PM",
         "10 AM to 8 PM",
-        "11 AM to 9 PM"
+        "11 AM to 9 PM",
+        "8 AM to 6 PM"
       ],
       "correctAnswer": "10 AM to 8 PM",
       "explanation": "The guide states 'Visiting hours are 10 AM to 8 PM daily.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "How many visitors can be in a patient's room at one time?",
       "options": [
+        "Four",
         "One",
         "Two",
-        "Three",
-        "Four"
+        "Three"
       ],
       "correctAnswer": "Two",
       "explanation": "The guide specifies 'Each patient can have a maximum of two visitors at a time in their room.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the minimum age for unaccompanied visits?",
       "options": [
+        "Fourteen years old",
         "Eight years old",
         "Ten years old",
-        "Twelve years old",
-        "Fourteen years old"
+        "Twelve years old"
       ],
       "correctAnswer": "Twelve years old",
       "explanation": "The guide states 'Children under twelve must be accompanied by an adult.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the parking fee per visit?",
       "options": [
+        "$5",
         "$2",
         "$3",
-        "$4",
-        "$5"
+        "$4"
       ],
       "correctAnswer": "$5",
       "explanation": "The guide mentions 'Parking is available in the north lot at five dollars per visit.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "Who must approve outside food before it's given to a patient?",
       "options": [
-        "The visitor",
         "The patient",
         "The nursing staff",
-        "The hospital administrator"
+        "The hospital administrator",
+        "The visitor"
       ],
       "correctAnswer": "The nursing staff",
       "explanation": "The guide states 'Food brought from outside is permitted only if approved by nursing staff.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How many workers does the union represent?",
       "options": [
+        "15,000 workers",
         "8,000 workers",
         "10,000 workers",
-        "12,000 workers",
-        "15,000 workers"
+        "12,000 workers"
       ],
       "correctAnswer": "10,000 workers",
       "explanation": "The report explicitly states the union represents over 10,000 workers.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "What percentage pay increase is the union requesting?",
       "options": [
+        "5.0 percent",
         "2.5 percent",
         "3.0 percent",
-        "4.25 percent",
-        "5.0 percent"
+        "4.25 percent"
       ],
       "correctAnswer": "4.25 percent",
       "explanation": "Union spokesperson Maria Chen states members are seeking a 4.25 percent pay increase.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "When are emergency mediation sessions expected to resume?",
       "options": [
+        "In two days",
         "Tonight",
         "Tomorrow morning",
-        "Next week",
-        "In two days"
+        "Next week"
       ],
       "correctAnswer": "Tomorrow morning",
       "explanation": "City Council has called for emergency mediation sessions to resume tomorrow morning.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What components are included in the local food initiative?",
       "options": [
-        "Grocery stores and restaurants",
         "Farmers market and delivery programs",
         "Government subsidies",
-        "Large distribution centers"
+        "Large distribution centers",
+        "Grocery stores and restaurants"
       ],
       "correctAnswer": "Farmers market and delivery programs",
       "explanation": "The initiative proposes farmers market expansion and direct-to-consumer delivery programs.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What advantage of local food does Dr. Sarah emphasize?",
       "options": [
-        "Lower cost",
-        "Improved freshness and food safety",
         "More variety",
-        "Better storage"
+        "Better storage",
+        "Lower cost",
+        "Improved freshness and food safety"
       ],
       "correctAnswer": "Improved freshness and food safety",
       "explanation": "Reducing transportation improves food safety and nutrition through fresher products.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "How much of his production does James currently sell to farmers market?",
       "options": [
-        "25 percent",
-        "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent",
+        "35 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James currently sells about 40 percent of production to the farmers market.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What infrastructure limitation does James identify?",
       "options": [
-        "Limited land",
         "Transportation issues",
         "Packaging and distribution",
-        "Workforce availability"
+        "Workforce availability",
+        "Limited land"
       ],
       "correctAnswer": "Packaging and distribution",
       "explanation": "James lacks infrastructure for packaging and distribution to expand sales.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "It's too expensive",
-        "It has gone too far in terms of surveillance",
         "It doesn't improve security",
-        "It's ineffective"
+        "It's ineffective",
+        "It's too expensive",
+        "It has gone too far in terms of surveillance"
       ],
       "correctAnswer": "It has gone too far in terms of surveillance",
       "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "According to the speaker, what is the claimed reason for workplace monitoring?",
       "options": [
-        "To reduce wages",
         "To improve productivity and security",
         "To prevent theft",
-        "To track attendance"
+        "To track attendance",
+        "To reduce wages"
       ],
       "correctAnswer": "To improve productivity and security",
       "explanation": "The speaker mentions that companies argue monitoring improves productivity and security.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
+        "It improves communication",
         "It increases productivity",
         "It decreases productivity and morale",
-        "It has no effect",
-        "It improves communication"
+        "It has no effect"
       ],
       "correctAnswer": "It decreases productivity and morale",
       "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What solution does the speaker propose?",
       "options": [
+        "Random monitoring",
         "No monitoring at all",
         "Complete transparency monitoring",
-        "Targeted monitoring only where necessary",
-        "Random monitoring"
+        "Targeted monitoring only where necessary"
       ],
       "correctAnswer": "Targeted monitoring only where necessary",
       "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What do companies with less invasive monitoring report?",
       "options": [
-        "Lower profits",
         "Higher employee satisfaction and retention",
         "More security issues",
-        "Reduced efficiency"
+        "Reduced efficiency",
+        "Lower profits"
       ],
       "correctAnswer": "Higher employee satisfaction and retention",
       "explanation": "The speaker mentions companies with less invasive monitoring report higher satisfaction and retention.",

@@ -620,10 +620,10 @@
       "question": "Why do microplastics pose a hazard beyond the plastic polymer material itself?",
       "prompt": "Why do microplastics pose a hazard beyond the plastic polymer material itself?",
       "options": [
-        "A. They are too small to be detected by current technology.",
         "B. They accumulate persistent organic pollutants and other toxic compounds that can bioaccumulate in organisms.",
         "C. They are resistant to degradation and accumulate only in aquatic ecosystems.",
-        "D. They prevent the development of biodegradable alternatives to conventional plastics."
+        "D. They prevent the development of biodegradable alternatives to conventional plastics.",
+        "A. They are too small to be detected by current technology."
       ],
       "correctAnswer": "B. They accumulate persistent organic pollutants and other toxic compounds that can bioaccumulate in organisms.",
       "explanation": "The passage states: 'Microplastics also accumulate persistent organic pollutants, heavy metals, and other toxic compounds...These contaminants adsorbed onto microplastic surfaces can be transported into organisms and potentially released in tissues, creating a mechanism for bioaccumulation.'",

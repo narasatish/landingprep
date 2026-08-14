@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's account number?",
       "options": [
-        "5834-291-7456",
         "5834-291-7465",
         "5834-192-7465",
-        "5843-291-7465"
+        "5843-291-7465",
+        "5834-291-7456"
       ],
       "correctAnswer": "5834-291-7465",
       "explanation": "Customer provides their account number as '5834-291-7465.'",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "How much money was withdrawn in total?",
       "options": [
-        "$900",
-        "$1,200",
         "$1,500",
-        "$1,800"
+        "$1,800",
+        "$900",
+        "$1,200"
       ],
       "correctAnswer": "$1,800",
       "explanation": "Customer states there are 'four withdrawals totaling $1,800.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "Where were the ATM withdrawals made?",
       "options": [
-        "Montreal",
-        "Bloor Street in Toronto",
         "Downtown Toronto",
-        "The airport"
+        "The airport",
+        "Montreal",
+        "Bloor Street in Toronto"
       ],
       "correctAnswer": "Bloor Street in Toronto",
       "explanation": "Officer states 'These are ATM withdrawals, all from a machine on Bloor Street in Toronto.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "Where is the customer actually located?",
       "options": [
-        "Toronto",
         "Montreal",
         "Ottawa",
-        "Vancouver"
+        "Vancouver",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "Customer confirms 'No, I'm in Montreal. I haven't been to Toronto in months.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "How long will it take to see the credit for the unauthorized transactions?",
       "options": [
-        "1 to 2 business days",
         "3 to 5 business days",
         "5 to 7 business days",
-        "10 to 14 business days"
+        "10 to 14 business days",
+        "1 to 2 business days"
       ],
       "correctAnswer": "5 to 7 business days",
       "explanation": "Officer states 'You should see a credit back within 5 to 7 business days.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What is being mailed to the customer?",
       "options": [
+        "A fraud report",
         "A new PIN",
         "A new debit card",
-        "Account statements",
-        "A fraud report"
+        "Account statements"
       ],
       "correctAnswer": "A new debit card",
       "explanation": "Officer states 'We'll mail you a new debit card as a precaution.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What immediate action is recommended for online banking?",
       "options": [
+        "Disable online banking",
         "Contact the bank branch",
         "Close the account",
-        "Change your online banking password right away",
-        "Disable online banking"
+        "Change your online banking password right away"
       ],
       "correctAnswer": "Change your online banking password right away",
       "explanation": "Officer states 'I'm also recommending you change your online banking password right away.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has it been since Sarah and Michael last saw each other?",
       "options": [
-        "Two months",
-        "Four months",
         "Six months",
-        "A year"
+        "A year",
+        "Two months",
+        "Four months"
       ],
       "correctAnswer": "Six months",
       "explanation": "Michael says 'Must be like six months since we last hung out' and Sarah agrees.",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "Where did Michael travel?",
       "options": [
-        "Toronto",
         "Montreal",
         "Vancouver",
-        "Calgary"
+        "Calgary",
+        "Toronto"
       ],
       "correctAnswer": "Vancouver",
       "explanation": "Sarah asks 'How was your trip to Vancouver?' confirming Michael's destination.",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "What type of restaurant does Sarah suggest?",
       "options": [
-        "Mexican",
-        "Italian",
         "Japanese",
-        "Indian"
+        "Indian",
+        "Mexican",
+        "Italian"
       ],
       "correctAnswer": "Italian",
       "explanation": "Sarah mentions 'that new Italian place downtown.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What day do they plan to meet?",
       "options": [
-        "Tuesday",
-        "Wednesday",
         "Thursday",
-        "Friday"
+        "Friday",
+        "Tuesday",
+        "Wednesday"
       ],
       "correctAnswer": "Thursday",
       "explanation": "Michael suggests 'Thursday' and Sarah confirms 'Thursday works for me.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "Where should you get your student photo ID?",
       "options": [
-        "The Student Centre",
-        "The Services Office",
         "The IT support desk",
-        "Student Health Services"
+        "Student Health Services",
+        "The Student Centre",
+        "The Services Office"
       ],
       "correctAnswer": "The Services Office",
       "explanation": "The guide states 'get your student photo ID taken at the Services Office.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What are the hours for photo ID service?",
       "options": [
-        "8 AM to 5 PM",
         "9 AM to 4 PM",
         "10 AM to 3 PM",
-        "8 AM to 6 PM"
+        "8 AM to 6 PM",
+        "8 AM to 5 PM"
       ],
       "correctAnswer": "9 AM to 4 PM",
       "explanation": "The guide mentions 'between 9 and 4 on any day this week.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the estimated budget for books and materials?",
       "options": [
-        "One hundred dollars",
         "Two hundred dollars",
         "Three hundred dollars",
-        "Four hundred dollars"
+        "Four hundred dollars",
+        "One hundred dollars"
       ],
       "correctAnswer": "Three hundred dollars",
       "explanation": "The guide states 'budget about three hundred dollars for books and materials.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "When is the Welcome Social?",
       "options": [
+        "Sunday afternoon",
         "Thursday evening",
         "Friday evening",
-        "Saturday afternoon",
-        "Sunday afternoon"
+        "Saturday afternoon"
       ],
       "correctAnswer": "Friday evening",
       "explanation": "The guide mentions 'The Welcome Social on Friday evening in the gymnasium.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the total investment in transit modernization?",
       "options": [
+        "500 million dollars",
         "350 million dollars",
         "400 million dollars",
-        "450 million dollars",
-        "500 million dollars"
+        "450 million dollars"
       ],
       "correctAnswer": "450 million dollars",
       "explanation": "The city has approved a 450 million dollar investment.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How many new electric buses will be purchased?",
       "options": [
-        "200 buses",
-        "250 buses",
         "300 buses",
-        "350 buses"
+        "350 buses",
+        "200 buses",
+        "250 buses"
       ],
       "correctAnswer": "300 buses",
       "explanation": "The city plans to purchase 300 new electric buses.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many tonnes of carbon emissions will be eliminated annually?",
       "options": [
-        "6,500 tonnes",
         "7,500 tonnes",
         "8,500 tonnes",
-        "9,500 tonnes"
+        "9,500 tonnes",
+        "6,500 tonnes"
       ],
       "correctAnswer": "8,500 tonnes",
       "explanation": "The transition will eliminate approximately 8,500 tonnes of annual carbon emissions.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How many new transit stations will be built?",
       "options": [
+        "15 stations",
         "8 stations",
         "10 stations",
-        "12 stations",
-        "15 stations"
+        "12 stations"
       ],
       "correctAnswer": "12 stations",
       "explanation": "The project includes construction of 12 new transit stations.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the cost of the engineering program expansion?",
       "options": [
-        "1.8 million dollars",
-        "2.0 million dollars",
         "2.4 million dollars",
-        "2.8 million dollars"
+        "2.8 million dollars",
+        "1.8 million dollars",
+        "2.0 million dollars"
       ],
       "correctAnswer": "2.4 million dollars",
       "explanation": "The cost would be approximately 2.4 million dollars over two years.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "How many potential students did the university lose last year?",
       "options": [
-        "100 students",
         "125 students",
         "150 students",
-        "175 students"
+        "175 students",
+        "100 students"
       ],
       "correctAnswer": "150 students",
       "explanation": "Professor Elena mentions they lost 150 potential engineering students.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "Why are some students not enrolling at this university?",
       "options": [
+        "Bad location",
         "Poor faculty",
         "Weak renewable energy program options",
-        "High tuition fees",
-        "Bad location"
+        "High tuition fees"
       ],
       "correctAnswer": "Weak renewable energy program options",
       "explanation": "They're losing students to competing universities with stronger renewable energy options.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What does Diana believe about tuition revenue from additional students?",
       "options": [
-        "It will decrease overall costs",
-        "It would exceed expansion costs within three years",
         "It wouldn't help the budget",
-        "It takes longer than expected"
+        "It takes longer than expected",
+        "It will decrease overall costs",
+        "It would exceed expansion costs within three years"
       ],
       "correctAnswer": "It would exceed expansion costs within three years",
       "explanation": "Diana states tuition revenue from 200 additional students would exceed expansion costs within three years.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What type of partnership does Diana mention exploring?",
       "options": [
-        "International universities",
-        "Government agencies",
         "Renewable energy companies",
-        "Tech startups"
+        "Tech startups",
+        "International universities",
+        "Government agencies"
       ],
       "correctAnswer": "Renewable energy companies",
       "explanation": "Diana mentions conversations with renewable energy companies about funding contributions.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What would companies receive in exchange for supporting the program?",
       "options": [
-        "University branding",
         "Free equipment",
         "Access to graduates for recruitment",
-        "Research funding"
+        "Research funding",
+        "University branding"
       ],
       "correctAnswer": "Access to graduates for recruitment",
       "explanation": "Companies want access to graduates for recruitment in exchange for contributions.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What specific position does Professor Elena hold on the expansion?",
       "options": [
-        "She opposes it",
-        "She strongly supports it",
         "She wants to wait",
-        "She's uncertain"
+        "She's uncertain",
+        "She opposes it",
+        "She strongly supports it"
       ],
       "correctAnswer": "She strongly supports it",
       "explanation": "Elena argues the university is losing enrollment without this program and needs to expand now.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "They're not programmed correctly",
         "They're trained on historical data that includes human bias",
         "They lack computing power",
-        "They're intentionally designed to discriminate"
+        "They're intentionally designed to discriminate",
+        "They're not programmed correctly"
       ],
       "correctAnswer": "They're trained on historical data that includes human bias",
       "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What was the issue with Google's recruiting algorithm?",
       "options": [
+        "It was too expensive",
         "It was too strict",
         "It showed bias against applicants from historically black colleges",
-        "It wasn't identifying talent",
-        "It was too expensive"
+        "It wasn't identifying talent"
       ],
       "correctAnswer": "It showed bias against applicants from historically black colleges",
       "explanation": "Google's algorithm showed bias against applicants from historically black colleges.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What key point does the speaker make about data?",
       "options": [
-        "Data is always objective",
-        "Data is never neutral and includes bias",
         "Data should never be used in hiring",
-        "Data is a recent invention"
+        "Data is a recent invention",
+        "Data is always objective",
+        "Data is never neutral and includes bias"
       ],
       "correctAnswer": "Data is never neutral and includes bias",
       "explanation": "The speaker argues data is never neutral and carries historical bias.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
-        "Use them immediately",
-        "Train employees on algorithms",
         "Conduct rigorous bias testing and external auditing",
-        "Ignore algorithm concerns"
+        "Ignore algorithm concerns",
+        "Use them immediately",
+        "Train employees on algorithms"
       ],
       "correctAnswer": "Conduct rigorous bias testing and external auditing",
       "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",

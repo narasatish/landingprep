@@ -425,10 +425,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "According to the protocol, within what timeframe should mental health screening be completed in the ED?",
       "options": [
-        "Within 30 minutes",
-        "Within two hours",
         "Within one hour",
-        "Within four hours"
+        "Within four hours",
+        "Within 30 minutes",
+        "Within two hours"
       ],
       "correctAnswer": "Within one hour",
       "explanation": "The protocol explicitly states screening must occur within one hour of arrival.",
@@ -443,10 +443,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What observation protocol is required for patients expressing suicidal intent?",
       "options": [
+        "Standard nursing observations",
         "Continuous one-to-one observation",
         "General ward observation",
-        "Hourly checks",
-        "Standard nursing observations"
+        "Hourly checks"
       ],
       "correctAnswer": "Continuous one-to-one observation",
       "explanation": "The protocol states patients expressing suicidal intent must be placed under continuous one-to-one observation.",
@@ -479,10 +479,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How many identifiers must be used to verify patient identity before transfusion?",
       "options": [
-        "Two identifiers",
         "One identifier",
         "Three identifiers",
-        "Four identifiers"
+        "Four identifiers",
+        "Two identifiers"
       ],
       "correctAnswer": "Two identifiers",
       "explanation": "The checklist explicitly requires patient identity to be verified using two identifiers.",
@@ -497,10 +497,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What should be done if an adverse reaction occurs during transfusion?",
       "options": [
-        "Continue transfusion and monitor closely",
         "Stop transfusion immediately and inform the physician",
         "Slow the infusion rate",
-        "Administer antihistamines"
+        "Administer antihistamines",
+        "Continue transfusion and monitor closely"
       ],
       "correctAnswer": "Stop transfusion immediately and inform the physician",
       "explanation": "The checklist states to stop transfusion immediately and inform the physician if reaction occurs.",
@@ -515,10 +515,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What should be included in mental health assessments?",
       "options": [
+        "Medical history only",
         "Patient quotes where possible for documentation",
         "Only mood ratings",
-        "Only vital signs",
-        "Medical history only"
+        "Only vital signs"
       ],
       "correctAnswer": "Patient quotes where possible for documentation",
       "explanation": "The protocol requires thorough documentation with patient quotes where possible.",
@@ -551,10 +551,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What does the Braden Scale assess?",
       "options": [
+        "Infection risk only",
         "Patient age and weight",
         "Only skin colour",
-        "Sensory perception, moisture, activity, mobility, nutrition, and friction",
-        "Infection risk only"
+        "Sensory perception, moisture, activity, mobility, nutrition, and friction"
       ],
       "correctAnswer": "Sensory perception, moisture, activity, mobility, nutrition, and friction",
       "explanation": "The passage lists these six factors assessed by the Braden Scale.",
@@ -569,10 +569,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What characterises a Stage 2 pressure injury?",
       "options": [
-        "Non-blanching redness only",
-        "Full-thickness skin loss",
         "Partial-thickness skin loss with a pink wound bed",
-        "Tissue necrosis"
+        "Tissue necrosis",
+        "Non-blanching redness only",
+        "Full-thickness skin loss"
       ],
       "correctAnswer": "Partial-thickness skin loss with a pink wound bed",
       "explanation": "The passage describes Stage 2 as partial-thickness skin loss with a pink wound bed.",
@@ -587,10 +587,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How often should high-risk patients be repositioned?",
       "options": [
-        "Every 4 hours",
         "Every 3 hours",
         "Every 2 hours",
-        "Every 6 hours"
+        "Every 6 hours",
+        "Every 4 hours"
       ],
       "correctAnswer": "Every 2 hours",
       "explanation": "The passage states regular repositioning should occur every two hours for high-risk patients.",
@@ -623,10 +623,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which are recognised symptoms of hypoglycaemia mentioned in the passage?",
       "options": [
+        "Primarily numbness in extremities",
         "Only slow heartbeat",
         "Only excessive thirst",
-        "Tremor, sweating, and confusion",
-        "Primarily numbness in extremities"
+        "Tremor, sweating, and confusion"
       ],
       "correctAnswer": "Tremor, sweating, and confusion",
       "explanation": "The passage lists tremor, sweating, and confusion as hypoglycaemic symptoms.",
@@ -641,10 +641,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "How frequently should insulin users test their blood glucose?",
       "options": [
-        "Twice daily",
-        "Three times daily",
         "Four times daily",
-        "Once daily"
+        "Once daily",
+        "Twice daily",
+        "Three times daily"
       ],
       "correctAnswer": "Four times daily",
       "explanation": "The passage states that insulin users should test four times daily.",
@@ -659,10 +659,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Why is it important to rotate insulin injection sites?",
       "options": [
-        "To reduce pain",
         "To improve absorption",
         "To prevent lipodystrophy",
-        "To reduce bruising"
+        "To reduce bruising",
+        "To reduce pain"
       ],
       "correctAnswer": "To prevent lipodystrophy",
       "explanation": "The passage states that rotation of injection sites prevents lipodystrophy.",
@@ -695,10 +695,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "Which is NOT mentioned as part of annual complications screening?",
       "options": [
-        "Eye assessment for retinopathy",
-        "Liver function testing",
         "Monofilament testing for neuropathy",
-        "Urine albumin testing"
+        "Urine albumin testing",
+        "Eye assessment for retinopathy",
+        "Liver function testing"
       ],
       "correctAnswer": "Liver function testing",
       "explanation": "The passage mentions retinopathy, nephropathy, and neuropathy screening, but not liver testing.",
@@ -731,10 +731,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What characterises a Stage 1 pressure injury?",
       "options": [
+        "Visible muscle involvement",
         "Non-blanching redness over a bony prominence",
         "Partial-thickness skin loss",
-        "Full-thickness skin loss",
-        "Visible muscle involvement"
+        "Full-thickness skin loss"
       ],
       "correctAnswer": "Non-blanching redness over a bony prominence",
       "explanation": "The passage describes Stage 1 as non-blanching redness over a bony prominence.",
@@ -749,10 +749,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What is involved in a Stage 4 pressure injury?",
       "options": [
-        "Tissue necrosis",
-        "Partial skin loss",
         "Redness only",
-        "Superficial blistering"
+        "Superficial blistering",
+        "Tissue necrosis",
+        "Partial skin loss"
       ],
       "correctAnswer": "Tissue necrosis",
       "explanation": "The passage states Stage 4 involves tissue necrosis.",
@@ -767,10 +767,10 @@
       "questionType": "multiple_choice_single",
       "prompt": "What type of dietary advice is recommended in diabetes education?",
       "options": [
-        "Carbohydrate awareness, portion control, and regular meal timing",
         "Restrictive dieting only",
         "No dietary intervention needed",
-        "Only sugar elimination"
+        "Only sugar elimination",
+        "Carbohydrate awareness, portion control, and regular meal timing"
       ],
       "correctAnswer": "Carbohydrate awareness, portion control, and regular meal timing",
       "explanation": "The passage recommends focus on carbohydrate awareness, portion control, and regular timing.",

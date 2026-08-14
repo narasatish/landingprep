@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's phone number?",
       "options": [
-        "416-555-0243",
         "416-555-0234",
         "416-555-0342",
-        "416-555-0423"
+        "416-555-0423",
+        "416-555-0243"
       ],
       "correctAnswer": "416-555-0234",
       "explanation": "Customer provides their phone number as '416-555-0234.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What is the cost of the current plan?",
       "options": [
+        "$55 per month",
         "$25 per month",
         "$35 per month",
-        "$45 per month",
-        "$55 per month"
+        "$45 per month"
       ],
       "correctAnswer": "$35 per month",
       "explanation": "Support confirms 'your basic plan is 2 GB per month at $35.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "How many calling minutes does the customer's current plan have?",
       "options": [
+        "Unlimited",
         "100 minutes",
         "150 minutes",
-        "200 minutes",
-        "Unlimited"
+        "200 minutes"
       ],
       "correctAnswer": "200 minutes",
       "explanation": "Support states 'Your current plan has 200 minutes.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What data plan does the customer ultimately choose?",
       "options": [
-        "5 GB plan",
         "8 GB plan",
         "10 GB plan",
-        "15 GB plan"
+        "15 GB plan",
+        "5 GB plan"
       ],
       "correctAnswer": "8 GB plan",
       "explanation": "Customer asks 'do you have an 8 GB plan?' and accepts it, stating 'Perfect, I'll take that.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "When does the new plan take effect on the bill?",
       "options": [
-        "June 15th",
         "June 22nd",
         "July 1st",
-        "July 8th"
+        "July 8th",
+        "June 15th"
       ],
       "correctAnswer": "July 8th",
       "explanation": "Support states 'Your bill will reflect the change next billing cycle, which is on July 8th.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has it been since Sarah and Michael last saw each other?",
       "options": [
-        "Two months",
-        "Four months",
         "Six months",
-        "A year"
+        "A year",
+        "Two months",
+        "Four months"
       ],
       "correctAnswer": "Six months",
       "explanation": "Michael says 'Must be like six months since we last hung out' and Sarah agrees.",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "Where did Michael travel?",
       "options": [
-        "Toronto",
         "Montreal",
         "Vancouver",
-        "Calgary"
+        "Calgary",
+        "Toronto"
       ],
       "correctAnswer": "Vancouver",
       "explanation": "Sarah asks 'How was your trip to Vancouver?' confirming Michael's destination.",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "What type of restaurant does Sarah suggest?",
       "options": [
-        "Mexican",
-        "Italian",
         "Japanese",
-        "Indian"
+        "Indian",
+        "Mexican",
+        "Italian"
       ],
       "correctAnswer": "Italian",
       "explanation": "Sarah mentions 'that new Italian place downtown.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What day do they plan to meet?",
       "options": [
-        "Tuesday",
-        "Wednesday",
         "Thursday",
-        "Friday"
+        "Friday",
+        "Tuesday",
+        "Wednesday"
       ],
       "correctAnswer": "Thursday",
       "explanation": "Michael suggests 'Thursday' and Sarah confirms 'Thursday works for me.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "When does Route 95 begin service?",
       "options": [
-        "August 1st",
         "August 15th",
         "September 1st",
-        "September 15th"
+        "September 15th",
+        "August 1st"
       ],
       "correctAnswer": "September 1st",
       "explanation": "The announcement states 'The new Route 95 Express connects downtown to the northern suburbs' effective 'September 1st.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "What is the frequency of peak hour service?",
       "options": [
+        "Every 30 minutes",
         "Every 10 minutes",
         "Every 15 minutes",
-        "Every 20 minutes",
-        "Every 30 minutes"
+        "Every 20 minutes"
       ],
       "correctAnswer": "Every 15 minutes",
       "explanation": "The guide specifies 'departures every fifteen minutes during peak hours.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "How much travel time is saved with Route 95?",
       "options": [
+        "30 minutes",
         "15 minutes",
         "20 minutes",
-        "23 minutes",
-        "30 minutes"
+        "23 minutes"
       ],
       "correctAnswer": "23 minutes",
       "explanation": "The guide states travel time reduces 'from forty-five minutes to approximately twenty-two minutes,' which is approximately 23 minutes saved.",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the cost of a single trip?",
       "options": [
-        "$2.50",
-        "$3.00",
         "$3.50",
-        "$4.00"
+        "$4.00",
+        "$2.50",
+        "$3.00"
       ],
       "correctAnswer": "$3.50",
       "explanation": "The guide states 'single trip is three dollars fifty cents.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the monthly pass cost?",
       "options": [
-        "$75",
         "$80",
         "$90",
-        "$100"
+        "$100",
+        "$75"
       ],
       "correctAnswer": "$90",
       "explanation": "The guide specifies 'a monthly pass is ninety dollars.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How many active fires are currently being responded to?",
       "options": [
+        "140 fires",
         "100 fires",
         "115 fires",
-        "127 fires",
-        "140 fires"
+        "127 fires"
       ],
       "correctAnswer": "127 fires",
       "explanation": "Crews have already responded to 127 active fires across the province.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "Why is the fire season starting early this year?",
       "options": [
-        "Increased lightning activity",
         "Unusually warm and dry spring",
         "Poor fire prevention policies",
-        "Higher temperatures in August"
+        "Higher temperatures in August",
+        "Increased lightning activity"
       ],
       "correctAnswer": "Unusually warm and dry spring",
       "explanation": "The unusually warm and dry spring is blamed for the early start.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many hectares were burned during last summer's fire season?",
       "options": [
-        "1.8 million hectares",
         "2.0 million hectares",
         "2.4 million hectares",
-        "2.8 million hectares"
+        "2.8 million hectares",
+        "1.8 million hectares"
       ],
       "correctAnswer": "2.4 million hectares",
       "explanation": "Over 2.4 million hectares were burned during last summer's worst fire season on record.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How many new helicopters are being deployed?",
       "options": [
+        "Seven helicopters",
         "Three helicopters",
         "Four helicopters",
-        "Five helicopters",
-        "Seven helicopters"
+        "Five helicopters"
       ],
       "correctAnswer": "Five helicopters",
       "explanation": "Five new helicopters equipped with water-dropping technology are being deployed.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "How many workplace injuries were reported this year?",
       "options": [
-        "25 injuries",
-        "29 injuries",
         "34 injuries",
-        "39 injuries"
+        "39 injuries",
+        "25 injuries",
+        "29 injuries"
       ],
       "correctAnswer": "34 injuries",
       "explanation": "Tom reports 34 workplace injuries this year.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What is the percentage increase in injuries from last year?",
       "options": [
-        "10 percent",
         "12 percent",
         "15 percent",
-        "18 percent"
+        "18 percent",
+        "10 percent"
       ],
       "correctAnswer": "15 percent",
       "explanation": "The number of injuries is up 15 percent from last year.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What type of incident accounts for most injuries?",
       "options": [
+        "Back injuries from lifting",
         "Equipment failures",
         "Slips, trips, and falls",
-        "Chemical exposure",
-        "Back injuries from lifting"
+        "Chemical exposure"
       ],
       "correctAnswer": "Slips, trips, and falls",
       "explanation": "Most incidents are slips, trips, and falls in warehouse areas.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What is Tom's proposed safety training frequency?",
       "options": [
-        "Quarterly",
-        "Twice yearly",
         "Annually",
-        "Every two years"
+        "Every two years",
+        "Quarterly",
+        "Twice yearly"
       ],
       "correctAnswer": "Twice yearly",
       "explanation": "Tom proposes mandatory training every six months, not annually.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What is David's main concern about the training proposal?",
       "options": [
-        "Training effectiveness",
-        "Cost of training",
         "Time away from work affecting productivity",
-        "Staff availability"
+        "Staff availability",
+        "Training effectiveness",
+        "Cost of training"
       ],
       "correctAnswer": "Time away from work affecting productivity",
       "explanation": "David worries that frequent training time away will affect productivity.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What additional benefit does Angela mention about training?",
       "options": [
-        "Increased wages",
-        "Improved morale",
         "Reduced hours",
-        "Better equipment"
+        "Better equipment",
+        "Increased wages",
+        "Improved morale"
       ],
       "correctAnswer": "Improved morale",
       "explanation": "Angela believes regular training improves morale because workers feel the company cares.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What causes is the speaker attributing to forced migration?",
       "options": [
-        "Economic opportunity",
         "Rising sea levels, extreme weather, and changing precipitation",
         "Political conflicts",
-        "Educational opportunities"
+        "Educational opportunities",
+        "Economic opportunity"
       ],
       "correctAnswer": "Rising sea levels, extreme weather, and changing precipitation",
       "explanation": "The speaker identifies these climate factors as forcing migration.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "What examples does the speaker provide of current migration impacts?",
       "options": [
-        "Agricultural improvements",
         "Reduced urbanization",
         "Small island nations disappearing and coastal flooding",
-        "Increased employment"
+        "Increased employment",
+        "Agricultural improvements"
       ],
       "correctAnswer": "Small island nations disappearing and coastal flooding",
       "explanation": "The speaker cites disappearing island nations and increased coastal flooding as current impacts.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What consequences does the speaker warn about with unplanned migration?",
       "options": [
+        "Better job opportunities",
         "Economic growth",
         "Overcrowded cities, slums, and resource conflicts",
-        "Improved infrastructure",
-        "Better job opportunities"
+        "Improved infrastructure"
       ],
       "correctAnswer": "Overcrowded cities, slums, and resource conflicts",
       "explanation": "The speaker warns that unplanned migration creates overcrowding, slums, and conflicts.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "Which regions does the speaker believe will become more desirable?",
       "options": [
+        "Coastal areas",
         "Equatorial regions",
         "Small island nations",
-        "Canada and northern regions",
-        "Coastal areas"
+        "Canada and northern regions"
       ],
       "correctAnswer": "Canada and northern regions",
       "explanation": "The speaker states Canada and northern regions will likely become more desirable.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate for regarding climate-safe regions?",
       "options": [
-        "Restricting population growth",
         "Expanding housing, infrastructure, and economic capacity",
         "Limiting migration",
-        "Maintaining current conditions"
+        "Maintaining current conditions",
+        "Restricting population growth"
       ],
       "correctAnswer": "Expanding housing, infrastructure, and economic capacity",
       "explanation": "The speaker advocates proactively expanding housing, infrastructure, and economic capacity.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What is the speaker's main position on climate migration?",
       "options": [
-        "It won't happen",
         "It should be stopped",
         "It's inevitable and should be managed responsibly",
-        "It's not a real problem"
+        "It's not a real problem",
+        "It won't happen"
       ],
       "correctAnswer": "It's inevitable and should be managed responsibly",
       "explanation": "The speaker argues migration is inevitable and emphasizes the need for responsible planning.",

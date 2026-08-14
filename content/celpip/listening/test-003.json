@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "From which city did the passenger fly?",
       "options": [
-        "Calgary",
         "Vancouver",
         "Edmonton",
-        "Toronto"
+        "Toronto",
+        "Calgary"
       ],
       "correctAnswer": "Vancouver",
       "explanation": "Passenger states 'my baggage didn't arrive on my flight from Vancouver.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What color is the passenger's luggage?",
       "options": [
+        "Red Samsonite roller",
         "Blue Samsonite roller",
         "Black Samsonite roller",
-        "Black leather bag",
-        "Red Samsonite roller"
+        "Black leather bag"
       ],
       "correctAnswer": "Black Samsonite roller",
       "explanation": "Agent confirms 'Your bag is a black Samsonite roller, correct?' and passenger agrees.",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "Where was the bag mistakenly sent?",
       "options": [
+        "Montreal",
         "Vancouver",
         "Toronto",
-        "Edmonton",
-        "Montreal"
+        "Edmonton"
       ],
       "correctAnswer": "Edmonton",
       "explanation": "Agent explains the bag 'was misrouted to Edmonton by mistake.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When does the return flight arrive in Calgary?",
       "options": [
-        "4:15 PM",
-        "5:15 PM",
         "6:15 PM",
-        "7:15 PM"
+        "7:15 PM",
+        "4:15 PM",
+        "5:15 PM"
       ],
       "correctAnswer": "6:15 PM",
       "explanation": "Agent states 'It's on the next flight back to Calgary, which arrives at 6:15 PM tonight.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "By what time will the bag be delivered to the hotel?",
       "options": [
-        "6:00 PM",
         "7:00 PM",
         "8:00 PM",
-        "9:00 PM"
+        "9:00 PM",
+        "6:00 PM"
       ],
       "correctAnswer": "8:00 PM",
       "explanation": "Agent promises 'we'll have it delivered to your hotel by 8 PM.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "Which hotel is the passenger staying at?",
       "options": [
+        "The Shangri-La",
         "The Sandman Calgary",
         "The Fairmont Palliser",
-        "The Bow Tower",
-        "The Shangri-La"
+        "The Bow Tower"
       ],
       "correctAnswer": "The Fairmont Palliser",
       "explanation": "Passenger states they're staying at 'The Fairmont Palliser downtown.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What compensation is offered for the baggage delay?",
       "options": [
+        "$75 travel voucher",
         "$25 travel voucher",
         "$35 travel voucher",
-        "$50 travel voucher",
-        "$75 travel voucher"
+        "$50 travel voucher"
       ],
       "correctAnswer": "$50 travel voucher",
       "explanation": "Agent offers 'a $50 travel voucher for your next flight with us.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "What is the title of the book being discussed?",
       "options": [
-        "The Hidden Case",
-        "The Silent Detective",
         "The Silent Case",
-        "The Missing Detective"
+        "The Missing Detective",
+        "The Hidden Case",
+        "The Silent Detective"
       ],
       "correctAnswer": "The Silent Case",
       "explanation": "Liam identifies the book as 'The Silent Case.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "Where is the detective in the novel?",
       "options": [
-        "Toronto",
         "Vancouver",
         "Montreal",
-        "Calgary"
+        "Calgary",
+        "Toronto"
       ],
       "correctAnswer": "Montreal",
       "explanation": "Emma describes it as 'the mystery novel' about 'the detective in Montreal.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "What award did the book win?",
       "options": [
+        "The Atwood Prize",
         "The Giller Prize",
         "The Governor General's Award",
-        "The Scotiabank Prize",
-        "The Atwood Prize"
+        "The Scotiabank Prize"
       ],
       "correctAnswer": "The Governor General's Award",
       "explanation": "Emma states it 'won the Governor General's Award last year.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "How long did Emma wait for the book from the library?",
       "options": [
+        "Six months",
         "One month",
         "Two months",
-        "Three months",
-        "Six months"
+        "Three months"
       ],
       "correctAnswer": "Three months",
       "explanation": "Emma states 'I put a hold on it three months ago.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How long will Liam have to wait for the book?",
       "options": [
-        "Two to three weeks",
-        "Three to four weeks",
         "Four to six weeks",
-        "Eight to ten weeks"
+        "Eight to ten weeks",
+        "Two to three weeks",
+        "Three to four weeks"
       ],
       "correctAnswer": "Four to six weeks",
       "explanation": "Emma estimates 'You should get it in maybe four to six weeks.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What should NOT be used during evacuation?",
       "options": [
-        "Stairs",
         "Emergency exits",
         "Elevators",
-        "Hallways"
+        "Hallways",
+        "Stairs"
       ],
       "correctAnswer": "Elevators",
       "explanation": "The training explicitly states 'Do not use elevators under any circumstances.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "Where is the designated assembly point?",
       "options": [
+        "The rooftop",
         "The main lobby",
         "The parking lot north of the building",
-        "The south entrance",
-        "The rooftop"
+        "The south entrance"
       ],
       "correctAnswer": "The parking lot north of the building",
       "explanation": "The guide specifies 'the designated assembly point in the parking lot north of the building.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "How often are fire drills conducted?",
       "options": [
+        "Annually",
         "Monthly",
         "Bi-monthly",
-        "Quarterly",
-        "Annually"
+        "Quarterly"
       ],
       "correctAnswer": "Quarterly",
       "explanation": "The training states 'Fire drills occur quarterly on the first Friday of March, June, September, and December.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "At what time are fire drills held?",
       "options": [
-        "10 AM",
-        "1 PM",
         "2 PM",
-        "3 PM"
+        "3 PM",
+        "10 AM",
+        "1 PM"
       ],
       "correctAnswer": "2 PM",
       "explanation": "The guide specifies drills are 'at 2 PM.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "How frequently are fire extinguishers located along hallways?",
       "options": [
-        "Every 10 meters",
         "Every 15 meters",
         "Every 25 meters",
-        "Every 50 meters"
+        "Every 50 meters",
+        "Every 10 meters"
       ],
       "correctAnswer": "Every 25 meters",
       "explanation": "The training states 'Fire extinguishers are located every twenty-five meters along hallways.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How many active fires are currently being responded to?",
       "options": [
+        "140 fires",
         "100 fires",
         "115 fires",
-        "127 fires",
-        "140 fires"
+        "127 fires"
       ],
       "correctAnswer": "127 fires",
       "explanation": "Crews have already responded to 127 active fires across the province.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "Why is the fire season starting early this year?",
       "options": [
-        "Increased lightning activity",
         "Unusually warm and dry spring",
         "Poor fire prevention policies",
-        "Higher temperatures in August"
+        "Higher temperatures in August",
+        "Increased lightning activity"
       ],
       "correctAnswer": "Unusually warm and dry spring",
       "explanation": "The unusually warm and dry spring is blamed for the early start.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "How many hectares were burned during last summer's fire season?",
       "options": [
-        "1.8 million hectares",
         "2.0 million hectares",
         "2.4 million hectares",
-        "2.8 million hectares"
+        "2.8 million hectares",
+        "1.8 million hectares"
       ],
       "correctAnswer": "2.4 million hectares",
       "explanation": "Over 2.4 million hectares were burned during last summer's worst fire season on record.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "How many new helicopters are being deployed?",
       "options": [
+        "Seven helicopters",
         "Three helicopters",
         "Four helicopters",
-        "Five helicopters",
-        "Seven helicopters"
+        "Five helicopters"
       ],
       "correctAnswer": "Five helicopters",
       "explanation": "Five new helicopters equipped with water-dropping technology are being deployed.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "How many small business loans has the bank approved this year?",
       "options": [
-        "250 loans",
-        "270 loans",
         "285 loans",
-        "300 loans"
+        "300 loans",
+        "250 loans",
+        "270 loans"
       ],
       "correctAnswer": "285 loans",
       "explanation": "The bank has approved 285 loans this year.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What is the total amount of loans approved?",
       "options": [
-        "35 million dollars",
         "39 million dollars",
         "42 million dollars",
-        "48 million dollars"
+        "48 million dollars",
+        "35 million dollars"
       ],
       "correctAnswer": "42 million dollars",
       "explanation": "The loans approved total 42 million dollars.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "Why does Lisa oppose tightening lending criteria?",
       "options": [
-        "It's too expensive",
-        "It would exclude new entrepreneurs",
         "It would reduce profitability",
-        "It would increase default rates"
+        "It would increase default rates",
+        "It's too expensive",
+        "It would exclude new entrepreneurs"
       ],
       "correctAnswer": "It would exclude new entrepreneurs",
       "explanation": "Lisa warns that stricter criteria would only serve well-established businesses, defeating the purpose.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What challenge did Marcus face when starting his business?",
       "options": [
-        "Lack of experience",
-        "No customers",
         "Banks wouldn't lend to him",
-        "High interest rates"
+        "High interest rates",
+        "Lack of experience",
+        "No customers"
       ],
       "correctAnswer": "Banks wouldn't lend to him",
       "explanation": "Marcus says traditional banks wouldn't lend because he lacked assets and track record.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "How many people does Marcus's restaurant currently employ?",
       "options": [
-        "8 people",
         "10 people",
         "12 people",
-        "15 people"
+        "15 people",
+        "8 people"
       ],
       "correctAnswer": "12 people",
       "explanation": "Marcus's restaurant now employs 12 people.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What alternative solution does Marcus propose?",
       "options": [
+        "No collateral requirements",
         "Lower interest rates",
         "Mentorship and financial coaching programs",
-        "Shorter loan terms",
-        "No collateral requirements"
+        "Shorter loan terms"
       ],
       "correctAnswer": "Mentorship and financial coaching programs",
       "explanation": "Marcus suggests focus on better support systems like mentorship and financial coaching after lending.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "Who does Chris propose to partner with for business support?",
       "options": [
+        "Large corporations",
         "Universities",
         "Government agencies",
-        "Business development organizations",
-        "Large corporations"
+        "Business development organizations"
       ],
       "correctAnswer": "Business development organizations",
       "explanation": "Chris proposes partnering with business development organizations for mentoring and training.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What causes is the speaker attributing to forced migration?",
       "options": [
-        "Economic opportunity",
         "Rising sea levels, extreme weather, and changing precipitation",
         "Political conflicts",
-        "Educational opportunities"
+        "Educational opportunities",
+        "Economic opportunity"
       ],
       "correctAnswer": "Rising sea levels, extreme weather, and changing precipitation",
       "explanation": "The speaker identifies these climate factors as forcing migration.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "What examples does the speaker provide of current migration impacts?",
       "options": [
-        "Agricultural improvements",
         "Reduced urbanization",
         "Small island nations disappearing and coastal flooding",
-        "Increased employment"
+        "Increased employment",
+        "Agricultural improvements"
       ],
       "correctAnswer": "Small island nations disappearing and coastal flooding",
       "explanation": "The speaker cites disappearing island nations and increased coastal flooding as current impacts.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What consequences does the speaker warn about with unplanned migration?",
       "options": [
+        "Better job opportunities",
         "Economic growth",
         "Overcrowded cities, slums, and resource conflicts",
-        "Improved infrastructure",
-        "Better job opportunities"
+        "Improved infrastructure"
       ],
       "correctAnswer": "Overcrowded cities, slums, and resource conflicts",
       "explanation": "The speaker warns that unplanned migration creates overcrowding, slums, and conflicts.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "Which regions does the speaker believe will become more desirable?",
       "options": [
+        "Coastal areas",
         "Equatorial regions",
         "Small island nations",
-        "Canada and northern regions",
-        "Coastal areas"
+        "Canada and northern regions"
       ],
       "correctAnswer": "Canada and northern regions",
       "explanation": "The speaker states Canada and northern regions will likely become more desirable.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate for regarding climate-safe regions?",
       "options": [
-        "Restricting population growth",
         "Expanding housing, infrastructure, and economic capacity",
         "Limiting migration",
-        "Maintaining current conditions"
+        "Maintaining current conditions",
+        "Restricting population growth"
       ],
       "correctAnswer": "Expanding housing, infrastructure, and economic capacity",
       "explanation": "The speaker advocates proactively expanding housing, infrastructure, and economic capacity.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What is the speaker's main position on climate migration?",
       "options": [
-        "It won't happen",
         "It should be stopped",
         "It's inevitable and should be managed responsibly",
-        "It's not a real problem"
+        "It's not a real problem",
+        "It won't happen"
       ],
       "correctAnswer": "It's inevitable and should be managed responsibly",
       "explanation": "The speaker argues migration is inevitable and emphasizes the need for responsible planning.",

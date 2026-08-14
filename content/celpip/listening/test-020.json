@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "How long has the customer's internet been down?",
       "options": [
-        "One hour",
-        "Two hours",
         "Three hours",
-        "Four hours"
+        "Four hours",
+        "One hour",
+        "Two hours"
       ],
       "correctAnswer": "Three hours",
       "explanation": "Customer states 'my internet's been down for three hours now.'",
@@ -138,10 +138,10 @@
       "part": 1,
       "prompt": "What is the customer's account number?",
       "options": [
+        "4427-98165",
         "4472-89156",
         "4427-89165",
-        "4472-98156",
-        "4427-98165"
+        "4472-98156"
       ],
       "correctAnswer": "4472-89156",
       "explanation": "Customer provides the account number as '4472-89156.'",
@@ -155,10 +155,10 @@
       "part": 1,
       "prompt": "What caused the outage?",
       "options": [
+        "A software update",
         "A router malfunction",
         "A fiber cut",
-        "A power surge",
-        "A software update"
+        "A power surge"
       ],
       "correctAnswer": "A fiber cut",
       "explanation": "Agent explains there's 'a known outage' due to 'a fiber cut about two hours ago.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "When is the outage estimated to be fixed?",
       "options": [
+        "5:00 PM",
         "2:00 PM",
         "3:00 PM",
-        "4:30 PM",
-        "5:00 PM"
+        "4:30 PM"
       ],
       "correctAnswer": "4:30 PM",
       "explanation": "Agent estimates the repair will be complete 'around 4:30 PM at the latest.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What is the automatic credit amount for the outage?",
       "options": [
-        "$15",
-        "$20",
         "$25",
-        "$30"
+        "$30",
+        "$15",
+        "$20"
       ],
       "correctAnswer": "$25",
       "explanation": "Agent states 'I'll apply a $25 credit to your next bill automatically.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What is the total compensation being offered?",
       "options": [
+        "$35",
         "$25",
         "$28.50",
-        "$32",
-        "$35"
+        "$32"
       ],
       "correctAnswer": "$28.50",
       "explanation": "Agent calculates 'Combined with the $25 credit, that's $28.50 total compensation.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "In how many hours should the repair be complete?",
       "options": [
-        "1 to 2 hours",
-        "2 to 3 hours",
         "3 to 4 hours",
-        "4 to 5 hours"
+        "4 to 5 hours",
+        "1 to 2 hours",
+        "2 to 3 hours"
       ],
       "correctAnswer": "2 to 3 hours",
       "explanation": "Agent estimates 'two to three more hours' of repair work remaining.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long has Rebecca lived in the neighbourhood?",
       "options": [
+        "Five years",
         "Two years",
         "Three years",
-        "Four years",
-        "Five years"
+        "Four years"
       ],
       "correctAnswer": "Five years",
       "explanation": "Rebecca states 'About five years now.'",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "When did David move to the neighbourhood?",
       "options": [
-        "One week ago",
         "Two weeks ago",
         "Last month",
-        "Two months ago"
+        "Two months ago",
+        "One week ago"
       ],
       "correctAnswer": "Last month",
       "explanation": "David says 'Just moved here last month.'",
@@ -291,10 +291,10 @@
       "part": 2,
       "prompt": "What is the best season in this neighbourhood?",
       "options": [
+        "Winter",
         "Spring",
         "Summer",
-        "Fall",
-        "Winter"
+        "Fall"
       ],
       "correctAnswer": "Summer",
       "explanation": "Rebecca states 'The summer's the best season here.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "Where is the farmer's market held?",
       "options": [
+        "Oak and Queen",
         "Main and Queen",
         "Main and King",
-        "Main and Oak",
-        "Oak and Queen"
+        "Main and Oak"
       ],
       "correctAnswer": "Main and Oak",
       "explanation": "Rebecca mentions 'at the corner of Main and Oak.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "What type of community does Rebecca describe?",
       "options": [
-        "Business-focused",
         "Very friendly",
         "Quiet and isolated",
-        "Fast-paced"
+        "Fast-paced",
+        "Business-focused"
       ],
       "correctAnswer": "Very friendly",
       "explanation": "Rebecca says 'It's a very friendly community.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What are the visiting hours?",
       "options": [
-        "8 AM to 6 PM",
         "9 AM to 7 PM",
         "10 AM to 8 PM",
-        "11 AM to 9 PM"
+        "11 AM to 9 PM",
+        "8 AM to 6 PM"
       ],
       "correctAnswer": "10 AM to 8 PM",
       "explanation": "The guide states 'Visiting hours are 10 AM to 8 PM daily.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "How many visitors can be in a patient's room at one time?",
       "options": [
+        "Four",
         "One",
         "Two",
-        "Three",
-        "Four"
+        "Three"
       ],
       "correctAnswer": "Two",
       "explanation": "The guide specifies 'Each patient can have a maximum of two visitors at a time in their room.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the minimum age for unaccompanied visits?",
       "options": [
+        "Fourteen years old",
         "Eight years old",
         "Ten years old",
-        "Twelve years old",
-        "Fourteen years old"
+        "Twelve years old"
       ],
       "correctAnswer": "Twelve years old",
       "explanation": "The guide states 'Children under twelve must be accompanied by an adult.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the parking fee per visit?",
       "options": [
+        "$5",
         "$2",
         "$3",
-        "$4",
-        "$5"
+        "$4"
       ],
       "correctAnswer": "$5",
       "explanation": "The guide mentions 'Parking is available in the north lot at five dollars per visit.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "Who must approve outside food before it's given to a patient?",
       "options": [
-        "The visitor",
         "The patient",
         "The nursing staff",
-        "The hospital administrator"
+        "The hospital administrator",
+        "The visitor"
       ],
       "correctAnswer": "The nursing staff",
       "explanation": "The guide states 'Food brought from outside is permitted only if approved by nursing staff.'",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "By what percentage have Atlantic salmon populations declined?",
       "options": [
+        "55 percent",
         "35 percent",
         "42 percent",
-        "48 percent",
-        "55 percent"
+        "48 percent"
       ],
       "correctAnswer": "48 percent",
       "explanation": "Atlantic salmon populations have declined by 48 percent over the past two decades.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "What is the maximum subsidy for vessel upgrades?",
       "options": [
-        "150,000 dollars",
-        "175,000 dollars",
         "200,000 dollars",
-        "250,000 dollars"
+        "250,000 dollars",
+        "150,000 dollars",
+        "175,000 dollars"
       ],
       "correctAnswer": "200,000 dollars",
       "explanation": "Subsidies reach up to 200,000 dollars for eco-friendly equipment upgrades.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "By what percentage should bycatch be reduced?",
       "options": [
-        "25 percent",
         "30 percent",
         "35 percent",
-        "40 percent"
+        "40 percent",
+        "25 percent"
       ],
       "correctAnswer": "35 percent",
       "explanation": "Trap modifications target a 35 percent reduction in marine mammal bycatch.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What components are included in the local food initiative?",
       "options": [
-        "Grocery stores and restaurants",
         "Farmers market and delivery programs",
         "Government subsidies",
-        "Large distribution centers"
+        "Large distribution centers",
+        "Grocery stores and restaurants"
       ],
       "correctAnswer": "Farmers market and delivery programs",
       "explanation": "The initiative proposes farmers market expansion and direct-to-consumer delivery programs.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What advantage of local food does Dr. Sarah emphasize?",
       "options": [
-        "Lower cost",
-        "Improved freshness and food safety",
         "More variety",
-        "Better storage"
+        "Better storage",
+        "Lower cost",
+        "Improved freshness and food safety"
       ],
       "correctAnswer": "Improved freshness and food safety",
       "explanation": "Reducing transportation improves food safety and nutrition through fresher products.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "How much of his production does James currently sell to farmers market?",
       "options": [
-        "25 percent",
-        "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent",
+        "35 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James currently sells about 40 percent of production to the farmers market.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What infrastructure limitation does James identify?",
       "options": [
-        "Limited land",
         "Transportation issues",
         "Packaging and distribution",
-        "Workforce availability"
+        "Workforce availability",
+        "Limited land"
       ],
       "correctAnswer": "Packaging and distribution",
       "explanation": "James lacks infrastructure for packaging and distribution to expand sales.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What disparity does the speaker identify in insurance coverage?",
       "options": [
-        "Mental health is covered more than physical",
-        "Physical health is covered more than mental health",
         "They're equally covered",
-        "Neither is adequately covered"
+        "Neither is adequately covered",
+        "Mental health is covered more than physical",
+        "Physical health is covered more than mental health"
       ],
       "correctAnswer": "Physical health is covered more than mental health",
       "explanation": "The speaker states mental health is covered at lower rates than physical health.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "What example does the speaker use to illustrate the disparity?",
       "options": [
-        "Cancer treatment vs. therapy",
         "Broken arm coverage vs. limited mental health sessions",
         "Hospital stays vs. doctor visits",
-        "Prescription drugs vs. counseling"
+        "Prescription drugs vs. counseling",
+        "Cancer treatment vs. therapy"
       ],
       "correctAnswer": "Broken arm coverage vs. limited mental health sessions",
       "explanation": "The speaker uses physical therapy for broken arms compared to limited therapy sessions.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What is the annual economic cost of mental health issues in Canada?",
       "options": [
-        "25 billion dollars",
         "38 billion dollars",
         "51 billion dollars",
-        "67 billion dollars"
+        "67 billion dollars",
+        "25 billion dollars"
       ],
       "correctAnswer": "51 billion dollars",
       "explanation": "Mental health issues cost 51 billion dollars annually in Canada.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What is the source of these costs according to the speaker?",
       "options": [
+        "Administrative expenses",
         "Insurance premiums only",
         "Lost productivity, emergency services, and hospitalizations",
-        "Medication costs",
-        "Administrative expenses"
+        "Medication costs"
       ],
       "correctAnswer": "Lost productivity, emergency services, and hospitalizations",
       "explanation": "Costs come from lost productivity, emergency services, and hospitalizations.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What economic argument does the speaker make for mental health coverage?",
       "options": [
-        "It's cheaper than physical health",
-        "Early treatment has positive ROI",
         "It reduces insurance profits",
-        "It's cost-neutral"
+        "It's cost-neutral",
+        "It's cheaper than physical health",
+        "Early treatment has positive ROI"
       ],
       "correctAnswer": "Early treatment has positive ROI",
       "explanation": "The speaker argues mental health coverage has a positive return on investment.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate companies implement?",
       "options": [
-        "Lower coverage for mental health",
         "Mandatory parity in coverage",
         "Removal of all limits",
-        "Voluntary coverage only"
+        "Voluntary coverage only",
+        "Lower coverage for mental health"
       ],
       "correctAnswer": "Mandatory parity in coverage",
       "explanation": "The speaker advocates for mandatory parity—equal coverage for mental and physical health.",

@@ -15,11 +15,11 @@
       "section": "quant",
       "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
       "options": [
-        "13",
-        "14",
         "15",
         "16",
-        "18"
+        "18",
+        "13",
+        "14"
       ],
       "correctAnswer": "15",
       "answer": "C",
@@ -33,11 +33,11 @@
       "section": "quant",
       "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
       "options": [
-        "15%",
-        "20%",
         "25%",
         "30%",
-        "35%"
+        "35%",
+        "15%",
+        "20%"
       ],
       "correctAnswer": "30%",
       "answer": "D",
@@ -51,11 +51,11 @@
       "section": "quant",
       "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
       "options": [
+        "12",
         "7",
         "9",
         "10",
-        "11",
-        "12"
+        "11"
       ],
       "correctAnswer": "9",
       "answer": "B",
@@ -69,11 +69,11 @@
       "section": "quant",
       "prompt": "If 3x = 18, what is the value of x² + x?",
       "options": [
+        "54",
         "36",
         "40",
         "42",
-        "48",
-        "54"
+        "48"
       ],
       "correctAnswer": "42",
       "answer": "C",
@@ -87,11 +87,11 @@
       "section": "quant",
       "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
       "options": [
+        "36",
+        "60",
         "24",
         "28",
-        "30",
-        "36",
-        "60"
+        "30"
       ],
       "correctAnswer": "30",
       "answer": "C",
@@ -105,11 +105,11 @@
       "section": "quant",
       "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
       "options": [
-        "132",
-        "144",
         "154",
         "168",
-        "176"
+        "176",
+        "132",
+        "144"
       ],
       "correctAnswer": "154",
       "answer": "C",
@@ -123,11 +123,11 @@
       "section": "quant",
       "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
       "options": [
-        "16 litres",
         "18 litres",
         "20 litres",
         "22 litres",
-        "24 litres"
+        "24 litres",
+        "16 litres"
       ],
       "correctAnswer": "20 litres",
       "answer": "C",
@@ -177,11 +177,11 @@
       "section": "quant",
       "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
       "options": [
+        "18",
+        "24",
         "6",
         "8",
-        "12",
-        "18",
-        "24"
+        "12"
       ],
       "correctAnswer": "12",
       "answer": "C",
@@ -195,11 +195,11 @@
       "section": "quant",
       "prompt": "Three-quarters of a number is 60. What is the number?",
       "options": [
-        "70",
-        "75",
         "80",
         "85",
-        "90"
+        "90",
+        "70",
+        "75"
       ],
       "correctAnswer": "80",
       "answer": "C",
@@ -231,11 +231,11 @@
       "section": "quant",
       "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
       "options": [
-        "9",
         "12",
         "18",
         "24",
-        "36"
+        "36",
+        "9"
       ],
       "correctAnswer": "24",
       "answer": "D",
@@ -249,11 +249,11 @@
       "section": "quant",
       "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
       "options": [
+        "720",
         "480",
         "540",
         "600",
-        "640",
-        "720"
+        "640"
       ],
       "correctAnswer": "600",
       "answer": "C",
@@ -267,11 +267,11 @@
       "section": "quant",
       "prompt": "A traveller drives to a town at 60 mph and returns along the same road at 40 mph. What is the average speed for the round trip?",
       "options": [
-        "45 mph",
-        "48 mph",
         "50 mph",
         "52 mph",
-        "55 mph"
+        "55 mph",
+        "45 mph",
+        "48 mph"
       ],
       "correctAnswer": "48 mph",
       "answer": "B",
@@ -285,11 +285,11 @@
       "section": "quant",
       "prompt": "What is the simple interest on $2,000 at 5% per year for 3 years?",
       "options": [
-        "$200",
-        "$250",
         "$300",
         "$350",
-        "$400"
+        "$400",
+        "$200",
+        "$250"
       ],
       "correctAnswer": "$300",
       "answer": "C",
@@ -303,11 +303,11 @@
       "section": "quant",
       "prompt": "If 5 identical pens cost $20, how much do 8 of the same pens cost?",
       "options": [
-        "$28",
         "$30",
         "$32",
         "$36",
-        "$40"
+        "$40",
+        "$28"
       ],
       "correctAnswer": "$32",
       "answer": "C",
@@ -357,11 +357,11 @@
       "section": "quant",
       "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
       "options": [
+        "$19.25",
+        "$20.00",
         "$14.00",
         "$18.50",
-        "$21.50",
-        "$19.25",
-        "$20.00"
+        "$21.50"
       ],
       "correctAnswer": "$21.50",
       "answer": "C",
@@ -375,11 +375,11 @@
       "section": "quant",
       "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
       "options": [
-        "55 mph",
-        "58 mph",
         "60 mph",
         "65 mph",
-        "70 mph"
+        "70 mph",
+        "55 mph",
+        "58 mph"
       ],
       "correctAnswer": "60 mph",
       "answer": "C",

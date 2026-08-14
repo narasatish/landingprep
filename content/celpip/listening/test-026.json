@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the rental agreement number?",
       "options": [
-        "CR-824447",
         "CR-892447",
         "CR-894247",
-        "CR-824294"
+        "CR-824294",
+        "CR-824447"
       ],
       "correctAnswer": "CR-892447",
       "explanation": "Customer provides the rental agreement number as 'CR-892447.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What damage was visible in the pickup photos?",
       "options": [
-        "A scratch on the driver's door",
-        "A dent on the back bumper",
         "A broken side mirror",
-        "No damage"
+        "No damage",
+        "A scratch on the driver's door",
+        "A dent on the back bumper"
       ],
       "correctAnswer": "A dent on the back bumper",
       "explanation": "Agent confirms 'there is a dent visible in the corner of the back bumper' in the pickup photos.",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "When was the vehicle returned?",
       "options": [
+        "4 PM today",
         "1 PM today",
         "2 PM today",
-        "3 PM today",
-        "4 PM today"
+        "3 PM today"
       ],
       "correctAnswer": "4 PM today",
       "explanation": "Customer states 'I returned the vehicle just now, at 4 PM today.'",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What was the daily cost of the damage waiver insurance?",
       "options": [
-        "$12 per day",
         "$15 per day",
         "$18 per day",
-        "$20 per day"
+        "$20 per day",
+        "$12 per day"
       ],
       "correctAnswer": "$18 per day",
       "explanation": "Customer mentions purchasing damage waiver for 'the extra $18 per day.'",
@@ -223,10 +223,10 @@
       "part": 1,
       "prompt": "What new damage was found on the vehicle?",
       "options": [
+        "A damaged side mirror",
         "A dent on the front bumper",
         "A scratch on the driver's door",
-        "A broken window",
-        "A damaged side mirror"
+        "A broken window"
       ],
       "correctAnswer": "A scratch on the driver's door",
       "explanation": "Agent mentions 'The damage report lists a scratch on the driver's door.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "Is the customer responsible for paying for the new damage?",
       "options": [
+        "Not clear from the conversation",
         "Yes, full amount",
         "Yes, 50% of the cost",
-        "No, it's covered by the damage waiver",
-        "Not clear from the conversation"
+        "No, it's covered by the damage waiver"
       ],
       "correctAnswer": "No, it's covered by the damage waiver",
       "explanation": "Agent confirms the damage waiver covers the new scratch and customer is not responsible.",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long have the dishes been in the sink?",
       "options": [
-        "One day",
-        "Two days",
         "Three days",
-        "Four days"
+        "Four days",
+        "One day",
+        "Two days"
       ],
       "correctAnswer": "Three days",
       "explanation": "Alex states 'it's been sitting there for three days.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "How much is the internet bill this month?",
       "options": [
+        "$80",
         "$65",
         "$70",
-        "$75",
-        "$80"
+        "$75"
       ],
       "correctAnswer": "$75",
       "explanation": "Alex states 'the internet bill is due next week. It's $75 this month.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "By how much did the internet bill increase?",
       "options": [
-        "$3",
         "$5",
         "$10",
-        "$15"
+        "$15",
+        "$3"
       ],
       "correctAnswer": "$5",
       "explanation": "Alex explains 'they increased the plan by five dollars.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "When does Route 95 begin service?",
       "options": [
-        "August 1st",
         "August 15th",
         "September 1st",
-        "September 15th"
+        "September 15th",
+        "August 1st"
       ],
       "correctAnswer": "September 1st",
       "explanation": "The announcement states 'The new Route 95 Express connects downtown to the northern suburbs' effective 'September 1st.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "What is the frequency of peak hour service?",
       "options": [
+        "Every 30 minutes",
         "Every 10 minutes",
         "Every 15 minutes",
-        "Every 20 minutes",
-        "Every 30 minutes"
+        "Every 20 minutes"
       ],
       "correctAnswer": "Every 15 minutes",
       "explanation": "The guide specifies 'departures every fifteen minutes during peak hours.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "How much travel time is saved with Route 95?",
       "options": [
+        "30 minutes",
         "15 minutes",
         "20 minutes",
-        "23 minutes",
-        "30 minutes"
+        "23 minutes"
       ],
       "correctAnswer": "23 minutes",
       "explanation": "The guide states travel time reduces 'from forty-five minutes to approximately twenty-two minutes,' which is approximately 23 minutes saved.",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the cost of a single trip?",
       "options": [
-        "$2.50",
-        "$3.00",
         "$3.50",
-        "$4.00"
+        "$4.00",
+        "$2.50",
+        "$3.00"
       ],
       "correctAnswer": "$3.50",
       "explanation": "The guide states 'single trip is three dollars fifty cents.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the monthly pass cost?",
       "options": [
-        "$75",
         "$80",
         "$90",
-        "$100"
+        "$100",
+        "$75"
       ],
       "correctAnswer": "$90",
       "explanation": "The guide specifies 'a monthly pass is ninety dollars.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "How much is being invested in recruitment and retention?",
       "options": [
+        "40 million dollars",
         "25 million dollars",
         "30 million dollars",
-        "35 million dollars",
-        "40 million dollars"
+        "35 million dollars"
       ],
       "correctAnswer": "35 million dollars",
       "explanation": "The province has announced a 35 million dollar investment.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "How many nursing positions are currently unfilled?",
       "options": [
-        "600 positions",
-        "700 positions",
         "800 positions",
-        "900 positions"
+        "900 positions",
+        "600 positions",
+        "700 positions"
       ],
       "correctAnswer": "800 positions",
       "explanation": "There are over 800 unfilled nursing positions.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "By what percentage are starting salaries for nurses increasing?",
       "options": [
-        "8 percent",
         "10 percent",
         "12 percent",
-        "15 percent"
+        "15 percent",
+        "8 percent"
       ],
       "correctAnswer": "12 percent",
       "explanation": "Starting salaries for nurses are being increased by 12 percent.",
@@ -512,10 +512,10 @@
       "part": 4,
       "prompt": "What percentage of vacant positions are expected to be filled in 18 months?",
       "options": [
+        "75 percent",
         "40 percent",
         "50 percent",
-        "60 percent",
-        "75 percent"
+        "60 percent"
       ],
       "correctAnswer": "60 percent",
       "explanation": "Officials estimate it will take approximately 18 months to fill 60 percent of positions.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "How many workplace injuries were reported this year?",
       "options": [
-        "25 injuries",
-        "29 injuries",
         "34 injuries",
-        "39 injuries"
+        "39 injuries",
+        "25 injuries",
+        "29 injuries"
       ],
       "correctAnswer": "34 injuries",
       "explanation": "Tom reports 34 workplace injuries this year.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What is the percentage increase in injuries from last year?",
       "options": [
-        "10 percent",
         "12 percent",
         "15 percent",
-        "18 percent"
+        "18 percent",
+        "10 percent"
       ],
       "correctAnswer": "15 percent",
       "explanation": "The number of injuries is up 15 percent from last year.",
@@ -563,10 +563,10 @@
       "part": 5,
       "prompt": "What type of incident accounts for most injuries?",
       "options": [
+        "Back injuries from lifting",
         "Equipment failures",
         "Slips, trips, and falls",
-        "Chemical exposure",
-        "Back injuries from lifting"
+        "Chemical exposure"
       ],
       "correctAnswer": "Slips, trips, and falls",
       "explanation": "Most incidents are slips, trips, and falls in warehouse areas.",
@@ -580,10 +580,10 @@
       "part": 5,
       "prompt": "What is Tom's proposed safety training frequency?",
       "options": [
-        "Quarterly",
-        "Twice yearly",
         "Annually",
-        "Every two years"
+        "Every two years",
+        "Quarterly",
+        "Twice yearly"
       ],
       "correctAnswer": "Twice yearly",
       "explanation": "Tom proposes mandatory training every six months, not annually.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What is David's main concern about the training proposal?",
       "options": [
-        "Training effectiveness",
-        "Cost of training",
         "Time away from work affecting productivity",
-        "Staff availability"
+        "Staff availability",
+        "Training effectiveness",
+        "Cost of training"
       ],
       "correctAnswer": "Time away from work affecting productivity",
       "explanation": "David worries that frequent training time away will affect productivity.",
@@ -648,10 +648,10 @@
       "part": 5,
       "prompt": "What additional benefit does Angela mention about training?",
       "options": [
-        "Increased wages",
-        "Improved morale",
         "Reduced hours",
-        "Better equipment"
+        "Better equipment",
+        "Increased wages",
+        "Improved morale"
       ],
       "correctAnswer": "Improved morale",
       "explanation": "Angela believes regular training improves morale because workers feel the company cares.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "What does the speaker identify as the main concern about workplace monitoring?",
       "options": [
-        "It's too expensive",
         "It has gone too far in terms of surveillance",
         "It doesn't improve security",
-        "It's ineffective"
+        "It's ineffective",
+        "It's too expensive"
       ],
       "correctAnswer": "It has gone too far in terms of surveillance",
       "explanation": "The speaker explicitly states that the level of surveillance companies use has gone too far.",
@@ -699,10 +699,10 @@
       "part": 6,
       "prompt": "What does the speaker claim happens when employees feel constantly watched?",
       "options": [
+        "They communicate better",
         "They work harder",
         "It creates anxiety and erodes trust",
-        "They become more efficient",
-        "They communicate better"
+        "They become more efficient"
       ],
       "correctAnswer": "It creates anxiety and erodes trust",
       "explanation": "The speaker states that constant monitoring creates anxiety and erodes trust.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What does research show about excessive monitoring and productivity?",
       "options": [
-        "It increases productivity",
-        "It decreases productivity and morale",
         "It has no effect",
-        "It improves communication"
+        "It improves communication",
+        "It increases productivity",
+        "It decreases productivity and morale"
       ],
       "correctAnswer": "It decreases productivity and morale",
       "explanation": "Studies show that excessive monitoring actually decreases productivity and morale.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What solution does the speaker propose?",
       "options": [
-        "No monitoring at all",
-        "Complete transparency monitoring",
         "Targeted monitoring only where necessary",
-        "Random monitoring"
+        "Random monitoring",
+        "No monitoring at all",
+        "Complete transparency monitoring"
       ],
       "correctAnswer": "Targeted monitoring only where necessary",
       "explanation": "The speaker advocates for targeted monitoring only where necessary for genuine security.",

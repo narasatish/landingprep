@@ -15,11 +15,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 2 remain; divided among 8 children, 3 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
+        "6",
         "0",
         "2",
         "3",
-        "1",
-        "6"
+        "1"
       ],
       "correctAnswer": "6",
       "explanation": "The only n in range with n≡2 (mod 7) and n≡3 (mod 8) is 51. Then 51 ÷ 9 leaves remainder 6.",
@@ -32,11 +32,11 @@
       "prompt": "What is 40% of 140?",
       "difficulty": "medium",
       "options": [
+        "100",
+        "56",
         "112",
         "560",
-        "180",
-        "100",
-        "56"
+        "180"
       ],
       "correctAnswer": "56",
       "explanation": "40% of 140 = 40/100 × 140 = 56.",
@@ -49,11 +49,11 @@
       "prompt": "The average of 4 numbers is 12. If one number equal to 24 is removed, what is the average of the remaining 3 numbers?",
       "difficulty": "medium",
       "options": [
-        "7",
         "12",
         "24",
         "8",
-        "9"
+        "9",
+        "7"
       ],
       "correctAnswer": "8",
       "explanation": "Total = 4×12 = 48. Remove 24: remaining total 24 over 3 numbers = 8.",
@@ -66,11 +66,11 @@
       "prompt": "What is the sum of all integers x such that -40 < x ≤ 20?",
       "difficulty": "medium",
       "options": [
+        "-590",
         "570",
         "-550",
         "-570",
-        "-610",
-        "-590"
+        "-610"
       ],
       "correctAnswer": "-570",
       "explanation": "The integers run from -39 to 20. Pairing/series sum = -570.",
@@ -83,11 +83,11 @@
       "prompt": "A jacket priced at $210 is discounted by 40% and then taxed at 5%. What is the final price?",
       "difficulty": "medium",
       "options": [
-        "$210",
-        "$132.30",
         "$220.50",
         "$126",
-        "$142.30"
+        "$142.30",
+        "$210",
+        "$132.30"
       ],
       "correctAnswer": "$132.30",
       "explanation": "After 40% off: $126. After 5% tax: $126 × 1.05 = $132.30.",
@@ -100,11 +100,11 @@
       "prompt": "If 7 painters can paint 7 walls in 7 days, how many days would it take 7 painters to paint 7 walls?",
       "difficulty": "medium",
       "options": [
+        "7",
         "1",
         "14",
         "6",
-        "8",
-        "7"
+        "8"
       ],
       "correctAnswer": "7",
       "explanation": "Each painter paints 1 wall in 7 days. 7 painters painting 7 walls (one each) still take 7 days.",
@@ -117,11 +117,11 @@
       "prompt": "If 1/3 of a number is 28, what is 5/7 of that number?",
       "difficulty": "medium",
       "options": [
-        "24",
         "84",
         "60",
         "28",
-        "88"
+        "88",
+        "24"
       ],
       "correctAnswer": "60",
       "explanation": "The number is 28 ÷ 1/3 = 84. Then 5/7 × 84 = 60.",
@@ -134,11 +134,11 @@
       "prompt": "The perimeter of a rectangle is 92 and its area is 465. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
-        "31",
-        "16",
         "17",
         "46",
-        "15"
+        "15",
+        "31",
+        "16"
       ],
       "correctAnswer": "15",
       "explanation": "Sides sum to 46 and multiply to 465. They are 15 and 31; the shorter side is 15.",
@@ -151,11 +151,11 @@
       "prompt": "The average of a and b is 43, and the average of b and c is 28. What is a − c?",
       "difficulty": "medium",
       "options": [
+        "-30",
         "15",
         "71",
         "30",
-        "32",
-        "-30"
+        "32"
       ],
       "correctAnswer": "30",
       "explanation": "a+b = 86 and b+c = 56. Subtracting: a − c = 86 − 56 = 30.",
@@ -185,11 +185,11 @@
       "prompt": "6^x + 6^x + 6^x + 6^x + 6^x + 6^x = ?",
       "difficulty": "medium",
       "options": [
+        "6^(x+1)",
+        "6^x",
         "36^x",
         "24^x",
-        "6^(6x)",
-        "6^(x+1)",
-        "6^x"
+        "6^(6x)"
       ],
       "correctAnswer": "6^(x+1)",
       "explanation": "Adding 6 copies of 6^x gives 6 × 6^x = 6^1 × 6^x = 6^(x+1).",
@@ -202,11 +202,11 @@
       "prompt": "Sofia can assemble a bookcase 3 times as fast as Marcus. Working together they finish one in 12 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
+        "24",
+        "16",
         "12",
         "9",
-        "48",
-        "24",
-        "16"
+        "48"
       ],
       "correctAnswer": "16",
       "explanation": "Let Marcus's rate be r. Sofia's is 3r, so together (4)r = 1/12, giving r = 1/48. Sofia's rate 3r = 3/48 = 1/16, so Sofia alone takes 16 hours.",
@@ -219,11 +219,11 @@
       "prompt": "The ratio of blue to red marbles is 2 to 7. If 21 blue marbles are added, the ratio becomes 11 to 14. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
+        "21",
+        "63",
         "42",
         "33",
-        "12",
-        "21",
-        "63"
+        "12"
       ],
       "correctAnswer": "42",
       "explanation": "Let blue = 2k and red = 7k. After adding 21: (2k+21)/(7k) = 11/14, which gives k = 6. Red = 7×6 = 42.",
@@ -236,11 +236,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 3 remain; divided among 8 children, 7 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
-        "4",
-        "3",
         "0",
         "2",
-        "1"
+        "1",
+        "4",
+        "3"
       ],
       "correctAnswer": "4",
       "explanation": "The only n in range with n≡3 (mod 7) and n≡7 (mod 8) is 31. Then 31 ÷ 9 leaves remainder 4.",
@@ -253,11 +253,11 @@
       "prompt": "What is 15% of 170?",
       "difficulty": "medium",
       "options": [
-        "25.5",
         "155",
         "255",
         "51",
-        "185"
+        "185",
+        "25.5"
       ],
       "correctAnswer": "25.5",
       "explanation": "15% of 170 = 15/100 × 170 = 25.5.",
@@ -270,11 +270,11 @@
       "prompt": "The average of 4 numbers is 7. If one number equal to 22 is removed, what is the average of the remaining 3 numbers?",
       "difficulty": "medium",
       "options": [
+        "2",
+        "1",
         "22",
         "3",
-        "7",
-        "2",
-        "1"
+        "7"
       ],
       "correctAnswer": "2",
       "explanation": "Total = 4×7 = 28. Remove 22: remaining total 6 over 3 numbers = 2.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "If 6x + 4 = 2x + 16, what is the value of x²?",
       "difficulty": "medium",
       "options": [
-        "9",
         "6",
         "3",
         "12",
-        "8"
+        "8",
+        "9"
       ],
       "correctAnswer": "9",
       "explanation": "6x − 2x = 16 − 4 → 4x = 12 → x = 3. So x² = 9.",
@@ -352,11 +352,11 @@
       "prompt": "A right triangle has legs of length 7 and 24. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "25",
+        "24",
         "27",
         "31",
-        "26",
-        "25",
-        "24"
+        "26"
       ],
       "correctAnswer": "25",
       "explanation": "Hypotenuse = √(7² + 24²) = √625 = 25.",
@@ -369,11 +369,11 @@
       "prompt": "In a class of 50 students, the ratio of those who passed to those who failed is 6:4. How many students passed?",
       "difficulty": "medium",
       "options": [
+        "35",
+        "30",
         "50",
         "25",
-        "20",
-        "35",
-        "30"
+        "20"
       ],
       "correctAnswer": "30",
       "explanation": "Total parts = 10, each part = 50/10 = 5. Passed = 6 × 5 = 30.",
@@ -386,11 +386,11 @@
       "prompt": "If 4x + 2 = 2x + 12, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "10",
+        "30",
         "25",
         "5",
-        "24",
-        "10",
-        "30"
+        "24"
       ],
       "correctAnswer": "25",
       "explanation": "4x − 2x = 12 − 2 → 2x = 10 → x = 5. So x² = 25.",
@@ -403,11 +403,11 @@
       "prompt": "A right triangle has legs of length 9 and 12. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "21",
         "17",
         "16",
         "15",
-        "14",
-        "21"
+        "14"
       ],
       "correctAnswer": "15",
       "explanation": "Hypotenuse = √(9² + 12²) = √225 = 15.",
@@ -420,11 +420,11 @@
       "prompt": "What are the total unit sales for Electronics across all four weeks?",
       "difficulty": "medium",
       "options": [
+        "5650",
+        "5750",
         "5400",
         "5500",
-        "5550",
-        "5650",
-        "5750"
+        "5550"
       ],
       "correctAnswer": "5550",
       "explanation": "Electronics: 1200 + 1400 + 1350 + 1600 = 5550 units",
@@ -477,11 +477,11 @@
       "prompt": "In Week 4, Books represented what fraction of total Week 4 sales?",
       "difficulty": "medium",
       "options": [
-        "1/12",
-        "1/10",
         "1/9",
         "1/8",
-        "1/7"
+        "1/7",
+        "1/12",
+        "1/10"
       ],
       "correctAnswer": "1/9",
       "explanation": "Week 4 total: 1600+1100+400+800=3900. Books: 400/3900 ≈ 0.1026 ≈ 1/9.75 (closest 1/9)",
@@ -534,11 +534,11 @@
       "prompt": "Which category had the smallest total sales across all four weeks?",
       "difficulty": "medium",
       "options": [
-        "Electronics",
         "Clothing",
         "Books",
         "Home",
-        "Books and Home tied"
+        "Books and Home tied",
+        "Electronics"
       ],
       "correctAnswer": "Books",
       "explanation": "Books: 1370; Home: 2750; Clothing: 3750; Electronics: 5550",

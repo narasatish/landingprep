@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the patient's ID?",
       "options": [
-        "P-8479",
         "P-9847",
         "P-9748",
-        "P-8794"
+        "P-8794",
+        "P-8479"
       ],
       "correctAnswer": "P-9847",
       "explanation": "Patient provides their ID as 'P-9847.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "What is the new appointment date and time?",
       "options": [
+        "Friday, June 20th at 8:30 AM",
         "Friday, June 6th at 8:30 AM",
         "Friday, June 12th at 8:30 AM",
-        "Friday, June 13th at 8:30 AM",
-        "Friday, June 20th at 8:30 AM"
+        "Friday, June 13th at 8:30 AM"
       ],
       "correctAnswer": "Friday, June 13th at 8:30 AM",
       "explanation": "Receptionist books the new appointment for 'Friday, June 13th at 8:30 AM.'",
@@ -189,10 +189,10 @@
       "part": 1,
       "prompt": "What should the patient do to prepare for the appointment?",
       "options": [
-        "Fast for 12 hours",
-        "Bring insurance documents only",
         "Arrive ten minutes early to fill out updated forms",
-        "Call to confirm the day before"
+        "Call to confirm the day before",
+        "Fast for 12 hours",
+        "Bring insurance documents only"
       ],
       "correctAnswer": "Arrive ten minutes early to fill out updated forms",
       "explanation": "Receptionist states 'You'll need to arrive ten minutes early to fill out any updated forms.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "Who is the patient's doctor?",
       "options": [
-        "Dr. Kumar",
-        "Dr. Singh",
         "Dr. Patel",
-        "Dr. Sharma"
+        "Dr. Sharma",
+        "Dr. Kumar",
+        "Dr. Singh"
       ],
       "correctAnswer": "Dr. Singh",
       "explanation": "Patient mentions wanting to reschedule with 'Dr. Singh' throughout the conversation.",
@@ -274,10 +274,10 @@
       "part": 2,
       "prompt": "How long is the class?",
       "options": [
-        "30 minutes",
-        "45 minutes",
         "60 minutes",
-        "90 minutes"
+        "90 minutes",
+        "30 minutes",
+        "45 minutes"
       ],
       "correctAnswer": "60 minutes",
       "explanation": "Trainer states 'It's 60 minutes total.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "How many classes per week does Maya plan to attend?",
       "options": [
-        "Once a week",
-        "Twice a week",
         "Three times a week",
-        "Daily"
+        "Daily",
+        "Once a week",
+        "Twice a week"
       ],
       "correctAnswer": "Twice a week",
       "explanation": "Maya states 'I'll start with twice a week and see how it goes.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "Is there a cost for a library card?",
       "options": [
-        "Yes, $10",
-        "Yes, $20",
         "No, it's free",
-        "Yes, $5"
+        "Yes, $5",
+        "Yes, $10",
+        "Yes, $20"
       ],
       "correctAnswer": "No, it's free",
       "explanation": "The guide states 'Registration is free and open to all residents.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "How many branch locations does the library system have?",
       "options": [
-        "Eight",
         "Ten",
         "Twelve",
-        "Fifteen"
+        "Fifteen",
+        "Eight"
       ],
       "correctAnswer": "Twelve",
       "explanation": "The guide mentions 'Visit any of our twelve branch locations.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the Sunday operating hour?",
       "options": [
+        "2 PM to 6 PM",
         "10 AM to 6 PM",
         "1 PM to 5 PM",
-        "12 PM to 4 PM",
-        "2 PM to 6 PM"
+        "12 PM to 4 PM"
       ],
       "correctAnswer": "1 PM to 5 PM",
       "explanation": "The guide specifies 'Sunday 1 to 5 PM.'",
@@ -393,10 +393,10 @@
       "part": 3,
       "prompt": "What is the maximum number of items you can borrow?",
       "options": [
+        "Twenty-five",
         "Ten",
         "Fifteen",
-        "Twenty",
-        "Twenty-five"
+        "Twenty"
       ],
       "correctAnswer": "Twenty",
       "explanation": "The guide states 'You're allowed up to twenty items at a time.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the loan period for books?",
       "options": [
-        "Two weeks",
         "Three weeks",
         "Four weeks",
-        "Five weeks"
+        "Five weeks",
+        "Two weeks"
       ],
       "correctAnswer": "Three weeks",
       "explanation": "The guide specifies 'Loan periods are three weeks for books.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "What is the late fee per day for books?",
       "options": [
-        "10 cents",
-        "15 cents",
         "20 cents",
-        "25 cents"
+        "25 cents",
+        "10 cents",
+        "15 cents"
       ],
       "correctAnswer": "25 cents",
       "explanation": "The guide states 'Late fees are twenty-five cents per day for books.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the bill number for the education reform?",
       "options": [
+        "Bill 260",
         "Bill 235",
         "Bill 247",
-        "Bill 250",
-        "Bill 260"
+        "Bill 250"
       ],
       "correctAnswer": "Bill 247",
       "explanation": "The legislation is identified as Bill 247.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "When will mandatory digital literacy courses begin?",
       "options": [
-        "This year",
-        "Next September",
         "January 2027",
-        "September 2027"
+        "September 2027",
+        "This year",
+        "Next September"
       ],
       "correctAnswer": "Next September",
       "explanation": "High schools will introduce mandatory digital literacy courses starting next September.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "By what percentage are teacher salaries being increased?",
       "options": [
-        "5 percent",
-        "6 percent",
         "8 percent",
-        "10 percent"
+        "10 percent",
+        "5 percent",
+        "6 percent"
       ],
       "correctAnswer": "8 percent",
       "explanation": "Teacher salaries will be increased by 8 percent over four years.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "Approximately how many teachers does Quebec currently lack?",
       "options": [
-        "2,500 teachers",
         "3,000 teachers",
         "3,500 teachers",
-        "4,000 teachers"
+        "4,000 teachers",
+        "2,500 teachers"
       ],
       "correctAnswer": "3,500 teachers",
       "explanation": "Quebec currently faces a shortage of approximately 3,500 teachers.",
@@ -529,10 +529,10 @@
       "part": 5,
       "prompt": "What is the proposed investment for the training program redesign?",
       "options": [
+        "4.0 million dollars",
         "2.5 million dollars",
         "3.0 million dollars",
-        "3.5 million dollars",
-        "4.0 million dollars"
+        "3.5 million dollars"
       ],
       "correctAnswer": "3.5 million dollars",
       "explanation": "The investment would be about 3.5 million dollars over three years.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "By what percentage can personalized learning increase retention?",
       "options": [
+        "35 percent",
         "20 percent",
         "25 percent",
-        "30 percent",
-        "35 percent"
+        "30 percent"
       ],
       "correctAnswer": "35 percent",
       "explanation": "Studies show this approach increases employee retention by up to 35 percent.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "When do retention improvements typically occur?",
       "options": [
-        "6-9 months",
-        "12-18 months",
         "18-24 months",
-        "2-3 years"
+        "2-3 years",
+        "6-9 months",
+        "12-18 months"
       ],
       "correctAnswer": "12-18 months",
       "explanation": "Retention improvements typically follow within 12 to 18 months.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "What concern does Kevin express?",
       "options": [
-        "Program quality",
         "Cost and timeline for results",
         "Employee participation",
-        "Technology requirements"
+        "Technology requirements",
+        "Program quality"
       ],
       "correctAnswer": "Cost and timeline for results",
       "explanation": "Kevin is skeptical about the cost and how quickly results will be seen.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "They're not programmed correctly",
-        "They're trained on historical data that includes human bias",
         "They lack computing power",
-        "They're intentionally designed to discriminate"
+        "They're intentionally designed to discriminate",
+        "They're not programmed correctly",
+        "They're trained on historical data that includes human bias"
       ],
       "correctAnswer": "They're trained on historical data that includes human bias",
       "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "What did Amazon discover about their hiring algorithm?",
       "options": [
-        "It was too slow",
         "It was discriminating against women",
         "It was too expensive",
-        "It wasn't identifying qualified candidates"
+        "It wasn't identifying qualified candidates",
+        "It was too slow"
       ],
       "correctAnswer": "It was discriminating against women",
       "explanation": "Amazon discovered their algorithm was discriminating against women and scrapped it.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What key point does the speaker make about data?",
       "options": [
+        "Data is a recent invention",
         "Data is always objective",
         "Data is never neutral and includes bias",
-        "Data should never be used in hiring",
-        "Data is a recent invention"
+        "Data should never be used in hiring"
       ],
       "correctAnswer": "Data is never neutral and includes bias",
       "explanation": "The speaker argues data is never neutral and carries historical bias.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
+        "Ignore algorithm concerns",
         "Use them immediately",
         "Train employees on algorithms",
-        "Conduct rigorous bias testing and external auditing",
-        "Ignore algorithm concerns"
+        "Conduct rigorous bias testing and external auditing"
       ],
       "correctAnswer": "Conduct rigorous bias testing and external auditing",
       "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What human qualities does the speaker claim algorithms can't capture?",
       "options": [
-        "Education level",
         "Potential, resilience, and growth",
         "Work experience",
-        "Technical skills"
+        "Technical skills",
+        "Education level"
       ],
       "correctAnswer": "Potential, resilience, and growth",
       "explanation": "Algorithms can't capture potential, resilience, or the capacity for growth.",

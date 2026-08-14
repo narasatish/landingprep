@@ -47,10 +47,10 @@
       "topic": "Data Interpretation",
       "prompt": "Based on Table 1, at what temperature did catalase show maximum activity?",
       "options": [
+        "35°C",
         "25°C",
         "55°C",
-        "45°C",
-        "35°C"
+        "45°C"
       ],
       "correctAnswer": "35°C",
       "explanation": "Table 1 shows that mean oxygen produced was highest at 35°C (18.9 mL/min), indicating peak enzyme activity at this temperature.",
@@ -81,10 +81,10 @@
       "topic": "Data Interpretation",
       "prompt": "How much did the mean oxygen production increase from 5°C to 35°C?",
       "options": [
-        "14.3 mL/min",
         "23.2 mL/min",
         "18.9 mL/min",
-        "16.8 mL/min"
+        "16.8 mL/min",
+        "14.3 mL/min"
       ],
       "correctAnswer": "16.8 mL/min",
       "explanation": "At 5°C, oxygen produced was 2.1 mL/min; at 35°C, it was 18.9 mL/min. The increase is 18.9 - 2.1 = 16.8 mL/min.",
@@ -98,10 +98,10 @@
       "topic": "Experimental Design",
       "prompt": "Which aspect of the experimental design would have been most critical for comparing enzyme activity across temperatures?",
       "options": [
-        "Using different enzyme sources at each temperature",
-        "Ensuring identical hydrogen peroxide concentrations in each trial",
         "Varying the light exposure during measurement",
-        "Increasing the number of trials with increasing temperature"
+        "Increasing the number of trials with increasing temperature",
+        "Using different enzyme sources at each temperature",
+        "Ensuring identical hydrogen peroxide concentrations in each trial"
       ],
       "correctAnswer": "Ensuring identical hydrogen peroxide concentrations in each trial",
       "explanation": "To fairly assess how temperature affects enzyme activity, the substrate (H2O2) concentration must be constant. If substrate concentration varied, observed differences in oxygen production could reflect differences in substrate availability rather than temperature effects on enzyme kinetics.",
@@ -115,10 +115,10 @@
       "topic": "Data Interpretation",
       "prompt": "At which temperature was the standard deviation largest?",
       "options": [
+        "45°C",
         "5°C",
         "25°C",
-        "55°C",
-        "45°C"
+        "55°C"
       ],
       "correctAnswer": "45°C",
       "explanation": "Table 1 shows standard deviations of 0.3, 0.5, 0.8, 1.2, 1.8, and 0.6 at temperatures 5, 15, 25, 35, 45, and 55°C respectively. The largest standard deviation is 1.8 at 45°C.",
@@ -149,10 +149,10 @@
       "topic": "Data Interpretation",
       "prompt": "The standard deviation generally increased from 5°C to 45°C. This suggests:",
       "options": [
-        "the enzyme is more stable at lower temperatures",
         "measurement error increased with temperature",
         "the researcher used different methods at different temperatures",
-        "greater variability in enzyme activity as temperature increased toward the optimum"
+        "greater variability in enzyme activity as temperature increased toward the optimum",
+        "the enzyme is more stable at lower temperatures"
       ],
       "correctAnswer": "greater variability in enzyme activity as temperature increased toward the optimum",
       "explanation": "As temperature approaches the enzyme's optimum (35°C), biological systems typically show increased variability in activity levels due to more dynamic molecular interactions. The standard deviation trend (0.3→0.5→0.8→1.2) reflects this increased variability before declining after peak activity.",
@@ -166,10 +166,10 @@
       "topic": "Data Interpretation",
       "prompt": "Which light treatment resulted in the tallest tomato seedlings?",
       "options": [
-        "Red light",
-        "White light",
         "Blue light",
-        "Darkness"
+        "Darkness",
+        "Red light",
+        "White light"
       ],
       "correctAnswer": "White light",
       "explanation": "The data show average heights: Red = 24.3 cm, Blue = 19.8 cm, White = 28.6 cm, Control = 8.2 cm. White light produced the tallest plants at 28.6 cm.",
@@ -183,10 +183,10 @@
       "topic": "Experimental Design",
       "prompt": "Why was the darkness control group (Group D) essential in this experiment?",
       "options": [
+        "To establish a baseline and demonstrate that light is necessary for growth",
         "To measure how much light wavelength matters",
         "To test whether seeds could germinate in darkness",
-        "To ensure that soil moisture was adequate",
-        "To establish a baseline and demonstrate that light is necessary for growth"
+        "To ensure that soil moisture was adequate"
       ],
       "correctAnswer": "To establish a baseline and demonstrate that light is necessary for growth",
       "explanation": "The control group (8.2 cm) showed minimal growth compared to all light treatments, proving that light itself is essential for normal seedling development and validating the experimental design.",
@@ -200,10 +200,10 @@
       "topic": "Data Interpretation",
       "prompt": "How much taller were plants grown under white light compared to red light?",
       "options": [
-        "3.5 cm",
         "8.8 cm",
         "4.3 cm",
-        "20.4 cm"
+        "20.4 cm",
+        "3.5 cm"
       ],
       "correctAnswer": "4.3 cm",
       "explanation": "White light group = 28.6 cm; Red light group = 24.3 cm. Difference = 28.6 - 24.3 = 4.3 cm.",
@@ -217,10 +217,10 @@
       "topic": "Inference",
       "prompt": "The passage states that white light produced the best growth. This result most likely indicates that:",
       "options": [
-        "red and blue light wavelengths have equal importance for growth",
         "the duration of light exposure is more important than wavelength",
         "blue light is more important than red light",
-        "plants require a combination of different light wavelengths for optimal development"
+        "plants require a combination of different light wavelengths for optimal development",
+        "red and blue light wavelengths have equal importance for growth"
       ],
       "correctAnswer": "plants require a combination of different light wavelengths for optimal development",
       "explanation": "White light contains the full spectrum including red and blue. It outperformed both red and blue alone, suggesting that the combination of wavelengths is more beneficial than individual wavelengths.",
@@ -251,10 +251,10 @@
       "topic": "Data Interpretation",
       "prompt": "Based on Table 2, what is the solubility of NaCl at 30°C?",
       "options": [
+        "36.6 g/100g H2O",
         "35.8 g/100g H2O",
         "36.3 g/100g H2O",
-        "37.0 g/100g H2O",
-        "36.6 g/100g H2O"
+        "37.0 g/100g H2O"
       ],
       "correctAnswer": "36.6 g/100g H2O",
       "explanation": "Table 2 directly shows that at 30°C, NaCl solubility is 36.6 g/100g H2O.",
@@ -268,10 +268,10 @@
       "topic": "Trends",
       "prompt": "How much did NaCl solubility increase from 0°C to 60°C?",
       "options": [
-        "1.1 g/100g H2O",
-        "37.8 g/100g H2O",
         "35.7 g/100g H2O",
-        "2.1 g/100g H2O"
+        "2.1 g/100g H2O",
+        "1.1 g/100g H2O",
+        "37.8 g/100g H2O"
       ],
       "correctAnswer": "2.1 g/100g H2O",
       "explanation": "At 0°C, solubility = 35.7 g/100g H2O; at 60°C, solubility = 37.8 g/100g H2O. Increase = 37.8 - 35.7 = 2.1 g/100g H2O, as stated in the passage.",
@@ -285,10 +285,10 @@
       "topic": "Inference",
       "prompt": "The passage states that NaCl shows 'modest temperature dependence' compared to many other salts. What does this mean?",
       "options": [
-        "NaCl solubility is not affected by temperature changes",
         "NaCl becomes less soluble as temperature increases",
         "NaCl solubility increases dramatically with small temperature changes",
-        "NaCl solubility increases gradually with temperature at a relatively constant, small rate"
+        "NaCl solubility increases gradually with temperature at a relatively constant, small rate",
+        "NaCl solubility is not affected by temperature changes"
       ],
       "correctAnswer": "NaCl solubility increases gradually with temperature at a relatively constant, small rate",
       "explanation": "The passage explains that NaCl shows 'relatively modest temperature dependence' and increased by only 2.1 g over a 60°C range. This indicates gradual increase at a constant, small rate—not large jumps or no change.",
@@ -319,10 +319,10 @@
       "topic": "Conflicting Viewpoints",
       "prompt": "Which observation would support Scientist B's hypothesis over Scientist A's?",
       "options": [
+        "Discovering that crabs show peak activity when water movement increases but gravitational force decreases",
         "Finding that crabs are inactive during full moons",
         "Showing that crab activity patterns match lunar phases but not tidal cycles",
-        "Demonstrating that crabs have specialized organs for detecting gravity",
-        "Discovering that crabs show peak activity when water movement increases but gravitational force decreases"
+        "Demonstrating that crabs have specialized organs for detecting gravity"
       ],
       "correctAnswer": "Discovering that crabs show peak activity when water movement increases but gravitational force decreases",
       "explanation": "Scientist B attributes activity to water movement and food cues (tidal effects), while Scientist A attributes it to gravitational force. If crabs were active when tidal movement was high but gravity was not, this would support B's water-movement hypothesis over A's gravity hypothesis.",
@@ -336,10 +336,10 @@
       "topic": "Conflicting Viewpoints",
       "prompt": "According to Scientist A, crabs' sensitivity to lunar gravitational changes serves what function?",
       "options": [
-        "To help them migrate to deeper water",
-        "To regulate their internal circadian rhythm",
         "To help them detect water temperature changes",
-        "To allow them to time their feeding for maximum food availability"
+        "To allow them to time their feeding for maximum food availability",
+        "To help them migrate to deeper water",
+        "To regulate their internal circadian rhythm"
       ],
       "correctAnswer": "To allow them to time their feeding for maximum food availability",
       "explanation": "The passage states that Scientist A believes crabs 'have evolved sensory mechanisms to detect these subtle changes. When gravitational force increases...crabs become more active and spend more time foraging. This sensitivity allows crabs to time their feeding behavior for maximum food availability.'",
@@ -353,10 +353,10 @@
       "topic": "Conflicting Viewpoints",
       "prompt": "Which statement best describes a key difference between Scientist A's and Scientist B's explanations?",
       "options": [
-        "Scientist A believes crabs are always active, while Scientist B believes they are sometimes inactive",
         "Scientist A thinks the moon is more important than Scientist B does",
         "Scientist A studies spring tides, while Scientist B studies neap tides",
-        "Scientist A attributes activity to direct gravitational sensing, while Scientist B attributes it to sensory responses to water movement and food cues"
+        "Scientist A attributes activity to direct gravitational sensing, while Scientist B attributes it to sensory responses to water movement and food cues",
+        "Scientist A believes crabs are always active, while Scientist B believes they are sometimes inactive"
       ],
       "correctAnswer": "Scientist A attributes activity to direct gravitational sensing, while Scientist B attributes it to sensory responses to water movement and food cues",
       "explanation": "The passage clearly states the disagreement: 'they disagree on the proximate cause: Scientist A attributes this to gravitational sensing, while Scientist B attributes it to sensory responses to water movement and food availability cues.'",
@@ -370,10 +370,10 @@
       "topic": "Conflicting Viewpoints",
       "prompt": "Scientist B mentions that tidal currents increase during spring tides when the moon and sun are aligned. This detail supports Scientist B's hypothesis because:",
       "options": [
-        "it provides a mechanism by which food particles are transported and sensed by crabs",
         "it shows that the moon and sun work together",
         "it proves that crabs cannot sense gravity",
-        "it demonstrates that gravitational forces are strongest during spring tides"
+        "it demonstrates that gravitational forces are strongest during spring tides",
+        "it provides a mechanism by which food particles are transported and sensed by crabs"
       ],
       "correctAnswer": "it provides a mechanism by which food particles are transported and sensed by crabs",
       "explanation": "Scientist B's hypothesis relies on crabs detecting water movement and food particle signals. By explaining that spring tides increase water movement and food transport, B provides a physical mechanism linking tidal conditions to food availability that crabs can detect.",
@@ -387,10 +387,10 @@
       "topic": "Data Interpretation",
       "prompt": "According to Table 3, what was the oxygen consumption of soybeans at day 6?",
       "options": [
-        "2.3 mL/hr",
         "4.1 mL/hr",
         "3.2 mL/hr",
-        "5.6 mL/hr"
+        "5.6 mL/hr",
+        "2.3 mL/hr"
       ],
       "correctAnswer": "4.1 mL/hr",
       "explanation": "Table 3 shows that for soybeans at day 6, oxygen consumption was 4.1 mL/hr.",
@@ -421,10 +421,10 @@
       "topic": "Trends",
       "prompt": "What pattern is evident in the data for all three seed types?",
       "options": [
+        "Respiration rate was highest on day 4",
         "Respiration rate decreased over time",
         "Respiration rate increased dramatically from day 0 to day 10",
-        "Respiration rate remained constant over time",
-        "Respiration rate was highest on day 4"
+        "Respiration rate remained constant over time"
       ],
       "correctAnswer": "Respiration rate increased dramatically from day 0 to day 10",
       "explanation": "For all three species, oxygen consumption increased substantially: soybeans from 0.1 to 6.2, corn from 0.2 to 5.1, and wheat from 0.15 to 4.9 mL/hr. This dramatic increase reflects heightened metabolic activity during germination.",
@@ -438,10 +438,10 @@
       "topic": "Data Interpretation",
       "prompt": "By what factor did soybean respiration increase from day 0 to day 10?",
       "options": [
-        "approximately 6 times",
-        "approximately 62 times",
         "approximately 30 times",
-        "approximately 120 times"
+        "approximately 120 times",
+        "approximately 6 times",
+        "approximately 62 times"
       ],
       "correctAnswer": "approximately 62 times",
       "explanation": "Soybeans: day 0 = 0.1 mL/hr, day 10 = 6.2 mL/hr. Ratio = 6.2 / 0.1 = 62 times the initial rate.",
@@ -455,10 +455,10 @@
       "topic": "Inference",
       "prompt": "The increase in respiration rate during seed germination is primarily associated with:",
       "options": [
-        "a decrease in water content of the seed",
         "increased metabolic activity for growth and cell division",
         "a decrease in enzyme concentration",
-        "increased light exposure to the seeds"
+        "increased light exposure to the seeds",
+        "a decrease in water content of the seed"
       ],
       "correctAnswer": "increased metabolic activity for growth and cell division",
       "explanation": "The passage states: 'This increase reflects heightened metabolic activity needed for growth, cell division, and enzyme synthesis during the early stages of development.'",
@@ -489,10 +489,10 @@
       "topic": "Data Interpretation",
       "prompt": "On day 2, which seed type showed the lowest oxygen consumption?",
       "options": [
-        "Soybeans",
         "Corn",
         "All three consumed equal amounts",
-        "Wheat"
+        "Wheat",
+        "Soybeans"
       ],
       "correctAnswer": "Wheat",
       "explanation": "On day 2, oxygen consumption was: Soybeans = 0.8, Corn = 1.1, Wheat = 0.6 mL/hr. Wheat showed the lowest rate.",
@@ -506,10 +506,10 @@
       "topic": "Data Interpretation",
       "prompt": "At what CO2 concentration did the tomato leaf photosynthetic rate reach 15.3 µmol CO2/m²/s?",
       "options": [
+        "750 ppm",
         "200 ppm",
         "500 ppm",
-        "350 ppm",
-        "750 ppm"
+        "350 ppm"
       ],
       "correctAnswer": "350 ppm",
       "explanation": "Table 4 shows that at 350 ppm CO2, the net photosynthesis rate was 15.3 µmol CO2/m²/s.",
@@ -540,10 +540,10 @@
       "topic": "Data Interpretation",
       "prompt": "How much did photosynthetic rate increase from 100 ppm to 350 ppm CO2?",
       "options": [
-        "3.2 µmol CO2/m²/s",
         "8.5 µmol CO2/m²/s",
         "12.1 µmol CO2/m²/s",
-        "15.3 µmol CO2/m²/s"
+        "15.3 µmol CO2/m²/s",
+        "3.2 µmol CO2/m²/s"
       ],
       "correctAnswer": "12.1 µmol CO2/m²/s",
       "explanation": "At 100 ppm, rate = 3.2; at 350 ppm, rate = 15.3 µmol CO2/m²/s. Increase = 15.3 - 3.2 = 12.1 µmol CO2/m²/s.",
@@ -574,10 +574,10 @@
       "topic": "Data Interpretation",
       "prompt": "What is the approximate average increase in photosynthetic rate per 100 ppm increase in CO2 from 100 to 500 ppm?",
       "options": [
-        "3.8 µmol CO2/m²/s per 100 ppm",
         "1.5 µmol CO2/m²/s per 100 ppm",
         "4.3 µmol CO2/m²/s per 100 ppm",
-        "15.5 µmol CO2/m²/s per 100 ppm"
+        "15.5 µmol CO2/m²/s per 100 ppm",
+        "3.8 µmol CO2/m²/s per 100 ppm"
       ],
       "correctAnswer": "3.8 µmol CO2/m²/s per 100 ppm",
       "explanation": "From 100 to 500 ppm (400 ppm increase), rate changed from 3.2 to 18.7 µmol CO2/m²/s (15.5 increase). Per 100 ppm: 15.5 / 4 = 3.875, approximately 3.8 µmol CO2/m²/s per 100 ppm.",
@@ -591,10 +591,10 @@
       "topic": "Experimental Design",
       "prompt": "The experiment measured oxygen production as a proxy for enzyme activity. This is valid because:",
       "options": [
-        "oxygen is always produced in enzyme reactions",
-        "the more oxygen produced, the less efficient the enzyme is",
         "oxygen production is directly proportional to catalase activity in the decomposition of hydrogen peroxide",
-        "oxygen measurement is easier than measuring water production"
+        "oxygen measurement is easier than measuring water production",
+        "oxygen is always produced in enzyme reactions",
+        "the more oxygen produced, the less efficient the enzyme is"
       ],
       "correctAnswer": "oxygen production is directly proportional to catalase activity in the decomposition of hydrogen peroxide",
       "explanation": "Catalase catalyzes H2O2 → H2O + O2. Higher enzyme activity produces more product (oxygen) per unit time, making oxygen production a direct measure of catalase activity rate.",
@@ -608,10 +608,10 @@
       "topic": "Inference",
       "prompt": "Based on the data in Table 2, if the temperature were increased to 70°C, NaCl solubility would most likely be:",
       "options": [
+        "unchanged from 60°C",
         "approximately 38.1-38.3 g/100g H2O",
         "lower than 37.8 g/100g H2O",
-        "approximately 40 g/100g H2O",
-        "unchanged from 60°C"
+        "approximately 40 g/100g H2O"
       ],
       "correctAnswer": "approximately 38.1-38.3 g/100g H2O",
       "explanation": "The trend shows a consistent increase of approximately 0.35 g per 10°C. From 60°C (37.8) to 70°C would add roughly 0.35 g, giving approximately 38.1-38.3 g/100g H2O.",
@@ -642,10 +642,10 @@
       "topic": "Conflicting Viewpoints",
       "prompt": "An experiment showing that crabs respond to increased water movement even when housed in a closed tank isolated from all tidal effects would most strongly support:",
       "options": [
-        "Scientist B's hypothesis only",
         "Scientist A's hypothesis only",
         "both scientists' hypotheses equally",
-        "neither scientist's hypothesis"
+        "neither scientist's hypothesis",
+        "Scientist B's hypothesis only"
       ],
       "correctAnswer": "Scientist B's hypothesis only",
       "explanation": "Scientist B attributes activity to detection of water movement and food cues. If crabs respond to artificially induced water movement in isolation from tides, this directly supports B. Scientist A's gravity-based hypothesis would not explain this response since gravitational changes from the moon would not occur in an isolated tank.",
@@ -659,10 +659,10 @@
       "topic": "Data Interpretation",
       "prompt": "Based on Table 3, the difference in oxygen consumption between soybeans and wheat at day 8 was:",
       "options": [
-        "2.4 mL/hr",
-        "1.4 mL/hr",
         "1.2 mL/hr",
-        "4.4 mL/hr"
+        "4.4 mL/hr",
+        "2.4 mL/hr",
+        "1.4 mL/hr"
       ],
       "correctAnswer": "1.2 mL/hr",
       "explanation": "At day 8: Soybeans = 5.6 mL/hr, Wheat = 4.4 mL/hr. Difference = 5.6 - 4.4 = 1.2 mL/hr.",
@@ -676,10 +676,10 @@
       "topic": "Inference",
       "prompt": "The passage states that 'another factor (possibly light saturation or enzyme availability) becomes limiting' at high CO2. If the experiment had used a lower light intensity, how would the results change?",
       "options": [
+        "CO2 would remain the limiting factor at all concentrations",
         "the plateau would occur at a lower CO2 concentration",
         "photosynthetic rates would remain unchanged at all CO2 levels",
-        "the maximum photosynthetic rate would increase",
-        "CO2 would remain the limiting factor at all concentrations"
+        "the maximum photosynthetic rate would increase"
       ],
       "correctAnswer": "the plateau would occur at a lower CO2 concentration",
       "explanation": "If light becomes limiting first with reduced light intensity, the photosynthetic rate would plateau (saturate) earlier in the CO2 range. The limiting factor determines where saturation occurs.",
@@ -710,10 +710,10 @@
       "topic": "Data Interpretation",
       "prompt": "Between which two temperatures in Table 2 was the largest increase in NaCl solubility?",
       "options": [
-        "20°C to 30°C",
-        "10°C to 20°C",
         "0°C to 10°C",
-        "30°C to 40°C"
+        "30°C to 40°C",
+        "20°C to 30°C",
+        "10°C to 20°C"
       ],
       "correctAnswer": "10°C to 20°C",
       "explanation": "From Table 2: 0→10°C = +0.1, 10→20°C = +0.5, 20→30°C = +0.3, 30→40°C = +0.4, 40→50°C = +0.3. Among the options, 10°C to 20°C shows the largest single increase (0.5 g/100g).",

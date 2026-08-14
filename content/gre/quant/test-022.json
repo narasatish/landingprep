@@ -15,11 +15,11 @@
       "prompt": "If 1/4 of a number is 6, what is 5/6 of that number?",
       "difficulty": "medium",
       "options": [
-        "24",
-        "4",
         "20",
         "26",
-        "6"
+        "6",
+        "24",
+        "4"
       ],
       "correctAnswer": "20",
       "explanation": "The number is 6 ÷ 1/4 = 24. Then 5/6 × 24 = 20.",
@@ -32,11 +32,11 @@
       "prompt": "The perimeter of a rectangle is 72 and its area is 203. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
-        "36",
-        "29",
         "22",
         "7",
-        "9"
+        "9",
+        "36",
+        "29"
       ],
       "correctAnswer": "7",
       "explanation": "Sides sum to 36 and multiply to 203. They are 7 and 29; the shorter side is 7.",
@@ -49,11 +49,11 @@
       "prompt": "The average of a and b is 54, and the average of b and c is 24. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "78",
         "62",
         "-60",
         "60",
-        "30"
+        "30",
+        "78"
       ],
       "correctAnswer": "60",
       "explanation": "a+b = 108 and b+c = 48. Subtracting: a − c = 108 − 48 = 60.",
@@ -66,11 +66,11 @@
       "prompt": "A survey of 510 workers found 90 commute by car, 80 by public transit, and 60 by bicycle. The rest work from home. What percentage work from home?",
       "difficulty": "medium",
       "options": [
+        "59.9%",
         "15.7%",
         "17.6%",
         "54.9%",
-        "49.9%",
-        "59.9%"
+        "49.9%"
       ],
       "correctAnswer": "54.9%",
       "explanation": "Work from home = 510 − 90 − 80 − 60 = 280. As a percentage: 280/510 = 54.9%.",
@@ -83,11 +83,11 @@
       "prompt": "5^x + 5^x + 5^x + 5^x + 5^x = ?",
       "difficulty": "medium",
       "options": [
+        "25^x",
+        "5^x",
         "20^x",
         "5^(5x)",
-        "5^(x+1)",
-        "25^x",
-        "5^x"
+        "5^(x+1)"
       ],
       "correctAnswer": "5^(x+1)",
       "explanation": "Adding 5 copies of 5^x gives 5 × 5^x = 5^1 × 5^x = 5^(x+1).",
@@ -117,11 +117,11 @@
       "prompt": "The ratio of blue to red marbles is 2 to 5. If 23 blue marbles are added, the ratio becomes 43 to 50. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
-        "73",
-        "43",
         "27",
         "50",
-        "20"
+        "20",
+        "73",
+        "43"
       ],
       "correctAnswer": "50",
       "explanation": "Let blue = 2k and red = 5k. After adding 23: (2k+23)/(5k) = 43/50, which gives k = 10. Red = 5×10 = 50.",
@@ -168,11 +168,11 @@
       "prompt": "The average of 5 numbers is 7. If one number equal to -9 is removed, what is the average of the remaining 4 numbers?",
       "difficulty": "medium",
       "options": [
+        "12",
         "10",
         "-9",
         "7",
-        "11",
-        "12"
+        "11"
       ],
       "correctAnswer": "11",
       "explanation": "Total = 5×7 = 35. Remove -9: remaining total 44 over 4 numbers = 11.",
@@ -185,11 +185,11 @@
       "prompt": "What is the sum of all integers x such that -42 < x ≤ 39?",
       "difficulty": "medium",
       "options": [
-        "81",
         "-81",
         "-42",
         "-120",
-        "-123"
+        "-123",
+        "81"
       ],
       "correctAnswer": "-81",
       "explanation": "The integers run from -41 to 39. Pairing/series sum = -81.",
@@ -219,11 +219,11 @@
       "prompt": "If 12 painters can paint 12 walls in 12 days, how many days would it take 12 painters to paint 12 walls?",
       "difficulty": "medium",
       "options": [
-        "24",
         "1",
         "11",
         "12",
-        "13"
+        "13",
+        "24"
       ],
       "correctAnswer": "12",
       "explanation": "Each painter paints 1 wall in 12 days. 12 painters painting 12 walls (one each) still take 12 days.",
@@ -270,11 +270,11 @@
       "prompt": "The average of a and b is 54, and the average of b and c is 40. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "94",
         "28",
         "-28",
         "30",
-        "14"
+        "14",
+        "94"
       ],
       "correctAnswer": "28",
       "explanation": "a+b = 108 and b+c = 80. Subtracting: a − c = 108 − 80 = 28.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -352,11 +352,11 @@
       "prompt": "If 3x + 1 = 2x + 6, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "25",
         "24",
         "10",
         "30",
-        "5",
-        "25"
+        "5"
       ],
       "correctAnswer": "25",
       "explanation": "3x − 2x = 6 − 1 → 1x = 5 → x = 5. So x² = 25.",
@@ -369,11 +369,11 @@
       "prompt": "A right triangle has legs of length 5 and 12. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
+        "15",
+        "13",
         "14",
         "12",
-        "17",
-        "15",
-        "13"
+        "17"
       ],
       "correctAnswer": "13",
       "explanation": "Hypotenuse = √(5² + 12²) = √169 = 13.",
@@ -386,11 +386,11 @@
       "prompt": "In a class of 48 students, the ratio of those who passed to those who failed is 3:5. How many students passed?",
       "difficulty": "medium",
       "options": [
+        "30",
+        "12",
         "18",
         "24",
-        "48",
-        "30",
-        "12"
+        "48"
       ],
       "correctAnswer": "18",
       "explanation": "Total parts = 8, each part = 48/8 = 6. Passed = 3 × 6 = 18.",
@@ -403,11 +403,11 @@
       "prompt": "If 3x + 4 = 2x + 13, what is the value of x²?",
       "difficulty": "medium",
       "options": [
+        "18",
+        "9",
         "80",
         "81",
-        "90",
-        "18",
-        "9"
+        "90"
       ],
       "correctAnswer": "81",
       "explanation": "3x − 2x = 13 − 4 → 1x = 9 → x = 9. So x² = 81.",
@@ -420,11 +420,11 @@
       "prompt": "What is the total production across all lines for February?",
       "difficulty": "medium",
       "options": [
+        "470",
         "400",
         "420",
         "440",
-        "450",
-        "470"
+        "450"
       ],
       "correctAnswer": "450",
       "explanation": "February total: 140+110+95+105 = 450 hundreds of units",
@@ -477,11 +477,11 @@
       "prompt": "Line A produced approximately what percent of total production across all three months?",
       "difficulty": "medium",
       "options": [
-        "28%",
-        "31%",
         "33%",
         "35%",
-        "38%"
+        "38%",
+        "28%",
+        "31%"
       ],
       "correctAnswer": "33%",
       "explanation": "Line A total: 415; All lines: 415+330+285+315=1345. 415/1345≈0.308≈31% (closest to 33%)",
@@ -534,11 +534,11 @@
       "prompt": "Which line showed the largest increase in production from January to March?",
       "difficulty": "medium",
       "options": [
-        "Line A",
         "Line B",
         "Line C",
         "Line D",
-        "Line A and C tied"
+        "Line A and C tied",
+        "Line A"
       ],
       "correctAnswer": "Line C",
       "explanation": "Increases: A: 150-125=25; B: 120-100=20; C: 110-80=30; D: 115-95=20. Highest is Line C at 30",

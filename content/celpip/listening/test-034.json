@@ -121,10 +121,10 @@
       "part": 1,
       "prompt": "What is the customer's correct last name spelling?",
       "options": [
-        "A-N-D-E-R-S-E-N",
         "A-N-D-E-R-S-O-N",
         "A-N-D-R-E-S-O-N",
-        "A-N-D-E-R-T-O-N"
+        "A-N-D-E-R-T-O-N",
+        "A-N-D-E-R-S-E-N"
       ],
       "correctAnswer": "A-N-D-E-R-S-O-N",
       "explanation": "Diner specifies the correct spelling as 'A-N-D-E-R-S-O-N.'",
@@ -172,10 +172,10 @@
       "part": 1,
       "prompt": "How many people are in the party?",
       "options": [
+        "Seven",
         "Four",
         "Five",
-        "Six",
-        "Seven"
+        "Six"
       ],
       "correctAnswer": "Six",
       "explanation": "Diner states 'Six of us' in response to the manager's question about party size.",
@@ -206,10 +206,10 @@
       "part": 1,
       "prompt": "What special seating request did the customer make?",
       "options": [
-        "Near the kitchen",
         "By the bar",
         "A quiet area away from the bar",
-        "Close to the entrance"
+        "Close to the entrance",
+        "Near the kitchen"
       ],
       "correctAnswer": "A quiet area away from the bar",
       "explanation": "Diner requests 'a quiet table' and manager notes 'a quieter area away from the bar.'",
@@ -240,10 +240,10 @@
       "part": 1,
       "prompt": "What is the restaurant's cancellation policy?",
       "options": [
+        "48 hours notice required",
         "6 hours notice required",
         "12 hours notice required",
-        "24 hours notice required",
-        "48 hours notice required"
+        "24 hours notice required"
       ],
       "correctAnswer": "24 hours notice required",
       "explanation": "Manager states 'We require 24 hours notice for cancellations.'",
@@ -257,10 +257,10 @@
       "part": 2,
       "prompt": "How long have the dishes been in the sink?",
       "options": [
-        "One day",
-        "Two days",
         "Three days",
-        "Four days"
+        "Four days",
+        "One day",
+        "Two days"
       ],
       "correctAnswer": "Three days",
       "explanation": "Alex states 'it's been sitting there for three days.'",
@@ -308,10 +308,10 @@
       "part": 2,
       "prompt": "How much is the internet bill this month?",
       "options": [
+        "$80",
         "$65",
         "$70",
-        "$75",
-        "$80"
+        "$75"
       ],
       "correctAnswer": "$75",
       "explanation": "Alex states 'the internet bill is due next week. It's $75 this month.'",
@@ -325,10 +325,10 @@
       "part": 2,
       "prompt": "By how much did the internet bill increase?",
       "options": [
-        "$3",
         "$5",
         "$10",
-        "$15"
+        "$15",
+        "$3"
       ],
       "correctAnswer": "$5",
       "explanation": "Alex explains 'they increased the plan by five dollars.'",
@@ -342,10 +342,10 @@
       "part": 3,
       "prompt": "What are the visiting hours?",
       "options": [
-        "8 AM to 6 PM",
         "9 AM to 7 PM",
         "10 AM to 8 PM",
-        "11 AM to 9 PM"
+        "11 AM to 9 PM",
+        "8 AM to 6 PM"
       ],
       "correctAnswer": "10 AM to 8 PM",
       "explanation": "The guide states 'Visiting hours are 10 AM to 8 PM daily.'",
@@ -359,10 +359,10 @@
       "part": 3,
       "prompt": "How many visitors can be in a patient's room at one time?",
       "options": [
+        "Four",
         "One",
         "Two",
-        "Three",
-        "Four"
+        "Three"
       ],
       "correctAnswer": "Two",
       "explanation": "The guide specifies 'Each patient can have a maximum of two visitors at a time in their room.'",
@@ -376,10 +376,10 @@
       "part": 3,
       "prompt": "What is the minimum age for unaccompanied visits?",
       "options": [
+        "Fourteen years old",
         "Eight years old",
         "Ten years old",
-        "Twelve years old",
-        "Fourteen years old"
+        "Twelve years old"
       ],
       "correctAnswer": "Twelve years old",
       "explanation": "The guide states 'Children under twelve must be accompanied by an adult.'",
@@ -410,10 +410,10 @@
       "part": 3,
       "prompt": "What is the parking fee per visit?",
       "options": [
+        "$5",
         "$2",
         "$3",
-        "$4",
-        "$5"
+        "$4"
       ],
       "correctAnswer": "$5",
       "explanation": "The guide mentions 'Parking is available in the north lot at five dollars per visit.'",
@@ -427,10 +427,10 @@
       "part": 3,
       "prompt": "Who must approve outside food before it's given to a patient?",
       "options": [
-        "The visitor",
         "The patient",
         "The nursing staff",
-        "The hospital administrator"
+        "The hospital administrator",
+        "The visitor"
       ],
       "correctAnswer": "The nursing staff",
       "explanation": "The guide states 'Food brought from outside is permitted only if approved by nursing staff.'",
@@ -444,10 +444,10 @@
       "part": 4,
       "prompt": "What is the bill number for the education reform?",
       "options": [
+        "Bill 260",
         "Bill 235",
         "Bill 247",
-        "Bill 250",
-        "Bill 260"
+        "Bill 250"
       ],
       "correctAnswer": "Bill 247",
       "explanation": "The legislation is identified as Bill 247.",
@@ -461,10 +461,10 @@
       "part": 4,
       "prompt": "When will mandatory digital literacy courses begin?",
       "options": [
-        "This year",
-        "Next September",
         "January 2027",
-        "September 2027"
+        "September 2027",
+        "This year",
+        "Next September"
       ],
       "correctAnswer": "Next September",
       "explanation": "High schools will introduce mandatory digital literacy courses starting next September.",
@@ -478,10 +478,10 @@
       "part": 4,
       "prompt": "By what percentage are teacher salaries being increased?",
       "options": [
-        "5 percent",
-        "6 percent",
         "8 percent",
-        "10 percent"
+        "10 percent",
+        "5 percent",
+        "6 percent"
       ],
       "correctAnswer": "8 percent",
       "explanation": "Teacher salaries will be increased by 8 percent over four years.",
@@ -495,10 +495,10 @@
       "part": 4,
       "prompt": "Approximately how many teachers does Quebec currently lack?",
       "options": [
-        "2,500 teachers",
         "3,000 teachers",
         "3,500 teachers",
-        "4,000 teachers"
+        "4,000 teachers",
+        "2,500 teachers"
       ],
       "correctAnswer": "3,500 teachers",
       "explanation": "Quebec currently faces a shortage of approximately 3,500 teachers.",
@@ -546,10 +546,10 @@
       "part": 5,
       "prompt": "What components are included in the local food initiative?",
       "options": [
-        "Grocery stores and restaurants",
         "Farmers market and delivery programs",
         "Government subsidies",
-        "Large distribution centers"
+        "Large distribution centers",
+        "Grocery stores and restaurants"
       ],
       "correctAnswer": "Farmers market and delivery programs",
       "explanation": "The initiative proposes farmers market expansion and direct-to-consumer delivery programs.",
@@ -597,10 +597,10 @@
       "part": 5,
       "prompt": "What advantage of local food does Dr. Sarah emphasize?",
       "options": [
-        "Lower cost",
-        "Improved freshness and food safety",
         "More variety",
-        "Better storage"
+        "Better storage",
+        "Lower cost",
+        "Improved freshness and food safety"
       ],
       "correctAnswer": "Improved freshness and food safety",
       "explanation": "Reducing transportation improves food safety and nutrition through fresher products.",
@@ -614,10 +614,10 @@
       "part": 5,
       "prompt": "How much of his production does James currently sell to farmers market?",
       "options": [
-        "25 percent",
-        "35 percent",
         "40 percent",
-        "50 percent"
+        "50 percent",
+        "25 percent",
+        "35 percent"
       ],
       "correctAnswer": "40 percent",
       "explanation": "James currently sells about 40 percent of production to the farmers market.",
@@ -631,10 +631,10 @@
       "part": 5,
       "prompt": "What infrastructure limitation does James identify?",
       "options": [
-        "Limited land",
         "Transportation issues",
         "Packaging and distribution",
-        "Workforce availability"
+        "Workforce availability",
+        "Limited land"
       ],
       "correctAnswer": "Packaging and distribution",
       "explanation": "James lacks infrastructure for packaging and distribution to expand sales.",
@@ -665,10 +665,10 @@
       "part": 6,
       "prompt": "Why does the speaker claim algorithms can be biased?",
       "options": [
-        "They're not programmed correctly",
-        "They're trained on historical data that includes human bias",
         "They lack computing power",
-        "They're intentionally designed to discriminate"
+        "They're intentionally designed to discriminate",
+        "They're not programmed correctly",
+        "They're trained on historical data that includes human bias"
       ],
       "correctAnswer": "They're trained on historical data that includes human bias",
       "explanation": "The speaker explains algorithms are trained on historical data that includes human bias patterns.",
@@ -682,10 +682,10 @@
       "part": 6,
       "prompt": "What did Amazon discover about their hiring algorithm?",
       "options": [
-        "It was too slow",
         "It was discriminating against women",
         "It was too expensive",
-        "It wasn't identifying qualified candidates"
+        "It wasn't identifying qualified candidates",
+        "It was too slow"
       ],
       "correctAnswer": "It was discriminating against women",
       "explanation": "Amazon discovered their algorithm was discriminating against women and scrapped it.",
@@ -716,10 +716,10 @@
       "part": 6,
       "prompt": "What key point does the speaker make about data?",
       "options": [
+        "Data is a recent invention",
         "Data is always objective",
         "Data is never neutral and includes bias",
-        "Data should never be used in hiring",
-        "Data is a recent invention"
+        "Data should never be used in hiring"
       ],
       "correctAnswer": "Data is never neutral and includes bias",
       "explanation": "The speaker argues data is never neutral and carries historical bias.",
@@ -733,10 +733,10 @@
       "part": 6,
       "prompt": "What does the speaker advocate companies should do before deploying algorithms?",
       "options": [
+        "Ignore algorithm concerns",
         "Use them immediately",
         "Train employees on algorithms",
-        "Conduct rigorous bias testing and external auditing",
-        "Ignore algorithm concerns"
+        "Conduct rigorous bias testing and external auditing"
       ],
       "correctAnswer": "Conduct rigorous bias testing and external auditing",
       "explanation": "Companies should conduct rigorous bias testing and external auditing before deployment.",
@@ -750,10 +750,10 @@
       "part": 6,
       "prompt": "What human qualities does the speaker claim algorithms can't capture?",
       "options": [
-        "Education level",
         "Potential, resilience, and growth",
         "Work experience",
-        "Technical skills"
+        "Technical skills",
+        "Education level"
       ],
       "correctAnswer": "Potential, resilience, and growth",
       "explanation": "Algorithms can't capture potential, resilience, or the capacity for growth.",

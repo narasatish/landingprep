@@ -32,11 +32,11 @@
       "prompt": "A jacket priced at $170 is discounted by 40% and then taxed at 5%. What is the final price?",
       "difficulty": "medium",
       "options": [
+        "$102",
         "$107.10",
         "$170",
         "$117.10",
-        "$178.50",
-        "$102"
+        "$178.50"
       ],
       "correctAnswer": "$107.10",
       "explanation": "After 40% off: $102. After 5% tax: $102 × 1.05 = $107.10.",
@@ -49,11 +49,11 @@
       "prompt": "If 7 painters can paint 7 walls in 7 days, how many days would it take 7 painters to paint 7 walls?",
       "difficulty": "medium",
       "options": [
+        "14",
         "8",
         "7",
         "1",
-        "6",
-        "14"
+        "6"
       ],
       "correctAnswer": "7",
       "explanation": "Each painter paints 1 wall in 7 days. 7 painters painting 7 walls (one each) still take 7 days.",
@@ -83,11 +83,11 @@
       "prompt": "The perimeter of a rectangle is 68 and its area is 225. What is the length of its shorter side?",
       "difficulty": "medium",
       "options": [
+        "16",
         "11",
         "34",
         "25",
-        "9",
-        "16"
+        "9"
       ],
       "correctAnswer": "9",
       "explanation": "Sides sum to 34 and multiply to 225. They are 9 and 25; the shorter side is 9.",
@@ -100,11 +100,11 @@
       "prompt": "The average of a and b is 58, and the average of b and c is 46. What is a − c?",
       "difficulty": "medium",
       "options": [
-        "104",
         "24",
         "12",
         "-24",
-        "26"
+        "26",
+        "104"
       ],
       "correctAnswer": "24",
       "explanation": "a+b = 116 and b+c = 92. Subtracting: a − c = 116 − 92 = 24.",
@@ -134,11 +134,11 @@
       "prompt": "4^x + 4^x + 4^x + 4^x = ?",
       "difficulty": "medium",
       "options": [
+        "16^x",
         "4^(4x)",
         "4^(x+1)",
         "4^(2x)",
-        "4^x",
-        "16^x"
+        "4^x"
       ],
       "correctAnswer": "4^(x+1)",
       "explanation": "Adding 4 copies of 4^x gives 4 × 4^x = 4^1 × 4^x = 4^(x+1).",
@@ -151,11 +151,11 @@
       "prompt": "Sofia can assemble a bookcase twice as fast as Marcus. Working together they finish one in 16 hours. How many hours would Sofia take alone?",
       "difficulty": "medium",
       "options": [
-        "24",
-        "11",
         "48",
         "16",
-        "32"
+        "32",
+        "24",
+        "11"
       ],
       "correctAnswer": "24",
       "explanation": "Let Marcus's rate be r. Sofia's is 2r, so together (3)r = 1/16, giving r = 1/48. Sofia's rate 2r = 2/48 = 1/24, so Sofia alone takes 24 hours.",
@@ -168,11 +168,11 @@
       "prompt": "The ratio of blue to red marbles is 4 to 5. If 12 blue marbles are added, the ratio becomes 56 to 55. How many red marbles are there?",
       "difficulty": "medium",
       "options": [
-        "44",
-        "55",
         "43",
         "67",
-        "56"
+        "56",
+        "44",
+        "55"
       ],
       "correctAnswer": "55",
       "explanation": "Let blue = 4k and red = 5k. After adding 12: (4k+12)/(5k) = 56/55, which gives k = 11. Red = 5×11 = 55.",
@@ -185,11 +185,11 @@
       "prompt": "Nina has n marbles where 30 < n < 70. Divided among 7 children, 0 remain; divided among 8 children, 0 remain. How many remain if divided among 9 children?",
       "difficulty": "medium",
       "options": [
-        "3",
-        "4",
         "2",
         "1",
-        "0"
+        "0",
+        "3",
+        "4"
       ],
       "correctAnswer": "2",
       "explanation": "The only n in range with n≡0 (mod 7) and n≡0 (mod 8) is 56. Then 56 ÷ 9 leaves remainder 2.",
@@ -202,11 +202,11 @@
       "prompt": "What is 10% of 80?",
       "difficulty": "medium",
       "options": [
-        "16",
-        "80",
         "70",
         "8",
-        "90"
+        "90",
+        "16",
+        "80"
       ],
       "correctAnswer": "8",
       "explanation": "10% of 80 = 10/100 × 80 = 8.",
@@ -219,11 +219,11 @@
       "prompt": "The average of 6 numbers is 6. If one number equal to -9 is removed, what is the average of the remaining 5 numbers?",
       "difficulty": "medium",
       "options": [
-        "6",
         "10",
         "-9",
         "9",
-        "8"
+        "8",
+        "6"
       ],
       "correctAnswer": "9",
       "explanation": "Total = 6×6 = 36. Remove -9: remaining total 45 over 5 numbers = 9.",
@@ -236,11 +236,11 @@
       "prompt": "What is the sum of all integers x such that -26 < x ≤ 37?",
       "difficulty": "medium",
       "options": [
-        "378",
-        "-378",
         "352",
         "415",
-        "341"
+        "341",
+        "378",
+        "-378"
       ],
       "correctAnswer": "378",
       "explanation": "The integers run from -25 to 37. Pairing/series sum = 378.",
@@ -253,11 +253,11 @@
       "prompt": "A jacket priced at $90 is discounted by 20% and then taxed at 10%. What is the final price?",
       "difficulty": "medium",
       "options": [
-        "$72",
-        "$79.20",
         "$90",
         "$89.20",
-        "$99.00"
+        "$99.00",
+        "$72",
+        "$79.20"
       ],
       "correctAnswer": "$79.20",
       "explanation": "After 20% off: $72. After 10% tax: $72 × 1.1 = $79.20.",
@@ -270,11 +270,11 @@
       "prompt": "If 12 painters can paint 12 walls in 12 days, how many days would it take 12 painters to paint 12 walls?",
       "difficulty": "medium",
       "options": [
+        "12",
+        "11",
         "13",
         "1",
-        "24",
-        "12",
-        "11"
+        "24"
       ],
       "correctAnswer": "12",
       "explanation": "Each painter paints 1 wall in 12 days. 12 painters painting 12 walls (one each) still take 12 days.",
@@ -303,10 +303,10 @@
       "prompt": "Quantity A: the number of prime numbers between 20 and 40.\nQuantity B: the number of prime numbers between 10 and 20.",
       "difficulty": "medium",
       "options": [
-        "Quantity A is greater",
         "Quantity B is greater",
         "The two quantities are equal",
-        "The relationship cannot be determined"
+        "The relationship cannot be determined",
+        "Quantity A is greater"
       ],
       "correctAnswer": "The two quantities are equal",
       "explanation": "Primes 20–40: 23, 29, 31, 37 (4). Primes 10–20: 11, 13, 17, 19 (4). They are equal.",
@@ -335,11 +335,11 @@
       "prompt": "In a class of 28 students, the ratio of those who passed to those who failed is 3:4. How many students passed?",
       "difficulty": "medium",
       "options": [
-        "15",
-        "12",
         "28",
         "16",
-        "8"
+        "8",
+        "15",
+        "12"
       ],
       "correctAnswer": "12",
       "explanation": "Total parts = 7, each part = 28/7 = 4. Passed = 3 × 4 = 12.",
@@ -352,11 +352,11 @@
       "prompt": "If 5x + 8 = 4x + 17, what is the value of x²?",
       "difficulty": "medium",
       "options": [
-        "80",
         "81",
         "90",
         "9",
-        "18"
+        "18",
+        "80"
       ],
       "correctAnswer": "81",
       "explanation": "5x − 4x = 17 − 8 → 1x = 9 → x = 9. So x² = 81.",
@@ -369,11 +369,11 @@
       "prompt": "A right triangle has legs of length 6 and 8. What is the length of the hypotenuse?",
       "difficulty": "medium",
       "options": [
-        "12",
-        "11",
         "14",
         "10",
-        "9"
+        "9",
+        "12",
+        "11"
       ],
       "correctAnswer": "10",
       "explanation": "Hypotenuse = √(6² + 8²) = √100 = 10.",
@@ -420,11 +420,11 @@
       "prompt": "What is the total patient census for all wards in Q3?",
       "difficulty": "medium",
       "options": [
+        "360",
+        "380",
         "320",
         "340",
-        "350",
-        "360",
-        "380"
+        "350"
       ],
       "correctAnswer": "350",
       "explanation": "Q3 total: 32+145+90+45+38 = 350 patients",
@@ -484,11 +484,11 @@
       "prompt": "From Q1 to Q4, the ICU bed count increased by what percentage?",
       "difficulty": "medium",
       "options": [
-        "40%",
         "50%",
         "60%",
         "70%",
-        "80%"
+        "80%",
+        "40%"
       ],
       "correctAnswer": "50%",
       "explanation": "(36-24)/24 = 12/24 = 0.5 = 50%",
