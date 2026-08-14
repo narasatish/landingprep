@@ -5,238 +5,418 @@
   "type": "section",
   "title": "OET Listening Practice Test 3",
   "durationSeconds": 2700,
-  "questionCount": 30,
+  "questionCount": 42,
   "instructions": "OET Listening has three parts. Part A: Consultation Extracts (note-taking style). Part B: Short Workplace Extracts (main point identification). Part C: Presentation Extracts (detailed comprehension). Listen carefully and choose the best answer.",
   "parts": [
     {
       "part": 1,
       "title": "Part A — Consultation Extracts",
-      "questions": 18,
+      "questions": 24,
       "time": "12 min",
-      "description": "Doctor-patient consultations. Listen and take notes to answer questions about specific information."
+      "description": "Two consultation extracts. Complete the clinical notes with the information you hear."
     },
     {
       "part": 2,
-      "title": "Part B — Short Workplace Extracts",
+      "title": "Part B — Workplace Extracts",
       "questions": 6,
       "time": "8 min",
-      "description": "Workplace briefings, handovers, phone calls. Identify the main point or purpose."
+      "description": "Short workplace extracts; one multiple-choice question each."
     },
     {
       "part": 3,
       "title": "Part C — Presentation Extracts",
-      "questions": 6,
-      "time": "10 min",
-      "description": "Healthcare presentations or talks. Comprehend main ideas and supporting details."
+      "questions": 12,
+      "time": "12 min",
+      "description": "Presentation and interview extracts; detailed comprehension of opinion and argument."
     }
   ],
   "questions": [
     {
       "id": "oet-listening-003-q01",
-      "passageId": "oet-listening-003-p1a",
       "part": 1,
-      "topic": "Gestational Age",
-      "questionType": "multiple_choice_single",
-      "prompt": "At how many weeks is the patient?",
-      "options": [
-        "20 weeks",
-        "24 weeks",
-        "28 weeks",
-        "32 weeks"
+      "topic": "Consultation 1 — Midwifery, antenatal review",
+      "questionType": "short_answer",
+      "prompt": "Gestation: _______ weeks",
+      "question": "Gestation: _______ weeks",
+      "correctAnswer": "28",
+      "alternateAnswers": [
+        "twenty-eight"
       ],
-      "correctAnswer": "28 weeks",
-      "explanation": "The midwife confirms the patient is at 28 weeks.",
-      "difficulty": "easy"
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 1,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
     },
     {
       "id": "oet-listening-003-q02",
-      "passageId": "oet-listening-003-p1a",
       "part": 1,
-      "topic": "Screening Test",
-      "questionType": "multiple_choice_single",
-      "prompt": "What screening test does the midwife want to perform?",
-      "options": [
-        "Glucose tolerance test for gestational diabetes",
-        "HIV screening",
-        "Ultrasound scan",
-        "Amniocentesis"
-      ],
-      "correctAnswer": "Glucose tolerance test for gestational diabetes",
-      "explanation": "The midwife mentions the glucose tolerance test to screen for gestational diabetes.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Midwifery, antenatal review",
+      "questionType": "short_answer",
+      "prompt": "Parity: this is her _______ baby",
+      "question": "Parity: this is her _______ baby",
+      "correctAnswer": "first",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 2,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
     },
     {
       "id": "oet-listening-003-q03",
-      "passageId": "oet-listening-003-p1a",
       "part": 1,
-      "topic": "Blood Pressure",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is the patient's blood pressure reading?",
-      "options": [
-        "120 over 75",
-        "130 over 80",
-        "135 over 85",
-        "140 over 90"
-      ],
-      "correctAnswer": "135 over 85",
-      "explanation": "The midwife states the blood pressure is 135 over 85, which is slightly elevated.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Midwifery, antenatal review",
+      "questionType": "short_answer",
+      "prompt": "Screening test today: _______ tolerance test",
+      "question": "Screening test today: _______ tolerance test",
+      "correctAnswer": "glucose",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 3,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
     },
     {
       "id": "oet-listening-003-q04",
-      "passageId": "oet-listening-003-p1a",
       "part": 1,
-      "topic": "Supplements",
-      "questionType": "multiple_choice_single",
-      "prompt": "What prenatal vitamins is the patient taking?",
-      "options": [
-        "Folic acid and iron supplements",
-        "Only iron supplements",
-        "Only folic acid",
-        "Calcium and vitamin D"
-      ],
-      "correctAnswer": "Folic acid and iron supplements",
-      "explanation": "The patient states she's taking folic acid and iron supplements as prescribed.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Midwifery, antenatal review",
+      "questionType": "short_answer",
+      "prompt": "Condition being screened for: gestational _______",
+      "question": "Condition being screened for: gestational _______",
+      "correctAnswer": "diabetes",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 4,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
     },
     {
       "id": "oet-listening-003-q05",
-      "passageId": "oet-listening-003-p1a",
       "part": 1,
-      "topic": "Ankle Swelling",
-      "questionType": "multiple_choice_single",
-      "prompt": "When is the ankle swelling most noticeable?",
-      "options": [
-        "In the morning",
-        "Mid-afternoon",
-        "By evening",
-        "Throughout the day equally"
+      "topic": "Consultation 1 — Midwifery, antenatal review",
+      "questionType": "short_answer",
+      "prompt": "Symptom reported: unusual _______",
+      "question": "Symptom reported: unusual _______",
+      "correctAnswer": "thirst",
+      "alternateAnswers": [
+        "thirsty"
       ],
-      "correctAnswer": "By evening",
-      "explanation": "The patient mentions ankles are puffy especially by evening.",
-      "difficulty": "easy"
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 5,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
     },
     {
       "id": "oet-listening-003-q06",
-      "passageId": "oet-listening-003-p1b",
       "part": 1,
-      "topic": "Cancer Stage",
-      "questionType": "multiple_choice_single",
-      "prompt": "What stage is Mr Williams' lung cancer?",
-      "options": [
-        "Stage 3",
-        "Stage 2",
-        "Stage 1",
-        "Stage 4"
-      ],
-      "correctAnswer": "Stage 3",
-      "explanation": "The oncologist confirms non-small cell lung cancer, stage three.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Midwifery, antenatal review",
+      "questionType": "short_answer",
+      "prompt": "Also reports increased _______",
+      "question": "Also reports increased _______",
+      "correctAnswer": "urination",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 6,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
     },
     {
       "id": "oet-listening-003-q07",
-      "passageId": "oet-listening-003-p1b",
       "part": 1,
-      "topic": "Treatment Duration",
-      "questionType": "multiple_choice_single",
-      "prompt": "How long is the total treatment duration?",
-      "options": [
-        "3 months",
-        "12 months",
-        "6 months",
-        "18 months"
-      ],
-      "correctAnswer": "6 months",
-      "explanation": "The oncologist states the treatment is six months total.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Midwifery, antenatal review",
+      "questionType": "short_answer",
+      "prompt": "Ankles described as puffy especially by _______",
+      "question": "Ankles described as puffy especially by _______",
+      "correctAnswer": "evening",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 7,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
     },
     {
       "id": "oet-listening-003-q08",
-      "passageId": "oet-listening-003-p1b",
       "part": 1,
-      "topic": "Prognosis",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is the five-year survival rate with treatment?",
-      "options": [
-        "35 percent",
-        "25 percent",
-        "15 percent",
-        "50 percent"
+      "topic": "Consultation 1 — Midwifery, antenatal review",
+      "questionType": "short_answer",
+      "prompt": "Blood pressure today: _______",
+      "question": "Blood pressure today: _______",
+      "correctAnswer": "135 over 85",
+      "alternateAnswers": [
+        "135/85"
       ],
-      "correctAnswer": "35 percent",
-      "explanation": "The oncologist states five-year survival for stage three is about 35 percent with treatment.",
-      "difficulty": "easy"
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 8,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
     },
     {
       "id": "oet-listening-003-q09",
-      "passageId": "oet-listening-003-p1c",
       "part": 1,
-      "topic": "RA Diagnosis Markers",
-      "questionType": "multiple_choice_single",
-      "prompt": "Which blood tests confirm rheumatoid arthritis?",
-      "options": [
-        "Only rheumatoid factor",
-        "Only anti-CCP antibodies",
-        "Rheumatoid factor and anti-CCP antibodies",
-        "Only ESR and CRP"
+      "topic": "Consultation 1 — Midwifery, antenatal review",
+      "questionType": "short_answer",
+      "prompt": "Condition to be ruled out: _______",
+      "question": "Condition to be ruled out: _______",
+      "correctAnswer": "pre-eclampsia",
+      "alternateAnswers": [
+        "preeclampsia"
       ],
-      "correctAnswer": "Rheumatoid factor and anti-CCP antibodies",
-      "explanation": "The rheumatologist states both rheumatoid factor and anti-CCP antibodies are positive.",
-      "difficulty": "medium"
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 9,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
     },
     {
       "id": "oet-listening-003-q10",
-      "passageId": "oet-listening-003-p1c",
       "part": 1,
-      "topic": "Morning Stiffness",
-      "questionType": "multiple_choice_single",
-      "prompt": "How long does the patient's morning stiffness last?",
-      "options": [
-        "About 30 minutes",
-        "About 1 hour",
-        "About 3 hours",
-        "About 2 hours"
-      ],
-      "correctAnswer": "About 2 hours",
-      "explanation": "The patient states stiffness lasts for about two hours after waking.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Midwifery, antenatal review",
+      "questionType": "short_answer",
+      "prompt": "Supplements taken: folic acid and _______",
+      "question": "Supplements taken: folic acid and _______",
+      "correctAnswer": "iron",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 10,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
     },
     {
       "id": "oet-listening-003-q11",
-      "passageId": "oet-listening-003-p1c",
       "part": 1,
-      "topic": "First-Line Drug",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is the first DMARD prescribed?",
-      "options": [
-        "Methotrexate",
-        "Sulfasalazine",
-        "Biologic agent",
-        "Prednisolone"
-      ],
-      "correctAnswer": "Methotrexate",
-      "explanation": "The rheumatologist prescribes methotrexate as the first DMARD.",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Midwifery, antenatal review",
+      "questionType": "short_answer",
+      "prompt": "Dietary advice: limit _______ intake",
+      "question": "Dietary advice: limit _______ intake",
+      "correctAnswer": "salt",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 11,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
     },
     {
       "id": "oet-listening-003-q12",
-      "passageId": "oet-listening-003-p1c",
       "part": 1,
-      "topic": "Follow-up Timing",
-      "questionType": "multiple_choice_single",
-      "prompt": "When should the patient return for review?",
-      "options": [
-        "In two months",
-        "In one month",
-        "In three months",
-        "In six months"
-      ],
-      "correctAnswer": "In two months",
-      "explanation": "The rheumatologist says 'Come back in two months for review.'",
-      "difficulty": "easy"
+      "topic": "Consultation 1 — Midwifery, antenatal review",
+      "questionType": "short_answer",
+      "prompt": "If results confirm diabetes, refer to a _______",
+      "question": "If results confirm diabetes, refer to a _______",
+      "correctAnswer": "dietitian",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 1.",
+      "difficulty": "medium",
+      "questionNumber": 12,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
     },
     {
       "id": "oet-listening-003-q13",
+      "part": 1,
+      "topic": "Consultation 2 — Oncology, diagnosis and plan",
+      "questionType": "short_answer",
+      "prompt": "Diagnosis: non-small cell _______ cancer",
+      "question": "Diagnosis: non-small cell _______ cancer",
+      "correctAnswer": "lung",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 13,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
+    },
+    {
+      "id": "oet-listening-003-q14",
+      "part": 1,
+      "topic": "Consultation 2 — Oncology, diagnosis and plan",
+      "questionType": "short_answer",
+      "prompt": "Stage: _______",
+      "question": "Stage: _______",
+      "correctAnswer": "three",
+      "alternateAnswers": [
+        "3",
+        "stage three"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 14,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
+    },
+    {
+      "id": "oet-listening-003-q15",
+      "part": 1,
+      "topic": "Consultation 2 — Oncology, diagnosis and plan",
+      "questionType": "short_answer",
+      "prompt": "Cancer has spread to the _______ nodes",
+      "question": "Cancer has spread to the _______ nodes",
+      "correctAnswer": "lymph",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 15,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
+    },
+    {
+      "id": "oet-listening-003-q16",
+      "part": 1,
+      "topic": "Consultation 2 — Oncology, diagnosis and plan",
+      "questionType": "short_answer",
+      "prompt": "Planned treatment: chemotherapy and _______ therapy",
+      "question": "Planned treatment: chemotherapy and _______ therapy",
+      "correctAnswer": "radiation",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 16,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
+    },
+    {
+      "id": "oet-listening-003-q17",
+      "part": 1,
+      "topic": "Consultation 2 — Oncology, diagnosis and plan",
+      "questionType": "short_answer",
+      "prompt": "Number of chemotherapy cycles: _______",
+      "question": "Number of chemotherapy cycles: _______",
+      "correctAnswer": "six",
+      "alternateAnswers": [
+        "6"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 17,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
+    },
+    {
+      "id": "oet-listening-003-q18",
+      "part": 1,
+      "topic": "Consultation 2 — Oncology, diagnosis and plan",
+      "questionType": "short_answer",
+      "prompt": "Chemotherapy interval: every _______ weeks",
+      "question": "Chemotherapy interval: every _______ weeks",
+      "correctAnswer": "three",
+      "alternateAnswers": [
+        "3"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 18,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
+    },
+    {
+      "id": "oet-listening-003-q19",
+      "part": 1,
+      "topic": "Consultation 2 — Oncology, diagnosis and plan",
+      "questionType": "short_answer",
+      "prompt": "Route of administration: _______",
+      "question": "Route of administration: _______",
+      "correctAnswer": "intravenously",
+      "alternateAnswers": [
+        "intravenous",
+        "IV"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 19,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
+    },
+    {
+      "id": "oet-listening-003-q20",
+      "part": 1,
+      "topic": "Consultation 2 — Oncology, diagnosis and plan",
+      "questionType": "short_answer",
+      "prompt": "Total treatment duration: _______ months",
+      "question": "Total treatment duration: _______ months",
+      "correctAnswer": "six",
+      "alternateAnswers": [
+        "6"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 20,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
+    },
+    {
+      "id": "oet-listening-003-q21",
+      "part": 1,
+      "topic": "Consultation 2 — Oncology, diagnosis and plan",
+      "questionType": "short_answer",
+      "prompt": "Expected side effects include hair loss, nausea and _______",
+      "question": "Expected side effects include hair loss, nausea and _______",
+      "correctAnswer": "fatigue",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 21,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
+    },
+    {
+      "id": "oet-listening-003-q22",
+      "part": 1,
+      "topic": "Consultation 2 — Oncology, diagnosis and plan",
+      "questionType": "short_answer",
+      "prompt": "Five-year survival with treatment: about _______ percent",
+      "question": "Five-year survival with treatment: about _______ percent",
+      "correctAnswer": "35",
+      "alternateAnswers": [
+        "thirty-five"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 22,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
+    },
+    {
+      "id": "oet-listening-003-q23",
+      "part": 1,
+      "topic": "Consultation 2 — Oncology, diagnosis and plan",
+      "questionType": "short_answer",
+      "prompt": "Median survival without treatment: about _______ months",
+      "question": "Median survival without treatment: about _______ months",
+      "correctAnswer": "10",
+      "alternateAnswers": [
+        "ten"
+      ],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 23,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
+    },
+    {
+      "id": "oet-listening-003-q24",
+      "part": 1,
+      "topic": "Consultation 2 — Oncology, diagnosis and plan",
+      "questionType": "short_answer",
+      "prompt": "Support services offered: a counsellor and _______",
+      "question": "Support services offered: a counsellor and _______",
+      "correctAnswer": "dietitian",
+      "alternateAnswers": [],
+      "explanation": "The speaker states this directly in consultation 2.",
+      "difficulty": "medium",
+      "questionNumber": 24,
+      "passageId": "oet-listening-003-part1",
+      "scriptId": "oet-listening-003-part1"
+    },
+    {
+      "id": "oet-listening-003-q25",
       "passageId": "oet-listening-003-p2a",
       "part": 2,
       "topic": "Cardiac Test Result",
@@ -250,10 +430,11 @@
       ],
       "correctAnswer": "Normal",
       "explanation": "The nurse states troponin levels came back normal, so no myocardial infarction.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 25
     },
     {
-      "id": "oet-listening-003-q14",
+      "id": "oet-listening-003-q26",
       "passageId": "oet-listening-003-p2a",
       "part": 2,
       "topic": "Sepsis Patient Status",
@@ -267,10 +448,11 @@
       ],
       "correctAnswer": "60 percent",
       "explanation": "The nurse states her FiO2 is at 60 percent.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 26
     },
     {
-      "id": "oet-listening-003-q15",
+      "id": "oet-listening-003-q27",
       "passageId": "oet-listening-003-p2a",
       "part": 2,
       "topic": "Repositioning Frequency",
@@ -284,10 +466,11 @@
       ],
       "correctAnswer": "Every 2 hours",
       "explanation": "The nurse recommends repositioning frequency be increased to every two hours.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 27
     },
     {
-      "id": "oet-listening-003-q16",
+      "id": "oet-listening-003-q28",
       "passageId": "oet-listening-003-p2b",
       "part": 2,
       "topic": "Absence Duration",
@@ -301,180 +484,11 @@
       ],
       "correctAnswer": "Two weeks",
       "explanation": "The manager mentions Sarah has been off sick for two weeks.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 28
     },
     {
-      "id": "oet-listening-003-q17",
-      "passageId": "oet-listening-003-p3a",
-      "part": 3,
-      "topic": "Resistance Impact",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is a consequence of antimicrobial resistance?",
-      "options": [
-        "Limited treatment options and higher mortality",
-        "Lower costs of healthcare",
-        "Faster recovery times",
-        "Reduced need for healthcare"
-      ],
-      "correctAnswer": "Limited treatment options and higher mortality",
-      "explanation": "The speaker states resistant organisms cause severe infections with limited treatment options and higher mortality.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-listening-003-q18",
-      "passageId": "oet-listening-003-p3a",
-      "part": 3,
-      "topic": "Stewardship Pillars",
-      "questionType": "multiple_choice_single",
-      "prompt": "Which is NOT mentioned as a pillar of stewardship?",
-      "options": [
-        "Medication pricing control",
-        "Infection prevention",
-        "Optimising prescribing decisions",
-        "Surveillance of resistance patterns"
-      ],
-      "correctAnswer": "Medication pricing control",
-      "explanation": "The three pillars are optimising prescribing, infection prevention, and surveillance; pricing is not mentioned.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-listening-003-q19",
-      "passageId": "oet-listening-003-p3a",
-      "part": 3,
-      "topic": "Inappropriate Prescribing Reduction",
-      "questionType": "multiple_choice_single",
-      "prompt": "By how much did inappropriate prescribing decrease in the hospital programme?",
-      "options": [
-        "40 percent",
-        "30 percent",
-        "20 percent",
-        "50 percent"
-      ],
-      "correctAnswer": "40 percent",
-      "explanation": "The speaker states inappropriate prescribing decreased by 40 percent over two years.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-003-q20",
-      "passageId": "oet-listening-003-p3a",
-      "part": 3,
-      "topic": "Resistant Organisms Reduction",
-      "questionType": "multiple_choice_single",
-      "prompt": "By how much did resistant organism infections decrease?",
-      "options": [
-        "15 percent",
-        "20 percent",
-        "30 percent",
-        "25 percent"
-      ],
-      "correctAnswer": "25 percent",
-      "explanation": "The speaker states resistant organism infections decreased by 25 percent.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-003-q21",
-      "passageId": "oet-listening-003-p1a",
-      "part": 1,
-      "topic": "Glucose Tolerance Test Urgency",
-      "questionType": "multiple_choice_single",
-      "prompt": "Why does the midwife want to do the glucose tolerance test immediately?",
-      "options": [
-        "Standard protocol for all pregnancies",
-        "Insurance requirement",
-        "Patient's increased thirst suggests need for immediate testing",
-        "Routine scheduling"
-      ],
-      "correctAnswer": "Patient's increased thirst suggests need for immediate testing",
-      "explanation": "The midwife wants to test immediately because of the patient's reported symptoms of increased thirst.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-listening-003-q22",
-      "passageId": "oet-listening-003-p1a",
-      "part": 1,
-      "topic": "Pre-eclampsia Screening",
-      "questionType": "multiple_choice_single",
-      "prompt": "Why does the midwife check for pre-eclampsia?",
-      "options": [
-        "Routine screening only",
-        "Required by law",
-        "Because of elevated blood pressure and ankle swelling",
-        "Patient requested it"
-      ],
-      "correctAnswer": "Because of elevated blood pressure and ankle swelling",
-      "explanation": "These symptoms can indicate pre-eclampsia, which must be ruled out.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-listening-003-q23",
-      "passageId": "oet-listening-003-p1b",
-      "part": 1,
-      "topic": "Cancer Spread Extent",
-      "questionType": "multiple_choice_single",
-      "prompt": "To what extent has the cancer spread?",
-      "options": [
-        "Only in the primary location",
-        "To multiple organs",
-        "To lymph nodes but not distant organs",
-        "Everywhere in the body"
-      ],
-      "correctAnswer": "To lymph nodes but not distant organs",
-      "explanation": "Stage 3 means spread to lymph nodes but no distant metastases.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-003-q24",
-      "passageId": "oet-listening-003-p1b",
-      "part": 1,
-      "topic": "Combined Therapy Approach",
-      "questionType": "multiple_choice_single",
-      "prompt": "What combination therapy is recommended?",
-      "options": [
-        "Surgery alone",
-        "Chemotherapy alone",
-        "Chemotherapy and radiation therapy concurrently",
-        "Palliative care only"
-      ],
-      "correctAnswer": "Chemotherapy and radiation therapy concurrently",
-      "explanation": "The oncologist recommends six cycles of chemo with concurrent radiation.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-003-q25",
-      "passageId": "oet-listening-003-p1b",
-      "part": 1,
-      "topic": "Median Survival Without Treatment",
-      "questionType": "multiple_choice_single",
-      "prompt": "What is the median survival without treatment?",
-      "options": [
-        "3 months",
-        "6 months",
-        "10 months",
-        "18 months"
-      ],
-      "correctAnswer": "10 months",
-      "explanation": "The oncologist states median survival without treatment is about 10 months.",
-      "difficulty": "easy"
-    },
-    {
-      "id": "oet-listening-003-q26",
-      "passageId": "oet-listening-003-p1c",
-      "part": 1,
-      "topic": "Morning Stiffness Duration Significance",
-      "questionType": "multiple_choice_single",
-      "prompt": "Why is the two-hour morning stiffness duration significant?",
-      "options": [
-        "It indicates mild arthritis only",
-        "It requires hospitalization",
-        "Morning stiffness more than 30 minutes is a key feature of RA",
-        "It means the diagnosis is uncertain"
-      ],
-      "correctAnswer": "Morning stiffness more than 30 minutes is a key feature of RA",
-      "explanation": "The rheumatologist explains this prolonged stiffness is typical of RA diagnosis.",
-      "difficulty": "medium"
-    },
-    {
-      "id": "oet-listening-003-q27",
+      "id": "oet-listening-003-q29",
       "passageId": "oet-listening-003-p2a",
       "part": 2,
       "topic": "Organ Necrosis Assessment",
@@ -488,10 +502,11 @@
       ],
       "correctAnswer": "Elevated lactate suggesting ongoing tissue hypoxia",
       "explanation": "The nurse notes elevated lactate indicates tissue hypoxia, a sign of severity.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "questionNumber": 29
     },
     {
-      "id": "oet-listening-003-q28",
+      "id": "oet-listening-003-q30",
       "passageId": "oet-listening-003-p2b",
       "part": 2,
       "topic": "Return-to-Work Strategy",
@@ -505,10 +520,83 @@
       ],
       "correctAnswer": "Phased return with reduced hours and flexible shifts initially",
       "explanation": "The manager proposes a phased approach starting with three days a week.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 30
     },
     {
-      "id": "oet-listening-003-q29",
+      "id": "oet-listening-003-q31",
+      "passageId": "oet-listening-003-p3a",
+      "part": 3,
+      "topic": "Resistance Impact",
+      "questionType": "multiple_choice_single",
+      "prompt": "What is a consequence of antimicrobial resistance?",
+      "options": [
+        "Limited treatment options and higher mortality",
+        "Lower costs of healthcare",
+        "Faster recovery times",
+        "Reduced need for healthcare"
+      ],
+      "correctAnswer": "Limited treatment options and higher mortality",
+      "explanation": "The speaker states resistant organisms cause severe infections with limited treatment options and higher mortality.",
+      "difficulty": "medium",
+      "questionNumber": 31
+    },
+    {
+      "id": "oet-listening-003-q32",
+      "passageId": "oet-listening-003-p3a",
+      "part": 3,
+      "topic": "Stewardship Pillars",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which is NOT mentioned as a pillar of stewardship?",
+      "options": [
+        "Medication pricing control",
+        "Infection prevention",
+        "Optimising prescribing decisions",
+        "Surveillance of resistance patterns"
+      ],
+      "correctAnswer": "Medication pricing control",
+      "explanation": "The three pillars are optimising prescribing, infection prevention, and surveillance; pricing is not mentioned.",
+      "difficulty": "medium",
+      "questionNumber": 32
+    },
+    {
+      "id": "oet-listening-003-q33",
+      "passageId": "oet-listening-003-p3a",
+      "part": 3,
+      "topic": "Inappropriate Prescribing Reduction",
+      "questionType": "multiple_choice_single",
+      "prompt": "By how much did inappropriate prescribing decrease in the hospital programme?",
+      "options": [
+        "40 percent",
+        "30 percent",
+        "20 percent",
+        "50 percent"
+      ],
+      "correctAnswer": "40 percent",
+      "explanation": "The speaker states inappropriate prescribing decreased by 40 percent over two years.",
+      "difficulty": "easy",
+      "questionNumber": 33
+    },
+    {
+      "id": "oet-listening-003-q34",
+      "passageId": "oet-listening-003-p3a",
+      "part": 3,
+      "topic": "Resistant Organisms Reduction",
+      "questionType": "multiple_choice_single",
+      "prompt": "By how much did resistant organism infections decrease?",
+      "options": [
+        "15 percent",
+        "20 percent",
+        "30 percent",
+        "25 percent"
+      ],
+      "correctAnswer": "25 percent",
+      "explanation": "The speaker states resistant organism infections decreased by 25 percent.",
+      "difficulty": "easy",
+      "questionNumber": 34
+    },
+    {
+      "id": "oet-listening-003-q35",
       "passageId": "oet-listening-003-p3a",
       "part": 3,
       "topic": "Inappropriate Prescribing Examples",
@@ -522,10 +610,11 @@
       ],
       "correctAnswer": "Prescribing antibiotics for viral infections",
       "explanation": "The speaker cites prescribing for viral infections as a major example of inappropriate use.",
-      "difficulty": "medium"
+      "difficulty": "medium",
+      "questionNumber": 35
     },
     {
-      "id": "oet-listening-003-q30",
+      "id": "oet-listening-003-q36",
       "passageId": "oet-listening-003-p3a",
       "part": 3,
       "topic": "Primary Care Strategy",
@@ -539,7 +628,128 @@
       ],
       "correctAnswer": "Education and point-of-care diagnostic tests",
       "explanation": "The speaker states education and rapid diagnostics help community prescribers improve practice.",
-      "difficulty": "easy"
+      "difficulty": "easy",
+      "questionNumber": 36
+    },
+    {
+      "id": "oet-listening-003-q37",
+      "part": 3,
+      "passageId": "oet-listening-003-part3",
+      "scriptId": "oet-listening-003-part3",
+      "topic": "Antimicrobial Stewardship",
+      "questionType": "multiple_choice_single",
+      "prompt": "How many pillars does the stewardship programme have?",
+      "question": "How many pillars does the stewardship programme have?",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Five"
+      ],
+      "correctAnswer": "Three",
+      "explanation": "The speaker states the programme has three pillars: optimising prescribing, infection prevention, and surveillance.",
+      "difficulty": "medium",
+      "questionNumber": 37
+    },
+    {
+      "id": "oet-listening-003-q38",
+      "part": 3,
+      "passageId": "oet-listening-003-part3",
+      "scriptId": "oet-listening-003-part3",
+      "topic": "Antimicrobial Stewardship",
+      "questionType": "multiple_choice_single",
+      "prompt": "By how much did inappropriate prescribing fall over two years?",
+      "question": "By how much did inappropriate prescribing fall over two years?",
+      "options": [
+        "15 percent",
+        "25 percent",
+        "40 percent",
+        "60 percent"
+      ],
+      "correctAnswer": "40 percent",
+      "explanation": "The speaker reports inappropriate prescribing decreased by 40 percent over two years.",
+      "difficulty": "medium",
+      "questionNumber": 38
+    },
+    {
+      "id": "oet-listening-003-q39",
+      "part": 3,
+      "passageId": "oet-listening-003-part3",
+      "scriptId": "oet-listening-003-part3",
+      "topic": "Antimicrobial Stewardship",
+      "questionType": "multiple_choice_single",
+      "prompt": "By how much did resistant organism infections fall?",
+      "question": "By how much did resistant organism infections fall?",
+      "options": [
+        "10 percent",
+        "25 percent",
+        "40 percent",
+        "55 percent"
+      ],
+      "correctAnswer": "25 percent",
+      "explanation": "Resistant organism infections decreased by 25 percent.",
+      "difficulty": "medium",
+      "questionNumber": 39
+    },
+    {
+      "id": "oet-listening-003-q40",
+      "part": 3,
+      "passageId": "oet-listening-003-part3",
+      "scriptId": "oet-listening-003-part3",
+      "topic": "Antimicrobial Stewardship",
+      "questionType": "multiple_choice_single",
+      "prompt": "Which is given as the second pillar?",
+      "question": "Which is given as the second pillar?",
+      "options": [
+        "Surveillance of resistance patterns",
+        "Infection prevention",
+        "Optimising prescribing decisions",
+        "Point-of-care diagnostics"
+      ],
+      "correctAnswer": "Infection prevention",
+      "explanation": "The second pillar is infection prevention - hand hygiene, isolation protocols and device care.",
+      "difficulty": "medium",
+      "questionNumber": 40
+    },
+    {
+      "id": "oet-listening-003-q41",
+      "part": 3,
+      "passageId": "oet-listening-003-part3",
+      "scriptId": "oet-listening-003-part3",
+      "topic": "Antimicrobial Stewardship",
+      "questionType": "multiple_choice_single",
+      "prompt": "Why is the programme being extended to primary care?",
+      "question": "Why is the programme being extended to primary care?",
+      "options": [
+        "It has fewer resistant organisms",
+        "Most antibiotics are prescribed there",
+        "It has more laboratory capacity",
+        "Hospital prescribing is already optimal"
+      ],
+      "correctAnswer": "Most antibiotics are prescribed there",
+      "explanation": "The speaker says the programme is extending to primary care, where most antibiotics are prescribed.",
+      "difficulty": "medium",
+      "questionNumber": 41
+    },
+    {
+      "id": "oet-listening-003-q42",
+      "part": 3,
+      "passageId": "oet-listening-003-part3",
+      "scriptId": "oet-listening-003-part3",
+      "topic": "Antimicrobial Stewardship",
+      "questionType": "multiple_choice_single",
+      "prompt": "What difficulty do community prescribers face?",
+      "question": "What difficulty do community prescribers face?",
+      "options": [
+        "They cannot access antibiotics",
+        "They often lack culture results and real-time resistance data",
+        "They are not permitted to prescribe",
+        "They have no patient records"
+      ],
+      "correctAnswer": "They often lack culture results and real-time resistance data",
+      "explanation": "The speaker notes community prescribers often lack culture results and real-time resistance data.",
+      "difficulty": "medium",
+      "questionNumber": 42
     }
   ],
   "listeningScripts": [
