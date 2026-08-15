@@ -32657,6 +32657,30 @@ As you fill this in, common themes emerge\u2014which schools prioritize your goa
         {
           "h": "Preparing for Your PTE Target Score",
           "body": "Identify your target score from your university's requirement (often 65\u201373). Practice full-length mock tests to track progress and focus on weaker sections \u2014 Speaking and Writing are often the hardest for non-native speakers. Use authentic practice questions. Practise free PTE preparation on LandingPrep to sharpen grammar, vocabulary, and timing across all tasks."
+        },
+        {
+          "h": "What a PTE score report is actually made of",
+          "body": "A PTE report gives an overall score plus communicative skills \u2014 listening, reading, speaking and writing \u2014 and a set of enabling skills covering things like grammar, fluency, pronunciation, spelling and vocabulary. Two things about that structure matter more than any individual number. The communicative skills are what institutions set requirements against; the enabling skills are diagnostic and are generally not what you are admitted on. And the scale is continuous rather than banded, so unlike a band system there is no rounding cliff to fall off \u2014 a point is a point, and small gains are not swallowed by a boundary."
+        },
+        {
+          "h": "Why one weak task can pull down several scores at once",
+          "body": "PTE scores integrated tasks against more than one skill. A single spoken response can contribute to your speaking score and, because you are reading a prompt or responding to audio, to reading or listening as well. This is the structural fact that surprises people reading their report: a weakness in one task type appears in several places, and conversely fixing one task can lift several numbers together. It also means diagnosing from the overall score is close to useless \u2014 the report tells you which task types are costing you, and that is where preparation should be aimed."
+        },
+        {
+          "h": "Enabling skills are a diagnosis, not a target",
+          "body": "Candidates often set out to raise a low enabling skill directly, which is usually the wrong move. Enabling skills are measured from the same responses that produce your communicative scores; they describe how you performed rather than forming a separate exam to be beaten. A low pronunciation or fluency figure is telling you why your speaking score is where it is. Treat the enabling skills as the explanation and the communicative skills as the goal, and you will spend your preparation on the things institutions actually read."
+        },
+        {
+          "h": "Automated scoring changes what preparation should look like",
+          "body": "PTE is machine-scored, and that has practical consequences rather than being a curiosity. Clear, steady, continuous speech matters more than expressive delivery; long silences and restarts are costly because the system is measuring flow. Following task instructions exactly matters more than in a human-marked test, because there is no examiner to infer what you meant. And because the scoring is consistent rather than variable, your practice results under real timing tend to predict your real result more reliably than in human-marked exams \u2014 which makes full timed practice unusually valuable here."
+        },
+        {
+          "h": "Read the requirement before you read any conversion chart",
+          "body": "Conversion tables between PTE and other tests are estimates built from statistical comparisons of large groups. They are useful for deciding which test to sit and roughly what to aim for, and they are not something you can present to an institution. What matters is the number that institution publishes for PTE specifically, and whether it is an overall figure or a minimum in each communicative skill \u2014 the second is far harder and is frequently missed. Check the requirement first; use the chart only to plan."
+        },
+        {
+          "h": "Take the right version, because they are not interchangeable",
+          "body": "PTE is not a single exam. Different versions exist for academic admission and for immigration purposes, and the accepting authority decides which one counts \u2014 not you and not the test provider. Sitting the wrong version is a total loss: the score is valid, correctly reported, and useless for your purpose, and the only remedy is to sit the correct one and pay again. Before booking, find the exact version named on the requirement page you are working to, and check it again if you are applying for both study and a visa, because those two can name different versions of the same test."
         }
       ]
     },
@@ -33025,6 +33049,30 @@ As you fill this in, common themes emerge\u2014which schools prioritize your goa
         {
           "h": "Prepare for Duolingo & Practice Free",
           "body": "DET is a 1-hour online test (reading, writing, speaking, listening) scored 10\u2013160. Prepare with full-length mocks to familiarize yourself with the adaptive format. Free practice materials include Duolingo's official sample questions. For comprehensive TOEFL, IELTS, and DET practice mocks, use LandingPrep's free full-length tests\u2014track your progress and identify weak areas before test day."
+        },
+        {
+          "h": "Acceptance is per institution and often per programme",
+          "body": "The most important structural fact about the Duolingo English Test is that acceptance is not a national or system-wide decision. It is made institution by institution, and within an institution frequently programme by programme \u2014 a university can accept it for undergraduate admission and not for a postgraduate course, or accept it for study while its country's immigration system does not accept it for a visa. Any general list of accepting institutions is therefore a starting point rather than an answer. Confirm on the specific programme's own admissions page, and if a visa is involved, separately on the immigration authority's."
+        },
+        {
+          "h": "Study acceptance and immigration acceptance are different questions",
+          "body": "This catches people repeatedly. A test can be perfectly acceptable to the university that admits you and not appear on the list of tests your student visa route recognises, which leaves you admitted and unable to travel. The two decisions are made by different bodies applying different criteria, and the university's acceptance implies nothing about the government's. If your plan involves a visa, treat the immigration requirement as the binding one and work backwards from it."
+        },
+        {
+          "h": "What the at-home format actually requires of you",
+          "body": "An at-home, on-demand test removes the test centre and adds a set of conditions you are responsible for meeting: a compliant device and browser, a stable connection, a permitted room with no other people and nothing within reach, and identification that matches your application. Sessions can be invalidated after the fact for conditions that felt harmless at the time, and an invalidated result costs you the fee and the time. Read the current rules on the test's own site immediately before booking rather than relying on a summary, including this one \u2014 the requirements are revised, and it is the candidate who bears the consequence."
+        },
+        {
+          "h": "Cheapness and speed are real advantages, and they change your options",
+          "body": "The genuine case for this test is that it is substantially cheaper and faster than centre-based alternatives and can be taken from home, which makes it viable to sit early as a diagnostic rather than only as a final attempt. Used that way it is a good tool: you learn where you stand before committing to an expensive test, and if your institutions accept it you may not need the expensive test at all. The failure mode is treating those advantages as reasons to skip the acceptance check, which is the one step that determines whether the result is usable."
+        },
+        {
+          "h": "Score validity and when to sit",
+          "body": "Like other English tests, results are valid for a limited period from the test date, and that clock starts when you sit rather than when you apply. Because this test is fast and cheap, there is a temptation to sit it very early. That is fine as a diagnostic and risky as your submission, since admission and visa processing can run long enough to push a result past its validity window. Decide which attempt is the diagnostic and which is the one you intend to submit, and time the second against your actual deadline."
+        },
+        {
+          "h": "How to check acceptance so the answer is defensible",
+          "body": "Do this in a fixed order and keep a record. First, open the specific programme page \u2014 not the university's general international pages \u2014 and find the English requirement in writing. Second, note whether it states an overall score only or a minimum in each subscore, because those demand different preparation. Third, if a visa is involved, check the immigration authority's own list of accepted tests separately, since that decision is made by a different body. Fourth, save a dated screenshot of each page. Requirements are revised mid-cycle, and having the version you relied on, with its date, is occasionally worth a great deal and costs you nothing. If a programme page is ambiguous, email admissions and ask them to confirm in writing \u2014 a reply naming the test and the score is worth more than any list, including this site's."
         }
       ]
     },
