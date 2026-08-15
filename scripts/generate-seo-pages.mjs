@@ -3025,10 +3025,16 @@ ${relatedGrid([
   { label: `Top universities in ${co.name}`, href: `/study-abroad/top-universities-in-${co.id}/` },
   { label: `Scholarships for ${co.name}`, href: `/#/colleges/scholarships/${encodeURIComponent(co.name)}` },
 ])}`;
+  // 25 of these 90 pages (France, UAE, Spain, Poland, Czech Republic) have NO universities in
+  // COLLEGES at all, so a page titled "<Field> in <Country> — Top Universities, Fees &
+  // Requirements" lists none. That is not merely thin, it fails to deliver its own title, and
+  // inventing institutions to fill it is exactly the from-memory fabrication that corrupted
+  // 210 content files earlier. They stay live and linked for anyone who lands on them, but
+  // noindex + out of sitemap until the dataset actually covers those countries.
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     faqJsonLd(faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Study abroad", path: "/#/colleges" }, { name: `${field.name} in ${co.name}`, path }]),
-  ] }) + shell(inner));
+  ] }) + shell(inner), unis.length ? undefined : { thin: true });
 }
 
 function costPage(co) {
