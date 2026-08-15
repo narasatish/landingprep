@@ -1043,7 +1043,9 @@ function practicePage(id) {
   <h2>Mistakes that cost the most marks</h2>
   <ul>
     <li><strong>Practising without timing, then never adding it.</strong> Untimed work builds accuracy; it does not build the pacing judgement the real test requires. Both stages are necessary.</li>
-    <li><strong>Ignoring the instructions.</strong> Word limits in particular — an answer over the limit scores zero however correct it is, and this is one of the most common avoidable losses in ${e.short}.</li>
+    <li><strong>Ignoring the instructions.</strong> ${["ielts", "pte", "celpip", "oet", "toefl"].includes(id)
+      ? `Word limits in particular — where a gap-fill says "NO MORE THAN TWO WORDS", a three-word answer is marked wrong however correct it is, and this is one of the most common avoidable losses in ${e.short}. Note this applies to gap-fill answers in the marked sections only: the Writing tasks have a MINIMUM word count and no upper limit at all, and no marks are deducted for a long essay.`
+      : `Read what each question is actually asking before you answer it — "which of the following must be true" and "which could be true" have different correct answers, and in ${e.short} a misread instruction costs the same mark as content you did not know. This is the cheapest category of loss to eliminate.`}</li>
     <li><strong>Reviewing only wrong answers.</strong> You learn as much from a right answer you were unsure of.</li>
     <li><strong>Studying the sections you enjoy.</strong> Almost everyone over-practises their strongest skill because it feels productive. Your score is dragged down by the weakest one.</li>
     <li><strong>Leaving blanks.</strong> There is no negative marking, so an unanswered question is a guaranteed zero where a guess is not.</li>
