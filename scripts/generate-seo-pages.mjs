@@ -4483,6 +4483,61 @@ const LANG_SEO = {
   },
 };
 
+/**
+ * Per-exam practice-library facts, measured from content/<exam>/ at build time.
+ *
+ * The /learn/<exam>/ pages were all ~624 words because everything except the note
+ * tiles was prose shared verbatim across all 11 exams. This gives each page real
+ * material the other ten cannot have. It is derived from the shipped test files —
+ * the same files the format validator and the answerability audit check — so the
+ * numbers on the page are the numbers a student actually gets, not a claim.
+ */
+const EXAM_FACTS_CACHE = {};
+function examFacts(exam) {
+  if (EXAM_FACTS_CACHE[exam]) return EXAM_FACTS_CACHE[exam];
+  const base = join(ROOT, "content", exam);
+  const out = { sections: [], tests: 0, questions: 0 };
+  if (!existsSync(base)) return (EXAM_FACTS_CACHE[exam] = out);
+  for (const sec of readdirSync(base)) {
+    const sd = join(base, sec);
+    let st; try { st = statSync(sd); } catch { continue; }
+    if (!st.isDirectory()) continue;
+    let tests = 0, qs = 0, mins = 0;
+    for (const f of readdirSync(sd)) {
+      if (!f.endsWith(".json")) continue;
+      let j; try { j = JSON.parse(readFileSync(join(sd, f), "utf8").replace(/^﻿/, "")); } catch { continue; }
+      const n = Array.isArray(j.questions) ? j.questions.length : (j.questionCount || 0);
+      if (!n) continue;
+      tests++; qs += n;
+      if (j.durationSeconds) mins += Math.round(j.durationSeconds / 60);
+    }
+    if (tests) out.sections.push({ sec, tests, qs, perTest: Math.round(qs / tests), mins: tests ? Math.round(mins / tests) : 0 });
+  }
+  out.sections.sort((a, b) => b.qs - a.qs);
+  out.tests = out.sections.reduce((s, x) => s + x.tests, 0);
+  out.questions = out.sections.reduce((s, x) => s + x.qs, 0);
+  return (EXAM_FACTS_CACHE[exam] = out);
+}
+
+const SECTION_LABEL = (s) => s.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+
+function examFactsBlock(exam, e) {
+  const f = examFacts(exam);
+  if (!f.sections.length) return "";
+  const EX = exam.toUpperCase();
+  const rows = f.sections.map((s) =>
+    `<tr><td><a href="/mock-test/${exam}/">${esc(SECTION_LABEL(s.sec))}</a></td><td>${s.tests}</td><td>${s.perTest}</td>` +
+    `<td>${s.mins ? s.mins + " min" : "untimed"}</td><td>${s.qs.toLocaleString("en-IN")}</td></tr>`).join("");
+  const biggest = f.sections[0];
+  const secList = f.sections.map((s) => SECTION_LABEL(s.sec)).join(", ");
+  return `<div class="card"><h2>What the free ${EX} practice library actually contains</h2>
+<p>Numbers below are counted from the ${EX} test files this site ships, at build time — not an estimate. Every one of these questions is checked before release: the answer key must match an option a student can actually select, and no test may be gameable by picking the same letter throughout.</p>
+<div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Section</th><th>Tests</th><th>Questions per test</th><th>Time per test</th><th>Total questions</th></tr></thead><tbody>${rows}</tbody></table></div>
+<p>That is <strong>${f.tests} ${EX} practice tests</strong> covering <strong>${f.questions.toLocaleString("en-IN")} questions</strong> across ${f.sections.length} section${f.sections.length === 1 ? "" : "s"} — ${esc(secList)} — all free, with no signup and no attempt limit. ${esc(SECTION_LABEL(biggest.sec))} is the deepest section at ${biggest.tests} tests.</p>
+${e ? `<p>${esc(e.name)} is scored on <strong>${esc(e.score)}</strong> and is taken for ${esc(e.for)}. It is accepted by ${esc(e.accepted)}. The live paper is organised as ${esc(e.sections)}, and the practice tests above follow that structure section by section rather than mixing question types into one undifferentiated pool.</p>` : ""}
+<p>Use the notes on this page to learn a concept, then a full <a href="/mock-test/${exam}/">${EX} mock test</a> to see whether it survives timed conditions. The gap between those two is where most preparation quietly fails: material feels learned when reviewed and disappears when tested, which is exactly the gap active recall is designed to close.</p></div>`;
+}
+
 // ── Smart Notes: prerender each note at /learn/<exam>/<slug>/ + per-exam index ──
 function smartNotesPages() {
   const base = join(ROOT, "content", "smart-notes");
@@ -4548,6 +4603,16 @@ ${relatedGrid([
       { q: `How long do the ${EX} Smart Notes take?`, a: `Each note takes about ${lo === hi ? lo : `${lo}–${hi}`} minutes, so the full ${EX} set is roughly ${totalMins} minutes of focused reading — deliberately short enough to finish one in a single sitting.` },
       { q: `What makes a Smart Note different from a normal ${EX} study guide?`, a: `A normal guide optimises for coverage; a Smart Note optimises for memory. Each one gives you a visual concept map, 3–5 short chunks with a real example and a memory hook, and five active-recall questions. Active recall and spaced repetition are the two study techniques with the strongest evidence behind them.` },
       { q: `How should I use these notes to prepare for ${examName}?`, a: `Read one note, study its concept map before the detail, then answer the five recall questions from memory. Revisit when the built-in scheduler resurfaces the note — the spacing is what moves it into long-term memory. Pair the notes with full practice to apply what you have revised.` },
+      ...(() => {
+        const f = examFacts(exam);
+        if (!f.sections.length) return [];
+        const b = f.sections[0];
+        return [
+          { q: `How many free ${EX} practice questions are there?`, a: `${f.questions.toLocaleString("en-IN")} questions across ${f.tests} ${EX} practice tests, covering ${f.sections.map((s) => SECTION_LABEL(s.sec)).join(", ")}. The count is measured from the test files themselves at build time, so it cannot drift away from what you actually get. ${SECTION_LABEL(b.sec)} is the deepest section with ${b.tests} tests of about ${b.perTest} questions each.` },
+          { q: `Are the ${EX} practice tests checked for errors?`, a: `Yes, on every build. Each question is verified to have an answer key matching an option a student can actually select — a check that caught 227 unanswerable questions when it was first introduced. Tests are also checked so that no paper can be scored well by picking the same letter throughout, and the answer key stored with each test must agree with the per-question key.` },
+          ...(e ? [{ q: `How is ${examName} scored?`, a: `${examName} is reported on ${e.score} and is taken for ${e.for}. It is accepted by ${e.accepted}. The paper is organised as ${e.sections}, and the practice tests here follow that same section structure.` }] : []),
+        ];
+      })(),
     ];
     const inner = `<p class="crumb"><a href="/">Home</a> › <a href="/learn/">Smart Notes</a> › ${EX}</p>
 <section class="hero"><div class="badges"><span class="badge">${notes.length} free notes</span><span class="badge">Concept maps</span><span class="badge">Spaced repetition</span></div>
@@ -4564,6 +4629,7 @@ ${relatedGrid([
 <div class="card"><h2>Why this format works</h2>
 <p>Most ${EX} revision fails for the same reason: highlighting and re-reading feel like learning but produce weak, short-lived memories. Smart Notes are built around the two techniques that consistently outperform them in learning research — <strong>active recall</strong> (retrieving an answer instead of reviewing it) and <strong>spaced repetition</strong> (meeting the material again at widening intervals).</p>
 <p>The visual concept map adds a third layer: seeing a topic's structure as a picture as well as words gives you two routes back to the same memory, which is why a diagram often sticks when a paragraph doesn't. Each note is deliberately small so you can finish it, recall it, and move on — rather than abandoning a 40-page PDF halfway.</p></div>
+${examFactsBlock(exam, e)}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `📚 All Smart Notes (every exam)`, href: `/learn/` },
