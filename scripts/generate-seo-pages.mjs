@@ -1130,6 +1130,53 @@ ${relatedGrid([
   ] }) + shell(inner), { thin: true });
 }
 
+/**
+ * Depth for /tools/<slug>/ — 13 pages at a 527-word median.
+ *
+ * Deliberately NOT one shared paragraph bolted onto all of them: 13 pages carrying the
+ * same new text would be more templated than before, not less, which is the exact trap
+ * this whole pass exists to avoid.
+ *
+ * Instead the guidance keys off what the tool actually OUTPUTS, because that is what
+ * changes the advice. A converted test score, a converted GPA, a loan figure and a
+ * predicted band each fail the user in a different way, and each has a different
+ * "do not trust this blindly" attached to it.
+ */
+function toolKind(slug) {
+  if (/score-converter|test-score|comparison/.test(slug)) return "score";
+  if (/gpa|cgpa|percentage/.test(slug)) return "gpa";
+  if (/loan|emi|cost|funds|budget/.test(slug)) return "money";
+  if (/band|retake|calculator/.test(slug)) return "band";
+  if (/eligibility|readiness|checker|predictor/.test(slug)) return "eligibility";
+  return "generic";
+}
+function toolDepthBlock(slug, t, e) {
+  const kind = toolKind(slug);
+  const f = e && e.appPath ? examFacts(e.appPath) : null;
+  const body = {
+    score: `<p><strong>A converted score is an estimate, not an equivalence.</strong> Concordance tables are built by the test makers from statistical comparisons of large candidate groups. They describe where an average candidate with one score tends to land on another test — they do not promise that <em>you</em> would score that. Two tests measuring the same language with different task types will rank the same person differently, sometimes by a meaningful margin.</p>
+<p><strong>Institutions decide what they accept, and many accept only one test.</strong> A conversion showing you already meet a requirement on a test you have not taken is not an argument you can make to an admissions office. Use the conversion to choose which test to sit and what to aim for, then sit that test.</p>
+<p><strong>Per-section minimums do not convert cleanly.</strong> Where a requirement is written per skill rather than overall, converting an overall score tells you almost nothing about whether you clear it. Convert section by section if you convert at all.</p>`,
+    gpa: `<p><strong>There is no universal GPA conversion, and anyone who tells you otherwise is selling certainty.</strong> Grading scales differ by country, by university and sometimes by faculty within one university. A conversion here gives you a defensible working figure for planning — it is not the number an admissions office will use.</p>
+<p><strong>Most institutions convert your transcript themselves, or require a credential evaluation.</strong> Many will not accept a self-reported conversion at all, and several countries require an official evaluation from a designated body. Where that applies, budget both the fee and several weeks of processing.</p>
+<p><strong>Context often outweighs the number.</strong> Class rank, the difficulty of your programme and an upward trend across your final years are read alongside the average. A converted figure strips exactly that context out, which is why it is a planning tool and not a verdict.</p>`,
+    money: `<p><strong>The figure this produces is a starting point, not a budget.</strong> It models the inputs you gave it. It does not know about the rental deposit and agency fee that land before your first term, the flights, the health insurance, or the one-off setup costs that make the first two months far more expensive than an average month.</p>
+<p><strong>Interest and total cost are different questions.</strong> A longer term lowers the monthly figure and raises what you repay overall; a shorter term does the reverse. Compare total repayment as well as the monthly number before choosing, because the comfortable monthly figure is the one that quietly costs the most.</p>
+<p><strong>Currency movement is a real line item.</strong> If your funding sits in one currency and your costs in another, a few percent of drift across a multi-year course is the size of a semester's living costs. Hold a buffer rather than a forecast.</p>`,
+    band: `<p><strong>Rounding is where most predictions go wrong.</strong> An IELTS overall band is the average of four sections rounded to the nearest whole or half band, and the rounding runs upward at the quarter: 6.75 is reported as 7.0, while 6.6 is reported as 6.5. That single rule explains most of the gap between what people expect and what they receive.</p>
+<p><strong>Each section is a quarter of your result.</strong> Lifting one weak section by half a band moves your overall average by 0.125 — often not enough on its own. If you need a whole band, plan for two sections to move, and take the two weakest up rather than pushing a strong one higher.</p>
+<p><strong>A prediction from untimed practice is not a prediction.</strong> Most band loss on test day comes from timing and transfer errors that only appear under full-length conditions. Feed this tool scores from complete, timed papers or the output will flatter you.</p>`,
+    eligibility: `<p><strong>This narrows a list; it does not make a decision.</strong> The output is based on published requirements and the figures you enter. Admissions decisions weigh your statement, references, the fit between your background and the specific programme, and how strong the applicant pool is that year — none of which any calculator can see.</p>
+<p><strong>Programme requirements beat institutional ones.</strong> The figures behind results like these are usually institution-level baselines. Individual departments routinely set a higher bar, and theirs is the one that applies to you. Always confirm on the specific programme page before you rule yourself in or out.</p>
+<p><strong>Treat a marginal result as a reason to check, not to stop.</strong> Requirements move between admission cycles, and several routes accept a lower score with a pre-sessional English course or a foundation year attached. A near miss is worth an email to the admissions office.</p>`,
+    generic: `<p><strong>Use the output as a planning figure and verify it at the point it matters.</strong> Everything here is built on published scales and official tables, and those change without notice. The version on the awarding body's own page is the only one that counts when you are committing money or a deadline to it.</p>`,
+  }[kind];
+  return `<div class="card"><h2>How to read the result — and where it stops being reliable</h2>
+${body}
+${f && f.sections.length ? `<p>If this points you toward more preparation, there are <strong>${f.tests} free ${esc(e.short)} practice tests</strong> here covering <strong>${f.questions.toLocaleString("en-IN")} questions</strong> — counted from the test files, not estimated — across ${f.sections.map((s) => SECTION_LABEL(s.sec)).join(", ")}. <a href="/mock-test/${e.appPath}/">Take a full timed ${esc(e.short)} mock →</a></p>` : ""}
+<p class="note">${esc(t.title)} is free and the calculation runs entirely in your browser: the values you type are not transmitted to us and are not saved — they disappear when you close the tab. (Like every page here, this one loads Google Analytics, which records the page visit itself; it does not receive what you enter.) The tool is provided for planning — confirm any figure you rely on with the test maker, university or lender directly.</p></div>`;
+}
+
 function toolPage(slug) {
   const t = TOOLS[slug];
   const e = EXAMS[t.exam];
@@ -1154,6 +1201,7 @@ ${t.widget || ""}
   <p>${t.lead} ${BRAND} is a 100% free platform for IELTS, TOEFL, PTE, CELPIP, Duolingo, GRE and GMAT preparation. Use this tool alongside our free full-length mock tests and speaking &amp; writing practice to plan exactly what score you need and how to reach it.</p>
 </div>
 ${t.ref || ""}
+${toolDepthBlock(slug, t, e)}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `IELTS Smart Notes — visual lessons & recall`, href: `/learn/ielts/` },
@@ -4680,12 +4728,17 @@ const LANG_SEO = {
  * the same files the format validator and the answerability audit check — so the
  * numbers on the page are the numbers a student actually gets, not a claim.
  */
-const EXAM_FACTS_CACHE = {};
+// Cache lives on the function object, NOT in a module-level `const`. Page builders that
+// call examFacts() are declared EARLIER in this file than this point, and a `const` cache
+// would sit in the temporal dead zone when they run — which is exactly what happened:
+// toolPage() threw "Cannot access 'EXAM_FACTS_CACHE' before initialization" at build.
+// A function declaration hoists completely, so a property on it is always reachable.
 function examFacts(exam) {
-  if (EXAM_FACTS_CACHE[exam]) return EXAM_FACTS_CACHE[exam];
+  const CACHE = examFacts._cache || (examFacts._cache = {});
+  if (CACHE[exam]) return CACHE[exam];
   const base = join(ROOT, "content", exam);
   const out = { sections: [], tests: 0, questions: 0 };
-  if (!existsSync(base)) return (EXAM_FACTS_CACHE[exam] = out);
+  if (!existsSync(base)) return (CACHE[exam] = out);
   for (const sec of readdirSync(base)) {
     const sd = join(base, sec);
     let st; try { st = statSync(sd); } catch { continue; }
@@ -4704,10 +4757,14 @@ function examFacts(exam) {
   out.sections.sort((a, b) => b.qs - a.qs);
   out.tests = out.sections.reduce((s, x) => s + x.tests, 0);
   out.questions = out.sections.reduce((s, x) => s + x.qs, 0);
-  return (EXAM_FACTS_CACHE[exam] = out);
+  return (CACHE[exam] = out);
 }
 
-const SECTION_LABEL = (s) => s.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+// Function declaration, not a const arrow — same temporal-dead-zone reason as above:
+// callers earlier in the file would hit TDZ on a `const`.
+function SECTION_LABEL(s) {
+  return String(s).split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+}
 
 function examFactsBlock(exam, e) {
   const f = examFacts(exam);
@@ -5186,6 +5243,43 @@ const SECTIONS = [
     improve: "Record yourself answering real prompts, extend every answer with a reason and example, build topic vocabulary, and rehearse speaking for the full two minutes in Part 2.",
     example: "In Part 2, a full two-minute answer that covers every cue-card point with natural fluency and varied vocabulary is what separates the higher bands — practise with a timer." },
 ];
+/**
+ * Depth for /ielts-band-<b>-<section>/ — 27 pages at a 479-word median.
+ *
+ * The useful thing these pages were missing is arithmetic. SEC_RAW already holds the
+ * raw-score target for each band, so the distance between bands is computable: for a
+ * Reading candidate at Band 7 the next half-band is a specific number of extra correct
+ * answers, and that number is small enough to change how someone prepares. Every page
+ * gets a different figure because every band/section pair has one.
+ *
+ * The overall-band rounding rule is included because it is the most commonly misread
+ * part of IELTS scoring and it is genuinely decision-relevant: it is why a 6.75 average
+ * becomes a 7 and a 6.6 does not.
+ */
+const BAND_ORDER = ["6", "6.5", "7", "7.5", "8"];
+function bandDepthBlock(b, sec) {
+  const rawOf = (x) => { const m = /^(\d+)\s*\/\s*(\d+)$/.exec(String(SEC_RAW[x] || "")); return m ? { n: +m[1], of: +m[2] } : null; };
+  const here = rawOf(b);
+  const i = BAND_ORDER.indexOf(b);
+  const nextB = i >= 0 && i < BAND_ORDER.length - 1 ? BAND_ORDER[i + 1] : null;
+  const prevB = i > 0 ? BAND_ORDER[i - 1] : null;
+  const next = nextB ? rawOf(nextB) : null;
+  const prev = prevB ? rawOf(prevB) : null;
+  const f = examFacts("ielts");
+
+  const maths = sec.raw && here
+    ? `<p>In ${esc(sec.s)}, Band ${b} is <strong>${here.n} correct out of ${here.of}</strong>.${next ? ` Band ${nextB} is ${next.n} — <strong>${next.n - here.n} more ${next.n - here.n === 1 ? "question" : "questions"}</strong>.` : ""}${prev ? ` Band ${prevB} is ${prev.n}, so the gap you have already closed to reach this point is ${here.n - prev.n}.` : ""} That is the whole distance, and it is worth seeing as a number rather than as a band: ${next ? `${next.n - here.n} ${next.n - here.n === 1 ? "question" : "questions"} is` : "a handful of questions is"} typically one careless transfer error, one misread instruction, and one question abandoned under time pressure. Half a band is usually not a knowledge problem.</p>
+<p>Because there is no negative marking, a blank is strictly worse than a guess — every unanswered question is a guaranteed zero where a guess is not. Boundaries also shift slightly between test versions, so treat ${here.n}/${here.of} as the working target and aim a question or two above it rather than exactly at it.</p>`
+    : `<p>${esc(sec.s)} has no raw score. Examiners award a band on each of four published criteria and your section band is their average, so a single weak criterion costs you a quarter of the total — which is why a candidate with excellent English can sit below Band ${b} on a technicality of task response or coherence rather than on language at all.</p>
+<p>This matters for how you practise: re-doing whole answers gives you an overall impression, while scoring yourself against each of the four criteria separately tells you which one is actually holding the band down. Those are very different activities, and only the second one moves a band.</p>`;
+
+  return `<div class="card"><h2>The arithmetic of Band ${b} in ${esc(sec.s)}</h2>
+${maths}
+<p><strong>How section bands become your overall band.</strong> Your overall IELTS band is the average of all four section bands, rounded to the nearest whole or half band — and the rounding runs upward at the quarter. An average of 6.75 is reported as 7.0; an average of 6.5 stays 6.5; an average of 6.6 is reported as 6.5, not 7.0. The practical consequence is that ${esc(sec.s)} is worth exactly one quarter of your result, and lifting your weakest section by half a band moves your average by 0.125 — often not enough on its own. If you need a whole band overall, two sections have to move, and it is usually cheaper to take your two weakest up than to push an already-strong section higher.</p>
+<p><strong>Where most institutions actually set the bar.</strong> Many universities and nearly all migration and registration routes publish a per-section minimum alongside the overall figure. Where they do, your lowest section is what counts and a strong average will not rescue it. Check whether the requirement you are working toward is "overall ${b}" or "${b} in each" before you build a study plan around it — they call for genuinely different preparation.</p>
+${f && f.sections.length ? `<p><strong>${f.tests} free IELTS practice tests</strong> covering <strong>${f.questions.toLocaleString("en-IN")} questions</strong> are on this site, counted from the test files rather than estimated. <a href="/mock-test/ielts/">Take a full timed IELTS mock →</a> — timed and complete, because a section practised in isolation will not show you the errors that only appear when you are tired and behind the clock.</p>` : ""}</div>`;
+}
+
 function bandSectionPage(band, sec) {
   const b = band.b;
   const path = `/ielts-band-${b.replace(".", "-")}-${sec.s.toLowerCase()}/`;
@@ -5214,6 +5308,7 @@ function bandSectionPage(band, sec) {
 <div class="card"><h2>Step-by-step plan to Band ${b} in ${sec.s}</h2><ol>${steps.map((s) => `<li><strong>${s.name}.</strong> ${esc(s.text)}</li>`).join("")}</ol></div>
 <div class="card"><h2>Common mistakes that keep you below Band ${b}</h2><ul class="bsteps">${(sec.mistakes || []).map((m) => `<li>${esc(m)}</li>`).join("")}</ul></div>
 <div class="card"><h2>How to reach Band ${b} faster</h2><p>${esc(sec.improve)}</p><div class="callout key"><span class="ic">💡</span><div>${esc(sec.example)}</div></div></div>
+${bandDepthBlock(b, sec)}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `All IELTS Band ${b} requirements`, href: `/ielts-band-${b.replace(".", "-")}/` },
