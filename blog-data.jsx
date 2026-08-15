@@ -28087,8 +28087,28 @@
         {
           "h": "Full Practice Tests and Error Analysis",
           "body": "Take a full listening test weekly under exam conditions — no pausing or replaying. Afterwards, review every error and categorise it: misheard, misread the question, didn't know the word, or spelled it wrong. The pattern reveals your real weakness so you can target it. Practise free IELTS listening tests on LandingPrep to apply these techniques and build confidence before test day."
-        }
-      ]
+        },
+    {
+      "h": "Why answers are lost after you hear them, not during",
+      "body": "Most band loss in Listening is not comprehension failure. Candidates hear the answer, write it, and still lose the mark — because the answer was transferred wrongly, exceeded the word limit, or was spelled in a way the marker cannot accept. In the paper test you transfer to an answer sheet at the end and it is genuinely easy to slip a line; in the computer-delivered test there is no transfer step, which removes that failure mode entirely. If you consistently know the answers and still score below your practice level, transfer and instruction errors are the first thing to check, not your English."
+    },
+    {
+      "h": "The word limit is a hard rule, and it is not about correctness",
+      "body": "When a question says NO MORE THAN TWO WORDS AND/OR A NUMBER, a three-word answer is marked wrong even when it is completely accurate. Hyphenated words count as one; contracted forms count as one; numbers written as digits count as one. Read the instruction for every section rather than assuming it carries over, because it changes between question sets in the same paper. This is a pure instructions rule, it costs candidates marks they had already earned, and it is the cheapest single thing to fix in your preparation."
+    },
+    {
+      "h": "Distractors are built in, and they follow patterns you can learn",
+      "body": "IELTS Listening deliberately includes information that fits the question but is then corrected or withdrawn — a speaker gives a time and changes it, offers a price and then mentions a discount, names a day and then reschedules. The first thing you hear is very often not the answer. Listen for correction markers: actually, sorry, in fact, no wait, I mean, on second thoughts. When you hear one, the answer is almost always what follows it. Candidates who write the first plausible thing they hear and stop listening lose marks across the whole paper, and the fix costs nothing but attention."
+    },
+    {
+      "h": "Section 4 needs a different technique from Sections 1 to 3",
+      "body": "The final section is a single academic monologue with no pause partway through and no conversational redundancy — nobody repeats or rephrases for you. It is the section where losing your place is most costly, because there is no second speaker to reorient you. Two things help disproportionately. Read all the questions in the time given rather than only the first few, so you know the shape of the whole talk. And if you miss an answer, leave it and move to the next question immediately: the monologue keeps moving, and candidates lose three answers trying to recover one. Come back at the end with whatever the context makes plausible, because there is no negative marking and a blank is a guaranteed zero."
+    },
+    {
+      "h": "What to do with a practice test after you finish it",
+      "body": "Marking a practice test and recording a score teaches you almost nothing. The value is in classifying each wrong answer by cause, because the four causes need four different fixes. Did you not hear it — an accent, speed or vocabulary problem, fixed by more listening. Did you hear it but not recognise it as the answer — a distractor problem, fixed by the correction markers above. Did you have it right and lose it in transfer or spelling — an instructions problem, fixed in a single session. Or did you lose your place and never recover — a technique problem, fixed by learning to abandon a question. Most candidates assume every error is the first kind and do more listening practice, which is why their score stops moving."
+    }
+  ]
     },
     {
       "id": "gmat-vs-gre-for-mba-2026",
