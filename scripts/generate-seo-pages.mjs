@@ -1119,10 +1119,15 @@ ${relatedGrid([
   { label: `All score requirements by country`, href: `/eligibility/` },
   { label: `Score converter`, href: `/tools/english-test-score-converter/` },
 ])}`;
+  // Conservative prune (2026-08-15). The 20 /eligibility/<exam>-<country>/ children are a
+  // 341-word-median templated family: same headings, same table shape, exam and country
+  // swapped. None appear in KEEP_INDEXED, i.e. none survived the earlier evidence-based
+  // prune on traction. They stay live and linked — noindex,follow keeps equity flowing up
+  // to the /eligibility/ hub, which is deepened and stays indexed.
   emit(path, head({ title, desc, path, kw, jsonLdBlocks: [
     faqJsonLd(faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Mock Tests", path: "/#/exam-prep" }, { name: `${e.short} for ${d.country}`, path }]),
-  ] }) + shell(inner));
+  ] }) + shell(inner), { thin: true });
 }
 
 function toolPage(slug) {
@@ -2433,7 +2438,7 @@ ${relatedGrid([
   emit(path, head({ title: `${title} | ${BRAND}`, desc, path, kw: `${country.toLowerCase()} intake 2026, ${country.toLowerCase()} university application deadline, fall intake ${country.toLowerCase()}, ${country.toLowerCase()} university intakes, when to apply ${country.toLowerCase()} university`, jsonLdBlocks: [
     faqJsonLd(faqs),
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Intakes & Deadlines", path: "/intakes/" }, { name: country, path }]),
-  ] }) + shell(inner));
+  ] }) + shell(inner), { thin: true });   // conservative prune (2026-08-15): 9 country intake pages, 490-word median, one template with the country swapped; none in KEEP_INDEXED. noindex,follow — equity still flows to the /intakes/ hub, which stays indexed.
 }
 function intakeDeadlineIndex(byCountry) {
   const path = `/intakes/`;
@@ -4970,7 +4975,7 @@ ${relatedGrid([
       desc: `Living in ${c.city} as an international student: monthly cost (${c.cost}), transport, the best student areas and practical tips. Free study-abroad guide.`,
       path, kw: `student life in ${c.city.toLowerCase()}, cost of living ${c.city.toLowerCase()} students, study in ${c.city.toLowerCase()}, ${c.city.toLowerCase()} student accommodation, international students ${c.city.toLowerCase()}`,
       jsonLdBlocks: [faqJsonLd(faqs), breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "City Guides", path: `/student-city-guides/` }, { name: c.city, path }])],
-    }) + shell(inner));
+    }) + shell(inner), { thin: true });   // conservative prune (2026-08-15): 8 city guides, 351-word median — the thinnest family on the site and the least defensible, since a 226-word page on living in Munich competes with genuinely deep city guides. noindex,follow; the /student-city-guides/ hub stays indexed.
   });
 }
 
