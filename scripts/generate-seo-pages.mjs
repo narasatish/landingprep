@@ -5090,6 +5090,41 @@ ${relatedGrid([
     breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Prep Lessons", path }]),
   ] }) + shell(inner));
 }
+/**
+ * Depth for the two band-checker pages, previously the thinnest indexed pages on the
+ * site at 232 and 266 words. /ielts-speaking-checker/ is in KEEP_INDEXED and is the
+ * asset pitched in docs/backlink-outreach-kit.md — earning links to a 232-word page
+ * wastes the outreach, so this is the page most worth the words.
+ *
+ * The content is the four official assessment criteria, which are what the tool scores
+ * against. Explaining them is the honest way to make the page substantial: it is the
+ * same information the user needs to act on the tool's output.
+ */
+function bandCheckerDepth(isW) {
+  const criteria = isW
+    ? [
+        ["Task Response / Task Achievement", "Whether you actually answered the question that was asked — every part of it, with a clear position held consistently and supported. This is where most confident writers lose the band: a fluent essay that drifts off the prompt, answers only half a two-part question, or never commits to a position is capped here regardless of how good the English is."],
+        ["Coherence and Cohesion", "Whether the reader can follow your argument without effort — paragraphing that groups one idea each, and linking that reflects real logical relationships. Cohesive devices are marked on whether they are used accurately, not on how many appear; a paragraph strung together with 'moreover', 'furthermore' and 'in addition' where no addition is happening scores lower than plain sentences that connect properly."],
+        ["Lexical Resource", "Range and precision of vocabulary, including collocation and word formation. Precision outranks rarity: a common word used exactly is worth more than an unusual one used approximately, and memorised 'high-level' phrasing dropped into the wrong context is visible to examiners and costs marks."],
+        ["Grammatical Range and Accuracy", "Both halves matter and they trade off. Only simple sentences caps your range; complex sentences riddled with errors caps your accuracy. The band comes from how much of your writing is error-free, so controlled complexity beats ambitious structures you cannot land."],
+      ]
+    : [
+        ["Fluency and Coherence", "Whether you can keep going at a natural pace and be followed. Speed is not the measure — long silences, repeated self-correction and abandoned sentences cost more than speaking slowly and clearly. Extending answers with a reason and an example is the single highest-value habit here, especially in Part 1 where short answers are the common failure."],
+        ["Lexical Resource", "Range and precision, including idiomatic language used naturally. Rehearsed idioms inserted regardless of context are penalised rather than rewarded; being able to paraphrase when you cannot recall a word is worth more than the word itself."],
+        ["Grammatical Range and Accuracy", "Same trade-off as Writing. A mix of structures used accurately scores above complex attempts that collapse mid-sentence, and above safe simple sentences throughout."],
+        ["Pronunciation", "Whether you are understood without strain — individual sounds, but also stress, rhythm and intonation. An accent is not penalised and never has been. What is assessed is intelligibility, and sentence stress usually affects that more than individual sounds do."],
+      ];
+  const f = examFacts("ielts");
+  return `<div class="card"><h2>What the four criteria actually mean</h2>
+<p>Your ${isW ? "Writing" : "Speaking"} band is the average of four criteria, each weighted equally — so a weakness in one costs you a quarter of the section, and the checker's breakdown is more useful than the single number above it. Understanding what each one rewards is what lets you act on the feedback rather than just read it.</p>
+<ul class="bcheck">${criteria.map(([n, d]) => `<li><strong>${esc(n)}.</strong> ${esc(d)}</li>`).join("")}</ul>
+<p><strong>How to use this tool so it actually moves your band.</strong> ${isW
+  ? "Write the answer under real conditions first — 40 minutes for Task 2, 20 for Task 1, no dictionary and no pausing to look things up. Feedback on an essay you took two hours over describes a person who will not be sitting the exam. Then read the criterion breakdown before the band, find your lowest one, and rewrite the same answer targeting only that criterion. Re-checking the same piece twice teaches you far more than checking four different essays once."
+  : "Record a full two-minute Part 2 answer from a cue card, in one take, without stopping to restart. The restarts are where the fluency marks go, so a polished third attempt hides exactly the thing you need to see. Then look at your lowest criterion and re-record the same cue card targeting only that one."}</p>
+<p><strong>What an estimate can and cannot do.</strong> This gives you a calibrated estimate against the published criteria, and it is genuinely useful for finding your weakest criterion and tracking whether it is improving. It is not the official band. A real examiner marks live under exam conditions, and borderline cases in particular can land either side. Use it to direct your practice and to know when you are consistently clearing your target — not as a prediction to plan a test date around on its own.</p>
+${f && f.sections.length ? `<p>Pair it with full papers: <strong>${f.tests} free IELTS practice tests</strong> covering <strong>${f.questions.toLocaleString("en-IN")} questions</strong> are on this site, counted from the test files rather than estimated. <a href="/mock-test/ielts/">Take a full timed IELTS mock →</a></p>` : ""}</div>`;
+}
+
 function bandCheckerPage(mode) {
   const isW = mode === "writing";
   const path = isW ? `/ielts-writing-checker/` : `/ielts-speaking-checker/`;
@@ -5128,6 +5163,7 @@ function bandCheckerPage(mode) {
     <li><strong>3.</strong> Get your overall band + ${isW ? "Task Response, Coherence, Lexical Resource &amp; Grammar" : "Fluency, Lexical, Grammar &amp; Pronunciation"} sub-scores, ${isW ? "key corrections and a Band 9 rewrite" : "targeted tips and a Band 9 model answer"}.</li>
   </ul>
 </div>
+${bandCheckerDepth(isW)}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: isW ? "Open the Writing checker" : "Open the Speaking checker", href: `/#/${isW ? "writing-checker" : "speaking-checker"}` },
@@ -5838,6 +5874,36 @@ const PRO_REG = [
   { slug: "ielts-for-doctors-australia", role: "Doctors", body: "AHPRA / the Medical Board of Australia",
     req: "IELTS Academic 7.0 in each of the four skills.", alt: "OET at grade B in each section is accepted.", who: "international medical graduates registering to work in Australia" },
 ];
+/**
+ * Depth for the professional-registration pages — nurses and doctors, 264-302 words each
+ * and the highest-intent pages on the site: someone reading these is deciding whether they
+ * can move country for work.
+ *
+ * Registration English is genuinely different from university English, and the differences
+ * are where people lose a year. Everything below is either drawn from this page's own
+ * source record or is a structural fact about registration routes; no invented cut-offs.
+ */
+function proRegDepthBlock(x) {
+  const role = String(x.role || "").replace(/&amp;/g, "&");
+  const body = String(x.body || "").replace(/&amp;/g, "&");
+  const req = String(x.req || "").replace(/&amp;/g, "&");
+  const alt = String(x.alt || "").replace(/&amp;/g, "&");
+  const f = examFacts("ielts");
+  const perSkill = /each|in each|at least/i.test(req);
+  return `<div class="card"><h2>Why registration English catches out strong candidates</h2>
+<p>The requirement for ${esc(body)} is <strong>${esc(req)}</strong> — and it is a substantially harder bar than the same test set for a university place. Clinicians who use English every working day routinely miss it, for reasons that have very little to do with their clinical English.</p>
+<ul class="bcheck">
+${perSkill ? `<li><strong>It is per skill, so your lowest score is your result.</strong> An overall figure that comfortably clears the bar counts for nothing if one skill sits below it. That single rule is the most common reason a registration application stalls, and it means your preparation should be aimed almost entirely at your weakest skill rather than spread evenly.</li>` : ""}
+<li><strong>Writing is usually the one that fails.</strong> Across registration routes it is the most commonly re-sat skill, and the reason is structural rather than linguistic: IELTS Academic Writing asks you to describe a chart and argue an abstract position to an academic marking scheme. Neither resembles clinical documentation, so years of writing excellent notes and discharge summaries builds very little of what Task 1 and Task 2 are marked on.</li>
+<li><strong>Check whether scores can be combined across sittings before you re-sit.</strong> ${alt ? esc(alt) : "Some regulators allow results from two test sittings to be combined under set conditions; many do not."} Where combining is permitted the conditions are strict — typically both sittings within a set window and no skill below a floor — and where it is not, one weak skill means re-taking the entire test. This single question changes your whole re-sit strategy, so confirm it with ${esc(body)} directly rather than assuming.</li>
+<li><strong>Your score expires, and registration is slow.</strong> Test scores are generally accepted for two years from the test date, while registration — documents, credential verification, regulator assessment, then a visa — routinely runs longer than people expect. Sitting the test as early as possible is a common instinct and a genuine risk: a score that expires mid-application means sitting it again. Time it against your realistic submission date, not against your ambition.</li>
+<li><strong>The alternative test is worth a serious look.</strong> ${alt ? esc(alt) : "Most healthcare regulators accept OET as an alternative to IELTS."} OET is built around healthcare tasks — a referral letter, a patient consultation — so for a working clinician the content is familiar and the vocabulary is yours already. That does not make it easier in general, but it removes the mismatch between an academic test and a clinical career, which for many candidates is exactly what the extra half band was costing.</li>
+</ul>
+<p><strong>A realistic sequence.</strong> Confirm the exact current requirement with ${esc(body)} in writing, because published requirements change and a forum post is not a source. Sit one full timed IELTS Academic mock to find which skill is actually short — most people guess wrong. Decide IELTS or ${alt && /OET/i.test(alt) ? "OET" : "the alternative test"} on the basis of that diagnosis rather than on habit. Then work almost exclusively on the weak skill, and only book when you are clearing the bar consistently in that skill, not on average.</p>
+${f && f.sections.length ? `<p>There are <strong>${f.tests} free IELTS practice tests</strong> here covering <strong>${f.questions.toLocaleString("en-IN")} questions</strong> — counted from the test files rather than estimated — across ${f.sections.map((s) => SECTION_LABEL(s.sec)).join(", ")}. <a href="/mock-test/ielts/">Take a full timed IELTS mock →</a> and check your Writing against the criteria with the free <a href="/ielts-writing-checker/">band checker</a>, since Writing is the skill most likely to hold up your registration.</p>` : ""}
+<p class="note">Requirements are set by ${esc(body)} and change without notice. Everything here is for planning — confirm the current standard on the regulator's own website before booking a test or paying an application fee.</p></div>`;
+}
+
 function examForRolePage(x) {
   const path = `/${x.slug}/`;
   const cleanRole = x.role.replace(/&amp;/g, "&");
@@ -5865,6 +5931,7 @@ function examForRolePage(x) {
 <li>Learn the strategy in the free <a href="/prep-lessons/">IELTS prep lessons</a>.</li>
 <li>See exactly what <a href="/ielts-band-7/">Band 7</a> needs in each section.</li>
 </ol></div>
+${proRegDepthBlock(x)}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
