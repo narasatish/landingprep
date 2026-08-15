@@ -1643,6 +1643,7 @@ function blogPage(a) {
 ${expiredBanner}${qaBlock}
 ${(typeof BLOG_WIDGETS !== "undefined" && BLOG_WIDGETS[a.id]) || a.topHtml || ""}
 ${sectionsHtml}
+${blogDataBlock(a)}
 ${faqs.length ? faqBlock(faqs) : ""}
 ${relatedArticles(a)}
 ${relatedGrid(blogTiles(a))}`;
@@ -2618,6 +2619,35 @@ const PROVEN_EXAM_PAGES = (() => {
 
 // ── Per-university pages (long-tail SEO, auto-generated from college-data) ──
 /*__UNIDEPTH_MOVE__*/
+/**
+ * Data-backed blocks for specific blog posts whose title promises something the prose does
+ * not deliver — surfaced by tools/audit-title-promises.mjs.
+ *
+ * The rule for these is that the numbers come from COLLEGES, never from memory. A post
+ * titled "What's a Good GRE Score for Top Universities?" needs named universities with real
+ * GRE positions; writing plausible cutoffs down by hand is the failure that corrupted 210
+ * content files earlier in this session. Rendering from the dataset also means the page stays
+ * correct when the dataset is corrected, instead of quietly drifting away from it.
+ */
+function blogDataBlock(a) {
+  if (!a || a.id !== "good-gre-score-for-top-universities") return "";
+  const ranked = COLLEGES
+    .filter((c) => c && c.gre && typeof c.rank === "number" && c.rank < 1000)
+    .sort((x, y) => x.rank - y.rank);
+  if (ranked.length < 5) return "";
+  const top = ranked.slice(0, 12);
+  const requires = ranked.filter((c) => !/optional|not required|waiv/i.test(String(c.gre)));
+  const optional = ranked.length - requires.length;
+  const rows = top.map((c) => `<tr><td><a href="/university/${c.id}/">${esc(c.name)}</a></td><td>#${c.rank}</td><td>${esc(String(c.country))}</td><td>${esc(String(c.gre))}</td></tr>`).join("");
+  return `<div class="card"><h2>What the top-ranked universities actually say about the GRE</h2>
+<p>The figures above are percentiles, which tell you where you sit against other test-takers but not what any particular university wants. Below are the ${top.length} highest-ranked universities in our dataset that publish a GRE position, so you can see the pattern rather than a generic "top-10" claim.</p>
+<div style="overflow-x:auto"><table class="tbl"><thead><tr><th>University</th><th>QS rank</th><th>Country</th><th>GRE</th></tr></thead><tbody>${rows}</tbody></table></div>
+<p>Across the ${ranked.length} ranked universities we hold GRE data for, <strong>${optional}</strong> list it as optional or waived and <strong>${requires.length}</strong> still expect or accept it. That split is the single most useful fact on this page, and it is the one most guides skip: since the pandemic-era waivers, "what GRE score do I need" is frequently the wrong question, and "does this programme want a GRE at all" is the right one. Check that first — it can save you the test fee entirely.</p>
+<p><strong>Where a score still matters even when it is optional.</strong> Optional does not mean ignored. Where a programme is oversubscribed, a strong quant score is one of the few directly comparable signals across applicants from different countries and grading systems, and it can offset a transcript an admissions committee cannot easily read. The reverse is also true: submitting a weak optional score puts a number on a page that would otherwise not have been there. If it is optional and your score is below the programme's published median, not submitting is usually the stronger move.</p>
+<p><strong>Read the programme page, not the university page.</strong> GRE policy is set per department and often per intake. Within a single university, one department may require it, another may waive it, and a third may require it only for applicants from certain backgrounds. The institution-level position in the table above is a starting point for your shortlist, not the answer for your application.</p>
+<p class="note">GRE positions here are compiled for comparison and change between admission cycles. Confirm on each programme's own admissions page before deciding whether to sit the test.</p></div>`;
+}
+
 /**
  * Per-university depth for /university/<id>/.
  *
