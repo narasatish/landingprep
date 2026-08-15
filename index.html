@@ -34,7 +34,7 @@
         report('App failed to mount within 12s (blank screen shown)', (window.__lpErrors || []).join(' | '), 'boot-timeout');
         root.innerHTML = '<div style="max-width:460px;margin:18vh auto;padding:28px;text-align:center;font-family:system-ui,Arial,sans-serif;color:#1f2937">'
           + '<div style="font-size:42px">📶</div>'
-          + '<h1 style="font-size:22px;margin:12px 0 6px">Having trouble loading</h1>'
+          + '<p role="heading" aria-level="2" style="font-size:22px;font-weight:700;margin:12px 0 6px">Having trouble loading</p>'
           + '<p style="color:#6b7280;font-size:15px;line-height:1.6;margin:0 0 18px">This is usually a slow or dropped connection. Your progress is safe.</p>'
           + '<button onclick="location.reload()" style="background:#4F46E5;color:#fff;border:0;border-radius:10px;padding:12px 22px;font-size:15px;font-weight:700;cursor:pointer">Reload</button>'
           + '</div>';
@@ -333,8 +333,8 @@
     // Capture the install prompt so an in-app "Install app" button can fire it.
     window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); window.__lpInstall = e; window.dispatchEvent(new Event('lp-installable')); });
   </script>
-  <link rel="stylesheet" href="theme.css?v=496" />
-  <link rel="stylesheet" href="pro.css?v=496" />
+  <link rel="stylesheet" href="theme.css?v=498" />
+  <link rel="stylesheet" href="pro.css?v=498" />
 </head>
 <body>
   <!-- Keyboard users land on the nav first and would otherwise tab through every link
@@ -396,8 +396,8 @@
 
   <!-- React 18.3.1 PRODUCTION (minified), SELF-HOSTED: same-origin load avoids a third-party
        DNS+TLS handshake on first paint → faster LCP, and it's precached by the service worker. -->
-  <script src="vendor/react.production.min.js?v=496"></script>
-  <script src="vendor/react-dom.production.min.js?v=496"></script>
+  <script src="vendor/react.production.min.js?v=498"></script>
+  <script src="vendor/react-dom.production.min.js?v=498"></script>
   <!-- Failover: if the local copy ever fails to define React, boot from unpkg, then jsdelivr. -->
   <script>
     if (!window.React) document.write('<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"><\/script>');
@@ -407,7 +407,7 @@
   </script>
 
   <!-- Data layer -->
-  <script defer src="app-bundle.js?v=496"></script>
+  <script defer src="app-bundle.js?v=498"></script>
   <!-- data-questions.js (~142 KB) is lazy-loaded with the test runner via MockTestGate when a mock starts -->
 
   <!-- Auth + Smart Tutor + Chatbot (must load before screens) -->

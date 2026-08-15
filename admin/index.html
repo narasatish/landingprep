@@ -36,7 +36,7 @@
   <h1>🎛️ LandingPrep — Owner Dashboard</h1>
   <p class="sub">Private. Enter your ADMIN_SECRET (stored only in this browser).</p>
   <div class="keybar">
-    <input id="key" type="password" placeholder="ADMIN_SECRET" />
+    <label for="key" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">Admin secret</label><input id="key" type="password" placeholder="ADMIN_SECRET" aria-label="Admin secret" />
     <button class="btn" onclick="save()">Load</button>
     <button class="btn ghost" onclick="load()">↻ Refresh</button>
   </div>
