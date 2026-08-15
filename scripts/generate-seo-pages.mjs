@@ -4964,9 +4964,25 @@ function smartNotesPages() {
       const faqs = (n.recall || []).map((r) => ({ q: r.q, a: r.a }));
       const mapHtml = `<ul class="sn-map"><li><strong>${esc(n.conceptMap.central)}</strong><ul>${n.conceptMap.nodes.map((x) => `<li><strong>${esc(x.label)}</strong> — ${esc(x.note)}</li>`).join("")}</ul></li></ul>`;
       const chunks = n.chunks.map((c) => `<div class="card"><h2>${esc(c.heading)}</h2><p>${mdInline(esc(c.body))}</p><div class="callout tip"><span class="ic">💡</span><div><strong>Real example:</strong> ${esc(c.realExample)}</div></div><div class="callout"><strong>🧠 Memory hook:</strong> ${esc(c.memoryHook)}</div></div>`).join("");
+      const noteDepth = (() => {
+        const nodes = (n.conceptMap && Array.isArray(n.conceptMap.nodes)) ? n.conceptMap.nodes.filter((x) => x && x.label) : [];
+        if (!nodes.length) return "";
+        const EXU = exam.toUpperCase();
+        const ff = examFacts(exam);
+        const central = String((n.conceptMap && n.conceptMap.central) || n.title);
+        return `<div class="card"><h2>Test yourself before you move on</h2>
+<p>Re-reading a note feels like learning and produces almost none. The retrieval below is what actually builds the memory, so cover the map above and answer these from memory — out loud or written down, not in your head, because "I know this" is the feeling that fails under exam pressure.</p>
+<ol class="bsteps">${nodes.map((x) => `<li>Without looking: what is <strong>${esc(String(x.label))}</strong>, and how does it connect to ${esc(central)}?</li>`).join("")}</ol>
+<p>Anything you could not produce is the part of this note you have not learned yet — regardless of how familiar it felt while reading. Re-read only that node, then re-test the whole set. Testing the whole set matters: recalling one idea in isolation is easier than recalling it among ${nodes.length} competing ones, which is the situation the exam actually puts you in.</p>
+<h2>When to come back to this note</h2>
+<p>Spacing is not a scheduling detail, it is the mechanism. Meeting this material again just as it starts to fade forces the effortful retrieval that consolidates it, which is why a note reviewed four times across three weeks outlasts the same note read four times in one evening. The built-in scheduler resurfaces these questions at widening intervals for exactly that reason — the prompt arriving when you feel you have half-forgotten is the system working, not failing.</p>
+<p>A practical rhythm for ${esc(central)}: today, again tomorrow, then after three days, then after a week. If you fail a review, shorten the next interval rather than re-reading the note end to end — the failure identifies the gap precisely, and re-reading everything wastes the diagnosis.</p>
+${ff && ff.sections.length ? `<p><strong>Then apply it under pressure.</strong> Knowing a concept in isolation and using it in a timed paper are different skills, and only the second is examined. There are <strong>${ff.tests} free ${EXU} practice tests</strong> here covering <strong>${ff.questions.toLocaleString("en-IN")} questions</strong> — counted from the test files, not estimated. <a href="/mock-test/${exam}/">Take a full timed ${EXU} mock →</a></p>` : ""}</div>`;
+      })();
       const inner = `<p class="crumb"><a href="/">Home</a> › <a href="/learn/${exam}/">${exam.toUpperCase()} Smart Notes</a> › ${esc(n.title)}</p>
 <section class="hero"><div class="badges"><span class="badge">Smart Note</span><span class="badge">${n.estMinutes} min</span></div><h1>${esc(n.title)}</h1><p class="lead">${esc(n.summary)}</p></section>
 <div class="card"><h2>The big picture</h2>${mapHtml}</div>${chunks}
+${noteDepth}
 ${faqBlock(faqs)}
 ${relatedGrid([
   EXAMS[exam] ? { label: `🎯 Free ${exam.toUpperCase()} mock test`, href: `/mock-test/${exam}/` } : { label: `🏛️ Free College Predictor`, href: `/#/colleges` },
