@@ -3292,6 +3292,40 @@ const PR_COMBOS = [
     faqs: [{ q: "What IELTS score for New Zealand residence?", a: "The Skilled Migrant Category usually requires IELTS 6.5 overall or an accepted equivalent. Confirm the current rule with Immigration New Zealand." },
       { q: "Does New Zealand accept PTE instead of IELTS?", a: "Yes — PTE Academic, TOEFL iBT and other approved tests are accepted at equivalent levels. Check Immigration New Zealand for the current list." }] },
 ];
+/**
+ * Shared depth block for the migration/registration pages — /<exam>-for-<country>-pr/,
+ * /<exam>-for-<country>/, /<exam>-for-nurses-<country>/ and friends.
+ *
+ * These 43 pages sat at a 347-word median, the thinnest cluster left, and 20 of them
+ * already rank at positions 8-27 in Search Console. Depth on a page that is already
+ * on page 2 is worth more than depth on a page nobody has ever seen, which is why
+ * this cluster is worth the work despite being small.
+ *
+ * Everything asserted here is either (a) counted from the shipped practice files, or
+ * (b) a structural fact about how these score requirements work that is stated in the
+ * page's own source data. No invented cut-offs, no invented processing times.
+ *
+ * `extra` carries whatever the calling family has: { tests, note, scheme }.
+ */
+function migrationDepthBlock(examName, examKey, country, extra) {
+  const e = extra || {};
+  const f = examKey ? examFacts(examKey) : null;
+  const EX = String(examName || "").toUpperCase();
+  const lib = f && f.sections.length
+    ? `<p>There are <strong>${f.tests} free ${EX} practice tests</strong> on this site covering <strong>${f.questions.toLocaleString("en-IN")} questions</strong> across ${f.sections.map((s) => SECTION_LABEL(s.sec)).join(", ")} — counted from the test files themselves, not estimated. Every question is checked before release so its answer key matches an option you can actually select, and no paper can be scored well by picking the same letter throughout. <a href="/mock-test/${examKey}/">Start a full ${EX} mock test →</a></p>`
+    : "";
+  return `<div class="card"><h2>What decides this in practice</h2>
+<p>The score tables above are the published requirement. Four things decide whether you actually meet it, and none of them are on the official page.</p>
+<ul class="bcheck">
+<li><strong>The requirement is per skill, not an average.</strong> This is the single most common and most expensive misreading. A requirement written as a score "in each" skill means your lowest band is your result — a strong overall average with one weak skill fails, and it fails after you have paid. Prepare to the requirement in your weakest skill and treat the others as already done.</li>
+<li><strong>One retake is normal; plan the calendar for it.</strong> Because the bar is per skill, a single weak paper sends people back for a full resit. Build one spare attempt into your timeline from the start rather than discovering you need it against a deadline${e.scheme ? ` — ${esc(String(e.scheme))} timelines rarely bend for a test date` : ""}. Booking is also seasonal, and slots near popular deadlines go first.</li>
+<li><strong>Take the right version of the test.</strong> ${e.tests ? esc(String(e.tests)) : `Accepted tests and versions are set by the authority, not the test provider, and the wrong version of the right test is a common and total loss.`}${e.note ? ` ${esc(String(e.note))}` : ""}</li>
+<li><strong>Verify the number before you book.</strong> Requirements here are compiled for comparison and the authorities change them without notice — sometimes mid-year. Confirm the current figure on the official government or registration body's own page at the point you book the test, not at the point you start preparing. That gap is often months.</li>
+</ul>
+${lib}
+<p class="note">Figures on this page are indicative and provided for planning. ${esc(EX)} requirements for ${esc(String(country || "this route"))} are set by the relevant authority and are the only version that counts.</p></div>`;
+}
+
 function prExamPage(c) {
   const path = `/${c.slug}/`;
   const title = `${c.exam} Score for ${c.co} PR 2026 — Requirements & Points`;
@@ -3309,6 +3343,7 @@ function prExamPage(c) {
 <div class="card"><h2>Why your score matters</h2><p>${c.why}</p></div>
 <div class="card"><h2>Key tips</h2><p>${c.tip}</p></div>
 <div class="card"><h2>Practice free for your ${c.exam}</h2><p>Take full-length, real-timing ${c.exam} mock tests free on LandingPrep — with instant scoring and feedback so you hit your ${c.co} PR target faster. <a href="/#/exam-prep">Start a free ${c.exam} mock test →</a></p></div>
+${migrationDepthBlock(c.exam, String(c.exam || "").toLowerCase(), c.co, { note: c.tip })}
 ${faqBlock(c.faqs)}
 ${relatedGrid([
   { label: `🎯 Free ${c.exam} mock tests`, href: `/#/exam-prep` },
@@ -5323,6 +5358,50 @@ function uniFacts(c) {
   return out;
 }
 
+/**
+ * Depth for the exam×university pages — /ielts-for-<uni>/, /toefl-for-<uni>/ etc.
+ *
+ * 20 of these are in KEEP_INDEXED with documented Search Console traction at
+ * positions 8-27. They were also the shortest pages on the site at ~260-350 words,
+ * which is the worst combination available: already visible, and nothing there when
+ * someone arrives. This is the highest-value deepening on the site for that reason.
+ *
+ * Comparison is computed against the university's national peers in COLLEGES, so
+ * every page says something different and every claim traces to the dataset.
+ */
+function examUniDepthBlock(c, examName, examKey, req) {
+  const peers = COLLEGES.filter((x) => x.country === c.country && x.id !== c.id);
+  const EX = String(examName || "").toUpperCase();
+  const f = examKey ? examFacts(examKey) : null;
+  const vals = peers.map((x) => parseFloat(x[examKey])).filter((v) => isFinite(v));
+  const mine = parseFloat(req);
+  const med = vals.length ? vals.slice().sort((a, b) => a - b)[Math.floor(vals.length / 2)] : null;
+  const cmp = (isFinite(mine) && med !== null)
+    ? `<li><strong>How this compares in ${esc(String(c.country))}.</strong> ${esc(c.name)} asks for ${EX} ${esc(String(req))}, against a median of ${med} across the ${peers.length} other ${esc(String(c.country))} universities in our dataset. ${mine > med ? "That is above the national norm, so the English test is a genuine risk on this application rather than a formality — clear it before you spend money on anything else." : mine < med ? "That is below the national norm. It makes this a low-risk gate here, but the same score will not clear every university you apply to alongside it, so prepare to the highest bar on your shortlist rather than this one." : "That is exactly the national norm, so a score built for this application should travel across your whole shortlist."}</li>`
+    : "";
+  const lib = f && f.sections.length
+    ? `<p><strong>${f.tests} free ${EX} practice tests</strong> covering <strong>${f.questions.toLocaleString("en-IN")} questions</strong> are on this site — counted from the files, not estimated — across ${f.sections.map((s) => SECTION_LABEL(s.sec)).join(", ")}. <a href="/mock-test/${examKey}/">Start a full ${EX} mock test →</a></p>`
+    : "";
+  return `<div class="card"><h2>What actually decides this application</h2>
+<ul class="bcheck">
+${cmp}
+<li><strong>The requirement is almost always per section, not an overall score.</strong> This is the most expensive misreading in the whole process. Where a university publishes an overall figure <em>and</em> per-section minimums, your lowest section is what counts — a comfortable overall band hiding one weak section is rejected, and it is rejected after you have paid for the test. Check ${esc(c.name)}'s per-section minimums, not just the headline.</li>
+<li><strong>The programme can ask for more than the university.</strong> The figure on this page is the institutional baseline. Individual departments — commonly law, medicine, teaching, journalism and anything with a placement or registration requirement — routinely set a higher bar, and theirs is the one that applies to you. Always confirm on the specific programme page.</li>
+<li><strong>Scores expire, and the clock is on the test date.</strong> Most English test scores are accepted for two years from the date you sat the test, not from when you applied. Sitting the test very early to "get it out of the way" can mean re-sitting it before you enrol.</li>
+</ul>
+${lib}
+<p class="note">This figure is indicative and compiled for comparison. ${esc(c.name)} sets its own requirement and can change it between admission cycles — confirm on ${c.website ? `<a href="${esc(c.website)}" rel="nofollow noopener" target="_blank">the university's official pages</a>` : "the university's official pages"} before you book.</p></div>
+<div class="card"><h2>Planning the test around a ${esc(c.name)} application</h2>
+<p>The English test is the only part of this application that is entirely within your control and entirely on your own schedule, which makes it the wrong thing to leave until last — and the thing most applicants leave until last.</p>
+<ul class="bcheck">
+<li><strong>Work backwards from the deadline, not forwards from today.</strong> ${c.deadline ? `${esc(c.name)}'s typical deadline is ${esc(String(c.deadline))}.` : `Check the deadline for your intake first.`} Results take time to issue and longer to be received and processed, and a resit needs a free slot plus another wait. Two clear months before the deadline is a working minimum for a first attempt; three if you want a resit to remain possible.</li>
+<li><strong>Diagnose before you study, not after.</strong> A full timed mock tells you which section is actually short. Most people study the section they enjoy, which is rarely the one costing them the place${isFinite(mine) ? `, and against a requirement of ${esc(String(req))} the margin for a weak section is usually zero` : ""}.</li>
+<li><strong>Score the test you are taking.</strong> Test-day loss is very often strategy rather than English — mismanaged timing, misread task instructions, unfamiliar question formats. That is cheap to fix with full-length timed practice and expensive to discover on the day.</li>
+<li><strong>Do not book on a good practice day.</strong> Book when you are hitting the target consistently, including in your weakest section. A single strong mock is noise; three in a row is a signal.</li>
+</ul>
+${c.intakes && c.intakes.length ? `<p>${esc(c.name)} runs ${esc(c.intakes.join(" and "))} ${c.intakes.length > 1 ? "intakes" : "intake"}. If you miss the English requirement for one, the honest options are usually to take the next intake with a better score or to apply elsewhere with the score you have — a conditional offer with an English condition attached still requires you to meet it, and the pre-sessional English courses that sometimes substitute for it carry their own fees and their own entry bar.</p>` : ""}</div>`;
+}
+
 function examForUniPage(c) {
   if (!c || !c.id || c.ielts == null) return;
   const band = c.ielts;
@@ -5349,6 +5428,7 @@ ${uniFacts(c)}
 <li><strong>Learn the strategy.</strong> Use the free <a href="/prep-lessons/">IELTS prep lessons</a> for your weak sections.</li>
 <li><strong>Get feedback.</strong> Check your Writing &amp; Speaking with the free <a href="/ielts-writing-checker/">band checker</a> and redo weak answers.</li>
 </ol></div>
+${examUniDepthBlock(c, "IELTS", "ielts", c.ielts)}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `${esc(c.name)} — full profile`, href: `/university/${c.id}/` },
@@ -5384,6 +5464,7 @@ ${uniFacts(c)}
 <li><strong>Learn the strategy.</strong> Use the free <a href="/prep-lessons/">${ex.name} prep lessons</a>.</li>
 <li><strong>Get feedback.</strong> Check your writing &amp; speaking with the free <a href="/ielts-writing-checker/">band checker</a>.</li>
 </ol></div>
+${examUniDepthBlock(c, ex.name, ex.k, c[ex.k])}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `${esc(c.name)} — full profile`, href: `/university/${c.id}/` },
@@ -5484,6 +5565,7 @@ function examForPRPage(x) {
 <div class="card"><h2>${x.exam} levels for ${x.country} immigration</h2><table class="cmp-table"><thead><tr><th>Level</th><th>${x.exam} requirement</th><th>What it means</th></tr></thead><tbody>${rows}</tbody></table></div>
 <div class="card"><h2>Which English tests are accepted for ${esc(x.country)} immigration?</h2><p>${esc(x.tests)}</p><p class="note">Make sure you book the exact test version the immigration authority accepts (for example, the General/Core version where required, not the Academic one) — taking the wrong version is a common, costly mistake.</p></div>
 <div class="card"><h2>How to reach your target ${x.exam} score</h2><ol class="bsteps"><li><strong>Find your starting point.</strong> Take a free full-length ${x.exam} mock test to see exactly which skills are below target.</li><li><strong>Prioritise your weakest skill.</strong> In points-based systems, one low skill can cap your whole score — lift the lowest band first.</li><li><strong>Learn the test strategy,</strong> not just the English — timing, question types and how each skill is marked, in the free prep lessons.</li><li><strong>Check your writing and speaking</strong> against the official criteria with the free band checker before you book.</li><li><strong>Book once you're consistently hitting the target</strong> in practice — re-sits cost money and time.</li></ol></div>
+${migrationDepthBlock(x.exam, x.k, x.country, { tests: x.tests, note: x.note, scheme: x.scheme })}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `Free ${x.exam} mock test`, href: `/mock-test/${x.k}/` },
