@@ -6086,6 +6086,22 @@ function testFinderPage() {
 <tr><td><strong>Duolingo</strong></td><td>Cheap & fast, many universities</td><td>Computer (AI)</td><td>~2 days</td></tr>
 <tr><td><strong>CELPIP</strong></td><td>Canadian PR &amp; citizenship</td><td>Computer</td><td>4–5 days</td></tr>
 </tbody></table></div>
+<div class="card"><h2>Answer these three in order and the choice usually makes itself</h2>
+<p>Most people start from "which test is easiest", which is the one question that has no useful answer — the tests are easier for different people, and the gap between them for you is smaller than the gap between preparing properly and not. Work through these instead, in this order, because each one can end the decision outright.</p>
+<ol class="bsteps">
+<li><strong>What does every institution on your list accept?</strong> Write down every university, visa route and registration body you might apply to, then check which tests each one takes — and which <em>version</em>. This single step settles most cases: if only one test clears your whole list, you are finished and the rest is trivia. Skipping it is how people sit the wrong test and pay twice, and it is by far the most common expensive mistake in this process.</li>
+<li><strong>When is your earliest deadline?</strong> Turnaround differs by weeks between these tests, and test-centre availability tightens near popular intakes. Work backwards from the date a score must be <em>received</em>, not sent, and leave room for one resit. If the calendar only permits a fast-result test, again the decision is made for you.</li>
+<li><strong>Which format suits how you actually perform?</strong> Only now does this matter. Someone who freezes in front of a live examiner and someone who loses their thread speaking into a microphone should choose differently, and neither is a fact about the tests. Compare section by section against your own weaknesses rather than test against test.</li>
+</ol>
+<h2>The traps worth knowing before you book</h2>
+<ul class="bcheck">
+<li><strong>The right test in the wrong version is a total loss.</strong> IELTS Academic and General Training, PTE Academic and PTE Core, are not interchangeable, and the authority — not the test provider — decides which one counts. Check the exact version named on the requirement page.</li>
+<li><strong>Migration and study have different rules.</strong> A test accepted by universities is not automatically accepted for a visa or for professional registration, and the reverse also holds. If you might do both, choose the test that covers both rather than the one that fits today.</li>
+<li><strong>Scores expire, usually two years from the test date.</strong> Sitting early to get it out of the way is a real risk when admission and visa processing run long — the clock starts on the day you sit, not the day you apply.</li>
+<li><strong>Per-section minimums beat overall scores.</strong> Where a requirement is written "in each", your lowest section is your result and a strong overall average will not rescue it. Read which form your requirement takes before you build a study plan on it.</li>
+<li><strong>Check whether you can re-sit one skill instead of the whole test.</strong> IELTS offers a One Skill Retake at many centres, which lets you re-take a single section rather than the full paper — cheaper, faster, and a different calculation entirely when one weak skill is all that stands between you and your target. Not every test or every centre offers this, and some institutions will not accept a combined result, so confirm both the centre's availability and your institution's position before you rely on it. <a href="/tools/ielts-one-skill-retake-calculator/">Work out whether a single-skill retake would get you there →</a></li>
+</ul>
+<p><strong>The step that produces evidence instead of opinion.</strong> Everything above narrows the field; only sitting the papers tells you how you actually perform in each format — and that is free here. Take one full timed mock of your two shortlisted tests before paying for either. Two afternoons can save a test fee and, more often, a wasted first attempt.</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: "Take the quiz", href: "/#/which-english-test" },
