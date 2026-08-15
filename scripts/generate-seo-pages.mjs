@@ -2705,6 +2705,54 @@ const SEO_FIELDS = [
   { name: "MS in Business Analytics", slug: "ms-business-analytics", kw: "analyt", short: "Business Analytics" },
 ];
 
+/**
+ * Per-page depth for the /study-abroad/<field>-in-<country>/ family.
+ *
+ * These 100-odd pages sat at a 397-word median: the template already computed a
+ * real, page-specific set of universities and then spent one <ul> on it. This
+ * turns that same data into a comparison table and a spread analysis, so each
+ * page carries numbers no sibling page has.
+ *
+ * It also states out loud when fewer than three universities actually match the
+ * field, because the surrounding code silently falls back to the country's top
+ * universities in that case. A reader deserves to know the list in front of them
+ * is "top universities in this country" rather than "top universities for this
+ * subject" — and an unqualified list would be the more SEO-flattering lie.
+ */
+function fieldDepthBlock(field, co, unis, matched, all) {
+  if (!unis.length) return "";
+  const num = (v) => (typeof v === "number" && isFinite(v) ? v : null);
+  const accs = unis.map((u) => num(u.acceptance)).filter((x) => x !== null);
+  const ranks = unis.map((u) => num(u.rank)).filter((x) => x !== null);
+  const iel = unis.map((u) => parseFloat(u.ielts)).filter((x) => isFinite(x));
+  const fellBack = matched.length < 3;
+  const rows = unis.map((u) => `<tr><td><a href="/university/${u.id}/">${esc(u.name)}</a></td><td>${u.rank ? "#" + u.rank : "—"}</td><td>${esc(String(u.ielts))}</td><td>${u.acceptance != null ? u.acceptance + "%" : "—"}</td><td>${esc(String(u.feeNote || "—"))}</td></tr>`).join("");
+  const spread = accs.length >= 2
+    ? `Acceptance across this shortlist runs from ${Math.min(...accs)}% to ${Math.max(...accs)}%. That range matters more than any single number: a list of six universities with one at ${Math.min(...accs)}% and another at ${Math.max(...accs)}% is not six equivalent applications, and treating it as one is how students end up with an all-reach list and no offer.`
+    : "";
+  const ieltsLine = iel.length >= 2 && Math.min(...iel) !== Math.max(...iel)
+    ? `English requirements are not uniform either — this shortlist spans IELTS ${Math.min(...iel)} to ${Math.max(...iel)}. Preparing to the lowest figure on the list quietly removes the other universities from your options before you have applied.`
+    : `Every university on this shortlist asks for about IELTS ${iel[0] || "6.5"}, so one preparation target covers the whole list.`;
+  return `<div class="card"><h2>Comparing the shortlist for ${esc(field.short)} in ${co.name}</h2>
+${fellBack
+  ? `<p><strong>Read this list carefully.</strong> Only ${matched.length} ${matched.length === 1 ? "university" : "universities"} in our ${co.name} dataset ${matched.length === 1 ? "lists" : "list"} a programme matching “${esc(field.short)}” by name, which is too few to rank meaningfully. The table below therefore shows the top-ranked universities in ${co.name} generally — strong institutions where ${esc(field.short)} is usually available under a broader faculty, but not a subject-specific ranking. Check the department page before you shortlist.</p>`
+  : `<p>${matched.length} of the ${all.length} ${co.name} universities in our dataset run a programme matching ${esc(field.short)}. The ${unis.length} below are the highest-ranked of those.</p>`}
+<div style="overflow-x:auto"><table class="tbl"><thead><tr><th>University</th><th>QS rank</th><th>IELTS</th><th>Acceptance</th><th>Fees</th></tr></thead><tbody>${rows}</tbody></table></div>
+${spread ? `<p>${spread}</p>` : ""}
+<p>${ieltsLine}</p>
+${ranks.length >= 2 ? `<p>Ranks here span ${Math.min(...ranks)} to ${Math.max(...ranks)}. Rank is the weakest of the three columns for choosing a ${esc(field.short)} programme — it is dominated by research output and reputation surveys across the whole institution, neither of which tells you who teaches your modules or whether the department has industry links where you want to work. Use it to sanity-check, not to sort.</p>` : ""}
+<p>The practical sequence for ${co.name}: confirm the intake you are targeting (${(co.intakes || []).join(", ") || "check each university"}), because entry requirements and funding both key off it; budget tuition of ${esc(String(co.avgTuition))} against living costs of ${esc(String(co.avgLiving))} rather than tuition alone, which is the most common underestimate; and check post-study work terms — ${esc(String(co.postStudyWork))} — before you commit, since that is what converts the degree into the outcome most students are actually buying.</p></div>
+<div class="card"><h2>What the table above does not tell you</h2>
+<p>Four things decide a ${esc(field.short)} application in ${co.name} that no ranking column captures, and they are usually what separates an offer from a rejection at the same institution.</p>
+<ul class="bcheck">
+<li><strong>Acceptance rate is institutional, not departmental.</strong> A university reporting ${accs.length ? Math.max(...accs) + "%" : "a high rate"} overall can run a ${esc(field.short)} programme far below that, because competitive departments carry the selective end of the distribution. Always look for the programme's own intake numbers; where they are not published, class size and the number of entry routes are decent proxies.</li>
+<li><strong>The English score is a floor, not a target.</strong> IELTS ${iel.length ? Math.min(...iel) : "6.5"} clears the gate; it does not compete. Where a programme is oversubscribed, admissions staff read the band breakdown, and a strong overall score hiding a weak Writing band is a common quiet rejection. Check whether the university sets per-section minimums as well as an overall figure — many do, and applicants routinely miss it.</li>
+<li><strong>Funding decisions run on a different calendar to admissions.</strong> In ${co.name} the intakes are ${(co.intakes || []).join(", ") || "published per university"}, but most scholarship deadlines sit weeks to months ahead of the application deadline. Applying "on time" for admission and late for money is one of the most expensive ordinary mistakes in the process, and it is entirely avoidable.</li>
+<li><strong>Post-study work rules are what you are really buying.</strong> ${esc(String(co.postStudyWork))} ${co.prTimeline ? `The onward route matters too — ${esc(String(co.prTimeline))}.` : ""} These terms are set by government policy rather than by the university, so they can change between the year you apply and the year you graduate. Verify them on the official immigration site at the point of applying rather than trusting any third-party summary, this page included.</li>
+</ul>
+<p>If you are choosing between ${co.name} and somewhere else for ${esc(field.short)}, compare on total cost to a work permit rather than on tuition or rank. Tuition of ${esc(String(co.avgTuition))} plus living costs of ${esc(String(co.avgLiving))} over the length of the programme, set against what the post-study work window realistically lets you earn back, is the comparison that actually changes decisions — and it frequently reverses the ordering you get from ranking tables alone.</p></div>`;
+}
+
 function studyFieldPage(field, co) {
   const path = `/study-abroad/${field.slug}-in-${co.id}/`;
   const all = COLLEGES.filter((c) => c.country === co.name);
@@ -2743,6 +2791,7 @@ function studyFieldPage(field, co) {
     <li><strong>Post-study work:</strong> ${co.postStudyWork} · <strong>PR:</strong> ${co.prTimeline}.</li>
   </ul>
 </div>
+${fieldDepthBlock(field, co, unis, matched, all)}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🔮 Predict colleges in ${co.name}`, href: `/#/colleges/predictor/${encodeURIComponent(co.name)}` },
@@ -2802,6 +2851,15 @@ ${co.immigration ? `<li><strong>Immigration pathway:</strong> ${esc(co.immigrati
 ${co.prTimeline ? `<li><strong>Permanent residence:</strong> ${esc(co.prTimeline)}</li>` : ""}
 </ul><p class="note">A clear post-study work and PR pathway is what turns tuition into an investment — graduates who stay and work often recover the cost within a few years.</p></div>
 ${Array.isArray(co.changes) && co.changes.length ? `<div class="card"><h2>Recent updates affecting cost &amp; study in ${esc(co.name)}</h2><ul class="bcheck">${co.changes.slice(0, 4).map((c) => `<li><strong>${esc(c.d || c.date || "")}:</strong> ${esc(c.t || c.text || c)}</li>`).join("")}</ul><p class="note">Always verify current fees, visa rules and policies on official government and university websites before you apply.</p></div>` : ""}
+<div class="card"><h2>Building a budget that survives contact with ${esc(co.name)}</h2>
+<p>The headline pair — ${esc(String(co.avgTuition))} tuition and ${esc(String(co.avgLiving))} living — is the right starting point and the wrong finishing point. Budgets fail in predictable places, and almost none of them are tuition, because tuition is the one number everybody checks.</p>
+<ul class="bcheck">
+<li><strong>The first two months cost far more than an average month.</strong> A rental deposit, agency fees, the first month's rent paid up front, bedding and kitchen basics, a local phone and transport pass, and often a health-insurance payment all land before your first student-job pay arrives. Treat the setup period as a separate line, not as part of the monthly average, or you will hit it with a monthly-average bank balance.</li>
+<li><strong>Proof of funds is not the same as your budget.</strong> Visa rules require you to show a set figure, and students routinely mistake it for a sufficiency estimate. It is a threshold set by policy, usually pegged to a national minimum rather than to what a student in a particular city actually spends, and in expensive cities it can be well under the real cost.</li>
+<li><strong>Currency movement is a real line item.</strong> If your funding is in one currency and your costs in another, a few percent of drift across a multi-year degree is the size of a semester's living costs. Nobody can forecast it — the practical answer is a buffer, not a prediction.</li>
+<li><strong>Part-time earnings are capped and seasonal.</strong> Roughly 20 hours a week in term time is a ceiling, not a plan: work is hardest to find in your first term when you have no local references, and the hours you can work are lowest exactly when coursework peaks. Budget as though term-time earnings are zero and treat anything you do earn as a buffer.</li>
+</ul>
+<p>A workable rule for ${esc(co.name)}: take the annual figures above, add roughly one extra month of living costs as a setup line, and hold a contingency you do not touch. ${co.postStudyWork ? `The reason the arithmetic is worth doing carefully is the other end of it — ${esc(String(co.postStudyWork))}${co.prTimeline ? `, with ${esc(String(co.prTimeline))}` : ""}. That window is what converts the spending into a return, and it is set by immigration policy rather than by any university, so verify it on the official government site at the point you apply.` : "Verify current figures on official government and university sources at the point you apply — published costs move year to year."}</p></div>
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🧮 Cost of studying abroad calculator`, href: `/tools/cost-of-studying-abroad-calculator/` },
