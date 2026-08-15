@@ -32,12 +32,31 @@ const ROUTES = [
   "/practice/toefl/",
 ];
 
-function waitForServer(timeoutMs) {
+// The server needs ~5-6s to listen on an idle machine, but this suite runs at the end of
+// `npm test` behind the full build, and a loaded box (or a slow first read of a large
+// static tree off OneDrive) pushes that well past 20s. That produced intermittent
+// "server didn't start" failures on code that was completely fine — verified by booting
+// server.js directly under the same env: it came up in 5.6s with the port free and no
+// error, while the suite had just reported failure.
+//
+// A test that cries wolf is worse than no test, because people learn to re-run it until
+// it passes — which is exactly how a real failure gets waved through. So: a deadline with
+// headroom, and a report that distinguishes "server never listened" from "server exited".
+const BOOT_TIMEOUT_MS = 90000;
+
+function waitForServer(timeoutMs, proc) {
   return new Promise((resolve, reject) => {
     const deadline = Date.now() + timeoutMs;
+    let exited = null;
+    if (proc) proc.once("exit", (code, signal) => { exited = signal ? `signal ${signal}` : `exit code ${code}`; });
     (function ping() {
+      if (exited !== null) return reject(new Error(`server process died before listening (${exited})`));
       const req = http.get(BASE + "/api/health", (res) => { res.resume(); resolve(); });
-      req.on("error", () => { if (Date.now() > deadline) reject(new Error("server didn't start")); else setTimeout(ping, 400); });
+      req.on("error", () => {
+        if (exited !== null) return reject(new Error(`server process died before listening (${exited})`));
+        if (Date.now() > deadline) reject(new Error(`server didn't start within ${Math.round(timeoutMs / 1000)}s on port ${PORT}`));
+        else setTimeout(ping, 400);
+      });
       req.setTimeout(2000, () => req.destroy());
     })();
   });
@@ -48,7 +67,7 @@ function waitForServer(timeoutMs) {
   let browser;
   const failures = [];
   try {
-    await waitForServer(20000);
+    await waitForServer(BOOT_TIMEOUT_MS, server);
     browser = await chromium.launch({ headless: true });
     // Block service workers: on a fresh profile the first SW install fires
     // controllerchange → location.reload() (index.html), which kills any

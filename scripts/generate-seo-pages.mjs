@@ -1574,6 +1574,46 @@ ${relatedGrid(blogTiles(a))}`;
 }
 
 // ── Per-scholarship detail pages (auto-generated from scholarship-data) ─────
+/**
+ * Per-scholarship depth for /scholarship/<id>/.
+ *
+ * Same problem as the university pages: the facts were all present and never
+ * compared to anything, leaving 26 pages in a 425-729 word band. This positions
+ * each award against the rest of SCHOLARSHIP_DATA — the other awards for the same
+ * country and the same level — which is the comparison an applicant actually needs
+ * and which no single awarding body will ever publish about itself.
+ *
+ * Deliberately does NOT invent selection criteria or success rates. Where a fact is
+ * not in the dataset it is not asserted; the guidance below is about how funding
+ * calendars and eligibility gates work, which is stable and checkable.
+ */
+function scholarshipDepthBlock(s, dc) {
+  const all = Array.isArray(SCHOLARSHIP_DATA) ? SCHOLARSHIP_DATA : [];
+  const sameCountry = all.filter((x) => x && x.id !== s.id && x.country === s.country);
+  const sameLevel = sameCountry.filter((x) => x.level === s.level);
+  // Peer table only where real peers exist. 12 of the 26 awards are the only entry for
+  // their country in the dataset, and inventing a comparison set for them would be worse
+  // than showing none — but the guidance below holds regardless, so it always renders.
+  const sameLevelAny = all.filter((x) => x && x.id !== s.id && x.level === s.level);
+  const pick = (sameCountry.length >= 2 ? (sameLevel.length >= 2 ? sameLevel : sameCountry) : sameLevelAny).slice(0, 6);
+  const peerScope = sameCountry.length >= 2 ? "country" : "level";
+  const rows = pick.map((x) => `<tr><td><a href="/scholarship/${esc(String(x.id))}/">${esc(String(x.name))}</a></td><td>${esc(String(x.amount || "—"))}</td><td>${esc(String(x.country || "—"))}</td><td>${esc(String(x.deadline || "—"))}</td></tr>`).join("");
+  const types = [...new Set((peerScope === "country" ? sameCountry : sameLevelAny).map((x) => x.type).filter(Boolean))];
+  return `<div class="card"><h2>${peerScope === "country" ? `Other funding for ${esc(String(s.country))} — and how this one fits` : `Where the ${esc(String(s.name))} sits among ${esc(String(s.level))} funding`}</h2>
+<p>${peerScope === "country"
+  ? `Our dataset holds ${sameCountry.length} other ${esc(String(s.country))} ${sameCountry.length === 1 ? "award" : "awards"}${sameLevel.length >= 2 ? `, ${sameLevel.length} of them at ${esc(String(s.level))} level` : ""}.`
+  : `The ${esc(String(s.name))} is the only ${esc(String(s.country))} award in our dataset, so there is no national set to compare it against. The table below shows other ${esc(String(s.level))} awards instead — a different country, but the same stage of study, which is usually the more useful comparison anyway when you are deciding where to apply.`} Almost nobody wins funding from a single application, so the useful question is not whether to apply for the ${esc(String(s.name))} but what else goes on the list beside it.</p>
+${pick.length ? `<div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Scholarship</th><th>Award</th><th>Country</th><th>Deadline</th></tr></thead><tbody>${rows}</tbody></table></div>` : ""}
+${types.length > 1 ? `<p>These awards split across ${types.map((t) => esc(String(t))).join(", ")} funding. That distinction matters more than the headline amount: the eligibility gate on a government or institution award is usually fixed and checkable in advance, so you can rule yourself in or out on paper, while merit and need awards turn on a judgement you cannot audit. Build the list from the ones you can verify you qualify for, then add the judgement-based ones on top.</p>` : ""}
+<ul class="bcheck">
+<li><strong>Funding deadlines run ahead of admission deadlines.</strong> ${dc ? "" : `The ${esc(String(s.name))} closes ${esc(String(s.deadline || "on its published date"))}, `}and for most awards the money is decided weeks or months before a place is. Applying "on time" for the course and late for the funding is the single most expensive ordinary mistake in this process, and it costs nothing to avoid.</li>
+<li><strong>Some awards need admission or nomination first.</strong> Where that is the case the real deadline is the one on the university application, not the one on the scholarship page, because you cannot meet the second without having cleared the first.</li>
+<li><strong>One tailored application beats six generic ones.</strong> Every award publishes what it is for. The applications that fail are usually the ones that describe an excellent candidate without ever connecting them to that specific purpose.</li>
+<li><strong>Amounts are rarely what they look like.</strong> A full-tuition award in an expensive city can leave a larger gap than a smaller stipend somewhere cheaper. Compare what is left unfunded, not what is granted.</li>
+</ul>
+<p class="note">Amounts, eligibility and deadlines are indicative and set by the awarding bodies, who change them without notice. Verify every figure on the official source before you rely on it — including the ones on this page.</p></div>`;
+}
+
 function scholarshipDetailPage(s) {
   const path = `/scholarship/${s.id}/`;
   const dc = s.discontinued;
@@ -1666,6 +1706,7 @@ ${s.official ? `<div class="card">
   <p><a class="cta" href="${esc(s.official)}" target="_blank" rel="noopener">Open the official ${esc(s.name)} website →</a></p>
   <p class="note">External link to the awarding body. LandingPrep is not affiliated with it and does not process applications.</p>
 </div>` : ""}
+${scholarshipDepthBlock(s, dc)}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `💸 All scholarships (free finder)`, href: `/#/colleges` },
@@ -2483,6 +2524,54 @@ const PROVEN_EXAM_PAGES = (() => {
 })();
 
 // ── Per-university pages (long-tail SEO, auto-generated from college-data) ──
+/*__UNIDEPTH_MOVE__*/
+/**
+ * Per-university depth for /university/<id>/.
+ *
+ * These 167 pages sat in a 717-954 word band — the tightest on the site, which is
+ * what a template looks like from the outside. Every number needed to say something
+ * genuinely specific was already loaded; it was just never compared against anything.
+ *
+ * This positions each university against its own national peer set from COLLEGES:
+ * where its selectivity, price and English bar actually sit. A student cannot get
+ * that from the university's own page, which is the point — it is the one thing this
+ * site can say that the official source structurally cannot.
+ */
+function uniDepthBlock(c, ci) {
+  const peers = COLLEGES.filter((x) => x.country === c.country && x.id !== c.id);
+  if (peers.length < 3) return "";
+  const nums = (arr, k) => arr.map((x) => (typeof x[k] === "number" && isFinite(x[k]) ? x[k] : null)).filter((v) => v !== null);
+  const med = (a) => { if (!a.length) return null; const s = a.slice().sort((x, y) => x - y); return s[Math.floor(s.length / 2)]; };
+  const pAcc = nums(peers, "acceptance"), pRank = nums(peers, "rank").filter((r) => r < 1000);
+  const pIelts = peers.map((x) => parseFloat(x.ielts)).filter((v) => isFinite(v));
+  const myAcc = typeof c.acceptance === "number" ? c.acceptance : null;
+  const myRank = typeof c.rank === "number" && c.rank < 1000 ? c.rank : null;
+  const myIelts = parseFloat(c.ielts);
+  const medAcc = med(pAcc), medRank = med(pRank), medIelts = med(pIelts);
+
+  const bits = [];
+  if (myAcc !== null && medAcc !== null) {
+    const tighter = pAcc.filter((v) => v < myAcc).length;
+    bits.push(`<li><strong>Selectivity.</strong> An indicative acceptance rate of about ${myAcc}% against a median of ${medAcc}% across the ${peers.length} other ${esc(c.country)} universities in our dataset. ${tighter} of them are harder to get into than ${esc(c.name)}. ${myAcc <= medAcc ? "It sits on the more selective side of its national peer group, so meeting the published minimums is the floor rather than the goal." : "It sits on the more accessible side of its national peer group, which usually means a complete, early, well-matched application matters more than an exceptional one."}</li>`);
+  }
+  if (myRank !== null && medRank !== null) {
+    const above = pRank.filter((v) => v < myRank).length;
+    bits.push(`<li><strong>Rank in context.</strong> QS #${myRank}, against a peer median of #${medRank}; ${above} ${esc(c.country)} ${above === 1 ? "university ranks" : "universities rank"} above it here. Rank is worth exactly this much and no more — it is driven by institution-wide research output and reputation surveys, not by the department you would actually join, so treat it as a coarse filter and judge the programme on its own page.</li>`);
+  }
+  if (isFinite(myIelts) && medIelts !== null) {
+    bits.push(`<li><strong>English bar.</strong> IELTS ${c.ielts} against a peer median of ${medIelts}. ${myIelts > medIelts ? "That is above the national norm, so the English test is a live risk on this application rather than a formality — clear it before you spend money on the rest." : myIelts < medIelts ? "That is below the national norm, which makes it a low-risk gate here, but the same score may not clear the universities you are applying to alongside it. Prepare to the highest bar on your list, not this one." : "That is exactly the national norm, so a score built for this application should travel across your whole shortlist."}${c.toefl ? ` Equivalents: TOEFL ${esc(String(c.toefl))}${c.pte ? `, PTE ${esc(String(c.pte))}` : ""}.` : ""}</li>`);
+  }
+  if (!bits.length) return "";
+
+  const progs = Array.isArray(c.programs) ? c.programs.filter(Boolean) : [];
+  return `<div class="card"><h2>How ${esc(c.name)} compares in ${esc(c.country)}</h2>
+<p>The figures on this page mean little on their own. Set against the ${peers.length} other ${esc(c.country)} universities in our dataset, they say something more useful about where an application to ${esc(c.name)} is likely to be won or lost.</p>
+<ul class="bcheck">${bits.join("")}</ul>
+${progs.length ? `<p><strong>Programme areas:</strong> ${progs.slice(0, 12).map((p) => esc(String(p))).join(" · ")}. Entry requirements are set per programme, not per university, so the figures above are the institutional baseline — a competitive department inside an accessible university can run far tighter than the headline rate suggests.</p>` : ""}
+<p>Practical order of work for ${esc(c.name)}: clear the English requirement first, because it gates everything and is the only part of the application you fully control; then confirm which of the ${esc((c.intakes || []).join(" and ") || "published intakes")} intakes you are targeting, since ${c.deadline ? `the typical deadline is ${esc(String(c.deadline))} and ` : ""}funding decisions usually close before admission decisions; then build the application around one specific programme rather than the institution. ${c.appFee ? `Budget the application fee of ${esc(String(c.appFee))} per programme` : "Budget application fees per programme"}${ci && ci.living ? `, and living costs of ${esc(String(ci.living))} on top of tuition of ${esc(String(c.feeNote || "the published rate"))}` : ""}.</p>
+<p class="note">Figures here are indicative and compiled for comparison. Acceptance rates in particular are institution-level estimates and move year to year — confirm anything you are deciding on against ${c.website ? `<a href="${esc(c.website)}" rel="nofollow noopener" target="_blank">the university's official pages</a>` : "the university's official pages"}.</p></div>`;
+}
+
 function universityPage(c) {
   const ci = C_INFO[c.country] || {};
   const proc = C_PROC[c.country] || [];
@@ -2597,6 +2686,7 @@ function universityPage(c) {
   </table>
   <p class="note">All figures are indicative and change year to year — always confirm on the official site${site ? ` (<a href="https://${site}" target="_blank" rel="noopener">${site}</a>)` : ""} before applying.</p>
 </div>
+${uniDepthBlock(c, ci)}
 ${faqBlock(faqs2)}
 ${relatedGrid([
   { label: `🎓 Predict my admission (${c.country})`, href: `/#/colleges/predictor/${encodeURIComponent(c.country)}` },
