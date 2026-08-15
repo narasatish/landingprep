@@ -925,6 +925,40 @@ const EXAM_ASSET_LINK = {
 };
 
 // ── Page builders ───────────────────────────────────────────────────────────
+/**
+ * Depth for /mock-test/<exam>/ — 10 pages at a 582-word median.
+ *
+ * These are the landing pages for the thing this site actually is, and they were shorter than
+ * the guides pointing at them. Every figure below is counted from the shipped test files at
+ * build time, so the page cannot advertise a library that does not exist — the content-claims
+ * audit exists because advertised counts had drifted from real ones before.
+ *
+ * The prose is about how to USE a full mock, because the common failure is not a shortage of
+ * practice material, it is practising in a way that cannot reveal the errors that decide the
+ * score.
+ */
+function mockDepthBlock(id, e) {
+  const f = examFacts(id);
+  if (!f || !f.sections.length) return "";
+  const EX = String(e && e.short ? e.short : id).toUpperCase();
+  const longest = f.sections.slice().sort((a, b) => (b.mins || 0) - (a.mins || 0))[0];
+  const totalMins = f.sections.reduce((s, x) => s + (x.mins || 0), 0);
+  const rows = f.sections.map((s) => `<tr><td>${esc(SECTION_LABEL(s.sec))}</td><td>${s.tests}</td><td>${s.perTest}</td><td>${s.mins ? s.mins + " min" : "untimed"}</td></tr>`).join("");
+  return `<div class="card"><h2>What you get, counted from the actual test files</h2>
+<div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Section</th><th>Tests</th><th>Questions each</th><th>Time each</th></tr></thead><tbody>${rows}</tbody></table></div>
+<p><strong>${f.tests} ${EX} tests, ${f.questions.toLocaleString("en-IN")} questions</strong>${totalMins ? `, about ${totalMins} minutes for one full sitting across all ${f.sections.length} section${f.sections.length === 1 ? "" : "s"}` : ""}. No signup, no attempt limit, nothing held back behind a paywall. Every question is verified before release: its answer key must match an option you can actually select, and no paper may be scoreable by picking the same letter throughout — checks that caught 227 unanswerable questions and 61 gameable papers when they were introduced.</p>
+<h2>How to take a mock so it tells you something</h2>
+<p>Most people do not have a practice-material problem. They have a practice-method problem, and it is the same one: practising in conditions that cannot surface the errors which actually cost marks.</p>
+<ul class="bcheck">
+<li><strong>Sit it complete and timed, in one go.</strong> The mistakes that decide a score — misread instructions, transfer errors, rushing the last questions — only appear when you are tired and behind the clock.${longest && longest.mins ? ` ${esc(SECTION_LABEL(longest.sec))} is the longest section here at about ${longest.mins} minutes, and it is where fatigue usually starts showing.` : ""} A section done fresh on a Sunday afternoon proves nothing about the same section done ninety minutes into a real exam.</li>
+<li><strong>Do not check answers as you go.</strong> Checking mid-test resets your concentration and quietly removes the pacing pressure you are supposed to be rehearsing. Finish, then mark.</li>
+<li><strong>Review every wrong answer against a cause, not a correction.</strong> Reading the right answer teaches you almost nothing. Ask which of four things happened: you did not know it, you misread the question, you ran out of time, or you knew it and made a careless error. Those need four completely different fixes, and only the first one is solved by more study.</li>
+<li><strong>Watch the pattern across mocks, not the score of one.</strong> A single result is noise. Three papers moving in one direction is a signal, and three flat results despite steady work usually mean the work is aimed at the wrong section.</li>
+<li><strong>Space them out.</strong> ${f.tests} tests is enough to take one a week for most of a preparation cycle. Taking several in a row burns the material for no benefit — you cannot act on the diagnosis of one paper while you are already sitting the next.</li>
+</ul>
+<p>The point of a mock is diagnosis, not a score. A paper that tells you exactly which section and which error type is costing you marks has done its job even if the number was disappointing — arguably especially then, since a comfortable score four weeks out teaches you nothing you can use.</p></div>`;
+}
+
 function mockPage(id) {
   const e = EXAMS[id];
   const path = `/mock-test/${id}/`;
@@ -971,6 +1005,7 @@ ${(() => {
 <div class="card"><h2>🎯 What's a good ${e.short} score?</h2><ul class="bcheck">${ep.benchmarks.map((b) => `<li>${esc(b)}</li>`).join("")}</ul></div>` : ""}${Array.isArray(ep.tips) && ep.tips.length ? `
 <div class="card uni-tips"><h2>💡 ${e.short} prep tips</h2><ul class="bcheck">${ep.tips.map((t) => `<li>${esc(t)}</li>`).join("")}</ul></div>` : ""}`;
 })()}
+${mockDepthBlock(id, e)}
 ${faqBlock(faqs)}
 ${relatedGrid([
   ...(["ielts", "toefl", "pte", "gre", "gmat", "duolingo", "sat", "celpip", "act", "oet", "cambridge"].includes(id) ? [{ label: `${e.short} Smart Notes — visual lessons & recall`, href: `/learn/${id}/` }] : []),
