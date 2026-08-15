@@ -25,7 +25,8 @@
     "test:ig-full": "node tools/ig-full.test.js",
     "validate:smart-notes": "node tools/validate-smart-notes.mjs",
     "audit:uniqueness": "node tools/audit-test-uniqueness.mjs",
-    "audit:answerable": "node tools/audit-answerability.mjs"
+    "audit:answerable": "node tools/audit-answerability.mjs",
+    "test:ai": "node tools/test-ai-endpoints.mjs"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2",

@@ -5206,6 +5206,42 @@ const BANDS = [
   { b: "7.5", raw: "32/40", level: "Good", use: "competitive postgraduate programmes and scholarships" },
   { b: "8", raw: "35/40", level: "Very good", use: "elite programmes and the maximum points for skilled-migration / PR" },
 ];
+/**
+ * Depth for the six /ielts-band-<b>/ overview pages, ~350 words each.
+ *
+ * Same principle as the band×section pages: the useful thing here is arithmetic the
+ * reader cannot do from a descriptor table. Overall band is the mean of four sections
+ * rounded to the nearest half, so the reachable combinations for a target band are
+ * enumerable — and enumerating them is what turns "I need Band 7" into a plan.
+ */
+function bandOverviewDepth(item) {
+  const b = item.b;
+  const target = parseFloat(b);
+  const raw = /^(\d+)\s*\/\s*(\d+)$/.exec(String(SEC_RAW[b] || "")) || null;
+  const f = examFacts("ielts");
+  // Enumerate realistic four-section splits whose mean rounds to the target band.
+  const grid = [];
+  const opts = [];
+  for (let v = Math.max(4, target - 1.5); v <= Math.min(9, target + 1.5); v += 0.5) opts.push(v);
+  const rounds = (avg) => Math.round(avg * 2) / 2;
+  for (const w of opts) for (const x of opts) {
+    // keep the two "other" sections at the target to hold the search small and readable
+    const avg = (w + x + target + target) / 4;
+    if (rounds(avg) === target && (w !== target || x !== target) && w <= x) grid.push([w, x]);
+  }
+  const seen = new Set();
+  const combos = grid.filter(([w, x]) => { const k = w + "|" + x; if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, 4);
+
+  return `<div class="card"><h2>What Band ${b} actually requires across four sections</h2>
+<p>Your overall IELTS band is the mean of your four section bands, rounded to the nearest whole or half band, and the rounding runs upward at the quarter — an average of ${(target - 0.25).toFixed(2)} is reported as ${b}, while ${(target - 0.4).toFixed(1)} is not. That single rule is the most misread part of IELTS scoring, and it is why Band ${b} does not mean ${b} in everything.</p>
+${combos.length ? `<p><strong>You do not need ${b} in every section.</strong> Holding two sections at ${b}, these combinations in the other two still average out to an overall ${b}:</p>
+<ul class="bcheck">${combos.map(([w, x]) => `<li>${w} and ${x}, with ${b} and ${b} in the other two — average ${(((w + x + target * 2) / 4)).toFixed(2)}, reported as <strong>${b}</strong>.</li>`).join("")}</ul>
+<p>This is worth knowing before you plan, because it changes where the effort goes. Lifting your strongest section from ${b} to ${(target + 0.5).toFixed(1)} buys you the same 0.125 of average as lifting your weakest from ${(target - 0.5).toFixed(1)} to ${b} — but the second is almost always the cheaper half-band to win, and it is the one that also protects you against a per-section minimum.</p>` : ""}
+<p><strong>The catch that undoes all of this.</strong> Many universities, and nearly every migration and professional-registration route, publish a per-section minimum alongside the overall figure. Where they do, an averaged Band ${b} carrying a weak section does not qualify — your lowest section is your result. Before you build a plan around averages, check whether your requirement reads "overall ${b}" or "${b} in each". They demand genuinely different preparation, and the difference is usually discovered too late.</p>
+${raw ? `<p><strong>What ${b} looks like in the marked sections.</strong> In Listening and Reading, Band ${b} is around ${raw[1]} correct out of ${raw[2]}. There is no negative marking, so an unanswered question is a guaranteed zero where a guess is not — never leave a blank. Boundaries shift slightly between test versions, so treat ${raw[1]}/${raw[2]} as the working target and aim a question or two above it. Writing and Speaking have no raw score at all: each is the average of four published criteria, so one weak criterion costs you a quarter of that section.</p>` : ""}
+${f && f.sections.length ? `<p>There are <strong>${f.tests} free IELTS practice tests</strong> here covering <strong>${f.questions.toLocaleString("en-IN")} questions</strong> — counted from the test files, not estimated — across ${f.sections.map((s) => SECTION_LABEL(s.sec)).join(", ")}. <a href="/mock-test/ielts/">Take a full timed IELTS mock →</a> Sit it complete and timed: the errors that decide a half-band mostly appear when you are tired and behind the clock, and a section practised in isolation will not show them to you.</p>` : ""}</div>`;
+}
+
 function bandPage(item) {
   const path = `/ielts-band-${item.b.replace(".", "-")}/`;
   const title = `IELTS Band ${item.b} — Requirements &amp; How to Get It (2026) | ${BRAND}`;
@@ -5231,6 +5267,7 @@ function bandPage(item) {
 <p class="lead"><strong>Band ${item.b}</strong> is rated "${item.level}" and usually needed for ${item.use}. In Listening and Reading that's about <strong>${item.raw}</strong> correct. Here's exactly how to reach it — free.</p>
 <a class="cta" href="/mock-test/ielts/">▶ Take a free IELTS mock test</a></section>
 <div class="card"><h2>Step-by-step plan to reach Band ${item.b}</h2><ol>${steps.map((s) => `<li><strong>${s.name}.</strong> ${s.text}</li>`).join("")}</ol></div>
+${bandOverviewDepth(item)}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: "Free IELTS mock test", href: "/mock-test/ielts/" },
