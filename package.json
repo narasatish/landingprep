@@ -27,7 +27,8 @@
     "audit:uniqueness": "node tools/audit-test-uniqueness.mjs",
     "audit:answerable": "node tools/audit-answerability.mjs",
     "test:ai": "node tools/test-ai-endpoints.mjs",
-    "audit:claims": "node tools/audit-cross-exam-claims.mjs"
+    "audit:claims": "node tools/audit-cross-exam-claims.mjs",
+    "audit:promises": "node tools/audit-title-promises.mjs"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2",
