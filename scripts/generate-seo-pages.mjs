@@ -1150,8 +1150,12 @@ function toolKind(slug) {
   if (/eligibility|readiness|checker|predictor/.test(slug)) return "eligibility";
   return "generic";
 }
+// `t` and `e` are optional: six of the thirteen tool pages have their own generator
+// functions rather than going through toolPage(), and carry no TOOLS/EXAMS record.
+// Falling back to a title derived from the slug keeps one implementation for all of them.
 function toolDepthBlock(slug, t, e) {
   const kind = toolKind(slug);
+  t = t || { title: String(slug).split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ") };
   const f = e && e.appPath ? examFacts(e.appPath) : null;
   const body = {
     score: `<p><strong>A converted score is an estimate, not an equivalence.</strong> Concordance tables are built by the test makers from statistical comparisons of large candidate groups. They describe where an average candidate with one score tends to land on another test — they do not promise that <em>you</em> would score that. Two tests measuring the same language with different task types will rank the same person differently, sometimes by a meaningful margin.</p>
@@ -1171,9 +1175,40 @@ function toolDepthBlock(slug, t, e) {
 <p><strong>Treat a marginal result as a reason to check, not to stop.</strong> Requirements move between admission cycles, and several routes accept a lower score with a pre-sessional English course or a foundation year attached. A near miss is worth an email to the admissions office.</p>`,
     generic: `<p><strong>Use the output as a planning figure and verify it at the point it matters.</strong> Everything here is built on published scales and official tables, and those change without notice. The version on the awarding body's own page is the only one that counts when you are committing money or a deadline to it.</p>`,
   }[kind];
+  // A second per-kind section. Same rule as the first: keyed on what the tool outputs, so
+  // the thirteen pages do not converge on one shared block of text.
+  const second = {
+    score: `<h2>Using a converted score without getting caught out</h2>
+<p><strong>Convert in the direction you are travelling, then round against yourself.</strong> Concordance is not symmetric in practice: a table that maps A to B and one that maps B to A can disagree at the edges. When the result lands within a point or half a band of a requirement, treat it as below the requirement rather than at it, because that is how an admissions office will read a real score in the same position.</p>
+<p><strong>The conversion says nothing about what the tests ask of you.</strong> Two tests can want the same level of English through completely different tasks — an integrated task that combines reading, listening and speaking is a different job from a standalone response, even at an identical converted score. That difference is exactly what a conversion strips out, and it is often the reason someone scores below their converted estimate on a first attempt.</p>
+<p><strong>Use it to choose, then stop using it.</strong> The conversion is genuinely useful for deciding which test to sit and roughly what to aim for. Once you have chosen, work from the real scale of the test you are actually taking — carrying the converted figure into your preparation just adds a layer of error between you and the number that counts.</p>`,
+    gpa: `<h2>Presenting your grades so they are read correctly</h2>
+<p><strong>Send the transcript and the scale, not a converted number.</strong> Almost every institution prefers to do its own conversion, and giving them your original grades with the official grading scale from your university is both more accurate and more credible than a figure you calculated. Many transcripts print the scale on the reverse; if yours does not, your registrar can usually issue a grading-scheme letter.</p>
+<p><strong>Know which average they want.</strong> Institutions variously ask for a cumulative average, a final-year average, a major-only average, or one weighted by credit hours. These can differ substantially for the same student, and answering with the wrong one is a common, avoidable mistake — it is worth asking rather than assuming.</p>
+<p><strong>Explain an unusual record briefly, in the right place.</strong> A weak year with a clear reason and a strong recovery reads very differently from a flat weak record. That belongs in your statement or an additional-information field, stated plainly and without excuses — not in a converted number, which cannot carry it.</p>`,
+    money: `<h2>Turning the estimate into a plan you can defend</h2>
+<p><strong>Build the funding proof and the budget as two separate documents.</strong> A visa application asks you to demonstrate a specified sum in a specified form, held for a specified period. That is a compliance exercise with its own rules about acceptable account types and how recently money arrived. Your actual budget is a different question, and conflating them is how people satisfy a visa officer and then run short in month three.</p>
+<p><strong>Model the bad year, not the expected one.</strong> Run the numbers again assuming you find no part-time work in your first term, your rent rises at renewal, and one unplanned flight home. If the plan survives that, it is a plan; if it only works when everything goes right, it is a hope with a spreadsheet attached.</p>
+<p><strong>Check what the fee actually includes.</strong> Published tuition frequently excludes bench fees, materials, field trips, professional registration and compulsory insurance, and these vary enormously by subject. Ask the department for the full cost of attendance rather than the headline tuition figure.</p>`,
+    band: `<h2>Getting a prediction you can trust</h2>
+<p><strong>Feed it your worst realistic performance, not your best.</strong> People remember their strongest practice score and enter that. The useful prediction comes from a full, timed, uninterrupted paper sat at roughly the time of day your real test is booked for — anything else systematically over-predicts, and the direction of that error is always the expensive one.</p>
+<p><strong>Predict each section separately and look at the spread.</strong> Two candidates with the same overall estimate are in completely different positions if one is even across all four sections and the other is carrying a weak one. The even candidate is close to done; the uneven one has a specific, fixable problem — and if any institution on their list sets per-section minimums, the estimate is misleading them.</p>
+<p><strong>Re-run it after every full mock and watch the trend.</strong> A single result is noise. Three papers moving in one direction is a signal, and a flat line across three despite steady study usually means the study is aimed at the wrong thing — which is far more useful to learn four weeks out than four days out.</p>`,
+    eligibility: `<h2>What to do with a borderline result</h2>
+<p><strong>Ask the admissions office directly — they answer, and it costs nothing.</strong> A short, specific email naming the programme and your actual numbers gets a more accurate answer than any calculator, and asking has never counted against an applicant. Published requirements are frequently a guide rather than a hard floor, particularly where an applicant is strong elsewhere.</p>
+<p><strong>Build a list, not a bet.</strong> A sensible shortlist spans clear-admits, realistic targets and one or two stretches. The most common error is not aiming too high — it is a list where every entry is a stretch, which feels ambitious and routinely ends with no offer at all.</p>
+<p><strong>Check for the conditional routes before you rule anything out.</strong> Pre-sessional English, foundation years, pathway programmes and conditional offers exist precisely for applicants who are close but not clear. They carry extra time and extra fees, so they are not free — but "not eligible yet" and "not eligible" are different answers, and only one of them means stop.</p>`,
+    generic: `<h2>Before you rely on this figure</h2>
+<p><strong>Check the date on the source.</strong> Scales, fees and requirements are revised on their own schedules and rarely announce themselves. Anything you are committing money or a deadline to should be confirmed against the awarding body's current page on the day you commit, not the day you planned.</p>
+<p><strong>Keep a record of what you checked and when.</strong> If a requirement changes between your application and a decision, having the version you relied on — with its date — is occasionally worth a great deal and costs you a screenshot.</p>`,
+  }[kind];
+
   return `<div class="card"><h2>How to read the result — and where it stops being reliable</h2>
 ${body}
 ${f && f.sections.length ? `<p>If this points you toward more preparation, there are <strong>${f.tests} free ${esc(e.short)} practice tests</strong> here covering <strong>${f.questions.toLocaleString("en-IN")} questions</strong> — counted from the test files, not estimated — across ${f.sections.map((s) => SECTION_LABEL(s.sec)).join(", ")}. <a href="/mock-test/${e.appPath}/">Take a full timed ${esc(e.short)} mock →</a></p>` : ""}
+</div>
+<div class="card">
+${second}
 <p class="note">${esc(t.title)} is free and the calculation runs entirely in your browser: the values you type are not transmitted to us and are not saved — they disappear when you close the tab. (Like every page here, this one loads Google Analytics, which records the page visit itself; it does not receive what you enter.) The tool is provided for planning — confirm any figure you rely on with the test maker, university or lender directly.</p></div>`;
 }
 
@@ -1985,6 +2020,7 @@ ${calc}
 <li><strong>Application costs</strong> — English test (IELTS/TOEFL/PTE), application fees, and document/courier costs.</li>
 <li><strong>Offsets</strong> — scholarships, education loans and part-time work (most student visas allow about 20 hours/week) reduce the net cost.</li>
 </ul></div>
+${toolDepthBlock("cost-of-studying-abroad-calculator")}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🌍 Score requirements by country`, href: `/eligibility/` },
@@ -2072,6 +2108,7 @@ ${calc}
 <li>Ask your <strong>examination cell / registrar</strong> if it isn't published.</li>
 <li>For <strong>foreign applications</strong>, submit your real CGPA and transcript — the university (or WES) will convert it themselves.</li>
 </ul></div>
+${toolDepthBlock("cgpa-to-percentage-calculator")}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🎯 Percentage to US GPA (4.0)`, href: `/tools/percentage-to-gpa-calculator/` },
@@ -2142,6 +2179,7 @@ ${calc}
 <tr><td>50–54%</td><td>1.7</td><td>C−</td></tr>
 </tbody></table>
 <p class="note">A widely-used approximation. Your university or a credential-evaluation service (e.g. WES) makes the official conversion, often grade-by-grade — always use their figure for applications.</p></div>
+${toolDepthBlock("percentage-to-gpa-calculator")}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🎓 CGPA to percentage`, href: `/tools/cgpa-to-percentage-calculator/` },
@@ -2398,6 +2436,7 @@ ${calc}
 <li><strong>Moratorium</strong> — most loans don't charge full EMIs during your course + 6–12 months. Paying the simple interest during study cuts the total a lot.</li>
 <li><strong>Prepayment</strong> — floating-rate loans usually allow penalty-free prepayment; paying early saves the most interest.</li>
 </ul></div>
+${toolDepthBlock("education-loan-emi-calculator")}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🏦 Education loan without collateral`, href: `/blog/education-loan-without-collateral/` },
@@ -2461,6 +2500,7 @@ function readinessPage() {
 <p class="lead">Find out how ready you are to apply abroad — get a readiness score and a personalised checklist of exactly what's left, free.</p></section>
 <div class="quick-answer" style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:12px;padding:14px 18px;margin:0 0 12px"><strong style="color:#4338ca">⚡ Quick answer:</strong> You're ready to apply when you have your English-test score, a university shortlist, proof of funds (or a loan), an SOP, LORs, academic documents and a valid passport. Tick what you've done below to see your readiness score and next steps.</div>
 ${tool}
+${toolDepthBlock("study-abroad-readiness-checker")}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `🌍 Score requirements by country`, href: `/eligibility/` },
@@ -2764,6 +2804,47 @@ ${relatedGrid([
   ] }) + shell(inner));
 }
 
+/**
+ * Depth for /compare/<a>-vs-<b>/ — 6 pages at a 356-word median, the thinnest indexed
+ * family left. Both universities are already loaded with rank, acceptance, English
+ * requirement, fees and intakes, and the page was reporting them without ever drawing
+ * the comparison a reader came for.
+ *
+ * Everything here is derived from the two records, so each pair reads differently.
+ */
+function uniCompareDepthBlock(a, b) {
+  const n = (v) => (typeof v === "number" && isFinite(v) ? v : null);
+  const ia = parseFloat(a.ielts), ib = parseFloat(b.ielts);
+  const bits = [];
+  const ra = n(a.rank), rb = n(b.rank);
+  if (ra !== null && rb !== null && ra !== rb) {
+    const hi = ra < rb ? a : b, lo = ra < rb ? b : a, gap = Math.abs(ra - rb);
+    bits.push(`<li><strong>Rank.</strong> ${esc(hi.name)} sits ${gap} ${gap === 1 ? "place" : "places"} above ${esc(lo.name)} (#${n(hi.rank)} against #${n(lo.rank)}). Treat that as a coarse signal: QS rank is built largely from institution-wide research output and reputation surveys, so a gap of this size says very little about the department you would actually join, and nothing at all about teaching on your specific programme.</li>`);
+  }
+  const aa = n(a.acceptance), ab = n(b.acceptance);
+  if (aa !== null && ab !== null) {
+    bits.push(aa === ab
+      ? `<li><strong>Selectivity.</strong> Both report an indicative acceptance rate of about ${aa}%, so neither is the safer application on this measure — which means your shortlist needs a genuine back-up elsewhere rather than treating one of these two as one.</li>`
+      : `<li><strong>Selectivity.</strong> About ${aa}% at ${esc(a.name)} against ${ab}% at ${esc(b.name)} — ${esc(aa < ab ? a.name : b.name)} is the harder admission of the two. These are institution-level figures, so a competitive department inside the more accessible university can still be tighter than the headline gap suggests.</li>`);
+  }
+  if (isFinite(ia) && isFinite(ib)) {
+    bits.push(ia === ib
+      ? `<li><strong>English requirement.</strong> Both ask for IELTS ${esc(String(a.ielts))}, so one preparation target covers both applications and the English test is not a factor in choosing between them.</li>`
+      : `<li><strong>English requirement.</strong> IELTS ${esc(String(a.ielts))} at ${esc(a.name)} against ${esc(String(b.ielts))} at ${esc(b.name)}. If you are applying to both, prepare to the higher of the two — ${esc(ia > ib ? a.name : b.name)} — because a score built for the lower bar closes the other door.</li>`);
+  }
+  if (a.feeNote && b.feeNote) {
+    bits.push(`<li><strong>Fees.</strong> ${esc(String(a.feeNote))} at ${esc(a.name)}; ${esc(String(b.feeNote))} at ${esc(b.name)}. Compare these over the full length of the programme rather than per year, and check what each excludes — bench fees, materials, compulsory insurance and placement costs vary enormously by subject and are rarely in the headline number.</li>`);
+  }
+  if (!bits.length) return "";
+  const sameCountry = a.country === b.country;
+  return `<div class="card"><h2>${esc(a.name)} or ${esc(b.name)} — reading the differences</h2>
+<ul class="bcheck">${bits.join("")}</ul>
+<p>${sameCountry
+  ? `Both are in ${esc(String(a.country))}, so visa route, post-study work rights and living costs are broadly common to the two and drop out of the decision. That is useful: it means the choice really is about programme, department and cost, rather than about country — and those are things you can investigate directly by reading the module lists and emailing the departments.`
+  : `These are in different countries — ${esc(String(a.country))} and ${esc(String(b.country))} — which usually matters more than anything in the table above. Visa conditions, post-study work rights, the cost of living and whether you can stay and work afterwards differ by country, are set by government rather than by either university, and can change between applying and graduating. Settle the country question first; it constrains everything else.`}</p>
+<p><strong>The comparison that actually decides it.</strong> Rank, acceptance rate and fees are the numbers that are easy to publish, which is why every comparison page leads with them. The things that determine whether you finish the degree well are the specific module list, who teaches it, whether there is a placement or industry link where you want to work, and the total cost to a work permit. None of those are in a ranking table, and all of them are answerable in an afternoon by reading two programme pages and sending two emails.</p></div>`;
+}
+
 // ── University-vs-University comparison pages (programmatic SEO) ─────────────
 // Titles are clamped to ~60 chars for SERP display. Full university names are long, so
 // "X vs Y: Fees, Ranking, IELTS & Admission Compared 2026" clamped away the "vs Y" — the
@@ -2784,6 +2865,7 @@ function compactUniName(name, id) {
   return h.length <= 4 ? h.toUpperCase() : h.charAt(0).toUpperCase() + h.slice(1);
 }
 function uniVsPage(a, b) {
+  const cmpDepth = uniCompareDepthBlock(a, b);
   const path = `/compare/${a.id}-vs-${b.id}/`;
   const title = `${compactUniName(a.name, a.id)} vs ${compactUniName(b.name, b.id)}: Fees & Ranking 2026 | ${BRAND}`;
   const desc = `${a.name} vs ${b.name} — compare QS rank (#${a.rank} vs #${b.rank}), tuition (${a.feeNote} vs ${b.feeNote}), IELTS (${a.ielts} vs ${b.ielts}), acceptance rate and programs. Free side-by-side comparison.`;
@@ -2820,6 +2902,7 @@ function uniVsPage(a, b) {
   <h2>Which should you choose?</h2>
   <p>Choose <strong>${esc(a.name)}</strong> if you want ${a.acceptance <= b.acceptance ? "a more selective brand name" : "a slightly higher acceptance rate"} and value ${(a.strengths || a.programs || []).slice(0, 2).join(" & ")}. Choose <strong>${esc(b.name)}</strong> for ${(b.strengths || b.programs || []).slice(0, 2).join(" & ")}${b.feeNum < a.feeNum ? " and lower tuition" : ""}. The best choice depends on your target program, budget and post-study plans — run both through the free predictor.</p>
 </div>
+${cmpDepth}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `📊 ${a.name} details`, href: `/university/${a.id}/` },
@@ -4503,6 +4586,7 @@ ${tool}
 <li><strong>French</strong> (even as a second language at CLB 7+) adds up to 50 points.</li>
 </ul>
 <p class="note"><strong>Last verified:</strong> ${esc(LASTMOD)} against IRCC's official CRS criteria. Point values change — confirm your exact score and current draw cut-offs on the <a href="${OFFICIAL}" target="_blank" rel="nofollow noopener">official IRCC calculator ↗</a>.</p></div>
+${toolDepthBlock("canada-express-entry-crs-calculator")}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `📅 Latest Express Entry draws`, href: `/express-entry-draws-2026/` },
@@ -5394,6 +5478,37 @@ const EXAM_VS = [
   { a: "GRE", b: "GMAT", rows: [["Used for", "Most Master's & PhD programmes", "MBA & business Master's"], ["Score", "260–340 (+ AWA 0–6)", "205–805 (Focus Edition)"], ["Maths", "Calculator allowed", "No calculator (Quant)"], ["Length", "~1h 58m", "~2h 15m"], ["Best for", "Broad grad-school options", "Top business schools"]], verdict: "Take the GRE for the widest range of graduate programmes; take the GMAT Focus if you're targeting competitive MBA programmes that prefer it.", chooseA: ["You're applying to a wide range of Master's or PhD programmes, not only business.", "You want one test accepted by most graduate schools, including many MBA programmes.", "You're stronger at vocabulary-based verbal reasoning and like having a calculator for the maths.", "You're keeping your options open across several fields."], chooseB: ["You're focused on competitive MBA or business Master's programmes, some of which still prefer the GMAT.", "You're strong at data and quantitative reasoning and comfortable working without a calculator.", "You want a score that business schools have benchmarked for years."], cost: "The GRE costs about US$220; the GMAT Focus Edition about US$275–300. Both scores are valid for 5 years. Most business schools now accept both — check each programme's stated preference before deciding." },
   { a: "CELPIP", b: "IELTS", rows: [["Scoring", "CLB level 1–12", "Band 0–9"], ["Delivery", "Fully computer (incl. speaking)", "Paper/computer; speaking with a real examiner"], ["Accent", "North American English", "British/International English"], ["Results", "Usually 4–5 days", "3–13 days"], ["Best for", "Canadian PR, citizenship & some study", "Universal — study, work & migration worldwide"]], verdict: "For Canadian immigration both are accepted by IRCC — pick CELPIP if you prefer North American English and an all-computer test, or IELTS General for the widest global recognition.", chooseA: ["You're applying for Canadian permanent residence, citizenship or some Canadian study, and prefer North American English.", "You want a fully computer-based test, including the speaking section, with no live examiner.", "You're in Canada or a country where CELPIP test centres are available.", "You're more comfortable with Canadian and American accents and contexts."], chooseB: ["You want a result accepted worldwide — study, work and migration in many countries, not only Canada.", "You're comfortable with British and international English and a real speaking examiner.", "You might also apply outside Canada and want one test that covers everything.", "You need IELTS General Training for migration or Academic for university."], cost: "Both are accepted by Immigration, Refugees and Citizenship Canada (IRCC) for Canadian immigration. CELPIP is Canada-focused, fully computer-based and returns results in about 4–5 days; IELTS has global recognition with results in 3–13 days. For Canada-only plans CELPIP is convenient; for global flexibility choose IELTS." },
 ];
+/**
+ * Depth for the /<exam>-vs-<exam>/ pages — 10 of them at a 568-word median.
+ *
+ * The comparison table answers "how do these differ". It does not answer the question
+ * people actually arrive with, which is "which one do I sit". Those are different, and
+ * the second one is settled by acceptance and by which format suits the individual —
+ * not by which test is "easier", a framing the pages should stop rewarding.
+ *
+ * The practice-library counts come from the shipped files for BOTH exams, so every pair
+ * gets different numbers.
+ */
+function examVsDepthBlock(v) {
+  const ka = String(v.a || "").toLowerCase(), kb = String(v.b || "").toLowerCase();
+  const fa = examFacts(ka), fb = examFacts(kb);
+  const line = (f, name, k) => (f && f.sections.length)
+    ? `<li><strong>${esc(name)}:</strong> ${f.tests} free practice tests, ${f.questions.toLocaleString("en-IN")} questions across ${f.sections.map((s) => SECTION_LABEL(s.sec)).join(", ")} — <a href="/mock-test/${k}/">take a full timed mock →</a></li>`
+    : "";
+  const both = line(fa, v.a, ka) + line(fb, v.b, kb);
+  return `<div class="card"><h2>How to actually decide between ${esc(v.a)} and ${esc(v.b)}</h2>
+<p>"Which is easier" is the wrong first question, and it is the one almost everyone asks. Neither test is easier in general; they are easier for different people, and the difference between them for <em>you</em> is usually smaller than the difference between preparing properly and not. Work through these in order instead.</p>
+<ol class="bsteps">
+<li><strong>Start with acceptance, because it can end the decision immediately.</strong> List every institution, visa route or registration body you might apply to, then check which tests each accepts — and which <em>version</em>. If only one test clears all of them, you are finished; the rest of this page is interesting rather than useful. This is the step people skip, and skipping it is how someone sits the wrong test and pays twice.</li>
+<li><strong>Then check the deadline against the results timeline.</strong> Turnaround differs between these two, and so does test-centre availability near popular deadlines. Work backwards from the date a score must be received — not sent — and leave room for one resit. If the calendar only permits the faster test, again, decision made.</li>
+<li><strong>Only now compare format against your own weaknesses.</strong> This is where the table above earns its place, and the comparison worth making is section by section, not test by test. A candidate who freezes with a live examiner and one who cannot keep a train of thought speaking into a microphone should choose differently, and neither is a general fact about the tests.</li>
+<li><strong>Sit a full timed mock of each before you pay.</strong> This is the only step that produces evidence rather than opinion, and it is free. Two complete papers cost you an afternoon and can save a test fee — sit them under real timing, because the difficulty that matters is the one that appears when you are tired and behind the clock.</li>
+</ol>
+${both ? `<p><strong>You can do step four here, in full, today:</strong></p><ul class="bcheck">${both}</ul><p>Both counts are read from the test files this site ships rather than estimated, and every question is checked before release so its answer key matches an option you can actually select.</p>` : ""}
+<p><strong>One caution about switching late.</strong> If you have already prepared substantially for one test, changing to the other resets the format-specific work — the timing habits, the task patterns, the marking criteria — even though your English is unchanged. That is often a bigger cost than the score difference you were chasing. Switch when acceptance or the calendar forces it; be much slower to switch because the other test looks marginally easier.</p>
+<p class="note">Fees, turnaround times and acceptance change, sometimes mid-year. Confirm the current position on the official test websites and with each institution before booking — the figures here are for comparison.</p></div>`;
+}
+
 function examVsExamPage(v) {
   const path = `/${v.a.toLowerCase()}-vs-${v.b.toLowerCase()}/`;
   const title = `${v.a} vs ${v.b} — Which Is Easier &amp; Which Should You Take? (2026) | ${BRAND}`;
@@ -5419,6 +5534,7 @@ function examVsExamPage(v) {
 ${table}
 ${chooseBlock}
 ${costBlock}
+${examVsDepthBlock(v)}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `Free ${v.a} mock test`, href: `/mock-test/${slugA}/` },
