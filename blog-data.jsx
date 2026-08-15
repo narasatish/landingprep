@@ -27985,8 +27985,32 @@
         {
           "h": "Visa, Scholarships, and Next Steps",
           "body": "Most European countries grant student visas/residence permits for the programme length, with renewals. You must show proof of funds for living costs and tuition. Scholarships include Erasmus Mundus (full tuition plus stipend), DAAD (Germany), and many university awards. Search MastersPortal and university sites, and apply to several programmes and scholarships in parallel. Build your English score now — practise free on LandingPrep to meet requirements comfortably."
-        }
-      ]
+        },
+    {
+      "h": "\"Tuition-free\" is a real thing and it is not the same as cheap",
+      "body": "Several European systems charge little or no tuition at public universities, including to international students, and that is genuinely unusual globally. It is also the single most misread fact in study-abroad planning, because tuition is rarely the largest number in the budget. Where tuition is zero you still pay a semester contribution, health insurance, and living costs in a European city — and you must usually prove you can cover those living costs before a visa is granted, in a blocked account or equivalent. Students who plan around the headline \"free\" figure and discover the blocked-account requirement late lose an intake to it. Budget from the living cost and the proof-of-funds rule, and treat tuition as the variable that happens to be small."
+    },
+    {
+      "h": "English-taught does not mean English-speaking",
+      "body": "The programme being delivered in English is a statement about lectures, coursework and assessment. It says nothing about the language of the university's administration, your lease, your health insurance, your bank, or your part-time job — all of which are usually in the national language. This gap surprises people constantly, and it is the practical difficulty most often reported by students who otherwise love the experience. It is manageable, but it is a real workload on top of the degree, and it is worth deciding in advance whether you intend to learn the language or to accept the friction of not doing so."
+    },
+    {
+      "h": "Check whether the programme is accredited and where the degree is recognised",
+      "body": "Europe is not one system. Degree structures, credit frameworks and quality-assurance regimes differ by country, and within some countries by region. An English-taught programme at a public university with national accreditation is a straightforward proposition; a programme run by a private institution with an unfamiliar accreditation status may not be recognised for professional registration or further study elsewhere, and that only becomes visible years later when it matters most. Check what body accredits the programme and whether the degree is recognised in the country where you intend to work — those are two separate questions with occasionally different answers."
+    },
+    {
+      "h": "Post-study work rights are the part that changes",
+      "body": "Every meaningful comparison between destinations comes down to what happens after graduation, and that is set by immigration policy rather than by any university. Post-study work durations, whether the permit is automatic or applied for, whether it requires a job offer or a salary threshold, and whether time on it counts toward permanent residence — these differ substantially by country and are revised more often than tuition is. Verify them on the destination government's own immigration pages at the point you apply, not at the point you start researching, because the gap between those two moments is frequently a policy cycle."
+    },
+    {
+      "h": "Application timelines run earlier than most people expect",
+      "body": "European admission calendars are often earlier than the equivalents in the US or UK, and several systems have hard, non-negotiable national deadlines rather than rolling admissions. Some require documents to be verified through a central clearing house before the university will look at your file, which adds weeks that are invisible if you plan only around the stated deadline. Work backwards from the deadline through document verification, translation and apostille where required, English test results, and visa appointment availability — the last of which is frequently the binding constraint and the one nobody budgets time for."
+    },
+    {
+      "h": "A practical way to build the shortlist",
+      "body": "Start from the language of instruction and the accreditation, because those are pass/fail. Then filter by post-study work rights, since that determines what the degree is worth to you afterwards. Then by total cost to graduation — living costs times the programme length, plus the proof-of-funds you must show up front, not tuition alone. Rank by programme fit last, because a perfect programme you cannot fund or cannot stay to work after is not the option it appears to be. Most people do this in exactly the reverse order and then discover the constraints one at a time."
+    }
+  ]
     },
     {
       "id": "fully-funded-masters-scholarships-2026",
