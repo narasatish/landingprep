@@ -15,13 +15,13 @@
       "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
       "question": "Which of the following conclusions is most strongly supported by the survey data?",
       "options": [
-        "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Job satisfaction and adequate sleep are associated in the survey population",
+        "A. Job satisfaction and adequate sleep are associated in the survey population",
+        "B. Improving sleep quality will increase job satisfaction for most workers",
         "C. Dissatisfied workers always sleep fewer than 7 hours",
         "D. Employers should implement nap rooms to improve satisfaction",
         "E. Workers who sleep 8 hours are more productive than those who sleep 6"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -87,13 +87,13 @@
       "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
       "question": "Which of the following most weakens the editorial's conclusion?",
       "options": [
-        "A. Crime rates are influenced by many factors beyond unemployment",
-        "B. Employment programmes have reduced crime in some pilot cities",
-        "C. The editorial does not define 'crime' precisely",
-        "D. Reducing unemployment is expensive and politically difficult",
+        "A. Employment programmes have reduced crime in some pilot cities",
+        "B. The editorial does not define 'crime' precisely",
+        "C. Reducing unemployment is expensive and politically difficult",
+        "D. Crime rates are influenced by many factors beyond unemployment",
         "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -124,12 +124,12 @@
       "question": "The adviser's reasoning is most analogous to which of the following?",
       "options": [
         "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
-        "C. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "D. Historical market data is unreliable because markets change structurally over time",
-        "E. Companies with consistent earnings growth tend to have stable stock prices"
+        "B. A stock's five-year return is a better predictor of future performance than its one-year return",
+        "C. Historical market data is unreliable because markets change structurally over time",
+        "D. Companies with consistent earnings growth tend to have stable stock prices",
+        "E. Because a coin has landed heads five times in a row, it is more likely to land tails next time"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "E",
       "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -141,13 +141,13 @@
       "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
       "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "B. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
+        "A. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
+        "B. Loyalty programmes cost approximately 8% of the revenue they generate",
         "C. Customers report feeling more valued when using a loyalty programme",
         "D. Competitors without loyalty programmes have seen declining sales",
         "E. The loyalty programme was introduced simultaneously with a store renovation"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -160,12 +160,12 @@
       "question": "Which of the following would most strengthen the CFO's conclusion?",
       "options": [
         "A. Other advertising channels were suspended during the same three months",
-        "B. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "C. The lifetime value of a new user averages $50",
+        "B. The lifetime value of a new user averages $50",
+        "C. Sign-ups had already been rising at 20,000 per month before the campaign",
         "D. Social media platforms reported the campaign reached 5 million unique users",
         "E. Competitors saw no change in sign-ups over the same period"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -178,12 +178,12 @@
       "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
       "options": [
         "A. It assumes that lower temperatures are always desirable",
-        "B. It treats a correlation as evidence of a causal relationship",
-        "C. It ignores that tree planting is expensive",
+        "B. It ignores that tree planting is expensive",
+        "C. It treats a correlation as evidence of a causal relationship",
         "D. It fails to consider that trees require water",
         "E. It overlooks that some neighbourhoods may not have space for trees"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -195,13 +195,13 @@
       "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
       "question": "Which of the following, if true, would most weaken this conclusion?",
       "options": [
-        "A. The airline also reduced the number of carry-on bags allowed during the same period",
-        "B. Passengers reported higher satisfaction with the new policy",
-        "C. Competing airlines have not adopted similar policies",
-        "D. Boarding time varies naturally between 15 and 35 minutes",
+        "A. Passengers reported higher satisfaction with the new policy",
+        "B. Competing airlines have not adopted similar policies",
+        "C. Boarding time varies naturally between 15 and 35 minutes",
+        "D. The airline also reduced the number of carry-on bags allowed during the same period",
         "E. The new policy was introduced on routes with larger aircraft"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -214,12 +214,12 @@
       "question": "The argument above is most vulnerable to criticism on the grounds that it:",
       "options": [
         "A. Does not define what type of consulting services were provided",
-        "B. Fails to compare the companies' growth with industry-wide growth trends",
-        "C. Ignores that some companies declined in revenue after hiring the firm",
-        "D. Does not specify what time period is covered by the data",
-        "E. Compares incomparable companies across different industries"
+        "B. Ignores that some companies declined in revenue after hiring the firm",
+        "C. Does not specify what time period is covered by the data",
+        "D. Compares incomparable companies across different industries",
+        "E. Fails to compare the companies' growth with industry-wide growth trends"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "E",
       "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -231,13 +231,13 @@
       "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
       "question": "Which of the following, if true, would most undermine the agency's conclusion?",
       "options": [
-        "A. Olive oil contains monounsaturated fats linked to heart health",
-        "B. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
+        "A. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
+        "B. Olive oil contains monounsaturated fats linked to heart health",
         "C. Heart disease rates have been declining globally regardless of fat consumption",
         "D. The study followed individuals for 10 years",
         "E. Olive oil is more expensive than butter in most markets"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -268,12 +268,12 @@
       "question": "Which of the following, if true, most weakens the conclusion?",
       "options": [
         "A. Drug X has minor side effects including nausea",
-        "B. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "C. The study included only 50 participants",
+        "B. The study included only 50 participants",
+        "C. A control group taking a placebo experienced a 28% reduction in symptoms",
         "D. Chronic pain affects millions of people worldwide",
         "E. Drug X is expensive compared to existing treatments"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -285,13 +285,13 @@
       "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
       "question": "Which of the following most strengthens the director's conclusion?",
       "options": [
-        "A. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "B. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "C. The university's highest-achieving students attend the fitness centre most frequently",
-        "D. Exercise programmes are popular at peer universities",
+        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
+        "B. The university's highest-achieving students attend the fitness centre most frequently",
+        "C. Exercise programmes are popular at peer universities",
+        "D. Exercise has been shown to improve blood flow to the brain in laboratory studies",
         "E. Students who exercise report feeling less stressed"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -304,12 +304,12 @@
       "question": "Which of the following is the most serious concern about the authority's recommendation?",
       "options": [
         "A. Cameras might violate driver privacy",
-        "B. Intersections chosen for cameras may have already been due for safety upgrades",
-        "C. The cost of cameras is high",
-        "D. Some drivers find cameras distracting",
-        "E. Cameras only capture rear-end collisions"
+        "B. The cost of cameras is high",
+        "C. Some drivers find cameras distracting",
+        "D. Cameras only capture rear-end collisions",
+        "E. Intersections chosen for cameras may have already been due for safety upgrades"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "E",
       "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -358,12 +358,12 @@
       "question": "The critics' argument assumes which of the following?",
       "options": [
         "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Local restaurants cannot accommodate arena crowds",
-        "C. The arena's construction will not create permanent jobs",
-        "D. Fans have a fixed entertainment budget they will spend regardless of venue",
+        "B. Fans have a fixed entertainment budget they will spend regardless of venue",
+        "C. Local restaurants cannot accommodate arena crowds",
+        "D. The arena's construction will not create permanent jobs",
         "E. The city already has sufficient sports facilities"
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "B",
       "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -413,40 +413,40 @@
       "prompt": "The author uses the phrase 'seeming paradox' to suggest that:",
       "options": [
         "A. Open-source development violates all known economic principles",
-        "B. The behaviour of open-source contributors appears inconsistent with standard economic predictions but can be explained",
-        "C. Economists have no theory that explains open-source development",
-        "D. Open-source software is economically irrational and will eventually disappear"
+        "B. Economists have no theory that explains open-source development",
+        "C. Open-source software is economically irrational and will eventually disappear",
+        "D. The behaviour of open-source contributors appears inconsistent with standard economic predictions but can be explained"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Based on the passage content about The Economics of Open-Source Software.",
       "difficulty": "medium",
       "topic": "reading_comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-005-q01": "B",
+    "gmat-verbal-005-q01": "A",
     "gmat-verbal-005-q02": "E",
     "gmat-verbal-005-q03": "B",
     "gmat-verbal-005-q04": "C",
-    "gmat-verbal-005-q05": "A",
+    "gmat-verbal-005-q05": "D",
     "gmat-verbal-005-q06": "B",
-    "gmat-verbal-005-q07": "B",
-    "gmat-verbal-005-q08": "B",
-    "gmat-verbal-005-q09": "C",
-    "gmat-verbal-005-q10": "B",
-    "gmat-verbal-005-q11": "A",
-    "gmat-verbal-005-q12": "B",
-    "gmat-verbal-005-q13": "B",
+    "gmat-verbal-005-q07": "E",
+    "gmat-verbal-005-q08": "A",
+    "gmat-verbal-005-q09": "B",
+    "gmat-verbal-005-q10": "C",
+    "gmat-verbal-005-q11": "D",
+    "gmat-verbal-005-q12": "E",
+    "gmat-verbal-005-q13": "A",
     "gmat-verbal-005-q14": "B",
-    "gmat-verbal-005-q15": "B",
-    "gmat-verbal-005-q16": "A",
-    "gmat-verbal-005-q17": "B",
+    "gmat-verbal-005-q15": "C",
+    "gmat-verbal-005-q16": "D",
+    "gmat-verbal-005-q17": "E",
     "gmat-verbal-005-q18": "A",
     "gmat-verbal-005-q19": "E",
-    "gmat-verbal-005-q20": "D",
+    "gmat-verbal-005-q20": "B",
     "gmat-verbal-005-q21": "B",
     "gmat-verbal-005-q22": "C",
-    "gmat-verbal-005-q23": "B"
+    "gmat-verbal-005-q23": "D"
   },
   "fingerprints": [
     "c053314de6c933c161",

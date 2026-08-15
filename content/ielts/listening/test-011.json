@@ -304,12 +304,12 @@
       "num": 11,
       "prompt": "What is the maximum seating capacity of the main hall?",
       "options": [
-        "150",
         "200",
+        "150",
         "250",
         "300"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The guide states 'it can seat up to two hundred people'"
     },
     {
@@ -354,10 +354,10 @@
       "options": [
         "10",
         "15",
-        "20",
-        "25"
+        "25",
+        "20"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "The guide mentions 'twenty workstations'"
     },
     {
@@ -368,12 +368,12 @@
       "num": 15,
       "prompt": "Where is the lift located?",
       "options": [
-        "next to the fitness studio",
         "near the main entrance",
+        "next to the fitness studio",
         "beside the art room",
         "opposite the café"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The guide says the lift is 'beside the staircase near the main entrance'"
     },
     {
@@ -565,11 +565,11 @@
       "prompt": "What noise level does research link to increased stress hormones?",
       "options": [
         "55 dB",
-        "60 dB",
         "65 dB",
+        "60 dB",
         "70 dB"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
     },
     {
@@ -581,11 +581,11 @@
       "prompt": "What additional health risk did James find surprising in the literature?",
       "options": [
         "hearing loss",
-        "cardiovascular disease",
         "respiratory problems",
+        "cardiovascular disease",
         "mental health disorders"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
     },
     {
@@ -612,12 +612,12 @@
       "num": 24,
       "prompt": "What confidence level does their sample size achieve?",
       "options": [
+        "95%",
         "90%",
         "92%",
-        "95%",
         "99%"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "James refers to 'the ninety-five percent confidence level'"
     },
     {
@@ -780,11 +780,11 @@
       "prompt": "The 'disposition effect' refers to the tendency to",
       "options": [
         "A  invest heavily in new market opportunities",
-        "B  hold onto failing investments for too long",
         "C  diversify financial portfolios excessively",
+        "B  hold onto failing investments for too long",
         "D  avoid taking any financial risks"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The lecturer says it explains 'why people hold onto failing investments far longer than is rational'"
     },
     {
@@ -811,12 +811,12 @@
       "num": 38,
       "prompt": "Placing healthy food at eye level in cafeterias increases selection rates by up to",
       "options": [
+        "C  thirty percent",
         "A  ten percent",
         "B  twenty percent",
-        "C  thirty percent",
         "D  forty percent"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The lecturer states selection rates increase 'by up to thirty percent'"
     },
     {
@@ -828,11 +828,11 @@
       "prompt": "Critics of nudge theory argue that it",
       "options": [
         "A  is ineffective in real-world settings",
-        "B  costs too much to implement",
         "C  can be paternalistic",
+        "B  costs too much to implement",
         "D  ignores economic incentives entirely"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "The lecturer says critics argue 'it can be paternalistic'"
     },
     {

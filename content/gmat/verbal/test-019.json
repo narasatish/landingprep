@@ -52,12 +52,12 @@
       "question": "Which of the following, if true, would most undermine the agency's conclusion?",
       "options": [
         "A. Olive oil contains monounsaturated fats linked to heart health",
-        "B. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
-        "C. Heart disease rates have been declining globally regardless of fat consumption",
+        "B. Heart disease rates have been declining globally regardless of fat consumption",
+        "C. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
         "D. The study followed individuals for 10 years",
         "E. Olive oil is more expensive than butter in most markets"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -70,12 +70,12 @@
       "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
       "options": [
         "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Doctors who proactively call patients may also be more thorough in their overall care",
-        "C. Some patients do not have phones",
-        "D. Patients prefer in-person follow-up visits to phone calls",
+        "B. Some patients do not have phones",
+        "C. Patients prefer in-person follow-up visits to phone calls",
+        "D. Doctors who proactively call patients may also be more thorough in their overall care",
         "E. Phone calls are less effective than written instructions"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -88,12 +88,12 @@
       "question": "Which of the following, if true, most weakens the conclusion?",
       "options": [
         "A. Drug X has minor side effects including nausea",
-        "B. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "C. The study included only 50 participants",
-        "D. Chronic pain affects millions of people worldwide",
-        "E. Drug X is expensive compared to existing treatments"
+        "B. The study included only 50 participants",
+        "C. Chronic pain affects millions of people worldwide",
+        "D. Drug X is expensive compared to existing treatments",
+        "E. A control group taking a placebo experienced a 28% reduction in symptoms"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "E",
       "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -141,13 +141,13 @@
       "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
       "question": "Which of the following most weakens the minister's conclusion?",
       "options": [
-        "A. A separate economic boom added 100,000 jobs during the same year",
-        "B. Labour economists disagree on the effects of minimum wage increases",
-        "C. The minimum wage increase only affected 5% of workers",
+        "A. Labour economists disagree on the effects of minimum wage increases",
+        "B. The minimum wage increase only affected 5% of workers",
+        "C. A separate economic boom added 100,000 jobs during the same year",
         "D. Some industries are more affected than others by wage increases",
         "E. Other countries have raised minimum wages without unemployment rising"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -196,12 +196,12 @@
       "question": "Which of the following, if true, most weakens the advertising agency's argument?",
       "options": [
         "A. The advertising campaign cost $5M over three months",
-        "B. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "C. The ad was shown only on premium streaming services",
-        "D. The brand launched a new product line during the same period",
-        "E. Competitors also increased advertising spending during the same period"
+        "B. The ad was shown only on premium streaming services",
+        "C. The brand launched a new product line during the same period",
+        "D. Competitors also increased advertising spending during the same period",
+        "E. Consumers who sought out the advertisement were already brand loyalists considering a major purchase"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "E",
       "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -213,13 +213,13 @@
       "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
       "question": "The second analyst's response best serves which of the following functions in the debate?",
       "options": [
-        "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It presents empirical evidence that undermines the first analyst's prediction",
+        "A. It presents empirical evidence that undermines the first analyst's prediction",
+        "B. It provides an alternative interpretation of the first analyst's claim",
         "C. It demonstrates that road construction is always harmful",
         "D. It suggests the first analyst has incorrect data",
         "E. It proves that traffic will always increase regardless of policy"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -231,13 +231,13 @@
       "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
       "question": "Which of the following most closely parallels the logical structure of the argument above?",
       "options": [
-        "A. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
-        "B. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
+        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
+        "B. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
         "C. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
         "D. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
         "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -250,12 +250,12 @@
       "question": "Which of the following conclusions is most strongly supported by the survey data?",
       "options": [
         "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Job satisfaction and adequate sleep are associated in the survey population",
-        "C. Dissatisfied workers always sleep fewer than 7 hours",
+        "B. Dissatisfied workers always sleep fewer than 7 hours",
+        "C. Job satisfaction and adequate sleep are associated in the survey population",
         "D. Employers should implement nap rooms to improve satisfaction",
         "E. Workers who sleep 8 hours are more productive than those who sleep 6"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -286,12 +286,12 @@
       "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
       "options": [
         "A. The claim that wetlands prevent flooding",
-        "B. The assumption that all wetlands have equal flood-prevention value",
-        "C. The conclusion that all wetlands should be protected",
-        "D. The implication that flooding is always preventable",
+        "B. The conclusion that all wetlands should be protected",
+        "C. The implication that flooding is always preventable",
+        "D. The assumption that all wetlands have equal flood-prevention value",
         "E. The premise that wetlands are worth preserving"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -305,11 +305,11 @@
       "options": [
         "A. Customers reported preferring a relaxed shopping atmosphere",
         "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. A controlled experiment with randomly assigned music found the same 20% difference",
-        "D. Sales staff performed better when the music was upbeat",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "C. Sales staff performed better when the music was upbeat",
+        "D. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies",
+        "E. A controlled experiment with randomly assigned music found the same 20% difference"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "E",
       "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -395,11 +395,11 @@
       "prompt": "The passage mentions stroke recovery primarily to:",
       "options": [
         "A. Illustrate how neuroplasticity was first discovered",
-        "B. Provide evidence that the adult brain can undergo structural reorganisation",
-        "C. Show that not all brain damage is permanent",
+        "B. Show that not all brain damage is permanent",
+        "C. Provide evidence that the adult brain can undergo structural reorganisation",
         "D. Argue that stroke patients have greater neuroplasticity than healthy adults"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Based on the passage content about Neuroplasticity.",
       "difficulty": "medium",
       "topic": "reading_comprehension"
@@ -413,11 +413,11 @@
       "prompt": "Which of the following can be most reasonably inferred from the passage?",
       "options": [
         "A. Neuroplasticity is greater in young children than in adults",
-        "B. Adults who learn new skills may have measurably different brain structure from those who do not",
-        "C. Stroke recovery proves that any brain damage is reversible",
-        "D. Neuroplasticity research began only in the 1990s"
+        "B. Stroke recovery proves that any brain damage is reversible",
+        "C. Neuroplasticity research began only in the 1990s",
+        "D. Adults who learn new skills may have measurably different brain structure from those who do not"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Based on the passage content about Neuroplasticity.",
       "difficulty": "medium",
       "topic": "reading_comprehension"
@@ -426,27 +426,27 @@
   "answerKey": {
     "gmat-verbal-019-q01": "A",
     "gmat-verbal-019-q02": "B",
-    "gmat-verbal-019-q03": "B",
-    "gmat-verbal-019-q04": "B",
-    "gmat-verbal-019-q05": "B",
+    "gmat-verbal-019-q03": "C",
+    "gmat-verbal-019-q04": "D",
+    "gmat-verbal-019-q05": "E",
     "gmat-verbal-019-q06": "A",
     "gmat-verbal-019-q07": "B",
-    "gmat-verbal-019-q08": "A",
+    "gmat-verbal-019-q08": "C",
     "gmat-verbal-019-q09": "E",
     "gmat-verbal-019-q10": "D",
-    "gmat-verbal-019-q11": "B",
-    "gmat-verbal-019-q12": "B",
-    "gmat-verbal-019-q13": "A",
-    "gmat-verbal-019-q14": "B",
+    "gmat-verbal-019-q11": "E",
+    "gmat-verbal-019-q12": "A",
+    "gmat-verbal-019-q13": "B",
+    "gmat-verbal-019-q14": "C",
     "gmat-verbal-019-q15": "E",
-    "gmat-verbal-019-q16": "B",
-    "gmat-verbal-019-q17": "C",
+    "gmat-verbal-019-q16": "D",
+    "gmat-verbal-019-q17": "E",
     "gmat-verbal-019-q18": "A",
     "gmat-verbal-019-q19": "B",
     "gmat-verbal-019-q20": "B",
     "gmat-verbal-019-q21": "B",
-    "gmat-verbal-019-q22": "B",
-    "gmat-verbal-019-q23": "B"
+    "gmat-verbal-019-q22": "C",
+    "gmat-verbal-019-q23": "D"
   },
   "fingerprints": [
     "9ba91240694943f2d4",

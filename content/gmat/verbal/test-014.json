@@ -15,13 +15,13 @@
       "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
       "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
       "options": [
-        "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Doctors who proactively call patients may also be more thorough in their overall care",
+        "A. Doctors who proactively call patients may also be more thorough in their overall care",
+        "B. The cost of implementing mandatory calls would be prohibitive",
         "C. Some patients do not have phones",
         "D. Patients prefer in-person follow-up visits to phone calls",
         "E. Phone calls are less effective than written instructions"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -51,13 +51,13 @@
       "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
       "question": "Which of the following most strengthens the director's conclusion?",
       "options": [
-        "A. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "B. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "C. The university's highest-achieving students attend the fitness centre most frequently",
+        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
+        "B. The university's highest-achieving students attend the fitness centre most frequently",
+        "C. Exercise has been shown to improve blood flow to the brain in laboratory studies",
         "D. Exercise programmes are popular at peer universities",
         "E. Students who exercise report feeling less stressed"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -70,12 +70,12 @@
       "question": "Which of the following is the most serious concern about the authority's recommendation?",
       "options": [
         "A. Cameras might violate driver privacy",
-        "B. Intersections chosen for cameras may have already been due for safety upgrades",
-        "C. The cost of cameras is high",
-        "D. Some drivers find cameras distracting",
+        "B. The cost of cameras is high",
+        "C. Some drivers find cameras distracting",
+        "D. Intersections chosen for cameras may have already been due for safety upgrades",
         "E. Cameras only capture rear-end collisions"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -87,13 +87,13 @@
       "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
       "question": "Which of the following most weakens the minister's conclusion?",
       "options": [
-        "A. A separate economic boom added 100,000 jobs during the same year",
-        "B. Labour economists disagree on the effects of minimum wage increases",
-        "C. The minimum wage increase only affected 5% of workers",
-        "D. Some industries are more affected than others by wage increases",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. Labour economists disagree on the effects of minimum wage increases",
+        "B. The minimum wage increase only affected 5% of workers",
+        "C. Some industries are more affected than others by wage increases",
+        "D. Other countries have raised minimum wages without unemployment rising",
+        "E. A separate economic boom added 100,000 jobs during the same year"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "E",
       "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -123,13 +123,13 @@
       "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
       "question": "The critics' argument assumes which of the following?",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Local restaurants cannot accommodate arena crowds",
-        "C. The arena's construction will not create permanent jobs",
-        "D. Fans have a fixed entertainment budget they will spend regardless of venue",
+        "A. Fans have a fixed entertainment budget they will spend regardless of venue",
+        "B. Arena events attract fans from outside the city who would not otherwise visit",
+        "C. Local restaurants cannot accommodate arena crowds",
+        "D. The arena's construction will not create permanent jobs",
         "E. The city already has sufficient sports facilities"
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "A",
       "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -160,12 +160,12 @@
       "question": "The second analyst's response best serves which of the following functions in the debate?",
       "options": [
         "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It presents empirical evidence that undermines the first analyst's prediction",
-        "C. It demonstrates that road construction is always harmful",
+        "B. It demonstrates that road construction is always harmful",
+        "C. It presents empirical evidence that undermines the first analyst's prediction",
         "D. It suggests the first analyst has incorrect data",
         "E. It proves that traffic will always increase regardless of policy"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -177,13 +177,13 @@
       "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
       "question": "Which of the following most closely parallels the logical structure of the argument above?",
       "options": [
-        "A. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
-        "B. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "C. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "D. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
+        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
+        "B. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
+        "C. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
+        "D. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
         "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -196,12 +196,12 @@
       "question": "Which of the following conclusions is most strongly supported by the survey data?",
       "options": [
         "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Job satisfaction and adequate sleep are associated in the survey population",
-        "C. Dissatisfied workers always sleep fewer than 7 hours",
-        "D. Employers should implement nap rooms to improve satisfaction",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "B. Dissatisfied workers always sleep fewer than 7 hours",
+        "C. Employers should implement nap rooms to improve satisfaction",
+        "D. Workers who sleep 8 hours are more productive than those who sleep 6",
+        "E. Job satisfaction and adequate sleep are associated in the survey population"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "E",
       "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -231,13 +231,13 @@
       "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
       "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
       "options": [
-        "A. The claim that wetlands prevent flooding",
-        "B. The assumption that all wetlands have equal flood-prevention value",
+        "A. The assumption that all wetlands have equal flood-prevention value",
+        "B. The claim that wetlands prevent flooding",
         "C. The conclusion that all wetlands should be protected",
         "D. The implication that flooding is always preventable",
         "E. The premise that wetlands are worth preserving"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -250,12 +250,12 @@
       "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
       "options": [
         "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. A controlled experiment with randomly assigned music found the same 20% difference",
+        "B. A controlled experiment with randomly assigned music found the same 20% difference",
+        "C. The upbeat music stores were in higher-traffic mall locations",
         "D. Sales staff performed better when the music was upbeat",
         "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -267,13 +267,13 @@
       "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
       "question": "Which of the following most weakens the editorial's conclusion?",
       "options": [
-        "A. Crime rates are influenced by many factors beyond unemployment",
-        "B. Employment programmes have reduced crime in some pilot cities",
-        "C. The editorial does not define 'crime' precisely",
+        "A. Employment programmes have reduced crime in some pilot cities",
+        "B. The editorial does not define 'crime' precisely",
+        "C. Crime rates are influenced by many factors beyond unemployment",
         "D. Reducing unemployment is expensive and politically difficult",
         "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -304,12 +304,12 @@
       "question": "The adviser's reasoning is most analogous to which of the following?",
       "options": [
         "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
-        "C. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "D. Historical market data is unreliable because markets change structurally over time",
+        "B. A stock's five-year return is a better predictor of future performance than its one-year return",
+        "C. Historical market data is unreliable because markets change structurally over time",
+        "D. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
         "E. Companies with consistent earnings growth tend to have stable stock prices"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -322,12 +322,12 @@
       "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
         "A. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "B. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "C. Customers report feeling more valued when using a loyalty programme",
-        "D. Competitors without loyalty programmes have seen declining sales",
-        "E. The loyalty programme was introduced simultaneously with a store renovation"
+        "B. Customers report feeling more valued when using a loyalty programme",
+        "C. Competitors without loyalty programmes have seen declining sales",
+        "D. The loyalty programme was introduced simultaneously with a store renovation",
+        "E. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "E",
       "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -339,13 +339,13 @@
       "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
       "question": "Which of the following would most strengthen the CFO's conclusion?",
       "options": [
-        "A. Other advertising channels were suspended during the same three months",
-        "B. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "C. The lifetime value of a new user averages $50",
+        "A. The lifetime value of a new user averages $50",
+        "B. Other advertising channels were suspended during the same three months",
+        "C. Sign-ups had already been rising at 20,000 per month before the campaign",
         "D. Social media platforms reported the campaign reached 5 million unique users",
         "E. Competitors saw no change in sign-ups over the same period"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -413,40 +413,40 @@
       "prompt": "The author uses the phrase 'seeming paradox' to suggest that:",
       "options": [
         "A. Open-source development violates all known economic principles",
-        "B. The behaviour of open-source contributors appears inconsistent with standard economic predictions but can be explained",
-        "C. Economists have no theory that explains open-source development",
-        "D. Open-source software is economically irrational and will eventually disappear"
+        "B. Economists have no theory that explains open-source development",
+        "C. Open-source software is economically irrational and will eventually disappear",
+        "D. The behaviour of open-source contributors appears inconsistent with standard economic predictions but can be explained"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Based on the passage content about The Economics of Open-Source Software.",
       "difficulty": "medium",
       "topic": "reading_comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-014-q01": "B",
+    "gmat-verbal-014-q01": "A",
     "gmat-verbal-014-q02": "B",
-    "gmat-verbal-014-q03": "A",
-    "gmat-verbal-014-q04": "B",
-    "gmat-verbal-014-q05": "A",
+    "gmat-verbal-014-q03": "C",
+    "gmat-verbal-014-q04": "D",
+    "gmat-verbal-014-q05": "E",
     "gmat-verbal-014-q06": "E",
-    "gmat-verbal-014-q07": "D",
+    "gmat-verbal-014-q07": "A",
     "gmat-verbal-014-q08": "B",
-    "gmat-verbal-014-q09": "B",
-    "gmat-verbal-014-q10": "A",
-    "gmat-verbal-014-q11": "B",
+    "gmat-verbal-014-q09": "C",
+    "gmat-verbal-014-q10": "D",
+    "gmat-verbal-014-q11": "E",
     "gmat-verbal-014-q12": "E",
-    "gmat-verbal-014-q13": "B",
-    "gmat-verbal-014-q14": "C",
-    "gmat-verbal-014-q15": "A",
+    "gmat-verbal-014-q13": "A",
+    "gmat-verbal-014-q14": "B",
+    "gmat-verbal-014-q15": "C",
     "gmat-verbal-014-q16": "B",
-    "gmat-verbal-014-q17": "B",
-    "gmat-verbal-014-q18": "B",
-    "gmat-verbal-014-q19": "C",
+    "gmat-verbal-014-q17": "D",
+    "gmat-verbal-014-q18": "E",
+    "gmat-verbal-014-q19": "A",
     "gmat-verbal-014-q20": "B",
     "gmat-verbal-014-q21": "B",
     "gmat-verbal-014-q22": "C",
-    "gmat-verbal-014-q23": "B"
+    "gmat-verbal-014-q23": "D"
   },
   "fingerprints": [
     "ed7a188664bb7ce558",

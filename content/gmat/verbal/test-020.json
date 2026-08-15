@@ -15,13 +15,13 @@
       "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
       "question": "Which of the following, if true, most weakens the conclusion?",
       "options": [
-        "A. Drug X has minor side effects including nausea",
-        "B. A control group taking a placebo experienced a 28% reduction in symptoms",
+        "A. A control group taking a placebo experienced a 28% reduction in symptoms",
+        "B. Drug X has minor side effects including nausea",
         "C. The study included only 50 participants",
         "D. Chronic pain affects millions of people worldwide",
         "E. Drug X is expensive compared to existing treatments"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -33,13 +33,13 @@
       "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
       "question": "Which of the following most strengthens the director's conclusion?",
       "options": [
-        "A. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "B. Students with higher GPAs may have more structured schedules that allow for regular exercise",
+        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
+        "B. Exercise has been shown to improve blood flow to the brain in laboratory studies",
         "C. The university's highest-achieving students attend the fitness centre most frequently",
         "D. Exercise programmes are popular at peer universities",
         "E. Students who exercise report feeling less stressed"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -52,12 +52,12 @@
       "question": "Which of the following is the most serious concern about the authority's recommendation?",
       "options": [
         "A. Cameras might violate driver privacy",
-        "B. Intersections chosen for cameras may have already been due for safety upgrades",
-        "C. The cost of cameras is high",
+        "B. The cost of cameras is high",
+        "C. Intersections chosen for cameras may have already been due for safety upgrades",
         "D. Some drivers find cameras distracting",
         "E. Cameras only capture rear-end collisions"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -69,13 +69,13 @@
       "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
       "question": "Which of the following most weakens the minister's conclusion?",
       "options": [
-        "A. A separate economic boom added 100,000 jobs during the same year",
-        "B. Labour economists disagree on the effects of minimum wage increases",
-        "C. The minimum wage increase only affected 5% of workers",
-        "D. Some industries are more affected than others by wage increases",
+        "A. Labour economists disagree on the effects of minimum wage increases",
+        "B. The minimum wage increase only affected 5% of workers",
+        "C. Some industries are more affected than others by wage increases",
+        "D. A separate economic boom added 100,000 jobs during the same year",
         "E. Other countries have raised minimum wages without unemployment rising"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "D",
       "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -108,10 +108,10 @@
         "A. Arena events attract fans from outside the city who would not otherwise visit",
         "B. Local restaurants cannot accommodate arena crowds",
         "C. The arena's construction will not create permanent jobs",
-        "D. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "E. The city already has sufficient sports facilities"
+        "D. The city already has sufficient sports facilities",
+        "E. Fans have a fixed entertainment budget they will spend regardless of venue"
       ],
-      "correctAnswer": "D",
+      "correctAnswer": "E",
       "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -123,13 +123,13 @@
       "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
       "question": "Which of the following, if true, most weakens the advertising agency's argument?",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
+        "A. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
+        "B. The advertising campaign cost $5M over three months",
         "C. The ad was shown only on premium streaming services",
         "D. The brand launched a new product line during the same period",
         "E. Competitors also increased advertising spending during the same period"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -159,13 +159,13 @@
       "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
       "question": "Which of the following most closely parallels the logical structure of the argument above?",
       "options": [
-        "A. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
-        "B. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "C. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
+        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
+        "B. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
+        "C. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
         "D. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
         "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -178,12 +178,12 @@
       "question": "Which of the following conclusions is most strongly supported by the survey data?",
       "options": [
         "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Job satisfaction and adequate sleep are associated in the survey population",
-        "C. Dissatisfied workers always sleep fewer than 7 hours",
-        "D. Employers should implement nap rooms to improve satisfaction",
+        "B. Dissatisfied workers always sleep fewer than 7 hours",
+        "C. Employers should implement nap rooms to improve satisfaction",
+        "D. Job satisfaction and adequate sleep are associated in the survey population",
         "E. Workers who sleep 8 hours are more productive than those who sleep 6"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -214,12 +214,12 @@
       "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
       "options": [
         "A. The claim that wetlands prevent flooding",
-        "B. The assumption that all wetlands have equal flood-prevention value",
-        "C. The conclusion that all wetlands should be protected",
-        "D. The implication that flooding is always preventable",
-        "E. The premise that wetlands are worth preserving"
+        "B. The conclusion that all wetlands should be protected",
+        "C. The implication that flooding is always preventable",
+        "D. The premise that wetlands are worth preserving",
+        "E. The assumption that all wetlands have equal flood-prevention value"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "E",
       "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -231,13 +231,13 @@
       "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
       "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
       "options": [
-        "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. A controlled experiment with randomly assigned music found the same 20% difference",
+        "A. A controlled experiment with randomly assigned music found the same 20% difference",
+        "B. Customers reported preferring a relaxed shopping atmosphere",
+        "C. The upbeat music stores were in higher-traffic mall locations",
         "D. Sales staff performed better when the music was upbeat",
         "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -249,13 +249,13 @@
       "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
       "question": "Which of the following most weakens the editorial's conclusion?",
       "options": [
-        "A. Crime rates are influenced by many factors beyond unemployment",
-        "B. Employment programmes have reduced crime in some pilot cities",
+        "A. Employment programmes have reduced crime in some pilot cities",
+        "B. Crime rates are influenced by many factors beyond unemployment",
         "C. The editorial does not define 'crime' precisely",
         "D. Reducing unemployment is expensive and politically difficult",
         "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -286,12 +286,12 @@
       "question": "The adviser's reasoning is most analogous to which of the following?",
       "options": [
         "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
-        "C. A stock's five-year return is a better predictor of future performance than its one-year return",
+        "B. A stock's five-year return is a better predictor of future performance than its one-year return",
+        "C. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
         "D. Historical market data is unreliable because markets change structurally over time",
         "E. Companies with consistent earnings growth tend to have stable stock prices"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -304,12 +304,12 @@
       "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
         "A. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "B. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "C. Customers report feeling more valued when using a loyalty programme",
-        "D. Competitors without loyalty programmes have seen declining sales",
+        "B. Customers report feeling more valued when using a loyalty programme",
+        "C. Competitors without loyalty programmes have seen declining sales",
+        "D. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
         "E. The loyalty programme was introduced simultaneously with a store renovation"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -323,11 +323,11 @@
       "options": [
         "A. Other advertising channels were suspended during the same three months",
         "B. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "C. The lifetime value of a new user averages $50",
-        "D. Social media platforms reported the campaign reached 5 million unique users",
-        "E. Competitors saw no change in sign-ups over the same period"
+        "C. Social media platforms reported the campaign reached 5 million unique users",
+        "D. Competitors saw no change in sign-ups over the same period",
+        "E. The lifetime value of a new user averages $50"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "E",
       "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -339,13 +339,13 @@
       "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
       "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
       "options": [
-        "A. It assumes that lower temperatures are always desirable",
-        "B. It treats a correlation as evidence of a causal relationship",
+        "A. It treats a correlation as evidence of a causal relationship",
+        "B. It assumes that lower temperatures are always desirable",
         "C. It ignores that tree planting is expensive",
         "D. It fails to consider that trees require water",
         "E. It overlooks that some neighbourhoods may not have space for trees"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -357,13 +357,13 @@
       "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
       "question": "Which of the following, if true, would most weaken this conclusion?",
       "options": [
-        "A. The airline also reduced the number of carry-on bags allowed during the same period",
-        "B. Passengers reported higher satisfaction with the new policy",
+        "A. Passengers reported higher satisfaction with the new policy",
+        "B. The airline also reduced the number of carry-on bags allowed during the same period",
         "C. Competing airlines have not adopted similar policies",
         "D. Boarding time varies naturally between 15 and 35 minutes",
         "E. The new policy was introduced on routes with larger aircraft"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -413,40 +413,40 @@
       "prompt": "The author uses the phrase 'seeming paradox' to suggest that:",
       "options": [
         "A. Open-source development violates all known economic principles",
-        "B. The behaviour of open-source contributors appears inconsistent with standard economic predictions but can be explained",
-        "C. Economists have no theory that explains open-source development",
-        "D. Open-source software is economically irrational and will eventually disappear"
+        "B. Economists have no theory that explains open-source development",
+        "C. Open-source software is economically irrational and will eventually disappear",
+        "D. The behaviour of open-source contributors appears inconsistent with standard economic predictions but can be explained"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Based on the passage content about The Economics of Open-Source Software.",
       "difficulty": "medium",
       "topic": "reading_comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-020-q01": "B",
-    "gmat-verbal-020-q02": "A",
-    "gmat-verbal-020-q03": "B",
-    "gmat-verbal-020-q04": "A",
+    "gmat-verbal-020-q01": "A",
+    "gmat-verbal-020-q02": "B",
+    "gmat-verbal-020-q03": "C",
+    "gmat-verbal-020-q04": "D",
     "gmat-verbal-020-q05": "E",
-    "gmat-verbal-020-q06": "D",
-    "gmat-verbal-020-q07": "B",
+    "gmat-verbal-020-q06": "E",
+    "gmat-verbal-020-q07": "A",
     "gmat-verbal-020-q08": "B",
-    "gmat-verbal-020-q09": "A",
-    "gmat-verbal-020-q10": "B",
+    "gmat-verbal-020-q09": "C",
+    "gmat-verbal-020-q10": "D",
     "gmat-verbal-020-q11": "E",
-    "gmat-verbal-020-q12": "B",
-    "gmat-verbal-020-q13": "C",
-    "gmat-verbal-020-q14": "A",
+    "gmat-verbal-020-q12": "E",
+    "gmat-verbal-020-q13": "A",
+    "gmat-verbal-020-q14": "B",
     "gmat-verbal-020-q15": "B",
-    "gmat-verbal-020-q16": "B",
-    "gmat-verbal-020-q17": "B",
-    "gmat-verbal-020-q18": "C",
-    "gmat-verbal-020-q19": "B",
-    "gmat-verbal-020-q20": "A",
+    "gmat-verbal-020-q16": "C",
+    "gmat-verbal-020-q17": "D",
+    "gmat-verbal-020-q18": "E",
+    "gmat-verbal-020-q19": "A",
+    "gmat-verbal-020-q20": "B",
     "gmat-verbal-020-q21": "B",
     "gmat-verbal-020-q22": "C",
-    "gmat-verbal-020-q23": "B"
+    "gmat-verbal-020-q23": "D"
   },
   "fingerprints": [
     "e545055989f96b1ae5",

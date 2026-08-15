@@ -51,13 +51,13 @@
       "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
       "question": "Which of the following most weakens the minister's conclusion?",
       "options": [
-        "A. A separate economic boom added 100,000 jobs during the same year",
-        "B. Labour economists disagree on the effects of minimum wage increases",
-        "C. The minimum wage increase only affected 5% of workers",
+        "A. Labour economists disagree on the effects of minimum wage increases",
+        "B. The minimum wage increase only affected 5% of workers",
+        "C. A separate economic boom added 100,000 jobs during the same year",
         "D. Some industries are more affected than others by wage increases",
         "E. Other countries have raised minimum wages without unemployment rising"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "C",
       "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -106,12 +106,12 @@
       "question": "Which of the following, if true, most weakens the advertising agency's argument?",
       "options": [
         "A. The advertising campaign cost $5M over three months",
-        "B. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "C. The ad was shown only on premium streaming services",
-        "D. The brand launched a new product line during the same period",
-        "E. Competitors also increased advertising spending during the same period"
+        "B. The ad was shown only on premium streaming services",
+        "C. The brand launched a new product line during the same period",
+        "D. Competitors also increased advertising spending during the same period",
+        "E. Consumers who sought out the advertisement were already brand loyalists considering a major purchase"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "E",
       "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -123,13 +123,13 @@
       "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
       "question": "The second analyst's response best serves which of the following functions in the debate?",
       "options": [
-        "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It presents empirical evidence that undermines the first analyst's prediction",
+        "A. It presents empirical evidence that undermines the first analyst's prediction",
+        "B. It provides an alternative interpretation of the first analyst's claim",
         "C. It demonstrates that road construction is always harmful",
         "D. It suggests the first analyst has incorrect data",
         "E. It proves that traffic will always increase regardless of policy"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -141,13 +141,13 @@
       "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
       "question": "Which of the following most closely parallels the logical structure of the argument above?",
       "options": [
-        "A. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
-        "B. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
+        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
+        "B. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
         "C. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
         "D. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
         "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -160,12 +160,12 @@
       "question": "Which of the following conclusions is most strongly supported by the survey data?",
       "options": [
         "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Job satisfaction and adequate sleep are associated in the survey population",
-        "C. Dissatisfied workers always sleep fewer than 7 hours",
+        "B. Dissatisfied workers always sleep fewer than 7 hours",
+        "C. Job satisfaction and adequate sleep are associated in the survey population",
         "D. Employers should implement nap rooms to improve satisfaction",
         "E. Workers who sleep 8 hours are more productive than those who sleep 6"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -196,12 +196,12 @@
       "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
       "options": [
         "A. The claim that wetlands prevent flooding",
-        "B. The assumption that all wetlands have equal flood-prevention value",
-        "C. The conclusion that all wetlands should be protected",
-        "D. The implication that flooding is always preventable",
+        "B. The conclusion that all wetlands should be protected",
+        "C. The implication that flooding is always preventable",
+        "D. The assumption that all wetlands have equal flood-prevention value",
         "E. The premise that wetlands are worth preserving"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -215,11 +215,11 @@
       "options": [
         "A. Customers reported preferring a relaxed shopping atmosphere",
         "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. A controlled experiment with randomly assigned music found the same 20% difference",
-        "D. Sales staff performed better when the music was upbeat",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "C. Sales staff performed better when the music was upbeat",
+        "D. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies",
+        "E. A controlled experiment with randomly assigned music found the same 20% difference"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "E",
       "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -286,12 +286,12 @@
       "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
         "A. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "B. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "C. Customers report feeling more valued when using a loyalty programme",
+        "B. Customers report feeling more valued when using a loyalty programme",
+        "C. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
         "D. Competitors without loyalty programmes have seen declining sales",
         "E. The loyalty programme was introduced simultaneously with a store renovation"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -305,11 +305,11 @@
       "options": [
         "A. Other advertising channels were suspended during the same three months",
         "B. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "C. The lifetime value of a new user averages $50",
-        "D. Social media platforms reported the campaign reached 5 million unique users",
+        "C. Social media platforms reported the campaign reached 5 million unique users",
+        "D. The lifetime value of a new user averages $50",
         "E. Competitors saw no change in sign-ups over the same period"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -322,12 +322,12 @@
       "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
       "options": [
         "A. It assumes that lower temperatures are always desirable",
-        "B. It treats a correlation as evidence of a causal relationship",
-        "C. It ignores that tree planting is expensive",
-        "D. It fails to consider that trees require water",
-        "E. It overlooks that some neighbourhoods may not have space for trees"
+        "B. It ignores that tree planting is expensive",
+        "C. It fails to consider that trees require water",
+        "D. It overlooks that some neighbourhoods may not have space for trees",
+        "E. It treats a correlation as evidence of a causal relationship"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "E",
       "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -395,11 +395,11 @@
       "prompt": "The passage states that the greatest temperature difference between cities and rural areas occurs:",
       "options": [
         "A. During the hottest summer afternoons",
-        "B. On calm, clear nights",
-        "C. During periods of high wind",
+        "B. During periods of high wind",
+        "C. On calm, clear nights",
         "D. When humidity is at its highest"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Based on the passage content about Urban Heat Islands.",
       "difficulty": "medium",
       "topic": "reading_comprehension"
@@ -413,11 +413,11 @@
       "prompt": "Which of the following, if true, would most strengthen the case for urban greening as an adaptation strategy?",
       "options": [
         "A. Trees in urban areas require significant maintenance costs",
-        "B. Studies show trees can reduce local temperatures by up to 8°C through evapotranspiration",
-        "C. Cool roofs are less expensive to install than planting trees",
-        "D. Urban greening has been adopted by fewer than 20% of major cities worldwide"
+        "B. Cool roofs are less expensive to install than planting trees",
+        "C. Urban greening has been adopted by fewer than 20% of major cities worldwide",
+        "D. Studies show trees can reduce local temperatures by up to 8°C through evapotranspiration"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Based on the passage content about Urban Heat Islands.",
       "difficulty": "medium",
       "topic": "reading_comprehension"
@@ -426,27 +426,27 @@
   "answerKey": {
     "gmat-verbal-003-q01": "A",
     "gmat-verbal-003-q02": "B",
-    "gmat-verbal-003-q03": "A",
+    "gmat-verbal-003-q03": "C",
     "gmat-verbal-003-q04": "E",
     "gmat-verbal-003-q05": "D",
-    "gmat-verbal-003-q06": "B",
-    "gmat-verbal-003-q07": "B",
-    "gmat-verbal-003-q08": "A",
-    "gmat-verbal-003-q09": "B",
+    "gmat-verbal-003-q06": "E",
+    "gmat-verbal-003-q07": "A",
+    "gmat-verbal-003-q08": "B",
+    "gmat-verbal-003-q09": "C",
     "gmat-verbal-003-q10": "E",
-    "gmat-verbal-003-q11": "B",
-    "gmat-verbal-003-q12": "C",
+    "gmat-verbal-003-q11": "D",
+    "gmat-verbal-003-q12": "E",
     "gmat-verbal-003-q13": "A",
     "gmat-verbal-003-q14": "B",
     "gmat-verbal-003-q15": "B",
-    "gmat-verbal-003-q16": "B",
-    "gmat-verbal-003-q17": "C",
-    "gmat-verbal-003-q18": "B",
+    "gmat-verbal-003-q16": "C",
+    "gmat-verbal-003-q17": "D",
+    "gmat-verbal-003-q18": "E",
     "gmat-verbal-003-q19": "A",
     "gmat-verbal-003-q20": "B",
     "gmat-verbal-003-q21": "B",
-    "gmat-verbal-003-q22": "B",
-    "gmat-verbal-003-q23": "B"
+    "gmat-verbal-003-q22": "C",
+    "gmat-verbal-003-q23": "D"
   },
   "fingerprints": [
     "5a7a4f26735667f3ed",

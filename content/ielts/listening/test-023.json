@@ -299,12 +299,12 @@
       "num": 11,
       "prompt": "What must visitors do before exploring the reserve?",
       "options": [
-        "pay an entry fee",
         "sign in at reception",
+        "pay an entry fee",
         "collect a trail map",
         "watch a safety video"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The ranger says 'We ask all visitors to sign in at reception'"
     },
     {
@@ -316,11 +316,11 @@
       "prompt": "Which trail is suitable for wheelchairs?",
       "options": [
         "red trail",
-        "blue trail",
         "yellow trail",
+        "blue trail",
         "all trails"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "The yellow trail is 'fully paved, making it suitable for wheelchairs and pushchairs'"
     },
     {
@@ -348,11 +348,11 @@
       "prompt": "What can be seen from the ridge viewpoint?",
       "options": [
         "three counties",
-        "four counties",
         "the sea",
-        "the city skyline"
+        "the city skyline",
+        "four counties"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "On clear days 'you can see four counties'"
     },
     {
@@ -363,12 +363,12 @@
       "num": 15,
       "prompt": "What time does the Meadow Café close?",
       "options": [
+        "4:30 pm",
         "3:30 pm",
         "4:00 pm",
-        "4:30 pm",
         "5:00 pm"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The café 'closes at four thirty'"
     },
     {
@@ -560,11 +560,11 @@
       "prompt": "What noise level does research link to increased stress hormones?",
       "options": [
         "55 dB",
-        "60 dB",
         "65 dB",
+        "60 dB",
         "70 dB"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
     },
     {
@@ -576,11 +576,11 @@
       "prompt": "What additional health risk did James find surprising in the literature?",
       "options": [
         "hearing loss",
-        "cardiovascular disease",
         "respiratory problems",
+        "cardiovascular disease",
         "mental health disorders"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
     },
     {
@@ -607,12 +607,12 @@
       "num": 24,
       "prompt": "What confidence level does their sample size achieve?",
       "options": [
+        "95%",
         "90%",
         "92%",
-        "95%",
         "99%"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "James refers to 'the ninety-five percent confidence level'"
     },
     {
@@ -775,11 +775,11 @@
       "prompt": "The 'disposition effect' refers to the tendency to",
       "options": [
         "A  invest heavily in new market opportunities",
-        "B  hold onto failing investments for too long",
         "C  diversify financial portfolios excessively",
+        "B  hold onto failing investments for too long",
         "D  avoid taking any financial risks"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The lecturer says it explains 'why people hold onto failing investments far longer than is rational'"
     },
     {
@@ -806,12 +806,12 @@
       "num": 38,
       "prompt": "Placing healthy food at eye level in cafeterias increases selection rates by up to",
       "options": [
+        "C  thirty percent",
         "A  ten percent",
         "B  twenty percent",
-        "C  thirty percent",
         "D  forty percent"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The lecturer states selection rates increase 'by up to thirty percent'"
     },
     {
@@ -823,11 +823,11 @@
       "prompt": "Critics of nudge theory argue that it",
       "options": [
         "A  is ineffective in real-world settings",
-        "B  costs too much to implement",
         "C  can be paternalistic",
+        "B  costs too much to implement",
         "D  ignores economic incentives entirely"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "The lecturer says critics argue 'it can be paternalistic'"
     },
     {

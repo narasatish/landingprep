@@ -299,12 +299,12 @@
       "num": 11,
       "prompt": "What is the library's closing time on weekdays?",
       "options": [
+        "10 pm",
         "8 pm",
         "9 pm",
-        "10 pm",
         "11 pm"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The guide says the library is 'open from eight am to ten pm Monday to Friday'"
     },
     {
@@ -316,11 +316,11 @@
       "prompt": "How many floors of study space does the library have?",
       "options": [
         "two",
-        "three",
         "four",
+        "three",
         "five"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "The guide mentions 'four floors of study space'"
     },
     {
@@ -332,11 +332,11 @@
       "prompt": "When was the Engineering Hub opened?",
       "options": [
         "last year",
-        "two years ago",
         "five years ago",
+        "two years ago",
         "ten years ago"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The guide says 'opened just two years ago'"
     },
     {
@@ -349,10 +349,10 @@
       "options": [
         "library card",
         "sports membership",
-        "Health Centre registration",
-        "Student Union membership"
+        "Student Union membership",
+        "Health Centre registration"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "The guide says 'all students are registered automatically upon enrolment' at the Health Centre"
     },
     {
@@ -363,12 +363,12 @@
       "num": 15,
       "prompt": "Where are the sports fields located?",
       "options": [
+        "behind the Engineering Hub",
         "western edge of campus",
         "northern edge",
-        "behind the Engineering Hub",
         "beside the library"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Sports fields are 'on the eastern side of campus, behind the Engineering Hub'"
     },
     {
@@ -560,11 +560,11 @@
       "prompt": "Which adaptation strategy is described as most widely adopted globally?",
       "options": [
         "adjusting planting calendars",
-        "agritourism diversification",
         "drought-resistant crop varieties",
+        "agritourism diversification",
         "improved irrigation"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Mike says 'the shift to drought-resistant varieties is the most widely adopted strategy globally'"
     },
     {
@@ -607,12 +607,12 @@
       "num": 24,
       "prompt": "By how much could tropical crop yields fall by 2080?",
       "options": [
+        "30%",
         "10%",
         "20%",
-        "30%",
         "40%"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Sarah states yield losses 'could reach thirty percent by 2080'"
     },
     {
@@ -775,11 +775,11 @@
       "prompt": "The deep sea is defined in the lecture as water found below which depth?",
       "options": [
         "A  100 metres",
-        "B  200 metres",
         "C  500 metres",
+        "B  200 metres",
         "D  1,000 metres"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The lecturer defines the deep sea as 'below two hundred metres'"
     },
     {
@@ -792,10 +792,10 @@
       "options": [
         "A  they all produce bioluminescence",
         "B  they are found only in polar waters",
-        "C  they live around hydrothermal vents",
-        "D  they depend on marine snow for food"
+        "D  they depend on marine snow for food",
+        "C  they live around hydrothermal vents"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "These species are described as part of the food web around hydrothermal vents"
     },
     {
@@ -806,12 +806,12 @@
       "num": 38,
       "prompt": "Marine snow is described in the lecture as consisting of",
       "options": [
+        "C  organic particles falling from surface waters",
         "A  dissolved minerals from the seafloor",
         "B  sediment carried from coastal rivers",
-        "C  organic particles falling from surface waters",
         "D  chemical compounds from hydrothermal vents"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The lecturer describes marine snow as 'a constant fall of organic particles from surface waters'"
     },
     {

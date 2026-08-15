@@ -299,12 +299,12 @@
       "num": 11,
       "prompt": "What are the standard visiting hours at St. Mary's?",
       "options": [
-        "1–3 pm and 5–7 pm",
         "2–4 pm and 6–8 pm",
+        "1–3 pm and 5–7 pm",
         "3–5 pm and 7–9 pm",
         "10 am–8 pm"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The volunteer states 'visiting hours at St. Mary's are two to four pm and six to eight pm daily'"
     },
     {
@@ -316,11 +316,11 @@
       "prompt": "How much does short-stay parking cost per hour?",
       "options": [
         "£1.00",
-        "£1.50",
         "£2.00",
+        "£1.50",
         "£2.50"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "The volunteer says 'Short-stay parking costs two pounds per hour'"
     },
     {
@@ -348,11 +348,11 @@
       "prompt": "Where is the A&E entrance located?",
       "options": [
         "on Pembroke Road at the main entrance",
-        "on Chestnut Lane on the northern side",
         "in the eastern wing near the pharmacy",
-        "on the western side near the car park"
+        "on the western side near the car park",
+        "on Chestnut Lane on the northern side"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The volunteer says A&E 'has its own dedicated entrance on the northern side of the building, accessed via Chestnut Lane'"
     },
     {
@@ -363,12 +363,12 @@
       "num": 15,
       "prompt": "What is located near the chapel?",
       "options": [
+        "the café",
         "the main reception",
         "the radiology department",
-        "the café",
         "the car park"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The volunteer says the chapel is 'between the outpatients stairwell and the café'"
     },
     {
@@ -560,11 +560,11 @@
       "prompt": "What noise level does research link to increased stress hormones?",
       "options": [
         "55 dB",
-        "60 dB",
         "65 dB",
+        "60 dB",
         "70 dB"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
     },
     {
@@ -576,11 +576,11 @@
       "prompt": "What additional health risk did James find surprising in the literature?",
       "options": [
         "hearing loss",
-        "cardiovascular disease",
         "respiratory problems",
+        "cardiovascular disease",
         "mental health disorders"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
     },
     {
@@ -607,12 +607,12 @@
       "num": 24,
       "prompt": "What confidence level does their sample size achieve?",
       "options": [
+        "95%",
         "90%",
         "92%",
-        "95%",
         "99%"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "James refers to 'the ninety-five percent confidence level'"
     },
     {
@@ -775,11 +775,11 @@
       "prompt": "The 'disposition effect' refers to the tendency to",
       "options": [
         "A  invest heavily in new market opportunities",
-        "B  hold onto failing investments for too long",
         "C  diversify financial portfolios excessively",
+        "B  hold onto failing investments for too long",
         "D  avoid taking any financial risks"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The lecturer says it explains 'why people hold onto failing investments far longer than is rational'"
     },
     {
@@ -806,12 +806,12 @@
       "num": 38,
       "prompt": "Placing healthy food at eye level in cafeterias increases selection rates by up to",
       "options": [
+        "C  thirty percent",
         "A  ten percent",
         "B  twenty percent",
-        "C  thirty percent",
         "D  forty percent"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The lecturer states selection rates increase 'by up to thirty percent'"
     },
     {
@@ -823,11 +823,11 @@
       "prompt": "Critics of nudge theory argue that it",
       "options": [
         "A  is ineffective in real-world settings",
-        "B  costs too much to implement",
         "C  can be paternalistic",
+        "B  costs too much to implement",
         "D  ignores economic incentives entirely"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "The lecturer says critics argue 'it can be paternalistic'"
     },
     {

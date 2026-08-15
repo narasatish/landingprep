@@ -304,12 +304,12 @@
       "num": 11,
       "prompt": "What is the maximum number of items a member can borrow at one time?",
       "options": [
+        "10",
         "6",
         "8",
-        "10",
         "12"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The librarian says 'You may borrow up to ten items at a time'"
     },
     {
@@ -321,11 +321,11 @@
       "prompt": "How far in advance can a study pod be booked?",
       "options": [
         "one day",
-        "two days",
         "three days",
+        "two days",
         "one week"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "The librarian says 'You can reserve a study pod up to three days in advance'"
     },
     {
@@ -337,11 +337,11 @@
       "prompt": "What is required to access the local history archive?",
       "options": [
         "a special library card",
-        "prior registration with the archive team",
         "a letter of introduction",
+        "prior registration with the archive team",
         "an annual membership upgrade"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The librarian says 'Access to archival materials requires prior registration with the archive team'"
     },
     {
@@ -353,11 +353,11 @@
       "prompt": "What time does the café corner close?",
       "options": [
         "3 pm",
-        "4 pm",
         "5 pm",
-        "6 pm"
+        "6 pm",
+        "4 pm"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The librarian says the café is 'open Monday to Friday from nine am to four pm'"
     },
     {
@@ -368,12 +368,12 @@
       "num": 15,
       "prompt": "What is the age limit for the children's library?",
       "options": [
+        "fourteen",
         "ten",
         "twelve",
-        "fourteen",
         "sixteen"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The librarian says the children's library is 'for younger readers up to the age of fourteen'"
     },
     {
@@ -565,11 +565,11 @@
       "prompt": "What noise level does research link to increased stress hormones?",
       "options": [
         "55 dB",
-        "60 dB",
         "65 dB",
+        "60 dB",
         "70 dB"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
     },
     {
@@ -581,11 +581,11 @@
       "prompt": "What additional health risk did James find surprising in the literature?",
       "options": [
         "hearing loss",
-        "cardiovascular disease",
         "respiratory problems",
+        "cardiovascular disease",
         "mental health disorders"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
     },
     {
@@ -612,12 +612,12 @@
       "num": 24,
       "prompt": "What confidence level does their sample size achieve?",
       "options": [
+        "95%",
         "90%",
         "92%",
-        "95%",
         "99%"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "James refers to 'the ninety-five percent confidence level'"
     },
     {
@@ -780,11 +780,11 @@
       "prompt": "According to the lecture, the main reason antibiotic discovery declined after the 1980s was that",
       "options": [
         "A  resistant bacteria evolved too quickly",
-        "B  pharmaceutical companies moved to more profitable areas",
         "C  all known antibiotic compounds had already been tested",
+        "B  pharmaceutical companies moved to more profitable areas",
         "D  government funding was withdrawn"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The lecturer says companies 'shifted resources toward more profitable chronic disease treatments'"
     },
     {
@@ -796,11 +796,11 @@
       "prompt": "The golden era of antibiotic discovery lasted approximately",
       "options": [
         "A  10 years",
-        "B  20 years",
         "C  30 years",
-        "D  40 years"
+        "D  40 years",
+        "B  20 years"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The golden era ran 'from 1950 to 1970' — roughly 20 years"
     },
     {
@@ -811,12 +811,12 @@
       "num": 38,
       "prompt": "According to the lecturer, most antibiotics discovered in the golden era came from",
       "options": [
+        "C  soil bacteria",
         "A  synthetic chemicals",
         "B  marine organisms",
-        "C  soil bacteria",
         "D  hospital environments"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The lecturer states they were discovered 'largely from soil bacteria'"
     },
     {

@@ -304,12 +304,12 @@
       "num": 11,
       "prompt": "What is the maximum number of items a member can borrow at one time?",
       "options": [
+        "10",
         "6",
         "8",
-        "10",
         "12"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The librarian says 'You may borrow up to ten items at a time'"
     },
     {
@@ -321,11 +321,11 @@
       "prompt": "How far in advance can a study pod be booked?",
       "options": [
         "one day",
-        "two days",
         "three days",
+        "two days",
         "one week"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "The librarian says 'You can reserve a study pod up to three days in advance'"
     },
     {
@@ -337,11 +337,11 @@
       "prompt": "What is required to access the local history archive?",
       "options": [
         "a special library card",
-        "prior registration with the archive team",
         "a letter of introduction",
+        "prior registration with the archive team",
         "an annual membership upgrade"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The librarian says 'Access to archival materials requires prior registration with the archive team'"
     },
     {
@@ -353,11 +353,11 @@
       "prompt": "What time does the café corner close?",
       "options": [
         "3 pm",
-        "4 pm",
         "5 pm",
-        "6 pm"
+        "6 pm",
+        "4 pm"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The librarian says the café is 'open Monday to Friday from nine am to four pm'"
     },
     {
@@ -368,12 +368,12 @@
       "num": 15,
       "prompt": "What is the age limit for the children's library?",
       "options": [
+        "fourteen",
         "ten",
         "twelve",
-        "fourteen",
         "sixteen"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The librarian says the children's library is 'for younger readers up to the age of fourteen'"
     },
     {
@@ -565,11 +565,11 @@
       "prompt": "What noise level does research link to increased stress hormones?",
       "options": [
         "55 dB",
-        "60 dB",
         "65 dB",
+        "60 dB",
         "70 dB"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
     },
     {
@@ -581,11 +581,11 @@
       "prompt": "What additional health risk did James find surprising in the literature?",
       "options": [
         "hearing loss",
-        "cardiovascular disease",
         "respiratory problems",
+        "cardiovascular disease",
         "mental health disorders"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
     },
     {
@@ -612,12 +612,12 @@
       "num": 24,
       "prompt": "What confidence level does their sample size achieve?",
       "options": [
+        "95%",
         "90%",
         "92%",
-        "95%",
         "99%"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "James refers to 'the ninety-five percent confidence level'"
     },
     {
@@ -780,11 +780,11 @@
       "prompt": "The deep sea is defined in the lecture as water found below which depth?",
       "options": [
         "A  100 metres",
-        "B  200 metres",
         "C  500 metres",
+        "B  200 metres",
         "D  1,000 metres"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The lecturer defines the deep sea as 'below two hundred metres'"
     },
     {
@@ -797,10 +797,10 @@
       "options": [
         "A  they all produce bioluminescence",
         "B  they are found only in polar waters",
-        "C  they live around hydrothermal vents",
-        "D  they depend on marine snow for food"
+        "D  they depend on marine snow for food",
+        "C  they live around hydrothermal vents"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "These species are described as part of the food web around hydrothermal vents"
     },
     {
@@ -811,12 +811,12 @@
       "num": 38,
       "prompt": "Marine snow is described in the lecture as consisting of",
       "options": [
+        "C  organic particles falling from surface waters",
         "A  dissolved minerals from the seafloor",
         "B  sediment carried from coastal rivers",
-        "C  organic particles falling from surface waters",
         "D  chemical compounds from hydrothermal vents"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The lecturer describes marine snow as 'a constant fall of organic particles from surface waters'"
     },
     {

@@ -219,11 +219,11 @@
       "instructions": "Choose the correct letter, A, B or C.",
       "prompt": "Where is the café located?",
       "options": [
-        "A. To the left of the main entrance",
-        "B. At the end of the main corridor",
+        "A. At the end of the main corridor",
+        "B. To the left of the main entrance",
         "C. On the first floor"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Claire says 'The café is straight ahead at the end of the main corridor'.",
       "difficulty": "easy",
       "topic": "community centre"
@@ -270,11 +270,11 @@
       "instructions": "Choose the correct letter, A, B or C.",
       "prompt": "Where is the car park?",
       "options": [
-        "A. On Kendal Street in front of the building",
-        "B. Behind the building, accessed from Baker Lane",
+        "A. Behind the building, accessed from Baker Lane",
+        "B. On Kendal Street in front of the building",
         "C. To the right of the main entrance"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Claire says 'The car park is behind the building, accessed from Baker Lane'.",
       "difficulty": "medium",
       "topic": "community centre"
@@ -417,10 +417,10 @@
       "prompt": "What did the garden supervisors complain about?",
       "options": [
         "A. The quality of the volunteers' work",
-        "B. Spending too much time directing volunteers",
-        "C. The lack of suitable tools"
+        "B. The lack of suitable tools",
+        "C. Spending too much time directing volunteers"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "James says 'a couple of the garden supervisors... felt they spent too much time directing people rather than actually getting on with the work'.",
       "difficulty": "medium",
       "topic": "volunteer project"
@@ -433,11 +433,11 @@
       "instructions": "Choose the correct letter, A, B or C.",
       "prompt": "What change do Maya and James agree on for the briefing?",
       "options": [
-        "A. Hold the briefing the week before",
-        "B. Give everyone a printed task list with a specific role",
+        "A. Give everyone a printed task list with a specific role",
+        "B. Hold the briefing the week before",
         "C. Have supervisors send an email in advance"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Maya says 'we should prepare a printed task list and give everyone a specific role before they arrive' and James agrees completely.",
       "difficulty": "medium",
       "topic": "volunteer project"
@@ -530,11 +530,11 @@
       "instructions": "Choose the correct letter, A, B or C.",
       "prompt": "Who will write the budget analysis for the report?",
       "options": [
-        "A. Maya",
-        "B. James",
+        "A. James",
+        "B. Maya",
         "C. Both Maya and James together"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "James says 'That works for me' when Maya says she will draft the recommendation section and he handles the budget analysis.",
       "difficulty": "easy",
       "topic": "volunteer project"
@@ -685,11 +685,11 @@
       "instructions": "Choose the correct letter, A, B or C.",
       "prompt": "What does the speaker say about climate change and coffee farming?",
       "options": [
-        "A. It has already destroyed many farms in Asia",
-        "B. Up to 50% of current growing land may become unsuitable by 2050",
+        "A. Up to 50% of current growing land may become unsuitable by 2050",
+        "B. It has already destroyed many farms in Asia",
         "C. Rising temperatures are improving coffee quality in some regions"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The speaker says 'researchers estimate that up to fifty per cent of current coffee-growing land could become unsuitable by 2050'.",
       "difficulty": "medium",
       "topic": "history of coffee"

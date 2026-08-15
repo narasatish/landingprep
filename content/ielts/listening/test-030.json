@@ -299,12 +299,12 @@
       "num": 11,
       "prompt": "What are the left luggage operating hours?",
       "options": [
-        "5 am to 11 pm",
         "6 am to 10 pm",
+        "5 am to 11 pm",
         "7 am to 9 pm",
         "24 hours"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The announcer says left luggage is available 'from six in the morning until ten at night'"
     },
     {
@@ -332,11 +332,11 @@
       "prompt": "How much does bicycle storage cost after the first two free hours?",
       "options": [
         "50p per day",
-        "£1 per day",
         "£2 per day",
+        "£1 per day",
         "£3 per day"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The announcer says bicycle storage 'costs one pound per day thereafter'"
     },
     {
@@ -349,10 +349,10 @@
       "options": [
         "7 am to 8 pm",
         "8 am to 6 pm",
-        "9 am to 5 pm",
-        "10 am to 4 pm"
+        "10 am to 4 pm",
+        "9 am to 5 pm"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "The announcer says customer services is open 'nine to five on Sundays'"
     },
     {
@@ -363,12 +363,12 @@
       "num": 15,
       "prompt": "How far in advance should passengers requiring accessible assistance book?",
       "options": [
+        "24 hours",
         "6 hours",
         "12 hours",
-        "24 hours",
         "48 hours"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The announcer says passengers 'are strongly encouraged to pre-book the service at least twenty-four hours before travel'"
     },
     {
@@ -560,11 +560,11 @@
       "prompt": "Which adaptation strategy is described as most widely adopted globally?",
       "options": [
         "adjusting planting calendars",
-        "agritourism diversification",
         "drought-resistant crop varieties",
+        "agritourism diversification",
         "improved irrigation"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Mike says 'the shift to drought-resistant varieties is the most widely adopted strategy globally'"
     },
     {
@@ -607,12 +607,12 @@
       "num": 24,
       "prompt": "By how much could tropical crop yields fall by 2080?",
       "options": [
+        "30%",
         "10%",
         "20%",
-        "30%",
         "40%"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Sarah states yield losses 'could reach thirty percent by 2080'"
     },
     {
@@ -775,11 +775,11 @@
       "prompt": "The deep sea is defined in the lecture as water found below which depth?",
       "options": [
         "A  100 metres",
-        "B  200 metres",
         "C  500 metres",
+        "B  200 metres",
         "D  1,000 metres"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The lecturer defines the deep sea as 'below two hundred metres'"
     },
     {
@@ -792,10 +792,10 @@
       "options": [
         "A  they all produce bioluminescence",
         "B  they are found only in polar waters",
-        "C  they live around hydrothermal vents",
-        "D  they depend on marine snow for food"
+        "D  they depend on marine snow for food",
+        "C  they live around hydrothermal vents"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "These species are described as part of the food web around hydrothermal vents"
     },
     {
@@ -806,12 +806,12 @@
       "num": 38,
       "prompt": "Marine snow is described in the lecture as consisting of",
       "options": [
+        "C  organic particles falling from surface waters",
         "A  dissolved minerals from the seafloor",
         "B  sediment carried from coastal rivers",
-        "C  organic particles falling from surface waters",
         "D  chemical compounds from hydrothermal vents"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The lecturer describes marine snow as 'a constant fall of organic particles from surface waters'"
     },
     {

@@ -70,12 +70,12 @@
       "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
       "options": [
         "A. The claim that wetlands prevent flooding",
-        "B. The assumption that all wetlands have equal flood-prevention value",
-        "C. The conclusion that all wetlands should be protected",
+        "B. The conclusion that all wetlands should be protected",
+        "C. The assumption that all wetlands have equal flood-prevention value",
         "D. The implication that flooding is always preventable",
         "E. The premise that wetlands are worth preserving"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -89,11 +89,11 @@
       "options": [
         "A. Customers reported preferring a relaxed shopping atmosphere",
         "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. A controlled experiment with randomly assigned music found the same 20% difference",
-        "D. Sales staff performed better when the music was upbeat",
+        "C. Sales staff performed better when the music was upbeat",
+        "D. A controlled experiment with randomly assigned music found the same 20% difference",
         "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -105,13 +105,13 @@
       "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
       "question": "Which of the following most weakens the editorial's conclusion?",
       "options": [
-        "A. Crime rates are influenced by many factors beyond unemployment",
-        "B. Employment programmes have reduced crime in some pilot cities",
-        "C. The editorial does not define 'crime' precisely",
-        "D. Reducing unemployment is expensive and politically difficult",
-        "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
+        "A. Employment programmes have reduced crime in some pilot cities",
+        "B. The editorial does not define 'crime' precisely",
+        "C. Reducing unemployment is expensive and politically difficult",
+        "D. Some high-unemployment areas have low crime rates due to strong community cohesion",
+        "E. Crime rates are influenced by many factors beyond unemployment"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "E",
       "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
       "difficulty": "easy",
       "topic": "verbal_reasoning"
@@ -141,13 +141,13 @@
       "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
       "question": "The adviser's reasoning is most analogous to which of the following?",
       "options": [
-        "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
+        "A. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
+        "B. Investing in diversified funds reduces portfolio risk over time",
         "C. A stock's five-year return is a better predictor of future performance than its one-year return",
         "D. Historical market data is unreliable because markets change structurally over time",
         "E. Companies with consistent earnings growth tend to have stable stock prices"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -196,12 +196,12 @@
       "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
       "options": [
         "A. It assumes that lower temperatures are always desirable",
-        "B. It treats a correlation as evidence of a causal relationship",
-        "C. It ignores that tree planting is expensive",
-        "D. It fails to consider that trees require water",
+        "B. It ignores that tree planting is expensive",
+        "C. It fails to consider that trees require water",
+        "D. It treats a correlation as evidence of a causal relationship",
         "E. It overlooks that some neighbourhoods may not have space for trees"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -213,13 +213,13 @@
       "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
       "question": "Which of the following, if true, would most weaken this conclusion?",
       "options": [
-        "A. The airline also reduced the number of carry-on bags allowed during the same period",
-        "B. Passengers reported higher satisfaction with the new policy",
-        "C. Competing airlines have not adopted similar policies",
-        "D. Boarding time varies naturally between 15 and 35 minutes",
-        "E. The new policy was introduced on routes with larger aircraft"
+        "A. Passengers reported higher satisfaction with the new policy",
+        "B. Competing airlines have not adopted similar policies",
+        "C. Boarding time varies naturally between 15 and 35 minutes",
+        "D. The new policy was introduced on routes with larger aircraft",
+        "E. The airline also reduced the number of carry-on bags allowed during the same period"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "E",
       "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -231,13 +231,13 @@
       "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
       "question": "The argument above is most vulnerable to criticism on the grounds that it:",
       "options": [
-        "A. Does not define what type of consulting services were provided",
-        "B. Fails to compare the companies' growth with industry-wide growth trends",
+        "A. Fails to compare the companies' growth with industry-wide growth trends",
+        "B. Does not define what type of consulting services were provided",
         "C. Ignores that some companies declined in revenue after hiring the firm",
         "D. Does not specify what time period is covered by the data",
         "E. Compares incomparable companies across different industries"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
       "difficulty": "medium",
       "topic": "verbal_reasoning"
@@ -268,12 +268,12 @@
       "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
       "options": [
         "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Doctors who proactively call patients may also be more thorough in their overall care",
-        "C. Some patients do not have phones",
+        "B. Some patients do not have phones",
+        "C. Doctors who proactively call patients may also be more thorough in their overall care",
         "D. Patients prefer in-person follow-up visits to phone calls",
         "E. Phone calls are less effective than written instructions"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -286,12 +286,12 @@
       "question": "Which of the following, if true, most weakens the conclusion?",
       "options": [
         "A. Drug X has minor side effects including nausea",
-        "B. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "C. The study included only 50 participants",
-        "D. Chronic pain affects millions of people worldwide",
+        "B. The study included only 50 participants",
+        "C. Chronic pain affects millions of people worldwide",
+        "D. A control group taking a placebo experienced a 28% reduction in symptoms",
         "E. Drug X is expensive compared to existing treatments"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -303,13 +303,13 @@
       "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
       "question": "Which of the following most strengthens the director's conclusion?",
       "options": [
-        "A. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "B. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "C. The university's highest-achieving students attend the fitness centre most frequently",
-        "D. Exercise programmes are popular at peer universities",
-        "E. Students who exercise report feeling less stressed"
+        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
+        "B. The university's highest-achieving students attend the fitness centre most frequently",
+        "C. Exercise programmes are popular at peer universities",
+        "D. Students who exercise report feeling less stressed",
+        "E. Exercise has been shown to improve blood flow to the brain in laboratory studies"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "E",
       "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -321,13 +321,13 @@
       "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
       "question": "Which of the following is the most serious concern about the authority's recommendation?",
       "options": [
-        "A. Cameras might violate driver privacy",
-        "B. Intersections chosen for cameras may have already been due for safety upgrades",
+        "A. Intersections chosen for cameras may have already been due for safety upgrades",
+        "B. Cameras might violate driver privacy",
         "C. The cost of cameras is high",
         "D. Some drivers find cameras distracting",
         "E. Cameras only capture rear-end collisions"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -339,13 +339,13 @@
       "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
       "question": "Which of the following most weakens the minister's conclusion?",
       "options": [
-        "A. A separate economic boom added 100,000 jobs during the same year",
-        "B. Labour economists disagree on the effects of minimum wage increases",
+        "A. Labour economists disagree on the effects of minimum wage increases",
+        "B. A separate economic boom added 100,000 jobs during the same year",
         "C. The minimum wage increase only affected 5% of workers",
         "D. Some industries are more affected than others by wage increases",
         "E. Other countries have raised minimum wages without unemployment rising"
       ],
-      "correctAnswer": "A",
+      "correctAnswer": "B",
       "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
       "difficulty": "hard",
       "topic": "verbal_reasoning"
@@ -395,11 +395,11 @@
       "prompt": "The passage mentions stroke recovery primarily to:",
       "options": [
         "A. Illustrate how neuroplasticity was first discovered",
-        "B. Provide evidence that the adult brain can undergo structural reorganisation",
-        "C. Show that not all brain damage is permanent",
+        "B. Show that not all brain damage is permanent",
+        "C. Provide evidence that the adult brain can undergo structural reorganisation",
         "D. Argue that stroke patients have greater neuroplasticity than healthy adults"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "Based on the passage content about Neuroplasticity.",
       "difficulty": "medium",
       "topic": "reading_comprehension"
@@ -413,11 +413,11 @@
       "prompt": "Which of the following can be most reasonably inferred from the passage?",
       "options": [
         "A. Neuroplasticity is greater in young children than in adults",
-        "B. Adults who learn new skills may have measurably different brain structure from those who do not",
-        "C. Stroke recovery proves that any brain damage is reversible",
-        "D. Neuroplasticity research began only in the 1990s"
+        "B. Stroke recovery proves that any brain damage is reversible",
+        "C. Neuroplasticity research began only in the 1990s",
+        "D. Adults who learn new skills may have measurably different brain structure from those who do not"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "Based on the passage content about Neuroplasticity.",
       "difficulty": "medium",
       "topic": "reading_comprehension"
@@ -427,26 +427,26 @@
     "gmat-verbal-022-q01": "A",
     "gmat-verbal-022-q02": "B",
     "gmat-verbal-022-q03": "E",
-    "gmat-verbal-022-q04": "B",
-    "gmat-verbal-022-q05": "C",
-    "gmat-verbal-022-q06": "A",
+    "gmat-verbal-022-q04": "C",
+    "gmat-verbal-022-q05": "D",
+    "gmat-verbal-022-q06": "E",
     "gmat-verbal-022-q07": "B",
-    "gmat-verbal-022-q08": "B",
+    "gmat-verbal-022-q08": "A",
     "gmat-verbal-022-q09": "B",
     "gmat-verbal-022-q10": "C",
-    "gmat-verbal-022-q11": "B",
-    "gmat-verbal-022-q12": "A",
-    "gmat-verbal-022-q13": "B",
+    "gmat-verbal-022-q11": "D",
+    "gmat-verbal-022-q12": "E",
+    "gmat-verbal-022-q13": "A",
     "gmat-verbal-022-q14": "B",
-    "gmat-verbal-022-q15": "B",
-    "gmat-verbal-022-q16": "B",
-    "gmat-verbal-022-q17": "A",
-    "gmat-verbal-022-q18": "B",
-    "gmat-verbal-022-q19": "A",
+    "gmat-verbal-022-q15": "C",
+    "gmat-verbal-022-q16": "D",
+    "gmat-verbal-022-q17": "E",
+    "gmat-verbal-022-q18": "A",
+    "gmat-verbal-022-q19": "B",
     "gmat-verbal-022-q20": "E",
     "gmat-verbal-022-q21": "B",
-    "gmat-verbal-022-q22": "B",
-    "gmat-verbal-022-q23": "B"
+    "gmat-verbal-022-q22": "C",
+    "gmat-verbal-022-q23": "D"
   },
   "fingerprints": [
     "65bd231e584962a513",

@@ -299,12 +299,12 @@
       "num": 11,
       "prompt": "What time does the museum café close?",
       "options": [
-        "4:00 pm",
         "4:30 pm",
+        "4:00 pm",
         "5:00 pm",
         "5:30 pm"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The guide says the café is open 'until four thirty in the afternoon'"
     },
     {
@@ -332,11 +332,11 @@
       "prompt": "How frequently do guided demonstrations run in the Interactive Science Gallery?",
       "options": [
         "every thirty minutes",
-        "every hour",
         "every two hours",
+        "every hour",
         "twice daily"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The guide says 'there are guided demonstrations every hour on the hour'"
     },
     {
@@ -349,10 +349,10 @@
       "options": [
         "the Interactive Science Gallery",
         "the Temporary Exhibitions Hall",
-        "the Victorian Engine Hall",
-        "the lecture theatre"
+        "the lecture theatre",
+        "the Victorian Engine Hall"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "The guide says the engine hall is 'without doubt the largest room in the museum'"
     },
     {
@@ -363,12 +363,12 @@
       "num": 15,
       "prompt": "Where is the café located?",
       "options": [
-        "on the upper floor next to the lecture theatre",
         "at the back of the ground floor adjacent to the textile room",
+        "on the upper floor next to the lecture theatre",
         "in the entrance foyer",
         "in the roof garden"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "A",
       "explanation": "The guide says the café is 'at the back of the ground floor, adjacent to the textile room'"
     },
     {
@@ -560,11 +560,11 @@
       "prompt": "What noise level does research link to increased stress hormones?",
       "options": [
         "55 dB",
-        "60 dB",
         "65 dB",
+        "60 dB",
         "70 dB"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
     },
     {
@@ -576,11 +576,11 @@
       "prompt": "What additional health risk did James find surprising in the literature?",
       "options": [
         "hearing loss",
-        "cardiovascular disease",
         "respiratory problems",
+        "cardiovascular disease",
         "mental health disorders"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
     },
     {
@@ -607,12 +607,12 @@
       "num": 24,
       "prompt": "What confidence level does their sample size achieve?",
       "options": [
+        "95%",
         "90%",
         "92%",
-        "95%",
         "99%"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "James refers to 'the ninety-five percent confidence level'"
     },
     {
@@ -775,11 +775,11 @@
       "prompt": "According to the lecture, the main reason antibiotic discovery declined after the 1980s was that",
       "options": [
         "A  resistant bacteria evolved too quickly",
-        "B  pharmaceutical companies moved to more profitable areas",
         "C  all known antibiotic compounds had already been tested",
+        "B  pharmaceutical companies moved to more profitable areas",
         "D  government funding was withdrawn"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The lecturer says companies 'shifted resources toward more profitable chronic disease treatments'"
     },
     {
@@ -791,11 +791,11 @@
       "prompt": "The golden era of antibiotic discovery lasted approximately",
       "options": [
         "A  10 years",
-        "B  20 years",
         "C  30 years",
-        "D  40 years"
+        "D  40 years",
+        "B  20 years"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The golden era ran 'from 1950 to 1970' — roughly 20 years"
     },
     {
@@ -806,12 +806,12 @@
       "num": 38,
       "prompt": "According to the lecturer, most antibiotics discovered in the golden era came from",
       "options": [
+        "C  soil bacteria",
         "A  synthetic chemicals",
         "B  marine organisms",
-        "C  soil bacteria",
         "D  hospital environments"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The lecturer states they were discovered 'largely from soil bacteria'"
     },
     {

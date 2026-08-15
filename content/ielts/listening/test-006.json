@@ -304,12 +304,12 @@
       "num": 11,
       "prompt": "How many screens does the Westfield Cinema have?",
       "options": [
+        "12",
         "8",
         "10",
-        "12",
         "15"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The host states 'The Westfield Cinema has twelve screens'"
     },
     {
@@ -353,11 +353,11 @@
       "prompt": "On which floor is the food court located?",
       "options": [
         "ground floor",
-        "first floor",
         "second floor",
-        "third floor"
+        "third floor",
+        "first floor"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "D",
       "explanation": "The host says Zone D the food court 'is on the first floor above the main atrium'"
     },
     {
@@ -368,12 +368,12 @@
       "num": 15,
       "prompt": "What is the day visitor pass price for the gym?",
       "options": [
+        "£15",
         "£10",
         "£12",
-        "£15",
         "£20"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The host says 'Day passes are available at reception for fifteen pounds'"
     },
     {
@@ -565,11 +565,11 @@
       "prompt": "Which adaptation strategy is described as most widely adopted globally?",
       "options": [
         "adjusting planting calendars",
-        "agritourism diversification",
         "drought-resistant crop varieties",
+        "agritourism diversification",
         "improved irrigation"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "B",
       "explanation": "Mike says 'the shift to drought-resistant varieties is the most widely adopted strategy globally'"
     },
     {
@@ -612,12 +612,12 @@
       "num": 24,
       "prompt": "By how much could tropical crop yields fall by 2080?",
       "options": [
+        "30%",
         "10%",
         "20%",
-        "30%",
         "40%"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "Sarah states yield losses 'could reach thirty percent by 2080'"
     },
     {
@@ -780,11 +780,11 @@
       "prompt": "The deep sea is defined in the lecture as water found below which depth?",
       "options": [
         "A  100 metres",
-        "B  200 metres",
         "C  500 metres",
+        "B  200 metres",
         "D  1,000 metres"
       ],
-      "correctAnswer": "B",
+      "correctAnswer": "C",
       "explanation": "The lecturer defines the deep sea as 'below two hundred metres'"
     },
     {
@@ -797,10 +797,10 @@
       "options": [
         "A  they all produce bioluminescence",
         "B  they are found only in polar waters",
-        "C  they live around hydrothermal vents",
-        "D  they depend on marine snow for food"
+        "D  they depend on marine snow for food",
+        "C  they live around hydrothermal vents"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "D",
       "explanation": "These species are described as part of the food web around hydrothermal vents"
     },
     {
@@ -811,12 +811,12 @@
       "num": 38,
       "prompt": "Marine snow is described in the lecture as consisting of",
       "options": [
+        "C  organic particles falling from surface waters",
         "A  dissolved minerals from the seafloor",
         "B  sediment carried from coastal rivers",
-        "C  organic particles falling from surface waters",
         "D  chemical compounds from hydrothermal vents"
       ],
-      "correctAnswer": "C",
+      "correctAnswer": "A",
       "explanation": "The lecturer describes marine snow as 'a constant fall of organic particles from surface waters'"
     },
     {
