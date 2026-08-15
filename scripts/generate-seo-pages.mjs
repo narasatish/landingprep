@@ -1480,6 +1480,37 @@ const SCHOLARSHIPS = {
   canada:    { name: "Canada", flag: "🇨🇦", list: ["Vanier Canada Graduate Scholarship (CAD 50,000/yr)", "Lester B. Pearson Scholarship (U of Toronto, fully funded)", "Canada Graduate Scholarships"] },
   australia: { name: "Australia", flag: "🇦🇺", list: ["Australia Awards (fully funded)", "Research Training Program (RTP)", "University of Melbourne International Scholarships"] },
 };
+/**
+ * Depth for the /scholarships/study-in-<country>/ hubs — 5 pages at a ~654-word median.
+ *
+ * SCHOLARSHIP_DATA already holds every award we list, with country, level, amount and
+ * deadline. The hubs were describing funding in general terms while the specifics sat in the
+ * dataset unused, so this renders the actual awards for the country and then covers the parts
+ * of applying for money that no award page tells you.
+ */
+function scholarshipCountryDepth(countryName) {
+  const all = Array.isArray(SCHOLARSHIP_DATA) ? SCHOLARSHIP_DATA : [];
+  const mine = all.filter((x) => x && x.country === countryName);
+  const levels = [...new Set(mine.map((x) => x.level).filter(Boolean))];
+  const rows = mine.slice(0, 10).map((x) =>
+    `<tr><td><a href="/scholarship/${esc(String(x.id))}/">${esc(String(x.name))}</a></td><td>${esc(String(x.amount || "—"))}</td><td>${esc(String(x.level || "—"))}</td><td>${esc(String(x.deadline || "—"))}</td></tr>`).join("");
+  const table = mine.length
+    ? `<p>We hold ${mine.length} ${esc(countryName)} ${mine.length === 1 ? "award" : "awards"}${levels.length ? `, covering ${levels.map((l) => esc(String(l))).join(", ")}` : ""}. Each links to its own page with the eligibility and deadline in full.</p>
+<div style="overflow-x:auto"><table class="tbl"><thead><tr><th>Scholarship</th><th>Award</th><th>Level</th><th>Deadline</th></tr></thead><tbody>${rows}</tbody></table></div>`
+    : `<p>Funding for ${esc(countryName)} runs through university-level awards and government programmes rather than a single national scheme, so the search starts on each university's own funding page.</p>`;
+  return `<div class="card"><h2>Funding for ${esc(countryName)} — what we hold, and what to do with it</h2>
+${table}
+<h2>How scholarship applications are actually won and lost</h2>
+<ul class="bcheck">
+<li><strong>The funding calendar runs ahead of the admission calendar.</strong> For most awards the money is decided weeks or months before a place is, and applying on time for the course while missing the funding deadline is the most expensive ordinary mistake in this process. Work out every funding deadline before you write a single application, not after.</li>
+<li><strong>Many awards need admission or nomination first.</strong> Where that applies, your real deadline is the one on the university application, because you cannot satisfy the second without having cleared the first. This single dependency reorders most people's timelines.</li>
+<li><strong>Apply to several, and pick them by eligibility you can verify.</strong> Almost nobody funds a degree from one application. Government and institutional awards usually publish a fixed, checkable eligibility gate — nationality, subject, grade threshold — so you can rule yourself in or out on paper. Build the list from those, then add merit and need awards, which turn on a judgement you cannot audit.</li>
+<li><strong>Compare what is left unfunded, not what is granted.</strong> A full-tuition award in an expensive city can leave a bigger gap than a smaller stipend somewhere cheaper. Set each award against total cost — tuition plus living plus the setup month — rather than against its own headline figure.</li>
+<li><strong>Write to the award, not about yourself.</strong> Every scheme publishes what it exists to do. The applications that fail usually describe an excellent candidate without ever connecting them to that specific purpose, and the reader is deciding between many excellent candidates.</li>
+</ul>
+<p class="note">Amounts, eligibility and deadlines are set by the awarding bodies and change without notice. Verify every figure on the official source before relying on it — including the ones here.</p></div>`;
+}
+
 function scholarshipPage(id) {
   const d = SCHOLARSHIPS[id];
   const path = `/scholarships/study-in-${id}/`;
@@ -1532,6 +1563,7 @@ function scholarshipPage(id) {
   </ul>
   <p class="note">Eligibility varies by scholarship — always confirm on the official website. Test these requirements early so you know if you're on track.</p>
 </div>
+${scholarshipCountryDepth(d.name)}
 ${faqBlock(faqs)}
 ${relatedGrid([
   { label: `💸 Free Scholarship Finder`, href: `/#/colleges` },
