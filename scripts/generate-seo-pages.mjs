@@ -1043,7 +1043,10 @@ function practicePage(id) {
   <h2>Mistakes that cost the most marks</h2>
   <ul>
     <li><strong>Practising without timing, then never adding it.</strong> Untimed work builds accuracy; it does not build the pacing judgement the real test requires. Both stages are necessary.</li>
-    <li><strong>Ignoring the instructions.</strong> ${["ielts", "pte", "celpip", "oet", "toefl"].includes(id)
+    <li><strong>Ignoring the instructions.</strong> ${/* TOEFL deliberately excluded: its Reading summary/table items are drag-and-drop, so it
+      carries no "NO MORE THAN TWO WORDS" gap-fill instruction. Including it here was an
+      error caught by tools/audit-cross-exam-claims.mjs. */
+      ["ielts", "pte", "celpip", "oet"].includes(id)
       ? `Word limits in particular — where a gap-fill says "NO MORE THAN TWO WORDS", a three-word answer is marked wrong however correct it is, and this is one of the most common avoidable losses in ${e.short}. Note this applies to gap-fill answers in the marked sections only: the Writing tasks have a MINIMUM word count and no upper limit at all, and no marks are deducted for a long essay.`
       : `Read what each question is actually asking before you answer it — "which of the following must be true" and "which could be true" have different correct answers, and in ${e.short} a misread instruction costs the same mark as content you did not know. This is the cheapest category of loss to eliminate.`}</li>
     <li><strong>Reviewing only wrong answers.</strong> You learn as much from a right answer you were unsure of.</li>
