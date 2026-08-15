@@ -32793,6 +32793,30 @@ As you fill this in, common themes emerge\u2014which schools prioritize your goa
         {
           "h": "Strategy to Improve Your Speaking Band",
           "body": "Identify your weakest criterion \u2014 often fluency or vocabulary \u2014 and focus there. For fluency, speak aloud daily and record yourself; for vocabulary, learn chunks and collocations, not isolated words; for grammar, review your error patterns; for pronunciation, mirror native speakers. Practise full mock speaking tests and self-assess against the descriptors. Practise free IELTS speaking on LandingPrep to track development across all four criteria."
+        },
+        {
+          "h": "The four criteria are weighted equally, and that changes what to practise",
+          "body": "Your Speaking band is the average of Fluency and Coherence, Lexical Resource, Grammatical Range and Accuracy, and Pronunciation \u2014 each worth exactly a quarter. That arithmetic has a practical consequence most candidates miss: your weakest criterion drags the whole band, and improving something you are already good at is close to worthless. A candidate at 7/7/7/5 averages 6.5, which is reported as 6.5. Lifting that 5 to a 6 takes the average to 6.75, reported as 7.0 \u2014 half a band from one criterion. The arithmetic is the same wherever the half band comes from, so why start with the weakest? Two reasons that have nothing to do with the maths. Going from 5 to 6 is almost always a shorter distance than going from 7 to 8, because the lower descriptors describe basic gaps you can close deliberately while the higher ones describe range and naturalness that take much longer. And where an institution sets a minimum in EACH criterion, a weak one disqualifies you no matter what the average says."
+        },
+        {
+          "h": "Fluency is not speed, and hesitation is not automatically penalised",
+          "body": "The descriptors distinguish between hesitating to search for language and hesitating to think about content. Pausing because you are considering an idea is normal speech and is not marked down; pausing because you cannot find the word is. This is why speaking faster is the wrong fix and usually makes things worse \u2014 it produces more self-correction and more abandoned sentences, both of which the descriptors do penalise. What actually raises Fluency is being able to keep going: extending an answer with a reason and an example, and paraphrasing around a word you cannot retrieve rather than stopping to hunt for it."
+        },
+        {
+          "h": "Lexical Resource rewards precision, and punishes rehearsed phrases",
+          "body": "The higher bands ask for flexible, precise vocabulary used naturally \u2014 including idiomatic language. What they do not reward is a memorised list deployed regardless of context. Examiners assess thousands of candidates and recognise inserted phrases immediately; language that is clearly pre-learned and does not fit the question is discounted rather than credited. The skill that genuinely raises this criterion is paraphrase: being able to explain a word you cannot recall demonstrates exactly the flexibility the descriptors describe, while going silent demonstrates its absence."
+        },
+        {
+          "h": "Grammatical Range and Accuracy is a trade-off, not two separate scores",
+          "body": "The descriptors assess both the variety of structures you attempt and how much of your speech is error-free. These pull against each other, and candidates fail at both ends. Speaking only in short simple sentences caps your range no matter how accurate it is. Attempting complex structures that collapse mid-sentence caps your accuracy. The band comes from the proportion of your speech that is error-free while still showing variety, which means controlled complexity beats ambition \u2014 use the structures you can land reliably, and add one you are working on rather than several you are not."
+        },
+        {
+          "h": "Pronunciation assesses intelligibility, and an accent is not a penalty",
+          "body": "This is the most misunderstood criterion. The descriptors are about whether you can be understood without strain, and they explicitly do not require or reward any particular accent. What is assessed is the features that carry meaning: individual sounds, but more importantly word and sentence stress, rhythm and intonation. Stress placement usually affects intelligibility more than individual sounds do \u2014 a sentence with every sound approximately right but the stress in the wrong place is harder to follow than the reverse. Candidates who spend months trying to sound British or American are working on the thing that is not being measured."
+        },
+        {
+          "h": "How to use the descriptors on your own practice",
+          "body": "Record a full two-minute Part 2 answer in one take, then score it four times, once per criterion, listening for a different thing each pass. This is slow and it is the only method that tells you where your band actually is. Scoring an answer once as an overall impression gives you a number you cannot act on. Four passes give you a specific target \u2014 and since a single criterion is a quarter of your result, that target is worth roughly half a band on its own. Then re-record the same cue card addressing only that criterion, and compare."
         }
       ]
     },
@@ -32881,6 +32905,26 @@ As you fill this in, common themes emerge\u2014which schools prioritize your goa
         {
           "h": "Next Steps: Choosing and Preparing",
           "body": "Take one timed practice test of each and compare your comfort and score. Prepare for 2\u20134 months with daily practice, focusing on weaker sections, and set a target around your programme's 75th percentile. Register 6\u20138 weeks before your application deadline. Practise free GMAT and GRE questions on LandingPrep to learn the question types before committing to a test."
+        },
+        {
+          "h": "Acceptance is close to universal now, so the choice is about fit",
+          "body": "The decision used to be settled by which test your target schools accepted. That is largely no longer the case: the overwhelming majority of business schools now take both, so acceptance rarely eliminates one. What remains is preference, which is a different and softer thing \u2014 some programmes still say they are more familiar with the GMAT, and a few scholarship or fellowship competitions are scored on it. Check each school's admissions page for the specific wording, because 'we accept both' and 'we prefer the GMAT' are different signals and only the second should change your decision."
+        },
+        {
+          "h": "The scoring scales are not comparable, and percentiles are what schools read",
+          "body": "The GRE reports 260-340 across two sections plus a separate analytical writing score; the GMAT Focus Edition reports 205-805 as a composite. These do not map onto each other in any intuitive way, and a raw number from one tells an admissions committee nothing about the other. What both convert into is a percentile, and that is what actually gets compared. If you are deciding between the tests on the basis of a score you have already achieved in a practice run, convert both to percentiles before comparing \u2014 the raw figures will mislead you."
+        },
+        {
+          "h": "Where the two tests genuinely differ for a test-taker",
+          "body": "The quantitative sections diverge most. The GRE permits an on-screen calculator; the GMAT quantitative section does not, which rewards mental arithmetic and estimation. The GMAT's data-focused questions test whether you can determine that a problem is solvable, often without solving it \u2014 a genuinely different skill from computing an answer, and one that suits some candidates and frustrates others. On the verbal side, the GRE leans harder on vocabulary in context, while the GMAT leans on argument structure and reading. Neither is harder in general; they are harder for different people, which is why a practice section of each is worth more than any amount of comparison reading."
+        },
+        {
+          "h": "Choose on a diagnostic, not on reputation",
+          "body": "The single most useful thing you can do is sit one timed section of each before committing. It takes an afternoon and replaces speculation with evidence about the only variable that matters, which is how you personally perform under each format. Candidates routinely choose on reputation, prepare for months, and discover the mismatch at the point where switching is expensive. If a diagnostic shows you are markedly stronger on one, that is your answer regardless of what any ranking or forum says."
+        },
+        {
+          "h": "The cost of switching late is higher than the score difference you are chasing",
+          "body": "If you have already prepared substantially for one test, moving to the other resets the format-specific work \u2014 the timing habits, the question patterns, the marking logic \u2014 even though your underlying maths and English are unchanged. That cost is frequently larger than the advantage people expect to gain. Switch when a school requirement or your calendar forces it. Be much slower to switch because the other test looks marginally easier from the outside, because that impression is usually formed from other people's results rather than your own diagnostic."
         }
       ]
     },
