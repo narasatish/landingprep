@@ -41,117 +41,103 @@
     {
       "id": "celpip-reading-022-p1",
       "part": 1,
-      "partTitle": "Reading for Correspondence",
+      "partTitle": "Reading Correspondence",
       "type": "correspondence",
-      "title": "Email Correspondence: Community Garden Plot Application",
+      "title": "Email Correspondence: An Estimated Bill",
       "emails": [
         {
-          "from": "Kevin Marsh <k.marsh@gmail.com>",
-          "to": "coordinator@riverdalegardens.ca",
-          "subject": "Application for a Garden Plot",
-          "date": "May 3",
-          "body": "Dear Coordinator,\n\nI am writing to apply for one of the community garden plots I noticed advertised on your website. My partner and I moved to the Riverdale neighbourhood six months ago, and we are very keen to grow our own vegetables this summer. We do not have any outdoor space at our apartment, so the community garden would be ideal.\n\nI noticed the website mentions a waitlist. Could you let me know approximately how long the current wait is, and whether there is anything we can do to move things along? Also, is there a fee involved, and if so, does it cover the full growing season?\n\nThank you very much for your time. I look forward to hearing from you.\n\nKevin Marsh"
+          "from": "Ingeborg Halvorsen <i.halvorsen@mailbox.ca>",
+          "to": "billing@northlightenergy.ca",
+          "subject": "Account 88-4417 — estimated readings since March",
+          "date": "November 6",
+          "body": "Dear Northlight,\n\nMy account has been billed on estimates since March. The November bill is $612 against a monthly average of $190 last winter, and the estimate assumes consumption I could not physically have used — I was away for seven weeks of that period and the house was empty.\n\nI submitted my own reading on 14 October through your website. The November bill does not use it. I have the confirmation number.\n\nI want to separate two things.\n\nThe first is the money, and I expect that to resolve itself once an actual reading is used. I am not worried about it and I am not asking for a gesture.\n\nThe second is why I am on estimates at all. Your meter reader has attended four times this year according to your own bill, and each visit is recorded as \"no access\". My meter is in an unlocked outdoor cupboard on the front wall of the house, visible from the street, with no gate. I do not understand what access was unavailable, and I would like to, because if the visits are being recorded as attempted and are not happening, that is a different problem from a meter that is hard to reach.\n\nI would rather ask than assume.\n\nSincerely,\nIngeborg Halvorsen"
         },
         {
-          "from": "Rosa Delacourt <coordinator@riverdalegardens.ca>",
-          "to": "k.marsh@gmail.com",
-          "subject": "RE: Application for a Garden Plot",
-          "date": "May 5",
-          "body": "Dear Kevin,\n\nThank you for your interest in Riverdale Community Gardens. We are delighted to welcome new applicants, especially those who are new to the neighbourhood.\n\nTo answer your questions: yes, there is currently a waitlist, and the average wait time is approximately four to six weeks depending on plot size. We have two plot sizes available — a small plot of four square metres at eighty dollars per season, and a standard plot of eight square metres at one hundred and forty dollars per season. The fee covers the period from May through October and includes access to shared tools, water connections, and a compost bin allocation.\n\nTo register your interest formally, please complete the application form on our website and submit it along with your payment. Once your application is processed, you will be placed on the waitlist and contacted when a plot becomes available.\n\nWe also hold a monthly garden social on the last Saturday of each month, and newcomers are very welcome to join even before they have their own plot.\n\nBest regards,\nRosa Delacourt\nCoordinator, Riverdale Community Gardens"
+          "from": "Northlight Energy <billing@northlightenergy.ca>",
+          "to": "i.halvorsen@mailbox.ca",
+          "subject": "RE: Account 88-4417 — estimated readings since March",
+          "date": "November 11",
+          "body": "Dear Ms Halvorsen,\n\nOn the money: your 14 October reading was submitted correctly and was not applied because it fell outside the billing window by two days, and our system discards rather than holds a reading in that position. That is a design fault and I have logged it as one. Your bill has been recalculated on your reading and the corrected amount is $214. The difference of $398 has been credited today.\n\nOn the second question, which you were right to ask separately.\n\nThe four visits were made and the \"no access\" code was applied incorrectly. Our readers use a handheld device where \"no access\" is the default code and requires no reason to be entered, while every other outcome requires a note. When a reader cannot complete a visit for any reason — running late, a dog barking two doors down, a device fault — \"no access\" is the path of least resistance and it is indistinguishable afterwards from a genuinely inaccessible meter.\n\nI cannot tell you which of those applied on your four visits, because the system did not capture it. That is the honest answer and I know it is unsatisfying.\n\nWhat changes: from next month \"no access\" requires a reason code and a photograph. That was already scheduled for the spring; I have asked for it to be brought forward, and I will tell you plainly that I do not yet know whether that request will be granted.\n\nYour meter is now flagged for a physical read in December regardless of the route schedule.\n\nRegards,\nAugustin Moreau\nBilling Resolutions"
         }
       ]
     },
     {
       "id": "celpip-reading-022-p2",
       "part": 2,
-      "partTitle": "Applying a Diagram",
+      "partTitle": "Reading to Apply a Diagram",
       "type": "schedule",
-      "title": "Community Recreation Centre — Spring Programme Schedule",
-      "intro": "The Maplewood Recreation Centre offers the following programmes during the spring session (April 7 – June 27). All programmes are drop-in unless marked with (R) for registered.",
+      "title": "Northlight Community Energy Advice Centre — Winter Sessions",
+      "intro": "Runs November 4 to February 21. Sessions marked (H) include a free home visit booked separately, available to households in receipt of any income-related benefit. Sessions marked (E) require you to bring a recent bill. All sessions are free. Interpreters can be arranged with one week's notice.",
       "schedule": [
         {
           "day": "Monday",
-          "time": "9:00–10:00 am",
-          "programme": "Gentle Yoga (R)",
-          "location": "Studio A",
-          "notes": "Ages 18+, mats provided"
+          "time": "10:00–12:00 pm",
+          "programme": "Understanding Your Bill (E)",
+          "location": "Advice Room",
+          "notes": "Two hours. Bring one bill per fuel."
         },
         {
           "day": "Monday",
           "time": "6:00–7:30 pm",
-          "programme": "Adult Swimming Lessons (R)",
-          "location": "Pool",
-          "notes": "Non-swimmers only"
+          "programme": "Switching Supplier Clinic (E)",
+          "location": "Advice Room",
+          "notes": "One-to-one, 20 minutes each. Booking required."
         },
         {
           "day": "Tuesday",
-          "time": "10:00–11:30 am",
-          "programme": "Seniors' Art Class (R)",
-          "location": "Craft Room",
-          "notes": "Ages 60+, materials included"
+          "time": "9:30–11:30 am",
+          "programme": "Draught-Proofing Workshop",
+          "location": "Workshop",
+          "notes": "Materials to take home. Ages 16+."
         },
         {
           "day": "Tuesday",
-          "time": "7:00–8:30 pm",
-          "programme": "Drop-in Basketball",
-          "location": "Gymnasium",
-          "notes": "Ages 14+, bring own water"
+          "time": "1:00–3:00 pm",
+          "programme": "Grants & Insulation Advice (H)",
+          "location": "Advice Room",
+          "notes": "Home visit arranged if eligible."
         },
         {
           "day": "Wednesday",
-          "time": "9:00–10:00 am",
-          "programme": "Aqua Fitness (R)",
-          "location": "Pool",
-          "notes": "All fitness levels"
+          "time": "10:00–11:00 am",
+          "programme": "Heating Controls Explained",
+          "location": "Demo Room",
+          "notes": "Working thermostats and timers on display."
         },
         {
           "day": "Wednesday",
-          "time": "12:00–1:00 pm",
-          "programme": "Lunchtime Stretch",
-          "location": "Studio A",
-          "notes": "Drop-in, no registration needed"
+          "time": "2:00–4:00 pm",
+          "programme": "Debt & Repayment Plans (E)",
+          "location": "Meeting Room 1",
+          "notes": "Confidential. Appointments of 45 minutes."
         },
         {
           "day": "Thursday",
-          "time": "4:30–5:30 pm",
-          "programme": "Youth Badminton (R)",
-          "location": "Gymnasium",
-          "notes": "Ages 10–17"
+          "time": "10:00–12:00 pm",
+          "programme": "Meter Reading & Disputes (E)",
+          "location": "Advice Room",
+          "notes": "Bring bills covering at least six months."
         },
         {
           "day": "Thursday",
-          "time": "7:00–9:00 pm",
-          "programme": "Community Dance (R)",
-          "location": "Main Hall",
-          "notes": "All ages, partners welcome"
+          "time": "6:00–7:30 pm",
+          "programme": "Landlord & Tenant Energy Rights",
+          "location": "Meeting Room 1",
+          "notes": "For renters. Tenancy agreement helpful."
         },
         {
           "day": "Friday",
-          "time": "9:00–10:30 am",
-          "programme": "Parent & Tot Swim",
-          "location": "Pool",
-          "notes": "Children under 5 with adult"
+          "time": "10:30–12:00 pm",
+          "programme": "Grants & Insulation Advice (H)",
+          "location": "Advice Room",
+          "notes": "Home visit arranged if eligible."
         },
         {
           "day": "Saturday",
-          "time": "10:00 am–12:00 pm",
-          "programme": "Open Badminton",
-          "location": "Gymnasium",
-          "notes": "Drop-in, all skill levels"
-        },
-        {
-          "day": "Saturday",
-          "time": "2:00–4:00 pm",
-          "programme": "Teen Gaming Club (R)",
-          "location": "Computer Room",
-          "notes": "Ages 13–18"
-        },
-        {
-          "day": "Sunday",
-          "time": "11:00 am–1:00 pm",
-          "programme": "Family Swim",
-          "location": "Pool",
-          "notes": "Families with children"
+          "time": "10:00–1:00 pm",
+          "programme": "Open Advice Drop-In (E)",
+          "location": "Advice Room",
+          "notes": "No booking. Waits of up to an hour possible."
         }
       ]
     },
@@ -160,31 +146,31 @@
       "part": 3,
       "partTitle": "Reading for Information",
       "type": "article",
-      "title": "Understanding Canada's Food Guide",
-      "content": "Canada's Food Guide was significantly revised in 2019, marking the most substantial update to the document in over a decade. The new guide moved away from the previous four food-group model — which had been criticised for placing too much emphasis on dairy and meat — toward a simpler, more flexible approach to healthy eating.\n\nThe updated guide is built around three core categories: vegetables and fruit, whole grain foods, and protein foods. Crucially, it does not specify serving sizes or recommended daily portions in the traditional sense. Instead, it uses a plate model showing that roughly half of every meal should consist of vegetables and fruit, one quarter should be whole grain foods such as brown rice, oats, or whole wheat bread, and one quarter should be protein foods.\n\nOne of the most significant changes was the repositioning of dairy products. In the previous guide, dairy had its own category and Canadians were encouraged to consume multiple daily servings. The 2019 guide merged dairy into the broader protein food category, alongside beans, lentils, tofu, fish, eggs, lean meat, and nuts. This change was partly driven by growing evidence that high dairy consumption is not necessary for bone health in adults and that plant-based protein sources offer comparable nutritional value.\n\nThe new guide also places greater emphasis on the social and environmental dimensions of eating. It encourages Canadians to cook at home more often, eat meals with others, and be mindful of marketing from the food industry. It also recommends limiting foods high in sodium, sugar, and saturated fat, and advises choosing water as the preferred beverage over sugary drinks.\n\nCritics of the new guide pointed out that it largely ignored the traditional dietary patterns of many Indigenous communities, which rely heavily on land-based foods such as game meats, fish, and berries. The government acknowledged this gap and committed to developing supplementary resources that better reflect Indigenous food sovereignty."
+      "title": "Why Insulation Saves Less Than the Estimate Says",
+      "content": "Home energy retrofits are promoted with figures that are calculated honestly and are, in practice, usually wrong. Measured savings after insulation are consistently lower than modelled savings, and the gap is large enough that it deserves an explanation rather than an accusation.\n\nThe most-discussed reason is the rebound effect, sometimes called comfort taking. A household that could not afford to heat its home adequately does not, after insulation, keep the same temperature and pocket the money. It heats more rooms, for longer, to a temperature it previously could not reach. The energy saving is smaller than modelled because part of the benefit was taken as warmth rather than as cash — which is not a failure of the policy unless the policy was only ever about carbon, and it is frequently sold as being about bills.\n\nLess discussed and more consequential is that models assume installation quality. A cavity wall filled unevenly, insulation compressed during fitting, or a gap left where a pipe passes through a wall can remove a substantial share of the theoretical benefit, and none of it is visible once the work is finished. Verification is the weakest link in most retrofit programmes, and the incentive structure rarely helps: installers are typically paid on completion rather than on measured performance.\n\nOccupancy assumptions are a third source of divergence. Models generally assume a standard heating pattern and a standard household. A house occupied all day by someone at home, or a household that has always heated one room, diverges from that assumption in opposite directions and by large amounts. The modelled figure describes an average household that few actual households resemble.\n\nThere is also a sequencing problem that generates real disappointment. Insulating a house without addressing ventilation can raise humidity and produce condensation and mould, which is both a health issue and the most common reason households report regretting the work. Doing the measures in the wrong order can leave a home warmer, cheaper to heat and unpleasant to live in.\n\nThe reasonable conclusion is not that insulation does not work; it reliably does, and the measured savings are real even where they are smaller than promised. It is that programmes should quote ranges rather than point estimates, fund verification as seriously as installation, and stop describing comfort taken as a benefit as though it were a shortfall."
     },
     {
       "id": "celpip-reading-022-p4",
       "part": 4,
       "partTitle": "Reading for Viewpoints",
       "type": "viewpoints",
-      "title": "Should Canadian Cities Ban Single-Use Plastics Entirely?",
+      "title": "Who Should Pay to Insulate Rented Homes?",
       "viewpoints": [
         {
-          "name": "Amelia Chen, environmental policy researcher",
-          "text": "A complete ban on single-use plastics is both necessary and overdue. The evidence from cities that have already implemented bans shows significant reductions in plastic waste reaching waterways within just two years. The alternatives — compostable bags, reusable containers, paper packaging — are readily available and are rapidly decreasing in cost. The argument that bans harm low-income consumers is contradicted by studies showing that reusable options save money over time. Governments need to stop waiting for voluntary corporate action and mandate change."
+          "name": "Minister Rosalind Okonjo",
+          "text": "We placed the obligation on landlords and I would defend that, while conceding the objection that it is a cost imposed on one party for a benefit received by another. That is true and it is not unusual — building standards work the same way. What makes this case different, and what I did not anticipate, is how many small landlords own a single property and cannot finance the work at any interest rate they can obtain. The policy assumed a landlord who is a business. Many are a pension."
         },
         {
-          "name": "Jordan Lee, retail business owner",
-          "text": "I support reducing plastic waste, but an outright ban is impractical for small businesses like mine. Single-use plastics remain the cheapest and most hygienic option for many food packaging needs. The alternatives often cost two to four times more, and those costs get passed directly to consumers. I would prefer a phased approach — tax incentives for businesses that switch, subsidies for compostable alternatives, and a realistic five-year transition timeline rather than an overnight ban that will hurt small retailers disproportionately."
+          "name": "Declan Whitfield, landlord",
+          "text": "I own two flats and I will comply, so read this as a complaint about sequencing rather than principle. The standard was announced with a deadline and no finance mechanism for eighteen months, so everyone waited, and now the entire sector is bidding for the same installers in the same window. Prices have risen accordingly. Announce the funding and the requirement together and the same work costs less and gets done sooner — the delay between the two is itself a cost, and tenants pay part of it."
         },
         {
-          "name": "Dr. Marcus Webb, public health physician",
-          "text": "The public health dimension of plastic pollution is consistently underreported. Microplastics have now been found in human blood, breast milk, and lung tissue. We do not fully understand the long-term health consequences, but the precautionary principle demands that we act. From a public health perspective, delays in regulation are equivalent to accepting ongoing population-level exposure to potentially harmful substances. The inconvenience of transitioning to alternative packaging is trivial compared to what we may be doing to human health."
+          "name": "Aisling Ferrero, tenant",
+          "text": "My flat was insulated last year and my bills went up. The work raised the temperature the heating could reach, so the system now runs to a thermostat setting it never used to achieve, and nobody explained that would happen. I am warmer and I am poorer, and I would still choose warm — but I was told bills would fall, and when they did not I had no way to tell whether the work was faulty or whether I had been told something untrue. Give tenants a way to check."
         },
         {
-          "name": "Sandra Kowalski, municipal waste management director",
-          "text": "In practice, the effectiveness of single-use plastic bans depends heavily on what infrastructure is in place to handle the alternatives. Compostable packaging is only beneficial if it is actually composted — if it ends up in landfill, it may produce methane. Our city currently composites less than thirty percent of eligible organic waste. Before mandating plastic alternatives, we need significant investment in composting capacity, public education, and sorting infrastructure. A ban without infrastructure investment risks replacing one problem with another."
+          "name": "Dr Konstantin Weber, building physicist",
+          "text": "The regulatory standard measures the fabric of the building and says almost nothing about how it performs occupied. Two identical flats with identical certificates can differ by a wide margin in real consumption, depending on ventilation, orientation, the neighbours' heating and how the controls are set. I support the requirement. I would simply note that we are regulating a proxy, and that a certificate improving does not reliably mean a household's bill falls — which is precisely the promise being made."
         }
       ]
     }
@@ -194,647 +180,723 @@
       "id": "celpip-reading-022-q01",
       "passageId": "celpip-reading-022-p1",
       "part": 1,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "Why does Kevin want a community garden plot?",
+      "prompt": "What was the November bill?",
+      "question": "What was the November bill?",
       "options": [
-        "He has no outdoor space at his apartment",
-        "He recently moved to a house with a broken garden",
-        "He is doing research on urban farming",
-        "He wants to start a small business selling vegetables"
+        "$612",
+        "$190",
+        "$214",
+        "$398"
       ],
-      "correctAnswer": "He has no outdoor space at his apartment",
-      "explanation": "Kevin says they do not have outdoor space at their apartment.",
-      "difficulty": "easy"
+      "correctAnswer": "$612",
+      "explanation": "The November bill was $612.",
+      "difficulty": "medium",
+      "questionNumber": 1
     },
     {
       "id": "celpip-reading-022-q02",
       "passageId": "celpip-reading-022-p1",
       "part": 1,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "How long has Kevin been living in Riverdale?",
+      "prompt": "Why does Ingeborg say the estimate is impossible?",
+      "question": "Why does Ingeborg say the estimate is impossible?",
       "options": [
-        "Three months",
-        "Six months",
-        "Over a year",
-        "Two weeks"
+        "The meter was replaced",
+        "She was away for seven weeks and the house was empty",
+        "The house was under renovation",
+        "She had no heating"
       ],
-      "correctAnswer": "Six months",
-      "explanation": "Kevin says he and his partner moved to Riverdale six months ago.",
-      "difficulty": "easy"
+      "correctAnswer": "She was away for seven weeks and the house was empty",
+      "explanation": "She says the estimate assumes consumption she could not physically have used.",
+      "difficulty": "medium",
+      "questionNumber": 2
     },
     {
       "id": "celpip-reading-022-q03",
       "passageId": "celpip-reading-022-p1",
       "part": 1,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What is the approximate current wait time for a plot?",
+      "prompt": "What did she submit on 14 October?",
+      "question": "What did she submit on 14 October?",
       "options": [
-        "One week",
-        "Two to three weeks",
-        "Four to six weeks",
-        "Three to four months"
+        "A payment",
+        "A complaint",
+        "Her own meter reading",
+        "A change of address"
       ],
-      "correctAnswer": "Four to six weeks",
-      "explanation": "Rosa says the average wait is approximately four to six weeks.",
-      "difficulty": "easy"
+      "correctAnswer": "Her own meter reading",
+      "explanation": "She submitted her own reading through the website and has the confirmation number.",
+      "difficulty": "medium",
+      "questionNumber": 3
     },
     {
       "id": "celpip-reading-022-q04",
       "passageId": "celpip-reading-022-p1",
       "part": 1,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "How much does the small plot cost per season?",
+      "prompt": "What does she say about the money?",
+      "question": "What does she say about the money?",
       "options": [
-        "One hundred and forty dollars",
-        "Two hundred dollars",
-        "Forty dollars",
-        "Eighty dollars"
+        "She wants compensation",
+        "She will withhold payment",
+        "It is her main concern",
+        "She expects it to resolve and is not asking for a gesture"
       ],
-      "correctAnswer": "Eighty dollars",
-      "explanation": "Rosa says the small plot of four square metres costs eighty dollars per season.",
-      "difficulty": "medium"
+      "correctAnswer": "She expects it to resolve and is not asking for a gesture",
+      "explanation": "She states exactly that.",
+      "difficulty": "medium",
+      "questionNumber": 4
     },
     {
       "id": "celpip-reading-022-q05",
       "passageId": "celpip-reading-022-p1",
       "part": 1,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What does the fee include, according to Rosa?",
+      "prompt": "How many meter visits are recorded this year?",
+      "question": "How many meter visits are recorded this year?",
       "options": [
-        "Shared tools, water connections, and a compost bin allocation",
-        "A storage shed and weekly instruction",
-        "Unlimited tool rental and parking",
-        "Only water connection"
+        "Four",
+        "Six",
+        "Two",
+        "Three"
       ],
-      "correctAnswer": "Shared tools, water connections, and a compost bin allocation",
-      "explanation": "Rosa lists shared tools, water, and a compost bin allocation as what the fee includes.",
-      "difficulty": "medium"
+      "correctAnswer": "Four",
+      "explanation": "Four visits are recorded, each as 'no access'.",
+      "difficulty": "medium",
+      "questionNumber": 5
     },
     {
       "id": "celpip-reading-022-q06",
       "passageId": "celpip-reading-022-p1",
       "part": 1,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "How long is the growing season at Riverdale Community Gardens?",
+      "prompt": "Where is her meter located?",
+      "question": "Where is her meter located?",
       "options": [
-        "April to August",
-        "May to October",
-        "June to September",
-        "March to November"
+        "In a locked cupboard",
+        "In an unlocked outdoor cupboard visible from the street",
+        "In a shared basement",
+        "Inside the house"
       ],
-      "correctAnswer": "May to October",
-      "explanation": "Rosa says the fee covers the period from May through October.",
-      "difficulty": "medium"
+      "correctAnswer": "In an unlocked outdoor cupboard visible from the street",
+      "explanation": "She describes it as on the front wall, visible from the street, with no gate.",
+      "difficulty": "medium",
+      "questionNumber": 6
     },
     {
       "id": "celpip-reading-022-q07",
       "passageId": "celpip-reading-022-p1",
       "part": 1,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What must Kevin do to be placed on the waitlist?",
+      "prompt": "What distinction does she draw about the visits?",
+      "question": "What distinction does she draw about the visits?",
       "options": [
-        "Call Rosa directly",
-        "Attend a garden meeting first",
-        "Submit an application form and payment online",
-        "Visit in person with ID"
+        "Whether the meter is accurate",
+        "Whether they were billed",
+        "Whether visits recorded as attempted are actually happening",
+        "Whether the reader was qualified"
       ],
-      "correctAnswer": "Submit an application form and payment online",
-      "explanation": "Rosa says Kevin must complete and submit the form with payment to be placed on the waitlist.",
-      "difficulty": "hard"
+      "correctAnswer": "Whether visits recorded as attempted are actually happening",
+      "explanation": "She says that is a different problem from a meter that is hard to reach.",
+      "difficulty": "medium",
+      "questionNumber": 7
     },
     {
       "id": "celpip-reading-022-q08",
       "passageId": "celpip-reading-022-p1",
       "part": 1,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "When is the monthly garden social held?",
+      "prompt": "Why was her 14 October reading not applied?",
+      "question": "Why was her 14 October reading not applied?",
       "options": [
-        "Every Sunday morning",
-        "First Friday of each month",
-        "Second Saturday of each month",
-        "Last Saturday of each month"
+        "The meter number was wrong",
+        "It arrived after the bill was issued",
+        "It was submitted incorrectly",
+        "It fell outside the billing window by two days and the system discards it"
       ],
-      "correctAnswer": "Last Saturday of each month",
-      "explanation": "Rosa says the garden social is on the last Saturday of each month.",
-      "difficulty": "hard"
+      "correctAnswer": "It fell outside the billing window by two days and the system discards it",
+      "explanation": "Augustin calls that a design fault and has logged it as one.",
+      "difficulty": "medium",
+      "questionNumber": 8
     },
     {
       "id": "celpip-reading-022-q09",
       "passageId": "celpip-reading-022-p1",
       "part": 1,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "Who is welcome at the garden socials?",
+      "prompt": "What is the corrected bill amount?",
+      "question": "What is the corrected bill amount?",
       "options": [
-        "Newcomers, even before having their own plot",
-        "Only people who have paid their fees",
-        "Only current plot holders",
-        "Members who have held a plot for at least one year"
+        "$214",
+        "$398",
+        "$612",
+        "$190"
       ],
-      "correctAnswer": "Newcomers, even before having their own plot",
-      "explanation": "Rosa says newcomers are welcome even before they have their own plot.",
-      "difficulty": "hard"
+      "correctAnswer": "$214",
+      "explanation": "The recalculated amount is $214, with $398 credited.",
+      "difficulty": "medium",
+      "questionNumber": 9
     },
     {
       "id": "celpip-reading-022-q10",
       "passageId": "celpip-reading-022-p1",
       "part": 1,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What can be inferred about the standard plot size?",
+      "prompt": "Why is 'no access' applied incorrectly?",
+      "question": "Why is 'no access' applied incorrectly?",
       "options": [
-        "It is the same as the small plot",
-        "It is twice the size of the small plot",
-        "It is only available to returning members",
-        "It includes a private tool shed"
+        "Readers are untrained",
+        "It is the default code requiring no reason, while other outcomes require a note",
+        "The devices malfunction",
+        "It is company policy"
       ],
-      "correctAnswer": "It is twice the size of the small plot",
-      "explanation": "The small plot is four square metres and the standard is eight square metres — exactly twice the size.",
-      "difficulty": "hard"
+      "correctAnswer": "It is the default code requiring no reason, while other outcomes require a note",
+      "explanation": "It becomes the path of least resistance and is indistinguishable afterwards.",
+      "difficulty": "medium",
+      "questionNumber": 10
     },
     {
       "id": "celpip-reading-022-q11",
       "passageId": "celpip-reading-022-p1",
       "part": 1,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What is the purpose of Rosa's email?",
+      "prompt": "What does Augustin say about bringing the fix forward?",
+      "question": "What does Augustin say about bringing the fix forward?",
       "options": [
-        "To offer him a plot immediately",
-        "To reject Kevin's application",
-        "To answer his questions and explain the process",
-        "To invite him to a specific event"
+        "It is already complete",
+        "It will definitely happen next month",
+        "He has asked and does not yet know whether the request will be granted",
+        "It has been refused"
       ],
-      "correctAnswer": "To answer his questions and explain the process",
-      "explanation": "Rosa's email answers Kevin's questions about the wait, fees, and registration process.",
-      "difficulty": "hard"
+      "correctAnswer": "He has asked and does not yet know whether the request will be granted",
+      "explanation": "He says he will tell her plainly that he does not know.",
+      "difficulty": "medium",
+      "questionNumber": 11
     },
     {
       "id": "celpip-reading-022-q12",
       "passageId": "celpip-reading-022-p2",
       "part": 2,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "A 70-year-old woman wants to try an art class. Which programme is most suitable?",
+      "prompt": "Who is eligible for a free home visit?",
+      "question": "Who is eligible for a free home visit?",
       "options": [
-        "Community Dance on Thursday evening",
-        "Lunchtime Stretch on Wednesday",
-        "Gentle Yoga on Monday morning",
-        "Seniors' Art Class on Tuesday morning"
+        "Homeowners only",
+        "Renters only",
+        "Everyone attending",
+        "Households receiving any income-related benefit"
       ],
-      "correctAnswer": "Seniors' Art Class on Tuesday morning",
-      "explanation": "The Seniors' Art Class on Tuesday is for ages 60+ and includes materials.",
-      "difficulty": "easy"
+      "correctAnswer": "Households receiving any income-related benefit",
+      "explanation": "Sessions marked (H) include a home visit for those households.",
+      "difficulty": "medium",
+      "questionNumber": 12
     },
     {
       "id": "celpip-reading-022-q13",
       "passageId": "celpip-reading-022-p2",
       "part": 2,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "Which programmes require advance registration?",
+      "prompt": "A woman needs an interpreter. What must she do?",
+      "question": "A woman needs an interpreter. What must she do?",
       "options": [
-        "Gentle Yoga and Aqua Fitness",
-        "Open Badminton and Lunchtime Stretch",
-        "Parent & Tot Swim and Teen Gaming Club",
-        "Drop-in Basketball and Family Swim"
+        "Give one week's notice",
+        "Attend the drop-in only",
+        "Book a home visit",
+        "Bring her own"
       ],
-      "correctAnswer": "Gentle Yoga and Aqua Fitness",
-      "explanation": "Only programmes marked with (R) require registration. Both Gentle Yoga and Aqua Fitness are marked (R).",
-      "difficulty": "easy"
+      "correctAnswer": "Give one week's notice",
+      "explanation": "Interpreters can be arranged with one week's notice.",
+      "difficulty": "medium",
+      "questionNumber": 13
     },
     {
       "id": "celpip-reading-022-q14",
       "passageId": "celpip-reading-022-p2",
       "part": 2,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "A teenager aged 15 wants to play badminton on a weekday. What is the correct programme?",
+      "prompt": "Which session requires bills covering at least six months?",
+      "question": "Which session requires bills covering at least six months?",
       "options": [
-        "Open Badminton on Saturday",
-        "Youth Badminton on Thursday afternoon",
-        "Drop-in Basketball on Tuesday",
-        "Community Dance on Thursday evening"
+        "Understanding Your Bill",
+        "Meter Reading & Disputes",
+        "Debt & Repayment Plans",
+        "Switching Supplier Clinic"
       ],
-      "correctAnswer": "Youth Badminton on Thursday afternoon",
-      "explanation": "Youth Badminton is on Thursday afternoon and is for ages 10–17.",
-      "difficulty": "easy"
+      "correctAnswer": "Meter Reading & Disputes",
+      "explanation": "It asks for bills covering at least six months.",
+      "difficulty": "medium",
+      "questionNumber": 14
     },
     {
       "id": "celpip-reading-022-q15",
       "passageId": "celpip-reading-022-p2",
       "part": 2,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "Which pool programme is available to families with young children on a Sunday?",
+      "prompt": "A man wants advice without booking. When can he come?",
+      "question": "A man wants advice without booking. When can he come?",
       "options": [
-        "Adult Swimming Lessons",
-        "Parent & Tot Swim",
-        "Family Swim",
-        "Aqua Fitness"
+        "Monday evening",
+        "Wednesday afternoon",
+        "Saturday morning",
+        "Thursday morning"
       ],
-      "correctAnswer": "Family Swim",
-      "explanation": "Family Swim is held on Sundays and is for families with children.",
-      "difficulty": "medium"
+      "correctAnswer": "Saturday morning",
+      "explanation": "The Open Advice Drop-In requires no booking.",
+      "difficulty": "medium",
+      "questionNumber": 15
     },
     {
       "id": "celpip-reading-022-q16",
       "passageId": "celpip-reading-022-p2",
       "part": 2,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "How long does the Community Dance programme last?",
+      "prompt": "What should he expect at that session?",
+      "question": "What should he expect at that session?",
       "options": [
-        "Two hours thirty minutes",
-        "One hour",
-        "One hour thirty minutes",
-        "Two hours"
+        "A home visit",
+        "A materials pack",
+        "A guaranteed 45-minute appointment",
+        "Possible waits of up to an hour"
       ],
-      "correctAnswer": "Two hours",
-      "explanation": "Community Dance runs from 7:00–9:00 pm, which is two hours.",
-      "difficulty": "medium"
+      "correctAnswer": "Possible waits of up to an hour",
+      "explanation": "The drop-in notes waits of up to an hour are possible.",
+      "difficulty": "medium",
+      "questionNumber": 16
     },
     {
       "id": "celpip-reading-022-q17",
       "passageId": "celpip-reading-022-p2",
       "part": 2,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "Which programme can someone attend without planning ahead on a Wednesday lunchtime?",
+      "prompt": "Which session is aimed specifically at renters?",
+      "question": "Which session is aimed specifically at renters?",
       "options": [
-        "Lunchtime Stretch",
-        "Seniors' Art Class",
-        "Aqua Fitness",
-        "Gentle Yoga"
+        "Landlord & Tenant Energy Rights",
+        "Draught-Proofing Workshop",
+        "Heating Controls Explained",
+        "Grants & Insulation Advice"
       ],
-      "correctAnswer": "Lunchtime Stretch",
-      "explanation": "Lunchtime Stretch on Wednesday is explicitly listed as drop-in with no registration needed.",
-      "difficulty": "medium"
+      "correctAnswer": "Landlord & Tenant Energy Rights",
+      "explanation": "It is for renters, with a tenancy agreement helpful.",
+      "difficulty": "medium",
+      "questionNumber": 17
     },
     {
       "id": "celpip-reading-022-q18",
       "passageId": "celpip-reading-022-p2",
       "part": 2,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "Which location is used for the most programmes?",
+      "prompt": "What do participants take away from the Draught-Proofing Workshop?",
+      "question": "What do participants take away from the Draught-Proofing Workshop?",
       "options": [
-        "Gymnasium",
-        "Pool",
-        "Studio A",
-        "Craft Room"
+        "A written report",
+        "Materials to take home",
+        "A free home visit",
+        "A thermostat"
       ],
-      "correctAnswer": "Pool",
-      "explanation": "The Pool is used for Aqua Fitness, Adult Swimming Lessons, Parent & Tot Swim, and Family Swim — more than any other location.",
-      "difficulty": "hard"
+      "correctAnswer": "Materials to take home",
+      "explanation": "The workshop provides materials to take home.",
+      "difficulty": "medium",
+      "questionNumber": 18
     },
     {
       "id": "celpip-reading-022-q19",
       "passageId": "celpip-reading-022-p2",
       "part": 2,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "A parent with a three-year-old child wants to swim together. Which programme should they attend?",
+      "prompt": "How long is a Switching Supplier Clinic appointment?",
+      "question": "How long is a Switching Supplier Clinic appointment?",
       "options": [
-        "Family Swim on Sunday",
-        "Adult Swimming Lessons on Monday",
-        "Parent & Tot Swim on Friday",
-        "Aqua Fitness on Wednesday"
+        "One hour",
+        "Two hours",
+        "20 minutes",
+        "45 minutes"
       ],
-      "correctAnswer": "Parent & Tot Swim on Friday",
-      "explanation": "Parent & Tot Swim is for children under 5 with an adult and runs on Friday.",
-      "difficulty": "hard"
+      "correctAnswer": "20 minutes",
+      "explanation": "It is one-to-one, 20 minutes each.",
+      "difficulty": "medium",
+      "questionNumber": 19
     },
     {
       "id": "celpip-reading-022-q20",
       "passageId": "celpip-reading-022-p3",
       "part": 3,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What was the main criticism of the previous version of Canada's Food Guide?",
+      "prompt": "What does the article say about promoted retrofit figures?",
+      "question": "What does the article say about promoted retrofit figures?",
       "options": [
-        "It did not include enough vegetables",
-        "It was not updated frequently enough",
-        "It was too complicated for most people to follow",
-        "It placed too much emphasis on dairy and meat"
+        "They are too conservative",
+        "They are unverifiable",
+        "They are deliberately inflated",
+        "They are calculated honestly and are usually wrong in practice"
       ],
-      "correctAnswer": "It placed too much emphasis on dairy and meat",
-      "explanation": "The passage says the previous guide was criticised for placing too much emphasis on dairy and meat.",
-      "difficulty": "easy"
+      "correctAnswer": "They are calculated honestly and are usually wrong in practice",
+      "explanation": "The gap deserves an explanation rather than an accusation.",
+      "difficulty": "medium",
+      "questionNumber": 20
     },
     {
       "id": "celpip-reading-022-q21",
       "passageId": "celpip-reading-022-p3",
       "part": 3,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "According to the 2019 guide, what should make up roughly half of every meal?",
+      "prompt": "What is the rebound effect also called?",
+      "question": "What is the rebound effect also called?",
       "options": [
-        "Vegetables and fruit",
-        "Dairy products",
-        "Whole grain foods",
-        "Protein foods"
+        "Comfort taking",
+        "Demand response",
+        "Thermal drift",
+        "Load shifting"
       ],
-      "correctAnswer": "Vegetables and fruit",
-      "explanation": "The plate model shows roughly half of every meal should be vegetables and fruit.",
-      "difficulty": "easy"
+      "correctAnswer": "Comfort taking",
+      "explanation": "It is sometimes called comfort taking.",
+      "difficulty": "medium",
+      "questionNumber": 21
     },
     {
       "id": "celpip-reading-022-q22",
       "passageId": "celpip-reading-022-p3",
       "part": 3,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "Where is dairy placed in the 2019 Food Guide?",
+      "prompt": "What does a previously under-heated household do after insulation?",
+      "question": "What does a previously under-heated household do after insulation?",
       "options": [
-        "Under the vegetables and fruit category",
-        "Within the broader protein food category",
-        "It was removed entirely from the guide",
-        "In its own separate category"
+        "Keep the same temperature and save the money",
+        "Heat more rooms, for longer, to a higher temperature",
+        "Reduce heating further",
+        "Switch supplier"
       ],
-      "correctAnswer": "Within the broader protein food category",
-      "explanation": "The 2019 guide merged dairy into the broader protein food category.",
-      "difficulty": "easy"
+      "correctAnswer": "Heat more rooms, for longer, to a higher temperature",
+      "explanation": "Part of the benefit is taken as warmth rather than cash.",
+      "difficulty": "medium",
+      "questionNumber": 22
     },
     {
       "id": "celpip-reading-022-q23",
       "passageId": "celpip-reading-022-p3",
       "part": 3,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What evidence influenced the repositioning of dairy?",
+      "prompt": "When is comfort taking a failure of policy, according to the article?",
+      "question": "When is comfort taking a failure of policy, according to the article?",
       "options": [
-        "Findings that dairy increases cholesterol",
-        "Studies showing dairy is harmful to children",
-        "Evidence that high dairy consumption is not necessary for adult bone health",
-        "Research showing dairy increases obesity"
+        "Only in rented homes",
+        "Always",
+        "Only if the policy was only ever about carbon",
+        "Never"
       ],
-      "correctAnswer": "Evidence that high dairy consumption is not necessary for adult bone health",
-      "explanation": "The passage says growing evidence showed high dairy consumption is not necessary for bone health in adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Only if the policy was only ever about carbon",
+      "explanation": "The article notes it is frequently sold as being about bills.",
+      "difficulty": "medium",
+      "questionNumber": 23
     },
     {
       "id": "celpip-reading-022-q24",
       "passageId": "celpip-reading-022-p3",
       "part": 3,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What beverage does the new guide recommend as preferred?",
+      "prompt": "What does the article call less discussed and more consequential?",
+      "question": "What does the article call less discussed and more consequential?",
       "options": [
-        "Low-fat milk",
-        "100% fruit juice",
-        "Coffee or tea",
-        "Water"
+        "Occupancy patterns",
+        "Ventilation",
+        "The rebound effect",
+        "That models assume installation quality"
       ],
-      "correctAnswer": "Water",
-      "explanation": "The passage says the guide advises choosing water as the preferred beverage over sugary drinks.",
-      "difficulty": "medium"
+      "correctAnswer": "That models assume installation quality",
+      "explanation": "Poor installation can remove a substantial share of the theoretical benefit.",
+      "difficulty": "medium",
+      "questionNumber": 24
     },
     {
       "id": "celpip-reading-022-q25",
       "passageId": "celpip-reading-022-p3",
       "part": 3,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What is one social dimension of eating that the new guide encourages?",
+      "prompt": "Why is poor installation hard to detect?",
+      "question": "Why is poor installation hard to detect?",
       "options": [
-        "Eating meals with others",
-        "Following a specific diet plan",
-        "Eating a large breakfast",
-        "Joining a cooking class"
+        "None of it is visible once the work is finished",
+        "Inspectors lack training",
+        "Records are not kept",
+        "It is deliberately concealed"
       ],
-      "correctAnswer": "Eating meals with others",
-      "explanation": "The guide encourages eating meals with others as part of its social dimension.",
-      "difficulty": "medium"
+      "correctAnswer": "None of it is visible once the work is finished",
+      "explanation": "The article states exactly this.",
+      "difficulty": "medium",
+      "questionNumber": 25
     },
     {
       "id": "celpip-reading-022-q26",
       "passageId": "celpip-reading-022-p3",
       "part": 3,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What criticism was raised about the 2019 guide regarding Indigenous communities?",
+      "prompt": "How are installers typically paid?",
+      "question": "How are installers typically paid?",
       "options": [
-        "It was not translated into enough Indigenous languages",
-        "It ignored traditional dietary patterns relying on land-based foods",
-        "It recommended too many imported foods",
-        "It contained inaccurate information about wild game"
+        "On measured performance",
+        "On completion",
+        "Per hour",
+        "On customer satisfaction"
       ],
-      "correctAnswer": "It ignored traditional dietary patterns relying on land-based foods",
-      "explanation": "Critics said the guide largely ignored Indigenous communities' traditional land-based dietary patterns.",
-      "difficulty": "hard"
+      "correctAnswer": "On completion",
+      "explanation": "The incentive structure rarely helps, as payment is on completion rather than performance.",
+      "difficulty": "medium",
+      "questionNumber": 26
     },
     {
       "id": "celpip-reading-022-q27",
       "passageId": "celpip-reading-022-p3",
       "part": 3,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "How did the government respond to the criticism about Indigenous food patterns?",
+      "prompt": "What can insulating without addressing ventilation cause?",
+      "question": "What can insulating without addressing ventilation cause?",
       "options": [
-        "By consulting Indigenous elders to revise the plate model",
-        "By rewriting the whole guide",
-        "By acknowledging the gap and committing to developing supplementary resources",
-        "By adding a new food category for game meats"
+        "Structural damage",
+        "Lower temperatures",
+        "Raised humidity, condensation and mould",
+        "Higher bills"
       ],
-      "correctAnswer": "By acknowledging the gap and committing to developing supplementary resources",
-      "explanation": "The government acknowledged the gap and committed to developing supplementary resources.",
-      "difficulty": "hard"
+      "correctAnswer": "Raised humidity, condensation and mould",
+      "explanation": "It is the most common reason households report regretting the work.",
+      "difficulty": "medium",
+      "questionNumber": 27
     },
     {
       "id": "celpip-reading-022-q28",
       "passageId": "celpip-reading-022-p3",
       "part": 3,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "Which of the following is NOT listed as a protein food in the 2019 guide?",
+      "prompt": "What does the article conclude programmes should do?",
+      "question": "What does the article conclude programmes should do?",
       "options": [
-        "Tofu",
-        "Lentils",
-        "Yogurt",
-        "Cheese"
+        "Increase modelled estimates",
+        "Insulate only new homes",
+        "Stop promoting insulation",
+        "Quote ranges, fund verification seriously, and stop treating comfort taken as a shortfall"
       ],
-      "correctAnswer": "Cheese",
-      "explanation": "The passage lists beans, lentils, tofu, fish, eggs, lean meat, and nuts as protein foods — cheese is not specifically listed.",
-      "difficulty": "hard"
+      "correctAnswer": "Quote ranges, fund verification seriously, and stop treating comfort taken as a shortfall",
+      "explanation": "The article closes with exactly those three points.",
+      "difficulty": "medium",
+      "questionNumber": 28
     },
     {
       "id": "celpip-reading-022-q29",
       "passageId": "celpip-reading-022-p4",
       "part": 4,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker believes the ban is both necessary and overdue?",
+      "prompt": "What objection does Minister Okonjo concede?",
+      "question": "What objection does Minister Okonjo concede?",
       "options": [
-        "Amelia Chen",
-        "Sandra Kowalski",
-        "Jordan Lee",
-        "Dr. Marcus Webb"
+        "It imposes a cost on one party for another's benefit",
+        "It is unenforceable",
+        "It applies too broadly",
+        "The standard is too low"
       ],
-      "correctAnswer": "Amelia Chen",
-      "explanation": "Amelia Chen says a complete ban is 'both necessary and overdue.'",
-      "difficulty": "easy"
+      "correctAnswer": "It imposes a cost on one party for another's benefit",
+      "explanation": "She says that is true and not unusual — building standards work the same way.",
+      "difficulty": "medium",
+      "questionNumber": 29
     },
     {
       "id": "celpip-reading-022-q30",
       "passageId": "celpip-reading-022-p4",
       "part": 4,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Jordan Lee prefer instead of an outright ban?",
+      "prompt": "What did she not anticipate?",
+      "question": "What did she not anticipate?",
       "options": [
-        "A voluntary agreement among large corporations",
-        "A phased approach with incentives and a five-year timeline",
-        "An immediate ban with subsidies for affected businesses",
-        "Continued use of single-use plastics with better disposal systems"
+        "Installer shortages",
+        "How many small landlords own a single property and cannot finance the work",
+        "Tenant opposition",
+        "Rising material costs"
       ],
-      "correctAnswer": "A phased approach with incentives and a five-year timeline",
-      "explanation": "Jordan Lee prefers a phased approach with tax incentives, subsidies, and a five-year transition.",
-      "difficulty": "easy"
+      "correctAnswer": "How many small landlords own a single property and cannot finance the work",
+      "explanation": "She says the policy assumed a landlord who is a business, but many are a pension.",
+      "difficulty": "medium",
+      "questionNumber": 30
     },
     {
       "id": "celpip-reading-022-q31",
       "passageId": "celpip-reading-022-p4",
       "part": 4,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker raises a concern about microplastics in the human body?",
+      "prompt": "What is Declan's complaint about?",
+      "question": "What is Declan's complaint about?",
       "options": [
-        "Sandra Kowalski",
-        "Jordan Lee",
-        "Dr. Marcus Webb",
-        "Amelia Chen"
+        "Enforcement",
+        "The principle",
+        "The sequencing",
+        "The standard itself"
       ],
-      "correctAnswer": "Dr. Marcus Webb",
-      "explanation": "Dr. Webb mentions microplastics found in human blood, breast milk, and lung tissue.",
-      "difficulty": "easy"
+      "correctAnswer": "The sequencing",
+      "explanation": "He says to read it as a complaint about sequencing rather than principle.",
+      "difficulty": "medium",
+      "questionNumber": 31
     },
     {
       "id": "celpip-reading-022-q32",
       "passageId": "celpip-reading-022-p4",
       "part": 4,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Sandra Kowalski say about compostable packaging?",
+      "prompt": "What happened because funding lagged the deadline?",
+      "question": "What happened because funding lagged the deadline?",
       "options": [
-        "It is currently too expensive for most cities",
-        "It has already solved the plastic problem in other cities",
-        "It is always better than plastic",
-        "It is only beneficial if it is actually composted"
+        "The deadline was extended",
+        "Standards were lowered",
+        "Landlords sold up",
+        "Everyone waited, then bid for the same installers in the same window"
       ],
-      "correctAnswer": "It is only beneficial if it is actually composted",
-      "explanation": "Sandra says compostable packaging is only beneficial if composted — in landfill it may produce methane.",
-      "difficulty": "medium"
+      "correctAnswer": "Everyone waited, then bid for the same installers in the same window",
+      "explanation": "Prices have risen accordingly.",
+      "difficulty": "medium",
+      "questionNumber": 32
     },
     {
       "id": "celpip-reading-022-q33",
       "passageId": "celpip-reading-022-p4",
       "part": 4,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What percentage of eligible organic waste does Sandra's city currently compost?",
+      "prompt": "What does Declan say the delay between announcement and funding is?",
+      "question": "What does Declan say the delay between announcement and funding is?",
       "options": [
-        "Less than thirty percent",
-        "Over fifty percent",
-        "Less than ten percent",
-        "About twenty percent"
+        "Itself a cost, partly paid by tenants",
+        "A minor issue",
+        "A political decision",
+        "A necessary precaution"
       ],
-      "correctAnswer": "Less than thirty percent",
-      "explanation": "Sandra says the city currently composts less than thirty percent of eligible organic waste.",
-      "difficulty": "medium"
+      "correctAnswer": "Itself a cost, partly paid by tenants",
+      "explanation": "He states exactly that.",
+      "difficulty": "medium",
+      "questionNumber": 33
     },
     {
       "id": "celpip-reading-022-q34",
       "passageId": "celpip-reading-022-p4",
       "part": 4,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "How does Amelia Chen respond to concerns about cost impacts on low-income consumers?",
+      "prompt": "What happened to Aisling's bills after insulation?",
+      "question": "What happened to Aisling's bills after insulation?",
       "options": [
-        "She says alternatives cost two to four times more",
-        "She says reusable options save money over time",
-        "She suggests the government should subsidise alternatives",
-        "She acknowledges it is a valid concern"
+        "They fell",
+        "They went up",
+        "They were unchanged",
+        "They became estimated"
       ],
-      "correctAnswer": "She says reusable options save money over time",
-      "explanation": "Amelia says studies show reusable options save money over time, contradicting the cost concern.",
-      "difficulty": "medium"
+      "correctAnswer": "They went up",
+      "explanation": "Her bills went up after the work.",
+      "difficulty": "medium",
+      "questionNumber": 34
     },
     {
       "id": "celpip-reading-022-q35",
       "passageId": "celpip-reading-022-p4",
       "part": 4,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker is most focused on the immediate economic impact on small businesses?",
+      "prompt": "Why did her bills rise?",
+      "question": "Why did her bills rise?",
       "options": [
-        "Sandra Kowalski",
-        "Amelia Chen",
-        "Jordan Lee",
-        "Dr. Marcus Webb"
+        "She used more appliances",
+        "The work was faulty",
+        "The heating now reaches a thermostat setting it never previously achieved",
+        "Prices rose"
       ],
-      "correctAnswer": "Jordan Lee",
-      "explanation": "Jordan Lee focuses on how bans disproportionately hurt small retailers.",
-      "difficulty": "hard"
+      "correctAnswer": "The heating now reaches a thermostat setting it never previously achieved",
+      "explanation": "The system runs to a setting it never used to reach.",
+      "difficulty": "medium",
+      "questionNumber": 35
     },
     {
       "id": "celpip-reading-022-q36",
       "passageId": "celpip-reading-022-p4",
       "part": 4,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What principle does Dr. Webb invoke to argue for action?",
+      "prompt": "What does Aisling say she would still choose?",
+      "question": "What does Aisling say she would still choose?",
       "options": [
-        "The free market principle",
-        "The public interest principle",
-        "The economic efficiency principle",
-        "The precautionary principle"
+        "The original flat",
+        "A different supplier",
+        "Lower bills",
+        "To be warm"
       ],
-      "correctAnswer": "The precautionary principle",
-      "explanation": "Dr. Webb says the precautionary principle demands acting in the face of uncertain health risks.",
-      "difficulty": "hard"
+      "correctAnswer": "To be warm",
+      "explanation": "She says she is warmer and poorer, and would still choose warm.",
+      "difficulty": "medium",
+      "questionNumber": 36
     },
     {
       "id": "celpip-reading-022-q37",
       "passageId": "celpip-reading-022-p4",
       "part": 4,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "Which two speakers would most likely agree that a simple, immediate ban is the wrong approach?",
+      "prompt": "What does Aisling ask for?",
+      "question": "What does Aisling ask for?",
       "options": [
-        "Jordan Lee and Sandra Kowalski",
-        "Amelia Chen and Sandra Kowalski",
-        "Dr. Marcus Webb and Jordan Lee",
-        "Amelia Chen and Dr. Marcus Webb"
+        "A way for tenants to check",
+        "A rent reduction",
+        "The work to be redone",
+        "Compensation"
       ],
-      "correctAnswer": "Jordan Lee and Sandra Kowalski",
-      "explanation": "Jordan Lee wants a phased approach and Sandra wants infrastructure first — both oppose an immediate ban.",
-      "difficulty": "hard"
+      "correctAnswer": "A way for tenants to check",
+      "explanation": "She had no way to tell whether the work was faulty or she had been told something untrue.",
+      "difficulty": "medium",
+      "questionNumber": 37
     },
     {
       "id": "celpip-reading-022-q38",
       "passageId": "celpip-reading-022-p4",
       "part": 4,
-      "topic": "starting a small business",
+      "topic": "energy, utilities and household bills",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Sandra Kowalski suggest is needed before mandating plastic alternatives?",
+      "prompt": "What does Dr Weber say the regulatory standard measures?",
+      "question": "What does Dr Weber say the regulatory standard measures?",
       "options": [
-        "A public vote on the issue",
-        "Significant investment in composting capacity, education, and sorting infrastructure",
-        "A full ban on imports of plastic packaging",
-        "A five-year government study on alternatives"
+        "Occupied performance",
+        "The fabric of the building, saying little about occupied performance",
+        "Household behaviour",
+        "Actual bills"
       ],
-      "correctAnswer": "Significant investment in composting capacity, education, and sorting infrastructure",
-      "explanation": "Sandra says investment in composting capacity, public education, and sorting infrastructure is needed first.",
-      "difficulty": "hard"
+      "correctAnswer": "The fabric of the building, saying little about occupied performance",
+      "explanation": "He notes we are regulating a proxy.",
+      "difficulty": "medium",
+      "questionNumber": 38
     }
   ]
 }
