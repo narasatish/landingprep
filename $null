@@ -1,9 +1,0 @@
-﻿git : warning: in the working copy of 'content/celpip/reading/test-016.json', LF will be replaced by CRLF the next 
-time Git touches it
-At line:43 char:60
-+ ... -Path "$env:TEMP\m50.txt" -Encoding utf8; git add -A 2>`$null; git co ...
-+                                               ~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (warning: in the... Git touches it:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
-warning: in the working copy of 'feed.xml', LF will be replaced by CRLF the next time Git touches it

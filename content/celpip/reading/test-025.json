@@ -41,117 +41,103 @@
     {
       "id": "celpip-reading-025-p1",
       "part": 1,
-      "partTitle": "Reading for Correspondence",
+      "partTitle": "Reading Correspondence",
       "type": "correspondence",
-      "title": "Email Correspondence: Community Garden Plot Application",
+      "title": "Email Correspondence: An Interpreter Who Did Not Arrive",
       "emails": [
         {
-          "from": "Kevin Marsh <k.marsh@gmail.com>",
-          "to": "coordinator@riverdalegardens.ca",
-          "subject": "Application for a Garden Plot",
-          "date": "May 3",
-          "body": "Dear Coordinator,\n\nI am writing to apply for one of the community garden plots I noticed advertised on your website. My partner and I moved to the Riverdale neighbourhood six months ago, and we are very keen to grow our own vegetables this summer. We do not have any outdoor space at our apartment, so the community garden would be ideal.\n\nI noticed the website mentions a waitlist. Could you let me know approximately how long the current wait is, and whether there is anything we can do to move things along? Also, is there a fee involved, and if so, does it cover the full growing season?\n\nThank you very much for your time. I look forward to hearing from you.\n\nKevin Marsh"
+          "from": "Wanjiru Kamau <w.kamau@mailbox.ca>",
+          "to": "patientliaison@eastvalehealth.ca",
+          "subject": "Appointment 4 June, interpreter booked and not provided",
+          "date": "June 9",
+          "body": "Dear Patient Liaison,\n\nI accompanied my mother to a consultant appointment on 4 June. An interpreter was booked at the referral stage and confirmed twice. No interpreter attended.\n\nThe consultant asked me to interpret. I did, because the alternative was my mother leaving without knowing her results.\n\nI want to be precise about why that is a problem, because on the surface it looks like a solution. I am not a medical interpreter. I did not know the word for the condition in either language and I guessed. My mother then asked me a question she would not have asked a stranger, and I answered it as her daughter rather than translating it, because that is what happens when the interpreter is family. Nobody in that room can now be certain what my mother was told.\n\nI am not asking you to discipline anyone and I do not want an apology in the abstract. I want to know two things. Whether the booking failed or the interpreter did — and whether my mother's notes record that interpretation was provided by a family member, because if they record it as an interpreted consultation then the record is wrong.\n\nSincerely,\nWanjiru Kamau"
         },
         {
-          "from": "Rosa Delacourt <coordinator@riverdalegardens.ca>",
-          "to": "k.marsh@gmail.com",
-          "subject": "RE: Application for a Garden Plot",
-          "date": "May 5",
-          "body": "Dear Kevin,\n\nThank you for your interest in Riverdale Community Gardens. We are delighted to welcome new applicants, especially those who are new to the neighbourhood.\n\nTo answer your questions: yes, there is currently a waitlist, and the average wait time is approximately four to six weeks depending on plot size. We have two plot sizes available — a small plot of four square metres at eighty dollars per season, and a standard plot of eight square metres at one hundred and forty dollars per season. The fee covers the period from May through October and includes access to shared tools, water connections, and a compost bin allocation.\n\nTo register your interest formally, please complete the application form on our website and submit it along with your payment. Once your application is processed, you will be placed on the waitlist and contacted when a plot becomes available.\n\nWe also hold a monthly garden social on the last Saturday of each month, and newcomers are very welcome to join even before they have their own plot.\n\nBest regards,\nRosa Delacourt\nCoordinator, Riverdale Community Gardens"
+          "from": "Eastvale Health Patient Liaison <patientliaison@eastvalehealth.ca>",
+          "to": "w.kamau@mailbox.ca",
+          "subject": "RE: Appointment 4 June, interpreter booked and not provided",
+          "date": "June 13",
+          "body": "Dear Ms Kamau,\n\nBoth of your questions have uncomfortable answers and you are entitled to them.\n\nThe booking failed. It was made against the referral and not against the appointment, and when the appointment was rescheduled in May the booking did not move with it. The agency was never told to attend on 4 June. The interpreter did nothing wrong; our system did not ask her to be there.\n\nOn the notes: they record \"interpreter present\". They do not record that the interpretation was provided by a family member. That is a factual error in a clinical record and I have submitted a correction, which your mother is entitled to see. I would not have found it without your email, because nothing in our process compares what was booked against what happened.\n\nYou have described the harm more clearly than our own guidance does, and I have asked for your third paragraph to be quoted in our interpreter training — with your permission, and anonymously, and I will not use it unless you say yes.\n\nWhat changes: interpreter bookings now attach to the appointment rather than the referral, so a reschedule carries the booking with it. That was a configuration choice nobody had revisited.\n\nOne thing I cannot offer. I cannot tell you what your mother understood on 4 June, and neither can the consultant. She has been offered a further appointment with an interpreter present, at no charge and at a time of her choosing, which is the only remedy I can honestly describe as one.\n\nRegards,\nTomasz Nowicki\nPatient Liaison Manager"
         }
       ]
     },
     {
       "id": "celpip-reading-025-p2",
       "part": 2,
-      "partTitle": "Applying a Diagram",
+      "partTitle": "Reading to Apply a Diagram",
       "type": "schedule",
-      "title": "Community Recreation Centre — Spring Programme Schedule",
-      "intro": "The Maplewood Recreation Centre offers the following programmes during the spring session (April 7 – June 27). All programmes are drop-in unless marked with (R) for registered.",
+      "title": "Eastvale Community Language Centre — Autumn Timetable",
+      "intro": "Runs September 9 to December 12. Classes marked (H) are heritage-language classes for children who hear the language at home; (B) are beginner classes with no prior knowledge assumed. Sessions marked (F) are free, funded by the settlement grant. All others are $6 per session or $60 per term. Childcare is available for classes marked (K), booked 48 hours ahead.",
       "schedule": [
         {
           "day": "Monday",
-          "time": "9:00–10:00 am",
-          "programme": "Gentle Yoga (R)",
-          "location": "Studio A",
-          "notes": "Ages 18+, mats provided"
-        },
-        {
-          "day": "Monday",
           "time": "6:00–7:30 pm",
-          "programme": "Adult Swimming Lessons (R)",
-          "location": "Pool",
-          "notes": "Non-swimmers only"
+          "programme": "English Conversation Circle (F) (K)",
+          "location": "Room 3",
+          "notes": "Drop-in. All levels. No registration."
         },
         {
           "day": "Tuesday",
+          "time": "4:30–6:00 pm",
+          "programme": "Mandarin for Children (H)",
+          "location": "Room 1",
+          "notes": "Ages 6–12. Reading and writing focus."
+        },
+        {
+          "day": "Tuesday",
+          "time": "6:30–8:00 pm",
+          "programme": "Spanish (B)",
+          "location": "Room 2",
+          "notes": "Adults. Twelve-week course."
+        },
+        {
+          "day": "Wednesday",
           "time": "10:00–11:30 am",
-          "programme": "Seniors' Art Class (R)",
-          "location": "Craft Room",
-          "notes": "Ages 60+, materials included"
-        },
-        {
-          "day": "Tuesday",
-          "time": "7:00–8:30 pm",
-          "programme": "Drop-in Basketball",
-          "location": "Gymnasium",
-          "notes": "Ages 14+, bring own water"
+          "programme": "English for Employment (F) (K)",
+          "location": "Room 3",
+          "notes": "Twelve weeks. CV and interview practice."
         },
         {
           "day": "Wednesday",
-          "time": "9:00–10:00 am",
-          "programme": "Aqua Fitness (R)",
-          "location": "Pool",
-          "notes": "All fitness levels"
-        },
-        {
-          "day": "Wednesday",
-          "time": "12:00–1:00 pm",
-          "programme": "Lunchtime Stretch",
-          "location": "Studio A",
-          "notes": "Drop-in, no registration needed"
+          "time": "4:30–6:00 pm",
+          "programme": "Punjabi for Children (H)",
+          "location": "Room 1",
+          "notes": "Ages 6–12. Reading and writing focus."
         },
         {
           "day": "Thursday",
-          "time": "4:30–5:30 pm",
-          "programme": "Youth Badminton (R)",
-          "location": "Gymnasium",
-          "notes": "Ages 10–17"
+          "time": "6:00–7:30 pm",
+          "programme": "Arabic (B)",
+          "location": "Room 2",
+          "notes": "Adults. Twelve-week course."
         },
         {
           "day": "Thursday",
-          "time": "7:00–9:00 pm",
-          "programme": "Community Dance (R)",
-          "location": "Main Hall",
-          "notes": "All ages, partners welcome"
+          "time": "7:45–9:00 pm",
+          "programme": "Interpreting Skills Introduction",
+          "location": "Room 3",
+          "notes": "$90 per term. Eight weeks. Ages 18+."
         },
         {
           "day": "Friday",
-          "time": "9:00–10:30 am",
-          "programme": "Parent & Tot Swim",
-          "location": "Pool",
-          "notes": "Children under 5 with adult"
+          "time": "10:00–11:30 am",
+          "programme": "English Conversation Circle (F) (K)",
+          "location": "Room 3",
+          "notes": "Drop-in. All levels. No registration."
         },
         {
           "day": "Saturday",
-          "time": "10:00 am–12:00 pm",
-          "programme": "Open Badminton",
-          "location": "Gymnasium",
-          "notes": "Drop-in, all skill levels"
+          "time": "9:30–11:00 am",
+          "programme": "Tagalog for Children (H)",
+          "location": "Room 1",
+          "notes": "Ages 6–12. Reading and writing focus."
         },
         {
           "day": "Saturday",
-          "time": "2:00–4:00 pm",
-          "programme": "Teen Gaming Club (R)",
-          "location": "Computer Room",
-          "notes": "Ages 13–18"
-        },
-        {
-          "day": "Sunday",
-          "time": "11:00 am–1:00 pm",
-          "programme": "Family Swim",
-          "location": "Pool",
-          "notes": "Families with children"
+          "time": "11:15–12:45 pm",
+          "programme": "Family Bilingual Storytime",
+          "location": "Library Corner",
+          "notes": "Free. All ages. Different language weekly."
         }
       ]
     },
@@ -160,31 +146,31 @@
       "part": 3,
       "partTitle": "Reading for Information",
       "type": "article",
-      "title": "Understanding Canada's Food Guide",
-      "content": "Canada's Food Guide was significantly revised in 2019, marking the most substantial update to the document in over a decade. The new guide moved away from the previous four food-group model — which had been criticised for placing too much emphasis on dairy and meat — toward a simpler, more flexible approach to healthy eating.\n\nThe updated guide is built around three core categories: vegetables and fruit, whole grain foods, and protein foods. Crucially, it does not specify serving sizes or recommended daily portions in the traditional sense. Instead, it uses a plate model showing that roughly half of every meal should consist of vegetables and fruit, one quarter should be whole grain foods such as brown rice, oats, or whole wheat bread, and one quarter should be protein foods.\n\nOne of the most significant changes was the repositioning of dairy products. In the previous guide, dairy had its own category and Canadians were encouraged to consume multiple daily servings. The 2019 guide merged dairy into the broader protein food category, alongside beans, lentils, tofu, fish, eggs, lean meat, and nuts. This change was partly driven by growing evidence that high dairy consumption is not necessary for bone health in adults and that plant-based protein sources offer comparable nutritional value.\n\nThe new guide also places greater emphasis on the social and environmental dimensions of eating. It encourages Canadians to cook at home more often, eat meals with others, and be mindful of marketing from the food industry. It also recommends limiting foods high in sodium, sugar, and saturated fat, and advises choosing water as the preferred beverage over sugary drinks.\n\nCritics of the new guide pointed out that it largely ignored the traditional dietary patterns of many Indigenous communities, which rely heavily on land-based foods such as game meats, fish, and berries. The government acknowledged this gap and committed to developing supplementary resources that better reflect Indigenous food sovereignty."
+      "title": "What Happens to a Language in the Second Generation",
+      "content": "The pattern by which a community language gives way to the majority language is one of the most consistent findings in the study of migration, and it is faster than most families expect. The usual sequence takes three generations: the first speaks the heritage language, the second is bilingual, and the third understands but does not speak it. What varies is not the direction but the speed, and the factors that change the speed are not the ones commonly assumed.\n\nParental effort is a weaker predictor than parents expect. Households that speak the heritage language exclusively at home still see substantial shift, because the decisive exposure is not at home but among peers. Children calibrate to the language of the playground, and once schooling begins the ratio of hours moves sharply. A parent competing with that ratio is competing with arithmetic.\n\nWhat does predict retention is the availability of the language outside the family and outside instruction — a shop, a place of worship, a sports team, a cousin of the same age. Domains matter more than hours. A language used in one setting is a subject; a language used in four is a language. This is why community institutions correlate with retention more strongly than home policy does.\n\nLiteracy is the second strong predictor and the one most often skipped. Children who learn to read and write the heritage language retain it at markedly higher rates, because reading creates a use for the language that does not depend on other people being present. Oral-only transmission is more fragile precisely because it requires an interlocutor.\n\nThe costs of loss are usually described in cultural terms and are also practical. Families lose the ability to communicate in depth with grandparents, which affects care arrangements and the transmission of family history. There is also a documented cognitive and educational advantage to maintained bilingualism, and — a finding that surprises people — heritage-language literacy is associated with stronger rather than weaker attainment in the majority language, because the skills transfer.\n\nThe practical implication is that reversing the pattern is not mainly a matter of families trying harder. It depends on whether a child encounters the language in enough places to need it, which is a question about institutions rather than about parenting."
     },
     {
       "id": "celpip-reading-025-p4",
       "part": 4,
       "partTitle": "Reading for Viewpoints",
       "type": "viewpoints",
-      "title": "Should Canadian Cities Ban Single-Use Plastics Entirely?",
+      "title": "Should Public Services Fund Translation and Interpreting?",
       "viewpoints": [
         {
-          "name": "Amelia Chen, environmental policy researcher",
-          "text": "A complete ban on single-use plastics is both necessary and overdue. The evidence from cities that have already implemented bans shows significant reductions in plastic waste reaching waterways within just two years. The alternatives — compostable bags, reusable containers, paper packaging — are readily available and are rapidly decreasing in cost. The argument that bans harm low-income consumers is contradicted by studies showing that reusable options save money over time. Governments need to stop waiting for voluntary corporate action and mandate change."
+          "name": "Director Anneliese Brandt",
+          "text": "We fund interpreting and the cost argument against it is the one I find easiest to answer, because it is arithmetic. An unattended interpreter costs us a wasted consultant slot, a repeat appointment and occasionally a readmission — the interpreting line is smaller than the line it prevents. The argument I find harder is the one about integration, and I will not pretend I have settled it. My honest position is that this is a safety measure and that the integration debate should be had about language teaching, where it belongs, and not about whether people can understand a diagnosis."
         },
         {
-          "name": "Jordan Lee, retail business owner",
-          "text": "I support reducing plastic waste, but an outright ban is impractical for small businesses like mine. Single-use plastics remain the cheapest and most hygienic option for many food packaging needs. The alternatives often cost two to four times more, and those costs get passed directly to consumers. I would prefer a phased approach — tax incentives for businesses that switch, subsidies for compostable alternatives, and a realistic five-year transition timeline rather than an overnight ban that will hurt small retailers disproportionately."
+          "name": "Yusuf Barzani, community interpreter",
+          "text": "I am paid for the appointment, not for the waiting, the travel or the cancellation, which is why experienced interpreters leave and inexperienced ones fill the gap. The service then reports that interpreting quality is variable, which it is, and treats that as a reason to use less of it. Pay for the time the work actually takes and the quality problem substantially disappears. What is happening now is a shortage being read as a standards problem."
         },
         {
-          "name": "Dr. Marcus Webb, public health physician",
-          "text": "The public health dimension of plastic pollution is consistently underreported. Microplastics have now been found in human blood, breast milk, and lung tissue. We do not fully understand the long-term health consequences, but the precautionary principle demands that we act. From a public health perspective, delays in regulation are equivalent to accepting ongoing population-level exposure to potentially harmful substances. The inconvenience of transitioning to alternative packaging is trivial compared to what we may be doing to human health."
+          "name": "Dr Priya Venkataraman, health researcher",
+          "text": "The evidence on professional interpreting is strong: better diagnostic accuracy, fewer unnecessary tests, better adherence. The evidence on the alternative is what should end the argument — using family members is associated with significant error rates, including omissions the family member makes deliberately to protect the patient. That is not a criticism of families; it is what happens when the interpreter has a relationship with the person. I would spend more, and I would spend it on removing family interpreting rather than on expanding coverage."
         },
         {
-          "name": "Sandra Kowalski, municipal waste management director",
-          "text": "In practice, the effectiveness of single-use plastic bans depends heavily on what infrastructure is in place to handle the alternatives. Compostable packaging is only beneficial if it is actually composted — if it ends up in landfill, it may produce methane. Our city currently composites less than thirty percent of eligible organic waste. Before mandating plastic alternatives, we need significant investment in composting capacity, public education, and sorting infrastructure. A ban without infrastructure investment risks replacing one problem with another."
+          "name": "Councillor Fintan O'Rourke",
+          "text": "I voted for the budget and I want to raise something the debate avoids. We fund interpreting generously and we fund English classes with waiting lists of eleven months. Those two facts sit badly together, because the first is a permanent cost and the second is the thing that reduces it. I am not proposing we cut interpreting — people need to understand a doctor today, not in eleven months. I am saying that funding only the immediate need and calling it a language policy is how the immediate need becomes permanent."
         }
       ]
     }
@@ -194,647 +180,723 @@
       "id": "celpip-reading-025-q01",
       "passageId": "celpip-reading-025-p1",
       "part": 1,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "Why does Kevin want a community garden plot?",
+      "prompt": "When was the appointment?",
+      "question": "When was the appointment?",
       "options": [
-        "He has no outdoor space at his apartment",
-        "He recently moved to a house with a broken garden",
-        "He is doing research on urban farming",
-        "He wants to start a small business selling vegetables"
+        "4 June",
+        "9 June",
+        "13 June",
+        "In May"
       ],
-      "correctAnswer": "He has no outdoor space at his apartment",
-      "explanation": "Kevin says they do not have outdoor space at their apartment.",
-      "difficulty": "easy"
+      "correctAnswer": "4 June",
+      "explanation": "The consultant appointment was on 4 June.",
+      "difficulty": "medium",
+      "questionNumber": 1
     },
     {
       "id": "celpip-reading-025-q02",
       "passageId": "celpip-reading-025-p1",
       "part": 1,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "How long has Kevin been living in Riverdale?",
+      "prompt": "How many times was the interpreter booking confirmed?",
+      "question": "How many times was the interpreter booking confirmed?",
       "options": [
-        "Three months",
-        "Six months",
-        "Over a year",
-        "Two weeks"
+        "Once",
+        "Twice",
+        "Three times",
+        "It was never confirmed"
       ],
-      "correctAnswer": "Six months",
-      "explanation": "Kevin says he and his partner moved to Riverdale six months ago.",
-      "difficulty": "easy"
+      "correctAnswer": "Twice",
+      "explanation": "It was booked at referral and confirmed twice.",
+      "difficulty": "medium",
+      "questionNumber": 2
     },
     {
       "id": "celpip-reading-025-q03",
       "passageId": "celpip-reading-025-p1",
       "part": 1,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What is the approximate current wait time for a plot?",
+      "prompt": "Why did Wanjiru interpret?",
+      "question": "Why did Wanjiru interpret?",
       "options": [
-        "One week",
-        "Two to three weeks",
-        "Four to six weeks",
-        "Three to four months"
+        "No other option was offered at any point",
+        "She is a qualified interpreter",
+        "The alternative was her mother leaving without knowing her results",
+        "She was asked in advance"
       ],
-      "correctAnswer": "Four to six weeks",
-      "explanation": "Rosa says the average wait is approximately four to six weeks.",
-      "difficulty": "easy"
+      "correctAnswer": "The alternative was her mother leaving without knowing her results",
+      "explanation": "She states exactly that.",
+      "difficulty": "medium",
+      "questionNumber": 3
     },
     {
       "id": "celpip-reading-025-q04",
       "passageId": "celpip-reading-025-p1",
       "part": 1,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "How much does the small plot cost per season?",
+      "prompt": "What does she say about her own competence?",
+      "question": "What does she say about her own competence?",
       "options": [
-        "One hundred and forty dollars",
-        "Two hundred dollars",
-        "Forty dollars",
-        "Eighty dollars"
+        "She has interpreted before",
+        "She refused technical terms",
+        "She interpreted accurately",
+        "She did not know the word for the condition in either language and guessed"
       ],
-      "correctAnswer": "Eighty dollars",
-      "explanation": "Rosa says the small plot of four square metres costs eighty dollars per season.",
-      "difficulty": "medium"
+      "correctAnswer": "She did not know the word for the condition in either language and guessed",
+      "explanation": "She says she is not a medical interpreter.",
+      "difficulty": "medium",
+      "questionNumber": 4
     },
     {
       "id": "celpip-reading-025-q05",
       "passageId": "celpip-reading-025-p1",
       "part": 1,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What does the fee include, according to Rosa?",
+      "prompt": "What happened when her mother asked a question?",
+      "question": "What happened when her mother asked a question?",
       "options": [
-        "Shared tools, water connections, and a compost bin allocation",
-        "A storage shed and weekly instruction",
-        "Unlimited tool rental and parking",
-        "Only water connection"
+        "She answered as her daughter rather than translating it",
+        "The consultant answered directly",
+        "It was written down",
+        "It was translated exactly"
       ],
-      "correctAnswer": "Shared tools, water connections, and a compost bin allocation",
-      "explanation": "Rosa lists shared tools, water, and a compost bin allocation as what the fee includes.",
-      "difficulty": "medium"
+      "correctAnswer": "She answered as her daughter rather than translating it",
+      "explanation": "She says that is what happens when the interpreter is family.",
+      "difficulty": "medium",
+      "questionNumber": 5
     },
     {
       "id": "celpip-reading-025-q06",
       "passageId": "celpip-reading-025-p1",
       "part": 1,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "How long is the growing season at Riverdale Community Gardens?",
+      "prompt": "What does Wanjiru say nobody can now be certain of?",
+      "question": "What does Wanjiru say nobody can now be certain of?",
       "options": [
-        "April to August",
-        "May to October",
-        "June to September",
-        "March to November"
+        "Who booked the interpreter",
+        "What her mother was told",
+        "Whether the diagnosis was correct",
+        "Whether the appointment occurred"
       ],
-      "correctAnswer": "May to October",
-      "explanation": "Rosa says the fee covers the period from May through October.",
-      "difficulty": "medium"
+      "correctAnswer": "What her mother was told",
+      "explanation": "She says nobody in that room can now be certain.",
+      "difficulty": "medium",
+      "questionNumber": 6
     },
     {
       "id": "celpip-reading-025-q07",
       "passageId": "celpip-reading-025-p1",
       "part": 1,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What must Kevin do to be placed on the waitlist?",
+      "prompt": "What does she NOT want?",
+      "question": "What does she NOT want?",
       "options": [
-        "Call Rosa directly",
-        "Attend a garden meeting first",
-        "Submit an application form and payment online",
-        "Visit in person with ID"
+        "A further appointment",
+        "An explanation",
+        "Anyone disciplined, or an apology in the abstract",
+        "A correction to the notes"
       ],
-      "correctAnswer": "Submit an application form and payment online",
-      "explanation": "Rosa says Kevin must complete and submit the form with payment to be placed on the waitlist.",
-      "difficulty": "hard"
+      "correctAnswer": "Anyone disciplined, or an apology in the abstract",
+      "explanation": "She states both explicitly.",
+      "difficulty": "medium",
+      "questionNumber": 7
     },
     {
       "id": "celpip-reading-025-q08",
       "passageId": "celpip-reading-025-p1",
       "part": 1,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "When is the monthly garden social held?",
+      "prompt": "What caused the failure?",
+      "question": "What caused the failure?",
       "options": [
-        "Every Sunday morning",
-        "First Friday of each month",
-        "Second Saturday of each month",
-        "Last Saturday of each month"
+        "The agency cancelled",
+        "The appointment was double-booked",
+        "The interpreter did not attend",
+        "The booking was made against the referral and did not move when the appointment was rescheduled"
       ],
-      "correctAnswer": "Last Saturday of each month",
-      "explanation": "Rosa says the garden social is on the last Saturday of each month.",
-      "difficulty": "hard"
+      "correctAnswer": "The booking was made against the referral and did not move when the appointment was rescheduled",
+      "explanation": "The agency was never told to attend on 4 June.",
+      "difficulty": "medium",
+      "questionNumber": 8
     },
     {
       "id": "celpip-reading-025-q09",
       "passageId": "celpip-reading-025-p1",
       "part": 1,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "Who is welcome at the garden socials?",
+      "prompt": "What do the clinical notes record?",
+      "question": "What do the clinical notes record?",
       "options": [
-        "Newcomers, even before having their own plot",
-        "Only people who have paid their fees",
-        "Only current plot holders",
-        "Members who have held a plot for at least one year"
+        "'Interpreter present', without noting it was a family member",
+        "That no interpreter attended",
+        "Nothing about interpretation",
+        "That a family member interpreted"
       ],
-      "correctAnswer": "Newcomers, even before having their own plot",
-      "explanation": "Rosa says newcomers are welcome even before they have their own plot.",
-      "difficulty": "hard"
+      "correctAnswer": "'Interpreter present', without noting it was a family member",
+      "explanation": "Tomasz calls that a factual error and has submitted a correction.",
+      "difficulty": "medium",
+      "questionNumber": 9
     },
     {
       "id": "celpip-reading-025-q10",
       "passageId": "celpip-reading-025-p1",
       "part": 1,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What can be inferred about the standard plot size?",
+      "prompt": "Why would Tomasz not have found the error?",
+      "question": "Why would Tomasz not have found the error?",
       "options": [
-        "It is the same as the small plot",
-        "It is twice the size of the small plot",
-        "It is only available to returning members",
-        "It includes a private tool shed"
+        "The notes are sealed",
+        "Nothing in the process compares what was booked against what happened",
+        "The consultant did not report it",
+        "The system was offline"
       ],
-      "correctAnswer": "It is twice the size of the small plot",
-      "explanation": "The small plot is four square metres and the standard is eight square metres — exactly twice the size.",
-      "difficulty": "hard"
+      "correctAnswer": "Nothing in the process compares what was booked against what happened",
+      "explanation": "He says he would not have found it without her email.",
+      "difficulty": "medium",
+      "questionNumber": 10
     },
     {
       "id": "celpip-reading-025-q11",
       "passageId": "celpip-reading-025-p1",
       "part": 1,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What is the purpose of Rosa's email?",
+      "prompt": "What condition does Tomasz attach to quoting her?",
+      "question": "What condition does Tomasz attach to quoting her?",
       "options": [
-        "To offer him a plot immediately",
-        "To reject Kevin's application",
-        "To answer his questions and explain the process",
-        "To invite him to a specific event"
+        "That it is published in full",
+        "That she waives further complaint",
+        "Her permission, anonymously, and he will not use it unless she says yes",
+        "That she attends the training"
       ],
-      "correctAnswer": "To answer his questions and explain the process",
-      "explanation": "Rosa's email answers Kevin's questions about the wait, fees, and registration process.",
-      "difficulty": "hard"
+      "correctAnswer": "Her permission, anonymously, and he will not use it unless she says yes",
+      "explanation": "He states exactly those conditions.",
+      "difficulty": "medium",
+      "questionNumber": 11
     },
     {
       "id": "celpip-reading-025-q12",
       "passageId": "celpip-reading-025-p2",
       "part": 2,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "A 70-year-old woman wants to try an art class. Which programme is most suitable?",
+      "prompt": "What does an (H) marking mean?",
+      "question": "What does an (H) marking mean?",
       "options": [
-        "Community Dance on Thursday evening",
-        "Lunchtime Stretch on Wednesday",
-        "Gentle Yoga on Monday morning",
-        "Seniors' Art Class on Tuesday morning"
+        "It is for beginners",
+        "Childcare is provided",
+        "The class is free",
+        "It is for children who hear the language at home"
       ],
-      "correctAnswer": "Seniors' Art Class on Tuesday morning",
-      "explanation": "The Seniors' Art Class on Tuesday is for ages 60+ and includes materials.",
-      "difficulty": "easy"
+      "correctAnswer": "It is for children who hear the language at home",
+      "explanation": "Heritage-language classes are for those children.",
+      "difficulty": "medium",
+      "questionNumber": 12
     },
     {
       "id": "celpip-reading-025-q13",
       "passageId": "celpip-reading-025-p2",
       "part": 2,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "Which programmes require advance registration?",
+      "prompt": "Which classes are free through the settlement grant?",
+      "question": "Which classes are free through the settlement grant?",
       "options": [
-        "Gentle Yoga and Aqua Fitness",
-        "Open Badminton and Lunchtime Stretch",
-        "Parent & Tot Swim and Teen Gaming Club",
-        "Drop-in Basketball and Family Swim"
+        "English Conversation Circle and English for Employment",
+        "Family Bilingual Storytime only",
+        "All Saturday classes",
+        "All children's classes"
       ],
-      "correctAnswer": "Gentle Yoga and Aqua Fitness",
-      "explanation": "Only programmes marked with (R) require registration. Both Gentle Yoga and Aqua Fitness are marked (R).",
-      "difficulty": "easy"
+      "correctAnswer": "English Conversation Circle and English for Employment",
+      "explanation": "Those are the sessions marked (F).",
+      "difficulty": "medium",
+      "questionNumber": 13
     },
     {
       "id": "celpip-reading-025-q14",
       "passageId": "celpip-reading-025-p2",
       "part": 2,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "A teenager aged 15 wants to play badminton on a weekday. What is the correct programme?",
+      "prompt": "A woman with a toddler wants a free English class. Which sessions offer childcare?",
+      "question": "A woman with a toddler wants a free English class. Which sessions offer childcare?",
       "options": [
-        "Open Badminton on Saturday",
-        "Youth Badminton on Thursday afternoon",
-        "Drop-in Basketball on Tuesday",
-        "Community Dance on Thursday evening"
+        "None",
+        "Those marked (K) — the Conversation Circles and English for Employment",
+        "Saturday classes only",
+        "Interpreting Skills"
       ],
-      "correctAnswer": "Youth Badminton on Thursday afternoon",
-      "explanation": "Youth Badminton is on Thursday afternoon and is for ages 10–17.",
-      "difficulty": "easy"
+      "correctAnswer": "Those marked (K) — the Conversation Circles and English for Employment",
+      "explanation": "Childcare is available for (K) classes, booked 48 hours ahead.",
+      "difficulty": "medium",
+      "questionNumber": 14
     },
     {
       "id": "celpip-reading-025-q15",
       "passageId": "celpip-reading-025-p2",
       "part": 2,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "Which pool programme is available to families with young children on a Sunday?",
+      "prompt": "Which class costs most?",
+      "question": "Which class costs most?",
       "options": [
-        "Adult Swimming Lessons",
-        "Parent & Tot Swim",
-        "Family Swim",
-        "Aqua Fitness"
+        "Spanish (B)",
+        "Arabic (B)",
+        "Interpreting Skills Introduction",
+        "Mandarin for Children"
       ],
-      "correctAnswer": "Family Swim",
-      "explanation": "Family Swim is held on Sundays and is for families with children.",
-      "difficulty": "medium"
+      "correctAnswer": "Interpreting Skills Introduction",
+      "explanation": "It is $90 per term against $60 for others.",
+      "difficulty": "medium",
+      "questionNumber": 15
     },
     {
       "id": "celpip-reading-025-q16",
       "passageId": "celpip-reading-025-p2",
       "part": 2,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "How long does the Community Dance programme last?",
+      "prompt": "An adult with no Spanish wants to learn. Which class suits?",
+      "question": "An adult with no Spanish wants to learn. Which class suits?",
       "options": [
-        "Two hours thirty minutes",
-        "One hour",
-        "One hour thirty minutes",
-        "Two hours"
+        "Mandarin for Children",
+        "Family Bilingual Storytime",
+        "Interpreting Skills Introduction",
+        "Spanish (B)"
       ],
-      "correctAnswer": "Two hours",
-      "explanation": "Community Dance runs from 7:00–9:00 pm, which is two hours.",
-      "difficulty": "medium"
+      "correctAnswer": "Spanish (B)",
+      "explanation": "Beginner classes assume no prior knowledge.",
+      "difficulty": "medium",
+      "questionNumber": 16
     },
     {
       "id": "celpip-reading-025-q17",
       "passageId": "celpip-reading-025-p2",
       "part": 2,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "Which programme can someone attend without planning ahead on a Wednesday lunchtime?",
+      "prompt": "A parent pays per term rather than per session for Arabic. What is the saving?",
+      "question": "A parent pays per term rather than per session for Arabic. What is the saving?",
       "options": [
-        "Lunchtime Stretch",
-        "Seniors' Art Class",
-        "Aqua Fitness",
-        "Gentle Yoga"
+        "$12 across twelve sessions",
+        "$30",
+        "Nothing",
+        "It depends on attendance"
       ],
-      "correctAnswer": "Lunchtime Stretch",
-      "explanation": "Lunchtime Stretch on Wednesday is explicitly listed as drop-in with no registration needed.",
-      "difficulty": "medium"
+      "correctAnswer": "$12 across twelve sessions",
+      "explanation": "Twelve sessions at $6 is $72 against $60 per term, a saving of $12.",
+      "difficulty": "medium",
+      "questionNumber": 17
     },
     {
       "id": "celpip-reading-025-q18",
       "passageId": "celpip-reading-025-p2",
       "part": 2,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "Which location is used for the most programmes?",
+      "prompt": "Which session changes language each week?",
+      "question": "Which session changes language each week?",
       "options": [
-        "Gymnasium",
-        "Pool",
-        "Studio A",
-        "Craft Room"
+        "English Conversation Circle",
+        "Family Bilingual Storytime",
+        "Interpreting Skills Introduction",
+        "Tagalog for Children"
       ],
-      "correctAnswer": "Pool",
-      "explanation": "The Pool is used for Aqua Fitness, Adult Swimming Lessons, Parent & Tot Swim, and Family Swim — more than any other location.",
-      "difficulty": "hard"
+      "correctAnswer": "Family Bilingual Storytime",
+      "explanation": "It uses a different language weekly.",
+      "difficulty": "medium",
+      "questionNumber": 18
     },
     {
       "id": "celpip-reading-025-q19",
       "passageId": "celpip-reading-025-p2",
       "part": 2,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "A parent with a three-year-old child wants to swim together. Which programme should they attend?",
+      "prompt": "A man wants to attend a free English class but cannot make evenings. What is available?",
+      "question": "A man wants to attend a free English class but cannot make evenings. What is available?",
       "options": [
-        "Family Swim on Sunday",
-        "Adult Swimming Lessons on Monday",
-        "Parent & Tot Swim on Friday",
-        "Aqua Fitness on Wednesday"
+        "Tuesday evening",
+        "Nothing",
+        "Friday morning Conversation Circle or Wednesday morning English for Employment",
+        "Saturday morning only"
       ],
-      "correctAnswer": "Parent & Tot Swim on Friday",
-      "explanation": "Parent & Tot Swim is for children under 5 with an adult and runs on Friday.",
-      "difficulty": "hard"
+      "correctAnswer": "Friday morning Conversation Circle or Wednesday morning English for Employment",
+      "explanation": "Both are free daytime sessions.",
+      "difficulty": "medium",
+      "questionNumber": 19
     },
     {
       "id": "celpip-reading-025-q20",
       "passageId": "celpip-reading-025-p3",
       "part": 3,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What was the main criticism of the previous version of Canada's Food Guide?",
+      "prompt": "What is the usual three-generation sequence?",
+      "question": "What is the usual three-generation sequence?",
       "options": [
-        "It did not include enough vegetables",
-        "It was not updated frequently enough",
-        "It was too complicated for most people to follow",
-        "It placed too much emphasis on dairy and meat"
+        "Monolingual throughout",
+        "It varies with no pattern",
+        "Bilingual, then monolingual, then bilingual again",
+        "Heritage speaker, bilingual, then understands but does not speak"
       ],
-      "correctAnswer": "It placed too much emphasis on dairy and meat",
-      "explanation": "The passage says the previous guide was criticised for placing too much emphasis on dairy and meat.",
-      "difficulty": "easy"
+      "correctAnswer": "Heritage speaker, bilingual, then understands but does not speak",
+      "explanation": "That is the sequence described.",
+      "difficulty": "medium",
+      "questionNumber": 20
     },
     {
       "id": "celpip-reading-025-q21",
       "passageId": "celpip-reading-025-p3",
       "part": 3,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "According to the 2019 guide, what should make up roughly half of every meal?",
+      "prompt": "What varies between communities?",
+      "question": "What varies between communities?",
       "options": [
-        "Vegetables and fruit",
-        "Dairy products",
-        "Whole grain foods",
-        "Protein foods"
+        "The speed",
+        "The sequence order",
+        "Whether shift occurs at all",
+        "The direction"
       ],
-      "correctAnswer": "Vegetables and fruit",
-      "explanation": "The plate model shows roughly half of every meal should be vegetables and fruit.",
-      "difficulty": "easy"
+      "correctAnswer": "The speed",
+      "explanation": "The article says what varies is not the direction but the speed.",
+      "difficulty": "medium",
+      "questionNumber": 21
     },
     {
       "id": "celpip-reading-025-q22",
       "passageId": "celpip-reading-025-p3",
       "part": 3,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "Where is dairy placed in the 2019 Food Guide?",
+      "prompt": "Why is parental effort a weaker predictor than expected?",
+      "question": "Why is parental effort a weaker predictor than expected?",
       "options": [
-        "Under the vegetables and fruit category",
-        "Within the broader protein food category",
-        "It was removed entirely from the guide",
-        "In its own separate category"
+        "Parents give up quickly",
+        "The decisive exposure is among peers, not at home",
+        "Home use is rarely consistent",
+        "Children resist instruction"
       ],
-      "correctAnswer": "Within the broader protein food category",
-      "explanation": "The 2019 guide merged dairy into the broader protein food category.",
-      "difficulty": "easy"
+      "correctAnswer": "The decisive exposure is among peers, not at home",
+      "explanation": "Children calibrate to the language of the playground.",
+      "difficulty": "medium",
+      "questionNumber": 22
     },
     {
       "id": "celpip-reading-025-q23",
       "passageId": "celpip-reading-025-p3",
       "part": 3,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What evidence influenced the repositioning of dairy?",
+      "prompt": "What does the article say a parent is competing with?",
+      "question": "What does the article say a parent is competing with?",
       "options": [
-        "Findings that dairy increases cholesterol",
-        "Studies showing dairy is harmful to children",
-        "Evidence that high dairy consumption is not necessary for adult bone health",
-        "Research showing dairy increases obesity"
+        "Media",
+        "School policy",
+        "Arithmetic",
+        "Peer pressure alone"
       ],
-      "correctAnswer": "Evidence that high dairy consumption is not necessary for adult bone health",
-      "explanation": "The passage says growing evidence showed high dairy consumption is not necessary for bone health in adults.",
-      "difficulty": "medium"
+      "correctAnswer": "Arithmetic",
+      "explanation": "Once schooling begins the ratio of hours moves sharply.",
+      "difficulty": "medium",
+      "questionNumber": 23
     },
     {
       "id": "celpip-reading-025-q24",
       "passageId": "celpip-reading-025-p3",
       "part": 3,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What beverage does the new guide recommend as preferred?",
+      "prompt": "What predicts retention?",
+      "question": "What predicts retention?",
       "options": [
-        "Low-fat milk",
-        "100% fruit juice",
-        "Coffee or tea",
-        "Water"
+        "Parental fluency",
+        "Family size",
+        "Hours of instruction",
+        "Availability of the language across several domains outside the family"
       ],
-      "correctAnswer": "Water",
-      "explanation": "The passage says the guide advises choosing water as the preferred beverage over sugary drinks.",
-      "difficulty": "medium"
+      "correctAnswer": "Availability of the language across several domains outside the family",
+      "explanation": "A language used in one setting is a subject; in four it is a language.",
+      "difficulty": "medium",
+      "questionNumber": 24
     },
     {
       "id": "celpip-reading-025-q25",
       "passageId": "celpip-reading-025-p3",
       "part": 3,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What is one social dimension of eating that the new guide encourages?",
+      "prompt": "What is the second strong predictor?",
+      "question": "What is the second strong predictor?",
       "options": [
-        "Eating meals with others",
-        "Following a specific diet plan",
-        "Eating a large breakfast",
-        "Joining a cooking class"
+        "Literacy in the heritage language",
+        "Travel to the country of origin",
+        "Sibling order",
+        "Formal instruction"
       ],
-      "correctAnswer": "Eating meals with others",
-      "explanation": "The guide encourages eating meals with others as part of its social dimension.",
-      "difficulty": "medium"
+      "correctAnswer": "Literacy in the heritage language",
+      "explanation": "It is the one most often skipped.",
+      "difficulty": "medium",
+      "questionNumber": 25
     },
     {
       "id": "celpip-reading-025-q26",
       "passageId": "celpip-reading-025-p3",
       "part": 3,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What criticism was raised about the 2019 guide regarding Indigenous communities?",
+      "prompt": "Why does literacy help retention?",
+      "question": "Why does literacy help retention?",
       "options": [
-        "It was not translated into enough Indigenous languages",
-        "It ignored traditional dietary patterns relying on land-based foods",
-        "It recommended too many imported foods",
-        "It contained inaccurate information about wild game"
+        "It is easier than speaking",
+        "Reading creates a use that does not depend on other people being present",
+        "It is taught in schools",
+        "It improves pronunciation"
       ],
-      "correctAnswer": "It ignored traditional dietary patterns relying on land-based foods",
-      "explanation": "Critics said the guide largely ignored Indigenous communities' traditional land-based dietary patterns.",
-      "difficulty": "hard"
+      "correctAnswer": "Reading creates a use that does not depend on other people being present",
+      "explanation": "Oral-only transmission is more fragile because it requires an interlocutor.",
+      "difficulty": "medium",
+      "questionNumber": 26
     },
     {
       "id": "celpip-reading-025-q27",
       "passageId": "celpip-reading-025-p3",
       "part": 3,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "How did the government respond to the criticism about Indigenous food patterns?",
+      "prompt": "What is the surprising finding about heritage-language literacy?",
+      "question": "What is the surprising finding about heritage-language literacy?",
       "options": [
-        "By consulting Indigenous elders to revise the plate model",
-        "By rewriting the whole guide",
-        "By acknowledging the gap and committing to developing supplementary resources",
-        "By adding a new food category for game meats"
+        "It only helps younger children",
+        "It delays majority-language learning",
+        "It is associated with stronger attainment in the majority language",
+        "It has no measurable effect"
       ],
-      "correctAnswer": "By acknowledging the gap and committing to developing supplementary resources",
-      "explanation": "The government acknowledged the gap and committed to developing supplementary resources.",
-      "difficulty": "hard"
+      "correctAnswer": "It is associated with stronger attainment in the majority language",
+      "explanation": "The article says the skills transfer.",
+      "difficulty": "medium",
+      "questionNumber": 27
     },
     {
       "id": "celpip-reading-025-q28",
       "passageId": "celpip-reading-025-p3",
       "part": 3,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "Which of the following is NOT listed as a protein food in the 2019 guide?",
+      "prompt": "What is the practical implication?",
+      "question": "What is the practical implication?",
       "options": [
-        "Tofu",
-        "Lentils",
-        "Yogurt",
-        "Cheese"
+        "Schools should teach it exclusively",
+        "The pattern cannot be changed",
+        "Families should try harder",
+        "It depends on whether a child encounters the language in enough places to need it"
       ],
-      "correctAnswer": "Cheese",
-      "explanation": "The passage lists beans, lentils, tofu, fish, eggs, lean meat, and nuts as protein foods — cheese is not specifically listed.",
-      "difficulty": "hard"
+      "correctAnswer": "It depends on whether a child encounters the language in enough places to need it",
+      "explanation": "The article calls it a question about institutions rather than parenting.",
+      "difficulty": "medium",
+      "questionNumber": 28
     },
     {
       "id": "celpip-reading-025-q29",
       "passageId": "celpip-reading-025-p4",
       "part": 4,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker believes the ban is both necessary and overdue?",
+      "prompt": "Which argument does Director Brandt find easiest to answer?",
+      "question": "Which argument does Director Brandt find easiest to answer?",
       "options": [
-        "Amelia Chen",
-        "Sandra Kowalski",
-        "Jordan Lee",
-        "Dr. Marcus Webb"
+        "The cost argument",
+        "The safety argument",
+        "The staffing argument",
+        "The integration argument"
       ],
-      "correctAnswer": "Amelia Chen",
-      "explanation": "Amelia Chen says a complete ban is 'both necessary and overdue.'",
-      "difficulty": "easy"
+      "correctAnswer": "The cost argument",
+      "explanation": "She says it is arithmetic.",
+      "difficulty": "medium",
+      "questionNumber": 29
     },
     {
       "id": "celpip-reading-025-q30",
       "passageId": "celpip-reading-025-p4",
       "part": 4,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Jordan Lee prefer instead of an outright ban?",
+      "prompt": "What does she say an unattended interpreter costs?",
+      "question": "What does she say an unattended interpreter costs?",
       "options": [
-        "A voluntary agreement among large corporations",
-        "A phased approach with incentives and a five-year timeline",
-        "An immediate ban with subsidies for affected businesses",
-        "Continued use of single-use plastics with better disposal systems"
+        "Only the booking fee",
+        "A wasted consultant slot, a repeat appointment and occasionally a readmission",
+        "Nothing measurable",
+        "A complaint investigation"
       ],
-      "correctAnswer": "A phased approach with incentives and a five-year timeline",
-      "explanation": "Jordan Lee prefers a phased approach with tax incentives, subsidies, and a five-year transition.",
-      "difficulty": "easy"
+      "correctAnswer": "A wasted consultant slot, a repeat appointment and occasionally a readmission",
+      "explanation": "She says the interpreting line is smaller than the line it prevents.",
+      "difficulty": "medium",
+      "questionNumber": 30
     },
     {
       "id": "celpip-reading-025-q31",
       "passageId": "celpip-reading-025-p4",
       "part": 4,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker raises a concern about microplastics in the human body?",
+      "prompt": "What does she decline to claim?",
+      "question": "What does she decline to claim?",
       "options": [
-        "Sandra Kowalski",
-        "Jordan Lee",
-        "Dr. Marcus Webb",
-        "Amelia Chen"
+        "That demand is rising",
+        "That interpreting is cost-effective",
+        "That she has settled the integration argument",
+        "That the service is safe"
       ],
-      "correctAnswer": "Dr. Marcus Webb",
-      "explanation": "Dr. Webb mentions microplastics found in human blood, breast milk, and lung tissue.",
-      "difficulty": "easy"
+      "correctAnswer": "That she has settled the integration argument",
+      "explanation": "She says she will not pretend she has.",
+      "difficulty": "medium",
+      "questionNumber": 31
     },
     {
       "id": "celpip-reading-025-q32",
       "passageId": "celpip-reading-025-p4",
       "part": 4,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Sandra Kowalski say about compostable packaging?",
+      "prompt": "What is Yusuf paid for?",
+      "question": "What is Yusuf paid for?",
       "options": [
-        "It is currently too expensive for most cities",
-        "It has already solved the plastic problem in other cities",
-        "It is always better than plastic",
-        "It is only beneficial if it is actually composted"
+        "Time worked",
+        "A daily rate",
+        "The whole engagement",
+        "The appointment only, not waiting, travel or cancellation"
       ],
-      "correctAnswer": "It is only beneficial if it is actually composted",
-      "explanation": "Sandra says compostable packaging is only beneficial if composted — in landfill it may produce methane.",
-      "difficulty": "medium"
+      "correctAnswer": "The appointment only, not waiting, travel or cancellation",
+      "explanation": "That is why experienced interpreters leave.",
+      "difficulty": "medium",
+      "questionNumber": 32
     },
     {
       "id": "celpip-reading-025-q33",
       "passageId": "celpip-reading-025-p4",
       "part": 4,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What percentage of eligible organic waste does Sandra's city currently compost?",
+      "prompt": "How does Yusuf characterise the quality problem?",
+      "question": "How does Yusuf characterise the quality problem?",
       "options": [
-        "Less than thirty percent",
-        "Over fifty percent",
-        "Less than ten percent",
-        "About twenty percent"
+        "A shortage being read as a standards problem",
+        "An unavoidable feature",
+        "A recruitment success",
+        "A training failure"
       ],
-      "correctAnswer": "Less than thirty percent",
-      "explanation": "Sandra says the city currently composts less than thirty percent of eligible organic waste.",
-      "difficulty": "medium"
+      "correctAnswer": "A shortage being read as a standards problem",
+      "explanation": "He says paying for actual time would largely resolve it.",
+      "difficulty": "medium",
+      "questionNumber": 33
     },
     {
       "id": "celpip-reading-025-q34",
       "passageId": "celpip-reading-025-p4",
       "part": 4,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "How does Amelia Chen respond to concerns about cost impacts on low-income consumers?",
+      "prompt": "What does Dr Venkataraman say about professional interpreting evidence?",
+      "question": "What does Dr Venkataraman say about professional interpreting evidence?",
       "options": [
-        "She says alternatives cost two to four times more",
-        "She says reusable options save money over time",
-        "She suggests the government should subsidise alternatives",
-        "She acknowledges it is a valid concern"
+        "It is weak",
+        "It is strong — better accuracy, fewer unnecessary tests, better adherence",
+        "It is contested",
+        "It is unavailable"
       ],
-      "correctAnswer": "She says reusable options save money over time",
-      "explanation": "Amelia says studies show reusable options save money over time, contradicting the cost concern.",
-      "difficulty": "medium"
+      "correctAnswer": "It is strong — better accuracy, fewer unnecessary tests, better adherence",
+      "explanation": "She lists exactly those outcomes.",
+      "difficulty": "medium",
+      "questionNumber": 34
     },
     {
       "id": "celpip-reading-025-q35",
       "passageId": "celpip-reading-025-p4",
       "part": 4,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker is most focused on the immediate economic impact on small businesses?",
+      "prompt": "What does she say about family interpreting?",
+      "question": "What does she say about family interpreting?",
       "options": [
-        "Sandra Kowalski",
-        "Amelia Chen",
-        "Jordan Lee",
-        "Dr. Marcus Webb"
+        "It has not been studied",
+        "It is adequate in most cases",
+        "It is associated with significant error rates, including deliberate omissions to protect the patient",
+        "It is preferable for privacy"
       ],
-      "correctAnswer": "Jordan Lee",
-      "explanation": "Jordan Lee focuses on how bans disproportionately hurt small retailers.",
-      "difficulty": "hard"
+      "correctAnswer": "It is associated with significant error rates, including deliberate omissions to protect the patient",
+      "explanation": "She says it is not a criticism of families but what happens when the interpreter has a relationship.",
+      "difficulty": "medium",
+      "questionNumber": 35
     },
     {
       "id": "celpip-reading-025-q36",
       "passageId": "celpip-reading-025-p4",
       "part": 4,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What principle does Dr. Webb invoke to argue for action?",
+      "prompt": "Where would Dr Venkataraman spend more?",
+      "question": "Where would Dr Venkataraman spend more?",
       "options": [
-        "The free market principle",
-        "The public interest principle",
-        "The economic efficiency principle",
-        "The precautionary principle"
+        "On training family members",
+        "On technology",
+        "On expanding coverage",
+        "On removing family interpreting"
       ],
-      "correctAnswer": "The precautionary principle",
-      "explanation": "Dr. Webb says the precautionary principle demands acting in the face of uncertain health risks.",
-      "difficulty": "hard"
+      "correctAnswer": "On removing family interpreting",
+      "explanation": "She states that priority explicitly.",
+      "difficulty": "medium",
+      "questionNumber": 36
     },
     {
       "id": "celpip-reading-025-q37",
       "passageId": "celpip-reading-025-p4",
       "part": 4,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "Which two speakers would most likely agree that a simple, immediate ban is the wrong approach?",
+      "prompt": "What does Councillor O'Rourke point out?",
+      "question": "What does Councillor O'Rourke point out?",
       "options": [
-        "Jordan Lee and Sandra Kowalski",
-        "Amelia Chen and Sandra Kowalski",
-        "Dr. Marcus Webb and Jordan Lee",
-        "Amelia Chen and Dr. Marcus Webb"
+        "Interpreting is funded generously while English classes have eleven-month waiting lists",
+        "Classes are oversubscribed by choice",
+        "Interpreting should be cut",
+        "Interpreting is underfunded"
       ],
-      "correctAnswer": "Jordan Lee and Sandra Kowalski",
-      "explanation": "Jordan Lee wants a phased approach and Sandra wants infrastructure first — both oppose an immediate ban.",
-      "difficulty": "hard"
+      "correctAnswer": "Interpreting is funded generously while English classes have eleven-month waiting lists",
+      "explanation": "He says the two facts sit badly together.",
+      "difficulty": "medium",
+      "questionNumber": 37
     },
     {
       "id": "celpip-reading-025-q38",
       "passageId": "celpip-reading-025-p4",
       "part": 4,
-      "topic": "cultural adjustment",
+      "topic": "languages and multilingual communities",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Sandra Kowalski suggest is needed before mandating plastic alternatives?",
+      "prompt": "What is he NOT proposing?",
+      "question": "What is he NOT proposing?",
       "options": [
-        "A public vote on the issue",
-        "Significant investment in composting capacity, education, and sorting infrastructure",
-        "A full ban on imports of plastic packaging",
-        "A five-year government study on alternatives"
+        "More English classes",
+        "Cutting interpreting",
+        "A review of the budget",
+        "Longer waiting lists"
       ],
-      "correctAnswer": "Significant investment in composting capacity, education, and sorting infrastructure",
-      "explanation": "Sandra says investment in composting capacity, public education, and sorting infrastructure is needed first.",
-      "difficulty": "hard"
+      "correctAnswer": "Cutting interpreting",
+      "explanation": "He says people need to understand a doctor today, not in eleven months.",
+      "difficulty": "medium",
+      "questionNumber": 38
     }
   ]
 }
