@@ -41,117 +41,110 @@
     {
       "id": "celpip-reading-020-p1",
       "part": 1,
-      "partTitle": "Reading for Correspondence",
+      "partTitle": "Reading Correspondence",
       "type": "correspondence",
-      "title": "Email Correspondence: Community Garden Plot Application",
+      "title": "Email Correspondence: A Home Care Schedule",
       "emails": [
         {
-          "from": "Kevin Marsh <k.marsh@gmail.com>",
-          "to": "coordinator@riverdalegardens.ca",
-          "subject": "Application for a Garden Plot",
-          "date": "May 3",
-          "body": "Dear Coordinator,\n\nI am writing to apply for one of the community garden plots I noticed advertised on your website. My partner and I moved to the Riverdale neighbourhood six months ago, and we are very keen to grow our own vegetables this summer. We do not have any outdoor space at our apartment, so the community garden would be ideal.\n\nI noticed the website mentions a waitlist. Could you let me know approximately how long the current wait is, and whether there is anything we can do to move things along? Also, is there a fee involved, and if so, does it cover the full growing season?\n\nThank you very much for your time. I look forward to hearing from you.\n\nKevin Marsh"
+          "from": "Rosalind Achebe <r.achebe@mailbox.ca>",
+          "to": "care@brightwatersupport.ca",
+          "subject": "Care visits for my father, client 3318 — timing",
+          "date": "July 8",
+          "body": "Dear Brightwater,\n\nMy father is 87 and has four home visits a day under his care package. I am writing about the timing, not the carers, who have been kind and competent without exception.\n\nHis contracted visits are breakfast, lunch, tea and bedtime. In practice the bedtime visit has arrived between 6:40 and 7:15 pm for the past six weeks. He is being put to bed before dark in July. He then wakes at two in the morning and sits in a chair until the breakfast visit at eight.\n\nI understand the constraint. The bedtime round covers eleven clients and cannot serve them all at bedtime, and I am not asking you to send someone at nine simply because we would prefer it.\n\nWhat I am asking is whether the order of the round is fixed. If my father is always last but one because that is how the route was built, and the route has never been revisited, then someone else is always first and my father is always at 6:45. If the order rotated weekly, everyone would get a reasonable bedtime some of the time. That may be impossible for reasons I cannot see, and I would accept that answer if it were the reason.\n\nWith thanks,\nRosalind Achebe"
         },
         {
-          "from": "Rosa Delacourt <coordinator@riverdalegardens.ca>",
-          "to": "k.marsh@gmail.com",
-          "subject": "RE: Application for a Garden Plot",
-          "date": "May 5",
-          "body": "Dear Kevin,\n\nThank you for your interest in Riverdale Community Gardens. We are delighted to welcome new applicants, especially those who are new to the neighbourhood.\n\nTo answer your questions: yes, there is currently a waitlist, and the average wait time is approximately four to six weeks depending on plot size. We have two plot sizes available — a small plot of four square metres at eighty dollars per season, and a standard plot of eight square metres at one hundred and forty dollars per season. The fee covers the period from May through October and includes access to shared tools, water connections, and a compost bin allocation.\n\nTo register your interest formally, please complete the application form on our website and submit it along with your payment. Once your application is processed, you will be placed on the waitlist and contacted when a plot becomes available.\n\nWe also hold a monthly garden social on the last Saturday of each month, and newcomers are very welcome to join even before they have their own plot.\n\nBest regards,\nRosa Delacourt\nCoordinator, Riverdale Community Gardens"
+          "from": "Brightwater Support <care@brightwatersupport.ca>",
+          "to": "r.achebe@mailbox.ca",
+          "subject": "RE: Care visits for my father, client 3318 — timing",
+          "date": "July 11",
+          "body": "Dear Ms Achebe,\n\nThe order is not fixed and it has never been revisited. You have identified something nobody here had asked.\n\nThe evening route was built four years ago around geography — shortest driving distance between addresses — and has been inherited by every coordinator since, including me. Nobody chose the order your father sits in. It is simply the order that fell out of a mapping exercise, and it has quietly become a permanent allocation of the least desirable slot to the same four clients.\n\nI have modelled a weekly rotation this morning. It adds about eleven minutes of driving to the round, which is absorbable. It starts on 21 July, and your father will be first on the round in week one, which puts his bedtime visit at approximately 8:45 pm.\n\nTwo things I should be straight about.\n\nThe rotation cannot include two clients who require a fixed evening time for medication reasons. They will remain in place, and that is clinical rather than convenience.\n\nAnd the two-in-the-morning waking may not resolve with a later bedtime. It might, and I would not want you to expect it. If it persists, that is worth raising with his GP rather than with us, because it may be unrelated to the schedule entirely.\n\nRegards,\nMalika Benhaddou\nCare Coordinator"
         }
       ]
     },
     {
       "id": "celpip-reading-020-p2",
       "part": 2,
-      "partTitle": "Applying a Diagram",
+      "partTitle": "Reading to Apply a Diagram",
       "type": "schedule",
-      "title": "Community Recreation Centre — Spring Programme Schedule",
-      "intro": "The Maplewood Recreation Centre offers the following programmes during the spring session (April 7 – June 27). All programmes are drop-in unless marked with (R) for registered.",
+      "title": "Brightwater Seniors' Centre — Winter Programme",
+      "intro": "Runs January 6 to March 27. Sessions marked (T) include return transport within five kilometres, booked 48 hours ahead. Sessions marked (L) include a hot lunch. Members pay the listed fee; a first visit is always free. Anyone requiring assistance with mobility should tell reception when booking so a volunteer can be assigned.",
       "schedule": [
         {
           "day": "Monday",
-          "time": "9:00–10:00 am",
-          "programme": "Gentle Yoga (R)",
-          "location": "Studio A",
-          "notes": "Ages 18+, mats provided"
+          "time": "10:00–12:00 pm",
+          "programme": "Chair-Based Exercise (T)",
+          "location": "Activity Room",
+          "notes": "$5. Seated throughout. No experience needed."
         },
         {
           "day": "Monday",
-          "time": "6:00–7:30 pm",
-          "programme": "Adult Swimming Lessons (R)",
-          "location": "Pool",
-          "notes": "Non-swimmers only"
+          "time": "12:30–2:00 pm",
+          "programme": "Lunch Club (L) (T)",
+          "location": "Dining Room",
+          "notes": "$8. Two courses. Dietary needs on booking."
         },
         {
           "day": "Tuesday",
+          "time": "10:30–12:00 pm",
+          "programme": "Memory Café",
+          "location": "Quiet Lounge",
+          "notes": "Free. For people with memory loss and their companions."
+        },
+        {
+          "day": "Tuesday",
+          "time": "2:00–4:00 pm",
+          "programme": "Digital Help Desk",
+          "location": "Library Corner",
+          "notes": "Free. One-to-one, 30 minutes each. Booking essential."
+        },
+        {
+          "day": "Wednesday",
           "time": "10:00–11:30 am",
-          "programme": "Seniors' Art Class (R)",
-          "location": "Craft Room",
-          "notes": "Ages 60+, materials included"
-        },
-        {
-          "day": "Tuesday",
-          "time": "7:00–8:30 pm",
-          "programme": "Drop-in Basketball",
-          "location": "Gymnasium",
-          "notes": "Ages 14+, bring own water"
+          "programme": "Walking Group",
+          "location": "Meet at reception",
+          "notes": "Free. Two routes: 1 km and 3 km. Cancelled in ice."
         },
         {
           "day": "Wednesday",
-          "time": "9:00–10:00 am",
-          "programme": "Aqua Fitness (R)",
-          "location": "Pool",
-          "notes": "All fitness levels"
-        },
-        {
-          "day": "Wednesday",
-          "time": "12:00–1:00 pm",
-          "programme": "Lunchtime Stretch",
-          "location": "Studio A",
-          "notes": "Drop-in, no registration needed"
+          "time": "1:00–3:00 pm",
+          "programme": "Craft & Chat (L)",
+          "location": "Activity Room",
+          "notes": "$10. Materials and lunch included."
         },
         {
           "day": "Thursday",
-          "time": "4:30–5:30 pm",
-          "programme": "Youth Badminton (R)",
-          "location": "Gymnasium",
-          "notes": "Ages 10–17"
+          "time": "10:00–12:00 pm",
+          "programme": "Benefits & Pensions Advice",
+          "location": "Meeting Room 2",
+          "notes": "Free. Appointments of 45 minutes. Bring paperwork."
         },
         {
           "day": "Thursday",
-          "time": "7:00–9:00 pm",
-          "programme": "Community Dance (R)",
-          "location": "Main Hall",
-          "notes": "All ages, partners welcome"
+          "time": "2:00–3:30 pm",
+          "programme": "Choir",
+          "location": "Activity Room",
+          "notes": "$4. No audition. All voices."
         },
         {
           "day": "Friday",
-          "time": "9:00–10:30 am",
-          "programme": "Parent & Tot Swim",
-          "location": "Pool",
-          "notes": "Children under 5 with adult"
+          "time": "10:30–12:30 pm",
+          "programme": "Gardening Club (T)",
+          "location": "Raised Beds",
+          "notes": "$5. Tools provided. Sheltered in poor weather."
+        },
+        {
+          "day": "Friday",
+          "time": "1:00–2:30 pm",
+          "programme": "Falls Prevention (T)",
+          "location": "Activity Room",
+          "notes": "$6. Referral or self-referral. Physiotherapist attends."
         },
         {
           "day": "Saturday",
-          "time": "10:00 am–12:00 pm",
-          "programme": "Open Badminton",
-          "location": "Gymnasium",
-          "notes": "Drop-in, all skill levels"
-        },
-        {
-          "day": "Saturday",
-          "time": "2:00–4:00 pm",
-          "programme": "Teen Gaming Club (R)",
-          "location": "Computer Room",
-          "notes": "Ages 13–18"
-        },
-        {
-          "day": "Sunday",
-          "time": "11:00 am–1:00 pm",
-          "programme": "Family Swim",
-          "location": "Pool",
-          "notes": "Families with children"
+          "time": "11:00–1:00 pm",
+          "programme": "Family Visiting Lunch (L)",
+          "location": "Dining Room",
+          "notes": "$12 per person. Relatives welcome. Book by Thursday."
         }
       ]
     },
@@ -160,31 +153,31 @@
       "part": 3,
       "partTitle": "Reading for Information",
       "type": "article",
-      "title": "Understanding Canada's Food Guide",
-      "content": "Canada's Food Guide was significantly revised in 2019, marking the most substantial update to the document in over a decade. The new guide moved away from the previous four food-group model — which had been criticised for placing too much emphasis on dairy and meat — toward a simpler, more flexible approach to healthy eating.\n\nThe updated guide is built around three core categories: vegetables and fruit, whole grain foods, and protein foods. Crucially, it does not specify serving sizes or recommended daily portions in the traditional sense. Instead, it uses a plate model showing that roughly half of every meal should consist of vegetables and fruit, one quarter should be whole grain foods such as brown rice, oats, or whole wheat bread, and one quarter should be protein foods.\n\nOne of the most significant changes was the repositioning of dairy products. In the previous guide, dairy had its own category and Canadians were encouraged to consume multiple daily servings. The 2019 guide merged dairy into the broader protein food category, alongside beans, lentils, tofu, fish, eggs, lean meat, and nuts. This change was partly driven by growing evidence that high dairy consumption is not necessary for bone health in adults and that plant-based protein sources offer comparable nutritional value.\n\nThe new guide also places greater emphasis on the social and environmental dimensions of eating. It encourages Canadians to cook at home more often, eat meals with others, and be mindful of marketing from the food industry. It also recommends limiting foods high in sodium, sugar, and saturated fat, and advises choosing water as the preferred beverage over sugary drinks.\n\nCritics of the new guide pointed out that it largely ignored the traditional dietary patterns of many Indigenous communities, which rely heavily on land-based foods such as game meats, fish, and berries. The government acknowledged this gap and committed to developing supplementary resources that better reflect Indigenous food sovereignty."
+      "title": "What Older People Actually Want From Where They Live",
+      "content": "Policy on housing in later life is organised around a phrase — ageing in place — that almost everyone endorses and few examine. Surveys consistently find that older people wish to remain in their own homes, and that finding is used to justify a broad preference for home adaptation over any form of moving. The surveys are accurate. The inference drawn from them is frequently wrong.\n\nWhat the more careful research finds is that the strong preference is for remaining in a familiar community rather than in a particular building. When the question separates the two, willingness to move within a known neighbourhood is substantially higher than willingness to leave it, and considerably higher than the headline figure suggests. A policy that funds stairlifts in unsuitable houses and builds nothing appropriate nearby is answering a question that was not asked.\n\nThe building itself matters in ways that are easy to measure and often ignored. Falls are the dominant cause of injury and lost independence in later life, and a large share occur on stairs, in bathrooms and at thresholds. Adaptations reduce that risk substantially, and yet uptake is limited by cost, by waiting lists for assessment, and by a factor rarely recorded: many people decline adaptations because they read them as an announcement that decline has begun. Presentation affects uptake as much as availability does.\n\nIsolation is the outcome most strongly associated with poor health in this age group, and it correlates less with living alone than with the loss of routine reasons to leave the house. Someone living alone who shops daily and attends something weekly is in a different position from someone living with family who does neither. This distinction is invisible in the metrics usually collected, which count household composition rather than contact.\n\nTransport is the constraint that determines whether any of the above is achievable. Where a bus route is withdrawn, the effect on an older population is not inconvenience but the removal of the mechanism by which shops, appointments and company are reached. Housing designed for later life in a location without transport reproduces the problem it was built to solve, at higher cost.\n\nThe practical conclusion is that the useful unit of planning is the neighbourhood rather than the dwelling: adapted homes are necessary and insufficient, and what determines whether later life goes well is largely what lies within a short walk of the front door."
     },
     {
       "id": "celpip-reading-020-p4",
       "part": 4,
       "partTitle": "Reading for Viewpoints",
       "type": "viewpoints",
-      "title": "Should Canadian Cities Ban Single-Use Plastics Entirely?",
+      "title": "Should Care Costs Be Capped by Government?",
       "viewpoints": [
         {
-          "name": "Amelia Chen, environmental policy researcher",
-          "text": "A complete ban on single-use plastics is both necessary and overdue. The evidence from cities that have already implemented bans shows significant reductions in plastic waste reaching waterways within just two years. The alternatives — compostable bags, reusable containers, paper packaging — are readily available and are rapidly decreasing in cost. The argument that bans harm low-income consumers is contradicted by studies showing that reusable options save money over time. Governments need to stop waiting for voluntary corporate action and mandate change."
+          "name": "Minister Cordelia Ashworth",
+          "text": "We introduced a lifetime cap and I would defend it while accepting the criticism that it protects assets more than it protects people. That is true. The households that benefit most are those with something substantial to lose, and the poorest were already protected by means-testing. What the cap actually buys is the ability to plan — before it, no family could answer the question of what care might cost, because the honest answer was unbounded. I would rather argue for it on that basis than pretend it is redistributive."
         },
         {
-          "name": "Jordan Lee, retail business owner",
-          "text": "I support reducing plastic waste, but an outright ban is impractical for small businesses like mine. Single-use plastics remain the cheapest and most hygienic option for many food packaging needs. The alternatives often cost two to four times more, and those costs get passed directly to consumers. I would prefer a phased approach — tax incentives for businesses that switch, subsidies for compostable alternatives, and a realistic five-year transition timeline rather than an overnight ban that will hurt small retailers disproportionately."
+          "name": "Dr Ilya Sokolov, health economist",
+          "text": "The cap is defensible and the arithmetic around it is routinely misrepresented, including by its supporters. It counts only personal care, not accommodation costs, so a family reaching the cap continues paying a substantial monthly sum indefinitely. Most people hear the word cap and understand it as a total. That gap between the policy and the public understanding of it is the real problem, and it will surface as anger at exactly the moment families are least able to absorb it."
         },
         {
-          "name": "Dr. Marcus Webb, public health physician",
-          "text": "The public health dimension of plastic pollution is consistently underreported. Microplastics have now been found in human blood, breast milk, and lung tissue. We do not fully understand the long-term health consequences, but the precautionary principle demands that we act. From a public health perspective, delays in regulation are equivalent to accepting ongoing population-level exposure to potentially harmful substances. The inconvenience of transitioning to alternative packaging is trivial compared to what we may be doing to human health."
+          "name": "Winifred Osei-Tutu, care home manager",
+          "text": "My concern is the funding rate, not the cap. Local authority rates have not tracked wage costs, so homes cross-subsidise state-funded residents from self-funded ones, which means a self-funder pays more for the identical room and care. That is not a business model anyone designed; it is what happens when one rate is set below cost. A cap that increases the state-funded proportion without changing the rate accelerates a problem the sector already has, and homes will close before the policy is reviewed."
         },
         {
-          "name": "Sandra Kowalski, municipal waste management director",
-          "text": "In practice, the effectiveness of single-use plastic bans depends heavily on what infrastructure is in place to handle the alternatives. Compostable packaging is only beneficial if it is actually composted — if it ends up in landfill, it may produce methane. Our city currently composites less than thirty percent of eligible organic waste. Before mandating plastic alternatives, we need significant investment in composting capacity, public education, and sorting infrastructure. A ban without infrastructure investment risks replacing one problem with another."
+          "name": "Tobias Lindgren, carer for his mother",
+          "text": "I have given up work to care for my mother and I want to point out what the whole debate omits. Every projection of care costs assumes families like mine keep providing unpaid care, and none of them price it. My labour is the largest single input into her care and it appears in no budget. Cap the costs by all means, but if the model quietly depends on someone leaving employment to make the numbers work, say so, and then decide whether that is a policy or an accident."
         }
       ]
     }
@@ -194,647 +187,723 @@
       "id": "celpip-reading-020-q01",
       "passageId": "celpip-reading-020-p1",
       "part": 1,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "Why does Kevin want a community garden plot?",
+      "prompt": "How old is Rosalind's father?",
+      "question": "How old is Rosalind's father?",
       "options": [
-        "He has no outdoor space at his apartment",
-        "He recently moved to a house with a broken garden",
-        "He is doing research on urban farming",
-        "He wants to start a small business selling vegetables"
+        "87",
+        "91",
+        "78",
+        "82"
       ],
-      "correctAnswer": "He has no outdoor space at his apartment",
-      "explanation": "Kevin says they do not have outdoor space at their apartment.",
-      "difficulty": "easy"
+      "correctAnswer": "87",
+      "explanation": "Her father is 87.",
+      "difficulty": "medium",
+      "questionNumber": 1
     },
     {
       "id": "celpip-reading-020-q02",
       "passageId": "celpip-reading-020-p1",
       "part": 1,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "How long has Kevin been living in Riverdale?",
+      "prompt": "How many visits a day does he receive?",
+      "question": "How many visits a day does he receive?",
       "options": [
-        "Three months",
-        "Six months",
-        "Over a year",
-        "Two weeks"
+        "Three",
+        "Four",
+        "Five",
+        "Two"
       ],
-      "correctAnswer": "Six months",
-      "explanation": "Kevin says he and his partner moved to Riverdale six months ago.",
-      "difficulty": "easy"
+      "correctAnswer": "Four",
+      "explanation": "He has four home visits a day.",
+      "difficulty": "medium",
+      "questionNumber": 2
     },
     {
       "id": "celpip-reading-020-q03",
       "passageId": "celpip-reading-020-p1",
       "part": 1,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What is the approximate current wait time for a plot?",
+      "prompt": "What does Rosalind say the letter is NOT about?",
+      "question": "What does Rosalind say the letter is NOT about?",
       "options": [
-        "One week",
-        "Two to three weeks",
-        "Four to six weeks",
-        "Three to four months"
+        "The cost",
+        "The timing",
+        "The carers",
+        "The care package"
       ],
-      "correctAnswer": "Four to six weeks",
-      "explanation": "Rosa says the average wait is approximately four to six weeks.",
-      "difficulty": "easy"
+      "correctAnswer": "The carers",
+      "explanation": "She says it is about the timing, not the carers, who have been kind and competent.",
+      "difficulty": "medium",
+      "questionNumber": 3
     },
     {
       "id": "celpip-reading-020-q04",
       "passageId": "celpip-reading-020-p1",
       "part": 1,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "How much does the small plot cost per season?",
+      "prompt": "When has the bedtime visit been arriving?",
+      "question": "When has the bedtime visit been arriving?",
       "options": [
-        "One hundred and forty dollars",
-        "Two hundred dollars",
-        "Forty dollars",
-        "Eighty dollars"
+        "At 8:00 pm",
+        "Between 8:45 and 9:15 pm",
+        "At varying times each night",
+        "Between 6:40 and 7:15 pm"
       ],
-      "correctAnswer": "Eighty dollars",
-      "explanation": "Rosa says the small plot of four square metres costs eighty dollars per season.",
-      "difficulty": "medium"
+      "correctAnswer": "Between 6:40 and 7:15 pm",
+      "explanation": "It has arrived between 6:40 and 7:15 pm for six weeks.",
+      "difficulty": "medium",
+      "questionNumber": 4
     },
     {
       "id": "celpip-reading-020-q05",
       "passageId": "celpip-reading-020-p1",
       "part": 1,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What does the fee include, according to Rosa?",
+      "prompt": "What happens after he wakes at two in the morning?",
+      "question": "What happens after he wakes at two in the morning?",
       "options": [
-        "Shared tools, water connections, and a compost bin allocation",
-        "A storage shed and weekly instruction",
-        "Unlimited tool rental and parking",
-        "Only water connection"
+        "He sits in a chair until the eight o'clock visit",
+        "He telephones his daughter",
+        "A night carer attends",
+        "He returns to sleep"
       ],
-      "correctAnswer": "Shared tools, water connections, and a compost bin allocation",
-      "explanation": "Rosa lists shared tools, water, and a compost bin allocation as what the fee includes.",
-      "difficulty": "medium"
+      "correctAnswer": "He sits in a chair until the eight o'clock visit",
+      "explanation": "He sits in a chair until the breakfast visit at eight.",
+      "difficulty": "medium",
+      "questionNumber": 5
     },
     {
       "id": "celpip-reading-020-q06",
       "passageId": "celpip-reading-020-p1",
       "part": 1,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "How long is the growing season at Riverdale Community Gardens?",
+      "prompt": "What does Rosalind explicitly not ask for?",
+      "question": "What does Rosalind explicitly not ask for?",
       "options": [
-        "April to August",
-        "May to October",
-        "June to September",
-        "March to November"
+        "A rotation",
+        "Someone at nine simply because they would prefer it",
+        "An explanation",
+        "A different carer"
       ],
-      "correctAnswer": "May to October",
-      "explanation": "Rosa says the fee covers the period from May through October.",
-      "difficulty": "medium"
+      "correctAnswer": "Someone at nine simply because they would prefer it",
+      "explanation": "She says she is not asking that and understands the constraint.",
+      "difficulty": "medium",
+      "questionNumber": 6
     },
     {
       "id": "celpip-reading-020-q07",
       "passageId": "celpip-reading-020-p1",
       "part": 1,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What must Kevin do to be placed on the waitlist?",
+      "prompt": "What is her actual question?",
+      "question": "What is her actual question?",
       "options": [
-        "Call Rosa directly",
-        "Attend a garden meeting first",
-        "Submit an application form and payment online",
-        "Visit in person with ID"
+        "Whether the package can be increased",
+        "Whether more visits are available",
+        "Whether the order of the round is fixed",
+        "Whether carers can be changed"
       ],
-      "correctAnswer": "Submit an application form and payment online",
-      "explanation": "Rosa says Kevin must complete and submit the form with payment to be placed on the waitlist.",
-      "difficulty": "hard"
+      "correctAnswer": "Whether the order of the round is fixed",
+      "explanation": "She asks whether the order is fixed or could rotate.",
+      "difficulty": "medium",
+      "questionNumber": 7
     },
     {
       "id": "celpip-reading-020-q08",
       "passageId": "celpip-reading-020-p1",
       "part": 1,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "When is the monthly garden social held?",
+      "prompt": "What does she say she would accept?",
+      "question": "What does she say she would accept?",
       "options": [
-        "Every Sunday morning",
-        "First Friday of each month",
-        "Second Saturday of each month",
-        "Last Saturday of each month"
+        "A partial change",
+        "A written apology",
+        "Any answer",
+        "That rotation is impossible, if that is genuinely the reason"
       ],
-      "correctAnswer": "Last Saturday of each month",
-      "explanation": "Rosa says the garden social is on the last Saturday of each month.",
-      "difficulty": "hard"
+      "correctAnswer": "That rotation is impossible, if that is genuinely the reason",
+      "explanation": "She says she would accept that answer if it were the reason.",
+      "difficulty": "medium",
+      "questionNumber": 8
     },
     {
       "id": "celpip-reading-020-q09",
       "passageId": "celpip-reading-020-p1",
       "part": 1,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "Who is welcome at the garden socials?",
+      "prompt": "How was the evening route originally built?",
+      "question": "How was the evening route originally built?",
       "options": [
-        "Newcomers, even before having their own plot",
-        "Only people who have paid their fees",
-        "Only current plot holders",
-        "Members who have held a plot for at least one year"
+        "Around geography — shortest driving distance",
+        "By carer availability",
+        "By medication times",
+        "By client preference"
       ],
-      "correctAnswer": "Newcomers, even before having their own plot",
-      "explanation": "Rosa says newcomers are welcome even before they have their own plot.",
-      "difficulty": "hard"
+      "correctAnswer": "Around geography — shortest driving distance",
+      "explanation": "It was built four years ago around shortest driving distance and inherited since.",
+      "difficulty": "medium",
+      "questionNumber": 9
     },
     {
       "id": "celpip-reading-020-q10",
       "passageId": "celpip-reading-020-p1",
       "part": 1,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What can be inferred about the standard plot size?",
+      "prompt": "What does the rotation cost in driving time?",
+      "question": "What does the rotation cost in driving time?",
       "options": [
-        "It is the same as the small plot",
-        "It is twice the size of the small plot",
-        "It is only available to returning members",
-        "It includes a private tool shed"
+        "Nothing",
+        "About eleven minutes",
+        "About thirty minutes",
+        "An hour"
       ],
-      "correctAnswer": "It is twice the size of the small plot",
-      "explanation": "The small plot is four square metres and the standard is eight square metres — exactly twice the size.",
-      "difficulty": "hard"
+      "correctAnswer": "About eleven minutes",
+      "explanation": "Malika says it adds about eleven minutes, which is absorbable.",
+      "difficulty": "medium",
+      "questionNumber": 10
     },
     {
       "id": "celpip-reading-020-q11",
       "passageId": "celpip-reading-020-p1",
       "part": 1,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What is the purpose of Rosa's email?",
+      "prompt": "What does Malika say about the two-in-the-morning waking?",
+      "question": "What does Malika say about the two-in-the-morning waking?",
       "options": [
-        "To offer him a plot immediately",
-        "To reject Kevin's application",
-        "To answer his questions and explain the process",
-        "To invite him to a specific event"
+        "It requires a night visit",
+        "It will resolve with a later bedtime",
+        "It might resolve, but she would not want that expected",
+        "It is unrelated to care"
       ],
-      "correctAnswer": "To answer his questions and explain the process",
-      "explanation": "Rosa's email answers Kevin's questions about the wait, fees, and registration process.",
-      "difficulty": "hard"
+      "correctAnswer": "It might resolve, but she would not want that expected",
+      "explanation": "She says if it persists it is worth raising with his GP, as it may be unrelated.",
+      "difficulty": "medium",
+      "questionNumber": 11
     },
     {
       "id": "celpip-reading-020-q12",
       "passageId": "celpip-reading-020-p2",
       "part": 2,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "A 70-year-old woman wants to try an art class. Which programme is most suitable?",
+      "prompt": "A woman attends the Centre for the first time. What does she pay?",
+      "question": "A woman attends the Centre for the first time. What does she pay?",
       "options": [
-        "Community Dance on Thursday evening",
-        "Lunchtime Stretch on Wednesday",
-        "Gentle Yoga on Monday morning",
-        "Seniors' Art Class on Tuesday morning"
+        "Half the listed fee",
+        "A $5 registration",
+        "The listed fee",
+        "Nothing — a first visit is always free"
       ],
-      "correctAnswer": "Seniors' Art Class on Tuesday morning",
-      "explanation": "The Seniors' Art Class on Tuesday is for ages 60+ and includes materials.",
-      "difficulty": "easy"
+      "correctAnswer": "Nothing — a first visit is always free",
+      "explanation": "The introduction states a first visit is always free.",
+      "difficulty": "medium",
+      "questionNumber": 12
     },
     {
       "id": "celpip-reading-020-q13",
       "passageId": "celpip-reading-020-p2",
       "part": 2,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "Which programmes require advance registration?",
+      "prompt": "Which session includes both transport and a hot lunch?",
+      "question": "Which session includes both transport and a hot lunch?",
       "options": [
-        "Gentle Yoga and Aqua Fitness",
-        "Open Badminton and Lunchtime Stretch",
-        "Parent & Tot Swim and Teen Gaming Club",
-        "Drop-in Basketball and Family Swim"
+        "Lunch Club",
+        "Family Visiting Lunch",
+        "Gardening Club",
+        "Craft & Chat"
       ],
-      "correctAnswer": "Gentle Yoga and Aqua Fitness",
-      "explanation": "Only programmes marked with (R) require registration. Both Gentle Yoga and Aqua Fitness are marked (R).",
-      "difficulty": "easy"
+      "correctAnswer": "Lunch Club",
+      "explanation": "Lunch Club is marked both (L) and (T).",
+      "difficulty": "medium",
+      "questionNumber": 13
     },
     {
       "id": "celpip-reading-020-q14",
       "passageId": "celpip-reading-020-p2",
       "part": 2,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "A teenager aged 15 wants to play badminton on a weekday. What is the correct programme?",
+      "prompt": "How far ahead must transport be booked?",
+      "question": "How far ahead must transport be booked?",
       "options": [
-        "Open Badminton on Saturday",
-        "Youth Badminton on Thursday afternoon",
-        "Drop-in Basketball on Tuesday",
-        "Community Dance on Thursday evening"
+        "24 hours",
+        "48 hours",
+        "One week",
+        "On the day"
       ],
-      "correctAnswer": "Youth Badminton on Thursday afternoon",
-      "explanation": "Youth Badminton is on Thursday afternoon and is for ages 10–17.",
-      "difficulty": "easy"
+      "correctAnswer": "48 hours",
+      "explanation": "Transport is booked 48 hours ahead.",
+      "difficulty": "medium",
+      "questionNumber": 14
     },
     {
       "id": "celpip-reading-020-q15",
       "passageId": "celpip-reading-020-p2",
       "part": 2,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "Which pool programme is available to families with young children on a Sunday?",
+      "prompt": "A man wants one-to-one computer help. What should he know?",
+      "question": "A man wants one-to-one computer help. What should he know?",
       "options": [
-        "Adult Swimming Lessons",
-        "Parent & Tot Swim",
-        "Family Swim",
-        "Aqua Fitness"
+        "It runs on Thursdays",
+        "It is a group session",
+        "Booking is essential and slots are 30 minutes",
+        "It costs $5"
       ],
-      "correctAnswer": "Family Swim",
-      "explanation": "Family Swim is held on Sundays and is for families with children.",
-      "difficulty": "medium"
+      "correctAnswer": "Booking is essential and slots are 30 minutes",
+      "explanation": "The Digital Help Desk is one-to-one, 30 minutes each, booking essential.",
+      "difficulty": "medium",
+      "questionNumber": 15
     },
     {
       "id": "celpip-reading-020-q16",
       "passageId": "celpip-reading-020-p2",
       "part": 2,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "How long does the Community Dance programme last?",
+      "prompt": "Which session is free and specifically for people with memory loss and their companions?",
+      "question": "Which session is free and specifically for people with memory loss and their companions?",
       "options": [
-        "Two hours thirty minutes",
-        "One hour",
-        "One hour thirty minutes",
-        "Two hours"
+        "Walking Group",
+        "Benefits & Pensions Advice",
+        "Digital Help Desk",
+        "Memory Café"
       ],
-      "correctAnswer": "Two hours",
-      "explanation": "Community Dance runs from 7:00–9:00 pm, which is two hours.",
-      "difficulty": "medium"
+      "correctAnswer": "Memory Café",
+      "explanation": "The Memory Café is free and for people with memory loss and their companions.",
+      "difficulty": "medium",
+      "questionNumber": 16
     },
     {
       "id": "celpip-reading-020-q17",
       "passageId": "celpip-reading-020-p2",
       "part": 2,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "Which programme can someone attend without planning ahead on a Wednesday lunchtime?",
+      "prompt": "Someone finds a 3 km walk too far. What option exists?",
+      "question": "Someone finds a 3 km walk too far. What option exists?",
       "options": [
-        "Lunchtime Stretch",
-        "Seniors' Art Class",
-        "Aqua Fitness",
-        "Gentle Yoga"
+        "A 1 km route",
+        "A seated alternative",
+        "Transport to the halfway point",
+        "None — one route only"
       ],
-      "correctAnswer": "Lunchtime Stretch",
-      "explanation": "Lunchtime Stretch on Wednesday is explicitly listed as drop-in with no registration needed.",
-      "difficulty": "medium"
+      "correctAnswer": "A 1 km route",
+      "explanation": "The Walking Group offers two routes: 1 km and 3 km.",
+      "difficulty": "medium",
+      "questionNumber": 17
     },
     {
       "id": "celpip-reading-020-q18",
       "passageId": "celpip-reading-020-p2",
       "part": 2,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "Which location is used for the most programmes?",
+      "prompt": "What should someone needing mobility assistance do?",
+      "question": "What should someone needing mobility assistance do?",
       "options": [
-        "Gymnasium",
-        "Pool",
-        "Studio A",
-        "Craft Room"
+        "Bring a companion",
+        "Tell reception when booking so a volunteer is assigned",
+        "Attend only transport sessions",
+        "Arrive early"
       ],
-      "correctAnswer": "Pool",
-      "explanation": "The Pool is used for Aqua Fitness, Adult Swimming Lessons, Parent & Tot Swim, and Family Swim — more than any other location.",
-      "difficulty": "hard"
+      "correctAnswer": "Tell reception when booking so a volunteer is assigned",
+      "explanation": "The introduction gives exactly this instruction.",
+      "difficulty": "medium",
+      "questionNumber": 18
     },
     {
       "id": "celpip-reading-020-q19",
       "passageId": "celpip-reading-020-p2",
       "part": 2,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "A parent with a three-year-old child wants to swim together. Which programme should they attend?",
+      "prompt": "A family wants to attend Saturday lunch. When must they book?",
+      "question": "A family wants to attend Saturday lunch. When must they book?",
       "options": [
-        "Family Swim on Sunday",
-        "Adult Swimming Lessons on Monday",
-        "Parent & Tot Swim on Friday",
-        "Aqua Fitness on Wednesday"
+        "One week ahead",
+        "48 hours ahead",
+        "By Thursday",
+        "On the day"
       ],
-      "correctAnswer": "Parent & Tot Swim on Friday",
-      "explanation": "Parent & Tot Swim is for children under 5 with an adult and runs on Friday.",
-      "difficulty": "hard"
+      "correctAnswer": "By Thursday",
+      "explanation": "Family Visiting Lunch must be booked by Thursday.",
+      "difficulty": "medium",
+      "questionNumber": 19
     },
     {
       "id": "celpip-reading-020-q20",
       "passageId": "celpip-reading-020-p3",
       "part": 3,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What was the main criticism of the previous version of Canada's Food Guide?",
+      "prompt": "What phrase does the article say is endorsed but rarely examined?",
+      "question": "What phrase does the article say is endorsed but rarely examined?",
       "options": [
-        "It did not include enough vegetables",
-        "It was not updated frequently enough",
-        "It was too complicated for most people to follow",
-        "It placed too much emphasis on dairy and meat"
+        "Downsizing",
+        "Sheltered housing",
+        "Independent living",
+        "Ageing in place"
       ],
-      "correctAnswer": "It placed too much emphasis on dairy and meat",
-      "explanation": "The passage says the previous guide was criticised for placing too much emphasis on dairy and meat.",
-      "difficulty": "easy"
+      "correctAnswer": "Ageing in place",
+      "explanation": "Policy is organised around that phrase.",
+      "difficulty": "medium",
+      "questionNumber": 20
     },
     {
       "id": "celpip-reading-020-q21",
       "passageId": "celpip-reading-020-p3",
       "part": 3,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "According to the 2019 guide, what should make up roughly half of every meal?",
+      "prompt": "What does more careful research find the preference is for?",
+      "question": "What does more careful research find the preference is for?",
       "options": [
-        "Vegetables and fruit",
-        "Dairy products",
-        "Whole grain foods",
-        "Protein foods"
+        "Remaining in a familiar community",
+        "Living with family",
+        "Rural locations",
+        "A particular building"
       ],
-      "correctAnswer": "Vegetables and fruit",
-      "explanation": "The plate model shows roughly half of every meal should be vegetables and fruit.",
-      "difficulty": "easy"
+      "correctAnswer": "Remaining in a familiar community",
+      "explanation": "The strong preference is for the community rather than the specific building.",
+      "difficulty": "medium",
+      "questionNumber": 21
     },
     {
       "id": "celpip-reading-020-q22",
       "passageId": "celpip-reading-020-p3",
       "part": 3,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "Where is dairy placed in the 2019 Food Guide?",
+      "prompt": "What happens when the question separates the two?",
+      "question": "What happens when the question separates the two?",
       "options": [
-        "Under the vegetables and fruit category",
-        "Within the broader protein food category",
-        "It was removed entirely from the guide",
-        "In its own separate category"
+        "Preferences are unchanged",
+        "Willingness to move within a known neighbourhood is substantially higher",
+        "Willingness to move falls",
+        "Responses become unreliable"
       ],
-      "correctAnswer": "Within the broader protein food category",
-      "explanation": "The 2019 guide merged dairy into the broader protein food category.",
-      "difficulty": "easy"
+      "correctAnswer": "Willingness to move within a known neighbourhood is substantially higher",
+      "explanation": "It is considerably higher than the headline figure suggests.",
+      "difficulty": "medium",
+      "questionNumber": 22
     },
     {
       "id": "celpip-reading-020-q23",
       "passageId": "celpip-reading-020-p3",
       "part": 3,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What evidence influenced the repositioning of dairy?",
+      "prompt": "Where do a large share of falls occur?",
+      "question": "Where do a large share of falls occur?",
       "options": [
-        "Findings that dairy increases cholesterol",
-        "Studies showing dairy is harmful to children",
-        "Evidence that high dairy consumption is not necessary for adult bone health",
-        "Research showing dairy increases obesity"
+        "During travel",
+        "Outdoors",
+        "On stairs, in bathrooms and at thresholds",
+        "In kitchens"
       ],
-      "correctAnswer": "Evidence that high dairy consumption is not necessary for adult bone health",
-      "explanation": "The passage says growing evidence showed high dairy consumption is not necessary for bone health in adults.",
-      "difficulty": "medium"
+      "correctAnswer": "On stairs, in bathrooms and at thresholds",
+      "explanation": "The article names exactly those locations.",
+      "difficulty": "medium",
+      "questionNumber": 23
     },
     {
       "id": "celpip-reading-020-q24",
       "passageId": "celpip-reading-020-p3",
       "part": 3,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What beverage does the new guide recommend as preferred?",
+      "prompt": "What rarely recorded factor limits uptake of adaptations?",
+      "question": "What rarely recorded factor limits uptake of adaptations?",
       "options": [
-        "Low-fat milk",
-        "100% fruit juice",
-        "Coffee or tea",
-        "Water"
+        "Poor installation quality",
+        "Landlord refusal",
+        "Lack of awareness",
+        "People read them as an announcement that decline has begun"
       ],
-      "correctAnswer": "Water",
-      "explanation": "The passage says the guide advises choosing water as the preferred beverage over sugary drinks.",
-      "difficulty": "medium"
+      "correctAnswer": "People read them as an announcement that decline has begun",
+      "explanation": "The article says presentation affects uptake as much as availability.",
+      "difficulty": "medium",
+      "questionNumber": 24
     },
     {
       "id": "celpip-reading-020-q25",
       "passageId": "celpip-reading-020-p3",
       "part": 3,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What is one social dimension of eating that the new guide encourages?",
+      "prompt": "What does isolation correlate with more strongly than living alone?",
+      "question": "What does isolation correlate with more strongly than living alone?",
       "options": [
-        "Eating meals with others",
-        "Following a specific diet plan",
-        "Eating a large breakfast",
-        "Joining a cooking class"
+        "Loss of routine reasons to leave the house",
+        "Income",
+        "Distance from family",
+        "Age"
       ],
-      "correctAnswer": "Eating meals with others",
-      "explanation": "The guide encourages eating meals with others as part of its social dimension.",
-      "difficulty": "medium"
+      "correctAnswer": "Loss of routine reasons to leave the house",
+      "explanation": "Someone living alone who shops daily and attends something weekly differs from someone living with family who does neither.",
+      "difficulty": "medium",
+      "questionNumber": 25
     },
     {
       "id": "celpip-reading-020-q26",
       "passageId": "celpip-reading-020-p3",
       "part": 3,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What criticism was raised about the 2019 guide regarding Indigenous communities?",
+      "prompt": "Why is that distinction invisible in the usual metrics?",
+      "question": "Why is that distinction invisible in the usual metrics?",
       "options": [
-        "It was not translated into enough Indigenous languages",
-        "It ignored traditional dietary patterns relying on land-based foods",
-        "It recommended too many imported foods",
-        "It contained inaccurate information about wild game"
+        "It is difficult to define",
+        "Metrics count household composition rather than contact",
+        "Data are not collected",
+        "Respondents under-report"
       ],
-      "correctAnswer": "It ignored traditional dietary patterns relying on land-based foods",
-      "explanation": "Critics said the guide largely ignored Indigenous communities' traditional land-based dietary patterns.",
-      "difficulty": "hard"
+      "correctAnswer": "Metrics count household composition rather than contact",
+      "explanation": "The article gives exactly this reason.",
+      "difficulty": "medium",
+      "questionNumber": 26
     },
     {
       "id": "celpip-reading-020-q27",
       "passageId": "celpip-reading-020-p3",
       "part": 3,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "How did the government respond to the criticism about Indigenous food patterns?",
+      "prompt": "What is the effect of withdrawing a bus route on an older population?",
+      "question": "What is the effect of withdrawing a bus route on an older population?",
       "options": [
-        "By consulting Indigenous elders to revise the plate model",
-        "By rewriting the whole guide",
-        "By acknowledging the gap and committing to developing supplementary resources",
-        "By adding a new food category for game meats"
+        "Little measurable effect",
+        "Inconvenience",
+        "Removal of the mechanism by which shops, appointments and company are reached",
+        "Increased taxi use"
       ],
-      "correctAnswer": "By acknowledging the gap and committing to developing supplementary resources",
-      "explanation": "The government acknowledged the gap and committed to developing supplementary resources.",
-      "difficulty": "hard"
+      "correctAnswer": "Removal of the mechanism by which shops, appointments and company are reached",
+      "explanation": "The article says it is not inconvenience but removal of the mechanism.",
+      "difficulty": "medium",
+      "questionNumber": 27
     },
     {
       "id": "celpip-reading-020-q28",
       "passageId": "celpip-reading-020-p3",
       "part": 3,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "Which of the following is NOT listed as a protein food in the 2019 guide?",
+      "prompt": "What is the article's practical conclusion?",
+      "question": "What is the article's practical conclusion?",
       "options": [
-        "Tofu",
-        "Lentils",
-        "Yogurt",
-        "Cheese"
+        "Encourage moving to specialist housing",
+        "Prioritise living with family",
+        "Fund more adaptations",
+        "The useful unit of planning is the neighbourhood rather than the dwelling"
       ],
-      "correctAnswer": "Cheese",
-      "explanation": "The passage lists beans, lentils, tofu, fish, eggs, lean meat, and nuts as protein foods — cheese is not specifically listed.",
-      "difficulty": "hard"
+      "correctAnswer": "The useful unit of planning is the neighbourhood rather than the dwelling",
+      "explanation": "It concludes adapted homes are necessary and insufficient.",
+      "difficulty": "medium",
+      "questionNumber": 28
     },
     {
       "id": "celpip-reading-020-q29",
       "passageId": "celpip-reading-020-p4",
       "part": 4,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker believes the ban is both necessary and overdue?",
+      "prompt": "What criticism does Minister Ashworth accept?",
+      "question": "What criticism does Minister Ashworth accept?",
       "options": [
-        "Amelia Chen",
-        "Sandra Kowalski",
-        "Jordan Lee",
-        "Dr. Marcus Webb"
+        "That it protects assets more than people",
+        "That it is unaffordable",
+        "That it excludes accommodation",
+        "That the cap is too low"
       ],
-      "correctAnswer": "Amelia Chen",
-      "explanation": "Amelia Chen says a complete ban is 'both necessary and overdue.'",
-      "difficulty": "easy"
+      "correctAnswer": "That it protects assets more than people",
+      "explanation": "She says that is true, and the poorest were already protected by means-testing.",
+      "difficulty": "medium",
+      "questionNumber": 29
     },
     {
       "id": "celpip-reading-020-q30",
       "passageId": "celpip-reading-020-p4",
       "part": 4,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Jordan Lee prefer instead of an outright ban?",
+      "prompt": "What does she say the cap actually buys?",
+      "question": "What does she say the cap actually buys?",
       "options": [
-        "A voluntary agreement among large corporations",
-        "A phased approach with incentives and a five-year timeline",
-        "An immediate ban with subsidies for affected businesses",
-        "Continued use of single-use plastics with better disposal systems"
+        "Redistribution",
+        "The ability to plan",
+        "Lower total costs",
+        "Better care quality"
       ],
-      "correctAnswer": "A phased approach with incentives and a five-year timeline",
-      "explanation": "Jordan Lee prefers a phased approach with tax incentives, subsidies, and a five-year transition.",
-      "difficulty": "easy"
+      "correctAnswer": "The ability to plan",
+      "explanation": "Before it, no family could answer what care might cost because the answer was unbounded.",
+      "difficulty": "medium",
+      "questionNumber": 30
     },
     {
       "id": "celpip-reading-020-q31",
       "passageId": "celpip-reading-020-p4",
       "part": 4,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker raises a concern about microplastics in the human body?",
+      "prompt": "What does Dr Sokolov say the cap counts?",
+      "question": "What does Dr Sokolov say the cap counts?",
       "options": [
-        "Sandra Kowalski",
-        "Jordan Lee",
-        "Dr. Marcus Webb",
-        "Amelia Chen"
+        "Only state-funded care",
+        "All care costs",
+        "Only personal care, not accommodation",
+        "Only accommodation"
       ],
-      "correctAnswer": "Dr. Marcus Webb",
-      "explanation": "Dr. Webb mentions microplastics found in human blood, breast milk, and lung tissue.",
-      "difficulty": "easy"
+      "correctAnswer": "Only personal care, not accommodation",
+      "explanation": "A family reaching the cap continues paying a substantial monthly sum indefinitely.",
+      "difficulty": "medium",
+      "questionNumber": 31
     },
     {
       "id": "celpip-reading-020-q32",
       "passageId": "celpip-reading-020-p4",
       "part": 4,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Sandra Kowalski say about compostable packaging?",
+      "prompt": "What does he identify as the real problem?",
+      "question": "What does he identify as the real problem?",
       "options": [
-        "It is currently too expensive for most cities",
-        "It has already solved the plastic problem in other cities",
-        "It is always better than plastic",
-        "It is only beneficial if it is actually composted"
+        "The cost to government",
+        "The means test",
+        "The cap's level",
+        "The gap between the policy and public understanding of it"
       ],
-      "correctAnswer": "It is only beneficial if it is actually composted",
-      "explanation": "Sandra says compostable packaging is only beneficial if composted — in landfill it may produce methane.",
-      "difficulty": "medium"
+      "correctAnswer": "The gap between the policy and public understanding of it",
+      "explanation": "He warns it will surface as anger when families are least able to absorb it.",
+      "difficulty": "medium",
+      "questionNumber": 32
     },
     {
       "id": "celpip-reading-020-q33",
       "passageId": "celpip-reading-020-p4",
       "part": 4,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What percentage of eligible organic waste does Sandra's city currently compost?",
+      "prompt": "Who does Dr Sokolov say misrepresents the arithmetic?",
+      "question": "Who does Dr Sokolov say misrepresents the arithmetic?",
       "options": [
-        "Less than thirty percent",
-        "Over fifty percent",
-        "Less than ten percent",
-        "About twenty percent"
+        "Both sides, including supporters",
+        "Only the government",
+        "Only the media",
+        "Only opponents"
       ],
-      "correctAnswer": "Less than thirty percent",
-      "explanation": "Sandra says the city currently composts less than thirty percent of eligible organic waste.",
-      "difficulty": "medium"
+      "correctAnswer": "Both sides, including supporters",
+      "explanation": "He says it is routinely misrepresented, including by its supporters.",
+      "difficulty": "medium",
+      "questionNumber": 33
     },
     {
       "id": "celpip-reading-020-q34",
       "passageId": "celpip-reading-020-p4",
       "part": 4,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "How does Amelia Chen respond to concerns about cost impacts on low-income consumers?",
+      "prompt": "What is Winifred's concern?",
+      "question": "What is Winifred's concern?",
       "options": [
-        "She says alternatives cost two to four times more",
-        "She says reusable options save money over time",
-        "She suggests the government should subsidise alternatives",
-        "She acknowledges it is a valid concern"
+        "The cap itself",
+        "The funding rate",
+        "Staff shortages",
+        "Regulation"
       ],
-      "correctAnswer": "She says reusable options save money over time",
-      "explanation": "Amelia says studies show reusable options save money over time, contradicting the cost concern.",
-      "difficulty": "medium"
+      "correctAnswer": "The funding rate",
+      "explanation": "She states her concern is the funding rate, not the cap.",
+      "difficulty": "medium",
+      "questionNumber": 34
     },
     {
       "id": "celpip-reading-020-q35",
       "passageId": "celpip-reading-020-p4",
       "part": 4,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker is most focused on the immediate economic impact on small businesses?",
+      "prompt": "What is the consequence of local authority rates not tracking wage costs?",
+      "question": "What is the consequence of local authority rates not tracking wage costs?",
       "options": [
-        "Sandra Kowalski",
-        "Amelia Chen",
-        "Jordan Lee",
-        "Dr. Marcus Webb"
+        "Rates are renegotiated",
+        "Homes reduce staffing",
+        "Homes cross-subsidise state-funded residents from self-funders",
+        "Homes refuse state-funded residents"
       ],
-      "correctAnswer": "Jordan Lee",
-      "explanation": "Jordan Lee focuses on how bans disproportionately hurt small retailers.",
-      "difficulty": "hard"
+      "correctAnswer": "Homes cross-subsidise state-funded residents from self-funders",
+      "explanation": "A self-funder pays more for the identical room and care.",
+      "difficulty": "medium",
+      "questionNumber": 35
     },
     {
       "id": "celpip-reading-020-q36",
       "passageId": "celpip-reading-020-p4",
       "part": 4,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What principle does Dr. Webb invoke to argue for action?",
+      "prompt": "What does Winifred predict?",
+      "question": "What does Winifred predict?",
       "options": [
-        "The free market principle",
-        "The public interest principle",
-        "The economic efficiency principle",
-        "The precautionary principle"
+        "Self-funders will move abroad",
+        "Rates will rise automatically",
+        "The cap will be raised",
+        "Homes will close before the policy is reviewed"
       ],
-      "correctAnswer": "The precautionary principle",
-      "explanation": "Dr. Webb says the precautionary principle demands acting in the face of uncertain health risks.",
-      "difficulty": "hard"
+      "correctAnswer": "Homes will close before the policy is reviewed",
+      "explanation": "She says a cap increasing the state-funded proportion accelerates the problem.",
+      "difficulty": "medium",
+      "questionNumber": 36
     },
     {
       "id": "celpip-reading-020-q37",
       "passageId": "celpip-reading-020-p4",
       "part": 4,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "Which two speakers would most likely agree that a simple, immediate ban is the wrong approach?",
+      "prompt": "What does Tobias say every projection assumes?",
+      "question": "What does Tobias say every projection assumes?",
       "options": [
-        "Jordan Lee and Sandra Kowalski",
-        "Amelia Chen and Sandra Kowalski",
-        "Dr. Marcus Webb and Jordan Lee",
-        "Amelia Chen and Dr. Marcus Webb"
+        "That families keep providing unpaid care",
+        "That homes will expand",
+        "That the cap will be raised",
+        "That costs will fall"
       ],
-      "correctAnswer": "Jordan Lee and Sandra Kowalski",
-      "explanation": "Jordan Lee wants a phased approach and Sandra wants infrastructure first — both oppose an immediate ban.",
-      "difficulty": "hard"
+      "correctAnswer": "That families keep providing unpaid care",
+      "explanation": "And none of them price it.",
+      "difficulty": "medium",
+      "questionNumber": 37
     },
     {
       "id": "celpip-reading-020-q38",
       "passageId": "celpip-reading-020-p4",
       "part": 4,
-      "topic": "home maintenance",
+      "topic": "ageing, retirement and later life",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Sandra Kowalski suggest is needed before mandating plastic alternatives?",
+      "prompt": "What does Tobias ask policymakers to do?",
+      "question": "What does Tobias ask policymakers to do?",
       "options": [
-        "A public vote on the issue",
-        "Significant investment in composting capacity, education, and sorting infrastructure",
-        "A full ban on imports of plastic packaging",
-        "A five-year government study on alternatives"
+        "Pay family carers immediately",
+        "Say so if the model depends on someone leaving employment, then decide whether that is policy or accident",
+        "Abolish the cap",
+        "Fund more care homes"
       ],
-      "correctAnswer": "Significant investment in composting capacity, education, and sorting infrastructure",
-      "explanation": "Sandra says investment in composting capacity, public education, and sorting infrastructure is needed first.",
-      "difficulty": "hard"
+      "correctAnswer": "Say so if the model depends on someone leaving employment, then decide whether that is policy or accident",
+      "explanation": "He asks for the dependency to be stated and then decided upon.",
+      "difficulty": "medium",
+      "questionNumber": 38
     }
   ]
 }
