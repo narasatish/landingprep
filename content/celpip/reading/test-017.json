@@ -41,117 +41,103 @@
     {
       "id": "celpip-reading-017-p1",
       "part": 1,
-      "partTitle": "Reading for Correspondence",
+      "partTitle": "Reading Correspondence",
       "type": "correspondence",
-      "title": "Email Correspondence: Community Garden Plot Application",
+      "title": "Email Correspondence: A Flood Warning That Arrived Late",
       "emails": [
         {
-          "from": "Kevin Marsh <k.marsh@gmail.com>",
-          "to": "coordinator@riverdalegardens.ca",
-          "subject": "Application for a Garden Plot",
-          "date": "May 3",
-          "body": "Dear Coordinator,\n\nI am writing to apply for one of the community garden plots I noticed advertised on your website. My partner and I moved to the Riverdale neighbourhood six months ago, and we are very keen to grow our own vegetables this summer. We do not have any outdoor space at our apartment, so the community garden would be ideal.\n\nI noticed the website mentions a waitlist. Could you let me know approximately how long the current wait is, and whether there is anything we can do to move things along? Also, is there a fee involved, and if so, does it cover the full growing season?\n\nThank you very much for your time. I look forward to hearing from you.\n\nKevin Marsh"
+          "from": "Teodor Marinescu <t.marinescu@mailbox.ca>",
+          "to": "emergency@westvalecouncil.ca",
+          "subject": "Flood alert, Millbrook Lane — warning received after water entered",
+          "date": "November 14",
+          "body": "Dear Emergency Planning,\n\nOn the night of 9 November water entered eleven houses on Millbrook Lane, including mine. I received your text alert at 11:42 pm. Water was already in my hallway at 11:15.\n\nI want to be precise about what I am and am not saying.\n\nI am not saying you should have predicted the rainfall. I have read the rainfall figures and I accept that it exceeded the forecast.\n\nI am saying that the alert system you asked us to register for did not do the one thing it exists to do, and that I only registered because your leaflet said residents who signed up would receive \"advance warning\". Twenty-seven minutes after the water is not advance warning of anything.\n\nWhat I would like to understand is whether the delay was in the decision to issue or in the sending. Those are different failures with different fixes, and if the honest answer is that nobody knows, I would rather hear that than a reassurance.\n\nSincerely,\nTeodor Marinescu"
         },
         {
-          "from": "Rosa Delacourt <coordinator@riverdalegardens.ca>",
-          "to": "k.marsh@gmail.com",
-          "subject": "RE: Application for a Garden Plot",
-          "date": "May 5",
-          "body": "Dear Kevin,\n\nThank you for your interest in Riverdale Community Gardens. We are delighted to welcome new applicants, especially those who are new to the neighbourhood.\n\nTo answer your questions: yes, there is currently a waitlist, and the average wait time is approximately four to six weeks depending on plot size. We have two plot sizes available — a small plot of four square metres at eighty dollars per season, and a standard plot of eight square metres at one hundred and forty dollars per season. The fee covers the period from May through October and includes access to shared tools, water connections, and a compost bin allocation.\n\nTo register your interest formally, please complete the application form on our website and submit it along with your payment. Once your application is processed, you will be placed on the waitlist and contacted when a plot becomes available.\n\nWe also hold a monthly garden social on the last Saturday of each month, and newcomers are very welcome to join even before they have their own plot.\n\nBest regards,\nRosa Delacourt\nCoordinator, Riverdale Community Gardens"
+          "from": "Westvale Emergency Planning <emergency@westvalecouncil.ca>",
+          "to": "t.marinescu@mailbox.ca",
+          "subject": "RE: Flood alert, Millbrook Lane — warning received after water entered",
+          "date": "November 17",
+          "body": "Dear Mr Marinescu,\n\nThe delay was in the decision, not the sending. Once issued, the message reached registered phones in under ninety seconds.\n\nThe river gauge upstream passed our alert threshold at 10:04 pm. The duty officer received it, and our protocol requires a second confirmation from the gauge downstream before a residential alert is issued. That second gauge had failed in October and was awaiting replacement. He spent fifty minutes trying to confirm the reading by other means, then issued without confirmation at 11:40.\n\nHe followed the protocol. The protocol was wrong, because it had no rule for what to do when a required input does not exist, and nobody had noticed that gap in the six weeks the gauge was out of service.\n\nWhat changes: any failed gauge now triggers an automatic switch to single-source alerting within twenty-four hours, and the duty officer has explicit authority to issue on one gauge when the second is unavailable. The downstream gauge was replaced on 12 November.\n\nOn your leaflet point, you are right and I have stopped the reprint. \"Advance warning\" was written when the system was designed to give roughly two hours. It cannot promise that in a rapid-onset event on this catchment, and the wording should say what it can do rather than what we hoped it would.\n\nRegards,\nFrances Adeyemi\nHead of Emergency Planning"
         }
       ]
     },
     {
       "id": "celpip-reading-017-p2",
       "part": 2,
-      "partTitle": "Applying a Diagram",
+      "partTitle": "Reading to Apply a Diagram",
       "type": "schedule",
-      "title": "Community Recreation Centre — Spring Programme Schedule",
-      "intro": "The Maplewood Recreation Centre offers the following programmes during the spring session (April 7 – June 27). All programmes are drop-in unless marked with (R) for registered.",
+      "title": "Westvale Community Resilience Programme — Winter Sessions",
+      "intro": "Runs January 12 to March 21. Sessions marked (K) include a free home emergency kit for households in the flood zone; one kit per household. Sessions marked (P) are practical and held outdoors — dress for the weather. Registration closes 48 hours before each session. All sessions are free unless a price is shown.",
       "schedule": [
         {
           "day": "Monday",
-          "time": "9:00–10:00 am",
-          "programme": "Gentle Yoga (R)",
-          "location": "Studio A",
-          "notes": "Ages 18+, mats provided"
-        },
-        {
-          "day": "Monday",
-          "time": "6:00–7:30 pm",
-          "programme": "Adult Swimming Lessons (R)",
-          "location": "Pool",
-          "notes": "Non-swimmers only"
+          "time": "6:30–8:00 pm",
+          "programme": "Flood Plan for Your Home (K)",
+          "location": "Civic Hall",
+          "notes": "Ages 16+. Bring a floor plan if you have one."
         },
         {
           "day": "Tuesday",
           "time": "10:00–11:30 am",
-          "programme": "Seniors' Art Class (R)",
-          "location": "Craft Room",
-          "notes": "Ages 60+, materials included"
+          "programme": "Emergency Kit Basics (K)",
+          "location": "Library Meeting Room",
+          "notes": "All ages. Repeats monthly."
         },
         {
           "day": "Tuesday",
-          "time": "7:00–8:30 pm",
-          "programme": "Drop-in Basketball",
-          "location": "Gymnasium",
-          "notes": "Ages 14+, bring own water"
-        },
-        {
-          "day": "Wednesday",
-          "time": "9:00–10:00 am",
-          "programme": "Aqua Fitness (R)",
-          "location": "Pool",
-          "notes": "All fitness levels"
-        },
-        {
-          "day": "Wednesday",
-          "time": "12:00–1:00 pm",
-          "programme": "Lunchtime Stretch",
-          "location": "Studio A",
-          "notes": "Drop-in, no registration needed"
-        },
-        {
-          "day": "Thursday",
-          "time": "4:30–5:30 pm",
-          "programme": "Youth Badminton (R)",
-          "location": "Gymnasium",
-          "notes": "Ages 10–17"
-        },
-        {
-          "day": "Thursday",
           "time": "7:00–9:00 pm",
-          "programme": "Community Dance (R)",
-          "location": "Main Hall",
-          "notes": "All ages, partners welcome"
+          "programme": "First Aid Essentials",
+          "location": "Civic Hall",
+          "notes": "$15. Ages 16+. Certificate issued."
+        },
+        {
+          "day": "Wednesday",
+          "time": "1:00–3:00 pm",
+          "programme": "Sandbagging Practical (P)",
+          "location": "Depot Yard",
+          "notes": "Ages 18+. Lifting required."
+        },
+        {
+          "day": "Thursday",
+          "time": "10:00–12:00 pm",
+          "programme": "Supporting Vulnerable Neighbours",
+          "location": "Library Meeting Room",
+          "notes": "All ages. Includes a street-check template."
+        },
+        {
+          "day": "Thursday",
+          "time": "6:00–7:30 pm",
+          "programme": "Alert System Sign-Up Clinic",
+          "location": "Civic Hall",
+          "notes": "Bring your phone. Staff register you on the spot."
         },
         {
           "day": "Friday",
-          "time": "9:00–10:30 am",
-          "programme": "Parent & Tot Swim",
-          "location": "Pool",
-          "notes": "Children under 5 with adult"
+          "time": "11:00–12:30 pm",
+          "programme": "Insurance & Documentation",
+          "location": "Library Meeting Room",
+          "notes": "Ages 18+. Bring your policy if you have one."
         },
         {
           "day": "Saturday",
-          "time": "10:00 am–12:00 pm",
-          "programme": "Open Badminton",
-          "location": "Gymnasium",
-          "notes": "Drop-in, all skill levels"
+          "time": "9:30–12:30 pm",
+          "programme": "Community Response Volunteer Training (P)",
+          "location": "Depot Yard",
+          "notes": "Ages 18+. Three hours. Six-month commitment."
         },
         {
           "day": "Saturday",
-          "time": "2:00–4:00 pm",
-          "programme": "Teen Gaming Club (R)",
-          "location": "Computer Room",
-          "notes": "Ages 13–18"
+          "time": "2:00–3:30 pm",
+          "programme": "Family Preparedness Workshop (K)",
+          "location": "Civic Hall",
+          "notes": "All ages. Children must be accompanied."
         },
         {
           "day": "Sunday",
-          "time": "11:00 am–1:00 pm",
-          "programme": "Family Swim",
-          "location": "Pool",
-          "notes": "Families with children"
+          "time": "10:00–11:00 am",
+          "programme": "Riverside Walk & Talk (P)",
+          "location": "Meet at Bridge Car Park",
+          "notes": "All ages. Cancelled if the river is in flood."
         }
       ]
     },
@@ -160,31 +146,31 @@
       "part": 3,
       "partTitle": "Reading for Information",
       "type": "article",
-      "title": "Understanding Canada's Food Guide",
-      "content": "Canada's Food Guide was significantly revised in 2019, marking the most substantial update to the document in over a decade. The new guide moved away from the previous four food-group model — which had been criticised for placing too much emphasis on dairy and meat — toward a simpler, more flexible approach to healthy eating.\n\nThe updated guide is built around three core categories: vegetables and fruit, whole grain foods, and protein foods. Crucially, it does not specify serving sizes or recommended daily portions in the traditional sense. Instead, it uses a plate model showing that roughly half of every meal should consist of vegetables and fruit, one quarter should be whole grain foods such as brown rice, oats, or whole wheat bread, and one quarter should be protein foods.\n\nOne of the most significant changes was the repositioning of dairy products. In the previous guide, dairy had its own category and Canadians were encouraged to consume multiple daily servings. The 2019 guide merged dairy into the broader protein food category, alongside beans, lentils, tofu, fish, eggs, lean meat, and nuts. This change was partly driven by growing evidence that high dairy consumption is not necessary for bone health in adults and that plant-based protein sources offer comparable nutritional value.\n\nThe new guide also places greater emphasis on the social and environmental dimensions of eating. It encourages Canadians to cook at home more often, eat meals with others, and be mindful of marketing from the food industry. It also recommends limiting foods high in sodium, sugar, and saturated fat, and advises choosing water as the preferred beverage over sugary drinks.\n\nCritics of the new guide pointed out that it largely ignored the traditional dietary patterns of many Indigenous communities, which rely heavily on land-based foods such as game meats, fish, and berries. The government acknowledged this gap and committed to developing supplementary resources that better reflect Indigenous food sovereignty."
+      "title": "Why People Do Not Act on Warnings",
+      "content": "When a warning is issued and people do not respond, the explanation offered afterwards is usually complacency. Research on how people actually behave during emergencies supports a different and more uncomfortable account, in which the warning itself is frequently the weakest part of the chain.\n\nThe first finding is that people rarely act on a warning alone. They seek confirmation — looking outside, telephoning a relative, checking whether neighbours are moving. This behaviour is often described as denial and is better understood as verification, and it is entirely rational when warnings have previously proved unreliable. The practical consequence is that the time between a warning and any action is not wasted hesitation; it is a search for a second source. Warnings that arrive with visible corroboration are acted on faster than warnings that arrive alone.\n\nFalse alarms carry a cost that is real and frequently overstated in one direction. Repeated warnings that come to nothing do erode response, but the effect is smaller than commonly assumed and depends heavily on whether the reason was explained. A warning that did not materialise and was afterwards explained as a near miss largely preserves credibility. The same event with no explanation does not, because people conclude the system was simply wrong rather than that the threat passed.\n\nSpecificity matters more than urgency. A message naming a street, a time and an action produces far more response than one describing a severe threat in general terms, even where the second sounds more alarming. Vague high-urgency messages tend to produce information-seeking rather than action, because the recipient cannot tell whether it applies to them. The instinct to make a warning frightening enough to be obeyed usually backfires.\n\nThe most consistent finding concerns who receives the message at all. Registration-based systems reach the people who registered, and those skew toward homeowners, longer-term residents and people comfortable with the technology. Renters, recent arrivals and people without a shared language with the issuing authority are systematically underrepresented — and frequently occupy the housing most exposed to the hazard. A system can achieve high delivery rates among its registered users while missing much of the population actually at risk.\n\nThe design implication is not louder warnings. It is warnings that are specific, that arrive with corroboration, that explain themselves afterwards when nothing happens, and that reach people who never signed up."
     },
     {
       "id": "celpip-reading-017-p4",
       "part": 4,
       "partTitle": "Reading for Viewpoints",
       "type": "viewpoints",
-      "title": "Should Canadian Cities Ban Single-Use Plastics Entirely?",
+      "title": "Who Should Pay for Flood Defences?",
       "viewpoints": [
         {
-          "name": "Amelia Chen, environmental policy researcher",
-          "text": "A complete ban on single-use plastics is both necessary and overdue. The evidence from cities that have already implemented bans shows significant reductions in plastic waste reaching waterways within just two years. The alternatives — compostable bags, reusable containers, paper packaging — are readily available and are rapidly decreasing in cost. The argument that bans harm low-income consumers is contradicted by studies showing that reusable options save money over time. Governments need to stop waiting for voluntary corporate action and mandate change."
+          "name": "Councillor Bernard Achterberg",
+          "text": "We funded a defence scheme from general taxation and I would do it that way again, though the fairness argument against it is stronger than I usually admit in public. People who will never be flooded paid for a wall protecting people who will. What justifies it is not that everyone benefits equally — they do not — but that the alternative is a town where the flooded quarter becomes uninsurable and then unsellable, and that outcome lands on everyone eventually through the tax base. I would rather make the honest argument than the comfortable one."
         },
         {
-          "name": "Jordan Lee, retail business owner",
-          "text": "I support reducing plastic waste, but an outright ban is impractical for small businesses like mine. Single-use plastics remain the cheapest and most hygienic option for many food packaging needs. The alternatives often cost two to four times more, and those costs get passed directly to consumers. I would prefer a phased approach — tax incentives for businesses that switch, subsidies for compostable alternatives, and a realistic five-year transition timeline rather than an overnight ban that will hurt small retailers disproportionately."
+          "name": "Ingrid Sorensen, insurance actuary",
+          "text": "Premiums should reflect risk, and where they are prevented from doing so the cost does not disappear — it is transferred to policyholders elsewhere. That said, I do not support pure risk pricing here, because it prices out precisely the households with the least capacity to move and produces concentrated uninsurable areas, which is worse for everyone including insurers. What I object to is pretending subsidy is not subsidy. Name it, fund it deliberately, and review it, rather than hiding it inside a premium structure nobody can see."
         },
         {
-          "name": "Dr. Marcus Webb, public health physician",
-          "text": "The public health dimension of plastic pollution is consistently underreported. Microplastics have now been found in human blood, breast milk, and lung tissue. We do not fully understand the long-term health consequences, but the precautionary principle demands that we act. From a public health perspective, delays in regulation are equivalent to accepting ongoing population-level exposure to potentially harmful substances. The inconvenience of transitioning to alternative packaging is trivial compared to what we may be doing to human health."
+          "name": "Dr Amara Nwosu, hydrologist",
+          "text": "The question of who pays gets more attention than the question of what we build, and the second determines whether the first was worth anything. Hard defences move water rather than removing it; a wall protecting one settlement can raise levels downstream unless the whole catchment is modelled. Funding decisions made settlement by settlement produce exactly that outcome, because each community reasonably funds its own protection. The unit of decision should be the catchment, and almost nowhere is."
         },
         {
-          "name": "Sandra Kowalski, municipal waste management director",
-          "text": "In practice, the effectiveness of single-use plastic bans depends heavily on what infrastructure is in place to handle the alternatives. Compostable packaging is only beneficial if it is actually composted — if it ends up in landfill, it may produce methane. Our city currently composites less than thirty percent of eligible organic waste. Before mandating plastic alternatives, we need significant investment in composting capacity, public education, and sorting infrastructure. A ban without infrastructure investment risks replacing one problem with another."
+          "name": "Yusuf Demir, resident and business owner",
+          "text": "My shop flooded twice and I want defences, so take this as a supporter's complaint. Every scheme I have seen is announced with a construction budget and no maintenance budget. Pumps need servicing, gates need testing, culverts need clearing, and none of that is a ribbon-cutting. Twenty years on, a defence nobody funded the upkeep of fails in the event it was built for, and the failure gets blamed on the design rather than on the decision not to maintain it."
         }
       ]
     }
@@ -194,647 +180,723 @@
       "id": "celpip-reading-017-q01",
       "passageId": "celpip-reading-017-p1",
       "part": 1,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "Why does Kevin want a community garden plot?",
+      "prompt": "How many houses were flooded?",
+      "question": "How many houses were flooded?",
       "options": [
-        "He has no outdoor space at his apartment",
-        "He recently moved to a house with a broken garden",
-        "He is doing research on urban farming",
-        "He wants to start a small business selling vegetables"
+        "Eleven",
+        "Fourteen",
+        "Seven",
+        "Nine"
       ],
-      "correctAnswer": "He has no outdoor space at his apartment",
-      "explanation": "Kevin says they do not have outdoor space at their apartment.",
-      "difficulty": "easy"
+      "correctAnswer": "Eleven",
+      "explanation": "Water entered eleven houses on Millbrook Lane.",
+      "difficulty": "medium",
+      "questionNumber": 1
     },
     {
       "id": "celpip-reading-017-q02",
       "passageId": "celpip-reading-017-p1",
       "part": 1,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "How long has Kevin been living in Riverdale?",
+      "prompt": "When did water enter Teodor's hallway?",
+      "question": "When did water enter Teodor's hallway?",
       "options": [
-        "Three months",
-        "Six months",
-        "Over a year",
-        "Two weeks"
+        "10:04 pm",
+        "11:15 pm",
+        "11:40 pm",
+        "11:42 pm"
       ],
-      "correctAnswer": "Six months",
-      "explanation": "Kevin says he and his partner moved to Riverdale six months ago.",
-      "difficulty": "easy"
+      "correctAnswer": "11:15 pm",
+      "explanation": "Water was in his hallway at 11:15 pm.",
+      "difficulty": "medium",
+      "questionNumber": 2
     },
     {
       "id": "celpip-reading-017-q03",
       "passageId": "celpip-reading-017-p1",
       "part": 1,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What is the approximate current wait time for a plot?",
+      "prompt": "What does Teodor say he is NOT claiming?",
+      "question": "What does Teodor say he is NOT claiming?",
       "options": [
-        "One week",
-        "Two to three weeks",
-        "Four to six weeks",
-        "Three to four months"
+        "That houses were damaged",
+        "That the alert was late",
+        "That the council should have predicted the rainfall",
+        "That the leaflet was misleading"
       ],
-      "correctAnswer": "Four to six weeks",
-      "explanation": "Rosa says the average wait is approximately four to six weeks.",
-      "difficulty": "easy"
+      "correctAnswer": "That the council should have predicted the rainfall",
+      "explanation": "He accepts the rainfall exceeded the forecast.",
+      "difficulty": "medium",
+      "questionNumber": 3
     },
     {
       "id": "celpip-reading-017-q04",
       "passageId": "celpip-reading-017-p1",
       "part": 1,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "How much does the small plot cost per season?",
+      "prompt": "Why did Teodor register for the alert system?",
+      "question": "Why did Teodor register for the alert system?",
       "options": [
-        "One hundred and forty dollars",
-        "Two hundred dollars",
-        "Forty dollars",
-        "Eighty dollars"
+        "His insurer required it",
+        "A neighbour recommended it",
+        "It was compulsory",
+        "The leaflet promised registered residents advance warning"
       ],
-      "correctAnswer": "Eighty dollars",
-      "explanation": "Rosa says the small plot of four square metres costs eighty dollars per season.",
-      "difficulty": "medium"
+      "correctAnswer": "The leaflet promised registered residents advance warning",
+      "explanation": "He registered because the leaflet said residents who signed up would receive 'advance warning'.",
+      "difficulty": "medium",
+      "questionNumber": 4
     },
     {
       "id": "celpip-reading-017-q05",
       "passageId": "celpip-reading-017-p1",
       "part": 1,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What does the fee include, according to Rosa?",
+      "prompt": "What distinction does Teodor ask about?",
+      "question": "What distinction does Teodor ask about?",
       "options": [
-        "Shared tools, water connections, and a compost bin allocation",
-        "A storage shed and weekly instruction",
-        "Unlimited tool rental and parking",
-        "Only water connection"
+        "Whether the delay was in the decision or in the sending",
+        "Whether the rainfall was forecast",
+        "Whether other streets were warned",
+        "Whether the gauge was faulty"
       ],
-      "correctAnswer": "Shared tools, water connections, and a compost bin allocation",
-      "explanation": "Rosa lists shared tools, water, and a compost bin allocation as what the fee includes.",
-      "difficulty": "medium"
+      "correctAnswer": "Whether the delay was in the decision or in the sending",
+      "explanation": "He says those are different failures with different fixes.",
+      "difficulty": "medium",
+      "questionNumber": 5
     },
     {
       "id": "celpip-reading-017-q06",
       "passageId": "celpip-reading-017-p1",
       "part": 1,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "How long is the growing season at Riverdale Community Gardens?",
+      "prompt": "What does Teodor say he would prefer over a reassurance?",
+      "question": "What does Teodor say he would prefer over a reassurance?",
       "options": [
-        "April to August",
-        "May to October",
-        "June to September",
-        "March to November"
+        "Compensation",
+        "Being told that nobody knows, if that is the honest answer",
+        "A written apology",
+        "A meeting"
       ],
-      "correctAnswer": "May to October",
-      "explanation": "Rosa says the fee covers the period from May through October.",
-      "difficulty": "medium"
+      "correctAnswer": "Being told that nobody knows, if that is the honest answer",
+      "explanation": "He states he would rather hear that than a reassurance.",
+      "difficulty": "medium",
+      "questionNumber": 6
     },
     {
       "id": "celpip-reading-017-q07",
       "passageId": "celpip-reading-017-p1",
       "part": 1,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What must Kevin do to be placed on the waitlist?",
+      "prompt": "Where was the delay?",
+      "question": "Where was the delay?",
       "options": [
-        "Call Rosa directly",
-        "Attend a garden meeting first",
-        "Submit an application form and payment online",
-        "Visit in person with ID"
+        "In the leaflet",
+        "In the sending",
+        "In the decision",
+        "In the phone network"
       ],
-      "correctAnswer": "Submit an application form and payment online",
-      "explanation": "Rosa says Kevin must complete and submit the form with payment to be placed on the waitlist.",
-      "difficulty": "hard"
+      "correctAnswer": "In the decision",
+      "explanation": "Frances confirms the delay was in the decision, not the sending.",
+      "difficulty": "medium",
+      "questionNumber": 7
     },
     {
       "id": "celpip-reading-017-q08",
       "passageId": "celpip-reading-017-p1",
       "part": 1,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "When is the monthly garden social held?",
+      "prompt": "How quickly did the message reach registered phones once issued?",
+      "question": "How quickly did the message reach registered phones once issued?",
       "options": [
-        "Every Sunday morning",
-        "First Friday of each month",
-        "Second Saturday of each month",
-        "Last Saturday of each month"
+        "About five minutes",
+        "Twenty-seven minutes",
+        "Fifty minutes",
+        "Under ninety seconds"
       ],
-      "correctAnswer": "Last Saturday of each month",
-      "explanation": "Rosa says the garden social is on the last Saturday of each month.",
-      "difficulty": "hard"
+      "correctAnswer": "Under ninety seconds",
+      "explanation": "Once issued, it reached registered phones in under ninety seconds.",
+      "difficulty": "medium",
+      "questionNumber": 8
     },
     {
       "id": "celpip-reading-017-q09",
       "passageId": "celpip-reading-017-p1",
       "part": 1,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "Who is welcome at the garden socials?",
+      "prompt": "Why could the duty officer not confirm the reading?",
+      "question": "Why could the duty officer not confirm the reading?",
       "options": [
-        "Newcomers, even before having their own plot",
-        "Only people who have paid their fees",
-        "Only current plot holders",
-        "Members who have held a plot for at least one year"
+        "The downstream gauge had failed in October",
+        "The upstream gauge was wrong",
+        "The protocol had been suspended",
+        "He was off duty"
       ],
-      "correctAnswer": "Newcomers, even before having their own plot",
-      "explanation": "Rosa says newcomers are welcome even before they have their own plot.",
-      "difficulty": "hard"
+      "correctAnswer": "The downstream gauge had failed in October",
+      "explanation": "The second gauge had failed in October and was awaiting replacement.",
+      "difficulty": "medium",
+      "questionNumber": 9
     },
     {
       "id": "celpip-reading-017-q10",
       "passageId": "celpip-reading-017-p1",
       "part": 1,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What can be inferred about the standard plot size?",
+      "prompt": "What does Frances say about the duty officer?",
+      "question": "What does Frances say about the duty officer?",
       "options": [
-        "It is the same as the small plot",
-        "It is twice the size of the small plot",
-        "It is only available to returning members",
-        "It includes a private tool shed"
+        "He breached the protocol",
+        "He followed the protocol, and the protocol was wrong",
+        "He acted too quickly",
+        "He was inexperienced"
       ],
-      "correctAnswer": "It is twice the size of the small plot",
-      "explanation": "The small plot is four square metres and the standard is eight square metres — exactly twice the size.",
-      "difficulty": "hard"
+      "correctAnswer": "He followed the protocol, and the protocol was wrong",
+      "explanation": "She says he followed it and the protocol had no rule for a missing required input.",
+      "difficulty": "medium",
+      "questionNumber": 10
     },
     {
       "id": "celpip-reading-017-q11",
       "passageId": "celpip-reading-017-p1",
       "part": 1,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What is the purpose of Rosa's email?",
+      "prompt": "What has Frances done about the leaflet?",
+      "question": "What has Frances done about the leaflet?",
       "options": [
-        "To offer him a plot immediately",
-        "To reject Kevin's application",
-        "To answer his questions and explain the process",
-        "To invite him to a specific event"
+        "Referred it to the council",
+        "Reprinted it unchanged",
+        "Stopped the reprint",
+        "Withdrawn the alert system"
       ],
-      "correctAnswer": "To answer his questions and explain the process",
-      "explanation": "Rosa's email answers Kevin's questions about the wait, fees, and registration process.",
-      "difficulty": "hard"
+      "correctAnswer": "Stopped the reprint",
+      "explanation": "She says he is right and she has stopped the reprint.",
+      "difficulty": "medium",
+      "questionNumber": 11
     },
     {
       "id": "celpip-reading-017-q12",
       "passageId": "celpip-reading-017-p2",
       "part": 2,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "A 70-year-old woman wants to try an art class. Which programme is most suitable?",
+      "prompt": "Which session issues a certificate?",
+      "question": "Which session issues a certificate?",
       "options": [
-        "Community Dance on Thursday evening",
-        "Lunchtime Stretch on Wednesday",
-        "Gentle Yoga on Monday morning",
-        "Seniors' Art Class on Tuesday morning"
+        "Sandbagging Practical",
+        "Insurance & Documentation",
+        "Flood Plan for Your Home",
+        "First Aid Essentials"
       ],
-      "correctAnswer": "Seniors' Art Class on Tuesday morning",
-      "explanation": "The Seniors' Art Class on Tuesday is for ages 60+ and includes materials.",
-      "difficulty": "easy"
+      "correctAnswer": "First Aid Essentials",
+      "explanation": "First Aid Essentials issues a certificate.",
+      "difficulty": "medium",
+      "questionNumber": 12
     },
     {
       "id": "celpip-reading-017-q13",
       "passageId": "celpip-reading-017-p2",
       "part": 2,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "Which programmes require advance registration?",
+      "prompt": "Which is the only session with a charge?",
+      "question": "Which is the only session with a charge?",
       "options": [
-        "Gentle Yoga and Aqua Fitness",
-        "Open Badminton and Lunchtime Stretch",
-        "Parent & Tot Swim and Teen Gaming Club",
-        "Drop-in Basketball and Family Swim"
+        "First Aid Essentials",
+        "Community Response Volunteer Training",
+        "Emergency Kit Basics",
+        "Sandbagging Practical"
       ],
-      "correctAnswer": "Gentle Yoga and Aqua Fitness",
-      "explanation": "Only programmes marked with (R) require registration. Both Gentle Yoga and Aqua Fitness are marked (R).",
-      "difficulty": "easy"
+      "correctAnswer": "First Aid Essentials",
+      "explanation": "All sessions are free unless a price is shown; only First Aid shows $15.",
+      "difficulty": "medium",
+      "questionNumber": 13
     },
     {
       "id": "celpip-reading-017-q14",
       "passageId": "celpip-reading-017-p2",
       "part": 2,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "A teenager aged 15 wants to play badminton on a weekday. What is the correct programme?",
+      "prompt": "A household attends two (K) sessions. How many kits do they receive?",
+      "question": "A household attends two (K) sessions. How many kits do they receive?",
       "options": [
-        "Open Badminton on Saturday",
-        "Youth Badminton on Thursday afternoon",
-        "Drop-in Basketball on Tuesday",
-        "Community Dance on Thursday evening"
+        "Two",
+        "One",
+        "One per person",
+        "None"
       ],
-      "correctAnswer": "Youth Badminton on Thursday afternoon",
-      "explanation": "Youth Badminton is on Thursday afternoon and is for ages 10–17.",
-      "difficulty": "easy"
+      "correctAnswer": "One",
+      "explanation": "One kit per household, for households in the flood zone.",
+      "difficulty": "medium",
+      "questionNumber": 14
     },
     {
       "id": "celpip-reading-017-q15",
       "passageId": "celpip-reading-017-p2",
       "part": 2,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "Which pool programme is available to families with young children on a Sunday?",
+      "prompt": "Someone wants to register for Wednesday's session on Wednesday morning. What will they find?",
+      "question": "Someone wants to register for Wednesday's session on Wednesday morning. What will they find?",
       "options": [
-        "Adult Swimming Lessons",
-        "Parent & Tot Swim",
-        "Family Swim",
-        "Aqua Fitness"
+        "Registration is not required",
+        "They can register at the door",
+        "Registration closed 48 hours before",
+        "The session is full"
       ],
-      "correctAnswer": "Family Swim",
-      "explanation": "Family Swim is held on Sundays and is for families with children.",
-      "difficulty": "medium"
+      "correctAnswer": "Registration closed 48 hours before",
+      "explanation": "Registration closes 48 hours before each session.",
+      "difficulty": "medium",
+      "questionNumber": 15
     },
     {
       "id": "celpip-reading-017-q16",
       "passageId": "celpip-reading-017-p2",
       "part": 2,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "How long does the Community Dance programme last?",
+      "prompt": "A 17-year-old wants to help with sandbagging. Can she?",
+      "question": "A 17-year-old wants to help with sandbagging. Can she?",
       "options": [
-        "Two hours thirty minutes",
-        "One hour",
-        "One hour thirty minutes",
-        "Two hours"
+        "Only with an adult",
+        "Only on Saturdays",
+        "Yes",
+        "No — the minimum age is 18"
       ],
-      "correctAnswer": "Two hours",
-      "explanation": "Community Dance runs from 7:00–9:00 pm, which is two hours.",
-      "difficulty": "medium"
+      "correctAnswer": "No — the minimum age is 18",
+      "explanation": "Sandbagging Practical is ages 18+.",
+      "difficulty": "medium",
+      "questionNumber": 16
     },
     {
       "id": "celpip-reading-017-q17",
       "passageId": "celpip-reading-017-p2",
       "part": 2,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "Which programme can someone attend without planning ahead on a Wednesday lunchtime?",
+      "prompt": "Which session may be cancelled because of conditions?",
+      "question": "Which session may be cancelled because of conditions?",
       "options": [
-        "Lunchtime Stretch",
-        "Seniors' Art Class",
-        "Aqua Fitness",
-        "Gentle Yoga"
+        "Riverside Walk & Talk",
+        "Community Response Volunteer Training",
+        "Alert System Sign-Up Clinic",
+        "Sandbagging Practical"
       ],
-      "correctAnswer": "Lunchtime Stretch",
-      "explanation": "Lunchtime Stretch on Wednesday is explicitly listed as drop-in with no registration needed.",
-      "difficulty": "medium"
+      "correctAnswer": "Riverside Walk & Talk",
+      "explanation": "It is cancelled if the river is in flood.",
+      "difficulty": "medium",
+      "questionNumber": 17
     },
     {
       "id": "celpip-reading-017-q18",
       "passageId": "celpip-reading-017-p2",
       "part": 2,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "Which location is used for the most programmes?",
+      "prompt": "What should you bring to the Alert System Sign-Up Clinic?",
+      "question": "What should you bring to the Alert System Sign-Up Clinic?",
       "options": [
-        "Gymnasium",
-        "Pool",
-        "Studio A",
-        "Craft Room"
+        "A floor plan",
+        "Your phone",
+        "Your insurance policy",
+        "Proof of address"
       ],
-      "correctAnswer": "Pool",
-      "explanation": "The Pool is used for Aqua Fitness, Adult Swimming Lessons, Parent & Tot Swim, and Family Swim — more than any other location.",
-      "difficulty": "hard"
+      "correctAnswer": "Your phone",
+      "explanation": "Staff register you on the spot; bring your phone.",
+      "difficulty": "medium",
+      "questionNumber": 18
     },
     {
       "id": "celpip-reading-017-q19",
       "passageId": "celpip-reading-017-p2",
       "part": 2,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "A parent with a three-year-old child wants to swim together. Which programme should they attend?",
+      "prompt": "Which session asks for a longer commitment?",
+      "question": "Which session asks for a longer commitment?",
       "options": [
-        "Family Swim on Sunday",
-        "Adult Swimming Lessons on Monday",
-        "Parent & Tot Swim on Friday",
-        "Aqua Fitness on Wednesday"
+        "Supporting Vulnerable Neighbours",
+        "Family Preparedness Workshop",
+        "Community Response Volunteer Training",
+        "Emergency Kit Basics"
       ],
-      "correctAnswer": "Parent & Tot Swim on Friday",
-      "explanation": "Parent & Tot Swim is for children under 5 with an adult and runs on Friday.",
-      "difficulty": "hard"
+      "correctAnswer": "Community Response Volunteer Training",
+      "explanation": "It carries a six-month commitment.",
+      "difficulty": "medium",
+      "questionNumber": 19
     },
     {
       "id": "celpip-reading-017-q20",
       "passageId": "celpip-reading-017-p3",
       "part": 3,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What was the main criticism of the previous version of Canada's Food Guide?",
+      "prompt": "What explanation is usually offered when people do not respond?",
+      "question": "What explanation is usually offered when people do not respond?",
       "options": [
-        "It did not include enough vegetables",
-        "It was not updated frequently enough",
-        "It was too complicated for most people to follow",
-        "It placed too much emphasis on dairy and meat"
+        "Language barriers",
+        "Warning fatigue",
+        "Poor technology",
+        "Complacency"
       ],
-      "correctAnswer": "It placed too much emphasis on dairy and meat",
-      "explanation": "The passage says the previous guide was criticised for placing too much emphasis on dairy and meat.",
-      "difficulty": "easy"
+      "correctAnswer": "Complacency",
+      "explanation": "The explanation offered afterwards is usually complacency.",
+      "difficulty": "medium",
+      "questionNumber": 20
     },
     {
       "id": "celpip-reading-017-q21",
       "passageId": "celpip-reading-017-p3",
       "part": 3,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "According to the 2019 guide, what should make up roughly half of every meal?",
+      "prompt": "What do people typically do when they receive a warning?",
+      "question": "What do people typically do when they receive a warning?",
       "options": [
-        "Vegetables and fruit",
-        "Dairy products",
-        "Whole grain foods",
-        "Protein foods"
+        "Seek confirmation",
+        "Ignore it",
+        "Contact the authority",
+        "Act immediately"
       ],
-      "correctAnswer": "Vegetables and fruit",
-      "explanation": "The plate model shows roughly half of every meal should be vegetables and fruit.",
-      "difficulty": "easy"
+      "correctAnswer": "Seek confirmation",
+      "explanation": "They look outside, telephone a relative, or check whether neighbours are moving.",
+      "difficulty": "medium",
+      "questionNumber": 21
     },
     {
       "id": "celpip-reading-017-q22",
       "passageId": "celpip-reading-017-p3",
       "part": 3,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "Where is dairy placed in the 2019 Food Guide?",
+      "prompt": "How does the article characterise that behaviour?",
+      "question": "How does the article characterise that behaviour?",
       "options": [
-        "Under the vegetables and fruit category",
-        "Within the broader protein food category",
-        "It was removed entirely from the guide",
-        "In its own separate category"
+        "As denial",
+        "As verification, and entirely rational",
+        "As panic",
+        "As indecision"
       ],
-      "correctAnswer": "Within the broader protein food category",
-      "explanation": "The 2019 guide merged dairy into the broader protein food category.",
-      "difficulty": "easy"
+      "correctAnswer": "As verification, and entirely rational",
+      "explanation": "It is better understood as verification and is rational when warnings have proved unreliable.",
+      "difficulty": "medium",
+      "questionNumber": 22
     },
     {
       "id": "celpip-reading-017-q23",
       "passageId": "celpip-reading-017-p3",
       "part": 3,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What evidence influenced the repositioning of dairy?",
+      "prompt": "What is said about the cost of false alarms?",
+      "question": "What is said about the cost of false alarms?",
       "options": [
-        "Findings that dairy increases cholesterol",
-        "Studies showing dairy is harmful to children",
-        "Evidence that high dairy consumption is not necessary for adult bone health",
-        "Research showing dairy increases obesity"
+        "It is permanent",
+        "It is larger than assumed",
+        "It is real but smaller than commonly assumed, and depends on explanation",
+        "It does not exist"
       ],
-      "correctAnswer": "Evidence that high dairy consumption is not necessary for adult bone health",
-      "explanation": "The passage says growing evidence showed high dairy consumption is not necessary for bone health in adults.",
-      "difficulty": "medium"
+      "correctAnswer": "It is real but smaller than commonly assumed, and depends on explanation",
+      "explanation": "The effect depends heavily on whether the reason was explained.",
+      "difficulty": "medium",
+      "questionNumber": 23
     },
     {
       "id": "celpip-reading-017-q24",
       "passageId": "celpip-reading-017-p3",
       "part": 3,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What beverage does the new guide recommend as preferred?",
+      "prompt": "What preserves credibility after a warning that did not materialise?",
+      "question": "What preserves credibility after a warning that did not materialise?",
       "options": [
-        "Low-fat milk",
-        "100% fruit juice",
-        "Coffee or tea",
-        "Water"
+        "Apologising",
+        "Increasing urgency next time",
+        "Issuing fewer warnings",
+        "Explaining it afterwards as a near miss"
       ],
-      "correctAnswer": "Water",
-      "explanation": "The passage says the guide advises choosing water as the preferred beverage over sugary drinks.",
-      "difficulty": "medium"
+      "correctAnswer": "Explaining it afterwards as a near miss",
+      "explanation": "A warning explained afterwards as a near miss largely preserves credibility.",
+      "difficulty": "medium",
+      "questionNumber": 24
     },
     {
       "id": "celpip-reading-017-q25",
       "passageId": "celpip-reading-017-p3",
       "part": 3,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What is one social dimension of eating that the new guide encourages?",
+      "prompt": "What matters more than urgency?",
+      "question": "What matters more than urgency?",
       "options": [
-        "Eating meals with others",
-        "Following a specific diet plan",
-        "Eating a large breakfast",
-        "Joining a cooking class"
+        "Specificity",
+        "Repetition",
+        "Timing",
+        "Volume"
       ],
-      "correctAnswer": "Eating meals with others",
-      "explanation": "The guide encourages eating meals with others as part of its social dimension.",
-      "difficulty": "medium"
+      "correctAnswer": "Specificity",
+      "explanation": "A message naming a street, a time and an action produces far more response.",
+      "difficulty": "medium",
+      "questionNumber": 25
     },
     {
       "id": "celpip-reading-017-q26",
       "passageId": "celpip-reading-017-p3",
       "part": 3,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What criticism was raised about the 2019 guide regarding Indigenous communities?",
+      "prompt": "What do vague high-urgency messages tend to produce?",
+      "question": "What do vague high-urgency messages tend to produce?",
       "options": [
-        "It was not translated into enough Indigenous languages",
-        "It ignored traditional dietary patterns relying on land-based foods",
-        "It recommended too many imported foods",
-        "It contained inaccurate information about wild game"
+        "Immediate evacuation",
+        "Information-seeking rather than action",
+        "Panic",
+        "Complaints"
       ],
-      "correctAnswer": "It ignored traditional dietary patterns relying on land-based foods",
-      "explanation": "Critics said the guide largely ignored Indigenous communities' traditional land-based dietary patterns.",
-      "difficulty": "hard"
+      "correctAnswer": "Information-seeking rather than action",
+      "explanation": "The recipient cannot tell whether it applies to them.",
+      "difficulty": "medium",
+      "questionNumber": 26
     },
     {
       "id": "celpip-reading-017-q27",
       "passageId": "celpip-reading-017-p3",
       "part": 3,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "How did the government respond to the criticism about Indigenous food patterns?",
+      "prompt": "Who is systematically underrepresented in registration-based systems?",
+      "question": "Who is systematically underrepresented in registration-based systems?",
       "options": [
-        "By consulting Indigenous elders to revise the plate model",
-        "By rewriting the whole guide",
-        "By acknowledging the gap and committing to developing supplementary resources",
-        "By adding a new food category for game meats"
+        "People in low-risk areas",
+        "Homeowners",
+        "Renters, recent arrivals and people without a shared language",
+        "Older residents"
       ],
-      "correctAnswer": "By acknowledging the gap and committing to developing supplementary resources",
-      "explanation": "The government acknowledged the gap and committed to developing supplementary resources.",
-      "difficulty": "hard"
+      "correctAnswer": "Renters, recent arrivals and people without a shared language",
+      "explanation": "Those groups are underrepresented and frequently occupy the most exposed housing.",
+      "difficulty": "medium",
+      "questionNumber": 27
     },
     {
       "id": "celpip-reading-017-q28",
       "passageId": "celpip-reading-017-p3",
       "part": 3,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "Which of the following is NOT listed as a protein food in the 2019 guide?",
+      "prompt": "What is the article's design implication?",
+      "question": "What is the article's design implication?",
       "options": [
-        "Tofu",
-        "Lentils",
-        "Yogurt",
-        "Cheese"
+        "Fewer warnings",
+        "Mandatory registration",
+        "Louder warnings",
+        "Specific warnings with corroboration that explain themselves and reach the unregistered"
       ],
-      "correctAnswer": "Cheese",
-      "explanation": "The passage lists beans, lentils, tofu, fish, eggs, lean meat, and nuts as protein foods — cheese is not specifically listed.",
-      "difficulty": "hard"
+      "correctAnswer": "Specific warnings with corroboration that explain themselves and reach the unregistered",
+      "explanation": "The article states exactly this.",
+      "difficulty": "medium",
+      "questionNumber": 28
     },
     {
       "id": "celpip-reading-017-q29",
       "passageId": "celpip-reading-017-p4",
       "part": 4,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker believes the ban is both necessary and overdue?",
+      "prompt": "What does Councillor Achterberg concede?",
+      "question": "What does Councillor Achterberg concede?",
       "options": [
-        "Amelia Chen",
-        "Sandra Kowalski",
-        "Jordan Lee",
-        "Dr. Marcus Webb"
+        "The fairness argument against general taxation is stronger than he usually admits",
+        "The defence does not work",
+        "Residents were not consulted",
+        "The scheme was too expensive"
       ],
-      "correctAnswer": "Amelia Chen",
-      "explanation": "Amelia Chen says a complete ban is 'both necessary and overdue.'",
-      "difficulty": "easy"
+      "correctAnswer": "The fairness argument against general taxation is stronger than he usually admits",
+      "explanation": "He concedes people who will never be flooded paid for the wall.",
+      "difficulty": "medium",
+      "questionNumber": 29
     },
     {
       "id": "celpip-reading-017-q30",
       "passageId": "celpip-reading-017-p4",
       "part": 4,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Jordan Lee prefer instead of an outright ban?",
+      "prompt": "What does he say justifies the approach?",
+      "question": "What does he say justifies the approach?",
       "options": [
-        "A voluntary agreement among large corporations",
-        "A phased approach with incentives and a five-year timeline",
-        "An immediate ban with subsidies for affected businesses",
-        "Continued use of single-use plastics with better disposal systems"
+        "That everyone benefits equally",
+        "That the alternative lands on everyone through the tax base",
+        "That it was cheapest",
+        "That residents voted for it"
       ],
-      "correctAnswer": "A phased approach with incentives and a five-year timeline",
-      "explanation": "Jordan Lee prefers a phased approach with tax incentives, subsidies, and a five-year transition.",
-      "difficulty": "easy"
+      "correctAnswer": "That the alternative lands on everyone through the tax base",
+      "explanation": "An uninsurable, unsellable flooded quarter eventually affects everyone through the tax base.",
+      "difficulty": "medium",
+      "questionNumber": 30
     },
     {
       "id": "celpip-reading-017-q31",
       "passageId": "celpip-reading-017-p4",
       "part": 4,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker raises a concern about microplastics in the human body?",
+      "prompt": "What does Ingrid say happens when premiums cannot reflect risk?",
+      "question": "What does Ingrid say happens when premiums cannot reflect risk?",
       "options": [
-        "Sandra Kowalski",
-        "Jordan Lee",
-        "Dr. Marcus Webb",
-        "Amelia Chen"
+        "Premiums fall overall",
+        "The cost disappears",
+        "The cost is transferred to policyholders elsewhere",
+        "Insurers absorb it"
       ],
-      "correctAnswer": "Dr. Marcus Webb",
-      "explanation": "Dr. Webb mentions microplastics found in human blood, breast milk, and lung tissue.",
-      "difficulty": "easy"
+      "correctAnswer": "The cost is transferred to policyholders elsewhere",
+      "explanation": "She says the cost does not disappear but is transferred.",
+      "difficulty": "medium",
+      "questionNumber": 31
     },
     {
       "id": "celpip-reading-017-q32",
       "passageId": "celpip-reading-017-p4",
       "part": 4,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Sandra Kowalski say about compostable packaging?",
+      "prompt": "Does Ingrid support pure risk pricing?",
+      "question": "Does Ingrid support pure risk pricing?",
       "options": [
-        "It is currently too expensive for most cities",
-        "It has already solved the plastic problem in other cities",
-        "It is always better than plastic",
-        "It is only beneficial if it is actually composted"
+        "Only for businesses",
+        "Only in high-risk zones",
+        "Yes",
+        "No, because it prices out households least able to move"
       ],
-      "correctAnswer": "It is only beneficial if it is actually composted",
-      "explanation": "Sandra says compostable packaging is only beneficial if composted — in landfill it may produce methane.",
-      "difficulty": "medium"
+      "correctAnswer": "No, because it prices out households least able to move",
+      "explanation": "She says it produces concentrated uninsurable areas, worse for everyone including insurers.",
+      "difficulty": "medium",
+      "questionNumber": 32
     },
     {
       "id": "celpip-reading-017-q33",
       "passageId": "celpip-reading-017-p4",
       "part": 4,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What percentage of eligible organic waste does Sandra's city currently compost?",
+      "prompt": "What does Ingrid object to?",
+      "question": "What does Ingrid object to?",
       "options": [
-        "Less than thirty percent",
-        "Over fifty percent",
-        "Less than ten percent",
-        "About twenty percent"
+        "Pretending subsidy is not subsidy",
+        "Government funding",
+        "Insurance regulation",
+        "Subsidy itself"
       ],
-      "correctAnswer": "Less than thirty percent",
-      "explanation": "Sandra says the city currently composts less than thirty percent of eligible organic waste.",
-      "difficulty": "medium"
+      "correctAnswer": "Pretending subsidy is not subsidy",
+      "explanation": "She says name it, fund it deliberately and review it, rather than hiding it in a premium structure.",
+      "difficulty": "medium",
+      "questionNumber": 33
     },
     {
       "id": "celpip-reading-017-q34",
       "passageId": "celpip-reading-017-p4",
       "part": 4,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "How does Amelia Chen respond to concerns about cost impacts on low-income consumers?",
+      "prompt": "What does Dr Nwosu say gets less attention than it deserves?",
+      "question": "What does Dr Nwosu say gets less attention than it deserves?",
       "options": [
-        "She says alternatives cost two to four times more",
-        "She says reusable options save money over time",
-        "She suggests the government should subsidise alternatives",
-        "She acknowledges it is a valid concern"
+        "Who pays",
+        "What we build",
+        "How much it costs",
+        "When it is built"
       ],
-      "correctAnswer": "She says reusable options save money over time",
-      "explanation": "Amelia says studies show reusable options save money over time, contradicting the cost concern.",
-      "difficulty": "medium"
+      "correctAnswer": "What we build",
+      "explanation": "She says the second question determines whether the first was worth anything.",
+      "difficulty": "medium",
+      "questionNumber": 34
     },
     {
       "id": "celpip-reading-017-q35",
       "passageId": "celpip-reading-017-p4",
       "part": 4,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker is most focused on the immediate economic impact on small businesses?",
+      "prompt": "What is the problem with hard defences?",
+      "question": "What is the problem with hard defences?",
       "options": [
-        "Sandra Kowalski",
-        "Amelia Chen",
-        "Jordan Lee",
-        "Dr. Marcus Webb"
+        "They require land purchase",
+        "They are too expensive",
+        "They move water rather than removing it",
+        "They fail quickly"
       ],
-      "correctAnswer": "Jordan Lee",
-      "explanation": "Jordan Lee focuses on how bans disproportionately hurt small retailers.",
-      "difficulty": "hard"
+      "correctAnswer": "They move water rather than removing it",
+      "explanation": "A wall protecting one settlement can raise levels downstream unless the catchment is modelled.",
+      "difficulty": "medium",
+      "questionNumber": 35
     },
     {
       "id": "celpip-reading-017-q36",
       "passageId": "celpip-reading-017-p4",
       "part": 4,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What principle does Dr. Webb invoke to argue for action?",
+      "prompt": "What does Dr Nwosu say the unit of decision should be?",
+      "question": "What does Dr Nwosu say the unit of decision should be?",
       "options": [
-        "The free market principle",
-        "The public interest principle",
-        "The economic efficiency principle",
-        "The precautionary principle"
+        "The region",
+        "The property",
+        "The settlement",
+        "The catchment"
       ],
-      "correctAnswer": "The precautionary principle",
-      "explanation": "Dr. Webb says the precautionary principle demands acting in the face of uncertain health risks.",
-      "difficulty": "hard"
+      "correctAnswer": "The catchment",
+      "explanation": "She says the unit of decision should be the catchment, and almost nowhere is.",
+      "difficulty": "medium",
+      "questionNumber": 36
     },
     {
       "id": "celpip-reading-017-q37",
       "passageId": "celpip-reading-017-p4",
       "part": 4,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "Which two speakers would most likely agree that a simple, immediate ban is the wrong approach?",
+      "prompt": "What is Yusuf's position on defences?",
+      "question": "What is Yusuf's position on defences?",
       "options": [
-        "Jordan Lee and Sandra Kowalski",
-        "Amelia Chen and Sandra Kowalski",
-        "Dr. Marcus Webb and Jordan Lee",
-        "Amelia Chen and Dr. Marcus Webb"
+        "He wants them — he calls it a supporter's complaint",
+        "He is undecided",
+        "He prefers insurance",
+        "He opposes them"
       ],
-      "correctAnswer": "Jordan Lee and Sandra Kowalski",
-      "explanation": "Jordan Lee wants a phased approach and Sandra wants infrastructure first — both oppose an immediate ban.",
-      "difficulty": "hard"
+      "correctAnswer": "He wants them — he calls it a supporter's complaint",
+      "explanation": "His shop flooded twice and he says to take it as a supporter's complaint.",
+      "difficulty": "medium",
+      "questionNumber": 37
     },
     {
       "id": "celpip-reading-017-q38",
       "passageId": "celpip-reading-017-p4",
       "part": 4,
-      "topic": "staying connected with family abroad",
+      "topic": "emergencies, weather warnings and community resilience",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Sandra Kowalski suggest is needed before mandating plastic alternatives?",
+      "prompt": "What does Yusuf say every scheme lacks?",
+      "question": "What does Yusuf say every scheme lacks?",
       "options": [
-        "A public vote on the issue",
-        "Significant investment in composting capacity, education, and sorting infrastructure",
-        "A full ban on imports of plastic packaging",
-        "A five-year government study on alternatives"
+        "A construction budget",
+        "A maintenance budget",
+        "Community consultation",
+        "An environmental assessment"
       ],
-      "correctAnswer": "Significant investment in composting capacity, education, and sorting infrastructure",
-      "explanation": "Sandra says investment in composting capacity, public education, and sorting infrastructure is needed first.",
-      "difficulty": "hard"
+      "correctAnswer": "A maintenance budget",
+      "explanation": "Schemes are announced with a construction budget and no maintenance budget.",
+      "difficulty": "medium",
+      "questionNumber": 38
     }
   ]
 }
