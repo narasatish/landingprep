@@ -41,117 +41,110 @@
     {
       "id": "celpip-reading-015-p1",
       "part": 1,
-      "partTitle": "Reading for Correspondence",
+      "partTitle": "Reading Correspondence",
       "type": "correspondence",
-      "title": "Email Correspondence: Community Garden Plot Application",
+      "title": "Email Correspondence: A Washing Machine Out of Warranty",
       "emails": [
         {
-          "from": "Kevin Marsh <k.marsh@gmail.com>",
-          "to": "coordinator@riverdalegardens.ca",
-          "subject": "Application for a Garden Plot",
-          "date": "May 3",
-          "body": "Dear Coordinator,\n\nI am writing to apply for one of the community garden plots I noticed advertised on your website. My partner and I moved to the Riverdale neighbourhood six months ago, and we are very keen to grow our own vegetables this summer. We do not have any outdoor space at our apartment, so the community garden would be ideal.\n\nI noticed the website mentions a waitlist. Could you let me know approximately how long the current wait is, and whether there is anything we can do to move things along? Also, is there a fee involved, and if so, does it cover the full growing season?\n\nThank you very much for your time. I look forward to hearing from you.\n\nKevin Marsh"
+          "from": "Emeka Balogun <e.balogun@mailbox.ca>",
+          "to": "support@halden-appliance.ca",
+          "subject": "Model HW-620, serial 4471882 — bearing failure at 26 months",
+          "date": "October 9",
+          "body": "Dear Halden Support,\n\nI bought an HW-620 washing machine on 14 August two years ago for $899. The drum bearing failed last week, at 26 months. Your warranty is 24 months, so I understand the warranty answer is no.\n\nI am writing anyway, for two reasons.\n\nFirst, your engineer told me the bearing is not sold separately and that the entire drum assembly must be replaced at $610 plus labour. On a $899 machine that is not a repair, it is a decision to buy a new one. I would like to know whether that is deliberate design or simply how the part is supplied, because those are different things and only one of them is your choice.\n\nSecond, I checked before writing: your own marketing describes this range as \"built for a decade of family washing\". I am not claiming that is a contractual promise. I am saying that if a machine is sold on a ten-year expectation and the main bearing fails at just over two, one of those two numbers is wrong and it is not the one I chose.\n\nI am not demanding a free repair. I would like a straight answer on the part, and I would like to know what you consider a reasonable life for this machine.\n\nRegards,\nEmeka Balogun"
         },
         {
-          "from": "Rosa Delacourt <coordinator@riverdalegardens.ca>",
-          "to": "k.marsh@gmail.com",
-          "subject": "RE: Application for a Garden Plot",
-          "date": "May 5",
-          "body": "Dear Kevin,\n\nThank you for your interest in Riverdale Community Gardens. We are delighted to welcome new applicants, especially those who are new to the neighbourhood.\n\nTo answer your questions: yes, there is currently a waitlist, and the average wait time is approximately four to six weeks depending on plot size. We have two plot sizes available — a small plot of four square metres at eighty dollars per season, and a standard plot of eight square metres at one hundred and forty dollars per season. The fee covers the period from May through October and includes access to shared tools, water connections, and a compost bin allocation.\n\nTo register your interest formally, please complete the application form on our website and submit it along with your payment. Once your application is processed, you will be placed on the waitlist and contacted when a plot becomes available.\n\nWe also hold a monthly garden social on the last Saturday of each month, and newcomers are very welcome to join even before they have their own plot.\n\nBest regards,\nRosa Delacourt\nCoordinator, Riverdale Community Gardens"
+          "from": "Halden Appliance Support <support@halden-appliance.ca>",
+          "to": "e.balogun@mailbox.ca",
+          "subject": "RE: Model HW-620, serial 4471882 — bearing failure at 26 months",
+          "date": "October 12",
+          "body": "Dear Mr Balogun,\n\nTwo straight answers, then an offer you did not ask for.\n\nOn the part: the bearing is pressed into the drum assembly and is not separately serviceable on the HW-620. That is a design decision, not a supply accident, and it was made to reduce manufacturing cost. I am not going to describe it as anything else. Our current range separates the two, and that change was made because of complaints like yours.\n\nOn reasonable life: our internal design target for this range is eight to ten years for the machine and seven for the bearing. Yours failed at just over two. That is not normal wear and it is not something you did.\n\nWhich brings me to the offer. Because the failure is well outside the expected distribution, this goes to our engineering team as a warranty-adjacent case regardless of the 24-month term. We will replace the drum assembly at no charge for the part; you would pay the standard labour call-out of $95. That is not goodwill, it is what the failure data supports.\n\nOn the marketing copy: you are right that \"a decade of family washing\" sits badly beside a two-year bearing failure. I have passed it to the team that owns it. I cannot promise it will change, and I would rather say that than tell you it will.\n\nRegards,\nJoanna Petrescu\nCustomer Support Lead"
         }
       ]
     },
     {
       "id": "celpip-reading-015-p2",
       "part": 2,
-      "partTitle": "Applying a Diagram",
+      "partTitle": "Reading to Apply a Diagram",
       "type": "schedule",
-      "title": "Community Recreation Centre — Spring Programme Schedule",
-      "intro": "The Maplewood Recreation Centre offers the following programmes during the spring session (April 7 – June 27). All programmes are drop-in unless marked with (R) for registered.",
+      "title": "Halden Community Repair Hub — Winter Timetable",
+      "intro": "Runs November 3 to February 27. Sessions marked (T) are tuition — you repair your own item with guidance. Sessions marked (F) are fix-it clinics where a volunteer repairs it for you. Parts are charged at cost in all sessions. Bookings open two weeks ahead; drop-in places are released 15 minutes after each session starts.",
       "schedule": [
         {
           "day": "Monday",
-          "time": "9:00–10:00 am",
-          "programme": "Gentle Yoga (R)",
-          "location": "Studio A",
-          "notes": "Ages 18+, mats provided"
+          "time": "10:00–1:00 pm",
+          "programme": "Small Appliances (F)",
+          "location": "Bench 1",
+          "notes": "Free. Kettles, toasters, lamps. One item per person."
         },
         {
           "day": "Monday",
-          "time": "6:00–7:30 pm",
-          "programme": "Adult Swimming Lessons (R)",
-          "location": "Pool",
-          "notes": "Non-swimmers only"
+          "time": "6:00–8:00 pm",
+          "programme": "Sewing & Mending (T)",
+          "location": "Textile Room",
+          "notes": "$6. Machines provided. Bring your own garment."
         },
         {
           "day": "Tuesday",
-          "time": "10:00–11:30 am",
-          "programme": "Seniors' Art Class (R)",
-          "location": "Craft Room",
-          "notes": "Ages 60+, materials included"
-        },
-        {
-          "day": "Tuesday",
-          "time": "7:00–8:30 pm",
-          "programme": "Drop-in Basketball",
-          "location": "Gymnasium",
-          "notes": "Ages 14+, bring own water"
+          "time": "1:00–4:00 pm",
+          "programme": "Bicycle Workshop (T)",
+          "location": "Yard",
+          "notes": "$8. Tools provided. Unheated — dress warmly."
         },
         {
           "day": "Wednesday",
-          "time": "9:00–10:00 am",
-          "programme": "Aqua Fitness (R)",
-          "location": "Pool",
-          "notes": "All fitness levels"
+          "time": "10:00–12:00 pm",
+          "programme": "Computers & Phones (F)",
+          "location": "Bench 2",
+          "notes": "Free. Software only; no screen replacements."
         },
         {
           "day": "Wednesday",
-          "time": "12:00–1:00 pm",
-          "programme": "Lunchtime Stretch",
-          "location": "Studio A",
-          "notes": "Drop-in, no registration needed"
+          "time": "6:00–8:30 pm",
+          "programme": "Furniture Restoration (T)",
+          "location": "Wood Shop",
+          "notes": "$14. Ages 16+. Safety briefing required first visit."
         },
         {
           "day": "Thursday",
-          "time": "4:30–5:30 pm",
-          "programme": "Youth Badminton (R)",
-          "location": "Gymnasium",
-          "notes": "Ages 10–17"
+          "time": "9:30–12:30 pm",
+          "programme": "Small Appliances (F)",
+          "location": "Bench 1",
+          "notes": "Free. Kettles, toasters, lamps. One item per person."
         },
         {
           "day": "Thursday",
-          "time": "7:00–9:00 pm",
-          "programme": "Community Dance (R)",
-          "location": "Main Hall",
-          "notes": "All ages, partners welcome"
+          "time": "6:00–8:00 pm",
+          "programme": "Soldering & Electronics (T)",
+          "location": "Bench 2",
+          "notes": "$10. Ages 16+. Beginners welcome."
         },
         {
           "day": "Friday",
-          "time": "9:00–10:30 am",
-          "programme": "Parent & Tot Swim",
-          "location": "Pool",
-          "notes": "Children under 5 with adult"
+          "time": "10:00–1:00 pm",
+          "programme": "Clothing Alterations (F)",
+          "location": "Textile Room",
+          "notes": "Free. Two garments per person."
         },
         {
           "day": "Saturday",
-          "time": "10:00 am–12:00 pm",
-          "programme": "Open Badminton",
-          "location": "Gymnasium",
-          "notes": "Drop-in, all skill levels"
+          "time": "9:00–12:00 pm",
+          "programme": "Bicycle Workshop (T)",
+          "location": "Yard",
+          "notes": "$8. Tools provided. Unheated — dress warmly."
         },
         {
           "day": "Saturday",
-          "time": "2:00–4:00 pm",
-          "programme": "Teen Gaming Club (R)",
-          "location": "Computer Room",
-          "notes": "Ages 13–18"
+          "time": "1:00–4:00 pm",
+          "programme": "Open Bench (T)",
+          "location": "Bench 1 & 2",
+          "notes": "$5. Bring anything; volunteers advise but do not repair."
         },
         {
           "day": "Sunday",
-          "time": "11:00 am–1:00 pm",
-          "programme": "Family Swim",
-          "location": "Pool",
-          "notes": "Families with children"
+          "time": "11:00–2:00 pm",
+          "programme": "Tool Library Pick-Up",
+          "location": "Reception",
+          "notes": "Free for members. Two-week loans."
         }
       ]
     },
@@ -160,31 +153,31 @@
       "part": 3,
       "partTitle": "Reading for Information",
       "type": "article",
-      "title": "Understanding Canada's Food Guide",
-      "content": "Canada's Food Guide was significantly revised in 2019, marking the most substantial update to the document in over a decade. The new guide moved away from the previous four food-group model — which had been criticised for placing too much emphasis on dairy and meat — toward a simpler, more flexible approach to healthy eating.\n\nThe updated guide is built around three core categories: vegetables and fruit, whole grain foods, and protein foods. Crucially, it does not specify serving sizes or recommended daily portions in the traditional sense. Instead, it uses a plate model showing that roughly half of every meal should consist of vegetables and fruit, one quarter should be whole grain foods such as brown rice, oats, or whole wheat bread, and one quarter should be protein foods.\n\nOne of the most significant changes was the repositioning of dairy products. In the previous guide, dairy had its own category and Canadians were encouraged to consume multiple daily servings. The 2019 guide merged dairy into the broader protein food category, alongside beans, lentils, tofu, fish, eggs, lean meat, and nuts. This change was partly driven by growing evidence that high dairy consumption is not necessary for bone health in adults and that plant-based protein sources offer comparable nutritional value.\n\nThe new guide also places greater emphasis on the social and environmental dimensions of eating. It encourages Canadians to cook at home more often, eat meals with others, and be mindful of marketing from the food industry. It also recommends limiting foods high in sodium, sugar, and saturated fat, and advises choosing water as the preferred beverage over sugary drinks.\n\nCritics of the new guide pointed out that it largely ignored the traditional dietary patterns of many Indigenous communities, which rely heavily on land-based foods such as game meats, fish, and berries. The government acknowledged this gap and committed to developing supplementary resources that better reflect Indigenous food sovereignty."
+      "title": "Why Things Are Harder to Repair Than They Were",
+      "content": "The perception that appliances and electronics do not last as they once did is widely held and only partly accurate. Some products genuinely fail sooner. Others last as long as ever and have simply become uneconomic to fix, which produces the same experience for the owner and has an entirely different cause.\n\nThe most common barrier is not a conspiracy to make things break. It is that repair has become expensive relative to replacement, and that ratio moved for reasons that had nothing to do with durability. Manufacturing costs fell steeply as production scaled and automated; skilled labour costs did not. A repair requiring an hour of a trained technician's time can therefore exceed the price of a new unit assembled in minutes, even when the fault is trivial and the rest of the product is sound.\n\nDesign choices then compound it. Components bonded rather than fastened, batteries glued into housings, and sub-assemblies sold only as complete modules all raise the cost of the smallest repair. These decisions usually have defensible engineering justifications — bonding saves space and improves water resistance, and modules reduce assembly errors. They also have the effect, whether intended or not, of turning a five-dollar failure into a hundred-dollar one.\n\nInformation is a quieter barrier and often the decisive one. Where service manuals, diagnostic software and error-code documentation are restricted to authorised networks, an independent technician who is perfectly capable of the physical repair cannot identify the fault or reset the system afterwards. The part may be available and the skill may exist; the repair still cannot happen. Several jurisdictions have legislated on precisely this point, which is a reasonable indication of where the practical obstacle sits.\n\nThe evidence on deliberate shortening of product life is thinner than the public discussion suggests. Documented cases exist and are genuinely egregious, but they are a small share of the problem. The larger share is the ordinary result of cost pressure, engineering trade-offs and restricted information, none of which requires anyone to have decided that a product should fail.\n\nThat distinction matters because it points at different remedies. Outrage addresses sabotage. What the evidence supports is duller and more effective: mandated parts availability, published repair documentation, and design standards that keep the cheapest failure from requiring the most expensive fix."
     },
     {
       "id": "celpip-reading-015-p4",
       "part": 4,
       "partTitle": "Reading for Viewpoints",
       "type": "viewpoints",
-      "title": "Should Canadian Cities Ban Single-Use Plastics Entirely?",
+      "title": "Should Manufacturers Be Required to Supply Spare Parts?",
       "viewpoints": [
         {
-          "name": "Amelia Chen, environmental policy researcher",
-          "text": "A complete ban on single-use plastics is both necessary and overdue. The evidence from cities that have already implemented bans shows significant reductions in plastic waste reaching waterways within just two years. The alternatives — compostable bags, reusable containers, paper packaging — are readily available and are rapidly decreasing in cost. The argument that bans harm low-income consumers is contradicted by studies showing that reusable options save money over time. Governments need to stop waiting for voluntary corporate action and mandate change."
+          "name": "Minister Halima Osei",
+          "text": "We legislated parts availability and I would do it again, though not for the reason usually given. The waste argument is real and it is not what moved the file — what moved it was that consumers could not get a price. Before the rule, a manufacturer could decline to supply and the owner had no way to know whether repair was impossible or merely unoffered. The rule forces that into the open. Whether it extends average product life by a measurable amount, I genuinely do not know yet, and anyone quoting a figure is ahead of the data."
         },
         {
-          "name": "Jordan Lee, retail business owner",
-          "text": "I support reducing plastic waste, but an outright ban is impractical for small businesses like mine. Single-use plastics remain the cheapest and most hygienic option for many food packaging needs. The alternatives often cost two to four times more, and those costs get passed directly to consumers. I would prefer a phased approach — tax incentives for businesses that switch, subsidies for compostable alternatives, and a realistic five-year transition timeline rather than an overnight ban that will hurt small retailers disproportionately."
+          "name": "Sunniva Dahl, appliance manufacturer",
+          "text": "We support parts availability and we already exceeded the requirement before it existed. My objection is the ten-year stocking obligation applied identically to a company our size and to one with forty times the turnover. Warehousing slow-moving parts for a decade is a fixed cost that scales badly downward, and the effect at the margin is fewer small manufacturers, not more repairable products. Set the obligation against revenue and you get the same outcome without consolidating the market."
         },
         {
-          "name": "Dr. Marcus Webb, public health physician",
-          "text": "The public health dimension of plastic pollution is consistently underreported. Microplastics have now been found in human blood, breast milk, and lung tissue. We do not fully understand the long-term health consequences, but the precautionary principle demands that we act. From a public health perspective, delays in regulation are equivalent to accepting ongoing population-level exposure to potentially harmful substances. The inconvenience of transitioning to alternative packaging is trivial compared to what we may be doing to human health."
+          "name": "Idris Vaughan, independent repair technician",
+          "text": "Parts were never my main obstacle and I say that as someone the rule was written for. I can source parts. What I cannot source is the diagnostic software and the authorisation code to pair a replacement component to the machine. A part I can fit and cannot commission is not a repair. The legislation solved the visible half of the problem and left the half that actually stops me working, and I suspect that is because parts are easy to photograph and software access is not."
         },
         {
-          "name": "Sandra Kowalski, municipal waste management director",
-          "text": "In practice, the effectiveness of single-use plastic bans depends heavily on what infrastructure is in place to handle the alternatives. Compostable packaging is only beneficial if it is actually composted — if it ends up in landfill, it may produce methane. Our city currently composites less than thirty percent of eligible organic waste. Before mandating plastic alternatives, we need significant investment in composting capacity, public education, and sorting infrastructure. A ban without infrastructure investment risks replacing one problem with another."
+          "name": "Professor Nadia Ferreira, environmental economist",
+          "text": "I support the policy and the environmental case for it is weaker than campaigners state. Extending the life of an appliance reduces manufacturing emissions and, for anything that consumes energy in use, keeps a less efficient unit running longer. For a fridge or a washing machine the balance depends on how much efficiency has improved since it was made, and sometimes replacement is genuinely the lower-carbon choice. The durable argument for repair is consumer autonomy and cost, not carbon, and I would rather it were argued there."
         }
       ]
     }
@@ -194,647 +187,723 @@
       "id": "celpip-reading-015-q01",
       "passageId": "celpip-reading-015-p1",
       "part": 1,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "Why does Kevin want a community garden plot?",
+      "prompt": "What did the machine cost?",
+      "question": "What did the machine cost?",
       "options": [
-        "He has no outdoor space at his apartment",
-        "He recently moved to a house with a broken garden",
-        "He is doing research on urban farming",
-        "He wants to start a small business selling vegetables"
+        "$899",
+        "$995",
+        "$610",
+        "$795"
       ],
-      "correctAnswer": "He has no outdoor space at his apartment",
-      "explanation": "Kevin says they do not have outdoor space at their apartment.",
-      "difficulty": "easy"
+      "correctAnswer": "$899",
+      "explanation": "Emeka bought the HW-620 for $899.",
+      "difficulty": "medium",
+      "questionNumber": 1
     },
     {
       "id": "celpip-reading-015-q02",
       "passageId": "celpip-reading-015-p1",
       "part": 1,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "How long has Kevin been living in Riverdale?",
+      "prompt": "At what age did the bearing fail?",
+      "question": "At what age did the bearing fail?",
       "options": [
-        "Three months",
-        "Six months",
-        "Over a year",
-        "Two weeks"
+        "24 months",
+        "26 months",
+        "Two years exactly",
+        "Three years"
       ],
-      "correctAnswer": "Six months",
-      "explanation": "Kevin says he and his partner moved to Riverdale six months ago.",
-      "difficulty": "easy"
+      "correctAnswer": "26 months",
+      "explanation": "The drum bearing failed at 26 months.",
+      "difficulty": "medium",
+      "questionNumber": 2
     },
     {
       "id": "celpip-reading-015-q03",
       "passageId": "celpip-reading-015-p1",
       "part": 1,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What is the approximate current wait time for a plot?",
+      "prompt": "What does Emeka say he understands?",
+      "question": "What does Emeka say he understands?",
       "options": [
-        "One week",
-        "Two to three weeks",
-        "Four to six weeks",
-        "Three to four months"
+        "That he bought the wrong model",
+        "That the repair will be free",
+        "That the warranty answer is no",
+        "That the machine cannot be repaired"
       ],
-      "correctAnswer": "Four to six weeks",
-      "explanation": "Rosa says the average wait is approximately four to six weeks.",
-      "difficulty": "easy"
+      "correctAnswer": "That the warranty answer is no",
+      "explanation": "He notes the warranty is 24 months, so the warranty answer is no.",
+      "difficulty": "medium",
+      "questionNumber": 3
     },
     {
       "id": "celpip-reading-015-q04",
       "passageId": "celpip-reading-015-p1",
       "part": 1,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "How much does the small plot cost per season?",
+      "prompt": "What did the engineer tell him?",
+      "question": "What did the engineer tell him?",
       "options": [
-        "One hundred and forty dollars",
-        "Two hundred dollars",
-        "Forty dollars",
-        "Eighty dollars"
+        "The machine is unrepairable",
+        "A refund would be offered",
+        "The bearing can be replaced alone",
+        "The whole drum assembly must be replaced at $610 plus labour"
       ],
-      "correctAnswer": "Eighty dollars",
-      "explanation": "Rosa says the small plot of four square metres costs eighty dollars per season.",
-      "difficulty": "medium"
+      "correctAnswer": "The whole drum assembly must be replaced at $610 plus labour",
+      "explanation": "The bearing is not sold separately; the entire drum assembly costs $610 plus labour.",
+      "difficulty": "medium",
+      "questionNumber": 4
     },
     {
       "id": "celpip-reading-015-q05",
       "passageId": "celpip-reading-015-p1",
       "part": 1,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What does the fee include, according to Rosa?",
+      "prompt": "What distinction does Emeka ask Halden to clarify?",
+      "question": "What distinction does Emeka ask Halden to clarify?",
       "options": [
-        "Shared tools, water connections, and a compost bin allocation",
-        "A storage shed and weekly instruction",
-        "Unlimited tool rental and parking",
-        "Only water connection"
+        "Whether it is deliberate design or simply how the part is supplied",
+        "Whether labour is included",
+        "Whether the warranty can be extended",
+        "Whether the part is in stock"
       ],
-      "correctAnswer": "Shared tools, water connections, and a compost bin allocation",
-      "explanation": "Rosa lists shared tools, water, and a compost bin allocation as what the fee includes.",
-      "difficulty": "medium"
+      "correctAnswer": "Whether it is deliberate design or simply how the part is supplied",
+      "explanation": "He says those are different things and only one of them is Halden's choice.",
+      "difficulty": "medium",
+      "questionNumber": 5
     },
     {
       "id": "celpip-reading-015-q06",
       "passageId": "celpip-reading-015-p1",
       "part": 1,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "How long is the growing season at Riverdale Community Gardens?",
+      "prompt": "What does Emeka say about the marketing claim?",
+      "question": "What does Emeka say about the marketing claim?",
       "options": [
-        "April to August",
-        "May to October",
-        "June to September",
-        "March to November"
+        "That it is a contractual promise",
+        "That he is not claiming it is a contractual promise",
+        "That it should be withdrawn",
+        "That he relied on it entirely"
       ],
-      "correctAnswer": "May to October",
-      "explanation": "Rosa says the fee covers the period from May through October.",
-      "difficulty": "medium"
+      "correctAnswer": "That he is not claiming it is a contractual promise",
+      "explanation": "He explicitly says he is not claiming it is a contractual promise.",
+      "difficulty": "medium",
+      "questionNumber": 6
     },
     {
       "id": "celpip-reading-015-q07",
       "passageId": "celpip-reading-015-p1",
       "part": 1,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What must Kevin do to be placed on the waitlist?",
+      "prompt": "What does Emeka say he is NOT demanding?",
+      "question": "What does Emeka say he is NOT demanding?",
       "options": [
-        "Call Rosa directly",
-        "Attend a garden meeting first",
-        "Submit an application form and payment online",
-        "Visit in person with ID"
+        "A reply",
+        "A straight answer",
+        "A free repair",
+        "Information on reasonable life"
       ],
-      "correctAnswer": "Submit an application form and payment online",
-      "explanation": "Rosa says Kevin must complete and submit the form with payment to be placed on the waitlist.",
-      "difficulty": "hard"
+      "correctAnswer": "A free repair",
+      "explanation": "He states he is not demanding a free repair.",
+      "difficulty": "medium",
+      "questionNumber": 7
     },
     {
       "id": "celpip-reading-015-q08",
       "passageId": "celpip-reading-015-p1",
       "part": 1,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "When is the monthly garden social held?",
+      "prompt": "What does Joanna say about the bearing design?",
+      "question": "What does Joanna say about the bearing design?",
       "options": [
-        "Every Sunday morning",
-        "First Friday of each month",
-        "Second Saturday of each month",
-        "Last Saturday of each month"
+        "It follows an industry standard",
+        "It was a supplier's choice",
+        "It was a supply accident",
+        "It was a design decision made to reduce manufacturing cost"
       ],
-      "correctAnswer": "Last Saturday of each month",
-      "explanation": "Rosa says the garden social is on the last Saturday of each month.",
-      "difficulty": "hard"
+      "correctAnswer": "It was a design decision made to reduce manufacturing cost",
+      "explanation": "She says it is a design decision, not a supply accident, made to reduce manufacturing cost.",
+      "difficulty": "medium",
+      "questionNumber": 8
     },
     {
       "id": "celpip-reading-015-q09",
       "passageId": "celpip-reading-015-p1",
       "part": 1,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "Who is welcome at the garden socials?",
+      "prompt": "What is the internal design target for the bearing?",
+      "question": "What is the internal design target for the bearing?",
       "options": [
-        "Newcomers, even before having their own plot",
-        "Only people who have paid their fees",
-        "Only current plot holders",
-        "Members who have held a plot for at least one year"
+        "Seven years",
+        "Ten years",
+        "Two years",
+        "Five years"
       ],
-      "correctAnswer": "Newcomers, even before having their own plot",
-      "explanation": "Rosa says newcomers are welcome even before they have their own plot.",
-      "difficulty": "hard"
+      "correctAnswer": "Seven years",
+      "explanation": "The design target is eight to ten years for the machine and seven for the bearing.",
+      "difficulty": "medium",
+      "questionNumber": 9
     },
     {
       "id": "celpip-reading-015-q10",
       "passageId": "celpip-reading-015-p1",
       "part": 1,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What can be inferred about the standard plot size?",
+      "prompt": "What does Halden offer, and on what basis?",
+      "question": "What does Halden offer, and on what basis?",
       "options": [
-        "It is the same as the small plot",
-        "It is twice the size of the small plot",
-        "It is only available to returning members",
-        "It includes a private tool shed"
+        "A full refund as goodwill",
+        "The part free with $95 labour, because the failure data supports it",
+        "A discount on a new machine",
+        "An extended warranty"
       ],
-      "correctAnswer": "It is twice the size of the small plot",
-      "explanation": "The small plot is four square metres and the standard is eight square metres — exactly twice the size.",
-      "difficulty": "hard"
+      "correctAnswer": "The part free with $95 labour, because the failure data supports it",
+      "explanation": "She says it is not goodwill but what the failure data supports.",
+      "difficulty": "medium",
+      "questionNumber": 10
     },
     {
       "id": "celpip-reading-015-q11",
       "passageId": "celpip-reading-015-p1",
       "part": 1,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What is the purpose of Rosa's email?",
+      "prompt": "What does Joanna say about the marketing copy?",
+      "question": "What does Joanna say about the marketing copy?",
       "options": [
-        "To offer him a plot immediately",
-        "To reject Kevin's application",
-        "To answer his questions and explain the process",
-        "To invite him to a specific event"
+        "It is not her concern",
+        "It will definitely be changed",
+        "She has passed it on but cannot promise it will change",
+        "It is accurate as written"
       ],
-      "correctAnswer": "To answer his questions and explain the process",
-      "explanation": "Rosa's email answers Kevin's questions about the wait, fees, and registration process.",
-      "difficulty": "hard"
+      "correctAnswer": "She has passed it on but cannot promise it will change",
+      "explanation": "She says she would rather say that than tell him it will change.",
+      "difficulty": "medium",
+      "questionNumber": 11
     },
     {
       "id": "celpip-reading-015-q12",
       "passageId": "celpip-reading-015-p2",
       "part": 2,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "A 70-year-old woman wants to try an art class. Which programme is most suitable?",
+      "prompt": "A woman wants a volunteer to repair her toaster. When can she come?",
+      "question": "A woman wants a volunteer to repair her toaster. When can she come?",
       "options": [
-        "Community Dance on Thursday evening",
-        "Lunchtime Stretch on Wednesday",
-        "Gentle Yoga on Monday morning",
-        "Seniors' Art Class on Tuesday morning"
+        "Saturday afternoon",
+        "Monday evening",
+        "Any day",
+        "Monday morning or Thursday morning"
       ],
-      "correctAnswer": "Seniors' Art Class on Tuesday morning",
-      "explanation": "The Seniors' Art Class on Tuesday is for ages 60+ and includes materials.",
-      "difficulty": "easy"
+      "correctAnswer": "Monday morning or Thursday morning",
+      "explanation": "Small Appliances (F) runs Monday 10-1 and Thursday 9:30-12:30.",
+      "difficulty": "medium",
+      "questionNumber": 12
     },
     {
       "id": "celpip-reading-015-q13",
       "passageId": "celpip-reading-015-p2",
       "part": 2,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "Which programmes require advance registration?",
+      "prompt": "What is the difference between a (T) and an (F) session?",
+      "question": "What is the difference between a (T) and an (F) session?",
       "options": [
-        "Gentle Yoga and Aqua Fitness",
-        "Open Badminton and Lunchtime Stretch",
-        "Parent & Tot Swim and Teen Gaming Club",
-        "Drop-in Basketball and Family Swim"
+        "(T) is tuition where you repair it yourself; (F) is a volunteer repairing it for you",
+        "(T) is for members only",
+        "(F) requires booking",
+        "(T) is free, (F) is paid"
       ],
-      "correctAnswer": "Gentle Yoga and Aqua Fitness",
-      "explanation": "Only programmes marked with (R) require registration. Both Gentle Yoga and Aqua Fitness are marked (R).",
-      "difficulty": "easy"
+      "correctAnswer": "(T) is tuition where you repair it yourself; (F) is a volunteer repairing it for you",
+      "explanation": "That is exactly the distinction given in the introduction.",
+      "difficulty": "medium",
+      "questionNumber": 13
     },
     {
       "id": "celpip-reading-015-q14",
       "passageId": "celpip-reading-015-p2",
       "part": 2,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "A teenager aged 15 wants to play badminton on a weekday. What is the correct programme?",
+      "prompt": "A man brings a phone with a cracked screen on Wednesday morning. What will he find?",
+      "question": "A man brings a phone with a cracked screen on Wednesday morning. What will he find?",
       "options": [
-        "Open Badminton on Saturday",
-        "Youth Badminton on Thursday afternoon",
-        "Drop-in Basketball on Tuesday",
-        "Community Dance on Thursday evening"
+        "It will be repaired free",
+        "Screen replacements are not done in that session",
+        "He must pay for parts only",
+        "He should come on Thursday"
       ],
-      "correctAnswer": "Youth Badminton on Thursday afternoon",
-      "explanation": "Youth Badminton is on Thursday afternoon and is for ages 10–17.",
-      "difficulty": "easy"
+      "correctAnswer": "Screen replacements are not done in that session",
+      "explanation": "Computers & Phones is software only; no screen replacements.",
+      "difficulty": "medium",
+      "questionNumber": 14
     },
     {
       "id": "celpip-reading-015-q15",
       "passageId": "celpip-reading-015-p2",
       "part": 2,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "Which pool programme is available to families with young children on a Sunday?",
+      "prompt": "Which session is unheated?",
+      "question": "Which session is unheated?",
       "options": [
-        "Adult Swimming Lessons",
-        "Parent & Tot Swim",
-        "Family Swim",
-        "Aqua Fitness"
+        "Sewing & Mending",
+        "Open Bench",
+        "Bicycle Workshop",
+        "Soldering & Electronics"
       ],
-      "correctAnswer": "Family Swim",
-      "explanation": "Family Swim is held on Sundays and is for families with children.",
-      "difficulty": "medium"
+      "correctAnswer": "Bicycle Workshop",
+      "explanation": "The Bicycle Workshop is in the Yard and is unheated.",
+      "difficulty": "medium",
+      "questionNumber": 15
     },
     {
       "id": "celpip-reading-015-q16",
       "passageId": "celpip-reading-015-p2",
       "part": 2,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "How long does the Community Dance programme last?",
+      "prompt": "A 15-year-old wants to try soldering. Can she?",
+      "question": "A 15-year-old wants to try soldering. Can she?",
       "options": [
-        "Two hours thirty minutes",
-        "One hour",
-        "One hour thirty minutes",
-        "Two hours"
+        "Only on Saturdays",
+        "Only in Open Bench",
+        "Yes, with an adult",
+        "No — the minimum age is 16"
       ],
-      "correctAnswer": "Two hours",
-      "explanation": "Community Dance runs from 7:00–9:00 pm, which is two hours.",
-      "difficulty": "medium"
+      "correctAnswer": "No — the minimum age is 16",
+      "explanation": "Soldering & Electronics is ages 16+.",
+      "difficulty": "medium",
+      "questionNumber": 16
     },
     {
       "id": "celpip-reading-015-q17",
       "passageId": "celpip-reading-015-p2",
       "part": 2,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "Which programme can someone attend without planning ahead on a Wednesday lunchtime?",
+      "prompt": "What happens at Open Bench?",
+      "question": "What happens at Open Bench?",
       "options": [
-        "Lunchtime Stretch",
-        "Seniors' Art Class",
-        "Aqua Fitness",
-        "Gentle Yoga"
+        "Volunteers advise but do not repair",
+        "Only bicycles are accepted",
+        "Parts are free",
+        "Volunteers repair your item"
       ],
-      "correctAnswer": "Lunchtime Stretch",
-      "explanation": "Lunchtime Stretch on Wednesday is explicitly listed as drop-in with no registration needed.",
-      "difficulty": "medium"
+      "correctAnswer": "Volunteers advise but do not repair",
+      "explanation": "Open Bench notes volunteers advise but do not repair.",
+      "difficulty": "medium",
+      "questionNumber": 17
     },
     {
       "id": "celpip-reading-015-q18",
       "passageId": "celpip-reading-015-p2",
       "part": 2,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "Which location is used for the most programmes?",
+      "prompt": "How are parts charged?",
+      "question": "How are parts charged?",
       "options": [
-        "Gymnasium",
-        "Pool",
-        "Studio A",
-        "Craft Room"
+        "Free in all sessions",
+        "At cost in all sessions",
+        "Free in (F) sessions only",
+        "At a fixed $5 fee"
       ],
-      "correctAnswer": "Pool",
-      "explanation": "The Pool is used for Aqua Fitness, Adult Swimming Lessons, Parent & Tot Swim, and Family Swim — more than any other location.",
-      "difficulty": "hard"
+      "correctAnswer": "At cost in all sessions",
+      "explanation": "The introduction states parts are charged at cost in all sessions.",
+      "difficulty": "medium",
+      "questionNumber": 18
     },
     {
       "id": "celpip-reading-015-q19",
       "passageId": "celpip-reading-015-p2",
       "part": 2,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "A parent with a three-year-old child wants to swim together. Which programme should they attend?",
+      "prompt": "Someone did not book. When can they get a drop-in place?",
+      "question": "Someone did not book. When can they get a drop-in place?",
       "options": [
-        "Family Swim on Sunday",
-        "Adult Swimming Lessons on Monday",
-        "Parent & Tot Swim on Friday",
-        "Aqua Fitness on Wednesday"
+        "Drop-ins are not permitted",
+        "Two weeks ahead",
+        "15 minutes after the session starts",
+        "Only at Open Bench"
       ],
-      "correctAnswer": "Parent & Tot Swim on Friday",
-      "explanation": "Parent & Tot Swim is for children under 5 with an adult and runs on Friday.",
-      "difficulty": "hard"
+      "correctAnswer": "15 minutes after the session starts",
+      "explanation": "Drop-in places are released 15 minutes after each session starts.",
+      "difficulty": "medium",
+      "questionNumber": 19
     },
     {
       "id": "celpip-reading-015-q20",
       "passageId": "celpip-reading-015-p3",
       "part": 3,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What was the main criticism of the previous version of Canada's Food Guide?",
+      "prompt": "What does the article say about the perception that things do not last?",
+      "question": "What does the article say about the perception that things do not last?",
       "options": [
-        "It did not include enough vegetables",
-        "It was not updated frequently enough",
-        "It was too complicated for most people to follow",
-        "It placed too much emphasis on dairy and meat"
+        "It is entirely mistaken",
+        "It applies only to electronics",
+        "It is entirely accurate",
+        "It is only partly accurate"
       ],
-      "correctAnswer": "It placed too much emphasis on dairy and meat",
-      "explanation": "The passage says the previous guide was criticised for placing too much emphasis on dairy and meat.",
-      "difficulty": "easy"
+      "correctAnswer": "It is only partly accurate",
+      "explanation": "The perception is widely held and only partly accurate.",
+      "difficulty": "medium",
+      "questionNumber": 20
     },
     {
       "id": "celpip-reading-015-q21",
       "passageId": "celpip-reading-015-p3",
       "part": 3,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "According to the 2019 guide, what should make up roughly half of every meal?",
+      "prompt": "What produces the same experience as early failure?",
+      "question": "What produces the same experience as early failure?",
       "options": [
-        "Vegetables and fruit",
-        "Dairy products",
-        "Whole grain foods",
-        "Protein foods"
+        "Products becoming uneconomic to fix",
+        "Slower delivery",
+        "Higher purchase prices",
+        "Longer warranties"
       ],
-      "correctAnswer": "Vegetables and fruit",
-      "explanation": "The plate model shows roughly half of every meal should be vegetables and fruit.",
-      "difficulty": "easy"
+      "correctAnswer": "Products becoming uneconomic to fix",
+      "explanation": "Some products last as long as ever and have become uneconomic to fix, producing the same experience.",
+      "difficulty": "medium",
+      "questionNumber": 21
     },
     {
       "id": "celpip-reading-015-q22",
       "passageId": "celpip-reading-015-p3",
       "part": 3,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "Where is dairy placed in the 2019 Food Guide?",
+      "prompt": "Why did the repair-to-replacement ratio move?",
+      "question": "Why did the repair-to-replacement ratio move?",
       "options": [
-        "Under the vegetables and fruit category",
-        "Within the broader protein food category",
-        "It was removed entirely from the guide",
-        "In its own separate category"
+        "Durability declined",
+        "Manufacturing costs fell steeply while skilled labour costs did not",
+        "Warranties were shortened",
+        "Parts became scarce"
       ],
-      "correctAnswer": "Within the broader protein food category",
-      "explanation": "The 2019 guide merged dairy into the broader protein food category.",
-      "difficulty": "easy"
+      "correctAnswer": "Manufacturing costs fell steeply while skilled labour costs did not",
+      "explanation": "Manufacturing costs fell as production scaled and automated; skilled labour costs did not.",
+      "difficulty": "medium",
+      "questionNumber": 22
     },
     {
       "id": "celpip-reading-015-q23",
       "passageId": "celpip-reading-015-p3",
       "part": 3,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What evidence influenced the repositioning of dairy?",
+      "prompt": "What does the article say about bonding and modular design?",
+      "question": "What does the article say about bonding and modular design?",
       "options": [
-        "Findings that dairy increases cholesterol",
-        "Studies showing dairy is harmful to children",
-        "Evidence that high dairy consumption is not necessary for adult bone health",
-        "Research showing dairy increases obesity"
+        "They reduce repair costs",
+        "They have no justification",
+        "They usually have defensible engineering justifications",
+        "They are always intended to prevent repair"
       ],
-      "correctAnswer": "Evidence that high dairy consumption is not necessary for adult bone health",
-      "explanation": "The passage says growing evidence showed high dairy consumption is not necessary for bone health in adults.",
-      "difficulty": "medium"
+      "correctAnswer": "They usually have defensible engineering justifications",
+      "explanation": "Bonding saves space and improves water resistance; modules reduce assembly errors.",
+      "difficulty": "medium",
+      "questionNumber": 23
     },
     {
       "id": "celpip-reading-015-q24",
       "passageId": "celpip-reading-015-p3",
       "part": 3,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What beverage does the new guide recommend as preferred?",
+      "prompt": "What effect do those design choices have regardless of intent?",
+      "question": "What effect do those design choices have regardless of intent?",
       "options": [
-        "Low-fat milk",
-        "100% fruit juice",
-        "Coffee or tea",
-        "Water"
+        "They reduce manufacturing quality",
+        "They void warranties",
+        "They shorten product life",
+        "They turn a small failure into a large repair cost"
       ],
-      "correctAnswer": "Water",
-      "explanation": "The passage says the guide advises choosing water as the preferred beverage over sugary drinks.",
-      "difficulty": "medium"
+      "correctAnswer": "They turn a small failure into a large repair cost",
+      "explanation": "They turn a five-dollar failure into a hundred-dollar one, whether intended or not.",
+      "difficulty": "medium",
+      "questionNumber": 24
     },
     {
       "id": "celpip-reading-015-q25",
       "passageId": "celpip-reading-015-p3",
       "part": 3,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What is one social dimension of eating that the new guide encourages?",
+      "prompt": "What is described as a quieter but often decisive barrier?",
+      "question": "What is described as a quieter but often decisive barrier?",
       "options": [
-        "Eating meals with others",
-        "Following a specific diet plan",
-        "Eating a large breakfast",
-        "Joining a cooking class"
+        "Information — restricted manuals, diagnostics and error codes",
+        "Shipping costs",
+        "Consumer preference",
+        "Parts pricing"
       ],
-      "correctAnswer": "Eating meals with others",
-      "explanation": "The guide encourages eating meals with others as part of its social dimension.",
-      "difficulty": "medium"
+      "correctAnswer": "Information — restricted manuals, diagnostics and error codes",
+      "explanation": "Restricted service information is called a quieter barrier and often the decisive one.",
+      "difficulty": "medium",
+      "questionNumber": 25
     },
     {
       "id": "celpip-reading-015-q26",
       "passageId": "celpip-reading-015-p3",
       "part": 3,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What criticism was raised about the 2019 guide regarding Indigenous communities?",
+      "prompt": "What can happen even when the part and the skill both exist?",
+      "question": "What can happen even when the part and the skill both exist?",
       "options": [
-        "It was not translated into enough Indigenous languages",
-        "It ignored traditional dietary patterns relying on land-based foods",
-        "It recommended too many imported foods",
-        "It contained inaccurate information about wild game"
+        "The repair costs less",
+        "The repair still cannot happen",
+        "The warranty applies",
+        "The manufacturer intervenes"
       ],
-      "correctAnswer": "It ignored traditional dietary patterns relying on land-based foods",
-      "explanation": "Critics said the guide largely ignored Indigenous communities' traditional land-based dietary patterns.",
-      "difficulty": "hard"
+      "correctAnswer": "The repair still cannot happen",
+      "explanation": "Without diagnostics or the ability to reset the system, the repair still cannot happen.",
+      "difficulty": "medium",
+      "questionNumber": 26
     },
     {
       "id": "celpip-reading-015-q27",
       "passageId": "celpip-reading-015-p3",
       "part": 3,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "How did the government respond to the criticism about Indigenous food patterns?",
+      "prompt": "What does the article say about deliberate shortening of product life?",
+      "question": "What does the article say about deliberate shortening of product life?",
       "options": [
-        "By consulting Indigenous elders to revise the plate model",
-        "By rewriting the whole guide",
-        "By acknowledging the gap and committing to developing supplementary resources",
-        "By adding a new food category for game meats"
+        "It explains most failures",
+        "It is the main cause",
+        "The evidence is thinner than public discussion suggests",
+        "It has never been documented"
       ],
-      "correctAnswer": "By acknowledging the gap and committing to developing supplementary resources",
-      "explanation": "The government acknowledged the gap and committed to developing supplementary resources.",
-      "difficulty": "hard"
+      "correctAnswer": "The evidence is thinner than public discussion suggests",
+      "explanation": "Documented cases exist and are egregious but are a small share of the problem.",
+      "difficulty": "medium",
+      "questionNumber": 27
     },
     {
       "id": "celpip-reading-015-q28",
       "passageId": "celpip-reading-015-p3",
       "part": 3,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "Which of the following is NOT listed as a protein food in the 2019 guide?",
+      "prompt": "What remedies does the article say the evidence supports?",
+      "question": "What remedies does the article say the evidence supports?",
       "options": [
-        "Tofu",
-        "Lentils",
-        "Yogurt",
-        "Cheese"
+        "Longer warranties alone",
+        "Higher product prices",
+        "Public outrage",
+        "Mandated parts availability, published documentation and design standards"
       ],
-      "correctAnswer": "Cheese",
-      "explanation": "The passage lists beans, lentils, tofu, fish, eggs, lean meat, and nuts as protein foods — cheese is not specifically listed.",
-      "difficulty": "hard"
+      "correctAnswer": "Mandated parts availability, published documentation and design standards",
+      "explanation": "It calls these duller and more effective than outrage, which addresses sabotage.",
+      "difficulty": "medium",
+      "questionNumber": 28
     },
     {
       "id": "celpip-reading-015-q29",
       "passageId": "celpip-reading-015-p4",
       "part": 4,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker believes the ban is both necessary and overdue?",
+      "prompt": "What does Minister Osei say moved the legislation?",
+      "question": "What does Minister Osei say moved the legislation?",
       "options": [
-        "Amelia Chen",
-        "Sandra Kowalski",
-        "Jordan Lee",
-        "Dr. Marcus Webb"
+        "That consumers could not get a price",
+        "Manufacturer lobbying",
+        "European precedent",
+        "The waste argument"
       ],
-      "correctAnswer": "Amelia Chen",
-      "explanation": "Amelia Chen says a complete ban is 'both necessary and overdue.'",
-      "difficulty": "easy"
+      "correctAnswer": "That consumers could not get a price",
+      "explanation": "She says the waste argument is real and is not what moved the file.",
+      "difficulty": "medium",
+      "questionNumber": 29
     },
     {
       "id": "celpip-reading-015-q30",
       "passageId": "celpip-reading-015-p4",
       "part": 4,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Jordan Lee prefer instead of an outright ban?",
+      "prompt": "What could owners not previously distinguish?",
+      "question": "What could owners not previously distinguish?",
       "options": [
-        "A voluntary agreement among large corporations",
-        "A phased approach with incentives and a five-year timeline",
-        "An immediate ban with subsidies for affected businesses",
-        "Continued use of single-use plastics with better disposal systems"
+        "Genuine and counterfeit parts",
+        "Whether repair was impossible or merely unoffered",
+        "Warranty from goodwill",
+        "New from refurbished units"
       ],
-      "correctAnswer": "A phased approach with incentives and a five-year timeline",
-      "explanation": "Jordan Lee prefers a phased approach with tax incentives, subsidies, and a five-year transition.",
-      "difficulty": "easy"
+      "correctAnswer": "Whether repair was impossible or merely unoffered",
+      "explanation": "Before the rule an owner had no way to know which it was.",
+      "difficulty": "medium",
+      "questionNumber": 30
     },
     {
       "id": "celpip-reading-015-q31",
       "passageId": "celpip-reading-015-p4",
       "part": 4,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker raises a concern about microplastics in the human body?",
+      "prompt": "What does the Minister say about product-life figures?",
+      "question": "What does the Minister say about product-life figures?",
       "options": [
-        "Sandra Kowalski",
-        "Jordan Lee",
-        "Dr. Marcus Webb",
-        "Amelia Chen"
+        "They will be published next year",
+        "They prove the policy works",
+        "She does not know yet, and anyone quoting a figure is ahead of the data",
+        "They are irrelevant"
       ],
-      "correctAnswer": "Dr. Marcus Webb",
-      "explanation": "Dr. Webb mentions microplastics found in human blood, breast milk, and lung tissue.",
-      "difficulty": "easy"
+      "correctAnswer": "She does not know yet, and anyone quoting a figure is ahead of the data",
+      "explanation": "She states exactly that.",
+      "difficulty": "medium",
+      "questionNumber": 31
     },
     {
       "id": "celpip-reading-015-q32",
       "passageId": "celpip-reading-015-p4",
       "part": 4,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Sandra Kowalski say about compostable packaging?",
+      "prompt": "What is Sunniva's position on parts availability itself?",
+      "question": "What is Sunniva's position on parts availability itself?",
       "options": [
-        "It is currently too expensive for most cities",
-        "It has already solved the plastic problem in other cities",
-        "It is always better than plastic",
-        "It is only beneficial if it is actually composted"
+        "She is neutral",
+        "She wants it delayed",
+        "She opposes it",
+        "She supports it and already exceeded the requirement"
       ],
-      "correctAnswer": "It is only beneficial if it is actually composted",
-      "explanation": "Sandra says compostable packaging is only beneficial if composted — in landfill it may produce methane.",
-      "difficulty": "medium"
+      "correctAnswer": "She supports it and already exceeded the requirement",
+      "explanation": "She says they supported it and exceeded the requirement before it existed.",
+      "difficulty": "medium",
+      "questionNumber": 32
     },
     {
       "id": "celpip-reading-015-q33",
       "passageId": "celpip-reading-015-p4",
       "part": 4,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What percentage of eligible organic waste does Sandra's city currently compost?",
+      "prompt": "What is Sunniva's objection?",
+      "question": "What is Sunniva's objection?",
       "options": [
-        "Less than thirty percent",
-        "Over fifty percent",
-        "Less than ten percent",
-        "About twenty percent"
+        "A ten-year stocking obligation applied identically regardless of company size",
+        "The quality standards",
+        "The reporting burden",
+        "The cost of parts"
       ],
-      "correctAnswer": "Less than thirty percent",
-      "explanation": "Sandra says the city currently composts less than thirty percent of eligible organic waste.",
-      "difficulty": "medium"
+      "correctAnswer": "A ten-year stocking obligation applied identically regardless of company size",
+      "explanation": "She objects that it applies identically to her company and to one forty times larger.",
+      "difficulty": "medium",
+      "questionNumber": 33
     },
     {
       "id": "celpip-reading-015-q34",
       "passageId": "celpip-reading-015-p4",
       "part": 4,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "How does Amelia Chen respond to concerns about cost impacts on low-income consumers?",
+      "prompt": "What does Sunniva say the effect at the margin is?",
+      "question": "What does Sunniva say the effect at the margin is?",
       "options": [
-        "She says alternatives cost two to four times more",
-        "She says reusable options save money over time",
-        "She suggests the government should subsidise alternatives",
-        "She acknowledges it is a valid concern"
+        "More repairable products",
+        "Fewer small manufacturers",
+        "Higher parts prices",
+        "Longer warranties"
       ],
-      "correctAnswer": "She says reusable options save money over time",
-      "explanation": "Amelia says studies show reusable options save money over time, contradicting the cost concern.",
-      "difficulty": "medium"
+      "correctAnswer": "Fewer small manufacturers",
+      "explanation": "She says the effect at the margin is fewer small manufacturers, not more repairable products.",
+      "difficulty": "medium",
+      "questionNumber": 34
     },
     {
       "id": "celpip-reading-015-q35",
       "passageId": "celpip-reading-015-p4",
       "part": 4,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "Which speaker is most focused on the immediate economic impact on small businesses?",
+      "prompt": "What does Idris say was never his main obstacle?",
+      "question": "What does Idris say was never his main obstacle?",
       "options": [
-        "Sandra Kowalski",
-        "Amelia Chen",
-        "Jordan Lee",
-        "Dr. Marcus Webb"
+        "Workshop space",
+        "Diagnostic software",
+        "Parts",
+        "Customer demand"
       ],
-      "correctAnswer": "Jordan Lee",
-      "explanation": "Jordan Lee focuses on how bans disproportionately hurt small retailers.",
-      "difficulty": "hard"
+      "correctAnswer": "Parts",
+      "explanation": "He says parts were never his main obstacle and he can source them.",
+      "difficulty": "medium",
+      "questionNumber": 35
     },
     {
       "id": "celpip-reading-015-q36",
       "passageId": "celpip-reading-015-p4",
       "part": 4,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What principle does Dr. Webb invoke to argue for action?",
+      "prompt": "What does Idris say he cannot source?",
+      "question": "What does Idris say he cannot source?",
       "options": [
-        "The free market principle",
-        "The public interest principle",
-        "The economic efficiency principle",
-        "The precautionary principle"
+        "Affordable parts",
+        "Manufacturer warranties",
+        "Trained staff",
+        "Diagnostic software and authorisation codes"
       ],
-      "correctAnswer": "The precautionary principle",
-      "explanation": "Dr. Webb says the precautionary principle demands acting in the face of uncertain health risks.",
-      "difficulty": "hard"
+      "correctAnswer": "Diagnostic software and authorisation codes",
+      "explanation": "He cannot source the diagnostic software or the code to pair a replacement component.",
+      "difficulty": "medium",
+      "questionNumber": 36
     },
     {
       "id": "celpip-reading-015-q37",
       "passageId": "celpip-reading-015-p4",
       "part": 4,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "Which two speakers would most likely agree that a simple, immediate ban is the wrong approach?",
+      "prompt": "Why does Idris suspect the legislation stopped where it did?",
+      "question": "Why does Idris suspect the legislation stopped where it did?",
       "options": [
-        "Jordan Lee and Sandra Kowalski",
-        "Amelia Chen and Sandra Kowalski",
-        "Dr. Marcus Webb and Jordan Lee",
-        "Amelia Chen and Dr. Marcus Webb"
+        "Parts are easy to photograph and software access is not",
+        "Software was already regulated",
+        "Technicians were not consulted",
+        "Manufacturers lobbied against it"
       ],
-      "correctAnswer": "Jordan Lee and Sandra Kowalski",
-      "explanation": "Jordan Lee wants a phased approach and Sandra wants infrastructure first — both oppose an immediate ban.",
-      "difficulty": "hard"
+      "correctAnswer": "Parts are easy to photograph and software access is not",
+      "explanation": "He offers exactly that suspicion.",
+      "difficulty": "medium",
+      "questionNumber": 37
     },
     {
       "id": "celpip-reading-015-q38",
       "passageId": "celpip-reading-015-p4",
       "part": 4,
-      "topic": "applying for government benefits",
+      "topic": "consumer rights, repair and buying things",
       "questionType": "multiple_choice_single",
-      "prompt": "What does Sandra Kowalski suggest is needed before mandating plastic alternatives?",
+      "prompt": "What does Professor Ferreira say is the durable argument for repair?",
+      "question": "What does Professor Ferreira say is the durable argument for repair?",
       "options": [
-        "A public vote on the issue",
-        "Significant investment in composting capacity, education, and sorting infrastructure",
-        "A full ban on imports of plastic packaging",
-        "A five-year government study on alternatives"
+        "Carbon reduction",
+        "Consumer autonomy and cost",
+        "Manufacturing employment",
+        "Waste reduction"
       ],
-      "correctAnswer": "Significant investment in composting capacity, education, and sorting infrastructure",
-      "explanation": "Sandra says investment in composting capacity, public education, and sorting infrastructure is needed first.",
-      "difficulty": "hard"
+      "correctAnswer": "Consumer autonomy and cost",
+      "explanation": "She says the durable argument is consumer autonomy and cost, not carbon.",
+      "difficulty": "medium",
+      "questionNumber": 38
     }
   ]
 }
