@@ -25193,8 +25193,32 @@
         {
           "h": "Preparation and Success Tips",
           "body": "Practice full TOEFL iBT tests at home under identical conditions — same room, noise level, and time of day. Ensure your equipment works reliably and review the official registration bulletin. Manage your time across all four sections. Take practice tests on LandingPrep free to build familiarity with question types before test day."
-        }
-      ]
+        },
+    {
+      "h": "The exam is the same; the delivery is what changes",
+      "body": "The home-delivered TOEFL tests the same construct as the centre version — the content, the skills assessed and the score scale are not a separate, easier exam. What differs is everything around it: your equipment, your room, your identification, and a remote proctor watching. That distinction matters because it tells you where preparation effort belongs. Your English preparation is unchanged. What is new is a set of compliance conditions that can invalidate a perfectly good performance."
+    },
+    {
+      "h": "Equipment and connection are your responsibility, and failures are yours to absorb",
+      "body": "In a test centre a hardware or network failure is the centre's problem. At home it is yours, and the consequences land on your result and your fee. Check the current device, operating system, browser and bandwidth requirements on the test-maker's own page immediately before booking rather than relying on any summary, run whatever system check they provide well ahead of the day, and have a plan for a connection drop. Testing your setup an hour before the exam is too late to fix anything you find."
+    },
+    {
+      "h": "Room conditions are stricter than people expect",
+      "body": "The rules typically cover who else may be present, what may be on the desk and within reach, what is on the walls, whether headphones are permitted, and whether you may look away from the screen. These are not formalities — sessions are reviewed and can be invalidated afterwards for something that felt harmless at the time, and an invalidated result costs the fee and the wait. Read the current room rules in full and set the room up the day before, not in the ten minutes beforehand."
+    },
+    {
+      "h": "Speaking at home is a different experience from speaking at a centre",
+      "body": "You will speak aloud, alone, into a microphone, in your own home, often with people elsewhere in the building. Candidates consistently report finding this harder than expected — not linguistically, but because it feels unnatural and they lower their voice or hesitate. Rehearse it exactly as it will happen: same room, same headset, same time of day, speaking at full volume. The gap between practising in your head and producing sustained speech aloud is where home-format speaking scores are lost."
+    },
+    {
+      "h": "Check the delivery format is accepted, not just the test",
+      "body": "This is the question that actually decides whether the result is usable. Some institutions and some immigration routes accept a test only when taken at a centre, and their acceptance of the test name does not imply acceptance of the home-delivered version. Confirm the format explicitly on the specific programme's page and, separately, on the immigration authority's — those are different bodies making different decisions, and the university's answer tells you nothing about the government's."
+    },
+    {
+      "h": "When the home format is the right choice",
+      "body": "It is a good option when centre availability near you is poor or far away, when your deadline is tight and centre slots are not, and when you are confident your equipment and room can meet the conditions. It is the wrong choice when any institution or visa route on your list requires centre delivery, when your connection is unreliable, or when you cannot secure a genuinely private room for the full duration. Decide on those constraints rather than on convenience, because convenience is worth nothing if the result is not accepted."
+    }
+  ]
     },
     {
       "id": "gmat-math-formulas-cheat-sheet-2026",
@@ -28067,8 +28091,32 @@
         {
           "h": "Application Strategy and Winning Tips",
           "body": "Apply to 5–10 scholarships in parallel rather than relying on one. Write a custom essay for each — generic essays are rejected. Secure strong references and start 12–18 months ahead: take IELTS/TOEFL early and build a clear leadership and impact story. Scholarships favour purposeful candidates with a plan to contribute back home. Prepare well for interviews. Build your English proficiency now — practise free on LandingPrep to exceed every minimum language requirement."
-        }
-      ]
+        },
+    {
+      "h": "\"Fully funded\" means different things and the difference is money",
+      "body": "The phrase is used for awards that cover very different combinations: tuition only, tuition plus a living stipend, or tuition plus stipend plus travel, insurance and a settling-in allowance. All three get described as fully funded, and the gap between the first and the third can be the entire cost of living for the duration of the degree. Before comparing awards, write down for each exactly what is covered and what is not — the number that matters is what remains unfunded, not what is granted."
+    },
+    {
+      "h": "The funding calendar runs ahead of the admission calendar",
+      "body": "For most major awards the money is decided weeks or months before a place is, and several close before the university's own application deadline. Applying on time for the course and late for the funding is the most expensive ordinary mistake in this process and it is entirely avoidable. Build your timeline from the earliest funding deadline backwards, not from the admission deadline forwards."
+    },
+    {
+      "h": "Many awards require admission or nomination first",
+      "body": "Where an award requires you to hold an offer, or to be nominated by your home institution or government, the real deadline is the earlier one on that prerequisite — you cannot satisfy the award without having cleared it. This single dependency reorders most people's plans, and it is usually discovered late because the award page states its own deadline prominently and the prerequisite in passing."
+    },
+    {
+      "h": "Sort by eligibility you can verify, then by everything else",
+      "body": "Government and institutional awards usually publish a fixed, checkable gate: nationality, field of study, degree class, sometimes an age or work-experience requirement. You can rule yourself in or out of these on paper in an afternoon. Merit and need-based awards turn on a judgement you cannot audit in advance. Build the list from the verifiable ones first so your effort goes where you know you qualify, then add the judgement-based ones on top."
+    },
+    {
+      "h": "Write to the award's stated purpose, not about yourself",
+      "body": "Every scheme publishes what it exists to do — develop leadership in a region, build capacity in a field, strengthen a bilateral relationship. The applications that fail usually describe an excellent candidate without ever connecting them to that purpose, and the reader is choosing among many excellent candidates. Read the aims paragraph, then make the link explicit rather than leaving it to be inferred."
+    },
+    {
+      "h": "Apply to several, and treat rejections as information rather than verdicts",
+      "body": "Almost nobody funds a degree from a single application, and competitive awards reject strong candidates for reasons that have nothing to do with quality — fit with that year's priorities, regional quotas, the shape of the applicant pool. Plan for a portfolio rather than a bet. Where feedback is offered, take it; where it is not, the most useful review is to check whether each application actually addressed that award's stated purpose, which is the most common gap."
+    }
+  ]
     },
     {
       "id": "ielts-speaking-band-descriptors-explained",
@@ -28271,8 +28319,32 @@
         {
           "h": "Practice TOEFL Home & Verify Your Score Acceptance",
           "body": "Prepare for TOEFL Home with timed full-length mocks to simulate the test environment—connectivity matters. Once you register, ETS lets you choose test center or home; pick based on your location's broadband and your comfort with self-proctored testing. Practice free full-length TOEFL mocks on LandingPrep to identify weak areas before committing to your test date."
-        }
-      ]
+        },
+    {
+      "h": "Acceptance is decided in two separate places, and both must say yes",
+      "body": "Whether a home-delivered result works for you is not one question but two. The institution decides whether it accepts the test and the delivery format for admission. The immigration authority decides, entirely separately, whether it accepts them for a visa. These are different bodies applying different rules, and a yes from one implies nothing about the other. Most of the confusion in this area comes from treating a university's acceptance as settling the visa question, which it does not."
+    },
+    {
+      "h": "Availability and acceptance are different things too",
+      "body": "The home format being available to sit in your country does not mean a result from it is accepted by your destination, and the reverse also occurs. Availability is a decision by the test-maker about where it can deliver; acceptance is a decision by institutions and governments about what they will recognise. Check both, in that order, and never infer one from the other."
+    },
+    {
+      "h": "Why any published list ages badly",
+      "body": "Acceptance positions change between admission cycles and sometimes mid-cycle, and they change per institution rather than by announcement. That means a list — anywhere, including here — is a snapshot, and its usefulness decays from the day it is compiled. Use lists to see the general picture and to build a shortlist; never use one as the basis for booking a test. The only durable answer is the one on the accepting body's own current page."
+    },
+    {
+      "h": "How to get an answer you can defend",
+      "body": "Work in a fixed order. Open the specific programme's admission requirements — not the university's general international pages, which are frequently out of date. Look for the delivery format named explicitly, not just the test. If a visa is involved, check the immigration authority's own list of accepted tests separately. Save a dated screenshot of each. Where the page is ambiguous, email admissions and ask them to confirm the format in writing; a reply naming the test and the delivery method is worth more than any list."
+    },
+    {
+      "h": "What to do when the answer is unclear",
+      "body": "Ambiguity is common and is not a reason to guess. If a programme page names the test but not the format, assume the stricter reading — that centre delivery is required — until someone in admissions tells you otherwise in writing. The cost of assuming wrongly in that direction is an inconvenience; the cost of assuming wrongly in the other is a result you cannot use and an intake you cannot make. Where you cannot get a clear answer in time, sitting at a centre removes the question entirely."
+    },
+    {
+      "h": "Build the shortlist around the strictest requirement on it",
+      "body": "If you are applying to several institutions and possibly a visa route, your options are constrained by whichever one has the tightest rule, not by the average. One programme requiring centre delivery makes centre delivery your answer for the whole application round, because a single result has to satisfy every recipient. Identify the strictest requirement on your list first and plan the test around that — it prevents the common outcome of sitting a test that works for three applications and not the fourth."
+    }
+  ]
     },
     {
       "id": "duolingo-english-test-validity-and-acceptance-2026",
@@ -28371,8 +28443,32 @@
         {
           "h": "Practice GRE & Boost Your Score Before Submitting",
           "body": "Free GRE prep includes ETS's PowerPrep software and reading comprehension drills. For a 320+ target score, aim for 3–4 months of focused preparation with daily Quant and Verbal practice. Full-length GRE mocks help you manage the 3.75-hour test under pressure. Practice free GRE mocks and Indian MBA-specific question banks on LandingPrep to diagnose weak areas and track your month-by-month improvement."
-        }
-      ]
+        },
+    {
+      "h": "Indian business schools read percentiles, not raw scores",
+      "body": "A GRE result becomes meaningful to an admissions committee once it is converted to a percentile, because that is what allows comparison across tests and across cohorts. A raw section score tells them very little on its own. When you assess your own position, convert first — and remember that the quantitative and verbal percentiles behave very differently, so an identical raw score in each can sit at markedly different percentiles."
+    },
+    {
+      "h": "The quant percentile carries more weight than most applicants expect",
+      "body": "For programmes with heavy analytical content, the quantitative percentile is often read as a proxy for whether you can survive the coursework. A strong verbal score does not compensate for a weak quant one in the way an overall average would suggest, because the two are read for different purposes rather than added together. If your quant percentile is the weaker of the two, that is where preparation belongs regardless of which section feels harder."
+    },
+    {
+      "h": "GRE or GMAT is now mostly a fit question, and preference still exists",
+      "body": "Most Indian business schools accepting one now accept the other, so acceptance rarely decides it. Preference is a softer and more real consideration: some programmes and some scholarship competitions are more familiar with one test, and that familiarity occasionally shows up in stated wording. Read each programme's admissions page for the specific phrasing, because \"we accept both\" and \"we prefer\" are different signals and only the second should change your plan."
+    },
+    {
+      "h": "The test is one input among several, and rarely the deciding one",
+      "body": "For most Indian programmes the test score functions as a threshold rather than a ranking device: clearing it makes you readable, and what then differentiates you is work experience, academic record, the interview and your essays. Applicants routinely over-invest in moving a score that is already competitive while under-investing in the parts that actually separate candidates. Once your percentile is in the range the programme publishes, the marginal hour is better spent elsewhere."
+    },
+    {
+      "h": "Score validity and application timing",
+      "body": "GRE results are valid for a defined period from the test date, and Indian admission rounds are staged rather than single-deadline. Sitting early is sensible if you intend to apply across more than one cycle, and it becomes a risk if the result expires before your final round. Map your test date against every round you might realistically enter, not just the first one."
+    },
+    {
+      "h": "Verify every number against the school's own page",
+      "body": "Published ranges, class profiles and cut-offs move between cycles, and third-party summaries — including this one — lag the source. Before you set a target, find the figure on the programme's own admissions or class-profile page and note the year it refers to. A median from two cycles ago can be materially different from the current one, and building a preparation plan on a stale number is a common and avoidable mistake."
+    }
+  ]
     },
     {
       "id": "ielts-reading-tips-and-tricks-band-8-2026",
