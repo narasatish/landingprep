@@ -2,127 +2,34 @@
   "id": "ielts-listening-011",
   "exam": "ielts",
   "section": "listening",
-  "title": "IELTS Listening Practice Test 11",
+  "title": "IELTS Academic Listening Practice Test 11",
   "durationSeconds": 2400,
   "questionCount": 40,
   "listeningScripts": [
     {
       "id": "ielts-listening-011-p1",
       "part": 1,
-      "title": "Booking a Language Course",
-      "text": "Agent: Good morning, City Language Centre, how can I help you?\nCaller: Hi, I'd like to book a place on one of your English courses.\nAgent: Of course. Can I take your full name please?\nCaller: Yes, it's Margaret Thornton. That's T-H-O-R-N-T-O-N.\nAgent: And a contact telephone number?\nCaller: 07823 441 096.\nAgent: Which course are you interested in?\nCaller: The advanced writing course. I saw it starts on the fourteenth of March.\nAgent: That's correct — it runs for eight weeks on Tuesday evenings from seven to nine pm. The fee is two hundred and forty pounds, which includes all materials.\nCaller: That's fine. Do I need to bring anything to the first session?\nAgent: Just a notepad. The course is held in Room 14 on the second floor. There's a lift if you need it.\nCaller: Perfect. And is there a registration deadline?\nAgent: We ask people to register at least five days before the start date. So no later than the ninth of March.\nCaller: Great, I'll pay by card now if that's alright.\nAgent: Of course. I'll email you a confirmation and the joining instructions to the address we have on file.",
-      "formLayout": {
-        "title": "City Language Centre — Enrolment Form",
-        "example": {
-          "label": "Contact name",
-          "content": "Ms Sandra Webb"
-        },
-        "rows": [
-          {
-            "type": "prefilled",
-            "label": "Course applied for",
-            "content": "Advanced Writing"
-          },
-          {
-            "type": "blank",
-            "num": 1,
-            "label": "Applicant surname",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Thornton"
-          },
-          {
-            "type": "blank",
-            "num": 2,
-            "label": "Telephone number",
-            "prefix": "",
-            "suffix": "",
-            "answer": "07823 441 096"
-          },
-          {
-            "type": "blank",
-            "num": 3,
-            "label": "Start date",
-            "prefix": "",
-            "suffix": " March",
-            "answer": "14th"
-          },
-          {
-            "type": "blank",
-            "num": 4,
-            "label": "Duration",
-            "prefix": "",
-            "suffix": " weeks",
-            "answer": "eight / 8"
-          },
-          {
-            "type": "blank",
-            "num": 5,
-            "label": "Course fee",
-            "prefix": "£",
-            "suffix": "",
-            "answer": "240"
-          },
-          {
-            "type": "blank",
-            "num": 6,
-            "label": "Class times",
-            "prefix": "",
-            "suffix": " to 9 pm",
-            "answer": "7 / seven"
-          },
-          {
-            "type": "blank",
-            "num": 7,
-            "label": "Room",
-            "prefix": "Room ",
-            "suffix": "",
-            "answer": "14"
-          },
-          {
-            "type": "blank",
-            "num": 8,
-            "label": "Registration deadline",
-            "prefix": "9th ",
-            "suffix": "",
-            "answer": "March"
-          },
-          {
-            "type": "blank",
-            "num": 9,
-            "label": "Item to bring to first class",
-            "prefix": "",
-            "suffix": "",
-            "answer": "notepad"
-          },
-          {
-            "type": "blank",
-            "num": 10,
-            "labelBlank": true,
-            "labelSuffix": " method",
-            "rightContent": "card / by card",
-            "answer": "Payment"
-          }
-        ]
-      }
+      "title": "Booking a Self-Storage Unit",
+      "text": "Clerk: Good afternoon, Fairfield Self Storage, Daniel speaking.\nCaller: Hello. I need to store some furniture while I move house, and I wanted to ask about your units.\nClerk: Certainly. Can I take your name first?\nCaller: It's Helena Braithwaite. That's B-R-A-I-T-H-W-A-I-T-E.\nClerk: Thank you. And a mobile number?\nCaller: 07946 512 380.\nClerk: Lovely. Now, roughly how much are you storing?\nCaller: The contents of a two-bedroom flat, so a sofa, a bed, a dining table and about twenty boxes.\nClerk: In that case I'd recommend the medium unit. It's seventy-five square feet, which takes a two-bedroom load comfortably.\nCaller: And what does that cost?\nClerk: The medium unit is thirty-eight pounds per week. There's no deposit, but there is a one-off admin charge of twenty pounds when you open the account.\nCaller: Fine. When could I start?\nClerk: We have units free from the ninth of April. Would that suit?\nCaller: The ninth is perfect. How long can I keep it?\nClerk: There's no maximum. The minimum booking is four weeks, and after that you can leave whenever you like with one week's notice.\nCaller: Good. Is there anything I'm not allowed to store?\nClerk: The main restriction is anything flammable — paint, fuel, gas cylinders. Food is also prohibited because it attracts pests.\nCaller: That's all fine. How do I get in?\nClerk: You'll be issued with an access code rather than a key, so there's nothing to lose. The site is open from six in the morning until ten at night, seven days a week.\nCaller: And is it insured?\nClerk: Your goods aren't covered automatically — you'd need to add our cover, which is four pounds a week for up to five thousand pounds of contents. Most customers take it.\nCaller: I'll take that as well, please. Do I need to bring anything on the day?\nClerk: Just photographic identification — a passport or driving licence — and we'll do the paperwork at reception. Oh, and it's worth knowing that we sell packing materials on site, so if you run short of boxes you don't need to go anywhere.\nCaller: That's very helpful. So that's the medium unit, from the ninth of April, with insurance.\nClerk: That's right. I'll send confirmation by email — could I take the address?\nCaller: It's h.braithwaite@mailbox.com.\nClerk: Perfect. You'll have that within the hour.",
+      "formLayout": true
     },
     {
       "id": "ielts-listening-011-p2",
       "part": 2,
-      "title": "Tour of Riverside Community Centre",
-      "text": "Guide: Good morning everyone, and welcome to Riverside Community Centre. I'll be giving you a brief overview of the facilities and then we'll do a short tour of the building.\n\nAs you come in through the main entrance on Bridge Street, immediately to your left is the reception desk where staff can help with all enquiries and room bookings. Directly ahead of you, past the reception, is the main hall, which is used for events and community meetings. It can seat up to two hundred people.\n\nIf you turn right at reception, you'll find the café, which serves hot and cold food from eight in the morning until four in the afternoon. Next to the café, at the end of the corridor, is the children's activity room, which is open on weekday afternoons.\n\nOn your left as you walk down the main corridor are two meeting rooms — Room A and Room B — available for hire. At the far end of the building, overlooking the riverside garden, is the fitness studio, which runs yoga and pilates classes. The garden itself is accessible through the double doors next to the fitness studio.\n\nUpstairs, you'll find the computer suite with twenty workstations, the art room for community workshops, and the library corner with a reading area. The lift is located beside the staircase near the main entrance.\n\nNow let me take you on a brief tour. Please follow me through the main hall..."
+      "title": "Volunteer Induction at a Botanic Garden",
+      "text": "Coordinator: Right, could everyone gather round? Thank you all for volunteering at Ashcroft Botanic Garden — I'm Priya, and I coordinate the volunteer programme.\n\nLet me start with some practical points. Volunteer sessions run every Tuesday and Saturday, and we ask for a minimum commitment of one session a fortnight rather than every week, because we've found that people who promise more than they can manage tend to stop coming altogether. The garden opens to the public at ten, so volunteers arrive at nine — that hour before opening is when most of the work gets done.\n\nNow, the thing new volunteers most often ask about is what they'll actually be doing. It is not, I'm afraid, mostly planting. The great majority of the work is weeding, watering, sweeping paths and clearing dead material, and the planting that visitors imagine is a small fraction of the year's activity. I say this plainly because it's the mismatch between expectation and reality that loses us most people in the first month.\n\nWe do offer training. Everyone does a half-day induction covering safety and tool use, and after three months you can apply for the propagation course, which is the one most people are after. Places on it are limited to eight per year, so it's allocated by how long you've been with us rather than first come first served.\n\nLet me tell you about the site itself. As you come through the main entrance, the visitor centre is immediately on your right — that's where you sign in and collect tools. Directly opposite it, on the left of the entrance path, is the tropical glasshouse, which is the tall building with the curved roof. If you follow the main path north past the glasshouse, the walled garden is at the far end on the left-hand side. The pond sits in the middle of the site, and the alpine rockery is on the east side of the pond, facing it. Finally, the tool store — which is where you'll be heading on most mornings — is behind the visitor centre, tucked into the south-east corner of the site.\n\nOne last point. Please don't talk to visitors about plant identification unless you're confident, and please do wear the green tabard at all times, because visitors will ask you questions whether or not you know the answers, and the tabard is how they tell you apart from other visitors."
     },
     {
       "id": "ielts-listening-011-p3",
       "part": 3,
-      "title": "Discussion About a Research Project on Urban Noise",
-      "text": "Tutor: So, Priya and James, how is your project on urban noise pollution progressing?\nPriya: We've finished the literature review. The main finding seems to be that constant exposure to traffic noise above sixty-five decibels significantly increases stress hormone levels.\nJames: What surprised us was the evidence linking noise to cardiovascular disease — not just stress. Several longitudinal studies found a measurable increase in heart disease rates near busy roads.\nTutor: Interesting. What methodology have you chosen for your primary research?\nPriya: We're doing acoustic measurements at ten sites across the city, combined with a survey of five hundred residents asking about sleep quality and perceived noise annoyance.\nTutor: And your sample size — five hundred — is that sufficient?\nJames: We debated this. Statistically it should give us a confidence interval of plus or minus four percent at the ninety-five percent confidence level, which most journals would accept.\nTutor: Good. Have you considered confounding variables? People near noisy roads may also be near other pollution sources.\nPriya: Yes, we plan to control for air quality and proximity to industrial areas in our regression analysis.\nTutor: What do you expect your main recommendation to be?\nJames: Probably mandatory sound barriers along roads within five hundred metres of residential zones.\nPriya: I'd add better urban zoning rules — separating heavy traffic routes from housing areas at the planning stage.\nTutor: These are sound arguments. Make sure your final report references the WHO noise guidelines published in 2018."
+      "title": "Discussing a Travel Survey",
+      "text": "Tutor: So, Ravi and Cerys, you're presenting your travel survey next week. How's it going?\nRavi: Reasonably well. We surveyed two hundred and forty students about how they get to campus.\nCerys: Though we had to change the method halfway through.\nTutor: Why was that?\nCerys: We started with an online form, and after two weeks we'd only had thirty responses. So we switched to stopping people at the campus entrances with tablets.\nRavi: Which worked much better — we got the remaining two hundred and ten in four days.\nTutor: That's a substantial improvement. Any drawback?\nRavi: One, and it took us a while to see it. Standing at the entrances means we only surveyed people who came to campus, so anyone studying entirely from home is invisible in our data.\nTutor: Good — that's exactly the kind of limitation the examiners want to see identified. What did you find?\nCerys: The headline is that forty-two per cent walk, which was much higher than we expected.\nRavi: I'd predicted the bus would dominate. It's second, at twenty-eight per cent.\nCerys: Cycling was only nine per cent, which surprised us both given the new cycle lanes.\nTutor: Did you ask why?\nCerys: We did, and the answer wasn't the weather, which is what we assumed. It was storage — people said they had nowhere secure to leave a bike at the halls of residence.\nTutor: That's a useful finding because it points at something the university can actually change. Now, what about your presentation itself?\nRavi: We've got twenty minutes. I'm doing the method and Cerys is doing the findings.\nTutor: Can I suggest reversing that? Start with the finding that surprised you, then explain how you got there. Audiences give you their attention for the first two minutes and you're currently spending those on sampling procedure.\nRavi: That's fair.\nTutor: And keep your slides to the numbers you'll actually discuss. The commonest fault in these presentations is a table of everything, from which the speaker reads three figures.\nCerys: What about the limitations — should those go at the end?\nTutor: Put them where they arise, next to the finding they qualify. At the end they sound like an apology; beside the result they sound like judgement."
     },
     {
       "id": "ielts-listening-011-p4",
       "part": 4,
-      "title": "Lecture: Behavioural Economics and Consumer Choice",
-      "text": "In today's lecture I want to explore how behavioural economics challenges the traditional economic model of the rational consumer, and what this means for public policy.\n\nClassical economics assumes that individuals make decisions by carefully weighing costs and benefits and choosing the option that maximises their utility. This is known as the rational actor model. However, decades of research by psychologists and economists has demonstrated that real human decision-making deviates from this ideal in systematic and predictable ways.\n\nOne of the most influential concepts is loss aversion, developed by Daniel Kahneman and Amos Tversky in their prospect theory, published in 1979. They found that losses feel approximately twice as painful as equivalent gains feel pleasurable. This explains why people hold onto failing investments far longer than is rational — a phenomenon known as the disposition effect in financial markets.\n\nAnother important bias is the default effect. When people are automatically enrolled in a programme — whether a pension scheme or an organ donation register — they are far more likely to remain in it than if they had to actively opt in. Several countries, including the UK, have used this insight to design opt-out organ donation systems, dramatically increasing donation rates.\n\nPresent bias describes our tendency to place disproportionate weight on immediate rewards compared to future ones. This helps explain low savings rates, poor diet choices, and insufficient exercise — we consistently undervalue future benefits. Commitment devices, such as automatically increasing pension contributions each year, can counteract this bias.\n\nNudge theory, popularised by Thaler and Sunstein in their 2008 book, proposes that policymakers can guide behaviour without mandates or financial incentives, simply by redesigning the choice environment. Placing healthy foods at eye level in cafeterias, for example, increases their selection rates by up to thirty percent without banning unhealthy options.\n\nCritics of nudge theory argue that it can be paternalistic and that transparency is essential — people should know when their choices are being structured. Despite this debate, governments worldwide are investing in behavioural insights units to improve policy outcomes."
+      "title": "Birds in Cities",
+      "text": "Lecturer: Today I want to look at why some birds thrive in cities while their close relatives disappear from them, because the answer turns out to be less about tolerance of people than you might assume.\n\nThe first thing to say is that the urban environment is not simply a degraded version of the countryside. It is warmer — city centres run several degrees above the surrounding land — it is lit at night, it is noisier, and its food supply is abundant, unpredictable in location and highly reliable in total. Any species that can exploit that combination does extremely well, and the species that cannot are not merely reduced but absent.\n\nThe trait that predicts urban success most strongly is not body size or diet breadth, as was long assumed, but behavioural flexibility — the willingness to try an unfamiliar food source or nest site. Species that will nest on a ledge as readily as in a tree, and will investigate an unfamiliar object rather than avoid it, colonise cities repeatedly and independently. Those that require a specific nesting substrate do not, however common they are outside.\n\nNoise is the constraint that has produced the most interesting adaptation. Urban traffic noise is concentrated at low frequencies, and birdsong at those frequencies is masked, so several species in cities sing at a higher pitch than the same species in nearby woodland. There is an active argument about whether this is learned adjustment within a lifetime or genuine change across generations, and the evidence at present favours the first.\n\nArtificial light has effects that are easier to measure and harder to interpret. Birds in lit areas begin singing earlier, sometimes hours before dawn, and breed earlier in the year. Whether that earlier breeding helps or harms depends entirely on whether the food they need has also shifted earlier, and in many cases it has not, which produces a mismatch between the hungriest period for the chicks and the peak abundance of insects.\n\nI want to finish with the point that matters for anyone designing a city. What supports urban bird populations is not the total area of green space but its connectedness and its structural complexity — a series of small gardens with shrubs, dead wood and varied planting supports more species than a single large mown lawn of the same total area. That finding is consistent across studies and is almost always ignored, because a lawn is cheaper to maintain and easier to photograph."
     }
   ],
   "questions": [
@@ -132,15 +39,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 1,
-      "label": "Applicant surname",
+      "label": "Customer surname",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Thornton",
-      "explanation": "The answer \"Thornton\" is stated in the conversation.",
-      "prompt": "Applicant surname: _____",
+      "answer": "Braithwaite",
+      "explanation": "The caller spells her surname B-R-A-I-T-H-W-A-I-T-E.",
+      "prompt": "Customer surname: _____",
       "partNumber": 1
     },
     {
@@ -149,15 +56,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 2,
-      "label": "Telephone number",
+      "label": "Contact number",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "07823 441 096",
-      "explanation": "The answer \"07823 441 096\" is stated in the conversation.",
-      "prompt": "Telephone number: _____",
+      "answer": "07946 512 380",
+      "explanation": "The caller gives 07946 512 380.",
+      "prompt": "Contact number: _____",
       "partNumber": 1
     },
     {
@@ -166,15 +73,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 3,
-      "label": "Start date",
+      "label": "Size of unit recommended",
       "prefix": "",
-      "suffix": " March",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "14th",
-      "explanation": "The answer \"14th\" is stated in the conversation.",
-      "prompt": "Start date: _____ March",
+      "answer": "75 square feet",
+      "explanation": "The clerk recommends the medium unit at seventy-five square feet.",
+      "prompt": "Size of unit recommended: _____",
       "partNumber": 1
     },
     {
@@ -183,15 +90,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 4,
-      "label": "Duration",
+      "label": "Weekly cost",
       "prefix": "",
-      "suffix": " weeks",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "eight / 8",
-      "explanation": "The answer \"eight / 8\" is stated in the conversation.",
-      "prompt": "Duration: _____ weeks",
+      "answer": "38 pounds",
+      "explanation": "The medium unit is thirty-eight pounds per week.",
+      "prompt": "Weekly cost: _____",
       "partNumber": 1
     },
     {
@@ -200,15 +107,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 5,
-      "label": "Course fee",
-      "prefix": "£",
+      "label": "One-off admin charge",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "240",
-      "explanation": "The answer \"240\" is stated in the conversation.",
-      "prompt": "Course fee: £_____",
+      "answer": "20 pounds",
+      "explanation": "There is a one-off admin charge of twenty pounds.",
+      "prompt": "One-off admin charge: _____",
       "partNumber": 1
     },
     {
@@ -217,15 +124,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 6,
-      "label": "Class times",
+      "label": "Start date",
       "prefix": "",
-      "suffix": " to 9 pm",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "7 / seven",
-      "explanation": "The answer \"7 / seven\" is stated in the conversation.",
-      "prompt": "Class times: _____ to 9 pm",
+      "answer": "9 April",
+      "explanation": "Units are free from the ninth of April and the caller accepts.",
+      "prompt": "Start date: _____",
       "partNumber": 1
     },
     {
@@ -234,15 +141,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 7,
-      "label": "Room",
-      "prefix": "Room ",
+      "label": "Minimum booking period",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "14",
-      "explanation": "The answer \"14\" is stated in the conversation.",
-      "prompt": "Room: Room _____",
+      "answer": "four weeks",
+      "explanation": "The minimum booking is four weeks.",
+      "prompt": "Minimum booking period: _____",
       "partNumber": 1
     },
     {
@@ -251,15 +158,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 8,
-      "label": "Registration deadline",
-      "prefix": "9th ",
+      "label": "Notice required to leave",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "March",
-      "explanation": "The answer \"March\" is stated in the conversation.",
-      "prompt": "Registration deadline: 9th _____",
+      "answer": "one week",
+      "explanation": "Customers leave with one week's notice.",
+      "prompt": "Notice required to leave: _____",
       "partNumber": 1
     },
     {
@@ -268,15 +175,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 9,
-      "label": "Item to bring to first class",
+      "label": "Cost of insurance per week",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "notepad",
-      "explanation": "The answer \"notepad\" is stated in the conversation.",
-      "prompt": "Item to bring to first class: _____",
+      "answer": "4 pounds",
+      "explanation": "Cover is four pounds a week.",
+      "prompt": "Cost of insurance per week: _____",
       "partNumber": 1
     },
     {
@@ -285,15 +192,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 10,
-      "label": "",
+      "label": "Document to bring",
       "prefix": "",
       "suffix": "",
-      "labelBlank": true,
-      "labelSuffix": " method",
-      "rightContent": "card / by card",
-      "answer": "Payment",
-      "explanation": "The answer \"Payment\" is stated in the conversation.",
-      "prompt": "_____ method: card / by card",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "photographic identification",
+      "explanation": "Customers must bring photographic identification.",
+      "prompt": "Document to bring: _____",
       "partNumber": 1
     },
     {
@@ -302,15 +209,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 11,
-      "prompt": "What is the maximum seating capacity of the main hall?",
+      "prompt": "How often are volunteers asked to attend?",
       "options": [
-        "200",
-        "150",
-        "250",
-        "300"
+        "Once a fortnight",
+        "Every Tuesday",
+        "Twice a week",
+        "Once a month"
       ],
       "correctAnswer": "A",
-      "explanation": "The guide states 'it can seat up to two hundred people'"
+      "explanation": "Priya asks for a minimum commitment of one session a fortnight."
     },
     {
       "id": "ielts-listening-011-q12",
@@ -318,15 +225,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 12,
-      "prompt": "What time does the café close?",
+      "prompt": "Why are volunteers asked for a smaller commitment?",
       "options": [
-        "3 pm",
-        "4 pm",
-        "5 pm",
-        "6 pm"
+        "The garden cannot supervise more",
+        "People who promise too much stop coming altogether",
+        "Sessions are oversubscribed",
+        "Training places are limited"
       ],
       "correctAnswer": "B",
-      "explanation": "The café serves food 'until four in the afternoon'"
+      "explanation": "She says over-promising leads people to stop coming altogether."
     },
     {
       "id": "ielts-listening-011-q13",
@@ -334,15 +241,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 13,
-      "prompt": "When is the children's activity room open?",
+      "prompt": "What do most volunteers spend their time doing?",
       "options": [
-        "weekend mornings",
-        "all day weekdays",
-        "weekday afternoons",
-        "weekends only"
+        "Planting",
+        "Guiding visitors",
+        "Weeding, watering and clearing",
+        "Propagation"
       ],
       "correctAnswer": "C",
-      "explanation": "The guide says it is 'open on weekday afternoons'"
+      "explanation": "The great majority of the work is weeding, watering, sweeping and clearing."
     },
     {
       "id": "ielts-listening-011-q14",
@@ -350,15 +257,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 14,
-      "prompt": "How many workstations are in the computer suite?",
+      "prompt": "Why does Priya mention this plainly?",
       "options": [
-        "10",
-        "15",
-        "25",
-        "20"
+        "Because planting is dangerous",
+        "Because it is required by policy",
+        "To discourage applicants",
+        "Because the mismatch with expectation loses volunteers early"
       ],
       "correctAnswer": "D",
-      "explanation": "The guide mentions 'twenty workstations'"
+      "explanation": "She says the expectation mismatch loses most people in the first month."
     },
     {
       "id": "ielts-listening-011-q15",
@@ -366,34 +273,32 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 15,
-      "prompt": "Where is the lift located?",
+      "prompt": "How are places on the propagation course allocated?",
       "options": [
-        "near the main entrance",
-        "next to the fitness studio",
-        "beside the art room",
-        "opposite the café"
+        "By length of service",
+        "By written test",
+        "First come, first served",
+        "By interview"
       ],
       "correctAnswer": "A",
-      "explanation": "The guide says the lift is 'beside the staircase near the main entrance'"
+      "explanation": "Allocation is by how long a volunteer has been with the garden."
     },
     {
       "id": "ielts-listening-011-q16",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Riverside Community Centre — Ground Floor Plan",
-      "mapDescription": "The map shows the ground floor. The main entrance is at the bottom. Label rooms A–J.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Ashcroft Botanic Garden — Site Plan",
+      "mapDescription": "The map shows the garden. The main entrance is at the bottom of the plan. Label the features A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main hall",
-        "C": "Café",
-        "D": "Children's activity room",
-        "E": "Room A (meeting room)",
-        "F": "Room B (meeting room)",
-        "G": "Fitness studio",
-        "H": "Riverside garden",
-        "I": "Computer suite",
-        "J": "Art room"
+        "A": "Visitor centre",
+        "B": "Tropical glasshouse",
+        "C": "Walled garden",
+        "D": "Pond",
+        "E": "Alpine rockery",
+        "F": "Tool store",
+        "G": "Car park",
+        "H": "Café terrace"
       },
       "mapLetters": [
         "A",
@@ -403,33 +308,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 16,
-      "prompt": "Room immediately left of main entrance",
+      "prompt": "Building immediately on the right of the main entrance",
       "correctAnswer": "A",
-      "explanation": "The correct letter is A (Reception)."
+      "explanation": "The visitor centre is immediately on the right as you enter."
     },
     {
       "id": "ielts-listening-011-q17",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Riverside Community Centre — Ground Floor Plan",
-      "mapDescription": "The map shows the ground floor. The main entrance is at the bottom. Label rooms A–J.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Ashcroft Botanic Garden — Site Plan",
+      "mapDescription": "The map shows the garden. The main entrance is at the bottom of the plan. Label the features A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main hall",
-        "C": "Café",
-        "D": "Children's activity room",
-        "E": "Room A (meeting room)",
-        "F": "Room B (meeting room)",
-        "G": "Fitness studio",
-        "H": "Riverside garden",
-        "I": "Computer suite",
-        "J": "Art room"
+        "A": "Visitor centre",
+        "B": "Tropical glasshouse",
+        "C": "Walled garden",
+        "D": "Pond",
+        "E": "Alpine rockery",
+        "F": "Tool store",
+        "G": "Car park",
+        "H": "Café terrace"
       },
       "mapLetters": [
         "A",
@@ -439,33 +340,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 17,
-      "prompt": "Large room directly ahead past reception",
+      "prompt": "Tall building with a curved roof, opposite the visitor centre",
       "correctAnswer": "B",
-      "explanation": "The correct letter is B (Main hall)."
+      "explanation": "The tropical glasshouse is directly opposite, on the left of the entrance path."
     },
     {
       "id": "ielts-listening-011-q18",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Riverside Community Centre — Ground Floor Plan",
-      "mapDescription": "The map shows the ground floor. The main entrance is at the bottom. Label rooms A–J.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Ashcroft Botanic Garden — Site Plan",
+      "mapDescription": "The map shows the garden. The main entrance is at the bottom of the plan. Label the features A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main hall",
-        "C": "Café",
-        "D": "Children's activity room",
-        "E": "Room A (meeting room)",
-        "F": "Room B (meeting room)",
-        "G": "Fitness studio",
-        "H": "Riverside garden",
-        "I": "Computer suite",
-        "J": "Art room"
+        "A": "Visitor centre",
+        "B": "Tropical glasshouse",
+        "C": "Walled garden",
+        "D": "Pond",
+        "E": "Alpine rockery",
+        "F": "Tool store",
+        "G": "Car park",
+        "H": "Café terrace"
       },
       "mapLetters": [
         "A",
@@ -475,33 +372,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 18,
-      "prompt": "Room to the right of reception",
+      "prompt": "Area at the far end of the main path, on the left",
       "correctAnswer": "C",
-      "explanation": "The correct letter is C (Café)."
+      "explanation": "The walled garden is at the far end on the left-hand side."
     },
     {
       "id": "ielts-listening-011-q19",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Riverside Community Centre — Ground Floor Plan",
-      "mapDescription": "The map shows the ground floor. The main entrance is at the bottom. Label rooms A–J.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Ashcroft Botanic Garden — Site Plan",
+      "mapDescription": "The map shows the garden. The main entrance is at the bottom of the plan. Label the features A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main hall",
-        "C": "Café",
-        "D": "Children's activity room",
-        "E": "Room A (meeting room)",
-        "F": "Room B (meeting room)",
-        "G": "Fitness studio",
-        "H": "Riverside garden",
-        "I": "Computer suite",
-        "J": "Art room"
+        "A": "Visitor centre",
+        "B": "Tropical glasshouse",
+        "C": "Walled garden",
+        "D": "Pond",
+        "E": "Alpine rockery",
+        "F": "Tool store",
+        "G": "Car park",
+        "H": "Café terrace"
       },
       "mapLetters": [
         "A",
@@ -511,33 +404,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 19,
-      "prompt": "Room at end of right corridor, next to café",
-      "correctAnswer": "D",
-      "explanation": "The correct letter is D (Children's activity room)."
+      "prompt": "Feature on the east side of the pond",
+      "correctAnswer": "E",
+      "explanation": "The alpine rockery is on the east side of the pond."
     },
     {
       "id": "ielts-listening-011-q20",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Riverside Community Centre — Ground Floor Plan",
-      "mapDescription": "The map shows the ground floor. The main entrance is at the bottom. Label rooms A–J.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Ashcroft Botanic Garden — Site Plan",
+      "mapDescription": "The map shows the garden. The main entrance is at the bottom of the plan. Label the features A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main hall",
-        "C": "Café",
-        "D": "Children's activity room",
-        "E": "Room A (meeting room)",
-        "F": "Room B (meeting room)",
-        "G": "Fitness studio",
-        "H": "Riverside garden",
-        "I": "Computer suite",
-        "J": "Art room"
+        "A": "Visitor centre",
+        "B": "Tropical glasshouse",
+        "C": "Walled garden",
+        "D": "Pond",
+        "E": "Alpine rockery",
+        "F": "Tool store",
+        "G": "Car park",
+        "H": "Café terrace"
       },
       "mapLetters": [
         "A",
@@ -547,14 +436,12 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 20,
-      "prompt": "First meeting room on left corridor",
-      "correctAnswer": "E",
-      "explanation": "The correct letter is E (Room A (meeting room))."
+      "prompt": "Building in the south-east corner, behind the visitor centre",
+      "correctAnswer": "F",
+      "explanation": "The tool store is behind the visitor centre in the south-east corner."
     },
     {
       "id": "ielts-listening-011-q21",
@@ -562,15 +449,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 21,
-      "prompt": "What noise level does research link to increased stress hormones?",
+      "prompt": "How many students did Ravi and Cerys survey in total?",
       "options": [
-        "55 dB",
-        "65 dB",
-        "60 dB",
-        "70 dB"
+        "210",
+        "240",
+        "280",
+        "30"
       ],
       "correctAnswer": "B",
-      "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
+      "explanation": "They surveyed two hundred and forty students."
     },
     {
       "id": "ielts-listening-011-q22",
@@ -578,15 +465,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 22,
-      "prompt": "What additional health risk did James find surprising in the literature?",
+      "prompt": "Why did they change their method?",
       "options": [
-        "hearing loss",
-        "respiratory problems",
-        "cardiovascular disease",
-        "mental health disorders"
+        "Tablets were cheaper",
+        "The form was too long",
+        "Only thirty people responded online in two weeks",
+        "The tutor asked them to"
       ],
       "correctAnswer": "C",
-      "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
+      "explanation": "Two weeks of the online form produced only thirty responses."
     },
     {
       "id": "ielts-listening-011-q23",
@@ -594,15 +481,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 23,
-      "prompt": "How many residents will be surveyed?",
+      "prompt": "What limitation did the new method create?",
       "options": [
-        "200",
-        "300",
-        "400",
-        "500"
+        "It took longer",
+        "It reached only first-year students",
+        "It produced inaccurate timings",
+        "It excluded students who never come to campus"
       ],
       "correctAnswer": "D",
-      "explanation": "Priya mentions 'a survey of five hundred residents'"
+      "explanation": "Surveying at entrances misses anyone studying entirely from home."
     },
     {
       "id": "ielts-listening-011-q24",
@@ -610,15 +497,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 24,
-      "prompt": "What confidence level does their sample size achieve?",
+      "prompt": "Which finding surprised both students?",
       "options": [
-        "95%",
-        "90%",
-        "92%",
-        "99%"
+        "That forty-two per cent walk",
+        "That nobody drives",
+        "That cycling had risen",
+        "That the bus dominated"
       ],
       "correctAnswer": "A",
-      "explanation": "James refers to 'the ninety-five percent confidence level'"
+      "explanation": "Cerys calls the forty-two per cent who walk much higher than expected."
     },
     {
       "id": "ielts-listening-011-q25",
@@ -626,238 +513,238 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 25,
-      "prompt": "What does the tutor recommend they reference?",
+      "prompt": "What reason did students give for not cycling?",
       "options": [
-        "WHO 2015 report",
-        "WHO 2018 guidelines",
-        "EU noise directive",
-        "national highway code"
+        "Distance",
+        "Lack of secure storage",
+        "Cost of a bicycle",
+        "The weather"
       ],
       "correctAnswer": "B",
-      "explanation": "The tutor says 'reference the WHO noise guidelines published in 2018'"
+      "explanation": "They said there was nowhere secure to leave a bike at the halls."
     },
     {
       "id": "ielts-listening-011-q26",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What advice does the tutor give about each part of the presentation? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Change the order",
+        "B. Reduce what is included",
+        "C. Move it beside the relevant point"
       ],
       "num": 26,
-      "prompt": "introducing new equipment in the laboratory",
+      "prompt": "the method section",
       "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "explanation": "The tutor suggests reversing the order so findings come first."
     },
     {
       "id": "ielts-listening-011-q27",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What advice does the tutor give about each part of the presentation? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Change the order",
+        "B. Reduce what is included",
+        "C. Move it beside the relevant point"
       ],
       "num": 27,
-      "prompt": "keeping written records of experiments",
-      "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "prompt": "the opening two minutes",
+      "correctAnswer": "A",
+      "explanation": "He wants the surprising finding moved into the opening."
     },
     {
       "id": "ielts-listening-011-q28",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What advice does the tutor give about each part of the presentation? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Change the order",
+        "B. Reduce what is included",
+        "C. Move it beside the relevant point"
       ],
       "num": 28,
-      "prompt": "sharing results with other research groups",
+      "prompt": "the slides",
       "correctAnswer": "B",
-      "explanation": "The speaker's attitude is B. She is undecided."
+      "explanation": "He advises keeping slides to the numbers actually discussed."
     },
     {
       "id": "ielts-listening-011-q29",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What advice does the tutor give about each part of the presentation? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Change the order",
+        "B. Reduce what is included",
+        "C. Move it beside the relevant point"
       ],
       "num": 29,
-      "prompt": "the importance of the project deadline",
-      "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "prompt": "the table of results",
+      "correctAnswer": "B",
+      "explanation": "He criticises a table of everything from which three figures are read."
     },
     {
       "id": "ielts-listening-011-q30",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What advice does the tutor give about each part of the presentation? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Change the order",
+        "B. Reduce what is included",
+        "C. Move it beside the relevant point"
       ],
       "num": 30,
-      "prompt": "the proposal to extend the study",
+      "prompt": "the limitations",
       "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "explanation": "He says to put them beside the finding they qualify."
     },
     {
       "id": "ielts-listening-011-q31",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 31,
-      "sentenceText": "__BLANK__ is the traditional economic model in which individuals carefully weigh costs and benefits before making decisions.",
-      "correctAnswer": "The rational actor model",
-      "explanation": "The correct answer is: \"The rational actor model\".",
-      "prompt": "_____ is the traditional economic model in which individuals carefully weigh costs and benefits before making decisions.",
-      "partNumber": 4
+      "prompt": "How does the lecturer describe the urban environment?",
+      "options": [
+        "Too variable to study",
+        "A degraded version of the countryside",
+        "Not simply a degraded version of the countryside",
+        "Identical to woodland"
+      ],
+      "correctAnswer": "C",
+      "explanation": "She states it is not simply a degraded version of the countryside."
     },
     {
       "id": "ielts-listening-011-q32",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 32,
-      "sentenceText": "Kahneman and Tversky found that losses feel approximately __BLANK__ as painful as an equivalent financial gain.",
-      "correctAnswer": "twice as",
-      "explanation": "The correct answer is: \"twice as\".",
-      "prompt": "Kahneman and Tversky found that losses feel approximately _____ as painful as an equivalent financial gain.",
-      "partNumber": 4
+      "prompt": "Which trait most strongly predicts urban success?",
+      "options": [
+        "Migration distance",
+        "Body size",
+        "Diet breadth",
+        "Behavioural flexibility"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Behavioural flexibility predicts success, not size or diet breadth."
     },
     {
       "id": "ielts-listening-011-q33",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 33,
-      "sentenceText": "The tendency to remain in programmes one is automatically enrolled in is known as the __BLANK__.",
-      "correctAnswer": "default effect",
-      "explanation": "The correct answer is: \"default effect\".",
-      "prompt": "The tendency to remain in programmes one is automatically enrolled in is known as the _____.",
-      "partNumber": 4
+      "prompt": "Which species fail to colonise cities?",
+      "options": [
+        "Those requiring a specific nesting substrate",
+        "Those that sing loudly",
+        "Those that migrate",
+        "Those that eat insects"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Species requiring a specific nesting substrate do not colonise."
     },
     {
       "id": "ielts-listening-011-q34",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 34,
-      "sentenceText": "__BLANK__ describes our tendency to place too much weight on immediate rewards at the expense of future benefits.",
-      "correctAnswer": "Present bias",
-      "explanation": "The correct answer is: \"Present bias\".",
-      "prompt": "_____ describes our tendency to place too much weight on immediate rewards at the expense of future benefits.",
-      "partNumber": 4
+      "prompt": "Why do some urban birds sing at a higher pitch?",
+      "options": [
+        "To carry further",
+        "Because traffic noise masks low frequencies",
+        "Because cities are warmer",
+        "To attract more mates"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Traffic noise is concentrated at low frequencies, masking song there."
     },
     {
       "id": "ielts-listening-011-q35",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 35,
-      "sentenceText": "Thaler and Sunstein popularised nudge theory in a book published in __BLANK__.",
-      "correctAnswer": "2008",
-      "explanation": "The correct answer is: \"2008\".",
-      "prompt": "Thaler and Sunstein popularised nudge theory in a book published in _____.",
-      "partNumber": 4
+      "prompt": "What does the current evidence favour regarding that change?",
+      "options": [
+        "A response to light",
+        "Genetic change across generations",
+        "Learned adjustment within a lifetime",
+        "No real change"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The evidence at present favours learned adjustment within a lifetime."
     },
     {
       "id": "ielts-listening-011-q36",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 36,
-      "prompt": "The 'disposition effect' refers to the tendency to",
-      "options": [
-        "A  invest heavily in new market opportunities",
-        "C  diversify financial portfolios excessively",
-        "B  hold onto failing investments for too long",
-        "D  avoid taking any financial risks"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says it explains 'why people hold onto failing investments far longer than is rational'"
+      "sentenceText": "City centres run several __BLANK__ above the surrounding land.",
+      "correctAnswer": "degrees",
+      "explanation": "The lecturer says city centres run several degrees warmer.",
+      "prompt": "City centres run several _____ above the surrounding land.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-011-q37",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 37,
-      "prompt": "Which country's opt-out organ donation system is specifically mentioned in the lecture?",
-      "options": [
-        "A  France",
-        "B  Australia",
-        "C  Germany",
-        "D  the United Kingdom"
-      ],
-      "correctAnswer": "D",
-      "explanation": "The lecturer cites 'the UK' as a country using opt-out organ donation"
+      "sentenceText": "Birds in lit areas begin singing earlier and __BLANK__ earlier in the year.",
+      "correctAnswer": "breed",
+      "explanation": "Lit areas cause earlier singing and earlier breeding.",
+      "prompt": "Birds in lit areas begin singing earlier and _____ earlier in the year.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-011-q38",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 38,
-      "prompt": "Placing healthy food at eye level in cafeterias increases selection rates by up to",
-      "options": [
-        "C  thirty percent",
-        "A  ten percent",
-        "B  twenty percent",
-        "D  forty percent"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The lecturer states selection rates increase 'by up to thirty percent'"
+      "sentenceText": "Earlier breeding can create a __BLANK__ between chick demand and insect abundance.",
+      "correctAnswer": "mismatch",
+      "explanation": "She describes a mismatch between the hungriest period and peak insects.",
+      "prompt": "Earlier breeding can create a _____ between chick demand and insect abundance.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-011-q39",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 39,
-      "prompt": "Critics of nudge theory argue that it",
-      "options": [
-        "A  is ineffective in real-world settings",
-        "C  can be paternalistic",
-        "B  costs too much to implement",
-        "D  ignores economic incentives entirely"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The lecturer says critics argue 'it can be paternalistic'"
+      "sentenceText": "What supports urban bird populations is connectedness and structural __BLANK__.",
+      "correctAnswer": "complexity",
+      "explanation": "Not total area but connectedness and structural complexity.",
+      "prompt": "What supports urban bird populations is connectedness and structural _____.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-011-q40",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 40,
-      "prompt": "How are governments described as responding to behavioural insights research?",
-      "options": [
-        "A  banning unhealthy food products",
-        "B  making pension contributions compulsory",
-        "C  investing in behavioural insights units",
-        "D  removing consumer choice from markets"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says 'governments worldwide are investing in behavioural insights units'"
+      "sentenceText": "A single large mown __BLANK__ supports fewer species than several varied gardens.",
+      "correctAnswer": "lawn",
+      "explanation": "She contrasts small varied gardens with one large mown lawn.",
+      "prompt": "A single large mown _____ supports fewer species than several varied gardens.",
+      "partNumber": 4
     }
   ],
   "parts": [
     {
       "partNumber": 1,
-      "title": "Part 1: Hotel Booking",
-      "audioDescription": "A conversation between a customer and a hotel receptionist about making a reservation for a weekend stay.",
-      "context": "Booking a Language Course",
+      "title": "Part 1: Self-Storage Enquiry",
+      "audioDescription": "A telephone conversation between a customer and a self-storage clerk about renting a unit.",
+      "context": "Booking a Self-Storage Unit",
       "questionRange": [
         1,
         10
@@ -865,9 +752,9 @@
     },
     {
       "partNumber": 2,
-      "title": "Part 2: Library Registration",
-      "audioDescription": "A new student registers at the university library and gets information about services.",
-      "context": "Tour of Riverside Community Centre",
+      "title": "Part 2: Botanic Garden Induction",
+      "audioDescription": "A volunteer coordinator briefs new volunteers and describes the layout of the garden.",
+      "context": "Volunteer Induction at a Botanic Garden",
       "questionRange": [
         11,
         20
@@ -875,9 +762,9 @@
     },
     {
       "partNumber": 3,
-      "title": "Part 3: Museum Audio Guide",
-      "audioDescription": "A recorded audio guide for visitors at the Natural History Museum.",
-      "context": "Discussion About a Research Project on Urban Noise",
+      "title": "Part 3: Travel Survey Tutorial",
+      "audioDescription": "Two students discuss their travel survey and presentation with their tutor.",
+      "context": "Discussing a Travel Survey",
       "questionRange": [
         21,
         30
@@ -885,9 +772,9 @@
     },
     {
       "partNumber": 4,
-      "title": "Part 4: Community Sports Centre",
-      "audioDescription": "An announcement about facilities and programmes at a newly opened sports centre.",
-      "context": "Lecture: Behavioural Economics and Consumer Choice",
+      "title": "Part 4: Urban Bird Populations",
+      "audioDescription": "A lecture on why some bird species thrive in cities and others disappear.",
+      "context": "Birds in Cities",
       "questionRange": [
         31,
         40
