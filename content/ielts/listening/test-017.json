@@ -2,122 +2,34 @@
   "id": "ielts-listening-017",
   "exam": "ielts",
   "section": "listening",
-  "title": "IELTS Listening Practice Test 17",
+  "title": "IELTS Academic Listening Practice Test 17",
   "durationSeconds": 2400,
   "questionCount": 40,
   "listeningScripts": [
     {
       "id": "ielts-listening-017-p1",
       "part": 1,
-      "title": "Enquiry About a Sports Centre Membership",
-      "text": "Receptionist: Hello, Riverside Sports Centre, Jessica speaking.\nCaller: Hi, I'm calling about a gym membership.\nReceptionist: Happy to help. Can I take your name?\nCaller: It's David Kowalczyk. K-O-W-A-L-C-Z-Y-K.\nReceptionist: Thank you, David. And your date of birth?\nCaller: Fourteenth of June, 1989.\nReceptionist: We offer three membership types: monthly at fifty-five pounds, six-monthly at three hundred, or annual at five hundred and twenty pounds.\nCaller: I'll go for the six-monthly option.\nReceptionist: Great. The membership gives you unlimited access to the gym, swimming pool, and all fitness classes. Towels are provided, but you'll need to bring your own padlock for the lockers.\nCaller: Is there parking?\nReceptionist: Yes, free for members in the rear car park. Enter via Elm Street. Your membership card will be ready to collect from Friday. Could I take an email address for the confirmation?\nCaller: Yes — david.k at greenmail dot net.\nReceptionist: Perfect. Is there anything else I can help with?\nCaller: No, that's everything, thank you.",
-      "formLayout": {
-        "title": "Riverside Sports Centre — Membership Form",
-        "example": {
-          "label": "Membership duration",
-          "content": "monthly"
-        },
-        "rows": [
-          {
-            "type": "blank",
-            "num": 1,
-            "label": "Member surname",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Kowalczyk"
-          },
-          {
-            "type": "blank",
-            "num": 2,
-            "label": "Date of birth",
-            "prefix": "14th June ",
-            "suffix": "",
-            "answer": "1989"
-          },
-          {
-            "type": "blank",
-            "num": 3,
-            "label": "Membership chosen",
-            "prefix": "",
-            "suffix": "-monthly",
-            "answer": "six"
-          },
-          {
-            "type": "blank",
-            "num": 4,
-            "label": "Total cost",
-            "prefix": "£",
-            "suffix": "",
-            "answer": "300"
-          },
-          {
-            "type": "blank",
-            "num": 5,
-            "label": "Item to bring",
-            "prefix": "own ",
-            "suffix": "",
-            "answer": "padlock"
-          },
-          {
-            "type": "blank",
-            "num": 6,
-            "label": "Parking area",
-            "prefix": "",
-            "suffix": " car park",
-            "answer": "rear"
-          },
-          {
-            "type": "blank",
-            "num": 7,
-            "labelBlank": true,
-            "labelSuffix": " entrance road",
-            "rightContent": "Elm Street",
-            "answer": "Parking"
-          },
-          {
-            "type": "blank",
-            "num": 8,
-            "label": "Card ready from",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Friday"
-          },
-          {
-            "type": "blank",
-            "num": 9,
-            "label": "Email",
-            "prefix": "",
-            "suffix": "@greenmail.net",
-            "answer": "david.k"
-          },
-          {
-            "type": "blank",
-            "num": 10,
-            "label": "Swimming pool access",
-            "prefix": "",
-            "suffix": "",
-            "answer": "yes / included"
-          }
-        ]
-      }
+      "title": "Booking a Summer Camp Place",
+      "text": "Organiser: Larkfield Summer Camp, good morning.\nCaller: Hello, I'd like to ask about a place for my daughter this summer.\nOrganiser: Certainly. Can I take your name first?\nCaller: It's Beatrice Ogundele. Ogundele is O-G-U-N-D-E-L-E.\nOrganiser: Thank you. And a contact number?\nCaller: 07655 831 204.\nOrganiser: How old is your daughter?\nCaller: She's nine, ten in August.\nOrganiser: Then she'd be in the middle group, which is eight to eleven. Which week were you thinking of?\nCaller: The week beginning the twenty-first of July, if there's space.\nOrganiser: There is, though I should say that week is our busiest. The following week is quieter if you have any flexibility.\nCaller: We don't, unfortunately.\nOrganiser: That's fine. The cost for a full week is a hundred and eighty-five pounds, and that includes all activities and a hot lunch.\nCaller: What are the hours?\nOrganiser: Camp runs from nine until four. There's an early drop-off from eight for an extra five pounds a day, and we can't do late collection at all, because the staff ratios don't allow it after four.\nCaller: Nine to four is fine. What does she need to bring?\nOrganiser: Sun cream, a hat, a full change of clothes, and a named water bottle. Not a packed lunch, since lunch is provided, and not a phone — we ask that phones stay at home rather than in bags.\nCaller: What if she doesn't settle?\nOrganiser: We'd ring you. And if you withdraw in the first two days we refund everything except a twenty pound administration fee.\nCaller: That's reassuring. Does she need to swim?\nOrganiser: There's one swimming session on the Wednesday, and non-swimmers do an alternative activity, so no.\nCaller: How do I secure the place?\nOrganiser: A fifty pound deposit within a week, and the balance by the end of June. I'll email the form today.",
+      "formLayout": true
     },
     {
       "id": "ielts-listening-017-p2",
       "part": 2,
-      "title": "St. Mary's General Hospital — Visitor Orientation",
-      "text": "Volunteer: Good afternoon and welcome to St. Mary's General Hospital. I'm one of the hospital volunteers and I'm going to give you a brief orientation of the building so you know your way around during your visit today. St. Mary's is a large district general hospital serving a population of around three hundred and fifty thousand people, so it can feel a little overwhelming at first. Let me break it down for you.\n\nWe'll start at Zone A — the main reception. This is directly in front of you as you enter through the sliding doors on Pembroke Road. The reception desk is staffed twenty-four hours a day and the team can help you locate any ward or department, give directions, issue visitor passes, and answer general enquiries. There are also information screens on either side of the desk showing a directory of all wards and departments.\n\nTo the left of the main entrance as you come in is Zone B — the Accident and Emergency entrance. This has its own dedicated entrance on the northern side of the building, accessed via Chestnut Lane. A and E operates continuously, twenty-four hours a day, three hundred and sixty-five days a year. Please note that if you are visiting an A and E patient, you should use the Chestnut Lane entrance rather than coming through main reception.\n\nZone C is the pharmacy, situated on the ground floor in the eastern wing, approximately a two-minute walk from the main reception. The pharmacy is open from eight am to six pm Monday to Friday, nine am to one pm on Saturdays, and is closed on Sundays. Outpatients with prescriptions can collect their medication here without a pre-arranged appointment.\n\nMoving further along the ground floor corridor past the pharmacy, you'll come to Zone D — the café and canteen. This serves both patients, visitors, and members of staff. Hot meals are served from seven in the morning until seven in the evening, and a lighter cold menu is available from seven until nine pm. The café accepts cash, card, and the hospital's own prepaid meal card. Please be aware that the café does not permit visitors to take hot food to the wards — this is for hygiene reasons.\n\nZone E — the children's ward — is on the second floor, accessible via the main lifts or the stairs near the pharmacy. Visiting hours for the children's ward are ten am to eight pm daily. Children's visitors — including siblings — must be accompanied by an adult at all times on the ward. The ward has its own small play area and dedicated nursing team.\n\nZone F is the radiology department, also on the ground floor but in the western wing, behind the main reception block. Radiology handles X-rays, MRI scans, CT scans, and ultrasound appointments. All appointments must be pre-arranged — you cannot walk in without a referral. The radiology waiting area has around sixty seats and a self-service check-in kiosk.\n\nZone G — outpatients — is the largest department in the hospital by floor area. It is on the first floor and houses clinics for over forty medical specialties, from cardiology and orthopaedics to dermatology and neurology. The outpatients department is open Monday to Friday, eight am to six pm. Patients should bring their appointment letter and arrive fifteen minutes before their scheduled time.\n\nZone H is the chapel and spiritual care centre. This is a quiet, welcoming space open to people of all faiths and backgrounds, located on the ground floor between the outpatients stairwell and the café. The chapel is staffed by a team of chaplains representing multiple faiths and is open twenty-four hours a day. Spiritual care support is also available by request for any patient on any ward.\n\nZone I — the car park — is directly outside the hospital on the western side, accessed via Pembroke Road. There are four hundred spaces on two levels. Short-stay parking costs two pounds per hour, with a maximum of three pounds for visits of up to two hours. Long-stay rates are available for patients with appointments running over two hours. Blue Badge holders may park for free in the designated spaces on Level 1.\n\nFinally, Zone J — the relatives' room — is situated on the first floor, just off the main corridor near the lifts. This is a private, comfortable space for families of patients who are critically ill or undergoing significant procedures. It is available around the clock and can be booked through the ward nursing staff. Tea and coffee facilities are provided.\n\nVisiting hours at St. Mary's are two to four pm and six to eight pm daily on most wards. Please check with the ward receptionist when you arrive, as some wards have specific restrictions. I hope your visit goes well — please do ask any member of staff or volunteer if you need further assistance."
+      "title": "City Archive Induction",
+      "text": "Archivist: Good afternoon, and welcome to the Hartley City Archive. I'm Daniel, and this short induction is compulsory before your first visit to the search room.\n\nLet me start with what the archive is not. It is not a lending library. Nothing leaves the building, everything is consulted here, and material is produced to you rather than fetched by you. That last point surprises people most: you order a document, and it is brought up from the strongrooms, which happens four times a day at fixed hours.\n\nBefore you order anything you need a reader's card. Bring photographic identification and proof of address — the two must be separate documents, so a driving licence cannot serve as both. The card is free and lasts three years.\n\nIn the search room itself: pencils only, no pens of any kind, and that includes pens kept in a bag. Bags go in the lockers outside. You may bring a laptop, a phone for photography, and loose sheets of paper. Photography without flash is permitted for most material and is free, though a small number of collections are restricted and are marked as such in the catalogue.\n\nNow the building. The search room where you'll work is on the first floor, directly above the entrance hall. The catalogue terminals are along the eastern wall of that search room, beside the windows. The map room is on the same floor but at the western end, through the double doors, because the tables there are larger. Downstairs, the lockers are immediately to the left of the entrance hall as you come in, and the reprographics desk — where you order copies — is on the right of the entrance hall, opposite the lockers.\n\nTwo final things. Order documents before you travel if you can; the online catalogue accepts advance orders and they will be waiting. And if a document is fragile you may be asked to use supports and weights rather than holding it open. That is not fussiness — it is the difference between the document surviving your consultation and not."
     },
     {
       "id": "ielts-listening-017-p3",
       "part": 3,
-      "title": "Discussion About a Research Project on Urban Noise",
-      "text": "Tutor: So, Priya and James, how is your project on urban noise pollution progressing?\nPriya: We've finished the literature review. The main finding seems to be that constant exposure to traffic noise above sixty-five decibels significantly increases stress hormone levels.\nJames: What surprised us was the evidence linking noise to cardiovascular disease — not just stress. Several longitudinal studies found a measurable increase in heart disease rates near busy roads.\nTutor: Interesting. What methodology have you chosen for your primary research?\nPriya: We're doing acoustic measurements at ten sites across the city, combined with a survey of five hundred residents asking about sleep quality and perceived noise annoyance.\nTutor: And your sample size — five hundred — is that sufficient?\nJames: We debated this. Statistically it should give us a confidence interval of plus or minus four percent at the ninety-five percent confidence level, which most journals would accept.\nTutor: Good. Have you considered confounding variables? People near noisy roads may also be near other pollution sources.\nPriya: Yes, we plan to control for air quality and proximity to industrial areas in our regression analysis.\nTutor: What do you expect your main recommendation to be?\nJames: Probably mandatory sound barriers along roads within five hundred metres of residential zones.\nPriya: I'd add better urban zoning rules — separating heavy traffic routes from housing areas at the planning stage.\nTutor: These are sound arguments. Make sure your final report references the WHO noise guidelines published in 2018."
+      "title": "Research Ethics and Consent",
+      "text": "Tutor: Right, Sofia and Callum — the ethics application for your study. Where are you stuck?\nSofia: The consent form, mostly. We're interviewing people about their experience of the housing system, and some of them are in insecure accommodation.\nTutor: So what's the worry?\nCallum: That someone agrees because we're from the university and they think it might help their case.\nTutor: That's exactly the right worry, and it has a name — you're describing the difficulty of consent where there's a perceived power difference. What have you done about it?\nSofia: We say in the information sheet that it won't affect their housing.\nTutor: Good, and say it twice — once in writing and once out loud at the start. People do not read information sheets carefully, and the sentence that matters most should not depend on their having done so.\nCallum: What about recording? Some people won't want to be recorded.\nTutor: Then offer notes as an alternative rather than treating recording as the default with an opt-out. And make clear that they can stop the recording at any point, including after it has finished — which means they can ask you to delete it.\nSofia: Can we really offer that? What if they withdraw after we've analysed it?\nTutor: Set a point, state it, and stick to it. \"You may withdraw up to two weeks after the interview\" is honest and workable. What you must not do is promise unlimited withdrawal and then quietly ignore it.\nCallum: And anonymity — we're changing names.\nTutor: Changing names is not anonymity. If someone is the only person in a small area with a particular set of circumstances, a pseudonym protects nobody. Think about what combination of details you report, not just the name.\nSofia: So we might have to lose some specifics.\nTutor: You might, and that is a real cost to the analysis. It is also the trade you agreed to when you promised confidentiality."
     },
     {
       "id": "ielts-listening-017-p4",
       "part": 4,
-      "title": "Lecture: Behavioural Economics and Consumer Choice",
-      "text": "In today's lecture I want to explore how behavioural economics challenges the traditional economic model of the rational consumer, and what this means for public policy.\n\nClassical economics assumes that individuals make decisions by carefully weighing costs and benefits and choosing the option that maximises their utility. This is known as the rational actor model. However, decades of research by psychologists and economists has demonstrated that real human decision-making deviates from this ideal in systematic and predictable ways.\n\nOne of the most influential concepts is loss aversion, developed by Daniel Kahneman and Amos Tversky in their prospect theory, published in 1979. They found that losses feel approximately twice as painful as equivalent gains feel pleasurable. This explains why people hold onto failing investments far longer than is rational — a phenomenon known as the disposition effect in financial markets.\n\nAnother important bias is the default effect. When people are automatically enrolled in a programme — whether a pension scheme or an organ donation register — they are far more likely to remain in it than if they had to actively opt in. Several countries, including the UK, have used this insight to design opt-out organ donation systems, dramatically increasing donation rates.\n\nPresent bias describes our tendency to place disproportionate weight on immediate rewards compared to future ones. This helps explain low savings rates, poor diet choices, and insufficient exercise — we consistently undervalue future benefits. Commitment devices, such as automatically increasing pension contributions each year, can counteract this bias.\n\nNudge theory, popularised by Thaler and Sunstein in their 2008 book, proposes that policymakers can guide behaviour without mandates or financial incentives, simply by redesigning the choice environment. Placing healthy foods at eye level in cafeterias, for example, increases their selection rates by up to thirty percent without banning unhealthy options.\n\nCritics of nudge theory argue that it can be paternalistic and that transparency is essential — people should know when their choices are being structured. Despite this debate, governments worldwide are investing in behavioural insights units to improve policy outcomes."
+      "title": "Traffic Jams Without a Cause",
+      "text": "Lecturer: Today I want to explain a phenomenon most of you have experienced and few have had explained: the traffic jam with no cause. You crawl for twenty minutes, you reach the front, and there is nothing there — no crash, no roadworks, no obstruction of any kind.\n\nThese are sometimes called phantom jams, and they are entirely real. The mechanism is a wave. When traffic is dense, one driver braking slightly forces the driver behind to brake a little harder, because that driver reacts after a delay and cannot judge the gap perfectly. That amplification repeats down the line, and a few kilometres back, vehicles come to a complete stop. The wave itself travels backwards along the road at a fairly consistent speed while the cars in it move forwards, which is why the jam appears to have no location — it is moving upstream through the traffic.\n\nThe key insight is that this requires no bad driving and no incident. Below a certain density, a small disturbance dies out; above it, the same disturbance grows. The road has a capacity beyond which the flow is unstable, and once you are above that threshold, the jam is not caused by any particular event — it is caused by there being enough vehicles that any event will do.\n\nThat has an uncomfortable implication for what we build. Adding a lane raises the threshold and does not remove it, and the additional capacity is usually taken up by additional journeys within a few years, so the road returns to operating just above the point of instability. This is why widening rarely delivers the improvement its business case predicted.\n\nWhat does work is managing the density directly. Variable speed limits, which look like an imposition, increase throughput by preventing the sharp braking that starts the wave: a slower, uniform flow moves more vehicles per hour than a faster, uneven one. Metering the rate at which vehicles join from slip roads does the same thing at the point where disturbances most often begin.\n\nAnd there is a final point that will matter more each year. Vehicles that maintain their own spacing electronically do not amplify a disturbance the way a human driver does, because they respond without the delay. Even a modest proportion of such vehicles in the flow measurably damps these waves — which means the fix for a problem caused by human reaction time is unlikely to be a change in human behaviour."
     }
   ],
   "questions": [
@@ -127,15 +39,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 1,
-      "label": "Member surname",
+      "label": "Parent's surname",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Kowalczyk",
-      "explanation": "The answer \"Kowalczyk\" is stated in the conversation.",
-      "prompt": "Member surname: _____",
+      "answer": "Ogundele",
+      "explanation": "She spells it O-G-U-N-D-E-L-E.",
+      "prompt": "Parent's surname: _____",
       "partNumber": 1
     },
     {
@@ -144,15 +56,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 2,
-      "label": "Date of birth",
-      "prefix": "14th June ",
+      "label": "Contact number",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "1989",
-      "explanation": "The answer \"1989\" is stated in the conversation.",
-      "prompt": "Date of birth: 14th June _____",
+      "answer": "07655 831 204",
+      "explanation": "She gives 07655 831 204.",
+      "prompt": "Contact number: _____",
       "partNumber": 1
     },
     {
@@ -161,15 +73,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 3,
-      "label": "Membership chosen",
+      "label": "Age group",
       "prefix": "",
-      "suffix": "-monthly",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "six",
-      "explanation": "The answer \"six\" is stated in the conversation.",
-      "prompt": "Membership chosen: _____-monthly",
+      "answer": "eight to eleven",
+      "explanation": "A nine-year-old is in the middle group, eight to eleven.",
+      "prompt": "Age group: _____",
       "partNumber": 1
     },
     {
@@ -178,15 +90,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 4,
-      "label": "Total cost",
-      "prefix": "£",
+      "label": "Week requested",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "300",
-      "explanation": "The answer \"300\" is stated in the conversation.",
-      "prompt": "Total cost: £_____",
+      "answer": "21 July",
+      "explanation": "The week beginning the twenty-first of July.",
+      "prompt": "Week requested: _____",
       "partNumber": 1
     },
     {
@@ -195,15 +107,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 5,
-      "label": "Item to bring",
-      "prefix": "own ",
+      "label": "Cost for a full week",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "padlock",
-      "explanation": "The answer \"padlock\" is stated in the conversation.",
-      "prompt": "Item to bring: own _____",
+      "answer": "185 pounds",
+      "explanation": "A full week is a hundred and eighty-five pounds.",
+      "prompt": "Cost for a full week: _____",
       "partNumber": 1
     },
     {
@@ -212,15 +124,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 6,
-      "label": "Parking area",
+      "label": "Camp hours",
       "prefix": "",
-      "suffix": " car park",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "rear",
-      "explanation": "The answer \"rear\" is stated in the conversation.",
-      "prompt": "Parking area: _____ car park",
+      "answer": "9 to 4",
+      "explanation": "Camp runs from nine until four.",
+      "prompt": "Camp hours: _____",
       "partNumber": 1
     },
     {
@@ -229,15 +141,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 7,
-      "label": "",
+      "label": "Extra charge for early drop-off",
       "prefix": "",
       "suffix": "",
-      "labelBlank": true,
-      "labelSuffix": " entrance road",
-      "rightContent": "Elm Street",
-      "answer": "Parking",
-      "explanation": "The answer \"Parking\" is stated in the conversation.",
-      "prompt": "_____ entrance road: Elm Street",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "5 pounds",
+      "explanation": "Early drop-off is an extra five pounds a day.",
+      "prompt": "Extra charge for early drop-off: _____",
       "partNumber": 1
     },
     {
@@ -246,15 +158,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 8,
-      "label": "Card ready from",
+      "label": "Item that must stay at home",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Friday",
-      "explanation": "The answer \"Friday\" is stated in the conversation.",
-      "prompt": "Card ready from: _____",
+      "answer": "phone",
+      "explanation": "Phones stay at home rather than in bags.",
+      "prompt": "Item that must stay at home: _____",
       "partNumber": 1
     },
     {
@@ -263,15 +175,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 9,
-      "label": "Email",
+      "label": "Administration fee if withdrawn",
       "prefix": "",
-      "suffix": "@greenmail.net",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "david.k",
-      "explanation": "The answer \"david.k\" is stated in the conversation.",
-      "prompt": "Email: _____@greenmail.net",
+      "answer": "20 pounds",
+      "explanation": "Withdrawal in the first two days keeps a twenty pound fee.",
+      "prompt": "Administration fee if withdrawn: _____",
       "partNumber": 1
     },
     {
@@ -280,15 +192,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 10,
-      "label": "Swimming pool access",
+      "label": "Deposit required",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "yes / included",
-      "explanation": "The answer \"yes / included\" is stated in the conversation.",
-      "prompt": "Swimming pool access: _____",
+      "answer": "50 pounds",
+      "explanation": "A fifty pound deposit is needed within a week.",
+      "prompt": "Deposit required: _____",
       "partNumber": 1
     },
     {
@@ -297,15 +209,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 11,
-      "prompt": "What are the standard visiting hours at St. Mary's?",
+      "prompt": "What does Daniel stress the archive is not?",
       "options": [
-        "2–4 pm and 6–8 pm",
-        "1–3 pm and 5–7 pm",
-        "3–5 pm and 7–9 pm",
-        "10 am–8 pm"
+        "A lending library",
+        "A research institute",
+        "A public record office",
+        "A museum"
       ],
       "correctAnswer": "A",
-      "explanation": "The volunteer states 'visiting hours at St. Mary's are two to four pm and six to eight pm daily'"
+      "explanation": "He says it is not a lending library; nothing leaves the building."
     },
     {
       "id": "ielts-listening-017-q12",
@@ -313,15 +225,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 12,
-      "prompt": "How much does short-stay parking cost per hour?",
+      "prompt": "What surprises visitors most?",
       "options": [
-        "£1.00",
-        "£2.00",
-        "£1.50",
-        "£2.50"
+        "The opening hours",
+        "That material is produced to them rather than fetched by them",
+        "The cost of copies",
+        "The size of the collection"
       ],
       "correctAnswer": "B",
-      "explanation": "The volunteer says 'Short-stay parking costs two pounds per hour'"
+      "explanation": "Documents are brought up from the strongrooms to the reader."
     },
     {
       "id": "ielts-listening-017-q13",
@@ -329,15 +241,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 13,
-      "prompt": "Until what time does the café serve hot meals?",
+      "prompt": "How often are documents brought up?",
       "options": [
-        "5 pm",
-        "6 pm",
-        "7 pm",
-        "8 pm"
+        "Twice a day",
+        "Three times a day",
+        "Four times a day",
+        "On request at any time"
       ],
       "correctAnswer": "C",
-      "explanation": "The volunteer says 'Hot meals are served from seven in the morning until seven in the evening'"
+      "explanation": "Production happens four times a day at fixed hours."
     },
     {
       "id": "ielts-listening-017-q14",
@@ -345,15 +257,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 14,
-      "prompt": "Where is the A&E entrance located?",
+      "prompt": "What is required for a reader's card?",
       "options": [
-        "on Pembroke Road at the main entrance",
-        "in the eastern wing near the pharmacy",
-        "on the western side near the car park",
-        "on Chestnut Lane on the northern side"
+        "A university letter",
+        "A payment",
+        "A driving licence alone",
+        "Photographic ID and proof of address as separate documents"
       ],
       "correctAnswer": "D",
-      "explanation": "The volunteer says A&E 'has its own dedicated entrance on the northern side of the building, accessed via Chestnut Lane'"
+      "explanation": "The two must be separate documents."
     },
     {
       "id": "ielts-listening-017-q15",
@@ -361,34 +273,32 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 15,
-      "prompt": "What is located near the chapel?",
+      "prompt": "What is permitted in the search room?",
       "options": [
-        "the café",
-        "the main reception",
-        "the radiology department",
-        "the car park"
+        "Pencils only",
+        "Neither pens nor pencils",
+        "Pens if capped",
+        "Pens and pencils"
       ],
       "correctAnswer": "A",
-      "explanation": "The volunteer says the chapel is 'between the outpatients stairwell and the café'"
+      "explanation": "Pencils only, no pens of any kind."
     },
     {
       "id": "ielts-listening-017-q16",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "St. Mary's General Hospital — Ground and First Floor Plan",
-      "mapDescription": "Label the departments and areas A–J on the hospital map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Hartley City Archive — Building Plan",
+      "mapDescription": "The plan shows the ground and first floors. The entrance is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Main reception",
-        "B": "A&E entrance",
-        "C": "Pharmacy",
-        "D": "Café/canteen",
-        "E": "Children's ward",
-        "F": "Radiology",
-        "G": "Outpatients",
-        "H": "Chapel",
-        "I": "Car park",
-        "J": "Relatives' room"
+        "A": "Entrance hall",
+        "B": "Search room",
+        "C": "Catalogue terminals",
+        "D": "Map room",
+        "E": "Lockers",
+        "F": "Reprographics desk",
+        "G": "Strongrooms",
+        "H": "Staff office"
       },
       "mapLetters": [
         "A",
@@ -398,33 +308,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 16,
-      "prompt": "24-hour staffed desk directly inside Pembroke Road entrance",
-      "correctAnswer": "A",
-      "explanation": "The correct letter is A (Main reception)."
+      "prompt": "On the first floor, directly above the entrance hall",
+      "correctAnswer": "B",
+      "explanation": "The search room is above the entrance hall."
     },
     {
       "id": "ielts-listening-017-q17",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "St. Mary's General Hospital — Ground and First Floor Plan",
-      "mapDescription": "Label the departments and areas A–J on the hospital map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Hartley City Archive — Building Plan",
+      "mapDescription": "The plan shows the ground and first floors. The entrance is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Main reception",
-        "B": "A&E entrance",
-        "C": "Pharmacy",
-        "D": "Café/canteen",
-        "E": "Children's ward",
-        "F": "Radiology",
-        "G": "Outpatients",
-        "H": "Chapel",
-        "I": "Car park",
-        "J": "Relatives' room"
+        "A": "Entrance hall",
+        "B": "Search room",
+        "C": "Catalogue terminals",
+        "D": "Map room",
+        "E": "Lockers",
+        "F": "Reprographics desk",
+        "G": "Strongrooms",
+        "H": "Staff office"
       },
       "mapLetters": [
         "A",
@@ -434,33 +340,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 17,
-      "prompt": "Dedicated 24-hour emergency entrance on Chestnut Lane",
-      "correctAnswer": "B",
-      "explanation": "The correct letter is B (A&E entrance)."
+      "prompt": "Along the eastern wall of the search room, beside the windows",
+      "correctAnswer": "C",
+      "explanation": "The catalogue terminals are on the eastern wall."
     },
     {
       "id": "ielts-listening-017-q18",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "St. Mary's General Hospital — Ground and First Floor Plan",
-      "mapDescription": "Label the departments and areas A–J on the hospital map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Hartley City Archive — Building Plan",
+      "mapDescription": "The plan shows the ground and first floors. The entrance is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Main reception",
-        "B": "A&E entrance",
-        "C": "Pharmacy",
-        "D": "Café/canteen",
-        "E": "Children's ward",
-        "F": "Radiology",
-        "G": "Outpatients",
-        "H": "Chapel",
-        "I": "Car park",
-        "J": "Relatives' room"
+        "A": "Entrance hall",
+        "B": "Search room",
+        "C": "Catalogue terminals",
+        "D": "Map room",
+        "E": "Lockers",
+        "F": "Reprographics desk",
+        "G": "Strongrooms",
+        "H": "Staff office"
       },
       "mapLetters": [
         "A",
@@ -470,33 +372,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 18,
-      "prompt": "Eastern wing dispensary open Mon–Fri 8 am–6 pm",
-      "correctAnswer": "C",
-      "explanation": "The correct letter is C (Pharmacy)."
+      "prompt": "At the western end of the first floor, through the double doors",
+      "correctAnswer": "D",
+      "explanation": "The map room is at the western end."
     },
     {
       "id": "ielts-listening-017-q19",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "St. Mary's General Hospital — Ground and First Floor Plan",
-      "mapDescription": "Label the departments and areas A–J on the hospital map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Hartley City Archive — Building Plan",
+      "mapDescription": "The plan shows the ground and first floors. The entrance is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Main reception",
-        "B": "A&E entrance",
-        "C": "Pharmacy",
-        "D": "Café/canteen",
-        "E": "Children's ward",
-        "F": "Radiology",
-        "G": "Outpatients",
-        "H": "Chapel",
-        "I": "Car park",
-        "J": "Relatives' room"
+        "A": "Entrance hall",
+        "B": "Search room",
+        "C": "Catalogue terminals",
+        "D": "Map room",
+        "E": "Lockers",
+        "F": "Reprographics desk",
+        "G": "Strongrooms",
+        "H": "Staff office"
       },
       "mapLetters": [
         "A",
@@ -506,33 +404,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 19,
-      "prompt": "Ground floor eating area serving hot meals 7 am to 7 pm",
-      "correctAnswer": "D",
-      "explanation": "The correct letter is D (Café/canteen)."
+      "prompt": "Immediately left of the entrance hall as you come in",
+      "correctAnswer": "E",
+      "explanation": "The lockers are immediately to the left."
     },
     {
       "id": "ielts-listening-017-q20",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "St. Mary's General Hospital — Ground and First Floor Plan",
-      "mapDescription": "Label the departments and areas A–J on the hospital map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Hartley City Archive — Building Plan",
+      "mapDescription": "The plan shows the ground and first floors. The entrance is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Main reception",
-        "B": "A&E entrance",
-        "C": "Pharmacy",
-        "D": "Café/canteen",
-        "E": "Children's ward",
-        "F": "Radiology",
-        "G": "Outpatients",
-        "H": "Chapel",
-        "I": "Car park",
-        "J": "Relatives' room"
+        "A": "Entrance hall",
+        "B": "Search room",
+        "C": "Catalogue terminals",
+        "D": "Map room",
+        "E": "Lockers",
+        "F": "Reprographics desk",
+        "G": "Strongrooms",
+        "H": "Staff office"
       },
       "mapLetters": [
         "A",
@@ -542,14 +436,12 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 20,
-      "prompt": "Second floor ward with play area, visiting 10 am–8 pm",
-      "correctAnswer": "E",
-      "explanation": "The correct letter is E (Children's ward)."
+      "prompt": "On the right of the entrance hall, opposite the lockers",
+      "correctAnswer": "F",
+      "explanation": "The reprographics desk faces the lockers."
     },
     {
       "id": "ielts-listening-017-q21",
@@ -557,15 +449,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 21,
-      "prompt": "What noise level does research link to increased stress hormones?",
+      "prompt": "What is the students' main ethical concern?",
       "options": [
-        "55 dB",
-        "65 dB",
-        "60 dB",
-        "70 dB"
+        "Finding participants",
+        "That people may consent because they think it will help their housing case",
+        "The length of interviews",
+        "Data storage"
       ],
       "correctAnswer": "B",
-      "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
+      "explanation": "Callum worries people agree hoping it affects their case."
     },
     {
       "id": "ielts-listening-017-q22",
@@ -573,15 +465,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 22,
-      "prompt": "What additional health risk did James find surprising in the literature?",
+      "prompt": "What does the tutor call this?",
       "options": [
-        "hearing loss",
-        "respiratory problems",
-        "cardiovascular disease",
-        "mental health disorders"
+        "Sampling error",
+        "Selection bias",
+        "Consent under a perceived power difference",
+        "Coercion by payment"
       ],
       "correctAnswer": "C",
-      "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
+      "explanation": "He names it as consent where a power difference is perceived."
     },
     {
       "id": "ielts-listening-017-q23",
@@ -589,15 +481,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 23,
-      "prompt": "How many residents will be surveyed?",
+      "prompt": "Why should the key sentence be said aloud as well as written?",
       "options": [
-        "200",
-        "300",
-        "400",
-        "500"
+        "It saves time",
+        "Recordings need it",
+        "It is a legal requirement",
+        "People do not read information sheets carefully"
       ],
       "correctAnswer": "D",
-      "explanation": "Priya mentions 'a survey of five hundred residents'"
+      "explanation": "The sentence that matters should not depend on careful reading."
     },
     {
       "id": "ielts-listening-017-q24",
@@ -605,15 +497,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 24,
-      "prompt": "What confidence level does their sample size achieve?",
+      "prompt": "What does the tutor advise about recording?",
       "options": [
-        "95%",
-        "90%",
-        "92%",
-        "99%"
+        "Offer notes as an alternative instead",
+        "Record without telling participants",
+        "Avoid recording entirely",
+        "Make it the default with an opt-out"
       ],
       "correctAnswer": "A",
-      "explanation": "James refers to 'the ninety-five percent confidence level'"
+      "explanation": "Offer notes rather than treating recording as the default."
     },
     {
       "id": "ielts-listening-017-q25",
@@ -621,238 +513,238 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 25,
-      "prompt": "What does the tutor recommend they reference?",
+      "prompt": "What does the tutor say about changing names?",
       "options": [
-        "WHO 2015 report",
-        "WHO 2018 guidelines",
-        "EU noise directive",
-        "national highway code"
+        "It is sufficient anonymity",
+        "It is not anonymity by itself",
+        "It is unnecessary",
+        "It should be avoided"
       ],
       "correctAnswer": "B",
-      "explanation": "The tutor says 'reference the WHO noise guidelines published in 2018'"
+      "explanation": "A pseudonym protects nobody if the details identify the person."
     },
     {
       "id": "ielts-listening-017-q26",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. State it twice",
+        "B. Set a clear limit and keep to it",
+        "C. Reconsider what is reported"
       ],
       "num": 26,
-      "prompt": "introducing new equipment in the laboratory",
+      "prompt": "the assurance about housing decisions",
       "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "explanation": "Say it in writing and again out loud."
     },
     {
       "id": "ielts-listening-017-q27",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. State it twice",
+        "B. Set a clear limit and keep to it",
+        "C. Reconsider what is reported"
       ],
       "num": 27,
-      "prompt": "keeping written records of experiments",
-      "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "prompt": "the right to withdraw",
+      "correctAnswer": "B",
+      "explanation": "Set a point, state it, and stick to it."
     },
     {
       "id": "ielts-listening-017-q28",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. State it twice",
+        "B. Set a clear limit and keep to it",
+        "C. Reconsider what is reported"
       ],
       "num": 28,
-      "prompt": "sharing results with other research groups",
+      "prompt": "promises of unlimited withdrawal",
       "correctAnswer": "B",
-      "explanation": "The speaker's attitude is B. She is undecided."
+      "explanation": "Do not promise what you will quietly ignore."
     },
     {
       "id": "ielts-listening-017-q29",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. State it twice",
+        "B. Set a clear limit and keep to it",
+        "C. Reconsider what is reported"
       ],
       "num": 29,
-      "prompt": "the importance of the project deadline",
-      "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "prompt": "the combination of identifying details",
+      "correctAnswer": "C",
+      "explanation": "Think about what details are reported, not just names."
     },
     {
       "id": "ielts-listening-017-q30",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. State it twice",
+        "B. Set a clear limit and keep to it",
+        "C. Reconsider what is reported"
       ],
       "num": 30,
-      "prompt": "the proposal to extend the study",
+      "prompt": "specifics that could identify someone",
       "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "explanation": "Some may have to be lost, at a real cost."
     },
     {
       "id": "ielts-listening-017-q31",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 31,
-      "sentenceText": "__BLANK__ is the traditional economic model in which individuals carefully weigh costs and benefits before making decisions.",
-      "correctAnswer": "The rational actor model",
-      "explanation": "The correct answer is: \"The rational actor model\".",
-      "prompt": "_____ is the traditional economic model in which individuals carefully weigh costs and benefits before making decisions.",
-      "partNumber": 4
+      "prompt": "What is a phantom jam?",
+      "options": [
+        "A jam at a junction",
+        "A jam caused by roadworks",
+        "A jam with no obstruction at its front",
+        "A jam reported wrongly"
+      ],
+      "correctAnswer": "C",
+      "explanation": "You reach the front and there is nothing there."
     },
     {
       "id": "ielts-listening-017-q32",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 32,
-      "sentenceText": "Kahneman and Tversky found that losses feel approximately __BLANK__ as painful as an equivalent financial gain.",
-      "correctAnswer": "twice as",
-      "explanation": "The correct answer is: \"twice as\".",
-      "prompt": "Kahneman and Tversky found that losses feel approximately _____ as painful as an equivalent financial gain.",
-      "partNumber": 4
+      "prompt": "Why does one driver's braking amplify?",
+      "options": [
+        "Brakes differ",
+        "Speeds are too low",
+        "Drivers are careless",
+        "The following driver reacts after a delay and cannot judge the gap perfectly"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Reaction delay and imperfect gap judgement amplify the braking."
     },
     {
       "id": "ielts-listening-017-q33",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 33,
-      "sentenceText": "The tendency to remain in programmes one is automatically enrolled in is known as the __BLANK__.",
-      "correctAnswer": "default effect",
-      "explanation": "The correct answer is: \"default effect\".",
-      "prompt": "The tendency to remain in programmes one is automatically enrolled in is known as the _____.",
-      "partNumber": 4
+      "prompt": "How does the wave move?",
+      "options": [
+        "Backwards along the road while the cars move forwards",
+        "It stays still",
+        "It moves sideways",
+        "Forwards with the cars"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The wave travels backwards while the vehicles move forwards."
     },
     {
       "id": "ielts-listening-017-q34",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 34,
-      "sentenceText": "__BLANK__ describes our tendency to place too much weight on immediate rewards at the expense of future benefits.",
-      "correctAnswer": "Present bias",
-      "explanation": "The correct answer is: \"Present bias\".",
-      "prompt": "_____ describes our tendency to place too much weight on immediate rewards at the expense of future benefits.",
-      "partNumber": 4
+      "prompt": "What happens below a certain traffic density?",
+      "options": [
+        "Disturbances grow",
+        "A small disturbance dies out",
+        "Jams form faster",
+        "Flow stops"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Below the threshold a small disturbance dies out."
     },
     {
       "id": "ielts-listening-017-q35",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 35,
-      "sentenceText": "Thaler and Sunstein popularised nudge theory in a book published in __BLANK__.",
-      "correctAnswer": "2008",
-      "explanation": "The correct answer is: \"2008\".",
-      "prompt": "Thaler and Sunstein popularised nudge theory in a book published in _____.",
-      "partNumber": 4
+      "prompt": "What causes the jam above that threshold?",
+      "options": [
+        "Weather",
+        "A specific incident",
+        "There being enough vehicles that any event will do",
+        "Poor road surface"
+      ],
+      "correctAnswer": "C",
+      "explanation": "It is caused by density, not by any particular event."
     },
     {
       "id": "ielts-listening-017-q36",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 36,
-      "prompt": "The 'disposition effect' refers to the tendency to",
-      "options": [
-        "A  invest heavily in new market opportunities",
-        "C  diversify financial portfolios excessively",
-        "B  hold onto failing investments for too long",
-        "D  avoid taking any financial risks"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says it explains 'why people hold onto failing investments far longer than is rational'"
+      "sentenceText": "Adding a lane raises the __BLANK__ and does not remove it.",
+      "correctAnswer": "threshold",
+      "explanation": "Extra capacity raises but does not remove the threshold.",
+      "prompt": "Adding a lane raises the _____ and does not remove it.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-017-q37",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 37,
-      "prompt": "Which country's opt-out organ donation system is specifically mentioned in the lecture?",
-      "options": [
-        "A  France",
-        "B  Australia",
-        "C  Germany",
-        "D  the United Kingdom"
-      ],
-      "correctAnswer": "D",
-      "explanation": "The lecturer cites 'the UK' as a country using opt-out organ donation"
+      "sentenceText": "Additional capacity is usually taken up by additional __BLANK__ within a few years.",
+      "correctAnswer": "journeys",
+      "explanation": "New journeys absorb the added capacity.",
+      "prompt": "Additional capacity is usually taken up by additional _____ within a few years.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-017-q38",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 38,
-      "prompt": "Placing healthy food at eye level in cafeterias increases selection rates by up to",
-      "options": [
-        "C  thirty percent",
-        "A  ten percent",
-        "B  twenty percent",
-        "D  forty percent"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The lecturer states selection rates increase 'by up to thirty percent'"
+      "sentenceText": "A slower, uniform flow moves more vehicles per __BLANK__ than a faster, uneven one.",
+      "correctAnswer": "hour",
+      "explanation": "Uniform flow raises throughput per hour.",
+      "prompt": "A slower, uniform flow moves more vehicles per _____ than a faster, uneven one.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-017-q39",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 39,
-      "prompt": "Critics of nudge theory argue that it",
-      "options": [
-        "A  is ineffective in real-world settings",
-        "C  can be paternalistic",
-        "B  costs too much to implement",
-        "D  ignores economic incentives entirely"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The lecturer says critics argue 'it can be paternalistic'"
+      "sentenceText": "Metering controls the rate at which vehicles join from __BLANK__.",
+      "correctAnswer": "slip roads",
+      "explanation": "Ramp metering acts where disturbances begin.",
+      "prompt": "Metering controls the rate at which vehicles join from _____.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-017-q40",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 40,
-      "prompt": "How are governments described as responding to behavioural insights research?",
-      "options": [
-        "A  banning unhealthy food products",
-        "B  making pension contributions compulsory",
-        "C  investing in behavioural insights units",
-        "D  removing consumer choice from markets"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says 'governments worldwide are investing in behavioural insights units'"
+      "sentenceText": "Vehicles that keep their own spacing electronically respond without the __BLANK__.",
+      "correctAnswer": "delay",
+      "explanation": "They do not have human reaction delay.",
+      "prompt": "Vehicles that keep their own spacing electronically respond without the _____.",
+      "partNumber": 4
     }
   ],
   "parts": [
     {
       "partNumber": 1,
-      "title": "Part 1: Research Project Discussion",
-      "audioDescription": "Two students discuss their environmental science research project with their tutor.",
-      "context": "Enquiry About a Sports Centre Membership",
+      "title": "Part 1: Summer Camp Enquiry",
+      "audioDescription": "A parent enquires about a place at a children's summer camp.",
+      "context": "Booking a Summer Camp Place",
       "questionRange": [
         1,
         10
@@ -860,9 +752,9 @@
     },
     {
       "partNumber": 2,
-      "title": "Part 2: Assignment Feedback Session",
-      "audioDescription": "A lecturer gives feedback on a history essay to a group of students.",
-      "context": "St. Mary's General Hospital — Visitor Orientation",
+      "title": "Part 2: Archive Induction",
+      "audioDescription": "An archivist explains search room rules and the building layout.",
+      "context": "City Archive Induction",
       "questionRange": [
         11,
         20
@@ -870,9 +762,9 @@
     },
     {
       "partNumber": 3,
-      "title": "Part 3: Biomimicry in Engineering",
-      "audioDescription": "A lecture on how engineers are using designs from nature to solve modern problems.",
-      "context": "Discussion About a Research Project on Urban Noise",
+      "title": "Part 3: Ethics Tutorial",
+      "audioDescription": "Two students discuss consent and anonymity with their tutor.",
+      "context": "Research Ethics and Consent",
       "questionRange": [
         21,
         30
@@ -880,9 +772,9 @@
     },
     {
       "partNumber": 4,
-      "title": "Part 4: Urban Migration Patterns",
-      "audioDescription": "An academic lecture on the causes and consequences of rural-to-urban migration.",
-      "context": "Lecture: Behavioural Economics and Consumer Choice",
+      "title": "Part 4: Phantom Traffic Jams",
+      "audioDescription": "A lecture on why dense traffic produces jams with no obstruction.",
+      "context": "Traffic Jams Without a Cause",
       "questionRange": [
         31,
         40
