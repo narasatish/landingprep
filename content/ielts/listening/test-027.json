@@ -2,122 +2,34 @@
   "id": "ielts-listening-027",
   "exam": "ielts",
   "section": "listening",
-  "title": "IELTS Listening Practice Test 27",
+  "title": "IELTS Academic Listening Practice Test 27",
   "durationSeconds": 2400,
   "questionCount": 40,
   "listeningScripts": [
     {
       "id": "ielts-listening-027-p1",
       "part": 1,
-      "title": "Enquiry About a Sports Centre Membership",
-      "text": "Receptionist: Hello, Riverside Sports Centre, Jessica speaking.\nCaller: Hi, I'm calling about a gym membership.\nReceptionist: Happy to help. Can I take your name?\nCaller: It's David Kowalczyk. K-O-W-A-L-C-Z-Y-K.\nReceptionist: Thank you, David. And your date of birth?\nCaller: Fourteenth of June, 1989.\nReceptionist: We offer three membership types: monthly at fifty-five pounds, six-monthly at three hundred, or annual at five hundred and twenty pounds.\nCaller: I'll go for the six-monthly option.\nReceptionist: Great. The membership gives you unlimited access to the gym, swimming pool, and all fitness classes. Towels are provided, but you'll need to bring your own padlock for the lockers.\nCaller: Is there parking?\nReceptionist: Yes, free for members in the rear car park. Enter via Elm Street. Your membership card will be ready to collect from Friday. Could I take an email address for the confirmation?\nCaller: Yes — david.k at greenmail dot net.\nReceptionist: Perfect. Is there anything else I can help with?\nCaller: No, that's everything, thank you.",
-      "formLayout": {
-        "title": "Riverside Sports Centre — Membership Form",
-        "example": {
-          "label": "Membership duration",
-          "content": "monthly"
-        },
-        "rows": [
-          {
-            "type": "blank",
-            "num": 1,
-            "label": "Member surname",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Kowalczyk"
-          },
-          {
-            "type": "blank",
-            "num": 2,
-            "label": "Date of birth",
-            "prefix": "14th June ",
-            "suffix": "",
-            "answer": "1989"
-          },
-          {
-            "type": "blank",
-            "num": 3,
-            "label": "Membership chosen",
-            "prefix": "",
-            "suffix": "-monthly",
-            "answer": "six"
-          },
-          {
-            "type": "blank",
-            "num": 4,
-            "label": "Total cost",
-            "prefix": "£",
-            "suffix": "",
-            "answer": "300"
-          },
-          {
-            "type": "blank",
-            "num": 5,
-            "label": "Item to bring",
-            "prefix": "own ",
-            "suffix": "",
-            "answer": "padlock"
-          },
-          {
-            "type": "blank",
-            "num": 6,
-            "label": "Parking area",
-            "prefix": "",
-            "suffix": " car park",
-            "answer": "rear"
-          },
-          {
-            "type": "blank",
-            "num": 7,
-            "labelBlank": true,
-            "labelSuffix": " entrance road",
-            "rightContent": "Elm Street",
-            "answer": "Parking"
-          },
-          {
-            "type": "blank",
-            "num": 8,
-            "label": "Card ready from",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Friday"
-          },
-          {
-            "type": "blank",
-            "num": 9,
-            "label": "Email",
-            "prefix": "",
-            "suffix": "@greenmail.net",
-            "answer": "david.k"
-          },
-          {
-            "type": "blank",
-            "num": 10,
-            "label": "Swimming pool access",
-            "prefix": "",
-            "suffix": "",
-            "answer": "yes / included"
-          }
-        ]
-      }
+      "title": "Booking a Bulky Waste Collection",
+      "text": "Officer: Good morning, Harewood Council, waste services.\nCaller: Hello — I need to get rid of an old sofa and a fridge. I believe you collect.\nOfficer: We do. Can I take your name?\nCaller: It's Constance Ilesanmi. Ilesanmi is I-L-E-S-A-N-M-I.\nOfficer: And your address?\nCaller: Fifty-two Beckford Terrace.\nOfficer: A contact number?\nCaller: 07920 447 813.\nOfficer: Now, the fridge has to be recorded separately from the sofa. Anything with a cooling system is handled under different rules because of the gas inside it, so it goes on a separate vehicle.\nCaller: Does that cost more?\nOfficer: It does. The standard charge is twenty pounds for up to three items, and a fridge or freezer is fifteen pounds on its own. So thirty-five in total for what you've described.\nCaller: Fine. When can you come?\nOfficer: The next slot is the twenty-seventh of February. Collections are between seven in the morning and three in the afternoon, and I'm afraid we can't narrow it beyond that.\nCaller: Do I need to be there?\nOfficer: No, and most people aren't. But the items must be outside, at the front, accessible from the pavement by eight — crews will not enter a property or a rear garden, and a collection they cannot reach is charged as if it happened.\nCaller: Understood. Anything else about the sofa?\nOfficer: Yes, and this catches people. It must have the fire safety label still attached. Without it we cannot take it, because it goes for reuse if it's in good condition, and no label means it cannot be resold.\nCaller: I'll check tonight.\nOfficer: Please do. If the label is missing, ring back and I'll change the booking to disposal rather than collection for reuse, which is the same price but a different vehicle.\nCaller: How do I pay?\nOfficer: Card over the phone now, or online within forty-eight hours, otherwise the slot is released.\nCaller: I'll pay now.",
+      "formLayout": true
     },
     {
       "id": "ielts-listening-027-p2",
       "part": 2,
-      "title": "St. Mary's General Hospital — Visitor Orientation",
-      "text": "Volunteer: Good afternoon and welcome to St. Mary's General Hospital. I'm one of the hospital volunteers and I'm going to give you a brief orientation of the building so you know your way around during your visit today. St. Mary's is a large district general hospital serving a population of around three hundred and fifty thousand people, so it can feel a little overwhelming at first. Let me break it down for you.\n\nWe'll start at Zone A — the main reception. This is directly in front of you as you enter through the sliding doors on Pembroke Road. The reception desk is staffed twenty-four hours a day and the team can help you locate any ward or department, give directions, issue visitor passes, and answer general enquiries. There are also information screens on either side of the desk showing a directory of all wards and departments.\n\nTo the left of the main entrance as you come in is Zone B — the Accident and Emergency entrance. This has its own dedicated entrance on the northern side of the building, accessed via Chestnut Lane. A and E operates continuously, twenty-four hours a day, three hundred and sixty-five days a year. Please note that if you are visiting an A and E patient, you should use the Chestnut Lane entrance rather than coming through main reception.\n\nZone C is the pharmacy, situated on the ground floor in the eastern wing, approximately a two-minute walk from the main reception. The pharmacy is open from eight am to six pm Monday to Friday, nine am to one pm on Saturdays, and is closed on Sundays. Outpatients with prescriptions can collect their medication here without a pre-arranged appointment.\n\nMoving further along the ground floor corridor past the pharmacy, you'll come to Zone D — the café and canteen. This serves both patients, visitors, and members of staff. Hot meals are served from seven in the morning until seven in the evening, and a lighter cold menu is available from seven until nine pm. The café accepts cash, card, and the hospital's own prepaid meal card. Please be aware that the café does not permit visitors to take hot food to the wards — this is for hygiene reasons.\n\nZone E — the children's ward — is on the second floor, accessible via the main lifts or the stairs near the pharmacy. Visiting hours for the children's ward are ten am to eight pm daily. Children's visitors — including siblings — must be accompanied by an adult at all times on the ward. The ward has its own small play area and dedicated nursing team.\n\nZone F is the radiology department, also on the ground floor but in the western wing, behind the main reception block. Radiology handles X-rays, MRI scans, CT scans, and ultrasound appointments. All appointments must be pre-arranged — you cannot walk in without a referral. The radiology waiting area has around sixty seats and a self-service check-in kiosk.\n\nZone G — outpatients — is the largest department in the hospital by floor area. It is on the first floor and houses clinics for over forty medical specialties, from cardiology and orthopaedics to dermatology and neurology. The outpatients department is open Monday to Friday, eight am to six pm. Patients should bring their appointment letter and arrive fifteen minutes before their scheduled time.\n\nZone H is the chapel and spiritual care centre. This is a quiet, welcoming space open to people of all faiths and backgrounds, located on the ground floor between the outpatients stairwell and the café. The chapel is staffed by a team of chaplains representing multiple faiths and is open twenty-four hours a day. Spiritual care support is also available by request for any patient on any ward.\n\nZone I — the car park — is directly outside the hospital on the western side, accessed via Pembroke Road. There are four hundred spaces on two levels. Short-stay parking costs two pounds per hour, with a maximum of three pounds for visits of up to two hours. Long-stay rates are available for patients with appointments running over two hours. Blue Badge holders may park for free in the designated spaces on Level 1.\n\nFinally, Zone J — the relatives' room — is situated on the first floor, just off the main corridor near the lifts. This is a private, comfortable space for families of patients who are critically ill or undergoing significant procedures. It is available around the clock and can be booked through the ward nursing staff. Tea and coffee facilities are provided.\n\nVisiting hours at St. Mary's are two to four pm and six to eight pm daily on most wards. Please check with the ward receptionist when you arrive, as some wards have specific restrictions. I hope your visit goes well — please do ask any member of staff or volunteer if you need further assistance."
+      "title": "Science Centre Explainer Induction",
+      "text": "Coordinator: Welcome, everyone, and thank you for volunteering as weekend explainers at the Calder Science Centre. I'm Rina, and I run the explainer programme.\n\nLet me be clear about the job, because it is not demonstrating. An explainer's work is to notice a visitor who is stuck or bored, approach them, and ask a question — not to deliver a talk. The commonest mistake new explainers make is explaining. You will be tempted to tell a child how the exhibit works; the better move is to ask what they think will happen if they press the other button.\n\nShifts are Saturday and Sunday, four hours, and we ask for two shifts a month. Under-sixteens can volunteer with us but only alongside a named adult volunteer, which is a safeguarding requirement rather than a judgement about capability.\n\nTraining is one full day, and it covers the exhibits, safeguarding, and what to do in an evacuation. There is a refresher every six months which is not optional, because exhibits change and the ones that break change more often.\n\nNow the building. Coming through the main doors, the ticket desk is on your right. The main gallery, which is where most explainers work, is straight ahead through the arch and takes up the whole ground floor beyond it. The workshop room, used for booked school sessions, is on the left of the ticket desk. Upstairs, the planetarium is directly above the main gallery, and the café is at the front of that upper floor, overlooking the entrance. The explainer room, where you sign in and leave your things, is behind the ticket desk and is the one place in the building where you can sit down out of sight of visitors.\n\nFinally, something worth hearing plainly. If you do not know the answer to a question, say so and find out together. Children are entirely unbothered by an adult who doesn't know something and very quick to spot one who is pretending."
     },
     {
       "id": "ielts-listening-027-p3",
       "part": 3,
-      "title": "Discussion About a Research Project on Urban Noise",
-      "text": "Tutor: So, Priya and James, how is your project on urban noise pollution progressing?\nPriya: We've finished the literature review. The main finding seems to be that constant exposure to traffic noise above sixty-five decibels significantly increases stress hormone levels.\nJames: What surprised us was the evidence linking noise to cardiovascular disease — not just stress. Several longitudinal studies found a measurable increase in heart disease rates near busy roads.\nTutor: Interesting. What methodology have you chosen for your primary research?\nPriya: We're doing acoustic measurements at ten sites across the city, combined with a survey of five hundred residents asking about sleep quality and perceived noise annoyance.\nTutor: And your sample size — five hundred — is that sufficient?\nJames: We debated this. Statistically it should give us a confidence interval of plus or minus four percent at the ninety-five percent confidence level, which most journals would accept.\nTutor: Good. Have you considered confounding variables? People near noisy roads may also be near other pollution sources.\nPriya: Yes, we plan to control for air quality and proximity to industrial areas in our regression analysis.\nTutor: What do you expect your main recommendation to be?\nJames: Probably mandatory sound barriers along roads within five hundred metres of residential zones.\nPriya: I'd add better urban zoning rules — separating heavy traffic routes from housing areas at the planning stage.\nTutor: These are sound arguments. Make sure your final report references the WHO noise guidelines published in 2018."
+      "title": "Confidentiality in a Placement Report",
+      "text": "Tutor: Right — the placement report. You were at the engineering firm, weren't you?\nMarcus: Yes, six months in their testing department.\nTutor: And the difficulty?\nMarcus: A lot of what I did is commercially confidential. I signed something on the first day.\nTutor: Good that you've raised it now rather than after writing forty pages. Have you read what you signed?\nMarcus: Not carefully.\nTutor: Then that is the first job, because these agreements vary enormously. Some prohibit naming clients; some prohibit describing processes; a few prohibit saying which projects existed at all.\nMarcus: What if it's the strict kind?\nTutor: Then you write the report at one level of abstraction higher. \"A component was tested against a customer specification\" rather than naming the customer or the component. The assessment is on what you learned and how you worked, not on the technical details of their product.\nMarcus: Won't that make it vague?\nTutor: It makes the subject matter vague and the reflection specific, which is the right way round for this assessment. A report that says exactly what you found difficult, what you tried, and what you would do differently is strong even if the object is described generically.\nMarcus: Should I ask the company?\nTutor: Yes, and ask a named person, in writing, and keep the reply. \"My supervisor confirmed by email that this level of detail is acceptable\" protects you and them. Do not rely on a corridor conversation.\nMarcus: What about the appendix? I have data.\nTutor: If in doubt, leave it out. An appendix is where confidential material usually escapes, because people paste in a spreadsheet they have stopped looking at closely.\nMarcus: And if they refuse permission entirely?\nTutor: Then tell me immediately and we adjust the assessment. That has happened before and it is a solvable problem, provided it surfaces in March rather than in June."
     },
     {
       "id": "ielts-listening-027-p4",
       "part": 4,
-      "title": "Lecture: Deep-Sea Ecosystems",
-      "text": "Today's lecture focuses on deep-sea ecosystems — those found below two hundred metres, where sunlight no longer penetrates.\n\nFor most of scientific history, the deep ocean was assumed to be a near-barren wasteland. This view changed dramatically in 1977 when researchers aboard the submersible Alvin discovered hydrothermal vents at the Galapagos Rift at a depth of two thousand four hundred metres. These vents release superheated water laden with minerals, and around them thrived dense communities of organisms that survive entirely without sunlight.\n\nThe primary producers in vent ecosystems are chemosynthetic bacteria and archaea, which oxidise hydrogen sulphide released by the vents to produce energy — analogous to the way photosynthetic organisms use sunlight at the surface. These microbes form the base of a food web that includes tube worms — some exceeding two metres in length — giant clams, and vent shrimp.\n\nBeyond hydrothermal vents, deep-sea life depends heavily on what scientists call marine snow — a constant fall of organic particles from surface waters including dead organisms, faeces, and shed mucus. This slow rain of organic matter is the primary food source for most deep-sea benthic communities. Rates of marine snow deposition vary significantly with surface productivity.\n\nThe deep sea is also home to bioluminescent organisms — those capable of producing their own light through chemical reactions. Estimates suggest that up to ninety percent of deep-sea creatures are bioluminescent. This light serves functions ranging from attracting prey — as in the iconic anglerfish — to intraspecies communication and camouflage.\n\nDespite covering over sixty percent of the Earth's surface, less than twenty percent of the deep ocean floor has been mapped in high resolution. This lack of knowledge makes it difficult to assess the potential impacts of emerging threats including deep-sea mining for manganese nodules and polymetallic sulphide deposits.\n\nConservation efforts are now focusing on establishing marine protected areas in international waters, though international governance frameworks remain inadequate for the task."
+      "title": "Why Things Are Hard to Repair",
+      "text": "Lecturer: Today I want to look at why so many manufactured objects are difficult or impossible to repair, and to argue that the usual explanation — deliberate sabotage by manufacturers — is both too simple and not needed to explain what we observe.\n\nStart with the design decisions themselves. Gluing a case together rather than using screws is cheaper, faster on the production line, and produces a thinner, better-sealed product. Soldering a battery to a board removes a connector that could fail and saves space. Each of these is defensible on its own terms, and each also makes repair difficult. The unrepairable object is usually the accumulated by-product of decisions taken for other reasons.\n\nWhere intent enters is subtler and better documented. Restricting who may buy spare parts, refusing to publish service manuals, and using software checks that reject a genuine replacement component fitted by an independent workshop — these are not consequences of engineering choices. They are commercial policies, and they are what repair legislation has generally targeted, correctly.\n\nEconomics does much of the remaining work. As manufacturing costs fell, the labour cost of a repair rose relative to the price of a replacement, so a repair that takes an hour becomes irrational against an item costing little more. That calculation is real, and it is also incomplete, because it prices the labour and not the materials, the energy or the disposal.\n\nThe legislation that has followed is more modest than its coverage suggests. Requirements to supply parts for a stated number of years, to publish repair documentation, and to design for disassembly do address the commercial barriers. They do not change the labour arithmetic, and the evidence so far is of a real but limited increase in repair rather than a transformation.\n\nI want to end on what the evidence actually supports, because this is a subject where confident claims outrun it. Products genuinely have become harder to repair; the dominant cause is a combination of design priorities and labour economics rather than a plan; the deliberate obstruction that does exist is concentrated in parts and information rather than in the hardware; and the interventions with the best evidence behind them are the dull ones — parts availability, published manuals, and removing the software locks."
     }
   ],
   "questions": [
@@ -127,15 +39,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 1,
-      "label": "Member surname",
+      "label": "Resident's surname",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Kowalczyk",
-      "explanation": "The answer \"Kowalczyk\" is stated in the conversation.",
-      "prompt": "Member surname: _____",
+      "answer": "Ilesanmi",
+      "explanation": "She spells it I-L-E-S-A-N-M-I.",
+      "prompt": "Resident's surname: _____",
       "partNumber": 1
     },
     {
@@ -144,15 +56,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 2,
-      "label": "Date of birth",
-      "prefix": "14th June ",
+      "label": "House number",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "1989",
-      "explanation": "The answer \"1989\" is stated in the conversation.",
-      "prompt": "Date of birth: 14th June _____",
+      "answer": "52",
+      "explanation": "The address is fifty-two Beckford Terrace.",
+      "prompt": "House number: _____",
       "partNumber": 1
     },
     {
@@ -161,15 +73,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 3,
-      "label": "Membership chosen",
+      "label": "Contact number",
       "prefix": "",
-      "suffix": "-monthly",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "six",
-      "explanation": "The answer \"six\" is stated in the conversation.",
-      "prompt": "Membership chosen: _____-monthly",
+      "answer": "07920 447 813",
+      "explanation": "She gives 07920 447 813.",
+      "prompt": "Contact number: _____",
       "partNumber": 1
     },
     {
@@ -178,15 +90,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 4,
-      "label": "Total cost",
-      "prefix": "£",
+      "label": "Item needing separate collection",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "300",
-      "explanation": "The answer \"300\" is stated in the conversation.",
-      "prompt": "Total cost: £_____",
+      "answer": "fridge",
+      "explanation": "Anything with a cooling system goes on a separate vehicle.",
+      "prompt": "Item needing separate collection: _____",
       "partNumber": 1
     },
     {
@@ -195,15 +107,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 5,
-      "label": "Item to bring",
-      "prefix": "own ",
+      "label": "Standard charge",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "padlock",
-      "explanation": "The answer \"padlock\" is stated in the conversation.",
-      "prompt": "Item to bring: own _____",
+      "answer": "20 pounds",
+      "explanation": "Twenty pounds for up to three items.",
+      "prompt": "Standard charge: _____",
       "partNumber": 1
     },
     {
@@ -212,15 +124,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 6,
-      "label": "Parking area",
+      "label": "Extra charge for that item",
       "prefix": "",
-      "suffix": " car park",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "rear",
-      "explanation": "The answer \"rear\" is stated in the conversation.",
-      "prompt": "Parking area: _____ car park",
+      "answer": "15 pounds",
+      "explanation": "A fridge or freezer is fifteen pounds on its own.",
+      "prompt": "Extra charge for that item: _____",
       "partNumber": 1
     },
     {
@@ -229,15 +141,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 7,
-      "label": "",
+      "label": "Date of collection",
       "prefix": "",
       "suffix": "",
-      "labelBlank": true,
-      "labelSuffix": " entrance road",
-      "rightContent": "Elm Street",
-      "answer": "Parking",
-      "explanation": "The answer \"Parking\" is stated in the conversation.",
-      "prompt": "_____ entrance road: Elm Street",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "27 February",
+      "explanation": "The next slot is the twenty-seventh of February.",
+      "prompt": "Date of collection: _____",
       "partNumber": 1
     },
     {
@@ -246,15 +158,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 8,
-      "label": "Card ready from",
+      "label": "Items must be outside by",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Friday",
-      "explanation": "The answer \"Friday\" is stated in the conversation.",
-      "prompt": "Card ready from: _____",
+      "answer": "8",
+      "explanation": "Items must be accessible from the pavement by eight.",
+      "prompt": "Items must be outside by: _____",
       "partNumber": 1
     },
     {
@@ -263,15 +175,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 9,
-      "label": "Email",
+      "label": "Label that must be attached",
       "prefix": "",
-      "suffix": "@greenmail.net",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "david.k",
-      "explanation": "The answer \"david.k\" is stated in the conversation.",
-      "prompt": "Email: _____@greenmail.net",
+      "answer": "fire safety",
+      "explanation": "The sofa needs its fire safety label to be taken for reuse.",
+      "prompt": "Label that must be attached: _____",
       "partNumber": 1
     },
     {
@@ -280,15 +192,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 10,
-      "label": "Swimming pool access",
+      "label": "Time allowed to pay online",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "yes / included",
-      "explanation": "The answer \"yes / included\" is stated in the conversation.",
-      "prompt": "Swimming pool access: _____",
+      "answer": "48 hours",
+      "explanation": "Payment online within forty-eight hours or the slot is released.",
+      "prompt": "Time allowed to pay online: _____",
       "partNumber": 1
     },
     {
@@ -297,15 +209,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 11,
-      "prompt": "What are the standard visiting hours at St. Mary's?",
+      "prompt": "What does Rina say an explainer's job is not?",
       "options": [
-        "2–4 pm and 6–8 pm",
-        "1–3 pm and 5–7 pm",
-        "3–5 pm and 7–9 pm",
-        "10 am–8 pm"
+        "Demonstrating",
+        "Watching exhibits",
+        "Signing in",
+        "Talking to visitors"
       ],
       "correctAnswer": "A",
-      "explanation": "The volunteer states 'visiting hours at St. Mary's are two to four pm and six to eight pm daily'"
+      "explanation": "She says the job is not demonstrating."
     },
     {
       "id": "ielts-listening-027-q12",
@@ -313,15 +225,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 12,
-      "prompt": "How much does short-stay parking cost per hour?",
+      "prompt": "What is the commonest mistake new explainers make?",
       "options": [
-        "£1.00",
-        "£2.00",
-        "£1.50",
-        "£2.50"
+        "Standing too far away",
+        "Explaining",
+        "Talking to staff",
+        "Working alone"
       ],
       "correctAnswer": "B",
-      "explanation": "The volunteer says 'Short-stay parking costs two pounds per hour'"
+      "explanation": "The commonest mistake is explaining rather than asking."
     },
     {
       "id": "ielts-listening-027-q13",
@@ -329,15 +241,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 13,
-      "prompt": "Until what time does the café serve hot meals?",
+      "prompt": "What does she suggest doing instead of telling a child how an exhibit works?",
       "options": [
-        "5 pm",
-        "6 pm",
-        "7 pm",
-        "8 pm"
+        "Calling a colleague",
+        "Showing them twice",
+        "Asking what they think will happen",
+        "Giving a leaflet"
       ],
       "correctAnswer": "C",
-      "explanation": "The volunteer says 'Hot meals are served from seven in the morning until seven in the evening'"
+      "explanation": "Ask what they think will happen if they press the other button."
     },
     {
       "id": "ielts-listening-027-q14",
@@ -345,15 +257,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 14,
-      "prompt": "Where is the A&E entrance located?",
+      "prompt": "What condition applies to volunteers under sixteen?",
       "options": [
-        "on Pembroke Road at the main entrance",
-        "in the eastern wing near the pharmacy",
-        "on the western side near the car park",
-        "on Chestnut Lane on the northern side"
+        "They work weekdays only",
+        "They need a longer induction",
+        "They cannot volunteer",
+        "They must be alongside a named adult volunteer"
       ],
       "correctAnswer": "D",
-      "explanation": "The volunteer says A&E 'has its own dedicated entrance on the northern side of the building, accessed via Chestnut Lane'"
+      "explanation": "A safeguarding requirement, not a judgement of capability."
     },
     {
       "id": "ielts-listening-027-q15",
@@ -361,34 +273,32 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 15,
-      "prompt": "What is located near the chapel?",
+      "prompt": "How often is the refresher training?",
       "options": [
-        "the café",
-        "the main reception",
-        "the radiology department",
-        "the car park"
+        "Every six months",
+        "Annually",
+        "Only once",
+        "Every three months"
       ],
       "correctAnswer": "A",
-      "explanation": "The volunteer says the chapel is 'between the outpatients stairwell and the café'"
+      "explanation": "There is a refresher every six months, and it is not optional."
     },
     {
       "id": "ielts-listening-027-q16",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "St. Mary's General Hospital — Ground and First Floor Plan",
-      "mapDescription": "Label the departments and areas A–J on the hospital map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Calder Science Centre — Building Plan",
+      "mapDescription": "The plan shows the ground and upper floors. The main doors are at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Main reception",
-        "B": "A&E entrance",
-        "C": "Pharmacy",
-        "D": "Café/canteen",
-        "E": "Children's ward",
-        "F": "Radiology",
-        "G": "Outpatients",
-        "H": "Chapel",
-        "I": "Car park",
-        "J": "Relatives' room"
+        "A": "Ticket desk",
+        "B": "Main gallery",
+        "C": "Workshop room",
+        "D": "Planetarium",
+        "E": "Café",
+        "F": "Explainer room",
+        "G": "Shop",
+        "H": "Cloakroom"
       },
       "mapLetters": [
         "A",
@@ -398,33 +308,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 16,
-      "prompt": "24-hour staffed desk directly inside Pembroke Road entrance",
-      "correctAnswer": "A",
-      "explanation": "The correct letter is A (Main reception)."
+      "prompt": "Straight ahead through the arch, occupying the ground floor beyond",
+      "correctAnswer": "B",
+      "explanation": "The main gallery is straight ahead through the arch."
     },
     {
       "id": "ielts-listening-027-q17",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "St. Mary's General Hospital — Ground and First Floor Plan",
-      "mapDescription": "Label the departments and areas A–J on the hospital map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Calder Science Centre — Building Plan",
+      "mapDescription": "The plan shows the ground and upper floors. The main doors are at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Main reception",
-        "B": "A&E entrance",
-        "C": "Pharmacy",
-        "D": "Café/canteen",
-        "E": "Children's ward",
-        "F": "Radiology",
-        "G": "Outpatients",
-        "H": "Chapel",
-        "I": "Car park",
-        "J": "Relatives' room"
+        "A": "Ticket desk",
+        "B": "Main gallery",
+        "C": "Workshop room",
+        "D": "Planetarium",
+        "E": "Café",
+        "F": "Explainer room",
+        "G": "Shop",
+        "H": "Cloakroom"
       },
       "mapLetters": [
         "A",
@@ -434,33 +340,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 17,
-      "prompt": "Dedicated 24-hour emergency entrance on Chestnut Lane",
-      "correctAnswer": "B",
-      "explanation": "The correct letter is B (A&E entrance)."
+      "prompt": "On the left of the ticket desk",
+      "correctAnswer": "C",
+      "explanation": "The workshop room is left of the ticket desk."
     },
     {
       "id": "ielts-listening-027-q18",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "St. Mary's General Hospital — Ground and First Floor Plan",
-      "mapDescription": "Label the departments and areas A–J on the hospital map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Calder Science Centre — Building Plan",
+      "mapDescription": "The plan shows the ground and upper floors. The main doors are at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Main reception",
-        "B": "A&E entrance",
-        "C": "Pharmacy",
-        "D": "Café/canteen",
-        "E": "Children's ward",
-        "F": "Radiology",
-        "G": "Outpatients",
-        "H": "Chapel",
-        "I": "Car park",
-        "J": "Relatives' room"
+        "A": "Ticket desk",
+        "B": "Main gallery",
+        "C": "Workshop room",
+        "D": "Planetarium",
+        "E": "Café",
+        "F": "Explainer room",
+        "G": "Shop",
+        "H": "Cloakroom"
       },
       "mapLetters": [
         "A",
@@ -470,33 +372,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 18,
-      "prompt": "Eastern wing dispensary open Mon–Fri 8 am–6 pm",
-      "correctAnswer": "C",
-      "explanation": "The correct letter is C (Pharmacy)."
+      "prompt": "Upstairs, directly above the main gallery",
+      "correctAnswer": "D",
+      "explanation": "The planetarium is above the main gallery."
     },
     {
       "id": "ielts-listening-027-q19",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "St. Mary's General Hospital — Ground and First Floor Plan",
-      "mapDescription": "Label the departments and areas A–J on the hospital map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Calder Science Centre — Building Plan",
+      "mapDescription": "The plan shows the ground and upper floors. The main doors are at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Main reception",
-        "B": "A&E entrance",
-        "C": "Pharmacy",
-        "D": "Café/canteen",
-        "E": "Children's ward",
-        "F": "Radiology",
-        "G": "Outpatients",
-        "H": "Chapel",
-        "I": "Car park",
-        "J": "Relatives' room"
+        "A": "Ticket desk",
+        "B": "Main gallery",
+        "C": "Workshop room",
+        "D": "Planetarium",
+        "E": "Café",
+        "F": "Explainer room",
+        "G": "Shop",
+        "H": "Cloakroom"
       },
       "mapLetters": [
         "A",
@@ -506,33 +404,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 19,
-      "prompt": "Ground floor eating area serving hot meals 7 am to 7 pm",
-      "correctAnswer": "D",
-      "explanation": "The correct letter is D (Café/canteen)."
+      "prompt": "At the front of the upper floor, overlooking the entrance",
+      "correctAnswer": "E",
+      "explanation": "The café overlooks the entrance from upstairs."
     },
     {
       "id": "ielts-listening-027-q20",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "St. Mary's General Hospital — Ground and First Floor Plan",
-      "mapDescription": "Label the departments and areas A–J on the hospital map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Calder Science Centre — Building Plan",
+      "mapDescription": "The plan shows the ground and upper floors. The main doors are at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Main reception",
-        "B": "A&E entrance",
-        "C": "Pharmacy",
-        "D": "Café/canteen",
-        "E": "Children's ward",
-        "F": "Radiology",
-        "G": "Outpatients",
-        "H": "Chapel",
-        "I": "Car park",
-        "J": "Relatives' room"
+        "A": "Ticket desk",
+        "B": "Main gallery",
+        "C": "Workshop room",
+        "D": "Planetarium",
+        "E": "Café",
+        "F": "Explainer room",
+        "G": "Shop",
+        "H": "Cloakroom"
       },
       "mapLetters": [
         "A",
@@ -542,14 +436,12 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 20,
-      "prompt": "Second floor ward with play area, visiting 10 am–8 pm",
-      "correctAnswer": "E",
-      "explanation": "The correct letter is E (Children's ward)."
+      "prompt": "Behind the ticket desk",
+      "correctAnswer": "F",
+      "explanation": "The explainer room is behind the ticket desk."
     },
     {
       "id": "ielts-listening-027-q21",
@@ -557,15 +449,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 21,
-      "prompt": "What noise level does research link to increased stress hormones?",
+      "prompt": "How long was Marcus's placement?",
       "options": [
-        "55 dB",
-        "65 dB",
-        "60 dB",
-        "70 dB"
+        "Three months",
+        "Six months",
+        "Nine months",
+        "A year"
       ],
       "correctAnswer": "B",
-      "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
+      "explanation": "Six months in the testing department."
     },
     {
       "id": "ielts-listening-027-q22",
@@ -573,15 +465,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 22,
-      "prompt": "What additional health risk did James find surprising in the literature?",
+      "prompt": "What does the tutor say is the first job?",
       "options": [
-        "hearing loss",
-        "respiratory problems",
-        "cardiovascular disease",
-        "mental health disorders"
+        "Removing the appendix",
+        "Writing an outline",
+        "Reading what he signed",
+        "Contacting the company"
       ],
       "correctAnswer": "C",
-      "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
+      "explanation": "These agreements vary enormously; read it carefully."
     },
     {
       "id": "ielts-listening-027-q23",
@@ -589,15 +481,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 23,
-      "prompt": "How many residents will be surveyed?",
+      "prompt": "What should he do if the agreement is strict?",
       "options": [
-        "200",
-        "300",
-        "400",
-        "500"
+        "Change placement",
+        "Submit it confidentially",
+        "Abandon the report",
+        "Write at one level of abstraction higher"
       ],
       "correctAnswer": "D",
-      "explanation": "Priya mentions 'a survey of five hundred residents'"
+      "explanation": "Describe generically rather than naming customer or component."
     },
     {
       "id": "ielts-listening-027-q24",
@@ -605,15 +497,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 24,
-      "prompt": "What confidence level does their sample size achieve?",
+      "prompt": "What is the assessment actually on?",
       "options": [
-        "95%",
-        "90%",
-        "92%",
-        "99%"
+        "What he learned and how he worked",
+        "The company's performance",
+        "The length of the report",
+        "The technical details of the product"
       ],
       "correctAnswer": "A",
-      "explanation": "James refers to 'the ninety-five percent confidence level'"
+      "explanation": "It assesses learning and working, not their product."
     },
     {
       "id": "ielts-listening-027-q25",
@@ -621,238 +513,238 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 25,
-      "prompt": "What does the tutor recommend they reference?",
+      "prompt": "How should he obtain the company's permission?",
       "options": [
-        "WHO 2015 report",
-        "WHO 2018 guidelines",
-        "EU noise directive",
-        "national highway code"
+        "In a corridor conversation",
+        "In writing from a named person, keeping the reply",
+        "By phone",
+        "Through the university only"
       ],
       "correctAnswer": "B",
-      "explanation": "The tutor says 'reference the WHO noise guidelines published in 2018'"
+      "explanation": "Ask a named person in writing and keep the reply."
     },
     {
       "id": "ielts-listening-027-q26",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Check it before writing",
+        "B. Make it generic",
+        "C. Leave it out or raise it early"
       ],
       "num": 26,
-      "prompt": "introducing new equipment in the laboratory",
+      "prompt": "the agreement he signed",
       "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "explanation": "Read it carefully first."
     },
     {
       "id": "ielts-listening-027-q27",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Check it before writing",
+        "B. Make it generic",
+        "C. Leave it out or raise it early"
       ],
       "num": 27,
-      "prompt": "keeping written records of experiments",
-      "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "prompt": "the customer and component names",
+      "correctAnswer": "B",
+      "explanation": "Describe them at a higher level of abstraction."
     },
     {
       "id": "ielts-listening-027-q28",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Check it before writing",
+        "B. Make it generic",
+        "C. Leave it out or raise it early"
       ],
       "num": 28,
-      "prompt": "sharing results with other research groups",
+      "prompt": "the subject matter of the work",
       "correctAnswer": "B",
-      "explanation": "The speaker's attitude is B. She is undecided."
+      "explanation": "Vague subject, specific reflection."
     },
     {
       "id": "ielts-listening-027-q29",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Check it before writing",
+        "B. Make it generic",
+        "C. Leave it out or raise it early"
       ],
       "num": 29,
-      "prompt": "the importance of the project deadline",
-      "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "prompt": "the data appendix",
+      "correctAnswer": "C",
+      "explanation": "If in doubt, leave it out."
     },
     {
       "id": "ielts-listening-027-q30",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Check it before writing",
+        "B. Make it generic",
+        "C. Leave it out or raise it early"
       ],
       "num": 30,
-      "prompt": "the proposal to extend the study",
+      "prompt": "a refusal of permission",
       "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "explanation": "Tell the tutor immediately, in March not June."
     },
     {
       "id": "ielts-listening-027-q31",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 31,
-      "sentenceText": "Hydrothermal vents were first discovered in 1977 at a depth of __BLANK__ metres in the Galapagos Rift.",
-      "correctAnswer": "2,400 / two thousand four hundred",
-      "explanation": "The correct answer is: \"2,400 / two thousand four hundred\".",
-      "prompt": "Hydrothermal vents were first discovered in 1977 at a depth of _____ metres in the Galapagos Rift.",
-      "partNumber": 4
+      "prompt": "What explanation does the lecturer call too simple?",
+      "options": [
+        "Poor design skills",
+        "Rising labour costs",
+        "Deliberate sabotage by manufacturers",
+        "Consumer demand"
+      ],
+      "correctAnswer": "C",
+      "explanation": "He says deliberate sabotage is too simple and unnecessary."
     },
     {
       "id": "ielts-listening-027-q32",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 32,
-      "sentenceText": "The submersible __BLANK__ carried the researchers who made this landmark discovery.",
-      "correctAnswer": "Alvin",
-      "explanation": "The correct answer is: \"Alvin\".",
-      "prompt": "The submersible _____ carried the researchers who made this landmark discovery.",
-      "partNumber": 4
+      "prompt": "Why is a glued case chosen?",
+      "options": [
+        "It is easier to repair",
+        "It is required by regulation",
+        "It is stronger",
+        "It is cheaper, faster and better sealed"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Cheaper, faster on the line, thinner and better sealed."
     },
     {
       "id": "ielts-listening-027-q33",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 33,
-      "sentenceText": "Chemosynthetic bacteria use __BLANK__ released by vents to generate energy in the absence of sunlight.",
-      "correctAnswer": "hydrogen sulphide",
-      "explanation": "The correct answer is: \"hydrogen sulphide\".",
-      "prompt": "Chemosynthetic bacteria use _____ released by vents to generate energy in the absence of sunlight.",
-      "partNumber": 4
+      "prompt": "How does the lecturer describe the unrepairable object?",
+      "options": [
+        "The accumulated by-product of decisions taken for other reasons",
+        "A manufacturing fault",
+        "A recent phenomenon",
+        "A deliberate design"
+      ],
+      "correctAnswer": "A",
+      "explanation": "It results from decisions taken for other reasons."
     },
     {
       "id": "ielts-listening-027-q34",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 34,
-      "sentenceText": "__BLANK__, a constant fall of organic particles from surface waters, is the primary food source for most deep-sea benthic communities.",
-      "correctAnswer": "Marine snow",
-      "explanation": "The correct answer is: \"Marine snow\".",
-      "prompt": "_____, a constant fall of organic particles from surface waters, is the primary food source for most deep-sea benthic communities.",
-      "partNumber": 4
+      "prompt": "Where does intent genuinely enter?",
+      "options": [
+        "In the choice of adhesive",
+        "In restricting parts, manuals and software acceptance of components",
+        "In battery design",
+        "In product thickness"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Those are commercial policies rather than engineering consequences."
     },
     {
       "id": "ielts-listening-027-q35",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 35,
-      "sentenceText": "It is estimated that up to __BLANK__ percent of all deep-sea creatures are capable of producing bioluminescence.",
-      "correctAnswer": "90 / ninety",
-      "explanation": "The correct answer is: \"90 / ninety\".",
-      "prompt": "It is estimated that up to _____ percent of all deep-sea creatures are capable of producing bioluminescence.",
-      "partNumber": 4
+      "prompt": "What has repair legislation generally targeted?",
+      "options": [
+        "Consumer behaviour",
+        "Design choices",
+        "The commercial barriers",
+        "Labour costs"
+      ],
+      "correctAnswer": "C",
+      "explanation": "It has targeted the commercial barriers, correctly."
     },
     {
       "id": "ielts-listening-027-q36",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 36,
-      "prompt": "The deep sea is defined in the lecture as water found below which depth?",
-      "options": [
-        "A  100 metres",
-        "C  500 metres",
-        "B  200 metres",
-        "D  1,000 metres"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer defines the deep sea as 'below two hundred metres'"
+      "sentenceText": "The labour cost of a repair rose relative to the price of a __BLANK__.",
+      "correctAnswer": "replacement",
+      "explanation": "Repair became irrational against cheap replacements.",
+      "prompt": "The labour cost of a repair rose relative to the price of a _____.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-027-q37",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 37,
-      "prompt": "What do tube worms, giant clams, and vent shrimp have in common according to the lecture?",
-      "options": [
-        "A  they all produce bioluminescence",
-        "B  they are found only in polar waters",
-        "D  they depend on marine snow for food",
-        "C  they live around hydrothermal vents"
-      ],
-      "correctAnswer": "D",
-      "explanation": "These species are described as part of the food web around hydrothermal vents"
+      "sentenceText": "That calculation prices the labour and not the materials, the energy or the __BLANK__.",
+      "correctAnswer": "disposal",
+      "explanation": "It omits materials, energy and disposal.",
+      "prompt": "That calculation prices the labour and not the materials, the energy or the _____.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-027-q38",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 38,
-      "prompt": "Marine snow is described in the lecture as consisting of",
-      "options": [
-        "C  organic particles falling from surface waters",
-        "A  dissolved minerals from the seafloor",
-        "B  sediment carried from coastal rivers",
-        "D  chemical compounds from hydrothermal vents"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The lecturer describes marine snow as 'a constant fall of organic particles from surface waters'"
+      "sentenceText": "Legislation does not change the labour __BLANK__.",
+      "correctAnswer": "arithmetic",
+      "explanation": "It addresses commercial barriers only.",
+      "prompt": "Legislation does not change the labour _____.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-027-q39",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 39,
-      "prompt": "According to the lecturer, bioluminescence serves functions including",
-      "options": [
-        "A  temperature regulation and navigation",
-        "B  attracting prey and intraspecies communication",
-        "C  converting chemicals into usable energy",
-        "D  filtering food particles from seawater"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The lecturer mentions 'attracting prey' and 'intraspecies communication'"
+      "sentenceText": "Evidence so far shows a real but __BLANK__ increase in repair.",
+      "correctAnswer": "limited",
+      "explanation": "A real but limited increase, not a transformation.",
+      "prompt": "Evidence so far shows a real but _____ increase in repair.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-027-q40",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 40,
-      "prompt": "The lecturer suggests that deep-sea mining is problematic primarily because",
-      "options": [
-        "A  the technology does not yet exist",
-        "B  international law prohibits it",
-        "C  less than 20% of the ocean floor has been mapped in detail",
-        "D  mining would destroy all marine snow"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says this 'makes it difficult to assess the potential impacts' of mining threats"
+      "sentenceText": "The interventions with the best evidence are the __BLANK__ ones.",
+      "correctAnswer": "dull",
+      "explanation": "Parts availability, manuals, removing software locks.",
+      "prompt": "The interventions with the best evidence are the _____ ones.",
+      "partNumber": 4
     }
   ],
   "parts": [
     {
       "partNumber": 1,
-      "title": "Part 1: Research Project Discussion",
-      "audioDescription": "Two students discuss their environmental science research project with their tutor.",
-      "context": "Enquiry About a Sports Centre Membership",
+      "title": "Part 1: Bulky Waste Collection",
+      "audioDescription": "A resident books a council collection for a sofa and a fridge.",
+      "context": "Booking a Bulky Waste Collection",
       "questionRange": [
         1,
         10
@@ -860,9 +752,9 @@
     },
     {
       "partNumber": 2,
-      "title": "Part 2: Assignment Feedback Session",
-      "audioDescription": "A lecturer gives feedback on a history essay to a group of students.",
-      "context": "St. Mary's General Hospital — Visitor Orientation",
+      "title": "Part 2: Explainer Induction",
+      "audioDescription": "A coordinator inducts weekend explainers and describes the centre.",
+      "context": "Science Centre Explainer Induction",
       "questionRange": [
         11,
         20
@@ -870,9 +762,9 @@
     },
     {
       "partNumber": 3,
-      "title": "Part 3: Biomimicry in Engineering",
-      "audioDescription": "A lecture on how engineers are using designs from nature to solve modern problems.",
-      "context": "Discussion About a Research Project on Urban Noise",
+      "title": "Part 3: Placement Report Tutorial",
+      "audioDescription": "A student discusses confidentiality in a placement report.",
+      "context": "Confidentiality in a Placement Report",
       "questionRange": [
         21,
         30
@@ -880,9 +772,9 @@
     },
     {
       "partNumber": 4,
-      "title": "Part 4: Urban Migration Patterns",
-      "audioDescription": "An academic lecture on the causes and consequences of rural-to-urban migration.",
-      "context": "Lecture: Deep-Sea Ecosystems",
+      "title": "Part 4: Repairability",
+      "audioDescription": "A lecture on why manufactured objects became hard to repair.",
+      "context": "Why Things Are Hard to Repair",
       "questionRange": [
         31,
         40
