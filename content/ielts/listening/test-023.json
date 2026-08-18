@@ -2,122 +2,34 @@
   "id": "ielts-listening-023",
   "exam": "ielts",
   "section": "listening",
-  "title": "IELTS Listening Practice Test 23",
+  "title": "IELTS Academic Listening Practice Test 23",
   "durationSeconds": 2400,
   "questionCount": 40,
   "listeningScripts": [
     {
       "id": "ielts-listening-023-p1",
       "part": 1,
-      "title": "Arranging a Home Repair Service",
-      "text": "Operator: QuickFix Home Services, how can I help?\nCustomer: Hello, I need someone to repair a broken boiler.\nOperator: Of course. Name and address please?\nCustomer: Anna Petrov. 47 Chestnut Avenue, Barton, postcode BT4 8LD.\nOperator: And a contact number?\nCustomer: 01622 793 450.\nOperator: What type of boiler is it?\nCustomer: A gas combi boiler. The brand is Vaillant.\nOperator: When did it stop working?\nCustomer: Yesterday evening — around seven o'clock.\nOperator: We can send an engineer tomorrow between nine and twelve. The call-out fee is sixty-five pounds. Parts are extra if needed.\nCustomer: That's fine.\nOperator: Our engineer's name is Marcus Webb. He'll call thirty minutes before arriving. Do you need a parking permit?\nCustomer: No, there's free parking on the road.\nOperator: Perfect. You'll receive a text confirmation within the hour.",
-      "formLayout": {
-        "title": "QuickFix Home Services — Service Request Form",
-        "example": {
-          "label": "Service category",
-          "content": "boiler / plumbing / electrical"
-        },
-        "rows": [
-          {
-            "type": "blank",
-            "num": 1,
-            "label": "Customer name",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Anna Petrov"
-          },
-          {
-            "type": "blank",
-            "num": 2,
-            "label": "House number",
-            "prefix": "",
-            "suffix": " Chestnut Avenue",
-            "answer": "47"
-          },
-          {
-            "type": "blank",
-            "num": 3,
-            "label": "Postcode",
-            "prefix": "",
-            "suffix": "",
-            "answer": "BT4 8LD"
-          },
-          {
-            "type": "blank",
-            "num": 4,
-            "label": "Contact telephone",
-            "prefix": "",
-            "suffix": "",
-            "answer": "01622 793 450"
-          },
-          {
-            "type": "blank",
-            "num": 5,
-            "label": "Boiler fuel type",
-            "prefix": "",
-            "suffix": " combi",
-            "answer": "gas"
-          },
-          {
-            "type": "blank",
-            "num": 6,
-            "label": "Boiler brand",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Vaillant"
-          },
-          {
-            "type": "blank",
-            "num": 7,
-            "label": "Appointment window",
-            "prefix": "9 am to ",
-            "suffix": " pm",
-            "answer": "12"
-          },
-          {
-            "type": "blank",
-            "num": 8,
-            "label": "Call-out fee",
-            "prefix": "£",
-            "suffix": "",
-            "answer": "65"
-          },
-          {
-            "type": "blank",
-            "num": 9,
-            "labelBlank": true,
-            "labelSuffix": "'s name",
-            "rightContent": "Marcus Webb",
-            "answer": "Engineer"
-          },
-          {
-            "type": "blank",
-            "num": 10,
-            "label": "Confirmation method",
-            "prefix": "",
-            "suffix": "",
-            "answer": "text / text message"
-          }
-        ]
-      }
+      "title": "Booking a House Survey",
+      "text": "Surveyor: Good morning, Thornbury Property Surveys.\nCaller: Hello — I'm buying a house and I've been told I need a survey.\nSurveyor: You've been told correctly. Can I take your name?\nCaller: It's Gideon Marchetti. Marchetti is M-A-R-C-H-E-T-T-I.\nSurveyor: And a number I can reach you on?\nCaller: 07612 335 780.\nSurveyor: What's the property?\nCaller: A terraced house on Willowbank Street. It was built about eighteen ninety.\nSurveyor: Right. For a Victorian terrace I'd recommend the full building survey rather than the shorter homebuyer report. The homebuyer report is cheaper, but it doesn't lift floorboards or look into the roof space properly, and in a house of that age those are exactly the places where the expensive problems are.\nCaller: What's the difference in price?\nSurveyor: The homebuyer report is four hundred and fifty pounds. The full building survey is seven hundred and eighty.\nCaller: And how long does it take?\nSurveyor: On site, about four hours for a house that size. The written report reaches you within five working days.\nCaller: Do I need to be there?\nSurveyor: You don't, and I'd actually suggest you are, for the last half hour. Reading a survey is much easier if you have stood in the roof space with the person who wrote it.\nCaller: I'll do that. When could you come?\nSurveyor: I have the fifth of March, or the eleventh.\nCaller: The eleventh, please. Is there anything I should ask the seller beforehand?\nSurveyor: Two things. Whether there has ever been damp treatment, because the guarantee may transfer, and whether the roof has been re-covered, with dates. Sellers usually know and rarely volunteer it.\nCaller: Noted. How do I pay?\nSurveyor: On the day, by transfer. And one thing worth saying: a survey tells you what a building is doing, not what it will cost to fix. For that you need a builder, and I'd get quotes before you exchange rather than after.",
+      "formLayout": true
     },
     {
       "id": "ielts-listening-023-p2",
       "part": 2,
-      "title": "Nature Reserve Visitor Centre",
-      "text": "Ranger: Good morning and welcome to Blackwood Nature Reserve. I'm Ranger Clarke, and I'll be giving you an overview of what's on offer here today.\n\nAs you enter the reserve through the main gate, the Visitor Centre is immediately on your right. Inside, you'll find interactive displays about local wildlife, a gift shop, and toilets. We ask all visitors to sign in at reception before exploring.\n\nFrom the Visitor Centre, there are three walking trails marked in different colours. The yellow trail is the shortest — about one kilometre — and is fully paved, making it suitable for wheelchairs and pushchairs. It takes you past Heron Pond, where you can spot herons and kingfishers from the viewing platform at the water's edge.\n\nThe blue trail is three kilometres and takes roughly ninety minutes. It winds through the ancient oak woodland and leads to the Badger Watch Hide, which is particularly active at dawn and dusk. Dogs must be kept on leads along this section.\n\nThe red trail is our most challenging — six kilometres, taking around three hours. It climbs to the ridge viewpoint where on clear days you can see four counties. There's a shelter with picnic benches at the halfway point. Walking boots are strongly recommended.\n\nThe Meadow Café, serving hot drinks and light lunches, is located beyond the Visitor Centre, beside the car park. It closes at four thirty. Emergency services can be reached at the warden's station, which is near the start of the blue trail. Please remember — no fires, no litter, and no picking of plants.\n\nEnjoy your visit!"
+      "title": "Observatory Visitor Briefing",
+      "text": "Guide: Good evening, everyone, and welcome to Fellside Observatory. I'm Judith, and before we go up to the domes there are some things you need to know.\n\nThe first is light. From the moment we leave this room, no white light of any kind — no phone screens, no torches. We provide red torches at the door, and red is not a decoration: your eyes take about twenty minutes to adapt to darkness and roughly two seconds of white light to undo it. One person checking a message ruins the viewing for everybody in the dome.\n\nThe second is clothing. We are at four hundred metres, the domes are unheated because heated air distorts the image, and you will be standing still for two hours. People consistently underestimate this. Wear more than you think, and bring gloves.\n\nThird, expectations. If it is cloudy we cannot observe, and we will not know until the evening itself. In that case we run the planetarium session instead and refund half the ticket. We do not reschedule, because we would be rescheduling most of the winter.\n\nLet me describe the site. From this lecture room, the path leads north to the main dome, which houses the largest telescope and is where we will spend most of the evening. The smaller dome is beside it on the eastern side, and that one is used for the imaging camera rather than for looking through. The warm room, which is exactly what it sounds like and where the tea is, is on the western side of the path halfway up. Toilets are behind this building. And the viewing platform — for naked-eye observing and for anyone who would rather not queue for the eyepiece — is at the top of the path, beyond both domes.\n\nA last practical point. If you wear glasses for distance, keep them on at the eyepiece; if you wear them for reading only, take them off. And do not touch the telescope tube, however tempting. It takes a great deal longer to re-point than you would think."
     },
     {
       "id": "ielts-listening-023-p3",
       "part": 3,
-      "title": "Discussion About a Research Project on Urban Noise",
-      "text": "Tutor: So, Priya and James, how is your project on urban noise pollution progressing?\nPriya: We've finished the literature review. The main finding seems to be that constant exposure to traffic noise above sixty-five decibels significantly increases stress hormone levels.\nJames: What surprised us was the evidence linking noise to cardiovascular disease — not just stress. Several longitudinal studies found a measurable increase in heart disease rates near busy roads.\nTutor: Interesting. What methodology have you chosen for your primary research?\nPriya: We're doing acoustic measurements at ten sites across the city, combined with a survey of five hundred residents asking about sleep quality and perceived noise annoyance.\nTutor: And your sample size — five hundred — is that sufficient?\nJames: We debated this. Statistically it should give us a confidence interval of plus or minus four percent at the ninety-five percent confidence level, which most journals would accept.\nTutor: Good. Have you considered confounding variables? People near noisy roads may also be near other pollution sources.\nPriya: Yes, we plan to control for air quality and proximity to industrial areas in our regression analysis.\nTutor: What do you expect your main recommendation to be?\nJames: Probably mandatory sound barriers along roads within five hundred metres of residential zones.\nPriya: I'd add better urban zoning rules — separating heavy traffic routes from housing areas at the planning stage.\nTutor: These are sound arguments. Make sure your final report references the WHO noise guidelines published in 2018."
+      "title": "When Results Contradict the Textbook",
+      "text": "Tutor: Right — the lab report on enzyme activity. What's the difficulty?\nRosa: The results don't match what the textbook says should happen.\nTutor: Good. What did you expect?\nRosa: Activity should peak around forty degrees and fall away sharply after that. Ours peaks at thirty and the fall is gradual.\nTutor: And what have you written?\nRosa: Nothing yet. I was hoping you'd tell me what went wrong.\nTutor: Something may have gone wrong, and that is worth investigating — but notice the assumption in the question. You are treating the textbook curve as the result and your data as an error.\nYannis: Isn't it, though? It's a standard experiment.\nTutor: It is a standard experiment done by students with a water bath that may not hold temperature, timing done by hand, and a substrate that has been in a fridge for a fortnight. Any of those could produce what you have. So could a genuine difference. Your job is not to decide which; it is to report what you measured and identify what could account for the gap.\nRosa: So we write it up as it is?\nTutor: You write up what you did, what you got, and a discussion that takes the discrepancy seriously. What you must not do — and what I see every year — is adjust the graph until it looks like the textbook.\nYannis: Would people really do that?\nTutor: Every year, and it is usually not dishonesty. It is a student assuming the expected answer is the correct one and treating their own measurement as noise. That instinct is the thing this degree is meant to remove.\nRosa: How do we investigate the water bath?\nTutor: Put a thermometer in it and log the temperature every two minutes for half an hour. If it swings by three degrees, you have both an explanation and a much better report than the one that agreed with the book."
     },
     {
       "id": "ielts-listening-023-p4",
       "part": 4,
-      "title": "Lecture: Behavioural Economics and Consumer Choice",
-      "text": "In today's lecture I want to explore how behavioural economics challenges the traditional economic model of the rational consumer, and what this means for public policy.\n\nClassical economics assumes that individuals make decisions by carefully weighing costs and benefits and choosing the option that maximises their utility. This is known as the rational actor model. However, decades of research by psychologists and economists has demonstrated that real human decision-making deviates from this ideal in systematic and predictable ways.\n\nOne of the most influential concepts is loss aversion, developed by Daniel Kahneman and Amos Tversky in their prospect theory, published in 1979. They found that losses feel approximately twice as painful as equivalent gains feel pleasurable. This explains why people hold onto failing investments far longer than is rational — a phenomenon known as the disposition effect in financial markets.\n\nAnother important bias is the default effect. When people are automatically enrolled in a programme — whether a pension scheme or an organ donation register — they are far more likely to remain in it than if they had to actively opt in. Several countries, including the UK, have used this insight to design opt-out organ donation systems, dramatically increasing donation rates.\n\nPresent bias describes our tendency to place disproportionate weight on immediate rewards compared to future ones. This helps explain low savings rates, poor diet choices, and insufficient exercise — we consistently undervalue future benefits. Commitment devices, such as automatically increasing pension contributions each year, can counteract this bias.\n\nNudge theory, popularised by Thaler and Sunstein in their 2008 book, proposes that policymakers can guide behaviour without mandates or financial incentives, simply by redesigning the choice environment. Placing healthy foods at eye level in cafeterias, for example, increases their selection rates by up to thirty percent without banning unhealthy options.\n\nCritics of nudge theory argue that it can be paternalistic and that transparency is essential — people should know when their choices are being structured. Despite this debate, governments worldwide are investing in behavioural insights units to improve policy outcomes."
+      "title": "Inspecting What Cannot Be Seen",
+      "text": "Lecturer: Today I want to use bridge inspection as a way into a more general problem: how you find out whether something is safe when the thing that would tell you is invisible.\n\nA bridge does not usually fail because a component was too weak when built. It fails because a component deteriorated in a way nobody observed — corrosion inside a steel cable, water in a joint that should have been sealed, cracking in concrete beneath a surface that looks intact. The load-carrying elements of many structures are the ones you cannot see, and the visible parts are frequently the least important.\n\nThat produces the central difficulty of inspection. Visual inspection is cheap, frequent and detects the problems that were least likely to kill anybody; the techniques that examine the interior are expensive, slow, and require access that often means closing the structure. So inspection regimes drift towards what can be done conveniently, and the record of an inspected bridge accumulates evidence about its paintwork.\n\nThe failures that follow have a recognisable pattern. There is a warning sign that was visible in hindsight and ambiguous at the time; there is a report noting it and recommending further investigation; and there is a gap of years between that recommendation and any action, usually because the investigation required money that had not been allocated and closure that nobody wanted to authorise.\n\nWhat has improved matters is not better instruments, though those exist. It is instrumenting the structure permanently — sensors that report continuously on movement, strain and corrosion — so that the question changes from \"what did the inspector see in March\" to \"what has this bridge been doing since March\". Continuous data also removes the single-observer problem, which is that an inspection is one person's judgement on one day, and people miss things.\n\nI'll finish with the part that generalises. The reason deterioration goes unnoticed is almost never that it was undetectable. It is that detecting it required someone to spend money now against a failure that is probabilistic, deferred, and will most likely happen on somebody else's watch. That incentive structure is not confined to bridges, and it is the reason inspection regimes need to be insulated from the budget they draw on."
     }
   ],
   "questions": [
@@ -127,15 +39,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 1,
-      "label": "Customer name",
+      "label": "Client surname",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Anna Petrov",
-      "explanation": "The answer \"Anna Petrov\" is stated in the conversation.",
-      "prompt": "Customer name: _____",
+      "answer": "Marchetti",
+      "explanation": "He spells it M-A-R-C-H-E-T-T-I.",
+      "prompt": "Client surname: _____",
       "partNumber": 1
     },
     {
@@ -144,15 +56,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 2,
-      "label": "House number",
+      "label": "Contact number",
       "prefix": "",
-      "suffix": " Chestnut Avenue",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "47",
-      "explanation": "The answer \"47\" is stated in the conversation.",
-      "prompt": "House number: _____ Chestnut Avenue",
+      "answer": "07612 335 780",
+      "explanation": "He gives 07612 335 780.",
+      "prompt": "Contact number: _____",
       "partNumber": 1
     },
     {
@@ -161,15 +73,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 3,
-      "label": "Postcode",
+      "label": "Street",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "BT4 8LD",
-      "explanation": "The answer \"BT4 8LD\" is stated in the conversation.",
-      "prompt": "Postcode: _____",
+      "answer": "Willowbank",
+      "explanation": "The property is on Willowbank Street.",
+      "prompt": "Street: _____",
       "partNumber": 1
     },
     {
@@ -178,15 +90,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 4,
-      "label": "Contact telephone",
+      "label": "Type of survey recommended",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "01622 793 450",
-      "explanation": "The answer \"01622 793 450\" is stated in the conversation.",
-      "prompt": "Contact telephone: _____",
+      "answer": "building survey",
+      "explanation": "A full building survey is recommended for a Victorian terrace.",
+      "prompt": "Type of survey recommended: _____",
       "partNumber": 1
     },
     {
@@ -195,15 +107,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 5,
-      "label": "Boiler fuel type",
+      "label": "Cost of that survey",
       "prefix": "",
-      "suffix": " combi",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "gas",
-      "explanation": "The answer \"gas\" is stated in the conversation.",
-      "prompt": "Boiler fuel type: _____ combi",
+      "answer": "780 pounds",
+      "explanation": "The full building survey is seven hundred and eighty pounds.",
+      "prompt": "Cost of that survey: _____",
       "partNumber": 1
     },
     {
@@ -212,15 +124,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 6,
-      "label": "Boiler brand",
+      "label": "Time needed on site",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Vaillant",
-      "explanation": "The answer \"Vaillant\" is stated in the conversation.",
-      "prompt": "Boiler brand: _____",
+      "answer": "four hours",
+      "explanation": "About four hours on site for that size of house.",
+      "prompt": "Time needed on site: _____",
       "partNumber": 1
     },
     {
@@ -229,15 +141,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 7,
-      "label": "Appointment window",
-      "prefix": "9 am to ",
-      "suffix": " pm",
+      "label": "Report arrives within",
+      "prefix": "",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "12",
-      "explanation": "The answer \"12\" is stated in the conversation.",
-      "prompt": "Appointment window: 9 am to _____ pm",
+      "answer": "5 working days",
+      "explanation": "The written report arrives within five working days.",
+      "prompt": "Report arrives within: _____",
       "partNumber": 1
     },
     {
@@ -246,15 +158,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 8,
-      "label": "Call-out fee",
-      "prefix": "£",
+      "label": "Date of survey",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "65",
-      "explanation": "The answer \"65\" is stated in the conversation.",
-      "prompt": "Call-out fee: £_____",
+      "answer": "11 March",
+      "explanation": "He chooses the eleventh of March.",
+      "prompt": "Date of survey: _____",
       "partNumber": 1
     },
     {
@@ -263,15 +175,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 9,
-      "label": "",
+      "label": "First thing to ask the seller about",
       "prefix": "",
       "suffix": "",
-      "labelBlank": true,
-      "labelSuffix": "'s name",
-      "rightContent": "Marcus Webb",
-      "answer": "Engineer",
-      "explanation": "The answer \"Engineer\" is stated in the conversation.",
-      "prompt": "_____'s name: Marcus Webb",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "damp treatment",
+      "explanation": "Ask whether there has been damp treatment.",
+      "prompt": "First thing to ask the seller about: _____",
       "partNumber": 1
     },
     {
@@ -280,15 +192,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 10,
-      "label": "Confirmation method",
+      "label": "Method of payment",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "text / text message",
-      "explanation": "The answer \"text / text message\" is stated in the conversation.",
-      "prompt": "Confirmation method: _____",
+      "answer": "transfer",
+      "explanation": "Payment is on the day by transfer.",
+      "prompt": "Method of payment: _____",
       "partNumber": 1
     },
     {
@@ -297,15 +209,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 11,
-      "prompt": "What must visitors do before exploring the reserve?",
+      "prompt": "Why are red torches used?",
       "options": [
-        "sign in at reception",
-        "pay an entry fee",
-        "collect a trail map",
-        "watch a safety video"
+        "White light undoes dark adaptation in about two seconds",
+        "They are brighter",
+        "They do not attract insects",
+        "They are cheaper"
       ],
       "correctAnswer": "A",
-      "explanation": "The ranger says 'We ask all visitors to sign in at reception'"
+      "explanation": "Eyes take twenty minutes to adapt and two seconds of white light to undo it."
     },
     {
       "id": "ielts-listening-023-q12",
@@ -313,15 +225,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 12,
-      "prompt": "Which trail is suitable for wheelchairs?",
+      "prompt": "Why are the domes unheated?",
       "options": [
-        "red trail",
-        "yellow trail",
-        "blue trail",
-        "all trails"
+        "To save money",
+        "Heated air distorts the image",
+        "The buildings are old",
+        "Visitors prefer it"
       ],
       "correctAnswer": "B",
-      "explanation": "The yellow trail is 'fully paved, making it suitable for wheelchairs and pushchairs'"
+      "explanation": "Heated air distorts the image."
     },
     {
       "id": "ielts-listening-023-q13",
@@ -329,15 +241,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 13,
-      "prompt": "When is the Badger Watch Hide most active?",
+      "prompt": "What happens if it is cloudy?",
       "options": [
-        "midday",
-        "afternoon",
-        "dawn and dusk",
-        "after dark"
+        "The session goes ahead anyway",
+        "The session is rescheduled",
+        "A planetarium session runs and half the ticket is refunded",
+        "A full refund is given"
       ],
       "correctAnswer": "C",
-      "explanation": "The hide is 'particularly active at dawn and dusk'"
+      "explanation": "They run the planetarium and refund half."
     },
     {
       "id": "ielts-listening-023-q14",
@@ -345,15 +257,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 14,
-      "prompt": "What can be seen from the ridge viewpoint?",
+      "prompt": "Why is there no rescheduling?",
       "options": [
-        "three counties",
-        "the sea",
-        "the city skyline",
-        "four counties"
+        "The domes are booked",
+        "Tickets are non-transferable",
+        "Staff are unavailable",
+        "They would be rescheduling most of the winter"
       ],
       "correctAnswer": "D",
-      "explanation": "On clear days 'you can see four counties'"
+      "explanation": "Rescheduling would apply to most of the winter."
     },
     {
       "id": "ielts-listening-023-q15",
@@ -361,34 +273,32 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 15,
-      "prompt": "What time does the Meadow Café close?",
+      "prompt": "What should someone who wears glasses for reading only do?",
       "options": [
-        "4:30 pm",
-        "3:30 pm",
-        "4:00 pm",
-        "5:00 pm"
+        "Take them off at the eyepiece",
+        "Use contact lenses",
+        "Ask for an adjustment",
+        "Keep them on"
       ],
       "correctAnswer": "A",
-      "explanation": "The café 'closes at four thirty'"
+      "explanation": "Distance glasses stay on; reading-only glasses come off."
     },
     {
       "id": "ielts-listening-023-q16",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Blackwood Nature Reserve — Site Map",
-      "mapDescription": "Label the locations A–J on the reserve map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Fellside Observatory — Site Plan",
+      "mapDescription": "The plan shows the observatory site. The lecture room is at the southern end and the path runs north. Label the features A–H.",
       "mapKey": {
-        "A": "Visitor Centre",
-        "B": "Heron Pond",
-        "C": "Viewing platform",
-        "D": "Oak woodland",
-        "E": "Badger Watch Hide",
-        "F": "Ridge viewpoint",
-        "G": "Picnic shelter",
-        "H": "Meadow Café",
-        "I": "Warden's station",
-        "J": "Kingfisher viewing area"
+        "A": "Lecture room",
+        "B": "Main dome",
+        "C": "Smaller dome",
+        "D": "Warm room",
+        "E": "Toilets",
+        "F": "Viewing platform",
+        "G": "Car park",
+        "H": "Workshop"
       },
       "mapLetters": [
         "A",
@@ -398,33 +308,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 16,
-      "prompt": "First building on right after main gate",
-      "correctAnswer": "A",
-      "explanation": "The correct letter is A (Visitor Centre)."
+      "prompt": "North along the path, housing the largest telescope",
+      "correctAnswer": "B",
+      "explanation": "The main dome is north along the path."
     },
     {
       "id": "ielts-listening-023-q17",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Blackwood Nature Reserve — Site Map",
-      "mapDescription": "Label the locations A–J on the reserve map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Fellside Observatory — Site Plan",
+      "mapDescription": "The plan shows the observatory site. The lecture room is at the southern end and the path runs north. Label the features A–H.",
       "mapKey": {
-        "A": "Visitor Centre",
-        "B": "Heron Pond",
-        "C": "Viewing platform",
-        "D": "Oak woodland",
-        "E": "Badger Watch Hide",
-        "F": "Ridge viewpoint",
-        "G": "Picnic shelter",
-        "H": "Meadow Café",
-        "I": "Warden's station",
-        "J": "Kingfisher viewing area"
+        "A": "Lecture room",
+        "B": "Main dome",
+        "C": "Smaller dome",
+        "D": "Warm room",
+        "E": "Toilets",
+        "F": "Viewing platform",
+        "G": "Car park",
+        "H": "Workshop"
       },
       "mapLetters": [
         "A",
@@ -434,33 +340,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 17,
-      "prompt": "Water feature past yellow trail",
-      "correctAnswer": "B",
-      "explanation": "The correct letter is B (Heron Pond)."
+      "prompt": "Beside the main dome on the eastern side",
+      "correctAnswer": "C",
+      "explanation": "The smaller dome is east of the main one."
     },
     {
       "id": "ielts-listening-023-q18",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Blackwood Nature Reserve — Site Map",
-      "mapDescription": "Label the locations A–J on the reserve map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Fellside Observatory — Site Plan",
+      "mapDescription": "The plan shows the observatory site. The lecture room is at the southern end and the path runs north. Label the features A–H.",
       "mapKey": {
-        "A": "Visitor Centre",
-        "B": "Heron Pond",
-        "C": "Viewing platform",
-        "D": "Oak woodland",
-        "E": "Badger Watch Hide",
-        "F": "Ridge viewpoint",
-        "G": "Picnic shelter",
-        "H": "Meadow Café",
-        "I": "Warden's station",
-        "J": "Kingfisher viewing area"
+        "A": "Lecture room",
+        "B": "Main dome",
+        "C": "Smaller dome",
+        "D": "Warm room",
+        "E": "Toilets",
+        "F": "Viewing platform",
+        "G": "Car park",
+        "H": "Workshop"
       },
       "mapLetters": [
         "A",
@@ -470,33 +372,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 18,
-      "prompt": "Platform at water's edge for birdwatching",
-      "correctAnswer": "C",
-      "explanation": "The correct letter is C (Viewing platform)."
+      "prompt": "On the western side of the path, halfway up",
+      "correctAnswer": "D",
+      "explanation": "The warm room is halfway up on the west."
     },
     {
       "id": "ielts-listening-023-q19",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Blackwood Nature Reserve — Site Map",
-      "mapDescription": "Label the locations A–J on the reserve map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Fellside Observatory — Site Plan",
+      "mapDescription": "The plan shows the observatory site. The lecture room is at the southern end and the path runs north. Label the features A–H.",
       "mapKey": {
-        "A": "Visitor Centre",
-        "B": "Heron Pond",
-        "C": "Viewing platform",
-        "D": "Oak woodland",
-        "E": "Badger Watch Hide",
-        "F": "Ridge viewpoint",
-        "G": "Picnic shelter",
-        "H": "Meadow Café",
-        "I": "Warden's station",
-        "J": "Kingfisher viewing area"
+        "A": "Lecture room",
+        "B": "Main dome",
+        "C": "Smaller dome",
+        "D": "Warm room",
+        "E": "Toilets",
+        "F": "Viewing platform",
+        "G": "Car park",
+        "H": "Workshop"
       },
       "mapLetters": [
         "A",
@@ -506,33 +404,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 19,
-      "prompt": "Wooded area on blue trail",
-      "correctAnswer": "D",
-      "explanation": "The correct letter is D (Oak woodland)."
+      "prompt": "Behind the lecture room building",
+      "correctAnswer": "E",
+      "explanation": "Toilets are behind this building."
     },
     {
       "id": "ielts-listening-023-q20",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Blackwood Nature Reserve — Site Map",
-      "mapDescription": "Label the locations A–J on the reserve map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Fellside Observatory — Site Plan",
+      "mapDescription": "The plan shows the observatory site. The lecture room is at the southern end and the path runs north. Label the features A–H.",
       "mapKey": {
-        "A": "Visitor Centre",
-        "B": "Heron Pond",
-        "C": "Viewing platform",
-        "D": "Oak woodland",
-        "E": "Badger Watch Hide",
-        "F": "Ridge viewpoint",
-        "G": "Picnic shelter",
-        "H": "Meadow Café",
-        "I": "Warden's station",
-        "J": "Kingfisher viewing area"
+        "A": "Lecture room",
+        "B": "Main dome",
+        "C": "Smaller dome",
+        "D": "Warm room",
+        "E": "Toilets",
+        "F": "Viewing platform",
+        "G": "Car park",
+        "H": "Workshop"
       },
       "mapLetters": [
         "A",
@@ -542,14 +436,12 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 20,
-      "prompt": "Structure for watching wildlife on blue trail",
-      "correctAnswer": "E",
-      "explanation": "The correct letter is E (Badger Watch Hide)."
+      "prompt": "At the top of the path, beyond both domes",
+      "correctAnswer": "F",
+      "explanation": "The viewing platform is beyond both domes."
     },
     {
       "id": "ielts-listening-023-q21",
@@ -557,15 +449,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 21,
-      "prompt": "What noise level does research link to increased stress hormones?",
+      "prompt": "What is the students' result?",
       "options": [
-        "55 dB",
-        "65 dB",
-        "60 dB",
-        "70 dB"
+        "A peak at forty degrees",
+        "A peak at thirty degrees with a gradual fall",
+        "No measurable activity",
+        "A peak at fifty degrees"
       ],
       "correctAnswer": "B",
-      "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
+      "explanation": "Theirs peaks at thirty with a gradual fall."
     },
     {
       "id": "ielts-listening-023-q22",
@@ -573,15 +465,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 22,
-      "prompt": "What additional health risk did James find surprising in the literature?",
+      "prompt": "What assumption does the tutor identify in Rosa's question?",
       "options": [
-        "hearing loss",
-        "respiratory problems",
-        "cardiovascular disease",
-        "mental health disorders"
+        "That more trials are needed",
+        "That enzymes vary",
+        "That the textbook curve is the result and her data an error",
+        "That the equipment is reliable"
       ],
       "correctAnswer": "C",
-      "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
+      "explanation": "She treats the textbook as the result and her data as error."
     },
     {
       "id": "ielts-listening-023-q23",
@@ -589,15 +481,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 23,
-      "prompt": "How many residents will be surveyed?",
+      "prompt": "Which possible causes does the tutor list?",
       "options": [
-        "200",
-        "300",
-        "400",
-        "500"
+        "Only the substrate",
+        "Only the thermometer",
+        "Only student error",
+        "Water bath, hand timing, and old substrate"
       ],
       "correctAnswer": "D",
-      "explanation": "Priya mentions 'a survey of five hundred residents'"
+      "explanation": "An unstable water bath, hand timing and a fortnight-old substrate."
     },
     {
       "id": "ielts-listening-023-q24",
@@ -605,15 +497,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 24,
-      "prompt": "What confidence level does their sample size achieve?",
+      "prompt": "What does the tutor say their job is?",
       "options": [
-        "95%",
-        "90%",
-        "92%",
-        "99%"
+        "To report what they measured and identify what could account for the gap",
+        "To repeat until it matches",
+        "To use the textbook figures",
+        "To decide which explanation is right"
       ],
       "correctAnswer": "A",
-      "explanation": "James refers to 'the ninety-five percent confidence level'"
+      "explanation": "Report the measurement and identify candidate explanations."
     },
     {
       "id": "ielts-listening-023-q25",
@@ -621,238 +513,238 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 25,
-      "prompt": "What does the tutor recommend they reference?",
+      "prompt": "What does the tutor say he sees every year?",
       "options": [
-        "WHO 2015 report",
-        "WHO 2018 guidelines",
-        "EU noise directive",
-        "national highway code"
+        "Students inventing data",
+        "Students adjusting the graph until it matches the textbook",
+        "Students missing deadlines",
+        "Students repeating the experiment"
       ],
       "correctAnswer": "B",
-      "explanation": "The tutor says 'reference the WHO noise guidelines published in 2018'"
+      "explanation": "Adjusting the graph to match the textbook."
     },
     {
       "id": "ielts-listening-023-q26",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Report it as measured",
+        "B. Investigate it directly",
+        "C. Treat it as a mistaken instinct"
       ],
       "num": 26,
-      "prompt": "introducing new equipment in the laboratory",
+      "prompt": "the peak at thirty degrees",
       "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "explanation": "Report what was measured rather than what was expected."
     },
     {
       "id": "ielts-listening-023-q27",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Report it as measured",
+        "B. Investigate it directly",
+        "C. Treat it as a mistaken instinct"
       ],
       "num": 27,
-      "prompt": "keeping written records of experiments",
-      "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "prompt": "the discrepancy with the textbook",
+      "correctAnswer": "A",
+      "explanation": "Take it seriously in the discussion."
     },
     {
       "id": "ielts-listening-023-q28",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Report it as measured",
+        "B. Investigate it directly",
+        "C. Treat it as a mistaken instinct"
       ],
       "num": 28,
-      "prompt": "sharing results with other research groups",
+      "prompt": "the stability of the water bath",
       "correctAnswer": "B",
-      "explanation": "The speaker's attitude is B. She is undecided."
+      "explanation": "Log its temperature every two minutes for half an hour."
     },
     {
       "id": "ielts-listening-023-q29",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Report it as measured",
+        "B. Investigate it directly",
+        "C. Treat it as a mistaken instinct"
       ],
       "num": 29,
-      "prompt": "the importance of the project deadline",
-      "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "prompt": "adjusting the graph to match the book",
+      "correctAnswer": "C",
+      "explanation": "This is the instinct the degree should remove."
     },
     {
       "id": "ielts-listening-023-q30",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Report it as measured",
+        "B. Investigate it directly",
+        "C. Treat it as a mistaken instinct"
       ],
       "num": 30,
-      "prompt": "the proposal to extend the study",
+      "prompt": "treating your own measurement as noise",
       "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "explanation": "Assuming the expected answer is the correct one."
     },
     {
       "id": "ielts-listening-023-q31",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 31,
-      "sentenceText": "__BLANK__ is the traditional economic model in which individuals carefully weigh costs and benefits before making decisions.",
-      "correctAnswer": "The rational actor model",
-      "explanation": "The correct answer is: \"The rational actor model\".",
-      "prompt": "_____ is the traditional economic model in which individuals carefully weigh costs and benefits before making decisions.",
-      "partNumber": 4
+      "prompt": "Why does a bridge usually fail?",
+      "options": [
+        "Design error",
+        "A component was too weak when built",
+        "A component deteriorated unobserved",
+        "Overloading"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Failure follows deterioration nobody observed."
     },
     {
       "id": "ielts-listening-023-q32",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 32,
-      "sentenceText": "Kahneman and Tversky found that losses feel approximately __BLANK__ as painful as an equivalent financial gain.",
-      "correctAnswer": "twice as",
-      "explanation": "The correct answer is: \"twice as\".",
-      "prompt": "Kahneman and Tversky found that losses feel approximately _____ as painful as an equivalent financial gain.",
-      "partNumber": 4
+      "prompt": "What is true of the load-carrying elements of many structures?",
+      "options": [
+        "They are inspected most often",
+        "They never corrode",
+        "They are the most visible",
+        "They are the ones you cannot see"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The load-carrying elements are frequently invisible."
     },
     {
       "id": "ielts-listening-023-q33",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 33,
-      "sentenceText": "The tendency to remain in programmes one is automatically enrolled in is known as the __BLANK__.",
-      "correctAnswer": "default effect",
-      "explanation": "The correct answer is: \"default effect\".",
-      "prompt": "The tendency to remain in programmes one is automatically enrolled in is known as the _____.",
-      "partNumber": 4
+      "prompt": "What does visual inspection detect?",
+      "options": [
+        "The problems least likely to kill anybody",
+        "Cracking beneath surfaces",
+        "Water in sealed joints",
+        "Internal corrosion"
+      ],
+      "correctAnswer": "A",
+      "explanation": "It detects the problems least likely to be fatal."
     },
     {
       "id": "ielts-listening-023-q34",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 34,
-      "sentenceText": "__BLANK__ describes our tendency to place too much weight on immediate rewards at the expense of future benefits.",
-      "correctAnswer": "Present bias",
-      "explanation": "The correct answer is: \"Present bias\".",
-      "prompt": "_____ describes our tendency to place too much weight on immediate rewards at the expense of future benefits.",
-      "partNumber": 4
+      "prompt": "Why do inspection regimes drift?",
+      "options": [
+        "Regulations change",
+        "Towards what can be done conveniently",
+        "Inspectors are unqualified",
+        "Structures are too large"
+      ],
+      "correctAnswer": "B",
+      "explanation": "They drift towards convenient techniques."
     },
     {
       "id": "ielts-listening-023-q35",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 35,
-      "sentenceText": "Thaler and Sunstein popularised nudge theory in a book published in __BLANK__.",
-      "correctAnswer": "2008",
-      "explanation": "The correct answer is: \"2008\".",
-      "prompt": "Thaler and Sunstein popularised nudge theory in a book published in _____.",
-      "partNumber": 4
+      "prompt": "What does the record of an inspected bridge accumulate?",
+      "options": [
+        "Design drawings",
+        "Internal condition data",
+        "Evidence about its paintwork",
+        "Traffic counts"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The record accumulates evidence about paintwork."
     },
     {
       "id": "ielts-listening-023-q36",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 36,
-      "prompt": "The 'disposition effect' refers to the tendency to",
-      "options": [
-        "A  invest heavily in new market opportunities",
-        "C  diversify financial portfolios excessively",
-        "B  hold onto failing investments for too long",
-        "D  avoid taking any financial risks"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says it explains 'why people hold onto failing investments far longer than is rational'"
+      "sentenceText": "Failures show a warning sign visible in __BLANK__ and ambiguous at the time.",
+      "correctAnswer": "hindsight",
+      "explanation": "The sign is clear only in hindsight.",
+      "prompt": "Failures show a warning sign visible in _____ and ambiguous at the time.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-023-q37",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 37,
-      "prompt": "Which country's opt-out organ donation system is specifically mentioned in the lecture?",
-      "options": [
-        "A  France",
-        "B  Australia",
-        "C  Germany",
-        "D  the United Kingdom"
-      ],
-      "correctAnswer": "D",
-      "explanation": "The lecturer cites 'the UK' as a country using opt-out organ donation"
+      "sentenceText": "Investigation required money that had not been __BLANK__.",
+      "correctAnswer": "allocated",
+      "explanation": "The money had not been allocated.",
+      "prompt": "Investigation required money that had not been _____.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-023-q38",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 38,
-      "prompt": "Placing healthy food at eye level in cafeterias increases selection rates by up to",
-      "options": [
-        "C  thirty percent",
-        "A  ten percent",
-        "B  twenty percent",
-        "D  forty percent"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The lecturer states selection rates increase 'by up to thirty percent'"
+      "sentenceText": "What has improved matters is instrumenting the structure __BLANK__.",
+      "correctAnswer": "permanently",
+      "explanation": "Permanent sensors changed the question.",
+      "prompt": "What has improved matters is instrumenting the structure _____.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-023-q39",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 39,
-      "prompt": "Critics of nudge theory argue that it",
-      "options": [
-        "A  is ineffective in real-world settings",
-        "C  can be paternalistic",
-        "B  costs too much to implement",
-        "D  ignores economic incentives entirely"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The lecturer says critics argue 'it can be paternalistic'"
+      "sentenceText": "Continuous data removes the single-__BLANK__ problem.",
+      "correctAnswer": "observer",
+      "explanation": "An inspection is one person's judgement on one day.",
+      "prompt": "Continuous data removes the single-_____ problem.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-023-q40",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 40,
-      "prompt": "How are governments described as responding to behavioural insights research?",
-      "options": [
-        "A  banning unhealthy food products",
-        "B  making pension contributions compulsory",
-        "C  investing in behavioural insights units",
-        "D  removing consumer choice from markets"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says 'governments worldwide are investing in behavioural insights units'"
+      "sentenceText": "Inspection regimes need to be insulated from the __BLANK__ they draw on.",
+      "correctAnswer": "budget",
+      "explanation": "The incentive problem is budgetary.",
+      "prompt": "Inspection regimes need to be insulated from the _____ they draw on.",
+      "partNumber": 4
     }
   ],
   "parts": [
     {
       "partNumber": 1,
-      "title": "Part 1: The History of Coffee Trade",
-      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Arranging a Home Repair Service",
+      "title": "Part 1: House Survey Booking",
+      "audioDescription": "A buyer arranges a survey on a Victorian terraced house.",
+      "context": "Booking a House Survey",
       "questionRange": [
         1,
         10
@@ -860,9 +752,9 @@
     },
     {
       "partNumber": 2,
-      "title": "Part 2: Sleep and Memory Consolidation",
-      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "Nature Reserve Visitor Centre",
+      "title": "Part 2: Observatory Briefing",
+      "audioDescription": "A guide briefs evening visitors and describes the observatory site.",
+      "context": "Observatory Visitor Briefing",
       "questionRange": [
         11,
         20
@@ -870,9 +762,9 @@
     },
     {
       "partNumber": 3,
-      "title": "Part 3: The History of Coffee Trade",
-      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Discussion About a Research Project on Urban Noise",
+      "title": "Part 3: Lab Report Tutorial",
+      "audioDescription": "Two students discuss results that contradict the textbook.",
+      "context": "When Results Contradict the Textbook",
       "questionRange": [
         21,
         30
@@ -880,9 +772,9 @@
     },
     {
       "partNumber": 4,
-      "title": "Part 4: Sleep and Memory Consolidation",
-      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "Lecture: Behavioural Economics and Consumer Choice",
+      "title": "Part 4: Bridge Inspection",
+      "audioDescription": "A lecture on detecting deterioration in structures.",
+      "context": "Inspecting What Cannot Be Seen",
       "questionRange": [
         31,
         40
