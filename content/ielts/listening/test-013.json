@@ -2,122 +2,34 @@
   "id": "ielts-listening-013",
   "exam": "ielts",
   "section": "listening",
-  "title": "IELTS Listening Practice Test 13",
+  "title": "IELTS Academic Listening Practice Test 13",
   "durationSeconds": 2400,
   "questionCount": 40,
   "listeningScripts": [
     {
       "id": "ielts-listening-013-p1",
       "part": 1,
-      "title": "Arranging a Home Repair Service",
-      "text": "Operator: QuickFix Home Services, how can I help?\nCustomer: Hello, I need someone to repair a broken boiler.\nOperator: Of course. Name and address please?\nCustomer: Anna Petrov. 47 Chestnut Avenue, Barton, postcode BT4 8LD.\nOperator: And a contact number?\nCustomer: 01622 793 450.\nOperator: What type of boiler is it?\nCustomer: A gas combi boiler. The brand is Vaillant.\nOperator: When did it stop working?\nCustomer: Yesterday evening — around seven o'clock.\nOperator: We can send an engineer tomorrow between nine and twelve. The call-out fee is sixty-five pounds. Parts are extra if needed.\nCustomer: That's fine.\nOperator: Our engineer's name is Marcus Webb. He'll call thirty minutes before arriving. Do you need a parking permit?\nCustomer: No, there's free parking on the road.\nOperator: Perfect. You'll receive a text confirmation within the hour.",
-      "formLayout": {
-        "title": "QuickFix Home Services — Service Request Form",
-        "example": {
-          "label": "Service category",
-          "content": "boiler / plumbing / electrical"
-        },
-        "rows": [
-          {
-            "type": "blank",
-            "num": 1,
-            "label": "Customer name",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Anna Petrov"
-          },
-          {
-            "type": "blank",
-            "num": 2,
-            "label": "House number",
-            "prefix": "",
-            "suffix": " Chestnut Avenue",
-            "answer": "47"
-          },
-          {
-            "type": "blank",
-            "num": 3,
-            "label": "Postcode",
-            "prefix": "",
-            "suffix": "",
-            "answer": "BT4 8LD"
-          },
-          {
-            "type": "blank",
-            "num": 4,
-            "label": "Contact telephone",
-            "prefix": "",
-            "suffix": "",
-            "answer": "01622 793 450"
-          },
-          {
-            "type": "blank",
-            "num": 5,
-            "label": "Boiler fuel type",
-            "prefix": "",
-            "suffix": " combi",
-            "answer": "gas"
-          },
-          {
-            "type": "blank",
-            "num": 6,
-            "label": "Boiler brand",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Vaillant"
-          },
-          {
-            "type": "blank",
-            "num": 7,
-            "label": "Appointment window",
-            "prefix": "9 am to ",
-            "suffix": " pm",
-            "answer": "12"
-          },
-          {
-            "type": "blank",
-            "num": 8,
-            "label": "Call-out fee",
-            "prefix": "£",
-            "suffix": "",
-            "answer": "65"
-          },
-          {
-            "type": "blank",
-            "num": 9,
-            "labelBlank": true,
-            "labelSuffix": "'s name",
-            "rightContent": "Marcus Webb",
-            "answer": "Engineer"
-          },
-          {
-            "type": "blank",
-            "num": 10,
-            "label": "Confirmation method",
-            "prefix": "",
-            "suffix": "",
-            "answer": "text / text message"
-          }
-        ]
-      }
+      "title": "Applying for an Allotment Plot",
+      "text": "Officer: Good morning, Northfield allotments, Rosa speaking.\nApplicant: Hello, I'd like to put my name down for a plot.\nOfficer: Certainly. Can I start with your name?\nApplicant: It's Nadia Kowalczyk. The surname is K-O-W-A-L-C-Z-Y-K.\nOfficer: Thank you. And your address?\nApplicant: Flat 6, Hillcrest Court, Northfield.\nOfficer: A contact number?\nApplicant: 07711 304 862.\nOfficer: Now, we offer two sizes. A full plot is two hundred and fifty square metres, and a half plot is a hundred and twenty-five.\nApplicant: I've never done this before, so probably the smaller one.\nOfficer: I'd agree. Most people who take a full plot as beginners give it up within a year — it's a great deal more work than it looks.\nApplicant: The half plot then. What does it cost?\nOfficer: The annual rent for a half plot is forty-two pounds, payable each January. There's also a one-off key deposit of fifteen pounds, refunded when you leave.\nApplicant: And how long is the wait?\nOfficer: At the moment it's about eighteen months for Northfield. I should say that the site at Carter Lane has a much shorter wait — around four months — if you'd consider that instead.\nApplicant: How far is Carter Lane?\nOfficer: Roughly two miles further out.\nApplicant: I'll stay on the Northfield list, thank you.\nOfficer: That's fine. A few things you should know. There's no vehicle access to the plots themselves, so everything comes in by wheelbarrow from the gate. Water is available from standpipes, but hosepipes are not permitted — watering cans only.\nApplicant: Understood. Can I keep chickens?\nOfficer: Not at Northfield, no. And no structures over two metres without permission. The other rule people are caught by is cultivation — if a plot is left uncultivated for three months you get a written warning, and after six you lose it.\nApplicant: That seems fair. Is there anything I need to bring?\nOfficer: Proof of address, so a utility bill or council tax letter. Bring that when you're offered a plot, not now.\nOfficer: I'll add you to the list and email confirmation today.",
+      "formLayout": true
     },
     {
       "id": "ielts-listening-013-p2",
       "part": 2,
-      "title": "Nature Reserve Visitor Centre",
-      "text": "Ranger: Good morning and welcome to Blackwood Nature Reserve. I'm Ranger Clarke, and I'll be giving you an overview of what's on offer here today.\n\nAs you enter the reserve through the main gate, the Visitor Centre is immediately on your right. Inside, you'll find interactive displays about local wildlife, a gift shop, and toilets. We ask all visitors to sign in at reception before exploring.\n\nFrom the Visitor Centre, there are three walking trails marked in different colours. The yellow trail is the shortest — about one kilometre — and is fully paved, making it suitable for wheelchairs and pushchairs. It takes you past Heron Pond, where you can spot herons and kingfishers from the viewing platform at the water's edge.\n\nThe blue trail is three kilometres and takes roughly ninety minutes. It winds through the ancient oak woodland and leads to the Badger Watch Hide, which is particularly active at dawn and dusk. Dogs must be kept on leads along this section.\n\nThe red trail is our most challenging — six kilometres, taking around three hours. It climbs to the ridge viewpoint where on clear days you can see four counties. There's a shelter with picnic benches at the halfway point. Walking boots are strongly recommended.\n\nThe Meadow Café, serving hot drinks and light lunches, is located beyond the Visitor Centre, beside the car park. It closes at four thirty. Emergency services can be reached at the warden's station, which is near the start of the blue trail. Please remember — no fires, no litter, and no picking of plants.\n\nEnjoy your visit!"
+      "title": "Heritage Railway Volunteer Briefing",
+      "text": "Volunteer manager: Welcome, everyone, to the Ashbourne Valley Heritage Railway. I'm Colin, and I look after the volunteer teams.\n\nLet me be honest about what volunteering here involves, because we'd rather you knew now. Most new volunteers arrive hoping to drive a locomotive. The path to that is at minimum five years, involves working as cleaner, then fireman, and requires passing assessments at each stage. In the meantime the work that keeps this railway running is track maintenance, painting, cutting back vegetation, staffing the shop and clearing the drains. If that sounds unappealing, this is the moment to say so, and nobody will think worse of you.\n\nSessions run on Wednesdays and at weekends. We ask for one day a month as a minimum, and there is no maximum — several of our volunteers are here four days a week.\n\nSafety first. Nobody crosses the running line except at designated crossings, and nobody goes trackside without a high-visibility vest and without having done the track safety briefing, which takes ninety minutes and runs on the first Saturday of each month. That briefing is not optional and it does not transfer from other railways.\n\nLet me describe the site so you can find things. The main car park is at the top of the approach road, and the station building is directly below it, at the bottom of the slope. As you face the station from the car park, the engine shed is on your left, at the far end of platform two. The signal box is at the opposite end of the same platform, nearest the road bridge. The workshop, where most maintenance happens, is behind the engine shed and is reached by the path running along the back fence. The volunteers' mess room — tea, lunch, and where you'll be told what you're doing — is inside the station building on the upper floor. And the museum, which most of you will have walked past, is the low building on the far side of the car park.\n\nOne final thing. If you are unsure whether something is safe, stop and ask. Nobody here has ever been criticised for asking. Several people have been asked to leave for guessing."
     },
     {
       "id": "ielts-listening-013-p3",
       "part": 3,
-      "title": "Discussion About a Research Project on Urban Noise",
-      "text": "Tutor: So, Priya and James, how is your project on urban noise pollution progressing?\nPriya: We've finished the literature review. The main finding seems to be that constant exposure to traffic noise above sixty-five decibels significantly increases stress hormone levels.\nJames: What surprised us was the evidence linking noise to cardiovascular disease — not just stress. Several longitudinal studies found a measurable increase in heart disease rates near busy roads.\nTutor: Interesting. What methodology have you chosen for your primary research?\nPriya: We're doing acoustic measurements at ten sites across the city, combined with a survey of five hundred residents asking about sleep quality and perceived noise annoyance.\nTutor: And your sample size — five hundred — is that sufficient?\nJames: We debated this. Statistically it should give us a confidence interval of plus or minus four percent at the ninety-five percent confidence level, which most journals would accept.\nTutor: Good. Have you considered confounding variables? People near noisy roads may also be near other pollution sources.\nPriya: Yes, we plan to control for air quality and proximity to industrial areas in our regression analysis.\nTutor: What do you expect your main recommendation to be?\nJames: Probably mandatory sound barriers along roads within five hundred metres of residential zones.\nPriya: I'd add better urban zoning rules — separating heavy traffic routes from housing areas at the planning stage.\nTutor: These are sound arguments. Make sure your final report references the WHO noise guidelines published in 2018."
+      "title": "Planning a Conference Poster",
+      "text": "Tutor: Right — Yusuf and Lin, the poster for the memory experiment. Where are you?\nLin: We've got the results. Sixty participants, three conditions.\nYusuf: Though we're arguing about what to put on the poster.\nTutor: Tell me the argument.\nYusuf: I want to include the full statistical output. Lin thinks it's too much.\nLin: It's a poster. People look at it for ninety seconds while holding a coffee.\nTutor: Lin's right about the format, but let me put it more usefully. A poster is not a short paper; it's an advertisement for a conversation. Its job is to make someone stop and ask you a question.\nYusuf: So what do we cut?\nTutor: Start from what you want them to remember. If they walk away with one sentence, what is it?\nLin: That recall was better after sleep than after the same interval awake.\nTutor: Then that sentence goes at the top, in large type, and everything else earns its place by supporting it. The full output goes on a handout you keep beside you.\nYusuf: What about the method? It took us months.\nTutor: I know, and that's exactly why it's hard to cut. The effort you spent is not a guide to how much space something deserves. A diagram of the procedure will do more than a paragraph.\nLin: How many figures?\nTutor: Two. One showing the main effect, one showing the individual variation, because the second is what makes people ask about the outliers — and that question is the conversation you want.\nYusuf: And the references?\nTutor: Six at most, in small type at the bottom. Nobody reads them on a poster, but their absence is noticed.\nLin: What about colour?\nTutor: Dark text on a light background, and no more than two accent colours. The commonest mistake is a dark background, which looks striking on screen and prints badly, and cannot be read at an angle in a bright room."
     },
     {
       "id": "ielts-listening-013-p4",
       "part": 4,
-      "title": "Lecture: The History of Antibiotics",
-      "text": "Today I want to talk about the history of antibiotics — arguably one of the most important developments in twentieth-century medicine.\n\nThe story begins in 1928 when Alexander Fleming noticed that a mould called Penicillium notatum was inhibiting the growth of bacteria on one of his culture plates. He published his findings but was initially unable to isolate the active compound in large enough quantities to be clinically useful.\n\nIt wasn't until 1940 that Howard Florey and Ernst Chain at Oxford managed to purify penicillin and demonstrate its effectiveness in mice. The following year, in 1941, they treated the first human patient — a police officer with a severe infection — with remarkable results, though limited supplies meant the patient eventually relapsed.\n\nThe real breakthrough came during the Second World War, when mass production was achieved through collaboration between British and American pharmaceutical companies. By 1944, enough penicillin had been produced to treat all wounded Allied soldiers. This industrial-scale production required entirely new fermentation techniques.\n\nFollowing the war, the golden era of antibiotic discovery began, lasting roughly from 1950 to 1970. During this period, major antibiotic classes including tetracyclines, erythromycin, and vancomycin were discovered, largely from soil bacteria. Researchers estimated that soil contained thousands of antibiotic-producing organisms waiting to be identified.\n\nHowever, the overuse of antibiotics in both human medicine and agriculture has driven the evolution of resistant bacteria at an alarming rate. The World Health Organization now lists antimicrobial resistance as one of the greatest global health threats. New antibiotic approvals have declined sharply since the 1980s as pharmaceutical companies shifted resources toward more profitable chronic disease treatments.\n\nCurrent strategies to address resistance include antibiotic stewardship programmes, rapid diagnostic testing to avoid prescribing antibiotics for viral infections, and investment in novel antimicrobial compounds including bacteriophage therapy and antimicrobial peptides."
+      "title": "Why Urban Trees Die Young",
+      "text": "Lecturer: I want to talk about why trees planted in cities so often fail, because the usual explanation — pollution — turns out to be almost entirely wrong.\n\nUrban trees die young. The typical street tree in a paved setting survives around ten to fifteen years, against a natural span measured in centuries, and the great majority of those deaths trace to conditions below ground rather than above it.\n\nThe fundamental problem is soil volume. A mature tree needs a large volume of soil that roots can actually penetrate, and a street tree is commonly given a pit of a few cubic metres surrounded by material compacted deliberately so that the pavement above does not subside. That compaction is not an accident or a failure of care — it is a requirement of the paving, and it is directly incompatible with root growth. The tree is planted into a container it will outgrow within a decade.\n\nWater is the second constraint and it works in both directions. Rain that would reach roots in a park runs off sealed surfaces into drains, so an urban tree in a paved street can be drought-stressed during a wet month; and where drainage is poor the same pit fills and the roots suffocate. Both failures are common in the same street.\n\nThen there is the matter of what is planted. The species chosen for cities are frequently selected for tidiness — small leaves, restrained size, no fruit to fall — rather than for tolerance of these conditions, and a species list that changes rarely means that a single pest or disease can remove a large share of a city's canopy at once. Diversity of planting is the cheapest insurance available and is routinely traded away for uniform appearance.\n\nThe interventions that work are unglamorous and mostly invisible. Structural soils and buried root channels give roots somewhere to go beneath the paving; larger pits shared between several trees outperform individual pits of the same total volume; and watering for the first three years, which is the period when most losses occur, has a larger effect on survival than anything done at planting.\n\nI'll end with the economics, since it decides what happens. A street tree that dies at twelve years has delivered almost none of the benefits — shade, cooling, water absorption, particulate capture — that justified planting it, because those benefits scale with canopy size and arrive late. Planting more trees is politically attractive and produces a photograph; keeping the ones already planted alive is neither, and is worth considerably more."
     }
   ],
   "questions": [
@@ -127,15 +39,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 1,
-      "label": "Customer name",
+      "label": "Applicant surname",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Anna Petrov",
-      "explanation": "The answer \"Anna Petrov\" is stated in the conversation.",
-      "prompt": "Customer name: _____",
+      "answer": "Kowalczyk",
+      "explanation": "She spells it K-O-W-A-L-C-Z-Y-K.",
+      "prompt": "Applicant surname: _____",
       "partNumber": 1
     },
     {
@@ -144,15 +56,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 2,
-      "label": "House number",
+      "label": "Contact number",
       "prefix": "",
-      "suffix": " Chestnut Avenue",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "47",
-      "explanation": "The answer \"47\" is stated in the conversation.",
-      "prompt": "House number: _____ Chestnut Avenue",
+      "answer": "07711 304 862",
+      "explanation": "She gives 07711 304 862.",
+      "prompt": "Contact number: _____",
       "partNumber": 1
     },
     {
@@ -161,15 +73,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 3,
-      "label": "Postcode",
+      "label": "Size of plot requested",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "BT4 8LD",
-      "explanation": "The answer \"BT4 8LD\" is stated in the conversation.",
-      "prompt": "Postcode: _____",
+      "answer": "half plot",
+      "explanation": "She chooses the half plot as a beginner.",
+      "prompt": "Size of plot requested: _____",
       "partNumber": 1
     },
     {
@@ -178,15 +90,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 4,
-      "label": "Contact telephone",
+      "label": "Area of a half plot",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "01622 793 450",
-      "explanation": "The answer \"01622 793 450\" is stated in the conversation.",
-      "prompt": "Contact telephone: _____",
+      "answer": "125 square metres",
+      "explanation": "A half plot is a hundred and twenty-five square metres.",
+      "prompt": "Area of a half plot: _____",
       "partNumber": 1
     },
     {
@@ -195,15 +107,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 5,
-      "label": "Boiler fuel type",
+      "label": "Annual rent",
       "prefix": "",
-      "suffix": " combi",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "gas",
-      "explanation": "The answer \"gas\" is stated in the conversation.",
-      "prompt": "Boiler fuel type: _____ combi",
+      "answer": "42 pounds",
+      "explanation": "The annual rent for a half plot is forty-two pounds.",
+      "prompt": "Annual rent: _____",
       "partNumber": 1
     },
     {
@@ -212,15 +124,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 6,
-      "label": "Boiler brand",
+      "label": "Key deposit",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Vaillant",
-      "explanation": "The answer \"Vaillant\" is stated in the conversation.",
-      "prompt": "Boiler brand: _____",
+      "answer": "15 pounds",
+      "explanation": "There is a one-off key deposit of fifteen pounds.",
+      "prompt": "Key deposit: _____",
       "partNumber": 1
     },
     {
@@ -229,15 +141,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 7,
-      "label": "Appointment window",
-      "prefix": "9 am to ",
-      "suffix": " pm",
+      "label": "Expected wait at Northfield",
+      "prefix": "",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "12",
-      "explanation": "The answer \"12\" is stated in the conversation.",
-      "prompt": "Appointment window: 9 am to _____ pm",
+      "answer": "18 months",
+      "explanation": "The wait at Northfield is about eighteen months.",
+      "prompt": "Expected wait at Northfield: _____",
       "partNumber": 1
     },
     {
@@ -246,15 +158,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 8,
-      "label": "Call-out fee",
-      "prefix": "£",
+      "label": "Equipment not permitted",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "65",
-      "explanation": "The answer \"65\" is stated in the conversation.",
-      "prompt": "Call-out fee: £_____",
+      "answer": "hosepipes",
+      "explanation": "Hosepipes are not permitted; watering cans only.",
+      "prompt": "Equipment not permitted: _____",
       "partNumber": 1
     },
     {
@@ -263,15 +175,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 9,
-      "label": "",
+      "label": "Warning given after",
       "prefix": "",
       "suffix": "",
-      "labelBlank": true,
-      "labelSuffix": "'s name",
-      "rightContent": "Marcus Webb",
-      "answer": "Engineer",
-      "explanation": "The answer \"Engineer\" is stated in the conversation.",
-      "prompt": "_____'s name: Marcus Webb",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "three months",
+      "explanation": "An uncultivated plot brings a written warning after three months.",
+      "prompt": "Warning given after: _____",
       "partNumber": 1
     },
     {
@@ -280,15 +192,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 10,
-      "label": "Confirmation method",
+      "label": "Document required later",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "text / text message",
-      "explanation": "The answer \"text / text message\" is stated in the conversation.",
-      "prompt": "Confirmation method: _____",
+      "answer": "proof of address",
+      "explanation": "Proof of address is needed when a plot is offered.",
+      "prompt": "Document required later: _____",
       "partNumber": 1
     },
     {
@@ -297,15 +209,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 11,
-      "prompt": "What must visitors do before exploring the reserve?",
+      "prompt": "What do most new volunteers hope to do?",
       "options": [
-        "sign in at reception",
-        "pay an entry fee",
-        "collect a trail map",
-        "watch a safety video"
+        "Drive a locomotive",
+        "Restore carriages",
+        "Guide visitors",
+        "Work in the shop"
       ],
       "correctAnswer": "A",
-      "explanation": "The ranger says 'We ask all visitors to sign in at reception'"
+      "explanation": "Colin says most arrive hoping to drive a locomotive."
     },
     {
       "id": "ielts-listening-013-q12",
@@ -313,15 +225,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 12,
-      "prompt": "Which trail is suitable for wheelchairs?",
+      "prompt": "How long does that path take at minimum?",
       "options": [
-        "red trail",
-        "yellow trail",
-        "blue trail",
-        "all trails"
+        "Three years",
+        "Five years",
+        "Ten years",
+        "One year"
       ],
       "correctAnswer": "B",
-      "explanation": "The yellow trail is 'fully paved, making it suitable for wheelchairs and pushchairs'"
+      "explanation": "It takes at minimum five years, through cleaner and fireman."
     },
     {
       "id": "ielts-listening-013-q13",
@@ -329,15 +241,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 13,
-      "prompt": "When is the Badger Watch Hide most active?",
+      "prompt": "What is the minimum attendance asked for?",
       "options": [
-        "midday",
-        "afternoon",
-        "dawn and dusk",
-        "after dark"
+        "Two days a month",
+        "Four days a week",
+        "One day a month",
+        "One day a week"
       ],
       "correctAnswer": "C",
-      "explanation": "The hide is 'particularly active at dawn and dusk'"
+      "explanation": "They ask for one day a month as a minimum."
     },
     {
       "id": "ielts-listening-013-q14",
@@ -345,15 +257,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 14,
-      "prompt": "What can be seen from the ridge viewpoint?",
+      "prompt": "How long does the track safety briefing take?",
       "options": [
-        "three counties",
-        "the sea",
-        "the city skyline",
-        "four counties"
+        "Half a day",
+        "30 minutes",
+        "60 minutes",
+        "90 minutes"
       ],
       "correctAnswer": "D",
-      "explanation": "On clear days 'you can see four counties'"
+      "explanation": "The briefing takes ninety minutes."
     },
     {
       "id": "ielts-listening-013-q15",
@@ -361,34 +273,32 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 15,
-      "prompt": "What time does the Meadow Café close?",
+      "prompt": "What does Colin say about that briefing?",
       "options": [
-        "4:30 pm",
-        "3:30 pm",
-        "4:00 pm",
-        "5:00 pm"
+        "It is not optional and does not transfer",
+        "It is repeated annually",
+        "It is optional for experienced volunteers",
+        "It transfers from other railways"
       ],
       "correctAnswer": "A",
-      "explanation": "The café 'closes at four thirty'"
+      "explanation": "It is not optional and does not transfer from other railways."
     },
     {
       "id": "ielts-listening-013-q16",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Blackwood Nature Reserve — Site Map",
-      "mapDescription": "Label the locations A–J on the reserve map.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Ashbourne Valley Heritage Railway — Site Plan",
+      "mapDescription": "The plan shows the station site. The approach road and car park are at the top. Label the buildings A–H.",
       "mapKey": {
-        "A": "Visitor Centre",
-        "B": "Heron Pond",
-        "C": "Viewing platform",
-        "D": "Oak woodland",
-        "E": "Badger Watch Hide",
-        "F": "Ridge viewpoint",
-        "G": "Picnic shelter",
-        "H": "Meadow Café",
-        "I": "Warden's station",
-        "J": "Kingfisher viewing area"
+        "A": "Car park",
+        "B": "Station building",
+        "C": "Engine shed",
+        "D": "Signal box",
+        "E": "Workshop",
+        "F": "Mess room",
+        "G": "Museum",
+        "H": "Road bridge"
       },
       "mapLetters": [
         "A",
@@ -398,33 +308,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 16,
-      "prompt": "First building on right after main gate",
-      "correctAnswer": "A",
-      "explanation": "The correct letter is A (Visitor Centre)."
+      "prompt": "At the far end of platform two, on the left as you face the station",
+      "correctAnswer": "C",
+      "explanation": "The engine shed is on the left at the far end of platform two."
     },
     {
       "id": "ielts-listening-013-q17",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Blackwood Nature Reserve — Site Map",
-      "mapDescription": "Label the locations A–J on the reserve map.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Ashbourne Valley Heritage Railway — Site Plan",
+      "mapDescription": "The plan shows the station site. The approach road and car park are at the top. Label the buildings A–H.",
       "mapKey": {
-        "A": "Visitor Centre",
-        "B": "Heron Pond",
-        "C": "Viewing platform",
-        "D": "Oak woodland",
-        "E": "Badger Watch Hide",
-        "F": "Ridge viewpoint",
-        "G": "Picnic shelter",
-        "H": "Meadow Café",
-        "I": "Warden's station",
-        "J": "Kingfisher viewing area"
+        "A": "Car park",
+        "B": "Station building",
+        "C": "Engine shed",
+        "D": "Signal box",
+        "E": "Workshop",
+        "F": "Mess room",
+        "G": "Museum",
+        "H": "Road bridge"
       },
       "mapLetters": [
         "A",
@@ -434,33 +340,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 17,
-      "prompt": "Water feature past yellow trail",
-      "correctAnswer": "B",
-      "explanation": "The correct letter is B (Heron Pond)."
+      "prompt": "At the opposite end of platform two, nearest the road bridge",
+      "correctAnswer": "D",
+      "explanation": "The signal box is nearest the road bridge."
     },
     {
       "id": "ielts-listening-013-q18",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Blackwood Nature Reserve — Site Map",
-      "mapDescription": "Label the locations A–J on the reserve map.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Ashbourne Valley Heritage Railway — Site Plan",
+      "mapDescription": "The plan shows the station site. The approach road and car park are at the top. Label the buildings A–H.",
       "mapKey": {
-        "A": "Visitor Centre",
-        "B": "Heron Pond",
-        "C": "Viewing platform",
-        "D": "Oak woodland",
-        "E": "Badger Watch Hide",
-        "F": "Ridge viewpoint",
-        "G": "Picnic shelter",
-        "H": "Meadow Café",
-        "I": "Warden's station",
-        "J": "Kingfisher viewing area"
+        "A": "Car park",
+        "B": "Station building",
+        "C": "Engine shed",
+        "D": "Signal box",
+        "E": "Workshop",
+        "F": "Mess room",
+        "G": "Museum",
+        "H": "Road bridge"
       },
       "mapLetters": [
         "A",
@@ -470,33 +372,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 18,
-      "prompt": "Platform at water's edge for birdwatching",
-      "correctAnswer": "C",
-      "explanation": "The correct letter is C (Viewing platform)."
+      "prompt": "Behind the engine shed, reached by the path along the back fence",
+      "correctAnswer": "E",
+      "explanation": "The workshop is behind the engine shed."
     },
     {
       "id": "ielts-listening-013-q19",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Blackwood Nature Reserve — Site Map",
-      "mapDescription": "Label the locations A–J on the reserve map.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Ashbourne Valley Heritage Railway — Site Plan",
+      "mapDescription": "The plan shows the station site. The approach road and car park are at the top. Label the buildings A–H.",
       "mapKey": {
-        "A": "Visitor Centre",
-        "B": "Heron Pond",
-        "C": "Viewing platform",
-        "D": "Oak woodland",
-        "E": "Badger Watch Hide",
-        "F": "Ridge viewpoint",
-        "G": "Picnic shelter",
-        "H": "Meadow Café",
-        "I": "Warden's station",
-        "J": "Kingfisher viewing area"
+        "A": "Car park",
+        "B": "Station building",
+        "C": "Engine shed",
+        "D": "Signal box",
+        "E": "Workshop",
+        "F": "Mess room",
+        "G": "Museum",
+        "H": "Road bridge"
       },
       "mapLetters": [
         "A",
@@ -506,33 +404,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 19,
-      "prompt": "Wooded area on blue trail",
-      "correctAnswer": "D",
-      "explanation": "The correct letter is D (Oak woodland)."
+      "prompt": "Inside the station building, on the upper floor",
+      "correctAnswer": "F",
+      "explanation": "The mess room is on the upper floor of the station building."
     },
     {
       "id": "ielts-listening-013-q20",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Blackwood Nature Reserve — Site Map",
-      "mapDescription": "Label the locations A–J on the reserve map.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Ashbourne Valley Heritage Railway — Site Plan",
+      "mapDescription": "The plan shows the station site. The approach road and car park are at the top. Label the buildings A–H.",
       "mapKey": {
-        "A": "Visitor Centre",
-        "B": "Heron Pond",
-        "C": "Viewing platform",
-        "D": "Oak woodland",
-        "E": "Badger Watch Hide",
-        "F": "Ridge viewpoint",
-        "G": "Picnic shelter",
-        "H": "Meadow Café",
-        "I": "Warden's station",
-        "J": "Kingfisher viewing area"
+        "A": "Car park",
+        "B": "Station building",
+        "C": "Engine shed",
+        "D": "Signal box",
+        "E": "Workshop",
+        "F": "Mess room",
+        "G": "Museum",
+        "H": "Road bridge"
       },
       "mapLetters": [
         "A",
@@ -542,14 +436,12 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 20,
-      "prompt": "Structure for watching wildlife on blue trail",
-      "correctAnswer": "E",
-      "explanation": "The correct letter is E (Badger Watch Hide)."
+      "prompt": "The low building on the far side of the car park",
+      "correctAnswer": "G",
+      "explanation": "The museum is the low building beyond the car park."
     },
     {
       "id": "ielts-listening-013-q21",
@@ -557,15 +449,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 21,
-      "prompt": "What noise level does research link to increased stress hormones?",
+      "prompt": "How many participants took part?",
       "options": [
-        "55 dB",
-        "65 dB",
-        "60 dB",
-        "70 dB"
+        "Thirty",
+        "Sixty",
+        "Ninety",
+        "Three"
       ],
       "correctAnswer": "B",
-      "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
+      "explanation": "Lin says sixty participants in three conditions."
     },
     {
       "id": "ielts-listening-013-q22",
@@ -573,15 +465,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 22,
-      "prompt": "What additional health risk did James find surprising in the literature?",
+      "prompt": "What does the tutor say a poster is?",
       "options": [
-        "hearing loss",
-        "respiratory problems",
-        "cardiovascular disease",
-        "mental health disorders"
+        "A teaching aid",
+        "A short paper",
+        "An advertisement for a conversation",
+        "A summary of results"
       ],
       "correctAnswer": "C",
-      "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
+      "explanation": "He calls it an advertisement for a conversation."
     },
     {
       "id": "ielts-listening-013-q23",
@@ -589,15 +481,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 23,
-      "prompt": "How many residents will be surveyed?",
+      "prompt": "Where should the full statistical output go?",
       "options": [
-        "200",
-        "300",
-        "400",
-        "500"
+        "In an appendix",
+        "Nowhere",
+        "At the bottom of the poster",
+        "On a handout kept beside them"
       ],
       "correctAnswer": "D",
-      "explanation": "Priya mentions 'a survey of five hundred residents'"
+      "explanation": "The full output goes on a handout kept beside the poster."
     },
     {
       "id": "ielts-listening-013-q24",
@@ -605,15 +497,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 24,
-      "prompt": "What confidence level does their sample size achieve?",
+      "prompt": "Why is the method section hard to cut?",
       "options": [
-        "95%",
-        "90%",
-        "92%",
-        "99%"
+        "The effort spent on it feels like it deserves space",
+        "It contains the results",
+        "Reviewers ask about it",
+        "It is required"
       ],
       "correctAnswer": "A",
-      "explanation": "James refers to 'the ninety-five percent confidence level'"
+      "explanation": "He says effort spent is not a guide to space deserved."
     },
     {
       "id": "ielts-listening-013-q25",
@@ -621,238 +513,238 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 25,
-      "prompt": "What does the tutor recommend they reference?",
+      "prompt": "Why does the tutor want a figure showing individual variation?",
       "options": [
-        "WHO 2015 report",
-        "WHO 2018 guidelines",
-        "EU noise directive",
-        "national highway code"
+        "It looks impressive",
+        "It prompts questions about the outliers",
+        "It is required by the department",
+        "It replaces statistics"
       ],
       "correctAnswer": "B",
-      "explanation": "The tutor says 'reference the WHO noise guidelines published in 2018'"
+      "explanation": "It makes people ask about outliers, which starts the conversation."
     },
     {
       "id": "ielts-listening-013-q26",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element of the poster? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Make it prominent",
+        "B. Reduce it sharply",
+        "C. Move it off the poster"
       ],
       "num": 26,
-      "prompt": "introducing new equipment in the laboratory",
+      "prompt": "the single main finding",
       "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "explanation": "It goes at the top in large type."
     },
     {
       "id": "ielts-listening-013-q27",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element of the poster? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Make it prominent",
+        "B. Reduce it sharply",
+        "C. Move it off the poster"
       ],
       "num": 27,
-      "prompt": "keeping written records of experiments",
+      "prompt": "the full statistical output",
       "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "explanation": "It belongs on a handout, not the poster."
     },
     {
       "id": "ielts-listening-013-q28",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element of the poster? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Make it prominent",
+        "B. Reduce it sharply",
+        "C. Move it off the poster"
       ],
       "num": 28,
-      "prompt": "sharing results with other research groups",
+      "prompt": "the description of the method",
       "correctAnswer": "B",
-      "explanation": "The speaker's attitude is B. She is undecided."
+      "explanation": "A diagram replaces a paragraph."
     },
     {
       "id": "ielts-listening-013-q29",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element of the poster? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Make it prominent",
+        "B. Reduce it sharply",
+        "C. Move it off the poster"
       ],
       "num": 29,
-      "prompt": "the importance of the project deadline",
-      "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "prompt": "the number of figures",
+      "correctAnswer": "B",
+      "explanation": "Two figures only."
     },
     {
       "id": "ielts-listening-013-q30",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element of the poster? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Make it prominent",
+        "B. Reduce it sharply",
+        "C. Move it off the poster"
       ],
       "num": 30,
-      "prompt": "the proposal to extend the study",
-      "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "prompt": "the reference list",
+      "correctAnswer": "B",
+      "explanation": "Six at most, in small type."
     },
     {
       "id": "ielts-listening-013-q31",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 31,
-      "sentenceText": "In 1928, Fleming observed that a __BLANK__ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
-      "correctAnswer": "mould",
-      "explanation": "The correct answer is: \"mould\".",
-      "prompt": "In 1928, Fleming observed that a _____ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
-      "partNumber": 4
+      "prompt": "What does the lecturer say about pollution as an explanation?",
+      "options": [
+        "It applies only to conifers",
+        "It is the main cause",
+        "It is almost entirely wrong",
+        "It is the second cause"
+      ],
+      "correctAnswer": "C",
+      "explanation": "She says the usual explanation, pollution, is almost entirely wrong."
     },
     {
       "id": "ielts-listening-013-q32",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 32,
-      "sentenceText": "Fleming's initial problem was that he could not __BLANK__ the active compound in sufficient quantities for clinical use.",
-      "correctAnswer": "isolate / purify",
-      "explanation": "The correct answer is: \"isolate / purify\".",
-      "prompt": "Fleming's initial problem was that he could not _____ the active compound in sufficient quantities for clinical use.",
-      "partNumber": 4
+      "prompt": "How long does a typical paved-setting street tree survive?",
+      "options": [
+        "30 years",
+        "A century",
+        "Five years",
+        "10 to 15 years"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Around ten to fifteen years."
     },
     {
       "id": "ielts-listening-013-q33",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 33,
-      "sentenceText": "Florey and Chain, based at __BLANK__, were the first to purify penicillin and test it on a human patient.",
-      "correctAnswer": "Oxford",
-      "explanation": "The correct answer is: \"Oxford\".",
-      "prompt": "Florey and Chain, based at _____, were the first to purify penicillin and test it on a human patient.",
-      "partNumber": 4
+      "prompt": "What is the fundamental problem?",
+      "options": [
+        "Soil volume",
+        "Air quality",
+        "Vandalism",
+        "Frost"
+      ],
+      "correctAnswer": "A",
+      "explanation": "The fundamental problem is soil volume roots can penetrate."
     },
     {
       "id": "ielts-listening-013-q34",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 34,
-      "sentenceText": "__BLANK__ was the occupation of the first human patient treated with penicillin in 1941.",
-      "correctAnswer": "Police officer",
-      "explanation": "The correct answer is: \"Police officer\".",
-      "prompt": "_____ was the occupation of the first human patient treated with penicillin in 1941.",
-      "partNumber": 4
+      "prompt": "Why is the soil around a tree pit compacted?",
+      "options": [
+        "To save money",
+        "So the pavement above does not subside",
+        "To retain water",
+        "To deter roots from spreading"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Compaction is a requirement of the paving."
     },
     {
       "id": "ielts-listening-013-q35",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 35,
-      "sentenceText": "Mass production of penicillin during the Second World War required entirely new __BLANK__ techniques.",
-      "correctAnswer": "fermentation",
-      "explanation": "The correct answer is: \"fermentation\".",
-      "prompt": "Mass production of penicillin during the Second World War required entirely new _____ techniques.",
-      "partNumber": 4
+      "prompt": "How does the lecturer characterise that compaction?",
+      "options": [
+        "A recent practice",
+        "A failure of care",
+        "A requirement of the paving, incompatible with root growth",
+        "An avoidable error"
+      ],
+      "correctAnswer": "C",
+      "explanation": "It is not a failure of care but a requirement of the paving."
     },
     {
       "id": "ielts-listening-013-q36",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 36,
-      "prompt": "According to the lecture, the main reason antibiotic discovery declined after the 1980s was that",
-      "options": [
-        "A  resistant bacteria evolved too quickly",
-        "C  all known antibiotic compounds had already been tested",
-        "B  pharmaceutical companies moved to more profitable areas",
-        "D  government funding was withdrawn"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says companies 'shifted resources toward more profitable chronic disease treatments'"
+      "sentenceText": "Rain runs off sealed surfaces into __BLANK__, so a street tree can be drought-stressed in a wet month.",
+      "correctAnswer": "drains",
+      "explanation": "Rain runs off into drains.",
+      "prompt": "Rain runs off sealed surfaces into _____, so a street tree can be drought-stressed in a wet month.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-013-q37",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 37,
-      "prompt": "The golden era of antibiotic discovery lasted approximately",
-      "options": [
-        "A  10 years",
-        "C  30 years",
-        "D  40 years",
-        "B  20 years"
-      ],
-      "correctAnswer": "D",
-      "explanation": "The golden era ran 'from 1950 to 1970' — roughly 20 years"
+      "sentenceText": "Where drainage is poor the pit fills and the roots __BLANK__.",
+      "correctAnswer": "suffocate",
+      "explanation": "Poor drainage makes roots suffocate.",
+      "prompt": "Where drainage is poor the pit fills and the roots _____.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-013-q38",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 38,
-      "prompt": "According to the lecturer, most antibiotics discovered in the golden era came from",
-      "options": [
-        "C  soil bacteria",
-        "A  synthetic chemicals",
-        "B  marine organisms",
-        "D  hospital environments"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The lecturer states they were discovered 'largely from soil bacteria'"
+      "sentenceText": "City species are often chosen for __BLANK__ rather than tolerance of conditions.",
+      "correctAnswer": "tidiness",
+      "explanation": "Species are selected for tidiness.",
+      "prompt": "City species are often chosen for _____ rather than tolerance of conditions.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-013-q39",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 39,
-      "prompt": "The World Health Organization describes antimicrobial resistance as",
-      "options": [
-        "A  a manageable risk with current technology",
-        "B  one of the greatest global health threats",
-        "C  primarily a problem in developing countries",
-        "D  less serious than other infectious diseases"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The lecturer quotes WHO listing it as 'one of the greatest global health threats'"
+      "sentenceText": "Diversity of planting is the cheapest __BLANK__ available.",
+      "correctAnswer": "insurance",
+      "explanation": "Diversity is described as the cheapest insurance.",
+      "prompt": "Diversity of planting is the cheapest _____ available.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-013-q40",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 40,
-      "prompt": "Which novel treatment approach is specifically mentioned as an alternative to conventional antibiotics?",
-      "options": [
-        "A  gene therapy",
-        "B  vaccination programmes",
-        "C  bacteriophage therapy",
-        "D  surgical interventions"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer mentions 'bacteriophage therapy' as a novel antimicrobial approach"
+      "sentenceText": "Watering for the first three years matters more than anything done at __BLANK__.",
+      "correctAnswer": "planting",
+      "explanation": "Early watering outweighs planting-time measures.",
+      "prompt": "Watering for the first three years matters more than anything done at _____.",
+      "partNumber": 4
     }
   ],
   "parts": [
     {
       "partNumber": 1,
-      "title": "Part 1: The History of Coffee Trade",
-      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Arranging a Home Repair Service",
+      "title": "Part 1: Allotment Application",
+      "audioDescription": "A telephone conversation about applying for an allotment plot.",
+      "context": "Applying for an Allotment Plot",
       "questionRange": [
         1,
         10
@@ -860,9 +752,9 @@
     },
     {
       "partNumber": 2,
-      "title": "Part 2: Sleep and Memory Consolidation",
-      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "Nature Reserve Visitor Centre",
+      "title": "Part 2: Heritage Railway Briefing",
+      "audioDescription": "A volunteer manager briefs new volunteers and describes the station site.",
+      "context": "Heritage Railway Volunteer Briefing",
       "questionRange": [
         11,
         20
@@ -870,9 +762,9 @@
     },
     {
       "partNumber": 3,
-      "title": "Part 3: The History of Coffee Trade",
-      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Discussion About a Research Project on Urban Noise",
+      "title": "Part 3: Poster Tutorial",
+      "audioDescription": "Two students discuss a conference poster with their tutor.",
+      "context": "Planning a Conference Poster",
       "questionRange": [
         21,
         30
@@ -880,9 +772,9 @@
     },
     {
       "partNumber": 4,
-      "title": "Part 4: Sleep and Memory Consolidation",
-      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "Lecture: The History of Antibiotics",
+      "title": "Part 4: Urban Trees",
+      "audioDescription": "A lecture on why trees planted in city streets fail young.",
+      "context": "Why Urban Trees Die Young",
       "questionRange": [
         31,
         40
