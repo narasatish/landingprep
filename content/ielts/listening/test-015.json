@@ -2,122 +2,34 @@
   "id": "ielts-listening-015",
   "exam": "ielts",
   "section": "listening",
-  "title": "IELTS Listening Practice Test 15",
+  "title": "IELTS Academic Listening Practice Test 15",
   "durationSeconds": 2400,
   "questionCount": 40,
   "listeningScripts": [
     {
       "id": "ielts-listening-015-p1",
       "part": 1,
-      "title": "Library Membership and Book Loan",
-      "text": "Librarian: Central Library, how can I assist you?\nCaller: I'd like to register for a library card and ask about borrowing rules.\nLibrarian: Of course. Your full name please?\nCaller: Patricia Osei. O-S-E-I.\nLibrarian: And your address?\nCaller: Flat 3, 18 Maple Street, Thornton, TH6 2PQ.\nLibrarian: Date of birth?\nCaller: Second of August, 1994.\nLibrarian: Our standard membership is free and allows you to borrow up to eight items at a time. Loans are for three weeks with one free renewal. Audiobooks and e-books are also available through our app.\nCaller: Are there fines for late returns?\nLibrarian: Ten pence per day for standard loans, twenty pence for reserved items.\nCaller: Can I reserve books online?\nLibrarian: Yes, through the library portal. There's a reservation fee of fifty pence per item. Your card will be ready to collect tomorrow from the information desk.",
-      "formLayout": {
-        "title": "Central Library — New Membership Form",
-        "example": {
-          "label": "Annual membership fee",
-          "content": "free"
-        },
-        "rows": [
-          {
-            "type": "blank",
-            "num": 1,
-            "label": "Surname",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Osei"
-          },
-          {
-            "type": "blank",
-            "num": 2,
-            "label": "Address",
-            "prefix": "Flat 3, 18 ",
-            "suffix": ", Thornton",
-            "answer": "Maple Street"
-          },
-          {
-            "type": "blank",
-            "num": 3,
-            "label": "Postcode",
-            "prefix": "",
-            "suffix": "",
-            "answer": "TH6 2PQ"
-          },
-          {
-            "type": "blank",
-            "num": 4,
-            "label": "Date of birth",
-            "prefix": "2nd August ",
-            "suffix": "",
-            "answer": "1994"
-          },
-          {
-            "type": "blank",
-            "num": 5,
-            "label": "Maximum items allowed",
-            "prefix": "up to ",
-            "suffix": " items",
-            "answer": "8 / eight"
-          },
-          {
-            "type": "blank",
-            "num": 6,
-            "label": "Standard loan period",
-            "prefix": "",
-            "suffix": " weeks",
-            "answer": "3 / three"
-          },
-          {
-            "type": "blank",
-            "num": 7,
-            "labelBlank": true,
-            "labelSuffix": " fine per day",
-            "rightContent": "10p / 10 pence",
-            "answer": "Standard"
-          },
-          {
-            "type": "blank",
-            "num": 8,
-            "label": "Reserved item fine (per day)",
-            "prefix": "",
-            "suffix": "p",
-            "answer": "20 / twenty"
-          },
-          {
-            "type": "blank",
-            "num": 9,
-            "label": "Online reservation fee",
-            "prefix": "",
-            "suffix": "p per item",
-            "answer": "50 / fifty"
-          },
-          {
-            "type": "blank",
-            "num": 10,
-            "label": "Card collection point",
-            "prefix": "",
-            "suffix": "",
-            "answer": "information desk"
-          }
-        ]
-      }
+      "title": "Joining a Rowing Club",
+      "text": "Secretary: Riverside Rowing Club, good evening.\nCaller: Hello — I saw your notice about beginners' courses and wanted to ask about joining.\nSecretary: Certainly. Have you rowed before?\nCaller: Never.\nSecretary: That's not a problem at all — most of our members started here. Can I take your name?\nCaller: It's Fergus Ainsworth. Ainsworth is A-I-N-S-W-O-R-T-H.\nSecretary: And a phone number?\nCaller: 07960 228 415.\nSecretary: Date of birth, just for the membership record?\nCaller: The third of November, nineteen ninety-eight.\nSecretary: Thank you. The beginners' course runs over six weeks, on Saturday mornings, starting at seven thirty.\nCaller: That's early.\nSecretary: It is, and it's deliberate — the water is calmest before the river traffic starts, which matters a great deal when you can't yet steer.\nCaller: Fair enough. What does it cost?\nSecretary: The course is a hundred and ten pounds, which includes membership until the end of the season. After that, full membership is thirty pounds a month.\nCaller: Do I need any equipment?\nSecretary: No. Boats, blades and buoyancy aids are all provided. What you need is close-fitting clothing — anything loose catches on the seat runners — and shoes you don't mind getting wet.\nCaller: Is there a swimming requirement?\nSecretary: Yes, and it's the one thing we can't waive. You must be able to swim fifty metres in light clothing. We don't test it, but you sign a declaration.\nCaller: That's fine. What if I miss a session?\nSecretary: You can pick up the missed week with the following course, but I'd say honestly that people who miss more than one of the six tend not to continue, because each session builds on the last.\nCaller: Understood. When does the next course start?\nSecretary: The fourth of May. I'll send you a joining pack by email today — could I take your address?\nCaller: f.ainsworth@webmail.com.\nSecretary: Perfect. And do bring a water bottle; there's a tap but nothing to drink from.",
+      "formLayout": true
     },
     {
       "id": "ielts-listening-015-p2",
       "part": 2,
-      "title": "Guided Tour of the City Museum of Science and Industry",
-      "text": "Guide: Welcome everyone to the City Museum of Science and Industry. I'm your guide for this morning's orientation and I'm delighted to show you around one of the region's most celebrated museums. We have a wonderful collection spanning three centuries of scientific and industrial history, and I'm confident you'll find plenty to engage with during your visit today.\n\nLet's begin right where we are — in Zone A, the entrance foyer. As you can see, this is a large, light-filled atrium with a soaring glass roof. It serves as the central hub of the museum and you can access all other areas from here. The foyer contains our main welcome desk, a cloakroom, and display boards giving you an overview of current exhibitions. You'll also notice the large model of the solar system suspended from the ceiling — a firm favourite with younger visitors.\n\nDirectly to your right as you enter is Zone B — the gift shop. This is actually one of the most popular areas in the entire museum, and not just for children! We stock a wide range of books, science kits, educational toys, and locally produced gifts. All proceeds from the gift shop support the museum's education programmes.\n\nPast the gift shop, heading deeper into the building, you'll find yourself in Zone C — the Victorian Engine Hall. This is without doubt the largest room in the museum. It houses our collection of working steam engines, many of which were originally used in the textile mills that made this region famous during the industrial revolution. On selected days, the engines are powered up and visitors can watch them in operation — an extraordinary sight.\n\nTo the left of the engine hall is Zone D — the Interactive Science Gallery. This is our most hands-on area and is especially popular with school groups. You can experiment with electricity, magnetism, sound, and light, and there are guided demonstrations every hour on the hour. The gallery is designed for visitors of all ages, though children particularly love the water pressure experiments in the far corner.\n\nContinuing around the ground floor, you reach Zone E — the Textile History Room. This thoughtful exhibition traces the development of cloth production from hand-looming in the seventeenth century through to modern synthetic fibres. There are original looms you can observe in operation, and the exhibition also addresses the social history of mill workers, including the role of child labour and later labour reform.\n\nAt the back of the ground floor, adjacent to the textile room, is Zone F — the café. The café is open from nine in the morning until four thirty in the afternoon and serves hot meals, sandwiches, cakes, and a children's menu. Outside seating is available in fine weather in the adjoining courtyard. The café is self-service and accepts both cash and cards.\n\nHeading upstairs, you'll find Zone G — the lecture theatre. This seats two hundred and fifty and is used for public lectures, film screenings, and school presentations. Today at two o'clock there is a free public lecture on the history of computing. Tickets are available from the welcome desk.\n\nZone H is the Temporary Exhibitions Hall, also upstairs. This large gallery hosts rotating exhibitions throughout the year — currently featuring a display on the history of space exploration from Sputnik to the present day. The hall is only open during the museum's standard hours, which are nine to five Tuesday through Sunday.\n\nNestled behind the lecture theatre on the upper floor is Zone I — the Conservation Workshop. This is a working studio where our conservation team restores and maintains objects from the collection. A transparent viewing window allows visitors to watch the conservators at work. This is a real highlight for many visitors who have never considered the behind-the-scenes work that keeps museum collections alive.\n\nFinally, accessible via a dedicated staircase at the rear of the upper floor, is Zone J — the roof garden. This beautiful green space features drought-tolerant planting, a wildflower meadow section, and information boards on urban ecology. On clear days the views over the city are quite spectacular. The roof garden is open from April through to October, weather permitting.\n\nThe museum is open Tuesday to Sunday, nine to five. Adult tickets are seven pounds fifty, and children's tickets — for visitors aged five to sixteen — are four pounds. Children under five enter free. Guided tours run every day at ten thirty and two thirty and last approximately ninety minutes. I hope you enjoy your visit — please do ask me or any member of staff if you have questions."
+      "title": "Makerspace Induction",
+      "text": "Technician: Hello everyone, and welcome to the Bellwood Makerspace induction. I'm Nina, and this session takes about forty minutes.\n\nThe rule that matters most is this: you may not use any machine you have not been signed off on, and being signed off on a machine here does not carry over from anywhere else. I know some of you have workshop experience. The sign-off is not about whether you can use the machine; it is about whether you know how this particular one fails.\n\nMembership is thirty-five pounds a month, which covers access seven days a week from eight until ten. Materials are not included — there's a stock of timber and sheet material you can buy at cost, weighed and logged on the honesty system, and that system works entirely because people use it honestly.\n\nLet me take you through the space. As you come in through the double doors, the reception desk is straight ahead of you. The wood workshop, which is the noisiest area, is through the door on your left, at the western end of the building. Directly opposite it, on the eastern side, is the electronics bench — deliberately as far from the wood dust as we can put it. The laser cutters are in the small room behind reception, because they need extraction to the outside wall. The textiles area is upstairs, at the front of the building above reception, and the store room where you'll collect materials is beside the wood workshop, on the same western side.\n\nTwo safety points. Anyone using the wood workshop must have another member on site — never alone, whatever the hour. And the extraction system must be running before, not during, any cutting operation; switching it on when you notice the dust is too late, which sounds obvious and is the commonest thing we correct.\n\nFinally, tidy up. Every member says they will and roughly half do. The state you leave a bench in is the single thing that determines whether this place is pleasant to work in, and it is the only rule we ever suspend memberships over."
     },
     {
       "id": "ielts-listening-015-p3",
       "part": 3,
-      "title": "Discussion About a Research Project on Urban Noise",
-      "text": "Tutor: So, Priya and James, how is your project on urban noise pollution progressing?\nPriya: We've finished the literature review. The main finding seems to be that constant exposure to traffic noise above sixty-five decibels significantly increases stress hormone levels.\nJames: What surprised us was the evidence linking noise to cardiovascular disease — not just stress. Several longitudinal studies found a measurable increase in heart disease rates near busy roads.\nTutor: Interesting. What methodology have you chosen for your primary research?\nPriya: We're doing acoustic measurements at ten sites across the city, combined with a survey of five hundred residents asking about sleep quality and perceived noise annoyance.\nTutor: And your sample size — five hundred — is that sufficient?\nJames: We debated this. Statistically it should give us a confidence interval of plus or minus four percent at the ninety-five percent confidence level, which most journals would accept.\nTutor: Good. Have you considered confounding variables? People near noisy roads may also be near other pollution sources.\nPriya: Yes, we plan to control for air quality and proximity to industrial areas in our regression analysis.\nTutor: What do you expect your main recommendation to be?\nJames: Probably mandatory sound barriers along roads within five hundred metres of residential zones.\nPriya: I'd add better urban zoning rules — separating heavy traffic routes from housing areas at the planning stage.\nTutor: These are sound arguments. Make sure your final report references the WHO noise guidelines published in 2018."
+      "title": "Planning Coastal Fieldwork",
+      "text": "Tutor: Right — the coastal fieldwork. You're going to Carrick Bay next month. Where have you got to?\nPriya: We've planned three sites along the transect, and we're measuring beach profile and sediment size at each.\nDevon: The problem is the tide. We've realised we can only work about four hours a day.\nTutor: Which four?\nDevon: Two either side of low water.\nTutor: And how long does one site take you?\nPriya: We think ninety minutes.\nTutor: Then three sites is four and a half hours, and you have four. That is not a small overrun; it is the difference between finishing and abandoning the third site in the dark with the tide coming in.\nDevon: So drop a site?\nTutor: Or shorten each one. Which measurements are actually load-bearing for your question?\nPriya: The profile matters most. The sediment sampling is more of a supporting description.\nTutor: Then sample sediment at two sites rather than three, keep the profile at all three, and you have margin. Now — safety.\nDevon: We've done the risk assessment.\nTutor: Tell me the part about being cut off.\nDevon: The eastern end of the bay is cut off first, about an hour before high water.\nTutor: Good. So which site do you do first?\nPriya: The eastern one.\nTutor: Yes. Order your sites by how quickly they become dangerous, not by how convenient they are to reach. And carry the tide table in a pocket, not in a bag; the number of people who have one and can't reach it is remarkable.\nDevon: What about equipment?\nTutor: Take a spare tape measure. Not because you'll lose one, but because you will drop one in salt water, and a seized tape ends the day for both of you."
     },
     {
       "id": "ielts-listening-015-p4",
       "part": 4,
-      "title": "Lecture: Deep-Sea Ecosystems",
-      "text": "Today's lecture focuses on deep-sea ecosystems — those found below two hundred metres, where sunlight no longer penetrates.\n\nFor most of scientific history, the deep ocean was assumed to be a near-barren wasteland. This view changed dramatically in 1977 when researchers aboard the submersible Alvin discovered hydrothermal vents at the Galapagos Rift at a depth of two thousand four hundred metres. These vents release superheated water laden with minerals, and around them thrived dense communities of organisms that survive entirely without sunlight.\n\nThe primary producers in vent ecosystems are chemosynthetic bacteria and archaea, which oxidise hydrogen sulphide released by the vents to produce energy — analogous to the way photosynthetic organisms use sunlight at the surface. These microbes form the base of a food web that includes tube worms — some exceeding two metres in length — giant clams, and vent shrimp.\n\nBeyond hydrothermal vents, deep-sea life depends heavily on what scientists call marine snow — a constant fall of organic particles from surface waters including dead organisms, faeces, and shed mucus. This slow rain of organic matter is the primary food source for most deep-sea benthic communities. Rates of marine snow deposition vary significantly with surface productivity.\n\nThe deep sea is also home to bioluminescent organisms — those capable of producing their own light through chemical reactions. Estimates suggest that up to ninety percent of deep-sea creatures are bioluminescent. This light serves functions ranging from attracting prey — as in the iconic anglerfish — to intraspecies communication and camouflage.\n\nDespite covering over sixty percent of the Earth's surface, less than twenty percent of the deep ocean floor has been mapped in high resolution. This lack of knowledge makes it difficult to assess the potential impacts of emerging threats including deep-sea mining for manganese nodules and polymetallic sulphide deposits.\n\nConservation efforts are now focusing on establishing marine protected areas in international waters, though international governance frameworks remain inadequate for the task."
+      "title": "Measuring Poverty",
+      "text": "Lecturer: Today I want to examine why measuring poverty is far harder than it appears, because the difficulty is not administrative — it is that the thing being measured has no single definition anyone can defend against the others.\n\nBegin with the absolute approach. A poverty line is set at the income needed to buy a fixed basket of necessities, and anyone below it is counted as poor. This is straightforward, it permits comparison across time, and its weakness is severe: the basket embodies a judgement about what is necessary, that judgement differs enormously between societies, and a line that made sense in one decade quietly becomes a description of destitution rather than poverty in the next.\n\nThe relative approach fixes that and introduces its own problem. Setting the line at a proportion of median income — commonly sixty per cent — measures poverty as distance from the normal standard of the society, which is closer to what most people mean by the word. But it moves with the median, so a recession that lowers everyone's income can reduce measured poverty, and a boom that lifts the middle faster than the bottom increases it. The measure behaves counter-intuitively at exactly the moments people most want to consult it.\n\nIncome is itself the wrong quantity in several common cases, which is the third difficulty. A household with savings, or with a home it owns outright, is not in the position of one with the same income and neither, and income measured over a single year misclassifies students, the newly retired, and anyone whose earnings are seasonal or irregular. Consumption is a better proxy for living standards and is far harder to collect accurately.\n\nThe response that has gained ground is to stop looking for one number. Multidimensional measures count deprivations directly — inadequate housing, no heating, unaffordable healthcare, children lacking essentials — and report how many a household experiences. This produces a richer picture and sacrifices the single figure that makes headlines and drives budgets, which is a real cost and not merely a presentational one.\n\nI want to leave you with the point that matters most. Every one of these choices is defensible, and each produces a different list of who is poor and therefore a different list of who receives help. The measure is not a neutral instrument applied after the policy decision; the choice of measure is itself a policy decision, usually made by people who describe it as technical."
     }
   ],
   "questions": [
@@ -127,15 +39,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 1,
-      "label": "Surname",
+      "label": "Applicant surname",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Osei",
-      "explanation": "The answer \"Osei\" is stated in the conversation.",
-      "prompt": "Surname: _____",
+      "answer": "Ainsworth",
+      "explanation": "He spells it A-I-N-S-W-O-R-T-H.",
+      "prompt": "Applicant surname: _____",
       "partNumber": 1
     },
     {
@@ -144,15 +56,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 2,
-      "label": "Address",
-      "prefix": "Flat 3, 18 ",
-      "suffix": ", Thornton",
+      "label": "Telephone number",
+      "prefix": "",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Maple Street",
-      "explanation": "The answer \"Maple Street\" is stated in the conversation.",
-      "prompt": "Address: Flat 3, 18 _____, Thornton",
+      "answer": "07960 228 415",
+      "explanation": "He gives 07960 228 415.",
+      "prompt": "Telephone number: _____",
       "partNumber": 1
     },
     {
@@ -161,15 +73,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 3,
-      "label": "Postcode",
+      "label": "Length of beginners' course",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "TH6 2PQ",
-      "explanation": "The answer \"TH6 2PQ\" is stated in the conversation.",
-      "prompt": "Postcode: _____",
+      "answer": "six weeks",
+      "explanation": "The course runs over six weeks.",
+      "prompt": "Length of beginners' course: _____",
       "partNumber": 1
     },
     {
@@ -178,15 +90,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 4,
-      "label": "Date of birth",
-      "prefix": "2nd August ",
+      "label": "Start time on Saturdays",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "1994",
-      "explanation": "The answer \"1994\" is stated in the conversation.",
-      "prompt": "Date of birth: 2nd August _____",
+      "answer": "7.30",
+      "explanation": "Sessions start at seven thirty.",
+      "prompt": "Start time on Saturdays: _____",
       "partNumber": 1
     },
     {
@@ -195,15 +107,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 5,
-      "label": "Maximum items allowed",
-      "prefix": "up to ",
-      "suffix": " items",
+      "label": "Cost of course",
+      "prefix": "",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "8 / eight",
-      "explanation": "The answer \"8 / eight\" is stated in the conversation.",
-      "prompt": "Maximum items allowed: up to _____ items",
+      "answer": "110 pounds",
+      "explanation": "The course is a hundred and ten pounds.",
+      "prompt": "Cost of course: _____",
       "partNumber": 1
     },
     {
@@ -212,15 +124,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 6,
-      "label": "Standard loan period",
+      "label": "Monthly fee after the course",
       "prefix": "",
-      "suffix": " weeks",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "3 / three",
-      "explanation": "The answer \"3 / three\" is stated in the conversation.",
-      "prompt": "Standard loan period: _____ weeks",
+      "answer": "30 pounds",
+      "explanation": "Full membership is thirty pounds a month.",
+      "prompt": "Monthly fee after the course: _____",
       "partNumber": 1
     },
     {
@@ -229,15 +141,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 7,
-      "label": "",
+      "label": "Type of clothing needed",
       "prefix": "",
       "suffix": "",
-      "labelBlank": true,
-      "labelSuffix": " fine per day",
-      "rightContent": "10p / 10 pence",
-      "answer": "Standard",
-      "explanation": "The answer \"Standard\" is stated in the conversation.",
-      "prompt": "_____ fine per day: 10p / 10 pence",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "close-fitting",
+      "explanation": "Loose clothing catches on the seat runners.",
+      "prompt": "Type of clothing needed: _____",
       "partNumber": 1
     },
     {
@@ -246,15 +158,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 8,
-      "label": "Reserved item fine (per day)",
+      "label": "Swimming distance required",
       "prefix": "",
-      "suffix": "p",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "20 / twenty",
-      "explanation": "The answer \"20 / twenty\" is stated in the conversation.",
-      "prompt": "Reserved item fine (per day): _____p",
+      "answer": "50 metres",
+      "explanation": "Members must be able to swim fifty metres.",
+      "prompt": "Swimming distance required: _____",
       "partNumber": 1
     },
     {
@@ -263,15 +175,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 9,
-      "label": "Online reservation fee",
+      "label": "Next course begins",
       "prefix": "",
-      "suffix": "p per item",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "50 / fifty",
-      "explanation": "The answer \"50 / fifty\" is stated in the conversation.",
-      "prompt": "Online reservation fee: _____p per item",
+      "answer": "4 May",
+      "explanation": "The next course starts on the fourth of May.",
+      "prompt": "Next course begins: _____",
       "partNumber": 1
     },
     {
@@ -280,15 +192,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 10,
-      "label": "Card collection point",
+      "label": "Item to bring",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "information desk",
-      "explanation": "The answer \"information desk\" is stated in the conversation.",
-      "prompt": "Card collection point: _____",
+      "answer": "water bottle",
+      "explanation": "There is a tap but nothing to drink from.",
+      "prompt": "Item to bring: _____",
       "partNumber": 1
     },
     {
@@ -297,15 +209,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 11,
-      "prompt": "What time does the museum café close?",
+      "prompt": "What is the most important rule at the makerspace?",
       "options": [
-        "4:30 pm",
-        "4:00 pm",
-        "5:00 pm",
-        "5:30 pm"
+        "Use no machine you have not been signed off on",
+        "Book equipment in advance",
+        "Wear protective clothing",
+        "Pay before using machines"
       ],
       "correctAnswer": "A",
-      "explanation": "The guide says the café is open 'until four thirty in the afternoon'"
+      "explanation": "Members may not use a machine they have not been signed off on."
     },
     {
       "id": "ielts-listening-015-q12",
@@ -313,15 +225,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 12,
-      "prompt": "How much does a child's ticket cost?",
+      "prompt": "What does Nina say the sign-off is about?",
       "options": [
-        "£3.00",
-        "£4.00",
-        "£4.50",
-        "£5.00"
+        "Whether you can use the machine",
+        "Whether you know how this particular one fails",
+        "Your insurance status",
+        "Your experience elsewhere"
       ],
       "correctAnswer": "B",
-      "explanation": "The guide states 'children's tickets are four pounds'"
+      "explanation": "It is about knowing how this particular machine fails."
     },
     {
       "id": "ielts-listening-015-q13",
@@ -329,15 +241,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 13,
-      "prompt": "How frequently do guided demonstrations run in the Interactive Science Gallery?",
+      "prompt": "How are materials paid for?",
       "options": [
-        "every thirty minutes",
-        "every two hours",
-        "every hour",
-        "twice daily"
+        "Supplied free to new members",
+        "Included in membership",
+        "Bought at cost, weighed and logged on an honesty system",
+        "Charged monthly"
       ],
       "correctAnswer": "C",
-      "explanation": "The guide says 'there are guided demonstrations every hour on the hour'"
+      "explanation": "Materials are bought at cost on the honesty system."
     },
     {
       "id": "ielts-listening-015-q14",
@@ -345,15 +257,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 14,
-      "prompt": "Which is described as the largest room in the museum?",
+      "prompt": "What condition applies to using the wood workshop?",
       "options": [
-        "the Interactive Science Gallery",
-        "the Temporary Exhibitions Hall",
-        "the lecture theatre",
-        "the Victorian Engine Hall"
+        "Two years' experience",
+        "Prior booking",
+        "Daytime only",
+        "Another member must be on site"
       ],
       "correctAnswer": "D",
-      "explanation": "The guide says the engine hall is 'without doubt the largest room in the museum'"
+      "explanation": "Nobody uses the wood workshop alone, whatever the hour."
     },
     {
       "id": "ielts-listening-015-q15",
@@ -361,34 +273,32 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 15,
-      "prompt": "Where is the café located?",
+      "prompt": "When must the extraction system be running?",
       "options": [
-        "at the back of the ground floor adjacent to the textile room",
-        "on the upper floor next to the lecture theatre",
-        "in the entrance foyer",
-        "in the roof garden"
+        "Before any cutting operation",
+        "As soon as dust appears",
+        "Only for hardwoods",
+        "After cutting finishes"
       ],
       "correctAnswer": "A",
-      "explanation": "The guide says the café is 'at the back of the ground floor, adjacent to the textile room'"
+      "explanation": "It must be running before, not during, cutting."
     },
     {
       "id": "ielts-listening-015-q16",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "City Museum of Science and Industry — Floor Plan",
-      "mapDescription": "Label the areas A–J on the museum map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Bellwood Makerspace — Floor Plan",
+      "mapDescription": "The plan shows the ground floor with the upstairs area indicated. The double doors are at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Entrance foyer",
-        "B": "Gift shop",
-        "C": "Victorian Engine Hall",
-        "D": "Interactive Science Gallery",
-        "E": "Textile History Room",
-        "F": "Café",
-        "G": "Lecture theatre",
-        "H": "Temporary Exhibitions Hall",
-        "I": "Conservation Workshop",
-        "J": "Roof garden"
+        "A": "Reception desk",
+        "B": "Wood workshop",
+        "C": "Electronics bench",
+        "D": "Laser cutter room",
+        "E": "Textiles area",
+        "F": "Store room",
+        "G": "Meeting room",
+        "H": "Kitchen"
       },
       "mapLetters": [
         "A",
@@ -398,33 +308,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 16,
-      "prompt": "Main atrium with glass roof and solar system model",
+      "prompt": "Straight ahead as you enter through the double doors",
       "correctAnswer": "A",
-      "explanation": "The correct letter is A (Entrance foyer)."
+      "explanation": "The reception desk is straight ahead of the entrance."
     },
     {
       "id": "ielts-listening-015-q17",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "City Museum of Science and Industry — Floor Plan",
-      "mapDescription": "Label the areas A–J on the museum map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Bellwood Makerspace — Floor Plan",
+      "mapDescription": "The plan shows the ground floor with the upstairs area indicated. The double doors are at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Entrance foyer",
-        "B": "Gift shop",
-        "C": "Victorian Engine Hall",
-        "D": "Interactive Science Gallery",
-        "E": "Textile History Room",
-        "F": "Café",
-        "G": "Lecture theatre",
-        "H": "Temporary Exhibitions Hall",
-        "I": "Conservation Workshop",
-        "J": "Roof garden"
+        "A": "Reception desk",
+        "B": "Wood workshop",
+        "C": "Electronics bench",
+        "D": "Laser cutter room",
+        "E": "Textiles area",
+        "F": "Store room",
+        "G": "Meeting room",
+        "H": "Kitchen"
       },
       "mapLetters": [
         "A",
@@ -434,33 +340,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 17,
-      "prompt": "Shop selling science kits, books and educational toys",
+      "prompt": "Through the door on the left, at the western end",
       "correctAnswer": "B",
-      "explanation": "The correct letter is B (Gift shop)."
+      "explanation": "The wood workshop is on the left at the western end."
     },
     {
       "id": "ielts-listening-015-q18",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "City Museum of Science and Industry — Floor Plan",
-      "mapDescription": "Label the areas A–J on the museum map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Bellwood Makerspace — Floor Plan",
+      "mapDescription": "The plan shows the ground floor with the upstairs area indicated. The double doors are at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Entrance foyer",
-        "B": "Gift shop",
-        "C": "Victorian Engine Hall",
-        "D": "Interactive Science Gallery",
-        "E": "Textile History Room",
-        "F": "Café",
-        "G": "Lecture theatre",
-        "H": "Temporary Exhibitions Hall",
-        "I": "Conservation Workshop",
-        "J": "Roof garden"
+        "A": "Reception desk",
+        "B": "Wood workshop",
+        "C": "Electronics bench",
+        "D": "Laser cutter room",
+        "E": "Textiles area",
+        "F": "Store room",
+        "G": "Meeting room",
+        "H": "Kitchen"
       },
       "mapLetters": [
         "A",
@@ -470,33 +372,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 18,
-      "prompt": "Largest room housing working steam engines",
+      "prompt": "On the eastern side, opposite the noisiest area",
       "correctAnswer": "C",
-      "explanation": "The correct letter is C (Victorian Engine Hall)."
+      "explanation": "The electronics bench is opposite the wood workshop."
     },
     {
       "id": "ielts-listening-015-q19",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "City Museum of Science and Industry — Floor Plan",
-      "mapDescription": "Label the areas A–J on the museum map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Bellwood Makerspace — Floor Plan",
+      "mapDescription": "The plan shows the ground floor with the upstairs area indicated. The double doors are at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Entrance foyer",
-        "B": "Gift shop",
-        "C": "Victorian Engine Hall",
-        "D": "Interactive Science Gallery",
-        "E": "Textile History Room",
-        "F": "Café",
-        "G": "Lecture theatre",
-        "H": "Temporary Exhibitions Hall",
-        "I": "Conservation Workshop",
-        "J": "Roof garden"
+        "A": "Reception desk",
+        "B": "Wood workshop",
+        "C": "Electronics bench",
+        "D": "Laser cutter room",
+        "E": "Textiles area",
+        "F": "Store room",
+        "G": "Meeting room",
+        "H": "Kitchen"
       },
       "mapLetters": [
         "A",
@@ -506,33 +404,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 19,
-      "prompt": "Hands-on area with electricity and magnetism experiments",
+      "prompt": "In the small room behind reception",
       "correctAnswer": "D",
-      "explanation": "The correct letter is D (Interactive Science Gallery)."
+      "explanation": "The laser cutters are behind reception for extraction."
     },
     {
       "id": "ielts-listening-015-q20",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "City Museum of Science and Industry — Floor Plan",
-      "mapDescription": "Label the areas A–J on the museum map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Bellwood Makerspace — Floor Plan",
+      "mapDescription": "The plan shows the ground floor with the upstairs area indicated. The double doors are at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Entrance foyer",
-        "B": "Gift shop",
-        "C": "Victorian Engine Hall",
-        "D": "Interactive Science Gallery",
-        "E": "Textile History Room",
-        "F": "Café",
-        "G": "Lecture theatre",
-        "H": "Temporary Exhibitions Hall",
-        "I": "Conservation Workshop",
-        "J": "Roof garden"
+        "A": "Reception desk",
+        "B": "Wood workshop",
+        "C": "Electronics bench",
+        "D": "Laser cutter room",
+        "E": "Textiles area",
+        "F": "Store room",
+        "G": "Meeting room",
+        "H": "Kitchen"
       },
       "mapLetters": [
         "A",
@@ -542,14 +436,12 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 20,
-      "prompt": "Exhibition tracing cloth production from hand-looming to synthetic fibres",
+      "prompt": "Upstairs at the front, above reception",
       "correctAnswer": "E",
-      "explanation": "The correct letter is E (Textile History Room)."
+      "explanation": "The textiles area is upstairs above reception."
     },
     {
       "id": "ielts-listening-015-q21",
@@ -557,15 +449,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 21,
-      "prompt": "What noise level does research link to increased stress hormones?",
+      "prompt": "How many hours a day can the students work?",
       "options": [
-        "55 dB",
-        "65 dB",
-        "60 dB",
-        "70 dB"
+        "Two",
+        "Four",
+        "Six",
+        "Nine"
       ],
       "correctAnswer": "B",
-      "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
+      "explanation": "They can work about four hours, two either side of low water."
     },
     {
       "id": "ielts-listening-015-q22",
@@ -573,15 +465,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 22,
-      "prompt": "What additional health risk did James find surprising in the literature?",
+      "prompt": "How long do they expect each site to take?",
       "options": [
-        "hearing loss",
-        "respiratory problems",
-        "cardiovascular disease",
-        "mental health disorders"
+        "45 minutes",
+        "60 minutes",
+        "90 minutes",
+        "Two hours"
       ],
       "correctAnswer": "C",
-      "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
+      "explanation": "They think ninety minutes per site."
     },
     {
       "id": "ielts-listening-015-q23",
@@ -589,15 +481,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 23,
-      "prompt": "How many residents will be surveyed?",
+      "prompt": "What does the tutor say the overrun amounts to?",
       "options": [
-        "200",
-        "300",
-        "400",
-        "500"
+        "An extra day's work",
+        "A scheduling detail",
+        "A minor delay",
+        "The difference between finishing and abandoning a site in the dark"
       ],
       "correctAnswer": "D",
-      "explanation": "Priya mentions 'a survey of five hundred residents'"
+      "explanation": "He calls it the difference between finishing and abandoning the third site."
     },
     {
       "id": "ielts-listening-015-q24",
@@ -605,15 +497,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 24,
-      "prompt": "What confidence level does their sample size achieve?",
+      "prompt": "What does the tutor suggest cutting?",
       "options": [
-        "95%",
-        "90%",
-        "92%",
-        "99%"
+        "Sediment sampling at one of the three sites",
+        "The beach profile",
+        "The risk assessment",
+        "One whole site"
       ],
       "correctAnswer": "A",
-      "explanation": "James refers to 'the ninety-five percent confidence level'"
+      "explanation": "Sample sediment at two sites, keep profile at all three."
     },
     {
       "id": "ielts-listening-015-q25",
@@ -621,238 +513,238 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 25,
-      "prompt": "What does the tutor recommend they reference?",
+      "prompt": "In what order should the sites be visited?",
       "options": [
-        "WHO 2015 report",
-        "WHO 2018 guidelines",
-        "EU noise directive",
-        "national highway code"
+        "Easiest to reach first",
+        "By how quickly they become dangerous",
+        "North to south",
+        "By expected duration"
       ],
       "correctAnswer": "B",
-      "explanation": "The tutor says 'reference the WHO noise guidelines published in 2018'"
+      "explanation": "Order sites by how quickly they become dangerous."
     },
     {
       "id": "ielts-listening-015-q26",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Keep it unchanged",
+        "B. Reduce it",
+        "C. Change how it is carried or handled"
       ],
       "num": 26,
-      "prompt": "introducing new equipment in the laboratory",
+      "prompt": "the beach profile measurements",
       "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "explanation": "The profile is kept at all three sites."
     },
     {
       "id": "ielts-listening-015-q27",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Keep it unchanged",
+        "B. Reduce it",
+        "C. Change how it is carried or handled"
       ],
       "num": 27,
-      "prompt": "keeping written records of experiments",
-      "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "prompt": "the sediment sampling",
+      "correctAnswer": "B",
+      "explanation": "Reduced from three sites to two."
     },
     {
       "id": "ielts-listening-015-q28",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Keep it unchanged",
+        "B. Reduce it",
+        "C. Change how it is carried or handled"
       ],
       "num": 28,
-      "prompt": "sharing results with other research groups",
-      "correctAnswer": "B",
-      "explanation": "The speaker's attitude is B. She is undecided."
+      "prompt": "the tide table",
+      "correctAnswer": "C",
+      "explanation": "Carry it in a pocket, not in a bag."
     },
     {
       "id": "ielts-listening-015-q29",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Keep it unchanged",
+        "B. Reduce it",
+        "C. Change how it is carried or handled"
       ],
       "num": 29,
-      "prompt": "the importance of the project deadline",
-      "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "prompt": "the tape measure",
+      "correctAnswer": "C",
+      "explanation": "Take a spare because one will be dropped in salt water."
     },
     {
       "id": "ielts-listening-015-q30",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Keep it unchanged",
+        "B. Reduce it",
+        "C. Change how it is carried or handled"
       ],
       "num": 30,
-      "prompt": "the proposal to extend the study",
+      "prompt": "the order of the sites",
       "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "explanation": "Reordered by how quickly each is cut off."
     },
     {
       "id": "ielts-listening-015-q31",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 31,
-      "sentenceText": "Hydrothermal vents were first discovered in 1977 at a depth of __BLANK__ metres in the Galapagos Rift.",
-      "correctAnswer": "2,400 / two thousand four hundred",
-      "explanation": "The correct answer is: \"2,400 / two thousand four hundred\".",
-      "prompt": "Hydrothermal vents were first discovered in 1977 at a depth of _____ metres in the Galapagos Rift.",
-      "partNumber": 4
+      "prompt": "Why does the lecturer say measuring poverty is hard?",
+      "options": [
+        "Surveys are too expensive",
+        "The data are unavailable",
+        "The thing measured has no single defensible definition",
+        "Governments withhold figures"
+      ],
+      "correctAnswer": "C",
+      "explanation": "There is no single definition defensible against the others."
     },
     {
       "id": "ielts-listening-015-q32",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 32,
-      "sentenceText": "The submersible __BLANK__ carried the researchers who made this landmark discovery.",
-      "correctAnswer": "Alvin",
-      "explanation": "The correct answer is: \"Alvin\".",
-      "prompt": "The submersible _____ carried the researchers who made this landmark discovery.",
-      "partNumber": 4
+      "prompt": "What is the weakness of the absolute approach?",
+      "options": [
+        "It requires annual surveys",
+        "It excludes savings",
+        "It cannot be compared over time",
+        "The basket embodies a judgement that differs between societies"
+      ],
+      "correctAnswer": "D",
+      "explanation": "The basket embodies a judgement about necessity."
     },
     {
       "id": "ielts-listening-015-q33",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 33,
-      "sentenceText": "Chemosynthetic bacteria use __BLANK__ released by vents to generate energy in the absence of sunlight.",
-      "correctAnswer": "hydrogen sulphide",
-      "explanation": "The correct answer is: \"hydrogen sulphide\".",
-      "prompt": "Chemosynthetic bacteria use _____ released by vents to generate energy in the absence of sunlight.",
-      "partNumber": 4
+      "prompt": "What happens to a relative measure during a recession?",
+      "options": [
+        "Measured poverty can fall as everyone's income drops",
+        "It stays fixed",
+        "It becomes unmeasurable",
+        "It rises sharply"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A recession lowering all incomes can reduce measured poverty."
     },
     {
       "id": "ielts-listening-015-q34",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 34,
-      "sentenceText": "__BLANK__, a constant fall of organic particles from surface waters, is the primary food source for most deep-sea benthic communities.",
-      "correctAnswer": "Marine snow",
-      "explanation": "The correct answer is: \"Marine snow\".",
-      "prompt": "_____, a constant fall of organic particles from surface waters, is the primary food source for most deep-sea benthic communities.",
-      "partNumber": 4
+      "prompt": "Why is income the wrong quantity in some cases?",
+      "options": [
+        "It is hard to collect",
+        "Savings and outright home ownership change the position",
+        "It excludes benefits",
+        "It is taxed differently"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A household with savings or an owned home is differently placed."
     },
     {
       "id": "ielts-listening-015-q35",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 35,
-      "sentenceText": "It is estimated that up to __BLANK__ percent of all deep-sea creatures are capable of producing bioluminescence.",
-      "correctAnswer": "90 / ninety",
-      "explanation": "The correct answer is: \"90 / ninety\".",
-      "prompt": "It is estimated that up to _____ percent of all deep-sea creatures are capable of producing bioluminescence.",
-      "partNumber": 4
+      "prompt": "What is sacrificed by multidimensional measures?",
+      "options": [
+        "Historical data",
+        "Accuracy",
+        "The single figure that makes headlines and drives budgets",
+        "International comparison"
+      ],
+      "correctAnswer": "C",
+      "explanation": "They sacrifice the single figure, a real cost."
     },
     {
       "id": "ielts-listening-015-q36",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 36,
-      "prompt": "The deep sea is defined in the lecture as water found below which depth?",
-      "options": [
-        "A  100 metres",
-        "C  500 metres",
-        "B  200 metres",
-        "D  1,000 metres"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer defines the deep sea as 'below two hundred metres'"
+      "sentenceText": "A relative line is commonly set at sixty per cent of __BLANK__ income.",
+      "correctAnswer": "median",
+      "explanation": "The relative line is a proportion of median income.",
+      "prompt": "A relative line is commonly set at sixty per cent of _____ income.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-015-q37",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 37,
-      "prompt": "What do tube worms, giant clams, and vent shrimp have in common according to the lecture?",
-      "options": [
-        "A  they all produce bioluminescence",
-        "B  they are found only in polar waters",
-        "D  they depend on marine snow for food",
-        "C  they live around hydrothermal vents"
-      ],
-      "correctAnswer": "D",
-      "explanation": "These species are described as part of the food web around hydrothermal vents"
+      "sentenceText": "__BLANK__ is a better proxy for living standards and is harder to collect.",
+      "correctAnswer": "Consumption",
+      "explanation": "Consumption is the better proxy.",
+      "prompt": "_____ is a better proxy for living standards and is harder to collect.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-015-q38",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 38,
-      "prompt": "Marine snow is described in the lecture as consisting of",
-      "options": [
-        "C  organic particles falling from surface waters",
-        "A  dissolved minerals from the seafloor",
-        "B  sediment carried from coastal rivers",
-        "D  chemical compounds from hydrothermal vents"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The lecturer describes marine snow as 'a constant fall of organic particles from surface waters'"
+      "sentenceText": "Multidimensional measures count __BLANK__ directly rather than income.",
+      "correctAnswer": "deprivations",
+      "explanation": "They count deprivations directly.",
+      "prompt": "Multidimensional measures count _____ directly rather than income.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-015-q39",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 39,
-      "prompt": "According to the lecturer, bioluminescence serves functions including",
-      "options": [
-        "A  temperature regulation and navigation",
-        "B  attracting prey and intraspecies communication",
-        "C  converting chemicals into usable energy",
-        "D  filtering food particles from seawater"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The lecturer mentions 'attracting prey' and 'intraspecies communication'"
+      "sentenceText": "Each choice produces a different list of who receives __BLANK__.",
+      "correctAnswer": "help",
+      "explanation": "Different measures produce different lists of who is helped.",
+      "prompt": "Each choice produces a different list of who receives _____.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-015-q40",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 40,
-      "prompt": "The lecturer suggests that deep-sea mining is problematic primarily because",
-      "options": [
-        "A  the technology does not yet exist",
-        "B  international law prohibits it",
-        "C  less than 20% of the ocean floor has been mapped in detail",
-        "D  mining would destroy all marine snow"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says this 'makes it difficult to assess the potential impacts' of mining threats"
+      "sentenceText": "The choice of measure is itself a __BLANK__ decision.",
+      "correctAnswer": "policy",
+      "explanation": "It is a policy decision described as technical.",
+      "prompt": "The choice of measure is itself a _____ decision.",
+      "partNumber": 4
     }
   ],
   "parts": [
     {
       "partNumber": 1,
-      "title": "Part 1: Biomimicry in Engineering",
-      "audioDescription": "A lecture on how engineers are using designs from nature to solve modern problems.",
-      "context": "Library Membership and Book Loan",
+      "title": "Part 1: Rowing Club Enquiry",
+      "audioDescription": "A caller asks about joining a rowing club beginners' course.",
+      "context": "Joining a Rowing Club",
       "questionRange": [
         1,
         10
@@ -860,9 +752,9 @@
     },
     {
       "partNumber": 2,
-      "title": "Part 2: Urban Migration Patterns",
-      "audioDescription": "An academic lecture on the causes and consequences of rural-to-urban migration.",
-      "context": "Guided Tour of the City Museum of Science and Industry",
+      "title": "Part 2: Makerspace Induction",
+      "audioDescription": "A technician inducts new members and describes the layout of the workshop.",
+      "context": "Makerspace Induction",
       "questionRange": [
         11,
         20
@@ -870,9 +762,9 @@
     },
     {
       "partNumber": 3,
-      "title": "Part 3: The History of Coffee Trade",
-      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Discussion About a Research Project on Urban Noise",
+      "title": "Part 3: Fieldwork Planning",
+      "audioDescription": "Two students plan coastal fieldwork with their tutor, including tide safety.",
+      "context": "Planning Coastal Fieldwork",
       "questionRange": [
         21,
         30
@@ -880,9 +772,9 @@
     },
     {
       "partNumber": 4,
-      "title": "Part 4: Sleep and Memory Consolidation",
-      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "Lecture: Deep-Sea Ecosystems",
+      "title": "Part 4: Measuring Poverty",
+      "audioDescription": "A lecture on why poverty measurement resists a single definition.",
+      "context": "Measuring Poverty",
       "questionRange": [
         31,
         40
