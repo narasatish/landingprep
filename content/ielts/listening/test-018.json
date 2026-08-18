@@ -2,122 +2,34 @@
   "id": "ielts-listening-018",
   "exam": "ielts",
   "section": "listening",
-  "title": "IELTS Listening Practice Test 18",
+  "title": "IELTS Academic Listening Practice Test 18",
   "durationSeconds": 2400,
   "questionCount": 40,
   "listeningScripts": [
     {
       "id": "ielts-listening-018-p1",
       "part": 1,
-      "title": "Arranging a Home Repair Service",
-      "text": "Operator: QuickFix Home Services, how can I help?\nCustomer: Hello, I need someone to repair a broken boiler.\nOperator: Of course. Name and address please?\nCustomer: Anna Petrov. 47 Chestnut Avenue, Barton, postcode BT4 8LD.\nOperator: And a contact number?\nCustomer: 01622 793 450.\nOperator: What type of boiler is it?\nCustomer: A gas combi boiler. The brand is Vaillant.\nOperator: When did it stop working?\nCustomer: Yesterday evening — around seven o'clock.\nOperator: We can send an engineer tomorrow between nine and twelve. The call-out fee is sixty-five pounds. Parts are extra if needed.\nCustomer: That's fine.\nOperator: Our engineer's name is Marcus Webb. He'll call thirty minutes before arriving. Do you need a parking permit?\nCustomer: No, there's free parking on the road.\nOperator: Perfect. You'll receive a text confirmation within the hour.",
-      "formLayout": {
-        "title": "QuickFix Home Services — Service Request Form",
-        "example": {
-          "label": "Service category",
-          "content": "boiler / plumbing / electrical"
-        },
-        "rows": [
-          {
-            "type": "blank",
-            "num": 1,
-            "label": "Customer name",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Anna Petrov"
-          },
-          {
-            "type": "blank",
-            "num": 2,
-            "label": "House number",
-            "prefix": "",
-            "suffix": " Chestnut Avenue",
-            "answer": "47"
-          },
-          {
-            "type": "blank",
-            "num": 3,
-            "label": "Postcode",
-            "prefix": "",
-            "suffix": "",
-            "answer": "BT4 8LD"
-          },
-          {
-            "type": "blank",
-            "num": 4,
-            "label": "Contact telephone",
-            "prefix": "",
-            "suffix": "",
-            "answer": "01622 793 450"
-          },
-          {
-            "type": "blank",
-            "num": 5,
-            "label": "Boiler fuel type",
-            "prefix": "",
-            "suffix": " combi",
-            "answer": "gas"
-          },
-          {
-            "type": "blank",
-            "num": 6,
-            "label": "Boiler brand",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Vaillant"
-          },
-          {
-            "type": "blank",
-            "num": 7,
-            "label": "Appointment window",
-            "prefix": "9 am to ",
-            "suffix": " pm",
-            "answer": "12"
-          },
-          {
-            "type": "blank",
-            "num": 8,
-            "label": "Call-out fee",
-            "prefix": "£",
-            "suffix": "",
-            "answer": "65"
-          },
-          {
-            "type": "blank",
-            "num": 9,
-            "labelBlank": true,
-            "labelSuffix": "'s name",
-            "rightContent": "Marcus Webb",
-            "answer": "Engineer"
-          },
-          {
-            "type": "blank",
-            "num": 10,
-            "label": "Confirmation method",
-            "prefix": "",
-            "suffix": "",
-            "answer": "text / text message"
-          }
-        ]
-      }
+      "title": "Applying for a Resident's Parking Permit",
+      "text": "Officer: Parking services, Alan speaking.\nCaller: Hello, I've just moved into the area and I need a resident's permit.\nOfficer: I can do that. Can I take your name?\nCaller: Yes, it's Imogen Fairweather. Fairweather is F-A-I-R-W-E-A-T-H-E-R.\nOfficer: And the address you're applying for?\nCaller: Twenty-six Bellevue Road.\nOfficer: Thank you. Which zone is that — do you know?\nCaller: I don't, I'm afraid.\nOfficer: Bellevue Road is zone C. That's the one that operates Monday to Saturday, eight until six. There's no restriction on Sundays.\nCaller: Good. What does a permit cost?\nOfficer: The first permit for a household is sixty pounds a year. A second permit for the same address is a hundred and twenty, deliberately — the higher price is there to discourage second cars in a zone where there aren't enough spaces.\nCaller: One is all I need. What do I have to send you?\nOfficer: Two things. Proof that you live there, which can be a tenancy agreement or a council tax bill, and the vehicle registration document showing your name at that address.\nCaller: The registration still shows my old address.\nOfficer: Then update it first, because I can't accept it as it stands. It usually takes about three weeks.\nCaller: That's annoying. Can I park in the meantime?\nOfficer: Yes — I can issue a temporary permit valid for one month while you sort it out. That's free, but it's issued once only, so don't lose it.\nCaller: Thank you, that helps. How long does the full permit take?\nOfficer: Ten working days from receiving complete documents. It's posted, not emailed, so allow for that.\nCaller: And visitors?\nOfficer: You can buy visitor scratch cards, five pounds for a book of ten, each valid for one day.\nCaller: I'll take a book with the application.\nOfficer: I'll note that. And do read the zone map when it arrives — the boundary runs down the middle of Bellevue Road, and the far side is zone D.",
+      "formLayout": true
     },
     {
       "id": "ielts-listening-018-p2",
       "part": 2,
-      "title": "National Sports Academy — Facilities Tour",
-      "text": "Guide: Welcome to the National Sports Academy. I'm delighted to be showing you around today and I hope by the end of this tour you'll have a clear picture of all the world-class facilities we have here. The Academy was founded in 1998 and has trained athletes who have gone on to represent their country at the highest level, including three Olympic medallists in the past decade alone. We're incredibly proud of what's been achieved here and we hope you'll feel inspired by what you see.\n\nLet's start at Zone A — the reception area. This is where you enter the Academy and where all visitors, members, and athletes sign in. The reception team can help with membership enquiries, timetable information, and facility bookings. There is also a notice board here displaying upcoming events, competitions, and community programmes.\n\nDirectly behind reception, through the double doors, is Zone B — the main gym. This is a substantial space measuring nearly two thousand square metres and can accommodate up to one hundred and fifty users at one time. It is equipped with a full complement of strength training equipment including free weights, cable machines, and resistance machines, as well as around sixty cardiovascular machines including treadmills, rowing machines, and cycling ergometers. The gym is open from five-thirty in the morning until ten at night, seven days a week.\n\nTo the left of the main gym is Zone C — the swimming pool. This is a fifty-metre competition-standard pool with ten lanes. The pool is used for training by our academy swimmers but is also available to the public during designated open swimming sessions. The viewing gallery above the pool can accommodate two hundred spectators, which comes in useful during inter-academy competitions.\n\nZone D is the indoor athletics track, located in the large hall at the rear of the building. This is a two-hundred-metre banked indoor track with a synthetic surface suitable for sprinting, distance running, and field events. The long jump pit and high jump area are located at the northern end of the hall. The track is bookable by clubs, schools, and individual athletes through our online system.\n\nIn the eastern wing of the building, off the main corridor from reception, are Zone E — the squash courts. There are six courts in total, all with glass back walls for spectating. Courts can be booked in forty-five minute slots up to seven days in advance. Rackets and balls can be hired from reception for two pounds per session.\n\nZone F is the physiotherapy centre, next to the squash courts in the eastern wing. The centre has eight treatment rooms and is staffed by six qualified physiotherapists. Appointments are essential — you cannot walk in without a prior booking. Sessions last either thirty or sixty minutes depending on the treatment required. The physiotherapy centre is available to both Academy members and members of the public with a referral from their GP.\n\nFurther along the eastern wing is Zone G — the sports science laboratory. This is a specialist research facility used by our performance team and by visiting researchers. The lab offers services including VO2 max testing, biomechanical analysis, body composition measurement, and lactate threshold testing. Access to the sports science lab is by appointment only and is available to elite athletes and research partners.\n\nZone H — the changing rooms — are centrally located between the main gym and the swimming pool for easy access from both. There are separate male, female, and gender-neutral changing facilities, each with lockers, showers, steam rooms, and hair dryers. A coin-operated locker system is in use — one pound coins or a pound deposit card available from reception.\n\nZone I is the café, located at the front of the building to the left of the main reception as you enter. The café specialises in sports nutrition and serves high-protein meals, fresh juices, smoothies, and energy-boosting snacks. It is open from six thirty in the morning until eight in the evening on weekdays, and from eight am to six pm on weekends. There is also a meal prep service available for athletes on structured nutrition plans.\n\nFinally, Zone J — the viewing gallery — is located on the upper level above the swimming pool and overlooks both the pool and, through a glass partition, part of the indoor athletics track. The gallery is open to spectators during all public sessions and during competitions. It seats two hundred and has its own small refreshment kiosk. Access is via the staircase or the lift near the reception area.\n\nAre there any questions before we start the tour proper? Excellent — let's head to the main gym first."
+      "title": "Hall of Residence Briefing",
+      "text": "Warden: Good afternoon, everyone, and welcome to Aldergate Hall. I'm Ruth, the residence warden, and this briefing covers the things you'll need in your first week.\n\nLet me start with what most of you will ask about. Your room key is also your building pass, and if you lose it the replacement charge is twenty-five pounds. That charge is not a penalty — it is the cost of recoding every external door, which we have to do, because a lost key that opens the front door is a lost key that opens the front door for anybody.\n\nLaundry is in the basement, and you book a machine through the same app you use for maintenance requests. Do report maintenance through the app rather than telling a member of staff in the corridor: verbal reports get lost, and the app is what generates a job number you can chase.\n\nKitchens are shared between eight rooms, and this is where most disputes here begin. Our rule is simple — your things go in your cupboard, and anything left on a work surface after ten at night is cleared. I know that sounds severe. It exists because the alternative, which we tried, is a rota that half the corridor ignores and the other half resents.\n\nNow, finding your way. As you come in the main entrance, the porter's lodge is immediately on your right, and that's where parcels are held. The common room is directly opposite, on the left of the entrance. The dining hall is at the far end of the ground-floor corridor, on the north side of the building, and the laundry is directly below it in the basement. Bicycle storage is outside, behind the building, reached through the door at the end of that same corridor. And the study room, which is silent and open all night, is on the first floor above the common room.\n\nOne last point, and it is the one I most want you to remember. If you are struggling — with work, money, or anything else — tell somebody in week three, not week thirteen. Almost everything is fixable early and very little is fixable late."
     },
     {
       "id": "ielts-listening-018-p3",
       "part": 3,
-      "title": "Seminar on Climate Change Adaptation in Agriculture",
-      "text": "Tutor: Today we're looking at how farmers are adapting to climate change. Sarah, you've been researching this — what are the main strategies?\nSarah: There are basically four categories: changing crop varieties, adjusting planting calendars, improving irrigation efficiency, and diversifying into non-crop income streams like agritourism.\nMike: From what I read, the shift to drought-resistant varieties is the most widely adopted strategy globally, though it depends heavily on seed availability and cost.\nTutor: What barriers prevent farmers from adapting?\nSarah: In developing countries, the main barriers are access to finance and lack of reliable weather forecasting at the local level. Farmers need hyper-local data, not national averages.\nMike: There's also a knowledge gap. Many smallholders rely on generational knowledge that may no longer match current climate conditions. Extension services have a critical role.\nTutor: How effective have government subsidy programmes been?\nSarah: Mixed results. Countries that tied subsidies to specific adaptation behaviours — like water-efficient irrigation — saw much better outcomes than those that gave blanket payments.\nMike: India's PM-KISAN scheme is often cited as an example of blanket support that failed to drive specific adaptive behaviours.\nTutor: What does the evidence suggest about the future food supply?\nSarah: If current emission trajectories continue, yield losses for staple crops like wheat and maize could reach thirty percent by 2080 in tropical regions.\nTutor: And what would reverse that?\nMike: A combination of accelerated breeding programmes, agroforestry, and precision agriculture technologies — but these require significant upfront investment."
+      "title": "Searching for a Literature Review",
+      "text": "Tutor: So, the literature review. Nadia, you said you were having trouble.\nNadia: I searched the database and got eleven thousand results. I don't know where to start.\nTutor: Eleven thousand means your search terms are too broad. What did you type?\nNadia: \"Social media and wellbeing.\"\nTutor: Both of those are enormous. What's your actual question?\nNadia: Whether reducing social media use improves wellbeing in university students.\nTutor: That's much narrower than what you searched for, and it contains the terms you need — an intervention, a population, an outcome. Search for those together rather than for the topic.\nJosh: I have the opposite problem. I searched very precisely and got nine results.\nTutor: Nine is too few, and it usually means one of two things. Either the field genuinely is small, which is worth knowing, or you have combined your terms in a way that excludes synonyms. What did the field call this before it was called what you called it?\nJosh: I hadn't thought about that.\nTutor: Terminology shifts. Look at the papers you did find, take the keywords their authors used, and search again with those. The references of a good recent review will also give you twenty years of work in an afternoon.\nNadia: How do I know when to stop searching?\nTutor: When new searches return papers you have already seen. That point is real and you will recognise it.\nJosh: Should we read everything we find?\nTutor: No. Read titles, then abstracts, then methods, and only then whole papers — and record why you excluded things as you go. If you cannot say why a paper is not in your review, you have not done a review; you have done some reading.\nNadia: That sounds like a lot of record-keeping.\nTutor: It is about twenty minutes a day, and it is the difference between writing the review in a week and reconstructing your own decisions for a month."
     },
     {
       "id": "ielts-listening-018-p4",
       "part": 4,
-      "title": "Lecture: Deep-Sea Ecosystems",
-      "text": "Today's lecture focuses on deep-sea ecosystems — those found below two hundred metres, where sunlight no longer penetrates.\n\nFor most of scientific history, the deep ocean was assumed to be a near-barren wasteland. This view changed dramatically in 1977 when researchers aboard the submersible Alvin discovered hydrothermal vents at the Galapagos Rift at a depth of two thousand four hundred metres. These vents release superheated water laden with minerals, and around them thrived dense communities of organisms that survive entirely without sunlight.\n\nThe primary producers in vent ecosystems are chemosynthetic bacteria and archaea, which oxidise hydrogen sulphide released by the vents to produce energy — analogous to the way photosynthetic organisms use sunlight at the surface. These microbes form the base of a food web that includes tube worms — some exceeding two metres in length — giant clams, and vent shrimp.\n\nBeyond hydrothermal vents, deep-sea life depends heavily on what scientists call marine snow — a constant fall of organic particles from surface waters including dead organisms, faeces, and shed mucus. This slow rain of organic matter is the primary food source for most deep-sea benthic communities. Rates of marine snow deposition vary significantly with surface productivity.\n\nThe deep sea is also home to bioluminescent organisms — those capable of producing their own light through chemical reactions. Estimates suggest that up to ninety percent of deep-sea creatures are bioluminescent. This light serves functions ranging from attracting prey — as in the iconic anglerfish — to intraspecies communication and camouflage.\n\nDespite covering over sixty percent of the Earth's surface, less than twenty percent of the deep ocean floor has been mapped in high resolution. This lack of knowledge makes it difficult to assess the potential impacts of emerging threats including deep-sea mining for manganese nodules and polymetallic sulphide deposits.\n\nConservation efforts are now focusing on establishing marine protected areas in international waters, though international governance frameworks remain inadequate for the task."
+      "title": "Why Re-reading Does Not Work",
+      "text": "Lecturer: I want to spend this session on how people study, because the methods students overwhelmingly choose are the ones that work least well, and the reason for that is interesting rather than simply careless.\n\nStart with what students do. Surveys of study habits consistently find re-reading at the top — reading the chapter, then reading it again — followed by highlighting and copying out notes. These are the most popular techniques in almost every population studied.\n\nNow the awkward finding. When these are compared with alternatives under controlled conditions, re-reading produces very little durable learning. It reliably produces something else, which is the feeling of learning: the second pass is easier than the first, the material feels familiar, and that fluency is misread as knowing. Students rate themselves as having learned more after re-reading than after methods that in fact teach them more.\n\nThe technique that outperforms it is retrieval — closing the book and attempting to recall, or better, testing yourself. This is harder, it feels worse, and the improvement in retention is large. In direct comparisons, students who tested themselves outperform students who re-read on delayed tests, often substantially, while predicting before the test that they will do worse.\n\nThat mismatch between what feels effective and what is effective is the central point, and it explains why the better method is not adopted. A student choosing between a technique that feels productive and one that feels like failing is not being lazy; they are using the only signal available to them, and that signal is systematically misleading.\n\nSpacing has a similar profile. The same total study time distributed across several sessions produces markedly better retention than one block, and blocked study feels more coherent while you are doing it. Again the comfortable option is the weaker one.\n\nI will end with the practical version, because it is short. Test yourself rather than review, space the sessions rather than mass them, and mix related topics rather than completing one before starting the next. All three feel worse than the alternatives. That feeling is the cost, and it is worth paying, and no amount of explaining this seems to make the feeling go away — including, I should say, for people who study this for a living."
     }
   ],
   "questions": [
@@ -127,15 +39,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 1,
-      "label": "Customer name",
+      "label": "Applicant surname",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Anna Petrov",
-      "explanation": "The answer \"Anna Petrov\" is stated in the conversation.",
-      "prompt": "Customer name: _____",
+      "answer": "Fairweather",
+      "explanation": "She spells it F-A-I-R-W-E-A-T-H-E-R.",
+      "prompt": "Applicant surname: _____",
       "partNumber": 1
     },
     {
@@ -146,13 +58,13 @@
       "num": 2,
       "label": "House number",
       "prefix": "",
-      "suffix": " Chestnut Avenue",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "47",
-      "explanation": "The answer \"47\" is stated in the conversation.",
-      "prompt": "House number: _____ Chestnut Avenue",
+      "answer": "26",
+      "explanation": "The address is twenty-six Bellevue Road.",
+      "prompt": "House number: _____",
       "partNumber": 1
     },
     {
@@ -161,15 +73,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 3,
-      "label": "Postcode",
+      "label": "Days restrictions apply",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "BT4 8LD",
-      "explanation": "The answer \"BT4 8LD\" is stated in the conversation.",
-      "prompt": "Postcode: _____",
+      "answer": "Monday to Saturday",
+      "explanation": "Zone C operates Monday to Saturday.",
+      "prompt": "Days restrictions apply: _____",
       "partNumber": 1
     },
     {
@@ -178,15 +90,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 4,
-      "label": "Contact telephone",
+      "label": "Restrictions apply until",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "01622 793 450",
-      "explanation": "The answer \"01622 793 450\" is stated in the conversation.",
-      "prompt": "Contact telephone: _____",
+      "answer": "6",
+      "explanation": "Zone C operates eight until six.",
+      "prompt": "Restrictions apply until: _____",
       "partNumber": 1
     },
     {
@@ -195,15 +107,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 5,
-      "label": "Boiler fuel type",
+      "label": "Cost of first permit",
       "prefix": "",
-      "suffix": " combi",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "gas",
-      "explanation": "The answer \"gas\" is stated in the conversation.",
-      "prompt": "Boiler fuel type: _____ combi",
+      "answer": "60 pounds",
+      "explanation": "The first permit is sixty pounds a year.",
+      "prompt": "Cost of first permit: _____",
       "partNumber": 1
     },
     {
@@ -212,15 +124,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 6,
-      "label": "Boiler brand",
+      "label": "Cost of second permit",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Vaillant",
-      "explanation": "The answer \"Vaillant\" is stated in the conversation.",
-      "prompt": "Boiler brand: _____",
+      "answer": "120 pounds",
+      "explanation": "A second permit is a hundred and twenty pounds.",
+      "prompt": "Cost of second permit: _____",
       "partNumber": 1
     },
     {
@@ -229,15 +141,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 7,
-      "label": "Appointment window",
-      "prefix": "9 am to ",
-      "suffix": " pm",
+      "label": "Document that must be updated",
+      "prefix": "",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "12",
-      "explanation": "The answer \"12\" is stated in the conversation.",
-      "prompt": "Appointment window: 9 am to _____ pm",
+      "answer": "registration",
+      "explanation": "The vehicle registration must show the new address.",
+      "prompt": "Document that must be updated: _____",
       "partNumber": 1
     },
     {
@@ -246,15 +158,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 8,
-      "label": "Call-out fee",
-      "prefix": "£",
+      "label": "Length of temporary permit",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "65",
-      "explanation": "The answer \"65\" is stated in the conversation.",
-      "prompt": "Call-out fee: £_____",
+      "answer": "one month",
+      "explanation": "A temporary permit is valid for one month.",
+      "prompt": "Length of temporary permit: _____",
       "partNumber": 1
     },
     {
@@ -263,15 +175,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 9,
-      "label": "",
+      "label": "Processing time for full permit",
       "prefix": "",
       "suffix": "",
-      "labelBlank": true,
-      "labelSuffix": "'s name",
-      "rightContent": "Marcus Webb",
-      "answer": "Engineer",
-      "explanation": "The answer \"Engineer\" is stated in the conversation.",
-      "prompt": "_____'s name: Marcus Webb",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "10 working days",
+      "explanation": "It takes ten working days from complete documents.",
+      "prompt": "Processing time for full permit: _____",
       "partNumber": 1
     },
     {
@@ -280,15 +192,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 10,
-      "label": "Confirmation method",
+      "label": "Cost of visitor scratch cards",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "text / text message",
-      "explanation": "The answer \"text / text message\" is stated in the conversation.",
-      "prompt": "Confirmation method: _____",
+      "answer": "5 pounds",
+      "explanation": "A book of ten costs five pounds.",
+      "prompt": "Cost of visitor scratch cards: _____",
       "partNumber": 1
     },
     {
@@ -297,15 +209,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 11,
-      "prompt": "How many lanes does the swimming pool have?",
+      "prompt": "What is the charge for a replacement key?",
       "options": [
-        "10",
-        "6",
-        "8",
-        "12"
+        "25 pounds",
+        "50 pounds",
+        "Nothing",
+        "10 pounds"
       ],
       "correctAnswer": "A",
-      "explanation": "The guide states 'This is a fifty-metre competition-standard pool with ten lanes'"
+      "explanation": "The replacement charge is twenty-five pounds."
     },
     {
       "id": "ielts-listening-018-q12",
@@ -313,15 +225,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 12,
-      "prompt": "What is the maximum capacity of the main gym?",
+      "prompt": "Why is that charge made?",
       "options": [
-        "100",
-        "150",
-        "120",
-        "200"
+        "As a penalty",
+        "It covers recoding every external door",
+        "It funds security staff",
+        "It discourages lending keys"
       ],
       "correctAnswer": "B",
-      "explanation": "The guide says the gym 'can accommodate up to one hundred and fifty users at one time'"
+      "explanation": "It is the cost of recoding every external door."
     },
     {
       "id": "ielts-listening-018-q13",
@@ -329,15 +241,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 13,
-      "prompt": "What is required to use the physiotherapy centre?",
+      "prompt": "How should maintenance problems be reported?",
       "options": [
-        "a gym membership",
-        "a doctor's referral for non-members",
-        "a prior appointment",
-        "a student ID"
+        "In writing to the office",
+        "To staff in the corridor",
+        "Through the app",
+        "By email"
       ],
       "correctAnswer": "C",
-      "explanation": "The guide says 'Appointments are essential — you cannot walk in without a prior booking'"
+      "explanation": "Report through the app, because verbal reports get lost."
     },
     {
       "id": "ielts-listening-018-q14",
@@ -345,15 +257,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 14,
-      "prompt": "What time does the café open on weekdays?",
+      "prompt": "Why does Ruth prefer the app?",
       "options": [
-        "5:30 am",
-        "6:00 am",
-        "7:00 am",
-        "6:30 am"
+        "It is anonymous",
+        "It reaches contractors directly",
+        "It is faster",
+        "It generates a job number that can be chased"
       ],
       "correctAnswer": "D",
-      "explanation": "The guide says the café is open 'from six thirty in the morning until eight in the evening on weekdays'"
+      "explanation": "The app generates a job number you can chase."
     },
     {
       "id": "ielts-listening-018-q15",
@@ -361,34 +273,32 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 15,
-      "prompt": "What can be viewed from the viewing gallery?",
+      "prompt": "What happens to items left on kitchen surfaces after ten at night?",
       "options": [
-        "the pool and part of the athletics track",
-        "the main gym and the squash courts",
-        "the sports science lab and the pool",
-        "the changing rooms and the café"
+        "They are cleared",
+        "They are returned to rooms",
+        "Nothing",
+        "They are labelled"
       ],
       "correctAnswer": "A",
-      "explanation": "The guide says the gallery 'overlooks both the pool and, through a glass partition, part of the indoor athletics track'"
+      "explanation": "Anything left on a work surface after ten is cleared."
     },
     {
       "id": "ielts-listening-018-q16",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "National Sports Academy — Facilities Plan",
-      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Aldergate Hall — Building Plan",
+      "mapDescription": "The plan shows the ground floor, with basement and first floor indicated. The main entrance is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main gym",
-        "C": "Swimming pool",
-        "D": "Indoor athletics track",
-        "E": "Squash courts",
-        "F": "Physiotherapy centre",
-        "G": "Sports science lab",
-        "H": "Changing rooms",
-        "I": "Café",
-        "J": "Viewing gallery"
+        "A": "Porter's lodge",
+        "B": "Common room",
+        "C": "Dining hall",
+        "D": "Laundry",
+        "E": "Bicycle storage",
+        "F": "Study room",
+        "G": "Warden's office",
+        "H": "Car park"
       },
       "mapLetters": [
         "A",
@@ -398,33 +308,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 16,
-      "prompt": "Entry point where visitors and athletes sign in with notice board",
+      "prompt": "Immediately on the right of the main entrance",
       "correctAnswer": "A",
-      "explanation": "The correct letter is A (Reception)."
+      "explanation": "The porter's lodge is on the right, holding parcels."
     },
     {
       "id": "ielts-listening-018-q17",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "National Sports Academy — Facilities Plan",
-      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Aldergate Hall — Building Plan",
+      "mapDescription": "The plan shows the ground floor, with basement and first floor indicated. The main entrance is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main gym",
-        "C": "Swimming pool",
-        "D": "Indoor athletics track",
-        "E": "Squash courts",
-        "F": "Physiotherapy centre",
-        "G": "Sports science lab",
-        "H": "Changing rooms",
-        "I": "Café",
-        "J": "Viewing gallery"
+        "A": "Porter's lodge",
+        "B": "Common room",
+        "C": "Dining hall",
+        "D": "Laundry",
+        "E": "Bicycle storage",
+        "F": "Study room",
+        "G": "Warden's office",
+        "H": "Car park"
       },
       "mapLetters": [
         "A",
@@ -434,33 +340,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 17,
-      "prompt": "2000 sq metre training space with 60+ cardio machines, open 5:30 am–10 pm",
+      "prompt": "Directly opposite the lodge, on the left of the entrance",
       "correctAnswer": "B",
-      "explanation": "The correct letter is B (Main gym)."
+      "explanation": "The common room is opposite the lodge."
     },
     {
       "id": "ielts-listening-018-q18",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "National Sports Academy — Facilities Plan",
-      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Aldergate Hall — Building Plan",
+      "mapDescription": "The plan shows the ground floor, with basement and first floor indicated. The main entrance is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main gym",
-        "C": "Swimming pool",
-        "D": "Indoor athletics track",
-        "E": "Squash courts",
-        "F": "Physiotherapy centre",
-        "G": "Sports science lab",
-        "H": "Changing rooms",
-        "I": "Café",
-        "J": "Viewing gallery"
+        "A": "Porter's lodge",
+        "B": "Common room",
+        "C": "Dining hall",
+        "D": "Laundry",
+        "E": "Bicycle storage",
+        "F": "Study room",
+        "G": "Warden's office",
+        "H": "Car park"
       },
       "mapLetters": [
         "A",
@@ -470,33 +372,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 18,
-      "prompt": "50-metre 10-lane competition pool to left of main gym",
+      "prompt": "At the far end of the ground-floor corridor, on the north side",
       "correctAnswer": "C",
-      "explanation": "The correct letter is C (Swimming pool)."
+      "explanation": "The dining hall is at the far end, north side."
     },
     {
       "id": "ielts-listening-018-q19",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "National Sports Academy — Facilities Plan",
-      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Aldergate Hall — Building Plan",
+      "mapDescription": "The plan shows the ground floor, with basement and first floor indicated. The main entrance is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main gym",
-        "C": "Swimming pool",
-        "D": "Indoor athletics track",
-        "E": "Squash courts",
-        "F": "Physiotherapy centre",
-        "G": "Sports science lab",
-        "H": "Changing rooms",
-        "I": "Café",
-        "J": "Viewing gallery"
+        "A": "Porter's lodge",
+        "B": "Common room",
+        "C": "Dining hall",
+        "D": "Laundry",
+        "E": "Bicycle storage",
+        "F": "Study room",
+        "G": "Warden's office",
+        "H": "Car park"
       },
       "mapLetters": [
         "A",
@@ -506,33 +404,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 19,
-      "prompt": "200-metre banked indoor running track at rear of building",
+      "prompt": "Directly below the dining hall, in the basement",
       "correctAnswer": "D",
-      "explanation": "The correct letter is D (Indoor athletics track)."
+      "explanation": "The laundry is below the dining hall."
     },
     {
       "id": "ielts-listening-018-q20",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "National Sports Academy — Facilities Plan",
-      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Aldergate Hall — Building Plan",
+      "mapDescription": "The plan shows the ground floor, with basement and first floor indicated. The main entrance is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main gym",
-        "C": "Swimming pool",
-        "D": "Indoor athletics track",
-        "E": "Squash courts",
-        "F": "Physiotherapy centre",
-        "G": "Sports science lab",
-        "H": "Changing rooms",
-        "I": "Café",
-        "J": "Viewing gallery"
+        "A": "Porter's lodge",
+        "B": "Common room",
+        "C": "Dining hall",
+        "D": "Laundry",
+        "E": "Bicycle storage",
+        "F": "Study room",
+        "G": "Warden's office",
+        "H": "Car park"
       },
       "mapLetters": [
         "A",
@@ -542,14 +436,12 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 20,
-      "prompt": "Six glass-backed courts in eastern wing, bookable in 45-minute slots",
-      "correctAnswer": "E",
-      "explanation": "The correct letter is E (Squash courts)."
+      "prompt": "On the first floor, above the common room",
+      "correctAnswer": "F",
+      "explanation": "The silent study room is above the common room."
     },
     {
       "id": "ielts-listening-018-q21",
@@ -557,15 +449,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 21,
-      "prompt": "Which adaptation strategy is described as most widely adopted globally?",
+      "prompt": "How many results did Nadia's search return?",
       "options": [
-        "adjusting planting calendars",
-        "drought-resistant crop varieties",
-        "agritourism diversification",
-        "improved irrigation"
+        "One hundred",
+        "Eleven thousand",
+        "Two thousand",
+        "Nine"
       ],
       "correctAnswer": "B",
-      "explanation": "Mike says 'the shift to drought-resistant varieties is the most widely adopted strategy globally'"
+      "explanation": "She got eleven thousand results."
     },
     {
       "id": "ielts-listening-018-q22",
@@ -573,15 +465,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 22,
-      "prompt": "What type of weather data do farmers most need?",
+      "prompt": "What does the tutor say that indicates?",
       "options": [
-        "national averages",
-        "seasonal forecasts",
-        "hyper-local data",
-        "satellite imagery"
+        "She used the wrong database",
+        "The field is large",
+        "Her search terms are too broad",
+        "The database is faulty"
       ],
       "correctAnswer": "C",
-      "explanation": "Sarah says 'Farmers need hyper-local data, not national averages'"
+      "explanation": "Eleven thousand means the terms are too broad."
     },
     {
       "id": "ielts-listening-018-q23",
@@ -589,15 +481,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 23,
-      "prompt": "Which country's scheme is cited as an example of ineffective blanket support?",
+      "prompt": "What three elements should her search combine?",
       "options": [
-        "Bangladesh",
-        "Kenya",
-        "China",
-        "India"
+        "Topic, method, country",
+        "Title, abstract, keywords",
+        "Author, journal, year",
+        "An intervention, a population, an outcome"
       ],
       "correctAnswer": "D",
-      "explanation": "Mike cites 'India's PM-KISAN scheme'"
+      "explanation": "Her question contains an intervention, a population and an outcome."
     },
     {
       "id": "ielts-listening-018-q24",
@@ -605,15 +497,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 24,
-      "prompt": "By how much could tropical crop yields fall by 2080?",
+      "prompt": "What might Josh's nine results mean?",
       "options": [
-        "30%",
-        "10%",
-        "20%",
-        "40%"
+        "Either the field is small or synonyms are excluded",
+        "The database is incomplete",
+        "His topic is new",
+        "He searched correctly"
       ],
       "correctAnswer": "A",
-      "explanation": "Sarah states yield losses 'could reach thirty percent by 2080'"
+      "explanation": "It means either a genuinely small field or excluded synonyms."
     },
     {
       "id": "ielts-listening-018-q25",
@@ -621,238 +513,238 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 25,
-      "prompt": "What does Mike identify as a requirement for advanced adaptation technologies?",
+      "prompt": "How will the students know when to stop searching?",
       "options": [
-        "international cooperation",
-        "significant upfront investment",
-        "government mandates",
-        "reduced crop prices"
+        "After a set number of papers",
+        "When new searches return papers already seen",
+        "After two weeks",
+        "When the tutor says so"
       ],
       "correctAnswer": "B",
-      "explanation": "Mike says these 'require significant upfront investment'"
+      "explanation": "Stop when searches return papers you have already seen."
     },
     {
       "id": "ielts-listening-018-q26",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Narrow it",
+        "B. Widen it",
+        "C. Record it as you go"
       ],
       "num": 26,
-      "prompt": "introducing new equipment in the laboratory",
+      "prompt": "Nadia's original search terms",
       "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "explanation": "Eleven thousand results means narrowing."
     },
     {
       "id": "ielts-listening-018-q27",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Narrow it",
+        "B. Widen it",
+        "C. Record it as you go"
       ],
       "num": 27,
-      "prompt": "keeping written records of experiments",
-      "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "prompt": "Josh's search terms",
+      "correctAnswer": "B",
+      "explanation": "Nine results means widening with synonyms."
     },
     {
       "id": "ielts-listening-018-q28",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Narrow it",
+        "B. Widen it",
+        "C. Record it as you go"
       ],
       "num": 28,
-      "prompt": "sharing results with other research groups",
+      "prompt": "older terminology for the same topic",
       "correctAnswer": "B",
-      "explanation": "The speaker's attitude is B. She is undecided."
+      "explanation": "Look at what the field called it before."
     },
     {
       "id": "ielts-listening-018-q29",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Narrow it",
+        "B. Widen it",
+        "C. Record it as you go"
       ],
       "num": 29,
-      "prompt": "the importance of the project deadline",
-      "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "prompt": "reasons for excluding a paper",
+      "correctAnswer": "C",
+      "explanation": "Record why you excluded things as you go."
     },
     {
       "id": "ielts-listening-018-q30",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Narrow it",
+        "B. Widen it",
+        "C. Record it as you go"
       ],
       "num": 30,
-      "prompt": "the proposal to extend the study",
+      "prompt": "the decisions behind the review",
       "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "explanation": "Otherwise you reconstruct them for a month."
     },
     {
       "id": "ielts-listening-018-q31",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 31,
-      "sentenceText": "Hydrothermal vents were first discovered in 1977 at a depth of __BLANK__ metres in the Galapagos Rift.",
-      "correctAnswer": "2,400 / two thousand four hundred",
-      "explanation": "The correct answer is: \"2,400 / two thousand four hundred\".",
-      "prompt": "Hydrothermal vents were first discovered in 1977 at a depth of _____ metres in the Galapagos Rift.",
-      "partNumber": 4
+      "prompt": "Which study method do surveys find most popular?",
+      "options": [
+        "Spacing",
+        "Self-testing",
+        "Re-reading",
+        "Group study"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Re-reading comes top, then highlighting and copying notes."
     },
     {
       "id": "ielts-listening-018-q32",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 32,
-      "sentenceText": "The submersible __BLANK__ carried the researchers who made this landmark discovery.",
-      "correctAnswer": "Alvin",
-      "explanation": "The correct answer is: \"Alvin\".",
-      "prompt": "The submersible _____ carried the researchers who made this landmark discovery.",
-      "partNumber": 4
+      "prompt": "What does re-reading reliably produce?",
+      "options": [
+        "Faster reading",
+        "Better notes",
+        "Durable learning",
+        "The feeling of learning"
+      ],
+      "correctAnswer": "D",
+      "explanation": "It produces fluency that is misread as knowing."
     },
     {
       "id": "ielts-listening-018-q33",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 33,
-      "sentenceText": "Chemosynthetic bacteria use __BLANK__ released by vents to generate energy in the absence of sunlight.",
-      "correctAnswer": "hydrogen sulphide",
-      "explanation": "The correct answer is: \"hydrogen sulphide\".",
-      "prompt": "Chemosynthetic bacteria use _____ released by vents to generate energy in the absence of sunlight.",
-      "partNumber": 4
+      "prompt": "How do students rate themselves after re-reading?",
+      "options": [
+        "Higher than after methods that teach them more",
+        "About the same",
+        "They cannot judge",
+        "Lower than after other methods"
+      ],
+      "correctAnswer": "A",
+      "explanation": "They rate themselves as having learned more than they have."
     },
     {
       "id": "ielts-listening-018-q34",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 34,
-      "sentenceText": "__BLANK__, a constant fall of organic particles from surface waters, is the primary food source for most deep-sea benthic communities.",
-      "correctAnswer": "Marine snow",
-      "explanation": "The correct answer is: \"Marine snow\".",
-      "prompt": "_____, a constant fall of organic particles from surface waters, is the primary food source for most deep-sea benthic communities.",
-      "partNumber": 4
+      "prompt": "What do students predict before a delayed test?",
+      "options": [
+        "That testing themselves will help",
+        "That they will do worse having tested themselves",
+        "That both methods are equal",
+        "Nothing measurable"
+      ],
+      "correctAnswer": "B",
+      "explanation": "They predict they will do worse despite performing better."
     },
     {
       "id": "ielts-listening-018-q35",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 35,
-      "sentenceText": "It is estimated that up to __BLANK__ percent of all deep-sea creatures are capable of producing bioluminescence.",
-      "correctAnswer": "90 / ninety",
-      "explanation": "The correct answer is: \"90 / ninety\".",
-      "prompt": "It is estimated that up to _____ percent of all deep-sea creatures are capable of producing bioluminescence.",
-      "partNumber": 4
+      "prompt": "Why does the lecturer say students are not being lazy?",
+      "options": [
+        "The methods are equally good",
+        "They lack time",
+        "They use the only signal available, and it misleads",
+        "They are badly taught"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The available signal is systematically misleading."
     },
     {
       "id": "ielts-listening-018-q36",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 36,
-      "prompt": "The deep sea is defined in the lecture as water found below which depth?",
-      "options": [
-        "A  100 metres",
-        "C  500 metres",
-        "B  200 metres",
-        "D  1,000 metres"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer defines the deep sea as 'below two hundred metres'"
+      "sentenceText": "The technique that outperforms re-reading is __BLANK__.",
+      "correctAnswer": "retrieval",
+      "explanation": "Retrieval — recalling or self-testing — outperforms re-reading.",
+      "prompt": "The technique that outperforms re-reading is _____.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-018-q37",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 37,
-      "prompt": "What do tube worms, giant clams, and vent shrimp have in common according to the lecture?",
-      "options": [
-        "A  they all produce bioluminescence",
-        "B  they are found only in polar waters",
-        "D  they depend on marine snow for food",
-        "C  they live around hydrothermal vents"
-      ],
-      "correctAnswer": "D",
-      "explanation": "These species are described as part of the food web around hydrothermal vents"
+      "sentenceText": "The same total study time __BLANK__ across sessions beats one block.",
+      "correctAnswer": "distributed",
+      "explanation": "Distributed practice beats massed study.",
+      "prompt": "The same total study time _____ across sessions beats one block.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-018-q38",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 38,
-      "prompt": "Marine snow is described in the lecture as consisting of",
-      "options": [
-        "C  organic particles falling from surface waters",
-        "A  dissolved minerals from the seafloor",
-        "B  sediment carried from coastal rivers",
-        "D  chemical compounds from hydrothermal vents"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The lecturer describes marine snow as 'a constant fall of organic particles from surface waters'"
+      "sentenceText": "Blocked study feels more __BLANK__ while you are doing it.",
+      "correctAnswer": "coherent",
+      "explanation": "Blocked study feels more coherent though it is weaker.",
+      "prompt": "Blocked study feels more _____ while you are doing it.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-018-q39",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 39,
-      "prompt": "According to the lecturer, bioluminescence serves functions including",
-      "options": [
-        "A  temperature regulation and navigation",
-        "B  attracting prey and intraspecies communication",
-        "C  converting chemicals into usable energy",
-        "D  filtering food particles from seawater"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The lecturer mentions 'attracting prey' and 'intraspecies communication'"
+      "sentenceText": "The practical advice is to test yourself rather than __BLANK__.",
+      "correctAnswer": "review",
+      "explanation": "Test rather than review.",
+      "prompt": "The practical advice is to test yourself rather than _____.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-018-q40",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 40,
-      "prompt": "The lecturer suggests that deep-sea mining is problematic primarily because",
-      "options": [
-        "A  the technology does not yet exist",
-        "B  international law prohibits it",
-        "C  less than 20% of the ocean floor has been mapped in detail",
-        "D  mining would destroy all marine snow"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says this 'makes it difficult to assess the potential impacts' of mining threats"
+      "sentenceText": "All three recommended methods feel __BLANK__ than the alternatives.",
+      "correctAnswer": "worse",
+      "explanation": "They all feel worse, which is the cost.",
+      "prompt": "All three recommended methods feel _____ than the alternatives.",
+      "partNumber": 4
     }
   ],
   "parts": [
     {
       "partNumber": 1,
-      "title": "Part 1: The History of Coffee Trade",
-      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Arranging a Home Repair Service",
+      "title": "Part 1: Parking Permit Application",
+      "audioDescription": "A new resident applies for a parking permit by telephone.",
+      "context": "Applying for a Resident's Parking Permit",
       "questionRange": [
         1,
         10
@@ -860,9 +752,9 @@
     },
     {
       "partNumber": 2,
-      "title": "Part 2: Sleep and Memory Consolidation",
-      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "National Sports Academy — Facilities Tour",
+      "title": "Part 2: Hall of Residence Briefing",
+      "audioDescription": "A warden briefs new residents and describes the building.",
+      "context": "Hall of Residence Briefing",
       "questionRange": [
         11,
         20
@@ -870,9 +762,9 @@
     },
     {
       "partNumber": 3,
-      "title": "Part 3: The History of Coffee Trade",
-      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Seminar on Climate Change Adaptation in Agriculture",
+      "title": "Part 3: Literature Review Tutorial",
+      "audioDescription": "Two students discuss search strategy with their tutor.",
+      "context": "Searching for a Literature Review",
       "questionRange": [
         21,
         30
@@ -880,9 +772,9 @@
     },
     {
       "partNumber": 4,
-      "title": "Part 4: Sleep and Memory Consolidation",
-      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "Lecture: Deep-Sea Ecosystems",
+      "title": "Part 4: Study Methods",
+      "audioDescription": "A lecture on why the most popular study methods work least well.",
+      "context": "Why Re-reading Does Not Work",
       "questionRange": [
         31,
         40
