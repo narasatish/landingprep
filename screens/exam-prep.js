@@ -96,7 +96,7 @@
     celpip: { general_ls: ["reading", "writing"] }
   };
   const VARIANT_AGNOSTIC_SECTIONS = {
-    ielts: ["speaking"]
+    ielts: ["speaking", "listening"]
   };
   function ExamDetail({ examId, examMeta, onBack, onOpenSection, onOpenFull }) {
     const brand = EXAM_BRAND[examId] || { color: "#4f46e5", icon: "\u{1F4CB}", tagline: "" };

@@ -106,8 +106,12 @@
   // Sections that are IDENTICAL across variants — show ALL their tests for every
   // variant instead of filtering (IELTS Speaking is the same for Academic & GT,
   // so General Training speaking must not be empty).
+  // Listening is the same paper for Academic and General Training too. It used to be
+  // handled by duplicating all 30 manifest entries under a general_training variant,
+  // which pointed both listings at the same files and advertised 61 tests where 31 exist.
+  // The entries are gone; the section is listed once and shown under both variants.
   const VARIANT_AGNOSTIC_SECTIONS = {
-    ielts: ["speaking"],
+    ielts: ["speaking", "listening"],
   };
 
   // ─────────── Detail: full + sections nav ───────────
