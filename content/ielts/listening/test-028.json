@@ -2,122 +2,34 @@
   "id": "ielts-listening-028",
   "exam": "ielts",
   "section": "listening",
-  "title": "IELTS Listening Practice Test 28",
+  "title": "IELTS Academic Listening Practice Test 28",
   "durationSeconds": 2400,
   "questionCount": 40,
   "listeningScripts": [
     {
       "id": "ielts-listening-028-p1",
       "part": 1,
-      "title": "Arranging a Home Repair Service",
-      "text": "Operator: QuickFix Home Services, how can I help?\nCustomer: Hello, I need someone to repair a broken boiler.\nOperator: Of course. Name and address please?\nCustomer: Anna Petrov. 47 Chestnut Avenue, Barton, postcode BT4 8LD.\nOperator: And a contact number?\nCustomer: 01622 793 450.\nOperator: What type of boiler is it?\nCustomer: A gas combi boiler. The brand is Vaillant.\nOperator: When did it stop working?\nCustomer: Yesterday evening — around seven o'clock.\nOperator: We can send an engineer tomorrow between nine and twelve. The call-out fee is sixty-five pounds. Parts are extra if needed.\nCustomer: That's fine.\nOperator: Our engineer's name is Marcus Webb. He'll call thirty minutes before arriving. Do you need a parking permit?\nCustomer: No, there's free parking on the road.\nOperator: Perfect. You'll receive a text confirmation within the hour.",
-      "formLayout": {
-        "title": "QuickFix Home Services — Service Request Form",
-        "example": {
-          "label": "Service category",
-          "content": "boiler / plumbing / electrical"
-        },
-        "rows": [
-          {
-            "type": "blank",
-            "num": 1,
-            "label": "Customer name",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Anna Petrov"
-          },
-          {
-            "type": "blank",
-            "num": 2,
-            "label": "House number",
-            "prefix": "",
-            "suffix": " Chestnut Avenue",
-            "answer": "47"
-          },
-          {
-            "type": "blank",
-            "num": 3,
-            "label": "Postcode",
-            "prefix": "",
-            "suffix": "",
-            "answer": "BT4 8LD"
-          },
-          {
-            "type": "blank",
-            "num": 4,
-            "label": "Contact telephone",
-            "prefix": "",
-            "suffix": "",
-            "answer": "01622 793 450"
-          },
-          {
-            "type": "blank",
-            "num": 5,
-            "label": "Boiler fuel type",
-            "prefix": "",
-            "suffix": " combi",
-            "answer": "gas"
-          },
-          {
-            "type": "blank",
-            "num": 6,
-            "label": "Boiler brand",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Vaillant"
-          },
-          {
-            "type": "blank",
-            "num": 7,
-            "label": "Appointment window",
-            "prefix": "9 am to ",
-            "suffix": " pm",
-            "answer": "12"
-          },
-          {
-            "type": "blank",
-            "num": 8,
-            "label": "Call-out fee",
-            "prefix": "£",
-            "suffix": "",
-            "answer": "65"
-          },
-          {
-            "type": "blank",
-            "num": 9,
-            "labelBlank": true,
-            "labelSuffix": "'s name",
-            "rightContent": "Marcus Webb",
-            "answer": "Engineer"
-          },
-          {
-            "type": "blank",
-            "num": 10,
-            "label": "Confirmation method",
-            "prefix": "",
-            "suffix": "",
-            "answer": "text / text message"
-          }
-        ]
-      }
+      "title": "Registering a Dog with a Vet",
+      "text": "Receptionist: Good morning, Ashfield Veterinary Practice.\nCaller: Hello — I've just adopted a dog and I need to register her with you.\nReceptionist: Lovely. Can I take your name first?\nCaller: It's Perpetua Nwachukwu. Nwachukwu is N-W-A-C-H-U-K-W-U.\nReceptionist: And a contact number?\nCaller: 07469 220 358.\nReceptionist: Now the dog. What's her name?\nCaller: Bramble.\nReceptionist: And her breed and age?\nCaller: She's a collie cross, about four years old — the rescue centre wasn't certain.\nReceptionist: That's normal, and we'll record it as approximate. Is she microchipped?\nCaller: Yes, the rescue said so, but I don't have the number.\nReceptionist: We'll scan her at the first appointment and read it off, then update the registration to your details. That last part matters more than people realise — a chip registered to the previous keeper is no better than no chip at all if she's found straying.\nCaller: I hadn't thought of that.\nReceptionist: Most people haven't. Now, would you like the health plan? It's eighteen pounds a month and covers vaccinations, flea and worm treatment, and two check-ups a year. Paid separately those come to rather more.\nCaller: Yes, please. What does the first appointment involve?\nReceptionist: A full examination, weight, the chip scan, and we'll discuss her vaccination history. Bring any paperwork the rescue gave you, even if it looks incomplete.\nCaller: When can she come in?\nReceptionist: I have Wednesday the ninth at eleven, or Friday the eleventh at four.\nCaller: Friday, please.\nReceptionist: Booked. One practical thing — please don't feed her for two hours beforehand, in case we need to take blood.\nCaller: And if something happens at night?\nReceptionist: Out of hours goes to the emergency service at Middleton, which is seven miles away. Put that number in your phone today rather than looking for it at two in the morning.",
+      "formLayout": true
     },
     {
       "id": "ielts-listening-028-p2",
       "part": 2,
-      "title": "National Sports Academy — Facilities Tour",
-      "text": "Guide: Welcome to the National Sports Academy. I'm delighted to be showing you around today and I hope by the end of this tour you'll have a clear picture of all the world-class facilities we have here. The Academy was founded in 1998 and has trained athletes who have gone on to represent their country at the highest level, including three Olympic medallists in the past decade alone. We're incredibly proud of what's been achieved here and we hope you'll feel inspired by what you see.\n\nLet's start at Zone A — the reception area. This is where you enter the Academy and where all visitors, members, and athletes sign in. The reception team can help with membership enquiries, timetable information, and facility bookings. There is also a notice board here displaying upcoming events, competitions, and community programmes.\n\nDirectly behind reception, through the double doors, is Zone B — the main gym. This is a substantial space measuring nearly two thousand square metres and can accommodate up to one hundred and fifty users at one time. It is equipped with a full complement of strength training equipment including free weights, cable machines, and resistance machines, as well as around sixty cardiovascular machines including treadmills, rowing machines, and cycling ergometers. The gym is open from five-thirty in the morning until ten at night, seven days a week.\n\nTo the left of the main gym is Zone C — the swimming pool. This is a fifty-metre competition-standard pool with ten lanes. The pool is used for training by our academy swimmers but is also available to the public during designated open swimming sessions. The viewing gallery above the pool can accommodate two hundred spectators, which comes in useful during inter-academy competitions.\n\nZone D is the indoor athletics track, located in the large hall at the rear of the building. This is a two-hundred-metre banked indoor track with a synthetic surface suitable for sprinting, distance running, and field events. The long jump pit and high jump area are located at the northern end of the hall. The track is bookable by clubs, schools, and individual athletes through our online system.\n\nIn the eastern wing of the building, off the main corridor from reception, are Zone E — the squash courts. There are six courts in total, all with glass back walls for spectating. Courts can be booked in forty-five minute slots up to seven days in advance. Rackets and balls can be hired from reception for two pounds per session.\n\nZone F is the physiotherapy centre, next to the squash courts in the eastern wing. The centre has eight treatment rooms and is staffed by six qualified physiotherapists. Appointments are essential — you cannot walk in without a prior booking. Sessions last either thirty or sixty minutes depending on the treatment required. The physiotherapy centre is available to both Academy members and members of the public with a referral from their GP.\n\nFurther along the eastern wing is Zone G — the sports science laboratory. This is a specialist research facility used by our performance team and by visiting researchers. The lab offers services including VO2 max testing, biomechanical analysis, body composition measurement, and lactate threshold testing. Access to the sports science lab is by appointment only and is available to elite athletes and research partners.\n\nZone H — the changing rooms — are centrally located between the main gym and the swimming pool for easy access from both. There are separate male, female, and gender-neutral changing facilities, each with lockers, showers, steam rooms, and hair dryers. A coin-operated locker system is in use — one pound coins or a pound deposit card available from reception.\n\nZone I is the café, located at the front of the building to the left of the main reception as you enter. The café specialises in sports nutrition and serves high-protein meals, fresh juices, smoothies, and energy-boosting snacks. It is open from six thirty in the morning until eight in the evening on weekdays, and from eight am to six pm on weekends. There is also a meal prep service available for athletes on structured nutrition plans.\n\nFinally, Zone J — the viewing gallery — is located on the upper level above the swimming pool and overlooks both the pool and, through a glass partition, part of the indoor athletics track. The gallery is open to spectators during all public sessions and during competitions. It seats two hundred and has its own small refreshment kiosk. Access is via the staircase or the lift near the reception area.\n\nAre there any questions before we start the tour proper? Excellent — let's head to the main gym first."
+      "title": "Charity Shop Volunteer Induction",
+      "text": "Manager: Morning, everyone, and thank you for volunteering with us at the Meadowgate Hospice shop. I'm Bernadette, and I manage the shop.\n\nLet me start with what surprises new volunteers. Most of the work is not serving customers. It is sorting donations, and roughly a third of what is donated cannot be sold at all — stained clothing, broken electricals, things that arrive damp. Disposing of that costs the charity money, so every bag has to be assessed rather than put straight out.\n\nShifts are three and a half hours, morning or afternoon, and we ask for one shift a week. If you can't come, ring the shop rather than telling another volunteer. Messages passed along get lost, and a shop with two people rather than four cannot open the fitting room.\n\nSome rules about donations. Nothing is sold that has been recalled or that carries a safety concern, and electricals must be tested before display — we have a tester and a trained volunteer, and untested items stay in the back regardless of how new they look. Anything that appears valuable comes to me before it is priced; we have sold things for four pounds that were worth several hundred, which helps nobody.\n\nNow the shop itself. Coming in the front door, the till is on your right. Womenswear runs along the left-hand wall, the full length of the shop. Menswear is at the back on the left, beyond it. Books and media are on the right past the till, and the fitting room is at the back on the right. The sorting room, where most of you will spend most of your time, is behind the shop floor through the door beside the fitting room, and the staff kitchen is off the sorting room.\n\nOne last thing. Customers will sometimes tell you why they are donating, and it is often because somebody has died. You do not need to say anything clever. Thank them, take the bag, and give them a moment."
     },
     {
       "id": "ielts-listening-028-p3",
       "part": 3,
-      "title": "Seminar on Climate Change Adaptation in Agriculture",
-      "text": "Tutor: Today we're looking at how farmers are adapting to climate change. Sarah, you've been researching this — what are the main strategies?\nSarah: There are basically four categories: changing crop varieties, adjusting planting calendars, improving irrigation efficiency, and diversifying into non-crop income streams like agritourism.\nMike: From what I read, the shift to drought-resistant varieties is the most widely adopted strategy globally, though it depends heavily on seed availability and cost.\nTutor: What barriers prevent farmers from adapting?\nSarah: In developing countries, the main barriers are access to finance and lack of reliable weather forecasting at the local level. Farmers need hyper-local data, not national averages.\nMike: There's also a knowledge gap. Many smallholders rely on generational knowledge that may no longer match current climate conditions. Extension services have a critical role.\nTutor: How effective have government subsidy programmes been?\nSarah: Mixed results. Countries that tied subsidies to specific adaptation behaviours — like water-efficient irrigation — saw much better outcomes than those that gave blanket payments.\nMike: India's PM-KISAN scheme is often cited as an example of blanket support that failed to drive specific adaptive behaviours.\nTutor: What does the evidence suggest about the future food supply?\nSarah: If current emission trajectories continue, yield losses for staple crops like wheat and maize could reach thirty percent by 2080 in tropical regions.\nTutor: And what would reverse that?\nMike: A combination of accelerated breeding programmes, agroforestry, and precision agriculture technologies — but these require significant upfront investment."
+      "title": "A Group Member Who Is Not Contributing",
+      "text": "Tutor: You wanted to talk about the group project. What's happened?\nLeila: One of our group hasn't done anything. We're four weeks in and he's missed every meeting.\nTutor: Has anyone spoken to him directly?\nLeila: We've messaged the group chat.\nTutor: That is not the same thing, and it is where most of these situations stall. A message in a group chat is easy to ignore and easy to miss. One of you should contact him individually and ask whether he intends to continue.\nSam: What if he doesn't reply?\nTutor: Then you have something you did not have before, which is a record of a direct approach. Keep it.\nLeila: Should we just do his part?\nTutor: Not silently. If you absorb the work and say nothing, the mark is shared and the record shows a functioning group. Do the work if you must, and tell me now, in writing, what has happened — not in the final week.\nSam: Does that get him penalised?\nTutor: It might, and that is not your decision or your responsibility. What I can tell you is that there is often something going on that the group does not know about. Illness, money, a family situation. That does not make the outcome fair to you, and it does change what the department can do about it — but only if it surfaces early enough to act on.\nLeila: We felt reporting it was harsh.\nTutor: I know, and almost every group feels that. Reporting it is also the only route by which he gets offered help. Groups that say nothing until submission protect nobody: not themselves, and not him.\nSam: How should we record what we've done?\nTutor: Keep a short log — dates of meetings, who attended, what was agreed. Ten lines. It takes minutes and it settles these questions completely when they arise."
     },
     {
       "id": "ielts-listening-028-p4",
       "part": 4,
-      "title": "Lecture: The History of Antibiotics",
-      "text": "Today I want to talk about the history of antibiotics — arguably one of the most important developments in twentieth-century medicine.\n\nThe story begins in 1928 when Alexander Fleming noticed that a mould called Penicillium notatum was inhibiting the growth of bacteria on one of his culture plates. He published his findings but was initially unable to isolate the active compound in large enough quantities to be clinically useful.\n\nIt wasn't until 1940 that Howard Florey and Ernst Chain at Oxford managed to purify penicillin and demonstrate its effectiveness in mice. The following year, in 1941, they treated the first human patient — a police officer with a severe infection — with remarkable results, though limited supplies meant the patient eventually relapsed.\n\nThe real breakthrough came during the Second World War, when mass production was achieved through collaboration between British and American pharmaceutical companies. By 1944, enough penicillin had been produced to treat all wounded Allied soldiers. This industrial-scale production required entirely new fermentation techniques.\n\nFollowing the war, the golden era of antibiotic discovery began, lasting roughly from 1950 to 1970. During this period, major antibiotic classes including tetracyclines, erythromycin, and vancomycin were discovered, largely from soil bacteria. Researchers estimated that soil contained thousands of antibiotic-producing organisms waiting to be identified.\n\nHowever, the overuse of antibiotics in both human medicine and agriculture has driven the evolution of resistant bacteria at an alarming rate. The World Health Organization now lists antimicrobial resistance as one of the greatest global health threats. New antibiotic approvals have declined sharply since the 1980s as pharmaceutical companies shifted resources toward more profitable chronic disease treatments.\n\nCurrent strategies to address resistance include antibiotic stewardship programmes, rapid diagnostic testing to avoid prescribing antibiotics for viral infections, and investment in novel antimicrobial compounds including bacteriophage therapy and antimicrobial peptides."
+      "title": "What Makes Reintroductions Work",
+      "text": "Lecturer: Reintroducing a species to a place it once lived is among the most visible things conservation does, and the record is more mixed than the coverage suggests. Today I want to look at what separates the ones that work from the ones that do not.\n\nStart with the commonest failure, which is releasing animals into the situation that removed them. If a species disappeared because of hunting, habitat loss or a particular predator, and none of that has changed, the reintroduced population will decline for the same reason as the first one. This sounds obvious and is regularly ignored, because the release is fundable and visible while removing the original cause is neither.\n\nThe second factor is the animals themselves. Captive-bred individuals frequently lack behaviour they would ordinarily learn — what to eat, what to avoid, how to hunt — and release survival for captive-bred stock is generally much lower than for animals translocated from an existing wild population. Where a wild source exists, moving wild animals almost always works better, and the reason projects use captive stock is usually that no wild source is available or affordable.\n\nNumbers and timing matter more than intuition suggests. A single large release performs worse than repeated smaller releases over several years, because the latter spreads the risk across different conditions and allows early arrivals to establish. Genetic diversity in the founding group determines problems that appear two or three generations later, long after the project has been declared a success.\n\nThen there is the part that decides most outcomes and gets least attention. Where a returning species conflicts with people — eating livestock, competing for fish, damaging crops — the project's fate rests on whether the people bearing that cost accept it. Schemes that compensate promptly and involve local people in the decision have markedly better survival records than technically identical schemes that do not, and illegal killing is the leading cause of failure in several well-studied cases.\n\nThe uncomfortable summary is that the biology is the easy part. We know how to move animals, breed them and monitor them. What determines whether a reintroduction lasts is whether the original cause of loss has gone and whether the people living alongside the species have any reason to tolerate it."
     }
   ],
   "questions": [
@@ -127,15 +39,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 1,
-      "label": "Customer name",
+      "label": "Owner's surname",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Anna Petrov",
-      "explanation": "The answer \"Anna Petrov\" is stated in the conversation.",
-      "prompt": "Customer name: _____",
+      "answer": "Nwachukwu",
+      "explanation": "She spells it N-W-A-C-H-U-K-W-U.",
+      "prompt": "Owner's surname: _____",
       "partNumber": 1
     },
     {
@@ -144,15 +56,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 2,
-      "label": "House number",
+      "label": "Contact number",
       "prefix": "",
-      "suffix": " Chestnut Avenue",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "47",
-      "explanation": "The answer \"47\" is stated in the conversation.",
-      "prompt": "House number: _____ Chestnut Avenue",
+      "answer": "07469 220 358",
+      "explanation": "She gives 07469 220 358.",
+      "prompt": "Contact number: _____",
       "partNumber": 1
     },
     {
@@ -161,15 +73,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 3,
-      "label": "Postcode",
+      "label": "Dog's name",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "BT4 8LD",
-      "explanation": "The answer \"BT4 8LD\" is stated in the conversation.",
-      "prompt": "Postcode: _____",
+      "answer": "Bramble",
+      "explanation": "The dog is called Bramble.",
+      "prompt": "Dog's name: _____",
       "partNumber": 1
     },
     {
@@ -178,15 +90,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 4,
-      "label": "Contact telephone",
+      "label": "Breed",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "01622 793 450",
-      "explanation": "The answer \"01622 793 450\" is stated in the conversation.",
-      "prompt": "Contact telephone: _____",
+      "answer": "collie cross",
+      "explanation": "She is a collie cross.",
+      "prompt": "Breed: _____",
       "partNumber": 1
     },
     {
@@ -195,15 +107,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 5,
-      "label": "Boiler fuel type",
+      "label": "Approximate age",
       "prefix": "",
-      "suffix": " combi",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "gas",
-      "explanation": "The answer \"gas\" is stated in the conversation.",
-      "prompt": "Boiler fuel type: _____ combi",
+      "answer": "four",
+      "explanation": "About four years old.",
+      "prompt": "Approximate age: _____",
       "partNumber": 1
     },
     {
@@ -212,15 +124,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 6,
-      "label": "Boiler brand",
+      "label": "To be read at first appointment",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Vaillant",
-      "explanation": "The answer \"Vaillant\" is stated in the conversation.",
-      "prompt": "Boiler brand: _____",
+      "answer": "microchip",
+      "explanation": "The chip will be scanned and the number read.",
+      "prompt": "To be read at first appointment: _____",
       "partNumber": 1
     },
     {
@@ -229,15 +141,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 7,
-      "label": "Appointment window",
-      "prefix": "9 am to ",
-      "suffix": " pm",
+      "label": "Health plan cost per month",
+      "prefix": "",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "12",
-      "explanation": "The answer \"12\" is stated in the conversation.",
-      "prompt": "Appointment window: 9 am to _____ pm",
+      "answer": "18 pounds",
+      "explanation": "The health plan is eighteen pounds a month.",
+      "prompt": "Health plan cost per month: _____",
       "partNumber": 1
     },
     {
@@ -246,15 +158,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 8,
-      "label": "Call-out fee",
-      "prefix": "£",
+      "label": "Appointment day",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "65",
-      "explanation": "The answer \"65\" is stated in the conversation.",
-      "prompt": "Call-out fee: £_____",
+      "answer": "Friday",
+      "explanation": "She chooses Friday the eleventh at four.",
+      "prompt": "Appointment day: _____",
       "partNumber": 1
     },
     {
@@ -263,15 +175,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 9,
-      "label": "",
+      "label": "Period without food beforehand",
       "prefix": "",
       "suffix": "",
-      "labelBlank": true,
-      "labelSuffix": "'s name",
-      "rightContent": "Marcus Webb",
-      "answer": "Engineer",
-      "explanation": "The answer \"Engineer\" is stated in the conversation.",
-      "prompt": "_____'s name: Marcus Webb",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "two hours",
+      "explanation": "No food for two hours in case blood is taken.",
+      "prompt": "Period without food beforehand: _____",
       "partNumber": 1
     },
     {
@@ -280,15 +192,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 10,
-      "label": "Confirmation method",
+      "label": "Distance to emergency service",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "text / text message",
-      "explanation": "The answer \"text / text message\" is stated in the conversation.",
-      "prompt": "Confirmation method: _____",
+      "answer": "seven miles",
+      "explanation": "The out-of-hours service at Middleton is seven miles away.",
+      "prompt": "Distance to emergency service: _____",
       "partNumber": 1
     },
     {
@@ -297,15 +209,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 11,
-      "prompt": "How many lanes does the swimming pool have?",
+      "prompt": "What surprises new volunteers most?",
       "options": [
-        "10",
-        "6",
-        "8",
-        "12"
+        "That most of the work is sorting donations",
+        "The customers",
+        "The stock levels",
+        "The hours"
       ],
       "correctAnswer": "A",
-      "explanation": "The guide states 'This is a fifty-metre competition-standard pool with ten lanes'"
+      "explanation": "Most of the work is sorting, not serving."
     },
     {
       "id": "ielts-listening-028-q12",
@@ -313,15 +225,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 12,
-      "prompt": "What is the maximum capacity of the main gym?",
+      "prompt": "Roughly how much of what is donated cannot be sold?",
       "options": [
-        "100",
-        "150",
-        "120",
-        "200"
+        "A tenth",
+        "A third",
+        "A half",
+        "Two thirds"
       ],
       "correctAnswer": "B",
-      "explanation": "The guide says the gym 'can accommodate up to one hundred and fifty users at one time'"
+      "explanation": "Roughly a third cannot be sold at all."
     },
     {
       "id": "ielts-listening-028-q13",
@@ -329,15 +241,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 13,
-      "prompt": "What is required to use the physiotherapy centre?",
+      "prompt": "Why must every bag be assessed?",
       "options": [
-        "a gym membership",
-        "a doctor's referral for non-members",
-        "a prior appointment",
-        "a student ID"
+        "To thank donors",
+        "To count donations",
+        "Because disposing of unsellable items costs the charity money",
+        "For insurance"
       ],
       "correctAnswer": "C",
-      "explanation": "The guide says 'Appointments are essential — you cannot walk in without a prior booking'"
+      "explanation": "Disposal costs money, so bags are assessed rather than put out."
     },
     {
       "id": "ielts-listening-028-q14",
@@ -345,15 +257,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 14,
-      "prompt": "What time does the café open on weekdays?",
+      "prompt": "How should a volunteer report an absence?",
       "options": [
-        "5:30 am",
-        "6:00 am",
-        "7:00 am",
-        "6:30 am"
+        "Message the group",
+        "Email head office",
+        "Tell another volunteer",
+        "Ring the shop"
       ],
       "correctAnswer": "D",
-      "explanation": "The guide says the café is open 'from six thirty in the morning until eight in the evening on weekdays'"
+      "explanation": "Ring the shop; passed-along messages get lost."
     },
     {
       "id": "ielts-listening-028-q15",
@@ -361,34 +273,32 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 15,
-      "prompt": "What can be viewed from the viewing gallery?",
+      "prompt": "What happens to untested electricals?",
       "options": [
-        "the pool and part of the athletics track",
-        "the main gym and the squash courts",
-        "the sports science lab and the pool",
-        "the changing rooms and the café"
+        "They stay in the back",
+        "They are given away",
+        "They are returned",
+        "They are sold cheaply"
       ],
       "correctAnswer": "A",
-      "explanation": "The guide says the gallery 'overlooks both the pool and, through a glass partition, part of the indoor athletics track'"
+      "explanation": "Untested items stay in the back however new they look."
     },
     {
       "id": "ielts-listening-028-q16",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "National Sports Academy — Facilities Plan",
-      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Meadowgate Hospice Shop — Floor Plan",
+      "mapDescription": "The plan shows the shop floor and the rooms behind it. The front door is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main gym",
-        "C": "Swimming pool",
-        "D": "Indoor athletics track",
-        "E": "Squash courts",
-        "F": "Physiotherapy centre",
-        "G": "Sports science lab",
-        "H": "Changing rooms",
-        "I": "Café",
-        "J": "Viewing gallery"
+        "A": "Till",
+        "B": "Womenswear",
+        "C": "Menswear",
+        "D": "Books and media",
+        "E": "Fitting room",
+        "F": "Sorting room",
+        "G": "Staff kitchen",
+        "H": "Window display"
       },
       "mapLetters": [
         "A",
@@ -398,33 +308,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 16,
-      "prompt": "Entry point where visitors and athletes sign in with notice board",
-      "correctAnswer": "A",
-      "explanation": "The correct letter is A (Reception)."
+      "prompt": "Along the left-hand wall, the full length of the shop",
+      "correctAnswer": "B",
+      "explanation": "Womenswear runs the length of the left wall."
     },
     {
       "id": "ielts-listening-028-q17",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "National Sports Academy — Facilities Plan",
-      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Meadowgate Hospice Shop — Floor Plan",
+      "mapDescription": "The plan shows the shop floor and the rooms behind it. The front door is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main gym",
-        "C": "Swimming pool",
-        "D": "Indoor athletics track",
-        "E": "Squash courts",
-        "F": "Physiotherapy centre",
-        "G": "Sports science lab",
-        "H": "Changing rooms",
-        "I": "Café",
-        "J": "Viewing gallery"
+        "A": "Till",
+        "B": "Womenswear",
+        "C": "Menswear",
+        "D": "Books and media",
+        "E": "Fitting room",
+        "F": "Sorting room",
+        "G": "Staff kitchen",
+        "H": "Window display"
       },
       "mapLetters": [
         "A",
@@ -434,33 +340,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 17,
-      "prompt": "2000 sq metre training space with 60+ cardio machines, open 5:30 am–10 pm",
-      "correctAnswer": "B",
-      "explanation": "The correct letter is B (Main gym)."
+      "prompt": "At the back on the left, beyond womenswear",
+      "correctAnswer": "C",
+      "explanation": "Menswear is at the back on the left."
     },
     {
       "id": "ielts-listening-028-q18",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "National Sports Academy — Facilities Plan",
-      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Meadowgate Hospice Shop — Floor Plan",
+      "mapDescription": "The plan shows the shop floor and the rooms behind it. The front door is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main gym",
-        "C": "Swimming pool",
-        "D": "Indoor athletics track",
-        "E": "Squash courts",
-        "F": "Physiotherapy centre",
-        "G": "Sports science lab",
-        "H": "Changing rooms",
-        "I": "Café",
-        "J": "Viewing gallery"
+        "A": "Till",
+        "B": "Womenswear",
+        "C": "Menswear",
+        "D": "Books and media",
+        "E": "Fitting room",
+        "F": "Sorting room",
+        "G": "Staff kitchen",
+        "H": "Window display"
       },
       "mapLetters": [
         "A",
@@ -470,33 +372,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 18,
-      "prompt": "50-metre 10-lane competition pool to left of main gym",
-      "correctAnswer": "C",
-      "explanation": "The correct letter is C (Swimming pool)."
+      "prompt": "On the right past the till",
+      "correctAnswer": "D",
+      "explanation": "Books and media are past the till on the right."
     },
     {
       "id": "ielts-listening-028-q19",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "National Sports Academy — Facilities Plan",
-      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Meadowgate Hospice Shop — Floor Plan",
+      "mapDescription": "The plan shows the shop floor and the rooms behind it. The front door is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main gym",
-        "C": "Swimming pool",
-        "D": "Indoor athletics track",
-        "E": "Squash courts",
-        "F": "Physiotherapy centre",
-        "G": "Sports science lab",
-        "H": "Changing rooms",
-        "I": "Café",
-        "J": "Viewing gallery"
+        "A": "Till",
+        "B": "Womenswear",
+        "C": "Menswear",
+        "D": "Books and media",
+        "E": "Fitting room",
+        "F": "Sorting room",
+        "G": "Staff kitchen",
+        "H": "Window display"
       },
       "mapLetters": [
         "A",
@@ -506,33 +404,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 19,
-      "prompt": "200-metre banked indoor running track at rear of building",
-      "correctAnswer": "D",
-      "explanation": "The correct letter is D (Indoor athletics track)."
+      "prompt": "Behind the shop floor, through the door beside the fitting room",
+      "correctAnswer": "F",
+      "explanation": "The sorting room is behind the shop floor."
     },
     {
       "id": "ielts-listening-028-q20",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "National Sports Academy — Facilities Plan",
-      "mapDescription": "Label the facilities A–J on the sports academy plan.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Meadowgate Hospice Shop — Floor Plan",
+      "mapDescription": "The plan shows the shop floor and the rooms behind it. The front door is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Reception",
-        "B": "Main gym",
-        "C": "Swimming pool",
-        "D": "Indoor athletics track",
-        "E": "Squash courts",
-        "F": "Physiotherapy centre",
-        "G": "Sports science lab",
-        "H": "Changing rooms",
-        "I": "Café",
-        "J": "Viewing gallery"
+        "A": "Till",
+        "B": "Womenswear",
+        "C": "Menswear",
+        "D": "Books and media",
+        "E": "Fitting room",
+        "F": "Sorting room",
+        "G": "Staff kitchen",
+        "H": "Window display"
       },
       "mapLetters": [
         "A",
@@ -542,14 +436,12 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 20,
-      "prompt": "Six glass-backed courts in eastern wing, bookable in 45-minute slots",
-      "correctAnswer": "E",
-      "explanation": "The correct letter is E (Squash courts)."
+      "prompt": "Off the sorting room",
+      "correctAnswer": "G",
+      "explanation": "The staff kitchen is off the sorting room."
     },
     {
       "id": "ielts-listening-028-q21",
@@ -557,15 +449,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 21,
-      "prompt": "Which adaptation strategy is described as most widely adopted globally?",
+      "prompt": "How long has the group been working?",
       "options": [
-        "adjusting planting calendars",
-        "drought-resistant crop varieties",
-        "agritourism diversification",
-        "improved irrigation"
+        "Two weeks",
+        "Four weeks",
+        "Six weeks",
+        "A term"
       ],
       "correctAnswer": "B",
-      "explanation": "Mike says 'the shift to drought-resistant varieties is the most widely adopted strategy globally'"
+      "explanation": "They are four weeks in."
     },
     {
       "id": "ielts-listening-028-q22",
@@ -573,15 +465,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 22,
-      "prompt": "What type of weather data do farmers most need?",
+      "prompt": "What has the group done so far?",
       "options": [
-        "national averages",
-        "seasonal forecasts",
-        "hyper-local data",
-        "satellite imagery"
+        "Nothing at all",
+        "Spoken to him individually",
+        "Messaged the group chat",
+        "Reported him"
       ],
       "correctAnswer": "C",
-      "explanation": "Sarah says 'Farmers need hyper-local data, not national averages'"
+      "explanation": "They have only messaged the group chat."
     },
     {
       "id": "ielts-listening-028-q23",
@@ -589,15 +481,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 23,
-      "prompt": "Which country's scheme is cited as an example of ineffective blanket support?",
+      "prompt": "Why does the tutor say that is not enough?",
       "options": [
-        "Bangladesh",
-        "Kenya",
-        "China",
-        "India"
+        "It is too formal",
+        "It excludes him",
+        "It is against the rules",
+        "A group message is easy to ignore and easy to miss"
       ],
       "correctAnswer": "D",
-      "explanation": "Mike cites 'India's PM-KISAN scheme'"
+      "explanation": "That is where most of these situations stall."
     },
     {
       "id": "ielts-listening-028-q24",
@@ -605,15 +497,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 24,
-      "prompt": "By how much could tropical crop yields fall by 2080?",
+      "prompt": "What does a direct approach give them if he does not reply?",
       "options": [
-        "30%",
-        "10%",
-        "20%",
-        "40%"
+        "A record of having tried",
+        "An automatic extension",
+        "A new group member",
+        "Grounds for removal"
       ],
       "correctAnswer": "A",
-      "explanation": "Sarah states yield losses 'could reach thirty percent by 2080'"
+      "explanation": "They have a record of a direct approach; keep it."
     },
     {
       "id": "ielts-listening-028-q25",
@@ -621,238 +513,238 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 25,
-      "prompt": "What does Mike identify as a requirement for advanced adaptation technologies?",
+      "prompt": "What does the tutor say about absorbing his work silently?",
       "options": [
-        "international cooperation",
-        "significant upfront investment",
-        "government mandates",
-        "reduced crop prices"
+        "It is the best solution",
+        "The mark is shared and the record shows a functioning group",
+        "It is forbidden",
+        "It saves time"
       ],
       "correctAnswer": "B",
-      "explanation": "Mike says these 'require significant upfront investment'"
+      "explanation": "Do the work if you must, but tell the tutor now, in writing."
     },
     {
       "id": "ielts-listening-028-q26",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Do it individually and directly",
+        "B. Report it now rather than later",
+        "C. Keep a written record"
       ],
       "num": 26,
-      "prompt": "introducing new equipment in the laboratory",
+      "prompt": "contacting the absent student",
       "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "explanation": "One of them should contact him individually."
     },
     {
       "id": "ielts-listening-028-q27",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Do it individually and directly",
+        "B. Report it now rather than later",
+        "C. Keep a written record"
       ],
       "num": 27,
-      "prompt": "keeping written records of experiments",
-      "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "prompt": "the group chat messages",
+      "correctAnswer": "A",
+      "explanation": "A direct approach replaces the group message."
     },
     {
       "id": "ielts-listening-028-q28",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Do it individually and directly",
+        "B. Report it now rather than later",
+        "C. Keep a written record"
       ],
       "num": 28,
-      "prompt": "sharing results with other research groups",
+      "prompt": "telling the tutor what has happened",
       "correctAnswer": "B",
-      "explanation": "The speaker's attitude is B. She is undecided."
+      "explanation": "In writing, now, not in the final week."
     },
     {
       "id": "ielts-listening-028-q29",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Do it individually and directly",
+        "B. Report it now rather than later",
+        "C. Keep a written record"
       ],
       "num": 29,
-      "prompt": "the importance of the project deadline",
-      "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "prompt": "the possibility that he needs help",
+      "correctAnswer": "B",
+      "explanation": "It can only be acted on if it surfaces early."
     },
     {
       "id": "ielts-listening-028-q30",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Do it individually and directly",
+        "B. Report it now rather than later",
+        "C. Keep a written record"
       ],
       "num": 30,
-      "prompt": "the proposal to extend the study",
+      "prompt": "meetings and what was agreed",
       "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "explanation": "A ten-line log settles these questions."
     },
     {
       "id": "ielts-listening-028-q31",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 31,
-      "sentenceText": "In 1928, Fleming observed that a __BLANK__ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
-      "correctAnswer": "mould",
-      "explanation": "The correct answer is: \"mould\".",
-      "prompt": "In 1928, Fleming observed that a _____ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
-      "partNumber": 4
+      "prompt": "What is the commonest cause of reintroduction failure?",
+      "options": [
+        "Bad weather",
+        "Disease",
+        "Releasing animals into the situation that removed them",
+        "Poor breeding"
+      ],
+      "correctAnswer": "C",
+      "explanation": "If the original cause has not changed, the population declines again."
     },
     {
       "id": "ielts-listening-028-q32",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 32,
-      "sentenceText": "Fleming's initial problem was that he could not __BLANK__ the active compound in sufficient quantities for clinical use.",
-      "correctAnswer": "isolate / purify",
-      "explanation": "The correct answer is: \"isolate / purify\".",
-      "prompt": "Fleming's initial problem was that he could not _____ the active compound in sufficient quantities for clinical use.",
-      "partNumber": 4
+      "prompt": "Why is this regularly ignored?",
+      "options": [
+        "It costs nothing",
+        "Regulators forbid it",
+        "It is not understood",
+        "The release is fundable and visible while removing the cause is neither"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Releases attract funding and attention; removing causes does not."
     },
     {
       "id": "ielts-listening-028-q33",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 33,
-      "sentenceText": "Florey and Chain, based at __BLANK__, were the first to purify penicillin and test it on a human patient.",
-      "correctAnswer": "Oxford",
-      "explanation": "The correct answer is: \"Oxford\".",
-      "prompt": "Florey and Chain, based at _____, were the first to purify penicillin and test it on a human patient.",
-      "partNumber": 4
+      "prompt": "What do captive-bred animals frequently lack?",
+      "options": [
+        "Behaviour they would ordinarily learn",
+        "Physical fitness",
+        "Vaccination",
+        "Genetic diversity"
+      ],
+      "correctAnswer": "A",
+      "explanation": "What to eat, what to avoid, how to hunt."
     },
     {
       "id": "ielts-listening-028-q34",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 34,
-      "sentenceText": "__BLANK__ was the occupation of the first human patient treated with penicillin in 1941.",
-      "correctAnswer": "Police officer",
-      "explanation": "The correct answer is: \"Police officer\".",
-      "prompt": "_____ was the occupation of the first human patient treated with penicillin in 1941.",
-      "partNumber": 4
+      "prompt": "How does release survival compare for captive-bred animals?",
+      "options": [
+        "Higher than wild-translocated",
+        "Generally much lower than wild-translocated",
+        "About the same",
+        "Unmeasured"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Survival is generally much lower than for wild-sourced animals."
     },
     {
       "id": "ielts-listening-028-q35",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 35,
-      "sentenceText": "Mass production of penicillin during the Second World War required entirely new __BLANK__ techniques.",
-      "correctAnswer": "fermentation",
-      "explanation": "The correct answer is: \"fermentation\".",
-      "prompt": "Mass production of penicillin during the Second World War required entirely new _____ techniques.",
-      "partNumber": 4
+      "prompt": "Why do projects use captive stock?",
+      "options": [
+        "It is easier to monitor",
+        "It performs better",
+        "Usually because no wild source is available or affordable",
+        "It is required by law"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Wild sources are often unavailable or unaffordable."
     },
     {
       "id": "ielts-listening-028-q36",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 36,
-      "prompt": "According to the lecture, the main reason antibiotic discovery declined after the 1980s was that",
-      "options": [
-        "A  resistant bacteria evolved too quickly",
-        "C  all known antibiotic compounds had already been tested",
-        "B  pharmaceutical companies moved to more profitable areas",
-        "D  government funding was withdrawn"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says companies 'shifted resources toward more profitable chronic disease treatments'"
+      "sentenceText": "Repeated smaller releases spread the __BLANK__ across different conditions.",
+      "correctAnswer": "risk",
+      "explanation": "Repeated releases beat one large release.",
+      "prompt": "Repeated smaller releases spread the _____ across different conditions.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-028-q37",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 37,
-      "prompt": "The golden era of antibiotic discovery lasted approximately",
-      "options": [
-        "A  10 years",
-        "C  30 years",
-        "D  40 years",
-        "B  20 years"
-      ],
-      "correctAnswer": "D",
-      "explanation": "The golden era ran 'from 1950 to 1970' — roughly 20 years"
+      "sentenceText": "Genetic __BLANK__ in the founding group causes problems two or three generations later.",
+      "correctAnswer": "diversity",
+      "explanation": "Founder diversity determines later problems.",
+      "prompt": "Genetic _____ in the founding group causes problems two or three generations later.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-028-q38",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 38,
-      "prompt": "According to the lecturer, most antibiotics discovered in the golden era came from",
-      "options": [
-        "C  soil bacteria",
-        "A  synthetic chemicals",
-        "B  marine organisms",
-        "D  hospital environments"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The lecturer states they were discovered 'largely from soil bacteria'"
+      "sentenceText": "The project's fate rests on whether the people bearing the __BLANK__ accept it.",
+      "correctAnswer": "cost",
+      "explanation": "Local acceptance decides the outcome.",
+      "prompt": "The project's fate rests on whether the people bearing the _____ accept it.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-028-q39",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 39,
-      "prompt": "The World Health Organization describes antimicrobial resistance as",
-      "options": [
-        "A  a manageable risk with current technology",
-        "B  one of the greatest global health threats",
-        "C  primarily a problem in developing countries",
-        "D  less serious than other infectious diseases"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The lecturer quotes WHO listing it as 'one of the greatest global health threats'"
+      "sentenceText": "Illegal __BLANK__ is the leading cause of failure in several well-studied cases.",
+      "correctAnswer": "killing",
+      "explanation": "Illegal killing leads the failure causes.",
+      "prompt": "Illegal _____ is the leading cause of failure in several well-studied cases.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-028-q40",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 40,
-      "prompt": "Which novel treatment approach is specifically mentioned as an alternative to conventional antibiotics?",
-      "options": [
-        "A  gene therapy",
-        "B  vaccination programmes",
-        "C  bacteriophage therapy",
-        "D  surgical interventions"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer mentions 'bacteriophage therapy' as a novel antimicrobial approach"
+      "sentenceText": "The uncomfortable summary is that the __BLANK__ is the easy part.",
+      "correctAnswer": "biology",
+      "explanation": "Moving, breeding and monitoring are understood.",
+      "prompt": "The uncomfortable summary is that the _____ is the easy part.",
+      "partNumber": 4
     }
   ],
   "parts": [
     {
       "partNumber": 1,
-      "title": "Part 1: The History of Coffee Trade",
-      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Arranging a Home Repair Service",
+      "title": "Part 1: Registering a Pet",
+      "audioDescription": "A new owner registers a rescue dog with a veterinary practice.",
+      "context": "Registering a Dog with a Vet",
       "questionRange": [
         1,
         10
@@ -860,9 +752,9 @@
     },
     {
       "partNumber": 2,
-      "title": "Part 2: Sleep and Memory Consolidation",
-      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "National Sports Academy — Facilities Tour",
+      "title": "Part 2: Charity Shop Induction",
+      "audioDescription": "A shop manager inducts volunteers and describes the shop layout.",
+      "context": "Charity Shop Volunteer Induction",
       "questionRange": [
         11,
         20
@@ -870,9 +762,9 @@
     },
     {
       "partNumber": 3,
-      "title": "Part 3: The History of Coffee Trade",
-      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Seminar on Climate Change Adaptation in Agriculture",
+      "title": "Part 3: Group Work Tutorial",
+      "audioDescription": "Two students discuss an absent group member with their tutor.",
+      "context": "A Group Member Who Is Not Contributing",
       "questionRange": [
         21,
         30
@@ -880,9 +772,9 @@
     },
     {
       "partNumber": 4,
-      "title": "Part 4: Sleep and Memory Consolidation",
-      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "Lecture: The History of Antibiotics",
+      "title": "Part 4: Species Reintroduction",
+      "audioDescription": "A lecture on what separates successful reintroductions from failures.",
+      "context": "What Makes Reintroductions Work",
       "questionRange": [
         31,
         40
