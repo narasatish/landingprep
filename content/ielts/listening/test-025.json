@@ -2,122 +2,34 @@
   "id": "ielts-listening-025",
   "exam": "ielts",
   "section": "listening",
-  "title": "IELTS Listening Practice Test 25",
+  "title": "IELTS Academic Listening Practice Test 25",
   "durationSeconds": 2400,
   "questionCount": 40,
   "listeningScripts": [
     {
       "id": "ielts-listening-025-p1",
       "part": 1,
-      "title": "Library Membership and Book Loan",
-      "text": "Librarian: Central Library, how can I assist you?\nCaller: I'd like to register for a library card and ask about borrowing rules.\nLibrarian: Of course. Your full name please?\nCaller: Patricia Osei. O-S-E-I.\nLibrarian: And your address?\nCaller: Flat 3, 18 Maple Street, Thornton, TH6 2PQ.\nLibrarian: Date of birth?\nCaller: Second of August, 1994.\nLibrarian: Our standard membership is free and allows you to borrow up to eight items at a time. Loans are for three weeks with one free renewal. Audiobooks and e-books are also available through our app.\nCaller: Are there fines for late returns?\nLibrarian: Ten pence per day for standard loans, twenty pence for reserved items.\nCaller: Can I reserve books online?\nLibrarian: Yes, through the library portal. There's a reservation fee of fifty pence per item. Your card will be ready to collect tomorrow from the information desk.",
-      "formLayout": {
-        "title": "Central Library — New Membership Form",
-        "example": {
-          "label": "Annual membership fee",
-          "content": "free"
-        },
-        "rows": [
-          {
-            "type": "blank",
-            "num": 1,
-            "label": "Surname",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Osei"
-          },
-          {
-            "type": "blank",
-            "num": 2,
-            "label": "Address",
-            "prefix": "Flat 3, 18 ",
-            "suffix": ", Thornton",
-            "answer": "Maple Street"
-          },
-          {
-            "type": "blank",
-            "num": 3,
-            "label": "Postcode",
-            "prefix": "",
-            "suffix": "",
-            "answer": "TH6 2PQ"
-          },
-          {
-            "type": "blank",
-            "num": 4,
-            "label": "Date of birth",
-            "prefix": "2nd August ",
-            "suffix": "",
-            "answer": "1994"
-          },
-          {
-            "type": "blank",
-            "num": 5,
-            "label": "Maximum items allowed",
-            "prefix": "up to ",
-            "suffix": " items",
-            "answer": "8 / eight"
-          },
-          {
-            "type": "blank",
-            "num": 6,
-            "label": "Standard loan period",
-            "prefix": "",
-            "suffix": " weeks",
-            "answer": "3 / three"
-          },
-          {
-            "type": "blank",
-            "num": 7,
-            "labelBlank": true,
-            "labelSuffix": " fine per day",
-            "rightContent": "10p / 10 pence",
-            "answer": "Standard"
-          },
-          {
-            "type": "blank",
-            "num": 8,
-            "label": "Reserved item fine (per day)",
-            "prefix": "",
-            "suffix": "p",
-            "answer": "20 / twenty"
-          },
-          {
-            "type": "blank",
-            "num": 9,
-            "label": "Online reservation fee",
-            "prefix": "",
-            "suffix": "p per item",
-            "answer": "50 / fifty"
-          },
-          {
-            "type": "blank",
-            "num": 10,
-            "label": "Card collection point",
-            "prefix": "",
-            "suffix": "",
-            "answer": "information desk"
-          }
-        ]
-      }
+      "title": "Booking a Photography Workshop",
+      "text": "Organiser: Good morning, Northlight Photography Workshops.\nCaller: Hello, I'd like to book a place on one of your weekend courses.\nOrganiser: Certainly. Can I take your name?\nCaller: It's Sylvester Okonjo. Okonjo is O-K-O-N-J-O.\nOrganiser: And a contact number?\nCaller: 07884 512 067.\nOrganiser: Which workshop were you interested in?\nCaller: The landscape one, I think.\nOrganiser: How much experience do you have?\nCaller: I've had a camera for about a year but I mostly use it on automatic.\nOrganiser: Then I'd steer you towards the foundation weekend rather than landscape. The landscape course assumes you can set exposure manually, and people who arrive without that spend the whole weekend on the basics while everyone else photographs.\nCaller: That's helpful. The foundation weekend, then.\nOrganiser: The fee is two hundred and sixty pounds. That covers tuition and lunch on both days, but not accommodation.\nCaller: When does it run?\nOrganiser: The next one is the fifteenth and sixteenth of June, starting at half past nine each morning and finishing about five.\nCaller: What do I need to bring?\nOrganiser: Your camera, obviously, plus every lens you own, spare batteries and a memory card you don't mind filling. And a tripod if you have one — if you don't, we lend them, but say now rather than on the day, because we only carry eight.\nCaller: I'll borrow one, please.\nOrganiser: Noted. Waterproofs too. We go out whatever the weather, and the light is usually better when it's poor.\nCaller: Is there any preparation?\nOrganiser: Read your camera manual. I know how that sounds. Two-thirds of the questions I answer on a foundation weekend are answered in the manual, and the people who have read it get much more from the two days.\nCaller: Fair enough. How do I confirm?\nOrganiser: A deposit of sixty pounds within a week, balance two weeks before. I'll email the details today.",
+      "formLayout": true
     },
     {
       "id": "ielts-listening-025-p2",
       "part": 2,
-      "title": "Guided Tour of the City Museum of Science and Industry",
-      "text": "Guide: Welcome everyone to the City Museum of Science and Industry. I'm your guide for this morning's orientation and I'm delighted to show you around one of the region's most celebrated museums. We have a wonderful collection spanning three centuries of scientific and industrial history, and I'm confident you'll find plenty to engage with during your visit today.\n\nLet's begin right where we are — in Zone A, the entrance foyer. As you can see, this is a large, light-filled atrium with a soaring glass roof. It serves as the central hub of the museum and you can access all other areas from here. The foyer contains our main welcome desk, a cloakroom, and display boards giving you an overview of current exhibitions. You'll also notice the large model of the solar system suspended from the ceiling — a firm favourite with younger visitors.\n\nDirectly to your right as you enter is Zone B — the gift shop. This is actually one of the most popular areas in the entire museum, and not just for children! We stock a wide range of books, science kits, educational toys, and locally produced gifts. All proceeds from the gift shop support the museum's education programmes.\n\nPast the gift shop, heading deeper into the building, you'll find yourself in Zone C — the Victorian Engine Hall. This is without doubt the largest room in the museum. It houses our collection of working steam engines, many of which were originally used in the textile mills that made this region famous during the industrial revolution. On selected days, the engines are powered up and visitors can watch them in operation — an extraordinary sight.\n\nTo the left of the engine hall is Zone D — the Interactive Science Gallery. This is our most hands-on area and is especially popular with school groups. You can experiment with electricity, magnetism, sound, and light, and there are guided demonstrations every hour on the hour. The gallery is designed for visitors of all ages, though children particularly love the water pressure experiments in the far corner.\n\nContinuing around the ground floor, you reach Zone E — the Textile History Room. This thoughtful exhibition traces the development of cloth production from hand-looming in the seventeenth century through to modern synthetic fibres. There are original looms you can observe in operation, and the exhibition also addresses the social history of mill workers, including the role of child labour and later labour reform.\n\nAt the back of the ground floor, adjacent to the textile room, is Zone F — the café. The café is open from nine in the morning until four thirty in the afternoon and serves hot meals, sandwiches, cakes, and a children's menu. Outside seating is available in fine weather in the adjoining courtyard. The café is self-service and accepts both cash and cards.\n\nHeading upstairs, you'll find Zone G — the lecture theatre. This seats two hundred and fifty and is used for public lectures, film screenings, and school presentations. Today at two o'clock there is a free public lecture on the history of computing. Tickets are available from the welcome desk.\n\nZone H is the Temporary Exhibitions Hall, also upstairs. This large gallery hosts rotating exhibitions throughout the year — currently featuring a display on the history of space exploration from Sputnik to the present day. The hall is only open during the museum's standard hours, which are nine to five Tuesday through Sunday.\n\nNestled behind the lecture theatre on the upper floor is Zone I — the Conservation Workshop. This is a working studio where our conservation team restores and maintains objects from the collection. A transparent viewing window allows visitors to watch the conservators at work. This is a real highlight for many visitors who have never considered the behind-the-scenes work that keeps museum collections alive.\n\nFinally, accessible via a dedicated staircase at the rear of the upper floor, is Zone J — the roof garden. This beautiful green space features drought-tolerant planting, a wildflower meadow section, and information boards on urban ecology. On clear days the views over the city are quite spectacular. The roof garden is open from April through to October, weather permitting.\n\nThe museum is open Tuesday to Sunday, nine to five. Adult tickets are seven pounds fifty, and children's tickets — for visitors aged five to sixteen — are four pounds. Children under five enter free. Guided tours run every day at ten thirty and two thirty and last approximately ninety minutes. I hope you enjoy your visit — please do ask me or any member of staff if you have questions."
+      "title": "Youth Hostel Arrival Briefing",
+      "text": "Manager: Evening, everyone, and welcome to Kestrel Bank Youth Hostel. I'm Aoife, the duty manager, and this is the arrival briefing.\n\nRooms first. Check-in is from four in the afternoon, check-out by ten in the morning, and the ten o'clock is firm because the rooms have to be turned round before the next group. Your key card opens the front door and your own room only.\n\nMeals: breakfast runs seven to nine, and dinner is served at half past six, once, not on demand. If you've booked dinner and you're going to be late, tell us at breakfast — not at six, when it's cooking.\n\nThe self-catering kitchen is available all day, and the rule there is the one people find hardest: wash up immediately, not later. We have no staff to do it and a sink of other people's plates is the single thing that generates complaints here.\n\nQuiet hours are from eleven at night until seven. This is a shared building with thin walls, and I would rather say plainly now that the commonest reason we ask someone to leave is noise after eleven, not anything more dramatic.\n\nThe layout. As you come through the front door, reception is on your right. The dining room is directly opposite, on the left. The self-catering kitchen is behind the dining room, at the western end of the ground floor. The drying room — and you will want it — is downstairs in the basement, below reception, and the boot store is next to it. Dormitories are on the first and second floors, and the lounge with the wood burner is on the first floor at the front, above the dining room.\n\nTwo last things. There is no mobile signal in the valley and the wifi reaches the lounge and reception only, which some people treat as a fault and most come to regard as the point. And if you are walking tomorrow, write your route on the board by the door and cross it off when you return, so that we know who is still out."
     },
     {
       "id": "ielts-listening-025-p3",
       "part": 3,
-      "title": "Discussion About a Research Project on Urban Noise",
-      "text": "Tutor: So, Priya and James, how is your project on urban noise pollution progressing?\nPriya: We've finished the literature review. The main finding seems to be that constant exposure to traffic noise above sixty-five decibels significantly increases stress hormone levels.\nJames: What surprised us was the evidence linking noise to cardiovascular disease — not just stress. Several longitudinal studies found a measurable increase in heart disease rates near busy roads.\nTutor: Interesting. What methodology have you chosen for your primary research?\nPriya: We're doing acoustic measurements at ten sites across the city, combined with a survey of five hundred residents asking about sleep quality and perceived noise annoyance.\nTutor: And your sample size — five hundred — is that sufficient?\nJames: We debated this. Statistically it should give us a confidence interval of plus or minus four percent at the ninety-five percent confidence level, which most journals would accept.\nTutor: Good. Have you considered confounding variables? People near noisy roads may also be near other pollution sources.\nPriya: Yes, we plan to control for air quality and proximity to industrial areas in our regression analysis.\nTutor: What do you expect your main recommendation to be?\nJames: Probably mandatory sound barriers along roads within five hundred metres of residential zones.\nPriya: I'd add better urban zoning rules — separating heavy traffic routes from housing areas at the planning stage.\nTutor: These are sound arguments. Make sure your final report references the WHO noise guidelines published in 2018."
+      "title": "Making Figures Honest",
+      "text": "Tutor: Right — let's look at your figures for the housing affordability report. This first one.\nKirsten: That's the rent increase over ten years.\nTutor: And the vertical axis starts at eight hundred pounds.\nKirsten: Because all the values are above eight hundred. It fills the space better.\nTutor: It does, and it also triples the apparent size of the rise. A reader who glances at that sees rents that have roughly quadrupled; the actual increase is about forty per cent. Nothing in the chart is false and the impression is wrong.\nKirsten: So the axis has to start at zero?\nTutor: For a bar chart, essentially always, because the bar length is the message. For a line chart showing change over time it is more defensible not to, provided you say so clearly. What you cannot do is truncate silently.\nOllie: Mine's a line chart, but I've only plotted every third year.\nTutor: Why?\nOllie: It was smoother.\nTutor: That is the wrong reason, and it is worth understanding why. You chose the interval after seeing the data, which means you selected the version that supported the shape you expected. Plot every year and let it be untidy.\nKirsten: What about the pie chart on page six?\nTutor: How many segments?\nKirsten: Eleven.\nTutor: Nobody can compare eleven angles. Use a bar chart ordered by size, and if you must keep a pie, group the small categories into one labelled slice rather than pretending they are readable.\nOllie: Is there a general rule?\nTutor: One that covers most of it: before you finalise a figure, ask what impression someone gets in two seconds, then check whether that impression matches what the numbers say. Where they differ, the figure is wrong even if every value in it is right."
     },
     {
       "id": "ielts-listening-025-p4",
       "part": 4,
-      "title": "Lecture: The History of Antibiotics",
-      "text": "Today I want to talk about the history of antibiotics — arguably one of the most important developments in twentieth-century medicine.\n\nThe story begins in 1928 when Alexander Fleming noticed that a mould called Penicillium notatum was inhibiting the growth of bacteria on one of his culture plates. He published his findings but was initially unable to isolate the active compound in large enough quantities to be clinically useful.\n\nIt wasn't until 1940 that Howard Florey and Ernst Chain at Oxford managed to purify penicillin and demonstrate its effectiveness in mice. The following year, in 1941, they treated the first human patient — a police officer with a severe infection — with remarkable results, though limited supplies meant the patient eventually relapsed.\n\nThe real breakthrough came during the Second World War, when mass production was achieved through collaboration between British and American pharmaceutical companies. By 1944, enough penicillin had been produced to treat all wounded Allied soldiers. This industrial-scale production required entirely new fermentation techniques.\n\nFollowing the war, the golden era of antibiotic discovery began, lasting roughly from 1950 to 1970. During this period, major antibiotic classes including tetracyclines, erythromycin, and vancomycin were discovered, largely from soil bacteria. Researchers estimated that soil contained thousands of antibiotic-producing organisms waiting to be identified.\n\nHowever, the overuse of antibiotics in both human medicine and agriculture has driven the evolution of resistant bacteria at an alarming rate. The World Health Organization now lists antimicrobial resistance as one of the greatest global health threats. New antibiotic approvals have declined sharply since the 1980s as pharmaceutical companies shifted resources toward more profitable chronic disease treatments.\n\nCurrent strategies to address resistance include antibiotic stewardship programmes, rapid diagnostic testing to avoid prescribing antibiotics for viral infections, and investment in novel antimicrobial compounds including bacteriophage therapy and antimicrobial peptides."
+      "title": "Why Supply Chains Failed",
+      "text": "Lecturer: I want to look at why supply chains that had worked for decades failed almost simultaneously, and to argue that the failures were not accidents but the predictable price of a design choice that had been rewarded for a very long time.\n\nThe design is familiar. Holding inventory costs money — warehouse space, capital tied up, goods that may become obsolete — so firms reduced it, coordinating deliveries to arrive shortly before use. Done well, this frees enormous amounts of capital, and for thirty years the firms that did it outcompeted those that did not. That is the important point: this was not carelessness. It was the strategy that won.\n\nWhat it also does is remove slack. A system with no inventory has nothing between a disruption and a stoppage, so a delay anywhere becomes a stoppage everywhere within days. The same efficiency that reduces cost in ordinary conditions converts a local problem into a general one.\n\nConcentration compounds it. Efficiency also rewards buying from the cheapest capable supplier, and when every firm applies that rule they converge on the same few suppliers, often in the same region. Firms that believe they have diversified frequently discover during a disruption that their three independent suppliers all depend on a single upstream plant — and that they had no way of knowing, because visibility beyond the immediate supplier is rare.\n\nThe response has been slower than the rhetoric suggests. Firms announced resilience programmes, and what most did was hold somewhat more inventory of a few critical items and map their suppliers one level deeper. Genuine duplication of supply is expensive, and it is expensive continuously while the benefit appears only during a disruption that may not arrive in the tenure of whoever authorised the cost.\n\nThat is the structural problem and it is not really about logistics. Resilience is a cost paid in every ordinary year for a benefit in an unusual one, and our arrangements for rewarding managers, valuing firms and comparing prices all measure the ordinary years. Until something in that measurement changes, the efficient and fragile configuration will keep winning, and we will keep being surprised by the same thing."
     }
   ],
   "questions": [
@@ -127,15 +39,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 1,
-      "label": "Surname",
+      "label": "Participant surname",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Osei",
-      "explanation": "The answer \"Osei\" is stated in the conversation.",
-      "prompt": "Surname: _____",
+      "answer": "Okonjo",
+      "explanation": "He spells it O-K-O-N-J-O.",
+      "prompt": "Participant surname: _____",
       "partNumber": 1
     },
     {
@@ -144,15 +56,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 2,
-      "label": "Address",
-      "prefix": "Flat 3, 18 ",
-      "suffix": ", Thornton",
+      "label": "Contact number",
+      "prefix": "",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Maple Street",
-      "explanation": "The answer \"Maple Street\" is stated in the conversation.",
-      "prompt": "Address: Flat 3, 18 _____, Thornton",
+      "answer": "07884 512 067",
+      "explanation": "He gives 07884 512 067.",
+      "prompt": "Contact number: _____",
       "partNumber": 1
     },
     {
@@ -161,15 +73,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 3,
-      "label": "Postcode",
+      "label": "Workshop recommended",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "TH6 2PQ",
-      "explanation": "The answer \"TH6 2PQ\" is stated in the conversation.",
-      "prompt": "Postcode: _____",
+      "answer": "foundation",
+      "explanation": "The organiser steers him to the foundation weekend.",
+      "prompt": "Workshop recommended: _____",
       "partNumber": 1
     },
     {
@@ -178,15 +90,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 4,
-      "label": "Date of birth",
-      "prefix": "2nd August ",
+      "label": "Fee",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "1994",
-      "explanation": "The answer \"1994\" is stated in the conversation.",
-      "prompt": "Date of birth: 2nd August _____",
+      "answer": "260 pounds",
+      "explanation": "The fee is two hundred and sixty pounds.",
+      "prompt": "Fee: _____",
       "partNumber": 1
     },
     {
@@ -195,15 +107,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 5,
-      "label": "Maximum items allowed",
-      "prefix": "up to ",
-      "suffix": " items",
+      "label": "Not included in the fee",
+      "prefix": "",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "8 / eight",
-      "explanation": "The answer \"8 / eight\" is stated in the conversation.",
-      "prompt": "Maximum items allowed: up to _____ items",
+      "answer": "accommodation",
+      "explanation": "Tuition and lunch are covered but not accommodation.",
+      "prompt": "Not included in the fee: _____",
       "partNumber": 1
     },
     {
@@ -212,15 +124,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 6,
-      "label": "Standard loan period",
+      "label": "Dates",
       "prefix": "",
-      "suffix": " weeks",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "3 / three",
-      "explanation": "The answer \"3 / three\" is stated in the conversation.",
-      "prompt": "Standard loan period: _____ weeks",
+      "answer": "15 and 16 June",
+      "explanation": "The next one is the fifteenth and sixteenth of June.",
+      "prompt": "Dates: _____",
       "partNumber": 1
     },
     {
@@ -229,15 +141,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 7,
-      "label": "",
+      "label": "Start time each morning",
       "prefix": "",
       "suffix": "",
-      "labelBlank": true,
-      "labelSuffix": " fine per day",
-      "rightContent": "10p / 10 pence",
-      "answer": "Standard",
-      "explanation": "The answer \"Standard\" is stated in the conversation.",
-      "prompt": "_____ fine per day: 10p / 10 pence",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "9.30",
+      "explanation": "It starts at half past nine.",
+      "prompt": "Start time each morning: _____",
       "partNumber": 1
     },
     {
@@ -246,15 +158,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 8,
-      "label": "Reserved item fine (per day)",
+      "label": "Equipment to be borrowed",
       "prefix": "",
-      "suffix": "p",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "20 / twenty",
-      "explanation": "The answer \"20 / twenty\" is stated in the conversation.",
-      "prompt": "Reserved item fine (per day): _____p",
+      "answer": "tripod",
+      "explanation": "He asks to borrow a tripod.",
+      "prompt": "Equipment to be borrowed: _____",
       "partNumber": 1
     },
     {
@@ -263,15 +175,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 9,
-      "label": "Online reservation fee",
+      "label": "Number of tripods available",
       "prefix": "",
-      "suffix": "p per item",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "50 / fifty",
-      "explanation": "The answer \"50 / fifty\" is stated in the conversation.",
-      "prompt": "Online reservation fee: _____p per item",
+      "answer": "eight",
+      "explanation": "They carry only eight.",
+      "prompt": "Number of tripods available: _____",
       "partNumber": 1
     },
     {
@@ -280,15 +192,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 10,
-      "label": "Card collection point",
+      "label": "Deposit required",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "information desk",
-      "explanation": "The answer \"information desk\" is stated in the conversation.",
-      "prompt": "Card collection point: _____",
+      "answer": "60 pounds",
+      "explanation": "A deposit of sixty pounds within a week.",
+      "prompt": "Deposit required: _____",
       "partNumber": 1
     },
     {
@@ -297,15 +209,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 11,
-      "prompt": "What time does the museum café close?",
+      "prompt": "Why is the ten o'clock check-out firm?",
       "options": [
-        "4:30 pm",
-        "4:00 pm",
-        "5:00 pm",
-        "5:30 pm"
+        "Rooms must be turned round before the next group",
+        "The doors are locked",
+        "Cleaning is contracted",
+        "Staff finish then"
       ],
       "correctAnswer": "A",
-      "explanation": "The guide says the café is open 'until four thirty in the afternoon'"
+      "explanation": "Rooms have to be turned round before the next group."
     },
     {
       "id": "ielts-listening-025-q12",
@@ -313,15 +225,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 12,
-      "prompt": "How much does a child's ticket cost?",
+      "prompt": "When should guests report that they will be late for dinner?",
       "options": [
-        "£3.00",
-        "£4.00",
-        "£4.50",
-        "£5.00"
+        "At six",
+        "At breakfast",
+        "The night before",
+        "On arrival"
       ],
       "correctAnswer": "B",
-      "explanation": "The guide states 'children's tickets are four pounds'"
+      "explanation": "Tell them at breakfast, not at six when it is cooking."
     },
     {
       "id": "ielts-listening-025-q13",
@@ -329,15 +241,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 13,
-      "prompt": "How frequently do guided demonstrations run in the Interactive Science Gallery?",
+      "prompt": "What rule do guests find hardest in the kitchen?",
       "options": [
-        "every thirty minutes",
-        "every two hours",
-        "every hour",
-        "twice daily"
+        "Cleaning the floor",
+        "Booking a slot",
+        "Washing up immediately",
+        "Labelling food"
       ],
       "correctAnswer": "C",
-      "explanation": "The guide says 'there are guided demonstrations every hour on the hour'"
+      "explanation": "Wash up immediately, not later."
     },
     {
       "id": "ielts-listening-025-q14",
@@ -345,15 +257,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 14,
-      "prompt": "Which is described as the largest room in the museum?",
+      "prompt": "What is the commonest reason someone is asked to leave?",
       "options": [
-        "the Interactive Science Gallery",
-        "the Temporary Exhibitions Hall",
-        "the lecture theatre",
-        "the Victorian Engine Hall"
+        "Non-payment",
+        "Smoking",
+        "Damage",
+        "Noise after eleven"
       ],
       "correctAnswer": "D",
-      "explanation": "The guide says the engine hall is 'without doubt the largest room in the museum'"
+      "explanation": "Noise after eleven, not anything more dramatic."
     },
     {
       "id": "ielts-listening-025-q15",
@@ -361,34 +273,32 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 15,
-      "prompt": "Where is the café located?",
+      "prompt": "Where does the wifi reach?",
       "options": [
-        "at the back of the ground floor adjacent to the textile room",
-        "on the upper floor next to the lecture theatre",
-        "in the entrance foyer",
-        "in the roof garden"
+        "The lounge and reception only",
+        "The dormitories",
+        "Nowhere",
+        "Everywhere"
       ],
       "correctAnswer": "A",
-      "explanation": "The guide says the café is 'at the back of the ground floor, adjacent to the textile room'"
+      "explanation": "Wifi reaches the lounge and reception only."
     },
     {
       "id": "ielts-listening-025-q16",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "City Museum of Science and Industry — Floor Plan",
-      "mapDescription": "Label the areas A–J on the museum map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Kestrel Bank Youth Hostel — Building Plan",
+      "mapDescription": "The plan shows the ground floor, with basement and upper floors indicated. The front door is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Entrance foyer",
-        "B": "Gift shop",
-        "C": "Victorian Engine Hall",
-        "D": "Interactive Science Gallery",
-        "E": "Textile History Room",
-        "F": "Café",
-        "G": "Lecture theatre",
-        "H": "Temporary Exhibitions Hall",
-        "I": "Conservation Workshop",
-        "J": "Roof garden"
+        "A": "Reception",
+        "B": "Dining room",
+        "C": "Self-catering kitchen",
+        "D": "Drying room",
+        "E": "Boot store",
+        "F": "Lounge",
+        "G": "Dormitories",
+        "H": "Office"
       },
       "mapLetters": [
         "A",
@@ -398,33 +308,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 16,
-      "prompt": "Main atrium with glass roof and solar system model",
-      "correctAnswer": "A",
-      "explanation": "The correct letter is A (Entrance foyer)."
+      "prompt": "Directly opposite reception, on the left of the front door",
+      "correctAnswer": "B",
+      "explanation": "The dining room is opposite reception."
     },
     {
       "id": "ielts-listening-025-q17",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "City Museum of Science and Industry — Floor Plan",
-      "mapDescription": "Label the areas A–J on the museum map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Kestrel Bank Youth Hostel — Building Plan",
+      "mapDescription": "The plan shows the ground floor, with basement and upper floors indicated. The front door is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Entrance foyer",
-        "B": "Gift shop",
-        "C": "Victorian Engine Hall",
-        "D": "Interactive Science Gallery",
-        "E": "Textile History Room",
-        "F": "Café",
-        "G": "Lecture theatre",
-        "H": "Temporary Exhibitions Hall",
-        "I": "Conservation Workshop",
-        "J": "Roof garden"
+        "A": "Reception",
+        "B": "Dining room",
+        "C": "Self-catering kitchen",
+        "D": "Drying room",
+        "E": "Boot store",
+        "F": "Lounge",
+        "G": "Dormitories",
+        "H": "Office"
       },
       "mapLetters": [
         "A",
@@ -434,33 +340,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 17,
-      "prompt": "Shop selling science kits, books and educational toys",
-      "correctAnswer": "B",
-      "explanation": "The correct letter is B (Gift shop)."
+      "prompt": "Behind the dining room, at the western end of the ground floor",
+      "correctAnswer": "C",
+      "explanation": "The self-catering kitchen is behind the dining room."
     },
     {
       "id": "ielts-listening-025-q18",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "City Museum of Science and Industry — Floor Plan",
-      "mapDescription": "Label the areas A–J on the museum map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Kestrel Bank Youth Hostel — Building Plan",
+      "mapDescription": "The plan shows the ground floor, with basement and upper floors indicated. The front door is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Entrance foyer",
-        "B": "Gift shop",
-        "C": "Victorian Engine Hall",
-        "D": "Interactive Science Gallery",
-        "E": "Textile History Room",
-        "F": "Café",
-        "G": "Lecture theatre",
-        "H": "Temporary Exhibitions Hall",
-        "I": "Conservation Workshop",
-        "J": "Roof garden"
+        "A": "Reception",
+        "B": "Dining room",
+        "C": "Self-catering kitchen",
+        "D": "Drying room",
+        "E": "Boot store",
+        "F": "Lounge",
+        "G": "Dormitories",
+        "H": "Office"
       },
       "mapLetters": [
         "A",
@@ -470,33 +372,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 18,
-      "prompt": "Largest room housing working steam engines",
-      "correctAnswer": "C",
-      "explanation": "The correct letter is C (Victorian Engine Hall)."
+      "prompt": "In the basement, below reception",
+      "correctAnswer": "D",
+      "explanation": "The drying room is downstairs below reception."
     },
     {
       "id": "ielts-listening-025-q19",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "City Museum of Science and Industry — Floor Plan",
-      "mapDescription": "Label the areas A–J on the museum map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Kestrel Bank Youth Hostel — Building Plan",
+      "mapDescription": "The plan shows the ground floor, with basement and upper floors indicated. The front door is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Entrance foyer",
-        "B": "Gift shop",
-        "C": "Victorian Engine Hall",
-        "D": "Interactive Science Gallery",
-        "E": "Textile History Room",
-        "F": "Café",
-        "G": "Lecture theatre",
-        "H": "Temporary Exhibitions Hall",
-        "I": "Conservation Workshop",
-        "J": "Roof garden"
+        "A": "Reception",
+        "B": "Dining room",
+        "C": "Self-catering kitchen",
+        "D": "Drying room",
+        "E": "Boot store",
+        "F": "Lounge",
+        "G": "Dormitories",
+        "H": "Office"
       },
       "mapLetters": [
         "A",
@@ -506,33 +404,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 19,
-      "prompt": "Hands-on area with electricity and magnetism experiments",
-      "correctAnswer": "D",
-      "explanation": "The correct letter is D (Interactive Science Gallery)."
+      "prompt": "Next to the drying room in the basement",
+      "correctAnswer": "E",
+      "explanation": "The boot store is beside the drying room."
     },
     {
       "id": "ielts-listening-025-q20",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "City Museum of Science and Industry — Floor Plan",
-      "mapDescription": "Label the areas A–J on the museum map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Kestrel Bank Youth Hostel — Building Plan",
+      "mapDescription": "The plan shows the ground floor, with basement and upper floors indicated. The front door is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Entrance foyer",
-        "B": "Gift shop",
-        "C": "Victorian Engine Hall",
-        "D": "Interactive Science Gallery",
-        "E": "Textile History Room",
-        "F": "Café",
-        "G": "Lecture theatre",
-        "H": "Temporary Exhibitions Hall",
-        "I": "Conservation Workshop",
-        "J": "Roof garden"
+        "A": "Reception",
+        "B": "Dining room",
+        "C": "Self-catering kitchen",
+        "D": "Drying room",
+        "E": "Boot store",
+        "F": "Lounge",
+        "G": "Dormitories",
+        "H": "Office"
       },
       "mapLetters": [
         "A",
@@ -542,14 +436,12 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 20,
-      "prompt": "Exhibition tracing cloth production from hand-looming to synthetic fibres",
-      "correctAnswer": "E",
-      "explanation": "The correct letter is E (Textile History Room)."
+      "prompt": "On the first floor at the front, above the dining room",
+      "correctAnswer": "F",
+      "explanation": "The lounge with the wood burner is above the dining room."
     },
     {
       "id": "ielts-listening-025-q21",
@@ -557,15 +449,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 21,
-      "prompt": "What noise level does research link to increased stress hormones?",
+      "prompt": "What is wrong with Kirsten's first chart?",
       "options": [
-        "55 dB",
-        "65 dB",
-        "60 dB",
-        "70 dB"
+        "The data are wrong",
+        "The vertical axis starts at eight hundred",
+        "It is the wrong colour",
+        "It has no title"
       ],
       "correctAnswer": "B",
-      "explanation": "Priya mentions 'constant exposure to traffic noise above sixty-five decibels'"
+      "explanation": "A truncated axis triples the apparent size of the rise."
     },
     {
       "id": "ielts-listening-025-q22",
@@ -573,15 +465,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 22,
-      "prompt": "What additional health risk did James find surprising in the literature?",
+      "prompt": "What is the actual increase?",
       "options": [
-        "hearing loss",
-        "respiratory problems",
-        "cardiovascular disease",
-        "mental health disorders"
+        "About 300 per cent",
+        "About 400 per cent",
+        "About 40 per cent",
+        "About 100 per cent"
       ],
       "correctAnswer": "C",
-      "explanation": "James says 'the evidence linking noise to cardiovascular disease'"
+      "explanation": "The actual increase is about forty per cent."
     },
     {
       "id": "ielts-listening-025-q23",
@@ -589,15 +481,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 23,
-      "prompt": "How many residents will be surveyed?",
+      "prompt": "When is not starting at zero more defensible?",
       "options": [
-        "200",
-        "300",
-        "400",
-        "500"
+        "For a pie chart",
+        "Never",
+        "For a bar chart",
+        "For a line chart showing change over time, if stated clearly"
       ],
       "correctAnswer": "D",
-      "explanation": "Priya mentions 'a survey of five hundred residents'"
+      "explanation": "It is more defensible for a line chart, provided you say so."
     },
     {
       "id": "ielts-listening-025-q24",
@@ -605,15 +497,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 24,
-      "prompt": "What confidence level does their sample size achieve?",
+      "prompt": "Why does the tutor object to plotting every third year?",
       "options": [
-        "95%",
-        "90%",
-        "92%",
-        "99%"
+        "The interval was chosen after seeing the data",
+        "It is too much work",
+        "The data are annual",
+        "It hides the trend"
       ],
       "correctAnswer": "A",
-      "explanation": "James refers to 'the ninety-five percent confidence level'"
+      "explanation": "Choosing the interval after seeing the data selects the expected shape."
     },
     {
       "id": "ielts-listening-025-q25",
@@ -621,238 +513,238 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 25,
-      "prompt": "What does the tutor recommend they reference?",
+      "prompt": "What does the tutor advise about the eleven-segment pie chart?",
       "options": [
-        "WHO 2015 report",
-        "WHO 2018 guidelines",
-        "EU noise directive",
-        "national highway code"
+        "Add a legend",
+        "Use a bar chart ordered by size",
+        "Use more colours",
+        "Split it into two pies"
       ],
       "correctAnswer": "B",
-      "explanation": "The tutor says 'reference the WHO noise guidelines published in 2018'"
+      "explanation": "Nobody can compare eleven angles; use an ordered bar chart."
     },
     {
       "id": "ielts-listening-025-q26",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. It misleads even though the values are correct",
+        "B. The choice was made for the wrong reason",
+        "C. Replace it with a clearer form"
       ],
       "num": 26,
-      "prompt": "introducing new equipment in the laboratory",
+      "prompt": "the axis starting at eight hundred",
       "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "explanation": "Nothing is false and the impression is wrong."
     },
     {
       "id": "ielts-listening-025-q27",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. It misleads even though the values are correct",
+        "B. The choice was made for the wrong reason",
+        "C. Replace it with a clearer form"
       ],
       "num": 27,
-      "prompt": "keeping written records of experiments",
-      "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "prompt": "a silently truncated axis",
+      "correctAnswer": "A",
+      "explanation": "Truncating without saying so misleads."
     },
     {
       "id": "ielts-listening-025-q28",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. It misleads even though the values are correct",
+        "B. The choice was made for the wrong reason",
+        "C. Replace it with a clearer form"
       ],
       "num": 28,
-      "prompt": "sharing results with other research groups",
+      "prompt": "plotting every third year",
       "correctAnswer": "B",
-      "explanation": "The speaker's attitude is B. She is undecided."
+      "explanation": "The interval was chosen because it looked smoother."
     },
     {
       "id": "ielts-listening-025-q29",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. It misleads even though the values are correct",
+        "B. The choice was made for the wrong reason",
+        "C. Replace it with a clearer form"
       ],
       "num": 29,
-      "prompt": "the importance of the project deadline",
-      "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "prompt": "the eleven-segment pie chart",
+      "correctAnswer": "C",
+      "explanation": "Use a bar chart ordered by size."
     },
     {
       "id": "ielts-listening-025-q30",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor say about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. It misleads even though the values are correct",
+        "B. The choice was made for the wrong reason",
+        "C. Replace it with a clearer form"
       ],
       "num": 30,
-      "prompt": "the proposal to extend the study",
+      "prompt": "small categories in a pie",
       "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "explanation": "Group them into one labelled slice."
     },
     {
       "id": "ielts-listening-025-q31",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 31,
-      "sentenceText": "In 1928, Fleming observed that a __BLANK__ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
-      "correctAnswer": "mould",
-      "explanation": "The correct answer is: \"mould\".",
-      "prompt": "In 1928, Fleming observed that a _____ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
-      "partNumber": 4
+      "prompt": "How does the lecturer characterise the supply chain failures?",
+      "options": [
+        "Unprecedented events",
+        "Accidents",
+        "The predictable price of a rewarded design choice",
+        "Regulatory failures"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Not accidents but the price of a long-rewarded design."
     },
     {
       "id": "ielts-listening-025-q32",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 32,
-      "sentenceText": "Fleming's initial problem was that he could not __BLANK__ the active compound in sufficient quantities for clinical use.",
-      "correctAnswer": "isolate / purify",
-      "explanation": "The correct answer is: \"isolate / purify\".",
-      "prompt": "Fleming's initial problem was that he could not _____ the active compound in sufficient quantities for clinical use.",
-      "partNumber": 4
+      "prompt": "Why did firms reduce inventory?",
+      "options": [
+        "Warehouses were unavailable",
+        "Demand fell",
+        "Regulation required it",
+        "Holding it costs money and ties up capital"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Warehouse space, tied-up capital and obsolescence risk."
     },
     {
       "id": "ielts-listening-025-q33",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 33,
-      "sentenceText": "Florey and Chain, based at __BLANK__, were the first to purify penicillin and test it on a human patient.",
-      "correctAnswer": "Oxford",
-      "explanation": "The correct answer is: \"Oxford\".",
-      "prompt": "Florey and Chain, based at _____, were the first to purify penicillin and test it on a human patient.",
-      "partNumber": 4
+      "prompt": "What does the lecturer stress about this strategy?",
+      "options": [
+        "It was the strategy that won for thirty years",
+        "It was rarely adopted",
+        "It was recently invented",
+        "It was careless"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Firms that did it outcompeted those that did not."
     },
     {
       "id": "ielts-listening-025-q34",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 34,
-      "sentenceText": "__BLANK__ was the occupation of the first human patient treated with penicillin in 1941.",
-      "correctAnswer": "Police officer",
-      "explanation": "The correct answer is: \"Police officer\".",
-      "prompt": "_____ was the occupation of the first human patient treated with penicillin in 1941.",
-      "partNumber": 4
+      "prompt": "What does removing slack do?",
+      "options": [
+        "Reduces quality",
+        "Converts a local problem into a general one",
+        "Raises prices",
+        "Slows innovation"
+      ],
+      "correctAnswer": "B",
+      "explanation": "A delay anywhere becomes a stoppage everywhere within days."
     },
     {
       "id": "ielts-listening-025-q35",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 35,
-      "sentenceText": "Mass production of penicillin during the Second World War required entirely new __BLANK__ techniques.",
-      "correctAnswer": "fermentation",
-      "explanation": "The correct answer is: \"fermentation\".",
-      "prompt": "Mass production of penicillin during the Second World War required entirely new _____ techniques.",
-      "partNumber": 4
+      "prompt": "What do firms often discover during a disruption?",
+      "options": [
+        "Their inventory was obsolete",
+        "Their suppliers were too expensive",
+        "Their independent suppliers depend on a single upstream plant",
+        "Their contracts had lapsed"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Apparently diversified suppliers share one upstream plant."
     },
     {
       "id": "ielts-listening-025-q36",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 36,
-      "prompt": "According to the lecture, the main reason antibiotic discovery declined after the 1980s was that",
-      "options": [
-        "A  resistant bacteria evolved too quickly",
-        "C  all known antibiotic compounds had already been tested",
-        "B  pharmaceutical companies moved to more profitable areas",
-        "D  government funding was withdrawn"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says companies 'shifted resources toward more profitable chronic disease treatments'"
+      "sentenceText": "Firms had no way of knowing because __BLANK__ beyond the immediate supplier is rare.",
+      "correctAnswer": "visibility",
+      "explanation": "Visibility past the first tier is rare.",
+      "prompt": "Firms had no way of knowing because _____ beyond the immediate supplier is rare.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-025-q37",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 37,
-      "prompt": "The golden era of antibiotic discovery lasted approximately",
-      "options": [
-        "A  10 years",
-        "C  30 years",
-        "D  40 years",
-        "B  20 years"
-      ],
-      "correctAnswer": "D",
-      "explanation": "The golden era ran 'from 1950 to 1970' — roughly 20 years"
+      "sentenceText": "Most firms held more inventory of a few critical items and mapped suppliers one level __BLANK__.",
+      "correctAnswer": "deeper",
+      "explanation": "They mapped one level deeper.",
+      "prompt": "Most firms held more inventory of a few critical items and mapped suppliers one level _____.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-025-q38",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 38,
-      "prompt": "According to the lecturer, most antibiotics discovered in the golden era came from",
-      "options": [
-        "C  soil bacteria",
-        "A  synthetic chemicals",
-        "B  marine organisms",
-        "D  hospital environments"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The lecturer states they were discovered 'largely from soil bacteria'"
+      "sentenceText": "Genuine __BLANK__ of supply is expensive and continuously so.",
+      "correctAnswer": "duplication",
+      "explanation": "Duplicating supply costs money every year.",
+      "prompt": "Genuine _____ of supply is expensive and continuously so.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-025-q39",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 39,
-      "prompt": "The World Health Organization describes antimicrobial resistance as",
-      "options": [
-        "A  a manageable risk with current technology",
-        "B  one of the greatest global health threats",
-        "C  primarily a problem in developing countries",
-        "D  less serious than other infectious diseases"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The lecturer quotes WHO listing it as 'one of the greatest global health threats'"
+      "sentenceText": "Resilience is a cost paid in every ordinary year for a benefit in an __BLANK__ one.",
+      "correctAnswer": "unusual",
+      "explanation": "The benefit only appears in an unusual year.",
+      "prompt": "Resilience is a cost paid in every ordinary year for a benefit in an _____ one.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-025-q40",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 40,
-      "prompt": "Which novel treatment approach is specifically mentioned as an alternative to conventional antibiotics?",
-      "options": [
-        "A  gene therapy",
-        "B  vaccination programmes",
-        "C  bacteriophage therapy",
-        "D  surgical interventions"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer mentions 'bacteriophage therapy' as a novel antimicrobial approach"
+      "sentenceText": "Our arrangements for rewarding managers and valuing firms measure the __BLANK__ years.",
+      "correctAnswer": "ordinary",
+      "explanation": "Measurement favours the ordinary years.",
+      "prompt": "Our arrangements for rewarding managers and valuing firms measure the _____ years.",
+      "partNumber": 4
     }
   ],
   "parts": [
     {
       "partNumber": 1,
-      "title": "Part 1: Biomimicry in Engineering",
-      "audioDescription": "A lecture on how engineers are using designs from nature to solve modern problems.",
-      "context": "Library Membership and Book Loan",
+      "title": "Part 1: Photography Workshop",
+      "audioDescription": "A caller books a place on a weekend photography course.",
+      "context": "Booking a Photography Workshop",
       "questionRange": [
         1,
         10
@@ -860,9 +752,9 @@
     },
     {
       "partNumber": 2,
-      "title": "Part 2: Urban Migration Patterns",
-      "audioDescription": "An academic lecture on the causes and consequences of rural-to-urban migration.",
-      "context": "Guided Tour of the City Museum of Science and Industry",
+      "title": "Part 2: Youth Hostel Briefing",
+      "audioDescription": "A duty manager briefs arriving guests and describes the hostel.",
+      "context": "Youth Hostel Arrival Briefing",
       "questionRange": [
         11,
         20
@@ -870,9 +762,9 @@
     },
     {
       "partNumber": 3,
-      "title": "Part 3: The History of Coffee Trade",
-      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Discussion About a Research Project on Urban Noise",
+      "title": "Part 3: Figures Tutorial",
+      "audioDescription": "Two students revise misleading charts with their tutor.",
+      "context": "Making Figures Honest",
       "questionRange": [
         21,
         30
@@ -880,9 +772,9 @@
     },
     {
       "partNumber": 4,
-      "title": "Part 4: Sleep and Memory Consolidation",
-      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "Lecture: The History of Antibiotics",
+      "title": "Part 4: Supply Chain Fragility",
+      "audioDescription": "A lecture on why efficient supply chains proved fragile.",
+      "context": "Why Supply Chains Failed",
       "questionRange": [
         31,
         40
