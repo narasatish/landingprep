@@ -2,122 +2,34 @@
   "id": "ielts-listening-012",
   "exam": "ielts",
   "section": "listening",
-  "title": "IELTS Listening Practice Test 12",
+  "title": "IELTS Academic Listening Practice Test 12",
   "durationSeconds": 2400,
   "questionCount": 40,
   "listeningScripts": [
     {
       "id": "ielts-listening-012-p1",
       "part": 1,
-      "title": "Enquiry About a Sports Centre Membership",
-      "text": "Receptionist: Hello, Riverside Sports Centre, Jessica speaking.\nCaller: Hi, I'm calling about a gym membership.\nReceptionist: Happy to help. Can I take your name?\nCaller: It's David Kowalczyk. K-O-W-A-L-C-Z-Y-K.\nReceptionist: Thank you, David. And your date of birth?\nCaller: Fourteenth of June, 1989.\nReceptionist: We offer three membership types: monthly at fifty-five pounds, six-monthly at three hundred, or annual at five hundred and twenty pounds.\nCaller: I'll go for the six-monthly option.\nReceptionist: Great. The membership gives you unlimited access to the gym, swimming pool, and all fitness classes. Towels are provided, but you'll need to bring your own padlock for the lockers.\nCaller: Is there parking?\nReceptionist: Yes, free for members in the rear car park. Enter via Elm Street. Your membership card will be ready to collect from Friday. Could I take an email address for the confirmation?\nCaller: Yes — david.k at greenmail dot net.\nReceptionist: Perfect. Is there anything else I can help with?\nCaller: No, that's everything, thank you.",
-      "formLayout": {
-        "title": "Riverside Sports Centre — Membership Form",
-        "example": {
-          "label": "Membership duration",
-          "content": "monthly"
-        },
-        "rows": [
-          {
-            "type": "blank",
-            "num": 1,
-            "label": "Member surname",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Kowalczyk"
-          },
-          {
-            "type": "blank",
-            "num": 2,
-            "label": "Date of birth",
-            "prefix": "14th June ",
-            "suffix": "",
-            "answer": "1989"
-          },
-          {
-            "type": "blank",
-            "num": 3,
-            "label": "Membership chosen",
-            "prefix": "",
-            "suffix": "-monthly",
-            "answer": "six"
-          },
-          {
-            "type": "blank",
-            "num": 4,
-            "label": "Total cost",
-            "prefix": "£",
-            "suffix": "",
-            "answer": "300"
-          },
-          {
-            "type": "blank",
-            "num": 5,
-            "label": "Item to bring",
-            "prefix": "own ",
-            "suffix": "",
-            "answer": "padlock"
-          },
-          {
-            "type": "blank",
-            "num": 6,
-            "label": "Parking area",
-            "prefix": "",
-            "suffix": " car park",
-            "answer": "rear"
-          },
-          {
-            "type": "blank",
-            "num": 7,
-            "labelBlank": true,
-            "labelSuffix": " entrance road",
-            "rightContent": "Elm Street",
-            "answer": "Parking"
-          },
-          {
-            "type": "blank",
-            "num": 8,
-            "label": "Card ready from",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Friday"
-          },
-          {
-            "type": "blank",
-            "num": 9,
-            "label": "Email",
-            "prefix": "",
-            "suffix": "@greenmail.net",
-            "answer": "david.k"
-          },
-          {
-            "type": "blank",
-            "num": 10,
-            "label": "Swimming pool access",
-            "prefix": "",
-            "suffix": "",
-            "answer": "yes / included"
-          }
-        ]
-      }
+      "title": "Reporting Lost Property",
+      "text": "Officer: Lost property office, good afternoon.\nPassenger: Hello — I left a bag on a train this morning and I've been told to report it here.\nOfficer: Of course. I'll take some details. Your full name?\nPassenger: Gordon Whitmarsh. Whitmarsh is W-H-I-T-M-A-R-S-H.\nOfficer: Thank you. And the best number to reach you on?\nPassenger: 07533 619 428.\nOfficer: Which service were you travelling on?\nPassenger: The eight forty-five from Longbridge to Central. I got off at Central.\nOfficer: And where in the train did you leave it?\nPassenger: I was in the rear carriage, on the luggage rack above the seats.\nOfficer: Right. Can you describe the bag?\nPassenger: It's a canvas rucksack, dark green, with a broken zip on the front pocket.\nOfficer: That's helpful — the broken zip in particular. What was inside?\nPassenger: A laptop, a blue folder with work papers, and a set of house keys.\nOfficer: Anything with your name on it?\nPassenger: The folder has my name inside the cover.\nOfficer: Good, that makes identification much easier. Now, items handed in usually reach us within twenty-four hours, because they travel to the depot at the end of the line before coming back to us.\nPassenger: So I should wait until tomorrow?\nOfficer: I'd give it until tomorrow afternoon. We hold everything for three months, so there's no rush after that.\nPassenger: Is there a charge?\nOfficer: There's a release fee of six pounds for a bag of that size, payable when you collect. Bring photographic identification.\nPassenger: And if it doesn't turn up?\nOfficer: Then you'd claim through the train operator rather than through us. The reference number for that is the one I'm about to give you — LP followed by four digits. Yours is LP 2947.\nPassenger: LP 2947. Thank you.\nOfficer: I'll email you if anything matching comes in. What's your email address?\nPassenger: g.whitmarsh@postbox.net.\nOfficer: Noted. And do check the online register too — it's updated every evening.",
+      "formLayout": true
     },
     {
       "id": "ielts-listening-012-p2",
       "part": 2,
-      "title": "University Campus Orientation",
-      "text": "Student Guide: Welcome to Greenfield University. Let me walk you through the main buildings you'll need to know about.\n\nWhen you arrive at the main gate on University Avenue, the building directly in front of you is the Administration Block — that's where you register, pay fees, and collect your student ID. To the left of the Admin Block is the library, open from eight am to ten pm Monday to Friday. It has four floors of study space and over two hundred computers.\n\nBehind the Admin Block, follow the path to reach the Science Building — that's where labs and lecture theatres for biology, chemistry, and physics are located. To the right of the Science Building is the Engineering Hub, a newer building opened just two years ago with state-of-the-art workshops.\n\nHeading back towards the main gate and taking the right-hand path, you'll reach the Student Union building — that's the social hub of campus, with a café, a gym, a cinema room, and offices for all student societies. Next to the Student Union, slightly further along, is the Health Centre — all students are registered automatically upon enrolment.\n\nAt the western edge of campus are the student accommodation blocks — Acorn Hall, Birch Hall, and Cedar Hall, named in alphabetical order from north to south. The sports fields are on the eastern side of campus, behind the Engineering Hub. And the Chaplaincy and meditation space is tucked away in the gardens between the Library and the Science Building.\n\nAny questions so far? No? Good — let's continue to the Admin Block first."
+      "title": "Farmers' Market Stallholder Briefing",
+      "text": "Manager: Morning everyone, and welcome to the briefing for stallholders at the new Kingsmoor Farmers' Market. I'm Elaine and I manage the site.\n\nFirst, the basics. The market runs on the first and third Saturday of every month, from eight in the morning until two in the afternoon. Setting up begins at six thirty, and I'd ask you to be completely ready by seven forty-five, because the first customers arrive well before we officially open and an unfinished stall makes a poor impression.\n\nThe pitch fee is thirty pounds a day for a standard three-metre stall, and there's a reduced rate of eighteen pounds for anyone in their first three months of trading — we introduced that because the biggest barrier for new producers is the cost of finding out whether a market works for them.\n\nA word about what you may sell. Everything on your stall must have been grown, reared, caught, brewed or baked by you or within thirty miles of this site. That thirty-mile rule is the one thing we enforce absolutely, because it is the entire reason customers come here rather than to a supermarket, and one stall selling imported produce damages the reputation of every other stall on the field.\n\nNow the layout, which matters for deciding where to unload. The main gate is at the northern end of the field. As you drive in, the car park is immediately on your left. The produce stalls — vegetables, fruit, salad — run along the eastern edge of the field, and the covered area for meat, fish and dairy is directly opposite them on the western edge, because those stalls need shade. At the southern end, furthest from the gate, is the hot food and seating area, deliberately placed there so that cooking smells drift away from the fresh produce rather than over it. The toilets are in the south-west corner, next to the hot food area, and the information point is just inside the main gate on the right-hand side as you enter.\n\nFinally, waste. Take everything home with you. We have no commercial collection, and the field is rented from a farmer whose goodwill is the only reason this market exists."
     },
     {
       "id": "ielts-listening-012-p3",
       "part": 3,
-      "title": "Seminar on Climate Change Adaptation in Agriculture",
-      "text": "Tutor: Today we're looking at how farmers are adapting to climate change. Sarah, you've been researching this — what are the main strategies?\nSarah: There are basically four categories: changing crop varieties, adjusting planting calendars, improving irrigation efficiency, and diversifying into non-crop income streams like agritourism.\nMike: From what I read, the shift to drought-resistant varieties is the most widely adopted strategy globally, though it depends heavily on seed availability and cost.\nTutor: What barriers prevent farmers from adapting?\nSarah: In developing countries, the main barriers are access to finance and lack of reliable weather forecasting at the local level. Farmers need hyper-local data, not national averages.\nMike: There's also a knowledge gap. Many smallholders rely on generational knowledge that may no longer match current climate conditions. Extension services have a critical role.\nTutor: How effective have government subsidy programmes been?\nSarah: Mixed results. Countries that tied subsidies to specific adaptation behaviours — like water-efficient irrigation — saw much better outcomes than those that gave blanket payments.\nMike: India's PM-KISAN scheme is often cited as an example of blanket support that failed to drive specific adaptive behaviours.\nTutor: What does the evidence suggest about the future food supply?\nSarah: If current emission trajectories continue, yield losses for staple crops like wheat and maize could reach thirty percent by 2080 in tropical regions.\nTutor: And what would reverse that?\nMike: A combination of accelerated breeding programmes, agroforestry, and precision agriculture technologies — but these require significant upfront investment."
+      "title": "A River Water-Quality Report",
+      "text": "Tutor: Right, Amara and Theo — the river water-quality report. Where have you got to?\nAmara: We've collected everything. Six sites along the Bramble, sampled weekly for eight weeks.\nTheo: Though two of the eight weeks are missing for the upstream sites.\nTutor: What happened there?\nTheo: The river was too high to reach the bank safely after the storms, so we didn't sample at all rather than sample somewhere different.\nTutor: That was the right decision, and make sure you say so explicitly. Students often hide a gap like that, and a gap you explain is far better than a gap someone else notices.\nAmara: The main finding is the drop in dissolved oxygen below the sewage works.\nTheo: It falls from about nine milligrams per litre above the outfall to five point five below it.\nTutor: And does it recover?\nAmara: Yes, but slowly — it's back to about eight by the furthest downstream site, which is four kilometres on.\nTutor: Now, what are you claiming caused that?\nTheo: We were going to say the outfall causes it.\nTutor: Be careful. What else changes at that point in the river?\nAmara: The channel widens and slows there, actually. And there's a farm track crossing just downstream.\nTutor: So you have at least three candidate explanations and a correlation. Write it that way — the pattern is consistent with the outfall being responsible, and your design cannot separate it from the other two.\nTheo: Should we drop the conclusion then?\nTutor: No. State the finding, state the candidates, and state what measurement would separate them. That last part is what turns a limitation into a contribution.\nAmara: What about the graphs? We've got twelve.\nTutor: Twelve is too many for a report of this length. Combine the site-by-site plots into one panel and cut anything you don't refer to in the text. A figure nobody discusses is a figure nobody reads."
     },
     {
       "id": "ielts-listening-012-p4",
       "part": 4,
-      "title": "Lecture: Deep-Sea Ecosystems",
-      "text": "Today's lecture focuses on deep-sea ecosystems — those found below two hundred metres, where sunlight no longer penetrates.\n\nFor most of scientific history, the deep ocean was assumed to be a near-barren wasteland. This view changed dramatically in 1977 when researchers aboard the submersible Alvin discovered hydrothermal vents at the Galapagos Rift at a depth of two thousand four hundred metres. These vents release superheated water laden with minerals, and around them thrived dense communities of organisms that survive entirely without sunlight.\n\nThe primary producers in vent ecosystems are chemosynthetic bacteria and archaea, which oxidise hydrogen sulphide released by the vents to produce energy — analogous to the way photosynthetic organisms use sunlight at the surface. These microbes form the base of a food web that includes tube worms — some exceeding two metres in length — giant clams, and vent shrimp.\n\nBeyond hydrothermal vents, deep-sea life depends heavily on what scientists call marine snow — a constant fall of organic particles from surface waters including dead organisms, faeces, and shed mucus. This slow rain of organic matter is the primary food source for most deep-sea benthic communities. Rates of marine snow deposition vary significantly with surface productivity.\n\nThe deep sea is also home to bioluminescent organisms — those capable of producing their own light through chemical reactions. Estimates suggest that up to ninety percent of deep-sea creatures are bioluminescent. This light serves functions ranging from attracting prey — as in the iconic anglerfish — to intraspecies communication and camouflage.\n\nDespite covering over sixty percent of the Earth's surface, less than twenty percent of the deep ocean floor has been mapped in high resolution. This lack of knowledge makes it difficult to assess the potential impacts of emerging threats including deep-sea mining for manganese nodules and polymetallic sulphide deposits.\n\nConservation efforts are now focusing on establishing marine protected areas in international waters, though international governance frameworks remain inadequate for the task."
+      "title": "Farming on Volcanic Soils",
+      "text": "Lecturer: I want to talk today about why people persist in farming the slopes of active volcanoes, because it is usually presented as a puzzle about risk perception and is really a question about soil.\n\nVolcanic soils are, in the right circumstances, extraordinarily productive. Fresh volcanic ash weathers rapidly compared with most parent rock, and as it breaks down it releases phosphorus, potassium, calcium and magnesium in forms plants can take up. The resulting soils also hold water well while draining freely, which is an unusual combination and one that most agricultural soils achieve only with considerable management.\n\nThe timescale is what makes this interesting. The fertility is not instant — very fresh ash is nearly sterile and can be actively hostile to plants — and it is not permanent either, because prolonged weathering in wet tropical conditions eventually strips out the same nutrients it released. The productive window is somewhere in between, and it can last centuries, which is long enough for a farming population to establish and for the memory of the eruption that created the soil to fade entirely.\n\nThat fading is the point I want to stress. The interval between eruptions at many volcanoes is longer than cultural memory without written records, so communities are not making a reckless trade of safety against yield; in many cases they have no accurate information about the frequency of the hazard they live with. Describing them as choosing risk implies knowledge they do not have.\n\nThere is a second effect that is easy to miss. Volcanic terrain generates its own water supply — high ground intercepts rainfall, and porous ash layers store and release it through springs at reliable rates — so the attraction is a combination of soil and water rather than soil alone, and the two are hard to separate when explaining settlement patterns.\n\nThe management implication runs against instinct. Relocation programmes that move populations away from productive volcanic slopes have repeatedly failed, because the land offered in exchange is agriculturally inferior and the people return. What has worked better is investment in monitoring and in evacuation that people can actually perform — routes, transport, somewhere to go, and a warning system they have practised with — which accepts that the population will be there and concentrates on the hours that decide whether an eruption kills anyone."
     }
   ],
   "questions": [
@@ -127,15 +39,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 1,
-      "label": "Member surname",
+      "label": "Passenger surname",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Kowalczyk",
-      "explanation": "The answer \"Kowalczyk\" is stated in the conversation.",
-      "prompt": "Member surname: _____",
+      "answer": "Whitmarsh",
+      "explanation": "The passenger spells it W-H-I-T-M-A-R-S-H.",
+      "prompt": "Passenger surname: _____",
       "partNumber": 1
     },
     {
@@ -144,15 +56,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 2,
-      "label": "Date of birth",
-      "prefix": "14th June ",
+      "label": "Contact number",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "1989",
-      "explanation": "The answer \"1989\" is stated in the conversation.",
-      "prompt": "Date of birth: 14th June _____",
+      "answer": "07533 619 428",
+      "explanation": "He gives 07533 619 428.",
+      "prompt": "Contact number: _____",
       "partNumber": 1
     },
     {
@@ -161,15 +73,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 3,
-      "label": "Membership chosen",
+      "label": "Train departure time",
       "prefix": "",
-      "suffix": "-monthly",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "six",
-      "explanation": "The answer \"six\" is stated in the conversation.",
-      "prompt": "Membership chosen: _____-monthly",
+      "answer": "8.45",
+      "explanation": "He travelled on the eight forty-five from Longbridge.",
+      "prompt": "Train departure time: _____",
       "partNumber": 1
     },
     {
@@ -178,15 +90,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 4,
-      "label": "Total cost",
-      "prefix": "£",
+      "label": "Position in train",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "300",
-      "explanation": "The answer \"300\" is stated in the conversation.",
-      "prompt": "Total cost: £_____",
+      "answer": "rear carriage",
+      "explanation": "He was in the rear carriage, on the luggage rack.",
+      "prompt": "Position in train: _____",
       "partNumber": 1
     },
     {
@@ -195,15 +107,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 5,
-      "label": "Item to bring",
-      "prefix": "own ",
+      "label": "Type of bag",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "padlock",
-      "explanation": "The answer \"padlock\" is stated in the conversation.",
-      "prompt": "Item to bring: own _____",
+      "answer": "canvas rucksack",
+      "explanation": "He describes a dark green canvas rucksack.",
+      "prompt": "Type of bag: _____",
       "partNumber": 1
     },
     {
@@ -212,15 +124,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 6,
-      "label": "Parking area",
+      "label": "Distinguishing feature",
       "prefix": "",
-      "suffix": " car park",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "rear",
-      "explanation": "The answer \"rear\" is stated in the conversation.",
-      "prompt": "Parking area: _____ car park",
+      "answer": "broken zip",
+      "explanation": "The front pocket has a broken zip.",
+      "prompt": "Distinguishing feature: _____",
       "partNumber": 1
     },
     {
@@ -229,15 +141,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 7,
-      "label": "",
+      "label": "Item with owner's name",
       "prefix": "",
       "suffix": "",
-      "labelBlank": true,
-      "labelSuffix": " entrance road",
-      "rightContent": "Elm Street",
-      "answer": "Parking",
-      "explanation": "The answer \"Parking\" is stated in the conversation.",
-      "prompt": "_____ entrance road: Elm Street",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "folder",
+      "explanation": "The blue folder has his name inside the cover.",
+      "prompt": "Item with owner's name: _____",
       "partNumber": 1
     },
     {
@@ -246,15 +158,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 8,
-      "label": "Card ready from",
+      "label": "Period items are held",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Friday",
-      "explanation": "The answer \"Friday\" is stated in the conversation.",
-      "prompt": "Card ready from: _____",
+      "answer": "three months",
+      "explanation": "The office holds everything for three months.",
+      "prompt": "Period items are held: _____",
       "partNumber": 1
     },
     {
@@ -263,15 +175,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 9,
-      "label": "Email",
+      "label": "Release fee",
       "prefix": "",
-      "suffix": "@greenmail.net",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "david.k",
-      "explanation": "The answer \"david.k\" is stated in the conversation.",
-      "prompt": "Email: _____@greenmail.net",
+      "answer": "6 pounds",
+      "explanation": "The release fee is six pounds for that size of bag.",
+      "prompt": "Release fee: _____",
       "partNumber": 1
     },
     {
@@ -280,15 +192,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 10,
-      "label": "Swimming pool access",
+      "label": "Reference number",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "yes / included",
-      "explanation": "The answer \"yes / included\" is stated in the conversation.",
-      "prompt": "Swimming pool access: _____",
+      "answer": "LP 2947",
+      "explanation": "The officer gives the reference LP 2947.",
+      "prompt": "Reference number: _____",
       "partNumber": 1
     },
     {
@@ -297,15 +209,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 11,
-      "prompt": "What is the library's closing time on weekdays?",
+      "prompt": "How often does the market take place?",
       "options": [
-        "10 pm",
-        "8 pm",
-        "9 pm",
-        "11 pm"
+        "First and third Saturday monthly",
+        "Twice a week",
+        "Monthly",
+        "Every Saturday"
       ],
       "correctAnswer": "A",
-      "explanation": "The guide says the library is 'open from eight am to ten pm Monday to Friday'"
+      "explanation": "It runs on the first and third Saturday of every month."
     },
     {
       "id": "ielts-listening-012-q12",
@@ -313,15 +225,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 12,
-      "prompt": "How many floors of study space does the library have?",
+      "prompt": "By what time must stalls be ready?",
       "options": [
-        "two",
-        "four",
-        "three",
-        "five"
+        "6.30",
+        "7.45",
+        "8.00",
+        "9.00"
       ],
       "correctAnswer": "B",
-      "explanation": "The guide mentions 'four floors of study space'"
+      "explanation": "Elaine asks stallholders to be completely ready by seven forty-five."
     },
     {
       "id": "ielts-listening-012-q13",
@@ -329,15 +241,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 13,
-      "prompt": "When was the Engineering Hub opened?",
+      "prompt": "Why is the reduced pitch fee offered?",
       "options": [
-        "last year",
-        "five years ago",
-        "two years ago",
-        "ten years ago"
+        "Because the council requires it",
+        "To fill empty pitches",
+        "Because new producers cannot afford to test whether a market works",
+        "To attract younger traders"
       ],
       "correctAnswer": "C",
-      "explanation": "The guide says 'opened just two years ago'"
+      "explanation": "The barrier for new producers is the cost of finding out whether a market works."
     },
     {
       "id": "ielts-listening-012-q14",
@@ -345,15 +257,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 14,
-      "prompt": "What is automatically provided when students enrol?",
+      "prompt": "Which rule is enforced absolutely?",
       "options": [
-        "library card",
-        "sports membership",
-        "Student Union membership",
-        "Health Centre registration"
+        "Stall width",
+        "Arrival time",
+        "Waste removal",
+        "The thirty-mile sourcing rule"
       ],
       "correctAnswer": "D",
-      "explanation": "The guide says 'all students are registered automatically upon enrolment' at the Health Centre"
+      "explanation": "The thirty-mile rule is the one enforced absolutely."
     },
     {
       "id": "ielts-listening-012-q15",
@@ -361,34 +273,32 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 15,
-      "prompt": "Where are the sports fields located?",
+      "prompt": "Why is that rule so important?",
       "options": [
-        "behind the Engineering Hub",
-        "western edge of campus",
-        "northern edge",
-        "beside the library"
+        "It is the reason customers come rather than going to a supermarket",
+        "It reduces transport costs",
+        "It simplifies pricing",
+        "It is a legal requirement"
       ],
       "correctAnswer": "A",
-      "explanation": "Sports fields are 'on the eastern side of campus, behind the Engineering Hub'"
+      "explanation": "It is the entire reason customers come here rather than to a supermarket."
     },
     {
       "id": "ielts-listening-012-q16",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Greenfield University — Campus Map",
-      "mapDescription": "Label the buildings and facilities A–J on the campus map.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Kingsmoor Farmers' Market — Field Layout",
+      "mapDescription": "The plan shows the market field. The main gate is at the northern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Administration Block",
-        "B": "Library",
-        "C": "Science Building",
-        "D": "Engineering Hub",
-        "E": "Student Union",
-        "F": "Health Centre",
-        "G": "Acorn Hall",
-        "H": "Birch Hall",
-        "I": "Cedar Hall",
-        "J": "Chaplaincy / Meditation garden"
+        "A": "Car park",
+        "B": "Produce stalls",
+        "C": "Covered area (meat, fish, dairy)",
+        "D": "Hot food and seating",
+        "E": "Toilets",
+        "F": "Information point",
+        "G": "Storage shed",
+        "H": "Overflow parking"
       },
       "mapLetters": [
         "A",
@@ -398,33 +308,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 16,
-      "prompt": "Building directly in front of main gate",
+      "prompt": "Immediately on the left as you drive through the main gate",
       "correctAnswer": "A",
-      "explanation": "The correct letter is A (Administration Block)."
+      "explanation": "The car park is immediately on the left as you drive in."
     },
     {
       "id": "ielts-listening-012-q17",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Greenfield University — Campus Map",
-      "mapDescription": "Label the buildings and facilities A–J on the campus map.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Kingsmoor Farmers' Market — Field Layout",
+      "mapDescription": "The plan shows the market field. The main gate is at the northern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Administration Block",
-        "B": "Library",
-        "C": "Science Building",
-        "D": "Engineering Hub",
-        "E": "Student Union",
-        "F": "Health Centre",
-        "G": "Acorn Hall",
-        "H": "Birch Hall",
-        "I": "Cedar Hall",
-        "J": "Chaplaincy / Meditation garden"
+        "A": "Car park",
+        "B": "Produce stalls",
+        "C": "Covered area (meat, fish, dairy)",
+        "D": "Hot food and seating",
+        "E": "Toilets",
+        "F": "Information point",
+        "G": "Storage shed",
+        "H": "Overflow parking"
       },
       "mapLetters": [
         "A",
@@ -434,33 +340,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 17,
-      "prompt": "Building to left of Admin Block",
+      "prompt": "Along the eastern edge of the field",
       "correctAnswer": "B",
-      "explanation": "The correct letter is B (Library)."
+      "explanation": "The produce stalls run along the eastern edge."
     },
     {
       "id": "ielts-listening-012-q18",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Greenfield University — Campus Map",
-      "mapDescription": "Label the buildings and facilities A–J on the campus map.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Kingsmoor Farmers' Market — Field Layout",
+      "mapDescription": "The plan shows the market field. The main gate is at the northern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Administration Block",
-        "B": "Library",
-        "C": "Science Building",
-        "D": "Engineering Hub",
-        "E": "Student Union",
-        "F": "Health Centre",
-        "G": "Acorn Hall",
-        "H": "Birch Hall",
-        "I": "Cedar Hall",
-        "J": "Chaplaincy / Meditation garden"
+        "A": "Car park",
+        "B": "Produce stalls",
+        "C": "Covered area (meat, fish, dairy)",
+        "D": "Hot food and seating",
+        "E": "Toilets",
+        "F": "Information point",
+        "G": "Storage shed",
+        "H": "Overflow parking"
       },
       "mapLetters": [
         "A",
@@ -470,33 +372,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 18,
-      "prompt": "Building behind Admin Block",
+      "prompt": "Directly opposite the produce stalls, on the western edge",
       "correctAnswer": "C",
-      "explanation": "The correct letter is C (Science Building)."
+      "explanation": "The covered area is on the western edge, opposite the produce."
     },
     {
       "id": "ielts-listening-012-q19",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Greenfield University — Campus Map",
-      "mapDescription": "Label the buildings and facilities A–J on the campus map.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Kingsmoor Farmers' Market — Field Layout",
+      "mapDescription": "The plan shows the market field. The main gate is at the northern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Administration Block",
-        "B": "Library",
-        "C": "Science Building",
-        "D": "Engineering Hub",
-        "E": "Student Union",
-        "F": "Health Centre",
-        "G": "Acorn Hall",
-        "H": "Birch Hall",
-        "I": "Cedar Hall",
-        "J": "Chaplaincy / Meditation garden"
+        "A": "Car park",
+        "B": "Produce stalls",
+        "C": "Covered area (meat, fish, dairy)",
+        "D": "Hot food and seating",
+        "E": "Toilets",
+        "F": "Information point",
+        "G": "Storage shed",
+        "H": "Overflow parking"
       },
       "mapLetters": [
         "A",
@@ -506,33 +404,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 19,
-      "prompt": "Building to right of Science Building",
+      "prompt": "At the southern end, furthest from the gate",
       "correctAnswer": "D",
-      "explanation": "The correct letter is D (Engineering Hub)."
+      "explanation": "Hot food and seating are at the southern end."
     },
     {
       "id": "ielts-listening-012-q20",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Greenfield University — Campus Map",
-      "mapDescription": "Label the buildings and facilities A–J on the campus map.",
+      "instructions": "Label the map below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Kingsmoor Farmers' Market — Field Layout",
+      "mapDescription": "The plan shows the market field. The main gate is at the northern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Administration Block",
-        "B": "Library",
-        "C": "Science Building",
-        "D": "Engineering Hub",
-        "E": "Student Union",
-        "F": "Health Centre",
-        "G": "Acorn Hall",
-        "H": "Birch Hall",
-        "I": "Cedar Hall",
-        "J": "Chaplaincy / Meditation garden"
+        "A": "Car park",
+        "B": "Produce stalls",
+        "C": "Covered area (meat, fish, dairy)",
+        "D": "Hot food and seating",
+        "E": "Toilets",
+        "F": "Information point",
+        "G": "Storage shed",
+        "H": "Overflow parking"
       },
       "mapLetters": [
         "A",
@@ -542,14 +436,12 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 20,
-      "prompt": "Social hub building on right path from main gate",
-      "correctAnswer": "E",
-      "explanation": "The correct letter is E (Student Union)."
+      "prompt": "Just inside the main gate, on the right",
+      "correctAnswer": "F",
+      "explanation": "The information point is just inside the gate on the right."
     },
     {
       "id": "ielts-listening-012-q21",
@@ -557,15 +449,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 21,
-      "prompt": "Which adaptation strategy is described as most widely adopted globally?",
+      "prompt": "How many sampling sites did the students use?",
       "options": [
-        "adjusting planting calendars",
-        "drought-resistant crop varieties",
-        "agritourism diversification",
-        "improved irrigation"
+        "Four",
+        "Six",
+        "Eight",
+        "Twelve"
       ],
       "correctAnswer": "B",
-      "explanation": "Mike says 'the shift to drought-resistant varieties is the most widely adopted strategy globally'"
+      "explanation": "They sampled six sites along the Bramble."
     },
     {
       "id": "ielts-listening-012-q22",
@@ -573,15 +465,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 22,
-      "prompt": "What type of weather data do farmers most need?",
+      "prompt": "Why are two weeks of upstream data missing?",
       "options": [
-        "national averages",
-        "seasonal forecasts",
-        "hyper-local data",
-        "satellite imagery"
+        "The site was closed",
+        "Equipment failed",
+        "The river was too high to reach the bank safely",
+        "They forgot"
       ],
       "correctAnswer": "C",
-      "explanation": "Sarah says 'Farmers need hyper-local data, not national averages'"
+      "explanation": "High water after storms made the bank unsafe."
     },
     {
       "id": "ielts-listening-012-q23",
@@ -589,15 +481,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 23,
-      "prompt": "Which country's scheme is cited as an example of ineffective blanket support?",
+      "prompt": "What does the tutor say about the gap?",
       "options": [
-        "Bangladesh",
-        "Kenya",
-        "China",
-        "India"
+        "It invalidates the study",
+        "It should be estimated",
+        "It should be hidden",
+        "It should be stated explicitly"
       ],
       "correctAnswer": "D",
-      "explanation": "Mike cites 'India's PM-KISAN scheme'"
+      "explanation": "He says to say so explicitly; an explained gap is better than a noticed one."
     },
     {
       "id": "ielts-listening-012-q24",
@@ -605,15 +497,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 24,
-      "prompt": "By how much could tropical crop yields fall by 2080?",
+      "prompt": "What is the dissolved oxygen level below the outfall?",
       "options": [
-        "30%",
-        "10%",
-        "20%",
-        "40%"
+        "5.5 mg per litre",
+        "4 mg per litre",
+        "9 mg per litre",
+        "8 mg per litre"
       ],
       "correctAnswer": "A",
-      "explanation": "Sarah states yield losses 'could reach thirty percent by 2080'"
+      "explanation": "It falls to five point five below the outfall."
     },
     {
       "id": "ielts-listening-012-q25",
@@ -621,238 +513,238 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 25,
-      "prompt": "What does Mike identify as a requirement for advanced adaptation technologies?",
+      "prompt": "Why does the tutor warn against blaming the outfall?",
       "options": [
-        "international cooperation",
-        "significant upfront investment",
-        "government mandates",
-        "reduced crop prices"
+        "The data are unreliable",
+        "Two other things change at the same point",
+        "Sewage works are regulated",
+        "The effect is too small"
       ],
       "correctAnswer": "B",
-      "explanation": "Mike says these 'require significant upfront investment'"
+      "explanation": "The channel widens and slows, and a farm track crosses just downstream."
     },
     {
       "id": "ielts-listening-012-q26",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element of the report? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. State it openly",
+        "B. Reduce or combine it",
+        "C. Reframe it as a contribution"
       ],
       "num": 26,
-      "prompt": "introducing new equipment in the laboratory",
+      "prompt": "the missing sampling weeks",
       "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "explanation": "He tells them to state the gap explicitly."
     },
     {
       "id": "ielts-listening-012-q27",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element of the report? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. State it openly",
+        "B. Reduce or combine it",
+        "C. Reframe it as a contribution"
       ],
       "num": 27,
-      "prompt": "keeping written records of experiments",
+      "prompt": "the causal claim about the outfall",
       "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "explanation": "State the candidates and what would separate them."
     },
     {
       "id": "ielts-listening-012-q28",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element of the report? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. State it openly",
+        "B. Reduce or combine it",
+        "C. Reframe it as a contribution"
       ],
       "num": 28,
-      "prompt": "sharing results with other research groups",
-      "correctAnswer": "B",
-      "explanation": "The speaker's attitude is B. She is undecided."
+      "prompt": "the measurement that would settle it",
+      "correctAnswer": "C",
+      "explanation": "Naming it turns a limitation into a contribution."
     },
     {
       "id": "ielts-listening-012-q29",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element of the report? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. State it openly",
+        "B. Reduce or combine it",
+        "C. Reframe it as a contribution"
       ],
       "num": 29,
-      "prompt": "the importance of the project deadline",
-      "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "prompt": "the twelve graphs",
+      "correctAnswer": "B",
+      "explanation": "Twelve is too many; combine the site-by-site plots."
     },
     {
       "id": "ielts-listening-012-q30",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each element of the report? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. State it openly",
+        "B. Reduce or combine it",
+        "C. Reframe it as a contribution"
       ],
       "num": 30,
-      "prompt": "the proposal to extend the study",
-      "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "prompt": "figures not referred to in the text",
+      "correctAnswer": "B",
+      "explanation": "Cut anything not discussed."
     },
     {
       "id": "ielts-listening-012-q31",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 31,
-      "sentenceText": "Hydrothermal vents were first discovered in 1977 at a depth of __BLANK__ metres in the Galapagos Rift.",
-      "correctAnswer": "2,400 / two thousand four hundred",
-      "explanation": "The correct answer is: \"2,400 / two thousand four hundred\".",
-      "prompt": "Hydrothermal vents were first discovered in 1977 at a depth of _____ metres in the Galapagos Rift.",
-      "partNumber": 4
+      "prompt": "How does the lecturer reframe the question?",
+      "options": [
+        "As an economic question",
+        "As a puzzle about risk perception",
+        "As a question about soil",
+        "As a question about tradition"
+      ],
+      "correctAnswer": "C",
+      "explanation": "It is usually presented as risk perception and is really about soil."
     },
     {
       "id": "ielts-listening-012-q32",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 32,
-      "sentenceText": "The submersible __BLANK__ carried the researchers who made this landmark discovery.",
-      "correctAnswer": "Alvin",
-      "explanation": "The correct answer is: \"Alvin\".",
-      "prompt": "The submersible _____ carried the researchers who made this landmark discovery.",
-      "partNumber": 4
+      "prompt": "Why do volcanic soils release nutrients readily?",
+      "options": [
+        "They contain organic matter",
+        "They are frequently ploughed",
+        "They are alkaline",
+        "Fresh ash weathers rapidly compared with most parent rock"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Fresh ash weathers rapidly, releasing nutrients as it breaks down."
     },
     {
       "id": "ielts-listening-012-q33",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 33,
-      "sentenceText": "Chemosynthetic bacteria use __BLANK__ released by vents to generate energy in the absence of sunlight.",
-      "correctAnswer": "hydrogen sulphide",
-      "explanation": "The correct answer is: \"hydrogen sulphide\".",
-      "prompt": "Chemosynthetic bacteria use _____ released by vents to generate energy in the absence of sunlight.",
-      "partNumber": 4
+      "prompt": "What unusual combination do these soils achieve?",
+      "options": [
+        "Holding water well while draining freely",
+        "Warmth and moisture",
+        "Depth and stability",
+        "High yield and low cost"
+      ],
+      "correctAnswer": "A",
+      "explanation": "They hold water well while draining freely."
     },
     {
       "id": "ielts-listening-012-q34",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 34,
-      "sentenceText": "__BLANK__, a constant fall of organic particles from surface waters, is the primary food source for most deep-sea benthic communities.",
-      "correctAnswer": "Marine snow",
-      "explanation": "The correct answer is: \"Marine snow\".",
-      "prompt": "_____, a constant fall of organic particles from surface waters, is the primary food source for most deep-sea benthic communities.",
-      "partNumber": 4
+      "prompt": "What is true of very fresh ash?",
+      "options": [
+        "It is immediately fertile",
+        "It is nearly sterile and can be hostile to plants",
+        "It cannot be farmed ever",
+        "It holds no water"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Very fresh ash is nearly sterile and can be actively hostile."
     },
     {
       "id": "ielts-listening-012-q35",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 35,
-      "sentenceText": "It is estimated that up to __BLANK__ percent of all deep-sea creatures are capable of producing bioluminescence.",
-      "correctAnswer": "90 / ninety",
-      "explanation": "The correct answer is: \"90 / ninety\".",
-      "prompt": "It is estimated that up to _____ percent of all deep-sea creatures are capable of producing bioluminescence.",
-      "partNumber": 4
+      "prompt": "Why does the lecturer object to calling these communities risk-takers?",
+      "options": [
+        "The risk is negligible",
+        "They have no alternative land",
+        "They often lack accurate information about eruption frequency",
+        "They are legally required to stay"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Eruption intervals exceed cultural memory without written records."
     },
     {
       "id": "ielts-listening-012-q36",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 36,
-      "prompt": "The deep sea is defined in the lecture as water found below which depth?",
-      "options": [
-        "A  100 metres",
-        "C  500 metres",
-        "B  200 metres",
-        "D  1,000 metres"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer defines the deep sea as 'below two hundred metres'"
+      "sentenceText": "Prolonged weathering in wet tropical conditions eventually strips out the same __BLANK__ it released.",
+      "correctAnswer": "nutrients",
+      "explanation": "The lecturer says weathering strips out the nutrients it released.",
+      "prompt": "Prolonged weathering in wet tropical conditions eventually strips out the same _____ it released.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-012-q37",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 37,
-      "prompt": "What do tube worms, giant clams, and vent shrimp have in common according to the lecture?",
-      "options": [
-        "A  they all produce bioluminescence",
-        "B  they are found only in polar waters",
-        "D  they depend on marine snow for food",
-        "C  they live around hydrothermal vents"
-      ],
-      "correctAnswer": "D",
-      "explanation": "These species are described as part of the food web around hydrothermal vents"
+      "sentenceText": "The productive window can last __BLANK__, long enough for a population to establish.",
+      "correctAnswer": "centuries",
+      "explanation": "The window can last centuries.",
+      "prompt": "The productive window can last _____, long enough for a population to establish.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-012-q38",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 38,
-      "prompt": "Marine snow is described in the lecture as consisting of",
-      "options": [
-        "C  organic particles falling from surface waters",
-        "A  dissolved minerals from the seafloor",
-        "B  sediment carried from coastal rivers",
-        "D  chemical compounds from hydrothermal vents"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The lecturer describes marine snow as 'a constant fall of organic particles from surface waters'"
+      "sentenceText": "Porous ash layers store and release water through __BLANK__ at reliable rates.",
+      "correctAnswer": "springs",
+      "explanation": "Water is released through springs.",
+      "prompt": "Porous ash layers store and release water through _____ at reliable rates.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-012-q39",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 39,
-      "prompt": "According to the lecturer, bioluminescence serves functions including",
-      "options": [
-        "A  temperature regulation and navigation",
-        "B  attracting prey and intraspecies communication",
-        "C  converting chemicals into usable energy",
-        "D  filtering food particles from seawater"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The lecturer mentions 'attracting prey' and 'intraspecies communication'"
+      "sentenceText": "Relocation programmes have repeatedly __BLANK__ because the land offered is inferior.",
+      "correctAnswer": "failed",
+      "explanation": "Relocation programmes have repeatedly failed.",
+      "prompt": "Relocation programmes have repeatedly _____ because the land offered is inferior.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-012-q40",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 40,
-      "prompt": "The lecturer suggests that deep-sea mining is problematic primarily because",
-      "options": [
-        "A  the technology does not yet exist",
-        "B  international law prohibits it",
-        "C  less than 20% of the ocean floor has been mapped in detail",
-        "D  mining would destroy all marine snow"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says this 'makes it difficult to assess the potential impacts' of mining threats"
+      "sentenceText": "Better results come from investment in monitoring and in __BLANK__ people can actually perform.",
+      "correctAnswer": "evacuation",
+      "explanation": "Investment in evacuation people can perform.",
+      "prompt": "Better results come from investment in monitoring and in _____ people can actually perform.",
+      "partNumber": 4
     }
   ],
   "parts": [
     {
       "partNumber": 1,
-      "title": "Part 1: Research Project Discussion",
-      "audioDescription": "Two students discuss their environmental science research project with their tutor.",
-      "context": "Enquiry About a Sports Centre Membership",
+      "title": "Part 1: Lost Property Enquiry",
+      "audioDescription": "A passenger reports a bag left on a train to a lost property officer.",
+      "context": "Reporting Lost Property",
       "questionRange": [
         1,
         10
@@ -860,9 +752,9 @@
     },
     {
       "partNumber": 2,
-      "title": "Part 2: Assignment Feedback Session",
-      "audioDescription": "A lecturer gives feedback on a history essay to a group of students.",
-      "context": "University Campus Orientation",
+      "title": "Part 2: Farmers' Market Briefing",
+      "audioDescription": "A market manager briefs new stallholders on rules and describes the site layout.",
+      "context": "Farmers' Market Stallholder Briefing",
       "questionRange": [
         11,
         20
@@ -870,9 +762,9 @@
     },
     {
       "partNumber": 3,
-      "title": "Part 3: Biomimicry in Engineering",
-      "audioDescription": "A lecture on how engineers are using designs from nature to solve modern problems.",
-      "context": "Seminar on Climate Change Adaptation in Agriculture",
+      "title": "Part 3: Water-Quality Tutorial",
+      "audioDescription": "Two students discuss their river sampling report with their tutor.",
+      "context": "A River Water-Quality Report",
       "questionRange": [
         21,
         30
@@ -880,9 +772,9 @@
     },
     {
       "partNumber": 4,
-      "title": "Part 4: Urban Migration Patterns",
-      "audioDescription": "An academic lecture on the causes and consequences of rural-to-urban migration.",
-      "context": "Lecture: Deep-Sea Ecosystems",
+      "title": "Part 4: Volcanic Soils",
+      "audioDescription": "A lecture on why productive volcanic soils attract farming populations.",
+      "context": "Farming on Volcanic Soils",
       "questionRange": [
         31,
         40
