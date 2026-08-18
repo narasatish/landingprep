@@ -2,122 +2,34 @@
   "id": "ielts-listening-022",
   "exam": "ielts",
   "section": "listening",
-  "title": "IELTS Listening Practice Test 22",
+  "title": "IELTS Academic Listening Practice Test 22",
   "durationSeconds": 2400,
   "questionCount": 40,
   "listeningScripts": [
     {
       "id": "ielts-listening-022-p1",
       "part": 1,
-      "title": "Enquiry About a Sports Centre Membership",
-      "text": "Receptionist: Hello, Riverside Sports Centre, Jessica speaking.\nCaller: Hi, I'm calling about a gym membership.\nReceptionist: Happy to help. Can I take your name?\nCaller: It's David Kowalczyk. K-O-W-A-L-C-Z-Y-K.\nReceptionist: Thank you, David. And your date of birth?\nCaller: Fourteenth of June, 1989.\nReceptionist: We offer three membership types: monthly at fifty-five pounds, six-monthly at three hundred, or annual at five hundred and twenty pounds.\nCaller: I'll go for the six-monthly option.\nReceptionist: Great. The membership gives you unlimited access to the gym, swimming pool, and all fitness classes. Towels are provided, but you'll need to bring your own padlock for the lockers.\nCaller: Is there parking?\nReceptionist: Yes, free for members in the rear car park. Enter via Elm Street. Your membership card will be ready to collect from Friday. Could I take an email address for the confirmation?\nCaller: Yes — david.k at greenmail dot net.\nReceptionist: Perfect. Is there anything else I can help with?\nCaller: No, that's everything, thank you.",
-      "formLayout": {
-        "title": "Riverside Sports Centre — Membership Form",
-        "example": {
-          "label": "Membership duration",
-          "content": "monthly"
-        },
-        "rows": [
-          {
-            "type": "blank",
-            "num": 1,
-            "label": "Member surname",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Kowalczyk"
-          },
-          {
-            "type": "blank",
-            "num": 2,
-            "label": "Date of birth",
-            "prefix": "14th June ",
-            "suffix": "",
-            "answer": "1989"
-          },
-          {
-            "type": "blank",
-            "num": 3,
-            "label": "Membership chosen",
-            "prefix": "",
-            "suffix": "-monthly",
-            "answer": "six"
-          },
-          {
-            "type": "blank",
-            "num": 4,
-            "label": "Total cost",
-            "prefix": "£",
-            "suffix": "",
-            "answer": "300"
-          },
-          {
-            "type": "blank",
-            "num": 5,
-            "label": "Item to bring",
-            "prefix": "own ",
-            "suffix": "",
-            "answer": "padlock"
-          },
-          {
-            "type": "blank",
-            "num": 6,
-            "label": "Parking area",
-            "prefix": "",
-            "suffix": " car park",
-            "answer": "rear"
-          },
-          {
-            "type": "blank",
-            "num": 7,
-            "labelBlank": true,
-            "labelSuffix": " entrance road",
-            "rightContent": "Elm Street",
-            "answer": "Parking"
-          },
-          {
-            "type": "blank",
-            "num": 8,
-            "label": "Card ready from",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Friday"
-          },
-          {
-            "type": "blank",
-            "num": 9,
-            "label": "Email",
-            "prefix": "",
-            "suffix": "@greenmail.net",
-            "answer": "david.k"
-          },
-          {
-            "type": "blank",
-            "num": 10,
-            "label": "Swimming pool access",
-            "prefix": "",
-            "suffix": "",
-            "answer": "yes / included"
-          }
-        ]
-      }
+      "title": "Hiring a School Instrument",
+      "text": "Officer: Good afternoon, County Music Service, instrument hire.\nCaller: Hello — my son has started learning at school and we've been told to hire an instrument.\nOfficer: Certainly. Can I take your name?\nCaller: Yes, it's Harriet Quigley. Quigley is Q-U-I-G-L-E-Y.\nOfficer: And a contact number?\nCaller: 07533 908 461.\nOfficer: Which instrument does he need?\nCaller: A cello. He's nine.\nOfficer: Then he'll want a three-quarter size rather than a full size. A full-size cello for a nine-year-old is the commonest mistake parents make, and it makes the instrument genuinely harder to play.\nCaller: Three-quarter, then. What does it cost?\nOfficer: Hire is fourteen pounds a month, and that includes a case and a bow. Rosin and spare strings you buy yourself; they're a few pounds.\nCaller: Is there a deposit?\nOfficer: Forty pounds, refundable when the instrument comes back in reasonable condition. Normal wear is expected — we're not looking for perfection.\nCaller: How long can we keep it?\nOfficer: The hire runs by school term, renewed automatically unless you tell us otherwise. Most families keep an instrument two or three years and then either buy or move up a size.\nCaller: What if it gets damaged?\nOfficer: Small repairs are covered. Anything major — a crack in the body, a broken neck — and we'd ask for a contribution, but never the full replacement cost. Please don't try to fix anything yourself; glue on a cello is very hard to undo.\nCaller: Understood. When can we collect it?\nOfficer: Thursdays and Fridays, between two and five, from the music centre on Foundry Road.\nCaller: And do we need anything with us?\nOfficer: Proof of address, and the letter from the school confirming he's having lessons. That's what makes the hire subsidised rather than commercial.\nCaller: Right. Anything else?\nOfficer: Don't leave it in a car overnight in winter. Cold and damp do more damage to string instruments than children do.",
+      "formLayout": true
     },
     {
       "id": "ielts-listening-022-p2",
       "part": 2,
-      "title": "University Campus Orientation",
-      "text": "Student Guide: Welcome to Greenfield University. Let me walk you through the main buildings you'll need to know about.\n\nWhen you arrive at the main gate on University Avenue, the building directly in front of you is the Administration Block — that's where you register, pay fees, and collect your student ID. To the left of the Admin Block is the library, open from eight am to ten pm Monday to Friday. It has four floors of study space and over two hundred computers.\n\nBehind the Admin Block, follow the path to reach the Science Building — that's where labs and lecture theatres for biology, chemistry, and physics are located. To the right of the Science Building is the Engineering Hub, a newer building opened just two years ago with state-of-the-art workshops.\n\nHeading back towards the main gate and taking the right-hand path, you'll reach the Student Union building — that's the social hub of campus, with a café, a gym, a cinema room, and offices for all student societies. Next to the Student Union, slightly further along, is the Health Centre — all students are registered automatically upon enrolment.\n\nAt the western edge of campus are the student accommodation blocks — Acorn Hall, Birch Hall, and Cedar Hall, named in alphabetical order from north to south. The sports fields are on the eastern side of campus, behind the Engineering Hub. And the Chaplaincy and meditation space is tucked away in the gardens between the Library and the Science Building.\n\nAny questions so far? No? Good — let's continue to the Admin Block first."
+      "title": "Climbing Centre Induction",
+      "text": "Instructor: Evening everyone, and welcome to Gritstone Climbing Centre. I'm Marcus, and this induction is required before you climb here, even if you've climbed for twenty years elsewhere.\n\nLet me explain why, because people find it irritating. Every centre's systems differ — how the ropes are rigged, where the auto-belays are, which walls are for what — and most accidents here involve experienced climbers doing something that was correct at their previous centre.\n\nMembership is fifty-two pounds a month, or nine pounds fifty for a single session. Under-eighteens must be accompanied by a registered adult, and by that I mean an adult who has done this induction, not an adult who is present.\n\nNow the part that matters. Bouldering is on the low walls with mats and needs no rope. Everything above four metres needs a rope, and to use the roped walls you must either pass our belay test or use an auto-belay. The belay test takes fifteen minutes and can be done at the end of tonight. Do not be offended by it — we test people who have belayed for decades, and we fail about one in ten, almost always for the same thing, which is taking a hand off the brake rope.\n\nThe layout. Coming through reception, the bouldering room is straight ahead of you through the archway — that's the largest space and where most people start. The roped walls are on the left, along the western side, with the auto-belays at the far end of them. The training area with fingerboards and weights is upstairs above reception, and the café is on the right of reception as you come in, looking into the bouldering room through glass. Changing rooms are behind the café on the eastern side.\n\nTwo rules. Never climb directly above or below another climber on the roped walls. And no bags, water bottles or phones on the matting — a bottle under a falling climber's ankle is the single commonest cause of a broken bone in this building."
     },
     {
       "id": "ielts-listening-022-p3",
       "part": 3,
-      "title": "Seminar on Climate Change Adaptation in Agriculture",
-      "text": "Tutor: Today we're looking at how farmers are adapting to climate change. Sarah, you've been researching this — what are the main strategies?\nSarah: There are basically four categories: changing crop varieties, adjusting planting calendars, improving irrigation efficiency, and diversifying into non-crop income streams like agritourism.\nMike: From what I read, the shift to drought-resistant varieties is the most widely adopted strategy globally, though it depends heavily on seed availability and cost.\nTutor: What barriers prevent farmers from adapting?\nSarah: In developing countries, the main barriers are access to finance and lack of reliable weather forecasting at the local level. Farmers need hyper-local data, not national averages.\nMike: There's also a knowledge gap. Many smallholders rely on generational knowledge that may no longer match current climate conditions. Extension services have a critical role.\nTutor: How effective have government subsidy programmes been?\nSarah: Mixed results. Countries that tied subsidies to specific adaptation behaviours — like water-efficient irrigation — saw much better outcomes than those that gave blanket payments.\nMike: India's PM-KISAN scheme is often cited as an example of blanket support that failed to drive specific adaptive behaviours.\nTutor: What does the evidence suggest about the future food supply?\nSarah: If current emission trajectories continue, yield losses for staple crops like wheat and maize could reach thirty percent by 2080 in tropical regions.\nTutor: And what would reverse that?\nMike: A combination of accelerated breeding programmes, agroforestry, and precision agriculture technologies — but these require significant upfront investment."
+      "title": "Acting on Draft Feedback",
+      "text": "Tutor: So — you've both had feedback on your first drafts. Let's talk about what to do with it.\nNadia: Mine says \"needs more critical engagement\". I don't know what that means.\nTutor: It means you have described what your sources say and not evaluated it. You have \"Smith argues X, Jones argues Y\" and no sentence beginning \"however\" or \"the weakness of this is\".\nNadia: So I add criticism?\nTutor: You add judgement, which is not the same. Say which account fits the evidence better and why — criticism for its own sake reads as badly as none.\nTom: Mine says \"structure unclear\". The comment is on page four.\nTutor: Then the problem is probably on page one. A reader who is lost on page four usually took the wrong turning much earlier — normally because the introduction promised a different shape from the one the essay has.\nTom: Should I rewrite the introduction?\nTutor: Write it last. Finish the argument, then write an introduction that describes the essay you actually produced rather than the one you intended.\nNadia: How much of the feedback do we have to act on?\nTutor: All of it, in the sense of considering it. Not all of it, in the sense of obeying. If you disagree with a comment, you may leave the text as it is — but write a line in your covering note saying why. A defended decision is fine; an ignored comment looks like carelessness.\nTom: What about the small corrections — commas, references?\nTutor: Do those last and in one pass. If you fix commas while the argument is still moving, you will fix commas in paragraphs you later delete.\nNadia: And if two markers said different things?\nTutor: That happens more than we admit. Where they conflict, decide, and say which you followed. What you cannot do is average them, which produces an essay that satisfies neither."
     },
     {
       "id": "ielts-listening-022-p4",
       "part": 4,
-      "title": "Lecture: The History of Antibiotics",
-      "text": "Today I want to talk about the history of antibiotics — arguably one of the most important developments in twentieth-century medicine.\n\nThe story begins in 1928 when Alexander Fleming noticed that a mould called Penicillium notatum was inhibiting the growth of bacteria on one of his culture plates. He published his findings but was initially unable to isolate the active compound in large enough quantities to be clinically useful.\n\nIt wasn't until 1940 that Howard Florey and Ernst Chain at Oxford managed to purify penicillin and demonstrate its effectiveness in mice. The following year, in 1941, they treated the first human patient — a police officer with a severe infection — with remarkable results, though limited supplies meant the patient eventually relapsed.\n\nThe real breakthrough came during the Second World War, when mass production was achieved through collaboration between British and American pharmaceutical companies. By 1944, enough penicillin had been produced to treat all wounded Allied soldiers. This industrial-scale production required entirely new fermentation techniques.\n\nFollowing the war, the golden era of antibiotic discovery began, lasting roughly from 1950 to 1970. During this period, major antibiotic classes including tetracyclines, erythromycin, and vancomycin were discovered, largely from soil bacteria. Researchers estimated that soil contained thousands of antibiotic-producing organisms waiting to be identified.\n\nHowever, the overuse of antibiotics in both human medicine and agriculture has driven the evolution of resistant bacteria at an alarming rate. The World Health Organization now lists antimicrobial resistance as one of the greatest global health threats. New antibiotic approvals have declined sharply since the 1980s as pharmaceutical companies shifted resources toward more profitable chronic disease treatments.\n\nCurrent strategies to address resistance include antibiotic stewardship programmes, rapid diagnostic testing to avoid prescribing antibiotics for viral infections, and investment in novel antimicrobial compounds including bacteriophage therapy and antimicrobial peptides."
+      "title": "Why Road Deaths Fell",
+      "text": "Lecturer: Road deaths in most high-income countries have fallen by something like three-quarters since their peak, at a time when traffic volumes rose substantially, and I want to look at how, because the explanation contradicts the intuition almost everyone starts with.\n\nThe intuition is that roads became safer because drivers became better — through education, campaigns and enforcement. Those things happened, and their measured contribution is modest. The larger share came from designing a system that tolerates the mistakes people were always going to make.\n\nVehicle design did much of it. Crumple zones absorb energy that would otherwise reach the occupants, seatbelts and airbags manage deceleration, and structures are designed to deform in a controlled sequence. None of this prevents a crash. All of it changes what a crash does to a person, which is a different objective and turns out to be a more achievable one.\n\nRoad design followed the same principle later and less completely. Removing roadside objects that a leaving vehicle would strike, separating opposing traffic with barriers, replacing crossroads with roundabouts that convert head-on conflicts into glancing ones, and narrowing lanes in towns so that speed falls without a sign being read — each of these accepts that vehicles will leave the carriageway and reduces the consequence when they do.\n\nSpeed is where the physics is unforgiving and the politics most difficult. The energy in a collision rises with the square of the speed, so the difference between thirty and forty kilometres per hour is not a third more energy but very nearly double, and pedestrian survival falls away sharply across exactly that range. Every measure that lowers urban speed is contested, and the evidence for its effect is among the strongest in the field.\n\nI'll finish with the framing, because it is the transferable part. The old model asked who was at fault and stopped there. The current model asks what could have been arranged differently so that the inevitable error did not become a death — the driver still made the mistake, and the system decided the outcome. That shift, from blame to design, is the single idea behind most of the reduction, and it is now being applied, slowly and with resistance, in medicine and industrial safety for the same reasons."
     }
   ],
   "questions": [
@@ -127,15 +39,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 1,
-      "label": "Member surname",
+      "label": "Parent's surname",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Kowalczyk",
-      "explanation": "The answer \"Kowalczyk\" is stated in the conversation.",
-      "prompt": "Member surname: _____",
+      "answer": "Quigley",
+      "explanation": "She spells it Q-U-I-G-L-E-Y.",
+      "prompt": "Parent's surname: _____",
       "partNumber": 1
     },
     {
@@ -144,15 +56,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 2,
-      "label": "Date of birth",
-      "prefix": "14th June ",
+      "label": "Contact number",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "1989",
-      "explanation": "The answer \"1989\" is stated in the conversation.",
-      "prompt": "Date of birth: 14th June _____",
+      "answer": "07533 908 461",
+      "explanation": "She gives 07533 908 461.",
+      "prompt": "Contact number: _____",
       "partNumber": 1
     },
     {
@@ -161,15 +73,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 3,
-      "label": "Membership chosen",
+      "label": "Instrument required",
       "prefix": "",
-      "suffix": "-monthly",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "six",
-      "explanation": "The answer \"six\" is stated in the conversation.",
-      "prompt": "Membership chosen: _____-monthly",
+      "answer": "cello",
+      "explanation": "Her son has started learning the cello.",
+      "prompt": "Instrument required: _____",
       "partNumber": 1
     },
     {
@@ -178,15 +90,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 4,
-      "label": "Total cost",
-      "prefix": "£",
+      "label": "Size needed",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "300",
-      "explanation": "The answer \"300\" is stated in the conversation.",
-      "prompt": "Total cost: £_____",
+      "answer": "three-quarter",
+      "explanation": "A nine-year-old needs a three-quarter size.",
+      "prompt": "Size needed: _____",
       "partNumber": 1
     },
     {
@@ -195,15 +107,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 5,
-      "label": "Item to bring",
-      "prefix": "own ",
+      "label": "Monthly hire cost",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "padlock",
-      "explanation": "The answer \"padlock\" is stated in the conversation.",
-      "prompt": "Item to bring: own _____",
+      "answer": "14 pounds",
+      "explanation": "Hire is fourteen pounds a month.",
+      "prompt": "Monthly hire cost: _____",
       "partNumber": 1
     },
     {
@@ -212,15 +124,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 6,
-      "label": "Parking area",
+      "label": "Deposit",
       "prefix": "",
-      "suffix": " car park",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "rear",
-      "explanation": "The answer \"rear\" is stated in the conversation.",
-      "prompt": "Parking area: _____ car park",
+      "answer": "40 pounds",
+      "explanation": "The refundable deposit is forty pounds.",
+      "prompt": "Deposit: _____",
       "partNumber": 1
     },
     {
@@ -229,15 +141,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 7,
-      "label": "",
+      "label": "Hire period renews by",
       "prefix": "",
       "suffix": "",
-      "labelBlank": true,
-      "labelSuffix": " entrance road",
-      "rightContent": "Elm Street",
-      "answer": "Parking",
-      "explanation": "The answer \"Parking\" is stated in the conversation.",
-      "prompt": "_____ entrance road: Elm Street",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "term",
+      "explanation": "Hire runs by school term and renews automatically.",
+      "prompt": "Hire period renews by: _____",
       "partNumber": 1
     },
     {
@@ -246,15 +158,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 8,
-      "label": "Card ready from",
+      "label": "Collection days",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Friday",
-      "explanation": "The answer \"Friday\" is stated in the conversation.",
-      "prompt": "Card ready from: _____",
+      "answer": "Thursdays and Fridays",
+      "explanation": "Collection is Thursdays and Fridays, two to five.",
+      "prompt": "Collection days: _____",
       "partNumber": 1
     },
     {
@@ -263,15 +175,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 9,
-      "label": "Email",
+      "label": "Collection address",
       "prefix": "",
-      "suffix": "@greenmail.net",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "david.k",
-      "explanation": "The answer \"david.k\" is stated in the conversation.",
-      "prompt": "Email: _____@greenmail.net",
+      "answer": "Foundry Road",
+      "explanation": "The music centre is on Foundry Road.",
+      "prompt": "Collection address: _____",
       "partNumber": 1
     },
     {
@@ -280,15 +192,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 10,
-      "label": "Swimming pool access",
+      "label": "Document needed from school",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "yes / included",
-      "explanation": "The answer \"yes / included\" is stated in the conversation.",
-      "prompt": "Swimming pool access: _____",
+      "answer": "letter",
+      "explanation": "A letter confirming lessons makes the hire subsidised.",
+      "prompt": "Document needed from school: _____",
       "partNumber": 1
     },
     {
@@ -297,15 +209,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 11,
-      "prompt": "What is the library's closing time on weekdays?",
+      "prompt": "Why is the induction required even for experienced climbers?",
       "options": [
-        "10 pm",
-        "8 pm",
-        "9 pm",
-        "11 pm"
+        "Most accidents here involve experienced climbers following another centre's practice",
+        "It is a legal requirement",
+        "To sell memberships",
+        "Insurance rules"
       ],
       "correctAnswer": "A",
-      "explanation": "The guide says the library is 'open from eight am to ten pm Monday to Friday'"
+      "explanation": "Accidents involve experienced climbers doing what was right elsewhere."
     },
     {
       "id": "ielts-listening-022-q12",
@@ -313,15 +225,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 12,
-      "prompt": "How many floors of study space does the library have?",
+      "prompt": "What does Marcus mean by a registered adult?",
       "options": [
-        "two",
-        "four",
-        "three",
-        "five"
+        "Any adult present",
+        "An adult who has done the induction",
+        "A parent or guardian",
+        "A qualified instructor"
       ],
       "correctAnswer": "B",
-      "explanation": "The guide mentions 'four floors of study space'"
+      "explanation": "It means an adult who has done this induction, not merely present."
     },
     {
       "id": "ielts-listening-022-q13",
@@ -329,15 +241,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 13,
-      "prompt": "When was the Engineering Hub opened?",
+      "prompt": "Above what height is a rope needed?",
       "options": [
-        "last year",
-        "five years ago",
-        "two years ago",
-        "ten years ago"
+        "Two metres",
+        "Three metres",
+        "Four metres",
+        "Five metres"
       ],
       "correctAnswer": "C",
-      "explanation": "The guide says 'opened just two years ago'"
+      "explanation": "Everything above four metres needs a rope."
     },
     {
       "id": "ielts-listening-022-q14",
@@ -345,15 +257,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 14,
-      "prompt": "What is automatically provided when students enrol?",
+      "prompt": "How long does the belay test take?",
       "options": [
-        "library card",
-        "sports membership",
-        "Student Union membership",
-        "Health Centre registration"
+        "30 minutes",
+        "An hour",
+        "5 minutes",
+        "15 minutes"
       ],
       "correctAnswer": "D",
-      "explanation": "The guide says 'all students are registered automatically upon enrolment' at the Health Centre"
+      "explanation": "The belay test takes fifteen minutes."
     },
     {
       "id": "ielts-listening-022-q15",
@@ -361,34 +273,32 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 15,
-      "prompt": "Where are the sports fields located?",
+      "prompt": "Why do about one in ten fail the belay test?",
       "options": [
-        "behind the Engineering Hub",
-        "western edge of campus",
-        "northern edge",
-        "beside the library"
+        "Taking a hand off the brake rope",
+        "Wrong equipment",
+        "Climbing too fast",
+        "Poor knots"
       ],
       "correctAnswer": "A",
-      "explanation": "Sports fields are 'on the eastern side of campus, behind the Engineering Hub'"
+      "explanation": "Almost always for taking a hand off the brake rope."
     },
     {
       "id": "ielts-listening-022-q16",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Greenfield University — Campus Map",
-      "mapDescription": "Label the buildings and facilities A–J on the campus map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Gritstone Climbing Centre — Floor Plan",
+      "mapDescription": "The plan shows the ground floor with the upper level indicated. Reception is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Administration Block",
-        "B": "Library",
-        "C": "Science Building",
-        "D": "Engineering Hub",
-        "E": "Student Union",
-        "F": "Health Centre",
-        "G": "Acorn Hall",
-        "H": "Birch Hall",
-        "I": "Cedar Hall",
-        "J": "Chaplaincy / Meditation garden"
+        "A": "Reception",
+        "B": "Bouldering room",
+        "C": "Roped walls",
+        "D": "Auto-belays",
+        "E": "Training area",
+        "F": "Café",
+        "G": "Changing rooms",
+        "H": "Equipment hire"
       },
       "mapLetters": [
         "A",
@@ -398,33 +308,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 16,
-      "prompt": "Building directly in front of main gate",
-      "correctAnswer": "A",
-      "explanation": "The correct letter is A (Administration Block)."
+      "prompt": "Straight ahead through the archway from reception",
+      "correctAnswer": "B",
+      "explanation": "The bouldering room is straight ahead through the archway."
     },
     {
       "id": "ielts-listening-022-q17",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Greenfield University — Campus Map",
-      "mapDescription": "Label the buildings and facilities A–J on the campus map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Gritstone Climbing Centre — Floor Plan",
+      "mapDescription": "The plan shows the ground floor with the upper level indicated. Reception is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Administration Block",
-        "B": "Library",
-        "C": "Science Building",
-        "D": "Engineering Hub",
-        "E": "Student Union",
-        "F": "Health Centre",
-        "G": "Acorn Hall",
-        "H": "Birch Hall",
-        "I": "Cedar Hall",
-        "J": "Chaplaincy / Meditation garden"
+        "A": "Reception",
+        "B": "Bouldering room",
+        "C": "Roped walls",
+        "D": "Auto-belays",
+        "E": "Training area",
+        "F": "Café",
+        "G": "Changing rooms",
+        "H": "Equipment hire"
       },
       "mapLetters": [
         "A",
@@ -434,33 +340,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 17,
-      "prompt": "Building to left of Admin Block",
-      "correctAnswer": "B",
-      "explanation": "The correct letter is B (Library)."
+      "prompt": "Along the western side, on the left",
+      "correctAnswer": "C",
+      "explanation": "The roped walls run along the western side."
     },
     {
       "id": "ielts-listening-022-q18",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Greenfield University — Campus Map",
-      "mapDescription": "Label the buildings and facilities A–J on the campus map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Gritstone Climbing Centre — Floor Plan",
+      "mapDescription": "The plan shows the ground floor with the upper level indicated. Reception is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Administration Block",
-        "B": "Library",
-        "C": "Science Building",
-        "D": "Engineering Hub",
-        "E": "Student Union",
-        "F": "Health Centre",
-        "G": "Acorn Hall",
-        "H": "Birch Hall",
-        "I": "Cedar Hall",
-        "J": "Chaplaincy / Meditation garden"
+        "A": "Reception",
+        "B": "Bouldering room",
+        "C": "Roped walls",
+        "D": "Auto-belays",
+        "E": "Training area",
+        "F": "Café",
+        "G": "Changing rooms",
+        "H": "Equipment hire"
       },
       "mapLetters": [
         "A",
@@ -470,33 +372,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 18,
-      "prompt": "Building behind Admin Block",
-      "correctAnswer": "C",
-      "explanation": "The correct letter is C (Science Building)."
+      "prompt": "At the far end of the roped walls",
+      "correctAnswer": "D",
+      "explanation": "The auto-belays are at the far end of those walls."
     },
     {
       "id": "ielts-listening-022-q19",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Greenfield University — Campus Map",
-      "mapDescription": "Label the buildings and facilities A–J on the campus map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Gritstone Climbing Centre — Floor Plan",
+      "mapDescription": "The plan shows the ground floor with the upper level indicated. Reception is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Administration Block",
-        "B": "Library",
-        "C": "Science Building",
-        "D": "Engineering Hub",
-        "E": "Student Union",
-        "F": "Health Centre",
-        "G": "Acorn Hall",
-        "H": "Birch Hall",
-        "I": "Cedar Hall",
-        "J": "Chaplaincy / Meditation garden"
+        "A": "Reception",
+        "B": "Bouldering room",
+        "C": "Roped walls",
+        "D": "Auto-belays",
+        "E": "Training area",
+        "F": "Café",
+        "G": "Changing rooms",
+        "H": "Equipment hire"
       },
       "mapLetters": [
         "A",
@@ -506,33 +404,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 19,
-      "prompt": "Building to right of Science Building",
-      "correctAnswer": "D",
-      "explanation": "The correct letter is D (Engineering Hub)."
+      "prompt": "Upstairs, above reception",
+      "correctAnswer": "E",
+      "explanation": "The training area is above reception."
     },
     {
       "id": "ielts-listening-022-q20",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Greenfield University — Campus Map",
-      "mapDescription": "Label the buildings and facilities A–J on the campus map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Gritstone Climbing Centre — Floor Plan",
+      "mapDescription": "The plan shows the ground floor with the upper level indicated. Reception is at the southern end. Label the areas A–H.",
       "mapKey": {
-        "A": "Administration Block",
-        "B": "Library",
-        "C": "Science Building",
-        "D": "Engineering Hub",
-        "E": "Student Union",
-        "F": "Health Centre",
-        "G": "Acorn Hall",
-        "H": "Birch Hall",
-        "I": "Cedar Hall",
-        "J": "Chaplaincy / Meditation garden"
+        "A": "Reception",
+        "B": "Bouldering room",
+        "C": "Roped walls",
+        "D": "Auto-belays",
+        "E": "Training area",
+        "F": "Café",
+        "G": "Changing rooms",
+        "H": "Equipment hire"
       },
       "mapLetters": [
         "A",
@@ -542,14 +436,12 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 20,
-      "prompt": "Social hub building on right path from main gate",
-      "correctAnswer": "E",
-      "explanation": "The correct letter is E (Student Union)."
+      "prompt": "Behind the café, on the eastern side",
+      "correctAnswer": "G",
+      "explanation": "The changing rooms are behind the café."
     },
     {
       "id": "ielts-listening-022-q21",
@@ -557,15 +449,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 21,
-      "prompt": "Which adaptation strategy is described as most widely adopted globally?",
+      "prompt": "What does 'needs more critical engagement' mean?",
       "options": [
-        "adjusting planting calendars",
-        "drought-resistant crop varieties",
-        "agritourism diversification",
-        "improved irrigation"
+        "Add more sources",
+        "Describing sources without evaluating them",
+        "Write more words",
+        "Use stronger language"
       ],
       "correctAnswer": "B",
-      "explanation": "Mike says 'the shift to drought-resistant varieties is the most widely adopted strategy globally'"
+      "explanation": "She has described what sources say without evaluating."
     },
     {
       "id": "ielts-listening-022-q22",
@@ -573,15 +465,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 22,
-      "prompt": "What type of weather data do farmers most need?",
+      "prompt": "What does the tutor say Nadia should add?",
       "options": [
-        "national averages",
-        "seasonal forecasts",
-        "hyper-local data",
-        "satellite imagery"
+        "A conclusion",
+        "Criticism",
+        "Judgement",
+        "More quotations"
       ],
       "correctAnswer": "C",
-      "explanation": "Sarah says 'Farmers need hyper-local data, not national averages'"
+      "explanation": "Judgement, not criticism for its own sake."
     },
     {
       "id": "ielts-listening-022-q23",
@@ -589,15 +481,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 23,
-      "prompt": "Which country's scheme is cited as an example of ineffective blanket support?",
+      "prompt": "Where is the cause of Tom's structure problem likely to be?",
       "options": [
-        "Bangladesh",
-        "Kenya",
-        "China",
-        "India"
+        "The conclusion",
+        "The references",
+        "Page four",
+        "Page one"
       ],
       "correctAnswer": "D",
-      "explanation": "Mike cites 'India's PM-KISAN scheme'"
+      "explanation": "A reader lost on page four took a wrong turning much earlier."
     },
     {
       "id": "ielts-listening-022-q24",
@@ -605,15 +497,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 24,
-      "prompt": "By how much could tropical crop yields fall by 2080?",
+      "prompt": "When should Tom write his introduction?",
       "options": [
-        "30%",
-        "10%",
-        "20%",
-        "40%"
+        "Last",
+        "After the literature review",
+        "With the conclusion",
+        "First"
       ],
       "correctAnswer": "A",
-      "explanation": "Sarah states yield losses 'could reach thirty percent by 2080'"
+      "explanation": "Write it last, describing the essay actually produced."
     },
     {
       "id": "ielts-listening-022-q25",
@@ -621,238 +513,238 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 25,
-      "prompt": "What does Mike identify as a requirement for advanced adaptation technologies?",
+      "prompt": "What should students do if they disagree with a comment?",
       "options": [
-        "international cooperation",
-        "significant upfront investment",
-        "government mandates",
-        "reduced crop prices"
+        "Ignore it",
+        "Leave the text and explain why in a covering note",
+        "Change it anyway",
+        "Ask for a new marker"
       ],
       "correctAnswer": "B",
-      "explanation": "Mike says these 'require significant upfront investment'"
+      "explanation": "A defended decision is fine; an ignored comment looks careless."
     },
     {
       "id": "ielts-listening-022-q26",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Leave it until the end",
+        "B. Explain the decision in writing",
+        "C. Choose one and say which"
       ],
       "num": 26,
-      "prompt": "introducing new equipment in the laboratory",
+      "prompt": "the introduction",
       "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "explanation": "Write it last, after the argument is finished."
     },
     {
       "id": "ielts-listening-022-q27",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Leave it until the end",
+        "B. Explain the decision in writing",
+        "C. Choose one and say which"
       ],
       "num": 27,
-      "prompt": "keeping written records of experiments",
-      "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "prompt": "commas and references",
+      "correctAnswer": "A",
+      "explanation": "Do them last, in one pass."
     },
     {
       "id": "ielts-listening-022-q28",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Leave it until the end",
+        "B. Explain the decision in writing",
+        "C. Choose one and say which"
       ],
       "num": 28,
-      "prompt": "sharing results with other research groups",
+      "prompt": "a comment you disagree with",
       "correctAnswer": "B",
-      "explanation": "The speaker's attitude is B. She is undecided."
+      "explanation": "Leave the text and justify it in the covering note."
     },
     {
       "id": "ielts-listening-022-q29",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Leave it until the end",
+        "B. Explain the decision in writing",
+        "C. Choose one and say which"
       ],
       "num": 29,
-      "prompt": "the importance of the project deadline",
-      "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "prompt": "a decision to keep something as it is",
+      "correctAnswer": "B",
+      "explanation": "A defended decision is acceptable if written down."
     },
     {
       "id": "ielts-listening-022-q30",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Leave it until the end",
+        "B. Explain the decision in writing",
+        "C. Choose one and say which"
       ],
       "num": 30,
-      "prompt": "the proposal to extend the study",
+      "prompt": "conflicting comments from two markers",
       "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "explanation": "Decide, and say which you followed."
     },
     {
       "id": "ielts-listening-022-q31",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 31,
-      "sentenceText": "In 1928, Fleming observed that a __BLANK__ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
-      "correctAnswer": "mould",
-      "explanation": "The correct answer is: \"mould\".",
-      "prompt": "In 1928, Fleming observed that a _____ called Penicillium notatum was inhibiting bacterial growth on his culture plates.",
-      "partNumber": 4
+      "prompt": "What does the lecturer say the common intuition is?",
+      "options": [
+        "Enforcement increased",
+        "Vehicles became safer",
+        "Roads became safer because drivers improved",
+        "Traffic fell"
+      ],
+      "correctAnswer": "C",
+      "explanation": "The intuition is that better drivers explain the fall."
     },
     {
       "id": "ielts-listening-022-q32",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 32,
-      "sentenceText": "Fleming's initial problem was that he could not __BLANK__ the active compound in sufficient quantities for clinical use.",
-      "correctAnswer": "isolate / purify",
-      "explanation": "The correct answer is: \"isolate / purify\".",
-      "prompt": "Fleming's initial problem was that he could not _____ the active compound in sufficient quantities for clinical use.",
-      "partNumber": 4
+      "prompt": "How does he describe the measured contribution of education and campaigns?",
+      "options": [
+        "Negative",
+        "Unmeasured",
+        "Dominant",
+        "Modest"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Those things happened and their contribution is modest."
     },
     {
       "id": "ielts-listening-022-q33",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 33,
-      "sentenceText": "Florey and Chain, based at __BLANK__, were the first to purify penicillin and test it on a human patient.",
-      "correctAnswer": "Oxford",
-      "explanation": "The correct answer is: \"Oxford\".",
-      "prompt": "Florey and Chain, based at _____, were the first to purify penicillin and test it on a human patient.",
-      "partNumber": 4
+      "prompt": "What did the larger share come from?",
+      "options": [
+        "Designing a system that tolerates mistakes",
+        "Reduced traffic",
+        "Better weather forecasting",
+        "Stricter penalties"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A system tolerating the mistakes people were always going to make."
     },
     {
       "id": "ielts-listening-022-q34",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 34,
-      "sentenceText": "__BLANK__ was the occupation of the first human patient treated with penicillin in 1941.",
-      "correctAnswer": "Police officer",
-      "explanation": "The correct answer is: \"Police officer\".",
-      "prompt": "_____ was the occupation of the first human patient treated with penicillin in 1941.",
-      "partNumber": 4
+      "prompt": "What do crumple zones and airbags not do?",
+      "options": [
+        "Absorb energy",
+        "Prevent a crash",
+        "Manage deceleration",
+        "Protect occupants"
+      ],
+      "correctAnswer": "B",
+      "explanation": "None of it prevents a crash; it changes what a crash does."
     },
     {
       "id": "ielts-listening-022-q35",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 35,
-      "sentenceText": "Mass production of penicillin during the Second World War required entirely new __BLANK__ techniques.",
-      "correctAnswer": "fermentation",
-      "explanation": "The correct answer is: \"fermentation\".",
-      "prompt": "Mass production of penicillin during the Second World War required entirely new _____ techniques.",
-      "partNumber": 4
+      "prompt": "Why do roundabouts help?",
+      "options": [
+        "They shorten journeys",
+        "They slow all traffic to a stop",
+        "They convert head-on conflicts into glancing ones",
+        "They remove pedestrians"
+      ],
+      "correctAnswer": "C",
+      "explanation": "They turn head-on conflicts into glancing ones."
     },
     {
       "id": "ielts-listening-022-q36",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 36,
-      "prompt": "According to the lecture, the main reason antibiotic discovery declined after the 1980s was that",
-      "options": [
-        "A  resistant bacteria evolved too quickly",
-        "C  all known antibiotic compounds had already been tested",
-        "B  pharmaceutical companies moved to more profitable areas",
-        "D  government funding was withdrawn"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says companies 'shifted resources toward more profitable chronic disease treatments'"
+      "sentenceText": "The energy in a collision rises with the __BLANK__ of the speed.",
+      "correctAnswer": "square",
+      "explanation": "Energy rises with the square of speed.",
+      "prompt": "The energy in a collision rises with the _____ of the speed.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-022-q37",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 37,
-      "prompt": "The golden era of antibiotic discovery lasted approximately",
-      "options": [
-        "A  10 years",
-        "C  30 years",
-        "D  40 years",
-        "B  20 years"
-      ],
-      "correctAnswer": "D",
-      "explanation": "The golden era ran 'from 1950 to 1970' — roughly 20 years"
+      "sentenceText": "Narrowing lanes in towns lowers speed without a __BLANK__ being read.",
+      "correctAnswer": "sign",
+      "explanation": "Lane narrowing reduces speed without signage.",
+      "prompt": "Narrowing lanes in towns lowers speed without a _____ being read.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-022-q38",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 38,
-      "prompt": "According to the lecturer, most antibiotics discovered in the golden era came from",
-      "options": [
-        "C  soil bacteria",
-        "A  synthetic chemicals",
-        "B  marine organisms",
-        "D  hospital environments"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The lecturer states they were discovered 'largely from soil bacteria'"
+      "sentenceText": "Pedestrian __BLANK__ falls away sharply across that speed range.",
+      "correctAnswer": "survival",
+      "explanation": "Survival falls sharply between thirty and forty.",
+      "prompt": "Pedestrian _____ falls away sharply across that speed range.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-022-q39",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 39,
-      "prompt": "The World Health Organization describes antimicrobial resistance as",
-      "options": [
-        "A  a manageable risk with current technology",
-        "B  one of the greatest global health threats",
-        "C  primarily a problem in developing countries",
-        "D  less serious than other infectious diseases"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The lecturer quotes WHO listing it as 'one of the greatest global health threats'"
+      "sentenceText": "The old model asked who was at __BLANK__ and stopped there.",
+      "correctAnswer": "fault",
+      "explanation": "The old model asked about fault.",
+      "prompt": "The old model asked who was at _____ and stopped there.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-022-q40",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 40,
-      "prompt": "Which novel treatment approach is specifically mentioned as an alternative to conventional antibiotics?",
-      "options": [
-        "A  gene therapy",
-        "B  vaccination programmes",
-        "C  bacteriophage therapy",
-        "D  surgical interventions"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer mentions 'bacteriophage therapy' as a novel antimicrobial approach"
+      "sentenceText": "The driver made the mistake and the __BLANK__ decided the outcome.",
+      "correctAnswer": "system",
+      "explanation": "The system determines the consequence of the error.",
+      "prompt": "The driver made the mistake and the _____ decided the outcome.",
+      "partNumber": 4
     }
   ],
   "parts": [
     {
       "partNumber": 1,
-      "title": "Part 1: Research Project Discussion",
-      "audioDescription": "Two students discuss their environmental science research project with their tutor.",
-      "context": "Enquiry About a Sports Centre Membership",
+      "title": "Part 1: Instrument Hire",
+      "audioDescription": "A parent arranges to hire a cello from a county music service.",
+      "context": "Hiring a School Instrument",
       "questionRange": [
         1,
         10
@@ -860,9 +752,9 @@
     },
     {
       "partNumber": 2,
-      "title": "Part 2: Assignment Feedback Session",
-      "audioDescription": "A lecturer gives feedback on a history essay to a group of students.",
-      "context": "University Campus Orientation",
+      "title": "Part 2: Climbing Centre Induction",
+      "audioDescription": "An instructor inducts new climbers and describes the centre.",
+      "context": "Climbing Centre Induction",
       "questionRange": [
         11,
         20
@@ -870,9 +762,9 @@
     },
     {
       "partNumber": 3,
-      "title": "Part 3: Biomimicry in Engineering",
-      "audioDescription": "A lecture on how engineers are using designs from nature to solve modern problems.",
-      "context": "Seminar on Climate Change Adaptation in Agriculture",
+      "title": "Part 3: Feedback Tutorial",
+      "audioDescription": "Two students discuss how to act on marker feedback.",
+      "context": "Acting on Draft Feedback",
       "questionRange": [
         21,
         30
@@ -880,9 +772,9 @@
     },
     {
       "partNumber": 4,
-      "title": "Part 4: Urban Migration Patterns",
-      "audioDescription": "An academic lecture on the causes and consequences of rural-to-urban migration.",
-      "context": "Lecture: The History of Antibiotics",
+      "title": "Part 4: Road Safety",
+      "audioDescription": "A lecture on the shift from blaming drivers to designing forgiving systems.",
+      "context": "Why Road Deaths Fell",
       "questionRange": [
         31,
         40
