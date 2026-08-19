@@ -2,122 +2,34 @@
   "id": "ielts-listening-030",
   "exam": "ielts",
   "section": "listening",
-  "title": "IELTS Listening Practice Test 30",
+  "title": "IELTS Academic Listening Practice Test 30",
   "durationSeconds": 2400,
   "questionCount": 40,
   "listeningScripts": [
     {
       "id": "ielts-listening-030-p1",
       "part": 1,
-      "title": "Library Membership and Book Loan",
-      "text": "Librarian: Central Library, how can I assist you?\nCaller: I'd like to register for a library card and ask about borrowing rules.\nLibrarian: Of course. Your full name please?\nCaller: Patricia Osei. O-S-E-I.\nLibrarian: And your address?\nCaller: Flat 3, 18 Maple Street, Thornton, TH6 2PQ.\nLibrarian: Date of birth?\nCaller: Second of August, 1994.\nLibrarian: Our standard membership is free and allows you to borrow up to eight items at a time. Loans are for three weeks with one free renewal. Audiobooks and e-books are also available through our app.\nCaller: Are there fines for late returns?\nLibrarian: Ten pence per day for standard loans, twenty pence for reserved items.\nCaller: Can I reserve books online?\nLibrarian: Yes, through the library portal. There's a reservation fee of fifty pence per item. Your card will be ready to collect tomorrow from the information desk.",
-      "formLayout": {
-        "title": "Central Library — New Membership Form",
-        "example": {
-          "label": "Annual membership fee",
-          "content": "free"
-        },
-        "rows": [
-          {
-            "type": "blank",
-            "num": 1,
-            "label": "Surname",
-            "prefix": "",
-            "suffix": "",
-            "answer": "Osei"
-          },
-          {
-            "type": "blank",
-            "num": 2,
-            "label": "Address",
-            "prefix": "Flat 3, 18 ",
-            "suffix": ", Thornton",
-            "answer": "Maple Street"
-          },
-          {
-            "type": "blank",
-            "num": 3,
-            "label": "Postcode",
-            "prefix": "",
-            "suffix": "",
-            "answer": "TH6 2PQ"
-          },
-          {
-            "type": "blank",
-            "num": 4,
-            "label": "Date of birth",
-            "prefix": "2nd August ",
-            "suffix": "",
-            "answer": "1994"
-          },
-          {
-            "type": "blank",
-            "num": 5,
-            "label": "Maximum items allowed",
-            "prefix": "up to ",
-            "suffix": " items",
-            "answer": "8 / eight"
-          },
-          {
-            "type": "blank",
-            "num": 6,
-            "label": "Standard loan period",
-            "prefix": "",
-            "suffix": " weeks",
-            "answer": "3 / three"
-          },
-          {
-            "type": "blank",
-            "num": 7,
-            "labelBlank": true,
-            "labelSuffix": " fine per day",
-            "rightContent": "10p / 10 pence",
-            "answer": "Standard"
-          },
-          {
-            "type": "blank",
-            "num": 8,
-            "label": "Reserved item fine (per day)",
-            "prefix": "",
-            "suffix": "p",
-            "answer": "20 / twenty"
-          },
-          {
-            "type": "blank",
-            "num": 9,
-            "label": "Online reservation fee",
-            "prefix": "",
-            "suffix": "p per item",
-            "answer": "50 / fifty"
-          },
-          {
-            "type": "blank",
-            "num": 10,
-            "label": "Card collection point",
-            "prefix": "",
-            "suffix": "",
-            "answer": "information desk"
-          }
-        ]
-      }
+      "title": "Reporting Lost Property",
+      "text": "Officer: Lost property, Harkness Bus Company. How can I help?\nCaller: I left a bag on a bus yesterday evening.\nOfficer: Let's take the details. Your name first.\nCaller: Tobias Kilbride. Kilbride is K-I-L-B-R-I-D-E.\nOfficer: And a number we can reach you on?\nCaller: 07854 331 207.\nOfficer: Which route were you on?\nCaller: The 46, towards Weatherley.\nOfficer: And roughly what time?\nCaller: A quarter past six.\nOfficer: Now the bag itself. Describe it for me — and be specific, because we hold a great many black rucksacks.\nCaller: It's a green canvas shoulder bag, with a leather strap.\nOfficer: Good, that's the kind of detail that finds things. What's in it?\nCaller: A laptop, a notebook, and a set of keys.\nOfficer: The keys are the reason I'd like you to come in today rather than wait. Where did you sit?\nCaller: Upstairs, near the back.\nOfficer: That's helpful too. Items from the upper deck often come in a day later than the rest, because they're found at the depot rather than by the driver.\nCaller: So it might not be logged yet?\nOfficer: Exactly. It may be here without being on the system, so don't take a negative answer on the phone as final.\nCaller: When can I come?\nOfficer: The counter is open until four, weekdays only, and bring photographic identification — we can't release anything without it.\nOfficer: One more thing. We keep items for twenty-eight days, and after that they go to a charity auction.",
+      "formLayout": true
     },
     {
       "id": "ielts-listening-030-p2",
       "part": 2,
-      "title": "Central Railway Station — Passenger Information",
-      "text": "Announcer: Good morning and welcome to Central Railway Station. My name is Chris and I'm one of the passenger services team. We're delighted that you're travelling with us today, and we'd like to take a few minutes to familiarise you with the layout of the station so you can find everything you need quickly and comfortably. Central Station serves over forty thousand passengers every day and is one of the busiest transport hubs in the region, so let me guide you through the key facilities.\n\nLet's begin at Zone A — the ticket office. This is located at the front of the station building, directly facing Market Square as you enter through the main doors. The ticket office has twelve staffed windows open from five in the morning until eleven at night, seven days a week. You can purchase tickets for any destination on the national rail network, collect pre-booked tickets, and get journey planning advice. The ticket office also handles railcard applications and group travel enquiries.\n\nImmediately to the right of the ticket office is Zone B — left luggage. This facility allows you to store your bags securely while you explore the city or wait for your connection. The service is available from six in the morning until ten at night, every day of the year including bank holidays. Charges are three pounds per item for up to four hours, and five pounds for up to twelve hours. Larger items such as bicycles and pushchairs can also be accommodated for an additional charge. You will need to show a valid photo ID when collecting your items.\n\nMoving through the main concourse from the ticket office, you'll reach the platforms. Platforms one to four — Zone C — are on the left-hand side of the concourse and are served by local and regional services, including commuter trains to the suburbs, the airport express, and cross-country services. The departure board for platforms one to four is displayed on a large overhead screen at the concourse entrance.\n\nPlatforms five to eight — Zone D — are on the right-hand side of the concourse and handle long-distance intercity services, including trains to London, Edinburgh, Birmingham, and Bristol. These platforms have their own waiting facilities including seating and vending machines. Platform 8 is the dedicated platform for the overnight sleeper service to Scotland, which departs at eleven fifty-five pm.\n\nZone E — the waiting room — is centrally located between the two platform groups on the main concourse. The waiting room is enclosed, heated in winter and air-conditioned in summer, and provides comfortable seating for around eighty passengers. It is open from five in the morning until the last service of the day. Children's pushchairs are welcome and there is a designated area for passengers with reduced mobility.\n\nZone F — the station café — is positioned in the western end of the main concourse, between the waiting room and the exit to the taxi rank. The café serves hot and cold food and drinks from five thirty in the morning until nine at night. A breakfast menu is available until midday, after which a full lunch and snack menu takes over. The café also has free wi-fi which you can access without needing to make a purchase.\n\nZone G — the taxi rank — is outside the western exit of the station, accessed via the covered walkway from the main concourse. Taxis are available here twenty-four hours a day and the rank typically has a queue of three to eight vehicles waiting at most times. A smartphone app is also available for pre-booking a taxi and tracking your driver's arrival. Private hire vehicles must use the designated drop-off and pick-up bay on the southern side of the building rather than the taxi rank.\n\nZone H — bicycle storage — is located at the eastern end of the station building, accessible from Platform Road on the eastern side. There are one hundred and twenty covered, secure bicycle spaces available, operated on a first-come, first-served basis. Season pass holders get a reserved space. The bicycle storage area is free to use for up to two hours and costs one pound per day thereafter. Cycle repair tools and a pump are available in the storage area at no charge.\n\nZone I — the customer services desk — is situated in the centre of the main concourse, directly in front of the main entrance. The team here handles journey planning, delays and compensation claims, lost property, accessibility arrangements, and station feedback. Customer services is open from seven in the morning until eight in the evening Monday to Saturday, and nine to five on Sundays. Outside these hours, the ticket office team can assist with urgent queries.\n\nFinally, Zone J — the accessible assistance point — is located near the entrance to Platforms one to four on the left of the main concourse. This is a staffed point specifically for passengers who need help boarding trains, using ramps, or navigating the station. Passengers who require assistance are strongly encouraged to pre-book the service at least twenty-four hours before travel by calling the station's accessibility line or booking online. However, our team will always do their best to assist passengers who arrive without prior booking.\n\nI hope that gives you a good sense of the station layout. If there's anything else we can help with, please don't hesitate to ask any member of the blue-uniformed passenger services team. Have a safe and comfortable journey today."
+      "title": "Leisure Centre Induction",
+      "text": "Duty manager: Good evening, and welcome to Farnley Leisure Centre. I'm Delphine, and I look after memberships.\n\nA word about what your card actually buys, because this is where new members are most often disappointed. Membership gives you the gym, the pool and the open sessions. It does not give you classes automatically — classes are bookable, they open seven days ahead, and the popular ones fill within an hour of opening. If you want Tuesday spin, you set an alarm for the previous Tuesday morning. I would rather tell you that now than have you assume you can walk in.\n\nBookings are cancellable up to two hours before. Beyond that it counts as a no-show, and three no-shows in a month suspend your booking rights for a fortnight. That sounds harsh until you have watched twelve people on a waiting list for a class where four booked spaces sat empty.\n\nThe pool has lane swimming every morning until ten, and I would encourage anyone nervous about that to come anyway. The slow lane is genuinely slow, and the people in it were all new once.\n\nLet me take you round. From this reception desk, the changing rooms are straight ahead through the double doors. The pool is beyond them on the left. The gym is upstairs, directly above reception, and the studio where classes run is at the top of the same staircase but to the right. The café overlooks the pool from the first floor, and the crèche is on the ground floor to the right of reception, next to the door you came in by.\n\nFinally: tell the instructor about any injury before the session, not after. Every one of them would rather adapt an exercise than fill in an accident form."
     },
     {
       "id": "ielts-listening-030-p3",
       "part": 3,
-      "title": "Seminar on Climate Change Adaptation in Agriculture",
-      "text": "Tutor: Today we're looking at how farmers are adapting to climate change. Sarah, you've been researching this — what are the main strategies?\nSarah: There are basically four categories: changing crop varieties, adjusting planting calendars, improving irrigation efficiency, and diversifying into non-crop income streams like agritourism.\nMike: From what I read, the shift to drought-resistant varieties is the most widely adopted strategy globally, though it depends heavily on seed availability and cost.\nTutor: What barriers prevent farmers from adapting?\nSarah: In developing countries, the main barriers are access to finance and lack of reliable weather forecasting at the local level. Farmers need hyper-local data, not national averages.\nMike: There's also a knowledge gap. Many smallholders rely on generational knowledge that may no longer match current climate conditions. Extension services have a critical role.\nTutor: How effective have government subsidy programmes been?\nSarah: Mixed results. Countries that tied subsidies to specific adaptation behaviours — like water-efficient irrigation — saw much better outcomes than those that gave blanket payments.\nMike: India's PM-KISAN scheme is often cited as an example of blanket support that failed to drive specific adaptive behaviours.\nTutor: What does the evidence suggest about the future food supply?\nSarah: If current emission trajectories continue, yield losses for staple crops like wheat and maize could reach thirty percent by 2080 in tropical regions.\nTutor: And what would reverse that?\nMike: A combination of accelerated breeding programmes, agroforestry, and precision agriculture technologies — but these require significant upfront investment."
+      "title": "Writing Up a Null Result",
+      "text": "Tutor: You look worried. What's happened with the project?\nKwabena: The experiment didn't work. I've got twelve weeks of data and no effect.\nTutor: Then you have a result. Sit down.\nKwabena: It isn't the result I proposed.\nTutor: No, and that is not the same as failure. The question is whether the study could have detected the effect if it had been there. If it could, a null result is informative. If it couldn't, the study is uninformative — and that is what we need to establish before you write anything.\nKwabena: How do I tell which?\nTutor: Start with your sample size and the size of effect you were powered to see. If you could only ever have detected something implausibly large, that is a design problem and you should say so plainly.\nKwabena: And if the design was sound?\nTutor: Then you write it up as a genuine negative finding, and you write it up confidently. Fields are distorted by exactly this — people bury null results, so the published record over-represents effects that are not really there.\nKwabena: My worry is the marker will think I did nothing.\nTutor: Markers assess the reasoning, not the outcome. I have given firsts to projects that found nothing and thirds to projects that found something by accident and could not explain how.\nKwabena: Should I try a different analysis to see if anything shows up?\nTutor: No. Testing until something turns significant is how you produce a finding that will not replicate. Report the analysis you planned. If something else looks interesting, name it as exploratory and say it needs testing on new data.\nKwabena: That feels like admitting weakness.\nTutor: It reads as competence. Anyone experienced will notice it, and it is the single clearest signal that you understood what you were doing."
     },
     {
       "id": "ielts-listening-030-p4",
       "part": 4,
-      "title": "Lecture: Deep-Sea Ecosystems",
-      "text": "Today's lecture focuses on deep-sea ecosystems — those found below two hundred metres, where sunlight no longer penetrates.\n\nFor most of scientific history, the deep ocean was assumed to be a near-barren wasteland. This view changed dramatically in 1977 when researchers aboard the submersible Alvin discovered hydrothermal vents at the Galapagos Rift at a depth of two thousand four hundred metres. These vents release superheated water laden with minerals, and around them thrived dense communities of organisms that survive entirely without sunlight.\n\nThe primary producers in vent ecosystems are chemosynthetic bacteria and archaea, which oxidise hydrogen sulphide released by the vents to produce energy — analogous to the way photosynthetic organisms use sunlight at the surface. These microbes form the base of a food web that includes tube worms — some exceeding two metres in length — giant clams, and vent shrimp.\n\nBeyond hydrothermal vents, deep-sea life depends heavily on what scientists call marine snow — a constant fall of organic particles from surface waters including dead organisms, faeces, and shed mucus. This slow rain of organic matter is the primary food source for most deep-sea benthic communities. Rates of marine snow deposition vary significantly with surface productivity.\n\nThe deep sea is also home to bioluminescent organisms — those capable of producing their own light through chemical reactions. Estimates suggest that up to ninety percent of deep-sea creatures are bioluminescent. This light serves functions ranging from attracting prey — as in the iconic anglerfish — to intraspecies communication and camouflage.\n\nDespite covering over sixty percent of the Earth's surface, less than twenty percent of the deep ocean floor has been mapped in high resolution. This lack of knowledge makes it difficult to assess the potential impacts of emerging threats including deep-sea mining for manganese nodules and polymetallic sulphide deposits.\n\nConservation efforts are now focusing on establishing marine protected areas in international waters, though international governance frameworks remain inadequate for the task."
+      "title": "The Economics of Maintenance",
+      "text": "Lecturer: Today's subject is maintenance — the least glamorous topic in infrastructure and the one that decides whether any of the rest of it works.\n\nBegin with the asymmetry. A new bridge is opened by a politician; a repaired bridge is a lane closure that inconveniences voters. The benefits of maintenance are invisible when it succeeds, because success looks exactly like nothing happening, while the costs are immediate and highly visible. That asymmetry, not ignorance, explains most deferral. Engineers have almost always known what needed doing.\n\nThe arithmetic makes the deferral expensive. Repair costs rise sharply once deterioration passes certain thresholds — a sealed crack is cheap, a corroded reinforcement bar is not — so postponement does not spread the cost, it multiplies it. Estimates vary by structure type, but a repair delayed past the point of water ingress commonly costs several times what it would have.\n\nThere is a budgeting reason too, and it is more mundane than corruption. Capital and operating budgets are usually separate, and it is frequently easier for an authority to raise money to build something new than to fund the routine upkeep of what it already has. So systems expand faster than they are maintained, and the maintenance backlog grows even when nobody has made a decision to let it grow.\n\nNow the part I want you to take away. The failures that make the news are rarely a surprise to the people responsible for the structure. Inspection records usually show the problem years in advance. What is missing is not information but a mechanism that converts an inspection finding into money, and the countries that have improved fastest did so by changing that mechanism — ring-fenced maintenance funds, published condition data, statutory duties to act on a rating.\n\nSo the discipline of maintenance is only partly technical. Detecting deterioration is largely solved. Being obliged to act on what you have detected is not."
     }
   ],
   "questions": [
@@ -133,8 +45,8 @@
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Osei",
-      "explanation": "The answer \"Osei\" is stated in the conversation.",
+      "answer": "Kilbride",
+      "explanation": "He spells it K-I-L-B-R-I-D-E.",
       "prompt": "Surname: _____",
       "partNumber": 1
     },
@@ -144,15 +56,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 2,
-      "label": "Address",
-      "prefix": "Flat 3, 18 ",
-      "suffix": ", Thornton",
+      "label": "Contact number",
+      "prefix": "",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "Maple Street",
-      "explanation": "The answer \"Maple Street\" is stated in the conversation.",
-      "prompt": "Address: Flat 3, 18 _____, Thornton",
+      "answer": "07854 331 207",
+      "explanation": "He gives 07854 331 207.",
+      "prompt": "Contact number: _____",
       "partNumber": 1
     },
     {
@@ -161,15 +73,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 3,
-      "label": "Postcode",
+      "label": "Bus route number",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "TH6 2PQ",
-      "explanation": "The answer \"TH6 2PQ\" is stated in the conversation.",
-      "prompt": "Postcode: _____",
+      "answer": "46",
+      "explanation": "He was on the 46 towards Weatherley.",
+      "prompt": "Bus route number: _____",
       "partNumber": 1
     },
     {
@@ -178,15 +90,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 4,
-      "label": "Date of birth",
-      "prefix": "2nd August ",
+      "label": "Time of journey",
+      "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "1994",
-      "explanation": "The answer \"1994\" is stated in the conversation.",
-      "prompt": "Date of birth: 2nd August _____",
+      "answer": "6.15",
+      "explanation": "He travelled at a quarter past six.",
+      "prompt": "Time of journey: _____",
       "partNumber": 1
     },
     {
@@ -195,15 +107,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 5,
-      "label": "Maximum items allowed",
-      "prefix": "up to ",
-      "suffix": " items",
+      "label": "Bag material",
+      "prefix": "",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "8 / eight",
-      "explanation": "The answer \"8 / eight\" is stated in the conversation.",
-      "prompt": "Maximum items allowed: up to _____ items",
+      "answer": "canvas",
+      "explanation": "A green canvas shoulder bag.",
+      "prompt": "Bag material: _____",
       "partNumber": 1
     },
     {
@@ -212,15 +124,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 6,
-      "label": "Standard loan period",
+      "label": "Strap made of",
       "prefix": "",
-      "suffix": " weeks",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "3 / three",
-      "explanation": "The answer \"3 / three\" is stated in the conversation.",
-      "prompt": "Standard loan period: _____ weeks",
+      "answer": "leather",
+      "explanation": "It has a leather strap.",
+      "prompt": "Strap made of: _____",
       "partNumber": 1
     },
     {
@@ -229,15 +141,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 7,
-      "label": "",
+      "label": "Item making it urgent",
       "prefix": "",
       "suffix": "",
-      "labelBlank": true,
-      "labelSuffix": " fine per day",
-      "rightContent": "10p / 10 pence",
-      "answer": "Standard",
-      "explanation": "The answer \"Standard\" is stated in the conversation.",
-      "prompt": "_____ fine per day: 10p / 10 pence",
+      "labelBlank": false,
+      "labelSuffix": "",
+      "rightContent": "",
+      "answer": "keys",
+      "explanation": "The keys are why he should come in today.",
+      "prompt": "Item making it urgent: _____",
       "partNumber": 1
     },
     {
@@ -246,15 +158,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 8,
-      "label": "Reserved item fine (per day)",
+      "label": "Where he was sitting",
       "prefix": "",
-      "suffix": "p",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "20 / twenty",
-      "explanation": "The answer \"20 / twenty\" is stated in the conversation.",
-      "prompt": "Reserved item fine (per day): _____p",
+      "answer": "upstairs",
+      "explanation": "Upstairs, near the back.",
+      "prompt": "Where he was sitting: _____",
       "partNumber": 1
     },
     {
@@ -263,15 +175,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 9,
-      "label": "Online reservation fee",
+      "label": "Counter closes at",
       "prefix": "",
-      "suffix": "p per item",
+      "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "50 / fifty",
-      "explanation": "The answer \"50 / fifty\" is stated in the conversation.",
-      "prompt": "Online reservation fee: _____p per item",
+      "answer": "4",
+      "explanation": "The counter is open until four, weekdays only.",
+      "prompt": "Counter closes at: _____",
       "partNumber": 1
     },
     {
@@ -280,15 +192,15 @@
       "questionType": "form_field",
       "instructions": "Complete the form below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
       "num": 10,
-      "label": "Card collection point",
+      "label": "Items kept for",
       "prefix": "",
       "suffix": "",
       "labelBlank": false,
       "labelSuffix": "",
       "rightContent": "",
-      "answer": "information desk",
-      "explanation": "The answer \"information desk\" is stated in the conversation.",
-      "prompt": "Card collection point: _____",
+      "answer": "28 days",
+      "explanation": "After twenty-eight days they go to a charity auction.",
+      "prompt": "Items kept for: _____",
       "partNumber": 1
     },
     {
@@ -297,15 +209,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 11,
-      "prompt": "What are the left luggage operating hours?",
+      "prompt": "What are new members most often disappointed about?",
       "options": [
-        "6 am to 10 pm",
-        "5 am to 11 pm",
-        "7 am to 9 pm",
-        "24 hours"
+        "That classes are not automatic with membership",
+        "Parking",
+        "The pool temperature",
+        "Opening hours"
       ],
       "correctAnswer": "A",
-      "explanation": "The announcer says left luggage is available 'from six in the morning until ten at night'"
+      "explanation": "Membership covers gym, pool and open sessions, not classes."
     },
     {
       "id": "ielts-listening-030-q12",
@@ -313,15 +225,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 12,
-      "prompt": "Where is the taxi rank located?",
+      "prompt": "How far ahead do class bookings open?",
       "options": [
-        "on the eastern side of the building",
-        "outside the western exit",
-        "next to the ticket office",
-        "on the southern side of the building"
+        "Three days",
+        "Seven days",
+        "Fourteen days",
+        "One month"
       ],
       "correctAnswer": "B",
-      "explanation": "The announcer says the taxi rank is 'outside the western exit of the station'"
+      "explanation": "Classes open seven days ahead."
     },
     {
       "id": "ielts-listening-030-q13",
@@ -329,15 +241,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 13,
-      "prompt": "How much does bicycle storage cost after the first two free hours?",
+      "prompt": "By when can a booking be cancelled?",
       "options": [
-        "50p per day",
-        "£2 per day",
-        "£1 per day",
-        "£3 per day"
+        "The previous day",
+        "Twenty-four hours before",
+        "Two hours before",
+        "Any time"
       ],
       "correctAnswer": "C",
-      "explanation": "The announcer says bicycle storage 'costs one pound per day thereafter'"
+      "explanation": "Cancellable up to two hours before; after that it is a no-show."
     },
     {
       "id": "ielts-listening-030-q14",
@@ -345,15 +257,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 14,
-      "prompt": "What are customer services desk hours on Sundays?",
+      "prompt": "What happens after three no-shows in a month?",
       "options": [
-        "7 am to 8 pm",
-        "8 am to 6 pm",
-        "10 am to 4 pm",
-        "9 am to 5 pm"
+        "Membership ends",
+        "Nothing",
+        "A fine",
+        "Booking rights are suspended for a fortnight"
       ],
       "correctAnswer": "D",
-      "explanation": "The announcer says customer services is open 'nine to five on Sundays'"
+      "explanation": "Three no-shows suspend booking rights for two weeks."
     },
     {
       "id": "ielts-listening-030-q15",
@@ -361,34 +273,32 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 15,
-      "prompt": "How far in advance should passengers requiring accessible assistance book?",
+      "prompt": "When should members tell an instructor about an injury?",
       "options": [
-        "24 hours",
-        "6 hours",
-        "12 hours",
-        "48 hours"
+        "Before the session",
+        "Only if it worsens",
+        "In writing",
+        "Afterwards"
       ],
       "correctAnswer": "A",
-      "explanation": "The announcer says passengers 'are strongly encouraged to pre-book the service at least twenty-four hours before travel'"
+      "explanation": "Instructors would rather adapt an exercise than fill in a form."
     },
     {
       "id": "ielts-listening-030-q16",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Central Railway Station — Station Plan",
-      "mapDescription": "Label the facilities A–J on the station map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Farnley Leisure Centre — Plan",
+      "mapDescription": "The plan shows the ground floor with the first floor inset above. The entrance and reception are at the front. Label the areas A–H.",
       "mapKey": {
-        "A": "Ticket office",
-        "B": "Left luggage",
-        "C": "Platforms 1–4 area",
-        "D": "Platforms 5–8 area",
-        "E": "Waiting room",
-        "F": "Station café",
-        "G": "Taxi rank",
-        "H": "Bicycle storage",
-        "I": "Customer services desk",
-        "J": "Accessible assistance point"
+        "A": "Reception",
+        "B": "Changing rooms",
+        "C": "Swimming pool",
+        "D": "Gym",
+        "E": "Studio",
+        "F": "Café",
+        "G": "Crèche",
+        "H": "Car park"
       },
       "mapLetters": [
         "A",
@@ -398,33 +308,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 16,
-      "prompt": "Front of station facing Market Square, 12 windows open 5 am–11 pm",
-      "correctAnswer": "A",
-      "explanation": "The correct letter is A (Ticket office)."
+      "prompt": "Straight ahead through the double doors",
+      "correctAnswer": "B",
+      "explanation": "The changing rooms are straight ahead."
     },
     {
       "id": "ielts-listening-030-q17",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Central Railway Station — Station Plan",
-      "mapDescription": "Label the facilities A–J on the station map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Farnley Leisure Centre — Plan",
+      "mapDescription": "The plan shows the ground floor with the first floor inset above. The entrance and reception are at the front. Label the areas A–H.",
       "mapKey": {
-        "A": "Ticket office",
-        "B": "Left luggage",
-        "C": "Platforms 1–4 area",
-        "D": "Platforms 5–8 area",
-        "E": "Waiting room",
-        "F": "Station café",
-        "G": "Taxi rank",
-        "H": "Bicycle storage",
-        "I": "Customer services desk",
-        "J": "Accessible assistance point"
+        "A": "Reception",
+        "B": "Changing rooms",
+        "C": "Swimming pool",
+        "D": "Gym",
+        "E": "Studio",
+        "F": "Café",
+        "G": "Crèche",
+        "H": "Car park"
       },
       "mapLetters": [
         "A",
@@ -434,33 +340,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 17,
-      "prompt": "Right of ticket office, bag storage 6 am–10 pm, requires photo ID",
-      "correctAnswer": "B",
-      "explanation": "The correct letter is B (Left luggage)."
+      "prompt": "Beyond the changing rooms on the left",
+      "correctAnswer": "C",
+      "explanation": "The pool is past them on the left."
     },
     {
       "id": "ielts-listening-030-q18",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Central Railway Station — Station Plan",
-      "mapDescription": "Label the facilities A–J on the station map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Farnley Leisure Centre — Plan",
+      "mapDescription": "The plan shows the ground floor with the first floor inset above. The entrance and reception are at the front. Label the areas A–H.",
       "mapKey": {
-        "A": "Ticket office",
-        "B": "Left luggage",
-        "C": "Platforms 1–4 area",
-        "D": "Platforms 5–8 area",
-        "E": "Waiting room",
-        "F": "Station café",
-        "G": "Taxi rank",
-        "H": "Bicycle storage",
-        "I": "Customer services desk",
-        "J": "Accessible assistance point"
+        "A": "Reception",
+        "B": "Changing rooms",
+        "C": "Swimming pool",
+        "D": "Gym",
+        "E": "Studio",
+        "F": "Café",
+        "G": "Crèche",
+        "H": "Car park"
       },
       "mapLetters": [
         "A",
@@ -470,33 +372,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 18,
-      "prompt": "Left concourse side handling local, regional and airport express services",
-      "correctAnswer": "C",
-      "explanation": "The correct letter is C (Platforms 1–4 area)."
+      "prompt": "Upstairs, directly above reception",
+      "correctAnswer": "D",
+      "explanation": "The gym is above reception."
     },
     {
       "id": "ielts-listening-030-q19",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Central Railway Station — Station Plan",
-      "mapDescription": "Label the facilities A–J on the station map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Farnley Leisure Centre — Plan",
+      "mapDescription": "The plan shows the ground floor with the first floor inset above. The entrance and reception are at the front. Label the areas A–H.",
       "mapKey": {
-        "A": "Ticket office",
-        "B": "Left luggage",
-        "C": "Platforms 1–4 area",
-        "D": "Platforms 5–8 area",
-        "E": "Waiting room",
-        "F": "Station café",
-        "G": "Taxi rank",
-        "H": "Bicycle storage",
-        "I": "Customer services desk",
-        "J": "Accessible assistance point"
+        "A": "Reception",
+        "B": "Changing rooms",
+        "C": "Swimming pool",
+        "D": "Gym",
+        "E": "Studio",
+        "F": "Café",
+        "G": "Crèche",
+        "H": "Car park"
       },
       "mapLetters": [
         "A",
@@ -506,33 +404,29 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 19,
-      "prompt": "Right concourse side for intercity services including overnight sleeper",
-      "correctAnswer": "D",
-      "explanation": "The correct letter is D (Platforms 5–8 area)."
+      "prompt": "At the top of the same staircase, to the right",
+      "correctAnswer": "E",
+      "explanation": "The studio is to the right at the top."
     },
     {
       "id": "ielts-listening-030-q20",
       "part": 2,
       "questionType": "map_labelling",
-      "instructions": "Label the map below. Write the correct letter, A–J, next to questions 16–20.",
-      "mapTitle": "Central Railway Station — Station Plan",
-      "mapDescription": "Label the facilities A–J on the station map.",
+      "instructions": "Label the plan below. Write the correct letter, A–H, next to questions 16–20.",
+      "mapTitle": "Farnley Leisure Centre — Plan",
+      "mapDescription": "The plan shows the ground floor with the first floor inset above. The entrance and reception are at the front. Label the areas A–H.",
       "mapKey": {
-        "A": "Ticket office",
-        "B": "Left luggage",
-        "C": "Platforms 1–4 area",
-        "D": "Platforms 5–8 area",
-        "E": "Waiting room",
-        "F": "Station café",
-        "G": "Taxi rank",
-        "H": "Bicycle storage",
-        "I": "Customer services desk",
-        "J": "Accessible assistance point"
+        "A": "Reception",
+        "B": "Changing rooms",
+        "C": "Swimming pool",
+        "D": "Gym",
+        "E": "Studio",
+        "F": "Café",
+        "G": "Crèche",
+        "H": "Car park"
       },
       "mapLetters": [
         "A",
@@ -542,14 +436,12 @@
         "E",
         "F",
         "G",
-        "H",
-        "I",
-        "J"
+        "H"
       ],
       "num": 20,
-      "prompt": "Enclosed heated/air-conditioned central concourse space for 80 passengers",
-      "correctAnswer": "E",
-      "explanation": "The correct letter is E (Waiting room)."
+      "prompt": "On the ground floor to the right of reception",
+      "correctAnswer": "G",
+      "explanation": "The crèche is beside the entrance door."
     },
     {
       "id": "ielts-listening-030-q21",
@@ -557,15 +449,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 21,
-      "prompt": "Which adaptation strategy is described as most widely adopted globally?",
+      "prompt": "How much data does Kwabena have?",
       "options": [
-        "adjusting planting calendars",
-        "drought-resistant crop varieties",
-        "agritourism diversification",
-        "improved irrigation"
+        "Four weeks",
+        "Twelve weeks",
+        "A term",
+        "Two years"
       ],
       "correctAnswer": "B",
-      "explanation": "Mike says 'the shift to drought-resistant varieties is the most widely adopted strategy globally'"
+      "explanation": "Twelve weeks of data and no effect."
     },
     {
       "id": "ielts-listening-030-q22",
@@ -573,15 +465,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 22,
-      "prompt": "What type of weather data do farmers most need?",
+      "prompt": "What does the tutor say the key question is?",
       "options": [
-        "national averages",
-        "seasonal forecasts",
-        "hyper-local data",
-        "satellite imagery"
+        "Whether the sample was representative",
+        "Whether the topic was worthwhile",
+        "Whether the study could have detected the effect if it existed",
+        "Whether the supervisor approved it"
       ],
       "correctAnswer": "C",
-      "explanation": "Sarah says 'Farmers need hyper-local data, not national averages'"
+      "explanation": "That decides whether a null result is informative."
     },
     {
       "id": "ielts-listening-030-q23",
@@ -589,15 +481,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 23,
-      "prompt": "Which country's scheme is cited as an example of ineffective blanket support?",
+      "prompt": "What should he say plainly if he could only have detected an implausibly large effect?",
       "options": [
-        "Bangladesh",
-        "Kenya",
-        "China",
-        "India"
+        "That the data were lost",
+        "That more time is needed",
+        "That the theory is wrong",
+        "That there is a design problem"
       ],
       "correctAnswer": "D",
-      "explanation": "Mike cites 'India's PM-KISAN scheme'"
+      "explanation": "Under-powered design should be stated as such."
     },
     {
       "id": "ielts-listening-030-q24",
@@ -605,15 +497,15 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 24,
-      "prompt": "By how much could tropical crop yields fall by 2080?",
+      "prompt": "Why does the tutor say fields become distorted?",
       "options": [
-        "30%",
-        "10%",
-        "20%",
-        "40%"
+        "People bury null results",
+        "Journals are too slow",
+        "Statistics are misunderstood",
+        "Too many replications"
       ],
       "correctAnswer": "A",
-      "explanation": "Sarah states yield losses 'could reach thirty percent by 2080'"
+      "explanation": "The record over-represents effects that are not really there."
     },
     {
       "id": "ielts-listening-030-q25",
@@ -621,238 +513,238 @@
       "questionType": "multiple_choice",
       "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 25,
-      "prompt": "What does Mike identify as a requirement for advanced adaptation technologies?",
+      "prompt": "What do markers assess?",
       "options": [
-        "international cooperation",
-        "significant upfront investment",
-        "government mandates",
-        "reduced crop prices"
+        "The size of the effect",
+        "The reasoning, not the outcome",
+        "The volume of data",
+        "The literature review"
       ],
       "correctAnswer": "B",
-      "explanation": "Mike says these 'require significant upfront investment'"
+      "explanation": "Firsts have gone to projects that found nothing."
     },
     {
       "id": "ielts-listening-030-q26",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Establish it before writing anything",
+        "B. Report it confidently as it stands",
+        "C. Do not do it"
       ],
       "num": 26,
-      "prompt": "introducing new equipment in the laboratory",
+      "prompt": "whether the study was powered to detect the effect",
       "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "explanation": "Establish this first."
     },
     {
       "id": "ielts-listening-030-q27",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Establish it before writing anything",
+        "B. Report it confidently as it stands",
+        "C. Do not do it"
       ],
       "num": 27,
-      "prompt": "keeping written records of experiments",
-      "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "prompt": "the sample size and detectable effect size",
+      "correctAnswer": "A",
+      "explanation": "Start there before writing."
     },
     {
       "id": "ielts-listening-030-q28",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Establish it before writing anything",
+        "B. Report it confidently as it stands",
+        "C. Do not do it"
       ],
       "num": 28,
-      "prompt": "sharing results with other research groups",
+      "prompt": "a genuine negative finding from a sound design",
       "correctAnswer": "B",
-      "explanation": "The speaker's attitude is B. She is undecided."
+      "explanation": "Write it up, and write it up confidently."
     },
     {
       "id": "ielts-listening-030-q29",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Establish it before writing anything",
+        "B. Report it confidently as it stands",
+        "C. Do not do it"
       ],
       "num": 29,
-      "prompt": "the importance of the project deadline",
-      "correctAnswer": "A",
-      "explanation": "The speaker's attitude is A. She agrees."
+      "prompt": "the analysis he originally planned",
+      "correctAnswer": "B",
+      "explanation": "Report the planned analysis."
     },
     {
       "id": "ielts-listening-030-q30",
       "part": 3,
       "questionType": "matching_categorise",
-      "instructions": "What does each speaker say about the following? Write the correct letter, A, B or C, next to questions 26–30.",
+      "instructions": "What does the tutor advise about each item? Write the correct letter, A, B or C, next to questions 26–30.",
       "categoryOptions": [
-        "A. She agrees",
-        "B. She is undecided",
-        "C. She disagrees"
+        "A. Establish it before writing anything",
+        "B. Report it confidently as it stands",
+        "C. Do not do it"
       ],
       "num": 30,
-      "prompt": "the proposal to extend the study",
+      "prompt": "running further analyses until something is significant",
       "correctAnswer": "C",
-      "explanation": "The speaker's attitude is C. She disagrees."
+      "explanation": "That produces findings that will not replicate."
     },
     {
       "id": "ielts-listening-030-q31",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 31,
-      "sentenceText": "Hydrothermal vents were first discovered in 1977 at a depth of __BLANK__ metres in the Galapagos Rift.",
-      "correctAnswer": "2,400 / two thousand four hundred",
-      "explanation": "The correct answer is: \"2,400 / two thousand four hundred\".",
-      "prompt": "Hydrothermal vents were first discovered in 1977 at a depth of _____ metres in the Galapagos Rift.",
-      "partNumber": 4
+      "prompt": "What does the lecturer say success in maintenance looks like?",
+      "options": [
+        "Lower traffic",
+        "A visible improvement",
+        "Nothing happening",
+        "A ceremony"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Benefits are invisible when maintenance succeeds."
     },
     {
       "id": "ielts-listening-030-q32",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 32,
-      "sentenceText": "The submersible __BLANK__ carried the researchers who made this landmark discovery.",
-      "correctAnswer": "Alvin",
-      "explanation": "The correct answer is: \"Alvin\".",
-      "prompt": "The submersible _____ carried the researchers who made this landmark discovery.",
-      "partNumber": 4
+      "prompt": "What explains most deferral of maintenance?",
+      "options": [
+        "Lack of materials",
+        "Poor inspection",
+        "Engineering ignorance",
+        "The asymmetry between invisible benefits and visible costs"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Engineers have almost always known what needed doing."
     },
     {
       "id": "ielts-listening-030-q33",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 33,
-      "sentenceText": "Chemosynthetic bacteria use __BLANK__ released by vents to generate energy in the absence of sunlight.",
-      "correctAnswer": "hydrogen sulphide",
-      "explanation": "The correct answer is: \"hydrogen sulphide\".",
-      "prompt": "Chemosynthetic bacteria use _____ released by vents to generate energy in the absence of sunlight.",
-      "partNumber": 4
+      "prompt": "What happens to repair costs once deterioration passes certain thresholds?",
+      "options": [
+        "They rise sharply",
+        "They fall",
+        "They become predictable",
+        "They stay level"
+      ],
+      "correctAnswer": "A",
+      "explanation": "A sealed crack is cheap; a corroded bar is not."
     },
     {
       "id": "ielts-listening-030-q34",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 34,
-      "sentenceText": "__BLANK__, a constant fall of organic particles from surface waters, is the primary food source for most deep-sea benthic communities.",
-      "correctAnswer": "Marine snow",
-      "explanation": "The correct answer is: \"Marine snow\".",
-      "prompt": "_____, a constant fall of organic particles from surface waters, is the primary food source for most deep-sea benthic communities.",
-      "partNumber": 4
+      "prompt": "What does postponement do to the cost?",
+      "options": [
+        "Spreads it",
+        "Multiplies it",
+        "Removes it",
+        "Transfers it to users"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Delay past water ingress commonly costs several times more."
     },
     {
       "id": "ielts-listening-030-q35",
       "part": 4,
-      "questionType": "sentence_completion",
-      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
+      "questionType": "multiple_choice",
+      "instructions": "Choose the correct letter, A, B, C or D.",
       "num": 35,
-      "sentenceText": "It is estimated that up to __BLANK__ percent of all deep-sea creatures are capable of producing bioluminescence.",
-      "correctAnswer": "90 / ninety",
-      "explanation": "The correct answer is: \"90 / ninety\".",
-      "prompt": "It is estimated that up to _____ percent of all deep-sea creatures are capable of producing bioluminescence.",
-      "partNumber": 4
+      "prompt": "What budgeting problem does the lecturer describe?",
+      "options": [
+        "Currency risk",
+        "Corruption",
+        "Capital and operating budgets are separate, and building attracts money more easily than upkeep",
+        "Inflation"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Systems expand faster than they are maintained."
     },
     {
       "id": "ielts-listening-030-q36",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 36,
-      "prompt": "The deep sea is defined in the lecture as water found below which depth?",
-      "options": [
-        "A  100 metres",
-        "C  500 metres",
-        "B  200 metres",
-        "D  1,000 metres"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer defines the deep sea as 'below two hundred metres'"
+      "sentenceText": "The maintenance __BLANK__ grows even when nobody decided to let it grow.",
+      "correctAnswer": "backlog",
+      "explanation": "Expansion outpaces upkeep by default.",
+      "prompt": "The maintenance _____ grows even when nobody decided to let it grow.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-030-q37",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 37,
-      "prompt": "What do tube worms, giant clams, and vent shrimp have in common according to the lecture?",
-      "options": [
-        "A  they all produce bioluminescence",
-        "B  they are found only in polar waters",
-        "D  they depend on marine snow for food",
-        "C  they live around hydrothermal vents"
-      ],
-      "correctAnswer": "D",
-      "explanation": "These species are described as part of the food web around hydrothermal vents"
+      "sentenceText": "Inspection __BLANK__ usually show the problem years in advance.",
+      "correctAnswer": "records",
+      "explanation": "Failures are rarely a surprise to those responsible.",
+      "prompt": "Inspection _____ usually show the problem years in advance.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-030-q38",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 38,
-      "prompt": "Marine snow is described in the lecture as consisting of",
-      "options": [
-        "C  organic particles falling from surface waters",
-        "A  dissolved minerals from the seafloor",
-        "B  sediment carried from coastal rivers",
-        "D  chemical compounds from hydrothermal vents"
-      ],
-      "correctAnswer": "A",
-      "explanation": "The lecturer describes marine snow as 'a constant fall of organic particles from surface waters'"
+      "sentenceText": "What is missing is not information but a __BLANK__ that turns findings into money.",
+      "correctAnswer": "mechanism",
+      "explanation": "The gap is institutional, not technical.",
+      "prompt": "What is missing is not information but a _____ that turns findings into money.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-030-q39",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 39,
-      "prompt": "According to the lecturer, bioluminescence serves functions including",
-      "options": [
-        "A  temperature regulation and navigation",
-        "B  attracting prey and intraspecies communication",
-        "C  converting chemicals into usable energy",
-        "D  filtering food particles from seawater"
-      ],
-      "correctAnswer": "B",
-      "explanation": "The lecturer mentions 'attracting prey' and 'intraspecies communication'"
+      "sentenceText": "Countries that improved fastest used ring-fenced funds and published condition __BLANK__.",
+      "correctAnswer": "data",
+      "explanation": "Plus statutory duties to act on a rating.",
+      "prompt": "Countries that improved fastest used ring-fenced funds and published condition _____.",
+      "partNumber": 4
     },
     {
       "id": "ielts-listening-030-q40",
       "part": 4,
-      "questionType": "multiple_choice",
-      "instructions": "Choose the correct letter, A, B, C or D.",
+      "questionType": "sentence_completion",
+      "instructions": "Complete each sentence with NO MORE THAN THREE WORDS.",
       "num": 40,
-      "prompt": "The lecturer suggests that deep-sea mining is problematic primarily because",
-      "options": [
-        "A  the technology does not yet exist",
-        "B  international law prohibits it",
-        "C  less than 20% of the ocean floor has been mapped in detail",
-        "D  mining would destroy all marine snow"
-      ],
-      "correctAnswer": "C",
-      "explanation": "The lecturer says this 'makes it difficult to assess the potential impacts' of mining threats"
+      "sentenceText": "Detecting __BLANK__ is largely solved; being obliged to act on it is not.",
+      "correctAnswer": "deterioration",
+      "explanation": "The discipline is only partly technical.",
+      "prompt": "Detecting _____ is largely solved; being obliged to act on it is not.",
+      "partNumber": 4
     }
   ],
   "parts": [
     {
       "partNumber": 1,
-      "title": "Part 1: Biomimicry in Engineering",
-      "audioDescription": "A lecture on how engineers are using designs from nature to solve modern problems.",
-      "context": "Library Membership and Book Loan",
+      "title": "Part 1: Lost Property",
+      "audioDescription": "A passenger reports a bag left on a bus.",
+      "context": "Reporting Lost Property",
       "questionRange": [
         1,
         10
@@ -860,9 +752,9 @@
     },
     {
       "partNumber": 2,
-      "title": "Part 2: Urban Migration Patterns",
-      "audioDescription": "An academic lecture on the causes and consequences of rural-to-urban migration.",
-      "context": "Central Railway Station — Passenger Information",
+      "title": "Part 2: Leisure Centre",
+      "audioDescription": "A duty manager inducts new members and describes the building.",
+      "context": "Leisure Centre Induction",
       "questionRange": [
         11,
         20
@@ -870,9 +762,9 @@
     },
     {
       "partNumber": 3,
-      "title": "Part 3: The History of Coffee Trade",
-      "audioDescription": "A lecture tracing the global spread of coffee from its origins in Ethiopia to modern commodity markets.",
-      "context": "Seminar on Climate Change Adaptation in Agriculture",
+      "title": "Part 3: Null Results",
+      "audioDescription": "A tutor advises a student whose experiment found no effect.",
+      "context": "Writing Up a Null Result",
       "questionRange": [
         21,
         30
@@ -880,9 +772,9 @@
     },
     {
       "partNumber": 4,
-      "title": "Part 4: Sleep and Memory Consolidation",
-      "audioDescription": "An academic talk on the neuroscience of memory formation during sleep.",
-      "context": "Lecture: Deep-Sea Ecosystems",
+      "title": "Part 4: Infrastructure Maintenance",
+      "audioDescription": "A lecture on why maintenance is deferred and what changes that.",
+      "context": "The Economics of Maintenance",
       "questionRange": [
         31,
         40
