@@ -12,469 +12,474 @@
       "id": "gmat-verbal-011-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "prompt": "A detergent manufacturer reformulated its product to work at lower temperatures and reports that customers who bought the new formulation used less electricity for laundry over the following year. It concludes that the reformulation reduced household electricity use.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. The new formulation costs slightly more.",
+        "B. Some customers wash at high temperatures regardless of the detergent used.",
+        "C. Electricity prices rose during the year.",
+        "D. The manufacturer also sells fabric conditioner.",
+        "E. Buyers of the new formulation were recruited from a mailing list of customers who had already been washing at low temperatures."
       ],
       "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "The comparison group was pre-selected for the behaviour being measured, so their low usage need owe nothing to the product. D would affect all households and so cannot explain a difference between them.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-011-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "prompt": "A taxi application raises fares when demand is high, arguing that this brings more drivers onto the road and so reduces waiting times for passengers.",
+      "question": "The argument depends on which of the following assumptions?",
       "options": [
-        "A. The assumption that all wetlands have equal flood-prevention value",
-        "B. The claim that wetlands prevent flooding",
-        "C. The conclusion that all wetlands should be protected",
-        "D. The implication that flooding is always preventable",
-        "E. The premise that wetlands are worth preserving"
+        "A. Passengers are willing to pay the higher fares.",
+        "B. The application has no competitors in the market.",
+        "C. Fares return to normal levels promptly.",
+        "D. Enough drivers respond to higher fares by working at times they otherwise would not.",
+        "E. Drivers are self-employed."
       ],
-      "correctAnswer": "A",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The mechanism requires supply to be responsive; if drivers cannot or will not shift their hours, the price rise rations demand without adding cars. A concerns whether passengers accept the outcome, not whether waiting times fall.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-011-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "prompt": "A school district reports that pupils who take three science subjects achieve higher university admission rates than those who take one, and proposes requiring all pupils to take three sciences.",
+      "question": "Which of the following, if true, casts most doubt on the proposal?",
       "options": [
-        "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. A controlled experiment with randomly assigned music found the same 20% difference",
-        "C. The upbeat music stores were in higher-traffic mall locations",
-        "D. Sales staff performed better when the music was upbeat",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "A. Pupils currently choose three sciences when they are already strong in the subject and intend to apply for competitive courses.",
+        "B. Science laboratories are expensive to equip.",
+        "C. Some universities do not require science subjects.",
+        "D. Pupils taking three sciences study fewer other subjects.",
+        "E. Admission rates vary by year."
       ],
-      "correctAnswer": "B",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The association reflects who chooses the option, so compelling everyone need not raise admission rates and may lower them for pupils whose strengths lie elsewhere.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-011-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
-      "question": "Which of the following most weakens the editorial's conclusion?",
+      "prompt": "An upland estate reduced the number of sheep grazing a hillside and, three years later, the variety of plant species on the hill had increased. The estate manager concludes that reduced grazing caused the increase.",
+      "question": "Which of the following, if true, most strengthens the conclusion?",
       "options": [
-        "A. Employment programmes have reduced crime in some pilot cities",
-        "B. The editorial does not define 'crime' precisely",
-        "C. Crime rates are influenced by many factors beyond unemployment",
-        "D. Reducing unemployment is expensive and politically difficult",
-        "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
+        "A. The hillside is popular with walkers.",
+        "B. Sheep prefer certain plant species to others.",
+        "C. On an adjacent hillside with the same soil, aspect and weather, where stocking was unchanged, plant variety did not increase over the same period.",
+        "D. The estate also repaired its boundary walls.",
+        "E. Rainfall was slightly above average in two of the three years."
       ],
       "correctAnswer": "C",
-      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "A matched control removes weather and soil as explanations, which E would otherwise supply. C makes the mechanism plausible but is far weaker evidence.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-011-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
-      "question": "The president's argument is flawed because it:",
+      "prompt": "Every branch of the Aldercroft bank that offers business banking is open on Saturday mornings. No branch open on Saturday mornings has been scheduled for closure. Some branches have been scheduled for closure.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. Ignores that SAT preparation courses can inflate scores",
-        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
-        "C. Does not consider the diversity implications of the policy",
-        "D. Fails to define 'academic performance' precisely",
-        "E. Both A and B"
+        "A. Business banking is profitable.",
+        "B. Some branches do not offer business banking.",
+        "C. Every branch open on Saturday offers business banking.",
+        "D. Most branches are open on Saturday mornings.",
+        "E. Branches scheduled for closure have few customers."
       ],
       "correctAnswer": "B",
-      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "Branches scheduled for closure exist; such a branch is not open on Saturdays, and business banking implies Saturday opening, so those branches do not offer it. C reverses the conditional.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-011-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
-      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "prompt": "A warehouse operator introduced a safety campaign and reports that recorded accidents fell by 40 per cent in the following year. A safety inspector is sceptical that conditions have genuinely improved.",
+      "question": "Which of the following would be most useful to determine in evaluating the inspector's scepticism?",
       "options": [
-        "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "C. Historical market data is unreliable because markets change structurally over time",
-        "D. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
-        "E. Companies with consistent earnings growth tend to have stable stock prices"
+        "A. Whether the campaign included posters as well as training",
+        "B. How much the campaign cost",
+        "C. Whether staff enjoyed the training sessions",
+        "D. How many staff the warehouse employs",
+        "E. Whether the reporting procedure or the threshold for recording an accident changed at the same time"
       ],
-      "correctAnswer": "D",
-      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "A change in what counts as a recordable accident would produce the fall without any change in conditions, which is precisely the inspector's concern.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-011-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
-      "question": "Which of the following, if true, most seriously weakens the conclusion?",
+      "prompt": "A coffee chain introduced cups that can be recycled and announced that its packaging waste is now recyclable. Environmental campaigners note that the cups are accepted by only a small number of specialist facilities.",
+      "question": "The campaigners' point weakens the chain's announcement by",
       "options": [
-        "A. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "B. Customers report feeling more valued when using a loyalty programme",
-        "C. Competitors without loyalty programmes have seen declining sales",
-        "D. The loyalty programme was introduced simultaneously with a store renovation",
-        "E. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes"
+        "A. showing that the cups are made of unsuitable material",
+        "B. distinguishing what is technically recyclable from what is actually recycled in practice",
+        "C. questioning the chain's environmental commitment generally",
+        "D. arguing that reusable cups are preferable",
+        "E. demonstrating that customers do not sort their waste"
       ],
-      "correctAnswer": "E",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "The gap between capability and infrastructure is the specific defect; the claim may be literally true and practically empty.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-011-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
-      "question": "Which of the following would most strengthen the CFO's conclusion?",
+      "prompt": "A marathon reduced its entry fee and received twice as many applications. The organisers conclude that the fee had been deterring runners.",
+      "question": "Which of the following, if true, most seriously undermines the conclusion?",
       "options": [
-        "A. The lifetime value of a new user averages $50",
-        "B. Other advertising channels were suspended during the same three months",
-        "C. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "D. Social media platforms reported the campaign reached 5 million unique users",
-        "E. Competitors saw no change in sign-ups over the same period"
+        "A. The race is held on a Sunday.",
+        "B. Some applicants withdraw before race day.",
+        "C. Entry fees for comparable races are higher.",
+        "D. The reduction was announced alongside a change of route that removed the event's steepest section, which runners had complained about for years.",
+        "E. The organisers advertised in running magazines, as in previous years."
       ],
-      "correctAnswer": "A",
-      "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
+      "correctAnswer": "D",
+      "explanation": "A simultaneous change addressing a known complaint offers an alternative explanation for the surge. E explicitly holds advertising constant and so removes rather than adds a rival cause.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-011-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
-      "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
+      "prompt": "A greenhouse grower found that tomato plants given supplementary lighting yielded more fruit than unlit plants, and concludes that installing lighting throughout the greenhouse will raise total yield proportionately.",
+      "question": "The reasoning is most vulnerable to the criticism that it",
       "options": [
-        "A. It assumes that lower temperatures are always desirable",
-        "B. It treats a correlation as evidence of a causal relationship",
-        "C. It ignores that tree planting is expensive",
-        "D. It fails to consider that trees require water",
-        "E. It overlooks that some neighbourhoods may not have space for trees"
+        "A. assumes the cost of electricity will not rise",
+        "B. ignores consumer preferences for tomato varieties",
+        "C. overlooks that the lit plants may have benefited from being in the warmest part of the greenhouse, where the lights were installed",
+        "D. does not specify the duration of lighting",
+        "E. relies on a single growing season"
       ],
-      "correctAnswer": "B",
-      "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
+      "correctAnswer": "C",
+      "explanation": "Position confounds the comparison: heat and light arrived together, so the yield difference cannot be attributed to lighting alone.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-011-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
-      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "prompt": "A radio station found that listeners recall advertisements broadcast in the morning better than those broadcast at night, and advises advertisers that morning slots are more effective.",
+      "question": "Which of the following, if true, most seriously weakens the advice?",
       "options": [
-        "A. Passengers reported higher satisfaction with the new policy",
-        "B. Competing airlines have not adopted similar policies",
-        "C. The airline also reduced the number of carry-on bags allowed during the same period",
-        "D. Boarding time varies naturally between 15 and 35 minutes",
-        "E. The new policy was introduced on routes with larger aircraft"
+        "A. Night-time listeners are far fewer but buy the advertised products at a much higher rate, so cost per sale is lower at night.",
+        "B. Morning slots cost more than night slots.",
+        "C. Recall is measured by telephone survey.",
+        "D. Some listeners hear the same advertisement at both times.",
+        "E. The station's audience is largest at midday."
       ],
-      "correctAnswer": "C",
-      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
+      "correctAnswer": "A",
+      "explanation": "Recall is an intermediate measure; if the commercial outcome runs the other way, advice based on recall is wrong. A bears on price without addressing effectiveness.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-011-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "prompt": "A company introduced a wellness programme and reports that participating employees took fewer sick days than non-participants, presenting this as evidence that the programme improves health.",
+      "question": "Which of the following, if true, most seriously weakens the presentation?",
       "options": [
-        "A. Does not define what type of consulting services were provided",
-        "B. Ignores that some companies declined in revenue after hiring the firm",
-        "C. Does not specify what time period is covered by the data",
-        "D. Fails to compare the companies' growth with industry-wide growth trends",
-        "E. Compares incomparable companies across different industries"
+        "A. The programme includes exercise classes and dietary advice.",
+        "B. The programme is voluntary, and employees with chronic conditions are least able to attend its sessions.",
+        "C. Participation was higher in the first year than the second.",
+        "D. Sick days are recorded by managers.",
+        "E. Some participants attend only occasionally."
       ],
-      "correctAnswer": "D",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
+      "correctAnswer": "B",
+      "explanation": "The selection runs directly against the conclusion: those most likely to be ill are least likely to participate, so the gap would appear with no effect at all.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-011-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "passageTitle": "What Ratings Measure",
+      "passageText": "Online ratings are widely treated as an aggregate of experience, and they are, but the aggregation is not of a representative sample. Three selection effects operate at once, and they do not cancel.\n\nThe first is who writes. Reviewing is unpaid and costs time, so it attracts the unusually satisfied and the unusually aggrieved, producing the characteristic distribution in which extreme scores outnumber middling ones. The second is who buys. A product is bought disproportionately by the customers most likely to want it, so its reviewers are drawn from a favourably disposed group, and a niche product may score higher than a superior general one simply because its buyers selected themselves better. The third is who continues. Ratings on subscription services are dominated by current users; those who found the service unsuitable have left and are silent.\n\nThese effects can be partially corrected. Verified-purchase filters help with fraud but not with self-selection. Weighting by reviewer history helps a little. What helps most is comparison of like with like — the same category, the same buyer population — rather than treatment of the score as an absolute measure.\n\nThe practical consequence for sellers is uncomfortable. A firm can raise its rating by narrowing its market, since a product sold only to those who will love it collects better reviews than one sold widely. The score rewards a strategy that a firm seeking growth cannot pursue, which is one reason ratings correlate less well with quality than their prominence suggests.",
+      "prompt": "According to the passage, the distribution of online ratings tends to show more extreme than middling scores because",
       "options": [
-        "A. Olive oil contains monounsaturated fats linked to heart health",
-        "B. Heart disease rates have been declining globally regardless of fat consumption",
-        "C. The study followed individuals for 10 years",
-        "D. Olive oil is more expensive than butter in most markets",
-        "E. Regions using olive oil also have Mediterranean diets rich in vegetables and fish"
+        "A. most products are either very good or very bad",
+        "B. platforms remove moderate reviews",
+        "C. buyers cannot compare products directly",
+        "D. sellers solicit reviews from friends",
+        "E. reviewing costs time, so it attracts the unusually satisfied and the unusually aggrieved"
       ],
       "correctAnswer": "E",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
+      "explanation": "The first selection effect. C and E describe manipulation, which the passage treats separately under fraud.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-011-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "passageTitle": "What Ratings Measure",
+      "passageText": "Online ratings are widely treated as an aggregate of experience, and they are, but the aggregation is not of a representative sample. Three selection effects operate at once, and they do not cancel.\n\nThe first is who writes. Reviewing is unpaid and costs time, so it attracts the unusually satisfied and the unusually aggrieved, producing the characteristic distribution in which extreme scores outnumber middling ones. The second is who buys. A product is bought disproportionately by the customers most likely to want it, so its reviewers are drawn from a favourably disposed group, and a niche product may score higher than a superior general one simply because its buyers selected themselves better. The third is who continues. Ratings on subscription services are dominated by current users; those who found the service unsuitable have left and are silent.\n\nThese effects can be partially corrected. Verified-purchase filters help with fraud but not with self-selection. Weighting by reviewer history helps a little. What helps most is comparison of like with like — the same category, the same buyer population — rather than treatment of the score as an absolute measure.\n\nThe practical consequence for sellers is uncomfortable. A firm can raise its rating by narrowing its market, since a product sold only to those who will love it collects better reviews than one sold widely. The score rewards a strategy that a firm seeking growth cannot pursue, which is one reason ratings correlate less well with quality than their prominence suggests.",
+      "prompt": "The passage indicates that a niche product may score higher than a superior general product because",
       "options": [
-        "A. Doctors who proactively call patients may also be more thorough in their overall care",
-        "B. The cost of implementing mandatory calls would be prohibitive",
-        "C. Some patients do not have phones",
-        "D. Patients prefer in-person follow-up visits to phone calls",
-        "E. Phone calls are less effective than written instructions"
+        "A. it is usually more expensive",
+        "B. it receives fewer reviews overall",
+        "C. its reviewers are more experienced",
+        "D. its buyers have selected themselves more accurately into the group likely to want it",
+        "E. general products are reviewed by professionals"
       ],
-      "correctAnswer": "A",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
+      "correctAnswer": "D",
+      "explanation": "The second selection effect concerns who buys, and the passage draws exactly this comparison.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-011-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "passageTitle": "What Ratings Measure",
+      "passageText": "Online ratings are widely treated as an aggregate of experience, and they are, but the aggregation is not of a representative sample. Three selection effects operate at once, and they do not cancel.\n\nThe first is who writes. Reviewing is unpaid and costs time, so it attracts the unusually satisfied and the unusually aggrieved, producing the characteristic distribution in which extreme scores outnumber middling ones. The second is who buys. A product is bought disproportionately by the customers most likely to want it, so its reviewers are drawn from a favourably disposed group, and a niche product may score higher than a superior general one simply because its buyers selected themselves better. The third is who continues. Ratings on subscription services are dominated by current users; those who found the service unsuitable have left and are silent.\n\nThese effects can be partially corrected. Verified-purchase filters help with fraud but not with self-selection. Weighting by reviewer history helps a little. What helps most is comparison of like with like — the same category, the same buyer population — rather than treatment of the score as an absolute measure.\n\nThe practical consequence for sellers is uncomfortable. A firm can raise its rating by narrowing its market, since a product sold only to those who will love it collects better reviews than one sold widely. The score rewards a strategy that a firm seeking growth cannot pursue, which is one reason ratings correlate less well with quality than their prominence suggests.",
+      "prompt": "The 'uncomfortable' consequence for sellers described in the final paragraph is that",
       "options": [
-        "A. Drug X has minor side effects including nausea",
-        "B. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "C. The study included only 50 participants",
-        "D. Chronic pain affects millions of people worldwide",
-        "E. Drug X is expensive compared to existing treatments"
+        "A. improving a product rarely raises its rating",
+        "B. verified-purchase filters increase fraud",
+        "C. a firm can raise its rating by narrowing its market, a strategy incompatible with growth",
+        "D. ratings cannot be compared across categories",
+        "E. subscription services should not be rated"
       ],
-      "correctAnswer": "B",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
+      "correctAnswer": "C",
+      "explanation": "Selling only to those who will love the product collects better reviews, so the score rewards what a growing firm cannot do.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-011-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "passageTitle": "Cooling the Planet Deliberately",
+      "passageText": "Injecting reflective particles into the stratosphere would cool the Earth's surface. The physics is not seriously disputed: large volcanic eruptions have done it, and the resulting temperature drops have been measured. The difficulty with solar geoengineering lies almost entirely elsewhere.\n\nThe first problem is that it addresses temperature, not carbon dioxide. Ocean acidification would continue unaffected, since it depends on how much carbon dioxide dissolves rather than on how warm the surface is. A programme that cooled the planet while emissions continued would leave that damage untouched, and would create a growing gap between the actual concentration and the temperature it would otherwise produce.\n\nThat gap creates the second problem. If injection stopped — through cost, conflict or a change of government — temperatures would rise rapidly toward the level the accumulated carbon dioxide implies, and the rate of that rise would be far more damaging than the same warming spread over decades. A programme once begun would have to be continued for as long as the excess concentration persists, which is a commitment no institution has demonstrated it can honour.\n\nThe third problem is distributional. Any intervention would alter regional rainfall unevenly, benefiting some regions and harming others, and no procedure exists for deciding who chooses the setting. The research question and the governance question are therefore not separable, and the strongest argument for studying the technique is not that it should be used, but that a state facing catastrophe may attempt it regardless, and ignorance is a poor preparation for that.",
+      "prompt": "The passage indicates that solar geoengineering would not address",
       "options": [
-        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "B. The university's highest-achieving students attend the fitness centre most frequently",
-        "C. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "D. Exercise programmes are popular at peer universities",
-        "E. Students who exercise report feeling less stressed"
+        "A. ocean acidification",
+        "B. surface temperature",
+        "C. regional rainfall",
+        "D. the cost of emissions reduction",
+        "E. volcanic cooling"
       ],
-      "correctAnswer": "C",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "Acidification depends on dissolved carbon dioxide rather than surface warmth, so cooling leaves it untouched.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-011-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "passageTitle": "Cooling the Planet Deliberately",
+      "passageText": "Injecting reflective particles into the stratosphere would cool the Earth's surface. The physics is not seriously disputed: large volcanic eruptions have done it, and the resulting temperature drops have been measured. The difficulty with solar geoengineering lies almost entirely elsewhere.\n\nThe first problem is that it addresses temperature, not carbon dioxide. Ocean acidification would continue unaffected, since it depends on how much carbon dioxide dissolves rather than on how warm the surface is. A programme that cooled the planet while emissions continued would leave that damage untouched, and would create a growing gap between the actual concentration and the temperature it would otherwise produce.\n\nThat gap creates the second problem. If injection stopped — through cost, conflict or a change of government — temperatures would rise rapidly toward the level the accumulated carbon dioxide implies, and the rate of that rise would be far more damaging than the same warming spread over decades. A programme once begun would have to be continued for as long as the excess concentration persists, which is a commitment no institution has demonstrated it can honour.\n\nThe third problem is distributional. Any intervention would alter regional rainfall unevenly, benefiting some regions and harming others, and no procedure exists for deciding who chooses the setting. The research question and the governance question are therefore not separable, and the strongest argument for studying the technique is not that it should be used, but that a state facing catastrophe may attempt it regardless, and ignorance is a poor preparation for that.",
+      "prompt": "According to the passage, stopping an established injection programme would be dangerous because",
       "options": [
-        "A. Cameras might violate driver privacy",
-        "B. The cost of cameras is high",
-        "C. Some drivers find cameras distracting",
-        "D. Intersections chosen for cameras may have already been due for safety upgrades",
-        "E. Cameras only capture rear-end collisions"
+        "A. the particles would fall as harmful dust",
+        "B. temperatures would rise rapidly toward the level the accumulated carbon dioxide implies",
+        "C. ocean acidification would accelerate",
+        "D. rainfall patterns would return to normal too slowly",
+        "E. the equipment could not be restarted"
       ],
-      "correctAnswer": "D",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "The termination problem: the same warming arriving quickly is far more damaging than warming spread over decades.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-011-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "passageTitle": "Cooling the Planet Deliberately",
+      "passageText": "Injecting reflective particles into the stratosphere would cool the Earth's surface. The physics is not seriously disputed: large volcanic eruptions have done it, and the resulting temperature drops have been measured. The difficulty with solar geoengineering lies almost entirely elsewhere.\n\nThe first problem is that it addresses temperature, not carbon dioxide. Ocean acidification would continue unaffected, since it depends on how much carbon dioxide dissolves rather than on how warm the surface is. A programme that cooled the planet while emissions continued would leave that damage untouched, and would create a growing gap between the actual concentration and the temperature it would otherwise produce.\n\nThat gap creates the second problem. If injection stopped — through cost, conflict or a change of government — temperatures would rise rapidly toward the level the accumulated carbon dioxide implies, and the rate of that rise would be far more damaging than the same warming spread over decades. A programme once begun would have to be continued for as long as the excess concentration persists, which is a commitment no institution has demonstrated it can honour.\n\nThe third problem is distributional. Any intervention would alter regional rainfall unevenly, benefiting some regions and harming others, and no procedure exists for deciding who chooses the setting. The research question and the governance question are therefore not separable, and the strongest argument for studying the technique is not that it should be used, but that a state facing catastrophe may attempt it regardless, and ignorance is a poor preparation for that.",
+      "prompt": "The author's stated reason for studying the technique is that",
       "options": [
-        "A. Labour economists disagree on the effects of minimum wage increases",
-        "B. The minimum wage increase only affected 5% of workers",
-        "C. Some industries are more affected than others by wage increases",
-        "D. Other countries have raised minimum wages without unemployment rising",
-        "E. A separate economic boom added 100,000 jobs during the same year"
+        "A. it is the most cost-effective response to warming",
+        "B. the governance question can be settled before deployment",
+        "C. regional rainfall effects are now well understood",
+        "D. a state facing catastrophe may attempt it regardless, and ignorance is poor preparation",
+        "E. emissions reduction has been abandoned"
       ],
-      "correctAnswer": "E",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The final sentence, which explicitly separates the case for research from the case for use.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-011-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "passageTitle": "What GDP Was Built to Do",
+      "passageText": "National income accounting was developed in the 1930s and 1940s to answer specific questions: how much slack existed in a depressed economy, and how much a wartime economy could produce. It answered them well, and the criticisms now made of gross domestic product are largely complaints that it does not answer other questions it was never designed for.\n\nThe familiar objections are correct as far as they go. GDP counts activity rather than welfare; it treats expenditure on repairing damage as positive; it omits household work and volunteering; it says nothing about distribution, so a rise consistent with falling incomes for most people is arithmetically unremarkable; and it ignores depletion of natural assets, treating the liquidation of a stock as current income.\n\nThe proposed remedies divide into two kinds. One would adjust the aggregate, subtracting environmental damage or adding household production to produce a single better number. The other would leave GDP alone and publish a dashboard of indicators alongside it. Each has a characteristic failing: adjusted aggregates bury contestable value judgements inside a figure that looks technical, while dashboards are easy to ignore precisely because they offer no single number for a headline.\n\nThere is a reason the aggregate persists that its critics rarely address. Policy requires comparison across countries and over time, and GDP is measured with a consistency that no proposed replacement has yet matched. The reasonable position treats it as an indicator of one thing, measured well, and treats the demand that it also measure welfare as the source of most of the confusion.",
+      "prompt": "The passage suggests that most criticisms of GDP are",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. factually mistaken",
+        "B. motivated by political disagreement",
+        "C. complaints that it does not answer questions it was not designed for",
+        "D. based on measurement errors in the underlying data",
+        "E. confined to environmental concerns"
       ],
-      "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Stated in the first paragraph, and the second paragraph then grants that the objections are correct as far as they go.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-011-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "passageTitle": "What GDP Was Built to Do",
+      "passageText": "National income accounting was developed in the 1930s and 1940s to answer specific questions: how much slack existed in a depressed economy, and how much a wartime economy could produce. It answered them well, and the criticisms now made of gross domestic product are largely complaints that it does not answer other questions it was never designed for.\n\nThe familiar objections are correct as far as they go. GDP counts activity rather than welfare; it treats expenditure on repairing damage as positive; it omits household work and volunteering; it says nothing about distribution, so a rise consistent with falling incomes for most people is arithmetically unremarkable; and it ignores depletion of natural assets, treating the liquidation of a stock as current income.\n\nThe proposed remedies divide into two kinds. One would adjust the aggregate, subtracting environmental damage or adding household production to produce a single better number. The other would leave GDP alone and publish a dashboard of indicators alongside it. Each has a characteristic failing: adjusted aggregates bury contestable value judgements inside a figure that looks technical, while dashboards are easy to ignore precisely because they offer no single number for a headline.\n\nThere is a reason the aggregate persists that its critics rarely address. Policy requires comparison across countries and over time, and GDP is measured with a consistency that no proposed replacement has yet matched. The reasonable position treats it as an indicator of one thing, measured well, and treats the demand that it also measure welfare as the source of most of the confusion.",
+      "prompt": "According to the passage, an adjusted aggregate has the characteristic failing that it",
       "options": [
-        "A. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "B. Arena events attract fans from outside the city who would not otherwise visit",
-        "C. Local restaurants cannot accommodate arena crowds",
-        "D. The arena's construction will not create permanent jobs",
-        "E. The city already has sufficient sports facilities"
+        "A. cannot be compared across countries",
+        "B. requires data that are not collected",
+        "C. changes too slowly to be useful",
+        "D. duplicates the dashboard approach",
+        "E. buries contestable value judgements inside a figure that looks technical"
       ],
-      "correctAnswer": "A",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "The failing of the dashboard, by contrast, is that it is easy to ignore for want of a headline number.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-011-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "passageTitle": "What GDP Was Built to Do",
+      "passageText": "National income accounting was developed in the 1930s and 1940s to answer specific questions: how much slack existed in a depressed economy, and how much a wartime economy could produce. It answered them well, and the criticisms now made of gross domestic product are largely complaints that it does not answer other questions it was never designed for.\n\nThe familiar objections are correct as far as they go. GDP counts activity rather than welfare; it treats expenditure on repairing damage as positive; it omits household work and volunteering; it says nothing about distribution, so a rise consistent with falling incomes for most people is arithmetically unremarkable; and it ignores depletion of natural assets, treating the liquidation of a stock as current income.\n\nThe proposed remedies divide into two kinds. One would adjust the aggregate, subtracting environmental damage or adding household production to produce a single better number. The other would leave GDP alone and publish a dashboard of indicators alongside it. Each has a characteristic failing: adjusted aggregates bury contestable value judgements inside a figure that looks technical, while dashboards are easy to ignore precisely because they offer no single number for a headline.\n\nThere is a reason the aggregate persists that its critics rarely address. Policy requires comparison across countries and over time, and GDP is measured with a consistency that no proposed replacement has yet matched. The reasonable position treats it as an indicator of one thing, measured well, and treats the demand that it also measure welfare as the source of most of the confusion.",
+      "prompt": "The 'reasonable position' the author endorses is that GDP should be",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "C. The ad was shown only on premium streaming services",
-        "D. The brand launched a new product line during the same period",
-        "E. Competitors also increased advertising spending during the same period"
+        "A. treated as an indicator of one thing, measured well",
+        "B. replaced by a welfare measure as soon as one is available",
+        "C. published less frequently",
+        "D. adjusted for environmental depletion",
+        "E. abandoned in favour of a dashboard"
       ],
-      "correctAnswer": "B",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The closing sentences, which locate the confusion in the demand that GDP also measure welfare.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-011-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "The 'free rider problem' mentioned in the passage refers to:",
+      "passageTitle": "Attributing Works to Authors",
+      "passageText": "Deciding who made a work is among the older problems in the humanities, and the statistical methods now applied to it have a mixed record that repays examination.\n\nStylometry rests on the observation that writers differ measurably in features they do not consciously control: the frequency of common function words, sentence-length distributions, patterns of collocation. These are more useful than vocabulary or subject matter precisely because they are unconscious and therefore hard to imitate deliberately.\n\nThe method has produced genuinely convincing results where conditions are favourable — a closed set of candidate authors, substantial samples from each, and texts of the same genre and period. Where conditions are unfavourable, it produces confident answers that are worth very little. Genre affects function-word frequencies as strongly as authorship does, so comparing a play with a pamphlet may measure the difference between forms rather than between people. Collaborative and edited texts have no single author to detect. And an open candidate set permits the method to name the closest of the authors considered while the true author was never in the comparison.\n\nThe soundest current practice treats attribution as a question of relative probability rather than identification, states the candidate set explicitly, and requires that a result survive several independent methods. Where the humanities have been badly served is not by the statistics but by their reporting: a finding that one author is somewhat more probable than another, given a particular set of assumptions, becomes in summary a discovery that a text was written by a named person.",
+      "prompt": "The passage indicates that function words are useful in attribution because they are",
       "options": [
-        "A. Programmers who use open-source software without contributing code",
-        "B. The tendency for rational actors to underinvest in public goods because they cannot exclude non-payers",
-        "C. The difficulty of coordinating large numbers of geographically dispersed contributors",
-        "D. The reluctance of firms to release proprietary software as open-source"
+        "A. specific to particular genres",
+        "B. unconscious and therefore hard to imitate deliberately",
+        "C. rare enough to be counted accurately",
+        "D. unaffected by editing",
+        "E. consistent across languages"
       ],
       "correctAnswer": "B",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "explanation": "That is the stated reason they are preferred to vocabulary or subject matter. A is in fact one of the method's problems.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-011-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "According to the passage, which of the following does NOT explain why developers contribute to open-source projects?",
+      "passageTitle": "Attributing Works to Authors",
+      "passageText": "Deciding who made a work is among the older problems in the humanities, and the statistical methods now applied to it have a mixed record that repays examination.\n\nStylometry rests on the observation that writers differ measurably in features they do not consciously control: the frequency of common function words, sentence-length distributions, patterns of collocation. These are more useful than vocabulary or subject matter precisely because they are unconscious and therefore hard to imitate deliberately.\n\nThe method has produced genuinely convincing results where conditions are favourable — a closed set of candidate authors, substantial samples from each, and texts of the same genre and period. Where conditions are unfavourable, it produces confident answers that are worth very little. Genre affects function-word frequencies as strongly as authorship does, so comparing a play with a pamphlet may measure the difference between forms rather than between people. Collaborative and edited texts have no single author to detect. And an open candidate set permits the method to name the closest of the authors considered while the true author was never in the comparison.\n\nThe soundest current practice treats attribution as a question of relative probability rather than identification, states the candidate set explicitly, and requires that a result survive several independent methods. Where the humanities have been badly served is not by the statistics but by their reporting: a finding that one author is somewhat more probable than another, given a particular set of assumptions, becomes in summary a discovery that a text was written by a named person.",
+      "prompt": "According to the passage, an open candidate set is a problem because the method may",
       "options": [
-        "A. Gaining professional reputation in their field",
-        "B. Being employed by firms that benefit from specific projects",
-        "C. Receiving direct financial compensation from project users",
-        "D. Opportunities for skill development and learning"
+        "A. produce no result at all",
+        "B. require larger samples than are available",
+        "C. confuse two authors who wrote in the same genre",
+        "D. name the closest of the authors considered when the true author was never among them",
+        "E. give equal probability to every candidate"
       ],
-      "correctAnswer": "C",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "correctAnswer": "D",
+      "explanation": "Stated directly; it is one of three unfavourable conditions listed.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-011-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "The author uses the phrase 'seeming paradox' to suggest that:",
+      "passageTitle": "Attributing Works to Authors",
+      "passageText": "Deciding who made a work is among the older problems in the humanities, and the statistical methods now applied to it have a mixed record that repays examination.\n\nStylometry rests on the observation that writers differ measurably in features they do not consciously control: the frequency of common function words, sentence-length distributions, patterns of collocation. These are more useful than vocabulary or subject matter precisely because they are unconscious and therefore hard to imitate deliberately.\n\nThe method has produced genuinely convincing results where conditions are favourable — a closed set of candidate authors, substantial samples from each, and texts of the same genre and period. Where conditions are unfavourable, it produces confident answers that are worth very little. Genre affects function-word frequencies as strongly as authorship does, so comparing a play with a pamphlet may measure the difference between forms rather than between people. Collaborative and edited texts have no single author to detect. And an open candidate set permits the method to name the closest of the authors considered while the true author was never in the comparison.\n\nThe soundest current practice treats attribution as a question of relative probability rather than identification, states the candidate set explicitly, and requires that a result survive several independent methods. Where the humanities have been badly served is not by the statistics but by their reporting: a finding that one author is somewhat more probable than another, given a particular set of assumptions, becomes in summary a discovery that a text was written by a named person.",
+      "prompt": "The author locates the principal failure in attribution studies in",
       "options": [
-        "A. Open-source development violates all known economic principles",
-        "B. Economists have no theory that explains open-source development",
-        "C. Open-source software is economically irrational and will eventually disappear",
-        "D. The behaviour of open-source contributors appears inconsistent with standard economic predictions but can be explained"
+        "A. the statistical methods themselves",
+        "B. the reluctance of scholars to use quantitative evidence",
+        "C. the reporting of results, which converts relative probability into identification",
+        "D. the scarcity of digitised texts",
+        "E. disagreement about what counts as a genre"
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "correctAnswer": "C",
+      "explanation": "The final sentence: the humanities have been badly served not by the statistics but by their reporting.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
     "gmat-verbal-011-q01": "E",
-    "gmat-verbal-011-q02": "A",
-    "gmat-verbal-011-q03": "B",
+    "gmat-verbal-011-q02": "D",
+    "gmat-verbal-011-q03": "A",
     "gmat-verbal-011-q04": "C",
     "gmat-verbal-011-q05": "B",
-    "gmat-verbal-011-q06": "D",
-    "gmat-verbal-011-q07": "E",
-    "gmat-verbal-011-q08": "A",
-    "gmat-verbal-011-q09": "B",
-    "gmat-verbal-011-q10": "C",
-    "gmat-verbal-011-q11": "D",
+    "gmat-verbal-011-q06": "E",
+    "gmat-verbal-011-q07": "B",
+    "gmat-verbal-011-q08": "D",
+    "gmat-verbal-011-q09": "C",
+    "gmat-verbal-011-q10": "A",
+    "gmat-verbal-011-q11": "B",
     "gmat-verbal-011-q12": "E",
-    "gmat-verbal-011-q13": "A",
-    "gmat-verbal-011-q14": "B",
-    "gmat-verbal-011-q15": "C",
-    "gmat-verbal-011-q16": "D",
-    "gmat-verbal-011-q17": "E",
-    "gmat-verbal-011-q18": "E",
-    "gmat-verbal-011-q19": "A",
-    "gmat-verbal-011-q20": "B",
+    "gmat-verbal-011-q13": "D",
+    "gmat-verbal-011-q14": "C",
+    "gmat-verbal-011-q15": "A",
+    "gmat-verbal-011-q16": "B",
+    "gmat-verbal-011-q17": "D",
+    "gmat-verbal-011-q18": "C",
+    "gmat-verbal-011-q19": "E",
+    "gmat-verbal-011-q20": "A",
     "gmat-verbal-011-q21": "B",
-    "gmat-verbal-011-q22": "C",
-    "gmat-verbal-011-q23": "D"
+    "gmat-verbal-011-q22": "D",
+    "gmat-verbal-011-q23": "C"
   },
-  "fingerprints": [
-    "a7cd5e0d3882ab03f3",
-    "9f4dc7cd99ec15ec66",
-    "6a4262fc4ba3e62bce",
-    "3657297f413cce2e83",
-    "90d3b06e2c62f91730",
-    "bb219de1c569d0d64c",
-    "fa6b0e9a4610000c92",
-    "70451c8b6cbb84ad70",
-    "7adeab010a89e39b82",
-    "42e2150435737c2502",
-    "e88807972f95bbcc3c",
-    "cf30645afd553efdcf",
-    "39cae6519e0b16d158",
-    "852810b8678415e616",
-    "b8141952e7dd10a4c8",
-    "cae908e3eb5fc837ce",
-    "944a86a4ffb01a482d",
-    "08a254c82830386e20",
-    "7f4c1833dc0de32b5c",
-    "41b2fe5d129e801b1d"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-011-rp1",
-      "title": "Business and Society",
-      "text": "The relationship between economic inequality and social mobility has been extensively studied. Some economists argue that inequality creates incentives for effort and innovation, while others maintain that high inequality undermines social mobility by restricting access to education and networks for those at the bottom of the income distribution. Longitudinal data from multiple countries suggests the latter effect is more significant."
+      "title": "What Ratings Measure",
+      "text": "Online ratings are widely treated as an aggregate of experience, and they are, but the aggregation is not of a representative sample. Three selection effects operate at once, and they do not cancel.\n\nThe first is who writes. Reviewing is unpaid and costs time, so it attracts the unusually satisfied and the unusually aggrieved, producing the characteristic distribution in which extreme scores outnumber middling ones. The second is who buys. A product is bought disproportionately by the customers most likely to want it, so its reviewers are drawn from a favourably disposed group, and a niche product may score higher than a superior general one simply because its buyers selected themselves better. The third is who continues. Ratings on subscription services are dominated by current users; those who found the service unsuitable have left and are silent.\n\nThese effects can be partially corrected. Verified-purchase filters help with fraud but not with self-selection. Weighting by reviewer history helps a little. What helps most is comparison of like with like — the same category, the same buyer population — rather than treatment of the score as an absolute measure.\n\nThe practical consequence for sellers is uncomfortable. A firm can raise its rating by narrowing its market, since a product sold only to those who will love it collects better reviews than one sold widely. The score rewards a strategy that a firm seeking growth cannot pursue, which is one reason ratings correlate less well with quality than their prominence suggests."
+    },
+    {
+      "id": "gmat-verbal-011-rp2",
+      "title": "Cooling the Planet Deliberately",
+      "text": "Injecting reflective particles into the stratosphere would cool the Earth's surface. The physics is not seriously disputed: large volcanic eruptions have done it, and the resulting temperature drops have been measured. The difficulty with solar geoengineering lies almost entirely elsewhere.\n\nThe first problem is that it addresses temperature, not carbon dioxide. Ocean acidification would continue unaffected, since it depends on how much carbon dioxide dissolves rather than on how warm the surface is. A programme that cooled the planet while emissions continued would leave that damage untouched, and would create a growing gap between the actual concentration and the temperature it would otherwise produce.\n\nThat gap creates the second problem. If injection stopped — through cost, conflict or a change of government — temperatures would rise rapidly toward the level the accumulated carbon dioxide implies, and the rate of that rise would be far more damaging than the same warming spread over decades. A programme once begun would have to be continued for as long as the excess concentration persists, which is a commitment no institution has demonstrated it can honour.\n\nThe third problem is distributional. Any intervention would alter regional rainfall unevenly, benefiting some regions and harming others, and no procedure exists for deciding who chooses the setting. The research question and the governance question are therefore not separable, and the strongest argument for studying the technique is not that it should be used, but that a state facing catastrophe may attempt it regardless, and ignorance is a poor preparation for that."
+    },
+    {
+      "id": "gmat-verbal-011-rp3",
+      "title": "What GDP Was Built to Do",
+      "text": "National income accounting was developed in the 1930s and 1940s to answer specific questions: how much slack existed in a depressed economy, and how much a wartime economy could produce. It answered them well, and the criticisms now made of gross domestic product are largely complaints that it does not answer other questions it was never designed for.\n\nThe familiar objections are correct as far as they go. GDP counts activity rather than welfare; it treats expenditure on repairing damage as positive; it omits household work and volunteering; it says nothing about distribution, so a rise consistent with falling incomes for most people is arithmetically unremarkable; and it ignores depletion of natural assets, treating the liquidation of a stock as current income.\n\nThe proposed remedies divide into two kinds. One would adjust the aggregate, subtracting environmental damage or adding household production to produce a single better number. The other would leave GDP alone and publish a dashboard of indicators alongside it. Each has a characteristic failing: adjusted aggregates bury contestable value judgements inside a figure that looks technical, while dashboards are easy to ignore precisely because they offer no single number for a headline.\n\nThere is a reason the aggregate persists that its critics rarely address. Policy requires comparison across countries and over time, and GDP is measured with a consistency that no proposed replacement has yet matched. The reasonable position treats it as an indicator of one thing, measured well, and treats the demand that it also measure welfare as the source of most of the confusion."
+    },
+    {
+      "id": "gmat-verbal-011-rp4",
+      "title": "Attributing Works to Authors",
+      "text": "Deciding who made a work is among the older problems in the humanities, and the statistical methods now applied to it have a mixed record that repays examination.\n\nStylometry rests on the observation that writers differ measurably in features they do not consciously control: the frequency of common function words, sentence-length distributions, patterns of collocation. These are more useful than vocabulary or subject matter precisely because they are unconscious and therefore hard to imitate deliberately.\n\nThe method has produced genuinely convincing results where conditions are favourable — a closed set of candidate authors, substantial samples from each, and texts of the same genre and period. Where conditions are unfavourable, it produces confident answers that are worth very little. Genre affects function-word frequencies as strongly as authorship does, so comparing a play with a pamphlet may measure the difference between forms rather than between people. Collaborative and edited texts have no single author to detect. And an open candidate set permits the method to name the closest of the authors considered while the true author was never in the comparison.\n\nThe soundest current practice treats attribution as a question of relative probability rather than identification, states the candidate set explicitly, and requires that a result survive several independent methods. Where the humanities have been badly served is not by the statistics but by their reporting: a finding that one author is somewhat more probable than another, given a particular set of assumptions, becomes in summary a discovery that a text was written by a named person."
     }
   ]
 }
