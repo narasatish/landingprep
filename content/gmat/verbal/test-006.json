@@ -12,469 +12,474 @@
       "id": "gmat-verbal-006-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
-      "question": "Which of the following most weakens the editorial's conclusion?",
+      "prompt": "An airline introduced a charge for checked baggage and reports that the average time its aircraft spend at the gate between flights has fallen. It attributes the improvement to passengers carrying fewer checked bags, which speeds loading.",
+      "question": "Which of the following, if true, most seriously weakens the airline's attribution?",
       "options": [
-        "A. Crime rates are influenced by many factors beyond unemployment",
-        "B. Employment programmes have reduced crime in some pilot cities",
-        "C. The editorial does not define 'crime' precisely",
-        "D. Reducing unemployment is expensive and politically difficult",
-        "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
+        "A. Some passengers pay the charge without complaint.",
+        "B. Baggage handlers report that the work is easier than before.",
+        "C. The airline simultaneously introduced a boarding procedure that seats passengers by row, and gate times fell equally on routes where checked baggage did not decline.",
+        "D. Competing airlines charge similar fees.",
+        "E. The charge raised more revenue than forecast."
       ],
-      "correctAnswer": "A",
-      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "A concurrent change that produced the same effect where the proposed cause was absent is the strongest available challenge. C is consistent with the airline's account rather than against it.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-006-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
-      "question": "The president's argument is flawed because it:",
+      "prompt": "A restaurant group replaced tipping with a service charge included in menu prices, and reports that staff turnover has fallen by half. The group concludes that predictable pay is what servers value most.",
+      "question": "The conclusion is most vulnerable to the criticism that it",
       "options": [
-        "A. Ignores that SAT preparation courses can inflate scores",
-        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
-        "C. Does not consider the diversity implications of the policy",
-        "D. Fails to define 'academic performance' precisely",
-        "E. Both A and B"
+        "A. ignores the preferences of customers",
+        "B. fails to specify the size of the service charge",
+        "C. does not consider the group's profitability",
+        "D. assumes that turnover is a reliable indicator of staff satisfaction rather than of conditions in the wider labour market",
+        "E. relies on data from a single year"
       ],
-      "correctAnswer": "B",
-      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "Turnover falls when outside opportunities dry up, whatever the employer does; without a comparison the inference about what servers value is unsupported. B and D are real considerations but do not bear on the causal claim.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-006-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
-      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "prompt": "A seed company found that fields sown with its new drought-tolerant wheat variety yielded more than neighbouring fields sown with the standard variety during a dry season, and advertises the new variety as higher-yielding.",
+      "question": "Which of the following would be most useful to determine in evaluating the advertisement?",
       "options": [
-        "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
-        "C. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "D. Historical market data is unreliable because markets change structurally over time",
-        "E. Companies with consistent earnings growth tend to have stable stock prices"
+        "A. How much the new seed costs per hectare",
+        "B. Whether the new variety yields as well as the standard variety in seasons of normal rainfall",
+        "C. Whether the fields were of similar size",
+        "D. How many farmers have purchased the new variety",
+        "E. Whether the company conducted the comparison itself"
       ],
       "correctAnswer": "B",
-      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "The claim is unqualified, so what matters is performance across conditions: drought tolerance is frequently traded against yield in good years. B and E bear on value and credibility, not on whether the claim is true.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-006-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
-      "question": "Which of the following, if true, most seriously weakens the conclusion?",
+      "prompt": "A public library replaced part of its printed stock with e-book licences and reports that total loans rose. The head librarian concludes that readers prefer e-books.",
+      "question": "Which of the following, if true, most seriously undermines the conclusion?",
       "options": [
-        "A. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "B. Customers report feeling more valued when using a loyalty programme",
-        "C. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "D. Competitors without loyalty programmes have seen declining sales",
-        "E. The loyalty programme was introduced simultaneously with a store renovation"
+        "A. E-book licences expire after a fixed number of loans.",
+        "B. Some readers do not own suitable devices.",
+        "C. The library extended its opening hours in the same period.",
+        "D. Printed loans fell slightly.",
+        "E. Each e-book licence permits several simultaneous borrowers, so titles that previously had waiting lists are now always available."
       ],
-      "correctAnswer": "C",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "Availability, not preference, can explain the rise: loans that were previously suppressed by queues now complete. D offers a rival cause but a weaker one, since it would raise printed loans too.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-006-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
-      "question": "Which of the following would most strengthen the CFO's conclusion?",
+      "prompt": "Every car park in the Ashcombe district that charges by the hour is monitored by camera. No car park monitored by camera has been the site of a reported theft this year. Some car parks in the district charge a flat daily rate.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. Other advertising channels were suspended during the same three months",
-        "B. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "C. Social media platforms reported the campaign reached 5 million unique users",
-        "D. The lifetime value of a new user averages $50",
-        "E. Competitors saw no change in sign-ups over the same period"
+        "A. No car park that charges by the hour has been the site of a reported theft this year.",
+        "B. No car park in the district has been the site of a reported theft this year.",
+        "C. Car parks charging a flat daily rate are not monitored by camera.",
+        "D. Most car parks in the district charge by the hour.",
+        "E. Cameras deter theft."
       ],
-      "correctAnswer": "D",
-      "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "Hourly implies camera implies no reported theft. A goes too far, since flat-rate car parks may be unmonitored; C wrongly denies the antecedent; E is a causal claim the statements do not support.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-006-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
-      "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
+      "prompt": "A factory introduced a scheme under which workers report near-misses anonymously. In the first year, reported near-misses rose sharply while recorded injuries fell. A manager concludes that the factory has become more dangerous but that workers are being more careful.",
+      "question": "Which of the following, if true, best explains the pattern the manager describes?",
       "options": [
-        "A. It assumes that lower temperatures are always desirable",
-        "B. It ignores that tree planting is expensive",
-        "C. It fails to consider that trees require water",
-        "D. It overlooks that some neighbourhoods may not have space for trees",
-        "E. It treats a correlation as evidence of a causal relationship"
+        "A. The factory hired additional workers during the year.",
+        "B. Injuries are recorded by an external inspector.",
+        "C. Near-misses were previously under-reported because workers feared blame, and the anonymous scheme captures events that were always occurring.",
+        "D. The scheme was publicised widely within the factory.",
+        "E. Some near-misses involve equipment that has since been replaced."
       ],
-      "correctAnswer": "E",
-      "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "A change in reporting explains a rise in reports without any rise in hazards, which removes the manager's paradox. D explains awareness of the scheme but not the divergence between the two measures.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-006-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
-      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "prompt": "A conservation group argues that salmon farms should be moved away from river mouths, since parasite levels on wild juvenile salmon are far higher near farms than elsewhere.",
+      "question": "The argument depends on which of the following assumptions?",
       "options": [
-        "A. The airline also reduced the number of carry-on bags allowed during the same period",
-        "B. Passengers reported higher satisfaction with the new policy",
-        "C. Competing airlines have not adopted similar policies",
-        "D. Boarding time varies naturally between 15 and 35 minutes",
-        "E. The new policy was introduced on routes with larger aircraft"
+        "A. Salmon farming is unprofitable at its current locations.",
+        "B. Parasites are the main cause of decline in wild salmon numbers.",
+        "C. Farms can be relocated without loss of production.",
+        "D. Wild salmon do not migrate past the farms twice.",
+        "E. The elevated parasite levels near farms are not primarily caused by some feature of river mouths that is independent of the farms."
       ],
-      "correctAnswer": "A",
-      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "The recommendation treats the farms as the source; if river mouths themselves concentrate parasites, moving the farms would not help. C strengthens the case for acting but is not required for the inference that farms are responsible.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-006-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "prompt": "A software firm found that employees hired through referrals from existing staff stay longer than those hired through advertisements. It plans to fill all future vacancies through referrals in order to reduce turnover.",
+      "question": "Which of the following, if true, casts most doubt on the plan?",
       "options": [
-        "A. Does not define what type of consulting services were provided",
-        "B. Fails to compare the companies' growth with industry-wide growth trends",
-        "C. Ignores that some companies declined in revenue after hiring the firm",
-        "D. Does not specify what time period is covered by the data",
-        "E. Compares incomparable companies across different industries"
+        "A. Referred candidates are often friends of existing employees.",
+        "B. Advertising vacancies is expensive.",
+        "C. Some referred employees have left within a year.",
+        "D. Referrals draw from a pool similar in background to current staff, and the firm's growth requires skills its current staff do not have.",
+        "E. The firm's turnover is lower than the industry average."
       ],
-      "correctAnswer": "B",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
+      "correctAnswer": "D",
+      "explanation": "It identifies a cost of the policy that the retention statistic does not capture: a hiring channel that cannot supply the skills needed is a poor way to staff the firm, whatever its retention record.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-006-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "prompt": "A regional government reports that since it began paying for wind turbines, the region's carbon emissions have fallen, and concludes that the turbines caused the reduction.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Olive oil contains monounsaturated fats linked to heart health",
-        "B. Heart disease rates have been declining globally regardless of fat consumption",
-        "C. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
-        "D. The study followed individuals for 10 years",
-        "E. Olive oil is more expensive than butter in most markets"
+        "A. The turbines generate less electricity in summer than in winter.",
+        "B. The region's largest steelworks closed in the same period and had accounted for a fifth of regional emissions.",
+        "C. Some residents objected to the turbines on visual grounds.",
+        "D. Neighbouring regions have also installed turbines.",
+        "E. The turbines cost more than projected."
       ],
-      "correctAnswer": "C",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
+      "correctAnswer": "B",
+      "explanation": "A single large emitter leaving accounts for the fall without any contribution from the turbines. A limits the size of the effect but does not challenge the causal claim.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-006-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "prompt": "A cheesemaker matures its cheese for eighteen months rather than the usual twelve, and its cheese sells at a premium. A competitor concludes that maturing cheese longer allows any producer to charge more.",
+      "question": "The competitor's reasoning is flawed because it",
       "options": [
-        "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Some patients do not have phones",
-        "C. Patients prefer in-person follow-up visits to phone calls",
-        "D. Doctors who proactively call patients may also be more thorough in their overall care",
-        "E. Phone calls are less effective than written instructions"
+        "A. assumes that what holds for one producer with an established reputation will hold for producers generally",
+        "B. ignores the cost of storing cheese for longer",
+        "C. overlooks differences in milk quality",
+        "D. treats price as a measure of quality",
+        "E. relies on the testimony of a single cheesemaker"
       ],
-      "correctAnswer": "D",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
+      "correctAnswer": "A",
+      "explanation": "The premium may attach to the maker's reputation rather than to the ageing, and the inference generalises from one case to all producers. B is a genuine cost but does not identify the reasoning error.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-006-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "prompt": "A city installed cameras to enforce its bus lanes and reports that bus journey times have improved. Opponents argue that the cameras were installed mainly to raise revenue from fines, noting that fine income has exceeded the enforcement budget every year.",
+      "question": "Which of the following, if true, most weakens the opponents' argument?",
       "options": [
-        "A. Drug X has minor side effects including nausea",
-        "B. The study included only 50 participants",
-        "C. Chronic pain affects millions of people worldwide",
-        "D. Drug X is expensive compared to existing treatments",
-        "E. A control group taking a placebo experienced a 28% reduction in symptoms"
+        "A. The city has installed cameras in other locations as well.",
+        "B. Bus passenger numbers have increased.",
+        "C. Fine income has fallen each year as compliance has risen, and the city's own projections anticipated that decline.",
+        "D. Some drivers say the lane markings are unclear.",
+        "E. Fines are set at the same level as in neighbouring cities."
       ],
-      "correctAnswer": "E",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
+      "correctAnswer": "C",
+      "explanation": "A revenue motive predicts arrangements that sustain income; a declining, and expected to decline, income stream is the signature of an enforcement objective instead. C is consistent with both accounts.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-006-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "passageTitle": "Buybacks and Dividends",
+      "passageText": "A firm with cash it does not need can return it to shareholders by paying a dividend or by buying back its own shares. In a frictionless market the two are equivalent: the shareholder who wants income can sell a portion of a holding, and the shareholder who wants to reinvest can decline to sell. Actual firms treat the choice as consequential, and the reasons lie in the frictions the equivalence assumes away.\n\nThe first is the signal each carries. Dividends are treated by managers as a commitment: cutting one is read as evidence of distress, and firms will borrow to avoid it. A buyback carries no such expectation, which makes it the instrument of choice for cash a firm suspects may not recur. Investors, aware of this, read a dividend increase as a stronger statement about future earnings than a buyback of equal value.\n\nThe second is who benefits. A buyback raises earnings per share by reducing the denominator, and where executive pay is tied to that figure the interests of managers and shareholders diverge. A firm may repurchase shares at prices its own managers believe are high, transferring value from continuing shareholders to those who sell, and the empirical record on the timing of repurchases is not flattering.\n\nCritics have argued that buybacks divert funds from investment. The evidence is mixed and the argument frequently confuses cause with symptom: firms with attractive projects rarely repurchase shares instead of funding them, and a firm returning cash is often one that has already concluded, rightly or not, that it has nothing better to do with it.",
+      "prompt": "According to the passage, dividends and buybacks would be equivalent if",
       "options": [
-        "A. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "B. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "C. The university's highest-achieving students attend the fitness centre most frequently",
-        "D. Exercise programmes are popular at peer universities",
-        "E. Students who exercise report feeling less stressed"
+        "A. executive pay were not tied to earnings per share",
+        "B. managers did not have private information about future earnings",
+        "C. tax rates on the two were identical",
+        "D. the frictions the equivalence assumes away did not exist",
+        "E. firms had no attractive investment projects"
       ],
-      "correctAnswer": "A",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
+      "correctAnswer": "D",
+      "explanation": "The first paragraph sets up the frictionless equivalence and then says the reasons firms treat the choice as consequential lie in the frictions that equivalence assumes away. A and B name particular frictions but not the general condition.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-006-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "passageTitle": "Buybacks and Dividends",
+      "passageText": "A firm with cash it does not need can return it to shareholders by paying a dividend or by buying back its own shares. In a frictionless market the two are equivalent: the shareholder who wants income can sell a portion of a holding, and the shareholder who wants to reinvest can decline to sell. Actual firms treat the choice as consequential, and the reasons lie in the frictions the equivalence assumes away.\n\nThe first is the signal each carries. Dividends are treated by managers as a commitment: cutting one is read as evidence of distress, and firms will borrow to avoid it. A buyback carries no such expectation, which makes it the instrument of choice for cash a firm suspects may not recur. Investors, aware of this, read a dividend increase as a stronger statement about future earnings than a buyback of equal value.\n\nThe second is who benefits. A buyback raises earnings per share by reducing the denominator, and where executive pay is tied to that figure the interests of managers and shareholders diverge. A firm may repurchase shares at prices its own managers believe are high, transferring value from continuing shareholders to those who sell, and the empirical record on the timing of repurchases is not flattering.\n\nCritics have argued that buybacks divert funds from investment. The evidence is mixed and the argument frequently confuses cause with symptom: firms with attractive projects rarely repurchase shares instead of funding them, and a firm returning cash is often one that has already concluded, rightly or not, that it has nothing better to do with it.",
+      "prompt": "The passage indicates that a firm with cash it suspects may not recur is likely to prefer a buyback because",
       "options": [
-        "A. Cameras might violate driver privacy",
-        "B. Intersections chosen for cameras may have already been due for safety upgrades",
-        "C. The cost of cameras is high",
-        "D. Some drivers find cameras distracting",
-        "E. Cameras only capture rear-end collisions"
+        "A. buybacks are cheaper to execute",
+        "B. buybacks are taxed more favourably",
+        "C. shareholders cannot observe buybacks",
+        "D. buybacks increase the firm's borrowing capacity",
+        "E. a buyback carries no expectation of repetition, whereas cutting a dividend is read as distress"
       ],
-      "correctAnswer": "B",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
+      "correctAnswer": "E",
+      "explanation": "The commitment asymmetry is the stated reason. D is false: repurchases are disclosed, and the passage assumes investors read them.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-006-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "passageTitle": "Buybacks and Dividends",
+      "passageText": "A firm with cash it does not need can return it to shareholders by paying a dividend or by buying back its own shares. In a frictionless market the two are equivalent: the shareholder who wants income can sell a portion of a holding, and the shareholder who wants to reinvest can decline to sell. Actual firms treat the choice as consequential, and the reasons lie in the frictions the equivalence assumes away.\n\nThe first is the signal each carries. Dividends are treated by managers as a commitment: cutting one is read as evidence of distress, and firms will borrow to avoid it. A buyback carries no such expectation, which makes it the instrument of choice for cash a firm suspects may not recur. Investors, aware of this, read a dividend increase as a stronger statement about future earnings than a buyback of equal value.\n\nThe second is who benefits. A buyback raises earnings per share by reducing the denominator, and where executive pay is tied to that figure the interests of managers and shareholders diverge. A firm may repurchase shares at prices its own managers believe are high, transferring value from continuing shareholders to those who sell, and the empirical record on the timing of repurchases is not flattering.\n\nCritics have argued that buybacks divert funds from investment. The evidence is mixed and the argument frequently confuses cause with symptom: firms with attractive projects rarely repurchase shares instead of funding them, and a firm returning cash is often one that has already concluded, rightly or not, that it has nothing better to do with it.",
+      "prompt": "The author's response to the claim that buybacks divert funds from investment is that",
       "options": [
-        "A. Labour economists disagree on the effects of minimum wage increases",
-        "B. The minimum wage increase only affected 5% of workers",
-        "C. A separate economic boom added 100,000 jobs during the same year",
-        "D. Some industries are more affected than others by wage increases",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. the claim is correct and the practice should be restricted",
+        "B. the claim confuses a symptom with a cause, since firms with attractive projects rarely repurchase instead of funding them",
+        "C. investment has risen in every period when buybacks rose",
+        "D. the claim applies only to firms in declining industries",
+        "E. no evidence bearing on the claim exists"
       ],
-      "correctAnswer": "C",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
+      "correctAnswer": "B",
+      "explanation": "The final paragraph calls the evidence mixed and identifies the confusion of cause with symptom. C and E overstate what the passage says.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-006-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "passageTitle": "How Birds Sense Direction",
+      "passageText": "That migratory birds can orient themselves has been established for decades; how they do it remains only partly understood, and the difficulty is instructive about what counts as evidence in sensory biology.\n\nBehavioural experiments established early that birds use several cues. Caged migrants orient in the seasonally appropriate direction under a natural night sky, and shift accordingly when the sky is artificially rotated, which implicates star patterns. Others reorient when placed in an altered magnetic field, which implicates a magnetic sense. Since the cues can conflict, birds must also weigh them, and evidence suggests some species recalibrate their magnetic compass against celestial cues at dusk.\n\nThe mechanism of magnetic detection has proved harder. Two candidate systems have dominated. The first involves magnetite, crystals of iron oxide found in tissue, which could transmit force to a sensory cell. The second, radical-pair chemistry, proposes that a light-sensitive protein in the retina forms pairs of molecules whose reaction rates depend on magnetic field orientation, effectively allowing a bird to see direction. That the avian magnetic compass depends on light, and is disrupted by weak radio-frequency fields, fits the second proposal better than the first.\n\nCaution remains warranted. Demonstrating that a candidate molecule is magnetically sensitive in a test tube does not establish that it performs that role in a living bird, and attempts to identify the sensory cells and their neural connections have produced results that have been difficult to replicate. What is secure is the behaviour; what remains open is the machinery, and the gap between the two is wider than popular accounts suggest.",
+      "prompt": "The experiments involving an artificially rotated night sky are cited to show that",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. star patterns are among the cues birds use to orient",
+        "B. birds cannot orient without starlight",
+        "C. magnetic cues are unimportant in caged birds",
+        "D. birds recalibrate their compass at dawn",
+        "E. orientation is learned rather than innate"
       ],
-      "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "Caged migrants shifting direction with the rotated sky implicates celestial cues. A overstates — the passage says birds use several cues.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-006-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "passageTitle": "How Birds Sense Direction",
+      "passageText": "That migratory birds can orient themselves has been established for decades; how they do it remains only partly understood, and the difficulty is instructive about what counts as evidence in sensory biology.\n\nBehavioural experiments established early that birds use several cues. Caged migrants orient in the seasonally appropriate direction under a natural night sky, and shift accordingly when the sky is artificially rotated, which implicates star patterns. Others reorient when placed in an altered magnetic field, which implicates a magnetic sense. Since the cues can conflict, birds must also weigh them, and evidence suggests some species recalibrate their magnetic compass against celestial cues at dusk.\n\nThe mechanism of magnetic detection has proved harder. Two candidate systems have dominated. The first involves magnetite, crystals of iron oxide found in tissue, which could transmit force to a sensory cell. The second, radical-pair chemistry, proposes that a light-sensitive protein in the retina forms pairs of molecules whose reaction rates depend on magnetic field orientation, effectively allowing a bird to see direction. That the avian magnetic compass depends on light, and is disrupted by weak radio-frequency fields, fits the second proposal better than the first.\n\nCaution remains warranted. Demonstrating that a candidate molecule is magnetically sensitive in a test tube does not establish that it performs that role in a living bird, and attempts to identify the sensory cells and their neural connections have produced results that have been difficult to replicate. What is secure is the behaviour; what remains open is the machinery, and the gap between the two is wider than popular accounts suggest.",
+      "prompt": "The passage indicates that the radical-pair proposal is favoured over the magnetite proposal by which observation?",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Local restaurants cannot accommodate arena crowds",
-        "C. The arena's construction will not create permanent jobs",
-        "D. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "E. The city already has sufficient sports facilities"
+        "A. Iron oxide crystals have been found in avian tissue.",
+        "B. Birds migrate at night as well as by day.",
+        "C. The avian magnetic compass depends on light and is disrupted by weak radio-frequency fields.",
+        "D. Some species recalibrate their compass against celestial cues.",
+        "E. Caged birds orient correctly under a natural sky."
       ],
-      "correctAnswer": "D",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Light dependence and radio-frequency disruption are the two properties named as fitting the chemical mechanism better.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-006-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "passageTitle": "How Birds Sense Direction",
+      "passageText": "That migratory birds can orient themselves has been established for decades; how they do it remains only partly understood, and the difficulty is instructive about what counts as evidence in sensory biology.\n\nBehavioural experiments established early that birds use several cues. Caged migrants orient in the seasonally appropriate direction under a natural night sky, and shift accordingly when the sky is artificially rotated, which implicates star patterns. Others reorient when placed in an altered magnetic field, which implicates a magnetic sense. Since the cues can conflict, birds must also weigh them, and evidence suggests some species recalibrate their magnetic compass against celestial cues at dusk.\n\nThe mechanism of magnetic detection has proved harder. Two candidate systems have dominated. The first involves magnetite, crystals of iron oxide found in tissue, which could transmit force to a sensory cell. The second, radical-pair chemistry, proposes that a light-sensitive protein in the retina forms pairs of molecules whose reaction rates depend on magnetic field orientation, effectively allowing a bird to see direction. That the avian magnetic compass depends on light, and is disrupted by weak radio-frequency fields, fits the second proposal better than the first.\n\nCaution remains warranted. Demonstrating that a candidate molecule is magnetically sensitive in a test tube does not establish that it performs that role in a living bird, and attempts to identify the sensory cells and their neural connections have produced results that have been difficult to replicate. What is secure is the behaviour; what remains open is the machinery, and the gap between the two is wider than popular accounts suggest.",
+      "prompt": "The author's main point in the final paragraph is that",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. The ad was shown only on premium streaming services",
-        "C. The brand launched a new product line during the same period",
-        "D. Competitors also increased advertising spending during the same period",
-        "E. Consumers who sought out the advertisement were already brand loyalists considering a major purchase"
+        "A. the magnetite hypothesis has been disproved",
+        "B. behavioural evidence is less reliable than molecular evidence",
+        "C. replication failures show the field to be unsound",
+        "D. birds probably use only one magnetic mechanism",
+        "E. what is secure is the behaviour, while the underlying machinery remains open"
       ],
       "correctAnswer": "E",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "The paragraph distinguishes secure behavioural findings from unresolved mechanism, and says the gap is wider than popular accounts suggest.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-006-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "passageTitle": "Counting the Unemployed",
+      "passageText": "The standard measure of unemployment counts a person as unemployed only if they are out of work, available for work, and have actively sought work in a recent reference period. The definition is deliberate rather than arbitrary: without the search requirement, the figure would include people who are not participating in the labour market at all, and would lose its usefulness as an indicator of slack.\n\nThe consequence is that the rate can fall for two opposite reasons. People may find jobs, or people may stop looking and be reclassified as outside the labour force. In prolonged downturns the second effect is substantial, and a headline rate that improves while employment does not is a familiar pattern in the historical record.\n\nStatistical agencies address this with supplementary measures. Broader definitions add those who want work but have not searched recently, and those working part-time who would prefer full-time hours. The gap between the narrow and broad measures widens in weak labour markets and narrows in strong ones, which is itself informative.\n\nNone of this makes the standard rate a poor measure. It makes it a measure of one thing, and the interpretive error is to treat it as a summary of the labour market as a whole. The most useful reading takes the unemployment rate alongside the employment-to-population ratio and the participation rate, because a movement that all three agree on means something quite different from a movement in the headline rate alone.",
+      "prompt": "The passage indicates that the search requirement is included in the definition of unemployment in order to",
       "options": [
-        "A. It presents empirical evidence that undermines the first analyst's prediction",
-        "B. It provides an alternative interpretation of the first analyst's claim",
-        "C. It demonstrates that road construction is always harmful",
-        "D. It suggests the first analyst has incorrect data",
-        "E. It proves that traffic will always increase regardless of policy"
+        "A. reduce the cost of collecting labour statistics",
+        "B. exclude people who are not participating in the labour market, preserving the figure's use as an indicator of slack",
+        "C. make international comparison possible",
+        "D. distinguish part-time from full-time workers",
+        "E. prevent double counting of the self-employed"
       ],
-      "correctAnswer": "A",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Stated as the deliberate purpose of the requirement in the first paragraph.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-006-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
-      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "passageTitle": "Counting the Unemployed",
+      "passageText": "The standard measure of unemployment counts a person as unemployed only if they are out of work, available for work, and have actively sought work in a recent reference period. The definition is deliberate rather than arbitrary: without the search requirement, the figure would include people who are not participating in the labour market at all, and would lose its usefulness as an indicator of slack.\n\nThe consequence is that the rate can fall for two opposite reasons. People may find jobs, or people may stop looking and be reclassified as outside the labour force. In prolonged downturns the second effect is substantial, and a headline rate that improves while employment does not is a familiar pattern in the historical record.\n\nStatistical agencies address this with supplementary measures. Broader definitions add those who want work but have not searched recently, and those working part-time who would prefer full-time hours. The gap between the narrow and broad measures widens in weak labour markets and narrows in strong ones, which is itself informative.\n\nNone of this makes the standard rate a poor measure. It makes it a measure of one thing, and the interpretive error is to treat it as a summary of the labour market as a whole. The most useful reading takes the unemployment rate alongside the employment-to-population ratio and the participation rate, because a movement that all three agree on means something quite different from a movement in the headline rate alone.",
+      "prompt": "According to the passage, the unemployment rate can fall because",
       "options": [
-        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "B. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
-        "C. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "D. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
-        "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
+        "A. the participation rate rises",
+        "B. part-time work is reclassified as full-time",
+        "C. the reference period is lengthened",
+        "D. employment rises, or because people stop looking for work",
+        "E. wages increase"
       ],
-      "correctAnswer": "B",
-      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The two opposite reasons are the point of the second paragraph.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-006-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "passageTitle": "Counting the Unemployed",
+      "passageText": "The standard measure of unemployment counts a person as unemployed only if they are out of work, available for work, and have actively sought work in a recent reference period. The definition is deliberate rather than arbitrary: without the search requirement, the figure would include people who are not participating in the labour market at all, and would lose its usefulness as an indicator of slack.\n\nThe consequence is that the rate can fall for two opposite reasons. People may find jobs, or people may stop looking and be reclassified as outside the labour force. In prolonged downturns the second effect is substantial, and a headline rate that improves while employment does not is a familiar pattern in the historical record.\n\nStatistical agencies address this with supplementary measures. Broader definitions add those who want work but have not searched recently, and those working part-time who would prefer full-time hours. The gap between the narrow and broad measures widens in weak labour markets and narrows in strong ones, which is itself informative.\n\nNone of this makes the standard rate a poor measure. It makes it a measure of one thing, and the interpretive error is to treat it as a summary of the labour market as a whole. The most useful reading takes the unemployment rate alongside the employment-to-population ratio and the participation rate, because a movement that all three agree on means something quite different from a movement in the headline rate alone.",
+      "prompt": "The author would most likely agree that the unemployment rate is",
       "options": [
-        "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Dissatisfied workers always sleep fewer than 7 hours",
-        "C. Job satisfaction and adequate sleep are associated in the survey population",
-        "D. Employers should implement nap rooms to improve satisfaction",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "A. a measure of one thing, best read alongside the employment ratio and participation rate",
+        "B. a poor measure that should be replaced",
+        "C. the most complete available summary of the labour market",
+        "D. useful only during economic expansions",
+        "E. less informative than the broad measures in every circumstance"
       ],
-      "correctAnswer": "C",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The final paragraph says exactly this, and explicitly denies that it is a poor measure.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-006-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "According to the passage, which of the following contributes to the urban heat island effect?",
+      "passageTitle": "Numerals and Commerce",
+      "passageText": "Hindu-Arabic numerals reached Europe through Arabic mathematical works well before European merchants adopted them. The gap between availability and use is long enough to require explanation, and the usual one — that the new numerals were obviously superior and resistance was mere conservatism — does not survive examination.\n\nRoman numerals were not used for calculation. Arithmetic was performed on a counting board or with an abacus, and the numerals recorded the result. Judged as a notation for recording, they were adequate, and the advantage of the new system appeared only when calculation moved onto paper, which required the algorithms for written multiplication and division that the numerals alone did not supply.\n\nThere were also reasons for suspicion that were not superstitious. A written figure can be altered: a zero is easily turned into another digit, and several Italian cities restricted the use of the new numerals in official records for that reason. Roman numerals written out in words in contracts are harder to falsify, and the practice of writing sums in words on cheques descends from the same concern.\n\nAdoption followed the spread of double-entry accounting and of commercial arithmetic teaching, both of which made written calculation routine. The lesson is not that merchants were slow but that a notation is adopted for what it lets its users do, and that the advantage of the new numerals depended on a body of technique that took generations to spread.",
+      "prompt": "The passage argues that the delay in adopting Hindu-Arabic numerals is not well explained by",
       "options": [
-        "A. High buildings that block wind flow",
-        "B. Reflective roofs in city centres",
-        "C. Vehicles, air conditioning, and industry releasing waste heat",
-        "D. Increased cloud cover over urban areas"
+        "A. restrictions imposed by Italian cities",
+        "B. the spread of commercial arithmetic teaching",
+        "C. the claim that the numerals were obviously superior and merchants merely conservative",
+        "D. the use of counting boards for arithmetic",
+        "E. the difficulty of altering figures written in words"
       ],
       "correctAnswer": "C",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "explanation": "The first paragraph names that explanation and says it does not survive examination.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-006-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "The passage states that the greatest temperature difference between cities and rural areas occurs:",
+      "passageTitle": "Numerals and Commerce",
+      "passageText": "Hindu-Arabic numerals reached Europe through Arabic mathematical works well before European merchants adopted them. The gap between availability and use is long enough to require explanation, and the usual one — that the new numerals were obviously superior and resistance was mere conservatism — does not survive examination.\n\nRoman numerals were not used for calculation. Arithmetic was performed on a counting board or with an abacus, and the numerals recorded the result. Judged as a notation for recording, they were adequate, and the advantage of the new system appeared only when calculation moved onto paper, which required the algorithms for written multiplication and division that the numerals alone did not supply.\n\nThere were also reasons for suspicion that were not superstitious. A written figure can be altered: a zero is easily turned into another digit, and several Italian cities restricted the use of the new numerals in official records for that reason. Roman numerals written out in words in contracts are harder to falsify, and the practice of writing sums in words on cheques descends from the same concern.\n\nAdoption followed the spread of double-entry accounting and of commercial arithmetic teaching, both of which made written calculation routine. The lesson is not that merchants were slow but that a notation is adopted for what it lets its users do, and that the advantage of the new numerals depended on a body of technique that took generations to spread.",
+      "prompt": "According to the passage, Roman numerals were adequate for their purpose because",
       "options": [
-        "A. During the hottest summer afternoons",
-        "B. During periods of high wind",
-        "C. When humidity is at its highest",
-        "D. On calm, clear nights"
+        "A. they could be written more quickly than the new numerals",
+        "B. few merchants needed to multiply or divide",
+        "C. they were required by law in commercial contracts",
+        "D. they included a symbol for zero",
+        "E. calculation was performed on a counting board or abacus, and the numerals recorded results"
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "correctAnswer": "E",
+      "explanation": "The second paragraph draws the distinction between a notation for recording and a notation for calculating.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-006-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "Which of the following, if true, would most strengthen the case for urban greening as an adaptation strategy?",
+      "passageTitle": "Numerals and Commerce",
+      "passageText": "Hindu-Arabic numerals reached Europe through Arabic mathematical works well before European merchants adopted them. The gap between availability and use is long enough to require explanation, and the usual one — that the new numerals were obviously superior and resistance was mere conservatism — does not survive examination.\n\nRoman numerals were not used for calculation. Arithmetic was performed on a counting board or with an abacus, and the numerals recorded the result. Judged as a notation for recording, they were adequate, and the advantage of the new system appeared only when calculation moved onto paper, which required the algorithms for written multiplication and division that the numerals alone did not supply.\n\nThere were also reasons for suspicion that were not superstitious. A written figure can be altered: a zero is easily turned into another digit, and several Italian cities restricted the use of the new numerals in official records for that reason. Roman numerals written out in words in contracts are harder to falsify, and the practice of writing sums in words on cheques descends from the same concern.\n\nAdoption followed the spread of double-entry accounting and of commercial arithmetic teaching, both of which made written calculation routine. The lesson is not that merchants were slow but that a notation is adopted for what it lets its users do, and that the advantage of the new numerals depended on a body of technique that took generations to spread.",
+      "prompt": "The passage suggests that the practice of writing sums in words on cheques",
       "options": [
-        "A. Studies show trees can reduce local temperatures by up to 8°C through evapotranspiration",
-        "B. Trees in urban areas require significant maintenance costs",
-        "C. Cool roofs are less expensive to install than planting trees",
-        "D. Urban greening has been adopted by fewer than 20% of major cities worldwide"
+        "A. originated as a courtesy to illiterate customers",
+        "B. was introduced by banks in the nineteenth century",
+        "C. reflects the continued prestige of Roman numerals",
+        "D. descends from concern that written figures can be altered",
+        "E. was intended to slow the pace of transactions"
       ],
-      "correctAnswer": "A",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "correctAnswer": "D",
+      "explanation": "The third paragraph traces the practice to the same falsification concern that led cities to restrict the new numerals in official records.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-006-q01": "A",
-    "gmat-verbal-006-q02": "B",
+    "gmat-verbal-006-q01": "C",
+    "gmat-verbal-006-q02": "D",
     "gmat-verbal-006-q03": "B",
-    "gmat-verbal-006-q04": "C",
-    "gmat-verbal-006-q05": "D",
-    "gmat-verbal-006-q06": "E",
-    "gmat-verbal-006-q07": "A",
-    "gmat-verbal-006-q08": "B",
-    "gmat-verbal-006-q09": "C",
-    "gmat-verbal-006-q10": "D",
-    "gmat-verbal-006-q11": "E",
-    "gmat-verbal-006-q12": "A",
-    "gmat-verbal-006-q13": "B",
-    "gmat-verbal-006-q14": "C",
-    "gmat-verbal-006-q15": "E",
-    "gmat-verbal-006-q16": "D",
+    "gmat-verbal-006-q04": "E",
+    "gmat-verbal-006-q05": "A",
+    "gmat-verbal-006-q06": "C",
+    "gmat-verbal-006-q07": "E",
+    "gmat-verbal-006-q08": "D",
+    "gmat-verbal-006-q09": "B",
+    "gmat-verbal-006-q10": "A",
+    "gmat-verbal-006-q11": "C",
+    "gmat-verbal-006-q12": "D",
+    "gmat-verbal-006-q13": "E",
+    "gmat-verbal-006-q14": "B",
+    "gmat-verbal-006-q15": "A",
+    "gmat-verbal-006-q16": "C",
     "gmat-verbal-006-q17": "E",
-    "gmat-verbal-006-q18": "A",
-    "gmat-verbal-006-q19": "B",
-    "gmat-verbal-006-q20": "C",
+    "gmat-verbal-006-q18": "B",
+    "gmat-verbal-006-q19": "D",
+    "gmat-verbal-006-q20": "A",
     "gmat-verbal-006-q21": "C",
-    "gmat-verbal-006-q22": "D",
-    "gmat-verbal-006-q23": "A"
+    "gmat-verbal-006-q22": "E",
+    "gmat-verbal-006-q23": "D"
   },
-  "fingerprints": [
-    "8c7b1f0f40b6d08202",
-    "c0fceba848fc96bbf8",
-    "4657aff58697dfe3d7",
-    "afee27c16cd3eecd70",
-    "962f82e3a4ddc6950b",
-    "3171729a9c646998a6",
-    "b9e74e065e1aafcbfc",
-    "2f65b1afa51ce84323",
-    "c19127f1d4ed27e828",
-    "23f3c72ea1ca2d2ca3",
-    "d08e1f6e371c855f54",
-    "a4a060de5b4a539989",
-    "d84ec9b9b13cb8ef8c",
-    "a7d22a2018b19913f5",
-    "7c21c1c58cf854e828",
-    "dd243b172c90f150cb",
-    "463ec178b0eda80239",
-    "1ad9efa1aae4d7536f",
-    "6f965734d44b8d3a06",
-    "0dbd481863bcfb533f"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-006-rp1",
-      "title": "Business and Society",
-      "text": "Coral reef ecosystems face dual threats from ocean warming and acidification. Thermal bleaching events, in which elevated temperatures cause corals to expel their symbiotic algae, have become more frequent since the 1980s. Simultaneously, as ocean pH decreases due to absorbed carbon dioxide, the ability of corals to build calcium carbonate skeletons is compromised. These stressors interact in ways that researchers are still working to quantify."
+      "title": "Buybacks and Dividends",
+      "text": "A firm with cash it does not need can return it to shareholders by paying a dividend or by buying back its own shares. In a frictionless market the two are equivalent: the shareholder who wants income can sell a portion of a holding, and the shareholder who wants to reinvest can decline to sell. Actual firms treat the choice as consequential, and the reasons lie in the frictions the equivalence assumes away.\n\nThe first is the signal each carries. Dividends are treated by managers as a commitment: cutting one is read as evidence of distress, and firms will borrow to avoid it. A buyback carries no such expectation, which makes it the instrument of choice for cash a firm suspects may not recur. Investors, aware of this, read a dividend increase as a stronger statement about future earnings than a buyback of equal value.\n\nThe second is who benefits. A buyback raises earnings per share by reducing the denominator, and where executive pay is tied to that figure the interests of managers and shareholders diverge. A firm may repurchase shares at prices its own managers believe are high, transferring value from continuing shareholders to those who sell, and the empirical record on the timing of repurchases is not flattering.\n\nCritics have argued that buybacks divert funds from investment. The evidence is mixed and the argument frequently confuses cause with symptom: firms with attractive projects rarely repurchase shares instead of funding them, and a firm returning cash is often one that has already concluded, rightly or not, that it has nothing better to do with it."
+    },
+    {
+      "id": "gmat-verbal-006-rp2",
+      "title": "How Birds Sense Direction",
+      "text": "That migratory birds can orient themselves has been established for decades; how they do it remains only partly understood, and the difficulty is instructive about what counts as evidence in sensory biology.\n\nBehavioural experiments established early that birds use several cues. Caged migrants orient in the seasonally appropriate direction under a natural night sky, and shift accordingly when the sky is artificially rotated, which implicates star patterns. Others reorient when placed in an altered magnetic field, which implicates a magnetic sense. Since the cues can conflict, birds must also weigh them, and evidence suggests some species recalibrate their magnetic compass against celestial cues at dusk.\n\nThe mechanism of magnetic detection has proved harder. Two candidate systems have dominated. The first involves magnetite, crystals of iron oxide found in tissue, which could transmit force to a sensory cell. The second, radical-pair chemistry, proposes that a light-sensitive protein in the retina forms pairs of molecules whose reaction rates depend on magnetic field orientation, effectively allowing a bird to see direction. That the avian magnetic compass depends on light, and is disrupted by weak radio-frequency fields, fits the second proposal better than the first.\n\nCaution remains warranted. Demonstrating that a candidate molecule is magnetically sensitive in a test tube does not establish that it performs that role in a living bird, and attempts to identify the sensory cells and their neural connections have produced results that have been difficult to replicate. What is secure is the behaviour; what remains open is the machinery, and the gap between the two is wider than popular accounts suggest."
+    },
+    {
+      "id": "gmat-verbal-006-rp3",
+      "title": "Counting the Unemployed",
+      "text": "The standard measure of unemployment counts a person as unemployed only if they are out of work, available for work, and have actively sought work in a recent reference period. The definition is deliberate rather than arbitrary: without the search requirement, the figure would include people who are not participating in the labour market at all, and would lose its usefulness as an indicator of slack.\n\nThe consequence is that the rate can fall for two opposite reasons. People may find jobs, or people may stop looking and be reclassified as outside the labour force. In prolonged downturns the second effect is substantial, and a headline rate that improves while employment does not is a familiar pattern in the historical record.\n\nStatistical agencies address this with supplementary measures. Broader definitions add those who want work but have not searched recently, and those working part-time who would prefer full-time hours. The gap between the narrow and broad measures widens in weak labour markets and narrows in strong ones, which is itself informative.\n\nNone of this makes the standard rate a poor measure. It makes it a measure of one thing, and the interpretive error is to treat it as a summary of the labour market as a whole. The most useful reading takes the unemployment rate alongside the employment-to-population ratio and the participation rate, because a movement that all three agree on means something quite different from a movement in the headline rate alone."
+    },
+    {
+      "id": "gmat-verbal-006-rp4",
+      "title": "Numerals and Commerce",
+      "text": "Hindu-Arabic numerals reached Europe through Arabic mathematical works well before European merchants adopted them. The gap between availability and use is long enough to require explanation, and the usual one — that the new numerals were obviously superior and resistance was mere conservatism — does not survive examination.\n\nRoman numerals were not used for calculation. Arithmetic was performed on a counting board or with an abacus, and the numerals recorded the result. Judged as a notation for recording, they were adequate, and the advantage of the new system appeared only when calculation moved onto paper, which required the algorithms for written multiplication and division that the numerals alone did not supply.\n\nThere were also reasons for suspicion that were not superstitious. A written figure can be altered: a zero is easily turned into another digit, and several Italian cities restricted the use of the new numerals in official records for that reason. Roman numerals written out in words in contracts are harder to falsify, and the practice of writing sums in words on cheques descends from the same concern.\n\nAdoption followed the spread of double-entry accounting and of commercial arithmetic teaching, both of which made written calculation routine. The lesson is not that merchants were slow but that a notation is adopted for what it lets its users do, and that the advantage of the new numerals depended on a body of technique that took generations to spread."
     }
   ]
 }
