@@ -12,469 +12,474 @@
       "id": "gmat-verbal-003-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "prompt": "Since the Meadowvale bus operator introduced real-time arrival displays at its stops last year, the proportion of passengers reporting satisfaction with punctuality has risen sharply. The operator concludes that its buses are now running more punctually.",
+      "question": "Which of the following, if true, most seriously weakens the operator's conclusion?",
       "options": [
-        "A. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "B. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "C. The university's highest-achieving students attend the fitness centre most frequently",
-        "D. Exercise programmes are popular at peer universities",
-        "E. Students who exercise report feeling less stressed"
+        "A. The displays were funded partly by the local authority.",
+        "B. Recorded arrival times show no change in the proportion of buses arriving within the scheduled window.",
+        "C. Some passengers say the displays are difficult to read in bright sunlight.",
+        "D. Satisfaction with cleanliness also rose over the same period.",
+        "E. The operator added two new routes during the year."
       ],
-      "correctAnswer": "A",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Objective punctuality is unchanged; what improved is passengers' experience of waiting, which displays affect by removing uncertainty. That is a real benefit but not the conclusion drawn. C would weaken the effect of the displays, not the inference about punctuality.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-003-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "prompt": "A health authority plans to raise vaccination rates among older residents by sending each of them a letter stating the date and time of an appointment already booked in their name, which they may change or cancel.",
+      "question": "The plan's success depends on which of the following assumptions?",
       "options": [
-        "A. Cameras might violate driver privacy",
-        "B. Intersections chosen for cameras may have already been due for safety upgrades",
-        "C. The cost of cameras is high",
-        "D. Some drivers find cameras distracting",
-        "E. Cameras only capture rear-end collisions"
+        "A. The vaccine is more effective in older residents than in younger ones.",
+        "B. The authority has enough letters to send to every resident.",
+        "C. Vaccination is currently available only by appointment.",
+        "D. Residents prefer letters to text messages.",
+        "E. Residents who receive such letters will not be more likely to cancel than to attend."
       ],
-      "correctAnswer": "B",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "Pre-booking works only if the default is accepted more often than it is refused; if the letters prompt cancellations, uptake need not rise. B, D and E are about circumstances rather than the mechanism, and C is a logistical detail already implied.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-003-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "prompt": "A distribution company installed robots to move goods within its warehouse and reports that orders are now picked in less time. A rival argues that the robots cannot be responsible, because the company also reorganised its shelving in the same month.",
+      "question": "Which of the following, if true, most undermines the rival's argument?",
       "options": [
-        "A. Labour economists disagree on the effects of minimum wage increases",
-        "B. The minimum wage increase only affected 5% of workers",
-        "C. A separate economic boom added 100,000 jobs during the same year",
-        "D. Some industries are more affected than others by wage increases",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. Picking times fell at the company's other site, where identical robots were installed but the shelving was left unchanged.",
+        "B. The reorganisation of shelving was designed by the same consultants who supplied the robots.",
+        "C. The company's staff received training on the new system.",
+        "D. Order volumes were stable throughout the month.",
+        "E. Robots are widely used in comparable warehouses."
       ],
-      "correctAnswer": "C",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "A second site isolates the variable: robots present, shelving unchanged, effect still observed. D removes a different confounder; E is precedent, not evidence about this case.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-003-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "prompt": "Every fishing vessel licensed in the Bardsea district that lands more than fifty tonnes a year is fitted with a satellite tracker. No vessel without a tracker is permitted to fish in the offshore zone. Some vessels licensed in the district land fewer than fifty tonnes a year.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. Some licensed vessels in the district are not permitted to fish in the offshore zone.",
+        "B. Every vessel fishing in the offshore zone lands more than fifty tonnes a year.",
+        "C. Any licensed vessel in the district that fishes in the offshore zone has a tracker.",
+        "D. Most vessels in the district land fewer than fifty tonnes a year.",
+        "E. Vessels without trackers land less than vessels with them."
       ],
-      "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "The offshore rule requires a tracker of anything fishing there, so a vessel fishing offshore must have one. A does not follow: a small-landing vessel may be fitted with a tracker voluntarily. B reverses the conditional.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-003-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "prompt": "A city is considering removing the entry charge at its municipal museum in order to broaden the range of people who visit.",
+      "question": "Which of the following would be most useful to determine in evaluating whether the plan will achieve its aim?",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Local restaurants cannot accommodate arena crowds",
-        "C. The arena's construction will not create permanent jobs",
-        "D. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "E. The city already has sufficient sports facilities"
+        "A. Whether the museum's collection is of national importance",
+        "B. How much revenue the charge currently raises",
+        "C. Whether other museums in the region charge for entry",
+        "D. Whether the charge is the main deterrent for the groups currently under-represented among visitors",
+        "E. How many people visited the museum last year"
       ],
       "correctAnswer": "D",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "The aim is a change in the mix of visitors, so what matters is whether price is what keeps the missing groups away — if the deterrents are travel, opening hours or a sense that the place is not for them, free entry will mainly increase visits by people who already came. C matters to affordability, not to the aim.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-003-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "prompt": "A school district found that teachers who had taken part in its mentoring scheme were more likely to remain in post after five years than teachers who had not. The district concluded that mentoring improves retention.",
+      "question": "The reasoning is most vulnerable to the criticism that it",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. The ad was shown only on premium streaming services",
-        "C. The brand launched a new product line during the same period",
-        "D. Competitors also increased advertising spending during the same period",
-        "E. Consumers who sought out the advertisement were already brand loyalists considering a major purchase"
+        "A. assumes that retention is the only measure of a successful scheme",
+        "B. overlooks the possibility that teachers who intended to stay were the ones who volunteered for mentoring",
+        "C. fails to consider the cost of the scheme",
+        "D. relies on data from a single district",
+        "E. does not specify how long the mentoring lasted"
       ],
-      "correctAnswer": "E",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Self-selection: commitment to staying may cause participation rather than the reverse. C and D are limitations that do not bear on the causal inference; A misstates the conclusion.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-003-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "prompt": "Insurers now offer lower premiums to drivers who accept a device recording their speed and braking. Since the scheme began, drivers enrolled in it have had markedly fewer accidents than drivers on standard policies, and the insurer attributes this to the effect of monitoring on driving behaviour.",
+      "question": "Which of the following, if true, most seriously weakens the insurer's attribution?",
       "options": [
-        "A. It presents empirical evidence that undermines the first analyst's prediction",
-        "B. It provides an alternative interpretation of the first analyst's claim",
-        "C. It demonstrates that road construction is always harmful",
-        "D. It suggests the first analyst has incorrect data",
-        "E. It proves that traffic will always increase regardless of policy"
+        "A. The devices also record the time of day at which journeys are made.",
+        "B. Premiums for standard policies rose slightly over the same period.",
+        "C. Drivers who expect to be judged harshly by such a device are unlikely to enrol in the scheme.",
+        "D. Some enrolled drivers disable the device on long journeys.",
+        "E. The insurer's accident data are compiled quarterly."
       ],
-      "correctAnswer": "A",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Enrolment is self-selecting in exactly the relevant respect: careful drivers opt in, so the group would have had fewer accidents without any behavioural effect. D would dilute the effect but does not explain the gap.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-003-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
-      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "prompt": "A supermarket introduced labels showing the carbon footprint of each product. Sales of the lowest-footprint items did not rise, although surveys showed that most customers noticed the labels and said they cared about the issue.",
+      "question": "Which of the following, if true, best explains this outcome?",
       "options": [
-        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "B. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
-        "C. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "D. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
-        "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
+        "A. The labels were printed in a small typeface.",
+        "B. Some customers do not trust footprint figures published by retailers.",
+        "C. The supermarket advertised the labels widely.",
+        "D. Competing supermarkets introduced similar labels later.",
+        "E. The lowest-footprint items were, in most categories, also the items customers were already buying most."
       ],
-      "correctAnswer": "B",
-      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
+      "correctAnswer": "E",
+      "explanation": "If the low-footprint items were already the bestsellers, there was little room for the labels to shift sales toward them — the outcome is consistent with the labels working. C would explain indifference but conflicts with customers saying they care.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-003-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "prompt": "An energy consultancy argues that installing rooftop solar panels on a warehouse will reduce the warehouse operator's electricity bill, since the panels will generate a substantial share of the electricity the building uses over a year.",
+      "question": "The argument depends on which of the following assumptions?",
       "options": [
-        "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Dissatisfied workers always sleep fewer than 7 hours",
-        "C. Job satisfaction and adequate sleep are associated in the survey population",
-        "D. Employers should implement nap rooms to improve satisfaction",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "A. The panels will require no maintenance during their lifetime.",
+        "B. The cost of panels will not fall further in the next few years.",
+        "C. The warehouse roof faces south.",
+        "D. The building's electricity use is not concentrated in periods when the panels generate little power, in a market where the operator cannot benefit from exporting the surplus.",
+        "E. Electricity prices will rise over the life of the panels."
       ],
-      "correctAnswer": "C",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
+      "correctAnswer": "D",
+      "explanation": "Annual generation is a total; a bill depends on matching generation to consumption or being paid for exports. The argument fails if the building draws power at night with no export value. D is one way of achieving output but not what the argument requires.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-003-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "prompt": "Opponents of a proposed tax on sugary drinks argue that it will fall hardest on households with the lowest incomes, who spend a larger share of their income on such drinks. Supporters reply that these households also suffer the highest rates of the illnesses the tax is intended to reduce, and would gain most from consuming less.",
+      "question": "The supporters' reply is best described as",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. conceding the opponents' factual claim while disputing what follows from it",
+        "B. denying that the tax will affect consumption",
+        "C. questioning the accuracy of the opponents' expenditure data",
+        "D. shifting the discussion to a different tax",
+        "E. arguing that the opponents have a financial interest in the outcome"
       ],
-      "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
+      "correctAnswer": "A",
+      "explanation": "The reply accepts that the burden is concentrated and argues that the benefit is concentrated in the same households — a disagreement about the implication, not the fact.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-003-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "prompt": "A publisher observed that its titles with illustrated covers sold better than those with typographic covers, and instructed its designers to use illustrated covers for all future titles.",
+      "question": "Which of the following, if true, casts most doubt on the wisdom of this instruction?",
       "options": [
-        "A. The claim that wetlands prevent flooding",
-        "B. The conclusion that all wetlands should be protected",
-        "C. The implication that flooding is always preventable",
-        "D. The assumption that all wetlands have equal flood-prevention value",
-        "E. The premise that wetlands are worth preserving"
+        "A. Illustrated covers cost more to produce than typographic ones.",
+        "B. The publisher's illustrated covers had been used almost exclusively on fiction, which outsells its non-fiction list by a wide margin.",
+        "C. Some readers say they prefer typographic covers.",
+        "D. Competing publishers use both styles.",
+        "E. The publisher's sales rose overall during the period studied."
       ],
-      "correctAnswer": "D",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
+      "correctAnswer": "B",
+      "explanation": "The comparison confounds cover style with genre: the sales difference may be fiction outselling non-fiction, in which case applying illustration to non-fiction changes nothing. A bears on cost, not on the sales premise.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-003-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "passageTitle": "The Winner's Curse",
+      "passageText": "When several bidders compete for something of uncertain but common value — an oil tract, a broadcasting licence, a company — the winner is by construction the bidder whose estimate of that value was highest. If estimates are distributed around the true value with error, the highest estimate is likely to be an overestimate, and the prize therefore tends to go to the bidder who was most mistaken. This is the winner's curse, and it is a statistical property of the auction rather than a failure of intelligence.\n\nThe remedy is counter-intuitive: a rational bidder should shade a bid downward not because the asset is worth less than estimated, but because winning is itself informative. Winning means that every other bidder valued the asset lower, and a bid should be constructed to remain sensible conditional on that news.\n\nEvidence that experienced bidders learn this is mixed. In petroleum lease auctions, returns on tracts sold in the early period of competitive bidding were poor in ways consistent with the curse, and bidding behaviour subsequently became more conservative. In corporate acquisitions the pattern has proved more durable, and the reason may be structural: managers who bid are spending shareholders' money, are rewarded for growth in the size of the firm, and rarely bid often enough to learn from their own losses.\n\nThe concept has a boundary that is often ignored. It applies where value is common to all bidders. Where bidders genuinely value the object differently — a house near one buyer's workplace, a patent complementary to one firm's existing portfolio — a high bid may reflect a high private value rather than an error, and the curse does not follow.",
+      "prompt": "The passage indicates that the winner's curse arises because",
       "options": [
-        "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. Sales staff performed better when the music was upbeat",
-        "D. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies",
-        "E. A controlled experiment with randomly assigned music found the same 20% difference"
+        "A. bidders are typically inexperienced in valuing complex assets",
+        "B. auctions attract bidders who are willing to take excessive risks",
+        "C. sellers withhold information about the asset's true value",
+        "D. the bidder with the highest estimate wins, and the highest estimate is likely to be too high",
+        "E. the number of bidders in most auctions is too small"
       ],
-      "correctAnswer": "E",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
+      "correctAnswer": "D",
+      "explanation": "The passage calls it a statistical property of the auction: the winner is by construction the highest estimator, and the highest of a set of error-prone estimates tends to exceed the truth. A and C attribute it to bidder character, which the passage explicitly denies.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-003-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
-      "question": "Which of the following most weakens the editorial's conclusion?",
+      "passageTitle": "The Winner's Curse",
+      "passageText": "When several bidders compete for something of uncertain but common value — an oil tract, a broadcasting licence, a company — the winner is by construction the bidder whose estimate of that value was highest. If estimates are distributed around the true value with error, the highest estimate is likely to be an overestimate, and the prize therefore tends to go to the bidder who was most mistaken. This is the winner's curse, and it is a statistical property of the auction rather than a failure of intelligence.\n\nThe remedy is counter-intuitive: a rational bidder should shade a bid downward not because the asset is worth less than estimated, but because winning is itself informative. Winning means that every other bidder valued the asset lower, and a bid should be constructed to remain sensible conditional on that news.\n\nEvidence that experienced bidders learn this is mixed. In petroleum lease auctions, returns on tracts sold in the early period of competitive bidding were poor in ways consistent with the curse, and bidding behaviour subsequently became more conservative. In corporate acquisitions the pattern has proved more durable, and the reason may be structural: managers who bid are spending shareholders' money, are rewarded for growth in the size of the firm, and rarely bid often enough to learn from their own losses.\n\nThe concept has a boundary that is often ignored. It applies where value is common to all bidders. Where bidders genuinely value the object differently — a house near one buyer's workplace, a patent complementary to one firm's existing portfolio — a high bid may reflect a high private value rather than an error, and the curse does not follow.",
+      "prompt": "According to the passage, why should a rational bidder shade a bid downward?",
       "options": [
-        "A. Crime rates are influenced by many factors beyond unemployment",
-        "B. Employment programmes have reduced crime in some pilot cities",
-        "C. The editorial does not define 'crime' precisely",
-        "D. Reducing unemployment is expensive and politically difficult",
-        "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
+        "A. Because winning is itself information: it means every other bidder valued the asset lower",
+        "B. Because assets sold at auction are usually overvalued by sellers",
+        "C. Because bidding costs are recovered only from successful bids",
+        "D. Because competitors are likely to retaliate in future auctions",
+        "E. Because the asset's value will fall after the sale"
       ],
       "correctAnswer": "A",
-      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
+      "explanation": "The bid must remain sensible conditional on the news that winning conveys. The other choices supply reasons the passage does not give.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-003-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
-      "question": "The president's argument is flawed because it:",
+      "passageTitle": "The Winner's Curse",
+      "passageText": "When several bidders compete for something of uncertain but common value — an oil tract, a broadcasting licence, a company — the winner is by construction the bidder whose estimate of that value was highest. If estimates are distributed around the true value with error, the highest estimate is likely to be an overestimate, and the prize therefore tends to go to the bidder who was most mistaken. This is the winner's curse, and it is a statistical property of the auction rather than a failure of intelligence.\n\nThe remedy is counter-intuitive: a rational bidder should shade a bid downward not because the asset is worth less than estimated, but because winning is itself informative. Winning means that every other bidder valued the asset lower, and a bid should be constructed to remain sensible conditional on that news.\n\nEvidence that experienced bidders learn this is mixed. In petroleum lease auctions, returns on tracts sold in the early period of competitive bidding were poor in ways consistent with the curse, and bidding behaviour subsequently became more conservative. In corporate acquisitions the pattern has proved more durable, and the reason may be structural: managers who bid are spending shareholders' money, are rewarded for growth in the size of the firm, and rarely bid often enough to learn from their own losses.\n\nThe concept has a boundary that is often ignored. It applies where value is common to all bidders. Where bidders genuinely value the object differently — a house near one buyer's workplace, a patent complementary to one firm's existing portfolio — a high bid may reflect a high private value rather than an error, and the curse does not follow.",
+      "prompt": "The passage suggests that the persistence of the curse in corporate acquisitions may be explained by",
       "options": [
-        "A. Ignores that SAT preparation courses can inflate scores",
-        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
-        "C. Does not consider the diversity implications of the policy",
-        "D. Fails to define 'academic performance' precisely",
-        "E. Both A and B"
+        "A. the greater complexity of valuing a company than an oil tract",
+        "B. the absence of competitive bidding in most acquisitions",
+        "C. regulatory restrictions on the information available to bidders",
+        "D. the tendency of acquired firms to underperform for unrelated reasons",
+        "E. features of managers' incentives and their infrequent participation in such auctions"
       ],
-      "correctAnswer": "B",
-      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
+      "correctAnswer": "E",
+      "explanation": "The passage names three structural features: spending shareholders' money, reward for growth in firm size, and too few bids to learn from losses.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-003-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
-      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "passageTitle": "Fungal Networks and the Limits of a Metaphor",
+      "passageText": "Most land plants form partnerships with fungi at their roots, exchanging sugars for water and mineral nutrients. Since the 1990s a further claim has circulated widely: that these fungi link neighbouring trees into networks through which resources and even warning signals pass, forming what popular accounts call a forest-wide web.\n\nThe underlying observations are real. Isotopically labelled carbon applied to one tree has been detected in a neighbour, and fungal strands have been shown to connect the roots of different individuals. The disputed step is interpretive. Detection of transferred carbon does not establish that the quantity is ecologically meaningful, that it travelled through the fungal link rather than through soil after leaf fall or root exudation, or that it moved in a direction that benefits the receiving tree rather than the fungus.\n\nRecent reviews have been pointed. Several found that widely repeated claims — that mature trees preferentially feed their own seedlings, that networks distribute resources to the needy — trace back to a small number of studies whose findings were weaker or more qualified than the citing literature suggests. The fungus, moreover, is not a neutral pipe. It is an organism under selection, and a link between two trees is at least as plausibly a route by which a fungus manages its own supply as a channel of arboreal generosity.\n\nThe dispute is instructive about how a metaphor can outrun its evidence. Nothing here shows the networks are unimportant; what is contested is a specific set of functional claims that entered public understanding as settled before they were established.",
+      "prompt": "The primary purpose of the passage is to",
       "options": [
-        "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
-        "C. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "D. Historical market data is unreliable because markets change structurally over time",
-        "E. Companies with consistent earnings growth tend to have stable stock prices"
+        "A. establish that fungal networks play no significant role in forests",
+        "B. describe the mechanism by which fungi exchange nutrients with roots",
+        "C. distinguish the observations that are secure from the functional claims that are disputed",
+        "D. criticise the researchers who first labelled carbon in forest trees",
+        "E. argue that popular science writing should be more technical"
       ],
-      "correctAnswer": "B",
-      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "The passage grants the observations, isolates the interpretive step, and closes by saying what is contested is a specific set of functional claims. A overstates: the passage explicitly says nothing shows the networks are unimportant.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-003-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
-      "question": "Which of the following, if true, most seriously weakens the conclusion?",
+      "passageTitle": "Fungal Networks and the Limits of a Metaphor",
+      "passageText": "Most land plants form partnerships with fungi at their roots, exchanging sugars for water and mineral nutrients. Since the 1990s a further claim has circulated widely: that these fungi link neighbouring trees into networks through which resources and even warning signals pass, forming what popular accounts call a forest-wide web.\n\nThe underlying observations are real. Isotopically labelled carbon applied to one tree has been detected in a neighbour, and fungal strands have been shown to connect the roots of different individuals. The disputed step is interpretive. Detection of transferred carbon does not establish that the quantity is ecologically meaningful, that it travelled through the fungal link rather than through soil after leaf fall or root exudation, or that it moved in a direction that benefits the receiving tree rather than the fungus.\n\nRecent reviews have been pointed. Several found that widely repeated claims — that mature trees preferentially feed their own seedlings, that networks distribute resources to the needy — trace back to a small number of studies whose findings were weaker or more qualified than the citing literature suggests. The fungus, moreover, is not a neutral pipe. It is an organism under selection, and a link between two trees is at least as plausibly a route by which a fungus manages its own supply as a channel of arboreal generosity.\n\nThe dispute is instructive about how a metaphor can outrun its evidence. Nothing here shows the networks are unimportant; what is contested is a specific set of functional claims that entered public understanding as settled before they were established.",
+      "prompt": "The author mentions that the fungus is 'an organism under selection' primarily in order to",
       "options": [
-        "A. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "B. Customers report feeling more valued when using a loyalty programme",
-        "C. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "D. Competitors without loyalty programmes have seen declining sales",
-        "E. The loyalty programme was introduced simultaneously with a store renovation"
+        "A. explain why fungi form partnerships with roots at all",
+        "B. suggest that a link between trees may serve the fungus rather than the trees",
+        "C. argue that fungi evolve faster than the trees they connect",
+        "D. question whether the fungal strands are correctly identified",
+        "E. propose a new experimental method"
       ],
-      "correctAnswer": "C",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "The point is directed at the assumption that the fungus is a neutral pipe carrying arboreal generosity.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-003-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
-      "question": "Which of the following would most strengthen the CFO's conclusion?",
+      "passageTitle": "Fungal Networks and the Limits of a Metaphor",
+      "passageText": "Most land plants form partnerships with fungi at their roots, exchanging sugars for water and mineral nutrients. Since the 1990s a further claim has circulated widely: that these fungi link neighbouring trees into networks through which resources and even warning signals pass, forming what popular accounts call a forest-wide web.\n\nThe underlying observations are real. Isotopically labelled carbon applied to one tree has been detected in a neighbour, and fungal strands have been shown to connect the roots of different individuals. The disputed step is interpretive. Detection of transferred carbon does not establish that the quantity is ecologically meaningful, that it travelled through the fungal link rather than through soil after leaf fall or root exudation, or that it moved in a direction that benefits the receiving tree rather than the fungus.\n\nRecent reviews have been pointed. Several found that widely repeated claims — that mature trees preferentially feed their own seedlings, that networks distribute resources to the needy — trace back to a small number of studies whose findings were weaker or more qualified than the citing literature suggests. The fungus, moreover, is not a neutral pipe. It is an organism under selection, and a link between two trees is at least as plausibly a route by which a fungus manages its own supply as a channel of arboreal generosity.\n\nThe dispute is instructive about how a metaphor can outrun its evidence. Nothing here shows the networks are unimportant; what is contested is a specific set of functional claims that entered public understanding as settled before they were established.",
+      "prompt": "Which of the following, if true, would most strengthen the sceptical position described in the passage?",
       "options": [
-        "A. Other advertising channels were suspended during the same three months",
-        "B. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "C. Social media platforms reported the campaign reached 5 million unique users",
-        "D. The lifetime value of a new user averages $50",
-        "E. Competitors saw no change in sign-ups over the same period"
+        "A. Labelled carbon has been detected in neighbouring trees at several sites.",
+        "B. Fungal strands connecting different individuals have been photographed.",
+        "C. Mature trees in some forests grow faster than nearby seedlings.",
+        "D. In experiments where fungal links were severed but soil contact retained, transfer between trees continued at similar levels.",
+        "E. Some fungal species associate with only one tree species."
       ],
       "correctAnswer": "D",
-      "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "It attacks the specific inference the sceptics target — that the transfer travels through the fungal link — by showing transfer persists without it. A and B support the observations both sides accept.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-003-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
-      "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
+      "passageTitle": "Measuring the Cost of Living",
+      "passageText": "A price index is meant to answer a simple question: how much more does it cost to be as well off this year as last? The difficulty is that the goods do not stay still.\n\nConsider a laptop that costs the same as last year's model but is substantially faster. A naive index records no change; a hedonic adjustment attributes part of the price to the improved characteristics and records a fall in quality-adjusted price. Statistical agencies use such adjustments extensively, and they matter: because many government payments and contracts are indexed, a persistent bias of even a fraction of a percentage point compounds into large sums.\n\nCritics of the adjustments make two distinct objections that are frequently conflated. The first is technical — that the regressions attributing value to characteristics are sensitive to specification. The second is conceptual and more interesting: a faster processor is a benefit only insofar as it serves purposes people have, and if software expands to consume the additional speed, the user may be no better off while the index records improvement.\n\nThere is a symmetrical problem the critics rarely mention. Indices are also slow to capture genuinely new goods, which typically enter after their prices have fallen steeply, so the largest gains occur before the item is measured at all. This bias runs opposite to the one alleged. The honest summary is that the direction of the net error is contested, and that a measurement built on a question about welfare cannot be settled by arithmetic alone.",
+      "prompt": "The passage suggests that hedonic adjustments matter in practice mainly because",
       "options": [
-        "A. It assumes that lower temperatures are always desirable",
-        "B. It ignores that tree planting is expensive",
-        "C. It fails to consider that trees require water",
-        "D. It overlooks that some neighbourhoods may not have space for trees",
-        "E. It treats a correlation as evidence of a causal relationship"
+        "A. consumers are unaware of quality improvements in the goods they buy",
+        "B. statistical agencies disagree about how to define a laptop",
+        "C. many payments and contracts are indexed, so small persistent biases compound",
+        "D. new goods are introduced more rapidly than in the past",
+        "E. manufacturers change model numbers frequently"
       ],
-      "correctAnswer": "E",
-      "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Stated directly: indexation means a fraction of a percentage point compounds into large sums.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-003-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
-      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "passageTitle": "Measuring the Cost of Living",
+      "passageText": "A price index is meant to answer a simple question: how much more does it cost to be as well off this year as last? The difficulty is that the goods do not stay still.\n\nConsider a laptop that costs the same as last year's model but is substantially faster. A naive index records no change; a hedonic adjustment attributes part of the price to the improved characteristics and records a fall in quality-adjusted price. Statistical agencies use such adjustments extensively, and they matter: because many government payments and contracts are indexed, a persistent bias of even a fraction of a percentage point compounds into large sums.\n\nCritics of the adjustments make two distinct objections that are frequently conflated. The first is technical — that the regressions attributing value to characteristics are sensitive to specification. The second is conceptual and more interesting: a faster processor is a benefit only insofar as it serves purposes people have, and if software expands to consume the additional speed, the user may be no better off while the index records improvement.\n\nThere is a symmetrical problem the critics rarely mention. Indices are also slow to capture genuinely new goods, which typically enter after their prices have fallen steeply, so the largest gains occur before the item is measured at all. This bias runs opposite to the one alleged. The honest summary is that the direction of the net error is contested, and that a measurement built on a question about welfare cannot be settled by arithmetic alone.",
+      "prompt": "The 'more interesting' objection referred to in the passage holds that",
       "options": [
-        "A. The airline also reduced the number of carry-on bags allowed during the same period",
-        "B. Passengers reported higher satisfaction with the new policy",
-        "C. Competing airlines have not adopted similar policies",
-        "D. Boarding time varies naturally between 15 and 35 minutes",
-        "E. The new policy was introduced on routes with larger aircraft"
+        "A. an improvement counts as a benefit only if it serves purposes people actually have",
+        "B. the regressions used are sensitive to specification",
+        "C. quality improvements are impossible to quantify",
+        "D. agencies adjust prices downward more readily than upward",
+        "E. index numbers should be published less frequently"
       ],
       "correctAnswer": "A",
-      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "The conceptual objection: if software absorbs the extra speed, the user may be no better off while the index records improvement. A is the technical objection the passage distinguishes from it.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-003-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "passageTitle": "Measuring the Cost of Living",
+      "passageText": "A price index is meant to answer a simple question: how much more does it cost to be as well off this year as last? The difficulty is that the goods do not stay still.\n\nConsider a laptop that costs the same as last year's model but is substantially faster. A naive index records no change; a hedonic adjustment attributes part of the price to the improved characteristics and records a fall in quality-adjusted price. Statistical agencies use such adjustments extensively, and they matter: because many government payments and contracts are indexed, a persistent bias of even a fraction of a percentage point compounds into large sums.\n\nCritics of the adjustments make two distinct objections that are frequently conflated. The first is technical — that the regressions attributing value to characteristics are sensitive to specification. The second is conceptual and more interesting: a faster processor is a benefit only insofar as it serves purposes people have, and if software expands to consume the additional speed, the user may be no better off while the index records improvement.\n\nThere is a symmetrical problem the critics rarely mention. Indices are also slow to capture genuinely new goods, which typically enter after their prices have fallen steeply, so the largest gains occur before the item is measured at all. This bias runs opposite to the one alleged. The honest summary is that the direction of the net error is contested, and that a measurement built on a question about welfare cannot be settled by arithmetic alone.",
+      "prompt": "The author's discussion of new goods serves primarily to",
       "options": [
-        "A. Does not define what type of consulting services were provided",
-        "B. Fails to compare the companies' growth with industry-wide growth trends",
-        "C. Ignores that some companies declined in revenue after hiring the firm",
-        "D. Does not specify what time period is covered by the data",
-        "E. Compares incomparable companies across different industries"
+        "A. show that the critics' concerns apply to a wider class of products",
+        "B. demonstrate that price indices are usually accurate",
+        "C. explain why statistical agencies revise their methods",
+        "D. argue that new goods should be excluded from indices",
+        "E. identify a bias running opposite to the one the critics allege"
       ],
-      "correctAnswer": "B",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "Because new goods enter after steep price falls, the largest gains go unmeasured — a bias in the opposite direction, which is why the author calls the net error contested.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-003-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "According to the passage, which of the following contributes to the urban heat island effect?",
+      "passageTitle": "Double-Entry Bookkeeping",
+      "passageText": "The technique of recording each transaction twice, as a debit in one account and a credit in another, was described in print by Luca Pacioli in 1494, though merchants in northern Italy had used it for two centuries before. Its historical significance has been both overstated and underappreciated, in different respects.\n\nThe overstatement is causal. Some accounts present double entry as a precondition of capitalism, on the argument that rational calculation of profit made systematic investment possible. The chronology is unhelpful to this claim: the method spread slowly, many large and successful enterprises kept single-entry records well into the nineteenth century, and its adoption often followed rather than preceded commercial expansion.\n\nThe underappreciated contribution is narrower and more durable. Double entry makes a firm's accounts internally checkable. Because every entry appears twice with opposite signs, the books can be tested for consistency without reference to anything outside them, which permits errors to be located and makes certain frauds harder to conceal. It also separates the firm's affairs from those of its owner — an abstraction that had to be invented, and without which the idea of a company as an entity that can own, owe and be audited is difficult to formulate.\n\nThat is the more defensible claim. Double entry was not the engine of commercial growth; it was an instrument for making an enterprise legible to people who did not run it, and that capacity became indispensable exactly when firms grew too large for their owners to observe directly.",
+      "prompt": "The passage argues that the claim that double-entry bookkeeping was a precondition of capitalism is weakened primarily by",
       "options": [
-        "A. High buildings that block wind flow",
-        "B. Vehicles, air conditioning, and industry releasing waste heat",
-        "C. Reflective roofs in city centres",
-        "D. Increased cloud cover over urban areas"
+        "A. evidence that Pacioli did not invent the method",
+        "B. the chronology of the method's adoption",
+        "C. the existence of alternative accounting techniques in Asia",
+        "D. the difficulty of defining capitalism precisely",
+        "E. the fact that most merchants were illiterate"
       ],
       "correctAnswer": "B",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "explanation": "The passage says the method spread slowly, large firms used single entry into the nineteenth century, and adoption often followed commercial expansion.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-003-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "The passage states that the greatest temperature difference between cities and rural areas occurs:",
+      "passageTitle": "Double-Entry Bookkeeping",
+      "passageText": "The technique of recording each transaction twice, as a debit in one account and a credit in another, was described in print by Luca Pacioli in 1494, though merchants in northern Italy had used it for two centuries before. Its historical significance has been both overstated and underappreciated, in different respects.\n\nThe overstatement is causal. Some accounts present double entry as a precondition of capitalism, on the argument that rational calculation of profit made systematic investment possible. The chronology is unhelpful to this claim: the method spread slowly, many large and successful enterprises kept single-entry records well into the nineteenth century, and its adoption often followed rather than preceded commercial expansion.\n\nThe underappreciated contribution is narrower and more durable. Double entry makes a firm's accounts internally checkable. Because every entry appears twice with opposite signs, the books can be tested for consistency without reference to anything outside them, which permits errors to be located and makes certain frauds harder to conceal. It also separates the firm's affairs from those of its owner — an abstraction that had to be invented, and without which the idea of a company as an entity that can own, owe and be audited is difficult to formulate.\n\nThat is the more defensible claim. Double entry was not the engine of commercial growth; it was an instrument for making an enterprise legible to people who did not run it, and that capacity became indispensable exactly when firms grew too large for their owners to observe directly.",
+      "prompt": "According to the passage, one durable contribution of double entry is that it",
       "options": [
-        "A. During the hottest summer afternoons",
-        "B. During periods of high wind",
-        "C. On calm, clear nights",
-        "D. When humidity is at its highest"
+        "A. increased the speed at which transactions could be recorded",
+        "B. reduced the taxes owed by merchant houses",
+        "C. allowed a firm's accounts to be tested for consistency without outside reference",
+        "D. eliminated the need for external auditors",
+        "E. standardised currency across trading cities"
       ],
       "correctAnswer": "C",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "explanation": "Every entry appears twice with opposite signs, which permits internal checking and makes certain frauds harder to conceal. D overstates — the passage makes audit possible, not unnecessary.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-003-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "Which of the following, if true, would most strengthen the case for urban greening as an adaptation strategy?",
+      "passageTitle": "Double-Entry Bookkeeping",
+      "passageText": "The technique of recording each transaction twice, as a debit in one account and a credit in another, was described in print by Luca Pacioli in 1494, though merchants in northern Italy had used it for two centuries before. Its historical significance has been both overstated and underappreciated, in different respects.\n\nThe overstatement is causal. Some accounts present double entry as a precondition of capitalism, on the argument that rational calculation of profit made systematic investment possible. The chronology is unhelpful to this claim: the method spread slowly, many large and successful enterprises kept single-entry records well into the nineteenth century, and its adoption often followed rather than preceded commercial expansion.\n\nThe underappreciated contribution is narrower and more durable. Double entry makes a firm's accounts internally checkable. Because every entry appears twice with opposite signs, the books can be tested for consistency without reference to anything outside them, which permits errors to be located and makes certain frauds harder to conceal. It also separates the firm's affairs from those of its owner — an abstraction that had to be invented, and without which the idea of a company as an entity that can own, owe and be audited is difficult to formulate.\n\nThat is the more defensible claim. Double entry was not the engine of commercial growth; it was an instrument for making an enterprise legible to people who did not run it, and that capacity became indispensable exactly when firms grew too large for their owners to observe directly.",
+      "prompt": "The author's overall assessment of double entry is that it was",
       "options": [
-        "A. Trees in urban areas require significant maintenance costs",
-        "B. Cool roofs are less expensive to install than planting trees",
-        "C. Urban greening has been adopted by fewer than 20% of major cities worldwide",
-        "D. Studies show trees can reduce local temperatures by up to 8°C through evapotranspiration"
+        "A. a decisive cause of commercial expansion",
+        "B. a minor technical refinement of little consequence",
+        "C. an idea whose importance lay chiefly in its mathematical elegance",
+        "D. an instrument that made enterprises legible to those who did not run them",
+        "E. a practice adopted mainly for reasons of prestige"
       ],
       "correctAnswer": "D",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "explanation": "The closing sentence: not the engine of growth, but the means of making a firm legible once it outgrew its owner's direct observation.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-003-q01": "A",
-    "gmat-verbal-003-q02": "B",
-    "gmat-verbal-003-q03": "C",
-    "gmat-verbal-003-q04": "E",
+    "gmat-verbal-003-q01": "B",
+    "gmat-verbal-003-q02": "E",
+    "gmat-verbal-003-q03": "A",
+    "gmat-verbal-003-q04": "C",
     "gmat-verbal-003-q05": "D",
-    "gmat-verbal-003-q06": "E",
-    "gmat-verbal-003-q07": "A",
-    "gmat-verbal-003-q08": "B",
-    "gmat-verbal-003-q09": "C",
-    "gmat-verbal-003-q10": "E",
-    "gmat-verbal-003-q11": "D",
-    "gmat-verbal-003-q12": "E",
+    "gmat-verbal-003-q06": "B",
+    "gmat-verbal-003-q07": "C",
+    "gmat-verbal-003-q08": "E",
+    "gmat-verbal-003-q09": "D",
+    "gmat-verbal-003-q10": "A",
+    "gmat-verbal-003-q11": "B",
+    "gmat-verbal-003-q12": "D",
     "gmat-verbal-003-q13": "A",
-    "gmat-verbal-003-q14": "B",
-    "gmat-verbal-003-q15": "B",
-    "gmat-verbal-003-q16": "C",
+    "gmat-verbal-003-q14": "E",
+    "gmat-verbal-003-q15": "C",
+    "gmat-verbal-003-q16": "B",
     "gmat-verbal-003-q17": "D",
-    "gmat-verbal-003-q18": "E",
+    "gmat-verbal-003-q18": "C",
     "gmat-verbal-003-q19": "A",
-    "gmat-verbal-003-q20": "B",
+    "gmat-verbal-003-q20": "E",
     "gmat-verbal-003-q21": "B",
     "gmat-verbal-003-q22": "C",
     "gmat-verbal-003-q23": "D"
   },
-  "fingerprints": [
-    "5a7a4f26735667f3ed",
-    "4ad7c0d98a25d9c811",
-    "38d6f044cb915772c1",
-    "b5787b2f1a6108bbdd",
-    "3af5e3e5060fbd579b",
-    "f45fd81d4c22676194",
-    "497bf50a7238d31b60",
-    "f14f6784f79937d2ad",
-    "b1f02d7529c88f9f99",
-    "94f4bcfae289dfc07d",
-    "cfdd6474b3957dab18",
-    "b84ba5165513a96f4a",
-    "e73464b2f1d1270f81",
-    "389a7faf28e1fde2e1",
-    "2e248fce4d19142077",
-    "d7607d61dab7820a71",
-    "dfc770927c0d5db56a",
-    "2f236b605d2ad408ac",
-    "b4bebb8236ce9f1ada",
-    "988d3ac99f7740028d"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-003-rp1",
-      "title": "Business and Society",
-      "text": "Coral reef ecosystems face dual threats from ocean warming and acidification. Thermal bleaching events, in which elevated temperatures cause corals to expel their symbiotic algae, have become more frequent since the 1980s. Simultaneously, as ocean pH decreases due to absorbed carbon dioxide, the ability of corals to build calcium carbonate skeletons is compromised. These stressors interact in ways that researchers are still working to quantify."
+      "title": "The Winner's Curse",
+      "text": "When several bidders compete for something of uncertain but common value — an oil tract, a broadcasting licence, a company — the winner is by construction the bidder whose estimate of that value was highest. If estimates are distributed around the true value with error, the highest estimate is likely to be an overestimate, and the prize therefore tends to go to the bidder who was most mistaken. This is the winner's curse, and it is a statistical property of the auction rather than a failure of intelligence.\n\nThe remedy is counter-intuitive: a rational bidder should shade a bid downward not because the asset is worth less than estimated, but because winning is itself informative. Winning means that every other bidder valued the asset lower, and a bid should be constructed to remain sensible conditional on that news.\n\nEvidence that experienced bidders learn this is mixed. In petroleum lease auctions, returns on tracts sold in the early period of competitive bidding were poor in ways consistent with the curse, and bidding behaviour subsequently became more conservative. In corporate acquisitions the pattern has proved more durable, and the reason may be structural: managers who bid are spending shareholders' money, are rewarded for growth in the size of the firm, and rarely bid often enough to learn from their own losses.\n\nThe concept has a boundary that is often ignored. It applies where value is common to all bidders. Where bidders genuinely value the object differently — a house near one buyer's workplace, a patent complementary to one firm's existing portfolio — a high bid may reflect a high private value rather than an error, and the curse does not follow."
+    },
+    {
+      "id": "gmat-verbal-003-rp2",
+      "title": "Fungal Networks and the Limits of a Metaphor",
+      "text": "Most land plants form partnerships with fungi at their roots, exchanging sugars for water and mineral nutrients. Since the 1990s a further claim has circulated widely: that these fungi link neighbouring trees into networks through which resources and even warning signals pass, forming what popular accounts call a forest-wide web.\n\nThe underlying observations are real. Isotopically labelled carbon applied to one tree has been detected in a neighbour, and fungal strands have been shown to connect the roots of different individuals. The disputed step is interpretive. Detection of transferred carbon does not establish that the quantity is ecologically meaningful, that it travelled through the fungal link rather than through soil after leaf fall or root exudation, or that it moved in a direction that benefits the receiving tree rather than the fungus.\n\nRecent reviews have been pointed. Several found that widely repeated claims — that mature trees preferentially feed their own seedlings, that networks distribute resources to the needy — trace back to a small number of studies whose findings were weaker or more qualified than the citing literature suggests. The fungus, moreover, is not a neutral pipe. It is an organism under selection, and a link between two trees is at least as plausibly a route by which a fungus manages its own supply as a channel of arboreal generosity.\n\nThe dispute is instructive about how a metaphor can outrun its evidence. Nothing here shows the networks are unimportant; what is contested is a specific set of functional claims that entered public understanding as settled before they were established."
+    },
+    {
+      "id": "gmat-verbal-003-rp3",
+      "title": "Measuring the Cost of Living",
+      "text": "A price index is meant to answer a simple question: how much more does it cost to be as well off this year as last? The difficulty is that the goods do not stay still.\n\nConsider a laptop that costs the same as last year's model but is substantially faster. A naive index records no change; a hedonic adjustment attributes part of the price to the improved characteristics and records a fall in quality-adjusted price. Statistical agencies use such adjustments extensively, and they matter: because many government payments and contracts are indexed, a persistent bias of even a fraction of a percentage point compounds into large sums.\n\nCritics of the adjustments make two distinct objections that are frequently conflated. The first is technical — that the regressions attributing value to characteristics are sensitive to specification. The second is conceptual and more interesting: a faster processor is a benefit only insofar as it serves purposes people have, and if software expands to consume the additional speed, the user may be no better off while the index records improvement.\n\nThere is a symmetrical problem the critics rarely mention. Indices are also slow to capture genuinely new goods, which typically enter after their prices have fallen steeply, so the largest gains occur before the item is measured at all. This bias runs opposite to the one alleged. The honest summary is that the direction of the net error is contested, and that a measurement built on a question about welfare cannot be settled by arithmetic alone."
+    },
+    {
+      "id": "gmat-verbal-003-rp4",
+      "title": "Double-Entry Bookkeeping",
+      "text": "The technique of recording each transaction twice, as a debit in one account and a credit in another, was described in print by Luca Pacioli in 1494, though merchants in northern Italy had used it for two centuries before. Its historical significance has been both overstated and underappreciated, in different respects.\n\nThe overstatement is causal. Some accounts present double entry as a precondition of capitalism, on the argument that rational calculation of profit made systematic investment possible. The chronology is unhelpful to this claim: the method spread slowly, many large and successful enterprises kept single-entry records well into the nineteenth century, and its adoption often followed rather than preceded commercial expansion.\n\nThe underappreciated contribution is narrower and more durable. Double entry makes a firm's accounts internally checkable. Because every entry appears twice with opposite signs, the books can be tested for consistency without reference to anything outside them, which permits errors to be located and makes certain frauds harder to conceal. It also separates the firm's affairs from those of its owner — an abstraction that had to be invented, and without which the idea of a company as an entity that can own, owe and be audited is difficult to formulate.\n\nThat is the more defensible claim. Double entry was not the engine of commercial growth; it was an instrument for making an enterprise legible to people who did not run it, and that capacity became indispensable exactly when firms grew too large for their owners to observe directly."
     }
   ]
 }
