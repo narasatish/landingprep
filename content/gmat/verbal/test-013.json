@@ -12,469 +12,474 @@
       "id": "gmat-verbal-013-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
-      "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
+      "prompt": "A transport authority installed shelters at bus stops and reports that passenger numbers on the affected routes rose. It concludes that shelters attract passengers.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. It treats a correlation as evidence of a causal relationship",
-        "B. It assumes that lower temperatures are always desirable",
-        "C. It ignores that tree planting is expensive",
-        "D. It fails to consider that trees require water",
-        "E. It overlooks that some neighbourhoods may not have space for trees"
+        "A. Shelters were installed during the summer.",
+        "B. Some shelters were vandalised.",
+        "C. Passengers report that the shelters are comfortable.",
+        "D. The authority installed shelters at the stops where passenger numbers had been growing fastest, in order to serve the most people.",
+        "E. The routes affected serve the city centre."
       ],
-      "correctAnswer": "A",
-      "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The selection rule means growth preceded the shelters, so the rise cannot be attributed to them. A offers a rival cause but a weaker one, since it would affect all routes.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-013-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
-      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "prompt": "A bottled water company argues that its product is more environmentally responsible than a competitor's because its bottles contain 30 per cent less plastic.",
+      "question": "Which of the following would be most useful to determine in evaluating the argument?",
       "options": [
-        "A. Passengers reported higher satisfaction with the new policy",
-        "B. The airline also reduced the number of carry-on bags allowed during the same period",
-        "C. Competing airlines have not adopted similar policies",
-        "D. Boarding time varies naturally between 15 and 35 minutes",
-        "E. The new policy was introduced on routes with larger aircraft"
+        "A. How much the two products cost",
+        "B. Whether the lighter bottles are transported and disposed of in ways that make their total impact lower",
+        "C. Whether consumers can taste a difference",
+        "D. How long the company has been in business",
+        "E. Whether the competitor advertises nationally"
       ],
       "correctAnswer": "B",
-      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "A comparison on one input does not establish a comparison overall; transport, recycling rates and end-of-life handling can reverse it.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-013-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "prompt": "A cinema chain lowered ticket prices on Tuesdays and reports that Tuesday attendance has doubled. It concludes that lower prices increase cinema attendance.",
+      "question": "Which of the following, if true, most seriously undermines the conclusion?",
       "options": [
-        "A. Does not define what type of consulting services were provided",
-        "B. Ignores that some companies declined in revenue after hiring the firm",
-        "C. Fails to compare the companies' growth with industry-wide growth trends",
-        "D. Does not specify what time period is covered by the data",
-        "E. Compares incomparable companies across different industries"
+        "A. Tuesday was previously the quietest day of the week.",
+        "B. The chain also refurbished several screens.",
+        "C. Some customers buy tickets online.",
+        "D. Concession sales rose on Tuesdays.",
+        "E. Attendance on other days fell by an amount close to the Tuesday increase."
       ],
-      "correctAnswer": "C",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "Shifting the same audience between days is not an increase in attendance; the total is unchanged. C is a rival cause but does not address the displacement.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-013-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "prompt": "A supermarket introduced labels indicating higher welfare standards for chicken and reports that sales of labelled chicken rose sharply. It concludes that customers are willing to pay more for higher welfare.",
+      "question": "The conclusion depends on which of the following assumptions?",
       "options": [
-        "A. Olive oil contains monounsaturated fats linked to heart health",
-        "B. Heart disease rates have been declining globally regardless of fat consumption",
-        "C. The study followed individuals for 10 years",
-        "D. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
-        "E. Olive oil is more expensive than butter in most markets"
+        "A. The labelled chicken was priced higher than the unlabelled chicken it replaced.",
+        "B. Welfare standards are independently verified.",
+        "C. Customers read the labels carefully.",
+        "D. The supermarket advertised the change.",
+        "E. Unlabelled chicken remained available."
       ],
-      "correctAnswer": "D",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "If the labelled product was not dearer, rising sales show a preference but say nothing about willingness to pay more. B and C bear on whether the label is meaningful rather than on the price inference.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-013-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "prompt": "Every research grant awarded by the Halvorsen Trust last year went to a project with a named industrial partner. No project with an industrial partner published its results without a delay for commercial review. Some projects funded by the Trust published without delay.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Some patients do not have phones",
-        "C. Patients prefer in-person follow-up visits to phone calls",
-        "D. Phone calls are less effective than written instructions",
-        "E. Doctors who proactively call patients may also be more thorough in their overall care"
+        "A. Industrial partners cause publication delays.",
+        "B. Most Trust projects have industrial partners.",
+        "C. Some projects that published without delay were not funded last year.",
+        "D. No Trust project publishes promptly.",
+        "E. Projects without partners receive less money."
       ],
-      "correctAnswer": "E",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Publishing without delay implies no industrial partner, and every grant awarded last year had one, so those projects were funded in some other year. B asserts causation the statements do not establish.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-013-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "prompt": "A city introduced a toll on its river bridge and reports that traffic across the bridge has fallen by a quarter, presenting this as a reduction in congestion.",
+      "question": "Which of the following, if true, most seriously weakens the city's presentation?",
       "options": [
-        "A. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "B. Drug X has minor side effects including nausea",
-        "C. The study included only 50 participants",
-        "D. Chronic pain affects millions of people worldwide",
-        "E. Drug X is expensive compared to existing treatments"
+        "A. The toll is collected electronically.",
+        "B. Some drivers now travel at different times of day.",
+        "C. The toll raised more revenue than forecast.",
+        "D. Traffic on the untolled bridge two miles upstream has risen by nearly the same volume, and journey times there have worsened.",
+        "E. Cyclists are exempt from the toll."
       ],
-      "correctAnswer": "A",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "Diverted traffic relocates congestion rather than reducing it, so the city's measure captures only one side of the effect. C is a genuine response but consistent with an overall improvement.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-013-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "prompt": "A school banned mobile telephones and reports that examination results improved the following year. The head teacher attributes the improvement to the ban.",
+      "question": "Which of the following, if true, most strengthens the attribution?",
       "options": [
-        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "B. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "C. The university's highest-achieving students attend the fitness centre most frequently",
-        "D. Exercise programmes are popular at peer universities",
-        "E. Students who exercise report feeling less stressed"
+        "A. Pupils say they concentrate better without their telephones.",
+        "B. The school also appointed a new head of mathematics.",
+        "C. In a group of comparable schools that adopted the ban in staggered years, results improved in each school in the year the ban took effect and not before.",
+        "D. Results improved nationally that year.",
+        "E. Parents supported the ban."
       ],
-      "correctAnswer": "B",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Staggered adoption is the strongest observational design available here: the effect follows the treatment in time across several schools. C and D supply rival explanations.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-013-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "prompt": "A warehouse requires all forklift operators to complete a training course. It reports that operators who scored highest on the course assessment have the fewest accidents, and proposes to promote high scorers to supervisory roles.",
+      "question": "The proposal is most vulnerable to the criticism that it",
       "options": [
-        "A. Cameras might violate driver privacy",
-        "B. The cost of cameras is high",
-        "C. Intersections chosen for cameras may have already been due for safety upgrades",
-        "D. Some drivers find cameras distracting",
-        "E. Cameras only capture rear-end collisions"
+        "A. assumes that assessment scores measure the qualities a supervisor needs, rather than only those a safe operator needs",
+        "B. ignores the cost of running the course",
+        "C. does not consider operators' length of service",
+        "D. relies on accident records compiled internally",
+        "E. overlooks the possibility that some accidents go unreported"
       ],
-      "correctAnswer": "C",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
+      "correctAnswer": "A",
+      "explanation": "The evidence supports a claim about operating safely; supervision requires different capacities, so the inference crosses from one role to another without support.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-013-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "prompt": "A hospital outsourced its cleaning and reports that cleaning costs fell by 30 per cent, describing the change as a saving.",
+      "question": "Which of the following, if true, most seriously weakens the hospital's description?",
       "options": [
-        "A. Labour economists disagree on the effects of minimum wage increases",
-        "B. The minimum wage increase only affected 5% of workers",
-        "C. Some industries are more affected than others by wage increases",
-        "D. A separate economic boom added 100,000 jobs during the same year",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. The contractor employs fewer staff than the hospital did.",
+        "B. Some cleaning staff transferred to the contractor.",
+        "C. The contract runs for five years.",
+        "D. Other hospitals have outsourced cleaning.",
+        "E. Rates of hospital-acquired infection rose after the change, and the cost of treating them exceeds the amount saved."
       ],
-      "correctAnswer": "D",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
+      "correctAnswer": "E",
+      "explanation": "A cost that moves to another budget is not a saving; the comparison must be of total cost, not of the line item that fell.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-013-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "prompt": "A museum found that visitors who enter through its shop spend more per head than those who enter through the main door, and plans to route all visitors through the shop.",
+      "question": "Which of the following, if true, casts most doubt on the plan?",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. The shop is smaller than the main entrance hall.",
+        "B. The shop entrance is used mainly by visitors arriving by car, who are on average wealthier and stay longer than those arriving on foot.",
+        "C. The shop sells books and postcards.",
+        "D. Some visitors leave through the shop as well.",
+        "E. The museum charges no admission fee."
       ],
-      "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
+      "correctAnswer": "B",
+      "explanation": "The spending difference tracks who uses each entrance, not the entrance itself, so redirecting everyone need not change what anyone spends.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-013-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "prompt": "The developer of a weather application argues that its forecasts are more accurate than a rival's, citing that its users report satisfaction more often.",
+      "question": "The argument is most vulnerable to the objection that it",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Local restaurants cannot accommodate arena crowds",
-        "C. The arena's construction will not create permanent jobs",
-        "D. The city already has sufficient sports facilities",
-        "E. Fans have a fixed entertainment budget they will spend regardless of venue"
+        "A. does not specify the period over which forecasts were compared",
+        "B. ignores the rival's larger user base",
+        "C. assumes users check the forecast daily",
+        "D. treats user satisfaction as a measure of forecast accuracy",
+        "E. relies on a self-selected sample of respondents"
       ],
-      "correctAnswer": "E",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
+      "correctAnswer": "D",
+      "explanation": "Satisfaction tracks interface, notifications and expectation as much as accuracy, and accuracy is directly measurable against outcomes — so the argument substitutes a proxy where the real quantity is available.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-013-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "passageTitle": "What Advertising Does",
+      "passageText": "Economists have long divided advertising into two kinds. Informative advertising tells buyers that a product exists, what it costs and where to find it; persuasive advertising changes what buyers want without telling them anything. The distinction is analytically convenient and, applied to actual advertisements, almost impossible to sustain.\n\nConsider an advertisement consisting of a brand name and an image. It appears to convey no information, and on the informative account it should be worthless. Yet a firm that spends heavily on such advertising is demonstrating something a buyer can use: that it expects repeat purchases sufficient to recover the outlay, which a firm selling a product nobody buys twice cannot afford to do. The expenditure is informative precisely because it is conspicuous and unrecoverable, and its content is irrelevant to that function.\n\nA third account treats advertising as complementary to the product. On this view an advertisement does not deceive the buyer into valuing a watch more highly; it changes what owning the watch is, because part of what the owner obtains is that others have seen the advertisement too. Whether this is manipulation or the creation of genuine value is not a question economics can settle, and the honest treatments say so.\n\nThe policy consequence is that the standard regulatory instrument — requiring claims to be truthful — reaches only the smallest part of what advertising does. Most spending makes no factual claim at all, and the effects that concern critics operate through channels that truthfulness rules were never designed to touch.",
+      "prompt": "The passage indicates that heavy spending on an advertisement conveying no factual content can still inform buyers because it",
       "options": [
-        "A. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "B. The advertising campaign cost $5M over three months",
-        "C. The ad was shown only on premium streaming services",
-        "D. The brand launched a new product line during the same period",
-        "E. Competitors also increased advertising spending during the same period"
+        "A. establishes the firm's legal responsibility for its claims",
+        "B. makes the product easier to find in shops",
+        "C. reduces the price the firm can charge",
+        "D. signals that the product is new to the market",
+        "E. demonstrates that the firm expects repeat purchases sufficient to recover the outlay"
       ],
-      "correctAnswer": "A",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
+      "correctAnswer": "E",
+      "explanation": "The signalling argument: the expenditure is conspicuous and unrecoverable, which is what makes it credible, and its content is irrelevant to that function.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-013-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "passageTitle": "What Advertising Does",
+      "passageText": "Economists have long divided advertising into two kinds. Informative advertising tells buyers that a product exists, what it costs and where to find it; persuasive advertising changes what buyers want without telling them anything. The distinction is analytically convenient and, applied to actual advertisements, almost impossible to sustain.\n\nConsider an advertisement consisting of a brand name and an image. It appears to convey no information, and on the informative account it should be worthless. Yet a firm that spends heavily on such advertising is demonstrating something a buyer can use: that it expects repeat purchases sufficient to recover the outlay, which a firm selling a product nobody buys twice cannot afford to do. The expenditure is informative precisely because it is conspicuous and unrecoverable, and its content is irrelevant to that function.\n\nA third account treats advertising as complementary to the product. On this view an advertisement does not deceive the buyer into valuing a watch more highly; it changes what owning the watch is, because part of what the owner obtains is that others have seen the advertisement too. Whether this is manipulation or the creation of genuine value is not a question economics can settle, and the honest treatments say so.\n\nThe policy consequence is that the standard regulatory instrument — requiring claims to be truthful — reaches only the smallest part of what advertising does. Most spending makes no factual claim at all, and the effects that concern critics operate through channels that truthfulness rules were never designed to touch.",
+      "prompt": "The 'third account' described in the passage holds that advertising",
       "options": [
-        "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It presents empirical evidence that undermines the first analyst's prediction",
-        "C. It demonstrates that road construction is always harmful",
-        "D. It suggests the first analyst has incorrect data",
-        "E. It proves that traffic will always increase regardless of policy"
+        "A. deceives buyers about a product's characteristics",
+        "B. raises prices without affecting demand",
+        "C. changes what owning the product is, since part of what the owner obtains is that others have seen the advertisement",
+        "D. is effective only for inexpensive goods",
+        "E. should be regulated more strictly than it is"
       ],
-      "correctAnswer": "B",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
+      "correctAnswer": "C",
+      "explanation": "The complementarity account, which the passage says economics cannot settle as manipulation or genuine value.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-013-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
-      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "passageTitle": "What Advertising Does",
+      "passageText": "Economists have long divided advertising into two kinds. Informative advertising tells buyers that a product exists, what it costs and where to find it; persuasive advertising changes what buyers want without telling them anything. The distinction is analytically convenient and, applied to actual advertisements, almost impossible to sustain.\n\nConsider an advertisement consisting of a brand name and an image. It appears to convey no information, and on the informative account it should be worthless. Yet a firm that spends heavily on such advertising is demonstrating something a buyer can use: that it expects repeat purchases sufficient to recover the outlay, which a firm selling a product nobody buys twice cannot afford to do. The expenditure is informative precisely because it is conspicuous and unrecoverable, and its content is irrelevant to that function.\n\nA third account treats advertising as complementary to the product. On this view an advertisement does not deceive the buyer into valuing a watch more highly; it changes what owning the watch is, because part of what the owner obtains is that others have seen the advertisement too. Whether this is manipulation or the creation of genuine value is not a question economics can settle, and the honest treatments say so.\n\nThe policy consequence is that the standard regulatory instrument — requiring claims to be truthful — reaches only the smallest part of what advertising does. Most spending makes no factual claim at all, and the effects that concern critics operate through channels that truthfulness rules were never designed to touch.",
+      "prompt": "According to the passage, requiring advertising claims to be truthful",
       "options": [
-        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "B. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "C. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
-        "D. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
-        "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
+        "A. reaches only the smallest part, since most spending makes no factual claim",
+        "B. addresses the largest part of what advertising does",
+        "C. has eliminated persuasive advertising in practice",
+        "D. is opposed by most economists",
+        "E. applies only to comparative advertising"
       ],
-      "correctAnswer": "C",
-      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
+      "correctAnswer": "A",
+      "explanation": "The final paragraph draws exactly this policy consequence.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-013-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "passageTitle": "Looking for Life Elsewhere",
+      "passageText": "Detecting life on a planet orbiting another star means detecting it in the light of that planet's atmosphere. Certain gases are proposed as biosignatures, on the reasoning that they are produced in quantity by living processes and destroyed rapidly enough that a persistent supply implies continuous production.\n\nOxygen is the standard example, and its history illustrates the difficulty. For decades, abundant atmospheric oxygen was treated as near-proof of life, until modelling showed several ways a planet could accumulate oxygen without biology — photochemical splitting of water followed by loss of hydrogen to space being the best studied. The response was not to abandon oxygen but to require context: oxygen together with a reducing gas such as methane is harder to explain abiotically, since the two react and their simultaneous presence implies replenishment of both.\n\nThat is the general shape of the field's progress. Single-gas criteria have repeatedly failed, and the surviving proposals are about disequilibrium — combinations of substances that should not coexist unless something maintains them. Even these can be challenged, because the space of possible abiotic chemistry is not fully mapped and absence of a known mechanism is not absence of one.\n\nThe practical difficulty is that the detections available in the near term will be marginal: a few molecules, at low significance, on planets whose surface conditions are inferred rather than observed. In that regime the discipline that matters is not instrumental but interpretive, and the field's most useful recent work has been on how a claim of detection should be graded rather than on what to look for.",
+      "prompt": "According to the passage, the reasoning behind proposing a gas as a biosignature is that it is",
       "options": [
-        "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Dissatisfied workers always sleep fewer than 7 hours",
-        "C. Employers should implement nap rooms to improve satisfaction",
-        "D. Job satisfaction and adequate sleep are associated in the survey population",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "A. found only on planets with liquid water",
+        "B. produced in quantity by life and destroyed fast enough that persistence implies continuous production",
+        "C. easy to detect at low concentrations",
+        "D. absent from the atmospheres of gas giants",
+        "E. chemically inert"
       ],
-      "correctAnswer": "D",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Stated in the first paragraph. E is close to the opposite of the requirement.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-013-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "passageTitle": "Looking for Life Elsewhere",
+      "passageText": "Detecting life on a planet orbiting another star means detecting it in the light of that planet's atmosphere. Certain gases are proposed as biosignatures, on the reasoning that they are produced in quantity by living processes and destroyed rapidly enough that a persistent supply implies continuous production.\n\nOxygen is the standard example, and its history illustrates the difficulty. For decades, abundant atmospheric oxygen was treated as near-proof of life, until modelling showed several ways a planet could accumulate oxygen without biology — photochemical splitting of water followed by loss of hydrogen to space being the best studied. The response was not to abandon oxygen but to require context: oxygen together with a reducing gas such as methane is harder to explain abiotically, since the two react and their simultaneous presence implies replenishment of both.\n\nThat is the general shape of the field's progress. Single-gas criteria have repeatedly failed, and the surviving proposals are about disequilibrium — combinations of substances that should not coexist unless something maintains them. Even these can be challenged, because the space of possible abiotic chemistry is not fully mapped and absence of a known mechanism is not absence of one.\n\nThe practical difficulty is that the detections available in the near term will be marginal: a few molecules, at low significance, on planets whose surface conditions are inferred rather than observed. In that regime the discipline that matters is not instrumental but interpretive, and the field's most useful recent work has been on how a claim of detection should be graded rather than on what to look for.",
+      "prompt": "The passage indicates that oxygen alone is no longer treated as near-proof of life because",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. it is difficult to detect at interstellar distances",
+        "B. it is produced by many kinds of organism",
+        "C. it reacts with methane",
+        "D. modelling showed abiotic routes to accumulating it, such as water splitting followed by hydrogen escape",
+        "E. no planet with abundant oxygen has been found"
       ],
-      "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "That is the specific development described, and the response was to require context rather than to abandon oxygen.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-013-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "passageTitle": "Looking for Life Elsewhere",
+      "passageText": "Detecting life on a planet orbiting another star means detecting it in the light of that planet's atmosphere. Certain gases are proposed as biosignatures, on the reasoning that they are produced in quantity by living processes and destroyed rapidly enough that a persistent supply implies continuous production.\n\nOxygen is the standard example, and its history illustrates the difficulty. For decades, abundant atmospheric oxygen was treated as near-proof of life, until modelling showed several ways a planet could accumulate oxygen without biology — photochemical splitting of water followed by loss of hydrogen to space being the best studied. The response was not to abandon oxygen but to require context: oxygen together with a reducing gas such as methane is harder to explain abiotically, since the two react and their simultaneous presence implies replenishment of both.\n\nThat is the general shape of the field's progress. Single-gas criteria have repeatedly failed, and the surviving proposals are about disequilibrium — combinations of substances that should not coexist unless something maintains them. Even these can be challenged, because the space of possible abiotic chemistry is not fully mapped and absence of a known mechanism is not absence of one.\n\nThe practical difficulty is that the detections available in the near term will be marginal: a few molecules, at low significance, on planets whose surface conditions are inferred rather than observed. In that regime the discipline that matters is not instrumental but interpretive, and the field's most useful recent work has been on how a claim of detection should be graded rather than on what to look for.",
+      "prompt": "The author suggests that the field's most useful recent work concerns",
       "options": [
-        "A. The claim that wetlands prevent flooding",
-        "B. The conclusion that all wetlands should be protected",
-        "C. The implication that flooding is always preventable",
-        "D. The premise that wetlands are worth preserving",
-        "E. The assumption that all wetlands have equal flood-prevention value"
+        "A. building larger telescopes",
+        "B. identifying new candidate gases",
+        "C. how a claim of detection should be graded",
+        "D. mapping abiotic chemistry completely",
+        "E. measuring planetary surface temperatures directly"
       ],
-      "correctAnswer": "E",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Because near-term detections will be marginal, the discipline that matters is interpretive rather than instrumental.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-013-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "passageTitle": "Controlling Rents",
+      "passageText": "Few propositions attract as much agreement among economists as the claim that rent control reduces the supply and quality of rental housing, and few are as poorly served by the way that agreement is usually reported.\n\nThe mechanism is not in dispute. A price ceiling below the market rate reduces the return to supplying rental housing, so less of it is supplied: owners convert units to other uses, defer maintenance, or sell to owner-occupiers. Studies of cities that imposed strict controls have found substantial reductions in the rental stock, and the tenants who benefit are those already housed, while those seeking housing face a smaller supply.\n\nWhat the summary omits is that the policies actually being enacted are frequently not the ones the classic analysis addresses. Second-generation controls limit the rate of increase within a tenancy rather than setting an absolute ceiling, exempt new construction, and permit increases between tenancies. Their effects are smaller and more mixed, and treating evidence about strict ceilings as though it settled the case against these measures conflates different instruments.\n\nThe stronger argument is a different one. Controls of any kind address a symptom of a supply constraint without touching the constraint, and where the binding limit is the number of dwellings a city permits to be built, distributing scarce units differently cannot produce more of them. That argument holds against second-generation controls too, and it is the one worth making — but it is an argument for building, not merely an argument against tenants' protections.",
+      "prompt": "The passage indicates that under a strict price ceiling, the tenants who benefit are",
       "options": [
-        "A. A controlled experiment with randomly assigned music found the same 20% difference",
-        "B. Customers reported preferring a relaxed shopping atmosphere",
-        "C. The upbeat music stores were in higher-traffic mall locations",
-        "D. Sales staff performed better when the music was upbeat",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "A. those seeking housing for the first time",
+        "B. owner-occupiers",
+        "C. landlords with large portfolios",
+        "D. tenants in newly constructed buildings",
+        "E. those already housed"
       ],
-      "correctAnswer": "A",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "Those seeking housing face a smaller supply, which is the distributional point the passage draws.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-013-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
-      "question": "Which of the following most weakens the editorial's conclusion?",
+      "passageTitle": "Controlling Rents",
+      "passageText": "Few propositions attract as much agreement among economists as the claim that rent control reduces the supply and quality of rental housing, and few are as poorly served by the way that agreement is usually reported.\n\nThe mechanism is not in dispute. A price ceiling below the market rate reduces the return to supplying rental housing, so less of it is supplied: owners convert units to other uses, defer maintenance, or sell to owner-occupiers. Studies of cities that imposed strict controls have found substantial reductions in the rental stock, and the tenants who benefit are those already housed, while those seeking housing face a smaller supply.\n\nWhat the summary omits is that the policies actually being enacted are frequently not the ones the classic analysis addresses. Second-generation controls limit the rate of increase within a tenancy rather than setting an absolute ceiling, exempt new construction, and permit increases between tenancies. Their effects are smaller and more mixed, and treating evidence about strict ceilings as though it settled the case against these measures conflates different instruments.\n\nThe stronger argument is a different one. Controls of any kind address a symptom of a supply constraint without touching the constraint, and where the binding limit is the number of dwellings a city permits to be built, distributing scarce units differently cannot produce more of them. That argument holds against second-generation controls too, and it is the one worth making — but it is an argument for building, not merely an argument against tenants' protections.",
+      "prompt": "According to the passage, second-generation controls differ from strict ceilings in that they",
       "options": [
-        "A. Employment programmes have reduced crime in some pilot cities",
-        "B. Crime rates are influenced by many factors beyond unemployment",
-        "C. The editorial does not define 'crime' precisely",
-        "D. Reducing unemployment is expensive and politically difficult",
-        "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
+        "A. apply only to publicly owned housing",
+        "B. limit increases within a tenancy, exempt new construction and permit increases between tenancies",
+        "C. set rents according to a tenant's income",
+        "D. have been shown to increase the rental stock",
+        "E. are imposed by national rather than city government"
       ],
       "correctAnswer": "B",
-      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "The three features named, whose effects the passage describes as smaller and more mixed.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-013-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
-      "question": "The president's argument is flawed because it:",
+      "passageTitle": "Controlling Rents",
+      "passageText": "Few propositions attract as much agreement among economists as the claim that rent control reduces the supply and quality of rental housing, and few are as poorly served by the way that agreement is usually reported.\n\nThe mechanism is not in dispute. A price ceiling below the market rate reduces the return to supplying rental housing, so less of it is supplied: owners convert units to other uses, defer maintenance, or sell to owner-occupiers. Studies of cities that imposed strict controls have found substantial reductions in the rental stock, and the tenants who benefit are those already housed, while those seeking housing face a smaller supply.\n\nWhat the summary omits is that the policies actually being enacted are frequently not the ones the classic analysis addresses. Second-generation controls limit the rate of increase within a tenancy rather than setting an absolute ceiling, exempt new construction, and permit increases between tenancies. Their effects are smaller and more mixed, and treating evidence about strict ceilings as though it settled the case against these measures conflates different instruments.\n\nThe stronger argument is a different one. Controls of any kind address a symptom of a supply constraint without touching the constraint, and where the binding limit is the number of dwellings a city permits to be built, distributing scarce units differently cannot produce more of them. That argument holds against second-generation controls too, and it is the one worth making — but it is an argument for building, not merely an argument against tenants' protections.",
+      "prompt": "The author regards which argument as the stronger one against rent control?",
       "options": [
-        "A. Ignores that SAT preparation courses can inflate scores",
-        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
-        "C. Does not consider the diversity implications of the policy",
-        "D. Fails to define 'academic performance' precisely",
-        "E. Both A and B"
+        "A. That it addresses a symptom without touching the supply constraint that produced it",
+        "B. That it reduces maintenance spending",
+        "C. That it is unpopular with landlords",
+        "D. That its effects are difficult to measure",
+        "E. That it applies unevenly across a city"
       ],
-      "correctAnswer": "B",
-      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The final paragraph, which also notes this is an argument for building rather than merely against tenant protections.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-013-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "According to the passage, what was the dominant view of the adult brain for much of the 20th century?",
+      "passageTitle": "Remembering and Testifying",
+      "passageText": "Oral history and legal testimony both rest on memory, and research over the past half century has shown memory to be reconstructive rather than reproductive. Each recollection is assembled from fragments, and the assembly is influenced by what has been learned, said and asked since.\n\nThe practical findings are consistent. Confidence and accuracy are only loosely related, so a witness's certainty is a poor guide to reliability. The wording of a question shapes what is recalled, and repeated questioning can install details that were never present. Memory for the gist of an event is considerably more durable than memory for particulars, which is inconvenient, because particulars are what cross-examination and archival research both pursue.\n\nThe wrong inference from this is that testimony is worthless. Central details of significant events are recalled with reasonable accuracy over long periods, and the errors that occur are patterned rather than random: they cluster in peripheral detail, in the sequence of events, and in the attribution of a memory to its source. Knowing where errors concentrate is more useful than a general suspicion.\n\nFor oral history the implication is procedural rather than sceptical. An interview should be recorded rather than summarised, questions should be open rather than leading, and the interviewer's own contribution should be preserved in the record so that later users can see what was asked. What is being collected is not a transcript of the past but a person's account of it, and an account whose conditions of production are documented is a better historical source than one presented as unmediated recall.",
+      "prompt": "The passage indicates that a witness's confidence is",
       "options": [
-        "A. The brain continuously forms new neural connections throughout adulthood",
-        "B. Brain structure is largely fixed after early childhood",
-        "C. Neuroplasticity is highest in adults recovering from injury",
-        "D. Learning a new skill has no measurable effect on brain structure"
+        "A. a reliable guide to accuracy",
+        "B. impossible to assess",
+        "C. higher for peripheral than for central details",
+        "D. only loosely related to accuracy",
+        "E. unaffected by repeated questioning"
       ],
-      "correctAnswer": "B",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "correctAnswer": "D",
+      "explanation": "Stated among the practical findings; the passage also notes repeated questioning can install details, which tells against E.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-013-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "The passage mentions stroke recovery primarily to:",
+      "passageTitle": "Remembering and Testifying",
+      "passageText": "Oral history and legal testimony both rest on memory, and research over the past half century has shown memory to be reconstructive rather than reproductive. Each recollection is assembled from fragments, and the assembly is influenced by what has been learned, said and asked since.\n\nThe practical findings are consistent. Confidence and accuracy are only loosely related, so a witness's certainty is a poor guide to reliability. The wording of a question shapes what is recalled, and repeated questioning can install details that were never present. Memory for the gist of an event is considerably more durable than memory for particulars, which is inconvenient, because particulars are what cross-examination and archival research both pursue.\n\nThe wrong inference from this is that testimony is worthless. Central details of significant events are recalled with reasonable accuracy over long periods, and the errors that occur are patterned rather than random: they cluster in peripheral detail, in the sequence of events, and in the attribution of a memory to its source. Knowing where errors concentrate is more useful than a general suspicion.\n\nFor oral history the implication is procedural rather than sceptical. An interview should be recorded rather than summarised, questions should be open rather than leading, and the interviewer's own contribution should be preserved in the record so that later users can see what was asked. What is being collected is not a transcript of the past but a person's account of it, and an account whose conditions of production are documented is a better historical source than one presented as unmediated recall.",
+      "prompt": "According to the passage, errors in recollection tend to cluster in",
       "options": [
-        "A. Illustrate how neuroplasticity was first discovered",
-        "B. Show that not all brain damage is permanent",
-        "C. Provide evidence that the adult brain can undergo structural reorganisation",
-        "D. Argue that stroke patients have greater neuroplasticity than healthy adults"
+        "A. the central details of significant events",
+        "B. events witnessed by more than one person",
+        "C. peripheral detail, sequence, and the attribution of a memory to its source",
+        "D. recollections given soon after an event",
+        "E. accounts given in writing rather than speech"
       ],
       "correctAnswer": "C",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "explanation": "The passage stresses that errors are patterned rather than random, and that knowing where they concentrate beats general suspicion.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-013-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "Which of the following can be most reasonably inferred from the passage?",
+      "passageTitle": "Remembering and Testifying",
+      "passageText": "Oral history and legal testimony both rest on memory, and research over the past half century has shown memory to be reconstructive rather than reproductive. Each recollection is assembled from fragments, and the assembly is influenced by what has been learned, said and asked since.\n\nThe practical findings are consistent. Confidence and accuracy are only loosely related, so a witness's certainty is a poor guide to reliability. The wording of a question shapes what is recalled, and repeated questioning can install details that were never present. Memory for the gist of an event is considerably more durable than memory for particulars, which is inconvenient, because particulars are what cross-examination and archival research both pursue.\n\nThe wrong inference from this is that testimony is worthless. Central details of significant events are recalled with reasonable accuracy over long periods, and the errors that occur are patterned rather than random: they cluster in peripheral detail, in the sequence of events, and in the attribution of a memory to its source. Knowing where errors concentrate is more useful than a general suspicion.\n\nFor oral history the implication is procedural rather than sceptical. An interview should be recorded rather than summarised, questions should be open rather than leading, and the interviewer's own contribution should be preserved in the record so that later users can see what was asked. What is being collected is not a transcript of the past but a person's account of it, and an account whose conditions of production are documented is a better historical source than one presented as unmediated recall.",
+      "prompt": "The author's recommendation for oral history practice is best described as",
       "options": [
-        "A. Neuroplasticity is greater in young children than in adults",
-        "B. Stroke recovery proves that any brain damage is reversible",
-        "C. Neuroplasticity research began only in the 1990s",
-        "D. Adults who learn new skills may have measurably different brain structure from those who do not"
+        "A. sceptical, since testimony cannot be trusted",
+        "B. statistical, aimed at averaging across many witnesses",
+        "C. legal, aimed at meeting evidentiary standards",
+        "D. technological, aimed at improving recording equipment",
+        "E. procedural, aimed at documenting the conditions under which an account was produced"
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "correctAnswer": "E",
+      "explanation": "Recording rather than summarising, open questions, and preserving the interviewer's contribution — so later users can see what was asked.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-013-q01": "A",
+    "gmat-verbal-013-q01": "D",
     "gmat-verbal-013-q02": "B",
-    "gmat-verbal-013-q03": "C",
-    "gmat-verbal-013-q04": "D",
-    "gmat-verbal-013-q05": "E",
-    "gmat-verbal-013-q06": "A",
-    "gmat-verbal-013-q07": "B",
-    "gmat-verbal-013-q08": "C",
-    "gmat-verbal-013-q09": "D",
-    "gmat-verbal-013-q10": "E",
-    "gmat-verbal-013-q11": "E",
-    "gmat-verbal-013-q12": "A",
-    "gmat-verbal-013-q13": "B",
-    "gmat-verbal-013-q14": "C",
-    "gmat-verbal-013-q15": "D",
-    "gmat-verbal-013-q16": "E",
-    "gmat-verbal-013-q17": "E",
-    "gmat-verbal-013-q18": "A",
+    "gmat-verbal-013-q03": "E",
+    "gmat-verbal-013-q04": "A",
+    "gmat-verbal-013-q05": "C",
+    "gmat-verbal-013-q06": "D",
+    "gmat-verbal-013-q07": "C",
+    "gmat-verbal-013-q08": "A",
+    "gmat-verbal-013-q09": "E",
+    "gmat-verbal-013-q10": "B",
+    "gmat-verbal-013-q11": "D",
+    "gmat-verbal-013-q12": "E",
+    "gmat-verbal-013-q13": "C",
+    "gmat-verbal-013-q14": "A",
+    "gmat-verbal-013-q15": "B",
+    "gmat-verbal-013-q16": "D",
+    "gmat-verbal-013-q17": "C",
+    "gmat-verbal-013-q18": "E",
     "gmat-verbal-013-q19": "B",
-    "gmat-verbal-013-q20": "B",
-    "gmat-verbal-013-q21": "B",
+    "gmat-verbal-013-q20": "A",
+    "gmat-verbal-013-q21": "D",
     "gmat-verbal-013-q22": "C",
-    "gmat-verbal-013-q23": "D"
+    "gmat-verbal-013-q23": "E"
   },
-  "fingerprints": [
-    "bda7c70aa494290fdf",
-    "01592a85d0db330acb",
-    "bf9e77b6f6012185d0",
-    "7860354ca86bb190b2",
-    "669582f1936ac45638",
-    "011af7d30550e2b519",
-    "bcfee40bae42774579",
-    "473ad78348aa3dd6f8",
-    "a67b9a94c8e7e2753d",
-    "bc24dde3b732701aad",
-    "bf9c5f7a42fe392bcf",
-    "e89bcf0261073f26d0",
-    "846629f0d0a60da006",
-    "29d1e095780d0d1695",
-    "670e32bc5da067f357",
-    "8201bdbf8d732ad680",
-    "cac96f51ba48c9041b",
-    "072a05d230cd36b5d0",
-    "355b0904a15ff86b8b",
-    "0988dc5cc6553e8076"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-013-rp1",
-      "title": "Business and Society",
-      "text": "Researchers studying organisational behaviour have found that teams with diverse cognitive styles outperform homogeneous teams on complex problem-solving tasks. However, this benefit is not automatic — diverse teams require skilled facilitation to avoid miscommunication and conflict. When managed effectively, the creative tension between different thinking styles produces more innovative solutions than teams where all members approach problems similarly."
+      "title": "What Advertising Does",
+      "text": "Economists have long divided advertising into two kinds. Informative advertising tells buyers that a product exists, what it costs and where to find it; persuasive advertising changes what buyers want without telling them anything. The distinction is analytically convenient and, applied to actual advertisements, almost impossible to sustain.\n\nConsider an advertisement consisting of a brand name and an image. It appears to convey no information, and on the informative account it should be worthless. Yet a firm that spends heavily on such advertising is demonstrating something a buyer can use: that it expects repeat purchases sufficient to recover the outlay, which a firm selling a product nobody buys twice cannot afford to do. The expenditure is informative precisely because it is conspicuous and unrecoverable, and its content is irrelevant to that function.\n\nA third account treats advertising as complementary to the product. On this view an advertisement does not deceive the buyer into valuing a watch more highly; it changes what owning the watch is, because part of what the owner obtains is that others have seen the advertisement too. Whether this is manipulation or the creation of genuine value is not a question economics can settle, and the honest treatments say so.\n\nThe policy consequence is that the standard regulatory instrument — requiring claims to be truthful — reaches only the smallest part of what advertising does. Most spending makes no factual claim at all, and the effects that concern critics operate through channels that truthfulness rules were never designed to touch."
+    },
+    {
+      "id": "gmat-verbal-013-rp2",
+      "title": "Looking for Life Elsewhere",
+      "text": "Detecting life on a planet orbiting another star means detecting it in the light of that planet's atmosphere. Certain gases are proposed as biosignatures, on the reasoning that they are produced in quantity by living processes and destroyed rapidly enough that a persistent supply implies continuous production.\n\nOxygen is the standard example, and its history illustrates the difficulty. For decades, abundant atmospheric oxygen was treated as near-proof of life, until modelling showed several ways a planet could accumulate oxygen without biology — photochemical splitting of water followed by loss of hydrogen to space being the best studied. The response was not to abandon oxygen but to require context: oxygen together with a reducing gas such as methane is harder to explain abiotically, since the two react and their simultaneous presence implies replenishment of both.\n\nThat is the general shape of the field's progress. Single-gas criteria have repeatedly failed, and the surviving proposals are about disequilibrium — combinations of substances that should not coexist unless something maintains them. Even these can be challenged, because the space of possible abiotic chemistry is not fully mapped and absence of a known mechanism is not absence of one.\n\nThe practical difficulty is that the detections available in the near term will be marginal: a few molecules, at low significance, on planets whose surface conditions are inferred rather than observed. In that regime the discipline that matters is not instrumental but interpretive, and the field's most useful recent work has been on how a claim of detection should be graded rather than on what to look for."
+    },
+    {
+      "id": "gmat-verbal-013-rp3",
+      "title": "Controlling Rents",
+      "text": "Few propositions attract as much agreement among economists as the claim that rent control reduces the supply and quality of rental housing, and few are as poorly served by the way that agreement is usually reported.\n\nThe mechanism is not in dispute. A price ceiling below the market rate reduces the return to supplying rental housing, so less of it is supplied: owners convert units to other uses, defer maintenance, or sell to owner-occupiers. Studies of cities that imposed strict controls have found substantial reductions in the rental stock, and the tenants who benefit are those already housed, while those seeking housing face a smaller supply.\n\nWhat the summary omits is that the policies actually being enacted are frequently not the ones the classic analysis addresses. Second-generation controls limit the rate of increase within a tenancy rather than setting an absolute ceiling, exempt new construction, and permit increases between tenancies. Their effects are smaller and more mixed, and treating evidence about strict ceilings as though it settled the case against these measures conflates different instruments.\n\nThe stronger argument is a different one. Controls of any kind address a symptom of a supply constraint without touching the constraint, and where the binding limit is the number of dwellings a city permits to be built, distributing scarce units differently cannot produce more of them. That argument holds against second-generation controls too, and it is the one worth making — but it is an argument for building, not merely an argument against tenants' protections."
+    },
+    {
+      "id": "gmat-verbal-013-rp4",
+      "title": "Remembering and Testifying",
+      "text": "Oral history and legal testimony both rest on memory, and research over the past half century has shown memory to be reconstructive rather than reproductive. Each recollection is assembled from fragments, and the assembly is influenced by what has been learned, said and asked since.\n\nThe practical findings are consistent. Confidence and accuracy are only loosely related, so a witness's certainty is a poor guide to reliability. The wording of a question shapes what is recalled, and repeated questioning can install details that were never present. Memory for the gist of an event is considerably more durable than memory for particulars, which is inconvenient, because particulars are what cross-examination and archival research both pursue.\n\nThe wrong inference from this is that testimony is worthless. Central details of significant events are recalled with reasonable accuracy over long periods, and the errors that occur are patterned rather than random: they cluster in peripheral detail, in the sequence of events, and in the attribution of a memory to its source. Knowing where errors concentrate is more useful than a general suspicion.\n\nFor oral history the implication is procedural rather than sceptical. An interview should be recorded rather than summarised, questions should be open rather than leading, and the interviewer's own contribution should be preserved in the record so that later users can see what was asked. What is being collected is not a transcript of the past but a person's account of it, and an account whose conditions of production are documented is a better historical source than one presented as unmediated recall."
     }
   ]
 }
