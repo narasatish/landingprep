@@ -12,469 +12,474 @@
       "id": "gmat-verbal-008-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "prompt": "A coffee roastery introduced a subscription service and reports that subscribers buy more coffee per year than customers who order individually. The roastery concludes that subscriptions increase consumption.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
-        "B. Olive oil contains monounsaturated fats linked to heart health",
-        "C. Heart disease rates have been declining globally regardless of fat consumption",
-        "D. The study followed individuals for 10 years",
-        "E. Olive oil is more expensive than butter in most markets"
+        "A. Subscribers can pause deliveries at any time.",
+        "B. Subscription coffee is delivered by post.",
+        "C. The roastery offers a discount on the first subscription order.",
+        "D. Customers who already drank a great deal of coffee were the most likely to subscribe.",
+        "E. Some subscribers also buy individually."
       ],
-      "correctAnswer": "A",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "Heavy drinkers select into subscription, so the difference may exist before any effect of the service. D would attract subscribers without explaining the difference in annual volume.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-008-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "prompt": "A hospital charges for parking and proposes to abolish the charge, arguing that free parking will reduce the number of patients who miss appointments.",
+      "question": "The argument depends on which of the following assumptions?",
       "options": [
-        "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Doctors who proactively call patients may also be more thorough in their overall care",
-        "C. Some patients do not have phones",
-        "D. Patients prefer in-person follow-up visits to phone calls",
-        "E. Phone calls are less effective than written instructions"
+        "A. Parking cost is among the reasons patients currently miss appointments.",
+        "B. The hospital can afford to lose the parking revenue.",
+        "C. Most patients travel to the hospital by car.",
+        "D. The car park is currently full at peak times.",
+        "E. Patients who miss an appointment are offered another within a week."
       ],
-      "correctAnswer": "B",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "Negate it: if the charge is no reason anyone misses an appointment, abolishing it cannot reduce missed appointments, and the argument collapses. A concerns affordability rather than whether the aim is achieved, and C is stronger than the argument needs - it requires only that some affected patients drive.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-008-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "prompt": "A school district introduced free breakfast clubs and reports that attendance at the participating schools has improved. A councillor concludes that providing breakfast improves attendance.",
+      "question": "Which of the following, if true, most strengthens the councillor's conclusion?",
       "options": [
-        "A. Drug X has minor side effects including nausea",
-        "B. The study included only 50 participants",
-        "C. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "D. Chronic pain affects millions of people worldwide",
-        "E. Drug X is expensive compared to existing treatments"
+        "A. Parents report that their children enjoy the breakfasts.",
+        "B. Schools were selected for the scheme by lottery among applicants, and attendance at unsuccessful applicant schools was unchanged.",
+        "C. The breakfasts are nutritionally balanced.",
+        "D. The scheme is cheaper than employing additional attendance officers.",
+        "E. Attendance improves nationally in most years."
       ],
-      "correctAnswer": "C",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "A lottery among applicants produces a comparison group with the same motivation to apply, which is the confound that matters. E supplies a rival explanation instead.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-008-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "prompt": "A dam has trapped sediment that formerly reached the coast, and the beaches downstream have eroded. Engineers propose releasing sediment periodically through the dam to restore the beaches.",
+      "question": "Which of the following would be most useful to determine in evaluating the proposal?",
       "options": [
-        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "B. The university's highest-achieving students attend the fitness centre most frequently",
-        "C. Exercise programmes are popular at peer universities",
-        "D. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "E. Students who exercise report feeling less stressed"
+        "A. How much electricity the dam generates",
+        "B. Whether the dam was built before or after the beaches began to erode",
+        "C. How many people visit the beaches each year",
+        "D. Whether other dams have been removed elsewhere",
+        "E. Whether the trapped sediment is of a grain size that will remain on the beaches rather than being carried offshore"
       ],
-      "correctAnswer": "D",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "Fine sediment washes out to sea and does not build beach; the proposal only works if the material is the right size. C is already implied by the premise that trapping caused the erosion.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-008-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "prompt": "Every model of telephone sold by the Larkhill chain that has a replaceable battery also has a headphone socket. No model with a headphone socket is waterproof. Some models sold by the chain are waterproof.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. Cameras might violate driver privacy",
-        "B. The cost of cameras is high",
-        "C. Some drivers find cameras distracting",
-        "D. Cameras only capture rear-end collisions",
-        "E. Intersections chosen for cameras may have already been due for safety upgrades"
+        "A. No model with a replaceable battery is popular.",
+        "B. Every waterproof model has a sealed battery compartment.",
+        "C. Some models sold by the chain do not have a replaceable battery.",
+        "D. Most models have headphone sockets.",
+        "E. Waterproof models cost more than others."
       ],
-      "correctAnswer": "E",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Waterproof models exist; waterproof implies no headphone socket, and replaceable battery implies a socket, so waterproof models cannot have replaceable batteries. C sounds plausible physically but does not follow from the statements.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-008-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "prompt": "A manufacturer extended its product warranty from two years to five and reports that warranty claims in the third year of ownership are rare. It concludes that its products are more reliable than competitors' products, which are warranted for two years.",
+      "question": "The reasoning is most vulnerable to the criticism that it",
       "options": [
-        "A. A separate economic boom added 100,000 jobs during the same year",
-        "B. Labour economists disagree on the effects of minimum wage increases",
-        "C. The minimum wage increase only affected 5% of workers",
-        "D. Some industries are more affected than others by wage increases",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. ignores the cost of honouring warranty claims",
+        "B. assumes that claims made under a warranty measure the rate at which products fail",
+        "C. relies on data from a single year",
+        "D. does not distinguish between models",
+        "E. overlooks the possibility that customers prefer longer warranties"
       ],
-      "correctAnswer": "A",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Owners of a failed product may repair it, replace it, or not bother claiming; claim rates track claiming behaviour as much as failure, and competitors' products are not covered in year three at all, so no comparison is available.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-008-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "prompt": "A museum replaced its incandescent gallery lighting with LEDs and reports that visitor numbers rose the following year. The director attributes the rise to the improved appearance of the galleries.",
+      "question": "Which of the following, if true, most seriously undermines the director's attribution?",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. LEDs consume less electricity than incandescent lamps.",
+        "B. Some visitors say the new lighting is too bright.",
+        "C. The lighting was installed over several months.",
+        "D. Other museums in the city also replaced their lighting.",
+        "E. The museum's most popular touring exhibition of the decade ran for eight months of that year."
       ],
       "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "A major touring exhibition explains the rise without reference to the lighting. C would weaken the mechanism slightly; A is irrelevant to attendance.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-008-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "prompt": "A recruitment consultancy found that job advertisements listing a salary range attract more applicants than those that do not, and advises all its clients to list salary ranges in order to increase the number of applicants they receive.",
+      "question": "Which of the following, if true, casts most doubt on the advice as a general recommendation?",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "C. Local restaurants cannot accommodate arena crowds",
-        "D. The arena's construction will not create permanent jobs",
-        "E. The city already has sufficient sports facilities"
+        "A. For roles where the offered pay is below the market rate, listing the range reduces applications sharply.",
+        "B. Some applicants apply to many positions.",
+        "C. Advertisements are usually written by hiring managers.",
+        "D. Applicant numbers vary by season.",
+        "E. Listing a range is required by law in some jurisdictions."
       ],
-      "correctAnswer": "B",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
+      "correctAnswer": "A",
+      "explanation": "The advice is general; a category in which the effect reverses shows the recommendation cannot be applied without regard to the pay on offer.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-008-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "prompt": "A bicycle-sharing scheme moves bicycles overnight from stations where they accumulate to stations where they run short. The operator reports that since it began this rebalancing, the number of trips has risen, and concludes that rebalancing has increased use.",
+      "question": "Which of the following, if true, most strengthens the conclusion?",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. The ad was shown only on premium streaming services",
-        "C. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "D. The brand launched a new product line during the same period",
-        "E. Competitors also increased advertising spending during the same period"
+        "A. The scheme has added new stations in the same period.",
+        "B. Rebalancing is carried out by van.",
+        "C. On nights when rebalancing was suspended for operational reasons, the following day's trips fell sharply at exactly the stations that would have been restocked.",
+        "D. Members can see station occupancy on a mobile application.",
+        "E. Trips are counted electronically at each docking point."
       ],
       "correctAnswer": "C",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
+      "explanation": "Suspension nights supply a within-scheme comparison isolating the effect at the affected stations. A introduces a rival explanation for the overall rise.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-008-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "prompt": "A wine producer notes that its wines have won more medals at international competitions since it began ageing them in new oak barrels, and concludes that new oak improves its wine.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It demonstrates that road construction is always harmful",
-        "C. It suggests the first analyst has incorrect data",
-        "D. It presents empirical evidence that undermines the first analyst's prediction",
-        "E. It proves that traffic will always increase regardless of policy"
+        "A. New barrels are considerably more expensive than used ones.",
+        "B. Some producers use oak chips rather than barrels.",
+        "C. The producer entered more competitions than before.",
+        "D. Competition judges taste young wines, in which the flavours contributed by new oak are most prominent, and the same wines have been rated less favourably by critics assessing them after several years in bottle.",
+        "E. Medals are awarded in several categories."
       ],
       "correctAnswer": "D",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
+      "explanation": "It offers a reason why medals rose without the wine being better — the judging conditions favour the new characteristic — and adds contrary evidence from a different assessment. D would explain more medals but not a higher rate of success.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-008-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
-      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "prompt": "Supporters of a timber certification scheme argue that it reduces deforestation, since certified forests are logged at lower intensity than uncertified ones. Critics reply that certification is granted mainly to forests that were already well managed.",
+      "question": "The critics' reply is best described as",
       "options": [
-        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "B. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "C. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
-        "D. All birds have wings. Penguins are birds. Therefore, penguins can fly.",
-        "E. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer."
+        "A. denying that certified forests are logged at lower intensity",
+        "B. arguing that the observed difference may reflect which forests enter the scheme rather than an effect of the scheme",
+        "C. questioning whether deforestation can be measured",
+        "D. objecting to the cost of certification",
+        "E. proposing that certification be made compulsory"
       ],
-      "correctAnswer": "E",
-      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
+      "correctAnswer": "B",
+      "explanation": "A selection argument: the scheme may be labelling good practice rather than producing it. The critics accept the intensity difference and dispute its cause.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-008-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "passageTitle": "The Cost of Holding Nothing",
+      "passageText": "Inventory is money sitting still. A firm that holds three months of components has paid for them, is storing them, and risks their becoming obsolete; a firm that holds three days has released that capital for other uses. The logic drove four decades of reduction in industrial stock levels, and the gains were real.\n\nWhat the logic omits is that inventory is also insurance. A buffer absorbs variation in supply and demand, and removing it transfers that variation directly into production. The transfer is invisible while conditions are stable, which is precisely when the buffer looks most wasteful, so the incentive to cut runs strongest at the moment the protection is least obviously needed.\n\nThe exposure is worsened by a feature of modern supply chains that individual firms cannot see. Each firm knows its own suppliers; few know their suppliers' suppliers. Concentration at a lower tier — a single plant making a specialised component for the whole industry — is invisible from the top, so a network that appears diversified may share a single point of failure. Firms that believed they had three sources of a part have discovered that all three bought from the same works.\n\nThe conclusion is not that lean methods were a mistake. It is that the calculation was performed with one term missing. The cost of holding stock is measurable and appears in the accounts every month; the cost of not holding it appears rarely, falls partly on customers and other firms, and is therefore systematically underweighted by exactly the parties who decide.",
+      "prompt": "According to the passage, the incentive to reduce inventory is strongest when",
       "options": [
-        "A. Job satisfaction and adequate sleep are associated in the survey population",
-        "B. Improving sleep quality will increase job satisfaction for most workers",
-        "C. Dissatisfied workers always sleep fewer than 7 hours",
-        "D. Employers should implement nap rooms to improve satisfaction",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "A. demand is growing rapidly",
+        "B. suppliers are concentrated in one region",
+        "C. conditions are stable, which is when the buffer looks most wasteful",
+        "D. capital is expensive to raise",
+        "E. components are at risk of becoming obsolete"
       ],
-      "correctAnswer": "A",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
+      "correctAnswer": "C",
+      "explanation": "The second paragraph makes exactly this point: the transfer of variation into production is invisible while conditions are stable, so pressure to cut peaks when protection seems least necessary.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-008-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "passageTitle": "The Cost of Holding Nothing",
+      "passageText": "Inventory is money sitting still. A firm that holds three months of components has paid for them, is storing them, and risks their becoming obsolete; a firm that holds three days has released that capital for other uses. The logic drove four decades of reduction in industrial stock levels, and the gains were real.\n\nWhat the logic omits is that inventory is also insurance. A buffer absorbs variation in supply and demand, and removing it transfers that variation directly into production. The transfer is invisible while conditions are stable, which is precisely when the buffer looks most wasteful, so the incentive to cut runs strongest at the moment the protection is least obviously needed.\n\nThe exposure is worsened by a feature of modern supply chains that individual firms cannot see. Each firm knows its own suppliers; few know their suppliers' suppliers. Concentration at a lower tier — a single plant making a specialised component for the whole industry — is invisible from the top, so a network that appears diversified may share a single point of failure. Firms that believed they had three sources of a part have discovered that all three bought from the same works.\n\nThe conclusion is not that lean methods were a mistake. It is that the calculation was performed with one term missing. The cost of holding stock is measurable and appears in the accounts every month; the cost of not holding it appears rarely, falls partly on customers and other firms, and is therefore systematically underweighted by exactly the parties who decide.",
+      "prompt": "The passage indicates that a firm may wrongly believe its supply is diversified because",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. concentration at a lower tier of the chain is invisible from the top",
+        "B. its suppliers conceal their production volumes",
+        "C. it has not audited its own inventory records",
+        "D. diversification is measured by value rather than by volume",
+        "E. regulators do not require disclosure of supplier locations"
       ],
-      "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
+      "correctAnswer": "A",
+      "explanation": "Three nominal sources buying from the same works is the illustration given; the invisibility is structural rather than a matter of concealment or record-keeping.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-008-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "passageTitle": "The Cost of Holding Nothing",
+      "passageText": "Inventory is money sitting still. A firm that holds three months of components has paid for them, is storing them, and risks their becoming obsolete; a firm that holds three days has released that capital for other uses. The logic drove four decades of reduction in industrial stock levels, and the gains were real.\n\nWhat the logic omits is that inventory is also insurance. A buffer absorbs variation in supply and demand, and removing it transfers that variation directly into production. The transfer is invisible while conditions are stable, which is precisely when the buffer looks most wasteful, so the incentive to cut runs strongest at the moment the protection is least obviously needed.\n\nThe exposure is worsened by a feature of modern supply chains that individual firms cannot see. Each firm knows its own suppliers; few know their suppliers' suppliers. Concentration at a lower tier — a single plant making a specialised component for the whole industry — is invisible from the top, so a network that appears diversified may share a single point of failure. Firms that believed they had three sources of a part have discovered that all three bought from the same works.\n\nThe conclusion is not that lean methods were a mistake. It is that the calculation was performed with one term missing. The cost of holding stock is measurable and appears in the accounts every month; the cost of not holding it appears rarely, falls partly on customers and other firms, and is therefore systematically underweighted by exactly the parties who decide.",
+      "prompt": "The author's main criticism of the lean inventory calculation is that",
       "options": [
-        "A. The claim that wetlands prevent flooding",
-        "B. The assumption that all wetlands have equal flood-prevention value",
-        "C. The conclusion that all wetlands should be protected",
-        "D. The implication that flooding is always preventable",
-        "E. The premise that wetlands are worth preserving"
+        "A. it was based on faulty accounting data",
+        "B. it applied only to manufacturing firms",
+        "C. it underestimated the cost of warehousing",
+        "D. it omitted a term whose cost falls partly on parties other than the decision-maker",
+        "E. it was adopted before it had been tested"
       ],
-      "correctAnswer": "B",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
+      "correctAnswer": "D",
+      "explanation": "The final paragraph: holding costs appear monthly in the accounts, the cost of not holding appears rarely and falls partly on customers and other firms, so it is underweighted by those deciding.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-008-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "passageTitle": "The Missing Mass",
+      "passageText": "Galaxies rotate too quickly. Stars far from the centre of a spiral galaxy move at speeds that the gravitational pull of the visible matter cannot explain; on the visible mass alone, such galaxies should fly apart. Two families of response exist, and the contest between them is a useful example of how a theory earns preference.\n\nThe first supposes additional matter that does not emit light. Dark matter accounts for the rotation curves, and — more importantly — for phenomena it was not devised to explain: the bending of light around clusters, the pattern of fluctuations in the cosmic microwave background, and the rate at which structure formed in the early universe. Its weakness is direct detection. Decades of increasingly sensitive experiments have not identified a particle.\n\nThe second modifies gravity itself. Modified Newtonian dynamics reproduces galaxy rotation curves with a single adjustment and does so with striking economy, predicting a regularity in the relation between visible mass and rotation speed that dark matter models must fit rather than derive. Its difficulty is scale: the modification that works for individual galaxies does not account for clusters without additional unseen mass, and it has no comparable account of the microwave background.\n\nThe present position is asymmetric rather than settled. Dark matter explains more phenomena but has not been found; modified gravity explains one class of phenomenon more elegantly but does not extend. What would change the picture is not another rotation curve, which both accommodate, but a detection, or a system in which the two make opposite predictions.",
+      "prompt": "The passage indicates that the principal strength of the dark matter explanation is that it",
       "options": [
-        "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. A controlled experiment with randomly assigned music found the same 20% difference",
-        "D. Sales staff performed better when the music was upbeat",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "A. has been confirmed by direct detection of a particle",
+        "B. requires no modification of existing physical law",
+        "C. is simpler than the alternative",
+        "D. predicts the relation between visible mass and rotation speed",
+        "E. accounts for phenomena it was not devised to explain"
       ],
-      "correctAnswer": "C",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "Light bending around clusters, the microwave background and early structure formation are named as phenomena beyond the rotation curves it was introduced for. E describes the strength of the rival.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-008-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
-      "question": "Which of the following most weakens the editorial's conclusion?",
+      "passageTitle": "The Missing Mass",
+      "passageText": "Galaxies rotate too quickly. Stars far from the centre of a spiral galaxy move at speeds that the gravitational pull of the visible matter cannot explain; on the visible mass alone, such galaxies should fly apart. Two families of response exist, and the contest between them is a useful example of how a theory earns preference.\n\nThe first supposes additional matter that does not emit light. Dark matter accounts for the rotation curves, and — more importantly — for phenomena it was not devised to explain: the bending of light around clusters, the pattern of fluctuations in the cosmic microwave background, and the rate at which structure formed in the early universe. Its weakness is direct detection. Decades of increasingly sensitive experiments have not identified a particle.\n\nThe second modifies gravity itself. Modified Newtonian dynamics reproduces galaxy rotation curves with a single adjustment and does so with striking economy, predicting a regularity in the relation between visible mass and rotation speed that dark matter models must fit rather than derive. Its difficulty is scale: the modification that works for individual galaxies does not account for clusters without additional unseen mass, and it has no comparable account of the microwave background.\n\nThe present position is asymmetric rather than settled. Dark matter explains more phenomena but has not been found; modified gravity explains one class of phenomenon more elegantly but does not extend. What would change the picture is not another rotation curve, which both accommodate, but a detection, or a system in which the two make opposite predictions.",
+      "prompt": "According to the passage, modified Newtonian dynamics has difficulty with",
       "options": [
-        "A. Employment programmes have reduced crime in some pilot cities",
-        "B. The editorial does not define 'crime' precisely",
-        "C. Reducing unemployment is expensive and politically difficult",
-        "D. Crime rates are influenced by many factors beyond unemployment",
-        "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
+        "A. individual spiral galaxies",
+        "B. clusters and the cosmic microwave background",
+        "C. the relation between visible mass and rotation speed",
+        "D. the speed of light",
+        "E. the age of the universe"
       ],
-      "correctAnswer": "D",
-      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "The modification that works for single galaxies does not handle clusters without unseen mass, and offers no comparable account of the microwave background.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-008-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
-      "question": "The president's argument is flawed because it:",
+      "passageTitle": "The Missing Mass",
+      "passageText": "Galaxies rotate too quickly. Stars far from the centre of a spiral galaxy move at speeds that the gravitational pull of the visible matter cannot explain; on the visible mass alone, such galaxies should fly apart. Two families of response exist, and the contest between them is a useful example of how a theory earns preference.\n\nThe first supposes additional matter that does not emit light. Dark matter accounts for the rotation curves, and — more importantly — for phenomena it was not devised to explain: the bending of light around clusters, the pattern of fluctuations in the cosmic microwave background, and the rate at which structure formed in the early universe. Its weakness is direct detection. Decades of increasingly sensitive experiments have not identified a particle.\n\nThe second modifies gravity itself. Modified Newtonian dynamics reproduces galaxy rotation curves with a single adjustment and does so with striking economy, predicting a regularity in the relation between visible mass and rotation speed that dark matter models must fit rather than derive. Its difficulty is scale: the modification that works for individual galaxies does not account for clusters without additional unseen mass, and it has no comparable account of the microwave background.\n\nThe present position is asymmetric rather than settled. Dark matter explains more phenomena but has not been found; modified gravity explains one class of phenomenon more elegantly but does not extend. What would change the picture is not another rotation curve, which both accommodate, but a detection, or a system in which the two make opposite predictions.",
+      "prompt": "The author suggests that the dispute would be advanced most by",
       "options": [
-        "A. Ignores that SAT preparation courses can inflate scores",
-        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
-        "C. Does not consider the diversity implications of the policy",
-        "D. Fails to define 'academic performance' precisely",
-        "E. Both A and B"
+        "A. additional measurements of galaxy rotation curves",
+        "B. more precise estimates of the visible mass in galaxies",
+        "C. abandoning both accounts in favour of a third",
+        "D. a detection, or a system in which the two accounts make opposite predictions",
+        "E. improved computer simulations of structure formation"
       ],
-      "correctAnswer": "B",
-      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The closing sentence says exactly this, and explicitly excludes another rotation curve because both accommodate those.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-008-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
-      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "passageTitle": "Roads and the Traffic That Fills Them",
+      "passageText": "Widening a congested road reliably reduces congestion for a period, after which traffic returns to something near its former level. The observation is old, has been confirmed across many countries, and is still widely treated as a surprise.\n\nThe mechanism is not mysterious. Congestion is a price paid in time, and travel demand responds to it like any other price. When capacity rises, the time cost falls, and journeys that were not worth making at the old cost become worth making. Some are new trips; some are existing trips shifted from other routes, other times of day, or other modes; over longer periods, some result from decisions about where to live and where to locate a business, which is why the full effect takes years to appear and is missed by short evaluations.\n\nTwo misreadings follow. The first treats induced demand as showing that road building is futile. It is not: the additional journeys are journeys people wanted to make, and their value is a benefit even though it does not appear as a reduction in travel time. The second treats it as an argument for doing nothing, which ignores that the same logic applies to any capacity — a new railway line fills up too.\n\nThe practical implication is about measurement rather than construction. A scheme justified by forecast time savings that will be eroded by the traffic it induces has been justified on the wrong ground, and the honest case for it must rest on the value of the extra access it creates.",
+      "prompt": "The passage explains the return of congestion after a road is widened chiefly by",
       "options": [
-        "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "C. Historical market data is unreliable because markets change structurally over time",
-        "D. Companies with consistent earnings growth tend to have stable stock prices",
-        "E. Because a coin has landed heads five times in a row, it is more likely to land tails next time"
+        "A. population growth in the surrounding area",
+        "B. the deterioration of the new road surface",
+        "C. the response of travel demand to a fall in the time cost of a journey",
+        "D. the failure of drivers to use alternative routes",
+        "E. errors in the original traffic forecasts"
       ],
-      "correctAnswer": "E",
-      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Congestion is treated as a price paid in time, and demand responds to it as to any price.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-008-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
-      "question": "Which of the following, if true, most seriously weakens the conclusion?",
+      "passageTitle": "Roads and the Traffic That Fills Them",
+      "passageText": "Widening a congested road reliably reduces congestion for a period, after which traffic returns to something near its former level. The observation is old, has been confirmed across many countries, and is still widely treated as a surprise.\n\nThe mechanism is not mysterious. Congestion is a price paid in time, and travel demand responds to it like any other price. When capacity rises, the time cost falls, and journeys that were not worth making at the old cost become worth making. Some are new trips; some are existing trips shifted from other routes, other times of day, or other modes; over longer periods, some result from decisions about where to live and where to locate a business, which is why the full effect takes years to appear and is missed by short evaluations.\n\nTwo misreadings follow. The first treats induced demand as showing that road building is futile. It is not: the additional journeys are journeys people wanted to make, and their value is a benefit even though it does not appear as a reduction in travel time. The second treats it as an argument for doing nothing, which ignores that the same logic applies to any capacity — a new railway line fills up too.\n\nThe practical implication is about measurement rather than construction. A scheme justified by forecast time savings that will be eroded by the traffic it induces has been justified on the wrong ground, and the honest case for it must rest on the value of the extra access it creates.",
+      "prompt": "According to the passage, why does the full effect of added capacity take years to appear?",
       "options": [
-        "A. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "B. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "C. Customers report feeling more valued when using a loyalty programme",
-        "D. Competitors without loyalty programmes have seen declining sales",
-        "E. The loyalty programme was introduced simultaneously with a store renovation"
+        "A. Some of the response comes through decisions about where to live and locate a business.",
+        "B. Construction is completed in stages.",
+        "C. Drivers are slow to learn about new routes.",
+        "D. Fuel prices adjust slowly.",
+        "E. Traffic counts are published with a delay."
       ],
       "correctAnswer": "A",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "Location decisions operate over long horizons, which is why short evaluations miss the effect.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-008-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
-      "question": "Which of the following would most strengthen the CFO's conclusion?",
+      "passageTitle": "Roads and the Traffic That Fills Them",
+      "passageText": "Widening a congested road reliably reduces congestion for a period, after which traffic returns to something near its former level. The observation is old, has been confirmed across many countries, and is still widely treated as a surprise.\n\nThe mechanism is not mysterious. Congestion is a price paid in time, and travel demand responds to it like any other price. When capacity rises, the time cost falls, and journeys that were not worth making at the old cost become worth making. Some are new trips; some are existing trips shifted from other routes, other times of day, or other modes; over longer periods, some result from decisions about where to live and where to locate a business, which is why the full effect takes years to appear and is missed by short evaluations.\n\nTwo misreadings follow. The first treats induced demand as showing that road building is futile. It is not: the additional journeys are journeys people wanted to make, and their value is a benefit even though it does not appear as a reduction in travel time. The second treats it as an argument for doing nothing, which ignores that the same logic applies to any capacity — a new railway line fills up too.\n\nThe practical implication is about measurement rather than construction. A scheme justified by forecast time savings that will be eroded by the traffic it induces has been justified on the wrong ground, and the honest case for it must rest on the value of the extra access it creates.",
+      "prompt": "The author's view of the practical implication of induced demand is that",
       "options": [
-        "A. Other advertising channels were suspended during the same three months",
-        "B. The lifetime value of a new user averages $50",
-        "C. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "D. Social media platforms reported the campaign reached 5 million unique users",
-        "E. Competitors saw no change in sign-ups over the same period"
+        "A. road building should generally be avoided",
+        "B. capacity should be added to railways instead",
+        "C. congestion charging is the only effective remedy",
+        "D. traffic forecasts should be produced more frequently",
+        "E. schemes should be justified by the value of the access they create rather than by forecast time savings"
       ],
-      "correctAnswer": "B",
-      "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "The final paragraph calls the implication one about measurement rather than construction, and explicitly rejects the reading that road building is futile.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-008-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "The 'free rider problem' mentioned in the passage refers to:",
+      "passageTitle": "Learning to Paint Depth",
+      "passageText": "Linear perspective — the geometric construction by which parallel lines converge on a vanishing point — was formalised in Florence in the early fifteenth century. It is often described as the discovery of how to represent the world correctly, and that description contains an assumption worth examining.\n\nThe construction is genuinely a discovery in one sense. It is a correct solution to a stated problem: how to project a three-dimensional scene onto a plane as it would appear from one fixed point, with one eye, at one moment. Painters who applied it could produce images that a viewer standing in the right place found convincing, and the technique spread quickly because the effect was unmistakable.\n\nThe assumption is that this is what a picture is for. The conditions the construction requires — a single eye, a fixed position, an instant — are not the conditions under which people see. Traditions that arranged figures by importance rather than distance, or showed several moments in one frame, were not failing at perspective; they were solving a different problem, and one of their solutions preserved information that perspective discards.\n\nLater European painting itself moved away from strict construction, not through incompetence but because artists found the fixed viewpoint a constraint on what they wanted to say. The useful formulation is that perspective is one representational technology among several, unusually powerful for a particular purpose, and that calling it correctness mistakes a choice of problem for a standard of accuracy.",
+      "prompt": "The passage indicates that linear perspective solves the problem of representing a scene",
       "options": [
-        "A. Programmers who use open-source software without contributing code",
-        "B. The tendency for rational actors to underinvest in public goods because they cannot exclude non-payers",
-        "C. The difficulty of coordinating large numbers of geographically dispersed contributors",
-        "D. The reluctance of firms to release proprietary software as open-source"
+        "A. as it appears to two eyes in motion",
+        "B. as it is understood rather than seen",
+        "C. with figures arranged according to their importance",
+        "D. as it would appear from one fixed point, with one eye, at one moment",
+        "E. without reference to the position of the viewer"
       ],
-      "correctAnswer": "B",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "correctAnswer": "D",
+      "explanation": "The stated conditions of the construction, which the passage then observes are not the conditions of ordinary seeing.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-008-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "According to the passage, which of the following does NOT explain why developers contribute to open-source projects?",
+      "passageTitle": "Learning to Paint Depth",
+      "passageText": "Linear perspective — the geometric construction by which parallel lines converge on a vanishing point — was formalised in Florence in the early fifteenth century. It is often described as the discovery of how to represent the world correctly, and that description contains an assumption worth examining.\n\nThe construction is genuinely a discovery in one sense. It is a correct solution to a stated problem: how to project a three-dimensional scene onto a plane as it would appear from one fixed point, with one eye, at one moment. Painters who applied it could produce images that a viewer standing in the right place found convincing, and the technique spread quickly because the effect was unmistakable.\n\nThe assumption is that this is what a picture is for. The conditions the construction requires — a single eye, a fixed position, an instant — are not the conditions under which people see. Traditions that arranged figures by importance rather than distance, or showed several moments in one frame, were not failing at perspective; they were solving a different problem, and one of their solutions preserved information that perspective discards.\n\nLater European painting itself moved away from strict construction, not through incompetence but because artists found the fixed viewpoint a constraint on what they wanted to say. The useful formulation is that perspective is one representational technology among several, unusually powerful for a particular purpose, and that calling it correctness mistakes a choice of problem for a standard of accuracy.",
+      "prompt": "The author suggests that traditions arranging figures by importance rather than distance were",
       "options": [
-        "A. Gaining professional reputation in their field",
-        "B. Being employed by firms that benefit from specific projects",
-        "C. Receiving direct financial compensation from project users",
-        "D. Opportunities for skill development and learning"
+        "A. technically incapable of constructing perspective",
+        "B. uninterested in depicting the physical world",
+        "C. solving a different representational problem",
+        "D. influenced by Florentine practice",
+        "E. confined to religious subjects"
       ],
       "correctAnswer": "C",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "explanation": "The passage says they were not failing at perspective but solving a different problem, and that some of their solutions preserved information perspective discards.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-008-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "The author uses the phrase 'seeming paradox' to suggest that:",
+      "passageTitle": "Learning to Paint Depth",
+      "passageText": "Linear perspective — the geometric construction by which parallel lines converge on a vanishing point — was formalised in Florence in the early fifteenth century. It is often described as the discovery of how to represent the world correctly, and that description contains an assumption worth examining.\n\nThe construction is genuinely a discovery in one sense. It is a correct solution to a stated problem: how to project a three-dimensional scene onto a plane as it would appear from one fixed point, with one eye, at one moment. Painters who applied it could produce images that a viewer standing in the right place found convincing, and the technique spread quickly because the effect was unmistakable.\n\nThe assumption is that this is what a picture is for. The conditions the construction requires — a single eye, a fixed position, an instant — are not the conditions under which people see. Traditions that arranged figures by importance rather than distance, or showed several moments in one frame, were not failing at perspective; they were solving a different problem, and one of their solutions preserved information that perspective discards.\n\nLater European painting itself moved away from strict construction, not through incompetence but because artists found the fixed viewpoint a constraint on what they wanted to say. The useful formulation is that perspective is one representational technology among several, unusually powerful for a particular purpose, and that calling it correctness mistakes a choice of problem for a standard of accuracy.",
+      "prompt": "The author's central claim about calling perspective 'correctness' is that it",
       "options": [
-        "A. Open-source development violates all known economic principles",
-        "B. Economists have no theory that explains open-source development",
-        "C. Open-source software is economically irrational and will eventually disappear",
-        "D. The behaviour of open-source contributors appears inconsistent with standard economic predictions but can be explained"
+        "A. overstates the technical difficulty of the construction",
+        "B. mistakes a choice of problem for a standard of accuracy",
+        "C. understates the influence of Florentine painters",
+        "D. ignores the role of patrons in commissioning works",
+        "E. applies only to painting and not to architecture"
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "correctAnswer": "B",
+      "explanation": "The closing sentence says the useful formulation is that perspective is one representational technology among several, and that calling it correctness mistakes a choice of problem for a standard of accuracy.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-008-q01": "A",
-    "gmat-verbal-008-q02": "B",
-    "gmat-verbal-008-q03": "C",
-    "gmat-verbal-008-q04": "D",
-    "gmat-verbal-008-q05": "E",
-    "gmat-verbal-008-q06": "A",
+    "gmat-verbal-008-q01": "D",
+    "gmat-verbal-008-q02": "A",
+    "gmat-verbal-008-q03": "B",
+    "gmat-verbal-008-q04": "E",
+    "gmat-verbal-008-q05": "C",
+    "gmat-verbal-008-q06": "B",
     "gmat-verbal-008-q07": "E",
-    "gmat-verbal-008-q08": "B",
+    "gmat-verbal-008-q08": "A",
     "gmat-verbal-008-q09": "C",
     "gmat-verbal-008-q10": "D",
-    "gmat-verbal-008-q11": "E",
-    "gmat-verbal-008-q12": "A",
-    "gmat-verbal-008-q13": "E",
-    "gmat-verbal-008-q14": "B",
-    "gmat-verbal-008-q15": "C",
-    "gmat-verbal-008-q16": "D",
-    "gmat-verbal-008-q17": "B",
-    "gmat-verbal-008-q18": "E",
+    "gmat-verbal-008-q11": "B",
+    "gmat-verbal-008-q12": "C",
+    "gmat-verbal-008-q13": "A",
+    "gmat-verbal-008-q14": "D",
+    "gmat-verbal-008-q15": "E",
+    "gmat-verbal-008-q16": "B",
+    "gmat-verbal-008-q17": "D",
+    "gmat-verbal-008-q18": "C",
     "gmat-verbal-008-q19": "A",
-    "gmat-verbal-008-q20": "B",
-    "gmat-verbal-008-q21": "B",
+    "gmat-verbal-008-q20": "E",
+    "gmat-verbal-008-q21": "D",
     "gmat-verbal-008-q22": "C",
-    "gmat-verbal-008-q23": "D"
+    "gmat-verbal-008-q23": "B"
   },
-  "fingerprints": [
-    "88e0068fe3126c120a",
-    "d3a6fa41e4016ed8f8",
-    "afa0ff86d9c34f56ef",
-    "0888ab7dd6ac432db4",
-    "68ae1fa1701e485bb2",
-    "9e72d17686f41857c3",
-    "6c7b82e5ee52febabb",
-    "8f3a4836c54c371819",
-    "da457be27dc32fee03",
-    "bafddd9356475882eb",
-    "1d1381bb00bf2757a7",
-    "a24194b63737ac511c",
-    "63f0eb9f2e0b344aeb",
-    "1e6790734571df1062",
-    "79f7476d7e7ec36e2a",
-    "f468b84cee3a56ce06",
-    "6a19723fef11957cde",
-    "a3072edc5beddc72f4",
-    "ab7dd944cb59a48072",
-    "4a525c2c1653e5c7a2"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-008-rp1",
-      "title": "Business and Society",
-      "text": "The relationship between economic inequality and social mobility has been extensively studied. Some economists argue that inequality creates incentives for effort and innovation, while others maintain that high inequality undermines social mobility by restricting access to education and networks for those at the bottom of the income distribution. Longitudinal data from multiple countries suggests the latter effect is more significant."
+      "title": "The Cost of Holding Nothing",
+      "text": "Inventory is money sitting still. A firm that holds three months of components has paid for them, is storing them, and risks their becoming obsolete; a firm that holds three days has released that capital for other uses. The logic drove four decades of reduction in industrial stock levels, and the gains were real.\n\nWhat the logic omits is that inventory is also insurance. A buffer absorbs variation in supply and demand, and removing it transfers that variation directly into production. The transfer is invisible while conditions are stable, which is precisely when the buffer looks most wasteful, so the incentive to cut runs strongest at the moment the protection is least obviously needed.\n\nThe exposure is worsened by a feature of modern supply chains that individual firms cannot see. Each firm knows its own suppliers; few know their suppliers' suppliers. Concentration at a lower tier — a single plant making a specialised component for the whole industry — is invisible from the top, so a network that appears diversified may share a single point of failure. Firms that believed they had three sources of a part have discovered that all three bought from the same works.\n\nThe conclusion is not that lean methods were a mistake. It is that the calculation was performed with one term missing. The cost of holding stock is measurable and appears in the accounts every month; the cost of not holding it appears rarely, falls partly on customers and other firms, and is therefore systematically underweighted by exactly the parties who decide."
+    },
+    {
+      "id": "gmat-verbal-008-rp2",
+      "title": "The Missing Mass",
+      "text": "Galaxies rotate too quickly. Stars far from the centre of a spiral galaxy move at speeds that the gravitational pull of the visible matter cannot explain; on the visible mass alone, such galaxies should fly apart. Two families of response exist, and the contest between them is a useful example of how a theory earns preference.\n\nThe first supposes additional matter that does not emit light. Dark matter accounts for the rotation curves, and — more importantly — for phenomena it was not devised to explain: the bending of light around clusters, the pattern of fluctuations in the cosmic microwave background, and the rate at which structure formed in the early universe. Its weakness is direct detection. Decades of increasingly sensitive experiments have not identified a particle.\n\nThe second modifies gravity itself. Modified Newtonian dynamics reproduces galaxy rotation curves with a single adjustment and does so with striking economy, predicting a regularity in the relation between visible mass and rotation speed that dark matter models must fit rather than derive. Its difficulty is scale: the modification that works for individual galaxies does not account for clusters without additional unseen mass, and it has no comparable account of the microwave background.\n\nThe present position is asymmetric rather than settled. Dark matter explains more phenomena but has not been found; modified gravity explains one class of phenomenon more elegantly but does not extend. What would change the picture is not another rotation curve, which both accommodate, but a detection, or a system in which the two make opposite predictions."
+    },
+    {
+      "id": "gmat-verbal-008-rp3",
+      "title": "Roads and the Traffic That Fills Them",
+      "text": "Widening a congested road reliably reduces congestion for a period, after which traffic returns to something near its former level. The observation is old, has been confirmed across many countries, and is still widely treated as a surprise.\n\nThe mechanism is not mysterious. Congestion is a price paid in time, and travel demand responds to it like any other price. When capacity rises, the time cost falls, and journeys that were not worth making at the old cost become worth making. Some are new trips; some are existing trips shifted from other routes, other times of day, or other modes; over longer periods, some result from decisions about where to live and where to locate a business, which is why the full effect takes years to appear and is missed by short evaluations.\n\nTwo misreadings follow. The first treats induced demand as showing that road building is futile. It is not: the additional journeys are journeys people wanted to make, and their value is a benefit even though it does not appear as a reduction in travel time. The second treats it as an argument for doing nothing, which ignores that the same logic applies to any capacity — a new railway line fills up too.\n\nThe practical implication is about measurement rather than construction. A scheme justified by forecast time savings that will be eroded by the traffic it induces has been justified on the wrong ground, and the honest case for it must rest on the value of the extra access it creates."
+    },
+    {
+      "id": "gmat-verbal-008-rp4",
+      "title": "Learning to Paint Depth",
+      "text": "Linear perspective — the geometric construction by which parallel lines converge on a vanishing point — was formalised in Florence in the early fifteenth century. It is often described as the discovery of how to represent the world correctly, and that description contains an assumption worth examining.\n\nThe construction is genuinely a discovery in one sense. It is a correct solution to a stated problem: how to project a three-dimensional scene onto a plane as it would appear from one fixed point, with one eye, at one moment. Painters who applied it could produce images that a viewer standing in the right place found convincing, and the technique spread quickly because the effect was unmistakable.\n\nThe assumption is that this is what a picture is for. The conditions the construction requires — a single eye, a fixed position, an instant — are not the conditions under which people see. Traditions that arranged figures by importance rather than distance, or showed several moments in one frame, were not failing at perspective; they were solving a different problem, and one of their solutions preserved information that perspective discards.\n\nLater European painting itself moved away from strict construction, not through incompetence but because artists found the fixed viewpoint a constraint on what they wanted to say. The useful formulation is that perspective is one representational technology among several, unusually powerful for a particular purpose, and that calling it correctness mistakes a choice of problem for a standard of accuracy."
     }
   ]
 }
