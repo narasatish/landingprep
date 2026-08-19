@@ -12,469 +12,474 @@
       "id": "gmat-verbal-002-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "prompt": "Hollis General Hospital installed alcohol-gel dispensers outside every ward in January. Reported hospital-acquired infections for the following year fell by 22 per cent compared with the previous year. Hospital management concluded that the dispensers had reduced infection.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Fails to compare the companies' growth with industry-wide growth trends",
-        "B. Does not define what type of consulting services were provided",
-        "C. Ignores that some companies declined in revenue after hiring the firm",
-        "D. Does not specify what time period is covered by the data",
-        "E. Compares incomparable companies across different industries"
+        "A. Some staff reported that the dispensers were occasionally empty.",
+        "B. Other hospitals that installed dispensers reported similar reductions.",
+        "C. In the same January, the hospital changed from recording every suspected infection to recording only laboratory-confirmed ones.",
+        "D. The dispensers cost less than the treatment of a single serious infection.",
+        "E. Handwashing with soap remains more effective than gel against certain organisms."
       ],
-      "correctAnswer": "A",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "If the counting rule changed at the same moment, the fall may be in what was recorded rather than in what occurred — the two years are no longer comparable. A weakens the mechanism only slightly; C strengthens; D and E are irrelevant to whether infections actually fell.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-002-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "prompt": "The city of Ardwick will introduce a charge for driving into its centre, arguing that the charge will reduce the concentration of nitrogen dioxide measured at its central monitoring stations.",
+      "question": "The argument depends on which of the following assumptions?",
       "options": [
-        "A. Olive oil contains monounsaturated fats linked to heart health",
-        "B. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
-        "C. Heart disease rates have been declining globally regardless of fat consumption",
-        "D. The study followed individuals for 10 years",
-        "E. Olive oil is more expensive than butter in most markets"
+        "A. Drivers deterred by the charge will not simply shift their journeys to routes that still affect the central monitoring stations.",
+        "B. The revenue raised will be spent on public transport.",
+        "C. Nitrogen dioxide is the most harmful pollutant present in the city centre.",
+        "D. Other cities that have introduced such charges have seen air quality improve.",
+        "E. The charge will be set high enough to cover the cost of collecting it."
       ],
-      "correctAnswer": "B",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "If deterred traffic reroutes around the centre in a way that still raises readings at those stations, the measured concentration need not fall. A, D and E concern desirability or precedent, not the logical requirement; B concerns which pollutant matters, not whether this one declines.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-002-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "prompt": "A bakery has switched to a flour milled from a different wheat variety and claims that its bread now stays fresh for longer. Customers, it notes, are returning less bread as stale.",
+      "question": "Which of the following, if true, most strengthens the bakery's claim?",
       "options": [
-        "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Some patients do not have phones",
-        "C. Doctors who proactively call patients may also be more thorough in their overall care",
-        "D. Patients prefer in-person follow-up visits to phone calls",
-        "E. Phone calls are less effective than written instructions"
+        "A. The new flour costs slightly more than the flour it replaced.",
+        "B. The bakery reduced its prices at the same time as the change in flour.",
+        "C. Some customers say they prefer the taste of the new loaves.",
+        "D. The bakery's refund policy for stale bread was unchanged over the period.",
+        "E. The bakery sells more bread on weekdays than at weekends."
       ],
-      "correctAnswer": "C",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The claim rests on returns as a proxy for staleness; an unchanged refund policy removes the obvious alternative explanation for fewer returns. C introduces a competing explanation, since cheaper bread may be eaten faster or returned less readily.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-002-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "prompt": "In the Marnhill district, every household with a garden-waste subscription also has a recycling bin, and no household without a recycling bin composts at home. Most households that compost at home do not hold a garden-waste subscription.",
+      "question": "If the statements above are true, which of the following must also be true?",
       "options": [
-        "A. Drug X has minor side effects including nausea",
-        "B. The study included only 50 participants",
-        "C. Chronic pain affects millions of people worldwide",
-        "D. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "E. Drug X is expensive compared to existing treatments"
+        "A. Most households in Marnhill have recycling bins.",
+        "B. Every household that composts at home has a recycling bin.",
+        "C. No household holds both a subscription and a compost heap.",
+        "D. Households with subscriptions produce less waste than those without.",
+        "E. Most households with recycling bins compost at home."
       ],
-      "correctAnswer": "D",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "From 'no household without a recycling bin composts' it follows that composting implies a recycling bin. A and E are unsupported claims about proportions of the whole district; C contradicts 'most', which permits some overlap; D introduces a quantity the statements never mention.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-002-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "prompt": "A regional authority is deciding whether to fund a scheme collecting food waste separately from other household refuse, on the grounds that it will reduce the volume sent to landfill.",
+      "question": "Which of the following would be most useful to determine in evaluating the scheme?",
       "options": [
-        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "B. The university's highest-achieving students attend the fitness centre most frequently",
-        "C. Exercise programmes are popular at peer universities",
-        "D. Students who exercise report feeling less stressed",
-        "E. Exercise has been shown to improve blood flow to the brain in laboratory studies"
+        "A. Whether residents of other regions support similar schemes",
+        "B. How many vehicles the authority currently owns",
+        "C. Whether the scheme would be popular with residents",
+        "D. What the scheme would be called in publicity material",
+        "E. Whether the collected food waste would be processed in a facility that itself sends residue to landfill in comparable volumes"
       ],
       "correctAnswer": "E",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "The stated objective is landfill volume; if processing merely relocates the material, the objective is not met. Popularity and branding bear on adoption, not on whether the goal is achieved.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-002-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "prompt": "A survey of members at a chain of gyms found that members who attend early-morning sessions report higher job satisfaction than those who attend in the evening. The chain's marketing department concluded that exercising early in the day improves people's attitude to their work.",
+      "question": "The reasoning is most vulnerable to the criticism that it",
       "options": [
-        "A. Intersections chosen for cameras may have already been due for safety upgrades",
-        "B. Cameras might violate driver privacy",
-        "C. The cost of cameras is high",
-        "D. Some drivers find cameras distracting",
-        "E. Cameras only capture rear-end collisions"
+        "A. relies on a survey with too few respondents to be meaningful",
+        "B. assumes that a difference between two self-selected groups was produced by the feature that distinguishes them",
+        "C. confuses job satisfaction with productivity",
+        "D. fails to define what counts as early morning",
+        "E. generalises from gym members to the population at large"
       ],
-      "correctAnswer": "A",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "People choose their session time, and whatever leads someone to be free and willing at six in the morning — job autonomy, seniority, shift pattern — may be what raises satisfaction. E is a real limitation but the conclusion is about people who exercise, not the population.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-002-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "prompt": "An online clothing retailer introduced a sizing tool that recommends a size from the customer's measurements. In the year after its introduction, the proportion of orders returned rose.",
+      "question": "Which of the following, if true, best explains this result?",
       "options": [
-        "A. Labour economists disagree on the effects of minimum wage increases",
-        "B. A separate economic boom added 100,000 jobs during the same year",
-        "C. The minimum wage increase only affected 5% of workers",
-        "D. Some industries are more affected than others by wage increases",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. The tool was used by fewer than half of customers.",
+        "B. Returns are processed by an external contractor.",
+        "C. The retailer's total sales fell slightly over the period.",
+        "D. The tool was introduced together with free returns, which drew a large number of new customers who habitually order two sizes and return one.",
+        "E. Competitors offer similar tools."
       ],
-      "correctAnswer": "B",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "It supplies a change in the customer mix that raises the return rate for reasons unrelated to sizing accuracy — the tool may work and the proportion still rise. A would explain a lack of improvement, not an increase.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-002-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "prompt": "Firms that have adopted a four-day working week report output per employee equal to or greater than before the change. An analyst concludes that shortening the working week raises productivity.",
+      "question": "Which of the following, if true, most seriously weakens the analyst's conclusion?",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. The firms that adopted the change were disproportionately those already running well enough to absorb the risk of trying it.",
+        "B. Employees at these firms report improved wellbeing.",
+        "C. Some firms extended daily hours slightly when they shortened the week.",
+        "D. Output was measured by the firms themselves.",
+        "E. A minority of firms returned to a five-day week."
       ],
-      "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
+      "correctAnswer": "A",
+      "explanation": "Selection: if the adopters were already high-performing, their output figures reflect the firms rather than the schedule. C and D weaken more mildly by muddying the measurement; B undermines the causal claim itself.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-002-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "prompt": "Airline executives have argued that replacing an ageing fleet with new aircraft will reduce the airline's total fuel consumption, since the new aircraft burn less fuel per seat-kilometre.",
+      "question": "The argument assumes which of the following?",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Local restaurants cannot accommodate arena crowds",
-        "C. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "D. The arena's construction will not create permanent jobs",
-        "E. The city already has sufficient sports facilities"
+        "A. Fuel prices will not fall in the near future.",
+        "B. Passengers prefer to fly on newer aircraft.",
+        "C. The airline will not expand the number of seat-kilometres it flies enough to offset the per-unit saving.",
+        "D. The new aircraft will require less maintenance.",
+        "E. Other airlines will make similar replacements."
       ],
       "correctAnswer": "C",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
+      "explanation": "A per-unit improvement reduces a total only if the number of units does not grow to compensate — the classic gap between efficiency and consumption. The other choices bear on cost or competition, not on the arithmetic of the total.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-002-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "prompt": "Along a stretch of coast where sea otters have returned, kelp forests have expanded. Ecologists propose that otters cause the expansion by preying on sea urchins, which graze kelp.",
+      "question": "Which of the following, if true, most strengthens the ecologists' explanation?",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. The ad was shown only on premium streaming services",
-        "C. The brand launched a new product line during the same period",
-        "D. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "E. Competitors also increased advertising spending during the same period"
+        "A. Kelp grows more rapidly in cooler water.",
+        "B. Sea otters also eat crabs and molluscs.",
+        "C. Kelp forests support commercially valuable fish.",
+        "D. Otter populations remain below their historic levels.",
+        "E. Along comparable stretches of coast where otters remain absent, urchin numbers have risen and kelp has continued to decline."
       ],
-      "correctAnswer": "D",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
+      "correctAnswer": "E",
+      "explanation": "A parallel case in which the proposed cause is absent and the effect does not occur is the strongest available support short of experiment. B mildly weakens by diluting the mechanism; A offers a rival cause.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-002-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "prompt": "Critics of a proposed reservoir argue that it should not be built because the valley it would flood contains rare plant communities. A supporter of the scheme replies that the critics own homes supplied by the existing reservoir network, and so are in no position to object.",
+      "question": "The supporter's reply is most vulnerable to the objection that it",
       "options": [
-        "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It demonstrates that road construction is always harmful",
-        "C. It suggests the first analyst has incorrect data",
-        "D. It proves that traffic will always increase regardless of policy",
-        "E. It presents empirical evidence that undermines the first analyst's prediction"
+        "A. relies on evidence about plant communities that has not been verified",
+        "B. addresses the critics' circumstances rather than the substance of their argument",
+        "C. assumes that water demand will continue to grow",
+        "D. overlooks the cost of constructing the reservoir",
+        "E. treats a scientific question as though it were a political one"
       ],
-      "correctAnswer": "E",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
+      "correctAnswer": "B",
+      "explanation": "Whether the critics benefit from existing reservoirs has no bearing on whether flooding this valley is justified — the reply attacks the arguer rather than the argument.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-002-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
-      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "passageTitle": "Unprofitable Product Lines",
+      "passageText": "Managers are routinely advised to discontinue product lines that fail to cover their allocated costs, and the advice is often sound. Yet firms with sophisticated accounting frequently retain such lines deliberately, and the reasoning is not sentimental.\n\nThe first consideration is allocation itself. Overhead assigned to a line does not usually disappear when the line is dropped; it is redistributed across the remaining products, which then appear less profitable in turn. A sequence of individually defensible discontinuations can therefore leave a firm smaller and no more profitable, a pattern common enough in the management literature to have acquired a name.\n\nThe second consideration is demand interdependence. Where customers buy a bundle, the margin on any single item is a poor guide to its contribution. A supplier of industrial fasteners may lose money on unusual sizes and keep them because purchasing departments prefer a single source; a bookshop's loss-making reference section may draw the traffic on which the profitable sections depend.\n\nThe third is optionality. A line that is unprofitable at current volumes may be the firm's only presence in a market that could grow, and re-entry after exit is typically far more expensive than continued presence, because distribution relationships and regulatory approvals must be rebuilt.\n\nNone of this argues that unprofitable lines should be retained as a rule. It argues that the accounting figure is the beginning of the analysis rather than its conclusion, and that the relevant question is not whether a line covers its allocated costs but what would actually change if it were gone.",
+      "prompt": "The primary purpose of the passage is to",
       "options": [
-        "A. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
-        "B. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "C. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "D. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
-        "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
+        "A. argue that unprofitable product lines should generally be retained",
+        "B. describe how overhead is allocated in multi-product firms",
+        "C. compare the profitability of industrial suppliers and retailers",
+        "D. explain why the accounting profitability of a line may be a poor basis for discontinuing it",
+        "E. recommend a method for calculating the true cost of a product line"
       ],
-      "correctAnswer": "A",
-      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
+      "correctAnswer": "D",
+      "explanation": "The passage repeatedly qualifies its own case — it does not argue for retention as a rule, and explicitly says the accounting figure begins rather than ends the analysis. Choice A overstates; C and D describe details used as support.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-002-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "passageTitle": "Unprofitable Product Lines",
+      "passageText": "Managers are routinely advised to discontinue product lines that fail to cover their allocated costs, and the advice is often sound. Yet firms with sophisticated accounting frequently retain such lines deliberately, and the reasoning is not sentimental.\n\nThe first consideration is allocation itself. Overhead assigned to a line does not usually disappear when the line is dropped; it is redistributed across the remaining products, which then appear less profitable in turn. A sequence of individually defensible discontinuations can therefore leave a firm smaller and no more profitable, a pattern common enough in the management literature to have acquired a name.\n\nThe second consideration is demand interdependence. Where customers buy a bundle, the margin on any single item is a poor guide to its contribution. A supplier of industrial fasteners may lose money on unusual sizes and keep them because purchasing departments prefer a single source; a bookshop's loss-making reference section may draw the traffic on which the profitable sections depend.\n\nThe third is optionality. A line that is unprofitable at current volumes may be the firm's only presence in a market that could grow, and re-entry after exit is typically far more expensive than continued presence, because distribution relationships and regulatory approvals must be rebuilt.\n\nNone of this argues that unprofitable lines should be retained as a rule. It argues that the accounting figure is the beginning of the analysis rather than its conclusion, and that the relevant question is not whether a line covers its allocated costs but what would actually change if it were gone.",
+      "prompt": "According to the passage, discontinuing a line can make the remaining lines appear less profitable because",
       "options": [
-        "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Job satisfaction and adequate sleep are associated in the survey population",
-        "C. Dissatisfied workers always sleep fewer than 7 hours",
-        "D. Employers should implement nap rooms to improve satisfaction",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "A. customers who bought the discontinued line stop buying others",
+        "B. the firm loses the option of re-entering the market later",
+        "C. overhead formerly assigned to it is redistributed among them",
+        "D. purchasing departments prefer suppliers with full ranges",
+        "E. regulatory approvals lapse once production ceases"
       ],
-      "correctAnswer": "B",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
+      "correctAnswer": "C",
+      "explanation": "The allocation point: overhead does not usually disappear with the line, so it lands on what remains. A and D concern demand interdependence and B and E optionality — real points in the passage, but not the cause of the accounting change described.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-002-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "passageTitle": "Unprofitable Product Lines",
+      "passageText": "Managers are routinely advised to discontinue product lines that fail to cover their allocated costs, and the advice is often sound. Yet firms with sophisticated accounting frequently retain such lines deliberately, and the reasoning is not sentimental.\n\nThe first consideration is allocation itself. Overhead assigned to a line does not usually disappear when the line is dropped; it is redistributed across the remaining products, which then appear less profitable in turn. A sequence of individually defensible discontinuations can therefore leave a firm smaller and no more profitable, a pattern common enough in the management literature to have acquired a name.\n\nThe second consideration is demand interdependence. Where customers buy a bundle, the margin on any single item is a poor guide to its contribution. A supplier of industrial fasteners may lose money on unusual sizes and keep them because purchasing departments prefer a single source; a bookshop's loss-making reference section may draw the traffic on which the profitable sections depend.\n\nThe third is optionality. A line that is unprofitable at current volumes may be the firm's only presence in a market that could grow, and re-entry after exit is typically far more expensive than continued presence, because distribution relationships and regulatory approvals must be rebuilt.\n\nNone of this argues that unprofitable lines should be retained as a rule. It argues that the accounting figure is the beginning of the analysis rather than its conclusion, and that the relevant question is not whether a line covers its allocated costs but what would actually change if it were gone.",
+      "prompt": "The example of the bookshop's reference section serves primarily to illustrate",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. the cost of re-entering a market after exit",
+        "B. the redistribution of allocated overhead",
+        "C. the risk of relying on management fashion",
+        "D. the difficulty of measuring customer satisfaction",
+        "E. the way a loss-making line may support profitable ones"
       ],
       "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
+      "explanation": "It is given as an instance of demand interdependence — the section draws traffic the profitable sections depend on.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-002-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "passageTitle": "Residues and the Dating of Early Pottery",
+      "passageText": "For most of the twentieth century, the earliest pottery was assumed to belong to settled farming communities, on the reasonable grounds that fragile, heavy vessels seemed ill-suited to mobile life. Two developments have unsettled that assumption.\n\nThe first is radiocarbon dating of sherds from sites in East Asia, which places some pottery well before the local adoption of agriculture — among hunting and fishing populations rather than farmers. The second, and more informative, is the chemical analysis of residues absorbed into the porous walls of the vessels themselves. Lipids trapped in the fabric can be extracted and their carbon isotopes measured, distinguishing marine from terrestrial sources and, in some cases, identifying the processing of aquatic foods.\n\nThe results have shifted the question from when pottery appeared to what it was for. Vessels from several early Japanese sites carry residues consistent with the intensive processing of fish, suggesting that the earliest ceramics were a technology for extracting oils and rendering foods storable, rather than a by-product of sedentary living.\n\nCaution is warranted. Residue analysis samples what was cooked most often or most recently, not the full range of use, and vessels may be reused for purposes their makers did not intend. Absence of a lipid signal is weak evidence of absence, since preservation varies with soil chemistry. What the technique establishes securely is narrower than the headlines suggest: not that pottery was invented for fish, but that at particular sites it was used for them, early and repeatedly.",
+      "prompt": "The passage suggests that the assumption linking early pottery to farming was",
       "options": [
-        "A. The claim that wetlands prevent flooding",
-        "B. The conclusion that all wetlands should be protected",
-        "C. The assumption that all wetlands have equal flood-prevention value",
-        "D. The implication that flooding is always preventable",
-        "E. The premise that wetlands are worth preserving"
+        "A. reasonable given the evidence available but not supported by later findings",
+        "B. never seriously held by archaeologists",
+        "C. based on a misreading of radiocarbon dates",
+        "D. confirmed by residue analysis of East Asian sherds",
+        "E. derived from ethnographic study of mobile populations"
       ],
-      "correctAnswer": "C",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The passage calls the grounds reasonable, then describes two developments that unsettled the assumption. B captures both halves; the other choices contradict one or the other.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-002-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "passageTitle": "Residues and the Dating of Early Pottery",
+      "passageText": "For most of the twentieth century, the earliest pottery was assumed to belong to settled farming communities, on the reasonable grounds that fragile, heavy vessels seemed ill-suited to mobile life. Two developments have unsettled that assumption.\n\nThe first is radiocarbon dating of sherds from sites in East Asia, which places some pottery well before the local adoption of agriculture — among hunting and fishing populations rather than farmers. The second, and more informative, is the chemical analysis of residues absorbed into the porous walls of the vessels themselves. Lipids trapped in the fabric can be extracted and their carbon isotopes measured, distinguishing marine from terrestrial sources and, in some cases, identifying the processing of aquatic foods.\n\nThe results have shifted the question from when pottery appeared to what it was for. Vessels from several early Japanese sites carry residues consistent with the intensive processing of fish, suggesting that the earliest ceramics were a technology for extracting oils and rendering foods storable, rather than a by-product of sedentary living.\n\nCaution is warranted. Residue analysis samples what was cooked most often or most recently, not the full range of use, and vessels may be reused for purposes their makers did not intend. Absence of a lipid signal is weak evidence of absence, since preservation varies with soil chemistry. What the technique establishes securely is narrower than the headlines suggest: not that pottery was invented for fish, but that at particular sites it was used for them, early and repeatedly.",
+      "prompt": "The author's attitude toward residue analysis is best described as",
       "options": [
-        "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. Sales staff performed better when the music was upbeat",
-        "D. A controlled experiment with randomly assigned music found the same 20% difference",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "A. enthusiastic endorsement of its conclusions",
+        "B. acceptance of its value together with insistence on its limits",
+        "C. scepticism about its underlying chemistry",
+        "D. indifference to its findings",
+        "E. hostility to the publicity it has received"
       ],
-      "correctAnswer": "D",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "The technique is called the more informative development, and a full paragraph then sets out what it cannot establish. Not scepticism about the chemistry (B) but about the reach of the inference.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-002-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
-      "question": "Which of the following most weakens the editorial's conclusion?",
+      "passageTitle": "Residues and the Dating of Early Pottery",
+      "passageText": "For most of the twentieth century, the earliest pottery was assumed to belong to settled farming communities, on the reasonable grounds that fragile, heavy vessels seemed ill-suited to mobile life. Two developments have unsettled that assumption.\n\nThe first is radiocarbon dating of sherds from sites in East Asia, which places some pottery well before the local adoption of agriculture — among hunting and fishing populations rather than farmers. The second, and more informative, is the chemical analysis of residues absorbed into the porous walls of the vessels themselves. Lipids trapped in the fabric can be extracted and their carbon isotopes measured, distinguishing marine from terrestrial sources and, in some cases, identifying the processing of aquatic foods.\n\nThe results have shifted the question from when pottery appeared to what it was for. Vessels from several early Japanese sites carry residues consistent with the intensive processing of fish, suggesting that the earliest ceramics were a technology for extracting oils and rendering foods storable, rather than a by-product of sedentary living.\n\nCaution is warranted. Residue analysis samples what was cooked most often or most recently, not the full range of use, and vessels may be reused for purposes their makers did not intend. Absence of a lipid signal is weak evidence of absence, since preservation varies with soil chemistry. What the technique establishes securely is narrower than the headlines suggest: not that pottery was invented for fish, but that at particular sites it was used for them, early and repeatedly.",
+      "prompt": "Which of the following, if true, would most weaken the inference that early Japanese vessels were used chiefly for processing fish?",
       "options": [
-        "A. Employment programmes have reduced crime in some pilot cities",
-        "B. The editorial does not define 'crime' precisely",
-        "C. Reducing unemployment is expensive and politically difficult",
-        "D. Some high-unemployment areas have low crime rates due to strong community cohesion",
-        "E. Crime rates are influenced by many factors beyond unemployment"
+        "A. Some of the sites analysed also contain fishing equipment",
+        "B. Radiocarbon dates from the sites are consistent with one another",
+        "C. Similar vessels from later periods carry the same residues",
+        "D. Lipids from aquatic foods survive in ceramic fabric far longer than lipids from plants or land animals",
+        "E. The vessels are thicker-walled than later cooking pots"
       ],
-      "correctAnswer": "E",
-      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "If aquatic lipids simply preserve better, a fish signal would dominate the record even if fish were a minority use — the evidence would reflect preservation rather than frequency. B and D support the inference; C and E are irrelevant to it.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-002-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
-      "question": "The president's argument is flawed because it:",
+      "passageTitle": "Monopsony and the Minimum Wage",
+      "passageText": "The textbook prediction is straightforward: a wage floor above the market-clearing rate reduces employment. A substantial body of empirical work has failed to find that effect at the moderate increases actually legislated, and the resulting debate has been unusually productive.\n\nOne line of explanation invokes monopsony. Where employers face little competition for particular workers — because of geography, limited information, or the cost to workers of switching jobs — a firm sets wages below the value of the marginal worker's output and hires fewer workers than a competitive market would. In that setting a minimum wage can raise both pay and employment, up to a point, because it removes the firm's incentive to restrict hiring in order to hold wages down.\n\nCritics respond that monopsony is invoked too freely, and that adjustment may occur along margins the studies do not measure: hours rather than headcount, scheduling flexibility, training, non-wage benefits, or slower future hiring rather than present dismissal. The disagreement is therefore less about whether firms respond than about where the response appears and how quickly.\n\nWhat has emerged is a qualified consensus with a clear boundary condition. Moderate increases in low-wage labour markets have shown small employment effects; nothing in the evidence licenses extrapolation to floors far above prevailing local wages, and the studies that find little effect are studies of increases that were, by design, not extreme.",
+      "prompt": "The passage indicates that under monopsony a minimum wage can raise employment because it",
       "options": [
-        "A. Ignores that SAT preparation courses can inflate scores",
-        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
-        "C. Does not consider the diversity implications of the policy",
-        "D. Fails to define 'academic performance' precisely",
-        "E. Both A and B"
+        "A. removes the firm's incentive to restrict hiring in order to hold wages down",
+        "B. increases consumer demand for the firm's products",
+        "C. compels firms to invest in training",
+        "D. reduces the cost to workers of switching jobs",
+        "E. eliminates competition among employers"
       ],
-      "correctAnswer": "B",
-      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "Stated directly. D describes a cause of monopsony, not the mechanism by which the floor operates; E reverses the situation being described.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-002-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
-      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "passageTitle": "Monopsony and the Minimum Wage",
+      "passageText": "The textbook prediction is straightforward: a wage floor above the market-clearing rate reduces employment. A substantial body of empirical work has failed to find that effect at the moderate increases actually legislated, and the resulting debate has been unusually productive.\n\nOne line of explanation invokes monopsony. Where employers face little competition for particular workers — because of geography, limited information, or the cost to workers of switching jobs — a firm sets wages below the value of the marginal worker's output and hires fewer workers than a competitive market would. In that setting a minimum wage can raise both pay and employment, up to a point, because it removes the firm's incentive to restrict hiring in order to hold wages down.\n\nCritics respond that monopsony is invoked too freely, and that adjustment may occur along margins the studies do not measure: hours rather than headcount, scheduling flexibility, training, non-wage benefits, or slower future hiring rather than present dismissal. The disagreement is therefore less about whether firms respond than about where the response appears and how quickly.\n\nWhat has emerged is a qualified consensus with a clear boundary condition. Moderate increases in low-wage labour markets have shown small employment effects; nothing in the evidence licenses extrapolation to floors far above prevailing local wages, and the studies that find little effect are studies of increases that were, by design, not extreme.",
+      "prompt": "Which of the following best describes the critics' position as presented in the passage?",
       "options": [
-        "A. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
-        "B. Investing in diversified funds reduces portfolio risk over time",
-        "C. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "D. Historical market data is unreliable because markets change structurally over time",
-        "E. Companies with consistent earnings growth tend to have stable stock prices"
+        "A. Firms do not respond to wage floors at all",
+        "B. Monopsony has been disproved by recent studies",
+        "C. Adjustment may occur along margins the studies do not measure",
+        "D. Employment effects are large but temporary",
+        "E. Minimum wages should be set by local rather than national authorities"
       ],
-      "correctAnswer": "A",
-      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "The critics' claim is about where the response shows up — hours, scheduling, training, future hiring — not whether it occurs. A contradicts them; the passage says the dispute is less about whether firms respond.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-002-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
-      "question": "Which of the following, if true, most seriously weakens the conclusion?",
+      "passageTitle": "Monopsony and the Minimum Wage",
+      "passageText": "The textbook prediction is straightforward: a wage floor above the market-clearing rate reduces employment. A substantial body of empirical work has failed to find that effect at the moderate increases actually legislated, and the resulting debate has been unusually productive.\n\nOne line of explanation invokes monopsony. Where employers face little competition for particular workers — because of geography, limited information, or the cost to workers of switching jobs — a firm sets wages below the value of the marginal worker's output and hires fewer workers than a competitive market would. In that setting a minimum wage can raise both pay and employment, up to a point, because it removes the firm's incentive to restrict hiring in order to hold wages down.\n\nCritics respond that monopsony is invoked too freely, and that adjustment may occur along margins the studies do not measure: hours rather than headcount, scheduling flexibility, training, non-wage benefits, or slower future hiring rather than present dismissal. The disagreement is therefore less about whether firms respond than about where the response appears and how quickly.\n\nWhat has emerged is a qualified consensus with a clear boundary condition. Moderate increases in low-wage labour markets have shown small employment effects; nothing in the evidence licenses extrapolation to floors far above prevailing local wages, and the studies that find little effect are studies of increases that were, by design, not extreme.",
+      "prompt": "The final paragraph functions primarily to",
       "options": [
-        "A. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "B. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "C. Customers report feeling more valued when using a loyalty programme",
-        "D. Competitors without loyalty programmes have seen declining sales",
-        "E. The loyalty programme was introduced simultaneously with a store renovation"
+        "A. propose an experiment that would settle the dispute",
+        "B. concede that the textbook prediction was correct after all",
+        "C. criticise the design of the studies described earlier",
+        "D. recommend a specific level for the minimum wage",
+        "E. summarise the evidence and mark the limit of what it supports"
       ],
-      "correctAnswer": "B",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "It states the qualified consensus and then its boundary condition: no extrapolation to floors far above prevailing local wages.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-002-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "The 'free rider problem' mentioned in the passage refers to:",
+      "passageTitle": "The Standardisation of Time",
+      "passageText": "Before the 1840s, clocks in British towns were set by local solar noon, so that Bristol ran some ten minutes behind London. The discrepancy was harmless while the fastest traffic moved at the speed of a horse. Railways ended that.\n\nA timetable is a promise about simultaneity, and a network cannot make one across towns keeping different time. Railway companies therefore adopted London time on their own lines, printed it in their timetables, and in effect exported it along the track. Adoption by towns followed the railway rather than preceding it, and the sequence matters: standard time was not imposed by government and then used by industry, but adopted by industry and only later ratified in law, in Britain some four decades after the railways began the practice.\n\nResistance was neither trivial nor irrational. Local time was tied to the sun and to the authority of those who kept it, and its replacement transferred a small piece of civic autonomy to a private company. Some town clocks were fitted with two minute hands as a compromise, showing local and railway time together.\n\nThe episode is often cited as a case of technology dictating social arrangement. The more exact reading is that the technology made an existing inconsistency expensive. Local time had always been inconsistent; only when the cost of that inconsistency was borne by a coordinated network did anyone find it intolerable.",
+      "prompt": "The passage is primarily concerned with",
       "options": [
-        "A. Programmers who use open-source software without contributing code",
-        "B. The tendency for rational actors to underinvest in public goods because they cannot exclude non-payers",
-        "C. The difficulty of coordinating large numbers of geographically dispersed contributors",
-        "D. The reluctance of firms to release proprietary software as open-source"
+        "A. the technical difficulties of building railway timetables",
+        "B. how and why standard time replaced local time, and how that case should be interpreted",
+        "C. the legal history of time regulation in Britain",
+        "D. public resistance to nineteenth-century technology",
+        "E. differences between solar time and mean time"
       ],
       "correctAnswer": "B",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "explanation": "The passage narrates the change and then argues about its correct interpretation in the last paragraph. C and D are components of that account, not its subject.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-002-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "According to the passage, which of the following does NOT explain why developers contribute to open-source projects?",
+      "passageTitle": "The Standardisation of Time",
+      "passageText": "Before the 1840s, clocks in British towns were set by local solar noon, so that Bristol ran some ten minutes behind London. The discrepancy was harmless while the fastest traffic moved at the speed of a horse. Railways ended that.\n\nA timetable is a promise about simultaneity, and a network cannot make one across towns keeping different time. Railway companies therefore adopted London time on their own lines, printed it in their timetables, and in effect exported it along the track. Adoption by towns followed the railway rather than preceding it, and the sequence matters: standard time was not imposed by government and then used by industry, but adopted by industry and only later ratified in law, in Britain some four decades after the railways began the practice.\n\nResistance was neither trivial nor irrational. Local time was tied to the sun and to the authority of those who kept it, and its replacement transferred a small piece of civic autonomy to a private company. Some town clocks were fitted with two minute hands as a compromise, showing local and railway time together.\n\nThe episode is often cited as a case of technology dictating social arrangement. The more exact reading is that the technology made an existing inconsistency expensive. Local time had always been inconsistent; only when the cost of that inconsistency was borne by a coordinated network did anyone find it intolerable.",
+      "prompt": "The author mentions town clocks fitted with two minute hands in order to",
       "options": [
-        "A. Gaining professional reputation in their field",
-        "B. Being employed by firms that benefit from specific projects",
-        "C. Receiving direct financial compensation from project users",
-        "D. Opportunities for skill development and learning"
+        "A. show that local time was more accurate than railway time",
+        "B. demonstrate the technical ingenuity of clockmakers",
+        "C. explain why legal ratification took four decades",
+        "D. illustrate that opposition to the change was neither trivial nor irrational",
+        "E. argue that the railways acted without authority"
       ],
-      "correctAnswer": "C",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "correctAnswer": "D",
+      "explanation": "The detail immediately follows and supports the claim about resistance, offered as a compromise between two legitimate claims on the town's time.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-002-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "The author uses the phrase 'seeming paradox' to suggest that:",
+      "passageTitle": "The Standardisation of Time",
+      "passageText": "Before the 1840s, clocks in British towns were set by local solar noon, so that Bristol ran some ten minutes behind London. The discrepancy was harmless while the fastest traffic moved at the speed of a horse. Railways ended that.\n\nA timetable is a promise about simultaneity, and a network cannot make one across towns keeping different time. Railway companies therefore adopted London time on their own lines, printed it in their timetables, and in effect exported it along the track. Adoption by towns followed the railway rather than preceding it, and the sequence matters: standard time was not imposed by government and then used by industry, but adopted by industry and only later ratified in law, in Britain some four decades after the railways began the practice.\n\nResistance was neither trivial nor irrational. Local time was tied to the sun and to the authority of those who kept it, and its replacement transferred a small piece of civic autonomy to a private company. Some town clocks were fitted with two minute hands as a compromise, showing local and railway time together.\n\nThe episode is often cited as a case of technology dictating social arrangement. The more exact reading is that the technology made an existing inconsistency expensive. Local time had always been inconsistent; only when the cost of that inconsistency was borne by a coordinated network did anyone find it intolerable.",
+      "prompt": "Which of the following best expresses the author's view of the claim that technology dictated the new arrangement?",
       "options": [
-        "A. Open-source development violates all known economic principles",
-        "B. Economists have no theory that explains open-source development",
-        "C. Open-source software is economically irrational and will eventually disappear",
-        "D. The behaviour of open-source contributors appears inconsistent with standard economic predictions but can be explained"
+        "A. It is imprecise: the technology made a long-standing inconsistency expensive rather than creating a new problem",
+        "B. It is correct, since the railways compelled towns to change",
+        "C. It is unfounded, since the change was legislated by government",
+        "D. It is unverifiable, since records of local timekeeping are incomplete",
+        "E. It is true of Britain but of no other country"
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "correctAnswer": "A",
+      "explanation": "The passage offers the 'more exact reading' explicitly: inconsistency had always existed; the network made its cost intolerable.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-002-q01": "A",
-    "gmat-verbal-002-q02": "B",
-    "gmat-verbal-002-q03": "C",
-    "gmat-verbal-002-q04": "D",
+    "gmat-verbal-002-q01": "C",
+    "gmat-verbal-002-q02": "A",
+    "gmat-verbal-002-q03": "D",
+    "gmat-verbal-002-q04": "B",
     "gmat-verbal-002-q05": "E",
-    "gmat-verbal-002-q06": "A",
-    "gmat-verbal-002-q07": "B",
-    "gmat-verbal-002-q08": "E",
+    "gmat-verbal-002-q06": "B",
+    "gmat-verbal-002-q07": "D",
+    "gmat-verbal-002-q08": "A",
     "gmat-verbal-002-q09": "C",
-    "gmat-verbal-002-q10": "D",
-    "gmat-verbal-002-q11": "E",
-    "gmat-verbal-002-q12": "A",
-    "gmat-verbal-002-q13": "B",
+    "gmat-verbal-002-q10": "E",
+    "gmat-verbal-002-q11": "B",
+    "gmat-verbal-002-q12": "D",
+    "gmat-verbal-002-q13": "C",
     "gmat-verbal-002-q14": "E",
-    "gmat-verbal-002-q15": "C",
-    "gmat-verbal-002-q16": "D",
-    "gmat-verbal-002-q17": "E",
-    "gmat-verbal-002-q18": "B",
-    "gmat-verbal-002-q19": "A",
-    "gmat-verbal-002-q20": "B",
+    "gmat-verbal-002-q15": "A",
+    "gmat-verbal-002-q16": "B",
+    "gmat-verbal-002-q17": "D",
+    "gmat-verbal-002-q18": "A",
+    "gmat-verbal-002-q19": "C",
+    "gmat-verbal-002-q20": "E",
     "gmat-verbal-002-q21": "B",
-    "gmat-verbal-002-q22": "C",
-    "gmat-verbal-002-q23": "D"
+    "gmat-verbal-002-q22": "D",
+    "gmat-verbal-002-q23": "A"
   },
-  "fingerprints": [
-    "9af14827f1b66619cb",
-    "f5e5c067006d4faafa",
-    "c7fe53bfec69ec0461",
-    "1c34030e8f0d97fee7",
-    "f1053ec4f15d29039a",
-    "4c18332d153416ea32",
-    "4d1da432b7b2e86853",
-    "49e97c34d1d4ff6023",
-    "63da6cb9161d775f44",
-    "f4ccef1f667cd8fbf5",
-    "18809d6ff0bade87d5",
-    "cbc4fb9aa20da67196",
-    "326657ca1d8a2134a1",
-    "3d1553dc1f58e56448",
-    "5cfe4c31b7cae81b13",
-    "f3949d144624e0bb98",
-    "7957d2e39a1b419a0e",
-    "0bd3a5d812d5a6db0a",
-    "efb237239e0bfb7560",
-    "41ffacf922fc34f845"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-002-rp1",
-      "title": "Business and Society",
-      "text": "The relationship between economic inequality and social mobility has been extensively studied. Some economists argue that inequality creates incentives for effort and innovation, while others maintain that high inequality undermines social mobility by restricting access to education and networks for those at the bottom of the income distribution. Longitudinal data from multiple countries suggests the latter effect is more significant."
+      "title": "Unprofitable Product Lines",
+      "text": "Managers are routinely advised to discontinue product lines that fail to cover their allocated costs, and the advice is often sound. Yet firms with sophisticated accounting frequently retain such lines deliberately, and the reasoning is not sentimental.\n\nThe first consideration is allocation itself. Overhead assigned to a line does not usually disappear when the line is dropped; it is redistributed across the remaining products, which then appear less profitable in turn. A sequence of individually defensible discontinuations can therefore leave a firm smaller and no more profitable, a pattern common enough in the management literature to have acquired a name.\n\nThe second consideration is demand interdependence. Where customers buy a bundle, the margin on any single item is a poor guide to its contribution. A supplier of industrial fasteners may lose money on unusual sizes and keep them because purchasing departments prefer a single source; a bookshop's loss-making reference section may draw the traffic on which the profitable sections depend.\n\nThe third is optionality. A line that is unprofitable at current volumes may be the firm's only presence in a market that could grow, and re-entry after exit is typically far more expensive than continued presence, because distribution relationships and regulatory approvals must be rebuilt.\n\nNone of this argues that unprofitable lines should be retained as a rule. It argues that the accounting figure is the beginning of the analysis rather than its conclusion, and that the relevant question is not whether a line covers its allocated costs but what would actually change if it were gone."
+    },
+    {
+      "id": "gmat-verbal-002-rp2",
+      "title": "Residues and the Dating of Early Pottery",
+      "text": "For most of the twentieth century, the earliest pottery was assumed to belong to settled farming communities, on the reasonable grounds that fragile, heavy vessels seemed ill-suited to mobile life. Two developments have unsettled that assumption.\n\nThe first is radiocarbon dating of sherds from sites in East Asia, which places some pottery well before the local adoption of agriculture — among hunting and fishing populations rather than farmers. The second, and more informative, is the chemical analysis of residues absorbed into the porous walls of the vessels themselves. Lipids trapped in the fabric can be extracted and their carbon isotopes measured, distinguishing marine from terrestrial sources and, in some cases, identifying the processing of aquatic foods.\n\nThe results have shifted the question from when pottery appeared to what it was for. Vessels from several early Japanese sites carry residues consistent with the intensive processing of fish, suggesting that the earliest ceramics were a technology for extracting oils and rendering foods storable, rather than a by-product of sedentary living.\n\nCaution is warranted. Residue analysis samples what was cooked most often or most recently, not the full range of use, and vessels may be reused for purposes their makers did not intend. Absence of a lipid signal is weak evidence of absence, since preservation varies with soil chemistry. What the technique establishes securely is narrower than the headlines suggest: not that pottery was invented for fish, but that at particular sites it was used for them, early and repeatedly."
+    },
+    {
+      "id": "gmat-verbal-002-rp3",
+      "title": "Monopsony and the Minimum Wage",
+      "text": "The textbook prediction is straightforward: a wage floor above the market-clearing rate reduces employment. A substantial body of empirical work has failed to find that effect at the moderate increases actually legislated, and the resulting debate has been unusually productive.\n\nOne line of explanation invokes monopsony. Where employers face little competition for particular workers — because of geography, limited information, or the cost to workers of switching jobs — a firm sets wages below the value of the marginal worker's output and hires fewer workers than a competitive market would. In that setting a minimum wage can raise both pay and employment, up to a point, because it removes the firm's incentive to restrict hiring in order to hold wages down.\n\nCritics respond that monopsony is invoked too freely, and that adjustment may occur along margins the studies do not measure: hours rather than headcount, scheduling flexibility, training, non-wage benefits, or slower future hiring rather than present dismissal. The disagreement is therefore less about whether firms respond than about where the response appears and how quickly.\n\nWhat has emerged is a qualified consensus with a clear boundary condition. Moderate increases in low-wage labour markets have shown small employment effects; nothing in the evidence licenses extrapolation to floors far above prevailing local wages, and the studies that find little effect are studies of increases that were, by design, not extreme."
+    },
+    {
+      "id": "gmat-verbal-002-rp4",
+      "title": "The Standardisation of Time",
+      "text": "Before the 1840s, clocks in British towns were set by local solar noon, so that Bristol ran some ten minutes behind London. The discrepancy was harmless while the fastest traffic moved at the speed of a horse. Railways ended that.\n\nA timetable is a promise about simultaneity, and a network cannot make one across towns keeping different time. Railway companies therefore adopted London time on their own lines, printed it in their timetables, and in effect exported it along the track. Adoption by towns followed the railway rather than preceding it, and the sequence matters: standard time was not imposed by government and then used by industry, but adopted by industry and only later ratified in law, in Britain some four decades after the railways began the practice.\n\nResistance was neither trivial nor irrational. Local time was tied to the sun and to the authority of those who kept it, and its replacement transferred a small piece of civic autonomy to a private company. Some town clocks were fitted with two minute hands as a compromise, showing local and railway time together.\n\nThe episode is often cited as a case of technology dictating social arrangement. The more exact reading is that the technology made an existing inconsistency expensive. Local time had always been inconsistent; only when the cost of that inconsistency was borne by a coordinated network did anyone find it intolerable."
     }
   ]
 }
