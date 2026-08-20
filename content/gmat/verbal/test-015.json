@@ -12,469 +12,474 @@
       "id": "gmat-verbal-015-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "prompt": "A swimming pool introduced small-group lessons in place of individual ones and reports that the proportion of children passing the beginner assessment rose. It concludes that small groups teach beginners better than one-to-one instruction.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. A separate economic boom added 100,000 jobs during the same year",
-        "B. Labour economists disagree on the effects of minimum wage increases",
-        "C. The minimum wage increase only affected 5% of workers",
-        "D. Some industries are more affected than others by wage increases",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. Small-group lessons cost parents less.",
+        "B. Some instructors prefer teaching groups.",
+        "C. Individual lessons remain available on request.",
+        "D. The pool's changing rooms were refurbished.",
+        "E. The pool simultaneously lowered the standard required to pass the beginner assessment."
       ],
-      "correctAnswer": "A",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "If the threshold moved, the pass rate says nothing about teaching; the measure and the standard changed together.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-015-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "prompt": "A tyre manufacturer reports that drivers who fit its winter tyres have fewer accidents in winter than drivers who do not, and advertises the tyres as making winter driving safer.",
+      "question": "Which of the following, if true, most seriously undermines the advertisement?",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. Drivers who buy winter tyres are those most concerned about winter conditions, and they also drive less in bad weather and at lower speeds.",
+        "B. Winter tyres wear faster in warm weather.",
+        "C. The tyres are more expensive than standard tyres.",
+        "D. Some countries require winter tyres by law.",
+        "E. Accident rates rise in winter generally."
       ],
-      "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The purchasers differ in behaviour as well as equipment, so the accident gap need owe nothing to the tyres themselves.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-015-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "prompt": "A charity sent two versions of a fundraising letter and found that the version mentioning a specific named beneficiary raised more per letter than the version citing statistics on the scale of need. It concludes that donors respond better to individual stories.",
+      "question": "Which of the following would be most useful to determine in evaluating that conclusion?",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "C. Local restaurants cannot accommodate arena crowds",
-        "D. The arena's construction will not create permanent jobs",
-        "E. The city already has sufficient sports facilities"
+        "A. How much the letters cost to print",
+        "B. Whether the named beneficiary consented",
+        "C. Whether the two versions were sent to comparable groups of recipients",
+        "D. How many recipients read the letter fully",
+        "E. Whether the charity has used statistics before"
       ],
-      "correctAnswer": "B",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "If the mailing lists differed in wealth or prior giving, the comparison is between audiences rather than between letters. C is an ethical question that does not bear on the inference.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-015-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "prompt": "A hotel began including breakfast in its room rate and reports that guests now rate value for money more highly, although the total price they pay is unchanged.",
+      "question": "Which of the following, if true, best explains this result?",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. The ad was shown only on premium streaming services",
-        "C. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "D. The brand launched a new product line during the same period",
-        "E. Competitors also increased advertising spending during the same period"
+        "A. Breakfast is served until eleven.",
+        "B. The hotel employs additional kitchen staff.",
+        "C. Some guests eat breakfast elsewhere.",
+        "D. Guests who previously skipped the separately priced breakfast now consume it, so they receive more for the same outlay.",
+        "E. Room rates at competing hotels have risen."
       ],
-      "correctAnswer": "C",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The bundle changes what is actually consumed, so value received rises even though the price does not — no perceptual explanation is required.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-015-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "prompt": "Every freight service on the Kentmere line that runs overnight is hauled by the operator's newest locomotives. No service hauled by the newest locomotives has been cancelled for mechanical failure this year. Some freight services on the line have been cancelled for mechanical failure.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It demonstrates that road construction is always harmful",
-        "C. It suggests the first analyst has incorrect data",
-        "D. It presents empirical evidence that undermines the first analyst's prediction",
-        "E. It proves that traffic will always increase regardless of policy"
+        "A. The newest locomotives are more reliable than the older ones.",
+        "B. Some freight services on the line do not run overnight.",
+        "C. Most services on the line run overnight.",
+        "D. No overnight service has ever been cancelled.",
+        "E. Older locomotives are used only in daytime."
       ],
-      "correctAnswer": "D",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Cancelled services were not hauled by the newest locomotives, and overnight running implies those locomotives, so the cancelled services were not overnight ones. B is a causal reading the statements do not establish.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-015-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
-      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "prompt": "A farm invested in robotic weeding equipment and reports that its herbicide use has fallen by 70 per cent, presenting this as evidence that the robots have reduced the farm's environmental impact.",
+      "question": "Which of the following would be most useful to determine in evaluating that presentation?",
       "options": [
-        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "B. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "C. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
-        "D. All birds have wings. Penguins are birds. Therefore, penguins can fly.",
-        "E. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer."
+        "A. How much the robots cost to purchase",
+        "B. Whether neighbouring farms have adopted similar equipment",
+        "C. How many hours the robots operate each day",
+        "D. Whether the robots' manufacture, energy use and soil compaction offset the reduction in herbicide",
+        "E. Whether the farm's yields have changed"
       ],
-      "correctAnswer": "E",
-      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "A claim about overall impact requires the whole balance, not one input; the substituted burdens may be smaller, larger or simply different in kind.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-015-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "prompt": "An online shoe retailer found that customers who read its sizing guide return fewer pairs than customers who do not, and plans to require every customer to view the guide before ordering.",
+      "question": "Which of the following, if true, casts most doubt on the plan?",
       "options": [
-        "A. Job satisfaction and adequate sleep are associated in the survey population",
-        "B. Improving sleep quality will increase job satisfaction for most workers",
-        "C. Dissatisfied workers always sleep fewer than 7 hours",
-        "D. Employers should implement nap rooms to improve satisfaction",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "A. The guide takes two minutes to read.",
+        "B. Customers who consult the guide are those already uncertain about size, and their return rate is low because they order carefully in other ways too.",
+        "C. Some customers order two sizes deliberately.",
+        "D. Returns are free.",
+        "E. The guide is available in several languages."
       ],
-      "correctAnswer": "A",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Consulting the guide marks a careful buyer rather than creating one, so compelling everyone to view it need not lower returns.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-015-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "prompt": "A dental service reports that patients who attend check-ups twice a year need fewer fillings than patients who attend annually, and proposes recommending six-monthly check-ups to all patients.",
+      "question": "The proposal assumes which of the following?",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. Six-monthly attendance is affordable for all patients.",
+        "B. Fillings are the main outcome of dental care.",
+        "C. Dentists have capacity for additional appointments.",
+        "D. Patients report their attendance accurately.",
+        "E. The difference in fillings reflects the frequency of attendance rather than differences between the patients who choose each interval."
       ],
       "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
+      "explanation": "The recommendation extends a comparison between self-selected groups to everyone, which requires that the interval, not the patient, be doing the work. D is a capacity constraint rather than a premise of the inference.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-015-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "prompt": "A streaming service raised its monthly price and reports that revenue rose in the following quarter. It concludes that it could raise the price again with a similar result.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. The claim that wetlands prevent flooding",
-        "B. The assumption that all wetlands have equal flood-prevention value",
-        "C. The conclusion that all wetlands should be protected",
-        "D. The implication that flooding is always preventable",
-        "E. The premise that wetlands are worth preserving"
+        "A. Subscribers are billed monthly.",
+        "B. The service added new programmes in the same quarter.",
+        "C. Most subscribers are on annual plans whose prices have not yet been affected, and cancellations among monthly subscribers were high.",
+        "D. Competing services charge more.",
+        "E. Some subscribers share accounts."
       ],
-      "correctAnswer": "B",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
+      "correctAnswer": "C",
+      "explanation": "The quarter's revenue conceals the response, since most subscribers have not yet faced the higher price and those who did left in numbers. C offers a rival cause but does not show the inference to be unsafe on its own terms.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-015-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "prompt": "A city refurbished a playground and reports that the number of children using the park has risen. A councillor argues that refurbishing the other playgrounds in the city would produce similar increases everywhere.",
+      "question": "Which of the following, if true, casts most doubt on the councillor's argument?",
       "options": [
-        "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. A controlled experiment with randomly assigned music found the same 20% difference",
-        "D. Sales staff performed better when the music was upbeat",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "A. Attendance at the two nearest playgrounds fell by a combined amount close to the increase.",
+        "B. The refurbishment took three months.",
+        "C. The refurbished playground has new climbing equipment.",
+        "D. The city has twelve playgrounds.",
+        "E. Parents were consulted about the design."
       ],
-      "correctAnswer": "C",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
+      "correctAnswer": "A",
+      "explanation": "The gain appears to be redistribution between sites; refurbishing all of them cannot repeat an effect that consisted of drawing users from elsewhere.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-015-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
-      "question": "Which of the following most weakens the editorial's conclusion?",
+      "prompt": "A health agency argues that a new vaccine will substantially reduce disease in a rural region, citing trial results showing 85 per cent efficacy. A critic notes that the vaccine must be kept below a temperature that the region's clinics cannot currently maintain.",
+      "question": "The critic's point weakens the agency's argument by",
       "options": [
-        "A. Employment programmes have reduced crime in some pilot cities",
-        "B. The editorial does not define 'crime' precisely",
-        "C. Reducing unemployment is expensive and politically difficult",
-        "D. Crime rates are influenced by many factors beyond unemployment",
-        "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
+        "A. disputing the trial's efficacy figure",
+        "B. identifying a condition on which the trial result depends and which does not hold in the setting under discussion",
+        "C. arguing that the disease is less common than reported",
+        "D. questioning the ethics of the trial",
+        "E. proposing a different vaccine"
       ],
-      "correctAnswer": "D",
-      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
+      "correctAnswer": "B",
+      "explanation": "Efficacy under trial conditions transfers only if the conditions transfer; a broken cold chain means the product delivered is not the product tested.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-015-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
-      "question": "The president's argument is flawed because it:",
+      "passageTitle": "The Family Firm",
+      "passageText": "Family-controlled firms are often treated as a transitional form that professional management eventually replaces. They remain a large share of enterprises in every economy that has been measured, including the most developed, and the persistence is not explained by inertia alone.\n\nFamily control resolves one problem cheaply. Where ownership is dispersed, shareholders must monitor managers who spend their money, and the mechanisms for doing so — boards, disclosure, takeover threats — are expensive and imperfect. An owner who also manages needs no such apparatus. Family firms also tend to hold longer horizons, because the owners expect to hand the business on rather than to sell at the next peak, and they sustain relationships with employees and suppliers that survive downturns in ways a firm managed to quarterly results often cannot.\n\nThe costs appear at succession. The pool of candidates in one family is small, and the evidence that firms passing control to a family heir underperform those recruiting outside is among the more consistent findings in the field. A family may also extract value in ways that harm minority shareholders, and pursue objectives — keeping a plant in the founder's town, preserving a name — that the accounts record as costs.\n\nThe reasonable summary is that the form has a characteristic strength and a characteristic weakness that appear at different moments. It is well suited to running a business and badly suited to choosing who runs it next, and the firms that endure across generations are generally those that separated the two questions before the second one arrived.",
+      "prompt": "According to the passage, family control reduces one cost of ownership because",
       "options": [
-        "A. Ignores that SAT preparation courses can inflate scores",
-        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
-        "C. Does not consider the diversity implications of the policy",
-        "D. Fails to define 'academic performance' precisely",
-        "E. Both A and B"
+        "A. family members accept lower salaries",
+        "B. such firms are exempt from disclosure requirements",
+        "C. banks lend to family firms on better terms",
+        "D. an owner who also manages does not need the apparatus that dispersed shareholders require to monitor managers",
+        "E. family firms are usually smaller"
       ],
-      "correctAnswer": "B",
-      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
+      "correctAnswer": "D",
+      "explanation": "The monitoring argument is the first advantage set out, and the passage names boards, disclosure and takeover threats as the expensive alternatives.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-015-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
-      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "passageTitle": "The Family Firm",
+      "passageText": "Family-controlled firms are often treated as a transitional form that professional management eventually replaces. They remain a large share of enterprises in every economy that has been measured, including the most developed, and the persistence is not explained by inertia alone.\n\nFamily control resolves one problem cheaply. Where ownership is dispersed, shareholders must monitor managers who spend their money, and the mechanisms for doing so — boards, disclosure, takeover threats — are expensive and imperfect. An owner who also manages needs no such apparatus. Family firms also tend to hold longer horizons, because the owners expect to hand the business on rather than to sell at the next peak, and they sustain relationships with employees and suppliers that survive downturns in ways a firm managed to quarterly results often cannot.\n\nThe costs appear at succession. The pool of candidates in one family is small, and the evidence that firms passing control to a family heir underperform those recruiting outside is among the more consistent findings in the field. A family may also extract value in ways that harm minority shareholders, and pursue objectives — keeping a plant in the founder's town, preserving a name — that the accounts record as costs.\n\nThe reasonable summary is that the form has a characteristic strength and a characteristic weakness that appear at different moments. It is well suited to running a business and badly suited to choosing who runs it next, and the firms that endure across generations are generally those that separated the two questions before the second one arrived.",
+      "prompt": "The passage indicates that the evidence on succession shows that firms",
       "options": [
-        "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "C. Historical market data is unreliable because markets change structurally over time",
-        "D. Companies with consistent earnings growth tend to have stable stock prices",
-        "E. Because a coin has landed heads five times in a row, it is more likely to land tails next time"
+        "A. recruiting outside managers lose their long horizons",
+        "B. rarely survive beyond a second generation",
+        "C. passing control to a family heir tend to underperform those recruiting outside",
+        "D. prefer to sell rather than pass control on",
+        "E. with dispersed ownership face the same succession problem"
       ],
-      "correctAnswer": "E",
-      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
+      "correctAnswer": "C",
+      "explanation": "Described as among the more consistent findings in the field.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-015-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
-      "question": "Which of the following, if true, most seriously weakens the conclusion?",
+      "passageTitle": "The Family Firm",
+      "passageText": "Family-controlled firms are often treated as a transitional form that professional management eventually replaces. They remain a large share of enterprises in every economy that has been measured, including the most developed, and the persistence is not explained by inertia alone.\n\nFamily control resolves one problem cheaply. Where ownership is dispersed, shareholders must monitor managers who spend their money, and the mechanisms for doing so — boards, disclosure, takeover threats — are expensive and imperfect. An owner who also manages needs no such apparatus. Family firms also tend to hold longer horizons, because the owners expect to hand the business on rather than to sell at the next peak, and they sustain relationships with employees and suppliers that survive downturns in ways a firm managed to quarterly results often cannot.\n\nThe costs appear at succession. The pool of candidates in one family is small, and the evidence that firms passing control to a family heir underperform those recruiting outside is among the more consistent findings in the field. A family may also extract value in ways that harm minority shareholders, and pursue objectives — keeping a plant in the founder's town, preserving a name — that the accounts record as costs.\n\nThe reasonable summary is that the form has a characteristic strength and a characteristic weakness that appear at different moments. It is well suited to running a business and badly suited to choosing who runs it next, and the firms that endure across generations are generally those that separated the two questions before the second one arrived.",
+      "prompt": "The author's summary of the family firm is that it is",
       "options": [
-        "A. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "B. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "C. Customers report feeling more valued when using a loyalty programme",
-        "D. Competitors without loyalty programmes have seen declining sales",
-        "E. The loyalty programme was introduced simultaneously with a store renovation"
+        "A. a transitional form that professional management will replace",
+        "B. superior to dispersed ownership in every respect",
+        "C. sustained mainly by tax advantages",
+        "D. unable to hold long horizons",
+        "E. well suited to running a business and badly suited to choosing its next leader"
       ],
-      "correctAnswer": "A",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
+      "correctAnswer": "E",
+      "explanation": "The final paragraph states this, adding that enduring firms separated the two questions before succession arrived.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-015-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
-      "question": "Which of the following would most strengthen the CFO's conclusion?",
+      "passageTitle": "How Continental Drift Was Accepted",
+      "passageText": "Wegener proposed in 1912 that the continents had moved, and assembled evidence of a kind that is now regarded as strong: matching coastlines, matching rock formations across oceans, fossils of the same land species on separated continents, and glacial deposits in what are now tropical regions. The proposal was rejected by most geologists for four decades, and the reason usually given — conservatism — is only part of the story.\n\nThe substantive objection was mechanism. Wegener's suggested forces were demonstrably far too weak to move continental rock through oceanic crust, and physicists showed as much. A theory that explains many observations while requiring an impossible mechanism is in genuine difficulty, and the demand for one was legitimate rather than obstructive.\n\nWhat changed the situation was not better argument about the existing evidence but a new class of measurement, most of it made for other purposes. Wartime and post-war ocean surveys mapped the sea floor and found the mid-ocean ridges; palaeomagnetic work showed that rocks recorded the field direction at their formation and that these directions differed by continent; and the striped magnetic pattern either side of the ridges, symmetric and matching the reversal timescale, indicated that new sea floor was being created and spreading outward.\n\nThat supplied the missing mechanism, and it was not the one Wegener proposed: continents do not plough through the ocean floor, they ride on plates that are created and consumed. The episode is often told as vindication of a lone genius. It reads better as an illustration that a correct conclusion supported by an incorrect mechanism is not yet a theory, and that what resolved the dispute came from instruments nobody had built to settle it.",
+      "prompt": "The passage indicates that the principal substantive objection to Wegener's proposal was that",
       "options": [
-        "A. Other advertising channels were suspended during the same three months",
-        "B. The lifetime value of a new user averages $50",
-        "C. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "D. Social media platforms reported the campaign reached 5 million unique users",
-        "E. Competitors saw no change in sign-ups over the same period"
+        "A. the forces he proposed were far too weak to move continents through oceanic crust",
+        "B. his evidence was fabricated",
+        "C. matching fossils could be explained by land bridges",
+        "D. the continents' coastlines do not in fact match",
+        "E. geologists had not surveyed the ocean floor"
       ],
-      "correctAnswer": "B",
-      "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The passage calls the demand for a workable mechanism legitimate rather than obstructive.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-015-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
-      "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
+      "passageTitle": "How Continental Drift Was Accepted",
+      "passageText": "Wegener proposed in 1912 that the continents had moved, and assembled evidence of a kind that is now regarded as strong: matching coastlines, matching rock formations across oceans, fossils of the same land species on separated continents, and glacial deposits in what are now tropical regions. The proposal was rejected by most geologists for four decades, and the reason usually given — conservatism — is only part of the story.\n\nThe substantive objection was mechanism. Wegener's suggested forces were demonstrably far too weak to move continental rock through oceanic crust, and physicists showed as much. A theory that explains many observations while requiring an impossible mechanism is in genuine difficulty, and the demand for one was legitimate rather than obstructive.\n\nWhat changed the situation was not better argument about the existing evidence but a new class of measurement, most of it made for other purposes. Wartime and post-war ocean surveys mapped the sea floor and found the mid-ocean ridges; palaeomagnetic work showed that rocks recorded the field direction at their formation and that these directions differed by continent; and the striped magnetic pattern either side of the ridges, symmetric and matching the reversal timescale, indicated that new sea floor was being created and spreading outward.\n\nThat supplied the missing mechanism, and it was not the one Wegener proposed: continents do not plough through the ocean floor, they ride on plates that are created and consumed. The episode is often told as vindication of a lone genius. It reads better as an illustration that a correct conclusion supported by an incorrect mechanism is not yet a theory, and that what resolved the dispute came from instruments nobody had built to settle it.",
+      "prompt": "According to the passage, what resolved the dispute was",
       "options": [
-        "A. It assumes that lower temperatures are always desirable",
-        "B. It ignores that tree planting is expensive",
-        "C. It treats a correlation as evidence of a causal relationship",
-        "D. It fails to consider that trees require water",
-        "E. It overlooks that some neighbourhoods may not have space for trees"
+        "A. a more persuasive restatement of Wegener's original argument",
+        "B. a new class of measurement, much of it made for other purposes",
+        "C. the discovery of additional matching fossils",
+        "D. the retirement of the geologists who had objected",
+        "E. a demonstration that the physicists' calculations were wrong"
       ],
-      "correctAnswer": "C",
-      "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Ocean surveys, palaeomagnetism and the magnetic striping are the measurements named, and the passage stresses they were not built to settle the question.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-015-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
-      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "passageTitle": "How Continental Drift Was Accepted",
+      "passageText": "Wegener proposed in 1912 that the continents had moved, and assembled evidence of a kind that is now regarded as strong: matching coastlines, matching rock formations across oceans, fossils of the same land species on separated continents, and glacial deposits in what are now tropical regions. The proposal was rejected by most geologists for four decades, and the reason usually given — conservatism — is only part of the story.\n\nThe substantive objection was mechanism. Wegener's suggested forces were demonstrably far too weak to move continental rock through oceanic crust, and physicists showed as much. A theory that explains many observations while requiring an impossible mechanism is in genuine difficulty, and the demand for one was legitimate rather than obstructive.\n\nWhat changed the situation was not better argument about the existing evidence but a new class of measurement, most of it made for other purposes. Wartime and post-war ocean surveys mapped the sea floor and found the mid-ocean ridges; palaeomagnetic work showed that rocks recorded the field direction at their formation and that these directions differed by continent; and the striped magnetic pattern either side of the ridges, symmetric and matching the reversal timescale, indicated that new sea floor was being created and spreading outward.\n\nThat supplied the missing mechanism, and it was not the one Wegener proposed: continents do not plough through the ocean floor, they ride on plates that are created and consumed. The episode is often told as vindication of a lone genius. It reads better as an illustration that a correct conclusion supported by an incorrect mechanism is not yet a theory, and that what resolved the dispute came from instruments nobody had built to settle it.",
+      "prompt": "The author suggests the episode is better read as showing that",
       "options": [
-        "A. Passengers reported higher satisfaction with the new policy",
-        "B. Competing airlines have not adopted similar policies",
-        "C. Boarding time varies naturally between 15 and 35 minutes",
-        "D. The airline also reduced the number of carry-on bags allowed during the same period",
-        "E. The new policy was introduced on routes with larger aircraft"
+        "A. scientific communities reject new ideas as a matter of course",
+        "B. lone researchers are usually vindicated eventually",
+        "C. geology advances more slowly than physics",
+        "D. evidence from fossils is unreliable",
+        "E. a correct conclusion supported by an incorrect mechanism is not yet a theory"
       ],
-      "correctAnswer": "D",
-      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "The closing sentences reject the lone-genius reading in favour of this one.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-015-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "passageTitle": "Working Away from the Office",
+      "passageText": "The rapid shift to remote and hybrid work has generated a large empirical literature in a short time, and the findings are less contradictory than the coverage suggests once the questions are separated.\n\nOn individual productivity in tasks that can be measured — calls handled, cases processed, code committed — remote work performs comparably to office work and sometimes better, with the gains concentrated in reduced commuting and fewer interruptions. On tasks whose output is harder to observe, the evidence is thinner, and studies relying on self-report or on manager assessment measure something other than output.\n\nThe consistent finding concerns not productivity but the transmission of knowledge. Junior employees receive less feedback, and the informal observation by which people learn how work is actually done occurs less. Effects on the individual's current output may be small while the effect on their development is not, and these appear on different timescales, which is why a firm can measure no productivity loss for two years and face one later.\n\nTwo further results are robust. Fully remote arrangements and fully office-based ones both lose to hybrid ones on retention, which suggests employees value the option rather than either extreme. And the aggregate effects fall unevenly across places rather than across firms: city-centre economies built around commuter spending face a permanent reduction in demand that no arrangement inside any single firm addresses, and that displacement, rather than any change in output per worker, is the largest measured consequence so far.",
+      "prompt": "The passage indicates that studies of remote work relying on manager assessment",
       "options": [
-        "A. Does not define what type of consulting services were provided",
-        "B. Ignores that some companies declined in revenue after hiring the firm",
-        "C. Does not specify what time period is covered by the data",
-        "D. Compares incomparable companies across different industries",
-        "E. Fails to compare the companies' growth with industry-wide growth trends"
+        "A. are the most reliable evidence available",
+        "B. apply only to junior employees",
+        "C. have not been conducted",
+        "D. measure something other than output",
+        "E. confirm the findings from measured tasks"
       ],
-      "correctAnswer": "E",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "Stated where the passage distinguishes measurable tasks from those whose output is hard to observe.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-015-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "passageTitle": "Working Away from the Office",
+      "passageText": "The rapid shift to remote and hybrid work has generated a large empirical literature in a short time, and the findings are less contradictory than the coverage suggests once the questions are separated.\n\nOn individual productivity in tasks that can be measured — calls handled, cases processed, code committed — remote work performs comparably to office work and sometimes better, with the gains concentrated in reduced commuting and fewer interruptions. On tasks whose output is harder to observe, the evidence is thinner, and studies relying on self-report or on manager assessment measure something other than output.\n\nThe consistent finding concerns not productivity but the transmission of knowledge. Junior employees receive less feedback, and the informal observation by which people learn how work is actually done occurs less. Effects on the individual's current output may be small while the effect on their development is not, and these appear on different timescales, which is why a firm can measure no productivity loss for two years and face one later.\n\nTwo further results are robust. Fully remote arrangements and fully office-based ones both lose to hybrid ones on retention, which suggests employees value the option rather than either extreme. And the aggregate effects fall unevenly across places rather than across firms: city-centre economies built around commuter spending face a permanent reduction in demand that no arrangement inside any single firm addresses, and that displacement, rather than any change in output per worker, is the largest measured consequence so far.",
+      "prompt": "According to the passage, the consistent finding about remote work concerns",
       "options": [
-        "A. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
-        "B. Olive oil contains monounsaturated fats linked to heart health",
-        "C. Heart disease rates have been declining globally regardless of fat consumption",
-        "D. The study followed individuals for 10 years",
-        "E. Olive oil is more expensive than butter in most markets"
+        "A. a fall in individual productivity",
+        "B. an increase in working hours",
+        "C. the transmission of knowledge, particularly to junior employees",
+        "D. the cost of office space",
+        "E. employee preference for fully remote arrangements"
       ],
-      "correctAnswer": "A",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Less feedback and less informal observation of how work is done, with effects appearing on a different timescale from output.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-015-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "passageTitle": "Working Away from the Office",
+      "passageText": "The rapid shift to remote and hybrid work has generated a large empirical literature in a short time, and the findings are less contradictory than the coverage suggests once the questions are separated.\n\nOn individual productivity in tasks that can be measured — calls handled, cases processed, code committed — remote work performs comparably to office work and sometimes better, with the gains concentrated in reduced commuting and fewer interruptions. On tasks whose output is harder to observe, the evidence is thinner, and studies relying on self-report or on manager assessment measure something other than output.\n\nThe consistent finding concerns not productivity but the transmission of knowledge. Junior employees receive less feedback, and the informal observation by which people learn how work is actually done occurs less. Effects on the individual's current output may be small while the effect on their development is not, and these appear on different timescales, which is why a firm can measure no productivity loss for two years and face one later.\n\nTwo further results are robust. Fully remote arrangements and fully office-based ones both lose to hybrid ones on retention, which suggests employees value the option rather than either extreme. And the aggregate effects fall unevenly across places rather than across firms: city-centre economies built around commuter spending face a permanent reduction in demand that no arrangement inside any single firm addresses, and that displacement, rather than any change in output per worker, is the largest measured consequence so far.",
+      "prompt": "The passage identifies which as the largest measured consequence so far?",
       "options": [
-        "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Doctors who proactively call patients may also be more thorough in their overall care",
-        "C. Some patients do not have phones",
-        "D. Patients prefer in-person follow-up visits to phone calls",
-        "E. Phone calls are less effective than written instructions"
+        "A. The displacement of demand away from city-centre economies built on commuter spending",
+        "B. A change in output per worker",
+        "C. A decline in employee retention",
+        "D. An increase in hybrid working",
+        "E. A reduction in commuting time"
       ],
-      "correctAnswer": "B",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The final sentence says the uneven effect falls across places rather than firms and is larger than any measured change in output per worker.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-015-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "According to the passage, which of the following contributes to the urban heat island effect?",
+      "passageTitle": "What Survives Translation",
+      "passageText": "A translation is commonly judged by fidelity, as though the original were a fixed quantity that a translation preserves in greater or lesser proportion. Working translators rarely describe the task that way, and the reason is instructive.\n\nAny text does several things at once. It states something; it does so in a register that positions its speaker; it sounds a particular way; it alludes to what its first readers knew. These properties compete under translation. Preserving a pun may require changing what is said; preserving metre may require a different image; a phrase that was ordinary in its own language becomes conspicuous if rendered literally, so literal fidelity to the words can produce infidelity to the effect.\n\nThe translator therefore ranks the properties, and the ranking is a judgement about what the text is for. A legal contract, a liturgy, a comic novel and a technical manual each impose different orders, and a translator who applies one text's ranking to another produces work that is wrong in a way no dictionary will show.\n\nThis is why retranslation is normal rather than an admission of earlier failure. Successive translations of a major work are not converging on a correct version; they are making different rankings, often in response to what readers of their moment need explained. The useful question about a translation is not how faithful it is but what it chose to be faithful to — and a translation that never had to choose is describing a text that was doing only one thing.",
+      "prompt": "The passage suggests that literal fidelity to a text's words can produce",
       "options": [
-        "A. High buildings that block wind flow",
-        "B. Vehicles, air conditioning, and industry releasing waste heat",
-        "C. Reflective roofs in city centres",
-        "D. Increased cloud cover over urban areas"
+        "A. a more accurate rendering of its meaning",
+        "B. infidelity to its effect, since an ordinary phrase may become conspicuous",
+        "C. a translation suitable for legal purposes only",
+        "D. the same ranking of properties as the original",
+        "E. a version that requires no retranslation"
       ],
       "correctAnswer": "B",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "explanation": "The example given is of a phrase ordinary in its own language becoming conspicuous when rendered word for word.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-015-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "The passage states that the greatest temperature difference between cities and rural areas occurs:",
+      "passageTitle": "What Survives Translation",
+      "passageText": "A translation is commonly judged by fidelity, as though the original were a fixed quantity that a translation preserves in greater or lesser proportion. Working translators rarely describe the task that way, and the reason is instructive.\n\nAny text does several things at once. It states something; it does so in a register that positions its speaker; it sounds a particular way; it alludes to what its first readers knew. These properties compete under translation. Preserving a pun may require changing what is said; preserving metre may require a different image; a phrase that was ordinary in its own language becomes conspicuous if rendered literally, so literal fidelity to the words can produce infidelity to the effect.\n\nThe translator therefore ranks the properties, and the ranking is a judgement about what the text is for. A legal contract, a liturgy, a comic novel and a technical manual each impose different orders, and a translator who applies one text's ranking to another produces work that is wrong in a way no dictionary will show.\n\nThis is why retranslation is normal rather than an admission of earlier failure. Successive translations of a major work are not converging on a correct version; they are making different rankings, often in response to what readers of their moment need explained. The useful question about a translation is not how faithful it is but what it chose to be faithful to — and a translation that never had to choose is describing a text that was doing only one thing.",
+      "prompt": "According to the passage, a translator who applies one kind of text's ranking to another produces work that is",
       "options": [
-        "A. During the hottest summer afternoons",
-        "B. During periods of high wind",
-        "C. On calm, clear nights",
-        "D. When humidity is at its highest"
+        "A. faithful but unreadable",
+        "B. acceptable for technical material",
+        "C. identical to a literal translation",
+        "D. impossible to evaluate",
+        "E. wrong in a way no dictionary will show"
       ],
-      "correctAnswer": "C",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "correctAnswer": "E",
+      "explanation": "The passage lists contract, liturgy, comic novel and manual as imposing different orders of priority.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-015-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "Which of the following, if true, would most strengthen the case for urban greening as an adaptation strategy?",
+      "passageTitle": "What Survives Translation",
+      "passageText": "A translation is commonly judged by fidelity, as though the original were a fixed quantity that a translation preserves in greater or lesser proportion. Working translators rarely describe the task that way, and the reason is instructive.\n\nAny text does several things at once. It states something; it does so in a register that positions its speaker; it sounds a particular way; it alludes to what its first readers knew. These properties compete under translation. Preserving a pun may require changing what is said; preserving metre may require a different image; a phrase that was ordinary in its own language becomes conspicuous if rendered literally, so literal fidelity to the words can produce infidelity to the effect.\n\nThe translator therefore ranks the properties, and the ranking is a judgement about what the text is for. A legal contract, a liturgy, a comic novel and a technical manual each impose different orders, and a translator who applies one text's ranking to another produces work that is wrong in a way no dictionary will show.\n\nThis is why retranslation is normal rather than an admission of earlier failure. Successive translations of a major work are not converging on a correct version; they are making different rankings, often in response to what readers of their moment need explained. The useful question about a translation is not how faithful it is but what it chose to be faithful to — and a translation that never had to choose is describing a text that was doing only one thing.",
+      "prompt": "The author regards retranslation as",
       "options": [
-        "A. Trees in urban areas require significant maintenance costs",
-        "B. Cool roofs are less expensive to install than planting trees",
-        "C. Urban greening has been adopted by fewer than 20% of major cities worldwide",
-        "D. Studies show trees can reduce local temperatures by up to 8°C through evapotranspiration"
+        "A. evidence that earlier translators failed",
+        "B. necessary only when a language changes substantially",
+        "C. normal, since successive translations make different rankings rather than converging on a correct version",
+        "D. a commercial rather than a literary practice",
+        "E. proof that fidelity cannot be defined"
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "correctAnswer": "C",
+      "explanation": "Stated directly, with the observation that retranslations often respond to what readers of their moment need explained.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-015-q01": "A",
-    "gmat-verbal-015-q02": "E",
-    "gmat-verbal-015-q03": "B",
-    "gmat-verbal-015-q04": "C",
-    "gmat-verbal-015-q05": "D",
-    "gmat-verbal-015-q06": "E",
-    "gmat-verbal-015-q07": "A",
+    "gmat-verbal-015-q01": "E",
+    "gmat-verbal-015-q02": "A",
+    "gmat-verbal-015-q03": "C",
+    "gmat-verbal-015-q04": "D",
+    "gmat-verbal-015-q05": "B",
+    "gmat-verbal-015-q06": "D",
+    "gmat-verbal-015-q07": "B",
     "gmat-verbal-015-q08": "E",
-    "gmat-verbal-015-q09": "B",
-    "gmat-verbal-015-q10": "C",
-    "gmat-verbal-015-q11": "D",
-    "gmat-verbal-015-q12": "B",
-    "gmat-verbal-015-q13": "E",
-    "gmat-verbal-015-q14": "A",
-    "gmat-verbal-015-q15": "B",
-    "gmat-verbal-015-q16": "C",
-    "gmat-verbal-015-q17": "D",
-    "gmat-verbal-015-q18": "E",
-    "gmat-verbal-015-q19": "A",
-    "gmat-verbal-015-q20": "B",
+    "gmat-verbal-015-q09": "C",
+    "gmat-verbal-015-q10": "A",
+    "gmat-verbal-015-q11": "B",
+    "gmat-verbal-015-q12": "D",
+    "gmat-verbal-015-q13": "C",
+    "gmat-verbal-015-q14": "E",
+    "gmat-verbal-015-q15": "A",
+    "gmat-verbal-015-q16": "B",
+    "gmat-verbal-015-q17": "E",
+    "gmat-verbal-015-q18": "D",
+    "gmat-verbal-015-q19": "C",
+    "gmat-verbal-015-q20": "A",
     "gmat-verbal-015-q21": "B",
-    "gmat-verbal-015-q22": "C",
-    "gmat-verbal-015-q23": "D"
+    "gmat-verbal-015-q22": "E",
+    "gmat-verbal-015-q23": "C"
   },
-  "fingerprints": [
-    "02bcde8d6a0d873fad",
-    "04d508a300b94ceee9",
-    "c75d4ec27c69e31ab7",
-    "450c2bb53035114d6c",
-    "dfe7bdebbe71b7eaa5",
-    "82f5191c174444350c",
-    "4f47d01962f2b6ba7b",
-    "9910f8336d7bc3acf4",
-    "b7a422e5beba7d1ce5",
-    "04d3a31c01dea0a19f",
-    "97a86518c3c8a0ed83",
-    "07c8a20780c984e98b",
-    "3f302574320500f75f",
-    "d401b97715eb80ac32",
-    "42314b50a22668fed6",
-    "64be5355fdbc4d4ec6",
-    "8590c66a36eca55ecb",
-    "bc1c2f3c514d6e0f31",
-    "204644131013354322",
-    "9360e693149a06f75a"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-015-rp1",
-      "title": "Business and Society",
-      "text": "Coral reef ecosystems face dual threats from ocean warming and acidification. Thermal bleaching events, in which elevated temperatures cause corals to expel their symbiotic algae, have become more frequent since the 1980s. Simultaneously, as ocean pH decreases due to absorbed carbon dioxide, the ability of corals to build calcium carbonate skeletons is compromised. These stressors interact in ways that researchers are still working to quantify."
+      "title": "The Family Firm",
+      "text": "Family-controlled firms are often treated as a transitional form that professional management eventually replaces. They remain a large share of enterprises in every economy that has been measured, including the most developed, and the persistence is not explained by inertia alone.\n\nFamily control resolves one problem cheaply. Where ownership is dispersed, shareholders must monitor managers who spend their money, and the mechanisms for doing so — boards, disclosure, takeover threats — are expensive and imperfect. An owner who also manages needs no such apparatus. Family firms also tend to hold longer horizons, because the owners expect to hand the business on rather than to sell at the next peak, and they sustain relationships with employees and suppliers that survive downturns in ways a firm managed to quarterly results often cannot.\n\nThe costs appear at succession. The pool of candidates in one family is small, and the evidence that firms passing control to a family heir underperform those recruiting outside is among the more consistent findings in the field. A family may also extract value in ways that harm minority shareholders, and pursue objectives — keeping a plant in the founder's town, preserving a name — that the accounts record as costs.\n\nThe reasonable summary is that the form has a characteristic strength and a characteristic weakness that appear at different moments. It is well suited to running a business and badly suited to choosing who runs it next, and the firms that endure across generations are generally those that separated the two questions before the second one arrived."
+    },
+    {
+      "id": "gmat-verbal-015-rp2",
+      "title": "How Continental Drift Was Accepted",
+      "text": "Wegener proposed in 1912 that the continents had moved, and assembled evidence of a kind that is now regarded as strong: matching coastlines, matching rock formations across oceans, fossils of the same land species on separated continents, and glacial deposits in what are now tropical regions. The proposal was rejected by most geologists for four decades, and the reason usually given — conservatism — is only part of the story.\n\nThe substantive objection was mechanism. Wegener's suggested forces were demonstrably far too weak to move continental rock through oceanic crust, and physicists showed as much. A theory that explains many observations while requiring an impossible mechanism is in genuine difficulty, and the demand for one was legitimate rather than obstructive.\n\nWhat changed the situation was not better argument about the existing evidence but a new class of measurement, most of it made for other purposes. Wartime and post-war ocean surveys mapped the sea floor and found the mid-ocean ridges; palaeomagnetic work showed that rocks recorded the field direction at their formation and that these directions differed by continent; and the striped magnetic pattern either side of the ridges, symmetric and matching the reversal timescale, indicated that new sea floor was being created and spreading outward.\n\nThat supplied the missing mechanism, and it was not the one Wegener proposed: continents do not plough through the ocean floor, they ride on plates that are created and consumed. The episode is often told as vindication of a lone genius. It reads better as an illustration that a correct conclusion supported by an incorrect mechanism is not yet a theory, and that what resolved the dispute came from instruments nobody had built to settle it."
+    },
+    {
+      "id": "gmat-verbal-015-rp3",
+      "title": "Working Away from the Office",
+      "text": "The rapid shift to remote and hybrid work has generated a large empirical literature in a short time, and the findings are less contradictory than the coverage suggests once the questions are separated.\n\nOn individual productivity in tasks that can be measured — calls handled, cases processed, code committed — remote work performs comparably to office work and sometimes better, with the gains concentrated in reduced commuting and fewer interruptions. On tasks whose output is harder to observe, the evidence is thinner, and studies relying on self-report or on manager assessment measure something other than output.\n\nThe consistent finding concerns not productivity but the transmission of knowledge. Junior employees receive less feedback, and the informal observation by which people learn how work is actually done occurs less. Effects on the individual's current output may be small while the effect on their development is not, and these appear on different timescales, which is why a firm can measure no productivity loss for two years and face one later.\n\nTwo further results are robust. Fully remote arrangements and fully office-based ones both lose to hybrid ones on retention, which suggests employees value the option rather than either extreme. And the aggregate effects fall unevenly across places rather than across firms: city-centre economies built around commuter spending face a permanent reduction in demand that no arrangement inside any single firm addresses, and that displacement, rather than any change in output per worker, is the largest measured consequence so far."
+    },
+    {
+      "id": "gmat-verbal-015-rp4",
+      "title": "What Survives Translation",
+      "text": "A translation is commonly judged by fidelity, as though the original were a fixed quantity that a translation preserves in greater or lesser proportion. Working translators rarely describe the task that way, and the reason is instructive.\n\nAny text does several things at once. It states something; it does so in a register that positions its speaker; it sounds a particular way; it alludes to what its first readers knew. These properties compete under translation. Preserving a pun may require changing what is said; preserving metre may require a different image; a phrase that was ordinary in its own language becomes conspicuous if rendered literally, so literal fidelity to the words can produce infidelity to the effect.\n\nThe translator therefore ranks the properties, and the ranking is a judgement about what the text is for. A legal contract, a liturgy, a comic novel and a technical manual each impose different orders, and a translator who applies one text's ranking to another produces work that is wrong in a way no dictionary will show.\n\nThis is why retranslation is normal rather than an admission of earlier failure. Successive translations of a major work are not converging on a correct version; they are making different rankings, often in response to what readers of their moment need explained. The useful question about a translation is not how faithful it is but what it chose to be faithful to — and a translation that never had to choose is describing a text that was doing only one thing."
     }
   ]
 }
