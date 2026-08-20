@@ -12,469 +12,474 @@
       "id": "gmat-verbal-017-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "prompt": "A garage offers a free inspection with every service and reports that customers who accept the inspection spend more on repairs than those who decline it. The owner concludes that the inspection persuades customers to maintain their vehicles properly.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. The assumption that all wetlands have equal flood-prevention value",
-        "B. The claim that wetlands prevent flooding",
-        "C. The conclusion that all wetlands should be protected",
-        "D. The implication that flooding is always preventable",
-        "E. The premise that wetlands are worth preserving"
+        "A. Customers who accept the inspection are those who suspect something is wrong with their vehicle.",
+        "B. The inspection takes twenty minutes.",
+        "C. Some repairs are carried out by other garages.",
+        "D. The garage advertises the inspection in its window.",
+        "E. Inspections are carried out by qualified mechanics."
       ],
       "correctAnswer": "A",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "The acceptance decision selects vehicles already thought to have faults, so higher repair spending need reflect no persuasion at all.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-017-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "prompt": "A hotel introduced a strict cancellation policy and reports that its occupancy rate has risen. Management concludes that guests who book are now more likely to arrive.",
+      "question": "Which of the following would be most useful to determine in evaluating the conclusion?",
       "options": [
-        "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. A controlled experiment with randomly assigned music found the same 20% difference",
-        "C. The upbeat music stores were in higher-traffic mall locations",
-        "D. Sales staff performed better when the music was upbeat",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "A. How much the hotel charges for a room",
+        "B. Whether guests were informed of the policy at booking",
+        "C. Whether the number of bookings made has changed since the policy was introduced",
+        "D. How many rooms the hotel has",
+        "E. Whether competitors have similar policies"
       ],
-      "correctAnswer": "B",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Occupancy is arrivals over rooms; if bookings fell while no-shows fell more, the reading is different from a policy that simply deterred bookings and coincided with other demand. Without the booking figure the conclusion cannot be assessed.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-017-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
-      "question": "Which of the following most weakens the editorial's conclusion?",
+      "prompt": "A distribution centre introduced a night shift and reports that orders are now dispatched faster on average. A consultant argues that the improvement may not persist.",
+      "question": "Which of the following, if true, most supports the consultant's argument?",
       "options": [
-        "A. Employment programmes have reduced crime in some pilot cities",
-        "B. The editorial does not define 'crime' precisely",
-        "C. Crime rates are influenced by many factors beyond unemployment",
-        "D. Reducing unemployment is expensive and politically difficult",
-        "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
+        "A. Night shift workers are paid a premium.",
+        "B. Some staff have transferred from the day shift.",
+        "C. Dispatch times are measured automatically.",
+        "D. The centre serves customers in several time zones.",
+        "E. The night shift is currently clearing a backlog accumulated before it began, and once that is exhausted its capacity will exceed the orders arriving overnight."
       ],
-      "correctAnswer": "C",
-      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "A one-off stock of work explains the current improvement and predicts its end, which is exactly the persistence question.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-017-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
-      "question": "The president's argument is flawed because it:",
+      "prompt": "A city installed parcel lockers and reports that failed home deliveries in the surrounding streets have fallen by a third. The council concludes that lockers reduce failed deliveries.",
+      "question": "Which of the following, if true, most strengthens the conclusion?",
       "options": [
-        "A. Ignores that SAT preparation courses can inflate scores",
-        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
-        "C. Does not consider the diversity implications of the policy",
-        "D. Fails to define 'academic performance' precisely",
-        "E. Both A and B"
+        "A. Lockers are cheaper to install than delivery offices.",
+        "B. In comparable streets elsewhere in the city where no lockers were installed, failed deliveries were unchanged over the same period.",
+        "C. Some residents use lockers for returns as well.",
+        "D. Couriers report that lockers are convenient.",
+        "E. The lockers are open at all hours."
       ],
       "correctAnswer": "B",
-      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "A matched comparison rules out city-wide changes in courier practice or shopping volume as the explanation.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-017-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
-      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "prompt": "Every consultant at the Marchmont clinic who runs a weekend list has a waiting time under twelve weeks. No consultant with a waiting time under twelve weeks has patients transferred to another hospital. Some consultants at the clinic have patients transferred to another hospital.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "C. Historical market data is unreliable because markets change structurally over time",
-        "D. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
-        "E. Companies with consistent earnings growth tend to have stable stock prices"
+        "A. Weekend lists reduce waiting times.",
+        "B. Most consultants run weekend lists.",
+        "C. No patient at the clinic waits more than twelve weeks.",
+        "D. Some consultants at the clinic do not run a weekend list.",
+        "E. Consultants with transfers have the longest lists."
       ],
       "correctAnswer": "D",
-      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "Consultants with transfers have waits of twelve weeks or more, and a weekend list implies a shorter wait, so those consultants run no weekend list. B is a causal claim the statements do not license.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-017-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
-      "question": "Which of the following, if true, most seriously weakens the conclusion?",
+      "prompt": "A restaurant began requiring a deposit for reservations and reports that its no-show rate fell from 15 per cent to 3 per cent. The owner concludes that most no-shows had been deliberate.",
+      "question": "The reasoning is most vulnerable to the criticism that it",
       "options": [
-        "A. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "B. Customers report feeling more valued when using a loyalty programme",
-        "C. Competitors without loyalty programmes have seen declining sales",
-        "D. The loyalty programme was introduced simultaneously with a store renovation",
-        "E. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes"
+        "A. ignores the administrative cost of taking deposits",
+        "B. does not report the number of reservations",
+        "C. assumes a deposit distinguishes deliberate no-shows from those caused by illness, traffic or forgetfulness",
+        "D. overlooks customers who book at several restaurants",
+        "E. relies on a single restaurant's experience"
       ],
-      "correctAnswer": "E",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "A deposit raises the cost of every kind of failure to attend, including the accidental ones, so the fall does not establish what the original no-shows consisted of.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-017-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
-      "question": "Which of the following would most strengthen the CFO's conclusion?",
+      "prompt": "A garden centre found that plants displayed near the entrance sell faster than those at the rear, and plans to move its slowest-selling plants to the entrance in order to sell them.",
+      "question": "Which of the following, if true, casts most doubt on the plan?",
       "options": [
-        "A. The lifetime value of a new user averages $50",
-        "B. Other advertising channels were suspended during the same three months",
-        "C. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "D. Social media platforms reported the campaign reached 5 million unique users",
-        "E. Competitors saw no change in sign-ups over the same period"
+        "A. The entrance display is refreshed weekly.",
+        "B. The rear of the centre is under cover.",
+        "C. Some customers browse the whole centre before buying.",
+        "D. The centre has always placed its most popular seasonal plants at the entrance, and customers come in intending to buy them.",
+        "E. Plants at the entrance are visible from the car park."
       ],
-      "correctAnswer": "A",
-      "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "If position has been assigned by expected popularity, the sales difference reflects the plants rather than the location, and moving unpopular stock there need not sell it.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-017-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
-      "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
+      "prompt": "A driving school reports that its pupils pass the practical test at a higher rate than the national average and advertises its instruction as more effective.",
+      "question": "Which of the following, if true, most seriously weakens the advertisement?",
       "options": [
-        "A. It assumes that lower temperatures are always desirable",
-        "B. It treats a correlation as evidence of a causal relationship",
-        "C. It ignores that tree planting is expensive",
-        "D. It fails to consider that trees require water",
-        "E. It overlooks that some neighbourhoods may not have space for trees"
+        "A. The school requires pupils to pass an internal assessment before it will book their test, and pupils who fail it are not entered.",
+        "B. The school charges more per lesson than most competitors.",
+        "C. Some pupils take lessons elsewhere as well.",
+        "D. The national average includes candidates with no professional instruction.",
+        "E. The school operates in several towns."
       ],
-      "correctAnswer": "B",
-      "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
+      "correctAnswer": "A",
+      "explanation": "Screening who is entered raises the pass rate without any change in teaching, and the advertised comparison is with a population that was not screened.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-017-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
-      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "prompt": "A sports club raised its annual subscription and reports that total subscription income rose, concluding that its members are insensitive to price.",
+      "question": "Which of the following, if true, most seriously undermines the conclusion?",
       "options": [
-        "A. Passengers reported higher satisfaction with the new policy",
-        "B. Competing airlines have not adopted similar policies",
-        "C. The airline also reduced the number of carry-on bags allowed during the same period",
-        "D. Boarding time varies naturally between 15 and 35 minutes",
-        "E. The new policy was introduced on routes with larger aircraft"
+        "A. The club has a waiting list.",
+        "B. The increase was announced six months in advance.",
+        "C. Some members pay monthly.",
+        "D. Comparable clubs charge more.",
+        "E. A fifth of members did not renew, and the club's coaching sessions are now under-attended, but the higher fee from remaining members more than offset the loss."
       ],
-      "correctAnswer": "C",
-      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
+      "correctAnswer": "E",
+      "explanation": "A substantial loss of members is exactly price sensitivity; revenue rose because the remaining demand was inelastic enough to compensate, which is a different claim.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-017-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "prompt": "A water company reports that it repaired 40 per cent more leaks last year than the year before, and presents this as evidence of improved performance.",
+      "question": "Which of the following, if true, most seriously weakens the presentation?",
       "options": [
-        "A. Does not define what type of consulting services were provided",
-        "B. Ignores that some companies declined in revenue after hiring the firm",
-        "C. Does not specify what time period is covered by the data",
-        "D. Fails to compare the companies' growth with industry-wide growth trends",
-        "E. Compares incomparable companies across different industries"
+        "A. The company employs more repair crews than before.",
+        "B. Total water lost from the network rose over the same period, as the number of new leaks grew faster than repairs.",
+        "C. Some leaks are reported by members of the public.",
+        "D. Repair costs rose in line with the number of repairs.",
+        "E. The network is older than most in the country."
       ],
-      "correctAnswer": "D",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
+      "correctAnswer": "B",
+      "explanation": "Repairs completed is an activity measure; the outcome the company exists to manage moved in the opposite direction.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-017-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "prompt": "A bakery removed the seating from its shop to make room for more display counters, and its takings rose. The owner concludes that customers prefer to buy and leave.",
+      "question": "The reasoning is most vulnerable to the criticism that it",
       "options": [
-        "A. Olive oil contains monounsaturated fats linked to heart health",
-        "B. Heart disease rates have been declining globally regardless of fat consumption",
-        "C. The study followed individuals for 10 years",
-        "D. Olive oil is more expensive than butter in most markets",
-        "E. Regions using olive oil also have Mediterranean diets rich in vegetables and fish"
+        "A. ignores the cost of removing the seating",
+        "B. does not consider customers who never visited the shop",
+        "C. treats a rise in takings as evidence about preference, when more display space alone could raise sales",
+        "D. assumes takings are recorded accurately",
+        "E. overlooks seasonal variation in demand"
       ],
-      "correctAnswer": "E",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
+      "correctAnswer": "C",
+      "explanation": "Two changes happened at once — less seating, more display — and the second is sufficient to explain the takings without any claim about what customers prefer.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-017-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "passageTitle": "Paying for Performance",
+      "passageText": "Tying executive pay to share price is intended to align the interests of managers with those of owners. The instrument is cruder than the intention, and the reason is that a share price moves for reasons having nothing to do with the executive.\n\nWhen an oil company's shares rise because the oil price rose, an executive paid in shares is rewarded for a movement that would have occurred under any management. The standard remedy is relative performance evaluation: reward the executive for outperforming a benchmark of comparable firms, which removes the industry-wide component. The remedy is well understood, straightforward to implement, and used far less than the theory predicts — a gap the literature has documented for decades and explained less convincingly than it has measured.\n\nTwo further problems attach to any measure. Executives influence what is measured through choices whose effects arrive later than their tenure: deferring maintenance, cutting research, repurchasing shares. And a target set on a single number invites management of that number rather than of the business, which is the general failure of any indicator used as a target.\n\nLonger vesting periods address part of this by extending the horizon over which a decision's consequences are captured. They do not address selection of the benchmark, and they cannot address the deepest difficulty, which is that the contribution of a single executive to a large firm's performance is not separately observable. Pay arrangements are therefore not measurements. They are bets on a proxy, and the useful questions concern how good the proxy is and who bears the cost when it is wrong.",
+      "prompt": "According to the passage, relative performance evaluation is intended to",
       "options": [
-        "A. Doctors who proactively call patients may also be more thorough in their overall care",
-        "B. The cost of implementing mandatory calls would be prohibitive",
-        "C. Some patients do not have phones",
-        "D. Patients prefer in-person follow-up visits to phone calls",
-        "E. Phone calls are less effective than written instructions"
+        "A. remove the component of share price movement common to comparable firms",
+        "B. increase the total value of executive pay",
+        "C. shorten the period over which pay is assessed",
+        "D. replace share-based pay with cash",
+        "E. reduce the influence of shareholders on pay decisions"
       ],
       "correctAnswer": "A",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
+      "explanation": "That is precisely the remedy described for rewarding executives for movements they did not cause.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-017-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "passageTitle": "Paying for Performance",
+      "passageText": "Tying executive pay to share price is intended to align the interests of managers with those of owners. The instrument is cruder than the intention, and the reason is that a share price moves for reasons having nothing to do with the executive.\n\nWhen an oil company's shares rise because the oil price rose, an executive paid in shares is rewarded for a movement that would have occurred under any management. The standard remedy is relative performance evaluation: reward the executive for outperforming a benchmark of comparable firms, which removes the industry-wide component. The remedy is well understood, straightforward to implement, and used far less than the theory predicts — a gap the literature has documented for decades and explained less convincingly than it has measured.\n\nTwo further problems attach to any measure. Executives influence what is measured through choices whose effects arrive later than their tenure: deferring maintenance, cutting research, repurchasing shares. And a target set on a single number invites management of that number rather than of the business, which is the general failure of any indicator used as a target.\n\nLonger vesting periods address part of this by extending the horizon over which a decision's consequences are captured. They do not address selection of the benchmark, and they cannot address the deepest difficulty, which is that the contribution of a single executive to a large firm's performance is not separately observable. Pay arrangements are therefore not measurements. They are bets on a proxy, and the useful questions concern how good the proxy is and who bears the cost when it is wrong.",
+      "prompt": "The passage indicates that relative performance evaluation is",
       "options": [
-        "A. Drug X has minor side effects including nausea",
-        "B. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "C. The study included only 50 participants",
-        "D. Chronic pain affects millions of people worldwide",
-        "E. Drug X is expensive compared to existing treatments"
+        "A. technically impossible for most firms",
+        "B. the dominant form of executive pay",
+        "C. prohibited in several jurisdictions",
+        "D. used far less than theory predicts, for reasons the literature has explained unconvincingly",
+        "E. effective at measuring an individual's contribution"
       ],
-      "correctAnswer": "B",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
+      "correctAnswer": "D",
+      "explanation": "The passage notes the gap has been documented for decades and explained less convincingly than measured.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-017-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "passageTitle": "Paying for Performance",
+      "passageText": "Tying executive pay to share price is intended to align the interests of managers with those of owners. The instrument is cruder than the intention, and the reason is that a share price moves for reasons having nothing to do with the executive.\n\nWhen an oil company's shares rise because the oil price rose, an executive paid in shares is rewarded for a movement that would have occurred under any management. The standard remedy is relative performance evaluation: reward the executive for outperforming a benchmark of comparable firms, which removes the industry-wide component. The remedy is well understood, straightforward to implement, and used far less than the theory predicts — a gap the literature has documented for decades and explained less convincingly than it has measured.\n\nTwo further problems attach to any measure. Executives influence what is measured through choices whose effects arrive later than their tenure: deferring maintenance, cutting research, repurchasing shares. And a target set on a single number invites management of that number rather than of the business, which is the general failure of any indicator used as a target.\n\nLonger vesting periods address part of this by extending the horizon over which a decision's consequences are captured. They do not address selection of the benchmark, and they cannot address the deepest difficulty, which is that the contribution of a single executive to a large firm's performance is not separately observable. Pay arrangements are therefore not measurements. They are bets on a proxy, and the useful questions concern how good the proxy is and who bears the cost when it is wrong.",
+      "prompt": "The 'deepest difficulty' the author identifies is that",
       "options": [
-        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "B. The university's highest-achieving students attend the fitness centre most frequently",
-        "C. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "D. Exercise programmes are popular at peer universities",
-        "E. Students who exercise report feeling less stressed"
+        "A. vesting periods are too short",
+        "B. benchmarks are chosen by the executives themselves",
+        "C. share prices are volatile",
+        "D. executives can repurchase shares",
+        "E. a single executive's contribution to a large firm's performance is not separately observable"
       ],
-      "correctAnswer": "C",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
+      "correctAnswer": "E",
+      "explanation": "The passage says longer vesting cannot address it, and concludes that pay arrangements are bets on a proxy rather than measurements.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-017-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "passageTitle": "What a Placebo Is",
+      "passageText": "That patients given an inert treatment often improve is not in dispute. What that improvement consists of is disputed, and the popular formulation — that belief heals — states considerably more than the evidence supports.\n\nSeveral distinct things are bundled together in a measured placebo response. Many conditions improve without treatment, so a patient who joins a trial when symptoms are at their worst will tend to be better later regardless of what they receive. Reporting effects contribute: patients tell an attentive researcher what they think is expected, and outcomes that depend on self-report move more than outcomes that do not. Separating these from any genuine effect of expectation requires a comparison the standard trial does not include, namely a group given no treatment at all.\n\nWhere such three-armed studies have been run, the picture is uneven. Placebo effects on pain, nausea and anxiety are real and measurable, with plausible mechanisms including expectation-driven release of endogenous opioids. Effects on objective measures — tumour size, cholesterol, lung function — are small or absent. The distinction is not arbitrary: it tracks the difference between what a nervous system can modulate and what it cannot.\n\nThis has a clinical consequence often stated backwards. That a treatment works no better than placebo does not mean it works through belief and is therefore useful anyway; it means the trial cannot distinguish it from the natural course of the illness plus the effect of being treated attentively. Those are different claims, and only one of them is a reason to prescribe.",
+      "prompt": "According to the passage, distinguishing a genuine effect of expectation from other contributions requires",
       "options": [
-        "A. Cameras might violate driver privacy",
-        "B. The cost of cameras is high",
-        "C. Some drivers find cameras distracting",
-        "D. Intersections chosen for cameras may have already been due for safety upgrades",
-        "E. Cameras only capture rear-end collisions"
+        "A. a larger sample",
+        "B. a group given no treatment at all",
+        "C. a longer follow-up period",
+        "D. measuring only self-reported outcomes",
+        "E. excluding patients whose symptoms are severe"
       ],
-      "correctAnswer": "D",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Without a no-treatment arm, natural improvement and reporting effects cannot be separated from expectation.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-017-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "passageTitle": "What a Placebo Is",
+      "passageText": "That patients given an inert treatment often improve is not in dispute. What that improvement consists of is disputed, and the popular formulation — that belief heals — states considerably more than the evidence supports.\n\nSeveral distinct things are bundled together in a measured placebo response. Many conditions improve without treatment, so a patient who joins a trial when symptoms are at their worst will tend to be better later regardless of what they receive. Reporting effects contribute: patients tell an attentive researcher what they think is expected, and outcomes that depend on self-report move more than outcomes that do not. Separating these from any genuine effect of expectation requires a comparison the standard trial does not include, namely a group given no treatment at all.\n\nWhere such three-armed studies have been run, the picture is uneven. Placebo effects on pain, nausea and anxiety are real and measurable, with plausible mechanisms including expectation-driven release of endogenous opioids. Effects on objective measures — tumour size, cholesterol, lung function — are small or absent. The distinction is not arbitrary: it tracks the difference between what a nervous system can modulate and what it cannot.\n\nThis has a clinical consequence often stated backwards. That a treatment works no better than placebo does not mean it works through belief and is therefore useful anyway; it means the trial cannot distinguish it from the natural course of the illness plus the effect of being treated attentively. Those are different claims, and only one of them is a reason to prescribe.",
+      "prompt": "The passage indicates that placebo effects are measurable on",
       "options": [
-        "A. Labour economists disagree on the effects of minimum wage increases",
-        "B. The minimum wage increase only affected 5% of workers",
-        "C. Some industries are more affected than others by wage increases",
-        "D. Other countries have raised minimum wages without unemployment rising",
-        "E. A separate economic boom added 100,000 jobs during the same year"
+        "A. tumour size and lung function",
+        "B. cholesterol levels",
+        "C. pain, nausea and anxiety",
+        "D. all outcomes equally",
+        "E. objective measures only"
       ],
-      "correctAnswer": "E",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "The passage adds that the distinction tracks what a nervous system can modulate and what it cannot.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-017-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "passageTitle": "What a Placebo Is",
+      "passageText": "That patients given an inert treatment often improve is not in dispute. What that improvement consists of is disputed, and the popular formulation — that belief heals — states considerably more than the evidence supports.\n\nSeveral distinct things are bundled together in a measured placebo response. Many conditions improve without treatment, so a patient who joins a trial when symptoms are at their worst will tend to be better later regardless of what they receive. Reporting effects contribute: patients tell an attentive researcher what they think is expected, and outcomes that depend on self-report move more than outcomes that do not. Separating these from any genuine effect of expectation requires a comparison the standard trial does not include, namely a group given no treatment at all.\n\nWhere such three-armed studies have been run, the picture is uneven. Placebo effects on pain, nausea and anxiety are real and measurable, with plausible mechanisms including expectation-driven release of endogenous opioids. Effects on objective measures — tumour size, cholesterol, lung function — are small or absent. The distinction is not arbitrary: it tracks the difference between what a nervous system can modulate and what it cannot.\n\nThis has a clinical consequence often stated backwards. That a treatment works no better than placebo does not mean it works through belief and is therefore useful anyway; it means the trial cannot distinguish it from the natural course of the illness plus the effect of being treated attentively. Those are different claims, and only one of them is a reason to prescribe.",
+      "prompt": "The 'clinical consequence often stated backwards' is that a treatment performing no better than placebo",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. should still be prescribed because belief is therapeutic",
+        "B. has been tested with too few patients",
+        "C. must be harmful",
+        "D. cannot be distinguished from the natural course of illness plus attentive treatment",
+        "E. works only for objective outcomes"
       ],
-      "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The passage separates the two claims and says only one is a reason to prescribe.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-017-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "passageTitle": "Counting Crime",
+      "passageText": "Two independent methods exist for measuring crime, and they disagree in ways that are informative rather than embarrassing.\n\nPolice records count offences reported to and recorded by the police. Their weakness is that both steps are variable: many offences are never reported, and recording practice differs by force and changes over time. A rise in recorded crime is therefore consistent with more crime, with more reporting, or with a change in recording rules — and campaigns encouraging victims to come forward reliably raise the recorded figure for the offences they concern, which is the intended outcome and looks like deterioration.\n\nVictimisation surveys ask a large sample whether they have experienced particular offences. They capture unreported crime and are unaffected by recording practice, which makes them the better instrument for trends in common offences. Their limitations are structural: they miss crimes against businesses and against those not in households, they rely on respondents recalling and classifying events correctly, and their samples are too small to say much about rare offences, including homicide, for which police and health records are far better.\n\nThe disciplined approach uses each where it is strong and treats divergence as a question rather than a contradiction. When survey-measured crime falls while recorded crime rises, the most probable reading is a change in reporting or recording rather than two contradictory facts — and a commentator citing whichever series supports their case, without addressing the other, is not making an argument about crime.",
+      "prompt": "According to the passage, a rise in recorded crime is consistent with all of the following EXCEPT",
       "options": [
-        "A. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "B. Arena events attract fans from outside the city who would not otherwise visit",
-        "C. Local restaurants cannot accommodate arena crowds",
-        "D. The arena's construction will not create permanent jobs",
-        "E. The city already has sufficient sports facilities"
+        "A. a fall in the number of offences experienced by households",
+        "B. an increase in offences committed",
+        "C. an increase in reporting by victims",
+        "D. a change in police recording rules",
+        "E. a successful campaign encouraging victims to come forward"
       ],
       "correctAnswer": "A",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "The first four are the readings the passage explicitly permits. A fall in offences experienced is what the survey measures and is not among the explanations of a rise in the recorded series.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-017-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "passageTitle": "Counting Crime",
+      "passageText": "Two independent methods exist for measuring crime, and they disagree in ways that are informative rather than embarrassing.\n\nPolice records count offences reported to and recorded by the police. Their weakness is that both steps are variable: many offences are never reported, and recording practice differs by force and changes over time. A rise in recorded crime is therefore consistent with more crime, with more reporting, or with a change in recording rules — and campaigns encouraging victims to come forward reliably raise the recorded figure for the offences they concern, which is the intended outcome and looks like deterioration.\n\nVictimisation surveys ask a large sample whether they have experienced particular offences. They capture unreported crime and are unaffected by recording practice, which makes them the better instrument for trends in common offences. Their limitations are structural: they miss crimes against businesses and against those not in households, they rely on respondents recalling and classifying events correctly, and their samples are too small to say much about rare offences, including homicide, for which police and health records are far better.\n\nThe disciplined approach uses each where it is strong and treats divergence as a question rather than a contradiction. When survey-measured crime falls while recorded crime rises, the most probable reading is a change in reporting or recording rather than two contradictory facts — and a commentator citing whichever series supports their case, without addressing the other, is not making an argument about crime.",
+      "prompt": "The passage indicates that victimisation surveys are poorly suited to measuring",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "C. The ad was shown only on premium streaming services",
-        "D. The brand launched a new product line during the same period",
-        "E. Competitors also increased advertising spending during the same period"
+        "A. common offences against households",
+        "B. rare offences such as homicide",
+        "C. trends over time",
+        "D. unreported crime",
+        "E. the effect of recording practice"
       ],
       "correctAnswer": "B",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "Sample sizes are too small for rare offences, for which police and health records are described as far better.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-017-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "passageTitle": "Counting Crime",
+      "passageText": "Two independent methods exist for measuring crime, and they disagree in ways that are informative rather than embarrassing.\n\nPolice records count offences reported to and recorded by the police. Their weakness is that both steps are variable: many offences are never reported, and recording practice differs by force and changes over time. A rise in recorded crime is therefore consistent with more crime, with more reporting, or with a change in recording rules — and campaigns encouraging victims to come forward reliably raise the recorded figure for the offences they concern, which is the intended outcome and looks like deterioration.\n\nVictimisation surveys ask a large sample whether they have experienced particular offences. They capture unreported crime and are unaffected by recording practice, which makes them the better instrument for trends in common offences. Their limitations are structural: they miss crimes against businesses and against those not in households, they rely on respondents recalling and classifying events correctly, and their samples are too small to say much about rare offences, including homicide, for which police and health records are far better.\n\nThe disciplined approach uses each where it is strong and treats divergence as a question rather than a contradiction. When survey-measured crime falls while recorded crime rises, the most probable reading is a change in reporting or recording rather than two contradictory facts — and a commentator citing whichever series supports their case, without addressing the other, is not making an argument about crime.",
+      "prompt": "The author's view of a commentator who cites one series without addressing the other is that they",
       "options": [
-        "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It demonstrates that road construction is always harmful",
-        "C. It presents empirical evidence that undermines the first analyst's prediction",
-        "D. It suggests the first analyst has incorrect data",
-        "E. It proves that traffic will always increase regardless of policy"
+        "A. are relying on the weaker instrument",
+        "B. should use police records in all cases",
+        "C. have misunderstood the survey methodology",
+        "D. are correct if the series they cite is the more recent",
+        "E. are not making an argument about crime"
       ],
-      "correctAnswer": "C",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "The final sentence states this, following the point that divergence is a question rather than a contradiction.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-017-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "The 'free rider problem' mentioned in the passage refers to:",
+      "passageTitle": "How Ancient Texts Survived",
+      "passageText": "Almost no classical text survives in a copy made by its author. What survives is a chain of manuscripts, each copied from another, and the discipline that reconstructs the relationships between them tells us more about the transmission than most readers assume.\n\nThe method depends on error. A scribe copying by hand introduces mistakes, and a manuscript copied from that one inherits them along with new ones. Shared errors therefore indicate shared ancestry, and a family tree of surviving manuscripts can be built from the pattern of agreement in error rather than from agreement in correct readings, which proves nothing about descent. From that tree an editor reconstructs, where possible, the readings of the lost ancestor.\n\nThe method's limits are well known to its practitioners. Scribes corrected as well as corrupted, and a scribe comparing two exemplars produces a manuscript with mixed ancestry that the tree cannot represent. Some errors are so natural that different scribes make them independently. And the reconstruction reaches the earliest recoverable ancestor of the surviving copies, which may be centuries later than the author and may already contain corruption invisible to the method.\n\nWhat this yields is a text with a documented history rather than an authentic original. A good edition prints the reconstruction and records the alternatives, so a reader can see where the evidence was thin and what was chosen. That apparatus, which non-specialists usually skip, is the part that distinguishes a scholarly edition from a confident one.",
+      "prompt": "According to the passage, the relationships between manuscripts are reconstructed from",
       "options": [
-        "A. Programmers who use open-source software without contributing code",
-        "B. The difficulty of coordinating large numbers of geographically dispersed contributors",
-        "C. The tendency for rational actors to underinvest in public goods because they cannot exclude non-payers",
-        "D. The reluctance of firms to release proprietary software as open-source"
+        "A. agreement in correct readings",
+        "B. the physical age of the parchment",
+        "C. shared errors, which indicate shared ancestry",
+        "D. the reputation of the copying centre",
+        "E. the completeness of each copy"
       ],
       "correctAnswer": "C",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "explanation": "The passage says agreement in correct readings proves nothing about descent.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-017-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "According to the passage, which of the following does NOT explain why developers contribute to open-source projects?",
+      "passageTitle": "How Ancient Texts Survived",
+      "passageText": "Almost no classical text survives in a copy made by its author. What survives is a chain of manuscripts, each copied from another, and the discipline that reconstructs the relationships between them tells us more about the transmission than most readers assume.\n\nThe method depends on error. A scribe copying by hand introduces mistakes, and a manuscript copied from that one inherits them along with new ones. Shared errors therefore indicate shared ancestry, and a family tree of surviving manuscripts can be built from the pattern of agreement in error rather than from agreement in correct readings, which proves nothing about descent. From that tree an editor reconstructs, where possible, the readings of the lost ancestor.\n\nThe method's limits are well known to its practitioners. Scribes corrected as well as corrupted, and a scribe comparing two exemplars produces a manuscript with mixed ancestry that the tree cannot represent. Some errors are so natural that different scribes make them independently. And the reconstruction reaches the earliest recoverable ancestor of the surviving copies, which may be centuries later than the author and may already contain corruption invisible to the method.\n\nWhat this yields is a text with a documented history rather than an authentic original. A good edition prints the reconstruction and records the alternatives, so a reader can see where the evidence was thin and what was chosen. That apparatus, which non-specialists usually skip, is the part that distinguishes a scholarly edition from a confident one.",
+      "prompt": "The passage identifies which as a limit of the method?",
       "options": [
-        "A. Gaining professional reputation in their field",
-        "B. Being employed by firms that benefit from specific projects",
-        "C. Opportunities for skill development and learning",
-        "D. Receiving direct financial compensation from project users"
+        "A. A scribe comparing two exemplars produces mixed ancestry the tree cannot represent.",
+        "B. Scribes never corrected their exemplars.",
+        "C. Errors are always unique to one scribe.",
+        "D. The earliest ancestor is always the author's own copy.",
+        "E. Manuscripts cannot be dated."
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "correctAnswer": "A",
+      "explanation": "Contamination is one of three limits given, alongside independently repeated errors and corruption already present in the recoverable ancestor.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-017-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "The author uses the phrase 'seeming paradox' to suggest that:",
+      "passageTitle": "How Ancient Texts Survived",
+      "passageText": "Almost no classical text survives in a copy made by its author. What survives is a chain of manuscripts, each copied from another, and the discipline that reconstructs the relationships between them tells us more about the transmission than most readers assume.\n\nThe method depends on error. A scribe copying by hand introduces mistakes, and a manuscript copied from that one inherits them along with new ones. Shared errors therefore indicate shared ancestry, and a family tree of surviving manuscripts can be built from the pattern of agreement in error rather than from agreement in correct readings, which proves nothing about descent. From that tree an editor reconstructs, where possible, the readings of the lost ancestor.\n\nThe method's limits are well known to its practitioners. Scribes corrected as well as corrupted, and a scribe comparing two exemplars produces a manuscript with mixed ancestry that the tree cannot represent. Some errors are so natural that different scribes make them independently. And the reconstruction reaches the earliest recoverable ancestor of the surviving copies, which may be centuries later than the author and may already contain corruption invisible to the method.\n\nWhat this yields is a text with a documented history rather than an authentic original. A good edition prints the reconstruction and records the alternatives, so a reader can see where the evidence was thin and what was chosen. That apparatus, which non-specialists usually skip, is the part that distinguishes a scholarly edition from a confident one.",
+      "prompt": "The author values the critical apparatus of an edition because it",
       "options": [
-        "A. The behaviour of open-source contributors appears inconsistent with standard economic predictions but can be explained",
-        "B. Open-source development violates all known economic principles",
-        "C. Economists have no theory that explains open-source development",
-        "D. Open-source software is economically irrational and will eventually disappear"
+        "A. proves the reconstruction is the author's original text",
+        "B. lists the manuscripts in order of age",
+        "C. allows readers to skip disputed passages",
+        "D. shows where the evidence was thin and what was chosen",
+        "E. reduces the cost of publication"
       ],
-      "correctAnswer": "A",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "correctAnswer": "D",
+      "explanation": "The closing sentence contrasts a scholarly edition with a confident one on exactly this ground.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
     "gmat-verbal-017-q01": "A",
-    "gmat-verbal-017-q02": "B",
-    "gmat-verbal-017-q03": "C",
+    "gmat-verbal-017-q02": "C",
+    "gmat-verbal-017-q03": "E",
     "gmat-verbal-017-q04": "B",
     "gmat-verbal-017-q05": "D",
-    "gmat-verbal-017-q06": "E",
-    "gmat-verbal-017-q07": "A",
-    "gmat-verbal-017-q08": "B",
-    "gmat-verbal-017-q09": "C",
-    "gmat-verbal-017-q10": "D",
-    "gmat-verbal-017-q11": "E",
+    "gmat-verbal-017-q06": "C",
+    "gmat-verbal-017-q07": "D",
+    "gmat-verbal-017-q08": "A",
+    "gmat-verbal-017-q09": "E",
+    "gmat-verbal-017-q10": "B",
+    "gmat-verbal-017-q11": "C",
     "gmat-verbal-017-q12": "A",
-    "gmat-verbal-017-q13": "B",
-    "gmat-verbal-017-q14": "C",
-    "gmat-verbal-017-q15": "D",
-    "gmat-verbal-017-q16": "E",
-    "gmat-verbal-017-q17": "E",
+    "gmat-verbal-017-q13": "D",
+    "gmat-verbal-017-q14": "E",
+    "gmat-verbal-017-q15": "B",
+    "gmat-verbal-017-q16": "C",
+    "gmat-verbal-017-q17": "D",
     "gmat-verbal-017-q18": "A",
     "gmat-verbal-017-q19": "B",
-    "gmat-verbal-017-q20": "C",
+    "gmat-verbal-017-q20": "E",
     "gmat-verbal-017-q21": "C",
-    "gmat-verbal-017-q22": "D",
-    "gmat-verbal-017-q23": "A"
+    "gmat-verbal-017-q22": "A",
+    "gmat-verbal-017-q23": "D"
   },
-  "fingerprints": [
-    "6c21fb1089f96d4a62",
-    "9ad84b73d63e1fb5d8",
-    "c698aecb17472962b6",
-    "7fa3c147cf9a505325",
-    "3653741017b1c54ca6",
-    "1ff75fffe15e21d5e6",
-    "d7f311e5ce3840ef4b",
-    "3783ea434b0b5f69f4",
-    "4fcb6fbfef9da94869",
-    "9eeb5c0f6a5012f3b3",
-    "7e1b20ca3bd982ab0e",
-    "80eddb330eaa1422e1",
-    "9c7c88fa676cc04b36",
-    "29ded726d1ffa83aa0",
-    "9b51087724fa3b9952",
-    "6267662f6ea5ba3df5",
-    "4025d2d38c37807f1d",
-    "f37bf56d0143ce139b",
-    "56a597ea04dac7a530",
-    "576d6c48a6423e2da3"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-017-rp1",
-      "title": "Business and Society",
-      "text": "The relationship between economic inequality and social mobility has been extensively studied. Some economists argue that inequality creates incentives for effort and innovation, while others maintain that high inequality undermines social mobility by restricting access to education and networks for those at the bottom of the income distribution. Longitudinal data from multiple countries suggests the latter effect is more significant."
+      "title": "Paying for Performance",
+      "text": "Tying executive pay to share price is intended to align the interests of managers with those of owners. The instrument is cruder than the intention, and the reason is that a share price moves for reasons having nothing to do with the executive.\n\nWhen an oil company's shares rise because the oil price rose, an executive paid in shares is rewarded for a movement that would have occurred under any management. The standard remedy is relative performance evaluation: reward the executive for outperforming a benchmark of comparable firms, which removes the industry-wide component. The remedy is well understood, straightforward to implement, and used far less than the theory predicts — a gap the literature has documented for decades and explained less convincingly than it has measured.\n\nTwo further problems attach to any measure. Executives influence what is measured through choices whose effects arrive later than their tenure: deferring maintenance, cutting research, repurchasing shares. And a target set on a single number invites management of that number rather than of the business, which is the general failure of any indicator used as a target.\n\nLonger vesting periods address part of this by extending the horizon over which a decision's consequences are captured. They do not address selection of the benchmark, and they cannot address the deepest difficulty, which is that the contribution of a single executive to a large firm's performance is not separately observable. Pay arrangements are therefore not measurements. They are bets on a proxy, and the useful questions concern how good the proxy is and who bears the cost when it is wrong."
+    },
+    {
+      "id": "gmat-verbal-017-rp2",
+      "title": "What a Placebo Is",
+      "text": "That patients given an inert treatment often improve is not in dispute. What that improvement consists of is disputed, and the popular formulation — that belief heals — states considerably more than the evidence supports.\n\nSeveral distinct things are bundled together in a measured placebo response. Many conditions improve without treatment, so a patient who joins a trial when symptoms are at their worst will tend to be better later regardless of what they receive. Reporting effects contribute: patients tell an attentive researcher what they think is expected, and outcomes that depend on self-report move more than outcomes that do not. Separating these from any genuine effect of expectation requires a comparison the standard trial does not include, namely a group given no treatment at all.\n\nWhere such three-armed studies have been run, the picture is uneven. Placebo effects on pain, nausea and anxiety are real and measurable, with plausible mechanisms including expectation-driven release of endogenous opioids. Effects on objective measures — tumour size, cholesterol, lung function — are small or absent. The distinction is not arbitrary: it tracks the difference between what a nervous system can modulate and what it cannot.\n\nThis has a clinical consequence often stated backwards. That a treatment works no better than placebo does not mean it works through belief and is therefore useful anyway; it means the trial cannot distinguish it from the natural course of the illness plus the effect of being treated attentively. Those are different claims, and only one of them is a reason to prescribe."
+    },
+    {
+      "id": "gmat-verbal-017-rp3",
+      "title": "Counting Crime",
+      "text": "Two independent methods exist for measuring crime, and they disagree in ways that are informative rather than embarrassing.\n\nPolice records count offences reported to and recorded by the police. Their weakness is that both steps are variable: many offences are never reported, and recording practice differs by force and changes over time. A rise in recorded crime is therefore consistent with more crime, with more reporting, or with a change in recording rules — and campaigns encouraging victims to come forward reliably raise the recorded figure for the offences they concern, which is the intended outcome and looks like deterioration.\n\nVictimisation surveys ask a large sample whether they have experienced particular offences. They capture unreported crime and are unaffected by recording practice, which makes them the better instrument for trends in common offences. Their limitations are structural: they miss crimes against businesses and against those not in households, they rely on respondents recalling and classifying events correctly, and their samples are too small to say much about rare offences, including homicide, for which police and health records are far better.\n\nThe disciplined approach uses each where it is strong and treats divergence as a question rather than a contradiction. When survey-measured crime falls while recorded crime rises, the most probable reading is a change in reporting or recording rather than two contradictory facts — and a commentator citing whichever series supports their case, without addressing the other, is not making an argument about crime."
+    },
+    {
+      "id": "gmat-verbal-017-rp4",
+      "title": "How Ancient Texts Survived",
+      "text": "Almost no classical text survives in a copy made by its author. What survives is a chain of manuscripts, each copied from another, and the discipline that reconstructs the relationships between them tells us more about the transmission than most readers assume.\n\nThe method depends on error. A scribe copying by hand introduces mistakes, and a manuscript copied from that one inherits them along with new ones. Shared errors therefore indicate shared ancestry, and a family tree of surviving manuscripts can be built from the pattern of agreement in error rather than from agreement in correct readings, which proves nothing about descent. From that tree an editor reconstructs, where possible, the readings of the lost ancestor.\n\nThe method's limits are well known to its practitioners. Scribes corrected as well as corrupted, and a scribe comparing two exemplars produces a manuscript with mixed ancestry that the tree cannot represent. Some errors are so natural that different scribes make them independently. And the reconstruction reaches the earliest recoverable ancestor of the surviving copies, which may be centuries later than the author and may already contain corruption invisible to the method.\n\nWhat this yields is a text with a documented history rather than an authentic original. A good edition prints the reconstruction and records the alternatives, so a reader can see where the evidence was thin and what was chosen. That apparatus, which non-specialists usually skip, is the part that distinguishes a scholarly edition from a confident one."
     }
   ]
 }
