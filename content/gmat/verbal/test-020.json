@@ -12,469 +12,474 @@
       "id": "gmat-verbal-020-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "prompt": "A pharmacy chain switched to dispensing generic medicines wherever permitted and reports that its medicine costs fell by 20 per cent. It concludes that generics are cheaper for the health system as a whole.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "B. Drug X has minor side effects including nausea",
-        "C. The study included only 50 participants",
-        "D. Chronic pain affects millions of people worldwide",
-        "E. Drug X is expensive compared to existing treatments"
+        "A. Generic medicines are manufactured to the same standard as branded ones.",
+        "B. The chain negotiated discounts with generic suppliers.",
+        "C. Some prescribers specify branded medicines.",
+        "D. Generic prices vary between suppliers.",
+        "E. A significant number of patients switched to the generic version stopped taking the medicine after changes in appearance caused confusion, and their subsequent hospital admissions cost more than the savings."
       ],
-      "correctAnswer": "A",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "The claim is about the system, so a cost that appears elsewhere in that system is directly on point; the pharmacy's own budget improved regardless.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-020-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "prompt": "A school district redrew its bus routes using scheduling software and reports that the average journey time for pupils fell by six minutes. Officials conclude that pupils now spend less time travelling.",
+      "question": "Which of the following, if true, most seriously undermines the conclusion?",
       "options": [
-        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "B. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "C. The university's highest-achieving students attend the fitness centre most frequently",
-        "D. Exercise programmes are popular at peer universities",
-        "E. Students who exercise report feeling less stressed"
+        "A. Some pupils walk to school.",
+        "B. The software cost less than expected.",
+        "C. The new routes drop pupils at collection points rather than at their homes, and the walk from those points is not counted in the journey time.",
+        "D. Journey times vary with traffic.",
+        "E. Drivers received training on the new routes."
       ],
-      "correctAnswer": "B",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Part of the journey has been moved outside the measure, so the recorded fall need not correspond to less time spent travelling.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-020-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "prompt": "A bank introduced automated alerts for unusual transactions and reports that confirmed fraud losses fell by a third. It concludes that the alerts prevent fraud.",
+      "question": "Which of the following would be most useful to determine in evaluating the conclusion?",
       "options": [
-        "A. Cameras might violate driver privacy",
-        "B. The cost of cameras is high",
-        "C. Intersections chosen for cameras may have already been due for safety upgrades",
-        "D. Some drivers find cameras distracting",
-        "E. Cameras only capture rear-end collisions"
+        "A. How many alerts are sent each month",
+        "B. Whether the bank simultaneously tightened the rules for approving new accounts, through which much of its fraud had originated",
+        "C. Whether customers find the alerts intrusive",
+        "D. How the alerts are delivered",
+        "E. Whether other banks have similar systems"
       ],
-      "correctAnswer": "C",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "A concurrent change addressing the main channel of loss would explain the fall without the alerts; this is the alternative that must be excluded first.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-020-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "prompt": "A cycling shop notes that customers who buy stiff-soled shoes ride faster than customers who do not, and advertises the shoes as increasing speed.",
+      "question": "The advertisement is most vulnerable to the criticism that it",
       "options": [
-        "A. Labour economists disagree on the effects of minimum wage increases",
-        "B. The minimum wage increase only affected 5% of workers",
-        "C. Some industries are more affected than others by wage increases",
-        "D. A separate economic boom added 100,000 jobs during the same year",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. assumes that a difference between self-selecting groups of riders was produced by their equipment",
+        "B. does not specify the distance over which speed was measured",
+        "C. ignores the cost of the shoes",
+        "D. overlooks the importance of the bicycle itself",
+        "E. relies on customers' own reports of their speed"
       ],
-      "correctAnswer": "D",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "Experienced and committed riders buy specialised shoes; the speed difference plausibly precedes the purchase.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-020-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "prompt": "Every greenhouse on the Thornleigh nursery that is heated by biomass also has automated ventilation. No greenhouse with automated ventilation lost a crop to overheating last summer. Some greenhouses on the nursery lost a crop to overheating last summer.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. Automated ventilation prevents overheating.",
+        "B. Most greenhouses are heated by biomass.",
+        "C. Biomass heating causes overheating.",
+        "D. Some greenhouses on the nursery are not heated by biomass.",
+        "E. Greenhouses without ventilation are older."
       ],
-      "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "Greenhouses that lost crops lack automated ventilation, and biomass heating implies that ventilation, so those greenhouses are heated some other way. B states a causal claim the premises do not establish.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-020-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "prompt": "A company analysed its exit interviews and found that departing employees most often cite a lack of career progression. It concludes that improving progression would substantially reduce turnover.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Local restaurants cannot accommodate arena crowds",
-        "C. The arena's construction will not create permanent jobs",
-        "D. The city already has sufficient sports facilities",
-        "E. Fans have a fixed entertainment budget they will spend regardless of venue"
+        "A. Exit interviews are conducted by the human resources department.",
+        "B. Some employees decline to attend an exit interview.",
+        "C. The company promotes from within where possible.",
+        "D. Turnover is higher than the industry average.",
+        "E. Departing employees avoid citing their manager or their pay in interviews conducted by their employer, and anonymous surveys of the same leavers give different reasons."
       ],
       "correctAnswer": "E",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "The instrument systematically under-records the reasons that are awkward to say aloud, so the most-cited reason need not be the most important one.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-020-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "prompt": "A city installed cameras that issue penalties to excessively loud vehicles and reports that measured night-time noise on the monitored streets has fallen. The council proposes installing them citywide to reduce noise everywhere.",
+      "question": "Which of the following, if true, casts most doubt on the proposal?",
       "options": [
-        "A. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "B. The advertising campaign cost $5M over three months",
-        "C. The ad was shown only on premium streaming services",
-        "D. The brand launched a new product line during the same period",
-        "E. Competitors also increased advertising spending during the same period"
+        "A. The cameras are expensive to maintain.",
+        "B. Some residents did not notice a change.",
+        "C. The cameras operate only at night.",
+        "D. Noise on adjacent unmonitored streets rose by a similar amount, as drivers rerouted around the monitored sections.",
+        "E. Measurements are taken at street level."
       ],
-      "correctAnswer": "A",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "Displacement explains the local result; if drivers reroute rather than quieten, citywide installation faces a different problem than the trial suggested — though note it would also remove the alternative routes.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-020-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "prompt": "A plant nursery began labelling which of its plants are attractive to pollinators and reports that sales of labelled plants rose while total sales were unchanged. It concludes that customers are choosing plants for their pollinator value.",
+      "question": "Which of the following, if true, most strengthens the conclusion?",
       "options": [
-        "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It presents empirical evidence that undermines the first analyst's prediction",
-        "C. It demonstrates that road construction is always harmful",
-        "D. It suggests the first analyst has incorrect data",
-        "E. It proves that traffic will always increase regardless of policy"
+        "A. The labels are printed in green.",
+        "B. Sales of labelled plants rose most among varieties whose sales had previously been falling, and customer surveys record the label as the reason for purchase.",
+        "C. The nursery advertised the labelling scheme.",
+        "D. Labelled plants are priced the same as others.",
+        "E. Some customers buy plants for containers."
       ],
       "correctAnswer": "B",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
+      "explanation": "It ties the shift to the label specifically, including for varieties that were losing ground for other reasons. D removes price as a confounder but adds no positive evidence.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-020-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
-      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "prompt": "An employers' association argues that the training levy has failed, since the number of apprenticeships started has fallen since it was introduced.",
+      "question": "Which of the following, if true, most weakens the association's argument?",
       "options": [
-        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "B. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "C. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
-        "D. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
-        "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
+        "A. The levy is paid by larger employers only.",
+        "B. Some employers find the levy administratively burdensome.",
+        "C. The levy replaced a system that counted short courses as apprenticeships, and the number of apprenticeships lasting more than a year has risen substantially.",
+        "D. Apprenticeship starts also fell in countries without such a levy.",
+        "E. The levy raises less revenue than forecast."
       ],
       "correctAnswer": "C",
-      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
+      "explanation": "A change in what the count includes means the falling number is not measuring the same thing; on the comparable measure the trend reverses.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-020-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "prompt": "A council introduced hygiene ratings displayed in restaurant windows and reports that the average rating in the city has risen. It concludes that display has improved hygiene standards.",
+      "question": "Which of the following, if true, most seriously undermines the conclusion?",
       "options": [
-        "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Dissatisfied workers always sleep fewer than 7 hours",
-        "C. Employers should implement nap rooms to improve satisfaction",
-        "D. Job satisfaction and adequate sleep are associated in the survey population",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "A. Restaurants rated below three closed at a much higher rate than others after display began, and the average rose because the lowest-rated premises left the market.",
+        "B. Ratings are awarded on a five-point scale.",
+        "C. Inspections are unannounced.",
+        "D. Some restaurants dispute their ratings.",
+        "E. Customers report checking the ratings."
       ],
-      "correctAnswer": "D",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
+      "correctAnswer": "A",
+      "explanation": "Compositional change raises an average without any individual restaurant improving — though it is worth noting the exit itself may be an intended effect of the policy.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-020-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "prompt": "A dairy cooperative argues that a rise in the farmgate milk price will increase the income of its member farms. A critic replies that a higher price will lead members to expand production, and that the resulting supply will push the price back down.",
+      "question": "The critic's reply would be most weakened if it were true that",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. milk prices are set annually",
+        "B. the cooperative sells into a market far larger than its members' output, so their expansion cannot appreciably affect the price",
+        "C. some members are near capacity",
+        "D. expansion requires investment in buildings",
+        "E. consumer demand for milk is stable"
       ],
-      "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
+      "correctAnswer": "B",
+      "explanation": "If members are price takers in a much larger market, their own expansion cannot move the price, which is the mechanism the critic's reply depends on.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-020-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "passageTitle": "Why Tickets Are Underpriced",
+      "passageText": "Popular events sell out within minutes and tickets then resell for multiples of their face value. The obvious inference is that promoters have misjudged demand. They have not: the underpricing is deliberate, and understanding why illuminates what a price is for.\n\nSeveral motives operate together. A sold-out event is itself advertising, and a hall that fills at a lower price produces the crowd, the atmosphere and the coverage that a half-empty hall at a higher price does not. Performers with long careers have reason to avoid pricing out the audience that will buy the next tour, so a price that maximises this event's revenue may reduce lifetime revenue. And where an artist's reputation would be damaged by appearing to extract everything the market will bear, the low face value is a statement about the relationship rather than an error about demand.\n\nThe consequence is a gap between face value and market value, and that gap is a prize. Resellers capture it, and much of the industry's regulation is an attempt to decide who should. Restrictions on transfer, identity checks and capped resale platforms all reallocate the surplus, and each imposes costs: a ticket that cannot be transferred is worth less to a buyer whose plans may change.\n\nThe honest framing is that this is a distributional question wearing the clothes of a fairness argument. Someone will capture the difference between what the promoter charged and what buyers will pay — the promoter, the reseller, or the buyer lucky enough to be online at the right moment — and no arrangement makes the gap disappear while the underpricing that creates it remains deliberate.",
+      "prompt": "The passage indicates that the underpricing of tickets is",
       "options": [
-        "A. The claim that wetlands prevent flooding",
-        "B. The conclusion that all wetlands should be protected",
-        "C. The implication that flooding is always preventable",
-        "D. The premise that wetlands are worth preserving",
-        "E. The assumption that all wetlands have equal flood-prevention value"
+        "A. a miscalculation of demand by promoters",
+        "B. required by law in most jurisdictions",
+        "C. a consequence of resale platforms",
+        "D. deliberate, and explained by several motives operating together",
+        "E. confined to performers early in their careers"
       ],
-      "correctAnswer": "E",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
+      "correctAnswer": "D",
+      "explanation": "The opening paragraph rejects the miscalculation reading explicitly.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-020-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "passageTitle": "Why Tickets Are Underpriced",
+      "passageText": "Popular events sell out within minutes and tickets then resell for multiples of their face value. The obvious inference is that promoters have misjudged demand. They have not: the underpricing is deliberate, and understanding why illuminates what a price is for.\n\nSeveral motives operate together. A sold-out event is itself advertising, and a hall that fills at a lower price produces the crowd, the atmosphere and the coverage that a half-empty hall at a higher price does not. Performers with long careers have reason to avoid pricing out the audience that will buy the next tour, so a price that maximises this event's revenue may reduce lifetime revenue. And where an artist's reputation would be damaged by appearing to extract everything the market will bear, the low face value is a statement about the relationship rather than an error about demand.\n\nThe consequence is a gap between face value and market value, and that gap is a prize. Resellers capture it, and much of the industry's regulation is an attempt to decide who should. Restrictions on transfer, identity checks and capped resale platforms all reallocate the surplus, and each imposes costs: a ticket that cannot be transferred is worth less to a buyer whose plans may change.\n\nThe honest framing is that this is a distributional question wearing the clothes of a fairness argument. Someone will capture the difference between what the promoter charged and what buyers will pay — the promoter, the reseller, or the buyer lucky enough to be online at the right moment — and no arrangement makes the gap disappear while the underpricing that creates it remains deliberate.",
+      "prompt": "According to the passage, a performer with a long career may accept a lower price because",
       "options": [
-        "A. A controlled experiment with randomly assigned music found the same 20% difference",
-        "B. Customers reported preferring a relaxed shopping atmosphere",
-        "C. The upbeat music stores were in higher-traffic mall locations",
-        "D. Sales staff performed better when the music was upbeat",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "A. production costs fall as attendance rises",
+        "B. resellers share their proceeds with performers",
+        "C. a price maximising this event's revenue may reduce lifetime revenue",
+        "D. smaller halls are cheaper to hire",
+        "E. regulators cap ticket prices"
       ],
-      "correctAnswer": "A",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
+      "correctAnswer": "C",
+      "explanation": "Pricing out the audience that buys the next tour is the mechanism given.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-020-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
-      "question": "Which of the following most weakens the editorial's conclusion?",
+      "passageTitle": "Why Tickets Are Underpriced",
+      "passageText": "Popular events sell out within minutes and tickets then resell for multiples of their face value. The obvious inference is that promoters have misjudged demand. They have not: the underpricing is deliberate, and understanding why illuminates what a price is for.\n\nSeveral motives operate together. A sold-out event is itself advertising, and a hall that fills at a lower price produces the crowd, the atmosphere and the coverage that a half-empty hall at a higher price does not. Performers with long careers have reason to avoid pricing out the audience that will buy the next tour, so a price that maximises this event's revenue may reduce lifetime revenue. And where an artist's reputation would be damaged by appearing to extract everything the market will bear, the low face value is a statement about the relationship rather than an error about demand.\n\nThe consequence is a gap between face value and market value, and that gap is a prize. Resellers capture it, and much of the industry's regulation is an attempt to decide who should. Restrictions on transfer, identity checks and capped resale platforms all reallocate the surplus, and each imposes costs: a ticket that cannot be transferred is worth less to a buyer whose plans may change.\n\nThe honest framing is that this is a distributional question wearing the clothes of a fairness argument. Someone will capture the difference between what the promoter charged and what buyers will pay — the promoter, the reseller, or the buyer lucky enough to be online at the right moment — and no arrangement makes the gap disappear while the underpricing that creates it remains deliberate.",
+      "prompt": "The author's characterisation of the regulatory debate is that it is",
       "options": [
-        "A. Employment programmes have reduced crime in some pilot cities",
-        "B. Crime rates are influenced by many factors beyond unemployment",
-        "C. The editorial does not define 'crime' precisely",
-        "D. Reducing unemployment is expensive and politically difficult",
-        "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
+        "A. a technical question about platform design",
+        "B. a dispute that transfer restrictions have resolved",
+        "C. less important than the question of production costs",
+        "D. settled in favour of capped resale",
+        "E. a distributional question wearing the clothes of a fairness argument"
       ],
-      "correctAnswer": "B",
-      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
+      "correctAnswer": "E",
+      "explanation": "Someone captures the gap, and no arrangement removes it while the underpricing persists.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-020-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
-      "question": "The president's argument is flawed because it:",
+      "passageTitle": "What Nutrition Studies Can Show",
+      "passageText": "Claims that a particular food raises or lowers the risk of a disease appear constantly and are frequently reversed. The pattern is not evidence that nutrition science is fraudulent; it is a consequence of the methods available for studying what people eat.\n\nRandomised trials, the strongest design, are severely constrained here. A diet cannot be concealed from the person following it, adherence over years is poor, and the outcomes of interest take decades to appear, so trials tend to be short, small, and to measure a proxy such as cholesterol rather than the disease itself.\n\nObservational studies therefore carry most of the weight, and they face two structural problems. Measurement is one: intake is usually established by asking people what they ate, and recall is unreliable in ways that correlate with the outcome, since people who are ill or overweight report differently. Confounding is the other and is worse. Someone who eats more vegetables also tends to smoke less, exercise more and have more money, and statistical adjustment can only correct for factors that were measured.\n\nThe field's better practitioners have responded by raising the bar. Findings are taken seriously when several methods with different weaknesses agree, when a dose-response relationship appears, and when a plausible mechanism exists. On that standard a small number of conclusions are secure and most single-study headlines are not. The distinction the public is rarely offered is between a field that knows a few things firmly and a literature that produces a great many weak results, which are not the same thing.",
+      "prompt": "According to the passage, randomised trials in nutrition are constrained because",
       "options": [
-        "A. Ignores that SAT preparation courses can inflate scores",
-        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
-        "C. Does not consider the diversity implications of the policy",
-        "D. Fails to define 'academic performance' precisely",
-        "E. Both A and B"
+        "A. participants cannot be recruited",
+        "B. diets cannot be concealed, adherence is poor, and outcomes take decades",
+        "C. such trials are prohibited by ethics committees",
+        "D. the results are always reversed",
+        "E. proxies such as cholesterol cannot be measured"
       ],
       "correctAnswer": "B",
-      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "Those three constraints are given as the reason trials tend to be short, small and proxy-based.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-020-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
-      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "passageTitle": "What Nutrition Studies Can Show",
+      "passageText": "Claims that a particular food raises or lowers the risk of a disease appear constantly and are frequently reversed. The pattern is not evidence that nutrition science is fraudulent; it is a consequence of the methods available for studying what people eat.\n\nRandomised trials, the strongest design, are severely constrained here. A diet cannot be concealed from the person following it, adherence over years is poor, and the outcomes of interest take decades to appear, so trials tend to be short, small, and to measure a proxy such as cholesterol rather than the disease itself.\n\nObservational studies therefore carry most of the weight, and they face two structural problems. Measurement is one: intake is usually established by asking people what they ate, and recall is unreliable in ways that correlate with the outcome, since people who are ill or overweight report differently. Confounding is the other and is worse. Someone who eats more vegetables also tends to smoke less, exercise more and have more money, and statistical adjustment can only correct for factors that were measured.\n\nThe field's better practitioners have responded by raising the bar. Findings are taken seriously when several methods with different weaknesses agree, when a dose-response relationship appears, and when a plausible mechanism exists. On that standard a small number of conclusions are secure and most single-study headlines are not. The distinction the public is rarely offered is between a field that knows a few things firmly and a literature that produces a great many weak results, which are not the same thing.",
+      "prompt": "The passage identifies which as the worse of the two structural problems facing observational studies?",
       "options": [
-        "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "C. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
-        "D. Historical market data is unreliable because markets change structurally over time",
-        "E. Companies with consistent earnings growth tend to have stable stock prices"
+        "A. Confounding, since dietary habits travel with other behaviours and resources",
+        "B. Unreliable recall of what people ate",
+        "C. The expense of long follow-up",
+        "D. Disagreement about how to define a food group",
+        "E. Small sample sizes"
       ],
-      "correctAnswer": "C",
-      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The passage says confounding is the other problem and is worse, adding that adjustment reaches only measured factors.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-020-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
-      "question": "Which of the following, if true, most seriously weakens the conclusion?",
+      "passageTitle": "What Nutrition Studies Can Show",
+      "passageText": "Claims that a particular food raises or lowers the risk of a disease appear constantly and are frequently reversed. The pattern is not evidence that nutrition science is fraudulent; it is a consequence of the methods available for studying what people eat.\n\nRandomised trials, the strongest design, are severely constrained here. A diet cannot be concealed from the person following it, adherence over years is poor, and the outcomes of interest take decades to appear, so trials tend to be short, small, and to measure a proxy such as cholesterol rather than the disease itself.\n\nObservational studies therefore carry most of the weight, and they face two structural problems. Measurement is one: intake is usually established by asking people what they ate, and recall is unreliable in ways that correlate with the outcome, since people who are ill or overweight report differently. Confounding is the other and is worse. Someone who eats more vegetables also tends to smoke less, exercise more and have more money, and statistical adjustment can only correct for factors that were measured.\n\nThe field's better practitioners have responded by raising the bar. Findings are taken seriously when several methods with different weaknesses agree, when a dose-response relationship appears, and when a plausible mechanism exists. On that standard a small number of conclusions are secure and most single-study headlines are not. The distinction the public is rarely offered is between a field that knows a few things firmly and a literature that produces a great many weak results, which are not the same thing.",
+      "prompt": "The distinction the author says the public is rarely offered is between",
       "options": [
-        "A. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "B. Customers report feeling more valued when using a loyalty programme",
-        "C. Competitors without loyalty programmes have seen declining sales",
-        "D. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "E. The loyalty programme was introduced simultaneously with a store renovation"
+        "A. nutrition science and dietetics",
+        "B. randomised and observational evidence",
+        "C. government advice and commercial claims",
+        "D. a field that knows a few things firmly and a literature producing many weak results",
+        "E. short-term and long-term outcomes"
       ],
       "correctAnswer": "D",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "Stated in the final sentence, after the criteria the better practitioners apply.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-020-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
-      "question": "Which of the following would most strengthen the CFO's conclusion?",
+      "passageTitle": "Serving Everyone",
+      "passageText": "Requiring a utility to serve every address at a uniform price is a policy with a clear rationale and an uncomfortable arithmetic. Delivering post, electricity or telecommunications to a remote household costs far more than delivering to a dense street, and a uniform tariff means the difference is paid by someone else.\n\nThe rationale is that these services are inputs to participation rather than ordinary goods. A household without a connection is excluded from services, employment and administration that assume one, and the cost of that exclusion falls on the excluded rather than on the market. Universal service obligations have been the standard remedy, financed either from the provider's profitable urban business or from a levy on all providers.\n\nTwo pressures have made the arrangement harder. Competition removes the cross-subsidy, because a new entrant serving only dense areas can undercut a provider carrying the obligation, and the obligation then becomes a competitive disadvantage rather than a shared cost. And technological change alters what counts as the service: an obligation defined around a copper telephone line does not deliver participation in a world organised around data.\n\nThe design question is consequently recurrent rather than settled. A defensible scheme must define the service in terms of what it enables rather than the technology that once delivered it, must finance it in a way that does not penalise the provider that carries it, and must be revised as the standard of participation moves — which is a demanding specification, and the reason most countries have rewritten these rules repeatedly.",
+      "prompt": "The rationale for universal service, as the passage presents it, is that the services are",
       "options": [
-        "A. Other advertising channels were suspended during the same three months",
-        "B. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "C. Social media platforms reported the campaign reached 5 million unique users",
-        "D. Competitors saw no change in sign-ups over the same period",
-        "E. The lifetime value of a new user averages $50"
+        "A. natural monopolies",
+        "B. cheaper to provide at uniform prices",
+        "C. traditionally provided by the state",
+        "D. impossible to price accurately",
+        "E. inputs to participation rather than ordinary goods"
       ],
       "correctAnswer": "E",
-      "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "The cost of exclusion falls on the excluded rather than on the market, which is why the passage treats it as different from an ordinary good.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-020-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
-      "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
+      "passageTitle": "Serving Everyone",
+      "passageText": "Requiring a utility to serve every address at a uniform price is a policy with a clear rationale and an uncomfortable arithmetic. Delivering post, electricity or telecommunications to a remote household costs far more than delivering to a dense street, and a uniform tariff means the difference is paid by someone else.\n\nThe rationale is that these services are inputs to participation rather than ordinary goods. A household without a connection is excluded from services, employment and administration that assume one, and the cost of that exclusion falls on the excluded rather than on the market. Universal service obligations have been the standard remedy, financed either from the provider's profitable urban business or from a levy on all providers.\n\nTwo pressures have made the arrangement harder. Competition removes the cross-subsidy, because a new entrant serving only dense areas can undercut a provider carrying the obligation, and the obligation then becomes a competitive disadvantage rather than a shared cost. And technological change alters what counts as the service: an obligation defined around a copper telephone line does not deliver participation in a world organised around data.\n\nThe design question is consequently recurrent rather than settled. A defensible scheme must define the service in terms of what it enables rather than the technology that once delivered it, must finance it in a way that does not penalise the provider that carries it, and must be revised as the standard of participation moves — which is a demanding specification, and the reason most countries have rewritten these rules repeatedly.",
+      "prompt": "According to the passage, competition undermines the arrangement because",
       "options": [
-        "A. It treats a correlation as evidence of a causal relationship",
-        "B. It assumes that lower temperatures are always desirable",
-        "C. It ignores that tree planting is expensive",
-        "D. It fails to consider that trees require water",
-        "E. It overlooks that some neighbourhoods may not have space for trees"
+        "A. an entrant serving only dense areas can undercut the provider carrying the obligation",
+        "B. it lowers prices below cost everywhere",
+        "C. it reduces the quality of service in cities",
+        "D. regulators cannot license multiple providers",
+        "E. obligations are defined in statute"
       ],
       "correctAnswer": "A",
-      "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "The cross-subsidy disappears and the obligation becomes a competitive disadvantage rather than a shared cost.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-020-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
-      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "passageTitle": "Serving Everyone",
+      "passageText": "Requiring a utility to serve every address at a uniform price is a policy with a clear rationale and an uncomfortable arithmetic. Delivering post, electricity or telecommunications to a remote household costs far more than delivering to a dense street, and a uniform tariff means the difference is paid by someone else.\n\nThe rationale is that these services are inputs to participation rather than ordinary goods. A household without a connection is excluded from services, employment and administration that assume one, and the cost of that exclusion falls on the excluded rather than on the market. Universal service obligations have been the standard remedy, financed either from the provider's profitable urban business or from a levy on all providers.\n\nTwo pressures have made the arrangement harder. Competition removes the cross-subsidy, because a new entrant serving only dense areas can undercut a provider carrying the obligation, and the obligation then becomes a competitive disadvantage rather than a shared cost. And technological change alters what counts as the service: an obligation defined around a copper telephone line does not deliver participation in a world organised around data.\n\nThe design question is consequently recurrent rather than settled. A defensible scheme must define the service in terms of what it enables rather than the technology that once delivered it, must finance it in a way that does not penalise the provider that carries it, and must be revised as the standard of participation moves — which is a demanding specification, and the reason most countries have rewritten these rules repeatedly.",
+      "prompt": "According to the passage, a defensible scheme should define the service in terms of",
       "options": [
-        "A. Passengers reported higher satisfaction with the new policy",
-        "B. The airline also reduced the number of carry-on bags allowed during the same period",
-        "C. Competing airlines have not adopted similar policies",
-        "D. Boarding time varies naturally between 15 and 35 minutes",
-        "E. The new policy was introduced on routes with larger aircraft"
+        "A. the technology currently in widest use",
+        "B. the cost of connecting the most remote household",
+        "C. what the service enables rather than the technology that once delivered it",
+        "D. the average household's consumption",
+        "E. the number of providers operating in the market"
       ],
-      "correctAnswer": "B",
-      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "The passage names three requirements - definition by capability, financing that does not penalise the carrying provider, and revision as the standard of participation moves - and this is the first of them. A is precisely the mistake it warns against, since an obligation built around a copper line does not deliver participation in a world organised around data.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-020-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "The 'free rider problem' mentioned in the passage refers to:",
+      "passageTitle": "The Free Library",
+      "passageText": "Public libraries funded from taxation and open without charge are a nineteenth-century invention, and the arguments made for them at the time are not the ones usually offered now.\n\nTheir advocates were not, in the main, arguing for the pleasure of reading. The case was made in terms of an educated workforce, of sobriety — a reading room as an alternative to the public house — and of social stability, on the reasoning that a population with access to improving literature would be less inclined to disorder. Opponents objected to the cost, and to subsidising the leisure of others, in language that has survived remarkably intact.\n\nThe institution then outgrew its justification. Libraries became providers of newspapers, reference services for small businesses, warm public rooms, and, later, of internet access for households without it. None of these was in the founding argument, and the pattern is instructive: an institution created for one purpose acquired functions that the original purpose did not anticipate and would not obviously have supported.\n\nThis creates a difficulty when the case for funding must be made again. Measured against book lending alone, libraries look like a declining service. Measured against what they actually do — including functions that exist because no other institution provides a heated room where nothing must be bought — they are harder to assess and harder to defend, because the benefits fall on people whose alternative is nothing, and nothing is not a comparison that appears in any statistic.",
+      "prompt": "According to the passage, the original case for public libraries rested on",
       "options": [
-        "A. Programmers who use open-source software without contributing code",
-        "B. The tendency for rational actors to underinvest in public goods because they cannot exclude non-payers",
-        "C. The difficulty of coordinating large numbers of geographically dispersed contributors",
-        "D. The reluctance of firms to release proprietary software as open-source"
+        "A. the pleasure of reading",
+        "B. an educated workforce, sobriety and social stability",
+        "C. the preservation of rare books",
+        "D. support for small businesses",
+        "E. the provision of warm public rooms"
       ],
       "correctAnswer": "B",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "explanation": "The passage contrasts these founding arguments with the functions the institution later acquired.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-020-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "According to the passage, which of the following does NOT explain why developers contribute to open-source projects?",
+      "passageTitle": "The Free Library",
+      "passageText": "Public libraries funded from taxation and open without charge are a nineteenth-century invention, and the arguments made for them at the time are not the ones usually offered now.\n\nTheir advocates were not, in the main, arguing for the pleasure of reading. The case was made in terms of an educated workforce, of sobriety — a reading room as an alternative to the public house — and of social stability, on the reasoning that a population with access to improving literature would be less inclined to disorder. Opponents objected to the cost, and to subsidising the leisure of others, in language that has survived remarkably intact.\n\nThe institution then outgrew its justification. Libraries became providers of newspapers, reference services for small businesses, warm public rooms, and, later, of internet access for households without it. None of these was in the founding argument, and the pattern is instructive: an institution created for one purpose acquired functions that the original purpose did not anticipate and would not obviously have supported.\n\nThis creates a difficulty when the case for funding must be made again. Measured against book lending alone, libraries look like a declining service. Measured against what they actually do — including functions that exist because no other institution provides a heated room where nothing must be bought — they are harder to assess and harder to defend, because the benefits fall on people whose alternative is nothing, and nothing is not a comparison that appears in any statistic.",
+      "prompt": "The 'instructive pattern' the author identifies is that",
       "options": [
-        "A. Gaining professional reputation in their field",
-        "B. Being employed by firms that benefit from specific projects",
-        "C. Receiving direct financial compensation from project users",
-        "D. Opportunities for skill development and learning"
+        "A. institutions decline once their founding purpose is achieved",
+        "B. opponents of public funding have generally prevailed",
+        "C. libraries were more popular in the nineteenth century",
+        "D. an institution created for one purpose acquired functions its founding argument did not anticipate",
+        "E. reference services replaced lending"
       ],
-      "correctAnswer": "C",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "correctAnswer": "D",
+      "explanation": "Newspapers, business reference, warm rooms and internet access are given as the unanticipated functions.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-020-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "The Economics of Open-Source Software",
-      "passageText": "The proliferation of open-source software presents a seeming paradox to conventional economic theory: communities of skilled programmers invest substantial time and talent producing public goods that they then make freely available, without direct financial compensation. Classical economic models predict that rational actors will under-invest in public goods because they cannot exclude others from benefiting — the classic 'free rider' problem. Yet open-source communities have produced software infrastructure that underpins much of the global digital economy, from operating systems to web servers. Economists have proposed several explanations for this apparent anomaly. First, developers may derive non-monetary benefits — reputation, learning, and professional signalling — that make contribution individually rational even without pay. Second, many contributors are employed by firms with a strategic interest in particular open-source projects, meaning the projects are not entirely uncompensated. Third, the internet dramatically reduces coordination costs, making it feasible for geographically dispersed contributors to collaborate without centralised management.",
-      "prompt": "The author uses the phrase 'seeming paradox' to suggest that:",
+      "passageTitle": "The Free Library",
+      "passageText": "Public libraries funded from taxation and open without charge are a nineteenth-century invention, and the arguments made for them at the time are not the ones usually offered now.\n\nTheir advocates were not, in the main, arguing for the pleasure of reading. The case was made in terms of an educated workforce, of sobriety — a reading room as an alternative to the public house — and of social stability, on the reasoning that a population with access to improving literature would be less inclined to disorder. Opponents objected to the cost, and to subsidising the leisure of others, in language that has survived remarkably intact.\n\nThe institution then outgrew its justification. Libraries became providers of newspapers, reference services for small businesses, warm public rooms, and, later, of internet access for households without it. None of these was in the founding argument, and the pattern is instructive: an institution created for one purpose acquired functions that the original purpose did not anticipate and would not obviously have supported.\n\nThis creates a difficulty when the case for funding must be made again. Measured against book lending alone, libraries look like a declining service. Measured against what they actually do — including functions that exist because no other institution provides a heated room where nothing must be bought — they are harder to assess and harder to defend, because the benefits fall on people whose alternative is nothing, and nothing is not a comparison that appears in any statistic.",
+      "prompt": "The author suggests that defending libraries is difficult because",
       "options": [
-        "A. Open-source development violates all known economic principles",
-        "B. Economists have no theory that explains open-source development",
-        "C. Open-source software is economically irrational and will eventually disappear",
-        "D. The behaviour of open-source contributors appears inconsistent with standard economic predictions but can be explained"
+        "A. lending figures are not collected",
+        "B. their founding arguments have been forgotten",
+        "C. internet access is provided more cheaply elsewhere",
+        "D. opponents object to subsidising leisure",
+        "E. the benefits fall on people whose alternative is nothing, which appears in no statistic"
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about The Economics of Open-Source Software.",
+      "correctAnswer": "E",
+      "explanation": "Measured on lending alone they look like a declining service; measured on what they do, the comparison case is absent from the data.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-020-q01": "A",
-    "gmat-verbal-020-q02": "B",
-    "gmat-verbal-020-q03": "C",
-    "gmat-verbal-020-q04": "D",
-    "gmat-verbal-020-q05": "E",
+    "gmat-verbal-020-q01": "E",
+    "gmat-verbal-020-q02": "C",
+    "gmat-verbal-020-q03": "B",
+    "gmat-verbal-020-q04": "A",
+    "gmat-verbal-020-q05": "D",
     "gmat-verbal-020-q06": "E",
-    "gmat-verbal-020-q07": "A",
+    "gmat-verbal-020-q07": "D",
     "gmat-verbal-020-q08": "B",
     "gmat-verbal-020-q09": "C",
-    "gmat-verbal-020-q10": "D",
-    "gmat-verbal-020-q11": "E",
-    "gmat-verbal-020-q12": "E",
-    "gmat-verbal-020-q13": "A",
-    "gmat-verbal-020-q14": "B",
+    "gmat-verbal-020-q10": "A",
+    "gmat-verbal-020-q11": "B",
+    "gmat-verbal-020-q12": "D",
+    "gmat-verbal-020-q13": "C",
+    "gmat-verbal-020-q14": "E",
     "gmat-verbal-020-q15": "B",
-    "gmat-verbal-020-q16": "C",
+    "gmat-verbal-020-q16": "A",
     "gmat-verbal-020-q17": "D",
     "gmat-verbal-020-q18": "E",
     "gmat-verbal-020-q19": "A",
-    "gmat-verbal-020-q20": "B",
+    "gmat-verbal-020-q20": "C",
     "gmat-verbal-020-q21": "B",
-    "gmat-verbal-020-q22": "C",
-    "gmat-verbal-020-q23": "D"
+    "gmat-verbal-020-q22": "D",
+    "gmat-verbal-020-q23": "E"
   },
-  "fingerprints": [
-    "e545055989f96b1ae5",
-    "a6ee3beec1474113a9",
-    "f1cf818cd5fa03067f",
-    "9ebd8ae2b994e9a63b",
-    "529762eb36dc4dd263",
-    "252e5a68821f246fc3",
-    "eafc451946041bf01b",
-    "4b58058077830a732f",
-    "4c89ef80bccbe32b83",
-    "fcf4f5c324701fb86d",
-    "cf9b2899052847e44b",
-    "abf08349de68af7168",
-    "f23be5fc4abd47731a",
-    "563251021adb65f5f5",
-    "d6309fe35d65c4980e",
-    "9bb220f137123ab6ae",
-    "fecaab72590674c01c",
-    "7715eb2092d17cc2ca",
-    "572416ee314fec479a",
-    "740546837cb1782d43"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-020-rp1",
-      "title": "Business and Society",
-      "text": "The relationship between economic inequality and social mobility has been extensively studied. Some economists argue that inequality creates incentives for effort and innovation, while others maintain that high inequality undermines social mobility by restricting access to education and networks for those at the bottom of the income distribution. Longitudinal data from multiple countries suggests the latter effect is more significant."
+      "title": "Why Tickets Are Underpriced",
+      "text": "Popular events sell out within minutes and tickets then resell for multiples of their face value. The obvious inference is that promoters have misjudged demand. They have not: the underpricing is deliberate, and understanding why illuminates what a price is for.\n\nSeveral motives operate together. A sold-out event is itself advertising, and a hall that fills at a lower price produces the crowd, the atmosphere and the coverage that a half-empty hall at a higher price does not. Performers with long careers have reason to avoid pricing out the audience that will buy the next tour, so a price that maximises this event's revenue may reduce lifetime revenue. And where an artist's reputation would be damaged by appearing to extract everything the market will bear, the low face value is a statement about the relationship rather than an error about demand.\n\nThe consequence is a gap between face value and market value, and that gap is a prize. Resellers capture it, and much of the industry's regulation is an attempt to decide who should. Restrictions on transfer, identity checks and capped resale platforms all reallocate the surplus, and each imposes costs: a ticket that cannot be transferred is worth less to a buyer whose plans may change.\n\nThe honest framing is that this is a distributional question wearing the clothes of a fairness argument. Someone will capture the difference between what the promoter charged and what buyers will pay — the promoter, the reseller, or the buyer lucky enough to be online at the right moment — and no arrangement makes the gap disappear while the underpricing that creates it remains deliberate."
+    },
+    {
+      "id": "gmat-verbal-020-rp2",
+      "title": "What Nutrition Studies Can Show",
+      "text": "Claims that a particular food raises or lowers the risk of a disease appear constantly and are frequently reversed. The pattern is not evidence that nutrition science is fraudulent; it is a consequence of the methods available for studying what people eat.\n\nRandomised trials, the strongest design, are severely constrained here. A diet cannot be concealed from the person following it, adherence over years is poor, and the outcomes of interest take decades to appear, so trials tend to be short, small, and to measure a proxy such as cholesterol rather than the disease itself.\n\nObservational studies therefore carry most of the weight, and they face two structural problems. Measurement is one: intake is usually established by asking people what they ate, and recall is unreliable in ways that correlate with the outcome, since people who are ill or overweight report differently. Confounding is the other and is worse. Someone who eats more vegetables also tends to smoke less, exercise more and have more money, and statistical adjustment can only correct for factors that were measured.\n\nThe field's better practitioners have responded by raising the bar. Findings are taken seriously when several methods with different weaknesses agree, when a dose-response relationship appears, and when a plausible mechanism exists. On that standard a small number of conclusions are secure and most single-study headlines are not. The distinction the public is rarely offered is between a field that knows a few things firmly and a literature that produces a great many weak results, which are not the same thing."
+    },
+    {
+      "id": "gmat-verbal-020-rp3",
+      "title": "Serving Everyone",
+      "text": "Requiring a utility to serve every address at a uniform price is a policy with a clear rationale and an uncomfortable arithmetic. Delivering post, electricity or telecommunications to a remote household costs far more than delivering to a dense street, and a uniform tariff means the difference is paid by someone else.\n\nThe rationale is that these services are inputs to participation rather than ordinary goods. A household without a connection is excluded from services, employment and administration that assume one, and the cost of that exclusion falls on the excluded rather than on the market. Universal service obligations have been the standard remedy, financed either from the provider's profitable urban business or from a levy on all providers.\n\nTwo pressures have made the arrangement harder. Competition removes the cross-subsidy, because a new entrant serving only dense areas can undercut a provider carrying the obligation, and the obligation then becomes a competitive disadvantage rather than a shared cost. And technological change alters what counts as the service: an obligation defined around a copper telephone line does not deliver participation in a world organised around data.\n\nThe design question is consequently recurrent rather than settled. A defensible scheme must define the service in terms of what it enables rather than the technology that once delivered it, must finance it in a way that does not penalise the provider that carries it, and must be revised as the standard of participation moves — which is a demanding specification, and the reason most countries have rewritten these rules repeatedly."
+    },
+    {
+      "id": "gmat-verbal-020-rp4",
+      "title": "The Free Library",
+      "text": "Public libraries funded from taxation and open without charge are a nineteenth-century invention, and the arguments made for them at the time are not the ones usually offered now.\n\nTheir advocates were not, in the main, arguing for the pleasure of reading. The case was made in terms of an educated workforce, of sobriety — a reading room as an alternative to the public house — and of social stability, on the reasoning that a population with access to improving literature would be less inclined to disorder. Opponents objected to the cost, and to subsidising the leisure of others, in language that has survived remarkably intact.\n\nThe institution then outgrew its justification. Libraries became providers of newspapers, reference services for small businesses, warm public rooms, and, later, of internet access for households without it. None of these was in the founding argument, and the pattern is instructive: an institution created for one purpose acquired functions that the original purpose did not anticipate and would not obviously have supported.\n\nThis creates a difficulty when the case for funding must be made again. Measured against book lending alone, libraries look like a declining service. Measured against what they actually do — including functions that exist because no other institution provides a heated room where nothing must be bought — they are harder to assess and harder to defend, because the benefits fall on people whose alternative is nothing, and nothing is not a comparison that appears in any statistic."
     }
   ]
 }
