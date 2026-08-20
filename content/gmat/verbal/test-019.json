@@ -12,469 +12,474 @@
       "id": "gmat-verbal-019-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
-      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "prompt": "A supermarket introduced an own-brand range priced below the branded equivalents and reports that its total profit rose. It concludes that customers switching to own-brand products are more profitable for the chain.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. The airline also reduced the number of carry-on bags allowed during the same period",
-        "B. Passengers reported higher satisfaction with the new policy",
-        "C. Competing airlines have not adopted similar policies",
-        "D. Boarding time varies naturally between 15 and 35 minutes",
-        "E. The new policy was introduced on routes with larger aircraft"
+        "A. Own-brand products are manufactured by the same firms that make the branded ones.",
+        "B. Own-brand packaging is cheaper to produce.",
+        "C. Branded suppliers responded by increasing the payments they make for shelf space, and that increase accounts for most of the profit rise.",
+        "D. Some customers buy both ranges.",
+        "E. The range was introduced in stages."
       ],
-      "correctAnswer": "A",
-      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "The profit rise is traced to a different source, so it supports no conclusion about the margin on switched purchases.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-019-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "prompt": "A care home group reports that homes with the highest staff-to-resident ratios receive the best inspection ratings, and proposes raising ratios across all its homes to improve ratings.",
+      "question": "The proposal assumes which of the following?",
       "options": [
-        "A. Does not define what type of consulting services were provided",
-        "B. Fails to compare the companies' growth with industry-wide growth trends",
-        "C. Ignores that some companies declined in revenue after hiring the firm",
-        "D. Does not specify what time period is covered by the data",
-        "E. Compares incomparable companies across different industries"
+        "A. Inspectors weight staffing more heavily than other criteria.",
+        "B. The rating difference reflects staffing levels rather than other features of the better-staffed homes.",
+        "C. Additional staff can be recruited at current wages.",
+        "D. Residents prefer homes with more staff.",
+        "E. Inspections are conducted annually."
       ],
       "correctAnswer": "B",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "Better-funded homes may have both more staff and better everything else; the proposal needs staffing to be doing the work. C is a feasibility condition rather than a premise of the inference.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-019-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "prompt": "A surveying firm replaced ground crews with drones and reports that it now completes twice as many site surveys per week. It concludes that drones have doubled its productivity.",
+      "question": "Which of the following would be most useful to determine in evaluating the conclusion?",
       "options": [
-        "A. Olive oil contains monounsaturated fats linked to heart health",
-        "B. Heart disease rates have been declining globally regardless of fat consumption",
-        "C. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
-        "D. The study followed individuals for 10 years",
-        "E. Olive oil is more expensive than butter in most markets"
+        "A. How much the drones cost to purchase",
+        "B. Whether clients prefer drone surveys",
+        "C. How many staff the firm employs",
+        "D. Whether the drone surveys require ground verification that the firm counts separately",
+        "E. Whether drones can operate in high winds"
       ],
-      "correctAnswer": "C",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "If part of the work has been moved outside the counted unit, surveys per week overstates the change in total output per hour.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-019-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "prompt": "A study found that people who wear fitness trackers walk more than people who do not, and a newspaper reports that wearing a tracker increases physical activity.",
+      "question": "Which of the following, if true, most seriously undermines the newspaper's report?",
       "options": [
-        "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Some patients do not have phones",
-        "C. Patients prefer in-person follow-up visits to phone calls",
-        "D. Doctors who proactively call patients may also be more thorough in their overall care",
-        "E. Phone calls are less effective than written instructions"
+        "A. Trackers vary in accuracy.",
+        "B. Some owners stop wearing their trackers after a few months.",
+        "C. Trackers also measure sleep.",
+        "D. Walking is only one form of exercise.",
+        "E. People buy trackers when they have already decided to become more active, and activity in tracker owners was already rising before purchase."
       ],
-      "correctAnswer": "D",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "Pre-purchase trends show the direction of causation running the other way; C would attenuate a real effect rather than explain the association away.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-019-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "prompt": "Every route in the Danesford bus network that runs after nine in the evening is operated with low-floor vehicles. No route operated with low-floor vehicles has been reduced in frequency this year. Some routes in the network have been reduced in frequency this year.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. Drug X has minor side effects including nausea",
-        "B. The study included only 50 participants",
-        "C. Chronic pain affects millions of people worldwide",
-        "D. Drug X is expensive compared to existing treatments",
-        "E. A control group taking a placebo experienced a 28% reduction in symptoms"
+        "A. Some routes in the network do not run after nine in the evening.",
+        "B. Low-floor vehicles are more reliable.",
+        "C. Most routes run after nine in the evening.",
+        "D. No evening route will ever be reduced.",
+        "E. Reduced routes carry fewer passengers."
       ],
-      "correctAnswer": "E",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "Reduced routes are not operated with low-floor vehicles, and evening running implies those vehicles, so the reduced routes do not run after nine. B and E introduce claims the statements do not support.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-019-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "prompt": "A dealer notes that used cars with full service histories sell for more than those without, and advises owners to keep their service records in order to increase the value of their cars.",
+      "question": "Which of the following, if true, most weakens the advice as a general recommendation?",
       "options": [
-        "A. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "B. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "C. The university's highest-achieving students attend the fitness centre most frequently",
-        "D. Exercise programmes are popular at peer universities",
-        "E. Students who exercise report feeling less stressed"
+        "A. Service histories can be reconstructed from garage records.",
+        "B. Some buyers do not ask to see the history.",
+        "C. Cars with full histories are those whose owners maintained them properly, and the price difference reflects the condition of the vehicle rather than the paperwork.",
+        "D. Dealers charge a fee for verifying histories.",
+        "E. Electric cars require less servicing."
       ],
-      "correctAnswer": "A",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "If the paperwork marks maintenance rather than creating value, keeping records without maintaining the car will not produce the premium.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-019-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "prompt": "A government reports that farm incomes rose in the years after it introduced a subsidy for arable production, and concludes that the subsidy raised farm incomes.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Cameras might violate driver privacy",
-        "B. Intersections chosen for cameras may have already been due for safety upgrades",
-        "C. The cost of cameras is high",
-        "D. Some drivers find cameras distracting",
-        "E. Cameras only capture rear-end collisions"
+        "A. World grain prices doubled over the same period, and incomes rose as much on farms ineligible for the subsidy.",
+        "B. The subsidy was paid annually.",
+        "C. Some farmers did not apply for the subsidy.",
+        "D. Administration of the scheme was expensive.",
+        "E. Livestock farms were excluded from the scheme."
       ],
-      "correctAnswer": "B",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "An ineligible comparison group showing the same rise attributes the change to prices rather than to the subsidy.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-019-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "prompt": "A library extended its opening hours and reports that the number of items borrowed rose. The council concludes that longer opening hours increase reading.",
+      "question": "The reasoning is most vulnerable to the criticism that it",
       "options": [
-        "A. Labour economists disagree on the effects of minimum wage increases",
-        "B. The minimum wage increase only affected 5% of workers",
-        "C. A separate economic boom added 100,000 jobs during the same year",
-        "D. Some industries are more affected than others by wage increases",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. ignores the cost of employing additional staff",
+        "B. does not distinguish between adult and children's books",
+        "C. relies on data from a single library",
+        "D. overlooks electronic lending",
+        "E. treats items borrowed as a measure of reading"
       ],
-      "correctAnswer": "C",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
+      "correctAnswer": "E",
+      "explanation": "Borrowing is a transaction; it may rise because the same readers visit at more convenient times without anyone reading more.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-019-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "prompt": "A manufacturer of sports drinks cites a study in which athletes performed better after consuming its product than after consuming water, and advertises the drink as improving athletic performance.",
+      "question": "Which of the following, if true, most seriously weakens the advertisement?",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. The study was conducted at high altitude.",
+        "B. The athletes knew which drink they were receiving, and a later study in which the drinks were disguised found no difference.",
+        "C. The drink contains sugar.",
+        "D. Some athletes prefer the taste of water.",
+        "E. The study measured endurance rather than speed."
       ],
-      "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
+      "correctAnswer": "B",
+      "explanation": "A blinded replication finding nothing is close to decisive against an unblinded original, since it removes the expectation the first design left in.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-019-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "prompt": "A factory installed equipment to sort its waste for recycling and reports that the proportion of its waste sent to landfill fell from 60 per cent to 25 per cent. Management describes this as a substantial environmental improvement.",
+      "question": "Which of the following, if true, most seriously weakens the description?",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Local restaurants cannot accommodate arena crowds",
-        "C. The arena's construction will not create permanent jobs",
-        "D. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "E. The city already has sufficient sports facilities"
+        "A. The equipment was expensive to install.",
+        "B. Some sorted material is exported for processing.",
+        "C. Staff required training to use the equipment.",
+        "D. The factory's total waste doubled over the same period, so the absolute quantity sent to landfill rose.",
+        "E. Landfill charges have increased."
       ],
       "correctAnswer": "D",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
+      "explanation": "A falling proportion of a growing total can mean more landfill, not less; the claim was about environmental effect rather than about the ratio.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-019-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "prompt": "A mobile network offers customers a discount for signing a two-year contract rather than a one-year contract, and reports that two-year customers are more satisfied with the service. It concludes that longer contracts improve customer satisfaction.",
+      "question": "Which of the following, if true, casts most doubt on the conclusion?",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. The ad was shown only on premium streaming services",
-        "C. The brand launched a new product line during the same period",
-        "D. Competitors also increased advertising spending during the same period",
-        "E. Consumers who sought out the advertisement were already brand loyalists considering a major purchase"
+        "A. Two-year contracts cost less per month.",
+        "B. Satisfaction is measured by an annual survey.",
+        "C. Customers who expect to be satisfied with the network are the ones willing to commit for two years, and dissatisfied customers on one-year contracts are counted while dissatisfied two-year customers have not yet reached renewal.",
+        "D. The network covers most of the country.",
+        "E. Some customers switch networks when their contract ends."
       ],
-      "correctAnswer": "E",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
+      "correctAnswer": "C",
+      "explanation": "Two selection effects run the same way: who chooses the long contract, and who has had the opportunity to leave. Neither requires the contract length to do anything.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-019-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "passageTitle": "What a Warranty Says",
+      "passageText": "A warranty is usually described as insurance: the buyer is protected against the cost of failure. That account is incomplete, and in some markets it is the least important of the functions a warranty performs.\n\nConsider the buyer's problem before purchase. Two machines look alike and the buyer cannot tell which is more reliable. A manufacturer confident of its product can offer a long warranty cheaply, because few claims will be made; a manufacturer whose product fails often cannot match the offer without incurring costs it cannot bear. The warranty therefore separates the two, and it does so whether or not any buyer ever makes a claim. Its informational function is discharged at the moment of sale.\n\nThis explains an otherwise puzzling pattern. Warranties are longest in categories where buyers cannot inspect quality and failures are expensive, and they are often shortest where a product's reliability is easily observed or where users can be blamed for damage. It also explains why extending a warranty is a common competitive response to a reputation problem: the firm is making a costly statement rather than offering a service.\n\nThe complication is that warranties also change buyer behaviour. A covered buyer takes less care, and manufacturers respond with the exclusions and conditions that make warranty documents what they are. Those clauses are frequently read as evasions, and some are; but a warranty with no conditions at all would be an insurance policy against carelessness, and priced accordingly.",
+      "prompt": "The passage indicates that a warranty's informational function is discharged",
       "options": [
-        "A. It presents empirical evidence that undermines the first analyst's prediction",
-        "B. It provides an alternative interpretation of the first analyst's claim",
-        "C. It demonstrates that road construction is always harmful",
-        "D. It suggests the first analyst has incorrect data",
-        "E. It proves that traffic will always increase regardless of policy"
+        "A. when a claim is made",
+        "B. at the end of the warranty period",
+        "C. when the manufacturer publishes failure rates",
+        "D. only if the buyer reads the conditions",
+        "E. at the moment of sale"
       ],
-      "correctAnswer": "A",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
+      "correctAnswer": "E",
+      "explanation": "The separating function operates whether or not any buyer ever claims.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-019-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
-      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "passageTitle": "What a Warranty Says",
+      "passageText": "A warranty is usually described as insurance: the buyer is protected against the cost of failure. That account is incomplete, and in some markets it is the least important of the functions a warranty performs.\n\nConsider the buyer's problem before purchase. Two machines look alike and the buyer cannot tell which is more reliable. A manufacturer confident of its product can offer a long warranty cheaply, because few claims will be made; a manufacturer whose product fails often cannot match the offer without incurring costs it cannot bear. The warranty therefore separates the two, and it does so whether or not any buyer ever makes a claim. Its informational function is discharged at the moment of sale.\n\nThis explains an otherwise puzzling pattern. Warranties are longest in categories where buyers cannot inspect quality and failures are expensive, and they are often shortest where a product's reliability is easily observed or where users can be blamed for damage. It also explains why extending a warranty is a common competitive response to a reputation problem: the firm is making a costly statement rather than offering a service.\n\nThe complication is that warranties also change buyer behaviour. A covered buyer takes less care, and manufacturers respond with the exclusions and conditions that make warranty documents what they are. Those clauses are frequently read as evasions, and some are; but a warranty with no conditions at all would be an insurance policy against carelessness, and priced accordingly.",
+      "prompt": "According to the passage, warranties tend to be shortest where",
       "options": [
-        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "B. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
-        "C. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "D. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
-        "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
+        "A. failures are expensive",
+        "B. reliability is easily observed or users can be blamed for damage",
+        "C. buyers cannot inspect quality",
+        "D. a firm has a reputation problem",
+        "E. manufacturers are confident of their products"
       ],
       "correctAnswer": "B",
-      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
+      "explanation": "The passage pairs long warranties with unobservable quality and expensive failure, and short ones with the opposite conditions.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-019-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "passageTitle": "What a Warranty Says",
+      "passageText": "A warranty is usually described as insurance: the buyer is protected against the cost of failure. That account is incomplete, and in some markets it is the least important of the functions a warranty performs.\n\nConsider the buyer's problem before purchase. Two machines look alike and the buyer cannot tell which is more reliable. A manufacturer confident of its product can offer a long warranty cheaply, because few claims will be made; a manufacturer whose product fails often cannot match the offer without incurring costs it cannot bear. The warranty therefore separates the two, and it does so whether or not any buyer ever makes a claim. Its informational function is discharged at the moment of sale.\n\nThis explains an otherwise puzzling pattern. Warranties are longest in categories where buyers cannot inspect quality and failures are expensive, and they are often shortest where a product's reliability is easily observed or where users can be blamed for damage. It also explains why extending a warranty is a common competitive response to a reputation problem: the firm is making a costly statement rather than offering a service.\n\nThe complication is that warranties also change buyer behaviour. A covered buyer takes less care, and manufacturers respond with the exclusions and conditions that make warranty documents what they are. Those clauses are frequently read as evasions, and some are; but a warranty with no conditions at all would be an insurance policy against carelessness, and priced accordingly.",
+      "prompt": "The author's view of warranty exclusions is that they are",
       "options": [
-        "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Dissatisfied workers always sleep fewer than 7 hours",
-        "C. Job satisfaction and adequate sleep are associated in the survey population",
-        "D. Employers should implement nap rooms to improve satisfaction",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "A. partly a response to the fact that covered buyers take less care",
+        "B. always evasions of responsibility",
+        "C. required by consumer protection law",
+        "D. irrelevant to the warranty's signalling function",
+        "E. evidence that the product is unreliable"
       ],
-      "correctAnswer": "C",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
+      "correctAnswer": "A",
+      "explanation": "The passage concedes that some are evasions but argues an unconditional warranty would be insurance against carelessness, priced accordingly.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-019-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "passageTitle": "Training the Brain",
+      "passageText": "Commercial programmes promising general cognitive improvement rest on a claim that is testable and has been tested extensively: that practice on a computerised task improves not only that task but abilities used elsewhere.\n\nThe first part is not in doubt. People who practise a working-memory task get better at it, sometimes dramatically. The disputed part is transfer, and here the evidence has settled into a pattern. Near transfer — improvement on tasks closely resembling the trained one — is regularly observed. Far transfer to unrelated abilities, such as reasoning or academic attainment, is small, inconsistent, and largest in the studies with the weakest controls.\n\nThat last regularity is the informative one. Trials comparing training against a passive control, in which the comparison group does nothing, report larger effects than trials using an active control, in which the comparison group performs a different demanding activity. The difference implicates expectation: participants who know they have been given a treatment described as improving cognition perform better on tests administered by the people who told them so.\n\nThe reasonable summary is not that cognitive training is worthless. Practice does produce durable skill on the practised task, which may be worth having, and specific programmes for specific deficits have shown targeted benefits. What has not been shown is the marketed claim: that a general capacity can be raised by exercising it, in the way a muscle is strengthened by lifting. The muscle analogy is doing more persuasive work in the advertising than any finding does.",
+      "prompt": "The passage indicates that improvement on the trained task itself is",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. disputed",
+        "B. observed only with active controls",
+        "C. smaller than far transfer",
+        "D. not in doubt",
+        "E. confined to young adults"
       ],
-      "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The first sentence of the second paragraph states this, and the dispute is located at transfer.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-019-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "passageTitle": "Training the Brain",
+      "passageText": "Commercial programmes promising general cognitive improvement rest on a claim that is testable and has been tested extensively: that practice on a computerised task improves not only that task but abilities used elsewhere.\n\nThe first part is not in doubt. People who practise a working-memory task get better at it, sometimes dramatically. The disputed part is transfer, and here the evidence has settled into a pattern. Near transfer — improvement on tasks closely resembling the trained one — is regularly observed. Far transfer to unrelated abilities, such as reasoning or academic attainment, is small, inconsistent, and largest in the studies with the weakest controls.\n\nThat last regularity is the informative one. Trials comparing training against a passive control, in which the comparison group does nothing, report larger effects than trials using an active control, in which the comparison group performs a different demanding activity. The difference implicates expectation: participants who know they have been given a treatment described as improving cognition perform better on tests administered by the people who told them so.\n\nThe reasonable summary is not that cognitive training is worthless. Practice does produce durable skill on the practised task, which may be worth having, and specific programmes for specific deficits have shown targeted benefits. What has not been shown is the marketed claim: that a general capacity can be raised by exercising it, in the way a muscle is strengthened by lifting. The muscle analogy is doing more persuasive work in the advertising than any finding does.",
+      "prompt": "According to the passage, trials using a passive control report larger effects than trials using an active control, which implicates",
       "options": [
-        "A. The claim that wetlands prevent flooding",
-        "B. The conclusion that all wetlands should be protected",
-        "C. The implication that flooding is always preventable",
-        "D. The assumption that all wetlands have equal flood-prevention value",
-        "E. The premise that wetlands are worth preserving"
+        "A. differences in the age of participants",
+        "B. the duration of training",
+        "C. expectation on the part of participants who know they received a treatment",
+        "D. the difficulty of the trained task",
+        "E. publication practices in the field"
       ],
-      "correctAnswer": "D",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "The passage draws this inference explicitly and notes the tests are administered by the people who described the treatment.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-019-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "passageTitle": "Training the Brain",
+      "passageText": "Commercial programmes promising general cognitive improvement rest on a claim that is testable and has been tested extensively: that practice on a computerised task improves not only that task but abilities used elsewhere.\n\nThe first part is not in doubt. People who practise a working-memory task get better at it, sometimes dramatically. The disputed part is transfer, and here the evidence has settled into a pattern. Near transfer — improvement on tasks closely resembling the trained one — is regularly observed. Far transfer to unrelated abilities, such as reasoning or academic attainment, is small, inconsistent, and largest in the studies with the weakest controls.\n\nThat last regularity is the informative one. Trials comparing training against a passive control, in which the comparison group does nothing, report larger effects than trials using an active control, in which the comparison group performs a different demanding activity. The difference implicates expectation: participants who know they have been given a treatment described as improving cognition perform better on tests administered by the people who told them so.\n\nThe reasonable summary is not that cognitive training is worthless. Practice does produce durable skill on the practised task, which may be worth having, and specific programmes for specific deficits have shown targeted benefits. What has not been shown is the marketed claim: that a general capacity can be raised by exercising it, in the way a muscle is strengthened by lifting. The muscle analogy is doing more persuasive work in the advertising than any finding does.",
+      "prompt": "The author's assessment of the muscle analogy is that it",
       "options": [
-        "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. Sales staff performed better when the music was upbeat",
-        "D. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies",
-        "E. A controlled experiment with randomly assigned music found the same 20% difference"
+        "A. accurately describes how general capacities improve",
+        "B. applies only to working-memory tasks",
+        "C. was proposed by the researchers rather than the marketers",
+        "D. has been confirmed by studies with active controls",
+        "E. is doing more persuasive work in the advertising than any finding does"
       ],
       "correctAnswer": "E",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "The closing sentence, following the distinction between durable skill on a practised task and the marketed general claim.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-019-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
-      "question": "Which of the following most weakens the editorial's conclusion?",
+      "passageTitle": "Trade and the Places That Lost",
+      "passageText": "That trade raises aggregate income is among the better-supported propositions in economics. That its costs fall on identifiable places and workers, and persist there far longer than the standard model implied, is a more recent finding and has changed the debate.\n\nThe older account acknowledged that some workers lose while consumers gain, but assumed adjustment: displaced workers would move to other industries or regions, and the loss would be temporary. Studies tracking local labour markets exposed to rapid import competition found otherwise. Employment fell and did not recover; wages fell for those who remained; and the effects spread beyond the directly affected industries into local services, because a shock to a place's largest employer is a shock to everything that employer's wages supported.\n\nMobility turned out to be the weak assumption. Workers moved less than the model expected, for reasons that are not mysterious: housing, family, the cost of retraining, and the fact that a house in a declining region is worth least exactly when its owner needs to sell it.\n\nNone of this reverses the aggregate case, and the policy conclusion drawn by some — that the trade should not have occurred — does not follow from evidence about how its costs were distributed. What does follow is that compensation which exists only in theory is not compensation, and that a policy justified by gains sufficient to offset losses acquires an obligation to arrange the offsetting rather than to note that it would be possible.",
+      "prompt": "The older account of trade adjustment assumed that",
       "options": [
-        "A. Crime rates are influenced by many factors beyond unemployment",
-        "B. Employment programmes have reduced crime in some pilot cities",
-        "C. The editorial does not define 'crime' precisely",
-        "D. Reducing unemployment is expensive and politically difficult",
-        "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
+        "A. displaced workers would move to other industries or regions, making the loss temporary",
+        "B. no workers would be displaced",
+        "C. consumers would not benefit",
+        "D. wages would rise in affected regions",
+        "E. local services would be unaffected"
       ],
       "correctAnswer": "A",
-      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "The passage identifies mobility as the weak assumption in that account.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-019-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
-      "question": "The president's argument is flawed because it:",
+      "passageTitle": "Trade and the Places That Lost",
+      "passageText": "That trade raises aggregate income is among the better-supported propositions in economics. That its costs fall on identifiable places and workers, and persist there far longer than the standard model implied, is a more recent finding and has changed the debate.\n\nThe older account acknowledged that some workers lose while consumers gain, but assumed adjustment: displaced workers would move to other industries or regions, and the loss would be temporary. Studies tracking local labour markets exposed to rapid import competition found otherwise. Employment fell and did not recover; wages fell for those who remained; and the effects spread beyond the directly affected industries into local services, because a shock to a place's largest employer is a shock to everything that employer's wages supported.\n\nMobility turned out to be the weak assumption. Workers moved less than the model expected, for reasons that are not mysterious: housing, family, the cost of retraining, and the fact that a house in a declining region is worth least exactly when its owner needs to sell it.\n\nNone of this reverses the aggregate case, and the policy conclusion drawn by some — that the trade should not have occurred — does not follow from evidence about how its costs were distributed. What does follow is that compensation which exists only in theory is not compensation, and that a policy justified by gains sufficient to offset losses acquires an obligation to arrange the offsetting rather than to note that it would be possible.",
+      "prompt": "According to the passage, the effects of import competition spread into local services because",
       "options": [
-        "A. Ignores that SAT preparation courses can inflate scores",
-        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
-        "C. Does not consider the diversity implications of the policy",
-        "D. Fails to define 'academic performance' precisely",
-        "E. Both A and B"
+        "A. service firms also faced imports",
+        "B. workers retrained into service occupations",
+        "C. governments withdrew support from affected regions",
+        "D. a shock to a place's largest employer is a shock to what its wages supported",
+        "E. housing costs rose"
       ],
-      "correctAnswer": "B",
-      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "This is how the passage explains the spread beyond the directly affected industries.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-019-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
-      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "passageTitle": "Trade and the Places That Lost",
+      "passageText": "That trade raises aggregate income is among the better-supported propositions in economics. That its costs fall on identifiable places and workers, and persist there far longer than the standard model implied, is a more recent finding and has changed the debate.\n\nThe older account acknowledged that some workers lose while consumers gain, but assumed adjustment: displaced workers would move to other industries or regions, and the loss would be temporary. Studies tracking local labour markets exposed to rapid import competition found otherwise. Employment fell and did not recover; wages fell for those who remained; and the effects spread beyond the directly affected industries into local services, because a shock to a place's largest employer is a shock to everything that employer's wages supported.\n\nMobility turned out to be the weak assumption. Workers moved less than the model expected, for reasons that are not mysterious: housing, family, the cost of retraining, and the fact that a house in a declining region is worth least exactly when its owner needs to sell it.\n\nNone of this reverses the aggregate case, and the policy conclusion drawn by some — that the trade should not have occurred — does not follow from evidence about how its costs were distributed. What does follow is that compensation which exists only in theory is not compensation, and that a policy justified by gains sufficient to offset losses acquires an obligation to arrange the offsetting rather than to note that it would be possible.",
+      "prompt": "The author's policy conclusion is that",
       "options": [
-        "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
-        "C. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "D. Historical market data is unreliable because markets change structurally over time",
-        "E. Companies with consistent earnings growth tend to have stable stock prices"
+        "A. the trade should not have occurred",
+        "B. an argument resting on gains sufficient to offset losses acquires an obligation to arrange the offsetting",
+        "C. workers should be required to relocate",
+        "D. the aggregate case for trade has been refuted",
+        "E. compensation schemes have generally succeeded"
       ],
       "correctAnswer": "B",
-      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "The final paragraph explicitly rejects A and D, and states that compensation existing only in theory is not compensation.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-019-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "According to the passage, what was the dominant view of the adult brain for much of the 20th century?",
+      "passageTitle": "Fixing the Spelling",
+      "passageText": "English spelling was variable for centuries, and its stabilisation was not the discovery of correct forms but the outcome of decisions by printers, schoolmasters and dictionary-makers whose reasons were often incidental to the language.\n\nPrinting did much of the work. A compositor setting type needed forms he could set quickly, and the practice of justifying a line by adding or removing a final letter shows how far convenience shaped what became standard. Early printers were sometimes foreign, and forms from their own orthographies entered English by that route. Some of the oddities that pupils are now taught as rules originated as such accidents, or as deliberate learned interventions — the silent letter inserted to display a word's Latin ancestry, sometimes a mistaken ancestry.\n\nDictionaries then fixed what printing had made common. A lexicographer choosing between two current forms was making a decision that would be quoted back as authority, and the eighteenth-century dictionaries acquired that status quickly because they satisfied a demand for a standard rather than because their choices were better argued than the alternatives.\n\nThe result is a system whose irregularities are historical residue rather than design, and whose defenders sometimes describe as etymologically informative what is more accurately described as inherited. That is not an argument for reform, which has its own difficulties, but it is a reason to be careful about treating the current spelling of a word as evidence of anything except which forms happened to be common when the fixing occurred.",
+      "prompt": "The passage indicates that the practice of justifying a line of type",
       "options": [
-        "A. The brain continuously forms new neural connections throughout adulthood",
-        "B. Brain structure is largely fixed after early childhood",
-        "C. Neuroplasticity is highest in adults recovering from injury",
-        "D. Learning a new skill has no measurable effect on brain structure"
+        "A. required printers to standardise spelling nationally",
+        "B. was abandoned in the eighteenth century",
+        "C. shows how far convenience shaped forms that became standard",
+        "D. originated with foreign compositors",
+        "E. had no effect on spelling"
       ],
-      "correctAnswer": "B",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "correctAnswer": "C",
+      "explanation": "Adding or removing a final letter to fit a line is given as the illustration of incidental influence.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-019-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "The passage mentions stroke recovery primarily to:",
+      "passageTitle": "Fixing the Spelling",
+      "passageText": "English spelling was variable for centuries, and its stabilisation was not the discovery of correct forms but the outcome of decisions by printers, schoolmasters and dictionary-makers whose reasons were often incidental to the language.\n\nPrinting did much of the work. A compositor setting type needed forms he could set quickly, and the practice of justifying a line by adding or removing a final letter shows how far convenience shaped what became standard. Early printers were sometimes foreign, and forms from their own orthographies entered English by that route. Some of the oddities that pupils are now taught as rules originated as such accidents, or as deliberate learned interventions — the silent letter inserted to display a word's Latin ancestry, sometimes a mistaken ancestry.\n\nDictionaries then fixed what printing had made common. A lexicographer choosing between two current forms was making a decision that would be quoted back as authority, and the eighteenth-century dictionaries acquired that status quickly because they satisfied a demand for a standard rather than because their choices were better argued than the alternatives.\n\nThe result is a system whose irregularities are historical residue rather than design, and whose defenders sometimes describe as etymologically informative what is more accurately described as inherited. That is not an argument for reform, which has its own difficulties, but it is a reason to be careful about treating the current spelling of a word as evidence of anything except which forms happened to be common when the fixing occurred.",
+      "prompt": "According to the passage, some silent letters were inserted to",
       "options": [
-        "A. Illustrate how neuroplasticity was first discovered",
-        "B. Show that not all brain damage is permanent",
-        "C. Provide evidence that the adult brain can undergo structural reorganisation",
-        "D. Argue that stroke patients have greater neuroplasticity than healthy adults"
+        "A. distinguish homophones",
+        "B. assist foreign printers",
+        "C. shorten lines of type",
+        "D. reflect regional pronunciation",
+        "E. display a word's Latin ancestry, sometimes mistakenly"
       ],
-      "correctAnswer": "C",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "correctAnswer": "E",
+      "explanation": "Described as deliberate learned interventions, alongside the accidents of the press.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-019-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "Which of the following can be most reasonably inferred from the passage?",
+      "passageTitle": "Fixing the Spelling",
+      "passageText": "English spelling was variable for centuries, and its stabilisation was not the discovery of correct forms but the outcome of decisions by printers, schoolmasters and dictionary-makers whose reasons were often incidental to the language.\n\nPrinting did much of the work. A compositor setting type needed forms he could set quickly, and the practice of justifying a line by adding or removing a final letter shows how far convenience shaped what became standard. Early printers were sometimes foreign, and forms from their own orthographies entered English by that route. Some of the oddities that pupils are now taught as rules originated as such accidents, or as deliberate learned interventions — the silent letter inserted to display a word's Latin ancestry, sometimes a mistaken ancestry.\n\nDictionaries then fixed what printing had made common. A lexicographer choosing between two current forms was making a decision that would be quoted back as authority, and the eighteenth-century dictionaries acquired that status quickly because they satisfied a demand for a standard rather than because their choices were better argued than the alternatives.\n\nThe result is a system whose irregularities are historical residue rather than design, and whose defenders sometimes describe as etymologically informative what is more accurately described as inherited. That is not an argument for reform, which has its own difficulties, but it is a reason to be careful about treating the current spelling of a word as evidence of anything except which forms happened to be common when the fixing occurred.",
+      "prompt": "The author's conclusion about current spellings is that they are",
       "options": [
-        "A. Neuroplasticity is greater in young children than in adults",
-        "B. Stroke recovery proves that any brain damage is reversible",
-        "C. Neuroplasticity research began only in the 1990s",
-        "D. Adults who learn new skills may have measurably different brain structure from those who do not"
+        "A. evidence of a word's true history",
+        "B. evidence chiefly of which forms happened to be common when the fixing occurred",
+        "C. in urgent need of reform",
+        "D. the product of careful lexicographical argument",
+        "E. unrelated to printing practice"
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "correctAnswer": "B",
+      "explanation": "The final sentence, which also declines to argue for reform.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-019-q01": "A",
+    "gmat-verbal-019-q01": "C",
     "gmat-verbal-019-q02": "B",
-    "gmat-verbal-019-q03": "C",
-    "gmat-verbal-019-q04": "D",
-    "gmat-verbal-019-q05": "E",
-    "gmat-verbal-019-q06": "A",
-    "gmat-verbal-019-q07": "B",
-    "gmat-verbal-019-q08": "C",
-    "gmat-verbal-019-q09": "E",
+    "gmat-verbal-019-q03": "D",
+    "gmat-verbal-019-q04": "E",
+    "gmat-verbal-019-q05": "A",
+    "gmat-verbal-019-q06": "C",
+    "gmat-verbal-019-q07": "A",
+    "gmat-verbal-019-q08": "E",
+    "gmat-verbal-019-q09": "B",
     "gmat-verbal-019-q10": "D",
-    "gmat-verbal-019-q11": "E",
-    "gmat-verbal-019-q12": "A",
+    "gmat-verbal-019-q11": "C",
+    "gmat-verbal-019-q12": "E",
     "gmat-verbal-019-q13": "B",
-    "gmat-verbal-019-q14": "C",
-    "gmat-verbal-019-q15": "E",
-    "gmat-verbal-019-q16": "D",
+    "gmat-verbal-019-q14": "A",
+    "gmat-verbal-019-q15": "D",
+    "gmat-verbal-019-q16": "C",
     "gmat-verbal-019-q17": "E",
     "gmat-verbal-019-q18": "A",
-    "gmat-verbal-019-q19": "B",
+    "gmat-verbal-019-q19": "D",
     "gmat-verbal-019-q20": "B",
-    "gmat-verbal-019-q21": "B",
-    "gmat-verbal-019-q22": "C",
-    "gmat-verbal-019-q23": "D"
+    "gmat-verbal-019-q21": "C",
+    "gmat-verbal-019-q22": "E",
+    "gmat-verbal-019-q23": "B"
   },
-  "fingerprints": [
-    "9ba91240694943f2d4",
-    "5a4805a48f2aadc0e5",
-    "fcc670badefc776d31",
-    "09b3eefccca44b901b",
-    "d142cbe58b4ef887a1",
-    "121d38a2800927dfcb",
-    "20dc6a17753a9c0bc8",
-    "00427ee881ae687e55",
-    "cfbb47a47833c594d1",
-    "2706b0357f1ca7e360",
-    "e4d4ae8c6770c471c5",
-    "6d951400162d269495",
-    "af28b55ee5ca0c2b98",
-    "1efd8fb0b51594c576",
-    "09743fe84ecaaf8d09",
-    "e085f3569f6dcaffcc",
-    "755a0bd631997bc94b",
-    "5beec1dad07b89a859",
-    "0c5635e03e5ce356c9",
-    "edd9fdfb863956be19"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-019-rp1",
-      "title": "Business and Society",
-      "text": "Researchers studying organisational behaviour have found that teams with diverse cognitive styles outperform homogeneous teams on complex problem-solving tasks. However, this benefit is not automatic — diverse teams require skilled facilitation to avoid miscommunication and conflict. When managed effectively, the creative tension between different thinking styles produces more innovative solutions than teams where all members approach problems similarly."
+      "title": "What a Warranty Says",
+      "text": "A warranty is usually described as insurance: the buyer is protected against the cost of failure. That account is incomplete, and in some markets it is the least important of the functions a warranty performs.\n\nConsider the buyer's problem before purchase. Two machines look alike and the buyer cannot tell which is more reliable. A manufacturer confident of its product can offer a long warranty cheaply, because few claims will be made; a manufacturer whose product fails often cannot match the offer without incurring costs it cannot bear. The warranty therefore separates the two, and it does so whether or not any buyer ever makes a claim. Its informational function is discharged at the moment of sale.\n\nThis explains an otherwise puzzling pattern. Warranties are longest in categories where buyers cannot inspect quality and failures are expensive, and they are often shortest where a product's reliability is easily observed or where users can be blamed for damage. It also explains why extending a warranty is a common competitive response to a reputation problem: the firm is making a costly statement rather than offering a service.\n\nThe complication is that warranties also change buyer behaviour. A covered buyer takes less care, and manufacturers respond with the exclusions and conditions that make warranty documents what they are. Those clauses are frequently read as evasions, and some are; but a warranty with no conditions at all would be an insurance policy against carelessness, and priced accordingly."
+    },
+    {
+      "id": "gmat-verbal-019-rp2",
+      "title": "Training the Brain",
+      "text": "Commercial programmes promising general cognitive improvement rest on a claim that is testable and has been tested extensively: that practice on a computerised task improves not only that task but abilities used elsewhere.\n\nThe first part is not in doubt. People who practise a working-memory task get better at it, sometimes dramatically. The disputed part is transfer, and here the evidence has settled into a pattern. Near transfer — improvement on tasks closely resembling the trained one — is regularly observed. Far transfer to unrelated abilities, such as reasoning or academic attainment, is small, inconsistent, and largest in the studies with the weakest controls.\n\nThat last regularity is the informative one. Trials comparing training against a passive control, in which the comparison group does nothing, report larger effects than trials using an active control, in which the comparison group performs a different demanding activity. The difference implicates expectation: participants who know they have been given a treatment described as improving cognition perform better on tests administered by the people who told them so.\n\nThe reasonable summary is not that cognitive training is worthless. Practice does produce durable skill on the practised task, which may be worth having, and specific programmes for specific deficits have shown targeted benefits. What has not been shown is the marketed claim: that a general capacity can be raised by exercising it, in the way a muscle is strengthened by lifting. The muscle analogy is doing more persuasive work in the advertising than any finding does."
+    },
+    {
+      "id": "gmat-verbal-019-rp3",
+      "title": "Trade and the Places That Lost",
+      "text": "That trade raises aggregate income is among the better-supported propositions in economics. That its costs fall on identifiable places and workers, and persist there far longer than the standard model implied, is a more recent finding and has changed the debate.\n\nThe older account acknowledged that some workers lose while consumers gain, but assumed adjustment: displaced workers would move to other industries or regions, and the loss would be temporary. Studies tracking local labour markets exposed to rapid import competition found otherwise. Employment fell and did not recover; wages fell for those who remained; and the effects spread beyond the directly affected industries into local services, because a shock to a place's largest employer is a shock to everything that employer's wages supported.\n\nMobility turned out to be the weak assumption. Workers moved less than the model expected, for reasons that are not mysterious: housing, family, the cost of retraining, and the fact that a house in a declining region is worth least exactly when its owner needs to sell it.\n\nNone of this reverses the aggregate case, and the policy conclusion drawn by some — that the trade should not have occurred — does not follow from evidence about how its costs were distributed. What does follow is that compensation which exists only in theory is not compensation, and that a policy justified by gains sufficient to offset losses acquires an obligation to arrange the offsetting rather than to note that it would be possible."
+    },
+    {
+      "id": "gmat-verbal-019-rp4",
+      "title": "Fixing the Spelling",
+      "text": "English spelling was variable for centuries, and its stabilisation was not the discovery of correct forms but the outcome of decisions by printers, schoolmasters and dictionary-makers whose reasons were often incidental to the language.\n\nPrinting did much of the work. A compositor setting type needed forms he could set quickly, and the practice of justifying a line by adding or removing a final letter shows how far convenience shaped what became standard. Early printers were sometimes foreign, and forms from their own orthographies entered English by that route. Some of the oddities that pupils are now taught as rules originated as such accidents, or as deliberate learned interventions — the silent letter inserted to display a word's Latin ancestry, sometimes a mistaken ancestry.\n\nDictionaries then fixed what printing had made common. A lexicographer choosing between two current forms was making a decision that would be quoted back as authority, and the eighteenth-century dictionaries acquired that status quickly because they satisfied a demand for a standard rather than because their choices were better argued than the alternatives.\n\nThe result is a system whose irregularities are historical residue rather than design, and whose defenders sometimes describe as etymologically informative what is more accurately described as inherited. That is not an argument for reform, which has its own difficulties, but it is a reason to be careful about treating the current spelling of a word as evidence of anything except which forms happened to be common when the fixing occurred."
     }
   ]
 }
