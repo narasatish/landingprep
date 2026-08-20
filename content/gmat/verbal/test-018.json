@@ -12,469 +12,474 @@
       "id": "gmat-verbal-018-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
-      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "prompt": "A government introduced automatic enrolment in workplace pensions, with employees free to opt out, and reports that participation rose from 45 per cent to 85 per cent. Officials conclude that most employees had wanted to save for retirement but had not got round to enrolling.",
+      "question": "Which of the following, if true, most seriously weakens the officials' conclusion?",
       "options": [
-        "A. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
-        "B. Investing in diversified funds reduces portfolio risk over time",
-        "C. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "D. Historical market data is unreliable because markets change structurally over time",
-        "E. Companies with consistent earnings growth tend to have stable stock prices"
+        "A. Employers contribute to enrolled employees' pensions.",
+        "B. Opting out requires a written request.",
+        "C. Participation rose fastest among younger workers.",
+        "D. Surveys of the newly enrolled find that a large share are unaware they are enrolled, and their contributions have not displaced any other saving.",
+        "E. Some employees enrolled before the change."
       ],
-      "correctAnswer": "A",
-      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "Inattention explains the take-up as readily as latent desire; if people do not know they are enrolled, the outcome reveals the power of the default rather than a preference.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-018-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
-      "question": "Which of the following, if true, most seriously weakens the conclusion?",
+      "prompt": "An ambulance service reports that its average response time has fallen from nine minutes to seven. Managers conclude that patients are now reached more quickly.",
+      "question": "Which of the following, if true, most seriously undermines the conclusion?",
       "options": [
-        "A. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "B. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "C. Customers report feeling more valued when using a loyalty programme",
-        "D. Competitors without loyalty programmes have seen declining sales",
-        "E. The loyalty programme was introduced simultaneously with a store renovation"
+        "A. The service purchased additional vehicles.",
+        "B. Traffic congestion has worsened in the area.",
+        "C. The service reclassified many urgent calls into a category whose response times are recorded separately and are not included in the average.",
+        "D. Response times are measured from the moment a vehicle is dispatched.",
+        "E. The service covers a large rural area."
       ],
-      "correctAnswer": "B",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Moving slow cases out of the measured category lowers the average without reaching anyone faster. D is a real definitional weakness but was true before and after.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-018-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
-      "question": "Which of the following would most strengthen the CFO's conclusion?",
+      "prompt": "A farm advertises its vegetables as pesticide-free, citing that no synthetic pesticide has been applied to its fields for three years.",
+      "question": "Which of the following, if true, most seriously weakens the advertisement's implied claim about the produce?",
       "options": [
-        "A. Other advertising channels were suspended during the same three months",
-        "B. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "C. The lifetime value of a new user averages $50",
-        "D. Social media platforms reported the campaign reached 5 million unique users",
-        "E. Competitors saw no change in sign-ups over the same period"
+        "A. Testing finds pesticide residues on the farm's produce at levels similar to conventional produce, carried by spray drift from neighbouring fields.",
+        "B. Organic certification requires four years without synthetic pesticide.",
+        "C. The farm uses mechanical weeding instead.",
+        "D. Some customers prefer local produce regardless of method.",
+        "E. The farm's yields are lower than the regional average."
       ],
-      "correctAnswer": "C",
-      "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The claim about practice may be true while the claim consumers hear — about what is on the vegetables — is not. A concerns a labelling standard rather than the produce.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-018-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
-      "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
+      "prompt": "A telephone manufacturer notes that customers who buy its screen protectors report cracked screens less often, and advertises the protector as preventing screen damage.",
+      "question": "Which of the following would be most useful to determine in evaluating the advertisement?",
       "options": [
-        "A. It assumes that lower temperatures are always desirable",
-        "B. It ignores that tree planting is expensive",
-        "C. It fails to consider that trees require water",
-        "D. It treats a correlation as evidence of a causal relationship",
-        "E. It overlooks that some neighbourhoods may not have space for trees"
+        "A. How much the protectors cost",
+        "B. Whether customers who buy protectors also use protective cases and handle their telephones more carefully",
+        "C. Whether the protectors are made of glass or plastic",
+        "D. How many colours the telephone is available in",
+        "E. Whether the manufacturer sells cases as well"
       ],
-      "correctAnswer": "D",
-      "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Protector buyers are likely to differ in other protective behaviour, so the comparison may reflect the customer rather than the product.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-018-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
-      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "prompt": "Every dish on the Halloway staff canteen menu that is prepared on site is priced below three pounds. No dish priced below three pounds contains imported seafood. Some dishes on the menu contain imported seafood.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. Passengers reported higher satisfaction with the new policy",
-        "B. Competing airlines have not adopted similar policies",
-        "C. Boarding time varies naturally between 15 and 35 minutes",
-        "D. The new policy was introduced on routes with larger aircraft",
-        "E. The airline also reduced the number of carry-on bags allowed during the same period"
+        "A. Dishes prepared on site are cheaper to produce.",
+        "B. Most dishes are prepared on site.",
+        "C. No dish on the menu costs more than three pounds.",
+        "D. Imported seafood is more expensive than local seafood.",
+        "E. Some dishes on the menu are not prepared on site."
       ],
       "correctAnswer": "E",
-      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "Seafood dishes are not under three pounds, and on-site preparation implies that price, so those dishes are not prepared on site. B and E introduce cost claims the statements do not make.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-018-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "prompt": "A cinema chain introduced a loyalty card and reports that cardholders visit more often than non-cardholders. It plans to issue cards to all customers automatically in order to raise attendance.",
+      "question": "Which of the following, if true, casts most doubt on the plan?",
       "options": [
-        "A. Fails to compare the companies' growth with industry-wide growth trends",
-        "B. Does not define what type of consulting services were provided",
-        "C. Ignores that some companies declined in revenue after hiring the firm",
-        "D. Does not specify what time period is covered by the data",
-        "E. Compares incomparable companies across different industries"
+        "A. Cards are free to issue.",
+        "B. Customers apply for the card when they expect to visit frequently enough to earn its rewards.",
+        "C. Some cardholders visit only at weekends.",
+        "D. The chain operates in twelve cities.",
+        "E. Attendance is highest during school holidays."
       ],
-      "correctAnswer": "A",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "The card marks an intention that already exists; issuing it to everyone cannot manufacture the intention that made cardholders frequent visitors.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-018-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "prompt": "A forestry agency thinned a dense plantation and reports that the remaining trees grew faster in the following years. It concludes that thinning increases the productivity of a plantation.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion as stated?",
       "options": [
-        "A. Olive oil contains monounsaturated fats linked to heart health",
-        "B. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
-        "C. Heart disease rates have been declining globally regardless of fat consumption",
-        "D. The study followed individuals for 10 years",
-        "E. Olive oil is more expensive than butter in most markets"
+        "A. Thinning is expensive to carry out.",
+        "B. Thinned stands are less prone to disease.",
+        "C. The thinned trees were sold for pulp.",
+        "D. Total timber volume across the stand grew more slowly after thinning than before, since the faster growth of individual trees did not compensate for the trees removed.",
+        "E. Growth rates vary with rainfall."
       ],
-      "correctAnswer": "B",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "Per-tree growth and stand productivity are different quantities, and the conclusion is stated in terms of the plantation. C and D describe other benefits without addressing it.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-018-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "prompt": "A tourism board argues that hotel star ratings should be replaced by guest review scores, since reviews reflect the experience of actual guests rather than an inspector's checklist.",
+      "question": "Which of the following, if true, most weakens the board's argument?",
       "options": [
-        "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Some patients do not have phones",
-        "C. Doctors who proactively call patients may also be more thorough in their overall care",
-        "D. Patients prefer in-person follow-up visits to phone calls",
-        "E. Phone calls are less effective than written instructions"
+        "A. Some hotels dispute their star ratings.",
+        "B. Inspections are carried out annually.",
+        "C. Review scores rate a hotel against the guest's expectations, so a modest hotel that is exactly as described scores higher than a luxury hotel with a minor fault.",
+        "D. Reviews can be submitted only by verified guests.",
+        "E. Star criteria differ between countries."
       ],
       "correctAnswer": "C",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
+      "explanation": "If the two systems measure different things — conformity to expectation against absolute facilities — replacing one with the other loses information travellers use, rather than improving the same measure.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-018-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "prompt": "A rail operator installed wireless internet on its trains and reports that passenger numbers rose on the equipped routes. It concludes that onboard internet attracts passengers.",
+      "question": "Which of the following, if true, most strengthens the conclusion?",
       "options": [
-        "A. Drug X has minor side effects including nausea",
-        "B. The study included only 50 participants",
-        "C. Chronic pain affects millions of people worldwide",
-        "D. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "E. Drug X is expensive compared to existing treatments"
+        "A. The internet is free to use.",
+        "B. Passengers report that the connection is fast.",
+        "C. The operator also refurbished several stations.",
+        "D. Rail travel rose nationally that year.",
+        "E. The equipped routes were selected by drawing lots among routes with similar passenger trends, and numbers on the unequipped routes were flat over the same period."
       ],
-      "correctAnswer": "D",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
+      "correctAnswer": "E",
+      "explanation": "Random allocation among similar routes plus a flat comparison group removes the selection and the national-trend explanations at once.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-018-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "prompt": "A school introduced free instrumental music lessons and reports that pupils taking them achieve higher marks in mathematics than pupils who do not. A local newspaper reports that music lessons improve mathematical ability.",
+      "question": "The newspaper's report is most vulnerable to the criticism that it",
       "options": [
-        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "B. The university's highest-achieving students attend the fitness centre most frequently",
-        "C. Exercise programmes are popular at peer universities",
-        "D. Students who exercise report feeling less stressed",
-        "E. Exercise has been shown to improve blood flow to the brain in laboratory studies"
+        "A. assumes that lessons taken voluntarily by particular pupils caused a difference that may reflect who chose them",
+        "B. does not specify which instruments were taught",
+        "C. ignores the cost of employing music teachers",
+        "D. relies on a single school's results",
+        "E. overlooks pupils who learn instruments privately"
       ],
-      "correctAnswer": "E",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
+      "correctAnswer": "A",
+      "explanation": "Free lessons still require a pupil and family to opt in, and the disposition that produces that choice plausibly produces the mathematics marks as well.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-018-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "prompt": "Supporters of a proposal to lower the speed limit on a rural road argue that it will reduce fatal collisions. Opponents reply that most collisions on the road involve drivers already exceeding the current limit.",
+      "question": "Which of the following, if true, most weakens the opponents' reply?",
       "options": [
-        "A. Intersections chosen for cameras may have already been due for safety upgrades",
-        "B. Cameras might violate driver privacy",
-        "C. The cost of cameras is high",
-        "D. Some drivers find cameras distracting",
-        "E. Cameras only capture rear-end collisions"
+        "A. The road carries heavy goods vehicles.",
+        "B. Enforcement cameras are expensive.",
+        "C. Where limits have been lowered on comparable roads, average speeds fell among all drivers, including those who continued to exceed the limit.",
+        "D. Some drivers are unaware of the current limit.",
+        "E. The road has several sharp bends."
       ],
-      "correctAnswer": "A",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
+      "correctAnswer": "C",
+      "explanation": "The reply assumes law-breakers are unaffected by the limit; evidence that the whole speed distribution shifts, including its upper tail, removes that assumption.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-018-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "passageTitle": "Telling Retailers What to Charge",
+      "passageText": "A manufacturer that sets a minimum price at which its product may be resold is restricting competition among its own retailers, and for most of the twentieth century such arrangements were treated as almost automatically unlawful. The economic case against them is straightforward: prices are higher than they would otherwise be, and the practice can serve as cover for a cartel among either manufacturers or retailers.\n\nThere is a competing account, and it is not merely an apologia. Some products sell better when a retailer provides services — demonstration, advice, trained staff, stock held for inspection — that cost money to supply. A customer can take the advice in one shop and buy from a discounter that provides none, and a retailer who anticipates this will not provide the service. A price floor removes the discounter's advantage and makes the service sustainable, which is why the practice appears disproportionately with products that reward pre-sale explanation.\n\nDistinguishing the two cases in a particular market is the difficulty. Both predict higher retail prices; only one predicts increased provision of service, and service is not easily measured. Courts asked to decide have generally lacked the evidence to separate them, which is an argument about institutional capacity rather than about economics.\n\nThe regulatory position has shifted from prohibition toward case-by-case assessment. That is defensible in principle and expensive in practice, and it has the characteristic weakness of any standard that requires proof: the party with the better information about whether service actually increased is the party whose conduct is under examination.",
+      "prompt": "According to the passage, the economic case against resale price maintenance includes that it",
       "options": [
-        "A. Labour economists disagree on the effects of minimum wage increases",
-        "B. A separate economic boom added 100,000 jobs during the same year",
-        "C. The minimum wage increase only affected 5% of workers",
-        "D. Some industries are more affected than others by wage increases",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. reduces the number of retailers in a market",
+        "B. can serve as cover for a cartel among manufacturers or retailers",
+        "C. prevents manufacturers from advertising",
+        "D. lowers the quality of the products sold",
+        "E. makes retail service unprofitable"
       ],
       "correctAnswer": "B",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
+      "explanation": "Higher prices and the cartel-cover concern are the two elements named. E states the opposite of the competing account.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-018-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "passageTitle": "Telling Retailers What to Charge",
+      "passageText": "A manufacturer that sets a minimum price at which its product may be resold is restricting competition among its own retailers, and for most of the twentieth century such arrangements were treated as almost automatically unlawful. The economic case against them is straightforward: prices are higher than they would otherwise be, and the practice can serve as cover for a cartel among either manufacturers or retailers.\n\nThere is a competing account, and it is not merely an apologia. Some products sell better when a retailer provides services — demonstration, advice, trained staff, stock held for inspection — that cost money to supply. A customer can take the advice in one shop and buy from a discounter that provides none, and a retailer who anticipates this will not provide the service. A price floor removes the discounter's advantage and makes the service sustainable, which is why the practice appears disproportionately with products that reward pre-sale explanation.\n\nDistinguishing the two cases in a particular market is the difficulty. Both predict higher retail prices; only one predicts increased provision of service, and service is not easily measured. Courts asked to decide have generally lacked the evidence to separate them, which is an argument about institutional capacity rather than about economics.\n\nThe regulatory position has shifted from prohibition toward case-by-case assessment. That is defensible in principle and expensive in practice, and it has the characteristic weakness of any standard that requires proof: the party with the better information about whether service actually increased is the party whose conduct is under examination.",
+      "prompt": "The passage indicates that a price floor can make retail service sustainable because it",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. compels retailers to employ trained staff",
+        "B. guarantees the manufacturer a fixed margin",
+        "C. reduces the number of products a retailer stocks",
+        "D. removes the advantage of a discounter that provides no service",
+        "E. shifts advertising costs to the manufacturer"
       ],
-      "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
+      "correctAnswer": "D",
+      "explanation": "The free-riding problem is that advice taken in one shop is used to buy elsewhere; the floor removes the discounter's price advantage.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-018-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "passageTitle": "Telling Retailers What to Charge",
+      "passageText": "A manufacturer that sets a minimum price at which its product may be resold is restricting competition among its own retailers, and for most of the twentieth century such arrangements were treated as almost automatically unlawful. The economic case against them is straightforward: prices are higher than they would otherwise be, and the practice can serve as cover for a cartel among either manufacturers or retailers.\n\nThere is a competing account, and it is not merely an apologia. Some products sell better when a retailer provides services — demonstration, advice, trained staff, stock held for inspection — that cost money to supply. A customer can take the advice in one shop and buy from a discounter that provides none, and a retailer who anticipates this will not provide the service. A price floor removes the discounter's advantage and makes the service sustainable, which is why the practice appears disproportionately with products that reward pre-sale explanation.\n\nDistinguishing the two cases in a particular market is the difficulty. Both predict higher retail prices; only one predicts increased provision of service, and service is not easily measured. Courts asked to decide have generally lacked the evidence to separate them, which is an argument about institutional capacity rather than about economics.\n\nThe regulatory position has shifted from prohibition toward case-by-case assessment. That is defensible in principle and expensive in practice, and it has the characteristic weakness of any standard that requires proof: the party with the better information about whether service actually increased is the party whose conduct is under examination.",
+      "prompt": "The 'characteristic weakness' of case-by-case assessment identified in the passage is that",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Local restaurants cannot accommodate arena crowds",
-        "C. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "D. The arena's construction will not create permanent jobs",
-        "E. The city already has sufficient sports facilities"
+        "A. it produces inconsistent decisions between courts",
+        "B. it requires legislation in every jurisdiction",
+        "C. it favours manufacturers over retailers",
+        "D. it cannot be applied to online sellers",
+        "E. the party with the better information about whether service increased is the one under examination"
       ],
-      "correctAnswer": "C",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
+      "correctAnswer": "E",
+      "explanation": "Stated in the final sentence, following the observation that the shift is defensible in principle and expensive in practice.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-018-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "passageTitle": "The Dance of the Bees",
+      "passageText": "A forager honeybee returning to the hive performs a repetitive movement on the comb, and von Frisch proposed that its orientation and duration encode the direction and distance of a food source. The claim is now in textbooks. Its acceptance took decades, and the reason is worth understanding.\n\nThe original evidence was correlational: the dance varied systematically with the location of the feeder, and recruits arrived at the feeder in numbers. A critic pointed out that both facts are consistent with a simpler explanation in which recruits find the food by odour carried on the dancer or released at the site, with the dance serving only to arouse them. The correlation between dance and location would then be real but causally idle.\n\nSettling this required interventions rather than observations. Experiments using a mechanical bee that performed dances without any accompanying odour recruited bees to the indicated location, though less efficiently than a live dancer. Displacement experiments moved recruits after they had watched a dance and found their search centred where the dance had indicated rather than where odour would lead. And radar tracking of individual recruits showed flight paths consistent with the vector the dance specified.\n\nThe modern position is not that the critic was wrong about odour, which does matter, but that the dance conveys information in addition to it. What the episode illustrates is how much work is required to move from a correlation that everyone can see to a causal claim about what an animal communicates, and how a plausible simpler explanation deserves the effort of being excluded rather than dismissed.",
+      "prompt": "The critic's alternative explanation described in the passage held that recruits found food",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. The ad was shown only on premium streaming services",
-        "C. The brand launched a new product line during the same period",
-        "D. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "E. Competitors also increased advertising spending during the same period"
+        "A. by odour carried on the dancer or released at the site, with the dance merely arousing them",
+        "B. by following the dancer in flight",
+        "C. by memory of previous foraging",
+        "D. by observing the sun's position",
+        "E. at random, in proportion to the food available"
       ],
-      "correctAnswer": "D",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The point of the objection is that the dance-location correlation could be real but causally idle.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-018-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "passageTitle": "The Dance of the Bees",
+      "passageText": "A forager honeybee returning to the hive performs a repetitive movement on the comb, and von Frisch proposed that its orientation and duration encode the direction and distance of a food source. The claim is now in textbooks. Its acceptance took decades, and the reason is worth understanding.\n\nThe original evidence was correlational: the dance varied systematically with the location of the feeder, and recruits arrived at the feeder in numbers. A critic pointed out that both facts are consistent with a simpler explanation in which recruits find the food by odour carried on the dancer or released at the site, with the dance serving only to arouse them. The correlation between dance and location would then be real but causally idle.\n\nSettling this required interventions rather than observations. Experiments using a mechanical bee that performed dances without any accompanying odour recruited bees to the indicated location, though less efficiently than a live dancer. Displacement experiments moved recruits after they had watched a dance and found their search centred where the dance had indicated rather than where odour would lead. And radar tracking of individual recruits showed flight paths consistent with the vector the dance specified.\n\nThe modern position is not that the critic was wrong about odour, which does matter, but that the dance conveys information in addition to it. What the episode illustrates is how much work is required to move from a correlation that everyone can see to a causal claim about what an animal communicates, and how a plausible simpler explanation deserves the effort of being excluded rather than dismissed.",
+      "prompt": "The mechanical bee experiments were significant because they",
       "options": [
-        "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It demonstrates that road construction is always harmful",
-        "C. It suggests the first analyst has incorrect data",
-        "D. It proves that traffic will always increase regardless of policy",
-        "E. It presents empirical evidence that undermines the first analyst's prediction"
+        "A. reproduced the dance more accurately than a live bee",
+        "B. showed that odour plays no part in recruitment",
+        "C. recruited bees to the indicated location without any accompanying odour",
+        "D. measured the distance bees flew",
+        "E. demonstrated that recruits ignore live dancers"
       ],
-      "correctAnswer": "E",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "The passage notes they recruited less efficiently than a live dancer, which tells against A and against C.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-018-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
-      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "passageTitle": "The Dance of the Bees",
+      "passageText": "A forager honeybee returning to the hive performs a repetitive movement on the comb, and von Frisch proposed that its orientation and duration encode the direction and distance of a food source. The claim is now in textbooks. Its acceptance took decades, and the reason is worth understanding.\n\nThe original evidence was correlational: the dance varied systematically with the location of the feeder, and recruits arrived at the feeder in numbers. A critic pointed out that both facts are consistent with a simpler explanation in which recruits find the food by odour carried on the dancer or released at the site, with the dance serving only to arouse them. The correlation between dance and location would then be real but causally idle.\n\nSettling this required interventions rather than observations. Experiments using a mechanical bee that performed dances without any accompanying odour recruited bees to the indicated location, though less efficiently than a live dancer. Displacement experiments moved recruits after they had watched a dance and found their search centred where the dance had indicated rather than where odour would lead. And radar tracking of individual recruits showed flight paths consistent with the vector the dance specified.\n\nThe modern position is not that the critic was wrong about odour, which does matter, but that the dance conveys information in addition to it. What the episode illustrates is how much work is required to move from a correlation that everyone can see to a causal claim about what an animal communicates, and how a plausible simpler explanation deserves the effort of being excluded rather than dismissed.",
+      "prompt": "The author presents the modern position as holding that",
       "options": [
-        "A. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
-        "B. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "C. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "D. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
-        "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
+        "A. the critic was mistaken about the role of odour",
+        "B. the dance conveys information in addition to odour, which also matters",
+        "C. the dance is a vestigial behaviour",
+        "D. recruitment depends chiefly on the number of dancers",
+        "E. radar tracking has replaced experimental methods"
       ],
-      "correctAnswer": "A",
-      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "The final paragraph is explicit, and draws the methodological lesson about excluding rather than dismissing a simpler explanation.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-018-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "passageTitle": "Does Class Size Matter?",
+      "passageText": "Few questions in education research have absorbed more effort than the effect of class size on attainment, and the literature's shape is instructive about how evidence accumulates in a politically charged field.\n\nObservational studies were long inconclusive, and for a reason that should have been obvious: class sizes are not assigned at random. Struggling pupils are placed in smaller groups, so the raw association between small classes and poor outcomes runs opposite to any causal effect, while wealthier schools with smaller classes generate an association running the other way.\n\nThe best evidence comes from designs that break the link between class size and pupil characteristics. A large randomised experiment in the United States assigned pupils and teachers to classes of different sizes in the early grades and found gains for the smaller classes, larger for disadvantaged pupils, and partly persistent afterwards. Studies exploiting rules that force a class to split once it exceeds a threshold have found effects in the same direction, generally smaller.\n\nThe complication is cost. Reducing class size across a system requires many additional teachers, and where the supply of good teachers is limited, the marginal recruit may be enough worse than the average to offset the benefit of the smaller group. That interaction is rarely captured in a study of a single school and is precisely what a system-wide policy would encounter. The honest summary is that smaller classes help, most where pupils are most disadvantaged, and that whether reducing them is the best use of the money is a different question the class-size literature cannot answer.",
+      "prompt": "According to the passage, observational studies of class size were inconclusive because",
       "options": [
-        "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Job satisfaction and adequate sleep are associated in the survey population",
-        "C. Dissatisfied workers always sleep fewer than 7 hours",
-        "D. Employers should implement nap rooms to improve satisfaction",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "A. attainment is difficult to measure",
+        "B. schools do not record class sizes accurately",
+        "C. teachers vary in quality",
+        "D. the effects appear only years later",
+        "E. class sizes are not assigned at random, and the selection runs in both directions"
       ],
-      "correctAnswer": "B",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "Struggling pupils placed in smaller groups and wealthier schools with smaller classes generate associations of opposite sign.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-018-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "passageTitle": "Does Class Size Matter?",
+      "passageText": "Few questions in education research have absorbed more effort than the effect of class size on attainment, and the literature's shape is instructive about how evidence accumulates in a politically charged field.\n\nObservational studies were long inconclusive, and for a reason that should have been obvious: class sizes are not assigned at random. Struggling pupils are placed in smaller groups, so the raw association between small classes and poor outcomes runs opposite to any causal effect, while wealthier schools with smaller classes generate an association running the other way.\n\nThe best evidence comes from designs that break the link between class size and pupil characteristics. A large randomised experiment in the United States assigned pupils and teachers to classes of different sizes in the early grades and found gains for the smaller classes, larger for disadvantaged pupils, and partly persistent afterwards. Studies exploiting rules that force a class to split once it exceeds a threshold have found effects in the same direction, generally smaller.\n\nThe complication is cost. Reducing class size across a system requires many additional teachers, and where the supply of good teachers is limited, the marginal recruit may be enough worse than the average to offset the benefit of the smaller group. That interaction is rarely captured in a study of a single school and is precisely what a system-wide policy would encounter. The honest summary is that smaller classes help, most where pupils are most disadvantaged, and that whether reducing them is the best use of the money is a different question the class-size literature cannot answer.",
+      "prompt": "The randomised experiment described in the passage found gains that were",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. confined to the year of the experiment",
+        "B. identical across pupil groups",
+        "C. smaller than those found in threshold-rule studies",
+        "D. larger for disadvantaged pupils and partly persistent afterwards",
+        "E. detectable only in mathematics"
       ],
-      "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The passage also notes threshold-rule studies found effects in the same direction but generally smaller, which tells against D.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-018-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "passageTitle": "Does Class Size Matter?",
+      "passageText": "Few questions in education research have absorbed more effort than the effect of class size on attainment, and the literature's shape is instructive about how evidence accumulates in a politically charged field.\n\nObservational studies were long inconclusive, and for a reason that should have been obvious: class sizes are not assigned at random. Struggling pupils are placed in smaller groups, so the raw association between small classes and poor outcomes runs opposite to any causal effect, while wealthier schools with smaller classes generate an association running the other way.\n\nThe best evidence comes from designs that break the link between class size and pupil characteristics. A large randomised experiment in the United States assigned pupils and teachers to classes of different sizes in the early grades and found gains for the smaller classes, larger for disadvantaged pupils, and partly persistent afterwards. Studies exploiting rules that force a class to split once it exceeds a threshold have found effects in the same direction, generally smaller.\n\nThe complication is cost. Reducing class size across a system requires many additional teachers, and where the supply of good teachers is limited, the marginal recruit may be enough worse than the average to offset the benefit of the smaller group. That interaction is rarely captured in a study of a single school and is precisely what a system-wide policy would encounter. The honest summary is that smaller classes help, most where pupils are most disadvantaged, and that whether reducing them is the best use of the money is a different question the class-size literature cannot answer.",
+      "prompt": "The 'complication' the author raises about system-wide class size reduction is that",
       "options": [
-        "A. The claim that wetlands prevent flooding",
-        "B. The conclusion that all wetlands should be protected",
-        "C. The assumption that all wetlands have equal flood-prevention value",
-        "D. The implication that flooding is always preventable",
-        "E. The premise that wetlands are worth preserving"
+        "A. smaller classes require larger buildings",
+        "B. parents oppose reorganisation",
+        "C. the additional teachers required may be enough worse than the average to offset the benefit",
+        "D. the effects fade after the early grades",
+        "E. randomised experiments cannot be run at scale"
       ],
       "correctAnswer": "C",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "This interaction is described as rarely captured in single-school studies and precisely what a system-wide policy encounters.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-018-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "According to the passage, which of the following contributes to the urban heat island effect?",
+      "passageTitle": "Inventing the Author",
+      "passageText": "The idea that a text belongs to the person who composed it, and that this ownership is the natural basis of literary property, is younger than it appears. For most of the history of writing, texts circulated with weak and variable attribution, and the interests protected by early printing privileges were those of printers rather than writers.\n\nThe modern conception assembled itself in the eighteenth century, out of a legal argument and an aesthetic one that reinforced each other. Publishers seeking perpetual rights argued that a work was the product of an author's individual genius and therefore property in the fullest sense — an argument that served the publishers, since the rights they wanted were the ones they had bought from authors. Simultaneously, criticism was moving from valuing a work's fidelity to inherited models toward valuing originality, which gave the legal argument its cultural support.\n\nThe consequences run deeper than the term of copyright. A conception of writing as individual creation fits some kinds of work badly: collaborative composition, oral traditions with no identifiable originator, translation and editing, and the accumulation of scientific results. Legal systems have handled these by treating them as exceptions to a norm rather than as evidence that the norm describes a subset of how texts are made.\n\nRecognising the concept's history is not an argument for abolishing it. It is a reason to treat questions about who owns a text as questions about which arrangement produces the work we want, rather than as deductions from a natural fact about creation.",
+      "prompt": "The passage indicates that early printing privileges protected the interests of",
       "options": [
-        "A. High buildings that block wind flow",
-        "B. Reflective roofs in city centres",
-        "C. Vehicles, air conditioning, and industry releasing waste heat",
-        "D. Increased cloud cover over urban areas"
+        "A. printers",
+        "B. authors",
+        "C. readers",
+        "D. translators",
+        "E. the state exclusively"
       ],
-      "correctAnswer": "C",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "correctAnswer": "A",
+      "explanation": "Stated in the first paragraph, alongside the observation that attribution itself was weak and variable.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-018-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "The passage states that the greatest temperature difference between cities and rural areas occurs:",
+      "passageTitle": "Inventing the Author",
+      "passageText": "The idea that a text belongs to the person who composed it, and that this ownership is the natural basis of literary property, is younger than it appears. For most of the history of writing, texts circulated with weak and variable attribution, and the interests protected by early printing privileges were those of printers rather than writers.\n\nThe modern conception assembled itself in the eighteenth century, out of a legal argument and an aesthetic one that reinforced each other. Publishers seeking perpetual rights argued that a work was the product of an author's individual genius and therefore property in the fullest sense — an argument that served the publishers, since the rights they wanted were the ones they had bought from authors. Simultaneously, criticism was moving from valuing a work's fidelity to inherited models toward valuing originality, which gave the legal argument its cultural support.\n\nThe consequences run deeper than the term of copyright. A conception of writing as individual creation fits some kinds of work badly: collaborative composition, oral traditions with no identifiable originator, translation and editing, and the accumulation of scientific results. Legal systems have handled these by treating them as exceptions to a norm rather than as evidence that the norm describes a subset of how texts are made.\n\nRecognising the concept's history is not an argument for abolishing it. It is a reason to treat questions about who owns a text as questions about which arrangement produces the work we want, rather than as deductions from a natural fact about creation.",
+      "prompt": "According to the passage, the argument from individual genius served publishers because",
       "options": [
-        "A. During the hottest summer afternoons",
-        "B. During periods of high wind",
-        "C. When humidity is at its highest",
-        "D. On calm, clear nights"
+        "A. it allowed them to pay authors less",
+        "B. the perpetual rights they sought were ones they had bought from authors",
+        "C. it exempted them from censorship",
+        "D. it made attribution unnecessary",
+        "E. it applied only to works already in print"
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "correctAnswer": "B",
+      "explanation": "The legal argument for property in the fullest sense was advanced by publishers holding rights acquired from authors.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-018-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "Which of the following, if true, would most strengthen the case for urban greening as an adaptation strategy?",
+      "passageTitle": "Inventing the Author",
+      "passageText": "The idea that a text belongs to the person who composed it, and that this ownership is the natural basis of literary property, is younger than it appears. For most of the history of writing, texts circulated with weak and variable attribution, and the interests protected by early printing privileges were those of printers rather than writers.\n\nThe modern conception assembled itself in the eighteenth century, out of a legal argument and an aesthetic one that reinforced each other. Publishers seeking perpetual rights argued that a work was the product of an author's individual genius and therefore property in the fullest sense — an argument that served the publishers, since the rights they wanted were the ones they had bought from authors. Simultaneously, criticism was moving from valuing a work's fidelity to inherited models toward valuing originality, which gave the legal argument its cultural support.\n\nThe consequences run deeper than the term of copyright. A conception of writing as individual creation fits some kinds of work badly: collaborative composition, oral traditions with no identifiable originator, translation and editing, and the accumulation of scientific results. Legal systems have handled these by treating them as exceptions to a norm rather than as evidence that the norm describes a subset of how texts are made.\n\nRecognising the concept's history is not an argument for abolishing it. It is a reason to treat questions about who owns a text as questions about which arrangement produces the work we want, rather than as deductions from a natural fact about creation.",
+      "prompt": "The author's conclusion is that recognising the concept's history",
       "options": [
-        "A. Studies show trees can reduce local temperatures by up to 8°C through evapotranspiration",
-        "B. Trees in urban areas require significant maintenance costs",
-        "C. Cool roofs are less expensive to install than planting trees",
-        "D. Urban greening has been adopted by fewer than 20% of major cities worldwide"
+        "A. shows that copyright should be abolished",
+        "B. proves that collaborative work cannot be protected",
+        "C. supports extending copyright terms",
+        "D. is a reason to treat ownership questions as questions about which arrangement produces the work we want",
+        "E. matters only to historians of publishing"
       ],
-      "correctAnswer": "A",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "correctAnswer": "D",
+      "explanation": "The final paragraph explicitly denies the abolition reading and offers this instead.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-018-q01": "A",
-    "gmat-verbal-018-q02": "B",
-    "gmat-verbal-018-q03": "C",
-    "gmat-verbal-018-q04": "D",
+    "gmat-verbal-018-q01": "D",
+    "gmat-verbal-018-q02": "C",
+    "gmat-verbal-018-q03": "A",
+    "gmat-verbal-018-q04": "B",
     "gmat-verbal-018-q05": "E",
-    "gmat-verbal-018-q06": "A",
-    "gmat-verbal-018-q07": "B",
+    "gmat-verbal-018-q06": "B",
+    "gmat-verbal-018-q07": "D",
     "gmat-verbal-018-q08": "C",
-    "gmat-verbal-018-q09": "D",
-    "gmat-verbal-018-q10": "E",
-    "gmat-verbal-018-q11": "A",
+    "gmat-verbal-018-q09": "E",
+    "gmat-verbal-018-q10": "A",
+    "gmat-verbal-018-q11": "C",
     "gmat-verbal-018-q12": "B",
-    "gmat-verbal-018-q13": "E",
-    "gmat-verbal-018-q14": "C",
-    "gmat-verbal-018-q15": "D",
-    "gmat-verbal-018-q16": "E",
-    "gmat-verbal-018-q17": "A",
-    "gmat-verbal-018-q18": "B",
-    "gmat-verbal-018-q19": "E",
+    "gmat-verbal-018-q13": "D",
+    "gmat-verbal-018-q14": "E",
+    "gmat-verbal-018-q15": "A",
+    "gmat-verbal-018-q16": "C",
+    "gmat-verbal-018-q17": "B",
+    "gmat-verbal-018-q18": "E",
+    "gmat-verbal-018-q19": "D",
     "gmat-verbal-018-q20": "C",
-    "gmat-verbal-018-q21": "C",
-    "gmat-verbal-018-q22": "D",
-    "gmat-verbal-018-q23": "A"
+    "gmat-verbal-018-q21": "A",
+    "gmat-verbal-018-q22": "B",
+    "gmat-verbal-018-q23": "D"
   },
-  "fingerprints": [
-    "d3edefb536091a140c",
-    "4c44f43cb36b84efd7",
-    "938c1995c85b91c3ce",
-    "6299ac6904e341f4fd",
-    "55c84d1aa0e70d69d8",
-    "0445c0546e8b615d2c",
-    "640f265fe62280cbe1",
-    "73d2e8645d60ecf9ae",
-    "8e86e7bfee9c830ad4",
-    "29fdba88d6cc6f0d18",
-    "4b533162cac6d6e5e3",
-    "07ef3c56b4116f7950",
-    "f25fc960819f8ec1c7",
-    "ec3cb494a6c9b86168",
-    "be7a3bf13fa4728974",
-    "61270d0b08826cf4e7",
-    "b40b9e5eccea0f2f15",
-    "90570285f38cc0957c",
-    "c967f9b3b02dabef64",
-    "8c017b5aa5816ea338"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-018-rp1",
-      "title": "Business and Society",
-      "text": "Coral reef ecosystems face dual threats from ocean warming and acidification. Thermal bleaching events, in which elevated temperatures cause corals to expel their symbiotic algae, have become more frequent since the 1980s. Simultaneously, as ocean pH decreases due to absorbed carbon dioxide, the ability of corals to build calcium carbonate skeletons is compromised. These stressors interact in ways that researchers are still working to quantify."
+      "title": "Telling Retailers What to Charge",
+      "text": "A manufacturer that sets a minimum price at which its product may be resold is restricting competition among its own retailers, and for most of the twentieth century such arrangements were treated as almost automatically unlawful. The economic case against them is straightforward: prices are higher than they would otherwise be, and the practice can serve as cover for a cartel among either manufacturers or retailers.\n\nThere is a competing account, and it is not merely an apologia. Some products sell better when a retailer provides services — demonstration, advice, trained staff, stock held for inspection — that cost money to supply. A customer can take the advice in one shop and buy from a discounter that provides none, and a retailer who anticipates this will not provide the service. A price floor removes the discounter's advantage and makes the service sustainable, which is why the practice appears disproportionately with products that reward pre-sale explanation.\n\nDistinguishing the two cases in a particular market is the difficulty. Both predict higher retail prices; only one predicts increased provision of service, and service is not easily measured. Courts asked to decide have generally lacked the evidence to separate them, which is an argument about institutional capacity rather than about economics.\n\nThe regulatory position has shifted from prohibition toward case-by-case assessment. That is defensible in principle and expensive in practice, and it has the characteristic weakness of any standard that requires proof: the party with the better information about whether service actually increased is the party whose conduct is under examination."
+    },
+    {
+      "id": "gmat-verbal-018-rp2",
+      "title": "The Dance of the Bees",
+      "text": "A forager honeybee returning to the hive performs a repetitive movement on the comb, and von Frisch proposed that its orientation and duration encode the direction and distance of a food source. The claim is now in textbooks. Its acceptance took decades, and the reason is worth understanding.\n\nThe original evidence was correlational: the dance varied systematically with the location of the feeder, and recruits arrived at the feeder in numbers. A critic pointed out that both facts are consistent with a simpler explanation in which recruits find the food by odour carried on the dancer or released at the site, with the dance serving only to arouse them. The correlation between dance and location would then be real but causally idle.\n\nSettling this required interventions rather than observations. Experiments using a mechanical bee that performed dances without any accompanying odour recruited bees to the indicated location, though less efficiently than a live dancer. Displacement experiments moved recruits after they had watched a dance and found their search centred where the dance had indicated rather than where odour would lead. And radar tracking of individual recruits showed flight paths consistent with the vector the dance specified.\n\nThe modern position is not that the critic was wrong about odour, which does matter, but that the dance conveys information in addition to it. What the episode illustrates is how much work is required to move from a correlation that everyone can see to a causal claim about what an animal communicates, and how a plausible simpler explanation deserves the effort of being excluded rather than dismissed."
+    },
+    {
+      "id": "gmat-verbal-018-rp3",
+      "title": "Does Class Size Matter?",
+      "text": "Few questions in education research have absorbed more effort than the effect of class size on attainment, and the literature's shape is instructive about how evidence accumulates in a politically charged field.\n\nObservational studies were long inconclusive, and for a reason that should have been obvious: class sizes are not assigned at random. Struggling pupils are placed in smaller groups, so the raw association between small classes and poor outcomes runs opposite to any causal effect, while wealthier schools with smaller classes generate an association running the other way.\n\nThe best evidence comes from designs that break the link between class size and pupil characteristics. A large randomised experiment in the United States assigned pupils and teachers to classes of different sizes in the early grades and found gains for the smaller classes, larger for disadvantaged pupils, and partly persistent afterwards. Studies exploiting rules that force a class to split once it exceeds a threshold have found effects in the same direction, generally smaller.\n\nThe complication is cost. Reducing class size across a system requires many additional teachers, and where the supply of good teachers is limited, the marginal recruit may be enough worse than the average to offset the benefit of the smaller group. That interaction is rarely captured in a study of a single school and is precisely what a system-wide policy would encounter. The honest summary is that smaller classes help, most where pupils are most disadvantaged, and that whether reducing them is the best use of the money is a different question the class-size literature cannot answer."
+    },
+    {
+      "id": "gmat-verbal-018-rp4",
+      "title": "Inventing the Author",
+      "text": "The idea that a text belongs to the person who composed it, and that this ownership is the natural basis of literary property, is younger than it appears. For most of the history of writing, texts circulated with weak and variable attribution, and the interests protected by early printing privileges were those of printers rather than writers.\n\nThe modern conception assembled itself in the eighteenth century, out of a legal argument and an aesthetic one that reinforced each other. Publishers seeking perpetual rights argued that a work was the product of an author's individual genius and therefore property in the fullest sense — an argument that served the publishers, since the rights they wanted were the ones they had bought from authors. Simultaneously, criticism was moving from valuing a work's fidelity to inherited models toward valuing originality, which gave the legal argument its cultural support.\n\nThe consequences run deeper than the term of copyright. A conception of writing as individual creation fits some kinds of work badly: collaborative composition, oral traditions with no identifiable originator, translation and editing, and the accumulation of scientific results. Legal systems have handled these by treating them as exceptions to a norm rather than as evidence that the norm describes a subset of how texts are made.\n\nRecognising the concept's history is not an argument for abolishing it. It is a reason to treat questions about who owns a text as questions about which arrangement produces the work we want, rather than as deductions from a natural fact about creation."
     }
   ]
 }
