@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 40% of a number is 64, what is 75% of that number?",
+      "prompt": "A coat listed at £180.00 is reduced by 25%, and a further 10% is taken off the reduced price. What is the final price?",
       "options": [
-        "120",
-        "128",
-        "96",
-        "100",
-        "108"
+        "£117.00",
+        "£126.00",
+        "£112.50",
+        "£121.50",
+        "£130.50"
       ],
-      "correctAnswer": "120",
-      "answer": "A",
-      "explanation": "0.40x = 64 → x = 160. 75% of 160 = 0.75 × 160 = 120.",
+      "correctAnswer": "£121.50",
+      "answer": "D",
+      "explanation": "£180.00 × 0.75 = £135.00, then × 0.90 = £121.50. Taking 35% off at once gives £117.00, which is lower because the second discount applies to the already reduced price.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
+      "prompt": "Concrete is mixed with cement, sand and gravel in the ratio 1 : 2 : 4. How much cement is needed for 630 kg of concrete?",
       "options": [
-        "15 hours",
-        "18 hours",
-        "21 hours",
-        "3 hours",
-        "12 hours"
+        "180 kg",
+        "90 kg",
+        "126 kg",
+        "105 kg",
+        "63 kg"
       ],
-      "correctAnswer": "18 hours",
+      "correctAnswer": "90 kg",
       "answer": "B",
-      "explanation": "Net rate = 1/6 − 1/9 = 3/18 − 2/18 = 1/18 tank per hour. Time = 18 hours.",
+      "explanation": "The mix has 7 parts, so one part is 630 / 7 = 90 kg. Cement is one part: 90 kg.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
+      "prompt": "A driver covers 90 km at 60 km/h, stops for 30 minutes, then covers 150 km at 75 km/h. How long does the whole journey take?",
       "options": [
-        "$210",
-        "$170",
-        "$180",
-        "$190",
-        "$200"
+        "3.75 hours",
+        "3.5 hours",
+        "4.0 hours",
+        "5.0 hours",
+        "4.75 hours"
       ],
-      "correctAnswer": "$180",
+      "correctAnswer": "4.0 hours",
       "answer": "C",
-      "explanation": "200 × 1.20 = 240; 240 × 0.75 = 180. (Net factor 1.2 × 0.75 = 0.9, a 10% drop.)",
+      "explanation": "First leg 1.5 hours, stop 0.5 hours, second leg 2 hours: total 4.0 hours. Omitting the stop gives 3.5 hours.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
+      "prompt": "Six readings are 17, 23, 23, 31, 44, 52. What is the median?",
       "options": [
-        "$240",
-        "$260",
-        "$200",
-        "$210",
-        "$220"
+        "27.0",
+        "23.0",
+        "31.0",
+        "31.7",
+        "28.5"
       ],
-      "correctAnswer": "$210",
-      "answer": "D",
-      "explanation": "Amount = 1000 × 1.10² = 1000 × 1.21 = 1210. Interest = 1210 − 1000 = 210.",
+      "correctAnswer": "27.0",
+      "answer": "A",
+      "explanation": "With six values the median is the mean of the third and fourth: (23 + 31) / 2 = 27.0. The mode is 23 and the mean is 31.7.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
+      "prompt": "A cylindrical tank has a radius of 1.5 m and a height of 4 m. What is its volume, to the nearest cubic metre?",
       "options": [
-        "16",
-        "18",
-        "20",
-        "12",
-        "15"
+        "19 cubic metres",
+        "42 cubic metres",
+        "24 cubic metres",
+        "37 cubic metres",
+        "28 cubic metres"
       ],
-      "correctAnswer": "15",
+      "correctAnswer": "28 cubic metres",
       "answer": "E",
-      "explanation": "Sum of 5 = 5 × 20 = 100. Remove 40 → 60 left over 4 numbers. Average = 60 ÷ 4 = 15.",
+      "explanation": "Volume is πr²h = π × 1.5² × 4 = 28.3, which rounds to 28 cubic metres.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
+      "prompt": "A loan of £9,000.00 carries simple interest of 7.4% a year on the original sum, repaid after 4 years. What is the total repayment?",
       "options": [
-        "16",
-        "20",
-        "24",
-        "8",
-        "12"
+        "£2,664.00",
+        "£11,000.00",
+        "£12,000.00",
+        "£11,664.00",
+        "£11,500.00"
       ],
-      "correctAnswer": "16",
-      "answer": "A",
-      "explanation": "Parts = 3 + 5 = 8 → each part = 64 ÷ 8 = 8. Amounts: 24 and 40. Difference = 40 − 24 = 16.",
+      "correctAnswer": "£11,664.00",
+      "answer": "D",
+      "explanation": "Interest is £9,000.00 × 0.074 × 4 = £2,664.00. Adding the principal gives £11,664.00. Quoting only the interest is the usual slip.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
+      "prompt": "When a number is divided by 4 the remainder is 3. Which of the following could be that number?",
       "options": [
-        "120",
-        "136",
-        "140",
-        "152",
-        "96"
+        "68",
+        "71",
+        "72",
+        "70",
+        "69"
       ],
-      "correctAnswer": "136",
+      "correctAnswer": "71",
       "answer": "B",
-      "explanation": "Area = 12 × 8 = 96. Perimeter = 2(12 + 8) = 40. Sum = 96 + 40 = 136.",
+      "explanation": "A remainder of 3 on division by 4 means the number is 3 more than a multiple of 4: 4 × 17 = 68, so 71 qualifies. 68 and 72 are multiples of 4, 70 leaves 2 and 69 leaves 1.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 2^5 × 2^3?",
+      "prompt": "Two fair six-sided dice are rolled. What is the probability that the total is 7?",
       "options": [
-        "64",
-        "128",
-        "256",
-        "512",
-        "1024"
+        "11.1%",
+        "8.3%",
+        "16.7%",
+        "20.0%",
+        "14.3%"
       ],
-      "correctAnswer": "256",
+      "correctAnswer": "16.7%",
       "answer": "C",
-      "explanation": "2^5 × 2^3 = 2^(5+3) = 2^8 = 256.",
+      "explanation": "There are 36 equally likely outcomes and 6 give a total of 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). That is 16.7%, the most likely total.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
+      "prompt": "A component is specified as 250 mm with a tolerance of ±2%. What is the range of acceptable lengths?",
       "options": [
-        "27",
-        "30",
-        "18",
-        "21",
-        "24"
+        "245 mm to 255 mm",
+        "248 mm to 252 mm",
+        "244 mm to 256 mm",
+        "240 mm to 260 mm",
+        "246 mm to 254 mm"
       ],
-      "correctAnswer": "21",
-      "answer": "D",
-      "explanation": "Adding: 2x = 14 → x = 7. Then y = 3. xy = 7 × 3 = 21.",
+      "correctAnswer": "245 mm to 255 mm",
+      "answer": "A",
+      "explanation": "Two per cent of 250 mm is 5 mm, so the range is 245 mm to 255 mm. Treating the tolerance as ±2 mm gives the far narrower range 248 to 252.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is 15% of 15% of 400?",
+      "prompt": "On a map with a scale of 1 : 25,000, two points are 8.4 cm apart. What is the real distance?",
       "options": [
-        "12",
-        "15",
-        "18",
-        "6",
-        "9"
+        "8.4 km",
+        "0.21 km",
+        "4.2 km",
+        "21 km",
+        "2.1 km"
       ],
-      "correctAnswer": "9",
+      "correctAnswer": "2.1 km",
       "answer": "E",
-      "explanation": "15% of 400 = 60. 15% of 60 = 9.",
+      "explanation": "8.4 cm on the map is 8.4 × 25,000 = 210,000 cm on the ground, which is 2.1 km. Dividing by 10,000 rather than 100,000 gives 21 km.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
+      "prompt": "A worker is paid £14.60 an hour for a 38-hour week, and time and a half for overtime. What is the pay for a week with 7 hours of overtime?",
       "options": [
-        "$63",
-        "$66",
-        "$70",
-        "$57",
-        "$60"
+        "£657.00",
+        "£700.00",
+        "£640.00",
+        "£708.10",
+        "£672.00"
       ],
-      "correctAnswer": "$63",
-      "answer": "A",
-      "explanation": "Discount: 80 × 0.75 = 60. Tax: 60 × 1.05 = 63.",
+      "correctAnswer": "£708.10",
+      "answer": "D",
+      "explanation": "Basic pay is 38 × £14.60 = £554.80. Overtime is 7 × £14.60 × 1.5 = £153.30. Total £708.10. Paying all hours at the basic rate gives £657.00.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
+      "prompt": "Of 200 people, 96 read newspaper A, 84 read B and 72 read C; 34 read both A and B, 28 read both A and C, 26 read both B and C, and 18 read none. How many read all three?",
       "options": [
-        "135 miles",
-        "150 miles",
-        "165 miles",
-        "180 miles",
-        "120 miles"
+        "18",
+        "16",
+        "20",
+        "12",
+        "8"
       ],
-      "correctAnswer": "150 miles",
-      "answer": "B",
-      "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
+      "correctAnswer": "18",
+      "answer": "A",
+      "explanation": "Those reading at least one number 182. By inclusion and exclusion, 96 + 84 + 72 − 34 − 28 − 26 + x = 182, so x = 18.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "prompt": "A train travels at 108 km/h. What is that speed in metres per second?",
       "options": [
-        "16",
-        "8",
-        "10",
-        "12",
-        "15"
+        "3.0 m/s",
+        "36 m/s",
+        "30 m/s",
+        "18 m/s",
+        "27 m/s"
       ],
-      "correctAnswer": "10",
+      "correctAnswer": "30 m/s",
       "answer": "C",
-      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "explanation": "Divide by 3.6: 108 / 3.6 = 30 m/s. Equivalently 108 × 1000 metres over 3,600 seconds.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "prompt": "A sequence starts at 480 and decreases by 35 each term. What is the 12th term?",
       "options": [
-        "1/5",
-        "2/5",
-        "1/2",
-        "3/5",
-        "2/3"
+        "60",
+        "95",
+        "100",
+        "115",
+        "85"
       ],
-      "correctAnswer": "3/5",
-      "answer": "D",
-      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "correctAnswer": "95",
+      "answer": "B",
+      "explanation": "The 12th term is 480 + (12 − 1) × (−35) = 95. Using 12 rather than 12 − 1 gives 60.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "Twelve values have a mean of 47. One value, 91, is removed. What is the mean of the remaining eleven, to one decimal place?",
       "options": [
-        "35",
-        "38",
-        "29",
-        "30",
-        "32"
+        "44.0",
+        "45.5",
+        "46.0",
+        "42.0",
+        "43.0"
       ],
-      "correctAnswer": "32",
+      "correctAnswer": "43.0",
       "answer": "E",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "explanation": "The twelve values total 564. Removing 91 leaves 473 across 11 values: 43.0. The mean falls because the removed value was above it.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "A rectangle has a perimeter of 40 m. What is the largest possible area it can enclose?",
       "options": [
-        "1275",
-        "1300",
-        "1175",
-        "1225",
-        "1250"
+        "96 sq m",
+        "84 sq m",
+        "75 sq m",
+        "100 sq m",
+        "64 sq m"
       ],
-      "correctAnswer": "1275",
-      "answer": "A",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "correctAnswer": "100 sq m",
+      "answer": "D",
+      "explanation": "For a fixed perimeter the area is greatest when the rectangle is a square: each side 10 m, giving 100 square metres. A 12 by 8 rectangle has the same perimeter but only 96 square metres.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "A firm has revenue of £260,000.00, cost of goods sold of £174,000.00 and overheads of £52,000.00. What is its net profit margin?",
       "options": [
-        "14",
-        "16",
-        "18",
-        "20",
-        "12"
+        "33.1%",
+        "20.0%",
+        "13.1%",
+        "15.0%",
+        "18.5%"
       ],
-      "correctAnswer": "16",
-      "answer": "B",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "correctAnswer": "13.1%",
+      "answer": "C",
+      "explanation": "Net profit is £34,000.00, which is 13.1% of revenue. The gross margin, before overheads, is 33.1% and is the distractor.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "Two photocopiers produce 45 and 30 pages a minute. Working together, how many pages do they produce in 12 minutes?",
       "options": [
-        "40%",
-        "20%",
-        "25%",
-        "30%",
-        "35%"
+        "900",
+        "540",
+        "750",
+        "960",
+        "1,080"
       ],
-      "correctAnswer": "25%",
-      "answer": "C",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "correctAnswer": "900",
+      "answer": "A",
+      "explanation": "Combined they produce 75 pages a minute, so in 12 minutes they produce 900 pages. Using one machine alone gives 540.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "£800.00 is exchanged at a rate of 1.164 units per pound, with 1.5% commission deducted from the converted amount. How many units are received, to the nearest unit?",
       "options": [
-        "11 days",
-        "16 days",
-        "8 days",
-        "9 days",
-        "10 days"
+        "931",
+        "917",
+        "910",
+        "900",
+        "925"
       ],
-      "correctAnswer": "9 days",
-      "answer": "D",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "correctAnswer": "917",
+      "answer": "B",
+      "explanation": "Converted: 800 × 1.164 = 931.20 units. After 1.5% commission: 917.23, or 917 units. Ignoring commission gives 931.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "A night shift runs from 21:45 to 06:30 with a 45-minute unpaid break. How many paid hours does it contain?",
       "options": [
-        "16",
-        "18",
-        "13",
-        "14",
-        "15"
+        "8.75 hours",
+        "9.00 hours",
+        "7.75 hours",
+        "8.25 hours",
+        "8.00 hours"
       ],
-      "correctAnswer": "15",
+      "correctAnswer": "8.00 hours",
       "answer": "E",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "explanation": "From 21:45 to 06:30 is 8.75 hours. Deducting the 45-minute break leaves 8.00 paid hours.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "A population grows by 9% a year. In roughly how many years does it double?",
       "options": [
-        "30%",
-        "35%",
-        "15%",
-        "20%",
-        "25%"
+        "11 years",
+        "9 years",
+        "6 years",
+        "8 years",
+        "14 years"
       ],
-      "correctAnswer": "30%",
-      "answer": "A",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "correctAnswer": "8 years",
+      "answer": "D",
+      "explanation": "Doubling requires 1.09^t = 2, so t = ln2 / ln1.09 = 8.0, about 8 years. The rule of 70 gives 70/9 ≈ 7.8, a useful approximation that understates slightly at this rate.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-003-q001": "120",
-    "gmat-quant-003-q002": "18 hours",
-    "gmat-quant-003-q003": "$180",
-    "gmat-quant-003-q004": "$210",
-    "gmat-quant-003-q005": "15",
-    "gmat-quant-003-q006": "16",
-    "gmat-quant-003-q007": "136",
-    "gmat-quant-003-q008": "256",
-    "gmat-quant-003-q009": "21",
-    "gmat-quant-003-q010": "9",
-    "gmat-quant-003-q011": "$63",
-    "gmat-quant-003-q012": "150 miles",
-    "gmat-quant-003-q013": "10",
-    "gmat-quant-003-q014": "3/5",
-    "gmat-quant-003-q015": "32",
-    "gmat-quant-003-q016": "1275",
-    "gmat-quant-003-q017": "16",
-    "gmat-quant-003-q018": "25%",
-    "gmat-quant-003-q019": "9 days",
-    "gmat-quant-003-q020": "15",
-    "gmat-quant-003-q021": "30%"
+    "gmat-quant-003-q001": "£121.50",
+    "gmat-quant-003-q002": "90 kg",
+    "gmat-quant-003-q003": "4.0 hours",
+    "gmat-quant-003-q004": "27.0",
+    "gmat-quant-003-q005": "28 cubic metres",
+    "gmat-quant-003-q006": "£11,664.00",
+    "gmat-quant-003-q007": "71",
+    "gmat-quant-003-q008": "16.7%",
+    "gmat-quant-003-q009": "245 mm to 255 mm",
+    "gmat-quant-003-q010": "2.1 km",
+    "gmat-quant-003-q011": "£708.10",
+    "gmat-quant-003-q012": "18",
+    "gmat-quant-003-q013": "30 m/s",
+    "gmat-quant-003-q014": "95",
+    "gmat-quant-003-q015": "43.0",
+    "gmat-quant-003-q016": "100 sq m",
+    "gmat-quant-003-q017": "13.1%",
+    "gmat-quant-003-q018": "900",
+    "gmat-quant-003-q019": "917",
+    "gmat-quant-003-q020": "8.00 hours",
+    "gmat-quant-003-q021": "8 years"
   }
 }
