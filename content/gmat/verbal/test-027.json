@@ -12,469 +12,474 @@
       "id": "gmat-verbal-027-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "prompt": "A nursery school introduced a daily outdoor session and reports that children nap more readily in the afternoon. The head concludes that outdoor activity improves children's sleep.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "B. Arena events attract fans from outside the city who would not otherwise visit",
-        "C. Local restaurants cannot accommodate arena crowds",
-        "D. The arena's construction will not create permanent jobs",
-        "E. The city already has sufficient sports facilities"
+        "A. The outdoor session lasts an hour.",
+        "B. Some children do not nap at all.",
+        "C. The session replaced a period of quiet indoor play that had been scheduled immediately before the nap, and children had often been unsettled by the transition from it.",
+        "D. Staff supervise the session in pairs.",
+        "E. The nursery has a large garden."
       ],
-      "correctAnswer": "A",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "What changed may be the removal of an unsettling transition rather than the addition of activity, and the two are confounded in a single schedule change.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-027-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "prompt": "An ice rink introduced an online booking system and reports that its sessions now sell out more often. The manager concludes that demand for skating has risen.",
+      "question": "Which of the following, if true, most seriously undermines the conclusion?",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "C. The ad was shown only on premium streaming services",
-        "D. The brand launched a new product line during the same period",
-        "E. Competitors also increased advertising spending during the same period"
+        "A. Booking online requires an account.",
+        "B. Sessions last ninety minutes.",
+        "C. Some customers still pay at the door.",
+        "D. The rink is open year-round.",
+        "E. The rink reduced the number of skaters admitted to each session at the same time, on safety advice."
       ],
-      "correctAnswer": "B",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "A smaller capacity produces more sell-outs at unchanged demand, so the indicator moved for a reason unrelated to interest in skating.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-027-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "prompt": "A vineyard reports that its wines score higher in competitions in years when it harvests late, and plans to harvest late every year.",
+      "question": "Which of the following, if true, casts most doubt on the plan?",
       "options": [
-        "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It demonstrates that road construction is always harmful",
-        "C. It presents empirical evidence that undermines the first analyst's prediction",
-        "D. It suggests the first analyst has incorrect data",
-        "E. It proves that traffic will always increase regardless of policy"
+        "A. Late harvesting requires additional labour.",
+        "B. The vineyard harvests late only when the autumn weather is settled, and picks early in years when rain threatens the crop.",
+        "C. Competition judges taste blind.",
+        "D. The vineyard produces both red and white wines.",
+        "E. Some competitions award medals in several classes."
       ],
-      "correctAnswer": "C",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "The harvest date is chosen in response to the conditions that themselves determine quality, so the association cannot be converted into a rule.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-027-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
-      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "prompt": "A coach operator introduced reclining seats on its long-distance routes and reports that customer satisfaction scores rose. It plans to fit them on its city routes to raise satisfaction there.",
+      "question": "Which of the following, if true, most weakens the plan?",
       "options": [
-        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "B. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "C. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
-        "D. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
-        "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
+        "A. Reclining seats are heavier than standard ones.",
+        "B. The seats are more expensive to maintain.",
+        "C. Some long-distance passengers travel overnight.",
+        "D. City journeys average eighteen minutes, and complaints on those routes concern frequency and reliability rather than comfort.",
+        "E. Satisfaction is measured by an online survey."
       ],
       "correctAnswer": "D",
-      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "The remedy addresses a constraint that does not bind on short journeys, so the same intervention should not be expected to transfer.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-027-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "prompt": "Every policy sold by the Greenway pet insurer that covers dental treatment requires an annual check-up. No policy requiring an annual check-up has been cancelled for non-disclosure this year. Some Greenway policies have been cancelled for non-disclosure this year.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Dissatisfied workers always sleep fewer than 7 hours",
-        "C. Employers should implement nap rooms to improve satisfaction",
-        "D. Workers who sleep 8 hours are more productive than those who sleep 6",
-        "E. Job satisfaction and adequate sleep are associated in the survey population"
+        "A. Some Greenway policies do not cover dental treatment.",
+        "B. Annual check-ups prevent non-disclosure.",
+        "C. Most policies cover dental treatment.",
+        "D. Dental cover is more expensive.",
+        "E. Policies without check-ups are sold to older animals."
       ],
-      "correctAnswer": "E",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "Cancelled policies do not require a check-up, and dental cover implies one, so those policies carry no dental cover.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-027-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "prompt": "A community centre began charging a small fee for its evening classes and reports that attendance at each class is now more consistent, with fewer people booking and not arriving. The manager concludes that people value what they pay for.",
+      "question": "Which of the following would be most useful to determine in evaluating the conclusion?",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. How the fee compares with fees at other centres",
+        "B. Whether classes are held on weekdays",
+        "C. Whether the number of people booking classes fell after the fee was introduced",
+        "D. How many classes the centre offers",
+        "E. Whether tutors are paid per session"
       ],
-      "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Consistency could rise because the fee deterred marginal bookers rather than because it changed anyone's valuation; the booking figure distinguishes the two.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-027-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "prompt": "A sawmill installed a scanner that measures each log and calculates the most valuable cutting pattern. It reports that the value of timber produced per log rose by 9 per cent, and concludes that the scanner has paid for itself.",
+      "question": "The conclusion depends on which of the following assumptions?",
       "options": [
-        "A. The assumption that all wetlands have equal flood-prevention value",
-        "B. The claim that wetlands prevent flooding",
-        "C. The conclusion that all wetlands should be protected",
-        "D. The implication that flooding is always preventable",
-        "E. The premise that wetlands are worth preserving"
+        "A. Operators trust the scanner's recommendations.",
+        "B. The additional value produced exceeds the cost of the scanner and its operation over the relevant period.",
+        "C. Logs arrive at the mill in similar sizes.",
+        "D. The mill processes hardwood as well as softwood.",
+        "E. Timber prices did not fall during the period."
       ],
-      "correctAnswer": "A",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Paying for itself is a claim about net cost, not about output value; the yield gain alone cannot establish it. E affects the size of the gain but not the structure of the inference.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-027-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "prompt": "A tool hire firm reports that customers who take out its damage waiver return equipment in better condition than those who decline it, and concludes that the waiver encourages careful handling.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. A controlled experiment with randomly assigned music found the same 20% difference",
-        "C. The upbeat music stores were in higher-traffic mall locations",
-        "D. Sales staff performed better when the music was upbeat",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "A. Trade customers, who handle tools professionally, take the waiver as a matter of routine, while occasional domestic hirers decline it to save money.",
+        "B. The waiver costs a small percentage of the hire fee.",
+        "C. Damage is assessed on return by staff.",
+        "D. The firm hires out both hand and power tools.",
+        "E. Some customers hire the same tool repeatedly."
       ],
-      "correctAnswer": "B",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
+      "correctAnswer": "A",
+      "explanation": "Skill, not the waiver, distinguishes the groups, and the waiver would if anything reduce the incentive to be careful.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-027-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
-      "question": "Which of the following most weakens the editorial's conclusion?",
+      "prompt": "A fish market reports that stalls trading before seven in the morning sell more per stall than those opening later, and advises all stallholders to open earlier.",
+      "question": "Which of the following, if true, most weakens the advice?",
       "options": [
-        "A. Employment programmes have reduced crime in some pilot cities",
-        "B. The editorial does not define 'crime' precisely",
-        "C. Crime rates are influenced by many factors beyond unemployment",
-        "D. Reducing unemployment is expensive and politically difficult",
-        "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
+        "A. Some stalls sell shellfish only.",
+        "B. The market opens at five.",
+        "C. Later stalls serve mainly household shoppers.",
+        "D. The early stalls are those supplying restaurants under standing orders placed the previous day, and those orders would not increase if other stalls opened earlier.",
+        "E. Stall rents are the same throughout the day."
       ],
-      "correctAnswer": "C",
-      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
+      "correctAnswer": "D",
+      "explanation": "The sales difference comes from a contracted trade that opening hours cannot transfer, so the advice mistakes a customer type for a schedule effect.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-027-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
-      "question": "The president's argument is flawed because it:",
+      "prompt": "A bus depot introduced a maintenance regime based on mileage rather than a fixed calendar and reports that breakdowns fell by a fifth. Managers conclude that mileage is a better basis for scheduling maintenance.",
+      "question": "Which of the following, if true, most strengthens the conclusion?",
       "options": [
-        "A. Ignores that SAT preparation courses can inflate scores",
-        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
-        "C. Does not consider the diversity implications of the policy",
-        "D. Fails to define 'academic performance' precisely",
-        "E. Both A and B"
+        "A. The new regime required additional record-keeping.",
+        "B. Mechanics preferred the new system.",
+        "C. The depot also replaced four older vehicles.",
+        "D. Breakdowns are recorded by drivers.",
+        "E. A second depot that kept the calendar regime over the same period, using the same vehicle types on similar routes, recorded no change in breakdowns."
       ],
-      "correctAnswer": "B",
-      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
+      "correctAnswer": "E",
+      "explanation": "A matched depot on the old regime supplies the comparison; D introduces a rival explanation for the same fall.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-027-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
-      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "prompt": "An optician reports that customers who buy anti-reflective lens coatings report fewer headaches than those who do not, and advertises the coating as reducing headaches.",
+      "question": "The advertisement is most vulnerable to the criticism that it",
       "options": [
-        "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "C. Historical market data is unreliable because markets change structurally over time",
-        "D. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
-        "E. Companies with consistent earnings growth tend to have stable stock prices"
+        "A. does not specify how headaches were measured",
+        "B. ignores the cost of the coating",
+        "C. assumes a difference between self-selecting customers was produced by the coating",
+        "D. relies on reports made some months after purchase",
+        "E. overlooks customers who wear contact lenses"
       ],
-      "correctAnswer": "D",
-      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
+      "correctAnswer": "C",
+      "explanation": "Customers who buy an upgrade sold as reducing eye strain are those already suffering it and expecting relief, which is both a selection and an expectation problem.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-027-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
-      "question": "Which of the following, if true, most seriously weakens the conclusion?",
+      "passageTitle": "The Market for Companies",
+      "passageText": "A firm whose managers perform poorly should, in theory, become cheap enough that an outsider can buy it, replace them, and profit from the improvement. This threat is supposed to discipline managers who face no other effective supervision, and the argument is coherent. Whether the mechanism works as described is a different question.\n\nSeveral things blunt it. A bidder must pay a premium over the market price, so the improvement must exceed both the premium and the cost of the bid before anything is gained. Managers can make a firm expensive to acquire through provisions that require a bidder to win a slow proxy contest, and those provisions are adopted by the very people the threat is meant to discipline. And the acquirer's own managers may be pursuing size rather than value, in which case the discipline runs in the wrong direction: a badly governed acquirer buying a badly governed target improves nothing.\n\nThe evidence is correspondingly mixed. Target shareholders reliably gain, which is not in dispute; acquirer shareholders on average gain little and often lose, which is difficult to reconcile with a mechanism that is supposed to reallocate assets to better managers. Studies of operating performance after acquisition find improvements in some samples and none in others, with the results depending heavily on how performance is measured and over what period.\n\nThe defensible summary is narrower than the theory. The threat of acquisition constrains the most extreme forms of managerial failure, particularly where a firm's assets are visibly worth more than its shares. It does not constrain the ordinary sort, and treating it as a general substitute for governance mistakes a blunt instrument for a precise one.",
+      "prompt": "According to the passage, one obstacle to the disciplinary effect of takeovers is that",
       "options": [
-        "A. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "B. Customers report feeling more valued when using a loyalty programme",
-        "C. Competitors without loyalty programmes have seen declining sales",
-        "D. The loyalty programme was introduced simultaneously with a store renovation",
-        "E. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes"
+        "A. target shareholders resist all bids",
+        "B. regulators prohibit hostile acquisitions",
+        "C. acquirers cannot replace managers",
+        "D. the improvement must exceed both the acquisition premium and the cost of the bid",
+        "E. share prices do not reflect managerial quality"
       ],
-      "correctAnswer": "E",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
+      "correctAnswer": "D",
+      "explanation": "The premium is paid before anything is gained, which is the first of the three blunting factors listed.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-027-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
-      "question": "Which of the following would most strengthen the CFO's conclusion?",
+      "passageTitle": "The Market for Companies",
+      "passageText": "A firm whose managers perform poorly should, in theory, become cheap enough that an outsider can buy it, replace them, and profit from the improvement. This threat is supposed to discipline managers who face no other effective supervision, and the argument is coherent. Whether the mechanism works as described is a different question.\n\nSeveral things blunt it. A bidder must pay a premium over the market price, so the improvement must exceed both the premium and the cost of the bid before anything is gained. Managers can make a firm expensive to acquire through provisions that require a bidder to win a slow proxy contest, and those provisions are adopted by the very people the threat is meant to discipline. And the acquirer's own managers may be pursuing size rather than value, in which case the discipline runs in the wrong direction: a badly governed acquirer buying a badly governed target improves nothing.\n\nThe evidence is correspondingly mixed. Target shareholders reliably gain, which is not in dispute; acquirer shareholders on average gain little and often lose, which is difficult to reconcile with a mechanism that is supposed to reallocate assets to better managers. Studies of operating performance after acquisition find improvements in some samples and none in others, with the results depending heavily on how performance is measured and over what period.\n\nThe defensible summary is narrower than the theory. The threat of acquisition constrains the most extreme forms of managerial failure, particularly where a firm's assets are visibly worth more than its shares. It does not constrain the ordinary sort, and treating it as a general substitute for governance mistakes a blunt instrument for a precise one.",
+      "prompt": "The passage notes that provisions making a firm expensive to acquire are",
       "options": [
-        "A. The lifetime value of a new user averages $50",
-        "B. Other advertising channels were suspended during the same three months",
-        "C. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "D. Social media platforms reported the campaign reached 5 million unique users",
-        "E. Competitors saw no change in sign-ups over the same period"
+        "A. required by law in most jurisdictions",
+        "B. adopted by the very people the threat is meant to discipline",
+        "C. effective only against friendly bids",
+        "D. rare among poorly performing firms",
+        "E. supported by target shareholders"
       ],
-      "correctAnswer": "A",
-      "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
+      "correctAnswer": "B",
+      "explanation": "That circularity is the passage's point about defensive provisions.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-027-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
-      "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
+      "passageTitle": "The Market for Companies",
+      "passageText": "A firm whose managers perform poorly should, in theory, become cheap enough that an outsider can buy it, replace them, and profit from the improvement. This threat is supposed to discipline managers who face no other effective supervision, and the argument is coherent. Whether the mechanism works as described is a different question.\n\nSeveral things blunt it. A bidder must pay a premium over the market price, so the improvement must exceed both the premium and the cost of the bid before anything is gained. Managers can make a firm expensive to acquire through provisions that require a bidder to win a slow proxy contest, and those provisions are adopted by the very people the threat is meant to discipline. And the acquirer's own managers may be pursuing size rather than value, in which case the discipline runs in the wrong direction: a badly governed acquirer buying a badly governed target improves nothing.\n\nThe evidence is correspondingly mixed. Target shareholders reliably gain, which is not in dispute; acquirer shareholders on average gain little and often lose, which is difficult to reconcile with a mechanism that is supposed to reallocate assets to better managers. Studies of operating performance after acquisition find improvements in some samples and none in others, with the results depending heavily on how performance is measured and over what period.\n\nThe defensible summary is narrower than the theory. The threat of acquisition constrains the most extreme forms of managerial failure, particularly where a firm's assets are visibly worth more than its shares. It does not constrain the ordinary sort, and treating it as a general substitute for governance mistakes a blunt instrument for a precise one.",
+      "prompt": "The 'defensible summary' offered in the final paragraph is that the threat of acquisition",
       "options": [
-        "A. It assumes that lower temperatures are always desirable",
-        "B. It treats a correlation as evidence of a causal relationship",
-        "C. It ignores that tree planting is expensive",
-        "D. It fails to consider that trees require water",
-        "E. It overlooks that some neighbourhoods may not have space for trees"
+        "A. constrains extreme managerial failure but not the ordinary sort",
+        "B. disciplines managerial failure of every kind",
+        "C. has no effect on managerial behaviour",
+        "D. benefits acquirer shareholders reliably",
+        "E. should be replaced by stronger regulation"
       ],
-      "correctAnswer": "B",
-      "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
+      "correctAnswer": "A",
+      "explanation": "The passage adds that treating it as a general substitute for governance mistakes a blunt instrument for a precise one.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-027-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
-      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "passageTitle": "Fixing the Units",
+      "passageText": "A unit of measurement must be defined by something anyone can reproduce, and the history of the metric system is a sequence of retreats from objects toward constants.\n\nThe metre began as a fraction of the Earth's meridian, which was measured by survey and turned out to have been measured slightly wrong. The definition then moved to a platinum-iridium bar in a vault near Paris, which had the advantage of being stable and the disadvantage of being a single object: any laboratory needing the metre needed a copy, copies drift, and if the bar had been damaged the unit would have been damaged with it. In 1983 the metre was redefined in terms of the distance light travels in a specified fraction of a second, which fixed the speed of light by definition and made the metre reproducible in any laboratory with a suitable clock.\n\nThe kilogram resisted longest. It remained a physical cylinder until 2019, and comparisons showed the international prototype drifting relative to its own official copies by tens of micrograms over a century — a discrepancy that was unmeasurable in absolute terms, since the prototype was the kilogram and could not by definition be wrong.\n\nThe redefinition tied the kilogram to the Planck constant through an apparatus that balances mechanical against electrical power. What the change delivers is not greater accuracy for everyday weighing, which was never in question, but the removal of a dependence on a single artefact — and the general principle that a standard resting on one object is only as durable as that object.",
+      "prompt": "According to the passage, the disadvantage of defining the metre by a metal bar was that",
       "options": [
-        "A. Passengers reported higher satisfaction with the new policy",
-        "B. Competing airlines have not adopted similar policies",
-        "C. The airline also reduced the number of carry-on bags allowed during the same period",
-        "D. Boarding time varies naturally between 15 and 35 minutes",
-        "E. The new policy was introduced on routes with larger aircraft"
+        "A. the bar was inaccurate when made",
+        "B. platinum expands unpredictably",
+        "C. the bar was inaccessible to French laboratories",
+        "D. it depended on a survey of the Earth",
+        "E. it was a single object, so copies were needed and could drift"
       ],
-      "correctAnswer": "C",
-      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "The passage also notes damage to the bar would have damaged the unit itself.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-027-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "passageTitle": "Fixing the Units",
+      "passageText": "A unit of measurement must be defined by something anyone can reproduce, and the history of the metric system is a sequence of retreats from objects toward constants.\n\nThe metre began as a fraction of the Earth's meridian, which was measured by survey and turned out to have been measured slightly wrong. The definition then moved to a platinum-iridium bar in a vault near Paris, which had the advantage of being stable and the disadvantage of being a single object: any laboratory needing the metre needed a copy, copies drift, and if the bar had been damaged the unit would have been damaged with it. In 1983 the metre was redefined in terms of the distance light travels in a specified fraction of a second, which fixed the speed of light by definition and made the metre reproducible in any laboratory with a suitable clock.\n\nThe kilogram resisted longest. It remained a physical cylinder until 2019, and comparisons showed the international prototype drifting relative to its own official copies by tens of micrograms over a century — a discrepancy that was unmeasurable in absolute terms, since the prototype was the kilogram and could not by definition be wrong.\n\nThe redefinition tied the kilogram to the Planck constant through an apparatus that balances mechanical against electrical power. What the change delivers is not greater accuracy for everyday weighing, which was never in question, but the removal of a dependence on a single artefact — and the general principle that a standard resting on one object is only as durable as that object.",
+      "prompt": "The passage indicates that the drift of the kilogram prototype relative to its copies was",
       "options": [
-        "A. Does not define what type of consulting services were provided",
-        "B. Ignores that some companies declined in revenue after hiring the firm",
-        "C. Does not specify what time period is covered by the data",
-        "D. Fails to compare the companies' growth with industry-wide growth trends",
-        "E. Compares incomparable companies across different industries"
+        "A. measurable in absolute terms",
+        "B. corrected by recalibration in 1983",
+        "C. unmeasurable in absolute terms, since the prototype was the kilogram",
+        "D. caused by contamination of the copies alone",
+        "E. larger than a gram over a century"
       ],
-      "correctAnswer": "D",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "A definition cannot be wrong against itself, which is the conceptual problem the redefinition removed.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-027-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "passageTitle": "Fixing the Units",
+      "passageText": "A unit of measurement must be defined by something anyone can reproduce, and the history of the metric system is a sequence of retreats from objects toward constants.\n\nThe metre began as a fraction of the Earth's meridian, which was measured by survey and turned out to have been measured slightly wrong. The definition then moved to a platinum-iridium bar in a vault near Paris, which had the advantage of being stable and the disadvantage of being a single object: any laboratory needing the metre needed a copy, copies drift, and if the bar had been damaged the unit would have been damaged with it. In 1983 the metre was redefined in terms of the distance light travels in a specified fraction of a second, which fixed the speed of light by definition and made the metre reproducible in any laboratory with a suitable clock.\n\nThe kilogram resisted longest. It remained a physical cylinder until 2019, and comparisons showed the international prototype drifting relative to its own official copies by tens of micrograms over a century — a discrepancy that was unmeasurable in absolute terms, since the prototype was the kilogram and could not by definition be wrong.\n\nThe redefinition tied the kilogram to the Planck constant through an apparatus that balances mechanical against electrical power. What the change delivers is not greater accuracy for everyday weighing, which was never in question, but the removal of a dependence on a single artefact — and the general principle that a standard resting on one object is only as durable as that object.",
+      "prompt": "The author says the 2019 redefinition of the kilogram delivers",
       "options": [
-        "A. Olive oil contains monounsaturated fats linked to heart health",
-        "B. Heart disease rates have been declining globally regardless of fat consumption",
-        "C. The study followed individuals for 10 years",
-        "D. Olive oil is more expensive than butter in most markets",
-        "E. Regions using olive oil also have Mediterranean diets rich in vegetables and fish"
+        "A. greater accuracy for everyday weighing",
+        "B. removal of a dependence on a single artefact",
+        "C. a simpler definition for non-specialists",
+        "D. compatibility with imperial units",
+        "E. a new prototype held in several countries"
       ],
-      "correctAnswer": "E",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Everyday weighing accuracy is described as never having been in question.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-027-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "passageTitle": "Leave and Its Effects",
+      "passageText": "Paid leave for new parents is now standard in most wealthy countries, and the research on it has become precise enough to distinguish effects that were once discussed together.\n\nShort and moderate leave — a few months — is associated with better outcomes on several measures: higher rates of breastfeeding, fewer maternal health problems, and mothers more likely to return to the employer they left, which preserves the value of the job match. Very long leave produces a different pattern. Beyond about a year, women's earnings and promotion prospects fall relative to comparable women taking less, because skills depreciate, contacts weaken, and employers form expectations about who will be absent.\n\nThat last channel is the reason the design of leave matters as much as its length. Where leave is available to either parent but taken almost entirely by mothers, the expectation attaches to women as a class, including those who take no leave at all. Countries that reserved a portion for fathers on a use-it-or-lose-it basis saw take-up by fathers rise substantially, which is the intended effect; the evidence that this has closed earnings gaps is weaker and slower to appear.\n\nThe honest position is that leave policy trades between objectives on different timescales. Time with an infant is valuable now; attachment to the labour market is valuable later; and an employer's expectations are shaped by aggregate behaviour rather than by any individual's choice. A policy can be well designed for one of these and poorly designed for the others, and most public argument treats the three as though they were one.",
+      "prompt": "According to the passage, leave beyond about a year is associated with",
       "options": [
-        "A. Doctors who proactively call patients may also be more thorough in their overall care",
-        "B. The cost of implementing mandatory calls would be prohibitive",
-        "C. Some patients do not have phones",
-        "D. Patients prefer in-person follow-up visits to phone calls",
-        "E. Phone calls are less effective than written instructions"
+        "A. higher rates of breastfeeding",
+        "B. improved job matches",
+        "C. greater take-up by fathers",
+        "D. falling earnings and promotion prospects relative to women taking less",
+        "E. fewer maternal health problems"
       ],
-      "correctAnswer": "A",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "Skill depreciation, weakened contacts and employer expectations are the mechanisms given.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-027-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "passageTitle": "Leave and Its Effects",
+      "passageText": "Paid leave for new parents is now standard in most wealthy countries, and the research on it has become precise enough to distinguish effects that were once discussed together.\n\nShort and moderate leave — a few months — is associated with better outcomes on several measures: higher rates of breastfeeding, fewer maternal health problems, and mothers more likely to return to the employer they left, which preserves the value of the job match. Very long leave produces a different pattern. Beyond about a year, women's earnings and promotion prospects fall relative to comparable women taking less, because skills depreciate, contacts weaken, and employers form expectations about who will be absent.\n\nThat last channel is the reason the design of leave matters as much as its length. Where leave is available to either parent but taken almost entirely by mothers, the expectation attaches to women as a class, including those who take no leave at all. Countries that reserved a portion for fathers on a use-it-or-lose-it basis saw take-up by fathers rise substantially, which is the intended effect; the evidence that this has closed earnings gaps is weaker and slower to appear.\n\nThe honest position is that leave policy trades between objectives on different timescales. Time with an infant is valuable now; attachment to the labour market is valuable later; and an employer's expectations are shaped by aggregate behaviour rather than by any individual's choice. A policy can be well designed for one of these and poorly designed for the others, and most public argument treats the three as though they were one.",
+      "prompt": "The passage indicates that where leave is taken almost entirely by mothers, employer expectations attach to",
       "options": [
-        "A. Drug X has minor side effects including nausea",
-        "B. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "C. The study included only 50 participants",
-        "D. Chronic pain affects millions of people worldwide",
-        "E. Drug X is expensive compared to existing treatments"
+        "A. women as a class, including those who take none",
+        "B. individual employees who have taken leave",
+        "C. parents of young children generally",
+        "D. employees in particular occupations",
+        "E. workers with long tenure"
       ],
-      "correctAnswer": "B",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "This is why the passage says design matters as much as length.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-027-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "passageTitle": "Leave and Its Effects",
+      "passageText": "Paid leave for new parents is now standard in most wealthy countries, and the research on it has become precise enough to distinguish effects that were once discussed together.\n\nShort and moderate leave — a few months — is associated with better outcomes on several measures: higher rates of breastfeeding, fewer maternal health problems, and mothers more likely to return to the employer they left, which preserves the value of the job match. Very long leave produces a different pattern. Beyond about a year, women's earnings and promotion prospects fall relative to comparable women taking less, because skills depreciate, contacts weaken, and employers form expectations about who will be absent.\n\nThat last channel is the reason the design of leave matters as much as its length. Where leave is available to either parent but taken almost entirely by mothers, the expectation attaches to women as a class, including those who take no leave at all. Countries that reserved a portion for fathers on a use-it-or-lose-it basis saw take-up by fathers rise substantially, which is the intended effect; the evidence that this has closed earnings gaps is weaker and slower to appear.\n\nThe honest position is that leave policy trades between objectives on different timescales. Time with an infant is valuable now; attachment to the labour market is valuable later; and an employer's expectations are shaped by aggregate behaviour rather than by any individual's choice. A policy can be well designed for one of these and poorly designed for the others, and most public argument treats the three as though they were one.",
+      "prompt": "According to the passage, reserving a portion of leave for fathers has",
       "options": [
-        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "B. The university's highest-achieving students attend the fitness centre most frequently",
-        "C. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "D. Exercise programmes are popular at peer universities",
-        "E. Students who exercise report feeling less stressed"
+        "A. closed earnings gaps decisively",
+        "B. reduced overall take-up of leave",
+        "C. been abandoned in most countries that tried it",
+        "D. had no measurable effect",
+        "E. raised take-up by fathers, with weaker and slower evidence on earnings gaps"
       ],
-      "correctAnswer": "C",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "The passage separates the intended and achieved effect from the further effect that is harder to demonstrate.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-027-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "According to the passage, which of the following contributes to the urban heat island effect?",
+      "passageTitle": "Ordering All Knowledge",
+      "passageText": "The great eighteenth-century encyclopedias are usually remembered for their contents. Their more consequential feature was structural: they organised knowledge alphabetically rather than by subject, and the choice was not neutral.\n\nA subject-ordered work embodies a claim about how knowledge is arranged — what belongs under what, which discipline governs which question — and readers encounter that hierarchy before they reach any fact. Alphabetical order abolishes it. Entries sit beside their neighbours by accident of spelling, and a reader can enter anywhere without accepting a scheme first. Contemporaries understood this and argued about it: the arrangement was attacked as fragmenting knowledge into disconnected pieces, and defended as freeing readers from an inherited order that was itself a doctrine.\n\nThe compilers found a compromise in cross-references, which let them reconstruct connections the alphabet had severed, and which could also be used mischievously — a reference from an orthodox article to a sceptical one made an argument that neither article stated. Some of the boldest content in these works lies in where the references point.\n\nThe device is now so ordinary that its significance is hard to see. But the modern habits of entering a body of knowledge at an arbitrary point, following a link rather than a syllabus, and assembling an understanding from fragments in an order nobody designed, all begin here — and the objection then raised, that such reading yields information without structure, is the same objection now made about the successors of these works.",
+      "prompt": "According to the passage, the consequential feature of the eighteenth-century encyclopedias was",
       "options": [
-        "A. High buildings that block wind flow",
-        "B. Reflective roofs in city centres",
-        "C. Vehicles, air conditioning, and industry releasing waste heat",
-        "D. Increased cloud cover over urban areas"
+        "A. the number of contributors they employed",
+        "B. the accuracy of their scientific articles",
+        "C. their alphabetical rather than subject-based organisation",
+        "D. their price",
+        "E. their use of illustrations"
       ],
       "correctAnswer": "C",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "explanation": "The passage argues this choice was not neutral, since subject order embodies a claim about how knowledge is arranged.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-027-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "The passage states that the greatest temperature difference between cities and rural areas occurs:",
+      "passageTitle": "Ordering All Knowledge",
+      "passageText": "The great eighteenth-century encyclopedias are usually remembered for their contents. Their more consequential feature was structural: they organised knowledge alphabetically rather than by subject, and the choice was not neutral.\n\nA subject-ordered work embodies a claim about how knowledge is arranged — what belongs under what, which discipline governs which question — and readers encounter that hierarchy before they reach any fact. Alphabetical order abolishes it. Entries sit beside their neighbours by accident of spelling, and a reader can enter anywhere without accepting a scheme first. Contemporaries understood this and argued about it: the arrangement was attacked as fragmenting knowledge into disconnected pieces, and defended as freeing readers from an inherited order that was itself a doctrine.\n\nThe compilers found a compromise in cross-references, which let them reconstruct connections the alphabet had severed, and which could also be used mischievously — a reference from an orthodox article to a sceptical one made an argument that neither article stated. Some of the boldest content in these works lies in where the references point.\n\nThe device is now so ordinary that its significance is hard to see. But the modern habits of entering a body of knowledge at an arbitrary point, following a link rather than a syllabus, and assembling an understanding from fragments in an order nobody designed, all begin here — and the objection then raised, that such reading yields information without structure, is the same objection now made about the successors of these works.",
+      "prompt": "The passage indicates that cross-references could be used mischievously because",
       "options": [
-        "A. During the hottest summer afternoons",
-        "B. During periods of high wind",
-        "C. When humidity is at its highest",
-        "D. On calm, clear nights"
+        "A. they were added by printers rather than authors",
+        "B. a reference from an orthodox article to a sceptical one made an argument neither article stated",
+        "C. they were difficult for censors to read",
+        "D. they duplicated material unnecessarily",
+        "E. they reversed the alphabetical order"
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "correctAnswer": "B",
+      "explanation": "The passage says some of the boldest content lies in where the references point.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-027-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "Which of the following, if true, would most strengthen the case for urban greening as an adaptation strategy?",
+      "passageTitle": "Ordering All Knowledge",
+      "passageText": "The great eighteenth-century encyclopedias are usually remembered for their contents. Their more consequential feature was structural: they organised knowledge alphabetically rather than by subject, and the choice was not neutral.\n\nA subject-ordered work embodies a claim about how knowledge is arranged — what belongs under what, which discipline governs which question — and readers encounter that hierarchy before they reach any fact. Alphabetical order abolishes it. Entries sit beside their neighbours by accident of spelling, and a reader can enter anywhere without accepting a scheme first. Contemporaries understood this and argued about it: the arrangement was attacked as fragmenting knowledge into disconnected pieces, and defended as freeing readers from an inherited order that was itself a doctrine.\n\nThe compilers found a compromise in cross-references, which let them reconstruct connections the alphabet had severed, and which could also be used mischievously — a reference from an orthodox article to a sceptical one made an argument that neither article stated. Some of the boldest content in these works lies in where the references point.\n\nThe device is now so ordinary that its significance is hard to see. But the modern habits of entering a body of knowledge at an arbitrary point, following a link rather than a syllabus, and assembling an understanding from fragments in an order nobody designed, all begin here — and the objection then raised, that such reading yields information without structure, is the same objection now made about the successors of these works.",
+      "prompt": "The author observes that the objection raised against alphabetical arrangement",
       "options": [
-        "A. Studies show trees can reduce local temperatures by up to 8°C through evapotranspiration",
-        "B. Trees in urban areas require significant maintenance costs",
-        "C. Cool roofs are less expensive to install than planting trees",
-        "D. Urban greening has been adopted by fewer than 20% of major cities worldwide"
+        "A. was accepted by the compilers and abandoned",
+        "B. concerned the cost of production",
+        "C. applied only to scientific subjects",
+        "D. is the same objection now made about the successors of these works",
+        "E. was raised by readers rather than scholars"
       ],
-      "correctAnswer": "A",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "correctAnswer": "D",
+      "explanation": "The objection is that such reading yields information without structure.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-027-q01": "A",
-    "gmat-verbal-027-q02": "B",
-    "gmat-verbal-027-q03": "C",
+    "gmat-verbal-027-q01": "C",
+    "gmat-verbal-027-q02": "E",
+    "gmat-verbal-027-q03": "B",
     "gmat-verbal-027-q04": "D",
-    "gmat-verbal-027-q05": "E",
-    "gmat-verbal-027-q06": "E",
-    "gmat-verbal-027-q07": "A",
-    "gmat-verbal-027-q08": "B",
-    "gmat-verbal-027-q09": "C",
-    "gmat-verbal-027-q10": "B",
-    "gmat-verbal-027-q11": "D",
-    "gmat-verbal-027-q12": "E",
-    "gmat-verbal-027-q13": "A",
-    "gmat-verbal-027-q14": "B",
-    "gmat-verbal-027-q15": "C",
-    "gmat-verbal-027-q16": "D",
-    "gmat-verbal-027-q17": "E",
-    "gmat-verbal-027-q18": "A",
-    "gmat-verbal-027-q19": "B",
-    "gmat-verbal-027-q20": "C",
+    "gmat-verbal-027-q05": "A",
+    "gmat-verbal-027-q06": "C",
+    "gmat-verbal-027-q07": "B",
+    "gmat-verbal-027-q08": "A",
+    "gmat-verbal-027-q09": "D",
+    "gmat-verbal-027-q10": "E",
+    "gmat-verbal-027-q11": "C",
+    "gmat-verbal-027-q12": "D",
+    "gmat-verbal-027-q13": "B",
+    "gmat-verbal-027-q14": "A",
+    "gmat-verbal-027-q15": "E",
+    "gmat-verbal-027-q16": "C",
+    "gmat-verbal-027-q17": "B",
+    "gmat-verbal-027-q18": "D",
+    "gmat-verbal-027-q19": "A",
+    "gmat-verbal-027-q20": "E",
     "gmat-verbal-027-q21": "C",
-    "gmat-verbal-027-q22": "D",
-    "gmat-verbal-027-q23": "A"
+    "gmat-verbal-027-q22": "B",
+    "gmat-verbal-027-q23": "D"
   },
-  "fingerprints": [
-    "e427fdbb6611fd6556",
-    "46a70d61a53a237dc4",
-    "d4a62375768cbeda33",
-    "c5dfc9bbc42b43fc2f",
-    "2d307f4d41a1255296",
-    "d21e91ce107bf5eeb8",
-    "f11924131150da6dfa",
-    "8897dc945d54e75fef",
-    "f0eeac75cb14a1cc67",
-    "69985bc8141b6707f7",
-    "1a18a9168d09d6a7a2",
-    "46d4460f12cc554679",
-    "9c532c4ebef3a480d1",
-    "f185715c72614bb0df",
-    "40e1c87e3e5fa23d59",
-    "0db2e64b4a573e5045",
-    "2fe6d085c0a9e2ada0",
-    "544cbba83d45267c7b",
-    "1911d8ec42dfdc3ed7",
-    "9c294ed5bbdb9b73db"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-027-rp1",
-      "title": "Business and Society",
-      "text": "Coral reef ecosystems face dual threats from ocean warming and acidification. Thermal bleaching events, in which elevated temperatures cause corals to expel their symbiotic algae, have become more frequent since the 1980s. Simultaneously, as ocean pH decreases due to absorbed carbon dioxide, the ability of corals to build calcium carbonate skeletons is compromised. These stressors interact in ways that researchers are still working to quantify."
+      "title": "The Market for Companies",
+      "text": "A firm whose managers perform poorly should, in theory, become cheap enough that an outsider can buy it, replace them, and profit from the improvement. This threat is supposed to discipline managers who face no other effective supervision, and the argument is coherent. Whether the mechanism works as described is a different question.\n\nSeveral things blunt it. A bidder must pay a premium over the market price, so the improvement must exceed both the premium and the cost of the bid before anything is gained. Managers can make a firm expensive to acquire through provisions that require a bidder to win a slow proxy contest, and those provisions are adopted by the very people the threat is meant to discipline. And the acquirer's own managers may be pursuing size rather than value, in which case the discipline runs in the wrong direction: a badly governed acquirer buying a badly governed target improves nothing.\n\nThe evidence is correspondingly mixed. Target shareholders reliably gain, which is not in dispute; acquirer shareholders on average gain little and often lose, which is difficult to reconcile with a mechanism that is supposed to reallocate assets to better managers. Studies of operating performance after acquisition find improvements in some samples and none in others, with the results depending heavily on how performance is measured and over what period.\n\nThe defensible summary is narrower than the theory. The threat of acquisition constrains the most extreme forms of managerial failure, particularly where a firm's assets are visibly worth more than its shares. It does not constrain the ordinary sort, and treating it as a general substitute for governance mistakes a blunt instrument for a precise one."
+    },
+    {
+      "id": "gmat-verbal-027-rp2",
+      "title": "Fixing the Units",
+      "text": "A unit of measurement must be defined by something anyone can reproduce, and the history of the metric system is a sequence of retreats from objects toward constants.\n\nThe metre began as a fraction of the Earth's meridian, which was measured by survey and turned out to have been measured slightly wrong. The definition then moved to a platinum-iridium bar in a vault near Paris, which had the advantage of being stable and the disadvantage of being a single object: any laboratory needing the metre needed a copy, copies drift, and if the bar had been damaged the unit would have been damaged with it. In 1983 the metre was redefined in terms of the distance light travels in a specified fraction of a second, which fixed the speed of light by definition and made the metre reproducible in any laboratory with a suitable clock.\n\nThe kilogram resisted longest. It remained a physical cylinder until 2019, and comparisons showed the international prototype drifting relative to its own official copies by tens of micrograms over a century — a discrepancy that was unmeasurable in absolute terms, since the prototype was the kilogram and could not by definition be wrong.\n\nThe redefinition tied the kilogram to the Planck constant through an apparatus that balances mechanical against electrical power. What the change delivers is not greater accuracy for everyday weighing, which was never in question, but the removal of a dependence on a single artefact — and the general principle that a standard resting on one object is only as durable as that object."
+    },
+    {
+      "id": "gmat-verbal-027-rp3",
+      "title": "Leave and Its Effects",
+      "text": "Paid leave for new parents is now standard in most wealthy countries, and the research on it has become precise enough to distinguish effects that were once discussed together.\n\nShort and moderate leave — a few months — is associated with better outcomes on several measures: higher rates of breastfeeding, fewer maternal health problems, and mothers more likely to return to the employer they left, which preserves the value of the job match. Very long leave produces a different pattern. Beyond about a year, women's earnings and promotion prospects fall relative to comparable women taking less, because skills depreciate, contacts weaken, and employers form expectations about who will be absent.\n\nThat last channel is the reason the design of leave matters as much as its length. Where leave is available to either parent but taken almost entirely by mothers, the expectation attaches to women as a class, including those who take no leave at all. Countries that reserved a portion for fathers on a use-it-or-lose-it basis saw take-up by fathers rise substantially, which is the intended effect; the evidence that this has closed earnings gaps is weaker and slower to appear.\n\nThe honest position is that leave policy trades between objectives on different timescales. Time with an infant is valuable now; attachment to the labour market is valuable later; and an employer's expectations are shaped by aggregate behaviour rather than by any individual's choice. A policy can be well designed for one of these and poorly designed for the others, and most public argument treats the three as though they were one."
+    },
+    {
+      "id": "gmat-verbal-027-rp4",
+      "title": "Ordering All Knowledge",
+      "text": "The great eighteenth-century encyclopedias are usually remembered for their contents. Their more consequential feature was structural: they organised knowledge alphabetically rather than by subject, and the choice was not neutral.\n\nA subject-ordered work embodies a claim about how knowledge is arranged — what belongs under what, which discipline governs which question — and readers encounter that hierarchy before they reach any fact. Alphabetical order abolishes it. Entries sit beside their neighbours by accident of spelling, and a reader can enter anywhere without accepting a scheme first. Contemporaries understood this and argued about it: the arrangement was attacked as fragmenting knowledge into disconnected pieces, and defended as freeing readers from an inherited order that was itself a doctrine.\n\nThe compilers found a compromise in cross-references, which let them reconstruct connections the alphabet had severed, and which could also be used mischievously — a reference from an orthodox article to a sceptical one made an argument that neither article stated. Some of the boldest content in these works lies in where the references point.\n\nThe device is now so ordinary that its significance is hard to see. But the modern habits of entering a body of knowledge at an arbitrary point, following a link rather than a syllabus, and assembling an understanding from fragments in an order nobody designed, all begin here — and the objection then raised, that such reading yields information without structure, is the same objection now made about the successors of these works."
     }
   ]
 }
