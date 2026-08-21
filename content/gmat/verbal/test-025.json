@@ -12,469 +12,474 @@
       "id": "gmat-verbal-025-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "prompt": "A rail freight operator introduced longer trains and reports that its cost per tonne carried has fallen. It concludes that longer trains are more economical.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Fails to compare the companies' growth with industry-wide growth trends",
-        "B. Does not define what type of consulting services were provided",
-        "C. Ignores that some companies declined in revenue after hiring the firm",
-        "D. Does not specify what time period is covered by the data",
-        "E. Compares incomparable companies across different industries"
+        "A. Longer trains require more powerful locomotives.",
+        "B. Drivers are paid per shift.",
+        "C. The operator runs fewer services than before.",
+        "D. Fuel prices fell during the period.",
+        "E. Several terminals cannot handle the longer trains, so freight for those destinations now travels by road at a cost the operator records separately."
       ],
-      "correctAnswer": "A",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "Traffic that no longer fits has been moved off the measure, so the cost per tonne describes a changed and easier set of journeys.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-025-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "prompt": "A community pharmacy began offering flu vaccination and reports that its prescription dispensing volume rose in the same period. The owner concludes that the vaccination service brings in customers who then use the pharmacy for prescriptions.",
+      "question": "Which of the following would be most useful to determine in evaluating the conclusion?",
       "options": [
-        "A. Olive oil contains monounsaturated fats linked to heart health",
-        "B. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
-        "C. Heart disease rates have been declining globally regardless of fat consumption",
-        "D. The study followed individuals for 10 years",
-        "E. Olive oil is more expensive than butter in most markets"
+        "A. How much the vaccination service charges",
+        "B. Whether dispensing volumes rose by a similar amount at nearby pharmacies not offering vaccination",
+        "C. Whether the pharmacy advertised the service",
+        "D. How many staff the pharmacy employs",
+        "E. Whether the vaccine is supplied by the health service"
       ],
       "correctAnswer": "B",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "A seasonal or area-wide rise would produce the same figure; comparable pharmacies without the service settle which it is.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-025-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "prompt": "A school canteen removed sugary drinks from sale and reports that pupils' consumption of sugary drinks at school fell to nothing. The head teacher concludes that pupils' sugar intake has fallen.",
+      "question": "The reasoning is most vulnerable to the criticism that it",
       "options": [
-        "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Some patients do not have phones",
-        "C. Doctors who proactively call patients may also be more thorough in their overall care",
-        "D. Patients prefer in-person follow-up visits to phone calls",
-        "E. Phone calls are less effective than written instructions"
+        "A. ignores the revenue the canteen has lost",
+        "B. does not specify which drinks were removed",
+        "C. relies on data from a single term",
+        "D. assumes that consumption not occurring at school does not occur elsewhere",
+        "E. overlooks pupils who bring packed lunches"
       ],
-      "correctAnswer": "C",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The measure covers one location; pupils may buy the same drinks on the way to and from school, so total intake is unestablished.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-025-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "prompt": "A car club reports that members drive fewer miles per year than the national average for car owners, and argues that joining a car club reduces driving.",
+      "question": "Which of the following, if true, most seriously undermines the argument?",
       "options": [
-        "A. Drug X has minor side effects including nausea",
-        "B. The study included only 50 participants",
-        "C. Chronic pain affects millions of people worldwide",
-        "D. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "E. Drug X is expensive compared to existing treatments"
+        "A. Car club vehicles are booked by the hour.",
+        "B. Some members also own a car.",
+        "C. People join car clubs when they already drive little, having decided that owning a car is not worth the cost.",
+        "D. Car club vehicles are newer than average.",
+        "E. The club operates in cities."
       ],
-      "correctAnswer": "D",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "The membership decision follows from low driving rather than causing it, so the comparison with owners is not informative about the club's effect.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-025-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "prompt": "Every van operated by the Redhill hedge-trimming service that carries a chipper is fitted with a tracker. No vehicle fitted with a tracker has been involved in a reported speeding offence this year. Some of the service's vans have been involved in reported speeding offences this year.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "B. The university's highest-achieving students attend the fitness centre most frequently",
-        "C. Exercise programmes are popular at peer universities",
-        "D. Students who exercise report feeling less stressed",
-        "E. Exercise has been shown to improve blood flow to the brain in laboratory studies"
+        "A. Some of the service's vans do not carry a chipper.",
+        "B. Trackers prevent speeding.",
+        "C. Most vans carry chippers.",
+        "D. Vans with chippers travel more slowly.",
+        "E. Drivers of untracked vans are less experienced."
       ],
-      "correctAnswer": "E",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "Vans with offences have no tracker, and carrying a chipper implies a tracker, so those vans carry no chipper. B asserts a causal claim the premises do not establish.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-025-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "prompt": "A textile mill installed monitoring equipment on its looms and reports that unplanned stoppages fell by a third in the following year. Management concludes that the equipment predicts faults before they occur.",
+      "question": "Which of the following, if true, most strengthens the conclusion?",
       "options": [
-        "A. Intersections chosen for cameras may have already been due for safety upgrades",
-        "B. Cameras might violate driver privacy",
-        "C. The cost of cameras is high",
-        "D. Some drivers find cameras distracting",
-        "E. Cameras only capture rear-end collisions"
+        "A. The equipment was supplied by the loom manufacturer.",
+        "B. Staff received training on the new system.",
+        "C. The mill also replaced several older looms.",
+        "D. Stoppages are recorded automatically.",
+        "E. Maintenance records show that most of the reduction came from interventions made after an alert and before any failure, on components the alerts had identified."
       ],
-      "correctAnswer": "A",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "It traces the reduction to the specific mechanism claimed. D introduces a rival explanation for the same fall.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-025-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "prompt": "An aquarium introduced a talk programme and reports that visitors who attend a talk stay longer and are more likely to donate. It plans to schedule talks continuously so that every visitor encounters one.",
+      "question": "Which of the following, if true, casts most doubt on the plan?",
       "options": [
-        "A. Labour economists disagree on the effects of minimum wage increases",
-        "B. A separate economic boom added 100,000 jobs during the same year",
-        "C. The minimum wage increase only affected 5% of workers",
-        "D. Some industries are more affected than others by wage increases",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. Talks are given by volunteers.",
+        "B. Visitors who attend talks are those who arrived intending a long visit, and continuous talks would displace the quiet viewing that other visitors come for.",
+        "C. The talks last fifteen minutes.",
+        "D. Donation boxes are placed at the exit.",
+        "E. Some visitors attend more than one talk."
       ],
       "correctAnswer": "B",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "It identifies both a selection effect and a cost the plan would impose on the visitors it does not currently serve.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-025-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "prompt": "A driving test centre reports that candidates taking their test on a weekday morning pass more often than those testing on Saturday, and advises learners to book weekday slots.",
+      "question": "Which of the following, if true, most weakens the advice?",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. Saturday slots are more expensive.",
+        "B. Test routes are the same on all days.",
+        "C. Learners who can attend on a weekday morning are disproportionately those taking intensive courses with professional instructors, while Saturday candidates are mostly those fitting lessons around work.",
+        "D. Examiners work on a rota.",
+        "E. Some candidates travel from other towns."
       ],
-      "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
+      "correctAnswer": "C",
+      "explanation": "The pass difference tracks who can attend when, so booking a weekday slot does not transfer the advantage that produced the figure.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-025-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "prompt": "A micro-brewery raised the price of its flagship beer and reports that revenue from that beer rose. The owner concludes that demand for it is insensitive to price.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Local restaurants cannot accommodate arena crowds",
-        "C. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "D. The arena's construction will not create permanent jobs",
-        "E. The city already has sufficient sports facilities"
+        "A. The brewery sells four other beers.",
+        "B. The price rise was announced in advance.",
+        "C. Production costs rose in the same period.",
+        "D. Sales volume of the flagship fell by a fifth, and much of that volume moved to the brewery's cheaper beers, whose margins are lower.",
+        "E. The beer is sold in bottles and casks."
       ],
-      "correctAnswer": "C",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
+      "correctAnswer": "D",
+      "explanation": "A fifth of volume lost is substantial sensitivity; revenue rose only because the remaining demand was inelastic enough, and the substitution cost the brewery margin elsewhere.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-025-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "prompt": "A tourist board reports that visitors who use its official guided walks rate the city more highly than visitors who do not, and proposes funding more walks in order to improve the city's reputation.",
+      "question": "The proposal assumes which of the following?",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. The ad was shown only on premium streaming services",
-        "C. The brand launched a new product line during the same period",
-        "D. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "E. Competitors also increased advertising spending during the same period"
+        "A. The rating difference reflects the walks rather than the characteristics of visitors who choose to take one.",
+        "B. Guides can be recruited at current rates of pay.",
+        "C. Visitors rate cities consistently.",
+        "D. The walks are free to attend.",
+        "E. Ratings are collected at the end of a visit."
       ],
-      "correctAnswer": "D",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
+      "correctAnswer": "A",
+      "explanation": "Visitors who book a guided walk are already disposed to engage with the city, so the proposal needs the walk itself to be doing the work.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-025-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "prompt": "Supporters of a proposal to convert a disused railway line into a footpath argue that it will bring visitors to the villages along the route. Opponents reply that walkers spend little money.",
+      "question": "Which of the following, if true, most weakens the opponents' reply?",
       "options": [
-        "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It demonstrates that road construction is always harmful",
-        "C. It suggests the first analyst has incorrect data",
-        "D. It proves that traffic will always increase regardless of policy",
-        "E. It presents empirical evidence that undermines the first analyst's prediction"
+        "A. Some walkers travel long distances to use such routes.",
+        "B. The conversion would be funded by a grant.",
+        "C. Walking is a popular activity.",
+        "D. The line passes through attractive countryside.",
+        "E. On comparable converted lines, the businesses that opened along the route - cafes, cycle hire, bed and breakfast - drew most of their trade from walkers, and village retail turnover rose measurably."
       ],
       "correctAnswer": "E",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
+      "explanation": "Evidence from comparable conversions addresses the spending claim directly, and identifies the businesses through which the spending arrives.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-025-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
-      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "passageTitle": "Buying Innovation",
+      "passageText": "Large firms with substantial research budgets routinely acquire small companies to obtain technologies they could, in principle, have developed themselves. The behaviour looks like an admission of failure and is better understood as a division of labour.\n\nThe asymmetry is in what each organisation is good at. A small company pursuing one idea can move quickly and, more importantly, can fail without consequence to anything else. A large firm allocating research funds must compare projects against each other and against established businesses, and a project threatening an existing product line faces internal opposition that has nothing to do with its merit. The result is that large firms are systematically better at improving what they already do and systematically worse at pursuing anything that would displace it.\n\nAcquisition converts this weakness into a purchasing decision. The acquirer waits until uncertainty has been partly resolved, pays a price reflecting what is then known, and applies the assets a small company lacks: distribution, manufacturing, regulatory experience, capital.\n\nThe arrangement has known failure modes. Acquirers frequently destroy what they bought by imposing processes designed for a mature business on an operation whose value lay in not having them. Buying at the point of resolved uncertainty means paying for it, so the returns are unspectacular by design. And the possibility of acquisition shapes what small companies attempt: an inventor working toward a sale to a particular buyer builds what that buyer will want, which narrows the range of things attempted in ways nobody chose and no one is positioned to observe.",
+      "prompt": "According to the passage, a large firm is systematically worse at pursuing projects that",
       "options": [
-        "A. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer.",
-        "B. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "C. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "D. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
-        "E. All birds have wings. Penguins are birds. Therefore, penguins can fly."
+        "A. require substantial capital",
+        "B. involve regulatory approval",
+        "C. would displace an existing product line",
+        "D. originate outside its research department",
+        "E. take longer than a year to complete"
       ],
-      "correctAnswer": "A",
-      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
+      "correctAnswer": "C",
+      "explanation": "Internal opposition to such projects has nothing to do with their merit, which is the asymmetry the passage builds on.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-025-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "passageTitle": "Buying Innovation",
+      "passageText": "Large firms with substantial research budgets routinely acquire small companies to obtain technologies they could, in principle, have developed themselves. The behaviour looks like an admission of failure and is better understood as a division of labour.\n\nThe asymmetry is in what each organisation is good at. A small company pursuing one idea can move quickly and, more importantly, can fail without consequence to anything else. A large firm allocating research funds must compare projects against each other and against established businesses, and a project threatening an existing product line faces internal opposition that has nothing to do with its merit. The result is that large firms are systematically better at improving what they already do and systematically worse at pursuing anything that would displace it.\n\nAcquisition converts this weakness into a purchasing decision. The acquirer waits until uncertainty has been partly resolved, pays a price reflecting what is then known, and applies the assets a small company lacks: distribution, manufacturing, regulatory experience, capital.\n\nThe arrangement has known failure modes. Acquirers frequently destroy what they bought by imposing processes designed for a mature business on an operation whose value lay in not having them. Buying at the point of resolved uncertainty means paying for it, so the returns are unspectacular by design. And the possibility of acquisition shapes what small companies attempt: an inventor working toward a sale to a particular buyer builds what that buyer will want, which narrows the range of things attempted in ways nobody chose and no one is positioned to observe.",
+      "prompt": "The passage indicates that a small company's key advantage is that it can",
       "options": [
-        "A. Improving sleep quality will increase job satisfaction for most workers",
-        "B. Job satisfaction and adequate sleep are associated in the survey population",
-        "C. Dissatisfied workers always sleep fewer than 7 hours",
-        "D. Employers should implement nap rooms to improve satisfaction",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "A. raise capital more cheaply",
+        "B. fail without consequence to anything else",
+        "C. manufacture at lower cost",
+        "D. avoid regulatory scrutiny",
+        "E. recruit more experienced staff"
       ],
       "correctAnswer": "B",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
+      "explanation": "Speed is mentioned and then subordinated: the passage says the more important feature is consequence-free failure.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-025-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "passageTitle": "Buying Innovation",
+      "passageText": "Large firms with substantial research budgets routinely acquire small companies to obtain technologies they could, in principle, have developed themselves. The behaviour looks like an admission of failure and is better understood as a division of labour.\n\nThe asymmetry is in what each organisation is good at. A small company pursuing one idea can move quickly and, more importantly, can fail without consequence to anything else. A large firm allocating research funds must compare projects against each other and against established businesses, and a project threatening an existing product line faces internal opposition that has nothing to do with its merit. The result is that large firms are systematically better at improving what they already do and systematically worse at pursuing anything that would displace it.\n\nAcquisition converts this weakness into a purchasing decision. The acquirer waits until uncertainty has been partly resolved, pays a price reflecting what is then known, and applies the assets a small company lacks: distribution, manufacturing, regulatory experience, capital.\n\nThe arrangement has known failure modes. Acquirers frequently destroy what they bought by imposing processes designed for a mature business on an operation whose value lay in not having them. Buying at the point of resolved uncertainty means paying for it, so the returns are unspectacular by design. And the possibility of acquisition shapes what small companies attempt: an inventor working toward a sale to a particular buyer builds what that buyer will want, which narrows the range of things attempted in ways nobody chose and no one is positioned to observe.",
+      "prompt": "The passage suggests that the possibility of acquisition affects what small companies attempt because",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. acquirers fund research directly",
+        "B. regulators favour independent firms",
+        "C. small firms cannot patent their work",
+        "D. an inventor working toward a sale builds what the intended buyer will want",
+        "E. acquisition prices are published"
       ],
-      "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
+      "correctAnswer": "D",
+      "explanation": "The passage calls this a narrowing that nobody chose and no one is positioned to observe.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-025-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "passageTitle": "Two Eradication Campaigns",
+      "passageText": "Smallpox was eradicated in 1980. Polio, targeted since 1988 with more money and better technology, has not been, and the comparison is instructive about what makes a disease eliminable.\n\nSmallpox had features that a campaign could exploit. Infection produced a visible rash, so cases could be found without laboratory confirmation; there was no animal reservoir; infected people were not contagious before symptoms appeared, so isolation worked; and one vaccination conferred durable protection, administered with a simple device by minimally trained staff. Together these permitted a strategy of finding each case and vaccinating around it, rather than vaccinating everyone.\n\nPolio differs on nearly every point. Most infections produce no visible illness at all, so a single paralytic case implies many undetected ones and surveillance must test sewage rather than look at people. The oral vaccine requires multiple doses and a cold chain, and in rare cases the attenuated virus in it can regain the ability to circulate, so the campaign has had to manage outbreaks caused by its own principal tool.\n\nThe remaining obstacles are not primarily technical. Transmission persists where conflict prevents access, where vaccination teams have been attacked, and where a population has reason to distrust an externally funded campaign arriving in places that lack clean water and clinics. That last problem is not solved by better vaccines, and the general lesson is that the biological properties of a pathogen set what is possible while the conditions of delivery determine what is achieved.",
+      "prompt": "According to the passage, one feature that made smallpox eradicable was that",
       "options": [
-        "A. The claim that wetlands prevent flooding",
-        "B. The conclusion that all wetlands should be protected",
-        "C. The assumption that all wetlands have equal flood-prevention value",
-        "D. The implication that flooding is always preventable",
-        "E. The premise that wetlands are worth preserving"
+        "A. infected people were not contagious before symptoms appeared",
+        "B. it had an animal reservoir",
+        "C. most infections produced no visible illness",
+        "D. the vaccine required multiple doses",
+        "E. surveillance depended on testing sewage"
       ],
-      "correctAnswer": "C",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "That property is what made isolation effective; the other options describe polio instead.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-025-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "passageTitle": "Two Eradication Campaigns",
+      "passageText": "Smallpox was eradicated in 1980. Polio, targeted since 1988 with more money and better technology, has not been, and the comparison is instructive about what makes a disease eliminable.\n\nSmallpox had features that a campaign could exploit. Infection produced a visible rash, so cases could be found without laboratory confirmation; there was no animal reservoir; infected people were not contagious before symptoms appeared, so isolation worked; and one vaccination conferred durable protection, administered with a simple device by minimally trained staff. Together these permitted a strategy of finding each case and vaccinating around it, rather than vaccinating everyone.\n\nPolio differs on nearly every point. Most infections produce no visible illness at all, so a single paralytic case implies many undetected ones and surveillance must test sewage rather than look at people. The oral vaccine requires multiple doses and a cold chain, and in rare cases the attenuated virus in it can regain the ability to circulate, so the campaign has had to manage outbreaks caused by its own principal tool.\n\nThe remaining obstacles are not primarily technical. Transmission persists where conflict prevents access, where vaccination teams have been attacked, and where a population has reason to distrust an externally funded campaign arriving in places that lack clean water and clinics. That last problem is not solved by better vaccines, and the general lesson is that the biological properties of a pathogen set what is possible while the conditions of delivery determine what is achieved.",
+      "prompt": "The passage indicates that the polio campaign has had to manage outbreaks caused by",
       "options": [
-        "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. Sales staff performed better when the music was upbeat",
-        "D. A controlled experiment with randomly assigned music found the same 20% difference",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "A. contaminated water supplies",
+        "B. importation from countries without campaigns",
+        "C. the attenuated virus in its own oral vaccine",
+        "D. failures of laboratory testing",
+        "E. an animal reservoir"
       ],
-      "correctAnswer": "D",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "In rare cases the vaccine virus regains the ability to circulate, so the principal tool is also a source of outbreaks.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-025-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
-      "question": "Which of the following most weakens the editorial's conclusion?",
+      "passageTitle": "Two Eradication Campaigns",
+      "passageText": "Smallpox was eradicated in 1980. Polio, targeted since 1988 with more money and better technology, has not been, and the comparison is instructive about what makes a disease eliminable.\n\nSmallpox had features that a campaign could exploit. Infection produced a visible rash, so cases could be found without laboratory confirmation; there was no animal reservoir; infected people were not contagious before symptoms appeared, so isolation worked; and one vaccination conferred durable protection, administered with a simple device by minimally trained staff. Together these permitted a strategy of finding each case and vaccinating around it, rather than vaccinating everyone.\n\nPolio differs on nearly every point. Most infections produce no visible illness at all, so a single paralytic case implies many undetected ones and surveillance must test sewage rather than look at people. The oral vaccine requires multiple doses and a cold chain, and in rare cases the attenuated virus in it can regain the ability to circulate, so the campaign has had to manage outbreaks caused by its own principal tool.\n\nThe remaining obstacles are not primarily technical. Transmission persists where conflict prevents access, where vaccination teams have been attacked, and where a population has reason to distrust an externally funded campaign arriving in places that lack clean water and clinics. That last problem is not solved by better vaccines, and the general lesson is that the biological properties of a pathogen set what is possible while the conditions of delivery determine what is achieved.",
+      "prompt": "The 'general lesson' the author draws is that",
       "options": [
-        "A. Employment programmes have reduced crime in some pilot cities",
-        "B. The editorial does not define 'crime' precisely",
-        "C. Reducing unemployment is expensive and politically difficult",
-        "D. Some high-unemployment areas have low crime rates due to strong community cohesion",
-        "E. Crime rates are influenced by many factors beyond unemployment"
+        "A. eradication campaigns should target only visible diseases",
+        "B. better vaccines would resolve the remaining obstacles",
+        "C. polio eradication should be abandoned",
+        "D. surveillance matters more than vaccination",
+        "E. a pathogen's biology sets what is possible while conditions of delivery determine what is achieved"
       ],
       "correctAnswer": "E",
-      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "The passage explicitly says the distrust and access problems are not solved by better vaccines.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-025-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
-      "question": "The president's argument is flawed because it:",
+      "passageTitle": "Who Bears the Risk of Old Age",
+      "passageText": "A pension promising a defined benefit — a proportion of final salary, for life — and one accumulating a defined contribution into a fund the retiree must convert into income are usually compared on generosity. The more consequential difference is who bears which risks.\n\nUnder a defined benefit, the sponsor bears investment risk, longevity risk and inflation risk, and the member bears the risk that the sponsor fails. Under a defined contribution, the member bears all three, and the sponsor's obligation ends when the contribution is paid. The shift from one to the other, which occurred across many countries within a generation, was therefore a transfer of risk to individuals, most of whom were not told this and could not have priced it if they had been.\n\nThe case for the shift was not baseless. Defined benefit promises proved more expensive than sponsors had assumed, because people lived longer and returns disappointed, and a promise that bankrupts its guarantor protects nobody. Defined benefit schemes also disadvantaged those who changed jobs frequently, which increasingly meant the young.\n\nWhat has not been resolved is the problem the shift created. An individual approaching retirement with a fund faces decisions — how much to withdraw, how long to plan for, whether to buy an annuity at whatever rate prevails that year — that are genuinely difficult, cannot be practised, and have consequences that arrive too late to correct. Collective arrangements pooling longevity risk without a corporate guarantee are the obvious middle position, and their slow adoption reflects the difficulty of establishing new institutions rather than any argument that individual management is superior.",
+      "prompt": "Under a defined contribution arrangement, according to the passage, the member bears",
       "options": [
-        "A. Ignores that SAT preparation courses can inflate scores",
-        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
-        "C. Does not consider the diversity implications of the policy",
-        "D. Fails to define 'academic performance' precisely",
-        "E. Both A and B"
+        "A. only investment risk",
+        "B. investment, longevity and inflation risk",
+        "C. no risk once contributions are paid",
+        "D. only the risk that the sponsor fails",
+        "E. longevity risk alone"
       ],
       "correctAnswer": "B",
-      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "The sponsor's obligation ends when the contribution is paid, which is the transfer the passage describes.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-025-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
-      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "passageTitle": "Who Bears the Risk of Old Age",
+      "passageText": "A pension promising a defined benefit — a proportion of final salary, for life — and one accumulating a defined contribution into a fund the retiree must convert into income are usually compared on generosity. The more consequential difference is who bears which risks.\n\nUnder a defined benefit, the sponsor bears investment risk, longevity risk and inflation risk, and the member bears the risk that the sponsor fails. Under a defined contribution, the member bears all three, and the sponsor's obligation ends when the contribution is paid. The shift from one to the other, which occurred across many countries within a generation, was therefore a transfer of risk to individuals, most of whom were not told this and could not have priced it if they had been.\n\nThe case for the shift was not baseless. Defined benefit promises proved more expensive than sponsors had assumed, because people lived longer and returns disappointed, and a promise that bankrupts its guarantor protects nobody. Defined benefit schemes also disadvantaged those who changed jobs frequently, which increasingly meant the young.\n\nWhat has not been resolved is the problem the shift created. An individual approaching retirement with a fund faces decisions — how much to withdraw, how long to plan for, whether to buy an annuity at whatever rate prevails that year — that are genuinely difficult, cannot be practised, and have consequences that arrive too late to correct. Collective arrangements pooling longevity risk without a corporate guarantee are the obvious middle position, and their slow adoption reflects the difficulty of establishing new institutions rather than any argument that individual management is superior.",
+      "prompt": "The passage acknowledges which argument in favour of the shift?",
       "options": [
-        "A. Because a coin has landed heads five times in a row, it is more likely to land tails next time",
-        "B. Investing in diversified funds reduces portfolio risk over time",
-        "C. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "D. Historical market data is unreliable because markets change structurally over time",
-        "E. Companies with consistent earnings growth tend to have stable stock prices"
+        "A. Individuals manage investments better than sponsors",
+        "B. Annuity rates have improved",
+        "C. Collective schemes are illegal in most countries",
+        "D. Defined benefit promises proved more expensive than assumed, and disadvantaged frequent job changers",
+        "E. Longevity has stopped increasing"
       ],
-      "correctAnswer": "A",
-      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The passage adds that a promise which bankrupts its guarantor protects nobody.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-025-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
-      "question": "Which of the following, if true, most seriously weakens the conclusion?",
+      "passageTitle": "Who Bears the Risk of Old Age",
+      "passageText": "A pension promising a defined benefit — a proportion of final salary, for life — and one accumulating a defined contribution into a fund the retiree must convert into income are usually compared on generosity. The more consequential difference is who bears which risks.\n\nUnder a defined benefit, the sponsor bears investment risk, longevity risk and inflation risk, and the member bears the risk that the sponsor fails. Under a defined contribution, the member bears all three, and the sponsor's obligation ends when the contribution is paid. The shift from one to the other, which occurred across many countries within a generation, was therefore a transfer of risk to individuals, most of whom were not told this and could not have priced it if they had been.\n\nThe case for the shift was not baseless. Defined benefit promises proved more expensive than sponsors had assumed, because people lived longer and returns disappointed, and a promise that bankrupts its guarantor protects nobody. Defined benefit schemes also disadvantaged those who changed jobs frequently, which increasingly meant the young.\n\nWhat has not been resolved is the problem the shift created. An individual approaching retirement with a fund faces decisions — how much to withdraw, how long to plan for, whether to buy an annuity at whatever rate prevails that year — that are genuinely difficult, cannot be practised, and have consequences that arrive too late to correct. Collective arrangements pooling longevity risk without a corporate guarantee are the obvious middle position, and their slow adoption reflects the difficulty of establishing new institutions rather than any argument that individual management is superior.",
+      "prompt": "The author attributes the slow adoption of collective arrangements to",
       "options": [
-        "A. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "B. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "C. Customers report feeling more valued when using a loyalty programme",
-        "D. Competitors without loyalty programmes have seen declining sales",
-        "E. The loyalty programme was introduced simultaneously with a store renovation"
+        "A. evidence that individual management is superior",
+        "B. opposition from retirees",
+        "C. the difficulty of establishing new institutions",
+        "D. the absence of a way to pool longevity risk",
+        "E. regulatory prohibition"
       ],
-      "correctAnswer": "B",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "The passage calls such arrangements the obvious middle position and denies that the delay reflects any argument against them.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-025-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "According to the passage, what was the dominant view of the adult brain for much of the 20th century?",
+      "passageTitle": "Composing Without Writing",
+      "passageText": "The question of how the Homeric poems were composed was transformed by fieldwork on an unrelated tradition. Researchers recording singers of long narrative songs in the Balkans in the 1930s found performers who could sustain metrical narrative for hours without a written text, and who produced a different version at each performance while insisting they sang it the same way every time.\n\nThe mechanism they described is formulaic. A singer commands a repertoire of phrases fitted to metrical positions, and larger units — arming, feasting, the arrival of a guest — that can be expanded or contracted as the occasion requires. Composition happens during performance rather than before it, and fluency comes from the system rather than from memorised text.\n\nApplied to Homer, this explained features that had been treated as flaws: repeated epithets that seemed decorative, formulas apparently chosen for metre rather than sense, inconsistencies of detail across a long poem. These are the signature of oral composition rather than the residue of clumsy editing.\n\nThe theory has been refined rather than overturned. Its stronger versions claimed that formulaic composition excluded individual artistry, which the evidence does not support: singers within a tradition differ enormously in quality, and the surviving poems are not average specimens of anything. The defensible position is that the poems were made by a method that leaves recognisable traces, that the method was shared, and that what distinguishes these particular poems from the tradition producing them is a question the theory was never designed to answer and cannot settle.",
+      "prompt": "The Balkan singers described in the passage produced",
       "options": [
-        "A. The brain continuously forms new neural connections throughout adulthood",
-        "B. Brain structure is largely fixed after early childhood",
-        "C. Neuroplasticity is highest in adults recovering from injury",
-        "D. Learning a new skill has no measurable effect on brain structure"
+        "A. a different version at each performance while insisting they sang it the same way",
+        "B. identical performances each time, as they claimed",
+        "C. written texts that were later memorised",
+        "D. songs of only a few minutes' duration",
+        "E. narratives composed entirely in advance"
       ],
-      "correctAnswer": "B",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "correctAnswer": "A",
+      "explanation": "The discrepancy between practice and self-description is part of what the fieldwork established.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-025-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "The passage mentions stroke recovery primarily to:",
+      "passageTitle": "Composing Without Writing",
+      "passageText": "The question of how the Homeric poems were composed was transformed by fieldwork on an unrelated tradition. Researchers recording singers of long narrative songs in the Balkans in the 1930s found performers who could sustain metrical narrative for hours without a written text, and who produced a different version at each performance while insisting they sang it the same way every time.\n\nThe mechanism they described is formulaic. A singer commands a repertoire of phrases fitted to metrical positions, and larger units — arming, feasting, the arrival of a guest — that can be expanded or contracted as the occasion requires. Composition happens during performance rather than before it, and fluency comes from the system rather than from memorised text.\n\nApplied to Homer, this explained features that had been treated as flaws: repeated epithets that seemed decorative, formulas apparently chosen for metre rather than sense, inconsistencies of detail across a long poem. These are the signature of oral composition rather than the residue of clumsy editing.\n\nThe theory has been refined rather than overturned. Its stronger versions claimed that formulaic composition excluded individual artistry, which the evidence does not support: singers within a tradition differ enormously in quality, and the surviving poems are not average specimens of anything. The defensible position is that the poems were made by a method that leaves recognisable traces, that the method was shared, and that what distinguishes these particular poems from the tradition producing them is a question the theory was never designed to answer and cannot settle.",
+      "prompt": "According to the passage, features once treated as flaws in Homer are better understood as",
       "options": [
-        "A. Illustrate how neuroplasticity was first discovered",
-        "B. Show that not all brain damage is permanent",
-        "C. Provide evidence that the adult brain can undergo structural reorganisation",
-        "D. Argue that stroke patients have greater neuroplasticity than healthy adults"
+        "A. evidence of multiple authorship",
+        "B. the result of later editing",
+        "C. translation errors",
+        "D. regional variations in dialect",
+        "E. the signature of oral composition"
       ],
-      "correctAnswer": "C",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "correctAnswer": "E",
+      "explanation": "Repeated epithets, metrically convenient formulas and inconsistencies of detail are the examples given.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-025-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "Which of the following can be most reasonably inferred from the passage?",
+      "passageTitle": "Composing Without Writing",
+      "passageText": "The question of how the Homeric poems were composed was transformed by fieldwork on an unrelated tradition. Researchers recording singers of long narrative songs in the Balkans in the 1930s found performers who could sustain metrical narrative for hours without a written text, and who produced a different version at each performance while insisting they sang it the same way every time.\n\nThe mechanism they described is formulaic. A singer commands a repertoire of phrases fitted to metrical positions, and larger units — arming, feasting, the arrival of a guest — that can be expanded or contracted as the occasion requires. Composition happens during performance rather than before it, and fluency comes from the system rather than from memorised text.\n\nApplied to Homer, this explained features that had been treated as flaws: repeated epithets that seemed decorative, formulas apparently chosen for metre rather than sense, inconsistencies of detail across a long poem. These are the signature of oral composition rather than the residue of clumsy editing.\n\nThe theory has been refined rather than overturned. Its stronger versions claimed that formulaic composition excluded individual artistry, which the evidence does not support: singers within a tradition differ enormously in quality, and the surviving poems are not average specimens of anything. The defensible position is that the poems were made by a method that leaves recognisable traces, that the method was shared, and that what distinguishes these particular poems from the tradition producing them is a question the theory was never designed to answer and cannot settle.",
+      "prompt": "The author's 'defensible position' holds that the theory",
       "options": [
-        "A. Neuroplasticity is greater in young children than in adults",
-        "B. Stroke recovery proves that any brain damage is reversible",
-        "C. Neuroplasticity research began only in the 1990s",
-        "D. Adults who learn new skills may have measurably different brain structure from those who do not"
+        "A. proves the poems had no individual author",
+        "B. cannot settle what distinguishes these poems from the tradition that produced them",
+        "C. has been overturned by later fieldwork",
+        "D. applies only to the Balkan tradition",
+        "E. shows that all oral poems are of similar quality"
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "correctAnswer": "B",
+      "explanation": "The passage rejects the stronger claim that formulaic composition excludes artistry, noting singers differ enormously in quality.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-025-q01": "A",
+    "gmat-verbal-025-q01": "E",
     "gmat-verbal-025-q02": "B",
-    "gmat-verbal-025-q03": "C",
-    "gmat-verbal-025-q04": "D",
-    "gmat-verbal-025-q05": "E",
-    "gmat-verbal-025-q06": "A",
+    "gmat-verbal-025-q03": "D",
+    "gmat-verbal-025-q04": "C",
+    "gmat-verbal-025-q05": "A",
+    "gmat-verbal-025-q06": "E",
     "gmat-verbal-025-q07": "B",
-    "gmat-verbal-025-q08": "E",
-    "gmat-verbal-025-q09": "C",
-    "gmat-verbal-025-q10": "D",
+    "gmat-verbal-025-q08": "C",
+    "gmat-verbal-025-q09": "D",
+    "gmat-verbal-025-q10": "A",
     "gmat-verbal-025-q11": "E",
-    "gmat-verbal-025-q12": "A",
+    "gmat-verbal-025-q12": "C",
     "gmat-verbal-025-q13": "B",
-    "gmat-verbal-025-q14": "E",
-    "gmat-verbal-025-q15": "C",
-    "gmat-verbal-025-q16": "D",
+    "gmat-verbal-025-q14": "D",
+    "gmat-verbal-025-q15": "A",
+    "gmat-verbal-025-q16": "C",
     "gmat-verbal-025-q17": "E",
     "gmat-verbal-025-q18": "B",
-    "gmat-verbal-025-q19": "A",
-    "gmat-verbal-025-q20": "B",
-    "gmat-verbal-025-q21": "B",
-    "gmat-verbal-025-q22": "C",
-    "gmat-verbal-025-q23": "D"
+    "gmat-verbal-025-q19": "D",
+    "gmat-verbal-025-q20": "C",
+    "gmat-verbal-025-q21": "A",
+    "gmat-verbal-025-q22": "E",
+    "gmat-verbal-025-q23": "B"
   },
-  "fingerprints": [
-    "700345f7985d4f3966",
-    "3b6f37a0d8138aa387",
-    "4bb9feb3b7359c28df",
-    "b7d3fc0e013ae73dd0",
-    "42aefe93b50d7b1cc6",
-    "c75d327494618729bc",
-    "d7a7bf0c771dcf0d8c",
-    "91668d67ebec219a1b",
-    "45fd1ab2de47f6b7b0",
-    "0f268ae8d4af1744a1",
-    "ceb80759d044d4cd51",
-    "51625894ce8f19b9c5",
-    "1d7cc895b3ba2ef9f2",
-    "a7576b7197212279f2",
-    "cb0f6451b9e109a3ab",
-    "d1caed96728c18919c",
-    "ca699005af05556611",
-    "d8f728044b3e7eb901",
-    "ae00531430a3a9869a",
-    "da6c9664f59f5854b5"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-025-rp1",
-      "title": "Business and Society",
-      "text": "Researchers studying organisational behaviour have found that teams with diverse cognitive styles outperform homogeneous teams on complex problem-solving tasks. However, this benefit is not automatic — diverse teams require skilled facilitation to avoid miscommunication and conflict. When managed effectively, the creative tension between different thinking styles produces more innovative solutions than teams where all members approach problems similarly."
+      "title": "Buying Innovation",
+      "text": "Large firms with substantial research budgets routinely acquire small companies to obtain technologies they could, in principle, have developed themselves. The behaviour looks like an admission of failure and is better understood as a division of labour.\n\nThe asymmetry is in what each organisation is good at. A small company pursuing one idea can move quickly and, more importantly, can fail without consequence to anything else. A large firm allocating research funds must compare projects against each other and against established businesses, and a project threatening an existing product line faces internal opposition that has nothing to do with its merit. The result is that large firms are systematically better at improving what they already do and systematically worse at pursuing anything that would displace it.\n\nAcquisition converts this weakness into a purchasing decision. The acquirer waits until uncertainty has been partly resolved, pays a price reflecting what is then known, and applies the assets a small company lacks: distribution, manufacturing, regulatory experience, capital.\n\nThe arrangement has known failure modes. Acquirers frequently destroy what they bought by imposing processes designed for a mature business on an operation whose value lay in not having them. Buying at the point of resolved uncertainty means paying for it, so the returns are unspectacular by design. And the possibility of acquisition shapes what small companies attempt: an inventor working toward a sale to a particular buyer builds what that buyer will want, which narrows the range of things attempted in ways nobody chose and no one is positioned to observe."
+    },
+    {
+      "id": "gmat-verbal-025-rp2",
+      "title": "Two Eradication Campaigns",
+      "text": "Smallpox was eradicated in 1980. Polio, targeted since 1988 with more money and better technology, has not been, and the comparison is instructive about what makes a disease eliminable.\n\nSmallpox had features that a campaign could exploit. Infection produced a visible rash, so cases could be found without laboratory confirmation; there was no animal reservoir; infected people were not contagious before symptoms appeared, so isolation worked; and one vaccination conferred durable protection, administered with a simple device by minimally trained staff. Together these permitted a strategy of finding each case and vaccinating around it, rather than vaccinating everyone.\n\nPolio differs on nearly every point. Most infections produce no visible illness at all, so a single paralytic case implies many undetected ones and surveillance must test sewage rather than look at people. The oral vaccine requires multiple doses and a cold chain, and in rare cases the attenuated virus in it can regain the ability to circulate, so the campaign has had to manage outbreaks caused by its own principal tool.\n\nThe remaining obstacles are not primarily technical. Transmission persists where conflict prevents access, where vaccination teams have been attacked, and where a population has reason to distrust an externally funded campaign arriving in places that lack clean water and clinics. That last problem is not solved by better vaccines, and the general lesson is that the biological properties of a pathogen set what is possible while the conditions of delivery determine what is achieved."
+    },
+    {
+      "id": "gmat-verbal-025-rp3",
+      "title": "Who Bears the Risk of Old Age",
+      "text": "A pension promising a defined benefit — a proportion of final salary, for life — and one accumulating a defined contribution into a fund the retiree must convert into income are usually compared on generosity. The more consequential difference is who bears which risks.\n\nUnder a defined benefit, the sponsor bears investment risk, longevity risk and inflation risk, and the member bears the risk that the sponsor fails. Under a defined contribution, the member bears all three, and the sponsor's obligation ends when the contribution is paid. The shift from one to the other, which occurred across many countries within a generation, was therefore a transfer of risk to individuals, most of whom were not told this and could not have priced it if they had been.\n\nThe case for the shift was not baseless. Defined benefit promises proved more expensive than sponsors had assumed, because people lived longer and returns disappointed, and a promise that bankrupts its guarantor protects nobody. Defined benefit schemes also disadvantaged those who changed jobs frequently, which increasingly meant the young.\n\nWhat has not been resolved is the problem the shift created. An individual approaching retirement with a fund faces decisions — how much to withdraw, how long to plan for, whether to buy an annuity at whatever rate prevails that year — that are genuinely difficult, cannot be practised, and have consequences that arrive too late to correct. Collective arrangements pooling longevity risk without a corporate guarantee are the obvious middle position, and their slow adoption reflects the difficulty of establishing new institutions rather than any argument that individual management is superior."
+    },
+    {
+      "id": "gmat-verbal-025-rp4",
+      "title": "Composing Without Writing",
+      "text": "The question of how the Homeric poems were composed was transformed by fieldwork on an unrelated tradition. Researchers recording singers of long narrative songs in the Balkans in the 1930s found performers who could sustain metrical narrative for hours without a written text, and who produced a different version at each performance while insisting they sang it the same way every time.\n\nThe mechanism they described is formulaic. A singer commands a repertoire of phrases fitted to metrical positions, and larger units — arming, feasting, the arrival of a guest — that can be expanded or contracted as the occasion requires. Composition happens during performance rather than before it, and fluency comes from the system rather than from memorised text.\n\nApplied to Homer, this explained features that had been treated as flaws: repeated epithets that seemed decorative, formulas apparently chosen for metre rather than sense, inconsistencies of detail across a long poem. These are the signature of oral composition rather than the residue of clumsy editing.\n\nThe theory has been refined rather than overturned. Its stronger versions claimed that formulaic composition excluded individual artistry, which the evidence does not support: singers within a tradition differ enormously in quality, and the surviving poems are not average specimens of anything. The defensible position is that the poems were made by a method that leaves recognisable traces, that the method was shared, and that what distinguishes these particular poems from the tradition producing them is a question the theory was never designed to answer and cannot settle."
     }
   ]
 }
