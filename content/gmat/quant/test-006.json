@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "prompt": "A tank holds 960 litres. A quarter is drawn off, then a third of what remains. How much is left?",
       "options": [
-        "30",
-        "36",
-        "60",
-        "24",
-        "28"
+        "480 litres",
+        "400 litres",
+        "600 litres",
+        "540 litres",
+        "320 litres"
       ],
-      "correctAnswer": "30",
+      "correctAnswer": "480 litres",
       "answer": "A",
-      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "explanation": "After the first draw 720 litres remain; removing a third of that leaves 480. Subtracting the fractions of the original gives 400, which applies the second fraction to the wrong quantity.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "prompt": "A lorry travelling at 60 km/h has a 24 km head start. A van sets off along the same road at 78 km/h. How long before the van catches the lorry?",
       "options": [
-        "144",
-        "154",
-        "168",
-        "176",
-        "132"
+        "0.3 hours",
+        "0.4 hours",
+        "2.0 hours",
+        "1.3 hours",
+        "1.0 hours"
       ],
-      "correctAnswer": "154",
-      "answer": "B",
-      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "correctAnswer": "1.3 hours",
+      "answer": "D",
+      "explanation": "The van gains 18 km every hour, so it closes the 24 km gap in 24/18 = 1.3 hours. Dividing by the van's own speed ignores that the lorry keeps moving.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "prompt": "An account earned £1,449.00 in simple interest over 3.5 years at 4.6% a year. What was the principal?",
       "options": [
-        "16 litres",
-        "18 litres",
-        "20 litres",
-        "22 litres",
-        "24 litres"
+        "£31,500.00",
+        "£8,000.00",
+        "£9,000.00",
+        "£10,000.00",
+        "£7,500.00"
       ],
-      "correctAnswer": "20 litres",
+      "correctAnswer": "£9,000.00",
       "answer": "C",
-      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "explanation": "Interest is principal × rate × years, so the principal is £1,449.00 / (0.046 × 3.5) = £9,000.00. Omitting the years gives £31,500.00.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 5! (5 factorial)?",
+      "prompt": "Eight readings are 7, 11, 11, 14, 19, 19, 19, 31. What is the difference between the mode and the range?",
       "options": [
-        "720",
-        "60",
-        "100",
-        "120",
-        "150"
+        "19",
+        "24",
+        "12",
+        "8",
+        "5"
       ],
-      "correctAnswer": "120",
-      "answer": "D",
-      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "correctAnswer": "5",
+      "answer": "E",
+      "explanation": "The mode is the most frequent value, 19; the range is 31 − 7 = 24. The difference is 5. Reporting the mode or the range alone is the trap.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
+      "prompt": "A trapezium has parallel sides of 12 cm and 18 cm, 7 cm apart. What is its area?",
       "options": [
-        "48",
-        "12",
-        "16",
-        "20",
-        "24"
+        "216 sq cm",
+        "105 sq cm",
+        "126 sq cm",
+        "84 sq cm",
+        "210 sq cm"
       ],
-      "correctAnswer": "24",
-      "answer": "E",
-      "explanation": "Multiples of 8: 8, 16, 24 … 24 is divisible by 4 and 6, so LCM = 24.",
+      "correctAnswer": "105 sq cm",
+      "answer": "B",
+      "explanation": "Area is the mean of the parallel sides times the distance between them: (12 + 18)/2 × 7 = 105 square centimetres.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
+      "prompt": "A floor measuring 372 cm by 300 cm is to be covered exactly by identical square tiles, as large as possible. How many tiles are needed?",
       "options": [
         "12",
-        "18",
-        "24",
-        "6",
-        "8"
+        "50",
+        "31",
+        "775",
+        "25"
       ],
-      "correctAnswer": "12",
-      "answer": "A",
-      "explanation": "24 = 12 × 2, 36 = 12 × 3. The largest common factor is 12.",
+      "correctAnswer": "775",
+      "answer": "D",
+      "explanation": "The largest square that divides both sides is the highest common factor of 372 and 300, which is 12 cm. The floor takes 31 × 25 = 775 tiles.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Three-quarters of a number is 60. What is the number?",
+      "prompt": "Of 45 customers who bought a printer, 18 also bought ink. What percentage of printer buyers bought ink?",
       "options": [
-        "75",
-        "80",
-        "85",
-        "90",
-        "70"
+        "18%",
+        "40%",
+        "45%",
+        "25%",
+        "60%"
       ],
-      "correctAnswer": "80",
+      "correctAnswer": "40%",
       "answer": "B",
-      "explanation": "(3/4)x = 60 → x = 60 × 4 ÷ 3 = 80.",
+      "explanation": "18 out of 45 is 40%. The figures 18 and 45 are counts, not percentages, and dividing the wrong way round gives 250%.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
+      "prompt": "An item was sold for £391.00 at a loss of 15% on its cost. What was the cost?",
       "options": [
-        "8 : 5",
-        "2 : 5",
-        "8 : 15",
-        "6 : 5",
-        "3 : 5"
+        "£460.00",
+        "£449.65",
+        "£450.00",
+        "£475.00",
+        "£420.00"
       ],
-      "correctAnswer": "8 : 15",
-      "answer": "C",
-      "explanation": "Make b common: a:b = 8:12, b:c = 12:15. So a:c = 8:15.",
+      "correctAnswer": "£460.00",
+      "answer": "A",
+      "explanation": "The sale price is 85% of cost, so the cost is £391.00 / 0.85 = £460.00. Adding 15% to the sale price gives £449.65, applying the percentage to the wrong base.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
+      "prompt": "Tea costing £4.20 a kilogram is blended with tea costing £7.40 a kilogram to give a blend worth £5.00 a kilogram. In what ratio are they mixed?",
       "options": [
-        "9",
-        "12",
-        "18",
-        "24",
-        "36"
+        "2 : 1",
+        "1 : 3",
+        "3 : 1",
+        "5 : 2",
+        "1 : 1"
       ],
-      "correctAnswer": "24",
-      "answer": "D",
-      "explanation": "Volume = length × width × height = 2 × 3 × 4 = 24.",
+      "correctAnswer": "3 : 1",
+      "answer": "C",
+      "explanation": "The cheaper tea is £0.80 below the blend price and the dearer is £2.40 above it. The quantities are in inverse proportion to those gaps: 2.4 : 0.8, or 3 : 1.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
+      "prompt": "A sequence starts at 5 and increases by 7 each term. Which term equals 152?",
       "options": [
-        "640",
-        "720",
-        "480",
-        "540",
-        "600"
+        "the 23th",
+        "the 21st",
+        "the 20th",
+        "the 24th",
+        "the 22th"
       ],
-      "correctAnswer": "600",
+      "correctAnswer": "the 22th",
       "answer": "E",
-      "explanation": "0.20 × total = 120 → total = 120 ÷ 0.20 = 600.",
+      "explanation": "Solve 5 + (k − 1) × 7 = 152: (k − 1) = 21, so k = 22. Forgetting the offset gives 21.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A traveller drives to a town at 60 mph and returns along the same road at 40 mph. What is the average speed for the round trip?",
+      "prompt": "9 workers complete a job in 20 days. At the same rate, how long would 12 workers take?",
       "options": [
-        "48 mph",
-        "50 mph",
-        "52 mph",
-        "55 mph",
-        "45 mph"
+        "27 days",
+        "18 days",
+        "12 days",
+        "15 days",
+        "10 days"
       ],
-      "correctAnswer": "48 mph",
-      "answer": "A",
-      "explanation": "Round-trip average = 2·v₁·v₂ ÷ (v₁+v₂) = 2 × 60 × 40 ÷ 100 = 4800 ÷ 100 = 48 mph.",
+      "correctAnswer": "15 days",
+      "answer": "D",
+      "explanation": "The job is 180 worker-days, so 12 workers take 180/12 = 15 days. Scaling the wrong way gives 27 days, which is longer despite more workers.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the simple interest on $2,000 at 5% per year for 3 years?",
+      "prompt": "A cost was estimated at £3,910.00 but turned out to be £3,400.00. By what percentage did the estimate exceed the actual cost?",
       "options": [
-        "$250",
-        "$300",
-        "$350",
-        "$400",
-        "$200"
+        "13%",
+        "12%",
+        "15%",
+        "20%",
+        "17%"
       ],
-      "correctAnswer": "$300",
-      "answer": "B",
-      "explanation": "SI = P × r × t = 2000 × 0.05 × 3 = 300.",
+      "correctAnswer": "15%",
+      "answer": "C",
+      "explanation": "The excess is £510.00, which as a percentage of the actual cost is 15%. Dividing by the estimate instead gives 13%.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 5 identical pens cost $20, how much do 8 of the same pens cost?",
+      "prompt": "A jar costs £2.30, or three for £5.85. How much is saved by buying three in the offer rather than singly?",
       "options": [
-        "$28",
-        "$30",
-        "$32",
-        "$36",
-        "$40"
+        "£1.05",
+        "£0.35",
+        "£1.50",
+        "£2.10",
+        "£0.75"
       ],
-      "correctAnswer": "$32",
-      "answer": "C",
-      "explanation": "Unit price = 20 ÷ 5 = $4. 8 pens = 8 × 4 = $32.",
+      "correctAnswer": "£1.05",
+      "answer": "A",
+      "explanation": "Three singly cost £6.90; the offer costs £5.85. The saving is £1.05. The per-jar saving is £0.35, which is the distractor.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A tank is 3/5 full. Adding 20 litres makes it 4/5 full. What is the tank's total capacity?",
+      "prompt": "Ten scores have a mean of 63. A score of 41 is replaced by one of 81. What is the new mean?",
       "options": [
-        "120 litres",
-        "80 litres",
-        "90 litres",
-        "100 litres",
-        "110 litres"
+        "103",
+        "67",
+        "68",
+        "69",
+        "64"
       ],
-      "correctAnswer": "100 litres",
-      "answer": "D",
-      "explanation": "4/5 − 3/5 = 1/5 of capacity = 20 litres → capacity = 20 × 5 = 100 litres.",
+      "correctAnswer": "67",
+      "answer": "B",
+      "explanation": "The total rises by 81 − 41 = 40, so the mean rises by 4: from 63 to 67. Adding the whole difference to the mean gives 103.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of √144 + √81?",
+      "prompt": "What is the size of each interior angle of a regular twelve-sided polygon?",
       "options": [
-        "25",
-        "15",
-        "18",
-        "20",
-        "21"
+        "30 degrees",
+        "144 degrees",
+        "160 degrees",
+        "135 degrees",
+        "150 degrees"
       ],
-      "correctAnswer": "21",
+      "correctAnswer": "150 degrees",
       "answer": "E",
-      "explanation": "√144 = 12 and √81 = 9. 12 + 9 = 21.",
+      "explanation": "The interior angles total (12 − 2) × 180 = 1800 degrees, so each is 150 degrees. The exterior angle is 30 degrees.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
+      "prompt": "A recipe for six people uses 450 g of flour. How much is needed for fifteen people?",
       "options": [
-        "$21.50",
-        "$19.25",
-        "$20.00",
-        "$14.00",
-        "$18.50"
+        "675 g",
+        "900 g",
+        "1,350 g",
+        "1,125 g",
+        "750 g"
       ],
-      "correctAnswer": "$21.50",
-      "answer": "A",
-      "explanation": "Notebooks: 4 × $3.50 = $14.00. Pens: 6 × $1.25 = $7.50. Total = $14.00 + $7.50 = $21.50.",
+      "correctAnswer": "1,125 g",
+      "answer": "D",
+      "explanation": "Per person the recipe uses 75 g, so fifteen people need 1,125 g.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
+      "prompt": "Successive discounts of 20% and 15% are applied to a price. What single discount is equivalent?",
       "options": [
-        "58 mph",
-        "60 mph",
-        "65 mph",
-        "70 mph",
-        "55 mph"
+        "32%",
+        "35%",
+        "30%",
+        "33%",
+        "34%"
       ],
-      "correctAnswer": "60 mph",
-      "answer": "B",
-      "explanation": "Total distance = 240 + 180 = 420 miles. Total time = 4 + 3 = 7 hours. Average = 420 ÷ 7 = 60 mph.",
+      "correctAnswer": "32%",
+      "answer": "A",
+      "explanation": "The price is multiplied by 0.80 × 0.85 = 0.68, a reduction of 32%. Adding the discounts gives 35%, which double counts the overlap.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 40% of a number is 64, what is 75% of that number?",
+      "prompt": "A car can travel 480 km on a full tank. Starting with a full tank, how many refuelling stops are needed for a journey of 1,750 km?",
       "options": [
-        "100",
-        "108",
-        "120",
-        "128",
-        "96"
+        "4 stops",
+        "2 stops",
+        "3 stops",
+        "5 stops",
+        "6 stops"
       ],
-      "correctAnswer": "120",
+      "correctAnswer": "3 stops",
       "answer": "C",
-      "explanation": "0.40x = 64 → x = 160. 75% of 160 = 0.75 × 160 = 120.",
+      "explanation": "The car covers 480 km, then 960, then 1,440 km after two stops, and 1,920 km after three — enough for 1,750 km. So 3 stops are needed, one fewer than the number of tanks used.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
+      "prompt": "At what number of years does a sum double under simple interest at 8% a year?",
       "options": [
-        "3 hours",
-        "12 hours",
-        "15 hours",
-        "18 hours",
-        "21 hours"
+        "9.0 years",
+        "12.5 years",
+        "8.0 years",
+        "10.0 years",
+        "14.0 years"
       ],
-      "correctAnswer": "18 hours",
-      "answer": "D",
-      "explanation": "Net rate = 1/6 − 1/9 = 3/18 − 2/18 = 1/18 tank per hour. Time = 18 hours.",
+      "correctAnswer": "12.5 years",
+      "answer": "B",
+      "explanation": "Simple interest adds 8% of the original each year, so doubling needs 100/8 = 12.5 years. Under compound interest it would take about 9 years, which is the distractor.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
+      "prompt": "Six pumps empty a tank in 14 hours. How long would 21 pumps of the same type take?",
       "options": [
-        "$190",
-        "$200",
-        "$210",
-        "$170",
-        "$180"
+        "49 hours",
+        "5 hours",
+        "3 hours",
+        "6 hours",
+        "4 hours"
       ],
-      "correctAnswer": "$180",
+      "correctAnswer": "4 hours",
       "answer": "E",
-      "explanation": "200 × 1.20 = 240; 240 × 0.75 = 180. (Net factor 1.2 × 0.75 = 0.9, a 10% drop.)",
+      "explanation": "The work is 84 pump-hours, so 21 pumps take 84/21 = 4 hours. More pumps must mean less time, so any answer above 14 hours is wrong.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
+      "prompt": "In how many distinct orders can the letters of a six-letter word be arranged if exactly two of the letters are identical and the rest are different?",
       "options": [
-        "$210",
-        "$220",
-        "$240",
-        "$260",
-        "$200"
+        "720",
+        "180",
+        "360",
+        "120",
+        "240"
       ],
-      "correctAnswer": "$210",
-      "answer": "A",
-      "explanation": "Amount = 1000 × 1.10² = 1000 × 1.21 = 1210. Interest = 1210 − 1000 = 210.",
+      "correctAnswer": "360",
+      "answer": "C",
+      "explanation": "Six distinct letters would give 720 orders, but swapping the two identical letters produces no new arrangement, so divide by 2: 360.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-006-q001": "30",
-    "gmat-quant-006-q002": "154",
-    "gmat-quant-006-q003": "20 litres",
-    "gmat-quant-006-q004": "120",
-    "gmat-quant-006-q005": "24",
-    "gmat-quant-006-q006": "12",
-    "gmat-quant-006-q007": "80",
-    "gmat-quant-006-q008": "8 : 15",
-    "gmat-quant-006-q009": "24",
-    "gmat-quant-006-q010": "600",
-    "gmat-quant-006-q011": "48 mph",
-    "gmat-quant-006-q012": "$300",
-    "gmat-quant-006-q013": "$32",
-    "gmat-quant-006-q014": "100 litres",
-    "gmat-quant-006-q015": "21",
-    "gmat-quant-006-q016": "$21.50",
-    "gmat-quant-006-q017": "60 mph",
-    "gmat-quant-006-q018": "120",
-    "gmat-quant-006-q019": "18 hours",
-    "gmat-quant-006-q020": "$180",
-    "gmat-quant-006-q021": "$210"
+    "gmat-quant-006-q001": "480 litres",
+    "gmat-quant-006-q002": "1.3 hours",
+    "gmat-quant-006-q003": "£9,000.00",
+    "gmat-quant-006-q004": "5",
+    "gmat-quant-006-q005": "105 sq cm",
+    "gmat-quant-006-q006": "775",
+    "gmat-quant-006-q007": "40%",
+    "gmat-quant-006-q008": "£460.00",
+    "gmat-quant-006-q009": "3 : 1",
+    "gmat-quant-006-q010": "the 22th",
+    "gmat-quant-006-q011": "15 days",
+    "gmat-quant-006-q012": "15%",
+    "gmat-quant-006-q013": "£1.05",
+    "gmat-quant-006-q014": "67",
+    "gmat-quant-006-q015": "150 degrees",
+    "gmat-quant-006-q016": "1,125 g",
+    "gmat-quant-006-q017": "32%",
+    "gmat-quant-006-q018": "3 stops",
+    "gmat-quant-006-q019": "12.5 years",
+    "gmat-quant-006-q020": "4 hours",
+    "gmat-quant-006-q021": "360"
   }
 }
