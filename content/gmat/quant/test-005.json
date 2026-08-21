@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
+      "prompt": "A jacket was bought for £315.00 in a sale offering 28% off. What was the price before the sale?",
       "options": [
-        "$180",
-        "$190",
-        "$200",
-        "$210",
-        "$170"
+        "£403.20",
+        "£420.00",
+        "£437.50",
+        "£450.00",
+        "£410.00"
       ],
-      "correctAnswer": "$180",
-      "answer": "A",
-      "explanation": "200 × 1.20 = 240; 240 × 0.75 = 180. (Net factor 1.2 × 0.75 = 0.9, a 10% drop.)",
+      "correctAnswer": "£437.50",
+      "answer": "C",
+      "explanation": "The sale price is 72% of the original, so the original is £315.00 / 0.72 = £437.50. Adding 28% to the sale price gives £403.20, which applies the percentage to the wrong base.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
+      "prompt": "91 items are shared in the ratio 2 : 3 : 8. How many more items does the largest share receive than the smallest?",
       "options": [
-        "$200",
-        "$210",
-        "$220",
-        "$240",
-        "$260"
+        "14",
+        "56",
+        "49",
+        "35",
+        "42"
       ],
-      "correctAnswer": "$210",
-      "answer": "B",
-      "explanation": "Amount = 1000 × 1.10² = 1000 × 1.21 = 1210. Interest = 1210 − 1000 = 210.",
+      "correctAnswer": "42",
+      "answer": "E",
+      "explanation": "The ratio has 13 parts, so one part is 91 / 13 = 7. The largest share is 56 and the smallest 14, a difference of 42.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
+      "prompt": "A cyclist covers 60 km at 30 km/h and a further 60 km at 20 km/h. What is the average speed for the whole ride?",
       "options": [
-        "20",
-        "12",
-        "15",
-        "16",
-        "18"
+        "25 km/h",
+        "24 km/h",
+        "22 km/h",
+        "26 km/h",
+        "28 km/h"
       ],
-      "correctAnswer": "15",
-      "answer": "C",
-      "explanation": "Sum of 5 = 5 × 20 = 100. Remove 40 → 60 left over 4 numbers. Average = 60 ÷ 4 = 15.",
+      "correctAnswer": "24 km/h",
+      "answer": "B",
+      "explanation": "Time is 2 + 3 = 5 hours for 120 km, giving 24 km/h. The average of 30 and 20 is 25, which is too high because more time is spent at the slower speed.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
+      "prompt": "In a class of 40, 24 play a sport, 18 play an instrument and 9 do both. How many do neither?",
       "options": [
-        "24",
-        "8",
-        "12",
-        "16",
-        "20"
+        "9",
+        "5",
+        "3",
+        "7",
+        "6"
       ],
-      "correctAnswer": "16",
+      "correctAnswer": "7",
       "answer": "D",
-      "explanation": "Parts = 3 + 5 = 8 → each part = 64 ÷ 8 = 8. Amounts: 24 and 40. Difference = 40 − 24 = 16.",
+      "explanation": "Those doing at least one are 24 + 18 − 9 = 33, so 40 − 33 = 7 do neither.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
+      "prompt": "Revenue of £50,000.00 rises 8% in one year and then falls 5% the next. What is the revenue after two years?",
       "options": [
-        "140",
-        "152",
-        "96",
-        "120",
-        "136"
+        "£51,300.00",
+        "£51,500.00",
+        "£51,000.00",
+        "£52,000.00",
+        "£53,000.00"
       ],
-      "correctAnswer": "136",
-      "answer": "E",
-      "explanation": "Area = 12 × 8 = 96. Perimeter = 2(12 + 8) = 40. Sum = 96 + 40 = 136.",
+      "correctAnswer": "£51,300.00",
+      "answer": "A",
+      "explanation": "£50,000.00 × 1.08 = £54,000.00, then × 0.95 = £51,300.00. Netting the rates to +3% gives £51,500.00, which ignores that the fall applies to the larger figure.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 2^5 × 2^3?",
+      "prompt": "A rectangular tank measures 1.2 m by 0.8 m by 0.5 m. How many litres does it hold when full?",
       "options": [
-        "256",
-        "512",
-        "1024",
-        "64",
-        "128"
+        "0.48 litres",
+        "48 litres",
+        "480 litres",
+        "4,800 litres",
+        "600 litres"
       ],
-      "correctAnswer": "256",
-      "answer": "A",
-      "explanation": "2^5 × 2^3 = 2^(5+3) = 2^8 = 256.",
+      "correctAnswer": "480 litres",
+      "answer": "C",
+      "explanation": "Volume is 1.2 × 0.8 × 0.5 = 0.48 cubic metres, and one cubic metre is 1,000 litres, so the tank holds 480 litres.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
+      "prompt": "A drink contains water and syrup in the ratio 3 : 1, with 5 litres of syrup. If 5 more litres of water are added, what is the new ratio of water to syrup?",
       "options": [
-        "18",
-        "21",
-        "24",
-        "27",
-        "30"
+        "4 : 1",
+        "3 : 1",
+        "5 : 2",
+        "7 : 2",
+        "9 : 2"
       ],
-      "correctAnswer": "21",
-      "answer": "B",
-      "explanation": "Adding: 2x = 14 → x = 7. Then y = 3. xy = 7 × 3 = 21.",
+      "correctAnswer": "4 : 1",
+      "answer": "A",
+      "explanation": "The drink starts with 15 litres of water and 5 of syrup. Adding 5 litres of water gives 20 : 5, which simplifies to 4 : 1.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is 15% of 15% of 400?",
+      "prompt": "A town of 82,000 people has an unemployment rate of 3.5%. How many people are unemployed?",
       "options": [
-        "18",
-        "6",
-        "9",
-        "12",
-        "15"
+        "28,700",
+        "2,600",
+        "3,200",
+        "2,870",
+        "2,400"
       ],
-      "correctAnswer": "9",
-      "answer": "C",
-      "explanation": "15% of 400 = 60. 15% of 60 = 9.",
+      "correctAnswer": "2,870",
+      "answer": "D",
+      "explanation": "3.5% of 82,000 is 2,870. Misreading the rate as 35% gives 28,700.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
+      "prompt": "Three workers can complete a task alone in 6, 8 and 12 hours. Working together, how long do they take, to one decimal place?",
       "options": [
-        "$70",
-        "$57",
-        "$60",
-        "$63",
-        "$66"
+        "8.7 hours",
+        "2.7 hours",
+        "2.0 hours",
+        "3.5 hours",
+        "4.0 hours"
       ],
-      "correctAnswer": "$63",
-      "answer": "D",
-      "explanation": "Discount: 80 × 0.75 = 60. Tax: 60 × 1.05 = 63.",
+      "correctAnswer": "2.7 hours",
+      "answer": "B",
+      "explanation": "Rates add: 1/6 + 1/8 + 1/12 = 3/8 of the task an hour, so the task takes 8/3 = 2.7 hours. Averaging the three times gives 8.7, which is far too long.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
+      "prompt": "£12,000.00 is borrowed at 6% a year. £4,000.00 is repaid at the end of each year. What is owed after two years, to the nearest penny?",
       "options": [
-        "165 miles",
-        "180 miles",
-        "120 miles",
-        "135 miles",
-        "150 miles"
+        "£4,000.00",
+        "£5,000.00",
+        "£5,200.00",
+        "£4,900.00",
+        "£5,243.20"
       ],
-      "correctAnswer": "150 miles",
+      "correctAnswer": "£5,243.20",
       "answer": "E",
-      "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
+      "explanation": "After one year: £12,000.00 × 1.06 − £4,000.00 = £8,720.00. After two: £8,720.00 × 1.06 − £4,000.00 = £5,243.20. Ignoring interest gives £4,000.00.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "prompt": "A room measuring 4.5 m by 3.2 m is drawn to a scale of 1 : 50. What is the area of the drawing, in square centimetres?",
       "options": [
-        "10",
-        "12",
-        "15",
-        "16",
-        "8"
+        "28.8 sq cm",
+        "115.2 sq cm",
+        "57.6 sq cm",
+        "144.0 sq cm",
+        "72.0 sq cm"
       ],
-      "correctAnswer": "10",
-      "answer": "A",
-      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "correctAnswer": "57.6 sq cm",
+      "answer": "C",
+      "explanation": "The room is 14.40 m², or 144,000 cm². Areas scale by the square of the ratio, so divide by 50² = 2500: 57.6 cm².",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "prompt": "Five values are 14, 18, 21, 27, 33. A sixth value of 25 is added. What is the median of the six?",
       "options": [
-        "1/2",
-        "3/5",
-        "2/3",
-        "1/5",
-        "2/5"
+        "21",
+        "23",
+        "25",
+        "24",
+        "26"
       ],
-      "correctAnswer": "3/5",
+      "correctAnswer": "23",
       "answer": "B",
-      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "explanation": "Sorted, the six are 14, 18, 21, 25, 27, 33. With an even count the median is the mean of the third and fourth: (21 + 25) / 2 = 23.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "An item listed at £96.00 is to be sold for £60.00. What percentage discount is required?",
       "options": [
-        "29",
-        "30",
-        "32",
-        "35",
-        "38"
+        "36.0%",
+        "40.0%",
+        "60.0%",
+        "37.5%",
+        "24.0%"
       ],
-      "correctAnswer": "32",
-      "answer": "C",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "correctAnswer": "37.5%",
+      "answer": "D",
+      "explanation": "The reduction is £36.00, which as a percentage of the list price is 36/96 = 37.5%. Dividing by the sale price instead gives 60%.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "A 750 g pack costs £12.40 and a 1,200 g pack costs £18.90. Which is better value per 100 g, and by how much?",
       "options": [
-        "1175",
-        "1225",
-        "1250",
-        "1275",
-        "1300"
+        "the 1,200 g pack, by £0.08 per 100 g",
+        "the 750 g pack, by £0.08 per 100 g",
+        "the 1,200 g pack, by £0.20 per 100 g",
+        "They cost the same per 100 g",
+        "the 750 g pack, by £0.50 per 100 g"
       ],
-      "correctAnswer": "1275",
-      "answer": "D",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "correctAnswer": "the 1,200 g pack, by £0.08 per 100 g",
+      "answer": "A",
+      "explanation": "Per 100 g the 750 g pack costs £1.65 and the 1,200 g pack £1.58, so the 1,200 g pack is cheaper by £0.08 per 100 g. Comparing the ticket prices alone tells you nothing, since the packs differ in size.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "What is the sum of all multiples of 6 from 12 to 96 inclusive?",
       "options": [
-        "18",
-        "20",
-        "12",
-        "14",
-        "16"
+        "15",
+        "800",
+        "700",
+        "900",
+        "810"
       ],
-      "correctAnswer": "16",
+      "correctAnswer": "810",
       "answer": "E",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "explanation": "There are (96 − 12)/6 + 1 = 15 terms, and their mean is (12 + 96)/2 = 54. The sum is 15 × 54 = 810.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "A firm's output rises from 40 to 52 units while its workforce stays at 60. By what percentage does output per worker rise?",
       "options": [
-        "25%",
+        "12%",
+        "20%",
         "30%",
         "35%",
-        "40%",
-        "20%"
+        "18%"
       ],
-      "correctAnswer": "25%",
-      "answer": "A",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "correctAnswer": "30%",
+      "answer": "C",
+      "explanation": "Output per worker rises in the same proportion as output when the workforce is unchanged: 52/40 = 1.30, a rise of 30%. The absolute rise of 12 units is the distractor.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "£7,500.00 earns £1,350.00 in simple interest over 3 years. What is the annual rate?",
       "options": [
-        "8 days",
-        "9 days",
-        "10 days",
-        "11 days",
-        "16 days"
+        "18.0%",
+        "5.4%",
+        "4.5%",
+        "6.0%",
+        "7.2%"
       ],
-      "correctAnswer": "9 days",
-      "answer": "B",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "correctAnswer": "6.0%",
+      "answer": "D",
+      "explanation": "Interest is principal × rate × years, so the rate is £1,350.00 / (£7,500.00 × 3) = 6.0% a year. Forgetting to divide by the years gives 18%.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "Two independent events have probabilities 0.3 and 0.4. What is the probability that neither occurs?",
       "options": [
-        "13",
-        "14",
-        "15",
-        "16",
-        "18"
+        "0.30",
+        "0.42",
+        "0.12",
+        "0.70",
+        "0.58"
       ],
-      "correctAnswer": "15",
-      "answer": "C",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "correctAnswer": "0.42",
+      "answer": "B",
+      "explanation": "Neither occurring means both fail: 0.7 × 0.6 = 0.42. Subtracting the sum of the probabilities from one gives 0.30, which double counts the overlap.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "Water costs £1.65 a cubic metre. A household uses 2.4 cubic metres in a month. What is the bill?",
       "options": [
-        "15%",
-        "20%",
-        "25%",
-        "30%",
-        "35%"
+        "£3.96",
+        "£1,650.00",
+        "£2.40",
+        "£4.50",
+        "£3.60"
       ],
-      "correctAnswer": "30%",
-      "answer": "D",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "correctAnswer": "£3.96",
+      "answer": "A",
+      "explanation": "2.4 × £1.65 = £3.96. Treating the price as per litre gives £1,650.00 for the same volume.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "prompt": "One fund grows from £3,200.00 to £3,872.00; another grows from £8,000.00 to £9,280.00. Which grew faster in percentage terms, and by how many percentage points?",
       "options": [
-        "10",
-        "11",
-        "12",
-        "7",
-        "9"
+        "the larger fund, by 5 percentage points",
+        "the smaller fund, by 9 percentage points",
+        "They grew at the same rate",
+        "the smaller fund, by 12 percentage points",
+        "the smaller fund, by 5 percentage points"
       ],
-      "correctAnswer": "9",
+      "correctAnswer": "the smaller fund, by 5 percentage points",
       "answer": "E",
-      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "explanation": "Growth: 21% against 16%. the smaller fund grew faster by 5 percentage points, even though the larger fund gained more money.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3x = 18, what is the value of x² + x?",
+      "prompt": "A single visit costs £9.50 and a monthly pass costs £42.00. How many visits a month make the pass worth buying?",
       "options": [
-        "42",
-        "48",
-        "54",
-        "36",
-        "40"
+        "4 visits",
+        "3 visits",
+        "5 visits",
+        "6 visits",
+        "7 visits"
       ],
-      "correctAnswer": "42",
-      "answer": "A",
-      "explanation": "x = 6. x² + x = 36 + 6 = 42.",
+      "correctAnswer": "5 visits",
+      "answer": "C",
+      "explanation": "£42.00 / £9.50 = 4.42 visits, so the pass pays for itself from the 5th visit onward. Four visits cost £38.00, still less than the pass.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-005-q001": "$180",
-    "gmat-quant-005-q002": "$210",
-    "gmat-quant-005-q003": "15",
-    "gmat-quant-005-q004": "16",
-    "gmat-quant-005-q005": "136",
-    "gmat-quant-005-q006": "256",
-    "gmat-quant-005-q007": "21",
-    "gmat-quant-005-q008": "9",
-    "gmat-quant-005-q009": "$63",
-    "gmat-quant-005-q010": "150 miles",
-    "gmat-quant-005-q011": "10",
-    "gmat-quant-005-q012": "3/5",
-    "gmat-quant-005-q013": "32",
-    "gmat-quant-005-q014": "1275",
-    "gmat-quant-005-q015": "16",
-    "gmat-quant-005-q016": "25%",
-    "gmat-quant-005-q017": "9 days",
-    "gmat-quant-005-q018": "15",
-    "gmat-quant-005-q019": "30%",
-    "gmat-quant-005-q020": "9",
-    "gmat-quant-005-q021": "42"
+    "gmat-quant-005-q001": "£437.50",
+    "gmat-quant-005-q002": "42",
+    "gmat-quant-005-q003": "24 km/h",
+    "gmat-quant-005-q004": "7",
+    "gmat-quant-005-q005": "£51,300.00",
+    "gmat-quant-005-q006": "480 litres",
+    "gmat-quant-005-q007": "4 : 1",
+    "gmat-quant-005-q008": "2,870",
+    "gmat-quant-005-q009": "2.7 hours",
+    "gmat-quant-005-q010": "£5,243.20",
+    "gmat-quant-005-q011": "57.6 sq cm",
+    "gmat-quant-005-q012": "23",
+    "gmat-quant-005-q013": "37.5%",
+    "gmat-quant-005-q014": "the 1,200 g pack, by £0.08 per 100 g",
+    "gmat-quant-005-q015": "810",
+    "gmat-quant-005-q016": "30%",
+    "gmat-quant-005-q017": "6.0%",
+    "gmat-quant-005-q018": "0.42",
+    "gmat-quant-005-q019": "£3.96",
+    "gmat-quant-005-q020": "the smaller fund, by 5 percentage points",
+    "gmat-quant-005-q021": "5 visits"
   }
 }
