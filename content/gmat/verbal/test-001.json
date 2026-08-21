@@ -12,469 +12,474 @@
       "id": "gmat-verbal-001-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
+      "prompt": "A council reports that since it began charging for bulky waste collection, the number of collections booked has fallen by 40 per cent, and concludes that residents are disposing of less bulky waste.",
       "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "B. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "C. Customers report feeling more valued when using a loyalty programme",
-        "D. Competitors without loyalty programmes have seen declining sales",
-        "E. The loyalty programme was introduced simultaneously with a store renovation"
+        "A. The charge is £25 for up to three items.",
+        "B. The booking system moved online at the same time.",
+        "C. Charity reuse organisations in the area report a sharp rise in collections of the same kinds of item.",
+        "D. Collections are made within ten working days.",
+        "E. Neighbouring councils charge more."
       ],
-      "correctAnswer": "A",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "The waste is being routed elsewhere rather than reduced — and in this case to a better destination, which the council's own measure cannot see.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-001-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
-      "question": "Which of the following would most strengthen the CFO's conclusion?",
+      "prompt": "A retailer found that stores that switched to LED lighting recorded higher sales per square metre than stores that did not, and plans to convert every store to raise sales.",
+      "question": "Which of the following, if true, casts most doubt on the plan?",
       "options": [
-        "A. Other advertising channels were suspended during the same three months",
-        "B. The lifetime value of a new user averages $50",
-        "C. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "D. Social media platforms reported the campaign reached 5 million unique users",
-        "E. Competitors saw no change in sign-ups over the same period"
+        "A. The chain converted its newest and busiest stores first, and those stores had higher sales per square metre before conversion.",
+        "B. LED lighting uses less electricity.",
+        "C. Conversion takes two days per store.",
+        "D. Some converted stores are in shopping centres.",
+        "E. Lighting is one of several refurbishment options."
       ],
-      "correctAnswer": "B",
-      "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "Conversion was allocated by existing performance, so the sales difference precedes the lighting.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-001-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
-      "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
+      "prompt": "A university department reports that students who attend its optional statistics workshop score higher in the final examination, and proposes to make the workshop compulsory.",
+      "question": "The proposal assumes which of the following?",
       "options": [
-        "A. It assumes that lower temperatures are always desirable",
-        "B. It ignores that tree planting is expensive",
-        "C. It treats a correlation as evidence of a causal relationship",
-        "D. It fails to consider that trees require water",
-        "E. It overlooks that some neighbourhoods may not have space for trees"
+        "A. The workshop can accommodate the whole cohort.",
+        "B. The examination will remain unchanged.",
+        "C. Workshops are taught by permanent staff.",
+        "D. Students who do not currently attend would benefit as much as those who choose to.",
+        "E. Attendance is recorded accurately."
       ],
-      "correctAnswer": "C",
-      "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The observed gap may reflect who volunteers; compelling attendance transfers the workshop but not the disposition that produced the gap. A is a capacity question rather than a premise of the inference.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-001-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
-      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "prompt": "A food manufacturer reduced the sugar in its breakfast cereal by 30 per cent and reports that sales were unaffected. It concludes that customers did not notice the change.",
+      "question": "Which of the following, if true, most seriously undermines the conclusion?",
       "options": [
-        "A. Passengers reported higher satisfaction with the new policy",
-        "B. Competing airlines have not adopted similar policies",
-        "C. Boarding time varies naturally between 15 and 35 minutes",
-        "D. The airline also reduced the number of carry-on bags allowed during the same period",
-        "E. The new policy was introduced on routes with larger aircraft"
+        "A. The reduction was made over eighteen months in small steps.",
+        "B. The company ran a large advertising campaign during the same period.",
+        "C. Sugar content is printed on the packet.",
+        "D. Competing cereals contain more sugar.",
+        "E. Some customers buy the cereal weekly."
       ],
-      "correctAnswer": "D",
-      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Stable sales could mean the advertising offset a loss of customers who did notice, so the outcome is consistent with the opposite conclusion.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-001-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "prompt": "Every workshop run by the Calder centre that admits under-sixteens requires two supervisors. No session with two supervisors has been cancelled at short notice this term. Some sessions at the centre have been cancelled at short notice this term.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. Does not define what type of consulting services were provided",
-        "B. Ignores that some companies declined in revenue after hiring the firm",
-        "C. Does not specify what time period is covered by the data",
-        "D. Compares incomparable companies across different industries",
-        "E. Fails to compare the companies' growth with industry-wide growth trends"
+        "A. Two supervisors prevent cancellations.",
+        "B. Most sessions admit under-sixteens.",
+        "C. Sessions for adults are cancelled more often.",
+        "D. The centre is short of supervisors.",
+        "E. Some sessions at the centre do not admit under-sixteens."
       ],
       "correctAnswer": "E",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "Cancelled sessions lack two supervisors, and admitting under-sixteens requires them, so the cancelled sessions do not admit under-sixteens.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-001-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "prompt": "A rail operator reports that its new ticketing app has reduced queueing at station machines, citing that machine transactions have fallen by a third.",
+      "question": "Which of the following would be most useful to determine in evaluating the claim about queueing?",
       "options": [
-        "A. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
-        "B. Olive oil contains monounsaturated fats linked to heart health",
-        "C. Heart disease rates have been declining globally regardless of fat consumption",
-        "D. The study followed individuals for 10 years",
-        "E. Olive oil is more expensive than butter in most markets"
+        "A. How many passengers have downloaded the app",
+        "B. Whether the app accepts all payment methods",
+        "C. Whether the operator removed a number of machines when the app launched",
+        "D. How long the app took to develop",
+        "E. Whether staff assist passengers at machines"
       ],
-      "correctAnswer": "A",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Fewer transactions across fewer machines can leave queues unchanged or longer, so transaction volume alone does not establish the claim.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-001-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "prompt": "A charity's fundraising director notes that supporters who attend its annual dinner donate more over the following year than supporters who do not attend, and proposes to invite every supporter.",
+      "question": "Which of the following, if true, most weakens the proposal?",
       "options": [
-        "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Doctors who proactively call patients may also be more thorough in their overall care",
-        "C. Some patients do not have phones",
-        "D. Patients prefer in-person follow-up visits to phone calls",
-        "E. Phone calls are less effective than written instructions"
+        "A. The dinner costs the charity money to stage.",
+        "B. Invitations are currently sent to supporters whose past giving places them in the top tier.",
+        "C. Some attendees bring guests.",
+        "D. The dinner is held in November.",
+        "E. Attendance has risen each year."
       ],
       "correctAnswer": "B",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "The guest list is selected on prior giving, so the donation difference exists before anyone attends anything.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-001-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "prompt": "A manufacturer claims its insulation reduces heating bills by 25 per cent, citing homes where it was installed.",
+      "question": "Which of the following, if true, most seriously weakens the claim as it applies to a typical home?",
       "options": [
-        "A. Drug X has minor side effects including nausea",
-        "B. The study included only 50 participants",
-        "C. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "D. Chronic pain affects millions of people worldwide",
-        "E. Drug X is expensive compared to existing treatments"
+        "A. Installation takes a full day.",
+        "B. The insulation carries a 20-year guarantee.",
+        "C. Heating bills vary with the weather.",
+        "D. The homes cited were uninsulated before installation, while most homes now have some insulation already.",
+        "E. Some homeowners install it themselves."
       ],
-      "correctAnswer": "C",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
+      "correctAnswer": "D",
+      "explanation": "The saving is measured from an unusually poor baseline, so it will not transfer to homes that already have some insulation.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-001-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "prompt": "An airline argues that its punctuality has improved, citing that the proportion of flights arriving within 15 minutes of schedule rose from 71 to 84 per cent.",
+      "question": "Which of the following, if true, most seriously weakens the argument?",
       "options": [
-        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "B. The university's highest-achieving students attend the fitness centre most frequently",
-        "C. Exercise programmes are popular at peer universities",
-        "D. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "E. Students who exercise report feeling less stressed"
+        "A. The airline lengthened its scheduled flight times by an average of 12 minutes at the start of the period.",
+        "B. The airline added new destinations during the period.",
+        "C. Punctuality is measured at the arrival gate.",
+        "D. Competing airlines report similar improvements.",
+        "E. Some delays are caused by air traffic control."
       ],
-      "correctAnswer": "D",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
+      "correctAnswer": "A",
+      "explanation": "Moving the target converts unchanged performance into a better statistic; nothing about the operation need have changed.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-001-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "prompt": "A regional government reports that firms receiving its innovation grants grew faster than firms that did not receive them, and concludes that the grants cause growth.",
+      "question": "Which of the following, if true, most strengthens the conclusion?",
       "options": [
-        "A. Cameras might violate driver privacy",
-        "B. The cost of cameras is high",
-        "C. Some drivers find cameras distracting",
-        "D. Cameras only capture rear-end collisions",
-        "E. Intersections chosen for cameras may have already been due for safety upgrades"
+        "A. Grant recipients employ more graduates.",
+        "B. The grants are funded from general taxation.",
+        "C. Recipients report that the money was useful.",
+        "D. Firms may apply more than once.",
+        "E. Applications were scored by independent assessors, and firms scoring just above and just below the funding threshold grew at similar rates before applying, but diverged afterwards."
       ],
       "correctAnswer": "E",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
+      "explanation": "Comparing firms just either side of an arbitrary threshold approximates a randomised allocation among near-identical applicants.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-001-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "prompt": "Supporters of a proposal to extend library opening hours argue that borrowing will rise. Opponents reply that borrowing has fallen every year for a decade regardless of opening hours.",
+      "question": "Which of the following, if true, most weakens the opponents' reply?",
       "options": [
-        "A. A separate economic boom added 100,000 jobs during the same year",
-        "B. Labour economists disagree on the effects of minimum wage increases",
-        "C. The minimum wage increase only affected 5% of workers",
-        "D. Some industries are more affected than others by wage increases",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. Some libraries have closed in the same period.",
+        "B. Library membership is free.",
+        "C. The decade-long fall is accounted for almost entirely by reference lending, which has moved online, while borrowing of fiction has risen at branches that extended their hours.",
+        "D. Opening hours vary between branches.",
+        "E. Borrowing is recorded electronically."
       ],
-      "correctAnswer": "A",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
+      "correctAnswer": "C",
+      "explanation": "It decomposes the trend the reply relies on, showing the aggregate fall conceals a rise in exactly the category the proposal would affect.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-001-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "passageTitle": "Dividing the Shares",
+      "passageText": "A company that splits its shares two for one leaves every holder with twice as many shares, each worth half as much. Nothing about the business changes, and the total value of a holding is identical the moment before and after. The practice is nonetheless common, and the explanations offered for it are a useful test of how seriously to take arguments about market behaviour.\n\nThe oldest explanation is liquidity: a lower price per share makes small purchases easier, particularly where shares trade in fixed lots. This once mattered a great deal and matters less now that fractional purchases are widely available, which predicts that splits should have become rarer — and they have.\n\nA second explanation is signalling. A board that splits is implicitly saying it does not expect the price to fall back, since a split followed by a decline is embarrassing in a way that no other corporate action quite matches. On this view the split conveys management's private expectation rather than any change in value, and studies do find small positive price movements on the announcement.\n\nThe third explanation is the least flattering and the hardest to dismiss. A share priced at fifty is not cheaper than one priced at five hundred, since what matters is the price relative to what the company earns; but survey evidence suggests some investors treat the lower number as cheaper. If that is right, splits work by exploiting a confusion, and their persistence is evidence about investors rather than about companies.",
+      "prompt": "According to the passage, the liquidity explanation for share splits predicts that splits should",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. become more common as markets grow",
+        "B. occur only in companies with high share prices",
+        "C. raise the total value of a holding",
+        "D. have become rarer as fractional purchases spread",
+        "E. be confined to companies with many small shareholders"
       ],
-      "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
+      "correctAnswer": "D",
+      "explanation": "The passage notes the prediction and adds that splits have in fact become rarer, which is what makes the explanation testable.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-001-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "passageTitle": "Dividing the Shares",
+      "passageText": "A company that splits its shares two for one leaves every holder with twice as many shares, each worth half as much. Nothing about the business changes, and the total value of a holding is identical the moment before and after. The practice is nonetheless common, and the explanations offered for it are a useful test of how seriously to take arguments about market behaviour.\n\nThe oldest explanation is liquidity: a lower price per share makes small purchases easier, particularly where shares trade in fixed lots. This once mattered a great deal and matters less now that fractional purchases are widely available, which predicts that splits should have become rarer — and they have.\n\nA second explanation is signalling. A board that splits is implicitly saying it does not expect the price to fall back, since a split followed by a decline is embarrassing in a way that no other corporate action quite matches. On this view the split conveys management's private expectation rather than any change in value, and studies do find small positive price movements on the announcement.\n\nThe third explanation is the least flattering and the hardest to dismiss. A share priced at fifty is not cheaper than one priced at five hundred, since what matters is the price relative to what the company earns; but survey evidence suggests some investors treat the lower number as cheaper. If that is right, splits work by exploiting a confusion, and their persistence is evidence about investors rather than about companies.",
+      "prompt": "The signalling explanation holds that a split conveys",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "C. Local restaurants cannot accommodate arena crowds",
-        "D. The arena's construction will not create permanent jobs",
-        "E. The city already has sufficient sports facilities"
+        "A. a change in the company's underlying value",
+        "B. management's private expectation that the price will not fall back",
+        "C. a need to raise additional capital",
+        "D. the board's disagreement with analysts",
+        "E. an intention to pay higher dividends"
       ],
       "correctAnswer": "B",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
+      "explanation": "The passage adds that a split followed by a decline is distinctively embarrassing, which is what gives the signal its cost.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-001-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "passageTitle": "Dividing the Shares",
+      "passageText": "A company that splits its shares two for one leaves every holder with twice as many shares, each worth half as much. Nothing about the business changes, and the total value of a holding is identical the moment before and after. The practice is nonetheless common, and the explanations offered for it are a useful test of how seriously to take arguments about market behaviour.\n\nThe oldest explanation is liquidity: a lower price per share makes small purchases easier, particularly where shares trade in fixed lots. This once mattered a great deal and matters less now that fractional purchases are widely available, which predicts that splits should have become rarer — and they have.\n\nA second explanation is signalling. A board that splits is implicitly saying it does not expect the price to fall back, since a split followed by a decline is embarrassing in a way that no other corporate action quite matches. On this view the split conveys management's private expectation rather than any change in value, and studies do find small positive price movements on the announcement.\n\nThe third explanation is the least flattering and the hardest to dismiss. A share priced at fifty is not cheaper than one priced at five hundred, since what matters is the price relative to what the company earns; but survey evidence suggests some investors treat the lower number as cheaper. If that is right, splits work by exploiting a confusion, and their persistence is evidence about investors rather than about companies.",
+      "prompt": "The third explanation is described as the least flattering because it implies that splits",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. The ad was shown only on premium streaming services",
-        "C. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "D. The brand launched a new product line during the same period",
-        "E. Competitors also increased advertising spending during the same period"
+        "A. work by exploiting a confusion about what makes a share cheap",
+        "B. reduce the liquidity of a company's shares",
+        "C. are undertaken without board approval",
+        "D. have no effect on the share price",
+        "E. are more common in poorly performing companies"
       ],
-      "correctAnswer": "C",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
+      "correctAnswer": "A",
+      "explanation": "What matters is price relative to earnings, and the passage says the practice's persistence is then evidence about investors rather than companies.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-001-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "passageTitle": "Islands and Size",
+      "passageText": "Animals isolated on islands frequently evolve to sizes conspicuously different from their mainland relatives. Large mammals tend to become smaller — dwarf elephants and hippopotamuses are known from several Mediterranean islands — while small mammals and some birds tend to become larger. The pattern is regular enough to have been named, and general enough to invite explanations that are more confident than the evidence supports.\n\nThe usual account combines two pressures. Islands have limited food, which penalises large body size, and often lack the large predators that made size protective on the mainland, which removes the compensating advantage. Small animals, released from predation, can afford the slower reproduction that larger bodies imply and gain the metabolic advantages of size.\n\nBoth halves are plausible and neither is universal. The pattern is stronger for mammals than for reptiles, weaker on islands close to the mainland where populations are replenished, and confounded by the fact that the fossil record preserves striking cases better than unremarkable ones. Reviews applying consistent criteria across many islands find the trend real but weaker than the textbook version, and absent altogether in some groups.\n\nWhat the case illustrates is a difficulty that recurs wherever a pattern is named before it is measured. A memorable label collects supporting instances and repels exceptions, and the work of establishing how general the pattern actually is has to be done afterwards, against the label's own gravitational pull.",
+      "prompt": "The usual account of the island size pattern combines limited food with",
       "options": [
-        "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It demonstrates that road construction is always harmful",
-        "C. It suggests the first analyst has incorrect data",
-        "D. It presents empirical evidence that undermines the first analyst's prediction",
-        "E. It proves that traffic will always increase regardless of policy"
+        "A. increased competition between species",
+        "B. higher rates of disease",
+        "C. greater seasonal variation in climate",
+        "D. the loss of migration routes",
+        "E. the absence of the large predators that made size protective"
       ],
-      "correctAnswer": "D",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "Removing the compensating advantage of size is the second half of the standard explanation.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-001-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
-      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "passageTitle": "Islands and Size",
+      "passageText": "Animals isolated on islands frequently evolve to sizes conspicuously different from their mainland relatives. Large mammals tend to become smaller — dwarf elephants and hippopotamuses are known from several Mediterranean islands — while small mammals and some birds tend to become larger. The pattern is regular enough to have been named, and general enough to invite explanations that are more confident than the evidence supports.\n\nThe usual account combines two pressures. Islands have limited food, which penalises large body size, and often lack the large predators that made size protective on the mainland, which removes the compensating advantage. Small animals, released from predation, can afford the slower reproduction that larger bodies imply and gain the metabolic advantages of size.\n\nBoth halves are plausible and neither is universal. The pattern is stronger for mammals than for reptiles, weaker on islands close to the mainland where populations are replenished, and confounded by the fact that the fossil record preserves striking cases better than unremarkable ones. Reviews applying consistent criteria across many islands find the trend real but weaker than the textbook version, and absent altogether in some groups.\n\nWhat the case illustrates is a difficulty that recurs wherever a pattern is named before it is measured. A memorable label collects supporting instances and repels exceptions, and the work of establishing how general the pattern actually is has to be done afterwards, against the label's own gravitational pull.",
+      "prompt": "The passage says the pattern is confounded by the fact that the fossil record",
       "options": [
-        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "B. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "C. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
-        "D. All birds have wings. Penguins are birds. Therefore, penguins can fly.",
-        "E. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer."
+        "A. is more complete for islands than for mainlands",
+        "B. rarely preserves small mammals",
+        "C. cannot be dated precisely on islands",
+        "D. preserves striking cases better than unremarkable ones",
+        "E. over-represents reptiles"
       ],
-      "correctAnswer": "E",
-      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "That bias inflates the apparent regularity of a pattern selected for being memorable.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-001-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "passageTitle": "Islands and Size",
+      "passageText": "Animals isolated on islands frequently evolve to sizes conspicuously different from their mainland relatives. Large mammals tend to become smaller — dwarf elephants and hippopotamuses are known from several Mediterranean islands — while small mammals and some birds tend to become larger. The pattern is regular enough to have been named, and general enough to invite explanations that are more confident than the evidence supports.\n\nThe usual account combines two pressures. Islands have limited food, which penalises large body size, and often lack the large predators that made size protective on the mainland, which removes the compensating advantage. Small animals, released from predation, can afford the slower reproduction that larger bodies imply and gain the metabolic advantages of size.\n\nBoth halves are plausible and neither is universal. The pattern is stronger for mammals than for reptiles, weaker on islands close to the mainland where populations are replenished, and confounded by the fact that the fossil record preserves striking cases better than unremarkable ones. Reviews applying consistent criteria across many islands find the trend real but weaker than the textbook version, and absent altogether in some groups.\n\nWhat the case illustrates is a difficulty that recurs wherever a pattern is named before it is measured. A memorable label collects supporting instances and repels exceptions, and the work of establishing how general the pattern actually is has to be done afterwards, against the label's own gravitational pull.",
+      "prompt": "The 'difficulty that recurs' which the author identifies is that",
       "options": [
-        "A. Job satisfaction and adequate sleep are associated in the survey population",
-        "B. Improving sleep quality will increase job satisfaction for most workers",
-        "C. Dissatisfied workers always sleep fewer than 7 hours",
-        "D. Employers should implement nap rooms to improve satisfaction",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "A. island populations are difficult to study directly",
+        "B. textbooks are slow to incorporate new reviews",
+        "C. a pattern named before it is measured collects instances and repels exceptions",
+        "D. dwarfism and gigantism have opposite causes",
+        "E. reptiles and mammals cannot be compared"
       ],
-      "correctAnswer": "A",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "The measuring work then has to be done against the label's own gravitational pull.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-001-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "passageTitle": "Choosing a School by Lottery",
+      "passageText": "Where a school is oversubscribed and places are allocated by lottery, the resulting comparison is unusually informative. Applicants who win and lose the lottery are alike on everything that led them to apply, so differences in their later outcomes can be attributed to the school rather than to the families who chose it. Much of what is known about the effects of particular schools comes from this accident of administration.\n\nThe findings are more varied than either side of the argument usually reports. Some oversubscribed schools produce substantial gains for lottery winners; others produce none; and the schools that produce gains are not reliably the ones with the strongest raw results, since raw results largely reflect who enrols. The useful output is not a verdict on a sector but a method for telling which individual schools add something.\n\nTwo limits deserve more attention than they get. The comparison holds only among applicants, so it says nothing about what a school would do for children whose families did not apply — and the decision to apply is itself unevenly distributed. And a lottery estimates the effect of attending one school rather than the alternative that applicant would otherwise have attended, which differs from applicant to applicant, so the same school can show a large effect in a district with weak alternatives and none where the alternatives are good.\n\nThe measured quantity is therefore a comparison, not a property of the school, and reporting it as a school's quality drops the half of the sentence that gives it meaning.",
+      "prompt": "According to the passage, a lottery makes the comparison informative because winners and losers",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. are alike on everything that led them to apply",
+        "B. attend schools of similar quality",
+        "C. come from the same neighbourhoods",
+        "D. are selected by the school on the same criteria",
+        "E. have identical prior attainment scores"
       ],
-      "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "That similarity is what allows later differences to be attributed to the school rather than to the families.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-001-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "passageTitle": "Choosing a School by Lottery",
+      "passageText": "Where a school is oversubscribed and places are allocated by lottery, the resulting comparison is unusually informative. Applicants who win and lose the lottery are alike on everything that led them to apply, so differences in their later outcomes can be attributed to the school rather than to the families who chose it. Much of what is known about the effects of particular schools comes from this accident of administration.\n\nThe findings are more varied than either side of the argument usually reports. Some oversubscribed schools produce substantial gains for lottery winners; others produce none; and the schools that produce gains are not reliably the ones with the strongest raw results, since raw results largely reflect who enrols. The useful output is not a verdict on a sector but a method for telling which individual schools add something.\n\nTwo limits deserve more attention than they get. The comparison holds only among applicants, so it says nothing about what a school would do for children whose families did not apply — and the decision to apply is itself unevenly distributed. And a lottery estimates the effect of attending one school rather than the alternative that applicant would otherwise have attended, which differs from applicant to applicant, so the same school can show a large effect in a district with weak alternatives and none where the alternatives are good.\n\nThe measured quantity is therefore a comparison, not a property of the school, and reporting it as a school's quality drops the half of the sentence that gives it meaning.",
+      "prompt": "The passage indicates that schools producing gains for lottery winners are",
       "options": [
-        "A. The claim that wetlands prevent flooding",
-        "B. The assumption that all wetlands have equal flood-prevention value",
-        "C. The conclusion that all wetlands should be protected",
-        "D. The implication that flooding is always preventable",
-        "E. The premise that wetlands are worth preserving"
+        "A. reliably those with the strongest raw results",
+        "B. not reliably those with the strongest raw results, since raw results largely reflect who enrols",
+        "C. concentrated in districts with weak alternatives",
+        "D. always oversubscribed by a wide margin",
+        "E. identifiable from published league tables"
       ],
       "correctAnswer": "B",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "The passage offers the method as a way of telling which individual schools add something, rather than as a verdict on a sector.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-001-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "passageTitle": "Choosing a School by Lottery",
+      "passageText": "Where a school is oversubscribed and places are allocated by lottery, the resulting comparison is unusually informative. Applicants who win and lose the lottery are alike on everything that led them to apply, so differences in their later outcomes can be attributed to the school rather than to the families who chose it. Much of what is known about the effects of particular schools comes from this accident of administration.\n\nThe findings are more varied than either side of the argument usually reports. Some oversubscribed schools produce substantial gains for lottery winners; others produce none; and the schools that produce gains are not reliably the ones with the strongest raw results, since raw results largely reflect who enrols. The useful output is not a verdict on a sector but a method for telling which individual schools add something.\n\nTwo limits deserve more attention than they get. The comparison holds only among applicants, so it says nothing about what a school would do for children whose families did not apply — and the decision to apply is itself unevenly distributed. And a lottery estimates the effect of attending one school rather than the alternative that applicant would otherwise have attended, which differs from applicant to applicant, so the same school can show a large effect in a district with weak alternatives and none where the alternatives are good.\n\nThe measured quantity is therefore a comparison, not a property of the school, and reporting it as a school's quality drops the half of the sentence that gives it meaning.",
+      "prompt": "The author's closing point is that the measured quantity is",
       "options": [
-        "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. A controlled experiment with randomly assigned music found the same 20% difference",
-        "D. Sales staff performed better when the music was upbeat",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "A. a property of the school",
+        "B. unreliable because lotteries are rare",
+        "C. applicable only to oversubscribed schools",
+        "D. a measure of family preference",
+        "E. a comparison, so reporting it as school quality drops the half that gives it meaning"
       ],
-      "correctAnswer": "C",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "A lottery estimates the effect of one school against whatever alternative that applicant would otherwise have attended.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-001-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "According to the passage, what was the dominant view of the adult brain for much of the 20th century?",
+      "passageTitle": "Finding the Page",
+      "passageText": "An alphabetical index is so ordinary a feature of a book that its absence is more noticeable than its presence. It is also an invention with a history, and one that depended on a prior invention: the stable page number, which requires that every copy of a book be identical.\n\nIn a manuscript culture no such stability exists. Two copies of the same text have different line breaks and different leaves, so a reference can only point to a division of the work itself — a book, a chapter, a canon — and finding aids of that period accordingly point to divisions rather than pages. The apparatus of chapter divisions and marginal letters used in medieval reference works is a solution to precisely this problem, and a more ingenious one than the page number that replaced it.\n\nPrinting made identical copies, and the index in its modern form followed. It changed how books could be used: a work with an index can be consulted rather than read, and the practice of extracting a fact without the surrounding argument begins here. Contemporaries noticed and complained, in terms that reappear in every subsequent argument about new reading technologies.\n\nThe index also embodies judgements that its form conceals. Someone decided what counts as a topic, which mentions are substantive and which incidental, and what to call a thing that the author called something else. A good index is a piece of interpretation presented as a list, and its neutrality is the most successful illusion in the apparatus of the book.",
+      "prompt": "According to the passage, the modern index depended on the prior invention of",
       "options": [
-        "A. The brain continuously forms new neural connections throughout adulthood",
-        "B. Neuroplasticity is highest in adults recovering from injury",
-        "C. Brain structure is largely fixed after early childhood",
-        "D. Learning a new skill has no measurable effect on brain structure"
+        "A. alphabetical ordering",
+        "B. the printing press advertisement",
+        "C. the stable page number, which requires identical copies",
+        "D. chapter divisions",
+        "E. the table of contents"
       ],
       "correctAnswer": "C",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "explanation": "In manuscript culture, differing line breaks and leaves meant a reference could only point to a division of the work.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-001-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "The passage mentions stroke recovery primarily to:",
+      "passageTitle": "Finding the Page",
+      "passageText": "An alphabetical index is so ordinary a feature of a book that its absence is more noticeable than its presence. It is also an invention with a history, and one that depended on a prior invention: the stable page number, which requires that every copy of a book be identical.\n\nIn a manuscript culture no such stability exists. Two copies of the same text have different line breaks and different leaves, so a reference can only point to a division of the work itself — a book, a chapter, a canon — and finding aids of that period accordingly point to divisions rather than pages. The apparatus of chapter divisions and marginal letters used in medieval reference works is a solution to precisely this problem, and a more ingenious one than the page number that replaced it.\n\nPrinting made identical copies, and the index in its modern form followed. It changed how books could be used: a work with an index can be consulted rather than read, and the practice of extracting a fact without the surrounding argument begins here. Contemporaries noticed and complained, in terms that reappear in every subsequent argument about new reading technologies.\n\nThe index also embodies judgements that its form conceals. Someone decided what counts as a topic, which mentions are substantive and which incidental, and what to call a thing that the author called something else. A good index is a piece of interpretation presented as a list, and its neutrality is the most successful illusion in the apparatus of the book.",
+      "prompt": "The passage describes medieval systems of chapter divisions and marginal letters as",
       "options": [
-        "A. Illustrate how neuroplasticity was first discovered",
-        "B. Show that not all brain damage is permanent",
-        "C. Argue that stroke patients have greater neuroplasticity than healthy adults",
-        "D. Provide evidence that the adult brain can undergo structural reorganisation"
+        "A. a failed attempt at indexing",
+        "B. an obstacle to consulting a text",
+        "C. borrowed from printed books",
+        "D. a solution to the instability of manuscript pages, and more ingenious than the page number that replaced it",
+        "E. confined to legal works"
       ],
       "correctAnswer": "D",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "explanation": "The passage's judgement is explicit, and it is the reason the section treats the page number as a simplification rather than an advance in cleverness.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-001-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "Which of the following can be most reasonably inferred from the passage?",
+      "passageTitle": "Finding the Page",
+      "passageText": "An alphabetical index is so ordinary a feature of a book that its absence is more noticeable than its presence. It is also an invention with a history, and one that depended on a prior invention: the stable page number, which requires that every copy of a book be identical.\n\nIn a manuscript culture no such stability exists. Two copies of the same text have different line breaks and different leaves, so a reference can only point to a division of the work itself — a book, a chapter, a canon — and finding aids of that period accordingly point to divisions rather than pages. The apparatus of chapter divisions and marginal letters used in medieval reference works is a solution to precisely this problem, and a more ingenious one than the page number that replaced it.\n\nPrinting made identical copies, and the index in its modern form followed. It changed how books could be used: a work with an index can be consulted rather than read, and the practice of extracting a fact without the surrounding argument begins here. Contemporaries noticed and complained, in terms that reappear in every subsequent argument about new reading technologies.\n\nThe index also embodies judgements that its form conceals. Someone decided what counts as a topic, which mentions are substantive and which incidental, and what to call a thing that the author called something else. A good index is a piece of interpretation presented as a list, and its neutrality is the most successful illusion in the apparatus of the book.",
+      "prompt": "The author claims that a good index is",
       "options": [
-        "A. Adults who learn new skills may have measurably different brain structure from those who do not",
-        "B. Neuroplasticity is greater in young children than in adults",
-        "C. Stroke recovery proves that any brain damage is reversible",
-        "D. Neuroplasticity research began only in the 1990s"
+        "A. a neutral list of the words a book contains",
+        "B. a piece of interpretation presented as a list",
+        "C. impossible to compile without the author's help",
+        "D. less useful than a table of contents",
+        "E. a record of what readers have searched for"
       ],
-      "correctAnswer": "A",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "correctAnswer": "B",
+      "explanation": "Someone decides what counts as a topic, which mentions are substantive, and what to call a thing the author called something else.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-001-q01": "A",
-    "gmat-verbal-001-q02": "B",
-    "gmat-verbal-001-q03": "C",
-    "gmat-verbal-001-q04": "D",
+    "gmat-verbal-001-q01": "C",
+    "gmat-verbal-001-q02": "A",
+    "gmat-verbal-001-q03": "D",
+    "gmat-verbal-001-q04": "B",
     "gmat-verbal-001-q05": "E",
-    "gmat-verbal-001-q06": "A",
+    "gmat-verbal-001-q06": "C",
     "gmat-verbal-001-q07": "B",
-    "gmat-verbal-001-q08": "C",
-    "gmat-verbal-001-q09": "D",
+    "gmat-verbal-001-q08": "D",
+    "gmat-verbal-001-q09": "A",
     "gmat-verbal-001-q10": "E",
-    "gmat-verbal-001-q11": "A",
-    "gmat-verbal-001-q12": "E",
+    "gmat-verbal-001-q11": "C",
+    "gmat-verbal-001-q12": "D",
     "gmat-verbal-001-q13": "B",
-    "gmat-verbal-001-q14": "C",
-    "gmat-verbal-001-q15": "D",
-    "gmat-verbal-001-q16": "E",
-    "gmat-verbal-001-q17": "A",
-    "gmat-verbal-001-q18": "E",
+    "gmat-verbal-001-q14": "A",
+    "gmat-verbal-001-q15": "E",
+    "gmat-verbal-001-q16": "D",
+    "gmat-verbal-001-q17": "C",
+    "gmat-verbal-001-q18": "A",
     "gmat-verbal-001-q19": "B",
-    "gmat-verbal-001-q20": "C",
+    "gmat-verbal-001-q20": "E",
     "gmat-verbal-001-q21": "C",
     "gmat-verbal-001-q22": "D",
-    "gmat-verbal-001-q23": "A"
+    "gmat-verbal-001-q23": "B"
   },
-  "fingerprints": [
-    "10d614b92cdc06394e",
-    "b2012666fa4e8df7de",
-    "66890878b4c726579b",
-    "c5b48869adf84c9320",
-    "da569160a1e697d413",
-    "658dad10d3a061a214",
-    "06a74051e9399bc6e1",
-    "6884bf32f8cecdc955",
-    "b227e67f9d58fc0832",
-    "6620305995683dd1fe",
-    "be4a5390b4721b0a45",
-    "c4f77017bda6947906",
-    "892b91924d2c09ac50",
-    "3896dd5cf5811a3c55",
-    "7c29c1382de36be702",
-    "1c6580d120c23749f8",
-    "864d6ed89683797954",
-    "75ea6feadb1fd8f74b",
-    "824b3663d321159e42",
-    "da7d220a622193a577"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-001-rp1",
-      "title": "Business and Society",
-      "text": "Researchers studying organisational behaviour have found that teams with diverse cognitive styles outperform homogeneous teams on complex problem-solving tasks. However, this benefit is not automatic — diverse teams require skilled facilitation to avoid miscommunication and conflict. When managed effectively, the creative tension between different thinking styles produces more innovative solutions than teams where all members approach problems similarly."
+      "title": "Dividing the Shares",
+      "text": "A company that splits its shares two for one leaves every holder with twice as many shares, each worth half as much. Nothing about the business changes, and the total value of a holding is identical the moment before and after. The practice is nonetheless common, and the explanations offered for it are a useful test of how seriously to take arguments about market behaviour.\n\nThe oldest explanation is liquidity: a lower price per share makes small purchases easier, particularly where shares trade in fixed lots. This once mattered a great deal and matters less now that fractional purchases are widely available, which predicts that splits should have become rarer — and they have.\n\nA second explanation is signalling. A board that splits is implicitly saying it does not expect the price to fall back, since a split followed by a decline is embarrassing in a way that no other corporate action quite matches. On this view the split conveys management's private expectation rather than any change in value, and studies do find small positive price movements on the announcement.\n\nThe third explanation is the least flattering and the hardest to dismiss. A share priced at fifty is not cheaper than one priced at five hundred, since what matters is the price relative to what the company earns; but survey evidence suggests some investors treat the lower number as cheaper. If that is right, splits work by exploiting a confusion, and their persistence is evidence about investors rather than about companies."
+    },
+    {
+      "id": "gmat-verbal-001-rp2",
+      "title": "Islands and Size",
+      "text": "Animals isolated on islands frequently evolve to sizes conspicuously different from their mainland relatives. Large mammals tend to become smaller — dwarf elephants and hippopotamuses are known from several Mediterranean islands — while small mammals and some birds tend to become larger. The pattern is regular enough to have been named, and general enough to invite explanations that are more confident than the evidence supports.\n\nThe usual account combines two pressures. Islands have limited food, which penalises large body size, and often lack the large predators that made size protective on the mainland, which removes the compensating advantage. Small animals, released from predation, can afford the slower reproduction that larger bodies imply and gain the metabolic advantages of size.\n\nBoth halves are plausible and neither is universal. The pattern is stronger for mammals than for reptiles, weaker on islands close to the mainland where populations are replenished, and confounded by the fact that the fossil record preserves striking cases better than unremarkable ones. Reviews applying consistent criteria across many islands find the trend real but weaker than the textbook version, and absent altogether in some groups.\n\nWhat the case illustrates is a difficulty that recurs wherever a pattern is named before it is measured. A memorable label collects supporting instances and repels exceptions, and the work of establishing how general the pattern actually is has to be done afterwards, against the label's own gravitational pull."
+    },
+    {
+      "id": "gmat-verbal-001-rp3",
+      "title": "Choosing a School by Lottery",
+      "text": "Where a school is oversubscribed and places are allocated by lottery, the resulting comparison is unusually informative. Applicants who win and lose the lottery are alike on everything that led them to apply, so differences in their later outcomes can be attributed to the school rather than to the families who chose it. Much of what is known about the effects of particular schools comes from this accident of administration.\n\nThe findings are more varied than either side of the argument usually reports. Some oversubscribed schools produce substantial gains for lottery winners; others produce none; and the schools that produce gains are not reliably the ones with the strongest raw results, since raw results largely reflect who enrols. The useful output is not a verdict on a sector but a method for telling which individual schools add something.\n\nTwo limits deserve more attention than they get. The comparison holds only among applicants, so it says nothing about what a school would do for children whose families did not apply — and the decision to apply is itself unevenly distributed. And a lottery estimates the effect of attending one school rather than the alternative that applicant would otherwise have attended, which differs from applicant to applicant, so the same school can show a large effect in a district with weak alternatives and none where the alternatives are good.\n\nThe measured quantity is therefore a comparison, not a property of the school, and reporting it as a school's quality drops the half of the sentence that gives it meaning."
+    },
+    {
+      "id": "gmat-verbal-001-rp4",
+      "title": "Finding the Page",
+      "text": "An alphabetical index is so ordinary a feature of a book that its absence is more noticeable than its presence. It is also an invention with a history, and one that depended on a prior invention: the stable page number, which requires that every copy of a book be identical.\n\nIn a manuscript culture no such stability exists. Two copies of the same text have different line breaks and different leaves, so a reference can only point to a division of the work itself — a book, a chapter, a canon — and finding aids of that period accordingly point to divisions rather than pages. The apparatus of chapter divisions and marginal letters used in medieval reference works is a solution to precisely this problem, and a more ingenious one than the page number that replaced it.\n\nPrinting made identical copies, and the index in its modern form followed. It changed how books could be used: a work with an index can be consulted rather than read, and the practice of extracting a fact without the surrounding argument begins here. Contemporaries noticed and complained, in terms that reappear in every subsequent argument about new reading technologies.\n\nThe index also embodies judgements that its form conceals. Someone decided what counts as a topic, which mentions are substantive and which incidental, and what to call a thing that the author called something else. A good index is a piece of interpretation presented as a list, and its neutrality is the most successful illusion in the apparatus of the book."
     }
   ]
 }
