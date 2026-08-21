@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
+      "prompt": "A class of 18 pupils scored a mean of 62 on a test. A second class of 42 pupils scored a mean of 74. What is the mean score across both classes?",
       "options": [
-        "$21.50",
-        "$19.25",
-        "$20.00",
-        "$14.00",
-        "$18.50"
+        "68.0",
+        "70.0",
+        "70.4",
+        "69.5",
+        "72.0"
       ],
-      "correctAnswer": "$21.50",
+      "correctAnswer": "70.4",
       "answer": "C",
-      "explanation": "Notebooks: 4 × $3.50 = $14.00. Pens: 6 × $1.25 = $7.50. Total = $14.00 + $7.50 = $21.50.",
+      "explanation": "Total marks are 18×62 + 42×74 = 4224, over 60 pupils, giving 70.4. The unweighted average of 62 and 74 is 68.0, which is wrong because the larger class scored higher.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
+      "prompt": "A price of £240.00 rises by 25% and the new price is then reduced by 20%. What is the final price?",
       "options": [
-        "58 mph",
-        "60 mph",
-        "65 mph",
-        "70 mph",
-        "55 mph"
+        "£240.00",
+        "£252.00",
+        "£264.00",
+        "£228.00",
+        "£300.00"
       ],
-      "correctAnswer": "60 mph",
-      "answer": "C",
-      "explanation": "Total distance = 240 + 180 = 420 miles. Total time = 4 + 3 = 7 hours. Average = 420 ÷ 7 = 60 mph.",
+      "correctAnswer": "£240.00",
+      "answer": "A",
+      "explanation": "£240.00 × 1.25 = £300.00, then × 0.80 = £240.00. The percentages do not add: a 25% rise followed by a 20% fall returns exactly to the start, because 1.25 × 0.8 = 1.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 40% of a number is 64, what is 75% of that number?",
+      "prompt": "One machine can complete a job in 4 hours and another in 6 hours. Working together at those rates, how long do they take?",
       "options": [
-        "100",
-        "108",
-        "120",
-        "128",
-        "96"
+        "5.0 hours",
+        "2.0 hours",
+        "10.0 hours",
+        "2.4 hours",
+        "3.0 hours"
       ],
-      "correctAnswer": "120",
+      "correctAnswer": "2.4 hours",
       "answer": "D",
-      "explanation": "0.40x = 64 → x = 160. 75% of 160 = 0.75 × 160 = 120.",
+      "explanation": "Rates add, not times: 1/4 + 1/6 = 5/12 of the job per hour, so the job takes 12/5 = 2.4 hours. Averaging the two times to get 5 hours is the standard error.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
+      "prompt": "In a club the ratio of boys to girls is 3 : 5. When 12 more girls join, the ratio becomes 3 : 7. How many members were in the club originally?",
       "options": [
-        "3 hours",
-        "12 hours",
-        "15 hours",
-        "18 hours",
-        "21 hours"
+        "24",
+        "48",
+        "64",
+        "40",
+        "56"
       ],
-      "correctAnswer": "18 hours",
-      "answer": "D",
-      "explanation": "Net rate = 1/6 − 1/9 = 3/18 − 2/18 = 1/18 tank per hour. Time = 18 hours.",
+      "correctAnswer": "48",
+      "answer": "B",
+      "explanation": "Write the original numbers as 3k and 5k. After the change, 3k : (5k + 12) = 3 : 7, so 7(3k) = 3(5k + 12), giving 21k = 15k + 36, so k = 6. The original total is 8k = 48.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
+      "prompt": "£4,000.00 is invested at 5% a year, compounded annually. What is it worth after 3 years, to the nearest penny?",
       "options": [
-        "$190",
-        "$200",
-        "$210",
-        "$170",
-        "$180"
+        "£4,600.00",
+        "£4,620.00",
+        "£4,630.00",
+        "£4,650.00",
+        "£4,630.50"
       ],
-      "correctAnswer": "$180",
-      "answer": "B",
-      "explanation": "200 × 1.20 = 240; 240 × 0.75 = 180. (Net factor 1.2 × 0.75 = 0.9, a 10% drop.)",
+      "correctAnswer": "£4,630.50",
+      "answer": "E",
+      "explanation": "£4,000.00 × 1.05³ = £4,630.50. Simple interest would give £4,600.00; the difference is the interest earned on interest.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
+      "prompt": "A driver covers 120 miles at 40 mph and returns over the same 120 miles at 60 mph. What is the average speed for the whole journey?",
       "options": [
-        "$210",
-        "$220",
-        "$240",
-        "$260",
-        "$200"
+        "48 mph",
+        "50 mph",
+        "48.5 mph",
+        "52 mph",
+        "45 mph"
       ],
-      "correctAnswer": "$210",
-      "answer": "B",
-      "explanation": "Amount = 1000 × 1.10² = 1000 × 1.21 = 1210. Interest = 1210 − 1000 = 210.",
+      "correctAnswer": "48 mph",
+      "answer": "A",
+      "explanation": "Time out is 120/40 = 3 hours and back is 120/60 = 2 hours, so 240 miles take 5 hours: 48 mph. The average of 40 and 60 is 50, which is wrong because more time is spent at the slower speed.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
+      "prompt": "If 40% of a number is 64, what is 75% of the same number?",
       "options": [
-        "12",
-        "15",
-        "16",
-        "18",
-        "20"
+        "100",
+        "128",
+        "96",
+        "120",
+        "144"
       ],
-      "correctAnswer": "15",
-      "answer": "B",
-      "explanation": "Sum of 5 = 5 × 20 = 100. Remove 40 → 60 left over 4 numbers. Average = 60 ÷ 4 = 15.",
+      "correctAnswer": "120",
+      "answer": "D",
+      "explanation": "0.40x = 64 gives x = 64/0.4 = 160. Then 0.75 × 160 = 120. Working out the whole first is the reliable route; scaling 64 by 75/40 reaches the same place.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
+      "prompt": "Three adult tickets and two child tickets cost £34.50. Two adult tickets and five child tickets cost £36.00. What is the price of one adult ticket?",
       "options": [
-        "8",
-        "12",
-        "16",
-        "20",
-        "24"
+        "£3.55",
+        "£9.14",
+        "£9.50",
+        "£10.50",
+        "£11.00"
       ],
-      "correctAnswer": "16",
-      "answer": "C",
-      "explanation": "Parts = 3 + 5 = 8 → each part = 64 ÷ 8 = 8. Amounts: 24 and 40. Difference = 40 − 24 = 16.",
+      "correctAnswer": "£9.14",
+      "answer": "B",
+      "explanation": "Solving 3a + 2c = 34.50 and 2a + 5c = 36.00 gives a = £9.14 and c = £3.55. Check: 3 × £9.14 + 2 × £3.55 = £34.50.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
+      "prompt": "A bag holds 5 red and 7 blue counters. Two are drawn without replacement. What is the probability that both are red?",
       "options": [
-        "152",
-        "96",
-        "120",
-        "136",
-        "140"
+        "17.4%",
+        "20.8%",
+        "15.2%",
+        "25.0%",
+        "16.0%"
       ],
-      "correctAnswer": "136",
+      "correctAnswer": "15.2%",
       "answer": "C",
-      "explanation": "Area = 12 × 8 = 96. Perimeter = 2(12 + 8) = 40. Sum = 96 + 40 = 136.",
+      "explanation": "P(first red) = 5/12. After removing one red, P(second red) = 4/11. Multiplying gives 15.2%. Treating the draws as independent would give 17.4%.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 2^5 × 2^3?",
+      "prompt": "A room measures 4.5 m by 6.2 m. Flooring costs £27.50 per square metre. What is the cost of covering the floor?",
       "options": [
-        "512",
-        "1024",
-        "64",
-        "128",
-        "256"
+        "£294.25",
+        "£693.00",
+        "£800.00",
+        "£742.50",
+        "£767.25"
       ],
-      "correctAnswer": "256",
-      "answer": "C",
-      "explanation": "2^5 × 2^3 = 2^(5+3) = 2^8 = 256.",
+      "correctAnswer": "£767.25",
+      "answer": "E",
+      "explanation": "Area is 4.5 × 6.2 = 27.90 m². At £27.50 per m² that is £767.25.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
+      "prompt": "After a 14% reduction, a coat costs £258.00. What was the price before the reduction?",
       "options": [
-        "21",
-        "24",
-        "27",
-        "30",
-        "18"
+        "£300.00",
+        "£294.12",
+        "£295.00",
+        "£310.00",
+        "£288.00"
       ],
-      "correctAnswer": "21",
-      "answer": "B",
-      "explanation": "Adding: 2x = 14 → x = 7. Then y = 3. xy = 7 × 3 = 21.",
+      "correctAnswer": "£300.00",
+      "answer": "A",
+      "explanation": "The sale price is 86% of the original, so the original is £258.00 / 0.86 = £300.00. Adding 14% to the sale price gives £294.12, which is the common mistake — the percentage applies to the larger figure.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is 15% of 15% of 400?",
+      "prompt": "3 litres of a 20% solution are mixed with 5 litres of a 60% solution. What is the concentration of the mixture?",
       "options": [
-        "6",
-        "9",
-        "12",
-        "15",
-        "18"
+        "40.0%",
+        "45.0%",
+        "44.0%",
+        "48.0%",
+        "50.0%"
       ],
-      "correctAnswer": "9",
+      "correctAnswer": "45.0%",
       "answer": "B",
-      "explanation": "15% of 400 = 60. 15% of 60 = 9.",
+      "explanation": "Solute is 3×0.20 + 5×0.60 = 3.6 litres in 8 litres of mixture: 45.0%. The midpoint of 20 and 60 is 40%, which ignores the larger volume of the stronger solution.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
+      "prompt": "A sequence starts at 7 and increases by 5 each term. What is the 24th term?",
       "options": [
-        "$57",
-        "$60",
-        "$63",
-        "$66",
-        "$70"
+        "127",
+        "120",
+        "115",
+        "130",
+        "122"
       ],
-      "correctAnswer": "$63",
-      "answer": "C",
-      "explanation": "Discount: 80 × 0.75 = 60. Tax: 60 × 1.05 = 63.",
+      "correctAnswer": "122",
+      "answer": "E",
+      "explanation": "The kth term is 7 + (k − 1) × 5. For k = 24: 7 + 23 × 5 = 122. Using k rather than k − 1 gives 127.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
+      "prompt": "An item costing £60.00 is sold for £80.00. What is the profit margin as a percentage of the selling price?",
       "options": [
-        "180 miles",
-        "120 miles",
-        "135 miles",
-        "150 miles",
-        "165 miles"
+        "33.3%",
+        "20.0%",
+        "30.0%",
+        "25.0%",
+        "35.0%"
       ],
-      "correctAnswer": "150 miles",
-      "answer": "C",
-      "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
+      "correctAnswer": "25.0%",
+      "answer": "D",
+      "explanation": "Profit is £20.00. As a share of the selling price that is 20/80 = 25.0%. As a share of cost it would be 33.3% — margin and markup are different measures of the same profit.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "prompt": "Of 120 people surveyed, 74 read the local paper, 58 listen to local radio and 12 do neither. How many do both?",
       "options": [
-        "12",
-        "15",
         "16",
-        "8",
-        "10"
+        "32",
+        "20",
+        "28",
+        "24"
       ],
-      "correctAnswer": "10",
-      "answer": "B",
-      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "correctAnswer": "24",
+      "answer": "E",
+      "explanation": "120 − 12 = 108 do at least one. By inclusion and exclusion, both = 74 + 58 − 108 = 24.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "prompt": "A van travels 12.4 km on each litre of fuel. How far can it travel on 45 litres?",
       "options": [
-        "3/5",
-        "2/3",
-        "1/5",
-        "2/5",
-        "1/2"
+        "558 km",
+        "540.0 km",
+        "558.5 km",
+        "570.0 km",
+        "525.0 km"
       ],
-      "correctAnswer": "3/5",
-      "answer": "D",
-      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "correctAnswer": "558 km",
+      "answer": "A",
+      "explanation": "Distance is fuel multiplied by consumption: 45 × 12.4 = 558.0 km. Dividing instead of multiplying is the error the distractors are built around.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "Six values are recorded: 12, 14, 15, 15, 19, 96. By how much does the mean exceed the median?",
       "options": [
-        "30",
-        "32",
-        "35",
-        "38",
-        "29"
+        "10.5",
+        "14.0",
+        "26.8",
+        "13.5",
+        "20.0"
       ],
-      "correctAnswer": "32",
-      "answer": "C",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "correctAnswer": "13.5",
+      "answer": "D",
+      "explanation": "Mean is 171/6 = 28.50; median is the average of the third and fourth values, 15. The difference is 13.5, driven by the single large value.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "A machine listed at £850.00 is sold with a 15% discount, and 20% tax is then added to the discounted price. What does the buyer pay?",
       "options": [
-        "1225",
-        "1250",
-        "1275",
-        "1300",
-        "1175"
+        "£892.50",
+        "£884.00",
+        "£867.00",
+        "£850.00",
+        "£901.00"
       ],
-      "correctAnswer": "1275",
-      "answer": "D",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "correctAnswer": "£867.00",
+      "answer": "C",
+      "explanation": "£850.00 × 0.85 = £722.50, then × 1.20 = £867.00. Netting the percentages to +5% gives £892.50 and is wrong.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "6 workers complete a task in 15 days. Working at the same rate, how long would 10 workers take?",
       "options": [
-        "20",
-        "12",
-        "14",
-        "16",
-        "18"
+        "25 days",
+        "9 days",
+        "12 days",
+        "18 days",
+        "6 days"
       ],
-      "correctAnswer": "16",
-      "answer": "C",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "correctAnswer": "9 days",
+      "answer": "B",
+      "explanation": "The total work is 6 × 15 = 90 worker-days. Divided among 10 workers that is 9 days. More workers means fewer days, so the answer must be below 15.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "A market share rises from 8% to 10%. By what percentage has the share increased?",
       "options": [
-        "30%",
-        "35%",
-        "40%",
+        "2%",
+        "2.5%",
         "20%",
+        "18%",
         "25%"
       ],
       "correctAnswer": "25%",
-      "answer": "B",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "answer": "E",
+      "explanation": "The rise is 2 percentage points, but as a percentage of the original share it is 2/8 = 25%. Reporting 2% conflates a percentage point with a percentage.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "Option A charges £0.42 a mile with no standing charge. Option B charges £90.00 plus £0.18 a mile. For a journey of 500 miles, which is cheaper and by how much?",
       "options": [
-        "9 days",
-        "10 days",
-        "11 days",
-        "16 days",
-        "8 days"
+        "Option A, by £30.00",
+        "Option B, by £30.00",
+        "Option B, by £120.00",
+        "Option A, by £45.00",
+        "They cost the same"
       ],
-      "correctAnswer": "9 days",
+      "correctAnswer": "Option B, by £30.00",
       "answer": "B",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "explanation": "Option A costs £210.00; Option B costs £90.00 + £90.00 = £180.00. Option B is cheaper by £30.00. The two are equal at 375 miles, above which the standing charge is worth paying.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-001-q001": "$21.50",
-    "gmat-quant-001-q002": "60 mph",
-    "gmat-quant-001-q003": "120",
-    "gmat-quant-001-q004": "18 hours",
-    "gmat-quant-001-q005": "$180",
-    "gmat-quant-001-q006": "$210",
-    "gmat-quant-001-q007": "15",
-    "gmat-quant-001-q008": "16",
-    "gmat-quant-001-q009": "136",
-    "gmat-quant-001-q010": "256",
-    "gmat-quant-001-q011": "21",
-    "gmat-quant-001-q012": "9",
-    "gmat-quant-001-q013": "$63",
-    "gmat-quant-001-q014": "150 miles",
-    "gmat-quant-001-q015": "10",
-    "gmat-quant-001-q016": "3/5",
-    "gmat-quant-001-q017": "32",
-    "gmat-quant-001-q018": "1275",
-    "gmat-quant-001-q019": "16",
+    "gmat-quant-001-q001": "70.4",
+    "gmat-quant-001-q002": "£240.00",
+    "gmat-quant-001-q003": "2.4 hours",
+    "gmat-quant-001-q004": "48",
+    "gmat-quant-001-q005": "£4,630.50",
+    "gmat-quant-001-q006": "48 mph",
+    "gmat-quant-001-q007": "120",
+    "gmat-quant-001-q008": "£9.14",
+    "gmat-quant-001-q009": "15.2%",
+    "gmat-quant-001-q010": "£767.25",
+    "gmat-quant-001-q011": "£300.00",
+    "gmat-quant-001-q012": "45.0%",
+    "gmat-quant-001-q013": "122",
+    "gmat-quant-001-q014": "25.0%",
+    "gmat-quant-001-q015": "24",
+    "gmat-quant-001-q016": "558 km",
+    "gmat-quant-001-q017": "13.5",
+    "gmat-quant-001-q018": "£867.00",
+    "gmat-quant-001-q019": "9 days",
     "gmat-quant-001-q020": "25%",
-    "gmat-quant-001-q021": "9 days"
+    "gmat-quant-001-q021": "Option B, by £30.00"
   }
 }
