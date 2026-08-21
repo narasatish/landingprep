@@ -12,469 +12,474 @@
       "id": "gmat-verbal-028-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "prompt": "A quarry installed dust suppression equipment and reports that complaints from nearby residents have fallen by 80 per cent. Management concludes that dust levels have fallen correspondingly.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Job satisfaction and adequate sleep are associated in the survey population",
-        "B. Improving sleep quality will increase job satisfaction for most workers",
-        "C. Dissatisfied workers always sleep fewer than 7 hours",
-        "D. Employers should implement nap rooms to improve satisfaction",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "A. The equipment operates only during blasting.",
+        "B. The quarry simultaneously introduced a compensation scheme requiring residents to submit complaints through a form obtainable from its office.",
+        "C. Dust is measured by monitors at the site boundary.",
+        "D. The equipment was expensive to install.",
+        "E. Residents were consulted about the design."
       ],
-      "correctAnswer": "A",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "Raising the effort required to complain reduces complaints without reducing dust, so the proxy has been changed rather than the thing it stood for.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-028-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "prompt": "A dance school reports that pupils who take part in its annual show progress to higher grades faster than those who do not, and plans to require all pupils to take part.",
+      "question": "Which of the following, if true, casts most doubt on the plan?",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. The show is staged in a hired theatre.",
+        "B. The show runs for two nights.",
+        "C. Some pupils are nervous of performing.",
+        "D. Pupils volunteer for the show when they are already committed enough to attend extra rehearsals, and those rehearsals are additional teaching time.",
+        "E. Grades are assessed by an external examiner."
       ],
-      "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "Both commitment and the extra teaching are confounded with participation, and compulsion transfers neither.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-028-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "prompt": "A greengrocer began displaying produce in wooden crates rather than on plastic shelving and reports that sales of fruit rose 12 per cent. The owner concludes that customers prefer produce displayed in crates.",
+      "question": "Which of the following would be most useful to determine in evaluating the conclusion?",
       "options": [
-        "A. The claim that wetlands prevent flooding",
-        "B. The assumption that all wetlands have equal flood-prevention value",
-        "C. The conclusion that all wetlands should be protected",
-        "D. The implication that flooding is always preventable",
-        "E. The premise that wetlands are worth preserving"
+        "A. How much the crates cost",
+        "B. Whether the crates are made from sustainable timber",
+        "C. Whether the crates hold more produce, so that fruit is now displayed in larger quantity and replenished more often",
+        "D. How long the shop has traded",
+        "E. Whether vegetables are displayed the same way"
       ],
-      "correctAnswer": "B",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Volume and freshness of display drive produce sales independently of the container's appearance, and the two changed together.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-028-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "prompt": "An air ambulance charity reports that patients it airlifts have better survival rates than patients with similar injuries taken by road, and argues that its service saves lives.",
+      "question": "Which of the following, if true, most seriously undermines the argument?",
       "options": [
-        "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. A controlled experiment with randomly assigned music found the same 20% difference",
-        "D. Sales staff performed better when the music was upbeat",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "A. Helicopters cannot fly in fog.",
+        "B. The charity is funded by donations.",
+        "C. Crews include a doctor as well as paramedics.",
+        "D. Road ambulances are more numerous.",
+        "E. Dispatchers send the helicopter to patients judged to have the best prospect of surviving a long transfer, and send road ambulances to those too unstable to move."
       ],
-      "correctAnswer": "C",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "Triage assigns the two groups on precisely the characteristic the comparison is meant to measure, so the survival gap may exist before any transport occurs.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-028-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "A newspaper editorial argued: 'Crime statistics show that areas with higher unemployment have higher crime rates. Therefore, reducing unemployment is the most effective way to fight crime.'",
-      "question": "Which of the following most weakens the editorial's conclusion?",
+      "prompt": "Every garment altered by the Ashwood tailor that uses hand-finished buttonholes is made from cloth woven in Britain. No garment made from British-woven cloth has been returned for repair this year. Some garments altered by the tailor have been returned for repair this year.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. Employment programmes have reduced crime in some pilot cities",
-        "B. The editorial does not define 'crime' precisely",
-        "C. Reducing unemployment is expensive and politically difficult",
-        "D. Crime rates are influenced by many factors beyond unemployment",
-        "E. Some high-unemployment areas have low crime rates due to strong community cohesion"
+        "A. Some garments altered by the tailor do not use hand-finished buttonholes.",
+        "B. Hand-finished buttonholes are more durable.",
+        "C. Most garments use British-woven cloth.",
+        "D. British cloth is more expensive.",
+        "E. Returned garments were altered recently."
       ],
-      "correctAnswer": "D",
-      "explanation": "Even if unemployment correlates with crime, many other variables (education, policing, social programmes) also affect crime rates, making unemployment reduction potentially not the 'most effective' single strategy.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "Returned garments are not made from British cloth, and hand-finished buttonholes imply that cloth, so those garments have machine-finished buttonholes.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-028-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A university president argued that because students with higher SAT scores perform better academically, the admissions office should give more weight to SAT scores to improve overall student performance.",
-      "question": "The president's argument is flawed because it:",
+      "prompt": "A locksmith advertises that fitting its high-security locks reduces the chance of a break-in, citing that fewer than 1 per cent of homes it has fitted have been burgled, compared with a national rate of 3 per cent.",
+      "question": "The advertisement is most vulnerable to the criticism that it",
       "options": [
-        "A. Ignores that SAT preparation courses can inflate scores",
-        "B. Assumes that selecting for high SAT scorers will raise overall performance rather than simply filtering applicants",
-        "C. Does not consider the diversity implications of the policy",
-        "D. Fails to define 'academic performance' precisely",
-        "E. Both A and B"
+        "A. does not specify the period over which burglaries were counted",
+        "B. compares customers who chose to invest in security with the general population",
+        "C. ignores the cost of the locks",
+        "D. relies on figures the locksmith collected itself",
+        "E. overlooks burglaries that were attempted but failed"
       ],
       "correctAnswer": "B",
-      "explanation": "Even if SAT scores correlate with performance among admitted students, selecting for high scorers changes the pool — it doesn't guarantee that the selected group will perform better than a more holistically-selected group.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "explanation": "Households that buy high-security locks differ in area, alarm use and behaviour; the comparison is not between like and like.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-028-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "A financial adviser told a client: 'The stock market has risen every year for the past five years, so it is safe to invest heavily in equities now.' The client then invested 90% of her savings in equities.",
-      "question": "The adviser's reasoning is most analogous to which of the following?",
+      "prompt": "A bookshop introduced a table of staff recommendations and reports that titles on the table outsell those on the ordinary shelves by a wide margin. It concludes that staff recommendations drive sales.",
+      "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Investing in diversified funds reduces portfolio risk over time",
-        "B. A stock's five-year return is a better predictor of future performance than its one-year return",
-        "C. Historical market data is unreliable because markets change structurally over time",
-        "D. Companies with consistent earnings growth tend to have stable stock prices",
-        "E. Because a coin has landed heads five times in a row, it is more likely to land tails next time"
+        "A. The table is placed near the entrance and holds twelve titles, all displayed face out.",
+        "B. The table is refreshed monthly.",
+        "C. Some customers ask staff for advice.",
+        "D. Staff choose books they have read.",
+        "E. The shop also sells stationery."
       ],
-      "correctAnswer": "E",
-      "explanation": "Both commit the gambler's fallacy — assuming that a streak of past outcomes changes the probability of future outcomes for an independent event.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "Position and face-out display raise sales for almost any title, so the endorsement is confounded with the prominence.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-028-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
-      "question": "Which of the following, if true, most seriously weakens the conclusion?",
+      "prompt": "A swimming club reports that members who train in the early morning squad record faster times than those in the evening squad, and proposes moving all competitive swimmers to the morning.",
+      "question": "Which of the following, if true, most weakens the proposal?",
       "options": [
-        "A. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "B. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "C. Customers report feeling more valued when using a loyalty programme",
-        "D. Competitors without loyalty programmes have seen declining sales",
-        "E. The loyalty programme was introduced simultaneously with a store renovation"
+        "A. The morning squad is selected by the coach from swimmers who have already met qualifying times.",
+        "B. The pool is warmer in the evening.",
+        "C. Evening sessions are more crowded.",
+        "D. Some swimmers attend both squads.",
+        "E. Times are recorded electronically."
       ],
       "correctAnswer": "A",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
+      "explanation": "The morning squad's speed is its entry condition, so moving everyone there cannot reproduce the difference.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-028-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
-      "question": "Which of the following would most strengthen the CFO's conclusion?",
+      "prompt": "A window cleaning firm switched from ladders to a water-fed pole system and reports that its insurance premiums fell by a third. The owner concludes that the new system is safer.",
+      "question": "Which of the following, if true, most strengthens the conclusion?",
       "options": [
-        "A. Other advertising channels were suspended during the same three months",
-        "B. The lifetime value of a new user averages $50",
-        "C. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "D. Social media platforms reported the campaign reached 5 million unique users",
-        "E. Competitors saw no change in sign-ups over the same period"
+        "A. The poles are lighter than ladders.",
+        "B. The system was expensive to buy.",
+        "C. The insurer's premium is calculated from the firm's own claims history, and reported falls from height fell to zero in the two years after the change.",
+        "D. Customers prefer the new method.",
+        "E. Staff required training to use the poles."
       ],
-      "correctAnswer": "B",
-      "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
+      "correctAnswer": "C",
+      "explanation": "It links the premium to the firm's own accident record rather than to an insurer's general classification, which is what the safety claim needs.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-028-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
-      "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
+      "prompt": "A seed merchant reports that customers who buy its premium compost achieve better germination rates than those who buy the standard grade, and advertises the premium compost as improving germination.",
+      "question": "Which of the following, if true, most seriously weakens the advertisement?",
       "options": [
-        "A. It assumes that lower temperatures are always desirable",
-        "B. It ignores that tree planting is expensive",
-        "C. It treats a correlation as evidence of a causal relationship",
-        "D. It fails to consider that trees require water",
-        "E. It overlooks that some neighbourhoods may not have space for trees"
+        "A. The premium compost costs twice as much.",
+        "B. Both grades are sold in the same size bags.",
+        "C. The merchant also sells seed trays.",
+        "D. Germination is tested in spring.",
+        "E. Germination rates are reported by customers, and those who spend more on compost are more likely to be experienced growers who also sow at the right depth and temperature."
       ],
-      "correctAnswer": "C",
-      "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
+      "correctAnswer": "E",
+      "explanation": "The purchase marks the grower's expertise, and the outcome is self-reported by that same group, so two biases run in the same direction.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-028-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
-      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "prompt": "Supporters of a proposal to close a rural primary school argue that its cost per pupil is three times the national average. Opponents reply that closure would require the youngest children to travel forty minutes each way by bus.",
+      "question": "The opponents' reply functions in the argument by",
       "options": [
-        "A. Passengers reported higher satisfaction with the new policy",
-        "B. Competing airlines have not adopted similar policies",
-        "C. Boarding time varies naturally between 15 and 35 minutes",
-        "D. The airline also reduced the number of carry-on bags allowed during the same period",
-        "E. The new policy was introduced on routes with larger aircraft"
+        "A. disputing the cost figure the supporters cite",
+        "B. identifying a cost of the proposal that the per-pupil comparison does not capture",
+        "C. arguing that small schools produce better results",
+        "D. questioning the motives of the supporters",
+        "E. proposing an alternative source of funding"
       ],
-      "correctAnswer": "D",
-      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
+      "correctAnswer": "B",
+      "explanation": "The reply grants the arithmetic and points to a burden borne by children and families rather than by the education budget.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-028-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "passageTitle": "Promotion as a Prize",
+      "passageText": "Firms that cannot measure an individual's output precisely often pay by rank instead: the employee judged best is promoted, and the reward is the difference between the two salaries. This is a tournament, and it has properties that ordinary pay-for-output does not.\n\nIts advantage is robustness to noise that affects everyone. If a whole department has a bad year for reasons outside anyone's control, a bonus tied to results falls for all of them; a promotion still goes to whoever performed best. Relative judgement filters out the common shock, and it requires only that the employer rank employees, not that it measure them.\n\nThe costs follow from the same feature. Because the prize goes to whoever finishes ahead, an employee can win by performing better or by ensuring that colleagues perform worse, and the second is often cheaper. Cooperation, mentoring and the sharing of information are precisely what a tournament discourages, which is why firms most dependent on collaboration tend to flatten the prize or judge teams rather than individuals.\n\nThere is a subtler effect on who competes. A tournament rewards variance: an employee behind on current form does better to take a risk than to perform steadily, since finishing second is worth nothing. The same structure that motivates effort therefore encourages gambling by those unlikely to win, and discourages effort altogether once a contest looks decided — which is why long promotion cycles with a single obvious front-runner produce the least effort from everyone else, exactly when the firm most needs it.",
+      "prompt": "According to the passage, a tournament is robust to noise because",
       "options": [
-        "A. Does not define what type of consulting services were provided",
-        "B. Ignores that some companies declined in revenue after hiring the firm",
-        "C. Does not specify what time period is covered by the data",
-        "D. Compares incomparable companies across different industries",
-        "E. Fails to compare the companies' growth with industry-wide growth trends"
+        "A. employees are paid the same regardless of results",
+        "B. output is measured precisely",
+        "C. relative judgement filters out shocks affecting everyone",
+        "D. promotions occur at fixed intervals",
+        "E. the prize is small relative to salary"
       ],
-      "correctAnswer": "E",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
+      "correctAnswer": "C",
+      "explanation": "A bad year for the whole department lowers everyone's results, but the promotion still goes to whoever performed best.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-028-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "passageTitle": "Promotion as a Prize",
+      "passageText": "Firms that cannot measure an individual's output precisely often pay by rank instead: the employee judged best is promoted, and the reward is the difference between the two salaries. This is a tournament, and it has properties that ordinary pay-for-output does not.\n\nIts advantage is robustness to noise that affects everyone. If a whole department has a bad year for reasons outside anyone's control, a bonus tied to results falls for all of them; a promotion still goes to whoever performed best. Relative judgement filters out the common shock, and it requires only that the employer rank employees, not that it measure them.\n\nThe costs follow from the same feature. Because the prize goes to whoever finishes ahead, an employee can win by performing better or by ensuring that colleagues perform worse, and the second is often cheaper. Cooperation, mentoring and the sharing of information are precisely what a tournament discourages, which is why firms most dependent on collaboration tend to flatten the prize or judge teams rather than individuals.\n\nThere is a subtler effect on who competes. A tournament rewards variance: an employee behind on current form does better to take a risk than to perform steadily, since finishing second is worth nothing. The same structure that motivates effort therefore encourages gambling by those unlikely to win, and discourages effort altogether once a contest looks decided — which is why long promotion cycles with a single obvious front-runner produce the least effort from everyone else, exactly when the firm most needs it.",
+      "prompt": "The passage indicates that tournaments discourage cooperation because an employee can win by",
       "options": [
-        "A. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
-        "B. Olive oil contains monounsaturated fats linked to heart health",
-        "C. Heart disease rates have been declining globally regardless of fat consumption",
-        "D. The study followed individuals for 10 years",
-        "E. Olive oil is more expensive than butter in most markets"
+        "A. negotiating a higher salary",
+        "B. moving to another firm",
+        "C. delaying the contest",
+        "D. ensuring that colleagues perform worse, which is often cheaper than performing better",
+        "E. sharing information selectively with managers"
       ],
-      "correctAnswer": "A",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
+      "correctAnswer": "D",
+      "explanation": "This is why firms dependent on collaboration flatten the prize or judge teams.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-028-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "passageTitle": "Promotion as a Prize",
+      "passageText": "Firms that cannot measure an individual's output precisely often pay by rank instead: the employee judged best is promoted, and the reward is the difference between the two salaries. This is a tournament, and it has properties that ordinary pay-for-output does not.\n\nIts advantage is robustness to noise that affects everyone. If a whole department has a bad year for reasons outside anyone's control, a bonus tied to results falls for all of them; a promotion still goes to whoever performed best. Relative judgement filters out the common shock, and it requires only that the employer rank employees, not that it measure them.\n\nThe costs follow from the same feature. Because the prize goes to whoever finishes ahead, an employee can win by performing better or by ensuring that colleagues perform worse, and the second is often cheaper. Cooperation, mentoring and the sharing of information are precisely what a tournament discourages, which is why firms most dependent on collaboration tend to flatten the prize or judge teams rather than individuals.\n\nThere is a subtler effect on who competes. A tournament rewards variance: an employee behind on current form does better to take a risk than to perform steadily, since finishing second is worth nothing. The same structure that motivates effort therefore encourages gambling by those unlikely to win, and discourages effort altogether once a contest looks decided — which is why long promotion cycles with a single obvious front-runner produce the least effort from everyone else, exactly when the firm most needs it.",
+      "prompt": "The passage says that long promotion cycles with an obvious front-runner produce",
       "options": [
-        "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Doctors who proactively call patients may also be more thorough in their overall care",
-        "C. Some patients do not have phones",
-        "D. Patients prefer in-person follow-up visits to phone calls",
-        "E. Phone calls are less effective than written instructions"
+        "A. the least effort from everyone else, exactly when the firm most needs it",
+        "B. the greatest effort from all competitors",
+        "C. more accurate measurement of output",
+        "D. higher rates of cooperation",
+        "E. a preference for steady performance over risk"
       ],
-      "correctAnswer": "B",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
+      "correctAnswer": "A",
+      "explanation": "Once a contest looks decided, the incentive to compete disappears for those who cannot win.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-028-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "passageTitle": "Something That Works Without Explanation",
+      "passageText": "General anaesthesia is administered millions of times a year with a safety record that is among modern medicine's genuine achievements. What it does to produce unconsciousness is not fully understood, and the gap between reliable use and secure explanation is instructive.\n\nThe oldest account observed that the potency of an anaesthetic tracks its solubility in oil almost across the whole range of agents, suggesting the drugs act by dissolving into cell membranes and disturbing them. The correlation is striking and has survived; the mechanism inferred from it has not, because compounds have been found that fit the solubility relation and produce no anaesthesia, which a purely physical membrane effect does not predict.\n\nCurrent accounts focus instead on specific proteins — receptors and ion channels that certain agents demonstrably bind. This is better supported and less tidy: different anaesthetics act on different targets, so there is no single mechanism, and drugs that produce apparently identical clinical states may do so by different routes.\n\nThe harder problem is the endpoint. Unconsciousness is not the absence of brain activity but a change in how activity is organised, and identifying which change constitutes it requires deciding what consciousness consists of — a question anaesthesia research inherits rather than solves. This is why depth of anaesthesia is monitored by proxies whose relation to awareness is statistical rather than definitional, and why the rare cases of awareness under anaesthesia remain difficult both to predict and to detect.",
+      "prompt": "The oldest account of anaesthetic action rested on the observation that potency tracks",
       "options": [
-        "A. Drug X has minor side effects including nausea",
-        "B. The study included only 50 participants",
-        "C. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "D. Chronic pain affects millions of people worldwide",
-        "E. Drug X is expensive compared to existing treatments"
+        "A. molecular weight",
+        "B. the rate of metabolism in the liver",
+        "C. binding to a single receptor type",
+        "D. the volume administered",
+        "E. solubility in oil"
       ],
-      "correctAnswer": "C",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "The correlation has survived; what has not is the membrane mechanism inferred from it.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-028-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "passageTitle": "Something That Works Without Explanation",
+      "passageText": "General anaesthesia is administered millions of times a year with a safety record that is among modern medicine's genuine achievements. What it does to produce unconsciousness is not fully understood, and the gap between reliable use and secure explanation is instructive.\n\nThe oldest account observed that the potency of an anaesthetic tracks its solubility in oil almost across the whole range of agents, suggesting the drugs act by dissolving into cell membranes and disturbing them. The correlation is striking and has survived; the mechanism inferred from it has not, because compounds have been found that fit the solubility relation and produce no anaesthesia, which a purely physical membrane effect does not predict.\n\nCurrent accounts focus instead on specific proteins — receptors and ion channels that certain agents demonstrably bind. This is better supported and less tidy: different anaesthetics act on different targets, so there is no single mechanism, and drugs that produce apparently identical clinical states may do so by different routes.\n\nThe harder problem is the endpoint. Unconsciousness is not the absence of brain activity but a change in how activity is organised, and identifying which change constitutes it requires deciding what consciousness consists of — a question anaesthesia research inherits rather than solves. This is why depth of anaesthesia is monitored by proxies whose relation to awareness is statistical rather than definitional, and why the rare cases of awareness under anaesthesia remain difficult both to predict and to detect.",
+      "prompt": "According to the passage, the membrane account was undermined by",
       "options": [
-        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "B. The university's highest-achieving students attend the fitness centre most frequently",
-        "C. Exercise programmes are popular at peer universities",
-        "D. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "E. Students who exercise report feeling less stressed"
+        "A. the discovery of new anaesthetic agents",
+        "B. compounds that fit the solubility relation but produce no anaesthesia",
+        "C. improvements in monitoring technology",
+        "D. evidence that anaesthetics do not enter cells",
+        "E. the failure of the correlation across agents"
       ],
-      "correctAnswer": "D",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "A purely physical membrane effect does not predict such exceptions.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-028-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "passageTitle": "Something That Works Without Explanation",
+      "passageText": "General anaesthesia is administered millions of times a year with a safety record that is among modern medicine's genuine achievements. What it does to produce unconsciousness is not fully understood, and the gap between reliable use and secure explanation is instructive.\n\nThe oldest account observed that the potency of an anaesthetic tracks its solubility in oil almost across the whole range of agents, suggesting the drugs act by dissolving into cell membranes and disturbing them. The correlation is striking and has survived; the mechanism inferred from it has not, because compounds have been found that fit the solubility relation and produce no anaesthesia, which a purely physical membrane effect does not predict.\n\nCurrent accounts focus instead on specific proteins — receptors and ion channels that certain agents demonstrably bind. This is better supported and less tidy: different anaesthetics act on different targets, so there is no single mechanism, and drugs that produce apparently identical clinical states may do so by different routes.\n\nThe harder problem is the endpoint. Unconsciousness is not the absence of brain activity but a change in how activity is organised, and identifying which change constitutes it requires deciding what consciousness consists of — a question anaesthesia research inherits rather than solves. This is why depth of anaesthesia is monitored by proxies whose relation to awareness is statistical rather than definitional, and why the rare cases of awareness under anaesthesia remain difficult both to predict and to detect.",
+      "prompt": "The passage describes the 'harder problem' as",
       "options": [
-        "A. Cameras might violate driver privacy",
-        "B. The cost of cameras is high",
-        "C. Some drivers find cameras distracting",
-        "D. Cameras only capture rear-end collisions",
-        "E. Intersections chosen for cameras may have already been due for safety upgrades"
+        "A. measuring the concentration of drugs in tissue",
+        "B. the variety of agents in clinical use",
+        "C. the endpoint, since identifying the change that constitutes unconsciousness requires deciding what consciousness consists of",
+        "D. the rarity of adverse events",
+        "E. the cost of monitoring equipment"
       ],
-      "correctAnswer": "E",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "This is why depth is monitored by proxies whose relation to awareness is statistical rather than definitional.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-028-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "passageTitle": "Born in the Wrong Month",
+      "passageText": "Children in a school year differ in age by up to twelve months, and in the early years that difference is a substantial fraction of a life. The younger ones perform worse on average, which is unsurprising, and the pattern's persistence is not.\n\nThe effect is measurable in attainment throughout primary school, in the probability of being identified as having a special educational need, and — most strikingly — in selection for competitive sport, where the distribution of professional players' birth months is skewed toward the start of the selection year in country after country. A twelve-year-old who is nearly a year older is bigger and better coordinated, is selected for the better team, receives better coaching, and the initial advantage compounds into one that is no longer about age at all.\n\nThe academic effect fades with time but does not vanish before it has done work: judgements made about a six-year-old shape what that child is offered, and streaming by apparent ability early in school converts a maturity difference into a durable one.\n\nThe remedies are unsatisfying. Age-adjusting test scores addresses measurement but not the coaching and streaming that follow from it. Later selection helps in sport and is resisted by those who benefit from the current arrangement. And any cut-off produces a boundary, so the problem cannot be abolished, only made less consequential — which is an argument for reducing how much rests on early judgements rather than for finding a better date.",
+      "prompt": "The passage cites the distribution of professional players' birth months as evidence that",
       "options": [
-        "A. A separate economic boom added 100,000 jobs during the same year",
-        "B. Labour economists disagree on the effects of minimum wage increases",
-        "C. The minimum wage increase only affected 5% of workers",
-        "D. Some industries are more affected than others by wage increases",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. age differences within a school year vanish quickly",
+        "B. coaching quality is unrelated to selection",
+        "C. sport selects on skill rather than size",
+        "D. an initial maturity advantage compounds into one no longer about age",
+        "E. birth month affects physical development permanently"
       ],
-      "correctAnswer": "A",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "Better team, better coaching, and the advantage ceases to be about the months.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-028-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "passageTitle": "Born in the Wrong Month",
+      "passageText": "Children in a school year differ in age by up to twelve months, and in the early years that difference is a substantial fraction of a life. The younger ones perform worse on average, which is unsurprising, and the pattern's persistence is not.\n\nThe effect is measurable in attainment throughout primary school, in the probability of being identified as having a special educational need, and — most strikingly — in selection for competitive sport, where the distribution of professional players' birth months is skewed toward the start of the selection year in country after country. A twelve-year-old who is nearly a year older is bigger and better coordinated, is selected for the better team, receives better coaching, and the initial advantage compounds into one that is no longer about age at all.\n\nThe academic effect fades with time but does not vanish before it has done work: judgements made about a six-year-old shape what that child is offered, and streaming by apparent ability early in school converts a maturity difference into a durable one.\n\nThe remedies are unsatisfying. Age-adjusting test scores addresses measurement but not the coaching and streaming that follow from it. Later selection helps in sport and is resisted by those who benefit from the current arrangement. And any cut-off produces a boundary, so the problem cannot be abolished, only made less consequential — which is an argument for reducing how much rests on early judgements rather than for finding a better date.",
+      "prompt": "According to the passage, streaming early in school",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. corrects for differences in age",
+        "B. has no measurable effect on attainment",
+        "C. applies only to competitive sport",
+        "D. delays judgements about ability",
+        "E. converts a maturity difference into a durable one"
       ],
       "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "explanation": "Judgements made about a six-year-old shape what that child is subsequently offered.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-028-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "passageTitle": "Born in the Wrong Month",
+      "passageText": "Children in a school year differ in age by up to twelve months, and in the early years that difference is a substantial fraction of a life. The younger ones perform worse on average, which is unsurprising, and the pattern's persistence is not.\n\nThe effect is measurable in attainment throughout primary school, in the probability of being identified as having a special educational need, and — most strikingly — in selection for competitive sport, where the distribution of professional players' birth months is skewed toward the start of the selection year in country after country. A twelve-year-old who is nearly a year older is bigger and better coordinated, is selected for the better team, receives better coaching, and the initial advantage compounds into one that is no longer about age at all.\n\nThe academic effect fades with time but does not vanish before it has done work: judgements made about a six-year-old shape what that child is offered, and streaming by apparent ability early in school converts a maturity difference into a durable one.\n\nThe remedies are unsatisfying. Age-adjusting test scores addresses measurement but not the coaching and streaming that follow from it. Later selection helps in sport and is resisted by those who benefit from the current arrangement. And any cut-off produces a boundary, so the problem cannot be abolished, only made less consequential — which is an argument for reducing how much rests on early judgements rather than for finding a better date.",
+      "prompt": "The author's view of the available remedies is that",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "C. Local restaurants cannot accommodate arena crowds",
-        "D. The arena's construction will not create permanent jobs",
-        "E. The city already has sufficient sports facilities"
+        "A. any cut-off produces a boundary, so the problem can only be made less consequential",
+        "B. age-adjusting scores solves the problem",
+        "C. later selection is impractical everywhere",
+        "D. the effect is too small to justify action",
+        "E. a better cut-off date should be found"
       ],
-      "correctAnswer": "B",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The passage argues for reducing how much rests on early judgements rather than for a better date.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-028-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "According to the passage, what was the dominant view of the adult brain for much of the 20th century?",
+      "passageTitle": "The Price of Blue",
+      "passageText": "Until the nineteenth century the finest blue pigment available to European painters was ground from lapis lazuli, mined in what is now Afghanistan and transported across the whole width of the known world. It cost more by weight than gold, and its price shaped painting in ways that are visible on the surviving panels.\n\nContracts survive that specify the pigment by grade and quantity, sometimes stipulating how many ounces of the best ultramarine were to be used and on which figure. The blue was not a stylistic choice but a purchased commodity, and its concentration on the principal figure records what the patron paid for as much as what the painter intended. Cheaper substitutes existed — azurite, and later smalt — which are physically different, greener and less stable, and which painters used in areas the eye would attend to less.\n\nThis has consequences for interpretation. A modern viewer reading a blue robe as a symbolic statement may be reading an economic one, and conservation analysis distinguishing ultramarine from azurite in different parts of a picture recovers information about the commission that no amount of looking supplies.\n\nWhen synthetic ultramarine was produced in the 1820s at a fraction of the cost, the meaning of the colour changed with its price. What had been a display of expenditure became simply a colour, available to anyone. The pigment on the panel was the same substance; what it communicated was not, which is a reminder that the meaning of a material is partly a fact about its market.",
+      "prompt": "According to the passage, contracts specifying ultramarine by grade and quantity show that the pigment was",
       "options": [
-        "A. The brain continuously forms new neural connections throughout adulthood",
-        "B. Brain structure is largely fixed after early childhood",
-        "C. Neuroplasticity is highest in adults recovering from injury",
-        "D. Learning a new skill has no measurable effect on brain structure"
+        "A. applied by specialist craftsmen",
+        "B. a purchased commodity as much as a stylistic choice",
+        "C. unavailable outside Italy",
+        "D. reserved for religious subjects by law",
+        "E. cheaper than azurite in bulk"
       ],
       "correctAnswer": "B",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "explanation": "The concentration of the blue on the principal figure records what the patron paid for.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-028-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "The passage mentions stroke recovery primarily to:",
+      "passageTitle": "The Price of Blue",
+      "passageText": "Until the nineteenth century the finest blue pigment available to European painters was ground from lapis lazuli, mined in what is now Afghanistan and transported across the whole width of the known world. It cost more by weight than gold, and its price shaped painting in ways that are visible on the surviving panels.\n\nContracts survive that specify the pigment by grade and quantity, sometimes stipulating how many ounces of the best ultramarine were to be used and on which figure. The blue was not a stylistic choice but a purchased commodity, and its concentration on the principal figure records what the patron paid for as much as what the painter intended. Cheaper substitutes existed — azurite, and later smalt — which are physically different, greener and less stable, and which painters used in areas the eye would attend to less.\n\nThis has consequences for interpretation. A modern viewer reading a blue robe as a symbolic statement may be reading an economic one, and conservation analysis distinguishing ultramarine from azurite in different parts of a picture recovers information about the commission that no amount of looking supplies.\n\nWhen synthetic ultramarine was produced in the 1820s at a fraction of the cost, the meaning of the colour changed with its price. What had been a display of expenditure became simply a colour, available to anyone. The pigment on the panel was the same substance; what it communicated was not, which is a reminder that the meaning of a material is partly a fact about its market.",
+      "prompt": "The passage indicates that conservation analysis distinguishing ultramarine from azurite",
       "options": [
-        "A. Illustrate how neuroplasticity was first discovered",
-        "B. Show that not all brain damage is permanent",
-        "C. Provide evidence that the adult brain can undergo structural reorganisation",
-        "D. Argue that stroke patients have greater neuroplasticity than healthy adults"
+        "A. proves a painting's date of completion",
+        "B. shows that painters preferred cheaper pigments",
+        "C. identifies the mine from which the stone came",
+        "D. recovers information about the commission that looking alone does not supply",
+        "E. is unreliable on aged varnish"
       ],
-      "correctAnswer": "C",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "correctAnswer": "D",
+      "explanation": "A blue robe read as a symbolic statement may be an economic one.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-028-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "Neuroplasticity",
-      "passageText": "The concept of neuroplasticity — the brain's ability to reorganise itself by forming new neural connections throughout life — has fundamentally altered how neuroscientists and educators think about learning. For much of the twentieth century, the dominant view held that the adult brain was largely fixed, with neural pathways established by early childhood remaining permanent. This view is now known to be incomplete. Research beginning in the 1960s and accelerating in the late 1990s demonstrated that the adult brain retains a surprising capacity for structural change in response to experience, injury, and learning. Studies of patients recovering from strokes showed that functions lost due to brain damage could sometimes be partially recovered as neighbouring regions of the brain assumed control of disrupted processes. Parallel research in healthy adults confirmed that intensive practice of a skill, from learning a musical instrument to mastering a new language, produces measurable changes in brain structure, particularly in the cortical regions associated with the practised skill.",
-      "prompt": "Which of the following can be most reasonably inferred from the passage?",
+      "passageTitle": "The Price of Blue",
+      "passageText": "Until the nineteenth century the finest blue pigment available to European painters was ground from lapis lazuli, mined in what is now Afghanistan and transported across the whole width of the known world. It cost more by weight than gold, and its price shaped painting in ways that are visible on the surviving panels.\n\nContracts survive that specify the pigment by grade and quantity, sometimes stipulating how many ounces of the best ultramarine were to be used and on which figure. The blue was not a stylistic choice but a purchased commodity, and its concentration on the principal figure records what the patron paid for as much as what the painter intended. Cheaper substitutes existed — azurite, and later smalt — which are physically different, greener and less stable, and which painters used in areas the eye would attend to less.\n\nThis has consequences for interpretation. A modern viewer reading a blue robe as a symbolic statement may be reading an economic one, and conservation analysis distinguishing ultramarine from azurite in different parts of a picture recovers information about the commission that no amount of looking supplies.\n\nWhen synthetic ultramarine was produced in the 1820s at a fraction of the cost, the meaning of the colour changed with its price. What had been a display of expenditure became simply a colour, available to anyone. The pigment on the panel was the same substance; what it communicated was not, which is a reminder that the meaning of a material is partly a fact about its market.",
+      "prompt": "The author's closing point is that",
       "options": [
-        "A. Neuroplasticity is greater in young children than in adults",
-        "B. Stroke recovery proves that any brain damage is reversible",
-        "C. Neuroplasticity research began only in the 1990s",
-        "D. Adults who learn new skills may have measurably different brain structure from those who do not"
+        "A. synthetic ultramarine is inferior to the mineral pigment",
+        "B. colour symbolism was invented in the nineteenth century",
+        "C. the meaning of a material is partly a fact about its market",
+        "D. patrons rather than painters chose all colours",
+        "E. cheap pigments produced worse paintings"
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about Neuroplasticity.",
+      "correctAnswer": "C",
+      "explanation": "The substance on the panel was unchanged; what it communicated changed with the price.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-028-q01": "A",
-    "gmat-verbal-028-q02": "E",
-    "gmat-verbal-028-q03": "B",
-    "gmat-verbal-028-q04": "C",
-    "gmat-verbal-028-q05": "D",
+    "gmat-verbal-028-q01": "B",
+    "gmat-verbal-028-q02": "D",
+    "gmat-verbal-028-q03": "C",
+    "gmat-verbal-028-q04": "E",
+    "gmat-verbal-028-q05": "A",
     "gmat-verbal-028-q06": "B",
-    "gmat-verbal-028-q07": "E",
+    "gmat-verbal-028-q07": "D",
     "gmat-verbal-028-q08": "A",
-    "gmat-verbal-028-q09": "B",
-    "gmat-verbal-028-q10": "C",
-    "gmat-verbal-028-q11": "D",
-    "gmat-verbal-028-q12": "E",
-    "gmat-verbal-028-q13": "A",
-    "gmat-verbal-028-q14": "B",
-    "gmat-verbal-028-q15": "C",
-    "gmat-verbal-028-q16": "D",
-    "gmat-verbal-028-q17": "E",
-    "gmat-verbal-028-q18": "A",
+    "gmat-verbal-028-q09": "C",
+    "gmat-verbal-028-q10": "E",
+    "gmat-verbal-028-q11": "B",
+    "gmat-verbal-028-q12": "C",
+    "gmat-verbal-028-q13": "D",
+    "gmat-verbal-028-q14": "A",
+    "gmat-verbal-028-q15": "E",
+    "gmat-verbal-028-q16": "B",
+    "gmat-verbal-028-q17": "C",
+    "gmat-verbal-028-q18": "D",
     "gmat-verbal-028-q19": "E",
-    "gmat-verbal-028-q20": "B",
+    "gmat-verbal-028-q20": "A",
     "gmat-verbal-028-q21": "B",
-    "gmat-verbal-028-q22": "C",
-    "gmat-verbal-028-q23": "D"
+    "gmat-verbal-028-q22": "D",
+    "gmat-verbal-028-q23": "C"
   },
-  "fingerprints": [
-    "ced9426494a68ae958",
-    "924411c35aa6db0c31",
-    "104a45659611954a2e",
-    "430f72197a65fab61b",
-    "e83d9b68984aacdb91",
-    "7694abbbe5127945d4",
-    "e44345d1de4fc5c5af",
-    "0a4adfe02cd1c4f69b",
-    "08dc1b7345707dcf70",
-    "c753313d44cd3ac6fa",
-    "f6403948f35e230238",
-    "f1421affc28445b4a0",
-    "84170b8782b7284be2",
-    "b3ca7c18017ec17420",
-    "f93f96171e348a1379",
-    "b32f28bbaac6414406",
-    "0dee6e432544787463",
-    "b532871c176e40c99b",
-    "083f4b5219c0cef0d4",
-    "522ac93ec1ec258a01"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-028-rp1",
-      "title": "Business and Society",
-      "text": "Researchers studying organisational behaviour have found that teams with diverse cognitive styles outperform homogeneous teams on complex problem-solving tasks. However, this benefit is not automatic — diverse teams require skilled facilitation to avoid miscommunication and conflict. When managed effectively, the creative tension between different thinking styles produces more innovative solutions than teams where all members approach problems similarly."
+      "title": "Promotion as a Prize",
+      "text": "Firms that cannot measure an individual's output precisely often pay by rank instead: the employee judged best is promoted, and the reward is the difference between the two salaries. This is a tournament, and it has properties that ordinary pay-for-output does not.\n\nIts advantage is robustness to noise that affects everyone. If a whole department has a bad year for reasons outside anyone's control, a bonus tied to results falls for all of them; a promotion still goes to whoever performed best. Relative judgement filters out the common shock, and it requires only that the employer rank employees, not that it measure them.\n\nThe costs follow from the same feature. Because the prize goes to whoever finishes ahead, an employee can win by performing better or by ensuring that colleagues perform worse, and the second is often cheaper. Cooperation, mentoring and the sharing of information are precisely what a tournament discourages, which is why firms most dependent on collaboration tend to flatten the prize or judge teams rather than individuals.\n\nThere is a subtler effect on who competes. A tournament rewards variance: an employee behind on current form does better to take a risk than to perform steadily, since finishing second is worth nothing. The same structure that motivates effort therefore encourages gambling by those unlikely to win, and discourages effort altogether once a contest looks decided — which is why long promotion cycles with a single obvious front-runner produce the least effort from everyone else, exactly when the firm most needs it."
+    },
+    {
+      "id": "gmat-verbal-028-rp2",
+      "title": "Something That Works Without Explanation",
+      "text": "General anaesthesia is administered millions of times a year with a safety record that is among modern medicine's genuine achievements. What it does to produce unconsciousness is not fully understood, and the gap between reliable use and secure explanation is instructive.\n\nThe oldest account observed that the potency of an anaesthetic tracks its solubility in oil almost across the whole range of agents, suggesting the drugs act by dissolving into cell membranes and disturbing them. The correlation is striking and has survived; the mechanism inferred from it has not, because compounds have been found that fit the solubility relation and produce no anaesthesia, which a purely physical membrane effect does not predict.\n\nCurrent accounts focus instead on specific proteins — receptors and ion channels that certain agents demonstrably bind. This is better supported and less tidy: different anaesthetics act on different targets, so there is no single mechanism, and drugs that produce apparently identical clinical states may do so by different routes.\n\nThe harder problem is the endpoint. Unconsciousness is not the absence of brain activity but a change in how activity is organised, and identifying which change constitutes it requires deciding what consciousness consists of — a question anaesthesia research inherits rather than solves. This is why depth of anaesthesia is monitored by proxies whose relation to awareness is statistical rather than definitional, and why the rare cases of awareness under anaesthesia remain difficult both to predict and to detect."
+    },
+    {
+      "id": "gmat-verbal-028-rp3",
+      "title": "Born in the Wrong Month",
+      "text": "Children in a school year differ in age by up to twelve months, and in the early years that difference is a substantial fraction of a life. The younger ones perform worse on average, which is unsurprising, and the pattern's persistence is not.\n\nThe effect is measurable in attainment throughout primary school, in the probability of being identified as having a special educational need, and — most strikingly — in selection for competitive sport, where the distribution of professional players' birth months is skewed toward the start of the selection year in country after country. A twelve-year-old who is nearly a year older is bigger and better coordinated, is selected for the better team, receives better coaching, and the initial advantage compounds into one that is no longer about age at all.\n\nThe academic effect fades with time but does not vanish before it has done work: judgements made about a six-year-old shape what that child is offered, and streaming by apparent ability early in school converts a maturity difference into a durable one.\n\nThe remedies are unsatisfying. Age-adjusting test scores addresses measurement but not the coaching and streaming that follow from it. Later selection helps in sport and is resisted by those who benefit from the current arrangement. And any cut-off produces a boundary, so the problem cannot be abolished, only made less consequential — which is an argument for reducing how much rests on early judgements rather than for finding a better date."
+    },
+    {
+      "id": "gmat-verbal-028-rp4",
+      "title": "The Price of Blue",
+      "text": "Until the nineteenth century the finest blue pigment available to European painters was ground from lapis lazuli, mined in what is now Afghanistan and transported across the whole width of the known world. It cost more by weight than gold, and its price shaped painting in ways that are visible on the surviving panels.\n\nContracts survive that specify the pigment by grade and quantity, sometimes stipulating how many ounces of the best ultramarine were to be used and on which figure. The blue was not a stylistic choice but a purchased commodity, and its concentration on the principal figure records what the patron paid for as much as what the painter intended. Cheaper substitutes existed — azurite, and later smalt — which are physically different, greener and less stable, and which painters used in areas the eye would attend to less.\n\nThis has consequences for interpretation. A modern viewer reading a blue robe as a symbolic statement may be reading an economic one, and conservation analysis distinguishing ultramarine from azurite in different parts of a picture recovers information about the commission that no amount of looking supplies.\n\nWhen synthetic ultramarine was produced in the 1820s at a fraction of the cost, the meaning of the colour changed with its price. What had been a display of expenditure became simply a colour, available to anyone. The pigment on the panel was the same substance; what it communicated was not, which is a reminder that the meaning of a material is partly a fact about its market."
     }
   ]
 }
