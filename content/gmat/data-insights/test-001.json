@@ -12,687 +12,363 @@
       "id": "gmat-data-insights-001-q01",
       "questionType": "graphics_interpretation",
       "num": 1,
-      "prompt": "A graph showing quarterly revenue in the retail sales sector presents the following data: Q1: $2.4M, Q2: $3.1M, Q3: $2.8M, Q4: $3.6M. According to the graph, which segment/period shows the highest value?",
+      "prompt": "The chart shows unit price and units sold for five product lines over one quarter.\n\nAster: unit price GBP 12.50, units sold 1,840\nBriar: unit price GBP 9.75, units sold 2,310\nCedar: unit price GBP 18.20, units sold 1,120\nDovel: unit price GBP 7.40, units sold 3,050\nElmet: unit price GBP 15.60, units sold 1,360\n\nWhich product line generated the greatest revenue in the quarter?",
       "options": [
-        "A. Cannot be determined from the data",
-        "B. The first listed value",
-        "C. The last listed value",
-        "D. The middle-ranked value",
-        "E. The value closest to the overall average"
+        "A. Briar",
+        "B. Cedar",
+        "C. Aster",
+        "D. Dovel",
+        "E. Elmet"
       ],
-      "correctAnswer": "B",
-      "explanation": "This graphics_interpretation question tests ability to interpret retail sales data on quarterly revenue.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "retail sales",
-        "topic": "quarterly revenue",
-        "data": "Q1: $2.4M, Q2: $3.1M, Q3: $2.8M, Q4: $3.6M"
-      },
-      "visual": {
-        "chartType": "line",
-        "title": "Quarterly Revenue — Retail Sales",
-        "yLabel": "$ (millions)",
-        "xAxis": [
-          "Q1",
-          "Q2",
-          "Q3",
-          "Q4"
-        ],
-        "series": [
-          {
-            "label": "Quarterly Revenue",
-            "values": [
-              2.4,
-              3.1,
-              2.8,
-              3.6
-            ]
-          }
-        ]
-      }
+      "correctAnswer": "C",
+      "explanation": "Revenue is price multiplied by units, so the ranking cannot be read off either column alone. Aster GBP 23,000.00; Briar GBP 22,522.50; Cedar GBP 20,384.00; Dovel GBP 22,570.00; Elmet GBP 21,216.00. Aster is highest at GBP 23,000.00 — note that it has neither the highest price nor the highest volume.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q02",
       "questionType": "graphics_interpretation",
       "num": 2,
-      "prompt": "Based on the chart of patient wait times data (Emergency: 45min, Outpatient: 28min, Radiology: 62min, Laboratory: 19min), which TWO values would combine to equal approximately the average?",
+      "prompt": "Quarterly visitor numbers at a museum:\n\nQ1: 41,200\nQ2: 47,380\nQ3: 52,118\nQ4: 54,203\n\nIn which quarter was the percentage increase over the previous quarter greatest?",
       "options": [
-        "A. Values 2 and 5",
-        "B. Values 3 and 5",
-        "C. Values 1 and 3",
-        "D. Values 2 and 4",
-        "E. Values 1 and 4"
+        "A. Q2",
+        "B. Q3",
+        "C. Q4",
+        "D. The increase was the same in each quarter",
+        "E. Cannot be determined without the prior year"
       ],
-      "correctAnswer": "C",
-      "explanation": "This graphics_interpretation question tests ability to interpret hospital operations data on patient wait times.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "hospital operations",
-        "topic": "patient wait times",
-        "data": "Emergency: 45min, Outpatient: 28min, Radiology: 62min, Laboratory: 19min"
-      },
-      "visual": {
-        "chartType": "bar",
-        "title": "Patient Wait Times — Hospital Operations",
-        "yLabel": "min",
-        "xAxis": [
-          "Emergency",
-          "Outpatient",
-          "Radiology",
-          "Laboratory"
-        ],
-        "series": [
-          {
-            "label": "Patient Wait Times",
-            "values": [
-              45,
-              28,
-              62,
-              19
-            ]
-          }
-        ]
-      }
+      "correctAnswer": "A",
+      "explanation": "Percentage change, not absolute change: Q2 +15.0%, Q3 +10.0%, Q4 +4.0%. Q2 is largest. Q4 has a larger absolute rise than Q3 but a smaller percentage rise, which is the trap.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q03",
       "questionType": "graphics_interpretation",
       "num": 3,
-      "prompt": "A scatter plot comparing application success rates across university admissions categories shows: Engineering: 12%, Business: 18%, Arts: 25%, Sciences: 15%, Law: 9%. If the trend continued, which projection is most consistent?",
+      "prompt": "A pie chart shows the share of customer complaints by category:\n\nBilling: 27%\nDelivery: 22%\nProduct fault: 19%\nStaff conduct: 14%\nWebsite: 11%\nOther: 7%\n\nWhat is the smallest number of categories that together account for more than half of all complaints?",
       "options": [
-        "A. The middle-ranked value",
-        "B. The value closest to the overall average",
-        "C. Cannot be determined from the data",
-        "D. The first listed value",
-        "E. The last listed value"
+        "A. Two",
+        "B. Three",
+        "C. Four",
+        "D. Five",
+        "E. Six"
       ],
-      "correctAnswer": "D",
-      "explanation": "This graphics_interpretation question tests ability to interpret university admissions data on application success rates.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "university admissions",
-        "topic": "application success rates",
-        "data": "Engineering: 12%, Business: 18%, Arts: 25%, Sciences: 15%, Law: 9%"
-      },
-      "visual": {
-        "chartType": "bar",
-        "title": "Application Success Rates — University Admissions",
-        "yLabel": "%",
-        "xAxis": [
-          "Engineering",
-          "Business",
-          "Arts",
-          "Sciences",
-          "Law"
-        ],
-        "series": [
-          {
-            "label": "Application Success Rates",
-            "values": [
-              12,
-              18,
-              25,
-              15,
-              9
-            ]
-          }
-        ]
-      }
+      "correctAnswer": "B",
+      "explanation": "Take the largest categories first: 27 + 22 = 49%, which does not exceed half. Adding Product fault gives 68%. So 3 categories are needed.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q04",
       "questionType": "graphics_interpretation",
       "num": 4,
-      "prompt": "A graph showing delivery performance in the logistics sector presents the following data: On-time: 78%, Early: 8%, Late <1 day: 10%, Late >1 day: 4%. According to the graph, which segment/period shows the highest value?",
+      "prompt": "Waiting times recorded at seven branches on the same morning, in minutes:\n\n4, 6, 7, 9, 12, 26, 31\n\nWhich statement about these figures is accurate?",
       "options": [
-        "A. Values 2 and 4",
-        "B. Values 1 and 4",
-        "C. Values 2 and 5",
-        "D. Values 3 and 5",
-        "E. Values 1 and 3"
+        "A. The mean and the median are equal",
+        "B. The median is greater than the mean",
+        "C. The mean is more than twice the median",
+        "D. The mean is greater than the median",
+        "E. The mean cannot be determined from the data given"
       ],
-      "correctAnswer": "E",
-      "explanation": "This graphics_interpretation question tests ability to interpret logistics data on delivery performance.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "logistics",
-        "topic": "delivery performance",
-        "data": "On-time: 78%, Early: 8%, Late <1 day: 10%, Late >1 day: 4%"
-      },
-      "visual": {
-        "chartType": "bar",
-        "title": "Delivery Performance — Logistics",
-        "yLabel": "%",
-        "xAxis": [
-          "On-time",
-          "Early",
-          "Late <1 day",
-          "Late >1 day"
-        ],
-        "series": [
-          {
-            "label": "Delivery Performance",
-            "values": [
-              78,
-              8,
-              10,
-              4
-            ]
-          }
-        ]
-      }
+      "correctAnswer": "D",
+      "explanation": "Median is the fourth value, 9 minutes. Mean is 4+6+7+9+12+26+31 = 95 over 7, which is 13.57 minutes. The mean exceeds the median because two long waits pull it upward, but not by more than a factor of two.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q05",
       "questionType": "two_part_analysis",
       "num": 5,
-      "prompt": "Analysis of engagement metrics in social media: Likes per post: 340, Shares: 89, Comments: 47, Click-through: 6.2%. Select the value closest to the median AND the value that represents the greatest deviation from the mean.",
+      "prompt": "Three electricity tariffs, each a fixed monthly charge plus a rate per unit:\n\nTariff A: fixed GBP 18.00, GBP 0.09 per unit\nTariff B: fixed GBP 26.00, GBP 0.06 per unit\nTariff C: fixed GBP 34.00, GBP 0.03 per unit\n\nSelect the tariff that is cheapest for a household using 200 units a month, AND the tariff that is cheapest for a household using 900 units a month.",
       "options": [
-        "A. See table row A",
-        "B. See table row B",
-        "C. See table row C",
-        "D. See table row D",
-        "E. See table row E"
+        "A. Tariff A at 200 units; Tariff B at 900 units",
+        "B. Tariff A at 200 units; Tariff C at 900 units",
+        "C. Tariff B at 200 units; Tariff C at 900 units",
+        "D. Tariff C at 200 units; Tariff A at 900 units",
+        "E. The same tariff is cheapest at both levels"
       ],
-      "correctAnswer": "A",
-      "explanation": "This two_part_analysis question tests ability to interpret social media data on engagement metrics.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "social media",
-        "topic": "engagement metrics",
-        "data": "Likes per post: 340, Shares: 89, Comments: 47, Click-through: 6.2%"
-      }
+      "correctAnswer": "B",
+      "explanation": "At 200 units: Tariff A GBP 36.00, Tariff B GBP 37.00, Tariff C GBP 40.00. At 900 units: Tariff A GBP 99.00, Tariff B GBP 75.50, Tariff C GBP 61.00. The tariff with the lowest fixed charge wins at low usage and the one with the lowest rate wins at high usage.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q06",
       "questionType": "two_part_analysis",
       "num": 6,
-      "prompt": "Given energy consumption monthly utility costs data: Jan: $4,200, Apr: $2,900, Jul: $5,800, Oct: $3,100. In the left column select the highest-performing category; in the right column select the category that improved most year-over-year.",
+      "prompt": "Three suppliers quote for an order, each with a one-off setup charge and a price per unit:\n\nSupplier P: setup GBP 1,200.00, GBP 3.10 per unit, lead time 12 days\nSupplier Q: setup GBP 400.00, GBP 3.55 per unit, lead time 7 days\nSupplier R: setup GBP 2,600.00, GBP 2.75 per unit, lead time 21 days\n\nFor an order of 5,000 units, select the supplier with the lowest total cost AND the supplier with the shortest lead time.",
       "options": [
-        "A. See table row E",
-        "B. See table row A",
-        "C. See table row B",
-        "D. See table row C",
-        "E. See table row D"
+        "A. Lowest cost Supplier P; shortest lead time Supplier Q",
+        "B. Lowest cost Supplier P; shortest lead time Supplier R",
+        "C. Lowest cost Supplier Q; shortest lead time Supplier P",
+        "D. Lowest cost Supplier R; shortest lead time Supplier P",
+        "E. Lowest cost Supplier R; shortest lead time Supplier Q"
       ],
-      "correctAnswer": "B",
-      "explanation": "This two_part_analysis question tests ability to interpret energy consumption data on monthly utility costs.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "energy consumption",
-        "topic": "monthly utility costs",
-        "data": "Jan: $4,200, Apr: $2,900, Jul: $5,800, Oct: $3,100"
-      }
+      "correctAnswer": "E",
+      "explanation": "Total at 5,000 units: Supplier P GBP 16,700.00, Supplier Q GBP 18,150.00, Supplier R GBP 16,350.00. Supplier R is cheapest despite the highest setup charge, because the per-unit saving outweighs it at this volume. Lead times are given directly: Supplier Q is shortest at 7 days.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q07",
       "questionType": "two_part_analysis",
       "num": 7,
-      "prompt": "A employee performance manager reviews training completion rates: Sales: 91%, Operations: 73%, HR: 88%, Finance: 95%, IT: 82%. Select: (1) the category requiring immediate attention and (2) the category that exceeds the target of the average by the greatest margin.",
+      "prompt": "A firm's fixed costs are GBP 48,000.00 a year. Product X contributes GBP 12.00 per unit sold; Product Y contributes GBP 7.50 per unit.\n\nSelect the product that reaches break-even on fewer units AND the number of units at which it does so.",
       "options": [
-        "A. See table row D",
-        "B. See table row E",
-        "C. See table row A",
-        "D. See table row B",
-        "E. See table row C"
+        "A. Product X; 4,000 units",
+        "B. Product X; 6,400 units",
+        "C. Product Y; 6,400 units",
+        "D. Product Y; 4,000 units",
+        "E. Both products break even at the same number of units"
       ],
-      "correctAnswer": "C",
-      "explanation": "This two_part_analysis question tests ability to interpret employee performance data on training completion rates.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "employee performance",
-        "topic": "training completion rates",
-        "data": "Sales: 91%, Operations: 73%, HR: 88%, Finance: 95%, IT: 82%"
-      }
+      "correctAnswer": "A",
+      "explanation": "Break-even units are fixed costs divided by contribution per unit: X needs 48000/12 = 4,000; Y needs 48000/7.5 = 6,400. The higher contribution reaches break-even sooner.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q08",
       "questionType": "two_part_analysis",
       "num": 8,
-      "prompt": "Analysis of property price indices in real estate: City centre: 148, Suburbs: 112, Rural: 89, Coastal: 167. Select the value closest to the median AND the value that represents the greatest deviation from the mean.",
+      "prompt": "Two funds over the same period:\n\nFund A: opening value GBP 8,000.00, closing value GBP 11,600.00\nFund B: opening value GBP 12,000.00, closing value GBP 16,200.00\n\nSelect the fund with the larger gain in absolute terms AND the fund with the larger gain in percentage terms.",
       "options": [
-        "A. See table row C",
-        "B. See table row D",
-        "C. See table row E",
-        "D. See table row A",
-        "E. See table row B"
+        "A. Fund A in absolute terms; Fund A in percentage terms",
+        "B. Fund A in absolute terms; Fund B in percentage terms",
+        "C. Fund B in absolute terms; Fund A in percentage terms",
+        "D. Fund B in absolute terms; Fund B in percentage terms",
+        "E. The two funds gained equally on both measures"
       ],
-      "correctAnswer": "D",
-      "explanation": "This two_part_analysis question tests ability to interpret real estate data on property price indices.",
+      "correctAnswer": "C",
+      "explanation": "Absolute gains: Fund A GBP 3,600.00, Fund B GBP 4,200.00. Percentage gains: Fund A 45.0%, Fund B 35.0%. The larger fund gains more money and the smaller fund gains more proportionally, which is why the two measures disagree.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "real estate",
-        "topic": "property price indices",
-        "data": "City centre: 148, Suburbs: 112, Rural: 89, Coastal: 167"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q09",
       "questionType": "multi_source_reasoning",
       "num": 9,
-      "prompt": "Three data sources on pharmaceutical clinical trial outcomes are provided: (Memo) Overall performance improved this quarter. (Table) Complete response: 34%, Partial response: 28%, Stable disease: 21%, Progression: 17%. (Email) Stakeholders express concern about outliers. Which source most directly supports the memo's claim?",
+      "prompt": "SOURCE 1 (memo from the operations director): \"Service quality has improved every month this quarter.\"\n\nSOURCE 2 (table of complaints received):\nJanuary: 480\nFebruary: 505\nMarch: 560\n\nSOURCE 3 (email from the sales team): \"Order volumes were January 40,000, February 55,000, March 80,000.\"\n\nWhich statement is best supported by the three sources together?",
       "options": [
-        "A. Source 2 (Email) only",
-        "B. Source 3 (Table) only",
-        "C. Sources 1 and 3 together",
-        "D. All three sources are equally relevant",
-        "E. Source 1 (Report) only"
+        "A. The memo is contradicted, because complaints rose each month",
+        "B. The memo is confirmed, because complaints per order fell to zero",
+        "C. The sources are consistent only if the table is inaccurate",
+        "D. Complaints rose in total while complaints per thousand orders fell",
+        "E. No conclusion about complaint rates can be drawn without knowing the value of each order"
       ],
-      "correctAnswer": "E",
-      "explanation": "This multi_source_reasoning question tests ability to interpret pharmaceutical data on clinical trial outcomes.",
+      "correctAnswer": "D",
+      "explanation": "Totals rise (480 to 505 to 560), but per thousand orders the rate is January 12.00, February 9.18, March 7.00. Source 2 alone supports the first option and Source 3 alone supports none; only the two together settle it, which is the point of the format.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "pharmaceutical",
-        "topic": "clinical trial outcomes",
-        "data": "Complete response: 34%, Partial response: 28%, Stable disease: 21%, Progression: 17%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q10",
       "questionType": "multi_source_reasoning",
       "num": 10,
-      "prompt": "Source 1 (Report): airline operations on-time performance by route shows: Domestic short: 88%, Domestic long: 79%, International: 71%, Regional: 84%. Source 2 (Email): The weakest performer needs a 20% improvement to meet targets. Source 3 (Table): Targets are set at the top-quartile value. Which category needs improvement?",
+      "prompt": "SOURCE 1 (memo): \"The new shelf layout raised sales in our trial stores by 15% year on year, so we should adopt it everywhere.\"\n\nSOURCE 2 (table, year-on-year sales change): Trial stores +15.2%; all other stores +14.1%; company overall +14.3%.\n\nSOURCE 3 (email from the regional manager): \"The trial stores also received two extra staff each for the trial period.\"\n\nWhich of the following is best supported?",
       "options": [
-        "A. Source 1 (Report) only",
-        "B. Source 2 (Email) only",
-        "C. Source 3 (Table) only",
-        "D. Sources 1 and 3 together",
-        "E. All three sources are equally relevant"
+        "A. The layout raised sales by about 15 percentage points",
+        "B. The layout had no effect on sales in any store",
+        "C. Sales fell in stores that did not receive the new layout",
+        "D. The trial cannot be evaluated because sales figures are unreliable",
+        "E. The layout's effect is at most about one percentage point, and part of even that may be due to the extra staff"
       ],
-      "correctAnswer": "A",
-      "explanation": "This multi_source_reasoning question tests ability to interpret airline operations data on on-time performance by route.",
+      "correctAnswer": "E",
+      "explanation": "The memo compares the trial stores with their own past. Against the correct comparison — other stores over the same period — the difference is 15.2 minus 14.1, about one percentage point, and Source 3 supplies a second change that could account for some of it. Option B overstates in the other direction: the data do not establish an effect of exactly zero.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "airline operations",
-        "topic": "on-time performance by route",
-        "data": "Domestic short: 88%, Domestic long: 79%, International: 71%, Regional: 84%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q11",
       "questionType": "multi_source_reasoning",
       "num": 11,
-      "prompt": "Reviewing food service records: Source A shows customer satisfaction scores: Food quality: 4.2/5, Service speed: 3.8/5, Value: 3.9/5, Ambiance: 4.1/5. Source B notes the average. Source C flags values more than 25% above or below average. Which values would Source C flag?",
+      "prompt": "SOURCE 1 (quality report): \"Defect rates by supplier: Supplier S1 0.8%, Supplier S2 2.1%, Supplier S3 1.4%.\"\n\nSOURCE 2 (purchasing table, units supplied this year): Supplier S1 120,000, Supplier S2 45,000, Supplier S3 70,000\n\nSOURCE 3 (email): \"We should concentrate improvement work where it will remove the largest number of defective units.\"\n\nOn which supplier should the improvement work concentrate?",
       "options": [
-        "A. All three sources are equally relevant",
-        "B. Source 1 (Report) only",
-        "C. Source 2 (Email) only",
-        "D. Source 3 (Table) only",
-        "E. Sources 1 and 3 together"
+        "A. Supplier S1",
+        "B. Supplier S3",
+        "C. Supplier S2",
+        "D. The three suppliers contribute equally",
+        "E. Cannot be determined from the sources"
       ],
       "correctAnswer": "B",
-      "explanation": "This multi_source_reasoning question tests ability to interpret food service data on customer satisfaction scores.",
+      "explanation": "Defective units are volume multiplied by rate: Supplier S1 960, Supplier S2 945, Supplier S3 980. The supplier with the highest defect rate is not the one producing the most defective units, and the one with the largest volume is not either.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "food service",
-        "topic": "customer satisfaction scores",
-        "data": "Food quality: 4.2/5, Service speed: 3.8/5, Value: 3.9/5, Ambiance: 4.1/5"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q12",
       "questionType": "multi_source_reasoning",
       "num": 12,
-      "prompt": "Three data sources on manufacturing defect rates by production line are provided: (Memo) Overall performance improved this quarter. (Table) Line A: 0.8%, Line B: 1.4%, Line C: 0.5%, Line D: 2.1%. (Email) Stakeholders express concern about outliers. Which source most directly supports the memo's claim?",
+      "prompt": "SOURCE 1 (report): \"Regional revenue grew 9% in Region A and 12% in Region B, both measured in local currency.\"\n\nSOURCE 2 (finance note): \"Region B's local currency weakened by 10% against the reporting currency over the year; Region A's was unchanged.\"\n\nSOURCE 3 (email): \"The board reviews growth in the reporting currency.\"\n\nWhich statement is best supported for the measure the board reviews?",
       "options": [
-        "A. Sources 1 and 3 together",
-        "B. All three sources are equally relevant",
-        "C. Source 1 (Report) only",
-        "D. Source 2 (Email) only",
-        "E. Source 3 (Table) only"
+        "A. Region A grew faster than Region B",
+        "B. Region B grew faster than Region A",
+        "C. The two regions grew at the same rate",
+        "D. Region B's revenue in the reporting currency grew by 12%",
+        "E. Neither region's growth can be expressed in the reporting currency"
       ],
-      "correctAnswer": "C",
-      "explanation": "This multi_source_reasoning question tests ability to interpret manufacturing data on defect rates by production line.",
+      "correctAnswer": "A",
+      "explanation": "In the reporting currency Region B's 12% local growth is reduced by the 10% currency fall: 1.12 multiplied by 0.90 is 1.008, about 0.8% growth. Region A is unaffected at 9%. The ranking reverses once the sources are combined, which is why Source 1 alone is misleading.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "manufacturing",
-        "topic": "defect rates by production line",
-        "data": "Line A: 0.8%, Line B: 1.4%, Line C: 0.5%, Line D: 2.1%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q13",
       "questionType": "data_sufficiency",
       "num": 13,
-      "prompt": "What is the relative ranking of categories in banking loan approval rates? (1) Personal: 64%. (2) The remaining values follow a consistent trend.",
+      "prompt": "A shop sold 240 items in a day, each priced at either GBP 15.00 or GBP 22.00. What was the shop's total takings from these items?\n\n(1) 90 of the items were priced at GBP 15.00.\n(2) Takings from the items priced at GBP 22.00 were GBP 3,300.00.",
       "options": [
-        "A. Both statements together are sufficient, but neither alone is sufficient",
-        "B. Each statement alone is sufficient",
-        "C. Neither statement alone nor together is sufficient",
-        "D. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
-        "E. Statement (2) alone is sufficient, but statement (1) alone is not sufficient"
+        "A. Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "B. Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "C. BOTH statements TOGETHER are sufficient, but NEITHER alone is sufficient.",
+        "D. EACH statement ALONE is sufficient.",
+        "E. Statements (1) and (2) TOGETHER are not sufficient."
       ],
       "correctAnswer": "D",
-      "explanation": "This data_sufficiency question tests ability to interpret banking data on loan approval rates.",
+      "explanation": "From (1), 90 at 15 and 150 at 22 gives 1,350 + 3,300 = 4,650 — sufficient. From (2), 3,300/22 = 150 items at 22, leaving 90 at 15, giving the same 4,650 — also sufficient. Each statement alone determines the total, so the answer is D rather than C.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "banking",
-        "topic": "loan approval rates",
-        "data": "Personal: 64%, Mortgage: 71%, Business: 48%, Auto: 79%, Student: 85%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q14",
       "questionType": "data_sufficiency",
       "num": 14,
-      "prompt": "Is the marketing campaign conversion rates above the industry benchmark of the median? (1) Email: 3.2%. (2) The range of all values is 6.1%.",
+      "prompt": "Is the integer x greater than 12?\n\n(1) 3x > 30\n(2) x is a multiple of 4 and x > 8",
       "options": [
-        "A. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
-        "B. Both statements together are sufficient, but neither alone is sufficient",
-        "C. Each statement alone is sufficient",
-        "D. Neither statement alone nor together is sufficient",
-        "E. Statement (1) alone is sufficient, but statement (2) alone is not sufficient"
+        "A. Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "B. Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "C. BOTH statements TOGETHER are sufficient, but NEITHER alone is sufficient.",
+        "D. EACH statement ALONE is sufficient.",
+        "E. Statements (1) and (2) TOGETHER are not sufficient."
       ],
       "correctAnswer": "E",
-      "explanation": "This data_sufficiency question tests ability to interpret marketing data on campaign conversion rates.",
+      "explanation": "(1) gives x > 10, so x could be 11 or 20 — insufficient. (2) allows 12, 16, 20 — and 12 is not greater than 12, so insufficient. Together, x > 10 and a multiple of 4 above 8 still allows 12 (answer no) and 16 (answer yes). Not sufficient even combined.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "marketing",
-        "topic": "campaign conversion rates",
-        "data": "Email: 3.2%, Social: 1.8%, Search: 4.7%, Display: 0.9%, Referral: 6.1%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q15",
       "questionType": "data_sufficiency",
       "num": 15,
-      "prompt": "Can the average telecommunications subscriber churn rates be calculated precisely? (1) Postpaid: 2.1%, Prepaid: 8.4%, Broadband: 1.7%, Enterprise: 0.8%. (2) All categories are measured using the same methodology.",
+      "prompt": "What were a branch's mean weekly sales over a four-week period?\n\n(1) Total sales for the four weeks were GBP 18,400.00.\n(2) Sales in the first three weeks averaged GBP 4,500.00 a week.",
       "options": [
-        "A. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
-        "B. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
-        "C. Both statements together are sufficient, but neither alone is sufficient",
-        "D. Each statement alone is sufficient",
-        "E. Neither statement alone nor together is sufficient"
+        "A. Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "B. Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "C. BOTH statements TOGETHER are sufficient, but NEITHER alone is sufficient.",
+        "D. EACH statement ALONE is sufficient.",
+        "E. Statements (1) and (2) TOGETHER are not sufficient."
       ],
       "correctAnswer": "A",
-      "explanation": "This data_sufficiency question tests ability to interpret telecommunications data on subscriber churn rates.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "telecommunications",
-        "topic": "subscriber churn rates",
-        "data": "Postpaid: 2.1%, Prepaid: 8.4%, Broadband: 1.7%, Enterprise: 0.8%"
-      }
+      "explanation": "The mean is the total divided by four, so (1) gives 18,400/4 = 4,600 — sufficient. (2) fixes only the first three weeks and says nothing about the fourth, so the four-week mean could be almost anything — insufficient.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q16",
       "questionType": "data_sufficiency",
       "num": 16,
-      "prompt": "What is the relative ranking of categories in education student assessment pass rates? (1) Mathematics: 73%. (2) The remaining values follow a consistent trend.",
+      "prompt": "Did a club's membership increase from 2024 to 2025?\n\n(1) Membership in 2025 was 12% higher than in 2023.\n(2) Membership in 2024 was 20% higher than in 2023.",
       "options": [
-        "A. Neither statement alone nor together is sufficient",
-        "B. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
-        "C. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
-        "D. Both statements together are sufficient, but neither alone is sufficient",
-        "E. Each statement alone is sufficient"
+        "A. Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "B. Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "C. BOTH statements TOGETHER are sufficient, but NEITHER alone is sufficient.",
+        "D. EACH statement ALONE is sufficient.",
+        "E. Statements (1) and (2) TOGETHER are not sufficient."
       ],
-      "correctAnswer": "B",
-      "explanation": "This data_sufficiency question tests ability to interpret education data on student assessment pass rates.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "education",
-        "topic": "student assessment pass rates",
-        "data": "Mathematics: 73%, Science: 68%, English: 81%, History: 77%, Languages: 62%"
-      }
+      "correctAnswer": "C",
+      "explanation": "Neither statement alone relates 2024 to 2025. Together, 2025 is 1.12 times the 2023 figure and 2024 is 1.20 times it, so 2025 is 1.12/1.20 = 0.93 times 2024 — a decrease. The question is answered definitively, and a definite \"no\" is sufficiency.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q17",
       "questionType": "table_analysis",
       "num": 17,
-      "prompt": "Sort the insurance claims processing times table: Auto: 8.2 days, Home: 14.5 days, Health: 6.1 days, Life: 21.3 days. Which statement is accurate?",
+      "prompt": "Which warehouse shipped the most orders per member of staff?\n\nWarehouse | Orders shipped | Error rate | Staff\nAlder | 12,400 | 1.8% | 34\nByfield | 13,000 | 0.9% | 22\nCorfe | 15,800 | 2.4% | 41\nDenby | 7,600 | 1.1% | 18\nEaton | 18,250 | 1.6% | 47\nFrome | 11,050 | 3.2% | 26",
       "options": [
-        "A. The ranking depends on the sort criterion",
-        "B. Insufficient data to determine rank",
-        "C. The first row ranks highest",
-        "D. The second row ranks highest",
-        "E. The third row ranks highest"
+        "A. Alder",
+        "B. Corfe",
+        "C. Byfield",
+        "D. Denby",
+        "E. Eaton"
       ],
       "correctAnswer": "C",
-      "explanation": "This table_analysis question tests ability to interpret insurance data on claims processing times.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "insurance",
-        "topic": "claims processing times",
-        "data": "Auto: 8.2 days, Home: 14.5 days, Health: 6.1 days, Life: 21.3 days"
-      },
-      "visual": {
-        "chartType": "table",
-        "title": "Claims Processing Times — Insurance",
-        "headers": [
-          "Category",
-          "Claims Processing Times"
-        ],
-        "rows": [
-          [
-            "Auto",
-            "8.2 days"
-          ],
-          [
-            "Home",
-            "14.5 days"
-          ],
-          [
-            "Health",
-            "6.1 days"
-          ],
-          [
-            "Life",
-            "21.3 days"
-          ]
-        ]
-      }
+      "explanation": "Orders divided by staff: Alder 364.7, Byfield 590.9, Corfe 385.4, Denby 422.2, Eaton 388.3, Frome 425.0. Byfield is highest. The warehouse shipping the most orders in total is not the most productive per head.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q18",
       "questionType": "table_analysis",
       "num": 18,
-      "prompt": "A table comparing construction project completion on schedule shows: Residential: 58%, Commercial: 44%, Infrastructure: 37%, Industrial: 51%. Indicate whether each statement is true, false, or cannot be determined.",
+      "prompt": "How many warehouses have an error rate above the median error rate for the six?\n\nWarehouse | Orders shipped | Error rate | Staff\nAlder | 12,400 | 1.8% | 34\nByfield | 13,000 | 0.9% | 22\nCorfe | 15,800 | 2.4% | 41\nDenby | 7,600 | 1.1% | 18\nEaton | 18,250 | 1.6% | 47\nFrome | 11,050 | 3.2% | 26",
       "options": [
-        "A. The third row ranks highest",
-        "B. The ranking depends on the sort criterion",
-        "C. Insufficient data to determine rank",
-        "D. The first row ranks highest",
-        "E. The second row ranks highest"
+        "A. One",
+        "B. Three",
+        "C. Two",
+        "D. Four",
+        "E. Five"
       ],
-      "correctAnswer": "D",
-      "explanation": "This table_analysis question tests ability to interpret construction data on project completion on schedule.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "construction",
-        "topic": "project completion on schedule",
-        "data": "Residential: 58%, Commercial: 44%, Infrastructure: 37%, Industrial: 51%"
-      },
-      "visual": {
-        "chartType": "table",
-        "title": "Project Completion On Schedule — Construction",
-        "headers": [
-          "Category",
-          "Project Completion On Schedule"
-        ],
-        "rows": [
-          [
-            "Residential",
-            "58%"
-          ],
-          [
-            "Commercial",
-            "44%"
-          ],
-          [
-            "Infrastructure",
-            "37%"
-          ],
-          [
-            "Industrial",
-            "51%"
-          ]
-        ]
-      }
+      "correctAnswer": "B",
+      "explanation": "With six values the median is the average of the third and fourth: (1.6 + 1.8)/2 = 1.7000000000000002%. Rates above 1.7000000000000002% are Alder 1.8%, Corfe 2.4%, Frome 3.2% — 3 warehouses.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q19",
       "questionType": "table_analysis",
       "num": 19,
-      "prompt": "Based on the agriculture crop yield indices table (Wheat: 108, Corn: 95, Rice: 112, Soybeans: 103, Cotton: 89), sort by the criteria given and identify which column would rank first.",
+      "prompt": "Which warehouse shipped the greatest number of orders containing errors?\n\nWarehouse | Orders shipped | Error rate | Staff\nAlder | 12,400 | 1.8% | 34\nByfield | 13,000 | 0.9% | 22\nCorfe | 15,800 | 2.4% | 41\nDenby | 7,600 | 1.1% | 18\nEaton | 18,250 | 1.6% | 47\nFrome | 11,050 | 3.2% | 26",
       "options": [
-        "A. The second row ranks highest",
-        "B. The third row ranks highest",
-        "C. The ranking depends on the sort criterion",
-        "D. Insufficient data to determine rank",
-        "E. The first row ranks highest"
+        "A. Alder",
+        "B. Byfield",
+        "C. Denby",
+        "D. Corfe",
+        "E. Eaton"
       ],
-      "correctAnswer": "E",
-      "explanation": "This table_analysis question tests ability to interpret agriculture data on crop yield indices.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "agriculture",
-        "topic": "crop yield indices",
-        "data": "Wheat: 108, Corn: 95, Rice: 112, Soybeans: 103, Cotton: 89"
-      },
-      "visual": {
-        "chartType": "table",
-        "title": "Crop Yield Indices — Agriculture",
-        "headers": [
-          "Category",
-          "Crop Yield Indices"
-        ],
-        "rows": [
-          [
-            "Wheat",
-            "108"
-          ],
-          [
-            "Corn",
-            "95"
-          ],
-          [
-            "Rice",
-            "112"
-          ],
-          [
-            "Soybeans",
-            "103"
-          ],
-          [
-            "Cotton",
-            "89"
-          ]
-        ]
-      }
+      "correctAnswer": "D",
+      "explanation": "Erroneous orders are orders multiplied by the error rate: Alder 223, Byfield 117, Corfe 379, Denby 84, Eaton 292, Frome 354. Corfe is highest at about 379. Frome has the worst rate but ships too few orders to top the count.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-001-q20",
       "questionType": "table_analysis",
       "num": 20,
-      "prompt": "Sort the e-commerce return rates by product category table: Electronics: 12%, Clothing: 28%, Home goods: 8%, Books: 3%, Sports: 15%. Which statement is accurate?",
+      "prompt": "Rank the warehouses by orders shipped (highest first) and separately by error rate (lowest first). Which warehouse's two ranks differ by the largest amount?\n\nWarehouse | Orders shipped | Error rate | Staff\nAlder | 12,400 | 1.8% | 34\nByfield | 13,000 | 0.9% | 22\nCorfe | 15,800 | 2.4% | 41\nDenby | 7,600 | 1.1% | 18\nEaton | 18,250 | 1.6% | 47\nFrome | 11,050 | 3.2% | 26",
       "options": [
-        "A. The first row ranks highest",
-        "B. The second row ranks highest",
-        "C. The third row ranks highest",
-        "D. The ranking depends on the sort criterion",
-        "E. Insufficient data to determine rank"
+        "A. Alder",
+        "B. Byfield",
+        "C. Corfe",
+        "D. Eaton",
+        "E. Denby"
       ],
-      "correctAnswer": "A",
-      "explanation": "This table_analysis question tests ability to interpret e-commerce data on return rates by product category.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "e-commerce",
-        "topic": "return rates by product category",
-        "data": "Electronics: 12%, Clothing: 28%, Home goods: 8%, Books: 3%, Sports: 15%"
-      },
-      "visual": {
-        "chartType": "table",
-        "title": "Return Rates By Product Category — E-Commerce",
-        "headers": [
-          "Category",
-          "Return Rates By Product Category"
-        ],
-        "rows": [
-          [
-            "Electronics",
-            "12%"
-          ],
-          [
-            "Clothing",
-            "28%"
-          ],
-          [
-            "Home goods",
-            "8%"
-          ],
-          [
-            "Books",
-            "3%"
-          ],
-          [
-            "Sports",
-            "15%"
-          ]
-        ]
-      }
+      "correctAnswer": "E",
+      "explanation": "By orders: Eaton, Corfe, Byfield, Alder, Frome, Denby. By error rate, best first: Byfield, Denby, Eaton, Alder, Corfe, Frome. Rank differences: Alder 0, Byfield 2, Corfe 3, Denby 4, Eaton 2, Frome 1. Denby differs by 4 — it is nearly last for volume and near the top for accuracy.",
+      "difficulty": "medium",
+      "topic": "data insights"
     }
   ],
   "answerKey": {
-    "gmat-data-insights-001-q01": "B",
-    "gmat-data-insights-001-q02": "C",
-    "gmat-data-insights-001-q03": "D",
-    "gmat-data-insights-001-q04": "E",
-    "gmat-data-insights-001-q05": "A",
-    "gmat-data-insights-001-q06": "B",
-    "gmat-data-insights-001-q07": "C",
-    "gmat-data-insights-001-q08": "D",
-    "gmat-data-insights-001-q09": "E",
-    "gmat-data-insights-001-q10": "A",
+    "gmat-data-insights-001-q01": "C",
+    "gmat-data-insights-001-q02": "A",
+    "gmat-data-insights-001-q03": "B",
+    "gmat-data-insights-001-q04": "D",
+    "gmat-data-insights-001-q05": "B",
+    "gmat-data-insights-001-q06": "E",
+    "gmat-data-insights-001-q07": "A",
+    "gmat-data-insights-001-q08": "C",
+    "gmat-data-insights-001-q09": "D",
+    "gmat-data-insights-001-q10": "E",
     "gmat-data-insights-001-q11": "B",
-    "gmat-data-insights-001-q12": "C",
+    "gmat-data-insights-001-q12": "A",
     "gmat-data-insights-001-q13": "D",
     "gmat-data-insights-001-q14": "E",
     "gmat-data-insights-001-q15": "A",
-    "gmat-data-insights-001-q16": "B",
+    "gmat-data-insights-001-q16": "C",
     "gmat-data-insights-001-q17": "C",
-    "gmat-data-insights-001-q18": "D",
-    "gmat-data-insights-001-q19": "E",
-    "gmat-data-insights-001-q20": "A"
-  },
-  "fingerprints": [
-    "92f95e5ab0f11cb64c",
-    "93133c91bd35077647",
-    "7fb3fffc4ec4a4daee",
-    "326d413029cee8190d",
-    "1176e8dae2c2abe398",
-    "fd8a5dd481a3d5a440",
-    "895b3907ab5fce5cb0",
-    "626606bba1b48c4456",
-    "3f94b24493ddaf7cac",
-    "8ddcde99646ad3825b",
-    "1a5312a50b37cfb51e",
-    "6ee9c28cc66f4d62e1",
-    "dc3913c390fcb8ef14",
-    "a085aa864da6a6b2fb",
-    "5474b69802aa5f59e2",
-    "9357987217f8a26206",
-    "3b9eed56d03657d2f4",
-    "68be9d7e4eb4dd214c",
-    "81a15449d1ab1aba6d",
-    "0e8217e292d993f202"
-  ]
+    "gmat-data-insights-001-q18": "B",
+    "gmat-data-insights-001-q19": "D",
+    "gmat-data-insights-001-q20": "E"
+  }
 }
