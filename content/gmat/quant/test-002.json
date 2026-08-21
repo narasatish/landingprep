@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "£4,620.00 is divided between three people in the ratio 4 : 5 : 5. How much does each of the two larger shares receive?",
       "options": [
-        "15",
-        "16",
-        "18",
-        "13",
-        "14"
+        "£1,320.00",
+        "£1,575.00",
+        "£1,650.00",
+        "£1,500.00",
+        "£1,848.00"
       ],
-      "correctAnswer": "15",
-      "answer": "A",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "correctAnswer": "£1,650.00",
+      "answer": "C",
+      "explanation": "The ratio has 14 parts, so one part is £4,620.00 / 14 = £330.00. Each larger share is 5 parts, £1,650.00; the smaller share is £1,320.00.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "Two trains start 468 km apart and travel toward each other at 96 km/h and 84 km/h. After how long do they meet?",
       "options": [
-        "25%",
-        "30%",
-        "35%",
-        "15%",
-        "20%"
+        "3.0 hours",
+        "2.6 hours",
+        "4.5 hours",
+        "5.2 hours",
+        "2.4 hours"
       ],
-      "correctAnswer": "30%",
+      "correctAnswer": "2.6 hours",
       "answer": "B",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "explanation": "Closing speed is 96 + 84 = 180 km/h, so the gap of 468 km closes in 468 / 180 = 2.6 hours. Using either speed alone gives the wrong answer.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "prompt": "A machine costing £24,000.00 loses 18% of its value each year, calculated on its value at the start of that year. What is it worth after 3 years?",
       "options": [
-        "12",
-        "7",
-        "9",
-        "10",
-        "11"
+        "£11,040.00",
+        "£13,000.00",
+        "£12,500.00",
+        "£14,200.00",
+        "£13,232.83"
       ],
-      "correctAnswer": "9",
-      "answer": "C",
-      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "correctAnswer": "£13,232.83",
+      "answer": "E",
+      "explanation": "Each year multiplies the value by 0.82: £24,000.00 × 0.82³ = £13,232.83. Subtracting 18% of the original three times would give £11,040.00, which is too low because later years apply the percentage to a smaller base.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3x = 18, what is the value of x² + x?",
+      "prompt": "Four of five test scores are 62, 71, 55, 80. The mean of all five is 68. What is the fifth score?",
       "options": [
-        "54",
-        "36",
-        "40",
-        "42",
-        "48"
+        "72",
+        "74",
+        "68",
+        "80",
+        "65"
       ],
-      "correctAnswer": "42",
-      "answer": "D",
-      "explanation": "x = 6. x² + x = 36 + 6 = 42.",
+      "correctAnswer": "72",
+      "answer": "A",
+      "explanation": "The five scores must total 68 × 5 = 340. The four known scores total 268, so the fifth is 72.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "prompt": "A circular table has a radius of 7 metres. What is its area, to the nearest square metre?",
       "options": [
-        "36",
-        "60",
-        "24",
-        "28",
-        "30"
+        "44 sq m",
+        "144 sq m",
+        "49 sq m",
+        "154 sq m",
+        "175 sq m"
       ],
-      "correctAnswer": "30",
-      "answer": "E",
-      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "correctAnswer": "154 sq m",
+      "answer": "D",
+      "explanation": "Area is πr² = π × 7² = 153.9, which rounds to 154 square metres. The circumference, 2πr, is 44 metres and is the usual confusion.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "prompt": "A rectangular gate measures 9 m by 12 m. How long is a diagonal brace across it?",
       "options": [
-        "154",
-        "168",
-        "176",
-        "132",
-        "144"
+        "21 m",
+        "18 m",
+        "15 m",
+        "16.5 m",
+        "13.5 m"
       ],
-      "correctAnswer": "154",
-      "answer": "A",
-      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "correctAnswer": "15 m",
+      "answer": "C",
+      "explanation": "The diagonal is √(9² + 12²) = √(81 + 144) = √225 = 15 m. Adding the sides gives 21 m, which is longer than any straight line across the rectangle.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "prompt": "Two machines are serviced every 12 days and every 18 days respectively, and were both serviced today. In how many days will they next be serviced on the same day?",
       "options": [
-        "18 litres",
-        "20 litres",
-        "22 litres",
-        "24 litres",
-        "16 litres"
+        "36 days",
+        "30 days",
+        "216 days",
+        "24 days",
+        "54 days"
       ],
-      "correctAnswer": "20 litres",
-      "answer": "B",
-      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "correctAnswer": "36 days",
+      "answer": "A",
+      "explanation": "The next common day is the lowest common multiple of 12 and 18. Their highest common factor is 6, so the LCM is (12 × 18) / 6 = 36 days. Multiplying the two intervals gives 216, a common day but not the first.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 5! (5 factorial)?",
+      "prompt": "A component fails on any given day with probability 0.15, independently of other days. What is the probability that it fails at least once in three days?",
       "options": [
-        "60",
-        "100",
-        "120",
-        "150",
-        "720"
+        "45.0%",
+        "15.0%",
+        "36.0%",
+        "42.5%",
+        "38.6%"
       ],
-      "correctAnswer": "120",
-      "answer": "C",
-      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "correctAnswer": "38.6%",
+      "answer": "E",
+      "explanation": "Work with the complement: it survives all three days with probability 0.85³ = 61.4%, so it fails at least once with probability 38.6%. Adding 15% three times gives 45%, which double counts the days it fails more than once.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
+      "prompt": "A bill of £570.00 includes VAT at 20%. What is the amount before VAT?",
       "options": [
-        "12",
-        "16",
-        "20",
-        "24",
-        "48"
+        "£456.00",
+        "£475.00",
+        "£462.00",
+        "£500.00",
+        "£480.00"
       ],
-      "correctAnswer": "24",
-      "answer": "D",
-      "explanation": "Multiples of 8: 8, 16, 24 … 24 is divisible by 4 and 6, so LCM = 24.",
+      "correctAnswer": "£475.00",
+      "answer": "B",
+      "explanation": "The bill is 120% of the net amount, so the net is £570.00 / 1.2 = £475.00. Taking 20% off the total gives £456.00, which is wrong because the 20% was added to the smaller figure.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
+      "prompt": "Two painters can finish a job alone in 9 hours and 12 hours respectively. They work together for 3 hours, then the faster one leaves. How much longer does the second take to finish?",
       "options": [
-        "18",
-        "24",
-        "6",
-        "8",
-        "12"
+        "3.0 hours",
+        "6.0 hours",
+        "9.0 hours",
+        "5.0 hours",
+        "4.5 hours"
       ],
-      "correctAnswer": "12",
-      "answer": "E",
-      "explanation": "24 = 12 × 2, 36 = 12 × 3. The largest common factor is 12.",
+      "correctAnswer": "5.0 hours",
+      "answer": "D",
+      "explanation": "Together they complete 1/9 + 1/12 = 7/36 of the job an hour, so in 3 hours they finish 58.3%. The remaining 41.7% at 1/12 an hour takes 5.0 hours.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Three-quarters of a number is 60. What is the number?",
+      "prompt": "A culture of 250 cells doubles every hour. How many cells are there after 6 hours?",
       "options": [
-        "80",
-        "85",
-        "90",
-        "70",
-        "75"
+        "3,000",
+        "8,000",
+        "16,000",
+        "12,000",
+        "24,000"
       ],
-      "correctAnswer": "80",
-      "answer": "A",
-      "explanation": "(3/4)x = 60 → x = 60 × 4 ÷ 3 = 80.",
+      "correctAnswer": "16,000",
+      "answer": "C",
+      "explanation": "Doubling 6 times multiplies by 2⁶ = 64: 250 × 64 = 16,000. Multiplying by 2 and then by 6 gives 3,000, which treats the growth as linear.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
+      "prompt": "A car uses 6.4 litres per 100 km. Fuel costs £1.48 a litre. What does a 275 km journey cost, to the nearest penny?",
       "options": [
-        "2 : 5",
-        "8 : 15",
-        "6 : 5",
-        "3 : 5",
-        "8 : 5"
+        "£25.30",
+        "£17.60",
+        "£28.40",
+        "£22.00",
+        "£26.05"
       ],
-      "correctAnswer": "8 : 15",
-      "answer": "B",
-      "explanation": "Make b common: a:b = 8:12, b:c = 12:15. So a:c = 8:15.",
+      "correctAnswer": "£26.05",
+      "answer": "E",
+      "explanation": "Fuel used is 6.4 × 275/100 = 17.60 litres, costing 17.60 × £1.48 = £26.05.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
+      "prompt": "A driver travels for 2 hours at 45 km/h and then 3 hours at 70 km/h. What is the average speed for the whole journey?",
       "options": [
-        "12",
-        "18",
-        "24",
-        "36",
-        "9"
+        "57.5 km/h",
+        "60 km/h",
+        "55.0 km/h",
+        "62.5 km/h",
+        "58.0 km/h"
       ],
-      "correctAnswer": "24",
-      "answer": "C",
-      "explanation": "Volume = length × width × height = 2 × 3 × 4 = 24.",
+      "correctAnswer": "60 km/h",
+      "answer": "B",
+      "explanation": "Total distance is 90 + 210 = 300 km over 5 hours, giving 60 km/h. The unweighted average of the two speeds is 57.5, which ignores the longer time at the higher speed.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
+      "prompt": "How many integers between 17 and 96 inclusive are divisible by 7?",
       "options": [
-        "720",
-        "480",
-        "540",
-        "600",
-        "640"
+        "11",
+        "12",
+        "10",
+        "13",
+        "9"
       ],
-      "correctAnswer": "600",
-      "answer": "D",
-      "explanation": "0.20 × total = 120 → total = 120 ÷ 0.20 = 600.",
+      "correctAnswer": "11",
+      "answer": "A",
+      "explanation": "The multiples of 7 in range run from 21 to 91: 21, 28, … 91. That is (91 − 21)/7 + 1 = 11 values. Forgetting to add one is the usual slip.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A traveller drives to a town at 60 mph and returns along the same road at 40 mph. What is the average speed for the round trip?",
+      "prompt": "Eight readings have a mean of 62. A ninth reading of 89 is added. What is the new mean, to one decimal place?",
       "options": [
-        "50 mph",
-        "52 mph",
-        "55 mph",
-        "45 mph",
-        "48 mph"
+        "75.5",
+        "64.0",
+        "63.0",
+        "65.0",
+        "67.2"
       ],
-      "correctAnswer": "48 mph",
-      "answer": "E",
-      "explanation": "Round-trip average = 2·v₁·v₂ ÷ (v₁+v₂) = 2 × 60 × 40 ÷ 100 = 4800 ÷ 100 = 48 mph.",
+      "correctAnswer": "65.0",
+      "answer": "D",
+      "explanation": "The eight readings total 496. Adding 89 gives 585 over 9 readings: 65.0. Averaging the old mean with the new value gives 75.5, which weights one reading as heavily as eight.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the simple interest on $2,000 at 5% per year for 3 years?",
+      "prompt": "A committee of 3 is to be chosen from 9 candidates. In how many ways can it be formed?",
       "options": [
-        "$300",
-        "$350",
-        "$400",
-        "$200",
-        "$250"
+        "504",
+        "27",
+        "84",
+        "120",
+        "72"
       ],
-      "correctAnswer": "$300",
-      "answer": "A",
-      "explanation": "SI = P × r × t = 2000 × 0.05 × 3 = 300.",
+      "correctAnswer": "84",
+      "answer": "C",
+      "explanation": "Order does not matter, so the count is 9 × 8 × 7 / (3 × 2 × 1) = 84. The figure 504 is 9 × 8 × 7, which counts each committee six times, once for each order.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 5 identical pens cost $20, how much do 8 of the same pens cost?",
+      "prompt": "A rectangle's length is increased by 20% and its width is reduced by 10%. By what percentage does its area change?",
       "options": [
-        "$30",
-        "$32",
-        "$36",
-        "$40",
-        "$28"
+        "10% increase",
+        "30% increase",
+        "2% decrease",
+        "12% increase",
+        "8% increase"
       ],
-      "correctAnswer": "$32",
-      "answer": "B",
-      "explanation": "Unit price = 20 ÷ 5 = $4. 8 pens = 8 × 4 = $32.",
+      "correctAnswer": "8% increase",
+      "answer": "E",
+      "explanation": "Area scales by 1.20 × 0.90 = 1.08, an increase of 8%. Adding the percentages to get 10% ignores that the two changes multiply.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A tank is 3/5 full. Adding 20 litres makes it 4/5 full. What is the tank's total capacity?",
+      "prompt": "Units cost £3.20 each, or 15% less per unit on orders of 500 or more. What is the smallest order for which buying exactly 500 units costs less than buying 480 units at full price?",
       "options": [
-        "80 litres",
-        "90 litres",
-        "100 litres",
-        "110 litres",
-        "120 litres"
+        "480 units, at £1,536.00",
+        "500 units, at £1,360.00",
+        "500 units, at £1,600.00",
+        "The larger order always costs more",
+        "600 units, at £1,632.00"
       ],
-      "correctAnswer": "100 litres",
-      "answer": "C",
-      "explanation": "4/5 − 3/5 = 1/5 of capacity = 20 litres → capacity = 20 × 5 = 100 litres.",
+      "correctAnswer": "500 units, at £1,360.00",
+      "answer": "B",
+      "explanation": "480 units at full price cost £1,536.00. 500 units with the discount cost 500 × £3.20 × 0.85 = £1,360.00, which is less despite being more units.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of √144 + √81?",
+      "prompt": "Town A spends £128,000.00 on libraries for 46,000 residents; Town B spends £96,000.00 for 30,000 residents. Which spends more per resident, and how much more?",
       "options": [
-        "15",
-        "18",
-        "20",
-        "21",
-        "25"
+        "Town A, by £0.42",
+        "Town B, by £1.00",
+        "They spend the same per resident",
+        "Town B, by £0.42",
+        "Town A, by £32,000.00"
       ],
-      "correctAnswer": "21",
+      "correctAnswer": "Town B, by £0.42",
       "answer": "D",
-      "explanation": "√144 = 12 and √81 = 9. 12 + 9 = 21.",
+      "explanation": "Per resident: Town A £2.78, Town B £3.20. Town B spends £0.42 more per head, even though Town A spends £32,000.00 more in total.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
+      "prompt": "A business reports revenue of £84,000.00 and a profit margin of 22.5% of revenue. What is its profit?",
       "options": [
-        "$19.25",
-        "$20.00",
-        "$14.00",
-        "$18.50",
-        "$21.50"
+        "£18,900.00",
+        "£65,100.00",
+        "£21,000.00",
+        "£16,800.00",
+        "£20,000.00"
       ],
-      "correctAnswer": "$21.50",
-      "answer": "E",
-      "explanation": "Notebooks: 4 × $3.50 = $14.00. Pens: 6 × $1.25 = $7.50. Total = $14.00 + $7.50 = $21.50.",
+      "correctAnswer": "£18,900.00",
+      "answer": "A",
+      "explanation": "Profit is 22.5% of £84,000.00 = £18,900.00. The figure £65,100.00 is the cost, not the profit.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
+      "prompt": "£6,500.00 earns simple interest at 4.2% a year. After how many whole years does the balance first exceed £8,000.00?",
       "options": [
-        "60 mph",
-        "65 mph",
-        "70 mph",
-        "55 mph",
-        "58 mph"
+        "5 years",
+        "4 years",
+        "6 years",
+        "7 years",
+        "8 years"
       ],
-      "correctAnswer": "60 mph",
-      "answer": "A",
-      "explanation": "Total distance = 240 + 180 = 420 miles. Total time = 4 + 3 = 7 hours. Average = 420 ÷ 7 = 60 mph.",
+      "correctAnswer": "6 years",
+      "answer": "C",
+      "explanation": "Interest is £273.00 a year, so reaching £1,500.00 of interest takes 5.49 years. The balance first exceeds the target after 6 whole years.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-002-q001": "15",
-    "gmat-quant-002-q002": "30%",
-    "gmat-quant-002-q003": "9",
-    "gmat-quant-002-q004": "42",
-    "gmat-quant-002-q005": "30",
-    "gmat-quant-002-q006": "154",
-    "gmat-quant-002-q007": "20 litres",
-    "gmat-quant-002-q008": "120",
-    "gmat-quant-002-q009": "24",
-    "gmat-quant-002-q010": "12",
-    "gmat-quant-002-q011": "80",
-    "gmat-quant-002-q012": "8 : 15",
-    "gmat-quant-002-q013": "24",
-    "gmat-quant-002-q014": "600",
-    "gmat-quant-002-q015": "48 mph",
-    "gmat-quant-002-q016": "$300",
-    "gmat-quant-002-q017": "$32",
-    "gmat-quant-002-q018": "100 litres",
-    "gmat-quant-002-q019": "21",
-    "gmat-quant-002-q020": "$21.50",
-    "gmat-quant-002-q021": "60 mph"
+    "gmat-quant-002-q001": "£1,650.00",
+    "gmat-quant-002-q002": "2.6 hours",
+    "gmat-quant-002-q003": "£13,232.83",
+    "gmat-quant-002-q004": "72",
+    "gmat-quant-002-q005": "154 sq m",
+    "gmat-quant-002-q006": "15 m",
+    "gmat-quant-002-q007": "36 days",
+    "gmat-quant-002-q008": "38.6%",
+    "gmat-quant-002-q009": "£475.00",
+    "gmat-quant-002-q010": "5.0 hours",
+    "gmat-quant-002-q011": "16,000",
+    "gmat-quant-002-q012": "£26.05",
+    "gmat-quant-002-q013": "60 km/h",
+    "gmat-quant-002-q014": "11",
+    "gmat-quant-002-q015": "65.0",
+    "gmat-quant-002-q016": "84",
+    "gmat-quant-002-q017": "8% increase",
+    "gmat-quant-002-q018": "500 units, at £1,360.00",
+    "gmat-quant-002-q019": "Town B, by £0.42",
+    "gmat-quant-002-q020": "£18,900.00",
+    "gmat-quant-002-q021": "6 years"
   }
 }
