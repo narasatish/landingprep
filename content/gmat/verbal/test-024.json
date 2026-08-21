@@ -12,469 +12,474 @@
       "id": "gmat-verbal-024-q01",
       "questionType": "critical_reasoning",
       "num": 1,
-      "prompt": "A retail chain found that stores with loyalty programmes had 35% higher annual sales than stores without them. The chain concluded that loyalty programmes directly cause increased sales.",
+      "prompt": "A hairdressing chain introduced online booking and reports that the proportion of appointments missed fell from 14 per cent to 6 per cent. It concludes that online booking makes customers more reliable.",
       "question": "Which of the following, if true, most seriously weakens the conclusion?",
       "options": [
-        "A. Stores in wealthier districts both have higher sales and are more likely to pilot loyalty programmes",
-        "B. Loyalty programmes cost approximately 8% of the revenue they generate",
-        "C. Customers report feeling more valued when using a loyalty programme",
-        "D. Competitors without loyalty programmes have seen declining sales",
-        "E. The loyalty programme was introduced simultaneously with a store renovation"
+        "A. Some customers still book by telephone.",
+        "B. Online bookings require a card to be registered, and the chain now charges a fee for a missed appointment.",
+        "C. The chain has salons in twelve towns.",
+        "D. Stylists prefer the new system.",
+        "E. Bookings can be made up to three months ahead."
       ],
-      "correctAnswer": "A",
-      "explanation": "If wealthier districts drive both higher sales and loyalty programme adoption, the correlation doesn't imply causation — a confounding variable explains both.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "A penalty introduced alongside the channel is sufficient to explain the change, and it is the penalty rather than the booking method that alters the incentive.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-024-q02",
       "questionType": "critical_reasoning",
       "num": 2,
-      "prompt": "A tech startup spent $2M on social media advertising and saw user sign-ups rise by 60,000 over three months. The CFO argued this proved social media advertising is cost-effective for customer acquisition.",
-      "question": "Which of the following would most strengthen the CFO's conclusion?",
+      "prompt": "A mobile network installed additional masts in a rural county and reports that customer complaints about coverage fell by half. It concludes that coverage has improved.",
+      "question": "Which of the following would be most useful to determine in evaluating the conclusion?",
       "options": [
-        "A. Other advertising channels were suspended during the same three months",
-        "B. The lifetime value of a new user averages $50",
-        "C. Sign-ups had already been rising at 20,000 per month before the campaign",
-        "D. Social media platforms reported the campaign reached 5 million unique users",
-        "E. Competitors saw no change in sign-ups over the same period"
+        "A. How much the masts cost to install",
+        "B. Whether residents objected to the masts",
+        "C. Whether measured signal strength across the county changed over the same period",
+        "D. How many customers the network has in the county",
+        "E. Whether competitors also installed masts"
       ],
-      "correctAnswer": "B",
-      "explanation": "If each user is worth $50 lifetime and 60,000 signed up, revenue = $3M on $2M spend — making the acquisition cost-effective.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Complaints depend on reporting effort and expectation as well as on signal; a direct measure settles what the proxy cannot.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-024-q03",
       "questionType": "critical_reasoning",
       "num": 3,
-      "prompt": "A study found that neighbourhoods with higher tree canopy coverage have lower summer temperatures than neighbourhoods with less tree cover. City planners proposed planting more trees to reduce urban heat.",
-      "question": "Which of the following most accurately describes the flaw in the proposal's reasoning?",
+      "prompt": "A campsite introduced a two-night minimum stay and reports that its occupancy rate rose. The owner concludes that guests prefer longer stays.",
+      "question": "Which of the following, if true, most seriously undermines the conclusion?",
       "options": [
-        "A. It assumes that lower temperatures are always desirable",
-        "B. It ignores that tree planting is expensive",
-        "C. It treats a correlation as evidence of a causal relationship",
-        "D. It fails to consider that trees require water",
-        "E. It overlooks that some neighbourhoods may not have space for trees"
+        "A. The campsite has forty pitches.",
+        "B. Some guests stay a week.",
+        "C. Occupancy is measured across the season.",
+        "D. The site is busiest in August.",
+        "E. The rule eliminated single-night bookings that had left pitches empty on adjacent nights, so the same guests now fill more nights without anyone's preference having changed."
       ],
-      "correctAnswer": "C",
-      "explanation": "The study shows correlation between trees and lower temperatures, but neighbourhoods with trees may differ in other ways (e.g., less pavement, more parks) that also reduce heat.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "The rule changes what can be booked rather than what anyone wants; the occupancy gain is a scheduling effect.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-024-q04",
       "questionType": "critical_reasoning",
       "num": 4,
-      "prompt": "An airline introduced a new boarding policy — allowing all passengers to board simultaneously regardless of seat row — and found average boarding time fell from 28 minutes to 19 minutes. The operations team concluded the new policy was responsible.",
-      "question": "Which of the following, if true, would most weaken this conclusion?",
+      "prompt": "A wine shop notes that customers who accept a tasting sample buy more expensive bottles than those who decline, and plans to offer a sample to every customer in order to raise average spending.",
+      "question": "Which of the following, if true, casts most doubt on the plan?",
       "options": [
-        "A. Passengers reported higher satisfaction with the new policy",
-        "B. Competing airlines have not adopted similar policies",
-        "C. Boarding time varies naturally between 15 and 35 minutes",
-        "D. The airline also reduced the number of carry-on bags allowed during the same period",
-        "E. The new policy was introduced on routes with larger aircraft"
+        "A. Customers who intend to buy something special are the ones who stop for a tasting, while those buying an everyday bottle decline in order to leave quickly.",
+        "B. Samples cost the shop money.",
+        "C. The shop offers tastings on Saturdays.",
+        "D. Some customers buy more than one bottle.",
+        "E. Tastings are conducted by trained staff."
       ],
-      "correctAnswer": "D",
-      "explanation": "If carry-on restrictions (not the boarding order) reduced the time taken to stow luggage, the boarding policy itself may not have caused the improvement.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The sample marks an intention that already exists, so offering it universally need not raise spending among those who were never going to browse.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-024-q05",
       "questionType": "critical_reasoning",
       "num": 5,
-      "prompt": "A consulting firm found that companies that hired its services increased revenue by an average of 18% within one year. The firm uses this as evidence that its services drive revenue growth.",
-      "question": "The argument above is most vulnerable to criticism on the grounds that it:",
+      "prompt": "Every property maintained by the Ellery estate that has cast-iron guttering is inspected twice a year. No property inspected twice a year suffered water damage last winter. Some properties maintained by the estate suffered water damage last winter.",
+      "question": "If the statements above are true, which of the following must be true?",
       "options": [
-        "A. Does not define what type of consulting services were provided",
-        "B. Ignores that some companies declined in revenue after hiring the firm",
-        "C. Does not specify what time period is covered by the data",
-        "D. Compares incomparable companies across different industries",
-        "E. Fails to compare the companies' growth with industry-wide growth trends"
+        "A. Cast-iron guttering prevents water damage.",
+        "B. Most properties are inspected twice a year.",
+        "C. No inspected property will ever suffer damage.",
+        "D. Some properties maintained by the estate do not have cast-iron guttering.",
+        "E. Damaged properties are older than the others."
       ],
-      "correctAnswer": "E",
-      "explanation": "Without comparing to the baseline industry growth rate, the 18% may simply reflect normal market conditions rather than the firm's impact.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "Damaged properties are not inspected twice yearly, and cast-iron guttering implies such inspection, so those properties have other guttering.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-024-q06",
       "questionType": "critical_reasoning",
       "num": 6,
-      "prompt": "A government health agency reported that regions where the population consumes olive oil as their primary cooking fat have significantly lower rates of cardiovascular disease than regions that use butter. The agency concluded that replacing butter with olive oil in the diet would reduce heart disease.",
-      "question": "Which of the following, if true, would most undermine the agency's conclusion?",
+      "prompt": "A hospital changed its catering supplier and reports that the weight of food waste from patient meals has fallen by a third. Managers describe this as evidence that patients prefer the new meals.",
+      "question": "The reasoning is most vulnerable to the criticism that it",
       "options": [
-        "A. Regions using olive oil also have Mediterranean diets rich in vegetables and fish",
-        "B. Olive oil contains monounsaturated fats linked to heart health",
-        "C. Heart disease rates have been declining globally regardless of fat consumption",
-        "D. The study followed individuals for 10 years",
-        "E. Olive oil is more expensive than butter in most markets"
+        "A. ignores the cost of the new contract",
+        "B. does not distinguish between wards",
+        "C. assumes waste measures preference, when smaller portions would produce the same fall",
+        "D. relies on a single measure of weight",
+        "E. overlooks meals brought in by visitors"
       ],
-      "correctAnswer": "A",
-      "explanation": "If olive oil regions also differ in diet (more fish, vegetables) and lifestyle, the lower heart disease rate cannot be attributed to olive oil alone.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "Less food served produces less food wasted; without portion size held constant the measure cannot support a claim about preference.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-024-q07",
       "questionType": "critical_reasoning",
       "num": 7,
-      "prompt": "Hospital records show that patients who received follow-up phone calls from their doctors within 48 hours of discharge had a 40% lower readmission rate than those who did not receive calls. A hospital administrator recommended implementing mandatory follow-up calls for all patients.",
-      "question": "Which of the following identifies a potential flaw in the administrator's reasoning?",
+      "prompt": "A school reports that pupils who attend its optional residential trip achieve better results in the following year, and proposes to make the trip compulsory in order to raise attainment.",
+      "question": "Which of the following, if true, most seriously weakens the proposal?",
       "options": [
-        "A. The cost of implementing mandatory calls would be prohibitive",
-        "B. Doctors who proactively call patients may also be more thorough in their overall care",
-        "C. Some patients do not have phones",
-        "D. Patients prefer in-person follow-up visits to phone calls",
-        "E. Phone calls are less effective than written instructions"
+        "A. Attendance requires a parental contribution, and the pupils who attend are those whose families can pay and are already the higher-attaining group.",
+        "B. The trip lasts four days.",
+        "C. Staff volunteer to supervise the trip.",
+        "D. The trip includes outdoor activities.",
+        "E. Some pupils attend similar trips elsewhere."
       ],
-      "correctAnswer": "B",
-      "explanation": "Doctors who voluntarily call patients may also provide better care in hospital, meaning it's doctor quality — not the call itself — that reduces readmissions.",
-      "difficulty": "easy",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The attendance filter is income and prior attainment, so the association need reflect nothing the trip does.",
+      "difficulty": "medium",
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-024-q08",
       "questionType": "critical_reasoning",
       "num": 8,
-      "prompt": "A pharmaceutical company found that patients who took Drug X for six months experienced a 30% reduction in chronic pain symptoms. The company concluded Drug X is effective for treating chronic pain.",
-      "question": "Which of the following, if true, most weakens the conclusion?",
+      "prompt": "A delivery company that pays cyclists per parcel reports that its couriers deliver more parcels per hour than couriers at a rival paying by the hour. It concludes that piece rates raise productivity.",
+      "question": "Which of the following, if true, most seriously undermines the conclusion?",
       "options": [
-        "A. Drug X has minor side effects including nausea",
-        "B. The study included only 50 participants",
-        "C. A control group taking a placebo experienced a 28% reduction in symptoms",
-        "D. Chronic pain affects millions of people worldwide",
-        "E. Drug X is expensive compared to existing treatments"
+        "A. The company's couriers use their own bicycles.",
+        "B. Parcels are of similar size at both firms.",
+        "C. The rival pays slightly more per hour.",
+        "D. The company assigns its couriers dense city-centre rounds while the rival's couriers cover outer suburbs.",
+        "E. Both firms deliver on weekdays only."
       ],
-      "correctAnswer": "C",
-      "explanation": "If the placebo group had a nearly identical 28% improvement, the drug's effect is indistinguishable from the placebo effect.",
+      "correctAnswer": "D",
+      "explanation": "Round density determines parcels per hour far more than payment method, so the comparison is between territories rather than between pay systems.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-024-q09",
       "questionType": "critical_reasoning",
       "num": 9,
-      "prompt": "A university fitness centre reported that students who exercised at least three times per week had a GPA 0.4 points higher on average than students who exercised less. The director concluded that encouraging exercise would improve academic performance.",
-      "question": "Which of the following most strengthens the director's conclusion?",
+      "prompt": "A hotel added a gym and reports that guests who use it rate their stay more highly than guests who do not. Management concludes that the gym has improved guest satisfaction.",
+      "question": "Which of the following, if true, most strengthens the conclusion?",
       "options": [
-        "A. Students with higher GPAs may have more structured schedules that allow for regular exercise",
-        "B. The university's highest-achieving students attend the fitness centre most frequently",
-        "C. Exercise programmes are popular at peer universities",
-        "D. Exercise has been shown to improve blood flow to the brain in laboratory studies",
-        "E. Students who exercise report feeling less stressed"
+        "A. The gym is open at all hours.",
+        "B. Ratings from guests who did not use the gym also rose after it opened, and the rise coincided with the opening at each of the four hotels where it was installed in different months.",
+        "C. The gym equipment was expensive.",
+        "D. Some guests use gyms elsewhere in the city.",
+        "E. The hotel advertises the gym on its website."
       ],
-      "correctAnswer": "D",
-      "explanation": "A biological mechanism linking exercise to brain function provides direct support for the causal claim that exercise improves academic performance.",
+      "correctAnswer": "B",
+      "explanation": "It removes the self-selection and ties the change to the opening across several sites at different times, which is close to a staggered design.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-024-q10",
       "questionType": "critical_reasoning",
       "num": 10,
-      "prompt": "A city's traffic authority found that intersections with red-light cameras had 22% fewer accidents than those without. The authority recommended installing cameras at all major intersections.",
-      "question": "Which of the following is the most serious concern about the authority's recommendation?",
+      "prompt": "A group of farms bought a combine harvester jointly and reports that each farm's machinery costs fell by 40 per cent. An adviser recommends joint purchase to all farms in the district.",
+      "question": "Which of the following, if true, most weakens the recommendation as a general one?",
       "options": [
-        "A. Cameras might violate driver privacy",
-        "B. The cost of cameras is high",
-        "C. Some drivers find cameras distracting",
-        "D. Cameras only capture rear-end collisions",
-        "E. Intersections chosen for cameras may have already been due for safety upgrades"
+        "A. The harvester required a shared maintenance agreement.",
+        "B. Joint purchase requires a written agreement.",
+        "C. The harvester was bought second-hand.",
+        "D. Some farms in the district are larger than those in the group.",
+        "E. The farms that shared successfully harvest crops that ripen at different times, while most farms in the district grow the same crop and would need the machine in the same fortnight."
       ],
       "correctAnswer": "E",
-      "explanation": "If cameras were installed at intersections already scheduled for safety improvements (repaving, better lighting), those improvements — not the cameras — may account for the accident reduction.",
+      "explanation": "The saving depends on staggered demand; where every farm needs the machine at once, sharing fails precisely when the machine is needed.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-024-q11",
       "questionType": "critical_reasoning",
       "num": 11,
-      "prompt": "A government raised the minimum wage by 15% and reported that the unemployment rate remained unchanged one year later. The minister of labour concluded that minimum wage increases do not cause unemployment.",
-      "question": "Which of the following most weakens the minister's conclusion?",
+      "prompt": "Supporters of a community energy scheme argue that local ownership of a wind turbine will reduce residents' electricity bills. A critic replies that the turbine will sell its output into the national market at the prevailing price, like any other generator.",
+      "question": "The critic's reply is best understood as",
       "options": [
-        "A. A separate economic boom added 100,000 jobs during the same year",
-        "B. Labour economists disagree on the effects of minimum wage increases",
-        "C. The minimum wage increase only affected 5% of workers",
-        "D. Some industries are more affected than others by wage increases",
-        "E. Other countries have raised minimum wages without unemployment rising"
+        "A. denying that the turbine will generate electricity",
+        "B. arguing that wind generation is unreliable",
+        "C. pointing out that the benefit to residents comes as a share of revenue rather than as cheaper supply",
+        "D. objecting to the cost of the turbine",
+        "E. claiming that residents will not support the scheme"
       ],
-      "correctAnswer": "A",
-      "explanation": "If an economic boom absorbed potential job losses, the unchanged unemployment rate doesn't show that minimum wage increases are harmless — the boom may have masked the effect.",
+      "correctAnswer": "C",
+      "explanation": "The reply concedes the scheme may pay residents while denying the mechanism claimed, which is a distinction between a dividend and a discount on supply.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "critical reasoning"
     },
     {
       "id": "gmat-verbal-024-q12",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 12,
-      "prompt": "An economist noted that countries with higher levels of public spending on education have higher average incomes per capita. She concluded that increasing education spending causes higher incomes.",
-      "question": "The economist's argument contains which logical flaw?",
+      "passageTitle": "Testing a Change",
+      "passageText": "Firms that can show half their customers one version of a page and half another have acquired something rare in business: the ability to run a controlled experiment on a decision that would otherwise be settled by argument. The method has been transformative, and the enthusiasm for it has outrun the understanding of what it establishes.\n\nThe first limit is the outcome measured. An experiment answers a question about the quantity it counts, typically over the days it runs. A change that raises purchases this week may raise returns next month or reduce the likelihood that a customer comes back, and neither effect appears in the test that declared the change a success. Firms that test heavily on short-run metrics accumulate changes that were each locally justified.\n\nThe second is the population. The result holds for the customers who saw the test, at that moment, under those conditions. Where the tested change interacts with something seasonal, or with a promotion running simultaneously, the estimate is specific to circumstances that will not recur.\n\nThe third is statistical and the most easily abused. Running many tests guarantees that some will produce apparently significant results by chance, and a firm that tests continuously and acts on whichever comparison crosses a threshold will implement a steady stream of nothing. Disciplined practice fixes the metric and the duration in advance, and treats a surprising result as a reason to repeat the test rather than to ship the change — which is a much slower way to work than the method's reputation implies.",
+      "prompt": "According to the passage, a change that raises purchases in a week-long test may nonetheless",
       "options": [
-        "A. She draws a universal conclusion from limited data",
-        "B. She mistakes correlation for causation",
-        "C. She ignores that income affects education spending",
-        "D. She fails to define 'public spending'",
-        "E. Both B and C"
+        "A. reduce the number of customers who see it",
+        "B. raise returns later or reduce the likelihood that customers come back",
+        "C. fail to reach statistical significance",
+        "D. be impossible to implement",
+        "E. produce identical results in a repeat test"
       ],
-      "correctAnswer": "E",
-      "explanation": "The economist assumes causation from correlation (B) and ignores reverse causality — wealthier countries may spend more on education because they can afford to (C).",
+      "correctAnswer": "B",
+      "explanation": "Neither of those effects appears in a test that measured short-run purchases and declared success.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-024-q13",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 13,
-      "prompt": "A city council proposed building a new sports arena, claiming it would generate $200M in annual economic activity. Critics noted that fans attending arena events spend money at local restaurants and hotels, but this spending substitutes for money fans would have spent elsewhere in the city.",
-      "question": "The critics' argument assumes which of the following?",
+      "passageTitle": "Testing a Change",
+      "passageText": "Firms that can show half their customers one version of a page and half another have acquired something rare in business: the ability to run a controlled experiment on a decision that would otherwise be settled by argument. The method has been transformative, and the enthusiasm for it has outrun the understanding of what it establishes.\n\nThe first limit is the outcome measured. An experiment answers a question about the quantity it counts, typically over the days it runs. A change that raises purchases this week may raise returns next month or reduce the likelihood that a customer comes back, and neither effect appears in the test that declared the change a success. Firms that test heavily on short-run metrics accumulate changes that were each locally justified.\n\nThe second is the population. The result holds for the customers who saw the test, at that moment, under those conditions. Where the tested change interacts with something seasonal, or with a promotion running simultaneously, the estimate is specific to circumstances that will not recur.\n\nThe third is statistical and the most easily abused. Running many tests guarantees that some will produce apparently significant results by chance, and a firm that tests continuously and acts on whichever comparison crosses a threshold will implement a steady stream of nothing. Disciplined practice fixes the metric and the duration in advance, and treats a surprising result as a reason to repeat the test rather than to ship the change — which is a much slower way to work than the method's reputation implies.",
+      "prompt": "The passage indicates that running many tests continuously",
       "options": [
-        "A. Arena events attract fans from outside the city who would not otherwise visit",
-        "B. Fans have a fixed entertainment budget they will spend regardless of venue",
-        "C. Local restaurants cannot accommodate arena crowds",
-        "D. The arena's construction will not create permanent jobs",
-        "E. The city already has sufficient sports facilities"
+        "A. improves the precision of each estimate",
+        "B. removes the need to fix a metric in advance",
+        "C. makes seasonal effects irrelevant",
+        "D. guarantees some apparently significant results by chance",
+        "E. reduces the cost of experimentation"
       ],
-      "correctAnswer": "B",
-      "explanation": "The critics assume fans have a fixed leisure budget, so arena spending substitutes for spending elsewhere — meaning no net new economic activity is created locally.",
+      "correctAnswer": "D",
+      "explanation": "The passage calls this the most easily abused limit: acting on whichever comparison crosses a threshold implements a steady stream of nothing.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-024-q14",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 14,
-      "prompt": "A market research firm found that consumers who saw a product advertisement spent, on average, 40% more on that brand in the following month than consumers who had not seen the ad. The advertising agency used this data to argue their campaign was effective.",
-      "question": "Which of the following, if true, most weakens the advertising agency's argument?",
+      "passageTitle": "Testing a Change",
+      "passageText": "Firms that can show half their customers one version of a page and half another have acquired something rare in business: the ability to run a controlled experiment on a decision that would otherwise be settled by argument. The method has been transformative, and the enthusiasm for it has outrun the understanding of what it establishes.\n\nThe first limit is the outcome measured. An experiment answers a question about the quantity it counts, typically over the days it runs. A change that raises purchases this week may raise returns next month or reduce the likelihood that a customer comes back, and neither effect appears in the test that declared the change a success. Firms that test heavily on short-run metrics accumulate changes that were each locally justified.\n\nThe second is the population. The result holds for the customers who saw the test, at that moment, under those conditions. Where the tested change interacts with something seasonal, or with a promotion running simultaneously, the estimate is specific to circumstances that will not recur.\n\nThe third is statistical and the most easily abused. Running many tests guarantees that some will produce apparently significant results by chance, and a firm that tests continuously and acts on whichever comparison crosses a threshold will implement a steady stream of nothing. Disciplined practice fixes the metric and the duration in advance, and treats a surprising result as a reason to repeat the test rather than to ship the change — which is a much slower way to work than the method's reputation implies.",
+      "prompt": "Disciplined experimental practice, as the passage describes it, treats a surprising result as",
       "options": [
-        "A. The advertising campaign cost $5M over three months",
-        "B. The ad was shown only on premium streaming services",
-        "C. Consumers who sought out the advertisement were already brand loyalists considering a major purchase",
-        "D. The brand launched a new product line during the same period",
-        "E. Competitors also increased advertising spending during the same period"
+        "A. a reason to repeat the test",
+        "B. confirmation that the change should be shipped",
+        "C. evidence that the metric was wrong",
+        "D. grounds for extending the test population",
+        "E. an artefact to be discarded"
       ],
-      "correctAnswer": "C",
-      "explanation": "If people who saw the ad were already planning to buy (self-selection bias), the higher spending reflects pre-existing intent rather than the ad's persuasive effect.",
+      "correctAnswer": "A",
+      "explanation": "The passage adds that this makes the method far slower than its reputation implies.",
       "difficulty": "medium",
-      "topic": "verbal_reasoning"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-024-q15",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 15,
-      "prompt": "A transport analyst argued: 'If we build more roads, traffic will decrease.' Another analyst countered: 'Historically, cities that built more roads saw traffic increase within five years.'",
-      "question": "The second analyst's response best serves which of the following functions in the debate?",
+      "passageTitle": "The Hole That Closed",
+      "passageText": "The international agreement that phased out ozone-depleting chemicals is the most successful environmental treaty yet concluded, and the reasons for its success are frequently misidentified as evidence that international cooperation is straightforward when the science is clear.\n\nThe science was not initially clear. The mechanism was proposed a decade before the Antarctic hole was observed, and the observation itself was so far outside expectation that automated processing had been discarding the readings as errors. What made action possible was not certainty but a combination of features the climate problem lacks.\n\nThe substances involved were produced by a small number of firms, which made monitoring feasible and negotiation manageable. Substitutes existed or could be developed within years rather than decades, so compliance did not require abandoning an activity, only changing an input. The harm was vivid, personal and easy to describe. And the costs of compliance fell mainly on the same wealthy countries that had produced the substances, so the distributional argument that dominates climate negotiation was comparatively muted — and where it did arise, a fund to assist developing countries was agreed and used.\n\nThe treaty also improved over time, tightening its schedules as evidence accumulated, which is a design feature rather than an accident. The lesson is not that treaties work when science is settled. It is that this problem had a structure — few producers, available substitutes, concentrated costs, legible harm — that made a solution reachable, and that a problem lacking those features will not be solved by the same instrument merely because the science is at least as good.",
+      "prompt": "The passage indicates that at the time the ozone agreement was negotiated, the science was",
       "options": [
-        "A. It provides an alternative interpretation of the first analyst's claim",
-        "B. It demonstrates that road construction is always harmful",
-        "C. It suggests the first analyst has incorrect data",
-        "D. It presents empirical evidence that undermines the first analyst's prediction",
-        "E. It proves that traffic will always increase regardless of policy"
+        "A. fully settled and universally accepted",
+        "B. disputed by the firms that produced the substances",
+        "C. based entirely on laboratory work",
+        "D. less advanced than climate science is now",
+        "E. not initially clear, with the key observation initially discarded as error"
       ],
-      "correctAnswer": "D",
-      "explanation": "The second analyst offers historical evidence ('induced demand') suggesting that more roads actually attract more drivers, contradicting the first analyst's prediction.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "The mechanism preceded the observation by a decade, and automated processing had been rejecting the readings.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-024-q16",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 16,
-      "prompt": "All members of the professional association who completed the certification programme received a salary increase within 12 months. Marcus completed the certification programme. Therefore, Marcus will receive a salary increase within 12 months.",
-      "question": "Which of the following most closely parallels the logical structure of the argument above?",
+      "passageTitle": "The Hole That Closed",
+      "passageText": "The international agreement that phased out ozone-depleting chemicals is the most successful environmental treaty yet concluded, and the reasons for its success are frequently misidentified as evidence that international cooperation is straightforward when the science is clear.\n\nThe science was not initially clear. The mechanism was proposed a decade before the Antarctic hole was observed, and the observation itself was so far outside expectation that automated processing had been discarding the readings as errors. What made action possible was not certainty but a combination of features the climate problem lacks.\n\nThe substances involved were produced by a small number of firms, which made monitoring feasible and negotiation manageable. Substitutes existed or could be developed within years rather than decades, so compliance did not require abandoning an activity, only changing an input. The harm was vivid, personal and easy to describe. And the costs of compliance fell mainly on the same wealthy countries that had produced the substances, so the distributional argument that dominates climate negotiation was comparatively muted — and where it did arise, a fund to assist developing countries was agreed and used.\n\nThe treaty also improved over time, tightening its schedules as evidence accumulated, which is a design feature rather than an accident. The lesson is not that treaties work when science is settled. It is that this problem had a structure — few producers, available substitutes, concentrated costs, legible harm — that made a solution reachable, and that a problem lacking those features will not be solved by the same instrument merely because the science is at least as good.",
+      "prompt": "Which feature does the passage NOT identify as making the ozone problem tractable?",
       "options": [
-        "A. Most people who exercise regularly live longer. Jana exercises. Therefore, Jana will live longer than average.",
-        "B. Some companies that invest in R&D are profitable. TechCo invests in R&D. Therefore, TechCo is profitable.",
-        "C. Employees who exceed targets generally get promoted. Daniel exceeded his target. Daniel got promoted.",
-        "D. All birds have wings. Penguins are birds. Therefore, penguins can fly.",
-        "E. Every student who passes the bar exam becomes a lawyer. Sarah passed the bar exam. Therefore, Sarah is a lawyer."
+        "A. A small number of producing firms",
+        "B. Unanimous agreement among scientists before negotiations began",
+        "C. Substitutes available within years",
+        "D. Vivid and easily described harm",
+        "E. Compliance costs falling mainly on wealthy producing countries"
       ],
-      "correctAnswer": "E",
-      "explanation": "The original argument follows the valid syllogism: All A→B, Marcus is A, therefore Marcus→B. Option A mirrors this exactly with 'all' not 'most/some'.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "B",
+      "explanation": "The passage explicitly denies that certainty preceded action, and names the other four as the structural features.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-024-q17",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 17,
-      "prompt": "A survey found that 70% of workers who reported high job satisfaction also reported sleeping 7–9 hours per night. The survey authors concluded that sleeping 7–9 hours causes job satisfaction.",
-      "question": "Which of the following conclusions is most strongly supported by the survey data?",
+      "passageTitle": "The Hole That Closed",
+      "passageText": "The international agreement that phased out ozone-depleting chemicals is the most successful environmental treaty yet concluded, and the reasons for its success are frequently misidentified as evidence that international cooperation is straightforward when the science is clear.\n\nThe science was not initially clear. The mechanism was proposed a decade before the Antarctic hole was observed, and the observation itself was so far outside expectation that automated processing had been discarding the readings as errors. What made action possible was not certainty but a combination of features the climate problem lacks.\n\nThe substances involved were produced by a small number of firms, which made monitoring feasible and negotiation manageable. Substitutes existed or could be developed within years rather than decades, so compliance did not require abandoning an activity, only changing an input. The harm was vivid, personal and easy to describe. And the costs of compliance fell mainly on the same wealthy countries that had produced the substances, so the distributional argument that dominates climate negotiation was comparatively muted — and where it did arise, a fund to assist developing countries was agreed and used.\n\nThe treaty also improved over time, tightening its schedules as evidence accumulated, which is a design feature rather than an accident. The lesson is not that treaties work when science is settled. It is that this problem had a structure — few producers, available substitutes, concentrated costs, legible harm — that made a solution reachable, and that a problem lacking those features will not be solved by the same instrument merely because the science is at least as good.",
+      "prompt": "The author's lesson from the treaty is that",
       "options": [
-        "A. Job satisfaction and adequate sleep are associated in the survey population",
-        "B. Improving sleep quality will increase job satisfaction for most workers",
-        "C. Dissatisfied workers always sleep fewer than 7 hours",
-        "D. Employers should implement nap rooms to improve satisfaction",
-        "E. Workers who sleep 8 hours are more productive than those who sleep 6"
+        "A. treaties succeed when the science is settled",
+        "B. environmental agreements should be renegotiated frequently",
+        "C. this problem had a structure that made a solution reachable, which another problem may lack",
+        "D. developing countries should bear more of the cost",
+        "E. the observation of harm is what compels action"
       ],
-      "correctAnswer": "A",
-      "explanation": "The data shows an association (correlation), not causation. The only safely supported conclusion is that the two variables are associated in this survey population.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "C",
+      "explanation": "The closing sentence contrasts structure with the quality of the science.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-024-q18",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 18,
-      "prompt": "City X has 12% more police officers per capita than City Y. City X also has a 12% lower crime rate than City Y. A politician argued that hiring more police reduces crime.",
-      "question": "To evaluate the politician's argument, it would be most useful to determine:",
+      "passageTitle": "Roads to Nowhere",
+      "passageText": "Building a transport link to a poorer region in order to develop it is among the most durable ideas in regional policy, and its record is mixed in a way that is instructive rather than discouraging.\n\nA new link reduces the cost of moving goods and people in both directions. That is the point, and it is also the difficulty: a region connected to a larger economy becomes cheaper to serve from outside as well as cheaper to export from. Where local firms were protected by distance, the connection exposes them to competition they may not survive, and studies of new motorways and high-speed lines have found activity relocating toward the larger centre in some cases and toward the smaller in others.\n\nWhich occurs depends on what the smaller region already has. Where it holds a genuine advantage — lower costs, a specialised workforce, land — connection lets that advantage be exploited. Where its firms existed only because reaching them from elsewhere was expensive, connection removes the reason for their existence.\n\nThe policy implication is not that links should not be built. It is that a transport link is a multiplier rather than a source: it amplifies whatever a place's underlying position already is. A region with nothing to sell does not acquire something by being reached more quickly, and the schemes that disappointed most reliably were those in which the link was the whole of the strategy rather than a component of one.",
+      "prompt": "According to the passage, a new transport link creates difficulty for a poorer region because it",
       "options": [
-        "A. Whether the police officers in City X are better trained",
-        "B. Whether crime in both cities is measured using the same methodology",
-        "C. Whether the cities differ in poverty rates, population density, or other factors correlated with crime",
-        "D. Whether the crime reduction happened before or after police hiring increased",
-        "E. All of the above"
+        "A. raises the cost of local production",
+        "B. attracts workers away from local firms",
+        "C. requires local authorities to borrow",
+        "D. makes the region cheaper to serve from outside as well as cheaper to export from",
+        "E. reduces the value of land"
       ],
-      "correctAnswer": "E",
-      "explanation": "All four questions help evaluate whether the police-to-crime correlation reflects a causal relationship or whether confounding variables, measurement differences, or reversed causality explain the data.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "D",
+      "explanation": "The two-way reduction in transport cost is the point and the problem, exposing firms protected by distance.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-024-q19",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 19,
-      "prompt": "An environmental group claimed: 'Protecting wetlands prevents flooding, therefore we should protect all wetlands.' A developer responded: 'Some wetlands are not near flood-prone areas, so protecting them does not prevent flooding.'",
-      "question": "The developer's response most effectively challenges which aspect of the environmental group's argument?",
+      "passageTitle": "Roads to Nowhere",
+      "passageText": "Building a transport link to a poorer region in order to develop it is among the most durable ideas in regional policy, and its record is mixed in a way that is instructive rather than discouraging.\n\nA new link reduces the cost of moving goods and people in both directions. That is the point, and it is also the difficulty: a region connected to a larger economy becomes cheaper to serve from outside as well as cheaper to export from. Where local firms were protected by distance, the connection exposes them to competition they may not survive, and studies of new motorways and high-speed lines have found activity relocating toward the larger centre in some cases and toward the smaller in others.\n\nWhich occurs depends on what the smaller region already has. Where it holds a genuine advantage — lower costs, a specialised workforce, land — connection lets that advantage be exploited. Where its firms existed only because reaching them from elsewhere was expensive, connection removes the reason for their existence.\n\nThe policy implication is not that links should not be built. It is that a transport link is a multiplier rather than a source: it amplifies whatever a place's underlying position already is. A region with nothing to sell does not acquire something by being reached more quickly, and the schemes that disappointed most reliably were those in which the link was the whole of the strategy rather than a component of one.",
+      "prompt": "The passage indicates that whether activity relocates toward the larger or smaller centre depends on",
       "options": [
-        "A. The claim that wetlands prevent flooding",
-        "B. The assumption that all wetlands have equal flood-prevention value",
-        "C. The conclusion that all wetlands should be protected",
-        "D. The implication that flooding is always preventable",
-        "E. The premise that wetlands are worth preserving"
+        "A. the mode of transport chosen",
+        "B. the distance between the two centres",
+        "C. the level of public subsidy",
+        "D. the sequence in which the link is built",
+        "E. what the smaller region already has"
       ],
-      "correctAnswer": "B",
-      "explanation": "The developer doesn't deny that wetlands prevent flooding generally, but challenges the blanket application by showing the flood-prevention benefit varies by location.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "E",
+      "explanation": "A genuine advantage is amplified; firms existing only because they were hard to reach lose their reason to exist.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-024-q20",
-      "questionType": "critical_reasoning",
+      "questionType": "reading_comprehension",
       "num": 20,
-      "prompt": "A fashion retailer noticed that stores playing upbeat music had 20% higher sales per hour than stores playing slow music. The marketing team concluded they should switch all stores to upbeat music immediately.",
-      "question": "Which of the following, if true, would most strengthen the marketing team's recommendation?",
+      "passageTitle": "Roads to Nowhere",
+      "passageText": "Building a transport link to a poorer region in order to develop it is among the most durable ideas in regional policy, and its record is mixed in a way that is instructive rather than discouraging.\n\nA new link reduces the cost of moving goods and people in both directions. That is the point, and it is also the difficulty: a region connected to a larger economy becomes cheaper to serve from outside as well as cheaper to export from. Where local firms were protected by distance, the connection exposes them to competition they may not survive, and studies of new motorways and high-speed lines have found activity relocating toward the larger centre in some cases and toward the smaller in others.\n\nWhich occurs depends on what the smaller region already has. Where it holds a genuine advantage — lower costs, a specialised workforce, land — connection lets that advantage be exploited. Where its firms existed only because reaching them from elsewhere was expensive, connection removes the reason for their existence.\n\nThe policy implication is not that links should not be built. It is that a transport link is a multiplier rather than a source: it amplifies whatever a place's underlying position already is. A region with nothing to sell does not acquire something by being reached more quickly, and the schemes that disappointed most reliably were those in which the link was the whole of the strategy rather than a component of one.",
+      "prompt": "The author's central formulation is that a transport link is",
       "options": [
-        "A. Customers reported preferring a relaxed shopping atmosphere",
-        "B. The upbeat music stores were in higher-traffic mall locations",
-        "C. A controlled experiment with randomly assigned music found the same 20% difference",
-        "D. Sales staff performed better when the music was upbeat",
-        "E. Upbeat music has been shown to increase heart rate and impulse purchases in laboratory studies"
+        "A. a multiplier rather than a source",
+        "B. a source of development",
+        "C. rarely worth its cost",
+        "D. most valuable where a region has nothing to sell",
+        "E. a substitute for industrial policy"
       ],
-      "correctAnswer": "C",
-      "explanation": "A controlled, randomised experiment eliminates confounding factors (location, store size) and directly supports the causal claim that upbeat music drives higher sales.",
-      "difficulty": "hard",
-      "topic": "verbal_reasoning"
+      "correctAnswer": "A",
+      "explanation": "The passage adds that the schemes disappointing most reliably were those where the link was the whole strategy.",
+      "difficulty": "medium",
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-024-q21",
       "questionType": "reading_comprehension",
       "num": 21,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "According to the passage, which of the following contributes to the urban heat island effect?",
+      "passageTitle": "Deciding by Precedent",
+      "passageText": "A legal system that decides cases by reference to earlier decisions appears at first to prize consistency above justice: a court is bound by what other courts held, including where it thinks them mistaken. The justification is more interesting than the appearance suggests.\n\nPrecedent does three things. It makes conduct predictable, so that people can arrange their affairs knowing how a dispute would be resolved. It constrains judicial discretion, requiring reasons that connect to what has been decided before rather than to a judge's preference. And it distributes labour across time, since a question settled need not be reargued in every case.\n\nThe system is less rigid than it looks, because what binds is not the outcome but the reasoning necessary to it, and identifying that is itself an argument. A later court that considers an earlier decision wrong can distinguish it by identifying a material difference in facts, and the practice of distinguishing does much of the work that formal overruling would do more visibly. This is a genuine flexibility and a genuine weakness: a rule can be eroded by distinctions until little remains, without anyone stating that it has changed.\n\nThe deeper tension is that predictability is itself a component of justice rather than a rival to it. A rule announced after the fact cannot guide anyone, and a system that reached the best result in each case by its own lights, unconstrained by what it had held before, would be one under which nobody could know what the law required — which is a defect of a different kind, and one the case-by-case view tends not to price.",
+      "prompt": "According to the passage, what binds a later court is",
       "options": [
-        "A. High buildings that block wind flow",
-        "B. Reflective roofs in city centres",
-        "C. Vehicles, air conditioning, and industry releasing waste heat",
-        "D. Increased cloud cover over urban areas"
+        "A. the outcome of the earlier case",
+        "B. the seniority of the earlier court alone",
+        "C. the reasoning necessary to the earlier decision",
+        "D. the parties' agreement",
+        "E. the statute under which the case arose"
       ],
       "correctAnswer": "C",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "explanation": "The passage notes that identifying that reasoning is itself an argument, which is where the flexibility enters.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-024-q22",
       "questionType": "reading_comprehension",
       "num": 22,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "The passage states that the greatest temperature difference between cities and rural areas occurs:",
+      "passageTitle": "Deciding by Precedent",
+      "passageText": "A legal system that decides cases by reference to earlier decisions appears at first to prize consistency above justice: a court is bound by what other courts held, including where it thinks them mistaken. The justification is more interesting than the appearance suggests.\n\nPrecedent does three things. It makes conduct predictable, so that people can arrange their affairs knowing how a dispute would be resolved. It constrains judicial discretion, requiring reasons that connect to what has been decided before rather than to a judge's preference. And it distributes labour across time, since a question settled need not be reargued in every case.\n\nThe system is less rigid than it looks, because what binds is not the outcome but the reasoning necessary to it, and identifying that is itself an argument. A later court that considers an earlier decision wrong can distinguish it by identifying a material difference in facts, and the practice of distinguishing does much of the work that formal overruling would do more visibly. This is a genuine flexibility and a genuine weakness: a rule can be eroded by distinctions until little remains, without anyone stating that it has changed.\n\nThe deeper tension is that predictability is itself a component of justice rather than a rival to it. A rule announced after the fact cannot guide anyone, and a system that reached the best result in each case by its own lights, unconstrained by what it had held before, would be one under which nobody could know what the law required — which is a defect of a different kind, and one the case-by-case view tends not to price.",
+      "prompt": "The practice of distinguishing is described as",
       "options": [
-        "A. During the hottest summer afternoons",
-        "B. During periods of high wind",
-        "C. When humidity is at its highest",
-        "D. On calm, clear nights"
+        "A. a formal method of overruling",
+        "B. a genuine flexibility and a genuine weakness",
+        "C. available only to the highest court",
+        "D. an error that later courts avoid",
+        "E. a means of increasing predictability"
       ],
-      "correctAnswer": "D",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "correctAnswer": "B",
+      "explanation": "A rule can be eroded by distinctions until little remains, without anyone stating that it has changed.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     },
     {
       "id": "gmat-verbal-024-q23",
       "questionType": "reading_comprehension",
       "num": 23,
-      "passageTitle": "Urban Heat Islands",
-      "passageText": "Urban heat islands — metropolitan areas that are significantly warmer than surrounding rural regions — are a well-documented consequence of urbanisation. The phenomenon arises from multiple interacting factors. Dense concentrations of buildings and pavement absorb solar radiation and re-emit it as heat, while the relative scarcity of vegetation reduces evaporative cooling. Waste heat from vehicles, air conditioning systems, and industrial processes adds to the effect. Studies consistently show that city centres can be 1–7 degrees Celsius warmer than their rural surroundings, with the greatest difference occurring on calm, clear nights when the absence of wind prevents heat dispersal. The public health consequences are significant: heat islands intensify heatwave conditions, increase peak electricity demand, and contribute to elevated concentrations of ground-level ozone and particulate matter. Adaptation strategies include urban greening — planting trees and establishing parks — cool roofs and pavements that reflect rather than absorb solar radiation, and redesigning urban layouts to channel natural ventilation.",
-      "prompt": "Which of the following, if true, would most strengthen the case for urban greening as an adaptation strategy?",
+      "passageTitle": "Deciding by Precedent",
+      "passageText": "A legal system that decides cases by reference to earlier decisions appears at first to prize consistency above justice: a court is bound by what other courts held, including where it thinks them mistaken. The justification is more interesting than the appearance suggests.\n\nPrecedent does three things. It makes conduct predictable, so that people can arrange their affairs knowing how a dispute would be resolved. It constrains judicial discretion, requiring reasons that connect to what has been decided before rather than to a judge's preference. And it distributes labour across time, since a question settled need not be reargued in every case.\n\nThe system is less rigid than it looks, because what binds is not the outcome but the reasoning necessary to it, and identifying that is itself an argument. A later court that considers an earlier decision wrong can distinguish it by identifying a material difference in facts, and the practice of distinguishing does much of the work that formal overruling would do more visibly. This is a genuine flexibility and a genuine weakness: a rule can be eroded by distinctions until little remains, without anyone stating that it has changed.\n\nThe deeper tension is that predictability is itself a component of justice rather than a rival to it. A rule announced after the fact cannot guide anyone, and a system that reached the best result in each case by its own lights, unconstrained by what it had held before, would be one under which nobody could know what the law required — which is a defect of a different kind, and one the case-by-case view tends not to price.",
+      "prompt": "The 'deeper tension' the author identifies is that",
       "options": [
-        "A. Studies show trees can reduce local temperatures by up to 8°C through evapotranspiration",
-        "B. Trees in urban areas require significant maintenance costs",
-        "C. Cool roofs are less expensive to install than planting trees",
-        "D. Urban greening has been adopted by fewer than 20% of major cities worldwide"
+        "A. consistency and justice are irreconcilable",
+        "B. judges prefer discretion to constraint",
+        "C. precedent applies only to civil cases",
+        "D. predictability is a component of justice rather than a rival to it",
+        "E. earlier decisions are usually mistaken"
       ],
-      "correctAnswer": "A",
-      "explanation": "Based on the passage content about Urban Heat Islands.",
+      "correctAnswer": "D",
+      "explanation": "A system unconstrained by its own holdings would leave nobody able to know what the law required, which is a defect the case-by-case view does not price.",
       "difficulty": "medium",
-      "topic": "reading_comprehension"
+      "topic": "reading comprehension"
     }
   ],
   "answerKey": {
-    "gmat-verbal-024-q01": "A",
-    "gmat-verbal-024-q02": "B",
-    "gmat-verbal-024-q03": "C",
-    "gmat-verbal-024-q04": "D",
-    "gmat-verbal-024-q05": "E",
-    "gmat-verbal-024-q06": "A",
-    "gmat-verbal-024-q07": "B",
-    "gmat-verbal-024-q08": "C",
-    "gmat-verbal-024-q09": "D",
+    "gmat-verbal-024-q01": "B",
+    "gmat-verbal-024-q02": "C",
+    "gmat-verbal-024-q03": "E",
+    "gmat-verbal-024-q04": "A",
+    "gmat-verbal-024-q05": "D",
+    "gmat-verbal-024-q06": "C",
+    "gmat-verbal-024-q07": "A",
+    "gmat-verbal-024-q08": "D",
+    "gmat-verbal-024-q09": "B",
     "gmat-verbal-024-q10": "E",
-    "gmat-verbal-024-q11": "A",
-    "gmat-verbal-024-q12": "E",
-    "gmat-verbal-024-q13": "B",
-    "gmat-verbal-024-q14": "C",
-    "gmat-verbal-024-q15": "D",
-    "gmat-verbal-024-q16": "E",
-    "gmat-verbal-024-q17": "A",
-    "gmat-verbal-024-q18": "E",
-    "gmat-verbal-024-q19": "B",
-    "gmat-verbal-024-q20": "C",
+    "gmat-verbal-024-q11": "C",
+    "gmat-verbal-024-q12": "B",
+    "gmat-verbal-024-q13": "D",
+    "gmat-verbal-024-q14": "A",
+    "gmat-verbal-024-q15": "E",
+    "gmat-verbal-024-q16": "B",
+    "gmat-verbal-024-q17": "C",
+    "gmat-verbal-024-q18": "D",
+    "gmat-verbal-024-q19": "E",
+    "gmat-verbal-024-q20": "A",
     "gmat-verbal-024-q21": "C",
-    "gmat-verbal-024-q22": "D",
-    "gmat-verbal-024-q23": "A"
+    "gmat-verbal-024-q22": "B",
+    "gmat-verbal-024-q23": "D"
   },
-  "fingerprints": [
-    "9d2c0865cc04cb2db6",
-    "29a13a3b011de79e0a",
-    "5af36db6059db523bb",
-    "3583b39051c7e1a212",
-    "b5b37d1b2cb08b4e87",
-    "da332b7c5957b56d8f",
-    "b87f532de77103a4c6",
-    "f8de02991bf11a0f12",
-    "be8c907b856d34957c",
-    "b04c0e5654dcfa20de",
-    "84ca8d6e070eb5890d",
-    "bee24f8f0294e0e0ce",
-    "0289fde99e7151f64f",
-    "59c61c75a75ce0f7d0",
-    "59d18c69f3fa444be3",
-    "5d0c3bdf27153cf489",
-    "025be95db4066ded3d",
-    "268f2e0efabcf5b47d",
-    "875ef9b533593ebb3e",
-    "e03434a1448efb926e"
-  ],
   "readingPassages": [
     {
       "id": "gmat-verbal-024-rp1",
-      "title": "Business and Society",
-      "text": "Coral reef ecosystems face dual threats from ocean warming and acidification. Thermal bleaching events, in which elevated temperatures cause corals to expel their symbiotic algae, have become more frequent since the 1980s. Simultaneously, as ocean pH decreases due to absorbed carbon dioxide, the ability of corals to build calcium carbonate skeletons is compromised. These stressors interact in ways that researchers are still working to quantify."
+      "title": "Testing a Change",
+      "text": "Firms that can show half their customers one version of a page and half another have acquired something rare in business: the ability to run a controlled experiment on a decision that would otherwise be settled by argument. The method has been transformative, and the enthusiasm for it has outrun the understanding of what it establishes.\n\nThe first limit is the outcome measured. An experiment answers a question about the quantity it counts, typically over the days it runs. A change that raises purchases this week may raise returns next month or reduce the likelihood that a customer comes back, and neither effect appears in the test that declared the change a success. Firms that test heavily on short-run metrics accumulate changes that were each locally justified.\n\nThe second is the population. The result holds for the customers who saw the test, at that moment, under those conditions. Where the tested change interacts with something seasonal, or with a promotion running simultaneously, the estimate is specific to circumstances that will not recur.\n\nThe third is statistical and the most easily abused. Running many tests guarantees that some will produce apparently significant results by chance, and a firm that tests continuously and acts on whichever comparison crosses a threshold will implement a steady stream of nothing. Disciplined practice fixes the metric and the duration in advance, and treats a surprising result as a reason to repeat the test rather than to ship the change — which is a much slower way to work than the method's reputation implies."
+    },
+    {
+      "id": "gmat-verbal-024-rp2",
+      "title": "The Hole That Closed",
+      "text": "The international agreement that phased out ozone-depleting chemicals is the most successful environmental treaty yet concluded, and the reasons for its success are frequently misidentified as evidence that international cooperation is straightforward when the science is clear.\n\nThe science was not initially clear. The mechanism was proposed a decade before the Antarctic hole was observed, and the observation itself was so far outside expectation that automated processing had been discarding the readings as errors. What made action possible was not certainty but a combination of features the climate problem lacks.\n\nThe substances involved were produced by a small number of firms, which made monitoring feasible and negotiation manageable. Substitutes existed or could be developed within years rather than decades, so compliance did not require abandoning an activity, only changing an input. The harm was vivid, personal and easy to describe. And the costs of compliance fell mainly on the same wealthy countries that had produced the substances, so the distributional argument that dominates climate negotiation was comparatively muted — and where it did arise, a fund to assist developing countries was agreed and used.\n\nThe treaty also improved over time, tightening its schedules as evidence accumulated, which is a design feature rather than an accident. The lesson is not that treaties work when science is settled. It is that this problem had a structure — few producers, available substitutes, concentrated costs, legible harm — that made a solution reachable, and that a problem lacking those features will not be solved by the same instrument merely because the science is at least as good."
+    },
+    {
+      "id": "gmat-verbal-024-rp3",
+      "title": "Roads to Nowhere",
+      "text": "Building a transport link to a poorer region in order to develop it is among the most durable ideas in regional policy, and its record is mixed in a way that is instructive rather than discouraging.\n\nA new link reduces the cost of moving goods and people in both directions. That is the point, and it is also the difficulty: a region connected to a larger economy becomes cheaper to serve from outside as well as cheaper to export from. Where local firms were protected by distance, the connection exposes them to competition they may not survive, and studies of new motorways and high-speed lines have found activity relocating toward the larger centre in some cases and toward the smaller in others.\n\nWhich occurs depends on what the smaller region already has. Where it holds a genuine advantage — lower costs, a specialised workforce, land — connection lets that advantage be exploited. Where its firms existed only because reaching them from elsewhere was expensive, connection removes the reason for their existence.\n\nThe policy implication is not that links should not be built. It is that a transport link is a multiplier rather than a source: it amplifies whatever a place's underlying position already is. A region with nothing to sell does not acquire something by being reached more quickly, and the schemes that disappointed most reliably were those in which the link was the whole of the strategy rather than a component of one."
+    },
+    {
+      "id": "gmat-verbal-024-rp4",
+      "title": "Deciding by Precedent",
+      "text": "A legal system that decides cases by reference to earlier decisions appears at first to prize consistency above justice: a court is bound by what other courts held, including where it thinks them mistaken. The justification is more interesting than the appearance suggests.\n\nPrecedent does three things. It makes conduct predictable, so that people can arrange their affairs knowing how a dispute would be resolved. It constrains judicial discretion, requiring reasons that connect to what has been decided before rather than to a judge's preference. And it distributes labour across time, since a question settled need not be reargued in every case.\n\nThe system is less rigid than it looks, because what binds is not the outcome but the reasoning necessary to it, and identifying that is itself an argument. A later court that considers an earlier decision wrong can distinguish it by identifying a material difference in facts, and the practice of distinguishing does much of the work that formal overruling would do more visibly. This is a genuine flexibility and a genuine weakness: a rule can be eroded by distinctions until little remains, without anyone stating that it has changed.\n\nThe deeper tension is that predictability is itself a component of justice rather than a rival to it. A rule announced after the fact cannot guide anyone, and a system that reached the best result in each case by its own lights, unconstrained by what it had held before, would be one under which nobody could know what the law required — which is a defect of a different kind, and one the case-by-case view tends not to price."
     }
   ]
 }
