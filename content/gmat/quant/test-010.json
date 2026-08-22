@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
+      "prompt": "A is 25% more than B. B is what percentage less than A?",
       "options": [
-        "24",
-        "48",
-        "12",
-        "16",
-        "20"
+        "25%",
+        "80%",
+        "125%",
+        "20%",
+        "5%"
       ],
-      "correctAnswer": "24",
-      "answer": "A",
-      "explanation": "Multiples of 8: 8, 16, 24 … 24 is divisible by 4 and 6, so LCM = 24.",
+      "correctAnswer": "20%",
+      "answer": "D",
+      "explanation": "If B is 100 then A is 125. B is 25 below A, and 25 out of 125 is 20%. The 25% is measured against B, the smaller of the two, so the reverse comparison uses a different base.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
+      "prompt": "300 ml of solution is 15% salt. How much water must be added to make it 9% salt?",
       "options": [
-        "8",
-        "12",
-        "18",
-        "24",
-        "6"
+        "150 ml",
+        "200 ml",
+        "240 ml",
+        "500 ml",
+        "100 ml"
       ],
-      "correctAnswer": "12",
+      "correctAnswer": "200 ml",
       "answer": "B",
-      "explanation": "24 = 12 × 2, 36 = 12 × 3. The largest common factor is 12.",
+      "explanation": "The solution holds 45 ml of salt, and adding water does not change that. For 45 ml to be 9% of the mixture, the mixture must be 500 ml, so 200 ml of water is added.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Three-quarters of a number is 60. What is the number?",
+      "prompt": "One worker can finish a job in 20 days and another in 30 days. The first works alone for 5 days, then the second joins. How many days does the job take in total?",
       "options": [
-        "70",
-        "75",
-        "80",
-        "85",
-        "90"
+        "12 days",
+        "9 days",
+        "15 days",
+        "18 days",
+        "14 days"
       ],
-      "correctAnswer": "80",
-      "answer": "C",
-      "explanation": "(3/4)x = 60 → x = 60 × 4 ÷ 3 = 80.",
+      "correctAnswer": "14 days",
+      "answer": "E",
+      "explanation": "In 5 days the first worker completes 0.25 of the job, leaving 0.75. Together they do 1/20 + 1/30 = 1/12 of the job a day, so the rest takes 9 days. The job runs 5 + 9 = 14 days.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
+      "prompt": "Six numbers have a mean of 24. When the largest is removed, the remaining five have a mean of 20. What was the largest number?",
       "options": [
-        "3 : 5",
-        "8 : 5",
-        "2 : 5",
-        "8 : 15",
-        "6 : 5"
+        "24",
+        "20",
+        "44",
+        "40",
+        "48"
       ],
-      "correctAnswer": "8 : 15",
-      "answer": "D",
-      "explanation": "Make b common: a:b = 8:12, b:c = 12:15. So a:c = 8:15.",
+      "correctAnswer": "44",
+      "answer": "C",
+      "explanation": "The six total 144 and the five total 100. The difference, 44, is the number that was removed. The mean falling by 4 does not mean the value removed was 4 above the mean.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
+      "prompt": "Taking pi as 22/7, how many complete turns does a wheel of diameter 0.7 m make over 1,000 m?",
       "options": [
-        "36",
-        "9",
-        "12",
-        "18",
-        "24"
+        "454 turns",
+        "909 turns",
+        "227 turns",
+        "2,200 turns",
+        "440 turns"
       ],
-      "correctAnswer": "24",
-      "answer": "E",
-      "explanation": "Volume = length × width × height = 2 × 3 × 4 = 24.",
+      "correctAnswer": "454 turns",
+      "answer": "A",
+      "explanation": "One turn covers the circumference, 22/7 × 0.7 = 2.2 m. 1,000 / 2.2 is about 454.55, so the wheel completes 454 full turns. Using the radius in place of the diameter halves the circumference and doubles the count.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
+      "prompt": "One bus leaves every 18 minutes and another every 24 minutes. Both leave at 09:00. At what time do they next leave together?",
       "options": [
-        "600",
-        "640",
-        "720",
-        "480",
-        "540"
+        "10:24",
+        "09:42",
+        "11:12",
+        "10:12",
+        "10:00"
       ],
-      "correctAnswer": "600",
-      "answer": "A",
-      "explanation": "0.20 × total = 120 → total = 120 ÷ 0.20 = 600.",
+      "correctAnswer": "10:12",
+      "answer": "D",
+      "explanation": "They coincide at multiples of the lowest common multiple of 18 and 24. Since 18 = 2 × 3² and 24 = 2³ × 3, the lowest common multiple is 72 minutes, or 1 hour 12 minutes after 09:00.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A traveller drives to a town at 60 mph and returns along the same road at 40 mph. What is the average speed for the round trip?",
+      "prompt": "A shop marks goods up by 40% on cost, then sells them with 10% off the marked price. What is the profit as a percentage of cost?",
       "options": [
-        "45 mph",
-        "48 mph",
-        "50 mph",
-        "52 mph",
-        "55 mph"
+        "30%",
+        "40%",
+        "26%",
+        "50%",
+        "36%"
       ],
-      "correctAnswer": "48 mph",
-      "answer": "B",
-      "explanation": "Round-trip average = 2·v₁·v₂ ÷ (v₁+v₂) = 2 × 60 × 40 ÷ 100 = 4800 ÷ 100 = 48 mph.",
+      "correctAnswer": "26%",
+      "answer": "C",
+      "explanation": "On a cost of 100 the marked price is 140, and 10% off leaves 126. That is a profit of 26% on cost. Subtracting the two percentages gives 30%, which applies the discount to the cost rather than to the marked price.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the simple interest on $2,000 at 5% per year for 3 years?",
+      "prompt": "What is the distance between the points (-3, 4) and (5, -2)?",
       "options": [
-        "$200",
-        "$250",
-        "$300",
-        "$350",
-        "$400"
+        "8",
+        "14",
+        "100",
+        "2",
+        "10"
       ],
-      "correctAnswer": "$300",
-      "answer": "C",
-      "explanation": "SI = P × r × t = 2000 × 0.05 × 3 = 300.",
+      "correctAnswer": "10",
+      "answer": "E",
+      "explanation": "The horizontal gap is 8 and the vertical gap -6, so the distance is the square root of 64 + 36 = 100, which is 10. Adding the two gaps instead of using Pythagoras gives 14.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 5 identical pens cost $20, how much do 8 of the same pens cost?",
+      "prompt": "How many multiples of 4 are there from 100 to 300 inclusive?",
       "options": [
-        "$40",
-        "$28",
-        "$30",
-        "$32",
-        "$36"
+        "50",
+        "51",
+        "49",
+        "75",
+        "25"
       ],
-      "correctAnswer": "$32",
-      "answer": "D",
-      "explanation": "Unit price = 20 ÷ 5 = $4. 8 pens = 8 × 4 = $32.",
+      "correctAnswer": "51",
+      "answer": "B",
+      "explanation": "There are 75 multiples of 4 up to 300 and 24 below 100, leaving 51. Since 100 is itself a multiple of 4, dropping it gives 50 and undercounts by one.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A tank is 3/5 full. Adding 20 litres makes it 4/5 full. What is the tank's total capacity?",
+      "prompt": "A train travelling at 25 m/s takes 36 seconds to pass completely over a 400 m bridge, from the front entering to the back leaving. How long is the train?",
       "options": [
-        "110 litres",
-        "120 litres",
-        "80 litres",
-        "90 litres",
-        "100 litres"
+        "500 m",
+        "900 m",
+        "400 m",
+        "300 m",
+        "1,300 m"
       ],
-      "correctAnswer": "100 litres",
-      "answer": "E",
-      "explanation": "4/5 − 3/5 = 1/5 of capacity = 20 litres → capacity = 20 × 5 = 100 litres.",
+      "correctAnswer": "500 m",
+      "answer": "A",
+      "explanation": "In 36 seconds the train covers 25 × 36 = 900 m. That distance is the bridge plus the train's own length, so the train is 900 − 400 = 500 m. 900 m is the distance travelled, not the length of the train.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of √144 + √81?",
+      "prompt": "Income tax is nothing on the first £12,000.00 of income, 20% on the next £30,000.00, and 40% on anything above that. How much tax is due on an income of £46,000.00?",
       "options": [
-        "21",
-        "25",
-        "15",
-        "18",
-        "20"
+        "£9,200.00",
+        "£6,800.00",
+        "£8,000.00",
+        "£7,600.00",
+        "£6,000.00"
       ],
-      "correctAnswer": "21",
-      "answer": "A",
-      "explanation": "√144 = 12 and √81 = 9. 12 + 9 = 21.",
+      "correctAnswer": "£7,600.00",
+      "answer": "D",
+      "explanation": "The first £12,000.00 is untaxed. The next £30,000.00 is taxed at 20%: £6,000.00. The remaining £4,000.00 is taxed at 40%: £1,600.00. The total is £7,600.00. Applying 20% to the whole income gives £9,200.00.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
+      "prompt": "A sequence begins 3, 12, 48, each term 4 times the one before. What is the 6th term?",
       "options": [
-        "$18.50",
-        "$21.50",
-        "$19.25",
-        "$20.00",
-        "$14.00"
+        "768",
+        "12,288",
+        "3,000",
+        "1,536",
+        "3,072"
       ],
-      "correctAnswer": "$21.50",
-      "answer": "B",
-      "explanation": "Notebooks: 4 × $3.50 = $14.00. Pens: 6 × $1.25 = $7.50. Total = $14.00 + $7.50 = $21.50.",
+      "correctAnswer": "3,072",
+      "answer": "E",
+      "explanation": "The 6th term is 3 × 4 to the power 5, which is 3 × 1,024 = 3,072. Using the power 4 gives the 5th term, 768.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
+      "prompt": "A bag holds 5 red counters and 3 blue. Two are drawn without replacement. What is the probability that both are red?",
       "options": [
-        "55 mph",
-        "58 mph",
-        "60 mph",
-        "65 mph",
-        "70 mph"
+        "25/64",
+        "5/14",
+        "5/8",
+        "3/14",
+        "1/2"
       ],
-      "correctAnswer": "60 mph",
-      "answer": "C",
-      "explanation": "Total distance = 240 + 180 = 420 miles. Total time = 4 + 3 = 7 hours. Average = 420 ÷ 7 = 60 mph.",
+      "correctAnswer": "5/14",
+      "answer": "B",
+      "explanation": "The first draw is red with probability 5/8. With one red gone, the second is red with probability 4/7. Multiplying gives 20/56, which cancels to 5/14. Using 5/8 twice, as 25/64, would be right only if the counter were replaced.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 40% of a number is 64, what is 75% of that number?",
+      "prompt": "A trapezium has parallel sides of 12 cm and 18 cm, 7 cm apart. What is its area?",
       "options": [
-        "96",
-        "100",
-        "108",
-        "120",
-        "128"
+        "210 sq cm",
+        "126 sq cm",
+        "105 sq cm",
+        "90 sq cm",
+        "84 sq cm"
       ],
-      "correctAnswer": "120",
-      "answer": "D",
-      "explanation": "0.40x = 64 → x = 160. 75% of 160 = 0.75 × 160 = 120.",
+      "correctAnswer": "105 sq cm",
+      "answer": "C",
+      "explanation": "The area is the average of the parallel sides times the distance between them: (12 + 18) / 2 × 7 = 15 × 7 = 105 cm². Forgetting to halve gives 210 cm².",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
+      "prompt": "Unemployment falls from 8% to 6%. By what percentage has unemployment fallen?",
       "options": [
-        "21 hours",
-        "3 hours",
-        "12 hours",
-        "15 hours",
-        "18 hours"
+        "25%",
+        "2%",
+        "20%",
+        "33%",
+        "75%"
       ],
-      "correctAnswer": "18 hours",
-      "answer": "E",
-      "explanation": "Net rate = 1/6 − 1/9 = 3/18 − 2/18 = 1/18 tank per hour. Time = 18 hours.",
+      "correctAnswer": "25%",
+      "answer": "A",
+      "explanation": "The fall is 2 percentage points, and 2 out of 8 is 25%. A drop of 2 percentage points is not a drop of 2% — the two are only equal when the starting figure is 100.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
+      "prompt": "A father is 3 times as old as his son. In 12 years he will be 2 times as old. How old is the father now?",
       "options": [
-        "$180",
-        "$190",
-        "$200",
-        "$210",
-        "$170"
+        "12",
+        "24",
+        "48",
+        "30",
+        "36"
       ],
-      "correctAnswer": "$180",
-      "answer": "A",
-      "explanation": "200 × 1.20 = 240; 240 × 0.75 = 180. (Net factor 1.2 × 0.75 = 0.9, a 10% drop.)",
+      "correctAnswer": "36",
+      "answer": "E",
+      "explanation": "If the son is s then the father is 3s, and in 12 years 3s + 12 = 2(s + 12). That gives s = 12, so the father is 36. 12 is the son's age, not the father's.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
+      "prompt": "One item costs £4.20, or three for the price of two. A pack of 5 costs £16.00. What is the lower cost per item?",
       "options": [
-        "$200",
-        "$210",
-        "$220",
-        "$240",
-        "$260"
+        "£3.20",
+        "£4.20",
+        "£2.60",
+        "£2.80",
+        "£3.00"
       ],
-      "correctAnswer": "$210",
-      "answer": "B",
-      "explanation": "Amount = 1000 × 1.10² = 1000 × 1.21 = 1210. Interest = 1210 − 1000 = 210.",
+      "correctAnswer": "£2.80",
+      "answer": "D",
+      "explanation": "Three for the price of two costs £8.40 for 3 items, or £2.80 each. The pack works out at £16.00 / 5 = £3.20 each. The offer is the cheaper of the two at £2.80.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
+      "prompt": "Taking pi as 3.14, what is the volume of a cylinder of radius 20 cm and height 50 cm, in litres?",
       "options": [
-        "20",
-        "12",
-        "15",
-        "16",
-        "18"
+        "628 litres",
+        "62.8 litres",
+        "6.28 litres",
+        "31.4 litres",
+        "125.6 litres"
       ],
-      "correctAnswer": "15",
-      "answer": "C",
-      "explanation": "Sum of 5 = 5 × 20 = 100. Remove 40 → 60 left over 4 numbers. Average = 60 ÷ 4 = 15.",
+      "correctAnswer": "62.8 litres",
+      "answer": "B",
+      "explanation": "The volume is 3.14 × 20² × 50 = 62,800 cm³. A litre is 1,000 cm³, so that is 62.8 litres. Dividing by 100 instead of 1,000 gives 628.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
+      "prompt": "A number increased by 30% is 208 more than the same number decreased by 20%. What is the number?",
       "options": [
-        "24",
-        "8",
-        "12",
-        "16",
-        "20"
+        "208",
+        "260",
+        "416",
+        "320",
+        "520"
       ],
-      "correctAnswer": "16",
-      "answer": "D",
-      "explanation": "Parts = 3 + 5 = 8 → each part = 64 ÷ 8 = 8. Amounts: 24 and 40. Difference = 40 − 24 = 16.",
+      "correctAnswer": "416",
+      "answer": "C",
+      "explanation": "The two versions are 1.3x and 0.8x, and their difference is 0.5x. Setting 0.5x = 208 gives x = 416. The gap of 208 is half the number, not the number itself.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
+      "prompt": "What is the interquartile range of these eight values: 4, 7, 9, 12, 15, 18, 22, 30?",
       "options": [
-        "140",
-        "152",
-        "96",
-        "120",
-        "136"
+        "12",
+        "26",
+        "9",
+        "20",
+        "8"
       ],
-      "correctAnswer": "136",
-      "answer": "E",
-      "explanation": "Area = 12 × 8 = 96. Perimeter = 2(12 + 8) = 40. Sum = 96 + 40 = 136.",
+      "correctAnswer": "12",
+      "answer": "A",
+      "explanation": "The lower half is 4, 7, 9, 12, so the lower quartile is (7 + 9) / 2 = 8. The upper half gives (18 + 22) / 2 = 20. The interquartile range is 20 − 8 = 12. The full range, 26, is a different measure.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 2^5 × 2^3?",
+      "prompt": "8 machines make 640 parts in 5 hours. At the same rate, how many parts do 12 machines make in 7 hours?",
       "options": [
-        "256",
-        "512",
-        "1024",
-        "64",
-        "128"
+        "960",
+        "1,120",
+        "1,536",
+        "896",
+        "1,344"
       ],
-      "correctAnswer": "256",
-      "answer": "A",
-      "explanation": "2^5 × 2^3 = 2^(5+3) = 2^8 = 256.",
+      "correctAnswer": "1,344",
+      "answer": "E",
+      "explanation": "8 machines over 5 hours is 40 machine-hours for 640 parts, so one machine-hour makes 16. 12 machines over 7 hours is 84 machine-hours: 1,344 parts. Scaling by the machines alone gives 960 and ignores the longer run.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-010-q001": "24",
-    "gmat-quant-010-q002": "12",
-    "gmat-quant-010-q003": "80",
-    "gmat-quant-010-q004": "8 : 15",
-    "gmat-quant-010-q005": "24",
-    "gmat-quant-010-q006": "600",
-    "gmat-quant-010-q007": "48 mph",
-    "gmat-quant-010-q008": "$300",
-    "gmat-quant-010-q009": "$32",
-    "gmat-quant-010-q010": "100 litres",
-    "gmat-quant-010-q011": "21",
-    "gmat-quant-010-q012": "$21.50",
-    "gmat-quant-010-q013": "60 mph",
-    "gmat-quant-010-q014": "120",
-    "gmat-quant-010-q015": "18 hours",
-    "gmat-quant-010-q016": "$180",
-    "gmat-quant-010-q017": "$210",
-    "gmat-quant-010-q018": "15",
-    "gmat-quant-010-q019": "16",
-    "gmat-quant-010-q020": "136",
-    "gmat-quant-010-q021": "256"
+    "gmat-quant-010-q001": "20%",
+    "gmat-quant-010-q002": "200 ml",
+    "gmat-quant-010-q003": "14 days",
+    "gmat-quant-010-q004": "44",
+    "gmat-quant-010-q005": "454 turns",
+    "gmat-quant-010-q006": "10:12",
+    "gmat-quant-010-q007": "26%",
+    "gmat-quant-010-q008": "10",
+    "gmat-quant-010-q009": "51",
+    "gmat-quant-010-q010": "500 m",
+    "gmat-quant-010-q011": "£7,600.00",
+    "gmat-quant-010-q012": "3,072",
+    "gmat-quant-010-q013": "5/14",
+    "gmat-quant-010-q014": "105 sq cm",
+    "gmat-quant-010-q015": "25%",
+    "gmat-quant-010-q016": "36",
+    "gmat-quant-010-q017": "£2.80",
+    "gmat-quant-010-q018": "62.8 litres",
+    "gmat-quant-010-q019": "416",
+    "gmat-quant-010-q020": "12",
+    "gmat-quant-010-q021": "1,344"
   }
 }
