@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
+      "prompt": "An investment grows by 8% a year, compounded annually, and is worth £11,664.00 after 2 years. How much was invested?",
       "options": [
-        "136",
-        "140",
-        "152",
-        "96",
-        "120"
+        "£10,800.00",
+        "£10,000.00",
+        "£9,872.41",
+        "£9,800.00",
+        "£10,500.00"
       ],
-      "correctAnswer": "136",
-      "answer": "A",
-      "explanation": "Area = 12 × 8 = 96. Perimeter = 2(12 + 8) = 40. Sum = 96 + 40 = 136.",
+      "correctAnswer": "£10,000.00",
+      "answer": "B",
+      "explanation": "Dividing back: £11,664.00 / 1.08² = £10,000.00. Taking 8% off twice instead of dividing gives £9,872.41, because a fall of 8% does not undo a rise of 8%.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 2^5 × 2^3?",
+      "prompt": "A mix of 64 kg is 5 parts sand to 3 parts cement. How much cement must be added to make the ratio 5 : 4, with no sand added?",
       "options": [
-        "128",
-        "256",
-        "512",
-        "1024",
-        "64"
+        "4 kg",
+        "12 kg",
+        "16 kg",
+        "8 kg",
+        "24 kg"
       ],
-      "correctAnswer": "256",
-      "answer": "B",
-      "explanation": "2^5 × 2^3 = 2^(5+3) = 2^8 = 256.",
+      "correctAnswer": "8 kg",
+      "answer": "D",
+      "explanation": "The mix holds 40 kg of sand and 24 kg of cement. Sand is unchanged, so 5 parts is still 40 kg and one part is 8 kg. Four parts of cement is 32 kg, which needs 8 kg more.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
+      "prompt": "Of 120 students, 78 study French and 54 study German. 9 study neither. How many study both?",
       "options": [
-        "30",
-        "18",
         "21",
-        "24",
-        "27"
+        "12",
+        "33",
+        "45",
+        "30"
       ],
       "correctAnswer": "21",
-      "answer": "C",
-      "explanation": "Adding: 2x = 14 → x = 7. Then y = 3. xy = 7 × 3 = 21.",
+      "answer": "A",
+      "explanation": "111 students study at least one language. Adding 78 and 54 gives 132, counting the overlap twice, so the overlap is 132 − 111 = 21. Ignoring the 9 who study neither gives 12.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is 15% of 15% of 400?",
+      "prompt": "Five numbers have a mean of 34. Four of them are 28, 41, 30, 26. What is the fifth?",
       "options": [
-        "15",
-        "18",
-        "6",
-        "9",
-        "12"
+        "34",
+        "31.25",
+        "45",
+        "39",
+        "50"
       ],
-      "correctAnswer": "9",
-      "answer": "D",
-      "explanation": "15% of 400 = 60. 15% of 60 = 9.",
+      "correctAnswer": "45",
+      "answer": "C",
+      "explanation": "Five numbers averaging 34 total 170. The four given total 125, so the fifth is 45. The four alone average 31.25, which is not what the question asks for.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
+      "prompt": "A circular path 2 m wide runs all the way round a pond of radius 9 m. What is the area of the path?",
       "options": [
-        "$66",
-        "$70",
-        "$57",
-        "$60",
-        "$63"
+        "4π sq m",
+        "20π sq m",
+        "26π sq m",
+        "121π sq m",
+        "40π sq m"
       ],
-      "correctAnswer": "$63",
+      "correctAnswer": "40π sq m",
       "answer": "E",
-      "explanation": "Discount: 80 × 0.75 = 60. Tax: 60 × 1.05 = 63.",
+      "explanation": "The path is the area inside radius 11 less the area inside radius 9: (11² − 9²)π = (121 − 81)π = 40π square metres. Squaring the width alone gives 4π, far too small.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
+      "prompt": "The sum of 5 consecutive integers is 285. What is the largest of them?",
       "options": [
-        "150 miles",
-        "165 miles",
-        "180 miles",
-        "120 miles",
-        "135 miles"
+        "57",
+        "59",
+        "61",
+        "53",
+        "60"
       ],
-      "correctAnswer": "150 miles",
-      "answer": "A",
-      "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
+      "correctAnswer": "59",
+      "answer": "B",
+      "explanation": "With an odd count the middle integer is the mean: 285 / 5 = 57. The five run 55 to 59, so the largest is 59. 57 is the middle one, not the largest.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "prompt": "A tank fills in 6 hours through an inlet and empties in 10 hours through an outlet. If both are open, how long does it take to fill from empty?",
       "options": [
-        "8",
-        "10",
-        "12",
-        "15",
-        "16"
+        "15 hours",
+        "4 hours",
+        "3.75 hours",
+        "16 hours",
+        "8 hours"
       ],
-      "correctAnswer": "10",
-      "answer": "B",
-      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "correctAnswer": "15 hours",
+      "answer": "A",
+      "explanation": "The inlet adds 1/6 of the tank an hour and the outlet removes 1/10, a net 1/15, so filling takes 15 hours. Adding the two rates instead of subtracting gives 3.75 hours, which would mean the leak helped.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "prompt": "A coat is reduced by 30%, and then a further 20% is taken off the reduced price. What single discount has the same effect?",
       "options": [
-        "2/5",
-        "1/2",
-        "3/5",
-        "2/3",
-        "1/5"
+        "50%",
+        "56%",
+        "44%",
+        "45%",
+        "10%"
       ],
-      "correctAnswer": "3/5",
+      "correctAnswer": "44%",
       "answer": "C",
-      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "explanation": "The price kept is 0.70 × 0.80 = 56% of the original, so the discount is 44%. Adding the two percentages gives 50%, which double-counts the second reduction against the full price.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "A machine has a 5% chance of failing on any given day, independently of other days. What is the probability it fails at least once in 3 days?",
       "options": [
-        "38",
-        "29",
-        "30",
-        "32",
-        "35"
+        "15%",
+        "85.74%",
+        "0.01%",
+        "14.26%",
+        "5.00%"
       ],
-      "correctAnswer": "32",
+      "correctAnswer": "14.26%",
       "answer": "D",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "explanation": "It is easier to find the chance of no failure: 0.95 × 0.95 × 0.95 = 0.8574, so at least one failure has probability 1 − 0.8574 = 14.26%. Multiplying 5% by 3 gives 15%, which counts overlapping outcomes twice.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "A cyclist sets off at 20 km/h. 2 hours later a car sets off along the same road at 60 km/h. How far from the start does the car catch the cyclist?",
       "options": [
-        "1300",
-        "1175",
-        "1225",
-        "1250",
-        "1275"
+        "40 km",
+        "80 km",
+        "120 km",
+        "30 km",
+        "60 km"
       ],
-      "correctAnswer": "1275",
+      "correctAnswer": "60 km",
       "answer": "E",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "explanation": "The cyclist is 40 km ahead when the car starts, and the car closes at 40 km/h, taking 1 hour. In that hour the car covers 60 km. The 40 km head start is where the cyclist was, not where they meet.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "A van uses 9.5 litres of diesel per 100 km. Diesel costs £1.48 a litre. What does a 260 km journey cost in fuel?",
       "options": [
-        "16",
-        "18",
-        "20",
-        "12",
-        "14"
+        "£14.06",
+        "£36.56",
+        "£24.70",
+        "£384.80",
+        "£40.00"
       ],
-      "correctAnswer": "16",
-      "answer": "A",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "correctAnswer": "£36.56",
+      "answer": "B",
+      "explanation": "The journey uses 9.5 × 2.6 = 24.7 litres, costing 24.7 × £1.48 = £36.56. £14.06 is the cost of the first 100 km only.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "If 2 to the power x equals 8 and 3 to the power y equals 81, what is x + y?",
       "options": [
-        "20%",
-        "25%",
-        "30%",
-        "35%",
-        "40%"
+        "12",
+        "11",
+        "5",
+        "7",
+        "8"
       ],
-      "correctAnswer": "25%",
-      "answer": "B",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "correctAnswer": "7",
+      "answer": "D",
+      "explanation": "2³ = 8, so x = 3. 3⁴ = 81, so y = 4. Their sum is 7. Multiplying the two powers together, or adding 8 and 81 in some form, is the usual slip: the question asks for the exponents.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "In an arithmetic sequence the 4th term is 19 and the 9th is 44. What is the first term?",
       "options": [
-        "16 days",
-        "8 days",
-        "9 days",
-        "10 days",
-        "11 days"
+        "5",
+        "9",
+        "4",
+        "14",
+        "1"
       ],
-      "correctAnswer": "9 days",
+      "correctAnswer": "4",
       "answer": "C",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "explanation": "Five steps separate the 4th and 9th terms, so the common difference is (44 − 19) / 5 = 5. Going back three steps from the 4th term: 19 − 3 × 5 = 4. 5 is the step, not the starting value.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "A bureau offers 1.16 euros to the pound and charges 2.5% commission on the sterling handed over. How many euros does £800.00 buy?",
       "options": [
-        "18",
-        "13",
-        "14",
-        "15",
-        "16"
+        "904.80 euros",
+        "928.00 euros",
+        "952.00 euros",
+        "881.60 euros",
+        "870.00 euros"
       ],
-      "correctAnswer": "15",
-      "answer": "D",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "correctAnswer": "904.80 euros",
+      "answer": "A",
+      "explanation": "Commission takes £20.00, leaving £780.00 to convert: £780.00 × 1.16 = 904.80 euros. Converting the full £800.00 gives 928.00 euros and ignores the charge.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "On a map drawn to a scale of 1 : 25,000, two towns are 17.4 cm apart. How far apart are they on the ground?",
       "options": [
-        "35%",
-        "15%",
-        "20%",
-        "25%",
-        "30%"
+        "43.5 km",
+        "0.43 km",
+        "435 km",
+        "2.5 km",
+        "4.35 km"
       ],
-      "correctAnswer": "30%",
+      "correctAnswer": "4.35 km",
       "answer": "E",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "explanation": "17.4 cm on the map is 17.4 × 25,000 = 435,000 cm on the ground. There are 100,000 cm in a kilometre, so that is 4.35 km. Dividing by 10,000 instead gives 43.5 km.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "prompt": "12 kg of tea costing £7.20 a kg is blended with 8 kg costing £11.45 a kg. What does the blend cost per kg?",
       "options": [
-        "9",
-        "10",
-        "11",
-        "12",
-        "7"
+        "£9.32",
+        "£8.75",
+        "£8.90",
+        "£9.60",
+        "£10.20"
       ],
-      "correctAnswer": "9",
-      "answer": "A",
-      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "correctAnswer": "£8.90",
+      "answer": "C",
+      "explanation": "The two lots cost £86.40 and £91.60, together £178.00 for 20 kg: £8.90 a kg. Averaging the two prices gives £9.32 and ignores that more of the cheaper tea went in.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3x = 18, what is the value of x² + x?",
+      "prompt": "How many integers from 1 to 200 are divisible by 6 but not by 9?",
       "options": [
-        "40",
-        "42",
-        "48",
-        "54",
-        "36"
+        "22",
+        "33",
+        "11",
+        "44",
+        "28"
       ],
-      "correctAnswer": "42",
-      "answer": "B",
-      "explanation": "x = 6. x² + x = 36 + 6 = 42.",
+      "correctAnswer": "22",
+      "answer": "A",
+      "explanation": "33 integers up to 200 are divisible by 6. A number divisible by both 6 and 9 is divisible by 18, and there are 11 of those. Removing them leaves 22. 33 counts every multiple of 6, including the ones to be excluded.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "prompt": "A ladder 13 m long leans against a wall with its foot 5 m from the base. The foot is pulled out to 12 m from the base. How far does the top of the ladder drop?",
       "options": [
-        "24",
-        "28",
-        "30",
-        "36",
-        "60"
+        "5 m",
+        "7 m",
+        "12 m",
+        "1 m",
+        "8 m"
       ],
-      "correctAnswer": "30",
-      "answer": "C",
-      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "correctAnswer": "7 m",
+      "answer": "B",
+      "explanation": "At first the ladder reaches √(13² − 5²) = 12 m. After the foot moves out it reaches √(13² − 12²) = 5 m. The top falls 12 − 5 = 7 m — more than the foot moved out, which is why the two are not equal.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "prompt": "How many integers n satisfy both 3n − 4 < 20 and n > −2?",
       "options": [
-        "176",
-        "132",
-        "144",
-        "154",
-        "168"
+        "8",
+        "10",
+        "7",
+        "9",
+        "11"
       ],
-      "correctAnswer": "154",
+      "correctAnswer": "9",
       "answer": "D",
-      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "explanation": "3n − 4 < 20 gives 3n < 24 and n < 8, so the largest integer is 7. n > −2 makes the smallest -1. From -1 to 7 inclusive there are 7 − (-1) + 1 = 9 integers. Forgetting to count both endpoints gives 8.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "prompt": "A machine costing £24,000.00 loses 15% of its value each year. What is it worth after 3 years?",
       "options": [
-        "22 litres",
-        "24 litres",
-        "16 litres",
-        "18 litres",
-        "20 litres"
+        "£13,200.00",
+        "£14,400.00",
+        "£15,300.00",
+        "£12,000.00",
+        "£14,739.00"
       ],
-      "correctAnswer": "20 litres",
+      "correctAnswer": "£14,739.00",
       "answer": "E",
-      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "explanation": "Each year the machine keeps 85% of its value: £24,000.00 × 0.85³ = £14,739.00. Taking 15% of the original price away three times gives £13,200.00, which is lower because it charges the full £3,600.00 every year.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 5! (5 factorial)?",
+      "prompt": "Both sides of a rectangle are increased by 30%. By what percentage does its area increase?",
       "options": [
-        "120",
-        "150",
-        "720",
-        "60",
-        "100"
+        "30%",
+        "60%",
+        "69%",
+        "39%",
+        "130%"
       ],
-      "correctAnswer": "120",
-      "answer": "A",
-      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "correctAnswer": "69%",
+      "answer": "C",
+      "explanation": "Each side is multiplied by 1.3, so the area is multiplied by 1.3 × 1.3 = 1.69 — an increase of 69%. Doubling the 30% gives 60%, which would be right only if one side were fixed.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-009-q001": "136",
-    "gmat-quant-009-q002": "256",
+    "gmat-quant-009-q001": "£10,000.00",
+    "gmat-quant-009-q002": "8 kg",
     "gmat-quant-009-q003": "21",
-    "gmat-quant-009-q004": "9",
-    "gmat-quant-009-q005": "$63",
-    "gmat-quant-009-q006": "150 miles",
-    "gmat-quant-009-q007": "10",
-    "gmat-quant-009-q008": "3/5",
-    "gmat-quant-009-q009": "32",
-    "gmat-quant-009-q010": "1275",
-    "gmat-quant-009-q011": "16",
-    "gmat-quant-009-q012": "25%",
-    "gmat-quant-009-q013": "9 days",
-    "gmat-quant-009-q014": "15",
-    "gmat-quant-009-q015": "30%",
-    "gmat-quant-009-q016": "9",
-    "gmat-quant-009-q017": "42",
-    "gmat-quant-009-q018": "30",
-    "gmat-quant-009-q019": "154",
-    "gmat-quant-009-q020": "20 litres",
-    "gmat-quant-009-q021": "120"
+    "gmat-quant-009-q004": "45",
+    "gmat-quant-009-q005": "40π sq m",
+    "gmat-quant-009-q006": "59",
+    "gmat-quant-009-q007": "15 hours",
+    "gmat-quant-009-q008": "44%",
+    "gmat-quant-009-q009": "14.26%",
+    "gmat-quant-009-q010": "60 km",
+    "gmat-quant-009-q011": "£36.56",
+    "gmat-quant-009-q012": "7",
+    "gmat-quant-009-q013": "4",
+    "gmat-quant-009-q014": "904.80 euros",
+    "gmat-quant-009-q015": "4.35 km",
+    "gmat-quant-009-q016": "£8.90",
+    "gmat-quant-009-q017": "22",
+    "gmat-quant-009-q018": "7 m",
+    "gmat-quant-009-q019": "9",
+    "gmat-quant-009-q020": "£14,739.00",
+    "gmat-quant-009-q021": "69%"
   }
 }
