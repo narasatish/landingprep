@@ -12,695 +12,363 @@
       "id": "gmat-data-insights-013-q01",
       "questionType": "graphics_interpretation",
       "num": 1,
-      "prompt": "A graph showing training completion rates in the employee performance sector presents the following data: Sales: 91%, Operations: 73%, HR: 88%, Finance: 95%, IT: 82%. According to the graph, which segment/period shows the highest value?",
+      "prompt": "Five advertising campaigns:\n\nAlpha: GBP 4,800.00 spent, 12,000 visitors, 3% of them converted\nBeta: GBP 9,200.00 spent, 40,000 visitors, 1.6% of them converted\nGamma: GBP 2,700.00 spent, 5,000 visitors, 4.5% of them converted\nDelta: GBP 6,400.00 spent, 16,000 visitors, 2.5% of them converted\nEpsilon: GBP 5,500.00 spent, 25,000 visitors, 1.1% of them converted\n\nWhich campaign bought conversions most cheaply?",
       "options": [
-        "A. Cannot be determined from the data",
-        "B. The first listed value",
-        "C. The last listed value",
-        "D. The middle-ranked value",
-        "E. The value closest to the overall average"
+        "A. Gamma",
+        "B. Alpha",
+        "C. Beta",
+        "D. Delta",
+        "E. Epsilon"
       ],
-      "correctAnswer": "B",
-      "explanation": "This graphics_interpretation question tests ability to interpret employee performance data on training completion rates.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "employee performance",
-        "topic": "training completion rates",
-        "data": "Sales: 91%, Operations: 73%, HR: 88%, Finance: 95%, IT: 82%"
-      },
-      "visual": {
-        "chartType": "bar",
-        "title": "Training Completion Rates — Employee Performance",
-        "yLabel": "%",
-        "xAxis": [
-          "Sales",
-          "Operations",
-          "HR",
-          "Finance",
-          "IT"
-        ],
-        "series": [
-          {
-            "label": "Training Completion Rates",
-            "values": [
-              91,
-              73,
-              88,
-              95,
-              82
-            ]
-          }
-        ]
-      }
+      "correctAnswer": "A",
+      "explanation": "Conversions are visitors multiplied by the rate: Alpha 360, Beta 640, Gamma 225, Delta 400, Epsilon 275. Dividing spend by conversions: Alpha GBP 13.33, Beta GBP 14.38, Gamma GBP 12.00, Delta GBP 16.00, Epsilon GBP 20.00. Gamma is cheapest at GBP 12.00 a conversion, on the smallest budget in the table. Beta wins the most conversions outright but pays more for each one.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q02",
       "questionType": "graphics_interpretation",
       "num": 2,
-      "prompt": "Based on the chart of property price indices data (City centre: 148, Suburbs: 112, Rural: 89, Coastal: 167), which TWO values would combine to equal approximately the average?",
+      "prompt": "Annual output:\n\n2019: 340\n2020: 402\n2021: 515\n2022: 668\n2023: 690\n2024: 812\n\nIn which year did output first exceed double the 2019 figure?",
       "options": [
-        "A. Values 2 and 5",
-        "B. Values 3 and 5",
-        "C. Values 1 and 3",
-        "D. Values 2 and 4",
-        "E. Values 1 and 4"
+        "A. 2021",
+        "B. 2022",
+        "C. 2023",
+        "D. 2024",
+        "E. Output never doubles"
       ],
       "correctAnswer": "C",
-      "explanation": "This graphics_interpretation question tests ability to interpret real estate data on property price indices.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "real estate",
-        "topic": "property price indices",
-        "data": "City centre: 148, Suburbs: 112, Rural: 89, Coastal: 167"
-      },
-      "visual": {
-        "chartType": "bar",
-        "title": "Property Price Indices — Real Estate",
-        "yLabel": "",
-        "xAxis": [
-          "City centre",
-          "Suburbs",
-          "Rural",
-          "Coastal"
-        ],
-        "series": [
-          {
-            "label": "Property Price Indices",
-            "values": [
-              148,
-              112,
-              89,
-              167
-            ]
-          }
-        ]
-      }
+      "explanation": "Double the 2019 figure is 680. 2022 reaches 668, still 12 short, and 2023 is the first year above it at 690. The largest single jump comes earlier, between 2021 and 2022, which is a different question.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q03",
       "questionType": "graphics_interpretation",
       "num": 3,
-      "prompt": "A scatter plot comparing clinical trial outcomes across pharmaceutical categories shows: Complete response: 34%, Partial response: 28%, Stable disease: 21%, Progression: 17%. If the trend continued, which projection is most consistent?",
+      "prompt": "Cumulative results for 400 candidates:\n\nscored 40 or below: 36\nscored 50 or below: 104\nscored 60 or below: 218\nscored 70 or below: 322\nscored 80 or below: 379\nscored 100 or below: 400\n\nWhat proportion of candidates scored above 60?",
       "options": [
-        "A. The middle-ranked value",
-        "B. The value closest to the overall average",
-        "C. Cannot be determined from the data",
-        "D. The first listed value",
-        "E. The last listed value"
+        "A. 54.5%",
+        "B. 26%",
+        "C. 26.0%",
+        "D. 80.5%",
+        "E. 45.5%"
       ],
-      "correctAnswer": "D",
-      "explanation": "This graphics_interpretation question tests ability to interpret pharmaceutical data on clinical trial outcomes.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "pharmaceutical",
-        "topic": "clinical trial outcomes",
-        "data": "Complete response: 34%, Partial response: 28%, Stable disease: 21%, Progression: 17%"
-      },
-      "visual": {
-        "chartType": "bar",
-        "title": "Clinical Trial Outcomes — Pharmaceutical",
-        "yLabel": "%",
-        "xAxis": [
-          "Complete response",
-          "Partial response",
-          "Stable disease",
-          "Progression"
-        ],
-        "series": [
-          {
-            "label": "Clinical Trial Outcomes",
-            "values": [
-              34,
-              28,
-              21,
-              17
-            ]
-          }
-        ]
-      }
+      "correctAnswer": "E",
+      "explanation": "218 candidates scored 60 or below, so 400 − 218 = 182 scored above it, which is 45.5%. 54.5% is the share at or below 60 — the complement, and the figure the table gives directly.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q04",
       "questionType": "graphics_interpretation",
       "num": 4,
-      "prompt": "A graph showing on-time performance by route in the airline operations sector presents the following data: Domestic short: 88%, Domestic long: 79%, International: 71%, Regional: 84%. According to the graph, which segment/period shows the highest value?",
+      "prompt": "Two sets of five readings:\n\nSet P: 48, 49, 50, 51, 52\nSet Q: 30, 40, 50, 60, 70\n\nWhich statement about the two sets is accurate?",
       "options": [
-        "A. Values 2 and 4",
-        "B. Values 1 and 4",
-        "C. Values 2 and 5",
-        "D. Values 3 and 5",
-        "E. Values 1 and 3"
+        "A. Set P has the higher mean",
+        "B. The two sets share a mean and a median, but Q is far more spread out",
+        "C. Set Q has the higher median",
+        "D. The two sets have the same range",
+        "E. Set P is more spread out than set Q"
       ],
-      "correctAnswer": "E",
-      "explanation": "This graphics_interpretation question tests ability to interpret airline operations data on on-time performance by route.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "airline operations",
-        "topic": "on-time performance by route",
-        "data": "Domestic short: 88%, Domestic long: 79%, International: 71%, Regional: 84%"
-      },
-      "visual": {
-        "chartType": "bar",
-        "title": "On-Time Performance By Route — Airline Operations",
-        "yLabel": "%",
-        "xAxis": [
-          "Domestic short",
-          "Domestic long",
-          "International",
-          "Regional"
-        ],
-        "series": [
-          {
-            "label": "On-Time Performance By Route",
-            "values": [
-              88,
-              79,
-              71,
-              84
-            ]
-          }
-        ]
-      }
+      "correctAnswer": "B",
+      "explanation": "Both sets have a mean of 50 and a middle value of 50, so the two averages say nothing to tell them apart. The ranges differ sharply: 4 for P against 40 for Q. Spread is the only one of these measures that separates them.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q05",
       "questionType": "two_part_analysis",
       "num": 5,
-      "prompt": "Analysis of customer satisfaction scores in food service: Food quality: 4.2/5, Service speed: 3.8/5, Value: 3.9/5, Ambiance: 4.1/5. Select the value closest to the median AND the value that represents the greatest deviation from the mean.",
+      "prompt": "A budget of GBP 9,500.00 is to buy as many machines as possible at GBP 780.00 each.\n\nSelect the number bought AND the amount left over.",
       "options": [
-        "A. See table row A",
-        "B. See table row B",
-        "C. See table row C",
-        "D. See table row D",
-        "E. See table row E"
+        "A. 12 machines; GBP 220.00 left",
+        "B. 13 machines; GBP 140.00 left",
+        "C. 11 machines; GBP 920.00 left",
+        "D. 12 machines; GBP 140.00 left",
+        "E. 12 machines; nothing left"
       ],
-      "correctAnswer": "A",
-      "explanation": "This two_part_analysis question tests ability to interpret food service data on customer satisfaction scores.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "food service",
-        "topic": "customer satisfaction scores",
-        "data": "Food quality: 4.2/5, Service speed: 3.8/5, Value: 3.9/5, Ambiance: 4.1/5"
-      }
+      "correctAnswer": "D",
+      "explanation": "GBP 9,500.00 divided by GBP 780.00 is 12.18, so 12 machines can be bought, costing GBP 9,360.00 and leaving GBP 140.00. A 13th machine would need GBP 640.00 more than the budget allows.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q06",
       "questionType": "two_part_analysis",
       "num": 6,
-      "prompt": "Given manufacturing defect rates by production line data: Line A: 0.8%, Line B: 1.4%, Line C: 0.5%, Line D: 2.1%. In the left column select the highest-performing category; in the right column select the category that improved most year-over-year.",
+      "prompt": "A van costing GBP 28,000.00 loses 18% of its value each year.\n\nSelect its value after 3 years AND the total value lost over those 3 years.",
       "options": [
-        "A. See table row E",
-        "B. See table row A",
-        "C. See table row B",
-        "D. See table row C",
-        "E. See table row D"
+        "A. GBP 12,880.00; GBP 15,120.00 lost",
+        "B. GBP 15,438.30; GBP 12,561.70 lost",
+        "C. GBP 15,438.30; GBP 15,120.00 lost",
+        "D. GBP 22,960.00; GBP 5,040.00 lost",
+        "E. GBP 13,000.00; GBP 15,000.00 lost"
       ],
       "correctAnswer": "B",
-      "explanation": "This two_part_analysis question tests ability to interpret manufacturing data on defect rates by production line.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "manufacturing",
-        "topic": "defect rates by production line",
-        "data": "Line A: 0.8%, Line B: 1.4%, Line C: 0.5%, Line D: 2.1%"
-      }
+      "explanation": "Each year the van keeps 82% of its value, so after 3 years it is worth GBP 28,000.00 × 0.82³ = GBP 15,438.30, having lost GBP 12,561.70. Taking 18% of the original price away three times gives GBP 12,880.00, too low, because each year's loss is charged on a smaller value than the last.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q07",
       "questionType": "two_part_analysis",
       "num": 7,
-      "prompt": "A banking manager reviews loan approval rates: Personal: 64%, Mortgage: 71%, Business: 48%, Auto: 79%, Student: 85%. Select: (1) the category requiring immediate attention and (2) the category that exceeds the target of the average by the greatest margin.",
+      "prompt": "Two firms in different markets:\n\nFirm One: 34% of a market worth GBP 42 million\nFirm Two: 61% of a market worth GBP 21 million\n\nSelect the firm with the larger market share AND the firm with the larger revenue.",
       "options": [
-        "A. See table row D",
-        "B. See table row E",
-        "C. See table row A",
-        "D. See table row B",
-        "E. See table row C"
+        "A. Firm One on both measures",
+        "B. Firm Two on both measures",
+        "C. Firm Two on market share; Firm One on revenue",
+        "D. The two firms are equal on both measures",
+        "E. Firm One on market share; Firm Two on revenue"
       ],
       "correctAnswer": "C",
-      "explanation": "This two_part_analysis question tests ability to interpret banking data on loan approval rates.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "banking",
-        "topic": "loan approval rates",
-        "data": "Personal: 64%, Mortgage: 71%, Business: 48%, Auto: 79%, Student: 85%"
-      }
+      "explanation": "Revenue is share multiplied by market size: Firm One GBP 14.28 million, Firm Two GBP 12.81 million. Firm Two holds much the larger share but of a market half the size, so Firm One takes more money. A share is only as valuable as the market it is a share of.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q08",
       "questionType": "two_part_analysis",
       "num": 8,
-      "prompt": "Analysis of campaign conversion rates in marketing: Email: 3.2%, Social: 1.8%, Search: 4.7%, Display: 0.9%, Referral: 6.1%. Select the value closest to the median AND the value that represents the greatest deviation from the mean.",
+      "prompt": "A courier charges GBP 6.50 for the first 5 kg and GBP 1.15 for each further kilogram.\n\nSelect the cost of a 23 kg parcel AND the lowest whole weight at which the cost first exceeds GBP 30.00.",
       "options": [
-        "A. See table row C",
-        "B. See table row D",
-        "C. See table row E",
-        "D. See table row A",
-        "E. See table row B"
+        "A. GBP 27.20; 26 kg",
+        "B. GBP 28.35; 26 kg",
+        "C. GBP 27.20; 25 kg",
+        "D. GBP 26.05; 27 kg",
+        "E. GBP 32.95; 26 kg"
       ],
-      "correctAnswer": "D",
-      "explanation": "This two_part_analysis question tests ability to interpret marketing data on campaign conversion rates.",
+      "correctAnswer": "A",
+      "explanation": "Only 23 − 5 = 18 kg is charged at the extra rate: GBP 6.50 + 18 × GBP 1.15 = GBP 27.20. At 25 kg the cost is GBP 29.50, still under GBP 30.00; at 26 kg it reaches GBP 30.65. Charging all 23 kg at the extra rate gives GBP 32.95.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "marketing",
-        "topic": "campaign conversion rates",
-        "data": "Email: 3.2%, Social: 1.8%, Search: 4.7%, Display: 0.9%, Referral: 6.1%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q09",
       "questionType": "multi_source_reasoning",
       "num": 9,
-      "prompt": "Three data sources on telecommunications subscriber churn rates are provided: (Memo) Overall performance improved this quarter. (Table) Postpaid: 2.1%, Prepaid: 8.4%, Broadband: 1.7%, Enterprise: 0.8%. (Email) Stakeholders express concern about outliers. Which source most directly supports the memo's claim?",
+      "prompt": "SOURCE 1 (table): pupils on roll — School A 1,250, School B 480, School C 2,100\n\nSOURCE 2 (table): pupils meeting the standard — School A 875, School B 360, School C 1,428\n\nSOURCE 3 (memo): \"The award goes to the school with the highest proportion of its pupils meeting the standard.\"\n\nWhich school receives the award?",
       "options": [
-        "A. Source 2 (Email) only",
-        "B. Source 3 (Table) only",
-        "C. Sources 1 and 3 together",
-        "D. All three sources are equally relevant",
-        "E. Source 1 (Report) only"
+        "A. School A",
+        "B. School C",
+        "C. The three schools are equal",
+        "D. Cannot be determined from the sources",
+        "E. School B"
       ],
       "correctAnswer": "E",
-      "explanation": "This multi_source_reasoning question tests ability to interpret telecommunications data on subscriber churn rates.",
+      "explanation": "Proportions meeting the standard: School A 70.0%, School B 75.0%, School C 68.0%. School B is highest and is by some way the smallest school. School C gets 1,428 pupils over the line, more than any other, but has the most pupils to start with.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "telecommunications",
-        "topic": "subscriber churn rates",
-        "data": "Postpaid: 2.1%, Prepaid: 8.4%, Broadband: 1.7%, Enterprise: 0.8%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q10",
       "questionType": "multi_source_reasoning",
       "num": 10,
-      "prompt": "Source 1 (Report): education student assessment pass rates shows: Mathematics: 73%, Science: 68%, English: 81%, History: 77%, Languages: 62%. Source 2 (Email): The weakest performer needs a 20% improvement to meet targets. Source 3 (Table): Targets are set at the top-quartile value. Which category needs improvement?",
+      "prompt": "SOURCE 1 (report): \"Sales reached GBP 4.2 million this year, against GBP 5 million last year — a fall of 16%.\"\n\nSOURCE 2 (note): this year's figure covers 9 months; the accounting year was shortened.\n\nSOURCE 3 (table): last year covered twelve months.\n\nWhich statement is best supported?",
       "options": [
-        "A. Source 1 (Report) only",
-        "B. Source 2 (Email) only",
-        "C. Source 3 (Table) only",
-        "D. Sources 1 and 3 together",
-        "E. All three sources are equally relevant"
+        "A. Sales fell by 16%",
+        "B. Sales were flat between the two years",
+        "C. The comparison cannot be made at all",
+        "D. Comparing 9 months against twelve understates this year, which is running ahead at the same monthly rate",
+        "E. Monthly sales fell between the two years"
       ],
-      "correctAnswer": "A",
-      "explanation": "This multi_source_reasoning question tests ability to interpret education data on student assessment pass rates.",
+      "correctAnswer": "D",
+      "explanation": "GBP 4.2 million over 9 months is GBP 0.47 million a month, or GBP 5.6 million over twelve — above last year's GBP 5 million. The headline fall is an artefact of the shorter period. The comparison can be made once the periods are put on the same footing, so \"cannot be made at all\" goes too far.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "education",
-        "topic": "student assessment pass rates",
-        "data": "Mathematics: 73%, Science: 68%, English: 81%, History: 77%, Languages: 62%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q11",
       "questionType": "multi_source_reasoning",
       "num": 11,
-      "prompt": "Reviewing insurance records: Source A shows claims processing times: Auto: 8.2 days, Home: 14.5 days, Health: 6.1 days, Life: 21.3 days. Source B notes the average. Source C flags values more than 25% above or below average. Which values would Source C flag?",
+      "prompt": "SOURCE 1 (table): price per pallet — Haulier A GBP 14.20, Haulier B GBP 16.80, Haulier C GBP 15.40\n\nSOURCE 2 (table): capacity a week — Haulier A 600 pallets, Haulier B 1,200 pallets, Haulier C 950 pallets\n\nSOURCE 3 (email): \"We must move 900 pallets in a single week, at the lowest total cost, using one haulier.\"\n\nWhich haulier should be used?",
       "options": [
-        "A. All three sources are equally relevant",
-        "B. Source 1 (Report) only",
-        "C. Source 2 (Email) only",
-        "D. Source 3 (Table) only",
-        "E. Sources 1 and 3 together"
+        "A. Haulier C",
+        "B. Haulier A",
+        "C. Haulier B",
+        "D. All three cost the same",
+        "E. Cannot be determined from the sources"
       ],
-      "correctAnswer": "B",
-      "explanation": "This multi_source_reasoning question tests ability to interpret insurance data on claims processing times.",
+      "correctAnswer": "A",
+      "explanation": "Haulier A is cheapest per pallet but can move only 600 in a week, short of the 900 required. Of the two with the capacity, Haulier B would charge GBP 15,120.00 and Haulier C would charge GBP 13,860.00, so Haulier C is the choice. Capacity settles who is eligible before price settles who wins.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "insurance",
-        "topic": "claims processing times",
-        "data": "Auto: 8.2 days, Home: 14.5 days, Health: 6.1 days, Life: 21.3 days"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q12",
       "questionType": "multi_source_reasoning",
       "num": 12,
-      "prompt": "Three data sources on construction project completion on schedule are provided: (Memo) Overall performance improved this quarter. (Table) Residential: 58%, Commercial: 44%, Infrastructure: 37%, Industrial: 51%. (Email) Stakeholders express concern about outliers. Which source most directly supports the memo's claim?",
+      "prompt": "SOURCE 1 (report): \"Cost per unit fell from GBP 8.40 to GBP 7.10.\"\n\nSOURCE 2 (table): the workforce grew from 210 to 260.\n\nSOURCE 3 (email): \"The board wants to know whether total production costs rose.\"\n\nWhich single further fact would settle the board's question?",
       "options": [
-        "A. Sources 1 and 3 together",
-        "B. All three sources are equally relevant",
-        "C. Source 1 (Report) only",
-        "D. Source 2 (Email) only",
-        "E. Source 3 (Table) only"
+        "A. The average wage of the staff taken on",
+        "B. The cost per unit at a competitor",
+        "C. The number of units produced in each year",
+        "D. The selling price of each unit",
+        "E. The size of the workforce five years ago"
       ],
       "correctAnswer": "C",
-      "explanation": "This multi_source_reasoning question tests ability to interpret construction data on project completion on schedule.",
+      "explanation": "Total cost is units multiplied by cost per unit. Source 1 gives the second factor for both years but nothing gives the first, so the total can move either way: at 400,000 units both years the total falls, while a large enough rise in output would push it up. Headcount is not a substitute, because the sources never link staff to units.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "construction",
-        "topic": "project completion on schedule",
-        "data": "Residential: 58%, Commercial: 44%, Infrastructure: 37%, Industrial: 51%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q13",
       "questionType": "data_sufficiency",
       "num": 13,
-      "prompt": "What is the relative ranking of categories in agriculture crop yield indices? (1) Wheat: 108. (2) The remaining values follow a consistent trend.",
+      "prompt": "What is the perimeter of a triangle?\n\n(1) Two of its sides measure 5 cm and 9 cm.\n(2) The triangle is isosceles.",
       "options": [
-        "A. Both statements together are sufficient, but neither alone is sufficient",
-        "B. Each statement alone is sufficient",
-        "C. Neither statement alone nor together is sufficient",
-        "D. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
-        "E. Statement (2) alone is sufficient, but statement (1) alone is not sufficient"
+        "A. Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "B. Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "C. BOTH statements TOGETHER are sufficient, but NEITHER alone is sufficient.",
+        "D. EACH statement ALONE is sufficient.",
+        "E. Statements (1) and (2) TOGETHER are not sufficient."
       ],
-      "correctAnswer": "D",
-      "explanation": "This data_sufficiency question tests ability to interpret agriculture data on crop yield indices.",
+      "correctAnswer": "E",
+      "explanation": "(1) leaves the third side open, and (2) alone gives no lengths at all. Together the third side must match one of the two given, so it is 5 or 9, and the perimeter is 19 cm or 23 cm. Both are genuine triangles, since 5, 5 and 9 obey the triangle inequality, so even combined the statements leave two answers.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "agriculture",
-        "topic": "crop yield indices",
-        "data": "Wheat: 108, Corn: 95, Rice: 112, Soybeans: 103, Cotton: 89"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q14",
       "questionType": "data_sufficiency",
       "num": 14,
-      "prompt": "Is the e-commerce return rates by product category above the industry benchmark of the median? (1) Electronics: 12%. (2) The range of all values is 15%.",
+      "prompt": "What was a car's average speed for a journey?\n\n(1) The journey covered 210 km.\n(2) It began at 08:15 and ended at 11:15.",
       "options": [
-        "A. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
-        "B. Both statements together are sufficient, but neither alone is sufficient",
-        "C. Each statement alone is sufficient",
-        "D. Neither statement alone nor together is sufficient",
-        "E. Statement (1) alone is sufficient, but statement (2) alone is not sufficient"
+        "A. Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "B. Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "C. BOTH statements TOGETHER are sufficient, but NEITHER alone is sufficient.",
+        "D. EACH statement ALONE is sufficient.",
+        "E. Statements (1) and (2) TOGETHER are not sufficient."
       ],
-      "correctAnswer": "E",
-      "explanation": "This data_sufficiency question tests ability to interpret e-commerce data on return rates by product category.",
+      "correctAnswer": "C",
+      "explanation": "Average speed is distance over time. (1) gives the distance but no duration, and (2) gives 3 hours but no distance. Together, 210 km in 3 hours is 70 km/h. Each statement supplies exactly one of the two things the calculation needs.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "e-commerce",
-        "topic": "return rates by product category",
-        "data": "Electronics: 12%, Clothing: 28%, Home goods: 8%, Books: 3%, Sports: 15%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q15",
       "questionType": "data_sufficiency",
       "num": 15,
-      "prompt": "Can the average consulting project profitability by industry be calculated precisely? (1) Technology: 24%, Finance: 31%, Healthcare: 18%, Government: 9%, Retail: 14%. (2) All categories are measured using the same methodology.",
+      "prompt": "What is the price of one book?\n\n(1) Five books cost less than GBP 60.\n(2) Three books cost GBP 31.50.",
       "options": [
-        "A. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
-        "B. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
-        "C. Both statements together are sufficient, but neither alone is sufficient",
-        "D. Each statement alone is sufficient",
-        "E. Neither statement alone nor together is sufficient"
+        "A. Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "B. Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "C. BOTH statements TOGETHER are sufficient, but NEITHER alone is sufficient.",
+        "D. EACH statement ALONE is sufficient.",
+        "E. Statements (1) and (2) TOGETHER are not sufficient."
       ],
-      "correctAnswer": "A",
-      "explanation": "This data_sufficiency question tests ability to interpret consulting data on project profitability by industry.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "consulting",
-        "topic": "project profitability by industry",
-        "data": "Technology: 24%, Finance: 31%, Healthcare: 18%, Government: 9%, Retail: 14%"
-      }
+      "correctAnswer": "B",
+      "explanation": "(1) only says the price is under GBP 12, which fits GBP 9 and GBP 11 alike. (2) divides exactly: GBP 31.50 over three books is GBP 10.50 each. The two are consistent, since five books at GBP 10.50 come to GBP 52.50, comfortably under GBP 60.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q16",
       "questionType": "data_sufficiency",
       "num": 16,
-      "prompt": "What is the relative ranking of categories in tourism visitor spending by activity? (1) Accommodation: 38%. (2) The remaining values follow a consistent trend.",
+      "prompt": "What is the area of a circle?\n\n(1) Its circumference is 12 times pi centimetres.\n(2) Its diameter is 12 centimetres.",
       "options": [
-        "A. Neither statement alone nor together is sufficient",
-        "B. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
-        "C. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
-        "D. Both statements together are sufficient, but neither alone is sufficient",
-        "E. Each statement alone is sufficient"
+        "A. Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "B. Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "C. BOTH statements TOGETHER are sufficient, but NEITHER alone is sufficient.",
+        "D. EACH statement ALONE is sufficient.",
+        "E. Statements (1) and (2) TOGETHER are not sufficient."
       ],
-      "correctAnswer": "B",
-      "explanation": "This data_sufficiency question tests ability to interpret tourism data on visitor spending by activity.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "tourism",
-        "topic": "visitor spending by activity",
-        "data": "Accommodation: 38%, Food: 24%, Transport: 18%, Entertainment: 12%, Shopping: 8%"
-      }
+      "correctAnswer": "D",
+      "explanation": "From (1), circumference is 2 pi r, so r is 6 and the area is 36 pi square centimetres. From (2), a diameter of 12 also gives r = 6 and the same area. The two statements say the same thing in different words, so each alone is sufficient.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q17",
       "questionType": "table_analysis",
       "num": 17,
-      "prompt": "Sort the recruitment time-to-hire by department table: Engineering: 47 days, Marketing: 31 days, Finance: 28 days, Sales: 22 days, HR: 19 days. Which statement is accurate?",
+      "prompt": "Which theatre sells the most tickets in a year?\n\nTheatre | Seats | Performances a year | Average occupancy | Ticket price\nAlderwood | 420 | 180 | 66% | GBP 22.00\nBirchgate | 900 | 120 | 61% | GBP 31.00\nCoombe | 260 | 240 | 88% | GBP 17.00\nDunhaven | 1,200 | 95 | 55% | GBP 40.00\nElmcourt | 640 | 210 | 69% | GBP 26.00\nFairhaven | 350 | 150 | 81% | GBP 19.00",
       "options": [
-        "A. The ranking depends on the sort criterion",
-        "B. Insufficient data to determine rank",
-        "C. The first row ranks highest",
-        "D. The second row ranks highest",
-        "E. The third row ranks highest"
+        "A. Alderwood",
+        "B. Elmcourt",
+        "C. Birchgate",
+        "D. Coombe",
+        "E. Dunhaven"
       ],
-      "correctAnswer": "C",
-      "explanation": "This table_analysis question tests ability to interpret recruitment data on time-to-hire by department.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "recruitment",
-        "topic": "time-to-hire by department",
-        "data": "Engineering: 47 days, Marketing: 31 days, Finance: 28 days, Sales: 22 days, HR: 19 days"
-      },
-      "visual": {
-        "chartType": "table",
-        "title": "Time-To-Hire By Department — Recruitment",
-        "headers": [
-          "Category",
-          "Time-To-Hire By Department"
-        ],
-        "rows": [
-          [
-            "Engineering",
-            "47 days"
-          ],
-          [
-            "Marketing",
-            "31 days"
-          ],
-          [
-            "Finance",
-            "28 days"
-          ],
-          [
-            "Sales",
-            "22 days"
-          ],
-          [
-            "HR",
-            "19 days"
-          ]
-        ]
-      }
+      "correctAnswer": "B",
+      "explanation": "Tickets sold are seats multiplied by performances multiplied by occupancy: Alderwood 49,896, Birchgate 65,880, Coombe 54,912, Dunhaven 62,700, Elmcourt 92,736, Fairhaven 42,525. Elmcourt is highest without leading on any single column: Dunhaven has the most seats and Coombe the best occupancy at 88%. Three middling figures multiplied together beat one outstanding one.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q18",
       "questionType": "table_analysis",
       "num": 18,
-      "prompt": "A table comparing environmental emissions reduction by sector shows: Energy: -14%, Transport: -8%, Industry: -6%, Agriculture: -3%, Buildings: -11%. Indicate whether each statement is true, false, or cannot be determined.",
+      "prompt": "Which theatre takes the most in ticket revenue in a year?\n\nTheatre | Seats | Performances a year | Average occupancy | Ticket price\nAlderwood | 420 | 180 | 66% | GBP 22.00\nBirchgate | 900 | 120 | 61% | GBP 31.00\nCoombe | 260 | 240 | 88% | GBP 17.00\nDunhaven | 1,200 | 95 | 55% | GBP 40.00\nElmcourt | 640 | 210 | 69% | GBP 26.00\nFairhaven | 350 | 150 | 81% | GBP 19.00",
       "options": [
-        "A. The third row ranks highest",
-        "B. The ranking depends on the sort criterion",
-        "C. Insufficient data to determine rank",
-        "D. The first row ranks highest",
-        "E. The second row ranks highest"
+        "A. Dunhaven",
+        "B. Alderwood",
+        "C. Birchgate",
+        "D. Elmcourt",
+        "E. Fairhaven"
       ],
-      "correctAnswer": "D",
-      "explanation": "This table_analysis question tests ability to interpret environmental data on emissions reduction by sector.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "environmental",
-        "topic": "emissions reduction by sector",
-        "data": "Energy: -14%, Transport: -8%, Industry: -6%, Agriculture: -3%, Buildings: -11%"
-      },
-      "visual": {
-        "chartType": "table",
-        "title": "Emissions Reduction By Sector — Environmental",
-        "headers": [
-          "Category",
-          "Emissions Reduction By Sector"
-        ],
-        "rows": [
-          [
-            "Energy",
-            "-14%"
-          ],
-          [
-            "Transport",
-            "-8%"
-          ],
-          [
-            "Industry",
-            "-6%"
-          ],
-          [
-            "Agriculture",
-            "-3%"
-          ],
-          [
-            "Buildings",
-            "-11%"
-          ]
-        ]
-      }
+      "correctAnswer": "A",
+      "explanation": "Revenue is tickets sold multiplied by the ticket price: Alderwood GBP 1,097,712.00, Birchgate GBP 2,042,280.00, Coombe GBP 933,504.00, Dunhaven GBP 2,508,000.00, Elmcourt GBP 2,411,136.00, Fairhaven GBP 807,975.00. Dunhaven takes the most, though Elmcourt sells more tickets — 92,736 against 62,700. The dearer seat more than makes up the difference in volume.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q19",
       "questionType": "table_analysis",
       "num": 19,
-      "prompt": "Based on the retail banking product penetration rates table (Current accounts: 100%, Savings: 74%, Credit cards: 52%, Investments: 31%, Mortgages: 28%), sort by the criteria given and identify which column would rank first.",
+      "prompt": "How many theatres sell more than 60,000 tickets a year?\n\nTheatre | Seats | Performances a year | Average occupancy | Ticket price\nAlderwood | 420 | 180 | 66% | GBP 22.00\nBirchgate | 900 | 120 | 61% | GBP 31.00\nCoombe | 260 | 240 | 88% | GBP 17.00\nDunhaven | 1,200 | 95 | 55% | GBP 40.00\nElmcourt | 640 | 210 | 69% | GBP 26.00\nFairhaven | 350 | 150 | 81% | GBP 19.00",
       "options": [
-        "A. The second row ranks highest",
-        "B. The third row ranks highest",
-        "C. The ranking depends on the sort criterion",
-        "D. Insufficient data to determine rank",
-        "E. The first row ranks highest"
+        "A. One",
+        "B. Two",
+        "C. Four",
+        "D. Three",
+        "E. Five"
       ],
-      "correctAnswer": "E",
-      "explanation": "This table_analysis question tests ability to interpret retail banking data on product penetration rates.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "retail banking",
-        "topic": "product penetration rates",
-        "data": "Current accounts: 100%, Savings: 74%, Credit cards: 52%, Investments: 31%, Mortgages: 28%"
-      },
-      "visual": {
-        "chartType": "table",
-        "title": "Product Penetration Rates — Retail Banking",
-        "headers": [
-          "Category",
-          "Product Penetration Rates"
-        ],
-        "rows": [
-          [
-            "Current accounts",
-            "100%"
-          ],
-          [
-            "Savings",
-            "74%"
-          ],
-          [
-            "Credit cards",
-            "52%"
-          ],
-          [
-            "Investments",
-            "31%"
-          ],
-          [
-            "Mortgages",
-            "28%"
-          ]
-        ]
-      }
+      "correctAnswer": "D",
+      "explanation": "Tickets sold: Alderwood 49,896, Birchgate 65,880, Coombe 54,912, Dunhaven 62,700, Elmcourt 92,736, Fairhaven 42,525. Above 60,000: Birchgate, Dunhaven, Elmcourt — 3 theatres. Coombe comes nearest to the line from below at 54,912, and the six theatres sell 368,649 tickets between them.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-013-q20",
       "questionType": "table_analysis",
       "num": 20,
-      "prompt": "Sort the streaming media content viewing patterns table: Drama: 35%, Comedy: 22%, Documentary: 18%, Action: 15%, Other: 10%. Which statement is accurate?",
+      "prompt": "How many theatres are above the median on occupancy and below the median on seats?\n\nTheatre | Seats | Performances a year | Average occupancy | Ticket price\nAlderwood | 420 | 180 | 66% | GBP 22.00\nBirchgate | 900 | 120 | 61% | GBP 31.00\nCoombe | 260 | 240 | 88% | GBP 17.00\nDunhaven | 1,200 | 95 | 55% | GBP 40.00\nElmcourt | 640 | 210 | 69% | GBP 26.00\nFairhaven | 350 | 150 | 81% | GBP 19.00",
       "options": [
-        "A. The first row ranks highest",
-        "B. The second row ranks highest",
-        "C. The third row ranks highest",
-        "D. The ranking depends on the sort criterion",
-        "E. Insufficient data to determine rank"
+        "A. One",
+        "B. Three",
+        "C. Four",
+        "D. Five",
+        "E. Two"
       ],
-      "correctAnswer": "A",
-      "explanation": "This table_analysis question tests ability to interpret streaming media data on content viewing patterns.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "streaming media",
-        "topic": "content viewing patterns",
-        "data": "Drama: 35%, Comedy: 22%, Documentary: 18%, Action: 15%, Other: 10%"
-      },
-      "visual": {
-        "chartType": "table",
-        "title": "Content Viewing Patterns — Streaming Media",
-        "headers": [
-          "Category",
-          "Content Viewing Patterns"
-        ],
-        "rows": [
-          [
-            "Drama",
-            "35%"
-          ],
-          [
-            "Comedy",
-            "22%"
-          ],
-          [
-            "Documentary",
-            "18%"
-          ],
-          [
-            "Action",
-            "15%"
-          ],
-          [
-            "Other",
-            "10%"
-          ]
-        ]
-      }
+      "correctAnswer": "E",
+      "explanation": "The medians are 67.5% occupancy and 530 seats. Above on occupancy: Coombe, Elmcourt, Fairhaven. Below on seats: Alderwood, Coombe, Fairhaven. On both: Coombe, Fairhaven — 2. Small houses do tend to fill better here, but not every one of them does.",
+      "difficulty": "medium",
+      "topic": "data insights"
     }
   ],
   "answerKey": {
-    "gmat-data-insights-013-q01": "B",
+    "gmat-data-insights-013-q01": "A",
     "gmat-data-insights-013-q02": "C",
-    "gmat-data-insights-013-q03": "D",
-    "gmat-data-insights-013-q04": "E",
-    "gmat-data-insights-013-q05": "A",
+    "gmat-data-insights-013-q03": "E",
+    "gmat-data-insights-013-q04": "B",
+    "gmat-data-insights-013-q05": "D",
     "gmat-data-insights-013-q06": "B",
     "gmat-data-insights-013-q07": "C",
-    "gmat-data-insights-013-q08": "D",
+    "gmat-data-insights-013-q08": "A",
     "gmat-data-insights-013-q09": "E",
-    "gmat-data-insights-013-q10": "A",
-    "gmat-data-insights-013-q11": "B",
+    "gmat-data-insights-013-q10": "D",
+    "gmat-data-insights-013-q11": "A",
     "gmat-data-insights-013-q12": "C",
-    "gmat-data-insights-013-q13": "D",
-    "gmat-data-insights-013-q14": "E",
-    "gmat-data-insights-013-q15": "A",
-    "gmat-data-insights-013-q16": "B",
-    "gmat-data-insights-013-q17": "C",
-    "gmat-data-insights-013-q18": "D",
-    "gmat-data-insights-013-q19": "E",
-    "gmat-data-insights-013-q20": "A"
-  },
-  "fingerprints": [
-    "d082a68996c943bc27",
-    "69a2dadd5f06cd0e15",
-    "6f4ab758b4f6f896ef",
-    "77fba659dd288d6412",
-    "0b74eb104e48a39a17",
-    "82a0e58b255df726eb",
-    "f37eed0f0359409fc6",
-    "8d681c052ea62a6250",
-    "ed50ae37acefa22dda",
-    "ddf3a0c932144de46b",
-    "68d962c3221fb114e7",
-    "1ac57772ce51551bcc",
-    "030d7b0f141bd341fd",
-    "f909284f607b03068b",
-    "20fbd5eecebc2118ca",
-    "7687cae80092491b8d",
-    "b9c8c44af895649b60",
-    "6c5e8569c4407dfcfa",
-    "6c4fbca9108e229463",
-    "79cada5a825c75e75f"
-  ]
+    "gmat-data-insights-013-q13": "E",
+    "gmat-data-insights-013-q14": "C",
+    "gmat-data-insights-013-q15": "B",
+    "gmat-data-insights-013-q16": "D",
+    "gmat-data-insights-013-q17": "B",
+    "gmat-data-insights-013-q18": "A",
+    "gmat-data-insights-013-q19": "D",
+    "gmat-data-insights-013-q20": "E"
+  }
 }
