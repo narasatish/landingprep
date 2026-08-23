@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Three-quarters of a number is 60. What is the number?",
+      "prompt": "Two runners cover the same distance, one in 40 minutes and the other in 50 minutes. What is the ratio of their speeds, faster to slower?",
       "options": [
-        "80",
-        "85",
-        "90",
-        "70",
-        "75"
+        "4 : 5",
+        "8 : 10",
+        "5 : 4",
+        "2 : 1",
+        "9 : 8"
       ],
-      "correctAnswer": "80",
-      "answer": "A",
-      "explanation": "(3/4)x = 60 → x = 60 × 4 ÷ 3 = 80.",
+      "correctAnswer": "5 : 4",
+      "answer": "C",
+      "explanation": "Over a fixed distance, speed is inversely proportional to time, so the ratio of speeds is the ratio of times reversed: 50 : 40, which simplifies to 5 : 4. Writing the times in the order given, 4 : 5, makes the slower runner look faster.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
+      "prompt": "A third of a number, plus 8, equals half the number. What is the number?",
       "options": [
-        "2 : 5",
-        "8 : 15",
-        "6 : 5",
-        "3 : 5",
-        "8 : 5"
+        "48",
+        "24",
+        "16",
+        "96",
+        "12"
       ],
-      "correctAnswer": "8 : 15",
-      "answer": "B",
-      "explanation": "Make b common: a:b = 8:12, b:c = 12:15. So a:c = 8:15.",
+      "correctAnswer": "48",
+      "answer": "A",
+      "explanation": "Writing it out: x/3 + 8 = x/2, so 8 = x/2 − x/3 = x/6 and x = 48. The difference between a half and a third is a sixth, not a fifth, which is where most wrong answers come from.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
+      "prompt": "The mean of 20 numbers was calculated as 45, but one value entered as 72 should have been 27. What is the correct mean?",
       "options": [
-        "12",
-        "18",
-        "24",
-        "36",
-        "9"
+        "45",
+        "47.25",
+        "44.10",
+        "43.75",
+        "42.75"
       ],
-      "correctAnswer": "24",
-      "answer": "C",
-      "explanation": "Volume = length × width × height = 2 × 3 × 4 = 24.",
+      "correctAnswer": "42.75",
+      "answer": "E",
+      "explanation": "The total was overstated by 72 − 27 = 45, and spreading that over 20 numbers overstates the mean by 2.25. The correct mean is 45 − 2.25 = 42.75.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
+      "prompt": "A triangle has sides of 13 cm, 14 cm and 15 cm. What is its area?",
       "options": [
-        "720",
-        "480",
-        "540",
-        "600",
-        "640"
+        "91 cm²",
+        "78 cm²",
+        "105 cm²",
+        "84 cm²",
+        "42 cm²"
       ],
-      "correctAnswer": "600",
+      "correctAnswer": "84 cm²",
       "answer": "D",
-      "explanation": "0.20 × total = 120 → total = 120 ÷ 0.20 = 600.",
+      "explanation": "With no height given, use the semi-perimeter: s = (13 + 14 + 15) / 2 = 21. The area is the square root of 21 × 8 × 7 × 6 = 7056, which is 84 cm². Treating two sides as base and height gives 91 cm², which assumes a right angle that is not there.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A traveller drives to a town at 60 mph and returns along the same road at 40 mph. What is the average speed for the round trip?",
+      "prompt": "15 pumps empty a tank in 8 hours. Working at the same rate, how long do 12 pumps take?",
       "options": [
-        "50 mph",
-        "52 mph",
-        "55 mph",
-        "45 mph",
-        "48 mph"
+        "6.4 hours",
+        "10 hours",
+        "9 hours",
+        "11 hours",
+        "12 hours"
       ],
-      "correctAnswer": "48 mph",
-      "answer": "E",
-      "explanation": "Round-trip average = 2·v₁·v₂ ÷ (v₁+v₂) = 2 × 60 × 40 ÷ 100 = 4800 ÷ 100 = 48 mph.",
+      "correctAnswer": "10 hours",
+      "answer": "B",
+      "explanation": "The job is 15 × 8 = 120 pump-hours whatever the number of pumps. Shared between 12 pumps that is 10 hours. Fewer pumps must mean more time, so any answer below 8 hours has the proportion the wrong way round.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the simple interest on $2,000 at 5% per year for 3 years?",
+      "prompt": "A floor measuring 384 cm by 288 cm is to be covered by identical square tiles with none cut. What is the largest possible tile?",
       "options": [
-        "$300",
-        "$350",
-        "$400",
-        "$200",
-        "$250"
+        "32 cm",
+        "48 cm",
+        "96 cm",
+        "64 cm",
+        "144 cm"
       ],
-      "correctAnswer": "$300",
-      "answer": "A",
-      "explanation": "SI = P × r × t = 2000 × 0.05 × 3 = 300.",
+      "correctAnswer": "96 cm",
+      "answer": "C",
+      "explanation": "The tile must divide both 384 and 288 exactly, so its side is their highest common factor. 384 = 2⁷ × 3 and 288 = 2⁵ × 3², giving a common factor of 2⁵ × 3 = 96 cm. That lays 4 tiles by 3. Smaller common factors such as 32 and 48 also fit, but the question asks for the largest.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 5 identical pens cost $20, how much do 8 of the same pens cost?",
+      "prompt": "60% of days are dry. On a dry day there is a 20% chance the commuter cycles; on a wet day, 5%. On what percentage of days does the commuter cycle?",
       "options": [
-        "$30",
-        "$32",
-        "$36",
-        "$40",
-        "$28"
+        "12.5%",
+        "20.00%",
+        "8.00%",
+        "14%",
+        "25.00%"
       ],
-      "correctAnswer": "$32",
-      "answer": "B",
-      "explanation": "Unit price = 20 ÷ 5 = $4. 8 pens = 8 × 4 = $32.",
+      "correctAnswer": "14%",
+      "answer": "D",
+      "explanation": "Cycling on a dry day happens on 60% × 20% = 12% of days, and on a wet day on 40% × 5% = 2%. Together that is 14%. Averaging the two chances ignores that dry days are the more common.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A tank is 3/5 full. Adding 20 litres makes it 4/5 full. What is the tank's total capacity?",
+      "prompt": "A class of 30 has 12 girls. How many boys must join for girls to make up exactly 30% of the class?",
       "options": [
-        "80 litres",
-        "90 litres",
-        "100 litres",
-        "110 litres",
-        "120 litres"
+        "18",
+        "10",
+        "6",
+        "12",
+        "9"
       ],
-      "correctAnswer": "100 litres",
-      "answer": "C",
-      "explanation": "4/5 − 3/5 = 1/5 of capacity = 20 litres → capacity = 20 × 5 = 100 litres.",
+      "correctAnswer": "10",
+      "answer": "B",
+      "explanation": "The 12 girls are unchanged, so the class must grow until 12 is 30% of it: 12 / 0.3 = 40 pupils. That means 40 − 30 = 10 boys join, taking the boys from 18 to 28.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of √144 + √81?",
+      "prompt": "If 3a = 4b and 2b = 5c, what is the ratio a : c?",
       "options": [
-        "15",
-        "18",
-        "20",
-        "21",
-        "25"
+        "10 : 3",
+        "3 : 10",
+        "4 : 5",
+        "6 : 5",
+        "5 : 2"
       ],
-      "correctAnswer": "21",
-      "answer": "D",
-      "explanation": "√144 = 12 and √81 = 9. 12 + 9 = 21.",
+      "correctAnswer": "10 : 3",
+      "answer": "A",
+      "explanation": "From 3a = 4b, a = 4b/3. From 2b = 5c, c = 2b/5. So a : c is 4/3 : 2/5, and multiplying both sides by 15 gives 20 : 6, which simplifies to 10 : 3. Reading the two equations without converting through b gives 4 : 5.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
+      "prompt": "Two trains, 180 m and 220 m long, pass each other travelling in opposite directions at 72 km/h and 108 km/h. How long do they take to pass completely?",
       "options": [
-        "$19.25",
-        "$20.00",
-        "$14.00",
-        "$18.50",
-        "$21.50"
+        "40 seconds",
+        "10 seconds",
+        "20 seconds",
+        "4 seconds",
+        "8 seconds"
       ],
-      "correctAnswer": "$21.50",
+      "correctAnswer": "8 seconds",
       "answer": "E",
-      "explanation": "Notebooks: 4 × $3.50 = $14.00. Pens: 6 × $1.25 = $7.50. Total = $14.00 + $7.50 = $21.50.",
+      "explanation": "In opposite directions the speeds add: 72 + 108 = 180 km/h, which is 50 m/s. Passing completely means covering both lengths, 400 m, so it takes 8 seconds. Subtracting the speeds would apply if they were travelling the same way.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
+      "prompt": "A bill of £160.00 is reduced by 10%, and a 12.5% service charge is then added to the reduced amount. Split 4 ways, what does each person pay?",
       "options": [
-        "60 mph",
-        "65 mph",
-        "70 mph",
-        "55 mph",
-        "58 mph"
+        "£41.00",
+        "£40.00",
+        "£40.50",
+        "£45.00",
+        "£36.00"
       ],
-      "correctAnswer": "60 mph",
-      "answer": "A",
-      "explanation": "Total distance = 240 + 180 = 420 miles. Total time = 4 + 3 = 7 hours. Average = 420 ÷ 7 = 60 mph.",
+      "correctAnswer": "£40.50",
+      "answer": "C",
+      "explanation": "The discount brings the bill to £144.00, and the service charge takes it to £162.00. Divided 4 ways that is £40.50 each. Splitting the original £160.00 gives £40.00 and skips both adjustments; adding the two percentages as if both applied to £160.00 gives £41.00.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 40% of a number is 64, what is 75% of that number?",
+      "prompt": "How many terms are there in the sequence 7, 11, 15, …, 143?",
       "options": [
-        "108",
-        "120",
-        "128",
-        "96",
-        "100"
+        "34",
+        "35",
+        "36",
+        "37",
+        "40"
       ],
-      "correctAnswer": "120",
+      "correctAnswer": "35",
       "answer": "B",
-      "explanation": "0.40x = 64 → x = 160. 75% of 160 = 0.75 × 160 = 120.",
+      "explanation": "The terms rise by 4, and 143 − 7 = 136, which is 34 steps. Counting the first term as well gives 35 terms. Forgetting it gives 34, the classic fence-post slip.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
+      "prompt": "40% of a class study French, and 25% of those also study Latin. If 6 pupils study both, how many are in the class?",
       "options": [
-        "12 hours",
-        "15 hours",
-        "18 hours",
-        "21 hours",
-        "3 hours"
+        "15",
+        "24",
+        "40",
+        "60",
+        "80"
       ],
-      "correctAnswer": "18 hours",
-      "answer": "C",
-      "explanation": "Net rate = 1/6 − 1/9 = 3/18 − 2/18 = 1/18 tank per hour. Time = 18 hours.",
+      "correctAnswer": "60",
+      "answer": "D",
+      "explanation": "Pupils studying both are 40% × 25% = 10% of the class, so the class is 6 / 0.1 = 60. Dividing by 40% alone gives 15 and finds only the French group.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
+      "prompt": "A pyramid has a square base of side 12 cm and a height of 15 cm. What is its volume?",
       "options": [
-        "$200",
-        "$210",
-        "$170",
-        "$180",
-        "$190"
+        "720 cm³",
+        "2,160 cm³",
+        "1,080 cm³",
+        "540 cm³",
+        "360 cm³"
       ],
-      "correctAnswer": "$180",
-      "answer": "D",
-      "explanation": "200 × 1.20 = 240; 240 × 0.75 = 180. (Net factor 1.2 × 0.75 = 0.9, a 10% drop.)",
+      "correctAnswer": "720 cm³",
+      "answer": "A",
+      "explanation": "The base area is 12² = 144 cm², and a pyramid holds a third of the prism on the same base: 144 × 15 / 3 = 720 cm³. Leaving out the third gives 2,160 cm³, the volume of the box around it.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
+      "prompt": "A class of 24 pupils averaged 68 marks. Together with a second class, all 40 pupils averaged 71. What did the second class average?",
       "options": [
-        "$220",
-        "$240",
-        "$260",
-        "$200",
-        "$210"
+        "74",
+        "73.0",
+        "77.0",
+        "71.5",
+        "75.5"
       ],
-      "correctAnswer": "$210",
+      "correctAnswer": "75.5",
       "answer": "E",
-      "explanation": "Amount = 1000 × 1.10² = 1000 × 1.21 = 1210. Interest = 1210 − 1000 = 210.",
+      "explanation": "All 40 pupils scored 2,840 marks between them, of which the first class scored 1,632. That leaves 1,208 for the 16 pupils in the second class: 75.5 each. Assuming the combined mean sits midway between the two class means gives 74 and ignores the unequal sizes.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
+      "prompt": "What is the units digit of 3 to the power 47?",
       "options": [
-        "15",
-        "16",
-        "18",
-        "20",
-        "12"
+        "3",
+        "7",
+        "9",
+        "1",
+        "5"
       ],
-      "correctAnswer": "15",
-      "answer": "A",
-      "explanation": "Sum of 5 = 5 × 20 = 100. Remove 40 → 60 left over 4 numbers. Average = 60 ÷ 4 = 15.",
+      "correctAnswer": "7",
+      "answer": "B",
+      "explanation": "The units digits of powers of 3 repeat in fours: 3, 9, 7, 1, then back to 3. 47 leaves a remainder of 3 on division by 4, so it lands on the 3rd position in the cycle, giving 7.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
+      "prompt": "What is the midpoint of the line joining (-4, 9) and (10, -3)?",
       "options": [
-        "12",
-        "16",
-        "20",
-        "24",
-        "8"
+        "(14, 12)",
+        "(7, 6)",
+        "(3, 3)",
+        "(6, 3)",
+        "(3, 6)"
       ],
-      "correctAnswer": "16",
-      "answer": "B",
-      "explanation": "Parts = 3 + 5 = 8 → each part = 64 ÷ 8 = 8. Amounts: 24 and 40. Difference = 40 − 24 = 16.",
+      "correctAnswer": "(3, 3)",
+      "answer": "C",
+      "explanation": "The midpoint averages each coordinate: (-4 + 10) / 2 = 3 and (9 + -3) / 2 = 3, giving (3, 3). Subtracting the coordinates instead gives (14, 12), which describes the gap between the points, not the point halfway along.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
+      "prompt": "A batch of 2,500 items has a 6% reject rate. The rest sell at £14.00 each. What is the revenue from the batch?",
       "options": [
-        "96",
-        "120",
-        "136",
-        "140",
-        "152"
+        "£35,000.00",
+        "£2,100.00",
+        "£30,000.00",
+        "£34,300.00",
+        "£32,900.00"
       ],
-      "correctAnswer": "136",
-      "answer": "C",
-      "explanation": "Area = 12 × 8 = 96. Perimeter = 2(12 + 8) = 40. Sum = 96 + 40 = 136.",
+      "correctAnswer": "£32,900.00",
+      "answer": "E",
+      "explanation": "6% of 2,500 is 150 rejects, leaving 2,350 to sell at £14.00: £32,900.00. Selling the whole batch would bring £35,000.00, which is the figure to beware of.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 2^5 × 2^3?",
+      "prompt": "£4,200.00 is shared so that A receives twice what B receives, and B receives three times what C receives. What is A's share?",
       "options": [
-        "1024",
-        "64",
-        "128",
-        "256",
-        "512"
+        "£2,520.00",
+        "£1,260.00",
+        "£420.00",
+        "£2,100.00",
+        "£1,400.00"
       ],
-      "correctAnswer": "256",
-      "answer": "D",
-      "explanation": "2^5 × 2^3 = 2^(5+3) = 2^8 = 256.",
+      "correctAnswer": "£2,520.00",
+      "answer": "A",
+      "explanation": "Take C as one part. Then B is three parts and A is six, making ten parts in all, so one part is £420.00. A takes six parts: £2,520.00. B's three parts come to £1,260.00, which is the figure a misread of the chain usually lands on.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
+      "prompt": "What is the size of each interior angle of a regular 12-sided polygon?",
       "options": [
-        "24",
-        "27",
-        "30",
-        "18",
-        "21"
+        "30 degrees",
+        "144 degrees",
+        "165 degrees",
+        "150 degrees",
+        "135 degrees"
       ],
-      "correctAnswer": "21",
-      "answer": "E",
-      "explanation": "Adding: 2x = 14 → x = 7. Then y = 3. xy = 7 × 3 = 21.",
+      "correctAnswer": "150 degrees",
+      "answer": "D",
+      "explanation": "The interior angles of a 12-sided polygon total (12 − 2) × 180 = 1,800 degrees, and in a regular polygon they are equal: 150 degrees each. 30 degrees is the exterior angle, which is what 360 divided by the number of sides gives.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is 15% of 15% of 400?",
+      "prompt": "£9,000.00 is split between an account paying 5% a year and one paying 8%. Together they earn £570.00 in a year. How much is in the 8% account?",
       "options": [
-        "9",
-        "12",
-        "15",
-        "18",
-        "6"
+        "£5,000.00",
+        "£4,000.00",
+        "£4,500.00",
+        "£3,000.00",
+        "£6,000.00"
       ],
-      "correctAnswer": "9",
-      "answer": "A",
-      "explanation": "15% of 400 = 60. 15% of 60 = 9.",
+      "correctAnswer": "£4,000.00",
+      "answer": "B",
+      "explanation": "If all £9,000.00 sat at 8% it would earn £720.00, which is £150.00 too much. Every pound moved to the 5% account costs 3p a year, so £5,000.00 must sit there, leaving £4,000.00 at 8%.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-012-q001": "80",
-    "gmat-quant-012-q002": "8 : 15",
-    "gmat-quant-012-q003": "24",
-    "gmat-quant-012-q004": "600",
-    "gmat-quant-012-q005": "48 mph",
-    "gmat-quant-012-q006": "$300",
-    "gmat-quant-012-q007": "$32",
-    "gmat-quant-012-q008": "100 litres",
-    "gmat-quant-012-q009": "21",
-    "gmat-quant-012-q010": "$21.50",
-    "gmat-quant-012-q011": "60 mph",
-    "gmat-quant-012-q012": "120",
-    "gmat-quant-012-q013": "18 hours",
-    "gmat-quant-012-q014": "$180",
-    "gmat-quant-012-q015": "$210",
-    "gmat-quant-012-q016": "15",
-    "gmat-quant-012-q017": "16",
-    "gmat-quant-012-q018": "136",
-    "gmat-quant-012-q019": "256",
-    "gmat-quant-012-q020": "21",
-    "gmat-quant-012-q021": "9"
+    "gmat-quant-012-q001": "5 : 4",
+    "gmat-quant-012-q002": "48",
+    "gmat-quant-012-q003": "42.75",
+    "gmat-quant-012-q004": "84 cm²",
+    "gmat-quant-012-q005": "10 hours",
+    "gmat-quant-012-q006": "96 cm",
+    "gmat-quant-012-q007": "14%",
+    "gmat-quant-012-q008": "10",
+    "gmat-quant-012-q009": "10 : 3",
+    "gmat-quant-012-q010": "8 seconds",
+    "gmat-quant-012-q011": "£40.50",
+    "gmat-quant-012-q012": "35",
+    "gmat-quant-012-q013": "60",
+    "gmat-quant-012-q014": "720 cm³",
+    "gmat-quant-012-q015": "75.5",
+    "gmat-quant-012-q016": "7",
+    "gmat-quant-012-q017": "(3, 3)",
+    "gmat-quant-012-q018": "£32,900.00",
+    "gmat-quant-012-q019": "£2,520.00",
+    "gmat-quant-012-q020": "150 degrees",
+    "gmat-quant-012-q021": "£4,000.00"
   }
 }
