@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
+      "prompt": "A rectangle is 5 cm longer than it is wide and has an area of 84 cm². How long is it?",
       "options": [
-        "21",
-        "24",
-        "27",
-        "30",
-        "18"
+        "7 cm",
+        "9 cm",
+        "14 cm",
+        "21 cm",
+        "12 cm"
       ],
-      "correctAnswer": "21",
-      "answer": "A",
-      "explanation": "Adding: 2x = 14 → x = 7. Then y = 3. xy = 7 × 3 = 21.",
+      "correctAnswer": "12 cm",
+      "answer": "E",
+      "explanation": "If the width is w then w(w + 5) = 84, so w² + 5w − 84 = 0 and w = 7. The length is 7 + 5 = 12 cm. 7 cm is the width, which is what the equation solves for directly.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is 15% of 15% of 400?",
+      "prompt": "A boat travels at 15 km/h in still water. It goes 36 km downstream and 36 km back, against a current of 3 km/h. How long does the round trip take?",
       "options": [
-        "6",
-        "9",
-        "12",
-        "15",
-        "18"
+        "4.8 hours",
+        "4 hours",
+        "5 hours",
+        "6 hours",
+        "5.5 hours"
       ],
-      "correctAnswer": "9",
-      "answer": "B",
-      "explanation": "15% of 400 = 60. 15% of 60 = 9.",
+      "correctAnswer": "5 hours",
+      "answer": "C",
+      "explanation": "Downstream the boat makes 18 km/h, taking 2 hours; upstream it makes 12 km/h, taking 3 hours. The round trip is 5 hours. Ignoring the current gives 4.8 hours, because the time lost upstream outweighs the time saved downstream.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
+      "prompt": "Of 840 people surveyed, 60% belong to the club and 25% of those members attend weekly. How many attend weekly?",
       "options": [
-        "$57",
-        "$60",
-        "$63",
-        "$66",
-        "$70"
+        "210",
+        "126",
+        "504",
+        "168",
+        "336"
       ],
-      "correctAnswer": "$63",
-      "answer": "C",
-      "explanation": "Discount: 80 × 0.75 = 60. Tax: 60 × 1.05 = 63.",
+      "correctAnswer": "126",
+      "answer": "B",
+      "explanation": "60% of 840 is 504 members, and 25% of those is 126. Taking 25% of everybody gives 210 and forgets that only members were asked about attendance.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
+      "prompt": "What is the remainder when 7 to the power 40 is divided by 5?",
       "options": [
-        "180 miles",
-        "120 miles",
-        "135 miles",
-        "150 miles",
-        "165 miles"
+        "2",
+        "3",
+        "4",
+        "1",
+        "0"
       ],
-      "correctAnswer": "150 miles",
+      "correctAnswer": "1",
       "answer": "D",
-      "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
+      "explanation": "Powers of 7 leave remainders that repeat every four steps: 2, 4, 3, 1, then back to 2. Since 40 is a multiple of 4, it lands on the fourth position in the cycle, giving a remainder of 1.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "prompt": "Every edge of a cube is increased by 50%. By what percentage does its volume increase?",
       "options": [
-        "12",
-        "15",
-        "16",
-        "8",
-        "10"
+        "237.5%",
+        "50%",
+        "150%",
+        "125%",
+        "337.5%"
       ],
-      "correctAnswer": "10",
-      "answer": "E",
-      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "correctAnswer": "237.5%",
+      "answer": "A",
+      "explanation": "The volume scales by 1.5 three times over: 1.5³ = 3.375, so the new cube is 3.375 times the old one — an increase of 237.5%. Multiplying the 50% by three gives 150%, which would be right for a length, not a volume.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "prompt": "Two fair six-sided dice are rolled. What is the probability that the two scores add to 9?",
       "options": [
-        "3/5",
-        "2/3",
-        "1/5",
-        "2/5",
-        "1/2"
+        "1/6",
+        "1/12",
+        "4/9",
+        "1/4",
+        "1/9"
       ],
-      "correctAnswer": "3/5",
-      "answer": "A",
-      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "correctAnswer": "1/9",
+      "answer": "E",
+      "explanation": "The pairs that total 9 are 3 and 6, 4 and 5, 5 and 4, 6 and 3 — 4 of the 36 equally likely outcomes. 4/36 cancels to 1/9. Counting 3+6 and 6+3 as one outcome halves the count and gives 1/18.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "Two people share a sum in the ratio 7 : 4, and the larger share is £2,100.00 more than the smaller. What is the total?",
       "options": [
-        "30",
-        "32",
-        "35",
-        "38",
-        "29"
+        "£3,300.00",
+        "£7,000.00",
+        "£9,900.00",
+        "£7,700.00",
+        "£6,300.00"
       ],
-      "correctAnswer": "32",
-      "answer": "B",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "correctAnswer": "£7,700.00",
+      "answer": "D",
+      "explanation": "The shares differ by 7 − 4 = 3 parts, so one part is £2,100.00 / 3 = £700.00. The whole sum is 11 parts: £7,700.00. Treating £2,100.00 as the larger share rather than the difference gives £3,300.00.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "A length of 4.85 m is recorded as 5 m. What is the percentage error, to two decimal places?",
       "options": [
-        "1225",
-        "1250",
-        "1275",
-        "1300",
-        "1175"
+        "3.09%",
+        "3%",
+        "0.15%",
+        "1.50%",
+        "15.00%"
       ],
-      "correctAnswer": "1275",
-      "answer": "C",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "correctAnswer": "3.09%",
+      "answer": "A",
+      "explanation": "The error is 0.15 m, and percentage error is measured against the true value: 0.15 / 4.85 = 3.09%. Dividing by the recorded 5 instead gives 3%, a smaller figure against a larger base.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "A purse holds 32 coins, all of them 50p or 20p, worth £11.50 in all. How many are 50p coins?",
       "options": [
+        "15",
         "20",
+        "17",
         "12",
-        "14",
-        "16",
-        "18"
+        "23"
       ],
-      "correctAnswer": "16",
-      "answer": "D",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "correctAnswer": "17",
+      "answer": "C",
+      "explanation": "If all 32 were 20p they would be worth £6.40. Each swap to a 50p adds £0.30, and £11.50 − £6.40 = £5.10 of extra value, so 17 swaps are needed. The other 15 coins are 20p.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "A sector of a circle of radius 12 cm has an angle of 150 degrees at the centre. What is the length of its arc, in terms of pi?",
       "options": [
-        "30%",
-        "35%",
-        "40%",
-        "20%",
-        "25%"
+        "24π cm",
+        "10π cm",
+        "60π cm",
+        "5π cm",
+        "18π cm"
       ],
-      "correctAnswer": "25%",
-      "answer": "E",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "correctAnswer": "10π cm",
+      "answer": "B",
+      "explanation": "The full circumference is 24π cm, and the sector takes 150/360 of it, which is 0.42 — so the arc is 10π cm. The sector's area, 60π cm², is a different quantity in different units.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "What is the angle between the hands of a clock at 3:40?",
       "options": [
-        "9 days",
-        "10 days",
-        "11 days",
-        "16 days",
-        "8 days"
+        "150 degrees",
+        "120 degrees",
+        "140 degrees",
+        "110 degrees",
+        "130 degrees"
       ],
-      "correctAnswer": "9 days",
-      "answer": "A",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "correctAnswer": "130 degrees",
+      "answer": "E",
+      "explanation": "The minute hand is at 40 × 6 = 240 degrees. The hour hand has moved past 3 o'clock by 40 × 0.5 = 20 degrees, so it stands at 110. The gap is 130 degrees. Leaving the hour hand at 90 gives 150 degrees.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "What is the sum of the first 30 positive even numbers?",
       "options": [
-        "14",
-        "15",
-        "16",
-        "18",
-        "13"
+        "930",
+        "465",
+        "900",
+        "960",
+        "1,860"
       ],
-      "correctAnswer": "15",
-      "answer": "B",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "correctAnswer": "930",
+      "answer": "A",
+      "explanation": "The first 30 even numbers are twice the first 30 whole numbers, so the sum is 2 × (1 + 2 + … + 30) = 2 × 465 = 930. 465 is the sum of 1 to 30, before doubling.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "Two items are each sold for £480.00. One is sold at a 20% profit and the other at a 20% loss. What is the overall result?",
       "options": [
-        "20%",
-        "25%",
-        "30%",
-        "35%",
-        "15%"
+        "no profit and no loss",
+        "a profit of 4%",
+        "a loss of 4%",
+        "a loss of 20%",
+        "a profit of 2%"
       ],
-      "correctAnswer": "30%",
+      "correctAnswer": "a loss of 4%",
       "answer": "C",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "explanation": "The item sold at a profit cost £400.00 and the other cost £600.00, so £1,000.00 was spent to take £960.00 — a loss of £40.00, or 4%. The percentages do not cancel, because the 20% loss is taken on the larger cost.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "prompt": "Money grows at 8% a year, compounded annually. After how many whole years is it worth more than double?",
       "options": [
-        "11",
-        "12",
-        "7",
-        "9",
-        "10"
+        "9 years",
+        "12 years",
+        "8 years",
+        "10 years",
+        "13 years"
       ],
-      "correctAnswer": "9",
+      "correctAnswer": "10 years",
       "answer": "D",
-      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "explanation": "After 9 years the factor is 1.999, still short of 2; after 10 years it is 2.159, which clears it. So 10 years is the first whole year at which the money has more than doubled.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3x = 18, what is the value of x² + x?",
+      "prompt": "A driver travels for 2 hours at 40 km/h and then 3 hours at 60 km/h. What is the average speed for the whole journey?",
       "options": [
-        "48",
-        "54",
-        "36",
-        "40",
-        "42"
+        "50 km/h",
+        "52 km/h",
+        "48.0 km/h",
+        "55.0 km/h",
+        "45.0 km/h"
       ],
-      "correctAnswer": "42",
-      "answer": "E",
-      "explanation": "x = 6. x² + x = 36 + 6 = 42.",
+      "correctAnswer": "52 km/h",
+      "answer": "B",
+      "explanation": "The two legs cover 80 km and 180 km, a total of 260 km in 5 hours: 52 km/h. The plain average of the two speeds, 50, is too low because more time was spent at the faster speed.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "prompt": "How many positive factors does 360 have?",
       "options": [
-        "30",
-        "36",
-        "60",
         "24",
-        "28"
+        "12",
+        "18",
+        "20",
+        "30"
       ],
-      "correctAnswer": "30",
+      "correctAnswer": "24",
       "answer": "A",
-      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "explanation": "360 factorises as 2³ × 3² × 5. The exponents are 3, 2 and 1, and each can be used from zero up to its own value, giving 4 × 3 × 2 = 24 factors in all.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "prompt": "A straight line passes through (2, 5) and (6, 17). What is the value of y when x = 7?",
       "options": [
-        "144",
-        "154",
-        "168",
-        "176",
-        "132"
+        "21",
+        "18",
+        "22",
+        "24",
+        "20"
       ],
-      "correctAnswer": "154",
-      "answer": "B",
-      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "correctAnswer": "20",
+      "answer": "E",
+      "explanation": "The gradient is (17 − 5) / (6 − 2) = 3, so the line is y = 3x − 1. At x = 7 that gives 20. Using 3x on its own, without the intercept, gives 21.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "prompt": "Two similar triangles have corresponding sides in the ratio 3 : 5. The smaller has an area of 63 cm². What is the area of the larger?",
       "options": [
-        "16 litres",
-        "18 litres",
-        "20 litres",
-        "22 litres",
-        "24 litres"
+        "105 cm²",
+        "126 cm²",
+        "175 cm²",
+        "189 cm²",
+        "225 cm²"
       ],
-      "correctAnswer": "20 litres",
+      "correctAnswer": "175 cm²",
       "answer": "C",
-      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "explanation": "Areas of similar figures scale as the square of the side ratio, so the larger area is 63 × 25/9 = 175 cm². Scaling by the sides themselves gives 105 cm² and forgets that area has two dimensions.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 5! (5 factorial)?",
+      "prompt": "One quantity rises by 20% while another falls by 25%. By what percentage does their product change?",
       "options": [
-        "720",
-        "60",
-        "100",
-        "120",
-        "150"
+        "it falls by 5%",
+        "it is unchanged",
+        "it rises by 5%",
+        "it falls by 10%",
+        "it falls by 45%"
       ],
-      "correctAnswer": "120",
+      "correctAnswer": "it falls by 10%",
       "answer": "D",
-      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "explanation": "The product is multiplied by 1.20 × 0.75 = 0.9, a fall of 10%. Subtracting the two percentages gives 5%, which treats them as if they applied to the same base.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
+      "prompt": "Someone spends a third of their money, then a quarter of what is left, and is left with £180.00. How much did they start with?",
       "options": [
-        "48",
-        "12",
-        "16",
-        "20",
-        "24"
+        "£240.00",
+        "£360.00",
+        "£432.00",
+        "£270.00",
+        "£540.00"
       ],
-      "correctAnswer": "24",
-      "answer": "E",
-      "explanation": "Multiples of 8: 8, 16, 24 … 24 is divisible by 4 and 6, so LCM = 24.",
+      "correctAnswer": "£360.00",
+      "answer": "B",
+      "explanation": "Spending a third leaves two thirds; spending a quarter of that leaves three quarters of two thirds, which is a half. So £180.00 is half the starting amount: £360.00. Adding the two fractions to make seven twelfths spent is the usual slip, since the quarter is taken from the remainder, not the original.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
+      "prompt": "£5,000.00 earns simple interest at 6% a year. After how many years is it worth £6,500.00?",
       "options": [
-        "12",
-        "18",
-        "24",
-        "6",
-        "8"
+        "5 years",
+        "21.67 years",
+        "4 years",
+        "6 years",
+        "10 years"
       ],
-      "correctAnswer": "12",
+      "correctAnswer": "5 years",
       "answer": "A",
-      "explanation": "24 = 12 × 2, 36 = 12 × 3. The largest common factor is 12.",
+      "explanation": "The interest needed is £6,500.00 − £5,000.00 = £1,500.00, and simple interest adds £300.00 a year, so it takes 5 years. Dividing the whole £6,500.00 by the annual interest gives 21.67 and counts the capital as interest.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-011-q001": "21",
-    "gmat-quant-011-q002": "9",
-    "gmat-quant-011-q003": "$63",
-    "gmat-quant-011-q004": "150 miles",
-    "gmat-quant-011-q005": "10",
-    "gmat-quant-011-q006": "3/5",
-    "gmat-quant-011-q007": "32",
-    "gmat-quant-011-q008": "1275",
-    "gmat-quant-011-q009": "16",
-    "gmat-quant-011-q010": "25%",
-    "gmat-quant-011-q011": "9 days",
-    "gmat-quant-011-q012": "15",
-    "gmat-quant-011-q013": "30%",
-    "gmat-quant-011-q014": "9",
-    "gmat-quant-011-q015": "42",
-    "gmat-quant-011-q016": "30",
-    "gmat-quant-011-q017": "154",
-    "gmat-quant-011-q018": "20 litres",
-    "gmat-quant-011-q019": "120",
-    "gmat-quant-011-q020": "24",
-    "gmat-quant-011-q021": "12"
+    "gmat-quant-011-q001": "12 cm",
+    "gmat-quant-011-q002": "5 hours",
+    "gmat-quant-011-q003": "126",
+    "gmat-quant-011-q004": "1",
+    "gmat-quant-011-q005": "237.5%",
+    "gmat-quant-011-q006": "1/9",
+    "gmat-quant-011-q007": "£7,700.00",
+    "gmat-quant-011-q008": "3.09%",
+    "gmat-quant-011-q009": "17",
+    "gmat-quant-011-q010": "10π cm",
+    "gmat-quant-011-q011": "130 degrees",
+    "gmat-quant-011-q012": "930",
+    "gmat-quant-011-q013": "a loss of 4%",
+    "gmat-quant-011-q014": "10 years",
+    "gmat-quant-011-q015": "52 km/h",
+    "gmat-quant-011-q016": "24",
+    "gmat-quant-011-q017": "20",
+    "gmat-quant-011-q018": "175 cm²",
+    "gmat-quant-011-q019": "it falls by 10%",
+    "gmat-quant-011-q020": "£360.00",
+    "gmat-quant-011-q021": "5 years"
   }
 }
