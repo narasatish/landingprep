@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
+      "prompt": "Sales are £84,000.00 and costs £63,000.00. By how much must costs fall to bring them to 65% of sales?",
       "options": [
-        "18 hours",
-        "21 hours",
-        "3 hours",
-        "12 hours",
-        "15 hours"
+        "£54,600.00",
+        "£22,050.00",
+        "£6,300.00",
+        "£12,600.00",
+        "£8,400.00"
       ],
-      "correctAnswer": "18 hours",
-      "answer": "A",
-      "explanation": "Net rate = 1/6 − 1/9 = 3/18 − 2/18 = 1/18 tank per hour. Time = 18 hours.",
+      "correctAnswer": "£8,400.00",
+      "answer": "E",
+      "explanation": "Costs of 65% of sales would be £84,000.00 × 0.65 = £54,600.00, so they must fall by £63,000.00 − £54,600.00 = £8,400.00. £54,600.00 is where costs need to end up rather than how far they must come down.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
+      "prompt": "When (x + 4)(x − 6) is expanded, what is the coefficient of x?",
       "options": [
-        "$170",
-        "$180",
-        "$190",
-        "$200",
-        "$210"
+        "-24",
+        "-2",
+        "10",
+        "2",
+        "-10"
       ],
-      "correctAnswer": "$180",
+      "correctAnswer": "-2",
       "answer": "B",
-      "explanation": "200 × 1.20 = 240; 240 × 0.75 = 180. (Net factor 1.2 × 0.75 = 0.9, a 10% drop.)",
+      "explanation": "Expanding gives x² − 6x + 4x − 24, and the two x terms combine to -2x. -24 is the constant, which comes from multiplying the numbers rather than adding them.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
+      "prompt": "How many of these readings lie within 1 of their mean: 8, 9, 10, 11, 15?",
       "options": [
-        "$260",
-        "$200",
-        "$210",
-        "$220",
-        "$240"
+        "3",
+        "1",
+        "4",
+        "2",
+        "5"
       ],
-      "correctAnswer": "$210",
-      "answer": "C",
-      "explanation": "Amount = 1000 × 1.10² = 1000 × 1.21 = 1210. Interest = 1210 − 1000 = 210.",
+      "correctAnswer": "2",
+      "answer": "D",
+      "explanation": "The five total 53, so the mean is 10.6. Within 1 of that means between 9.6 and 11.6: only 10 and 11 qualify — 2 readings. The single reading of 15 pulls the mean above the cluster of small values, so several readings that look close to the middle of the list are not close to the mean.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
+      "prompt": "Taking pi as 22/7, what is the volume of a hemisphere of radius 21 cm?",
       "options": [
-        "18",
-        "20",
-        "12",
-        "15",
-        "16"
+        "19,404 cm³",
+        "38,808 cm³",
+        "5,544 cm³",
+        "9,702 cm³",
+        "27,720 cm³"
       ],
-      "correctAnswer": "15",
-      "answer": "D",
-      "explanation": "Sum of 5 = 5 × 20 = 100. Remove 40 → 60 left over 4 numbers. Average = 60 ÷ 4 = 15.",
+      "correctAnswer": "19,404 cm³",
+      "answer": "A",
+      "explanation": "A whole sphere holds four thirds of pi r cubed, so a hemisphere holds two thirds: 2 × 22 × 21³ / (3 × 7) = 19,404 cm³. 38,808 cm³ is the whole sphere, and 5,544 cm² would be its surface area rather than a volume.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
+      "prompt": "90 items are split in the ratio 2 : 3. How many must move from the larger share to the smaller to make the ratio 5 : 4?",
       "options": [
-        "20",
-        "24",
-        "8",
-        "12",
-        "16"
+        "18",
+        "7",
+        "14",
+        "28",
+        "20"
       ],
-      "correctAnswer": "16",
-      "answer": "E",
-      "explanation": "Parts = 3 + 5 = 8 → each part = 64 ÷ 8 = 8. Amounts: 24 and 40. Difference = 40 − 24 = 16.",
+      "correctAnswer": "14",
+      "answer": "C",
+      "explanation": "The shares are 36 and 54. To become 5 : 4 they must be 50 and 40, so 14 items move across. The total never changes, so whatever one share gains the other loses — which is why the answer is 14 and not 28.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
+      "prompt": "What is the smallest whole number greater than 1 that is both a perfect square and a perfect cube?",
       "options": [
-        "136",
-        "140",
-        "152",
-        "96",
-        "120"
+        "16",
+        "27",
+        "36",
+        "216",
+        "64"
       ],
-      "correctAnswer": "136",
-      "answer": "A",
-      "explanation": "Area = 12 × 8 = 96. Perimeter = 2(12 + 8) = 40. Sum = 96 + 40 = 136.",
+      "correctAnswer": "64",
+      "answer": "E",
+      "explanation": "A number that is both a square and a cube must be a sixth power. The smallest above 1 is 2⁶ = 64, which is 8² and also 4³. 16 and 36 are squares but not cubes, and 27 and 216 are cubes but not squares — 216 is 6³, and no whole number squares to it.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 2^5 × 2^3?",
+      "prompt": "In how many different orders can 4 people sit in a row of 4 seats?",
       "options": [
-        "128",
-        "256",
-        "512",
-        "1024",
-        "64"
+        "24",
+        "16",
+        "12",
+        "10",
+        "120"
       ],
-      "correctAnswer": "256",
-      "answer": "B",
-      "explanation": "2^5 × 2^3 = 2^(5+3) = 2^8 = 256.",
+      "correctAnswer": "24",
+      "answer": "A",
+      "explanation": "There are 4 choices for the first seat, 3 for the second, 2 for the third and 1 for the last: 4 × 3 × 2 × 1 = 24. 16 would be the count if each seat could hold any of the 4 people, with repeats allowed.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
+      "prompt": "15% is deducted from an amount, and then 8% of what remains is deducted. What percentage of the original is left?",
       "options": [
-        "30",
-        "18",
-        "21",
-        "24",
-        "27"
+        "77%",
+        "76.5%",
+        "80.0%",
+        "78.2%",
+        "72.0%"
       ],
-      "correctAnswer": "21",
-      "answer": "C",
-      "explanation": "Adding: 2x = 14 → x = 7. Then y = 3. xy = 7 × 3 = 21.",
+      "correctAnswer": "78.2%",
+      "answer": "D",
+      "explanation": "The first deduction leaves 85%, and keeping 92% of that leaves 0.85 × 0.92 = 78.2%. Adding the two deductions to make 23% gives 77% and charges the second deduction against the original rather than the remainder.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is 15% of 15% of 400?",
+      "prompt": "A wall measures 8.5 m by 3.2 m. Paint covers 12 m² a litre and is sold only in whole litres. How many litres are needed?",
       "options": [
-        "15",
-        "18",
-        "6",
-        "9",
-        "12"
+        "2",
+        "3",
+        "4",
+        "5",
+        "2.27"
       ],
-      "correctAnswer": "9",
-      "answer": "D",
-      "explanation": "15% of 400 = 60. 15% of 60 = 9.",
+      "correctAnswer": "3",
+      "answer": "B",
+      "explanation": "The wall is 8.5 × 3.2 = 27.2 m², which needs 27.2 / 12 = 2.27 litres of paint. Since only whole litres can be bought, 3 are needed. 2 litres would cover only 24 m² and leave part of the wall bare.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
+      "prompt": "A right-angled triangle has legs of 9 cm and 12 cm. What is its perimeter?",
       "options": [
-        "$66",
-        "$70",
-        "$57",
-        "$60",
-        "$63"
+        "21 cm",
+        "15 cm",
+        "36 cm",
+        "54 cm",
+        "42 cm"
       ],
-      "correctAnswer": "$63",
-      "answer": "E",
-      "explanation": "Discount: 80 × 0.75 = 60. Tax: 60 × 1.05 = 63.",
+      "correctAnswer": "36 cm",
+      "answer": "C",
+      "explanation": "The hypotenuse is the square root of 9² + 12² = 225, which is 15 cm, so the perimeter is 9 + 12 + 15 = 36 cm. 21 cm adds only the two legs, and 54 is the area rather than a length.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
+      "prompt": "If x : y is 3 : 5 and x + y = 64, what is x?",
       "options": [
-        "150 miles",
-        "165 miles",
-        "180 miles",
-        "120 miles",
-        "135 miles"
+        "40",
+        "8",
+        "32",
+        "20",
+        "24"
       ],
-      "correctAnswer": "150 miles",
-      "answer": "A",
-      "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
+      "correctAnswer": "24",
+      "answer": "E",
+      "explanation": "The ratio has 8 parts, so one part is 64 / 8 = 8. Three parts is 24, and the remaining five are 40. 40 is y — the two swap easily when the ratio is read in the wrong order.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "prompt": "A task takes 2.5 minutes an item. How many items are completed in an hour?",
       "options": [
-        "8",
-        "10",
-        "12",
-        "15",
-        "16"
+        "150",
+        "20",
+        "30",
+        "24",
+        "25"
       ],
-      "correctAnswer": "10",
-      "answer": "B",
-      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "correctAnswer": "24",
+      "answer": "D",
+      "explanation": "An hour holds 60 minutes, and each item takes 2.5, so 60 / 2.5 = 24 items are completed. Multiplying instead of dividing gives 150, which is how many minutes an hour of items would take — a figure with no meaning here.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "prompt": "2.4 kg of cheese costs £9.60. What is the price per 100 g?",
       "options": [
-        "2/5",
-        "1/2",
-        "3/5",
-        "2/3",
-        "1/5"
+        "£4.00",
+        "£0.40",
+        "£0.10",
+        "£0.24",
+        "£0.96"
       ],
-      "correctAnswer": "3/5",
-      "answer": "C",
-      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "correctAnswer": "£0.40",
+      "answer": "B",
+      "explanation": "The cheese costs £9.60 / 2.4 = £4.00 a kilogram. A kilogram is ten lots of 100 g, so 100 g costs £0.40. £4.00 is the price per kilogram, which is ten times what the question asks for.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "What percentage of a 365-day year is 73 days?",
       "options": [
-        "38",
-        "29",
-        "30",
-        "32",
-        "35"
+        "20%",
+        "25%",
+        "15%",
+        "73%",
+        "36.5%"
       ],
-      "correctAnswer": "32",
-      "answer": "D",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "correctAnswer": "20%",
+      "answer": "A",
+      "explanation": "73 out of 365 is 73/365, which is exactly one fifth, or 20%. The figures divide cleanly: 365 / 5 is 73, so a fifth of the year is 73 days to the day.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "Three groups sat the same test: 20 scoring 60, 30 scoring 70, 50 scoring 80. What is the mean across all 100?",
       "options": [
-        "1300",
-        "1175",
-        "1225",
-        "1250",
-        "1275"
+        "70",
+        "72",
+        "73",
+        "75",
+        "76"
       ],
-      "correctAnswer": "1275",
-      "answer": "E",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "correctAnswer": "73",
+      "answer": "C",
+      "explanation": "The three groups score 20 × 60 + 30 × 70 + 50 × 80 = 7,300 marks between them, over 100 people: 73. Averaging the three group means gives 70 and treats the group of 20 as equal in weight to the group of 50.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "A shape is a 10 cm by 6 cm rectangle with a triangle on top, the triangle having the same 10 cm base and a height of 4 cm. What is the total area?",
       "options": [
-        "16",
-        "18",
-        "20",
-        "12",
-        "14"
+        "100 cm²",
+        "60 cm²",
+        "76 cm²",
+        "84 cm²",
+        "80 cm²"
       ],
-      "correctAnswer": "16",
-      "answer": "A",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "correctAnswer": "80 cm²",
+      "answer": "E",
+      "explanation": "The rectangle covers 10 × 6 = 60 cm² and the triangle 10 × 4 / 2 = 20 cm², giving 80 cm² in all. Forgetting to halve the triangle gives 100 cm², which is the area of a taller rectangle rather than of a roof.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "A floor 4 m by 3 m is to be tiled with tiles covering 0.25 m² each, allowing 10% extra for breakage. How many tiles are needed?",
       "options": [
-        "20%",
-        "25%",
-        "30%",
-        "35%",
-        "40%"
+        "48",
+        "50",
+        "60",
+        "53",
+        "55"
       ],
-      "correctAnswer": "25%",
-      "answer": "B",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "correctAnswer": "53",
+      "answer": "D",
+      "explanation": "The floor is 12 m², needing 12 / 0.25 = 48 tiles to cover it. Adding 10% gives 52.8, and tiles come whole, so 53 are needed. 48 tiles leaves nothing over for the breakages the question allows for.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "What is the remainder when 23 + 47 + 89 is divided by 7?",
       "options": [
-        "16 days",
-        "8 days",
-        "9 days",
-        "10 days",
-        "11 days"
+        "5",
+        "2",
+        "3",
+        "6",
+        "0"
       ],
-      "correctAnswer": "9 days",
-      "answer": "C",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "correctAnswer": "5",
+      "answer": "A",
+      "explanation": "The three add to 159, and 7 × 22 = 154, leaving a remainder of 5. The same answer comes from the parts: 2 + 5 + 5 = 12, which itself leaves 5 on division by 7.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "A season pass costs £96.00 and a single visit £8.00. At how many visits do the two come to exactly the same cost?",
       "options": [
-        "18",
-        "13",
-        "14",
-        "15",
-        "16"
+        "11",
+        "10",
+        "12",
+        "16",
+        "8"
       ],
-      "correctAnswer": "15",
-      "answer": "D",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "correctAnswer": "12",
+      "answer": "C",
+      "explanation": "12 single visits cost 12 × £8.00 = £96.00, which is exactly the price of the pass. Below that the singles are cheaper — 11 visits cost £88.00 — and above it the pass is, so 12 is the point where the two meet.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "Using s = ut + ½at², what is s when u = 5, t = 4 and a = 3?",
       "options": [
-        "35%",
-        "15%",
-        "20%",
-        "25%",
-        "30%"
+        "68",
+        "44",
+        "32",
+        "56",
+        "26"
       ],
-      "correctAnswer": "30%",
-      "answer": "E",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "correctAnswer": "44",
+      "answer": "B",
+      "explanation": "ut is 5 × 4 = 20, and ½at² is 3 × 16 / 2 = 24. Adding them gives 44. Leaving out the half gives 68, which doubles the contribution of the acceleration term.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "prompt": "15 items costing £3.40 each are bought with 5% off the total. What change is due from £50.00?",
       "options": [
-        "9",
-        "10",
-        "11",
-        "12",
-        "7"
+        "£-1.00",
+        "£2.55",
+        "£2.00",
+        "£1.05",
+        "£1.55"
       ],
-      "correctAnswer": "9",
-      "answer": "A",
-      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "correctAnswer": "£1.55",
+      "answer": "E",
+      "explanation": "The items come to 15 × £3.40 = £51.00, and 5% off leaves £48.45. From £50.00 that gives £1.55 change. Forgetting the discount gives £-1.00, and £2.55 is the discount itself rather than the change.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-024-q001": "18 hours",
-    "gmat-quant-024-q002": "$180",
-    "gmat-quant-024-q003": "$210",
-    "gmat-quant-024-q004": "15",
-    "gmat-quant-024-q005": "16",
-    "gmat-quant-024-q006": "136",
-    "gmat-quant-024-q007": "256",
-    "gmat-quant-024-q008": "21",
-    "gmat-quant-024-q009": "9",
-    "gmat-quant-024-q010": "$63",
-    "gmat-quant-024-q011": "150 miles",
-    "gmat-quant-024-q012": "10",
-    "gmat-quant-024-q013": "3/5",
-    "gmat-quant-024-q014": "32",
-    "gmat-quant-024-q015": "1275",
-    "gmat-quant-024-q016": "16",
-    "gmat-quant-024-q017": "25%",
-    "gmat-quant-024-q018": "9 days",
-    "gmat-quant-024-q019": "15",
-    "gmat-quant-024-q020": "30%",
-    "gmat-quant-024-q021": "9"
+    "gmat-quant-024-q001": "£8,400.00",
+    "gmat-quant-024-q002": "-2",
+    "gmat-quant-024-q003": "2",
+    "gmat-quant-024-q004": "19,404 cm³",
+    "gmat-quant-024-q005": "14",
+    "gmat-quant-024-q006": "64",
+    "gmat-quant-024-q007": "24",
+    "gmat-quant-024-q008": "78.2%",
+    "gmat-quant-024-q009": "3",
+    "gmat-quant-024-q010": "36 cm",
+    "gmat-quant-024-q011": "24",
+    "gmat-quant-024-q012": "24",
+    "gmat-quant-024-q013": "£0.40",
+    "gmat-quant-024-q014": "20%",
+    "gmat-quant-024-q015": "73",
+    "gmat-quant-024-q016": "80 cm²",
+    "gmat-quant-024-q017": "53",
+    "gmat-quant-024-q018": "5",
+    "gmat-quant-024-q019": "12",
+    "gmat-quant-024-q020": "44",
+    "gmat-quant-024-q021": "£1.55"
   }
 }
