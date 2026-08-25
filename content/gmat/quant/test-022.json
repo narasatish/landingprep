@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
+      "prompt": "What fraction of a day is 108 minutes?",
       "options": [
-        "60 mph",
-        "65 mph",
-        "70 mph",
-        "55 mph",
-        "58 mph"
+        "9/120",
+        "1/12",
+        "3/40",
+        "3/50",
+        "27/360"
       ],
-      "correctAnswer": "60 mph",
-      "answer": "A",
-      "explanation": "Total distance = 240 + 180 = 420 miles. Total time = 4 + 3 = 7 hours. Average = 420 ÷ 7 = 60 mph.",
+      "correctAnswer": "3/40",
+      "answer": "C",
+      "explanation": "A day holds 1,440 minutes, so 108 minutes is 108/1,440. Dividing top and bottom by 36 leaves 3/40. 9/120 and 27/360 are the same number but not in lowest terms, and 1/12 would be 120 minutes rather than 108.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 40% of a number is 64, what is 75% of that number?",
+      "prompt": "What is the positive solution of x² + 2x − 35 = 0?",
       "options": [
-        "108",
-        "120",
-        "128",
-        "96",
-        "100"
+        "-7",
+        "7",
+        "35",
+        "5",
+        "2"
       ],
-      "correctAnswer": "120",
-      "answer": "B",
-      "explanation": "0.40x = 64 → x = 160. 75% of 160 = 0.75 × 160 = 120.",
+      "correctAnswer": "5",
+      "answer": "D",
+      "explanation": "Two numbers multiplying to −35 and adding to 2 are 7 and −5, so the equation factorises as (x + 7)(x − 5) = 0 and the solutions are -7 and 5. The positive one is 5. -7 is the other root, and 7 is the factor rather than the solution — the sign flips when the bracket is set to zero.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
+      "prompt": "What is the mean of all the whole numbers from 17 to 43 inclusive?",
       "options": [
-        "12 hours",
-        "15 hours",
-        "18 hours",
-        "21 hours",
-        "3 hours"
+        "26",
+        "30",
+        "27",
+        "29",
+        "31"
       ],
-      "correctAnswer": "18 hours",
-      "answer": "C",
-      "explanation": "Net rate = 1/6 − 1/9 = 3/18 − 2/18 = 1/18 tank per hour. Time = 18 hours.",
+      "correctAnswer": "30",
+      "answer": "B",
+      "explanation": "Consecutive numbers are evenly spaced, so their mean is the average of the first and last: (17 + 43) / 2 = 30. 27 is how many numbers there are and 26 is the gap between the ends — neither is the average.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
+      "prompt": "A person 1.8 m tall casts a shadow 2.4 m long. At the same moment a tree casts a shadow 20 m long. How tall is the tree?",
       "options": [
-        "$200",
-        "$210",
-        "$170",
-        "$180",
-        "$190"
+        "26.67 m",
+        "12 m",
+        "18 m",
+        "24 m",
+        "15 m"
       ],
-      "correctAnswer": "$180",
-      "answer": "D",
-      "explanation": "200 × 1.20 = 240; 240 × 0.75 = 180. (Net factor 1.2 × 0.75 = 0.9, a 10% drop.)",
+      "correctAnswer": "15 m",
+      "answer": "E",
+      "explanation": "The sun's angle is the same for both, so height and shadow are in proportion: 1.8 / 2.4 = 0.75. Applying that to the 20 m shadow gives 15 m. Dividing the wrong way round gives 26.67 m, a tree far taller than its shadow when the person is shorter than theirs.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
+      "prompt": "If a : b is 2 : 3 and b : c is 4 : 5, what is a : c?",
       "options": [
-        "$220",
-        "$240",
-        "$260",
-        "$200",
-        "$210"
+        "8 : 15",
+        "2 : 5",
+        "8 : 12",
+        "3 : 4",
+        "6 : 20"
       ],
-      "correctAnswer": "$210",
-      "answer": "E",
-      "explanation": "Amount = 1000 × 1.10² = 1000 × 1.21 = 1210. Interest = 1210 − 1000 = 210.",
+      "correctAnswer": "8 : 15",
+      "answer": "A",
+      "explanation": "To join the two ratios, b must read the same in both. Scaling a : b by 4 gives 8 : 12, and scaling b : c by 3 gives 12 : 15. So a : b : c is 8 : 12 : 15, and a : c is 8 : 15. Reading the outer numbers straight off gives 2 : 5, which ignores that b means different things in the two ratios.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
+      "prompt": "How many whole numbers from 1 to 100 are divisible by 3 or by 5?",
       "options": [
-        "15",
-        "16",
-        "18",
-        "20",
-        "12"
+        "53",
+        "6",
+        "47",
+        "40",
+        "60"
       ],
-      "correctAnswer": "15",
-      "answer": "A",
-      "explanation": "Sum of 5 = 5 × 20 = 100. Remove 40 → 60 left over 4 numbers. Average = 60 ÷ 4 = 15.",
+      "correctAnswer": "47",
+      "answer": "C",
+      "explanation": "33 are divisible by 3 and 20 by 5, but 6 are divisible by both and have been counted twice. Taking those off gives 33 + 20 − 6 = 47. Adding the two counts without subtracting the overlap gives 53.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
+      "prompt": "Two people are chosen at random. Assuming birthdays fall equally often in each of the 12 months, what is the probability that both were born in the same month?",
       "options": [
-        "12",
-        "16",
-        "20",
-        "24",
-        "8"
+        "1/144",
+        "1/24",
+        "1/6",
+        "2/12",
+        "1/12"
       ],
-      "correctAnswer": "16",
-      "answer": "B",
-      "explanation": "Parts = 3 + 5 = 8 → each part = 64 ÷ 8 = 8. Amounts: 24 and 40. Difference = 40 − 24 = 16.",
+      "correctAnswer": "1/12",
+      "answer": "E",
+      "explanation": "The first person's month can be anything. The second must match it, and one month in 12 does, so the probability is 1/12. 1/144 would be the chance of both being born in one particular named month, which is a stricter requirement than simply matching.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
+      "prompt": "A photograph 20 cm by 15 cm has a border 2 cm wide all the way round, inside those measurements. What area does the border cover?",
       "options": [
-        "96",
-        "120",
-        "136",
-        "140",
-        "152"
+        "66 cm²",
+        "96 cm²",
+        "150 cm²",
+        "124 cm²",
+        "176 cm²"
       ],
-      "correctAnswer": "136",
-      "answer": "C",
-      "explanation": "Area = 12 × 8 = 96. Perimeter = 2(12 + 8) = 40. Sum = 96 + 40 = 136.",
+      "correctAnswer": "124 cm²",
+      "answer": "D",
+      "explanation": "The picture inside the border measures 16 cm by 11 cm, an area of 176 cm², against 300 cm² in all. The border is the difference: 124 cm². Taking only 2 cm off each dimension rather than 4 gives 66 cm² and forgets the border runs along both sides.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 2^5 × 2^3?",
+      "prompt": "A train 150 m long travelling at 54 km/h overtakes a walker going the same way at 9 km/h. How long does the train take to pass the walker completely?",
       "options": [
-        "1024",
-        "64",
-        "128",
-        "256",
-        "512"
+        "8.57 seconds",
+        "12 seconds",
+        "10 seconds",
+        "15 seconds",
+        "20 seconds"
       ],
-      "correctAnswer": "256",
-      "answer": "D",
-      "explanation": "2^5 × 2^3 = 2^(5+3) = 2^8 = 256.",
+      "correctAnswer": "12 seconds",
+      "answer": "B",
+      "explanation": "Going the same way, the speeds subtract: 54 − 9 = 45 km/h, which is 12.5 m/s. The train covers its own 150 m relative to the walker in 12 seconds. Adding the speeds gives 8.57 seconds and would apply if they were moving towards each other.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
+      "prompt": "A tank measures 80 cm by 50 cm by 40 cm and holds 96 litres of water. What percentage of its capacity is that?",
       "options": [
-        "24",
-        "27",
-        "30",
-        "18",
-        "21"
+        "60%",
+        "120%",
+        "48%",
+        "75%",
+        "80%"
       ],
-      "correctAnswer": "21",
-      "answer": "E",
-      "explanation": "Adding: 2x = 14 → x = 7. Then y = 3. xy = 7 × 3 = 21.",
+      "correctAnswer": "60%",
+      "answer": "A",
+      "explanation": "The tank's capacity is 160,000 cm³, and a litre is 1,000 cm³, so it holds 160 litres when full. 96 of 160 is 60%. The conversion is the step to watch: a tank measured in centimetres gives a capacity in cubic centimetres, not litres.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is 15% of 15% of 400?",
+      "prompt": "Solve for x: 12 / (x − 3) = 4",
       "options": [
+        "3",
+        "11",
+        "6",
         "9",
-        "12",
-        "15",
-        "18",
-        "6"
+        "15"
       ],
-      "correctAnswer": "9",
-      "answer": "A",
-      "explanation": "15% of 400 = 60. 15% of 60 = 9.",
+      "correctAnswer": "6",
+      "answer": "C",
+      "explanation": "Multiplying both sides by (x − 3) gives 12 = 4(x − 3), so x − 3 = 3 and x = 6. 3 is the value of the bracket rather than of x — the 3 still has to be added back.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
+      "prompt": "Buses leave every 18 minutes, the first at 06:00. How many leave between 06:00 and 09:00, counting both?",
       "options": [
-        "$60",
-        "$63",
-        "$66",
-        "$70",
-        "$57"
+        "10",
+        "9",
+        "12",
+        "11",
+        "18"
       ],
-      "correctAnswer": "$63",
-      "answer": "B",
-      "explanation": "Discount: 80 × 0.75 = 60. Tax: 60 × 1.05 = 63.",
+      "correctAnswer": "11",
+      "answer": "D",
+      "explanation": "Three hours is 180 minutes, which holds 10 gaps of 18 minutes. Counting the 06:00 departure as well as the 10 that follow gives 11 buses. 10 counts the gaps rather than the buses, which is the fence-post error in timetable form.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
+      "prompt": "7 books cost £52.85. At the same price each, what do 12 books cost?",
       "options": [
-        "120 miles",
-        "135 miles",
-        "150 miles",
-        "165 miles",
-        "180 miles"
+        "£30.83",
+        "£85.00",
+        "£95.00",
+        "£100.00",
+        "£90.60"
       ],
-      "correctAnswer": "150 miles",
-      "answer": "C",
-      "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
+      "correctAnswer": "£90.60",
+      "answer": "E",
+      "explanation": "One book costs £52.85 / 7 = £7.55, so 12 cost £90.60. Dividing by 12 and multiplying by 7 reverses the proportion and gives £30.83, less money for more books.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "prompt": "A quantity is halved, and the result is halved again. By what percentage has the original been reduced?",
       "options": [
-        "15",
-        "16",
-        "8",
-        "10",
-        "12"
+        "50%",
+        "75%",
+        "100%",
+        "25%",
+        "62.5%"
       ],
-      "correctAnswer": "10",
-      "answer": "D",
-      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "correctAnswer": "75%",
+      "answer": "B",
+      "explanation": "Halving twice leaves a quarter of the original, or 25%, so 75% has gone. 50% is the effect of a single halving, and adding two halvings to make 100% would leave nothing at all.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "prompt": "A survey records: 2 appears 5 times, 3 appears 8 times, 4 appears 4 times, 5 appears 3 times. What is the mean?",
       "options": [
-        "2/3",
-        "1/5",
-        "2/5",
-        "1/2",
-        "3/5"
+        "3.25",
+        "3.5",
+        "3.00",
+        "3.50",
+        "4.00"
       ],
-      "correctAnswer": "3/5",
-      "answer": "E",
-      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "correctAnswer": "3.25",
+      "answer": "A",
+      "explanation": "The 20 readings total 2 × 5 + 3 × 8 + 4 × 4 + 5 × 3 = 65, so the mean is 65 / 20 = 3.25. Averaging the four distinct values without their frequencies gives 3.5 and treats a value seen 8 times as no more important than one seen 3 times.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "What is the height of an equilateral triangle of side 10 cm, in surd form?",
       "options": [
-        "32",
-        "35",
-        "38",
-        "29",
-        "30"
+        "10√3 cm",
+        "25√3 cm",
+        "5√3 cm",
+        "5 cm",
+        "10 cm"
       ],
-      "correctAnswer": "32",
-      "answer": "A",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "correctAnswer": "5√3 cm",
+      "answer": "C",
+      "explanation": "Dropping a perpendicular splits the triangle into two right-angled halves with a base of 5 cm and a hypotenuse of 10 cm. The height is the square root of 10² − 5² = 75, which is 5√3 cm. 25√3 cm² would be the area, not the height.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "A representative is paid £1,800.00 a month plus £45.00 for each sale above 20. What is the pay in a month with 34 sales?",
       "options": [
-        "1250",
-        "1275",
-        "1300",
-        "1175",
-        "1225"
+        "£3,330.00",
+        "£2,200.00",
+        "£2,500.00",
+        "£2,700.00",
+        "£2,430.00"
       ],
-      "correctAnswer": "1275",
-      "answer": "B",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "correctAnswer": "£2,430.00",
+      "answer": "E",
+      "explanation": "Only the 34 − 20 = 14 sales above the threshold earn a bonus: 14 × £45.00 = £630.00, on top of the £1,800.00. Paying a bonus on all 34 sales gives £3,330.00 and ignores the threshold.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "Two numbers multiply to 864 and have a highest common factor of 12. What is their lowest common multiple?",
       "options": [
-        "12",
-        "14",
-        "16",
-        "18",
-        "20"
+        "852",
+        "72",
+        "144",
+        "108",
+        "36"
       ],
-      "correctAnswer": "16",
-      "answer": "C",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "correctAnswer": "72",
+      "answer": "B",
+      "explanation": "For any two numbers, the highest common factor times the lowest common multiple equals their product: 12 × LCM = 864, so the LCM is 72. The pair 24 and 36 fits — they multiply to 864, share a factor of 12, and have 72 as their lowest common multiple.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "A debt is charged interest at 1.5% a month, compounded. What is the equivalent annual rate, to two decimal places?",
       "options": [
-        "35%",
-        "40%",
-        "20%",
-        "25%",
-        "30%"
+        "18%",
+        "1.50%",
+        "21.00%",
+        "19.56%",
+        "16.00%"
       ],
-      "correctAnswer": "25%",
+      "correctAnswer": "19.56%",
       "answer": "D",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "explanation": "Twelve months of compounding multiply the debt by 1.015 to the twelfth power, which is 1.1956 — an annual rate of 19.56%. Multiplying the monthly rate by twelve gives 18% and leaves out the interest charged on interest.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "What is the sum of the first 20 terms of the sequence 4, 9, 14, …?",
       "options": [
-        "10 days",
-        "11 days",
-        "16 days",
-        "8 days",
-        "9 days"
+        "1,030",
+        "99",
+        "1,980",
+        "1,000",
+        "950"
       ],
-      "correctAnswer": "9 days",
-      "answer": "E",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "correctAnswer": "1,030",
+      "answer": "A",
+      "explanation": "The 20th term is 4 + 19 × 5 = 99. The sum of an evenly spaced run is the number of terms times the average of the first and last: 20 × (4 + 99) / 2 = 1,030. 99 is the last term on its own, and 1,980 multiplies every term up to the largest.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "A coach costs £480.00 to hire plus £6.00 for each passenger. With 40 passengers, what does each pay if the whole cost is shared equally?",
       "options": [
-        "15",
-        "16",
-        "18",
-        "13",
-        "14"
+        "£12.00",
+        "£6.00",
+        "£18.00",
+        "£24.00",
+        "£30.00"
       ],
-      "correctAnswer": "15",
-      "answer": "A",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "correctAnswer": "£18.00",
+      "answer": "C",
+      "explanation": "The hire works out at £480.00 / 40 = £12.00 a head, and each passenger also costs £6.00, giving £18.00 each. The whole trip costs £720.00, which divided by 40 comes to the same £18.00.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-022-q001": "60 mph",
-    "gmat-quant-022-q002": "120",
-    "gmat-quant-022-q003": "18 hours",
-    "gmat-quant-022-q004": "$180",
-    "gmat-quant-022-q005": "$210",
-    "gmat-quant-022-q006": "15",
-    "gmat-quant-022-q007": "16",
-    "gmat-quant-022-q008": "136",
-    "gmat-quant-022-q009": "256",
-    "gmat-quant-022-q010": "21",
-    "gmat-quant-022-q011": "9",
-    "gmat-quant-022-q012": "$63",
-    "gmat-quant-022-q013": "150 miles",
-    "gmat-quant-022-q014": "10",
-    "gmat-quant-022-q015": "3/5",
-    "gmat-quant-022-q016": "32",
-    "gmat-quant-022-q017": "1275",
-    "gmat-quant-022-q018": "16",
-    "gmat-quant-022-q019": "25%",
-    "gmat-quant-022-q020": "9 days",
-    "gmat-quant-022-q021": "15"
+    "gmat-quant-022-q001": "3/40",
+    "gmat-quant-022-q002": "5",
+    "gmat-quant-022-q003": "30",
+    "gmat-quant-022-q004": "15 m",
+    "gmat-quant-022-q005": "8 : 15",
+    "gmat-quant-022-q006": "47",
+    "gmat-quant-022-q007": "1/12",
+    "gmat-quant-022-q008": "124 cm²",
+    "gmat-quant-022-q009": "12 seconds",
+    "gmat-quant-022-q010": "60%",
+    "gmat-quant-022-q011": "6",
+    "gmat-quant-022-q012": "11",
+    "gmat-quant-022-q013": "£90.60",
+    "gmat-quant-022-q014": "75%",
+    "gmat-quant-022-q015": "3.25",
+    "gmat-quant-022-q016": "5√3 cm",
+    "gmat-quant-022-q017": "£2,430.00",
+    "gmat-quant-022-q018": "72",
+    "gmat-quant-022-q019": "19.56%",
+    "gmat-quant-022-q020": "1,030",
+    "gmat-quant-022-q021": "£18.00"
   }
 }
