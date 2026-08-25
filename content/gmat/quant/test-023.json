@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "By what percentage does 84 exceed 60?",
       "options": [
-        "30%",
+        "28.57%",
+        "24%",
         "35%",
-        "15%",
-        "20%",
-        "25%"
+        "40%",
+        "140%"
       ],
-      "correctAnswer": "30%",
-      "answer": "A",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "correctAnswer": "40%",
+      "answer": "D",
+      "explanation": "84 is 24 more than 60, and 24 out of 60 is 40%. Measuring the same gap against 84 gives 28.57%, which answers how much smaller 60 is than 84 — a different question with a different base.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "prompt": "If 2 to the power a equals 32, what is a³?",
       "options": [
-        "7",
-        "9",
-        "10",
-        "11",
-        "12"
+        "125",
+        "5",
+        "32",
+        "64",
+        "96"
       ],
-      "correctAnswer": "9",
-      "answer": "B",
-      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "correctAnswer": "125",
+      "answer": "A",
+      "explanation": "2⁵ is 32, so a is 5. Cubing that gives 5³ = 125. 5 is the index itself, and 32 is what 2 raised to it comes to — neither is what the question asks for.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3x = 18, what is the value of x² + x?",
+      "prompt": "How many of these seven readings are above their mean: 12, 15, 19, 22, 28, 34, 41?",
       "options": [
-        "36",
-        "40",
-        "42",
-        "48",
-        "54"
+        "4",
+        "2",
+        "5",
+        "1",
+        "3"
       ],
-      "correctAnswer": "42",
-      "answer": "C",
-      "explanation": "x = 6. x² + x = 36 + 6 = 42.",
+      "correctAnswer": "3",
+      "answer": "E",
+      "explanation": "The seven total 171, so the mean is 24.43. Above it: 28, 34, 41 — 3 readings. The mean does not split a set in half: here 4 readings sit below it and only 3 above, because the largest values are spread further from the middle than the smallest.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "prompt": "Taking pi as 22/7, a sector of a circle of radius 7 cm has an area of 77 cm². What is its angle at the centre?",
       "options": [
-        "60",
-        "24",
-        "28",
-        "30",
-        "36"
+        "50 degrees",
+        "90 degrees",
+        "180 degrees",
+        "120 degrees",
+        "270 degrees"
       ],
-      "correctAnswer": "30",
-      "answer": "D",
-      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "correctAnswer": "180 degrees",
+      "answer": "C",
+      "explanation": "The whole circle has an area of 22/7 × 7² = 154 cm², so the sector is 77/154 of it — exactly half. Half of 360 degrees is 180 degrees. Reading the fraction as a percentage rather than scaling 360 by it gives 50 degrees.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "prompt": "30 kg of a mix is 2 parts salt to 3 parts sand, and 20 kg of another is 3 parts salt to 1 parts sand. The two are combined. What is the ratio of salt to sand in the result?",
       "options": [
-        "168",
-        "176",
-        "132",
-        "144",
-        "154"
+        "5 : 4",
+        "27 : 23",
+        "1 : 1",
+        "3 : 2",
+        "28 : 22"
       ],
-      "correctAnswer": "154",
-      "answer": "E",
-      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "correctAnswer": "27 : 23",
+      "answer": "B",
+      "explanation": "The first lot holds 12 kg of salt and the second 15 kg, giving 27 kg of salt in 50 kg of mixture, so 23 kg is sand: 27 : 23. Adding the parts of the two ratios gives 5 : 4 and ignores that the lots are different sizes.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "prompt": "What is the sum of the first 6 terms of 3, 6, 12, each term twice the one before?",
       "options": [
-        "20 litres",
-        "22 litres",
-        "24 litres",
-        "16 litres",
-        "18 litres"
+        "96",
+        "192",
+        "126",
+        "189",
+        "195"
       ],
-      "correctAnswer": "20 litres",
-      "answer": "A",
-      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "correctAnswer": "189",
+      "answer": "D",
+      "explanation": "The six terms are 3, 6, 12, 24, 48, 96, which add to 189. The formula gives the same: 3 × (2⁶ − 1) / (2 − 1) = 3 × 63 = 189. 96 is the last term on its own.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 5! (5 factorial)?",
+      "prompt": "A game costs £2.00 to play and pays £5.00 with probability 0.3. What is the expected result per game?",
       "options": [
-        "100",
-        "120",
-        "150",
-        "720",
-        "60"
+        "a gain of £0.50",
+        "a gain of £1.50",
+        "a loss of £0.50",
+        "no gain or loss",
+        "a loss of £2.00"
       ],
-      "correctAnswer": "120",
-      "answer": "B",
-      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "correctAnswer": "a loss of £0.50",
+      "answer": "C",
+      "explanation": "The expected winnings are £5.00 × 0.3 = £1.50 a game, against a stake of £2.00, so on average each game loses £0.50. £1.50 is what the game pays out on average before the stake is taken into account.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
+      "prompt": "24 items in a batch of 3,000 are faulty. What is the fault rate in parts per thousand?",
       "options": [
-        "16",
-        "20",
+        "8",
+        "0.8",
+        "12",
         "24",
-        "48",
-        "12"
+        "80"
       ],
-      "correctAnswer": "24",
-      "answer": "C",
-      "explanation": "Multiples of 8: 8, 16, 24 … 24 is divisible by 4 and 6, so LCM = 24.",
+      "correctAnswer": "8",
+      "answer": "A",
+      "explanation": "24 out of 3,000 is 24/3,000, and multiplying by 1,000 gives 8 per thousand. As a percentage the same rate is 0.8%, which is the figure to be careful of: parts per thousand runs ten times larger than a percentage.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
+      "prompt": "Three taps can fill a tank in 12, 15, 20 hours respectively. How long do all three take together?",
       "options": [
-        "24",
-        "6",
-        "8",
-        "12",
-        "18"
+        "15.67 hours",
+        "4 hours",
+        "6 hours",
+        "9 hours",
+        "5 hours"
       ],
-      "correctAnswer": "12",
-      "answer": "D",
-      "explanation": "24 = 12 × 2, 36 = 12 × 3. The largest common factor is 12.",
+      "correctAnswer": "5 hours",
+      "answer": "E",
+      "explanation": "Their rates add: 1/12 + 1/15 + 1/20 = 5/60 + 4/60 + 3/60 = 12/60, or a fifth of the tank an hour. So together they take 5 hours. Averaging the three times gives 15.67 hours, longer than the fastest tap manages on its own.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Three-quarters of a number is 60. What is the number?",
+      "prompt": "Taking pi as 22/7, what is the perimeter of a semicircle of radius 14 cm?",
       "options": [
-        "85",
-        "90",
-        "70",
-        "75",
-        "80"
+        "44 cm",
+        "72 cm",
+        "88 cm",
+        "56 cm",
+        "100 cm"
       ],
-      "correctAnswer": "80",
-      "answer": "E",
-      "explanation": "(3/4)x = 60 → x = 60 × 4 ÷ 3 = 80.",
+      "correctAnswer": "72 cm",
+      "answer": "B",
+      "explanation": "The curved edge is half the circumference: 22/7 × 14 = 44 cm. The straight edge is the diameter, 28 cm, giving 72 cm in all. 44 cm leaves out the diameter, which a semicircle needs to be a closed shape.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
+      "prompt": "A number has 7 added to it, and the result is multiplied by 3 to give 45. What was the number?",
       "options": [
-        "8 : 15",
-        "6 : 5",
-        "3 : 5",
-        "8 : 5",
-        "2 : 5"
+        "15",
+        "38",
+        "12",
+        "8",
+        "6"
       ],
-      "correctAnswer": "8 : 15",
-      "answer": "A",
-      "explanation": "Make b common: a:b = 8:12, b:c = 12:15. So a:c = 8:15.",
+      "correctAnswer": "8",
+      "answer": "D",
+      "explanation": "Undoing the steps in reverse: 45 divided by 3 is 15, and taking away 7 leaves 8. Checking forwards: 8 + 7 = 15, and 15 × 3 = 45. Stopping at 15 misses the last step, and taking 7 off 45 first gives 38, which undoes the operations in the order they were applied rather than in reverse.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
+      "prompt": "How long is it from 10:35 to 14:20?",
       "options": [
-        "18",
-        "24",
-        "36",
-        "9",
-        "12"
+        "3 hours 45 minutes",
+        "4 hours 15 minutes",
+        "3 hours 15 minutes",
+        "4 hours 45 minutes",
+        "3 hours 55 minutes"
       ],
-      "correctAnswer": "24",
-      "answer": "B",
-      "explanation": "Volume = length × width × height = 2 × 3 × 4 = 24.",
+      "correctAnswer": "3 hours 45 minutes",
+      "answer": "A",
+      "explanation": "From 10:35 to 14:35 would be four hours, and 14:20 is 40 minutes short of that, so the answer is 3 hours 45 minutes. Subtracting the digits as though they were decimals gives 3 hours 85 minutes, which then has to be carried into 3 hours 45 minutes anyway.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
+      "prompt": "A car uses 8 litres of fuel per 100 km. How many kilometres does it travel on one litre?",
       "options": [
-        "480",
-        "540",
-        "600",
-        "640",
-        "720"
+        "8 km",
+        "8.5 km",
+        "12.5 km",
+        "10 km",
+        "16 km"
       ],
-      "correctAnswer": "600",
+      "correctAnswer": "12.5 km",
       "answer": "C",
-      "explanation": "0.20 × total = 120 → total = 120 ÷ 0.20 = 600.",
+      "explanation": "8 litres carry the car 100 km, so one litre carries it 100 / 8 = 12.5 km. The two figures are reciprocals of each other: a car using fewer litres per 100 km travels further on each one, so a smaller consumption figure means a larger distance figure.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A traveller drives to a town at 60 mph and returns along the same road at 40 mph. What is the average speed for the round trip?",
+      "prompt": "Ten numbers have a mean of 40. One of them is increased by 30 and the others are unchanged. By what percentage does the mean rise?",
       "options": [
-        "52 mph",
-        "55 mph",
-        "45 mph",
-        "48 mph",
-        "50 mph"
+        "75%",
+        "3%",
+        "10%",
+        "30%",
+        "7.5%"
       ],
-      "correctAnswer": "48 mph",
-      "answer": "D",
-      "explanation": "Round-trip average = 2·v₁·v₂ ÷ (v₁+v₂) = 2 × 60 × 40 ÷ 100 = 4800 ÷ 100 = 48 mph.",
+      "correctAnswer": "7.5%",
+      "answer": "E",
+      "explanation": "The total rises by 30, which spread over 10 numbers lifts the mean by 3. Against a mean of 40 that is 7.5%. Measuring the 30 against the mean directly gives 75% and forgets that the rise is shared between all 10 numbers.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the simple interest on $2,000 at 5% per year for 3 years?",
+      "prompt": "What is the median of the first 50 positive whole numbers?",
       "options": [
-        "$350",
-        "$400",
-        "$200",
-        "$250",
-        "$300"
+        "25",
+        "25.5",
+        "26",
+        "24.5",
+        "50"
       ],
-      "correctAnswer": "$300",
-      "answer": "E",
-      "explanation": "SI = P × r × t = 2000 × 0.05 × 3 = 300.",
+      "correctAnswer": "25.5",
+      "answer": "B",
+      "explanation": "With 50 numbers in order the median sits between the 25th and the 26th, which are 25 and 26: their average is 25.5. An even-sized set has no single middle value, so the median need not be a whole number even when every value is.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 5 identical pens cost $20, how much do 8 of the same pens cost?",
+      "prompt": "The interior angles of a polygon add to 1,440 degrees. How many sides does it have?",
       "options": [
-        "$32",
-        "$36",
-        "$40",
-        "$28",
-        "$30"
+        "8",
+        "12",
+        "9",
+        "10",
+        "16"
       ],
-      "correctAnswer": "$32",
-      "answer": "A",
-      "explanation": "Unit price = 20 ÷ 5 = $4. 8 pens = 8 × 4 = $32.",
+      "correctAnswer": "10",
+      "answer": "D",
+      "explanation": "The interior angles of an n-sided polygon add to (n − 2) × 180 degrees. Setting that equal to 1,440 gives n − 2 = 8, so n = 10. 8 is n − 2 rather than n — the 2 has to be added back.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A tank is 3/5 full. Adding 20 litres makes it 4/5 full. What is the tank's total capacity?",
+      "prompt": "3 machines print 4,500 pages in 15 minutes. At the same rate, how many pages do 5 machines print in 24 minutes?",
       "options": [
-        "90 litres",
-        "100 litres",
-        "110 litres",
-        "120 litres",
-        "80 litres"
+        "7,500",
+        "7,200",
+        "12,000",
+        "9,000",
+        "15,000"
       ],
-      "correctAnswer": "100 litres",
-      "answer": "B",
-      "explanation": "4/5 − 3/5 = 1/5 of capacity = 20 litres → capacity = 20 × 5 = 100 litres.",
+      "correctAnswer": "12,000",
+      "answer": "C",
+      "explanation": "3 machines over 15 minutes is 45 machine-minutes for 4,500 pages, so one machine-minute prints 100. 5 machines over 24 minutes is 120 machine-minutes: 12,000 pages. Scaling by the machines alone gives 7,500.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of √144 + √81?",
+      "prompt": "The roots of x² − 7x + 12 = 0 are p and q. What is 1/p + 1/q?",
       "options": [
-        "18",
-        "20",
-        "21",
-        "25",
-        "15"
+        "12/7",
+        "7",
+        "12",
+        "1/12",
+        "7/12"
       ],
-      "correctAnswer": "21",
-      "answer": "C",
-      "explanation": "√144 = 12 and √81 = 9. 12 + 9 = 21.",
+      "correctAnswer": "7/12",
+      "answer": "E",
+      "explanation": "1/p + 1/q is (p + q) / pq. For x² − 7x + 12, the roots add to 7 and multiply to 12, so the answer is 7/12. The roots themselves are 3 and 4, and 1/3 + 1/4 is indeed 7/12 — but the coefficients give it without solving anything.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
+      "prompt": "Our price is £96.00 and a competitor charges £72.00. What percentage discount would bring our price down to theirs?",
       "options": [
-        "$20.00",
-        "$14.00",
-        "$18.50",
-        "$21.50",
-        "$19.25"
+        "25%",
+        "33.33%",
+        "20%",
+        "30%",
+        "24%"
       ],
-      "correctAnswer": "$21.50",
-      "answer": "D",
-      "explanation": "Notebooks: 4 × $3.50 = $14.00. Pens: 6 × $1.25 = $7.50. Total = $14.00 + $7.50 = $21.50.",
+      "correctAnswer": "25%",
+      "answer": "A",
+      "explanation": "The gap is £24.00, and a discount is measured against our own price: £24.00 / £96.00 = 25%. Measuring it against the competitor's price gives 33.33%, which is how much dearer we are than them rather than how much we must come down.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
+      "prompt": "If f(x) = 3x − 2 and g(x) = x², what is f(g(4))?",
       "options": [
-        "65 mph",
-        "70 mph",
-        "55 mph",
-        "58 mph",
-        "60 mph"
+        "100",
+        "46",
+        "34",
+        "22",
+        "144"
       ],
-      "correctAnswer": "60 mph",
-      "answer": "E",
-      "explanation": "Total distance = 240 + 180 = 420 miles. Total time = 4 + 3 = 7 hours. Average = 420 ÷ 7 = 60 mph.",
+      "correctAnswer": "46",
+      "answer": "B",
+      "explanation": "Work from the inside out: g(4) is 4² = 16, and f(16) is 3 × 16 − 2 = 46. Applying the functions the other way round, as g(f(4)), gives 100 — composition is not commutative, so the order matters.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 40% of a number is 64, what is 75% of that number?",
+      "prompt": "£12,000.00 is split between an account paying 4% and one paying 7%, earning £690.00 in a year altogether. How much is in the 7% account?",
       "options": [
-        "120",
-        "128",
-        "96",
-        "100",
-        "108"
+        "£5,000.00",
+        "£6,000.00",
+        "£4,000.00",
+        "£7,000.00",
+        "£8,000.00"
       ],
-      "correctAnswer": "120",
-      "answer": "A",
-      "explanation": "0.40x = 64 → x = 160. 75% of 160 = 0.75 × 160 = 120.",
+      "correctAnswer": "£7,000.00",
+      "answer": "D",
+      "explanation": "All £12,000.00 at 7% would earn £840.00, which is £150.00 too much. Every pound moved to the 4% account gives up 3p a year, so £5,000.00 sits there and £7,000.00 at 7%. Checking: £200.00 plus £490.00 is £690.00.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-023-q001": "30%",
-    "gmat-quant-023-q002": "9",
-    "gmat-quant-023-q003": "42",
-    "gmat-quant-023-q004": "30",
-    "gmat-quant-023-q005": "154",
-    "gmat-quant-023-q006": "20 litres",
-    "gmat-quant-023-q007": "120",
-    "gmat-quant-023-q008": "24",
-    "gmat-quant-023-q009": "12",
-    "gmat-quant-023-q010": "80",
-    "gmat-quant-023-q011": "8 : 15",
-    "gmat-quant-023-q012": "24",
-    "gmat-quant-023-q013": "600",
-    "gmat-quant-023-q014": "48 mph",
-    "gmat-quant-023-q015": "$300",
-    "gmat-quant-023-q016": "$32",
-    "gmat-quant-023-q017": "100 litres",
-    "gmat-quant-023-q018": "21",
-    "gmat-quant-023-q019": "$21.50",
-    "gmat-quant-023-q020": "60 mph",
-    "gmat-quant-023-q021": "120"
+    "gmat-quant-023-q001": "40%",
+    "gmat-quant-023-q002": "125",
+    "gmat-quant-023-q003": "3",
+    "gmat-quant-023-q004": "180 degrees",
+    "gmat-quant-023-q005": "27 : 23",
+    "gmat-quant-023-q006": "189",
+    "gmat-quant-023-q007": "a loss of £0.50",
+    "gmat-quant-023-q008": "8",
+    "gmat-quant-023-q009": "5 hours",
+    "gmat-quant-023-q010": "72 cm",
+    "gmat-quant-023-q011": "8",
+    "gmat-quant-023-q012": "3 hours 45 minutes",
+    "gmat-quant-023-q013": "12.5 km",
+    "gmat-quant-023-q014": "7.5%",
+    "gmat-quant-023-q015": "25.5",
+    "gmat-quant-023-q016": "10",
+    "gmat-quant-023-q017": "12,000",
+    "gmat-quant-023-q018": "7/12",
+    "gmat-quant-023-q019": "25%",
+    "gmat-quant-023-q020": "46",
+    "gmat-quant-023-q021": "£7,000.00"
   }
 }
