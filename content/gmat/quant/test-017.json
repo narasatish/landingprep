@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "One worker completes two fifths of a job. A second then completes a third of what remains. What fraction of the job is still undone?",
       "options": [
-        "32",
-        "35",
-        "38",
-        "29",
-        "30"
+        "4/15",
+        "1/3",
+        "2/5",
+        "3/5",
+        "1/5"
       ],
-      "correctAnswer": "32",
-      "answer": "A",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "correctAnswer": "2/5",
+      "answer": "C",
+      "explanation": "Two fifths done leaves three fifths. A third of that three fifths is one fifth of the whole job, so three fifths less one fifth leaves two fifths undone. Subtracting the two fractions as given, 3/5 − 1/3, gives 4/15 and takes the third from the whole job rather than from the remainder.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "In the formula v = u + at, what is a when v = 47, u = 11 and t = 6?",
       "options": [
-        "1250",
-        "1275",
-        "1300",
-        "1175",
-        "1225"
+        "9.67",
+        "9",
+        "5",
+        "8",
+        "6"
       ],
-      "correctAnswer": "1275",
-      "answer": "B",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "correctAnswer": "6",
+      "answer": "E",
+      "explanation": "Taking u from both sides gives at = v − u = 36, and dividing by t gives a = 36 / 6 = 6. Adding u instead of subtracting it gives 9.67, which is what happens when the term is moved without changing its sign.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "Five readings are 12, 17, 21, 26, 30. Two more readings, 8 and 41, are then added. What is the range of all seven?",
       "options": [
-        "12",
-        "14",
-        "16",
+        "33",
         "18",
+        "11",
+        "29",
         "20"
       ],
-      "correctAnswer": "16",
-      "answer": "C",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "correctAnswer": "33",
+      "answer": "A",
+      "explanation": "The new readings extend the set at both ends: the smallest is now 8 and the largest 41, so the range is 33. 18 is the range of the original five, which the two new readings have widened at both ends at once.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "Three squares of side 5 cm are joined edge to edge to form an L shape. What is the perimeter of the L?",
       "options": [
-        "35%",
-        "40%",
-        "20%",
-        "25%",
-        "30%"
+        "60 cm",
+        "50 cm",
+        "35 cm",
+        "40 cm",
+        "30 cm"
       ],
-      "correctAnswer": "25%",
+      "correctAnswer": "40 cm",
       "answer": "D",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "explanation": "Tracing the outline of the L crosses eight edges of 5 cm: 8 × 5 = 40 cm. 60 cm adds up all twelve edges of the three separate squares and ignores that joining them hides four of those edges inside the shape.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "Concrete is mixed in the ratio 1 : 2 : 4 of cement to sand to gravel. If 350 kg of cement is used, what is the total mass of concrete?",
       "options": [
-        "10 days",
-        "11 days",
-        "16 days",
-        "8 days",
-        "9 days"
+        "1,400 kg",
+        "2,450 kg",
+        "1,050 kg",
+        "1,750 kg",
+        "2,100 kg"
       ],
-      "correctAnswer": "9 days",
-      "answer": "E",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "correctAnswer": "2,450 kg",
+      "answer": "B",
+      "explanation": "Cement is one part, so one part is 350 kg and the whole mix is 7 parts: 2,450 kg. 1,400 kg is the gravel alone, and multiplying by 3 for the three ingredients gives 1,050 kg, which ignores the sizes of the parts.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "Which of these fractions lies between 1/3 and 1/2?",
       "options": [
-        "15",
-        "16",
-        "18",
-        "13",
-        "14"
+        "1/4",
+        "3/5",
+        "2/5",
+        "5/8",
+        "1/6"
       ],
-      "correctAnswer": "15",
-      "answer": "A",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "correctAnswer": "2/5",
+      "answer": "C",
+      "explanation": "As decimals, 1/3 is 0.333 and 1/2 is 0.5. Of the options, 2/5 is 0.4, which sits between them; 1/4 is 0.25 and 1/6 is 0.167, both below 1/3, while 3/5 is 0.6 and 5/8 is 0.625, both above 1/2. Comparing fractions is easiest once they are all written as decimals or over a common denominator.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "Of 200 people, 120 own a car and 45 of those also own a bicycle. What percentage of car owners own a bicycle?",
       "options": [
-        "25%",
-        "30%",
-        "35%",
-        "15%",
-        "20%"
+        "22.5%",
+        "60.00%",
+        "26.67%",
+        "37.5%",
+        "45.00%"
       ],
-      "correctAnswer": "30%",
-      "answer": "B",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "correctAnswer": "37.5%",
+      "answer": "D",
+      "explanation": "The question asks for a share of car owners, not of everybody: 45 out of 120 is 37.5%. Measuring the same 45 against all 200 people gives 22.5%, which answers a different question.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "prompt": "A course costs £900.00, with a £150.00 rebate paid afterwards. What is the rebate as a percentage of the price, to two decimal places?",
       "options": [
-        "12",
-        "7",
-        "9",
-        "10",
-        "11"
+        "20%",
+        "15.00%",
+        "18.00%",
+        "12.50%",
+        "16.67%"
       ],
-      "correctAnswer": "9",
-      "answer": "C",
-      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "correctAnswer": "16.67%",
+      "answer": "E",
+      "explanation": "£150.00 out of £900.00 is 16.67%. Measuring the rebate against what is actually paid, £750.00, gives 20% — the same money against a smaller base.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3x = 18, what is the value of x² + x?",
+      "prompt": "Two walkers start 21 km apart and walk towards each other at 5 km/h and 7 km/h. How long until they meet?",
       "options": [
-        "54",
-        "36",
-        "40",
-        "42",
-        "48"
+        "1.75 hours",
+        "10.5 hours",
+        "3 hours",
+        "2.5 hours",
+        "4.2 hours"
       ],
-      "correctAnswer": "42",
-      "answer": "D",
-      "explanation": "x = 6. x² + x = 36 + 6 = 42.",
+      "correctAnswer": "1.75 hours",
+      "answer": "A",
+      "explanation": "Walking towards each other, the gap closes at 5 + 7 = 12 km/h, so 21 km takes 1.75 hours. Subtracting the speeds gives 10.5 hours, which would apply if one were chasing the other.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "prompt": "A prism is 15 cm long and its cross-section is a right-angled triangle with legs of 6 cm and 8 cm. What is its volume?",
       "options": [
-        "36",
-        "60",
-        "24",
-        "28",
-        "30"
+        "720 cm³",
+        "360 cm³",
+        "180 cm³",
+        "480 cm³",
+        "240 cm³"
       ],
-      "correctAnswer": "30",
-      "answer": "E",
-      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "correctAnswer": "360 cm³",
+      "answer": "B",
+      "explanation": "The cross-section has an area of 6 × 8 / 2 = 24 cm², and the volume is that area times the length: 24 × 15 = 360 cm³. Forgetting to halve gives 720 cm³, the volume of the box that encloses the prism.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "prompt": "What is the larger solution of x² − 11x + 24 = 0?",
       "options": [
-        "154",
-        "168",
-        "176",
-        "132",
-        "144"
+        "3",
+        "11",
+        "8",
+        "24",
+        "6"
       ],
-      "correctAnswer": "154",
-      "answer": "A",
-      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "correctAnswer": "8",
+      "answer": "C",
+      "explanation": "The equation factorises as (x − 3)(x − 8) = 0, because 3 and 8 multiply to 24 and add to 11. The solutions are 3 and 8, so the larger is 8. 3 is the smaller root, and 11 and 24 are the coefficients rather than solutions.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "prompt": "A shift runs from 22:15 to 06:40 the next morning. How long is it?",
       "options": [
-        "18 litres",
-        "20 litres",
-        "22 litres",
-        "24 litres",
-        "16 litres"
+        "8 hours 25 minutes",
+        "16 hours 25 minutes",
+        "7 hours 25 minutes",
+        "8 hours 55 minutes",
+        "9 hours 25 minutes"
       ],
-      "correctAnswer": "20 litres",
-      "answer": "B",
-      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "correctAnswer": "8 hours 25 minutes",
+      "answer": "A",
+      "explanation": "From 22:15 to midnight is 105 minutes, and from midnight to 06:40 is 400 minutes: 505 minutes in all, or 8 hours 25 minutes. Subtracting the clock times directly gives 16 hours 25 minutes, the time spent off shift rather than on it.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 5! (5 factorial)?",
+      "prompt": "On a map drawn to a scale of 1 : 50,000, a field covers 4 cm². What is its area on the ground?",
       "options": [
-        "60",
-        "100",
-        "120",
-        "150",
-        "720"
+        "2 km²",
+        "4 km²",
+        "0.5 km²",
+        "1 km²",
+        "20 km²"
       ],
-      "correctAnswer": "120",
-      "answer": "C",
-      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "correctAnswer": "1 km²",
+      "answer": "D",
+      "explanation": "Lengths scale by 50,000, so areas scale by 50,000² — that is 2,500,000,000. The field covers 4 × 2,500,000,000 = 10,000,000,000 cm², and there are 10 billion square centimetres in a square kilometre, giving 1 km². Scaling by the length rather than its square gives 2 km² and treats area as if it had one dimension.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
+      "prompt": "An item cost £48.00 in a year when a price index stood at 100. The index now stands at 135. What would the item cost now, at the same index?",
       "options": [
-        "12",
-        "16",
-        "20",
-        "24",
-        "48"
+        "£183.00",
+        "£16.80",
+        "£70.00",
+        "£60.00",
+        "£64.80"
       ],
-      "correctAnswer": "24",
-      "answer": "D",
-      "explanation": "Multiples of 8: 8, 16, 24 … 24 is divisible by 4 and 6, so LCM = 24.",
+      "correctAnswer": "£64.80",
+      "answer": "E",
+      "explanation": "The index has risen to 135% of its base, so the price rises in the same proportion: £48.00 × 135/100 = £64.80. £16.80 is the increase alone rather than the new price.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
+      "prompt": "The five numbers 7, 11, x, 19 and 23 are listed in order and have a median of 15. What is x?",
       "options": [
-        "18",
-        "24",
-        "6",
-        "8",
-        "12"
+        "13",
+        "15",
+        "17",
+        "16",
+        "14"
       ],
-      "correctAnswer": "12",
-      "answer": "E",
-      "explanation": "24 = 12 × 2, 36 = 12 × 3. The largest common factor is 12.",
+      "correctAnswer": "15",
+      "answer": "B",
+      "explanation": "With five numbers in order, the median is the third one, and x sits third in the list. So x is 15 itself. The value has to lie between 11 and 19 for the list to stay in order, which 15 does — but only 15 makes it the median.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Three-quarters of a number is 60. What is the number?",
+      "prompt": "How many diagonals does a regular 9-sided polygon have?",
       "options": [
-        "80",
-        "85",
-        "90",
-        "70",
-        "75"
+        "54",
+        "36",
+        "27",
+        "18",
+        "9"
       ],
-      "correctAnswer": "80",
-      "answer": "A",
-      "explanation": "(3/4)x = 60 → x = 60 × 4 ÷ 3 = 80.",
+      "correctAnswer": "27",
+      "answer": "C",
+      "explanation": "Each of the 9 vertices joins to 6 others by a diagonal — every vertex except itself and its two neighbours. That counts each diagonal twice, so the total is 9 × 6 / 2 = 27. Leaving out the halving gives 54 and counts every diagonal from both ends.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
+      "prompt": "A room measures 4.5 m by 3.2 m. Carpet costs £18.50 a square metre. What does it cost to carpet the room?",
       "options": [
-        "2 : 5",
-        "8 : 15",
-        "6 : 5",
-        "3 : 5",
-        "8 : 5"
+        "£284.90",
+        "£250.00",
+        "£280.00",
+        "£300.00",
+        "£266.40"
       ],
-      "correctAnswer": "8 : 15",
-      "answer": "B",
-      "explanation": "Make b common: a:b = 8:12, b:c = 12:15. So a:c = 8:15.",
+      "correctAnswer": "£266.40",
+      "answer": "E",
+      "explanation": "The floor covers 4.5 × 3.2 = 14.4 m², and at £18.50 a square metre that costs £266.40. Using the perimeter, 15.4 m, instead of the area gives £284.90 and buys carpet by the metre rather than by the square metre.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
+      "prompt": "What is the smallest whole number by which 720 must be multiplied to give a perfect square?",
       "options": [
-        "12",
-        "18",
-        "24",
-        "36",
-        "9"
+        "2",
+        "3",
+        "10",
+        "5",
+        "20"
       ],
-      "correctAnswer": "24",
-      "answer": "C",
-      "explanation": "Volume = length × width × height = 2 × 3 × 4 = 24.",
+      "correctAnswer": "5",
+      "answer": "D",
+      "explanation": "720 factorises as 2⁴ × 3² × 5. A perfect square needs every prime to appear an even number of times, and only the 5 appears an odd number of times, so multiplying by 5 is enough: 3,600 = 60². Multiplying by 2 or 3 would upset primes that are already paired.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
+      "prompt": "£4,000.00 earns 20% a year, compounded half-yearly. What is it worth after 2 years?",
       "options": [
-        "720",
-        "480",
-        "540",
-        "600",
-        "640"
+        "£5,856.40",
+        "£5,760.00",
+        "£5,600.00",
+        "£5,000.00",
+        "£6,200.00"
       ],
-      "correctAnswer": "600",
-      "answer": "D",
-      "explanation": "0.20 × total = 120 → total = 120 ÷ 0.20 = 600.",
+      "correctAnswer": "£5,856.40",
+      "answer": "A",
+      "explanation": "Half-yearly compounding pays 10% four times over 2 years: £4,000.00 × 1.1 to the fourth power = £5,856.40. Compounding once a year gives £5,760.00, £96.40 less, because each half-year's interest starts earning interest of its own six months sooner.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A traveller drives to a town at 60 mph and returns along the same road at 40 mph. What is the average speed for the round trip?",
+      "prompt": "A sequence begins at 5, and each term after that is twice the previous term less 3. What is the fourth term?",
       "options": [
-        "50 mph",
-        "52 mph",
-        "55 mph",
-        "45 mph",
-        "48 mph"
+        "11",
+        "19",
+        "13",
+        "23",
+        "35"
       ],
-      "correctAnswer": "48 mph",
-      "answer": "E",
-      "explanation": "Round-trip average = 2·v₁·v₂ ÷ (v₁+v₂) = 2 × 60 × 40 ÷ 100 = 4800 ÷ 100 = 48 mph.",
+      "correctAnswer": "19",
+      "answer": "B",
+      "explanation": "The terms run 5, then 2 × 5 − 3 = 7, then 2 × 7 − 3 = 11, then 2 × 11 − 3 = 19. 11 is the third term — an easy one to stop at, since the first term is counted as term one rather than term zero.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the simple interest on $2,000 at 5% per year for 3 years?",
+      "prompt": "A bill of £288.00 is shared between three people in proportion to the nights each stayed: 30, 24, 18. What is the largest share?",
       "options": [
-        "$300",
-        "$350",
-        "$400",
-        "$200",
-        "$250"
+        "£96.00",
+        "£160.00",
+        "£120.00",
+        "£72.00",
+        "£144.00"
       ],
-      "correctAnswer": "$300",
-      "answer": "A",
-      "explanation": "SI = P × r × t = 2000 × 0.05 × 3 = 300.",
+      "correctAnswer": "£120.00",
+      "answer": "C",
+      "explanation": "The three stayed 72 nights between them, so each night costs £4.00. The longest stay, 30 nights, comes to £120.00. Splitting the bill equally would give £96.00 each and ignore the different lengths of stay; leaving the shortest stay out of the reckoning altogether gives £160.00.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-017-q001": "32",
-    "gmat-quant-017-q002": "1275",
-    "gmat-quant-017-q003": "16",
-    "gmat-quant-017-q004": "25%",
-    "gmat-quant-017-q005": "9 days",
-    "gmat-quant-017-q006": "15",
-    "gmat-quant-017-q007": "30%",
-    "gmat-quant-017-q008": "9",
-    "gmat-quant-017-q009": "42",
-    "gmat-quant-017-q010": "30",
-    "gmat-quant-017-q011": "154",
-    "gmat-quant-017-q012": "20 litres",
-    "gmat-quant-017-q013": "120",
-    "gmat-quant-017-q014": "24",
-    "gmat-quant-017-q015": "12",
-    "gmat-quant-017-q016": "80",
-    "gmat-quant-017-q017": "8 : 15",
-    "gmat-quant-017-q018": "24",
-    "gmat-quant-017-q019": "600",
-    "gmat-quant-017-q020": "48 mph",
-    "gmat-quant-017-q021": "$300"
+    "gmat-quant-017-q001": "2/5",
+    "gmat-quant-017-q002": "6",
+    "gmat-quant-017-q003": "33",
+    "gmat-quant-017-q004": "40 cm",
+    "gmat-quant-017-q005": "2,450 kg",
+    "gmat-quant-017-q006": "2/5",
+    "gmat-quant-017-q007": "37.5%",
+    "gmat-quant-017-q008": "16.67%",
+    "gmat-quant-017-q009": "1.75 hours",
+    "gmat-quant-017-q010": "360 cm³",
+    "gmat-quant-017-q011": "8",
+    "gmat-quant-017-q012": "8 hours 25 minutes",
+    "gmat-quant-017-q013": "1 km²",
+    "gmat-quant-017-q014": "£64.80",
+    "gmat-quant-017-q015": "15",
+    "gmat-quant-017-q016": "27",
+    "gmat-quant-017-q017": "£266.40",
+    "gmat-quant-017-q018": "5",
+    "gmat-quant-017-q019": "£5,856.40",
+    "gmat-quant-017-q020": "19",
+    "gmat-quant-017-q021": "£120.00"
   }
 }
