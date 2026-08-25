@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "63 is 18% of what number?",
       "options": [
-        "9 days",
-        "10 days",
-        "11 days",
-        "16 days",
-        "8 days"
+        "11.34",
+        "350",
+        "300",
+        "400",
+        "280"
       ],
-      "correctAnswer": "9 days",
-      "answer": "A",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "correctAnswer": "350",
+      "answer": "B",
+      "explanation": "If 63 is 18% of a number, that number is 63 / 0.18 = 350. Checking: 18% of 350 is 63. Taking 18% of 63 instead gives 11.34, which shrinks the figure when the question calls for it to grow.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "If 2x + 3y = 31 and 4x − y = 27, what is the value of y?",
       "options": [
-        "14",
-        "15",
-        "16",
-        "18",
-        "13"
+        "8",
+        "3",
+        "5",
+        "7",
+        "11"
       ],
-      "correctAnswer": "15",
-      "answer": "B",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "correctAnswer": "5",
+      "answer": "C",
+      "explanation": "Multiplying the second equation by 3 gives 12x − 3y = 81. Adding it to the first eliminates y: 14x = 112, so x = 8. Substituting back into 2x + 3y = 31 gives 16 + 3y = 31 and y = 5. 8 is the value of x, which is the step before the answer.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "Eight numbers have a mean of 25. One of them, 14, is then doubled. What is the new mean?",
       "options": [
-        "20%",
-        "25%",
-        "30%",
-        "35%",
-        "15%"
+        "50",
+        "39",
+        "26.00",
+        "27.75",
+        "26.75"
       ],
-      "correctAnswer": "30%",
-      "answer": "C",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "correctAnswer": "26.75",
+      "answer": "E",
+      "explanation": "The eight total 200. Doubling 14 adds another 14 to that total, making 214 over the same eight numbers: 26.75. Doubling the mean itself gives 50 and would be right only if every number had been doubled.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "prompt": "A chord of a circle of radius 13 cm lies 5 cm from the centre. How long is the chord?",
       "options": [
-        "11",
-        "12",
-        "7",
-        "9",
-        "10"
+        "12 cm",
+        "26 cm",
+        "18 cm",
+        "24 cm",
+        "10 cm"
       ],
-      "correctAnswer": "9",
+      "correctAnswer": "24 cm",
       "answer": "D",
-      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "explanation": "The perpendicular from the centre bisects the chord, making a right-angled triangle with sides 5, half the chord, and 13. Half the chord is the square root of 13² − 5² = 144, which is 12, so the chord is 24 cm. 12 cm is only half of it.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3x = 18, what is the value of x² + x?",
+      "prompt": "Two cars cover the same distance, and their speeds are in the ratio 5 : 6. What is the ratio of the times they take?",
       "options": [
-        "48",
-        "54",
-        "36",
-        "40",
-        "42"
+        "6 : 5",
+        "5 : 6",
+        "1 : 1",
+        "25 : 36",
+        "11 : 1"
       ],
-      "correctAnswer": "42",
-      "answer": "E",
-      "explanation": "x = 6. x² + x = 36 + 6 = 42.",
+      "correctAnswer": "6 : 5",
+      "answer": "A",
+      "explanation": "Over a fixed distance, time is inversely proportional to speed, so the ratio of times is the ratio of speeds reversed: 6 : 5. The faster car takes less time, so writing the times in the same order as the speeds, 5 : 6, has the slower car finishing first.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "prompt": "What is the smallest integer greater than the square root of 150?",
       "options": [
-        "30",
-        "36",
-        "60",
-        "24",
-        "28"
+        "12",
+        "13",
+        "14",
+        "15",
+        "11"
       ],
-      "correctAnswer": "30",
-      "answer": "A",
-      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "correctAnswer": "13",
+      "answer": "B",
+      "explanation": "12² is 144, which is below 150, and 13² is 169, which is above it. So the square root of 150 lies between 12 and 13, and 13 is the smallest integer above it. 12 is the largest integer below.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "prompt": "A fair coin is tossed and a fair six-sided die is rolled. What is the probability of a head together with a score above 4?",
       "options": [
-        "144",
-        "154",
-        "168",
-        "176",
-        "132"
+        "1/2",
+        "1/3",
+        "1/12",
+        "1/6",
+        "2/3"
       ],
-      "correctAnswer": "154",
-      "answer": "B",
-      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "correctAnswer": "1/6",
+      "answer": "D",
+      "explanation": "A head has probability 1/2, and a score above 4 means a 5 or a 6, which is 2/6 or 1/3. The two are independent, so the chance of both is 1/2 × 1/3 = 1/6. 1/3 is the die on its own, and adding the two probabilities rather than multiplying them would give a figure larger than either.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "prompt": "A shop offers \"buy 3, get 1 free\". What single discount is that equivalent to?",
       "options": [
-        "16 litres",
-        "18 litres",
-        "20 litres",
-        "22 litres",
-        "24 litres"
+        "33.33%",
+        "20%",
+        "25%",
+        "30%",
+        "50%"
       ],
-      "correctAnswer": "20 litres",
+      "correctAnswer": "25%",
       "answer": "C",
-      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "explanation": "The customer takes 4 items away and pays for 3, so one item in every 4 is free — a discount of 25% on what would otherwise be paid. Reading the free item against the 3 paid for gives 33.33%, which measures against the wrong total.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 5! (5 factorial)?",
+      "prompt": "20 workers can finish a job in 18 days. After 6 days, 5 of them leave. How many days does the whole job take?",
       "options": [
-        "720",
-        "60",
-        "100",
-        "120",
-        "150"
+        "16 days",
+        "18",
+        "24 days",
+        "20 days",
+        "22 days"
       ],
-      "correctAnswer": "120",
-      "answer": "D",
-      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "correctAnswer": "22 days",
+      "answer": "E",
+      "explanation": "The job is 20 × 18 = 360 worker-days. The first 6 days use 120 of them, leaving 240 for the 15 who stay: 16 more days. The whole job therefore takes 6 + 16 = 22 days. 16 days counts only the second stretch.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
+      "prompt": "Someone walks 9 km due north and then 12 km due east. How far are they from where they started?",
       "options": [
-        "48",
-        "12",
-        "16",
-        "20",
-        "24"
+        "15 km",
+        "21 km",
+        "3 km",
+        "18 km",
+        "12 km"
       ],
-      "correctAnswer": "24",
-      "answer": "E",
-      "explanation": "Multiples of 8: 8, 16, 24 … 24 is divisible by 4 and 6, so LCM = 24.",
+      "correctAnswer": "15 km",
+      "answer": "A",
+      "explanation": "The two legs are at right angles, so the direct distance is the square root of 9² + 12² = 81 + 144 = 225, which is 15 km. 21 km is how far they walked, not how far they finished from the start.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
+      "prompt": "Taking pi as 3.14, the period of a pendulum is 2 pi times the square root of L divided by g. What is the period when L = 0.9 and g = 10?",
       "options": [
-        "12",
-        "18",
-        "24",
-        "6",
-        "8"
+        "0.57",
+        "0.94",
+        "1.88",
+        "3.77",
+        "5.65"
       ],
-      "correctAnswer": "12",
-      "answer": "A",
-      "explanation": "24 = 12 × 2, 36 = 12 × 3. The largest common factor is 12.",
+      "correctAnswer": "1.88",
+      "answer": "C",
+      "explanation": "L divided by g is 0.09, and its square root is 0.3. Multiplying by 2 × 3.14 = 6.28 gives 1.88. Skipping the square root gives 0.57, a tenth of the size, because the root of a number below 1 is larger than the number itself.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Three-quarters of a number is 60. What is the number?",
+      "prompt": "How many days are there from 12 March to 5 May, counting 5 May but not 12 March?",
       "options": [
-        "75",
-        "80",
-        "85",
-        "90",
-        "70"
+        "55",
+        "54",
+        "53",
+        "50",
+        "60"
       ],
-      "correctAnswer": "80",
+      "correctAnswer": "54",
       "answer": "B",
-      "explanation": "(3/4)x = 60 → x = 60 × 4 ÷ 3 = 80.",
+      "explanation": "March has 31 days, so 19 remain after the 12th. April adds 30 and May adds 5, giving 19 + 30 + 5 = 54 days. Counting the starting day as well gives 55, which is the usual source of a one-day error in date arithmetic.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
+      "prompt": "A recipe for 4 portions uses 300 g of flour and 5 eggs. With 800 g of flour and 12 eggs, how many whole portions can be made?",
       "options": [
-        "8 : 5",
-        "2 : 5",
-        "8 : 15",
-        "6 : 5",
-        "3 : 5"
+        "10",
+        "8",
+        "12",
+        "9",
+        "16"
       ],
-      "correctAnswer": "8 : 15",
-      "answer": "C",
-      "explanation": "Make b common: a:b = 8:12, b:c = 12:15. So a:c = 8:15.",
+      "correctAnswer": "9",
+      "answer": "D",
+      "explanation": "Each portion needs 75 g of flour and 1.25 eggs. The flour would stretch to 10.67 portions, but the eggs run out at 9.6, so 9 whole portions can be made. Going by the flour alone gives 10 and ignores that the eggs are the binding constraint.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
+      "prompt": "An agent earns 6% commission and is paid £1,530.00. What were the sales?",
       "options": [
-        "9",
-        "12",
-        "18",
-        "24",
-        "36"
+        "£91.80",
+        "£1,627.66",
+        "£20,000.00",
+        "£30,000.00",
+        "£25,500.00"
       ],
-      "correctAnswer": "24",
-      "answer": "D",
-      "explanation": "Volume = length × width × height = 2 × 3 × 4 = 24.",
+      "correctAnswer": "£25,500.00",
+      "answer": "E",
+      "explanation": "Commission of £1,530.00 at 6% means sales of £1,530.00 / 0.06 = £25,500.00. Checking: 6% of £25,500.00 is £1,530.00. Taking 6% of the commission gives £91.80, which runs the calculation the wrong way round.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
+      "prompt": "Six values are 15, 18, 21, 23, 27, 31. A seventh value of 40 is added. What is the new median?",
       "options": [
-        "640",
-        "720",
-        "480",
-        "540",
-        "600"
+        "23",
+        "22",
+        "21",
+        "25",
+        "27"
       ],
-      "correctAnswer": "600",
-      "answer": "E",
-      "explanation": "0.20 × total = 120 → total = 120 ÷ 0.20 = 600.",
+      "correctAnswer": "23",
+      "answer": "A",
+      "explanation": "With six values the median was the average of the third and fourth, (21 + 23) / 2 = 22. With seven it is simply the fourth, which is 23. Adding a value above all the others pushes the middle position up one place, so the median rises from 22 to 23 even though nothing near the middle changed.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A traveller drives to a town at 60 mph and returns along the same road at 40 mph. What is the average speed for the round trip?",
+      "prompt": "Two circles have radii in the ratio 3 : 5. The larger has an area of 100π cm². What is the area of the smaller?",
       "options": [
-        "48 mph",
-        "50 mph",
-        "52 mph",
-        "55 mph",
-        "45 mph"
+        "60π cm²",
+        "25π cm²",
+        "36π cm²",
+        "9π cm²",
+        "16π cm²"
       ],
-      "correctAnswer": "48 mph",
-      "answer": "A",
-      "explanation": "Round-trip average = 2·v₁·v₂ ÷ (v₁+v₂) = 2 × 60 × 40 ÷ 100 = 4800 ÷ 100 = 48 mph.",
+      "correctAnswer": "36π cm²",
+      "answer": "C",
+      "explanation": "Areas of similar figures scale as the square of the radius ratio, so the areas are in the ratio 9 : 25. That makes the smaller 100π × 9/25 = 36π cm². Scaling by the radii themselves gives 60π cm².",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the simple interest on $2,000 at 5% per year for 3 years?",
+      "prompt": "6 machines make 4,200 units in 5 days. At the same rate, how many units do 8 machines make in 3 days?",
       "options": [
-        "$250",
-        "$300",
-        "$350",
-        "$400",
-        "$200"
+        "5,600",
+        "2,800",
+        "6,300",
+        "3,360",
+        "4,480"
       ],
-      "correctAnswer": "$300",
-      "answer": "B",
-      "explanation": "SI = P × r × t = 2000 × 0.05 × 3 = 300.",
+      "correctAnswer": "3,360",
+      "answer": "D",
+      "explanation": "6 machines over 5 days is 30 machine-days for 4,200 units, so one machine-day makes 140. 8 machines over 3 days is 24 machine-days: 3,360 units. Scaling by the machines alone gives 5,600 and leaves the shorter run out of it.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 5 identical pens cost $20, how much do 8 of the same pens cost?",
+      "prompt": "One seventh written as a decimal repeats the block 142857 for ever after the decimal point. What is the 100th digit after the point?",
       "options": [
-        "$28",
-        "$30",
-        "$32",
-        "$36",
-        "$40"
+        "7",
+        "8",
+        "1",
+        "4",
+        "2"
       ],
-      "correctAnswer": "$32",
-      "answer": "C",
-      "explanation": "Unit price = 20 ÷ 5 = $4. 8 pens = 8 × 4 = $32.",
+      "correctAnswer": "8",
+      "answer": "B",
+      "explanation": "The block 142857 repeats every 6 digits. 100 divided by 6 leaves a remainder of 4, so the 100th digit is the 4th of the block: 8. A remainder of zero would mean the last digit of the block, 7, which is the case worth checking separately.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A tank is 3/5 full. Adding 20 litres makes it 4/5 full. What is the tank's total capacity?",
+      "prompt": "Fixed costs are £4,800.00 and each of 300 units costs £22.00 to make. At what price must each unit sell to break even?",
       "options": [
-        "120 litres",
-        "80 litres",
-        "90 litres",
-        "100 litres",
-        "110 litres"
+        "£22.00",
+        "£16.00",
+        "£40.00",
+        "£44.00",
+        "£38.00"
       ],
-      "correctAnswer": "100 litres",
-      "answer": "D",
-      "explanation": "4/5 − 3/5 = 1/5 of capacity = 20 litres → capacity = 20 × 5 = 100 litres.",
+      "correctAnswer": "£38.00",
+      "answer": "E",
+      "explanation": "The fixed costs come to £16.00 a unit across 300 units, on top of the £22.00 each one costs to make: £38.00. Selling at £22.00 would cover the making but none of the £4,800.00 of fixed costs.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of √144 + √81?",
+      "prompt": "If x + 1/x = 5, what is the value of x² + 1/x²?",
       "options": [
+        "23",
         "25",
-        "15",
-        "18",
-        "20",
+        "27",
+        "10",
         "21"
       ],
-      "correctAnswer": "21",
-      "answer": "E",
-      "explanation": "√144 = 12 and √81 = 9. 12 + 9 = 21.",
+      "correctAnswer": "23",
+      "answer": "A",
+      "explanation": "Squaring both sides gives (x + 1/x)² = x² + 2 + 1/x² = 25, since x × 1/x is 1 and the middle term is twice that. Taking the 2 across leaves x² + 1/x² = 25 − 2 = 23. Squaring without allowing for the middle term gives 25.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
+      "prompt": "A bureau sells euros at 1.18 to the pound and buys them back at 1.28 to the pound. If £400.00 is changed into euros and immediately changed back, how much is lost?",
       "options": [
-        "$21.50",
-        "$19.25",
-        "$20.00",
-        "$14.00",
-        "$18.50"
+        "£40.00",
+        "£35.00",
+        "£31.25",
+        "£25.00",
+        "£50.00"
       ],
-      "correctAnswer": "$21.50",
-      "answer": "A",
-      "explanation": "Notebooks: 4 × $3.50 = $14.00. Pens: 6 × $1.25 = $7.50. Total = $14.00 + $7.50 = $21.50.",
+      "correctAnswer": "£31.25",
+      "answer": "C",
+      "explanation": "£400.00 buys 472 euros. Changing those back at 1.28 gives 472 / 1.28 = £368.75, so £31.25 has gone in the spread. Multiplying the 0.1 gap by the £400.00 gives £40.00, which treats the spread as if it applied to pounds rather than to euros.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-021-q001": "9 days",
-    "gmat-quant-021-q002": "15",
-    "gmat-quant-021-q003": "30%",
-    "gmat-quant-021-q004": "9",
-    "gmat-quant-021-q005": "42",
-    "gmat-quant-021-q006": "30",
-    "gmat-quant-021-q007": "154",
-    "gmat-quant-021-q008": "20 litres",
-    "gmat-quant-021-q009": "120",
-    "gmat-quant-021-q010": "24",
-    "gmat-quant-021-q011": "12",
-    "gmat-quant-021-q012": "80",
-    "gmat-quant-021-q013": "8 : 15",
-    "gmat-quant-021-q014": "24",
-    "gmat-quant-021-q015": "600",
-    "gmat-quant-021-q016": "48 mph",
-    "gmat-quant-021-q017": "$300",
-    "gmat-quant-021-q018": "$32",
-    "gmat-quant-021-q019": "100 litres",
-    "gmat-quant-021-q020": "21",
-    "gmat-quant-021-q021": "$21.50"
+    "gmat-quant-021-q001": "350",
+    "gmat-quant-021-q002": "5",
+    "gmat-quant-021-q003": "26.75",
+    "gmat-quant-021-q004": "24 cm",
+    "gmat-quant-021-q005": "6 : 5",
+    "gmat-quant-021-q006": "13",
+    "gmat-quant-021-q007": "1/6",
+    "gmat-quant-021-q008": "25%",
+    "gmat-quant-021-q009": "22 days",
+    "gmat-quant-021-q010": "15 km",
+    "gmat-quant-021-q011": "1.88",
+    "gmat-quant-021-q012": "54",
+    "gmat-quant-021-q013": "9",
+    "gmat-quant-021-q014": "£25,500.00",
+    "gmat-quant-021-q015": "23",
+    "gmat-quant-021-q016": "36π cm²",
+    "gmat-quant-021-q017": "3,360",
+    "gmat-quant-021-q018": "8",
+    "gmat-quant-021-q019": "£38.00",
+    "gmat-quant-021-q020": "23",
+    "gmat-quant-021-q021": "£31.25"
   }
 }
