@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
+      "prompt": "In a survey, 45 of 180 people said yes. A further 20 people are asked and all say yes. What percentage now say yes?",
       "options": [
-        "$63",
-        "$66",
-        "$70",
-        "$57",
-        "$60"
+        "25%",
+        "32.5%",
+        "36.11%",
+        "30.00%",
+        "35.00%"
       ],
-      "correctAnswer": "$63",
-      "answer": "A",
-      "explanation": "Discount: 80 × 0.75 = 60. Tax: 60 × 1.05 = 63.",
+      "correctAnswer": "32.5%",
+      "answer": "B",
+      "explanation": "Both figures move: 45 + 20 = 65 yes answers out of 180 + 20 = 200 people, which is 32.5%. Adding the new answers to the old total without enlarging the base gives 36.11%.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
+      "prompt": "The formula C = 5(F − 32) / 9 converts temperatures. What is F when C = 35?",
       "options": [
-        "135 miles",
-        "150 miles",
-        "165 miles",
-        "180 miles",
-        "120 miles"
+        "51.44",
+        "67",
+        "121",
+        "63",
+        "95"
       ],
-      "correctAnswer": "150 miles",
-      "answer": "B",
-      "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
+      "correctAnswer": "95",
+      "answer": "E",
+      "explanation": "Multiply both sides by 9: 9 × 35 = 5(F − 32), so 5(F − 32) = 315 and F − 32 = 63. Adding 32 gives F = 95. Multiplying by 5 and dividing by 9 reverses the formula the wrong way and gives 51.44.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "prompt": "Five numbers have a mean of 12 and a range of 10. The smallest is 7. What is the largest?",
       "options": [
-        "16",
-        "8",
         "10",
-        "12",
-        "15"
+        "22",
+        "15",
+        "17",
+        "20"
       ],
-      "correctAnswer": "10",
-      "answer": "C",
-      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "correctAnswer": "17",
+      "answer": "D",
+      "explanation": "The range is the largest minus the smallest, so the largest is 7 + 10 = 17. The mean of 12 is consistent with this — the five could be 7, 10, 11, 15, 17, totalling 60 — but it is not needed to answer the question.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "prompt": "Taking pi as 22/7, a shape is a 14 cm by 9 cm rectangle with a semicircle drawn on one 14 cm side, replacing it. What is the perimeter of the shape?",
       "options": [
-        "1/5",
-        "2/5",
-        "1/2",
-        "3/5",
-        "2/3"
+        "46 cm",
+        "76 cm",
+        "54 cm",
+        "68 cm",
+        "47 cm"
       ],
-      "correctAnswer": "3/5",
-      "answer": "D",
-      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "correctAnswer": "54 cm",
+      "answer": "C",
+      "explanation": "The outline runs up one side, along the far 14 cm side, down the other side, then round the semicircle: 9 + 14 + 9 + 22 = 54 cm. The arc is half the circumference of a circle of diameter 14: 22/7 × 14 ÷ 2 = 22 cm. Treating it as an ordinary rectangle gives 46 cm, and adding the whole circumference rather than half of it gives 76 cm.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "A journey of 300 km is driven at 80 km/h, with a 25-minute stop along the way. How long does the whole journey take?",
       "options": [
-        "35",
-        "38",
-        "29",
-        "30",
-        "32"
+        "4 hours 10 minutes",
+        "3 hours 45 minutes",
+        "4 hours",
+        "3 hours 55 minutes",
+        "4 hours 25 minutes"
       ],
-      "correctAnswer": "32",
-      "answer": "E",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "correctAnswer": "4 hours 10 minutes",
+      "answer": "A",
+      "explanation": "Driving takes 300 / 80 = 3.75 hours, which is 225 minutes, or 3 hours 45 minutes. Adding the 25-minute stop gives 250 minutes: 4 hours 10 minutes.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "Two numbers have a highest common factor of 12 and a lowest common multiple of 180. One of the numbers is 36. What is the other?",
       "options": [
-        "1275",
-        "1300",
-        "1175",
-        "1225",
-        "1250"
+        "12",
+        "60",
+        "48",
+        "72",
+        "90"
       ],
-      "correctAnswer": "1275",
-      "answer": "A",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "correctAnswer": "60",
+      "answer": "B",
+      "explanation": "For any two numbers, the product of the highest common factor and the lowest common multiple equals the product of the numbers themselves: 12 × 180 = 2,160. Dividing by 36 gives 60. Checking: the factor pair 36 and 60 does have HCF 12 and LCM 180.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "A committee of 2 is chosen at random from 5 men and 4 women. What is the probability that at least one woman is chosen?",
       "options": [
-        "14",
-        "16",
-        "18",
-        "20",
-        "12"
+        "10/36",
+        "5/18",
+        "2/3",
+        "4/9",
+        "13/18"
       ],
-      "correctAnswer": "16",
-      "answer": "B",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "correctAnswer": "13/18",
+      "answer": "E",
+      "explanation": "Count the committees with no women: 5 men give 10 possible pairs, out of 36 pairs in all. So the chance of no woman is 10/36, and the chance of at least one is 1 − 10/36 = 26/36, which cancels to 13/18. Counting the \"at least one\" cases directly means adding two separate cases and is easy to get wrong.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "An item costing £45.00 is marked at £72.00 and then sold with 25% off the marked price. What is the profit as a percentage of cost?",
       "options": [
-        "40%",
-        "20%",
+        "60%",
         "25%",
-        "30%",
-        "35%"
+        "20%",
+        "35%",
+        "15%"
       ],
-      "correctAnswer": "25%",
+      "correctAnswer": "20%",
       "answer": "C",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "explanation": "The discount brings the price to £54.00, a profit of £9.00 on a cost of £45.00 — 20%. Selling at the marked price would have made 60%, which is the figure to beware of.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "The sum of 3 consecutive multiples of 7 is 210. What is the largest of them?",
       "options": [
-        "11 days",
-        "16 days",
-        "8 days",
-        "9 days",
-        "10 days"
+        "70",
+        "63",
+        "84",
+        "77",
+        "91"
       ],
-      "correctAnswer": "9 days",
+      "correctAnswer": "77",
       "answer": "D",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "explanation": "With three terms evenly spaced, the middle one is the mean: 210 / 3 = 70. The three are 63, 70 and 77, so the largest is 77. 70 is the middle term.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "A tap delivers 18 litres a minute. How long do 2 such taps take to fill a tank holding 4,050 litres?",
       "options": [
-        "16",
-        "18",
-        "13",
-        "14",
-        "15"
+        "112.5 minutes",
+        "225 minutes",
+        "150 minutes",
+        "90 minutes",
+        "450 minutes"
       ],
-      "correctAnswer": "15",
-      "answer": "E",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "correctAnswer": "112.5 minutes",
+      "answer": "A",
+      "explanation": "2 taps deliver 36 litres a minute, so the tank takes 4,050 / 36 = 112.5 minutes, or one hour and 52.5 minutes. One tap alone would take 225 minutes; dividing the rate by the number of taps instead of multiplying gives 450 minutes.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "An exterior angle of a triangle is 115 degrees, and one of the two interior angles opposite it is 48 degrees. What is the other opposite interior angle?",
       "options": [
-        "30%",
-        "35%",
-        "15%",
-        "20%",
-        "25%"
+        "65 degrees",
+        "67 degrees",
+        "163 degrees",
+        "83 degrees",
+        "132 degrees"
       ],
-      "correctAnswer": "30%",
-      "answer": "A",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "correctAnswer": "67 degrees",
+      "answer": "B",
+      "explanation": "An exterior angle equals the sum of the two interior angles opposite it, so the other is 115 − 48 = 67 degrees. 65 degrees is the interior angle next to the exterior one, which is a different angle in the same diagram.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "prompt": "Thirty scores are recorded: 1 appears 3 times, 2 appears 7 times, 3 appears 5 times, 4 appears 9 times, 5 appears 6 times. What is the median?",
       "options": [
-        "7",
-        "9",
-        "10",
-        "11",
-        "12"
+        "4",
+        "3",
+        "3.75",
+        "3.5",
+        "2.5"
       ],
-      "correctAnswer": "9",
-      "answer": "B",
-      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "correctAnswer": "3.5",
+      "answer": "D",
+      "explanation": "With 30 values the median sits between the 15th and 16th. Running totals are 1: 3, 2: 10, 3: 15, 4: 24, 5: 30, so the 15th value is 3 and the 16th is 4, giving a median of 3.5. The most frequent score, 4, is the mode, not the median.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3x = 18, what is the value of x² + x?",
+      "prompt": "A jacket sells for £68.00 after a 15% discount. What was the price before the discount?",
       "options": [
-        "36",
-        "40",
-        "42",
-        "48",
-        "54"
+        "£78.20",
+        "£83.00",
+        "£75.00",
+        "£90.00",
+        "£80.00"
       ],
-      "correctAnswer": "42",
-      "answer": "C",
-      "explanation": "x = 6. x² + x = 36 + 6 = 42.",
+      "correctAnswer": "£80.00",
+      "answer": "E",
+      "explanation": "The sale price is 85% of the original, so the original is £68.00 / 0.85 = £80.00. Adding 15% to the sale price gives £78.20, because 15% of the smaller figure is less than 15% of the larger one.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "prompt": "What is the smallest number that must be added to 5,437 to make it divisible by 9?",
       "options": [
-        "60",
-        "24",
-        "28",
-        "30",
-        "36"
+        "1",
+        "5",
+        "8",
+        "2",
+        "9"
       ],
-      "correctAnswer": "30",
-      "answer": "D",
-      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "correctAnswer": "8",
+      "answer": "C",
+      "explanation": "A number is divisible by 9 when its digits add to a multiple of 9. The digits of 5,437 add to 19, and the next multiple of 9 above that is 27, so 8 must be added. 1 is the remainder, which is what must be taken away instead.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "prompt": "A triangle has vertices at (0, 0), (6, 0) and (4, 5). What is its area?",
       "options": [
-        "168",
-        "176",
-        "132",
-        "144",
-        "154"
+        "15",
+        "30",
+        "12",
+        "20",
+        "11"
       ],
-      "correctAnswer": "154",
-      "answer": "E",
-      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "correctAnswer": "15",
+      "answer": "A",
+      "explanation": "The side from (0, 0) to (6, 0) lies along the x-axis and is 6 long, and the third vertex is 5 above that line, so the height is 5. The area is 6 × 5 / 2 = 15. Forgetting to halve gives 30.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "prompt": "A worker is paid £13.60 an hour for 38 hours and time and a half for 6 hours of overtime. What is the week's pay?",
       "options": [
-        "20 litres",
-        "22 litres",
-        "24 litres",
-        "16 litres",
-        "18 litres"
+        "£598.40",
+        "£639.20",
+        "£650.00",
+        "£600.00",
+        "£680.00"
       ],
-      "correctAnswer": "20 litres",
-      "answer": "A",
-      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "correctAnswer": "£639.20",
+      "answer": "B",
+      "explanation": "The basic hours pay 38 × £13.60 = £516.80. Overtime pays £20.40 an hour for 6 hours: £122.40. Together that is £639.20. Paying all 44 hours at the basic rate gives £598.40.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 5! (5 factorial)?",
+      "prompt": "If f(x) = 2x² − 3x + 1, what is f(-2)?",
       "options": [
-        "100",
-        "120",
-        "150",
-        "720",
-        "60"
+        "3",
+        "-1",
+        "11",
+        "15",
+        "5"
       ],
-      "correctAnswer": "120",
-      "answer": "B",
-      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "correctAnswer": "15",
+      "answer": "D",
+      "explanation": "Substituting: 2 × (-2)² = 2 × 4 = 8; −3 × (-2) = +6; and the constant is 1. Adding gives 15. Treating −3x as −6 rather than +6, by forgetting that x is negative, gives 3.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
+      "prompt": "3 litres of a 20% solution are mixed with 5 litres of a 36% solution. What is the strength of the mixture?",
       "options": [
-        "16",
-        "20",
-        "24",
-        "48",
-        "12"
+        "28%",
+        "26.0%",
+        "30%",
+        "32.0%",
+        "34.0%"
       ],
-      "correctAnswer": "24",
+      "correctAnswer": "30%",
       "answer": "C",
-      "explanation": "Multiples of 8: 8, 16, 24 … 24 is divisible by 4 and 6, so LCM = 24.",
+      "explanation": "The two lots hold 0.6 and 1.8 litres of the active ingredient, 2.4 litres in 8 litres of mixture: 30%. Averaging the two strengths gives 28% and ignores that there is more of the stronger solution.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
+      "prompt": "£12,000.00 rises by 30% in one year and then falls by 20% the next. What is it worth at the end?",
       "options": [
-        "24",
-        "6",
-        "8",
-        "12",
-        "18"
+        "£13,200.00",
+        "£12,000.00",
+        "£13,800.00",
+        "£15,600.00",
+        "£12,480.00"
       ],
-      "correctAnswer": "12",
-      "answer": "D",
-      "explanation": "24 = 12 × 2, 36 = 12 × 3. The largest common factor is 12.",
+      "correctAnswer": "£12,480.00",
+      "answer": "E",
+      "explanation": "After the rise it is £15,600.00, and 20% of that is £3,120.00, leaving £12,480.00. Netting the percentages to a 10% gain gives £13,200.00, because the fall is taken from the larger figure.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Three-quarters of a number is 60. What is the number?",
+      "prompt": "Two similar jugs have heights in the ratio 4 : 7. The smaller holds 320 ml. How much does the larger hold?",
       "options": [
-        "85",
-        "90",
-        "70",
-        "75",
-        "80"
+        "1,715 ml",
+        "560 ml",
+        "980 ml",
+        "1,120 ml",
+        "2,240 ml"
       ],
-      "correctAnswer": "80",
-      "answer": "E",
-      "explanation": "(3/4)x = 60 → x = 60 × 4 ÷ 3 = 80.",
+      "correctAnswer": "1,715 ml",
+      "answer": "A",
+      "explanation": "Volumes of similar solids scale as the cube of the length ratio: 7³ / 4³ = 343 / 64. So the larger holds 320 × 343 / 64 = 1,715 ml. Scaling by the heights themselves gives 560 ml and treats volume as if it had one dimension.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
+      "prompt": "A module is marked 40% on coursework and 60% on an exam. A student scores 72 on the coursework and 58 on the exam. What is the final mark?",
       "options": [
-        "8 : 15",
-        "6 : 5",
-        "3 : 5",
-        "8 : 5",
-        "2 : 5"
+        "65",
+        "63.6",
+        "66.0",
+        "61.0",
+        "64.8"
       ],
-      "correctAnswer": "8 : 15",
-      "answer": "A",
-      "explanation": "Make b common: a:b = 8:12, b:c = 12:15. So a:c = 8:15.",
+      "correctAnswer": "63.6",
+      "answer": "B",
+      "explanation": "Weight each score by its share: 0.4 × 72 = 28.8 and 0.6 × 58 = 34.8, giving 63.6. Averaging the two scores gives 65 and treats the exam as if it counted the same as the coursework.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-013-q001": "$63",
-    "gmat-quant-013-q002": "150 miles",
-    "gmat-quant-013-q003": "10",
-    "gmat-quant-013-q004": "3/5",
-    "gmat-quant-013-q005": "32",
-    "gmat-quant-013-q006": "1275",
-    "gmat-quant-013-q007": "16",
-    "gmat-quant-013-q008": "25%",
-    "gmat-quant-013-q009": "9 days",
-    "gmat-quant-013-q010": "15",
-    "gmat-quant-013-q011": "30%",
-    "gmat-quant-013-q012": "9",
-    "gmat-quant-013-q013": "42",
-    "gmat-quant-013-q014": "30",
-    "gmat-quant-013-q015": "154",
-    "gmat-quant-013-q016": "20 litres",
-    "gmat-quant-013-q017": "120",
-    "gmat-quant-013-q018": "24",
-    "gmat-quant-013-q019": "12",
-    "gmat-quant-013-q020": "80",
-    "gmat-quant-013-q021": "8 : 15"
+    "gmat-quant-013-q001": "32.5%",
+    "gmat-quant-013-q002": "95",
+    "gmat-quant-013-q003": "17",
+    "gmat-quant-013-q004": "54 cm",
+    "gmat-quant-013-q005": "4 hours 10 minutes",
+    "gmat-quant-013-q006": "60",
+    "gmat-quant-013-q007": "13/18",
+    "gmat-quant-013-q008": "20%",
+    "gmat-quant-013-q009": "77",
+    "gmat-quant-013-q010": "112.5 minutes",
+    "gmat-quant-013-q011": "67 degrees",
+    "gmat-quant-013-q012": "3.5",
+    "gmat-quant-013-q013": "£80.00",
+    "gmat-quant-013-q014": "8",
+    "gmat-quant-013-q015": "15",
+    "gmat-quant-013-q016": "£639.20",
+    "gmat-quant-013-q017": "15",
+    "gmat-quant-013-q018": "30%",
+    "gmat-quant-013-q019": "£12,480.00",
+    "gmat-quant-013-q020": "1,715 ml",
+    "gmat-quant-013-q021": "63.6"
   }
 }
