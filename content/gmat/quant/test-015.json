@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "prompt": "A tank is 3/5 full. A quarter of its contents then drains away. What fraction of the tank is now full?",
       "options": [
-        "10",
-        "12",
-        "15",
-        "16",
-        "8"
+        "3/20",
+        "2/5",
+        "1/2",
+        "9/20",
+        "7/20"
       ],
-      "correctAnswer": "10",
-      "answer": "A",
-      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "correctAnswer": "9/20",
+      "answer": "D",
+      "explanation": "A quarter draining away leaves three quarters of what was there: 3/5 × 3/4 = 9/20 of the tank, or 45%. Taking a quarter off the fraction itself, 3/5 − 1/4, gives 7/20 and treats the quarter as a share of the tank rather than of the water in it.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "prompt": "Taking pi as 22/7, a circle has an area of 154 cm². What is its radius?",
       "options": [
-        "1/2",
-        "3/5",
-        "2/3",
-        "1/5",
-        "2/5"
+        "49 cm",
+        "11 cm",
+        "7 cm",
+        "14 cm",
+        "22 cm"
       ],
-      "correctAnswer": "3/5",
-      "answer": "B",
-      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "correctAnswer": "7 cm",
+      "answer": "C",
+      "explanation": "Area is pi times the radius squared, so r² = 154 × 7 / 22 = 49 and r = 7 cm. 49 cm is r² rather than r — the square root is the step most often skipped.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "What is the median of these six values: 12, 48, 21, 63, 30, 90?",
       "options": [
-        "29",
+        "39",
+        "44",
+        "42",
         "30",
-        "32",
-        "35",
-        "38"
+        "48"
       ],
-      "correctAnswer": "32",
-      "answer": "C",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "correctAnswer": "39",
+      "answer": "A",
+      "explanation": "Put in order the values run 12, 21, 30, 48, 63, 90, so the median is the average of the third and fourth: (30 + 48) / 2 = 39. Averaging the third and fourth as they were first listed gives 42, and the mean of all six is 44 — neither is the median.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "An isosceles triangle has an apex angle of 34 degrees. What is the size of each base angle?",
       "options": [
-        "1175",
-        "1225",
-        "1250",
-        "1275",
-        "1300"
+        "146 degrees",
+        "34 degrees",
+        "56 degrees",
+        "68 degrees",
+        "73 degrees"
       ],
-      "correctAnswer": "1275",
-      "answer": "D",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "correctAnswer": "73 degrees",
+      "answer": "E",
+      "explanation": "The three angles total 180, so the two equal base angles share 180 − 34 = 146 degrees between them: 73 degrees each. 146 degrees is what the pair comes to together, not what each one measures.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "£3,000.00 is shared between three people so that the first receives a quarter of what the other two receive between them. What does the first receive?",
       "options": [
-        "18",
-        "20",
-        "12",
-        "14",
-        "16"
+        "£750.00",
+        "£600.00",
+        "£1,000.00",
+        "£500.00",
+        "£1,200.00"
       ],
-      "correctAnswer": "16",
-      "answer": "E",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "correctAnswer": "£600.00",
+      "answer": "B",
+      "explanation": "If the other two receive four parts, the first receives one, making five parts in all. One part is £3,000.00 / 5 = £600.00. Taking a quarter of the whole £3,000.00 gives £750.00 and reads the quarter against the total rather than against the other two shares.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "What is the smallest number that 8, 12 and 18 all divide into exactly?",
       "options": [
-        "25%",
-        "30%",
-        "35%",
-        "40%",
-        "20%"
+        "1728",
+        "36",
+        "144",
+        "72",
+        "216"
       ],
-      "correctAnswer": "25%",
-      "answer": "A",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "correctAnswer": "72",
+      "answer": "D",
+      "explanation": "In prime factors, 8 = 2³, 12 = 2² × 3 and 18 = 2 × 3². Taking the highest power of each prime gives 2³ × 3² = 72. Multiplying the three numbers together gives 1,728, a common multiple but far from the smallest.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "Two independent events have probabilities of 60% and 30%. What is the probability that exactly one of them happens?",
       "options": [
-        "8 days",
-        "9 days",
-        "10 days",
-        "11 days",
-        "16 days"
+        "54%",
+        "18%",
+        "90%",
+        "72.00%",
+        "42.00%"
       ],
-      "correctAnswer": "9 days",
-      "answer": "B",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "correctAnswer": "54%",
+      "answer": "A",
+      "explanation": "Exactly one means the first without the second, 0.6 × 0.7 = 0.42, or the second without the first, 0.4 × 0.3 = 0.12. Together that is 54%. 18% is the chance of both happening, and adding the two probabilities gives 90%, which counts the overlap rather than excluding it.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "An item priced at £240.00 can be bought with 40% off, or with 25% off followed by a further 15% off the reduced price. How much cheaper is the better offer?",
       "options": [
-        "13",
-        "14",
-        "15",
-        "16",
-        "18"
+        "£0.00",
+        "£24.00",
+        "£9.00",
+        "£15.00",
+        "£6.00"
       ],
-      "correctAnswer": "15",
+      "correctAnswer": "£9.00",
       "answer": "C",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "explanation": "40% off gives £144.00. Taking 25% then 15% leaves 63.75% of the price, or £153.00, so the single discount saves £9.00 more. The two discounts do not add to 40%, because the second is taken off an already reduced figure.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "A machine needs 30 minutes of setting up and then produces 48 items an hour. How many items does it produce in a 6-hour shift?",
       "options": [
-        "15%",
-        "20%",
-        "25%",
-        "30%",
-        "35%"
+        "288",
+        "240",
+        "252",
+        "276",
+        "264"
       ],
-      "correctAnswer": "30%",
-      "answer": "D",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "correctAnswer": "264",
+      "answer": "E",
+      "explanation": "Setting up costs 0.5 of an hour, leaving 5.5 hours of production: 5.5 × 48 = 264 items. Ignoring the setup gives 288 items, 24 more than the machine has time to make.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "prompt": "Taking pi as 3.14, a sector of a circle has a radius of 10 cm and an angle of 72 degrees at the centre. What is its perimeter?",
       "options": [
-        "10",
-        "11",
-        "12",
-        "7",
-        "9"
+        "12.56 cm",
+        "32.56 cm",
+        "62.8 cm",
+        "40.00 cm",
+        "62.80 cm"
       ],
-      "correctAnswer": "9",
-      "answer": "E",
-      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "correctAnswer": "32.56 cm",
+      "answer": "B",
+      "explanation": "The arc is 72/360 of the circumference: 0.2 × 62.8 = 12.56 cm. The perimeter also includes the two straight radii, 20 cm, giving 32.56 cm. 12.56 cm is the curved edge alone, which is not a closed perimeter.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3x = 18, what is the value of x² + x?",
+      "prompt": "The digits of a two-digit number add to 12, and the number is 18 more than the number formed by reversing its digits. What is the number?",
       "options": [
-        "42",
-        "48",
-        "54",
-        "36",
-        "40"
+        "57",
+        "84",
+        "93",
+        "75",
+        "66"
       ],
-      "correctAnswer": "42",
-      "answer": "A",
-      "explanation": "x = 6. x² + x = 36 + 6 = 42.",
+      "correctAnswer": "75",
+      "answer": "D",
+      "explanation": "Writing the number as 10a + b, reversing gives 10b + a, and their difference is 9(a − b) = 18, so a − b = 2. With a + b = 12, that gives a = 7 and b = 5, so the number is 75. 57 is its reverse, which is 18 smaller.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "prompt": "What is 15% of 40% of 800?",
       "options": [
-        "28",
-        "30",
-        "36",
-        "60",
-        "24"
+        "440",
+        "120",
+        "48",
+        "320",
+        "55"
       ],
-      "correctAnswer": "30",
-      "answer": "B",
-      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "correctAnswer": "48",
+      "answer": "C",
+      "explanation": "40% of 800 is 320, and 15% of that is 48. Adding the two percentages to make 55% of 800 gives 440, which is a quite different calculation.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "prompt": "Which of these five values lies closest to their mean: 12, 19, 25, 33, 41?",
       "options": [
-        "132",
-        "144",
-        "154",
-        "168",
-        "176"
+        "25",
+        "19",
+        "33",
+        "12",
+        "41"
       ],
-      "correctAnswer": "154",
-      "answer": "C",
-      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "correctAnswer": "25",
+      "answer": "A",
+      "explanation": "The five total 130, so the mean is 26. The distances from it are 12 is 14 away, 19 is 7 away, 25 is 1 away, 33 is 7 away, 41 is 15 away. 25 is nearest. The middle value when the list is written in order is not automatically the one closest to the mean.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "prompt": "A loan of £4,800.00 is repaid in 24 equal monthly instalments totalling £5,472.00. What is each instalment?",
       "options": [
-        "24 litres",
-        "16 litres",
-        "18 litres",
-        "20 litres",
-        "22 litres"
+        "£200.00",
+        "£28.00",
+        "£240.00",
+        "£250.00",
+        "£228.00"
       ],
-      "correctAnswer": "20 litres",
-      "answer": "D",
-      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "correctAnswer": "£228.00",
+      "answer": "E",
+      "explanation": "The instalments must add to £5,472.00, so each is £5,472.00 / 24 = £228.00. Dividing the amount borrowed instead gives £200.00 and leaves the £672.00 of interest unpaid.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 5! (5 factorial)?",
+      "prompt": "A runner moves at 15 metres a second. What is that speed in kilometres an hour?",
       "options": [
-        "150",
-        "720",
-        "60",
-        "100",
-        "120"
+        "0.9 km/h",
+        "54 km/h",
+        "45 km/h",
+        "60 km/h",
+        "90 km/h"
       ],
-      "correctAnswer": "120",
-      "answer": "E",
-      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "correctAnswer": "54 km/h",
+      "answer": "B",
+      "explanation": "There are 3,600 seconds in an hour and 1,000 metres in a kilometre, so multiply by 3,600 and divide by 1,000 — that is, multiply by 3.6: 15 × 3.6 = 54 km/h. Converting only the minutes gives 0.9 km/h, which is the distance covered in a minute.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
+      "prompt": "A rhombus has diagonals of 16 cm and 30 cm. What is its area?",
       "options": [
-        "24",
-        "48",
-        "12",
-        "16",
-        "20"
+        "240 cm²",
+        "480 cm²",
+        "120 cm²",
+        "92 cm²",
+        "184 cm²"
       ],
-      "correctAnswer": "24",
+      "correctAnswer": "240 cm²",
       "answer": "A",
-      "explanation": "Multiples of 8: 8, 16, 24 … 24 is divisible by 4 and 6, so LCM = 24.",
+      "explanation": "The area of a rhombus is half the product of its diagonals: 16 × 30 / 2 = 240 cm². Multiplying the diagonals without halving gives 480 cm², the area of the rectangle that encloses the rhombus.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
+      "prompt": "Sales stand at £68,000.00 and the target is £85,000.00. By what percentage must sales rise to reach the target?",
       "options": [
-        "8",
-        "12",
-        "18",
-        "24",
-        "6"
+        "20%",
+        "17%",
+        "30%",
+        "25%",
+        "22%"
       ],
-      "correctAnswer": "12",
-      "answer": "B",
-      "explanation": "24 = 12 × 2, 36 = 12 × 3. The largest common factor is 12.",
+      "correctAnswer": "25%",
+      "answer": "D",
+      "explanation": "The rise needed is £17,000.00 on a base of £68,000.00: £17,000.00 / £68,000.00 = 25%. Measuring the gap against the target instead gives 20%, which answers how far short of the target sales currently are.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Three-quarters of a number is 60. What is the number?",
+      "prompt": "What is the value of (2³ × 2⁵) ÷ 2⁴?",
       "options": [
-        "70",
-        "75",
-        "80",
-        "85",
-        "90"
+        "2048",
+        "8",
+        "16",
+        "64",
+        "32"
       ],
-      "correctAnswer": "80",
+      "correctAnswer": "16",
       "answer": "C",
-      "explanation": "(3/4)x = 60 → x = 60 × 4 ÷ 3 = 80.",
+      "explanation": "Multiplying powers of the same base adds the indices and dividing subtracts them: 3 + 5 − 4 = 4, so the answer is 2⁴ = 16. Multiplying the indices instead of adding them gives 2¹¹, or 2,048.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
+      "prompt": "A journey is made in three equal-distance stages, at 30, 40, 60 km/h. What is the average speed for the whole journey?",
       "options": [
-        "3 : 5",
-        "8 : 5",
-        "2 : 5",
-        "8 : 15",
-        "6 : 5"
+        "43.33 km/h",
+        "36.0 km/h",
+        "45.0 km/h",
+        "50.0 km/h",
+        "40 km/h"
       ],
-      "correctAnswer": "8 : 15",
-      "answer": "D",
-      "explanation": "Make b common: a:b = 8:12, b:c = 12:15. So a:c = 8:15.",
+      "correctAnswer": "40 km/h",
+      "answer": "E",
+      "explanation": "Take the distance of each stage as 120 km. The stages then take 4, 3 and 2 hours, so 360 km takes 9 hours: 40 km/h. Averaging the three speeds gives 43.33 km/h and treats the stages as if they took equal time, when the slow stage takes twice as long as the fast one.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
+      "prompt": "A length is measured as 24 cm to the nearest centimetre. What is the greatest the true length could be?",
       "options": [
-        "36",
-        "9",
-        "12",
-        "18",
-        "24"
+        "23.5 cm",
+        "24.5 cm",
+        "24.9 cm",
+        "24.99 cm",
+        "25.0 cm"
       ],
-      "correctAnswer": "24",
-      "answer": "E",
-      "explanation": "Volume = length × width × height = 2 × 3 × 4 = 24.",
+      "correctAnswer": "24.5 cm",
+      "answer": "B",
+      "explanation": "Anything from 23.5 cm up to 24.5 cm rounds to 24 cm, so 24.5 cm is the upper bound. 23.5 cm is the lower bound, and 24.9 cm rounds to 24 but is not the largest value that does.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
+      "prompt": "A profit of £46,000.00 has £6,000.00 set aside for reserves, and the rest is split in the ratio 3 : 2. What is the larger share?",
       "options": [
-        "600",
-        "640",
-        "720",
-        "480",
-        "540"
+        "£24,000.00",
+        "£27,600.00",
+        "£16,000.00",
+        "£20,000.00",
+        "£28,000.00"
       ],
-      "correctAnswer": "600",
+      "correctAnswer": "£24,000.00",
       "answer": "A",
-      "explanation": "0.20 × total = 120 → total = 120 ÷ 0.20 = 600.",
+      "explanation": "Reserves leave £40,000.00 to divide. Five parts make £40,000.00, so one part is £8,000.00 and three parts is £24,000.00. Splitting the full £46,000.00 gives £27,600.00 and forgets the reserves.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-015-q001": "10",
-    "gmat-quant-015-q002": "3/5",
-    "gmat-quant-015-q003": "32",
-    "gmat-quant-015-q004": "1275",
-    "gmat-quant-015-q005": "16",
-    "gmat-quant-015-q006": "25%",
-    "gmat-quant-015-q007": "9 days",
-    "gmat-quant-015-q008": "15",
-    "gmat-quant-015-q009": "30%",
-    "gmat-quant-015-q010": "9",
-    "gmat-quant-015-q011": "42",
-    "gmat-quant-015-q012": "30",
-    "gmat-quant-015-q013": "154",
-    "gmat-quant-015-q014": "20 litres",
-    "gmat-quant-015-q015": "120",
-    "gmat-quant-015-q016": "24",
-    "gmat-quant-015-q017": "12",
-    "gmat-quant-015-q018": "80",
-    "gmat-quant-015-q019": "8 : 15",
-    "gmat-quant-015-q020": "24",
-    "gmat-quant-015-q021": "600"
+    "gmat-quant-015-q001": "9/20",
+    "gmat-quant-015-q002": "7 cm",
+    "gmat-quant-015-q003": "39",
+    "gmat-quant-015-q004": "73 degrees",
+    "gmat-quant-015-q005": "£600.00",
+    "gmat-quant-015-q006": "72",
+    "gmat-quant-015-q007": "54%",
+    "gmat-quant-015-q008": "£9.00",
+    "gmat-quant-015-q009": "264",
+    "gmat-quant-015-q010": "32.56 cm",
+    "gmat-quant-015-q011": "75",
+    "gmat-quant-015-q012": "48",
+    "gmat-quant-015-q013": "25",
+    "gmat-quant-015-q014": "£228.00",
+    "gmat-quant-015-q015": "54 km/h",
+    "gmat-quant-015-q016": "240 cm²",
+    "gmat-quant-015-q017": "25%",
+    "gmat-quant-015-q018": "16",
+    "gmat-quant-015-q019": "40 km/h",
+    "gmat-quant-015-q020": "24.5 cm",
+    "gmat-quant-015-q021": "£24,000.00"
   }
 }
