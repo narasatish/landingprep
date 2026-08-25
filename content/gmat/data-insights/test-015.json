@@ -12,691 +12,363 @@
       "id": "gmat-data-insights-015-q01",
       "questionType": "graphics_interpretation",
       "num": 1,
-      "prompt": "A graph showing loan approval rates in the banking sector presents the following data: Personal: 64%, Mortgage: 71%, Business: 48%, Auto: 79%, Student: 85%. According to the graph, which segment/period shows the highest value?",
+      "prompt": "Five hospitals:\n\nAshcombe: 240 beds, 88% occupancy, average stay 4.2 days\nBrentwell: 410 beds, 92% occupancy, average stay 6.8 days\nCadmore: 150 beds, 79% occupancy, average stay 2.4 days\nDerringham: 620 beds, 81% occupancy, average stay 5.5 days\nEastholt: 300 beds, 84% occupancy, average stay 4.9 days\n\nWhich hospital treats the most patients per bed in a year?",
       "options": [
-        "A. The middle-ranked value",
-        "B. The value closest to the overall average",
-        "C. Cannot be determined from the data",
-        "D. The first listed value",
-        "E. The last listed value"
+        "A. Ashcombe",
+        "B. Brentwell",
+        "C. Derringham",
+        "D. Cadmore",
+        "E. Eastholt"
       ],
       "correctAnswer": "D",
-      "explanation": "This graphics_interpretation question tests ability to interpret banking data on loan approval rates.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "banking",
-        "topic": "loan approval rates",
-        "data": "Personal: 64%, Mortgage: 71%, Business: 48%, Auto: 79%, Student: 85%"
-      },
-      "visual": {
-        "chartType": "bar",
-        "title": "Loan Approval Rates — Banking",
-        "yLabel": "%",
-        "xAxis": [
-          "Personal",
-          "Mortgage",
-          "Business",
-          "Auto",
-          "Student"
-        ],
-        "series": [
-          {
-            "label": "Loan Approval Rates",
-            "values": [
-              64,
-              71,
-              48,
-              79,
-              85
-            ]
-          }
-        ]
-      }
+      "explanation": "A bed treats 365 days of occupancy divided by the average stay: Ashcombe 76, Brentwell 49, Cadmore 120, Derringham 54, Eastholt 63. Cadmore leads at about 120, because its patients leave after 2.4 days. Brentwell has the highest occupancy at 92% and Derringham treats the most patients outright, but a bed that is full of the same patient for a week turns over slowly.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q02",
       "questionType": "graphics_interpretation",
       "num": 2,
-      "prompt": "Based on the chart of campaign conversion rates data (Email: 3.2%, Social: 1.8%, Search: 4.7%, Display: 0.9%, Referral: 6.1%), which TWO values would combine to equal approximately the average?",
+      "prompt": "Annual figures:\n\n2018: 480\n2019: 512\n2020: 445\n2021: 503\n2022: 561\n2023: 598\n2024: 636\n\nWhat was the average change per year over the whole period?",
       "options": [
-        "A. Values 2 and 4",
-        "B. Values 1 and 4",
-        "C. Values 2 and 5",
-        "D. Values 3 and 5",
-        "E. Values 1 and 3"
+        "A. 26",
+        "B. 22.29",
+        "C. 156",
+        "D. 31.2",
+        "E. 78.0"
       ],
-      "correctAnswer": "E",
-      "explanation": "This graphics_interpretation question tests ability to interpret marketing data on campaign conversion rates.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "marketing",
-        "topic": "campaign conversion rates",
-        "data": "Email: 3.2%, Social: 1.8%, Search: 4.7%, Display: 0.9%, Referral: 6.1%"
-      },
-      "visual": {
-        "chartType": "bar",
-        "title": "Campaign Conversion Rates — Marketing",
-        "yLabel": "%",
-        "xAxis": [
-          "Email",
-          "Social",
-          "Search",
-          "Display",
-          "Referral"
-        ],
-        "series": [
-          {
-            "label": "Campaign Conversion Rates",
-            "values": [
-              3.2,
-              1.8,
-              4.7,
-              0.9,
-              6.1
-            ]
-          }
-        ]
-      }
+      "correctAnswer": "A",
+      "explanation": "The figure rose from 480 to 636, a change of 156 spread over 6 intervals between 7 readings: 26 a year. Dividing by 7 rather than 6 gives 22.29 — the classic error of counting readings instead of the gaps between them. The path was not steady: 2020 fell before the run of rises resumed.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q03",
       "questionType": "graphics_interpretation",
       "num": 3,
-      "prompt": "A scatter plot comparing subscriber churn rates across telecommunications categories shows: Postpaid: 2.1%, Prepaid: 8.4%, Broadband: 1.7%, Enterprise: 0.8%. If the trend continued, which projection is most consistent?",
+      "prompt": "Units sold by channel:\n\nRetail: 1,200 in 2020, 1,560 in 2024\nTrade: 1,600 in 2020, 4,200 in 2024\nOnline: 400 in 2020, 2,300 in 2024\nOther: 800 in 2020, 650 in 2024\n\nWhich channel grew most as a share of the total?",
       "options": [
-        "A. The first listed value",
-        "B. The last listed value",
-        "C. The middle-ranked value",
-        "D. The value closest to the overall average",
-        "E. Cannot be determined from the data"
+        "A. Retail",
+        "B. Trade",
+        "C. Online",
+        "D. Other",
+        "E. All four grew by the same share"
       ],
-      "correctAnswer": "A",
-      "explanation": "This graphics_interpretation question tests ability to interpret telecommunications data on subscriber churn rates.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "telecommunications",
-        "topic": "subscriber churn rates",
-        "data": "Postpaid: 2.1%, Prepaid: 8.4%, Broadband: 1.7%, Enterprise: 0.8%"
-      },
-      "visual": {
-        "chartType": "bar",
-        "title": "Subscriber Churn Rates — Telecommunications",
-        "yLabel": "%",
-        "xAxis": [
-          "Postpaid",
-          "Prepaid",
-          "Broadband",
-          "Enterprise"
-        ],
-        "series": [
-          {
-            "label": "Subscriber Churn Rates",
-            "values": [
-              2.1,
-              8.4,
-              1.7,
-              0.8
-            ]
-          }
-        ]
-      }
+      "correctAnswer": "C",
+      "explanation": "Totals were 4,000 and 8,710, so shares moved: Retail 30.0% to 17.9%, Trade 40.0% to 48.2%, Online 10.0% to 26.4%, Other 20.0% to 7.5%. Online gains 16.4 points, the most of any channel. Trade added more units — 2,600 against 1,900 — but the total grew underneath it, so its share rose by less.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q04",
       "questionType": "graphics_interpretation",
       "num": 4,
-      "prompt": "A graph showing student assessment pass rates in the education sector presents the following data: Mathematics: 73%, Science: 68%, English: 81%, History: 77%, Languages: 62%. According to the graph, which segment/period shows the highest value?",
+      "prompt": "Seven readings, in order: 18, 21, 21, 24, 27, 30, 34\n\nEvery reading is then increased by 5. Which statement about the effect is accurate?",
       "options": [
-        "A. Values 3 and 5",
-        "B. Values 1 and 3",
-        "C. Values 2 and 4",
-        "D. Values 1 and 4",
-        "E. Values 2 and 5"
+        "A. Every measure of the set rises by 5",
+        "B. The range rises by 5",
+        "C. The mean rises by 5 but the median does not",
+        "D. The mode is unchanged",
+        "E. The mean, the median and the mode each rise by 5, and the range is unchanged"
       ],
-      "correctAnswer": "B",
-      "explanation": "This graphics_interpretation question tests ability to interpret education data on student assessment pass rates.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "education",
-        "topic": "student assessment pass rates",
-        "data": "Mathematics: 73%, Science: 68%, English: 81%, History: 77%, Languages: 62%"
-      },
-      "visual": {
-        "chartType": "bar",
-        "title": "Student Assessment Pass Rates — Education",
-        "yLabel": "%",
-        "xAxis": [
-          "Mathematics",
-          "Science",
-          "English",
-          "History",
-          "Languages"
-        ],
-        "series": [
-          {
-            "label": "Student Assessment Pass Rates",
-            "values": [
-              73,
-              68,
-              81,
-              77,
-              62
-            ]
-          }
-        ]
-      }
+      "correctAnswer": "E",
+      "explanation": "Before: mean 25, median 24, mode 21, range 16. After: mean 30, median 29, mode 26, range 16. Shifting every value moves anything that names a position in the data, but the gaps between the values are untouched — which is why the range stands still and \"every measure rises\" is wrong.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q05",
       "questionType": "two_part_analysis",
       "num": 5,
-      "prompt": "Analysis of claims processing times in insurance: Auto: 8.2 days, Home: 14.5 days, Health: 6.1 days, Life: 21.3 days. Select the value closest to the median AND the value that represents the greatest deviation from the mean.",
+      "prompt": "A hall costs GBP 280.00 to hire, plus GBP 14.00 a head for catering. Tickets sell at GBP 25.00.\n\nSelect the smallest number of tickets that covers the costs AND the profit at that number.",
       "options": [
-        "A. See table row D",
-        "B. See table row E",
-        "C. See table row A",
-        "D. See table row B",
-        "E. See table row C"
+        "A. 25 tickets; GBP 5.00 profit",
+        "B. 26 tickets; GBP 6.00 profit",
+        "C. 26 tickets; GBP 26.00 profit",
+        "D. 20 tickets; nothing either way",
+        "E. The event cannot cover its costs at any number of tickets"
       ],
-      "correctAnswer": "C",
-      "explanation": "This two_part_analysis question tests ability to interpret insurance data on claims processing times.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "insurance",
-        "topic": "claims processing times",
-        "data": "Auto: 8.2 days, Home: 14.5 days, Health: 6.1 days, Life: 21.3 days"
-      }
+      "correctAnswer": "B",
+      "explanation": "Each ticket contributes GBP 25.00 − GBP 14.00 = GBP 11.00 towards the hire, so covering GBP 280.00 needs GBP 280.00 / GBP 11.00 = 25.45 tickets — 26 once rounded up. At 26: takings GBP 650.00 against costs GBP 644.00, a profit of GBP 6.00. At 25 the event is still GBP 5.00 short.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q06",
       "questionType": "two_part_analysis",
       "num": 6,
-      "prompt": "Given construction project completion on schedule data: Residential: 58%, Commercial: 44%, Infrastructure: 37%, Industrial: 51%. In the left column select the highest-performing category; in the right column select the category that improved most year-over-year.",
+      "prompt": "An item lists at GBP 480.00. A 15% trade discount is applied, and a 5% rebate is then taken off the discounted price.\n\nSelect the final price AND the single discount that would have the same effect.",
       "options": [
-        "A. See table row C",
-        "B. See table row D",
-        "C. See table row E",
-        "D. See table row A",
-        "E. See table row B"
+        "A. GBP 384.00; 20%",
+        "B. GBP 387.60; 20%",
+        "C. GBP 387.60; 19.25%",
+        "D. GBP 408.00; 15%",
+        "E. GBP 360.00; 25%"
       ],
-      "correctAnswer": "D",
-      "explanation": "This two_part_analysis question tests ability to interpret construction data on project completion on schedule.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "construction",
-        "topic": "project completion on schedule",
-        "data": "Residential: 58%, Commercial: 44%, Infrastructure: 37%, Industrial: 51%"
-      }
+      "correctAnswer": "C",
+      "explanation": "The trade discount leaves GBP 408.00, and the rebate takes GBP 20.40 off that: GBP 387.60. The buyer pays 80.75% of the list price, so the equivalent single discount is 19.25%. Adding the two percentages gives 20%, which charges the rebate against the full list price rather than the discounted one.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q07",
       "questionType": "two_part_analysis",
       "num": 7,
-      "prompt": "A agriculture manager reviews crop yield indices: Wheat: 108, Corn: 95, Rice: 112, Soybeans: 103, Cotton: 89. Select: (1) the category requiring immediate attention and (2) the category that exceeds the target of the average by the greatest margin.",
+      "prompt": "Two mailings:\n\nMailing One: 4,800 sent, 384 replies\nMailing Two: 22,000 sent, 1,320 replies\n\nSelect the mailing with the higher response rate AND the mailing that brought in more replies.",
       "options": [
-        "A. See table row B",
-        "B. See table row C",
-        "C. See table row D",
-        "D. See table row E",
-        "E. See table row A"
+        "A. Mailing One on both measures",
+        "B. Mailing Two on both measures",
+        "C. Mailing Two on the response rate; Mailing One on replies",
+        "D. Mailing One on the response rate; Mailing Two on replies",
+        "E. The two mailings are equal on both measures"
       ],
-      "correctAnswer": "E",
-      "explanation": "This two_part_analysis question tests ability to interpret agriculture data on crop yield indices.",
-      "difficulty": "easy",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "agriculture",
-        "topic": "crop yield indices",
-        "data": "Wheat: 108, Corn: 95, Rice: 112, Soybeans: 103, Cotton: 89"
-      }
+      "correctAnswer": "D",
+      "explanation": "Response rates: Mailing One 8.0%, Mailing Two 6.0%. Replies: Mailing One 384, Mailing Two 1,320. The better-targeted mailing went to less than a quarter as many people, so the higher rate does not bring in the higher count.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q08",
       "questionType": "two_part_analysis",
       "num": 8,
-      "prompt": "Analysis of return rates by product category in e-commerce: Electronics: 12%, Clothing: 28%, Home goods: 8%, Books: 3%, Sports: 15%. Select the value closest to the median AND the value that represents the greatest deviation from the mean.",
+      "prompt": "Supplier A quotes 4,250 euros and Supplier B quotes GBP 3,780.00. The rate is 1.14 euros to the pound.\n\nSelect Supplier A's price in sterling AND the cheaper of the two suppliers.",
       "options": [
-        "A. See table row A",
-        "B. See table row B",
-        "C. See table row C",
-        "D. See table row D",
-        "E. See table row E"
+        "A. GBP 3,728.07; Supplier A is cheaper",
+        "B. GBP 4,845.00; Supplier B is cheaper",
+        "C. GBP 3,728.07; Supplier B is cheaper",
+        "D. GBP 3,728.07; the two quotes are equal",
+        "E. GBP 4,845.00; Supplier A is cheaper"
       ],
       "correctAnswer": "A",
-      "explanation": "This two_part_analysis question tests ability to interpret e-commerce data on return rates by product category.",
+      "explanation": "Euros convert to pounds by dividing: 4,250 / 1.14 = GBP 3,728.07, which undercuts Supplier B's GBP 3,780.00 by GBP 51.93. Multiplying by the rate instead gives GBP 4,845.00, a figure larger than the euro total, which cannot be right when a pound is worth more than a euro.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "e-commerce",
-        "topic": "return rates by product category",
-        "data": "Electronics: 12%, Clothing: 28%, Home goods: 8%, Books: 3%, Sports: 15%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q09",
       "questionType": "multi_source_reasoning",
       "num": 9,
-      "prompt": "Three data sources on consulting project profitability by industry are provided: (Memo) Overall performance improved this quarter. (Table) Technology: 24%, Finance: 31%, Healthcare: 18%, Government: 9%, Retail: 14%. (Email) Stakeholders express concern about outliers. Which source most directly supports the memo's claim?",
+      "prompt": "SOURCE 1 (table): potholes repaired — Council P 2,400, Council Q 1,150, Council R 4,900\n\nSOURCE 2 (table): road network — Council P 800 km, Council Q 230 km, Council R 1,400 km\n\nSOURCE 3 (memo): \"The commendation goes to the council repairing the most potholes for each kilometre of road it maintains.\"\n\nWhich council is commended?",
       "options": [
-        "A. All three sources are equally relevant",
-        "B. Source 1 (Report) only",
-        "C. Source 2 (Email) only",
-        "D. Source 3 (Table) only",
-        "E. Sources 1 and 3 together"
+        "A. Council P",
+        "B. Council R",
+        "C. The three councils are equal",
+        "D. Cannot be determined from the sources",
+        "E. Council Q"
       ],
-      "correctAnswer": "B",
-      "explanation": "This multi_source_reasoning question tests ability to interpret consulting data on project profitability by industry.",
+      "correctAnswer": "E",
+      "explanation": "Repairs divided by road length: Council P 3 a kilometre, Council Q 5 a kilometre, Council R 3.5 a kilometre. Council Q leads and has much the smallest network. Council R repaired 4,900 potholes, more than twice as many, across 1,400 km of road.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "consulting",
-        "topic": "project profitability by industry",
-        "data": "Technology: 24%, Finance: 31%, Healthcare: 18%, Government: 9%, Retail: 14%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q10",
       "questionType": "multi_source_reasoning",
       "num": 10,
-      "prompt": "Source 1 (Report): tourism visitor spending by activity shows: Accommodation: 38%, Food: 24%, Transport: 18%, Entertainment: 12%, Shopping: 8%. Source 2 (Email): The weakest performer needs a 20% improvement to meet targets. Source 3 (Table): Targets are set at the top-quartile value. Which category needs improvement?",
+      "prompt": "SOURCE 1 (report): \"Sales per employee fell from GBP 142,000.00 to GBP 118,000.00.\"\n\nSOURCE 2 (table): headcount rose from 90 to 145.\n\nSOURCE 3 (email): \"The board wants to know what happened to total sales.\"\n\nWhich statement is best supported?",
       "options": [
-        "A. Sources 1 and 3 together",
-        "B. All three sources are equally relevant",
-        "C. Source 1 (Report) only",
-        "D. Source 2 (Email) only",
-        "E. Source 3 (Table) only"
+        "A. Total sales fell by about 17%",
+        "B. Total sales rose by about 34%, because headcount grew faster than sales per head fell",
+        "C. Each employee worked less hard than before",
+        "D. Total sales were unchanged",
+        "E. Total sales cannot be worked out from these sources"
       ],
-      "correctAnswer": "C",
-      "explanation": "This multi_source_reasoning question tests ability to interpret tourism data on visitor spending by activity.",
+      "correctAnswer": "B",
+      "explanation": "Total sales are headcount multiplied by sales per employee: before, 90 × GBP 142,000.00 = GBP 12,780,000.00; after, 145 × GBP 118,000.00 = GBP 17,110,000.00 — a rise of about 34%. The per-head figure fell because the denominator grew by 61% while the numerator grew by less, which says nothing about how hard anyone worked.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "tourism",
-        "topic": "visitor spending by activity",
-        "data": "Accommodation: 38%, Food: 24%, Transport: 18%, Entertainment: 12%, Shopping: 8%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q11",
       "questionType": "multi_source_reasoning",
       "num": 11,
-      "prompt": "Reviewing recruitment records: Source A shows time-to-hire by department: Engineering: 47 days, Marketing: 31 days, Finance: 28 days, Sales: 22 days, HR: 19 days. Source B notes the average. Source C flags values more than 25% above or below average. Which values would Source C flag?",
+      "prompt": "SOURCE 1 (table): bids received — Bidder A GBP 96,400.00, Bidder B GBP 108,900.00, Bidder C GBP 102,300.00\n\nSOURCE 2 (note): Bidder A is a subsidiary of the incumbent supplier, and the tender rules bar any bid from a connected party.\n\nSOURCE 3 (memo): \"Award the contract to the lowest compliant bid.\"\n\nWhich bidder wins the contract?",
       "options": [
-        "A. Source 3 (Table) only",
-        "B. Sources 1 and 3 together",
-        "C. All three sources are equally relevant",
-        "D. Source 1 (Report) only",
-        "E. Source 2 (Email) only"
+        "A. Bidder C",
+        "B. Bidder A",
+        "C. Bidder B",
+        "D. The contract cannot be awarded",
+        "E. Cannot be determined from the sources"
       ],
-      "correctAnswer": "D",
-      "explanation": "This multi_source_reasoning question tests ability to interpret recruitment data on time-to-hire by department.",
+      "correctAnswer": "A",
+      "explanation": "Bidder A bids GBP 96,400.00, the lowest of the three, but source 2 disqualifies it outright, so its price never comes into it. Of the compliant bids, Bidder B at GBP 108,900.00 and Bidder C at GBP 102,300.00, Bidder C is lower by GBP 6,600.00. Eligibility is settled before price.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "recruitment",
-        "topic": "time-to-hire by department",
-        "data": "Engineering: 47 days, Marketing: 31 days, Finance: 28 days, Sales: 22 days, HR: 19 days"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q12",
       "questionType": "multi_source_reasoning",
       "num": 12,
-      "prompt": "Three data sources on environmental emissions reduction by sector are provided: (Memo) Overall performance improved this quarter. (Table) Energy: -14%, Transport: -8%, Industry: -6%, Agriculture: -3%, Buildings: -11%. (Email) Stakeholders express concern about outliers. Which source most directly supports the memo's claim?",
+      "prompt": "SOURCE 1 (table): the branch took GBP 412,000 last year.\n\nSOURCE 2 (memo): \"Every branch carries a target of GBP 400,000 for the year.\"\n\nSOURCE 3 (email): \"Head office wants a yes or no: did the branch meet its target?\"\n\nWhich source or sources are needed to answer head office?",
       "options": [
-        "A. Source 2 (Email) only",
-        "B. Source 3 (Table) only",
-        "C. Sources 1 and 3 together",
-        "D. All three sources are equally relevant",
-        "E. Source 1 (Report) only"
+        "A. Source 1 alone",
+        "B. Source 2 alone",
+        "C. Sources 1 and 2 together; neither settles it alone",
+        "D. Source 3 alone",
+        "E. The question cannot be answered even with all three sources"
       ],
-      "correctAnswer": "E",
-      "explanation": "This multi_source_reasoning question tests ability to interpret environmental data on emissions reduction by sector.",
+      "correctAnswer": "C",
+      "explanation": "Source 1 gives a figure with nothing to measure it against, and source 2 gives a bar with no figure to compare to it. Put together they answer the question: GBP 412,000 clears GBP 400,000 by GBP 12,000, so the answer is yes. Source 3 only poses the question and adds no information.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "environmental",
-        "topic": "emissions reduction by sector",
-        "data": "Energy: -14%, Transport: -8%, Industry: -6%, Agriculture: -3%, Buildings: -11%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q13",
       "questionType": "data_sufficiency",
       "num": 13,
-      "prompt": "What is the relative ranking of categories in retail banking product penetration rates? (1) Current accounts: 100%. (2) The remaining values follow a consistent trend.",
+      "prompt": "How old is Ravi?\n\n(1) Ravi is 6 years older than Sam.\n(2) The ages of Ravi and Sam add to 34.",
       "options": [
-        "A. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
-        "B. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
-        "C. Both statements together are sufficient, but neither alone is sufficient",
-        "D. Each statement alone is sufficient",
-        "E. Neither statement alone nor together is sufficient"
+        "A. Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "B. Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "C. BOTH statements TOGETHER are sufficient, but NEITHER alone is sufficient.",
+        "D. EACH statement ALONE is sufficient.",
+        "E. Statements (1) and (2) TOGETHER are not sufficient."
       ],
-      "correctAnswer": "A",
-      "explanation": "This data_sufficiency question tests ability to interpret retail banking data on product penetration rates.",
+      "correctAnswer": "C",
+      "explanation": "(1) ties the two ages together but fixes neither, and (2) fixes their total but not the split. Together, Sam is (34 − 6) / 2 = 14 and Ravi is 20. Each statement supplies exactly one of the two facts the answer needs.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "retail banking",
-        "topic": "product penetration rates",
-        "data": "Current accounts: 100%, Savings: 74%, Credit cards: 52%, Investments: 31%, Mortgages: 28%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q14",
       "questionType": "data_sufficiency",
       "num": 14,
-      "prompt": "Is the streaming media content viewing patterns above the industry benchmark of the median? (1) Drama: 35%. (2) The range of all values is 10%.",
+      "prompt": "What is the value of the positive integer x?\n\n(1) x is a factor of 24.\n(2) x is even.",
       "options": [
-        "A. Neither statement alone nor together is sufficient",
-        "B. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
-        "C. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
-        "D. Both statements together are sufficient, but neither alone is sufficient",
-        "E. Each statement alone is sufficient"
+        "A. Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "B. Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "C. BOTH statements TOGETHER are sufficient, but NEITHER alone is sufficient.",
+        "D. EACH statement ALONE is sufficient.",
+        "E. Statements (1) and (2) TOGETHER are not sufficient."
       ],
-      "correctAnswer": "B",
-      "explanation": "This data_sufficiency question tests ability to interpret streaming media data on content viewing patterns.",
+      "correctAnswer": "E",
+      "explanation": "The factors of 24 are 1, 2, 3, 4, 6, 8, 12 and 24, so (1) leaves eight candidates and (2) alone leaves every even number. Together they leave 2, 4, 6, 8, 12 and 24 — six values, not one. The statements narrow the field without closing it.",
       "difficulty": "medium",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "streaming media",
-        "topic": "content viewing patterns",
-        "data": "Drama: 35%, Comedy: 22%, Documentary: 18%, Action: 15%, Other: 10%"
-      }
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q15",
       "questionType": "data_sufficiency",
       "num": 15,
-      "prompt": "Can the average supply chain supplier performance scores be calculated precisely? (1) Quality: 87/100, Delivery: 79/100, Price: 83/100, Responsiveness: 91/100, Sustainability: 74/100. (2) All categories are measured using the same methodology.",
+      "prompt": "What is the area of a triangle?\n\n(1) Its base is 10 cm and the perpendicular height to that base is 6 cm.\n(2) Two of its sides measure 10 cm and 6 cm.",
       "options": [
-        "A. Each statement alone is sufficient",
-        "B. Neither statement alone nor together is sufficient",
-        "C. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
-        "D. Statement (2) alone is sufficient, but statement (1) alone is not sufficient",
-        "E. Both statements together are sufficient, but neither alone is sufficient"
+        "A. Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "B. Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "C. BOTH statements TOGETHER are sufficient, but NEITHER alone is sufficient.",
+        "D. EACH statement ALONE is sufficient.",
+        "E. Statements (1) and (2) TOGETHER are not sufficient."
       ],
-      "correctAnswer": "C",
-      "explanation": "This data_sufficiency question tests ability to interpret supply chain data on supplier performance scores.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "supply chain",
-        "topic": "supplier performance scores",
-        "data": "Quality: 87/100, Delivery: 79/100, Price: 83/100, Responsiveness: 91/100, Sustainability: 74/100"
-      }
+      "correctAnswer": "A",
+      "explanation": "(1) is the area formula in words: half of 10 times 6 is 30 square centimetres. (2) gives two lengths but no angle between them, so the triangle could be almost flat or nearly right-angled, with areas anywhere from close to zero up to 30. A right angle between those two sides would satisfy both statements at once.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q16",
       "questionType": "data_sufficiency",
       "num": 16,
-      "prompt": "What is the relative ranking of categories in fitness gym membership usage? (1) Peak hours 6-8am: 42%. (2) The remaining values follow a consistent trend.",
+      "prompt": "What is the 10th term of an arithmetic sequence?\n\n(1) The first term is 4 and the common difference is 3.\n(2) The 4th term is 13 and the 7th term is 22.",
       "options": [
-        "A. Both statements together are sufficient, but neither alone is sufficient",
-        "B. Each statement alone is sufficient",
-        "C. Neither statement alone nor together is sufficient",
-        "D. Statement (1) alone is sufficient, but statement (2) alone is not sufficient",
-        "E. Statement (2) alone is sufficient, but statement (1) alone is not sufficient"
+        "A. Statement (1) ALONE is sufficient, but statement (2) alone is not sufficient.",
+        "B. Statement (2) ALONE is sufficient, but statement (1) alone is not sufficient.",
+        "C. BOTH statements TOGETHER are sufficient, but NEITHER alone is sufficient.",
+        "D. EACH statement ALONE is sufficient.",
+        "E. Statements (1) and (2) TOGETHER are not sufficient."
       ],
       "correctAnswer": "D",
-      "explanation": "This data_sufficiency question tests ability to interpret fitness data on gym membership usage.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "fitness",
-        "topic": "gym membership usage",
-        "data": "Peak hours 6-8am: 42%, 12-2pm: 18%, 5-8pm: 56%, 8-10pm: 23%, Other: 12%"
-      }
+      "explanation": "From (1) the 10th term is 4 + 9 × 3 = 31. From (2) three steps carry the sequence from 13 to 22, so the common difference is 3, the first term is 4, and the 10th term is 31 again. The two statements describe the same sequence, so either alone is sufficient.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q17",
       "questionType": "table_analysis",
       "num": 17,
-      "prompt": "Sort the cybersecurity incident response times table: Detection: 4.2h, Containment: 2.8h, Eradication: 6.1h, Recovery: 12.4h, Documentation: 3.9h. Which statement is accurate?",
+      "prompt": "Which farm produces the most tonnes in a year?\n\nFarm | Hectares | Yield (tonnes a hectare) | Price a tonne | Irrigated\nAshfold | 340 | 8.2 | GBP 185.00 | 40%\nBarrowden | 120 | 11.6 | GBP 210.00 | 85%\nCalderfield | 580 | 6.4 | GBP 172.00 | 20%\nDunsley | 260 | 9.1 | GBP 198.00 | 30%\nEdgeworth | 450 | 7.3 | GBP 205.00 | 35%\nFenniscliffe | 90 | 12.4 | GBP 225.00 | 95%",
       "options": [
-        "A. The second row ranks highest",
-        "B. The third row ranks highest",
-        "C. The ranking depends on the sort criterion",
-        "D. Insufficient data to determine rank",
-        "E. The first row ranks highest"
+        "A. Ashfold",
+        "B. Calderfield",
+        "C. Dunsley",
+        "D. Edgeworth",
+        "E. Fenniscliffe"
       ],
-      "correctAnswer": "E",
-      "explanation": "This table_analysis question tests ability to interpret cybersecurity data on incident response times.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "cybersecurity",
-        "topic": "incident response times",
-        "data": "Detection: 4.2h, Containment: 2.8h, Eradication: 6.1h, Recovery: 12.4h, Documentation: 3.9h"
-      },
-      "visual": {
-        "chartType": "table",
-        "title": "Incident Response Times — Cybersecurity",
-        "headers": [
-          "Category",
-          "Incident Response Times"
-        ],
-        "rows": [
-          [
-            "Detection",
-            "4.2h"
-          ],
-          [
-            "Containment",
-            "2.8h"
-          ],
-          [
-            "Eradication",
-            "6.1h"
-          ],
-          [
-            "Recovery",
-            "12.4h"
-          ],
-          [
-            "Documentation",
-            "3.9h"
-          ]
-        ]
-      }
+      "correctAnswer": "B",
+      "explanation": "Tonnage is hectares multiplied by yield: Ashfold 2,788, Barrowden 1,392, Calderfield 3,712, Dunsley 2,366, Edgeworth 3,285, Fenniscliffe 1,116. Calderfield produces the most on the worst yield in the table, 6.4 tonnes a hectare, simply by farming 580 of them. Fenniscliffe gets 12.4 tonnes from every hectare but has only 90.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q18",
       "questionType": "table_analysis",
       "num": 18,
-      "prompt": "A table comparing property management occupancy rates by building type shows: Office A-grade: 94%, Office B-grade: 78%, Retail flagship: 97%, Retail secondary: 81%, Industrial: 89%. Indicate whether each statement is true, false, or cannot be determined.",
+      "prompt": "Which farm earns the most from its crop in a year?\n\nFarm | Hectares | Yield (tonnes a hectare) | Price a tonne | Irrigated\nAshfold | 340 | 8.2 | GBP 185.00 | 40%\nBarrowden | 120 | 11.6 | GBP 210.00 | 85%\nCalderfield | 580 | 6.4 | GBP 172.00 | 20%\nDunsley | 260 | 9.1 | GBP 198.00 | 30%\nEdgeworth | 450 | 7.3 | GBP 205.00 | 35%\nFenniscliffe | 90 | 12.4 | GBP 225.00 | 95%",
       "options": [
-        "A. The first row ranks highest",
-        "B. The second row ranks highest",
-        "C. The third row ranks highest",
-        "D. The ranking depends on the sort criterion",
-        "E. Insufficient data to determine rank"
+        "A. Ashfold",
+        "B. Barrowden",
+        "C. Calderfield",
+        "D. Edgeworth",
+        "E. Dunsley"
       ],
-      "correctAnswer": "A",
-      "explanation": "This table_analysis question tests ability to interpret property management data on occupancy rates by building type.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "property management",
-        "topic": "occupancy rates by building type",
-        "data": "Office A-grade: 94%, Office B-grade: 78%, Retail flagship: 97%, Retail secondary: 81%, Industrial: 89%"
-      },
-      "visual": {
-        "chartType": "table",
-        "title": "Occupancy Rates By Building Type — Property Management",
-        "headers": [
-          "Category",
-          "Occupancy Rates By Building Type"
-        ],
-        "rows": [
-          [
-            "Office A-grade",
-            "94%"
-          ],
-          [
-            "Office B-grade",
-            "78%"
-          ],
-          [
-            "Retail flagship",
-            "97%"
-          ],
-          [
-            "Retail secondary",
-            "81%"
-          ],
-          [
-            "Industrial",
-            "89%"
-          ]
-        ]
-      }
+      "correctAnswer": "D",
+      "explanation": "Revenue is tonnage multiplied by the price a tonne: Ashfold GBP 515,780.00, Barrowden GBP 292,320.00, Calderfield GBP 638,464.00, Dunsley GBP 468,468.00, Edgeworth GBP 673,425.00, Fenniscliffe GBP 251,100.00. Edgeworth earns the most despite Calderfield growing 427 more tonnes, because it sells at GBP 205.00 against GBP 172.00.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q19",
       "questionType": "table_analysis",
       "num": 19,
-      "prompt": "Based on the retail sales quarterly revenue table (Q1: $2.4M, Q2: $3.1M, Q3: $2.8M, Q4: $3.6M), sort by the criteria given and identify which column would rank first.",
+      "prompt": "How many farms are above the median on both yield and the share of land irrigated?\n\nFarm | Hectares | Yield (tonnes a hectare) | Price a tonne | Irrigated\nAshfold | 340 | 8.2 | GBP 185.00 | 40%\nBarrowden | 120 | 11.6 | GBP 210.00 | 85%\nCalderfield | 580 | 6.4 | GBP 172.00 | 20%\nDunsley | 260 | 9.1 | GBP 198.00 | 30%\nEdgeworth | 450 | 7.3 | GBP 205.00 | 35%\nFenniscliffe | 90 | 12.4 | GBP 225.00 | 95%",
       "options": [
-        "A. Insufficient data to determine rank",
-        "B. The first row ranks highest",
-        "C. The second row ranks highest",
-        "D. The third row ranks highest",
-        "E. The ranking depends on the sort criterion"
+        "A. One",
+        "B. Three",
+        "C. Four",
+        "D. Five",
+        "E. Two"
       ],
-      "correctAnswer": "B",
-      "explanation": "This table_analysis question tests ability to interpret retail sales data on quarterly revenue.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "retail sales",
-        "topic": "quarterly revenue",
-        "data": "Q1: $2.4M, Q2: $3.1M, Q3: $2.8M, Q4: $3.6M"
-      },
-      "visual": {
-        "chartType": "table",
-        "title": "Quarterly Revenue — Retail Sales",
-        "headers": [
-          "Category",
-          "Quarterly Revenue"
-        ],
-        "rows": [
-          [
-            "Q1",
-            "$2.4M"
-          ],
-          [
-            "Q2",
-            "$3.1M"
-          ],
-          [
-            "Q3",
-            "$2.8M"
-          ],
-          [
-            "Q4",
-            "$3.6M"
-          ]
-        ]
-      }
+      "correctAnswer": "E",
+      "explanation": "The medians are 8.65 tonnes a hectare and 37.5% irrigated. Above on yield: Barrowden, Dunsley, Fenniscliffe. Above on irrigation: Ashfold, Barrowden, Fenniscliffe. On both: Barrowden and Fenniscliffe — 2. Watering the land and getting a good yield go together at the top of the table, but not everywhere in it.",
+      "difficulty": "medium",
+      "topic": "data insights"
     },
     {
       "id": "gmat-data-insights-015-q20",
       "questionType": "table_analysis",
       "num": 20,
-      "prompt": "Sort the hospital operations patient wait times table: Emergency: 45min, Outpatient: 28min, Radiology: 62min, Laboratory: 19min. Which statement is accurate?",
+      "prompt": "Which farm earns the most from each hectare it farms?\n\nFarm | Hectares | Yield (tonnes a hectare) | Price a tonne | Irrigated\nAshfold | 340 | 8.2 | GBP 185.00 | 40%\nBarrowden | 120 | 11.6 | GBP 210.00 | 85%\nCalderfield | 580 | 6.4 | GBP 172.00 | 20%\nDunsley | 260 | 9.1 | GBP 198.00 | 30%\nEdgeworth | 450 | 7.3 | GBP 205.00 | 35%\nFenniscliffe | 90 | 12.4 | GBP 225.00 | 95%",
       "options": [
-        "A. The ranking depends on the sort criterion",
-        "B. Insufficient data to determine rank",
-        "C. The first row ranks highest",
-        "D. The second row ranks highest",
-        "E. The third row ranks highest"
+        "A. Ashfold",
+        "B. Fenniscliffe",
+        "C. Barrowden",
+        "D. Dunsley",
+        "E. Edgeworth"
       ],
-      "correctAnswer": "C",
-      "explanation": "This table_analysis question tests ability to interpret hospital operations data on patient wait times.",
-      "difficulty": "hard",
-      "topic": "data_interpretation",
-      "dataContext": {
-        "context": "hospital operations",
-        "topic": "patient wait times",
-        "data": "Emergency: 45min, Outpatient: 28min, Radiology: 62min, Laboratory: 19min"
-      },
-      "visual": {
-        "chartType": "table",
-        "title": "Patient Wait Times — Hospital Operations",
-        "headers": [
-          "Category",
-          "Patient Wait Times"
-        ],
-        "rows": [
-          [
-            "Emergency",
-            "45min"
-          ],
-          [
-            "Outpatient",
-            "28min"
-          ],
-          [
-            "Radiology",
-            "62min"
-          ],
-          [
-            "Laboratory",
-            "19min"
-          ]
-        ]
-      }
+      "correctAnswer": "B",
+      "explanation": "Revenue a hectare is yield multiplied by price: Ashfold GBP 1,517.00, Barrowden GBP 2,436.00, Calderfield GBP 1,100.80, Dunsley GBP 1,801.80, Edgeworth GBP 1,496.50, Fenniscliffe GBP 2,790.00. Fenniscliffe leads at GBP 2,790.00 and is the smallest farm in the table at 90 hectares. Edgeworth earns the most in total and Calderfield farms the most land, but neither works its ground as hard.",
+      "difficulty": "medium",
+      "topic": "data insights"
     }
   ],
   "answerKey": {
     "gmat-data-insights-015-q01": "D",
-    "gmat-data-insights-015-q02": "E",
-    "gmat-data-insights-015-q03": "A",
-    "gmat-data-insights-015-q04": "B",
-    "gmat-data-insights-015-q05": "C",
-    "gmat-data-insights-015-q06": "D",
-    "gmat-data-insights-015-q07": "E",
+    "gmat-data-insights-015-q02": "A",
+    "gmat-data-insights-015-q03": "C",
+    "gmat-data-insights-015-q04": "E",
+    "gmat-data-insights-015-q05": "B",
+    "gmat-data-insights-015-q06": "C",
+    "gmat-data-insights-015-q07": "D",
     "gmat-data-insights-015-q08": "A",
-    "gmat-data-insights-015-q09": "B",
-    "gmat-data-insights-015-q10": "C",
-    "gmat-data-insights-015-q11": "D",
-    "gmat-data-insights-015-q12": "E",
-    "gmat-data-insights-015-q13": "A",
-    "gmat-data-insights-015-q14": "B",
-    "gmat-data-insights-015-q15": "C",
+    "gmat-data-insights-015-q09": "E",
+    "gmat-data-insights-015-q10": "B",
+    "gmat-data-insights-015-q11": "A",
+    "gmat-data-insights-015-q12": "C",
+    "gmat-data-insights-015-q13": "C",
+    "gmat-data-insights-015-q14": "E",
+    "gmat-data-insights-015-q15": "A",
     "gmat-data-insights-015-q16": "D",
-    "gmat-data-insights-015-q17": "E",
-    "gmat-data-insights-015-q18": "A",
-    "gmat-data-insights-015-q19": "B",
-    "gmat-data-insights-015-q20": "C"
-  },
-  "fingerprints": [
-    "d7f415e094eb60ce1d",
-    "3c51ffa1ef4dff8315",
-    "f356f8c2526b3053be",
-    "185aaa802e6c97827d",
-    "1cbdfc4d14ac834a5d",
-    "7f83d414304f20909b",
-    "fc930afd908cdb863d",
-    "ae1d407aea9ff90286",
-    "e0f0629d068751c17f",
-    "5203e4407789f98428",
-    "6267e4a1744520ddce",
-    "538a003ed52de57fd6",
-    "1a71b6fdbf9f0d0034",
-    "f8e7d6263f53730b80",
-    "b5443b9d2116e6ff3e",
-    "0c151fb6fad525f26d",
-    "c4b9dcbb4a7e087551",
-    "fdcca7876a533187d3",
-    "d2d56e873de8cdaf75",
-    "98dbea791dd057f5d8"
-  ]
+    "gmat-data-insights-015-q17": "B",
+    "gmat-data-insights-015-q18": "D",
+    "gmat-data-insights-015-q19": "E",
+    "gmat-data-insights-015-q20": "B"
+  }
 }
