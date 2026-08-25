@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of √144 + √81?",
+      "prompt": "For what length of side does a cube have a surface area, in square centimetres, numerically equal to its volume in cubic centimetres?",
       "options": [
-        "21",
-        "25",
-        "15",
-        "18",
-        "20"
+        "6 cm",
+        "4 cm",
+        "8 cm",
+        "12 cm",
+        "3 cm"
       ],
-      "correctAnswer": "21",
+      "correctAnswer": "6 cm",
       "answer": "A",
-      "explanation": "√144 = 12 and √81 = 9. 12 + 9 = 21.",
+      "explanation": "A cube of side s has a surface area of 6s² and a volume of s³. Setting 6s² = s³ and dividing both sides by s² gives s = 6. At 6 cm both come to 216 — the surface area in square centimetres and the volume in cubic centimetres, which are different quantities that happen to share a number here.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
+      "prompt": "If a = 3 and b = -2, what is the value of (a² − b²) / (a + b)?",
       "options": [
-        "$18.50",
-        "$21.50",
-        "$19.25",
-        "$20.00",
-        "$14.00"
+        "13",
+        "1",
+        "9",
+        "5",
+        "-5"
       ],
-      "correctAnswer": "$21.50",
-      "answer": "B",
-      "explanation": "Notebooks: 4 × $3.50 = $14.00. Pens: 6 × $1.25 = $7.50. Total = $14.00 + $7.50 = $21.50.",
+      "correctAnswer": "5",
+      "answer": "D",
+      "explanation": "a² is 9 and b² is 4, since squaring a negative gives a positive, so the top is 5. The bottom is 3 + (-2) = 1, giving 5. The expression also simplifies: (a² − b²) / (a + b) is a − b, which is 3 − (-2) = 5 without any squaring at all.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
+      "prompt": "What is the mean of the first 15 odd numbers?",
       "options": [
-        "55 mph",
-        "58 mph",
-        "60 mph",
-        "65 mph",
-        "70 mph"
+        "29",
+        "225",
+        "15",
+        "16",
+        "14"
       ],
-      "correctAnswer": "60 mph",
+      "correctAnswer": "15",
       "answer": "C",
-      "explanation": "Total distance = 240 + 180 = 420 miles. Total time = 4 + 3 = 7 hours. Average = 420 ÷ 7 = 60 mph.",
+      "explanation": "The first 15 odd numbers add to 15², which is 225, so their mean is 225 / 15 = 15. 29 is the largest of them rather than the average, and the mean of any run of odd numbers starting at 1 is simply how many there are.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 40% of a number is 64, what is 75% of that number?",
+      "prompt": "A triangle is drawn inside a semicircle with its longest side on the diameter, so the angle opposite that side is a right angle. If one of the other angles is 34 degrees, what is the third?",
       "options": [
-        "96",
-        "100",
-        "108",
-        "120",
-        "128"
+        "46 degrees",
+        "146 degrees",
+        "34 degrees",
+        "90 degrees",
+        "56 degrees"
       ],
-      "correctAnswer": "120",
-      "answer": "D",
-      "explanation": "0.40x = 64 → x = 160. 75% of 160 = 0.75 × 160 = 120.",
+      "correctAnswer": "56 degrees",
+      "answer": "E",
+      "explanation": "The angle in a semicircle is 90 degrees, and the three angles of a triangle total 180, so the third is 180 − 90 − 34 = 56 degrees. The two non-right angles must add to 90, so 34 and 56 account for the whole of what the right angle leaves.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
+      "prompt": "y varies inversely as x, and y is 12 when x is 5. What is y when x is 15?",
       "options": [
-        "21 hours",
-        "3 hours",
-        "12 hours",
-        "15 hours",
-        "18 hours"
+        "36",
+        "4",
+        "6",
+        "9",
+        "2"
       ],
-      "correctAnswer": "18 hours",
-      "answer": "E",
-      "explanation": "Net rate = 1/6 − 1/9 = 3/18 − 2/18 = 1/18 tank per hour. Time = 18 hours.",
+      "correctAnswer": "4",
+      "answer": "B",
+      "explanation": "Inverse variation means xy stays constant: 5 × 12 = 60. When x is 15, y must be 60 / 15 = 4. Treating the relationship as direct gives 36, which has y rising as x rises rather than falling.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
+      "prompt": "How many zeros are there at the end of the product 25 × 32 × 15?",
       "options": [
-        "$180",
-        "$190",
-        "$200",
-        "$210",
-        "$170"
+        "2",
+        "4",
+        "1",
+        "3",
+        "5"
       ],
-      "correctAnswer": "$180",
-      "answer": "A",
-      "explanation": "200 × 1.20 = 240; 240 × 0.75 = 180. (Net factor 1.2 × 0.75 = 0.9, a 10% drop.)",
+      "correctAnswer": "3",
+      "answer": "D",
+      "explanation": "The product is 12,000, which ends in 3 zeros. Each trailing zero needs a factor of 10, that is a 2 paired with a 5: 25 contributes two 5s, 15 one more, and 32 supplies plenty of 2s, so three pairs can be made and no more.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
+      "prompt": "A bag holds 4 red counters and 6 blue. Two are drawn together. What is the probability that they are the same colour?",
       "options": [
-        "$200",
-        "$210",
-        "$220",
-        "$240",
-        "$260"
+        "7/15",
+        "6/45",
+        "8/15",
+        "1/2",
+        "2/9"
       ],
-      "correctAnswer": "$210",
-      "answer": "B",
-      "explanation": "Amount = 1000 × 1.10² = 1000 × 1.21 = 1210. Interest = 1210 − 1000 = 210.",
+      "correctAnswer": "7/15",
+      "answer": "A",
+      "explanation": "There are 45 ways to choose two counters from 10. Two reds can be picked 6 ways and two blues 15 ways, so 21 of the 45 pairs match: 21/45, which cancels to 7/15. 6/45 counts only the red pairs and forgets that two blues also match.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
+      "prompt": "A figure grows to 3.5 times its original size. By what percentage has it increased?",
       "options": [
-        "20",
-        "12",
-        "15",
-        "16",
-        "18"
+        "350%",
+        "35%",
+        "250%",
+        "300%",
+        "150%"
       ],
-      "correctAnswer": "15",
+      "correctAnswer": "250%",
       "answer": "C",
-      "explanation": "Sum of 5 = 5 × 20 = 100. Remove 40 → 60 left over 4 numbers. Average = 60 ÷ 4 = 15.",
+      "explanation": "Growing to 3.5 times the original means the increase is 3.5 − 1 = 2.5 times the original, which is 250%. 350% is what the figure has become as a percentage of where it started, not how much it has risen.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
+      "prompt": "A worker is paid £0.65 for each of the first 200 items and £0.90 for each item after that. What is the pay for 340 items?",
       "options": [
-        "24",
-        "8",
-        "12",
-        "16",
-        "20"
+        "£221.00",
+        "£256.00",
+        "£306.00",
+        "£240.00",
+        "£280.00"
       ],
-      "correctAnswer": "16",
-      "answer": "D",
-      "explanation": "Parts = 3 + 5 = 8 → each part = 64 ÷ 8 = 8. Amounts: 24 and 40. Difference = 40 − 24 = 16.",
+      "correctAnswer": "£256.00",
+      "answer": "B",
+      "explanation": "The first 200 items pay 200 × £0.65 = £130.00, and the remaining 140 pay £0.90 each: £126.00. Together that is £256.00. Paying all 340 items at the lower rate gives £221.00, and at the higher rate £306.00 — the answer sits between the two.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
+      "prompt": "What is the area of an equilateral triangle of side 12 cm, in surd form?",
       "options": [
-        "140",
-        "152",
-        "96",
-        "120",
-        "136"
+        "144√3 cm²",
+        "72√3 cm²",
+        "144 cm²",
+        "72 cm²",
+        "36√3 cm²"
       ],
-      "correctAnswer": "136",
+      "correctAnswer": "36√3 cm²",
       "answer": "E",
-      "explanation": "Area = 12 × 8 = 96. Perimeter = 2(12 + 8) = 40. Sum = 96 + 40 = 136.",
+      "explanation": "The area of an equilateral triangle of side s is s² times the square root of 3, all over 4: 12² is 144, and dividing by 4 gives 36√3 cm². 72√3 cm² comes from halving instead of quartering, which is the ordinary triangle formula applied without the height being worked out.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 2^5 × 2^3?",
+      "prompt": "Five years ago the ages of two people were in the ratio 3 : 2. Today they are in the ratio 4 : 3. How old is the elder today?",
       "options": [
-        "256",
-        "512",
-        "1024",
-        "64",
-        "128"
+        "15",
+        "25",
+        "18",
+        "20",
+        "30"
       ],
-      "correctAnswer": "256",
-      "answer": "A",
-      "explanation": "2^5 × 2^3 = 2^(5+3) = 2^8 = 256.",
+      "correctAnswer": "20",
+      "answer": "D",
+      "explanation": "Write the earlier ages as 3k and 2k. Today they are 3k + 5 and 2k + 5, and setting their ratio to 4 : 3 gives k = 5. So five years ago they were 15 and 10, and today they are 20 and 15 — a ratio of 4 : 3, as required. 15 is the elder's age five years ago.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
+      "prompt": "A clock gains 3 minutes every hour. How far ahead is it after a full day?",
       "options": [
-        "18",
-        "21",
-        "24",
-        "27",
-        "30"
+        "3 hours",
+        "36 minutes",
+        "1 hour 12 minutes",
+        "2 hours 24 minutes",
+        "1 hour 30 minutes"
       ],
-      "correctAnswer": "21",
-      "answer": "B",
-      "explanation": "Adding: 2x = 14 → x = 7. Then y = 3. xy = 7 × 3 = 21.",
+      "correctAnswer": "1 hour 12 minutes",
+      "answer": "C",
+      "explanation": "Over 24 hours the clock gains 3 × 24 = 72 minutes, which is 1 hour 12 minutes. Reading the 3 minutes an hour as 3 hours a day is the slip to avoid — the gain accumulates by the minute, not by the hour.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is 15% of 15% of 400?",
+      "prompt": "A model car is built to a scale of 1 : 24. The real car is 4.32 m long. How long is the model?",
       "options": [
-        "18",
-        "6",
-        "9",
-        "12",
-        "15"
+        "18 cm",
+        "103.68 cm",
+        "24 cm",
+        "10.8 cm",
+        "43.2 cm"
       ],
-      "correctAnswer": "9",
-      "answer": "C",
-      "explanation": "15% of 400 = 60. 15% of 60 = 9.",
+      "correctAnswer": "18 cm",
+      "answer": "A",
+      "explanation": "4.32 m is 432 cm, and the model is 24 times smaller: 432 / 24 = 18 cm. Multiplying by the scale instead of dividing gives 103.68 cm, a model longer than the car it copies.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
+      "prompt": "The side of a square is measured 10% too long. By what percentage is the calculated area too large?",
       "options": [
-        "$70",
-        "$57",
-        "$60",
-        "$63",
-        "$66"
+        "10%",
+        "20%",
+        "11%",
+        "121%",
+        "21%"
       ],
-      "correctAnswer": "$63",
-      "answer": "D",
-      "explanation": "Discount: 80 × 0.75 = 60. Tax: 60 × 1.05 = 63.",
+      "correctAnswer": "21%",
+      "answer": "E",
+      "explanation": "A side 10% too long is 1.02 times the true length, so the calculated area is 1.1 squared, or 1.21 times the true area — 21% too large. Doubling the 10% gives 20%, which is close but misses the small extra term that squaring produces.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
+      "prompt": "What is the interquartile range of these nine values: 3, 7, 8, 12, 15, 18, 21, 26, 30?",
       "options": [
-        "165 miles",
-        "180 miles",
-        "120 miles",
-        "135 miles",
-        "150 miles"
+        "27",
+        "16",
+        "15",
+        "18",
+        "12"
       ],
-      "correctAnswer": "150 miles",
-      "answer": "E",
-      "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
+      "correctAnswer": "16",
+      "answer": "B",
+      "explanation": "With nine values the median is the fifth, 15, and it is left out of both halves. The lower four are 3, 7, 8, 12, so the lower quartile is 7.5; the upper four give 23.5. The interquartile range is 23.5 − 7.5 = 16. The full range, 27, measures something different.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "prompt": "Taking pi as 22/7, what is the volume of a cone of radius 7 cm and height 12 cm?",
       "options": [
-        "10",
-        "12",
-        "15",
-        "16",
-        "8"
+        "1,848 cm³",
+        "462 cm³",
+        "1,232 cm³",
+        "616 cm³",
+        "308 cm³"
       ],
-      "correctAnswer": "10",
-      "answer": "A",
-      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "correctAnswer": "616 cm³",
+      "answer": "D",
+      "explanation": "A cone holds a third of the cylinder on the same base: 22/7 × 7² × 12 / 3 = 616 cm³. Leaving out the third gives 1,848 cm³, the volume of that whole cylinder.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "prompt": "One car covers 14 km on a litre and another 11 km. Over 462 km, how much less fuel does the first car use?",
       "options": [
-        "1/2",
-        "3/5",
-        "2/3",
-        "1/5",
-        "2/5"
+        "3 litres",
+        "33 litres",
+        "9 litres",
+        "12 litres",
+        "6 litres"
       ],
-      "correctAnswer": "3/5",
-      "answer": "B",
-      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "correctAnswer": "9 litres",
+      "answer": "C",
+      "explanation": "The first car uses 462 / 14 = 33 litres and the second 462 / 11 = 42 litres, a difference of 9 litres. The 3 km a litre between them is a difference in efficiency, not in fuel used.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "What is the largest prime factor of 1,155?",
       "options": [
-        "29",
-        "30",
-        "32",
-        "35",
-        "38"
+        "11",
+        "7",
+        "15",
+        "21",
+        "33"
       ],
-      "correctAnswer": "32",
-      "answer": "C",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "correctAnswer": "11",
+      "answer": "A",
+      "explanation": "1,155 divides by 5 to give 231, which divides by 3 to give 77, which is 7 × 11. So 1,155 = 3 × 5 × 7 × 11, and the largest prime among them is 11. 15, 21 and 33 all divide into 1,155 but none of them is prime.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "£5,000.00 grows to £5,832.00 in two years, compounded annually. What is the annual rate?",
       "options": [
-        "1175",
-        "1225",
-        "1250",
-        "1275",
-        "1300"
+        "8.32%",
+        "8%",
+        "9%",
+        "7%",
+        "16%"
       ],
-      "correctAnswer": "1275",
-      "answer": "D",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "correctAnswer": "8%",
+      "answer": "B",
+      "explanation": "Two years of growth multiply the money by £5,832.00 / £5,000.00 = 1.1664. The annual factor is the square root of that, 1.08, so the rate is 8%. Halving the total growth gives 8.32% and ignores that the second year's growth is earned on a larger sum.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "What is the largest integer x for which −3x + 7 is greater than 22?",
       "options": [
-        "18",
-        "20",
-        "12",
-        "14",
-        "16"
+        "-5",
+        "-4",
+        "5",
+        "-15",
+        "-6"
       ],
-      "correctAnswer": "16",
+      "correctAnswer": "-6",
       "answer": "E",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "explanation": "Taking 7 from both sides gives −3x > 15. Dividing by −3 reverses the inequality: x < -5. The largest integer below -5 is -6. -5 itself does not work, since −3 × (-5) + 7 comes to exactly 22 rather than more than it.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "An account holds £2,480.00 and pays out £185.00 on the first of each month. After how many payments does the balance first fall below £1,000.00?",
       "options": [
-        "25%",
-        "30%",
-        "35%",
-        "40%",
-        "20%"
+        "9",
+        "8",
+        "10",
+        "7",
+        "13"
       ],
-      "correctAnswer": "25%",
+      "correctAnswer": "9",
       "answer": "A",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "explanation": "Each payment takes £185.00, so after 8 payments the balance is £1,000.00 — not yet below £1,000.00. The 9th payment brings it to £815.00, which is. Dividing £1,480.00 by £185.00 gives exactly 8, and it is that exactness that makes the 9th payment the one that crosses the line.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-020-q001": "21",
-    "gmat-quant-020-q002": "$21.50",
-    "gmat-quant-020-q003": "60 mph",
-    "gmat-quant-020-q004": "120",
-    "gmat-quant-020-q005": "18 hours",
-    "gmat-quant-020-q006": "$180",
-    "gmat-quant-020-q007": "$210",
-    "gmat-quant-020-q008": "15",
-    "gmat-quant-020-q009": "16",
-    "gmat-quant-020-q010": "136",
-    "gmat-quant-020-q011": "256",
-    "gmat-quant-020-q012": "21",
-    "gmat-quant-020-q013": "9",
-    "gmat-quant-020-q014": "$63",
-    "gmat-quant-020-q015": "150 miles",
-    "gmat-quant-020-q016": "10",
-    "gmat-quant-020-q017": "3/5",
-    "gmat-quant-020-q018": "32",
-    "gmat-quant-020-q019": "1275",
-    "gmat-quant-020-q020": "16",
-    "gmat-quant-020-q021": "25%"
+    "gmat-quant-020-q001": "6 cm",
+    "gmat-quant-020-q002": "5",
+    "gmat-quant-020-q003": "15",
+    "gmat-quant-020-q004": "56 degrees",
+    "gmat-quant-020-q005": "4",
+    "gmat-quant-020-q006": "3",
+    "gmat-quant-020-q007": "7/15",
+    "gmat-quant-020-q008": "250%",
+    "gmat-quant-020-q009": "£256.00",
+    "gmat-quant-020-q010": "36√3 cm²",
+    "gmat-quant-020-q011": "20",
+    "gmat-quant-020-q012": "1 hour 12 minutes",
+    "gmat-quant-020-q013": "18 cm",
+    "gmat-quant-020-q014": "21%",
+    "gmat-quant-020-q015": "16",
+    "gmat-quant-020-q016": "616 cm³",
+    "gmat-quant-020-q017": "9 litres",
+    "gmat-quant-020-q018": "11",
+    "gmat-quant-020-q019": "8%",
+    "gmat-quant-020-q020": "-6",
+    "gmat-quant-020-q021": "9"
   }
 }
