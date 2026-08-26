@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "prompt": "Five twelfths of a tank of fuel is used. What percentage of the tank remains?",
       "options": [
-        "154",
-        "168",
-        "176",
-        "132",
-        "144"
+        "41.67%",
+        "50%",
+        "58.33%",
+        "60%",
+        "70%"
       ],
-      "correctAnswer": "154",
-      "answer": "A",
-      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "correctAnswer": "58.33%",
+      "answer": "C",
+      "explanation": "Five twelfths used leaves seven twelfths, and 7 / 12 is 58.33%. 41.67% is the share used rather than the share left, and the two must add to 100.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "prompt": "What is the value of 41² − 40²?",
       "options": [
-        "18 litres",
-        "20 litres",
-        "22 litres",
-        "24 litres",
-        "16 litres"
+        "81",
+        "1",
+        "1,681",
+        "80",
+        "162"
       ],
-      "correctAnswer": "20 litres",
-      "answer": "B",
-      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "correctAnswer": "81",
+      "answer": "A",
+      "explanation": "The difference of two squares factorises: 41² − 40² = (41 + 40)(41 − 40) = 81 × 1 = 81. For any two consecutive whole numbers the difference of their squares is simply their sum, so no squaring is needed at all.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 5! (5 factorial)?",
+      "prompt": "Five different positive whole numbers have a mean of 12, and the smallest is 2. What is the largest the biggest of them could be?",
       "options": [
         "60",
-        "100",
-        "120",
-        "150",
-        "720"
+        "14",
+        "48",
+        "46",
+        "12"
       ],
-      "correctAnswer": "120",
-      "answer": "C",
-      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "correctAnswer": "46",
+      "answer": "D",
+      "explanation": "The five total 60. To leave as much as possible for the largest, the other four must be as small as they can be while staying different: 2, 3, 4, 5, which come to 14. That leaves 46. 60 is the total of all five, not the largest one.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
+      "prompt": "Taking pi as 22/7, a circle is drawn inside a square of side 14 cm, touching all four sides. What is the ratio of the square's area to the circle's?",
       "options": [
-        "12",
-        "16",
-        "20",
-        "24",
-        "48"
+        "11 : 14",
+        "2 : 1",
+        "22 : 7",
+        "7 : 22",
+        "14 : 11"
       ],
-      "correctAnswer": "24",
-      "answer": "D",
-      "explanation": "Multiples of 8: 8, 16, 24 … 24 is divisible by 4 and 6, so LCM = 24.",
+      "correctAnswer": "14 : 11",
+      "answer": "E",
+      "explanation": "The square covers 196 cm² and the circle 22/7 × 7² = 154 cm². The ratio 196 : 154 divides by 14 to give 14 : 11. The square is the larger of the two, so its number must come first — 11 : 14 has them the wrong way round.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
+      "prompt": "One partner puts in £8,000.00 for 12 months and another £15,000.00 for 8 months. A profit of £18,000.00 is shared in proportion to money multiplied by time. What does the first partner receive?",
       "options": [
-        "18",
-        "24",
-        "6",
-        "8",
-        "12"
+        "£10,000.00",
+        "£8,000.00",
+        "£6,260.87",
+        "£9,000.00",
+        "£6,000.00"
       ],
-      "correctAnswer": "12",
-      "answer": "E",
-      "explanation": "24 = 12 × 2, 36 = 12 × 3. The largest common factor is 12.",
+      "correctAnswer": "£8,000.00",
+      "answer": "B",
+      "explanation": "The weights are £8,000.00 × 12 = 96,000 and £15,000.00 × 8 = 120,000, a ratio of 4 : 5. Four ninths of £18,000.00 is £8,000.00. Sharing by capital alone would give £6,260.87 and ignore the four extra months.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Three-quarters of a number is 60. What is the number?",
+      "prompt": "What is the largest three-digit whole number that 17 divides exactly?",
       "options": [
-        "80",
-        "85",
-        "90",
-        "70",
-        "75"
+        "999",
+        "969",
+        "986",
+        "952",
+        "1,003"
       ],
-      "correctAnswer": "80",
-      "answer": "A",
-      "explanation": "(3/4)x = 60 → x = 60 × 4 ÷ 3 = 80.",
+      "correctAnswer": "986",
+      "answer": "C",
+      "explanation": "17 × 58 = 986, and the next multiple, 17 × 59 = 1,003, has four digits. 969 is a multiple of 17 but 17 smaller, and 999 itself leaves a remainder of 13.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
+      "prompt": "A card is drawn from a standard pack of 52. What is the probability that it is a heart or a king?",
       "options": [
-        "2 : 5",
-        "8 : 15",
-        "6 : 5",
-        "3 : 5",
-        "8 : 5"
+        "17/52",
+        "1/4",
+        "1/13",
+        "17/13",
+        "4/13"
       ],
-      "correctAnswer": "8 : 15",
-      "answer": "B",
-      "explanation": "Make b common: a:b = 8:12, b:c = 12:15. So a:c = 8:15.",
+      "correctAnswer": "4/13",
+      "answer": "E",
+      "explanation": "There are 13 hearts and 4 kings, but the king of hearts is in both groups, so the count is 13 + 4 − 1 = 16 cards: 16/52, which cancels to 4/13. Adding the two without removing the overlap gives 17/52 and counts that one card twice.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
+      "prompt": "A category rises from 40 to 55 while the total it belongs to rises from 200 to 250. What is its new share of the total?",
       "options": [
-        "12",
-        "18",
-        "24",
-        "36",
-        "9"
+        "20%",
+        "22%",
+        "37.5%",
+        "25%",
+        "15%"
       ],
-      "correctAnswer": "24",
-      "answer": "C",
-      "explanation": "Volume = length × width × height = 2 × 3 × 4 = 24.",
+      "correctAnswer": "22%",
+      "answer": "B",
+      "explanation": "55 out of 250 is 22%, against 20% before. The category grew by 37.5% in its own right, but the total grew too, so its share rose by only 2 points. A category can grow strongly and still lose share if the whole grows faster.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
+      "prompt": "90 people are waiting. One till serves 4 a minute and another 5 a minute. How long to clear the queue?",
       "options": [
-        "720",
-        "480",
-        "540",
-        "600",
-        "640"
+        "22.5 minutes",
+        "18 minutes",
+        "20 minutes",
+        "10 minutes",
+        "9 minutes"
       ],
-      "correctAnswer": "600",
+      "correctAnswer": "10 minutes",
       "answer": "D",
-      "explanation": "0.20 × total = 120 → total = 120 ÷ 0.20 = 600.",
+      "explanation": "The two tills together serve 4 + 5 = 9 people a minute, so 90 take 10 minutes. Either till alone would take 22.5 or 18 minutes — the answer must be shorter than both.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A traveller drives to a town at 60 mph and returns along the same road at 40 mph. What is the average speed for the round trip?",
+      "prompt": "The three different faces of a cuboid have areas of 12, 18, 24 cm². What is its volume?",
       "options": [
-        "50 mph",
-        "52 mph",
-        "55 mph",
-        "45 mph",
-        "48 mph"
+        "72 cm³",
+        "54 cm³",
+        "5,184 cm³",
+        "216 cm³",
+        "36 cm³"
       ],
-      "correctAnswer": "48 mph",
-      "answer": "E",
-      "explanation": "Round-trip average = 2·v₁·v₂ ÷ (v₁+v₂) = 2 × 60 × 40 ÷ 100 = 4800 ÷ 100 = 48 mph.",
+      "correctAnswer": "72 cm³",
+      "answer": "A",
+      "explanation": "If the edges are a, b and c, the three face areas are ab, bc and ca, and their product is a²b²c² — the square of the volume. So the volume is the square root of 12 × 18 × 24 = 5,184, which is 72 cm³. The edges turn out to be 3, 4 and 6.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the simple interest on $2,000 at 5% per year for 3 years?",
+      "prompt": "What is the value of 2⁻³ × 4²?",
       "options": [
-        "$300",
-        "$350",
-        "$400",
-        "$200",
-        "$250"
+        "1/8",
+        "128",
+        "2",
+        "8",
+        "32"
       ],
-      "correctAnswer": "$300",
-      "answer": "A",
-      "explanation": "SI = P × r × t = 2000 × 0.05 × 3 = 300.",
+      "correctAnswer": "2",
+      "answer": "C",
+      "explanation": "2⁻³ is 1 divided by 2³, which is 1/8, and 4² is 16. Multiplying gives 16/8 = 2. Writing everything as powers of 2 is quicker: 2⁻³ × 2⁴ = 2¹ = 2, since 4² is 2⁴.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 5 identical pens cost $20, how much do 8 of the same pens cost?",
+      "prompt": "A train due at 14:20 runs 47 minutes late. When does it arrive?",
       "options": [
-        "$30",
-        "$32",
-        "$36",
-        "$40",
-        "$28"
+        "15:17",
+        "13:33",
+        "15:47",
+        "14:53",
+        "15:07"
       ],
-      "correctAnswer": "$32",
-      "answer": "B",
-      "explanation": "Unit price = 20 ÷ 5 = $4. 8 pens = 8 × 4 = $32.",
+      "correctAnswer": "15:07",
+      "answer": "E",
+      "explanation": "14:20 plus 47 minutes: 20 + 47 = 67 minutes past 14, which is one hour and 7 minutes, so the train arrives at 15:07. Carrying the minutes without converting to an hour would give 14:67, which is not a time.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A tank is 3/5 full. Adding 20 litres makes it 4/5 full. What is the tank's total capacity?",
+      "prompt": "A profit of £52,000.00 first pays salaries of £14,000.00 and £10,000.00. What is left is split 3 : 2 in the same order. How much does the first partner receive in total?",
       "options": [
-        "80 litres",
-        "90 litres",
-        "100 litres",
-        "110 litres",
-        "120 litres"
+        "£16,800.00",
+        "£31,200.00",
+        "£26,000.00",
+        "£30,800.00",
+        "£28,000.00"
       ],
-      "correctAnswer": "100 litres",
-      "answer": "C",
-      "explanation": "4/5 − 3/5 = 1/5 of capacity = 20 litres → capacity = 20 × 5 = 100 litres.",
+      "correctAnswer": "£30,800.00",
+      "answer": "D",
+      "explanation": "Salaries take £24,000.00, leaving £28,000.00 to divide. Three fifths of that is £16,800.00, and adding the £14,000.00 salary gives £30,800.00. £16,800.00 is the share of the remainder alone, and splitting the whole £52,000.00 in the ratio gives £31,200.00, which pays the salaries twice over.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of √144 + √81?",
+      "prompt": "500 units are bought at £12.00 each, with a rebate of £600.00 paid afterwards. What is the effective price per unit?",
       "options": [
-        "15",
-        "18",
-        "20",
-        "21",
-        "25"
+        "£12.00",
+        "£10.80",
+        "£1.20",
+        "£10.00",
+        "£9.60"
       ],
-      "correctAnswer": "21",
-      "answer": "D",
-      "explanation": "√144 = 12 and √81 = 9. 12 + 9 = 21.",
+      "correctAnswer": "£10.80",
+      "answer": "B",
+      "explanation": "The units cost £6,000.00 and the rebate brings that down to £5,400.00, which across 500 units is £10.80 each. The rebate works out at £1.20 a unit, and taking that off £12.00 gives the same £10.80.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
+      "prompt": "A set of numbers has a mean of 40. Every number is then increased by 15%. What is the new mean?",
       "options": [
-        "$19.25",
-        "$20.00",
-        "$14.00",
-        "$18.50",
-        "$21.50"
+        "46",
+        "55",
+        "40",
+        "44",
+        "48"
       ],
-      "correctAnswer": "$21.50",
-      "answer": "E",
-      "explanation": "Notebooks: 4 × $3.50 = $14.00. Pens: 6 × $1.25 = $7.50. Total = $14.00 + $7.50 = $21.50.",
+      "correctAnswer": "46",
+      "answer": "A",
+      "explanation": "Multiplying every value by 1.15 multiplies their total by 1.15, and the count does not change, so the mean is multiplied by 1.15 too: 40 × 1.15 = 46. Adding 15 to the mean gives 55 and confuses a percentage rise with adding 15 to each value.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
+      "prompt": "A rectangle has an area of 288 cm² and one side of 16 cm. What is its perimeter?",
       "options": [
-        "60 mph",
-        "65 mph",
-        "70 mph",
-        "55 mph",
-        "58 mph"
+        "34 cm",
+        "288 cm",
+        "68 cm",
+        "52 cm",
+        "72 cm"
       ],
-      "correctAnswer": "60 mph",
-      "answer": "A",
-      "explanation": "Total distance = 240 + 180 = 420 miles. Total time = 4 + 3 = 7 hours. Average = 420 ÷ 7 = 60 mph.",
+      "correctAnswer": "68 cm",
+      "answer": "C",
+      "explanation": "The other side is 288 / 16 = 18 cm, so the perimeter is 2 × (16 + 18) = 68 cm. 34 cm adds one of each side and forgets that a rectangle has two of both.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 40% of a number is 64, what is 75% of that number?",
+      "prompt": "A pump moves 4,500 litres in 25 minutes. How long does it take to move 10,800 litres?",
       "options": [
-        "108",
-        "120",
-        "128",
-        "96",
-        "100"
+        "24 minutes",
+        "45 minutes",
+        "75 minutes",
+        "60 minutes",
+        "50 minutes"
       ],
-      "correctAnswer": "120",
-      "answer": "B",
-      "explanation": "0.40x = 64 → x = 160. 75% of 160 = 0.75 × 160 = 120.",
+      "correctAnswer": "60 minutes",
+      "answer": "D",
+      "explanation": "The pump moves 4,500 / 25 = 180 litres a minute, so 10,800 litres take 10,800 / 180 = 60 minutes. The job is 2.4 times the size, and 25 × 2.4 gives the same 60 minutes.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
+      "prompt": "What is the highest power of 3 that divides 20 factorial exactly?",
       "options": [
-        "12 hours",
-        "15 hours",
-        "18 hours",
-        "21 hours",
-        "3 hours"
+        "6",
+        "9",
+        "20",
+        "4",
+        "8"
       ],
-      "correctAnswer": "18 hours",
-      "answer": "C",
-      "explanation": "Net rate = 1/6 − 1/9 = 3/18 − 2/18 = 1/18 tank per hour. Time = 18 hours.",
+      "correctAnswer": "8",
+      "answer": "E",
+      "explanation": "Every multiple of 3 up to 20 contributes a factor: there are 6 of them. The multiples of 9 — that is 9 and 18 — each contribute a second, adding 2 more. So 3 appears 8 times in all, and 3 to the power 8 divides 20 factorial while 3 to the power 9 does not.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
+      "prompt": "A £45.00 item has a third taken off, and then £2.00 taken off the reduced price. What is the final price?",
       "options": [
-        "$200",
-        "$210",
-        "$170",
-        "$180",
-        "$190"
+        "£30.00",
+        "£28.00",
+        "£13.00",
+        "£43.00",
+        "£25.00"
       ],
-      "correctAnswer": "$180",
-      "answer": "D",
-      "explanation": "200 × 1.20 = 240; 240 × 0.75 = 180. (Net factor 1.2 × 0.75 = 0.9, a 10% drop.)",
+      "correctAnswer": "£28.00",
+      "answer": "B",
+      "explanation": "A third off £45.00 leaves £30.00, and £2.00 more off gives £28.00. £30.00 stops after the first reduction, and £13.00 takes the £2.00 off the third rather than off what is left.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
+      "prompt": "If x + y = 9 and xy = 20, what is x² + y²?",
       "options": [
-        "$220",
-        "$240",
-        "$260",
-        "$200",
-        "$210"
+        "41",
+        "81",
+        "61",
+        "121",
+        "21"
       ],
-      "correctAnswer": "$210",
-      "answer": "E",
-      "explanation": "Amount = 1000 × 1.10² = 1000 × 1.21 = 1210. Interest = 1210 − 1000 = 210.",
+      "correctAnswer": "41",
+      "answer": "A",
+      "explanation": "Squaring the sum gives (x + y)² = x² + 2xy + y² = 81. Taking off 2xy, which is 40, leaves x² + y² = 41. 81 is the square of the sum, which counts the cross term the question does not want. The numbers are 4 and 5, and 16 + 25 is indeed 41.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
+      "prompt": "An invoice of £1,800.00 before tax carries a 2% discount for prompt payment, with VAT at 20% charged on the discounted figure. What is paid?",
       "options": [
-        "15",
-        "16",
-        "18",
-        "20",
-        "12"
+        "£2,160.00",
+        "£1,764.00",
+        "£2,116.80",
+        "£2,073.60",
+        "£2,200.00"
       ],
-      "correctAnswer": "15",
-      "answer": "A",
-      "explanation": "Sum of 5 = 5 × 20 = 100. Remove 40 → 60 left over 4 numbers. Average = 60 ÷ 4 = 15.",
+      "correctAnswer": "£2,116.80",
+      "answer": "C",
+      "explanation": "The discount brings the net to £1,764.00, and VAT of 20% on that adds £352.80, giving £2,116.80. Charging VAT on the full £1,800.00 gives £2,160.00 and hands the discount back to the tax.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-027-q001": "154",
-    "gmat-quant-027-q002": "20 litres",
-    "gmat-quant-027-q003": "120",
-    "gmat-quant-027-q004": "24",
-    "gmat-quant-027-q005": "12",
-    "gmat-quant-027-q006": "80",
-    "gmat-quant-027-q007": "8 : 15",
-    "gmat-quant-027-q008": "24",
-    "gmat-quant-027-q009": "600",
-    "gmat-quant-027-q010": "48 mph",
-    "gmat-quant-027-q011": "$300",
-    "gmat-quant-027-q012": "$32",
-    "gmat-quant-027-q013": "100 litres",
-    "gmat-quant-027-q014": "21",
-    "gmat-quant-027-q015": "$21.50",
-    "gmat-quant-027-q016": "60 mph",
-    "gmat-quant-027-q017": "120",
-    "gmat-quant-027-q018": "18 hours",
-    "gmat-quant-027-q019": "$180",
-    "gmat-quant-027-q020": "$210",
-    "gmat-quant-027-q021": "15"
+    "gmat-quant-027-q001": "58.33%",
+    "gmat-quant-027-q002": "81",
+    "gmat-quant-027-q003": "46",
+    "gmat-quant-027-q004": "14 : 11",
+    "gmat-quant-027-q005": "£8,000.00",
+    "gmat-quant-027-q006": "986",
+    "gmat-quant-027-q007": "4/13",
+    "gmat-quant-027-q008": "22%",
+    "gmat-quant-027-q009": "10 minutes",
+    "gmat-quant-027-q010": "72 cm³",
+    "gmat-quant-027-q011": "2",
+    "gmat-quant-027-q012": "15:07",
+    "gmat-quant-027-q013": "£30,800.00",
+    "gmat-quant-027-q014": "£10.80",
+    "gmat-quant-027-q015": "46",
+    "gmat-quant-027-q016": "68 cm",
+    "gmat-quant-027-q017": "60 minutes",
+    "gmat-quant-027-q018": "8",
+    "gmat-quant-027-q019": "£28.00",
+    "gmat-quant-027-q020": "41",
+    "gmat-quant-027-q021": "£2,116.80"
   }
 }
