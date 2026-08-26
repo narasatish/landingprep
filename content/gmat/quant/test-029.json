@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 5! (5 factorial)?",
+      "prompt": "£240.00 buys items costing £6.00 each. After a 20% price rise, how many fewer whole items does the same money buy?",
       "options": [
-        "120",
-        "150",
-        "720",
-        "60",
-        "100"
+        "33",
+        "40",
+        "8",
+        "6",
+        "7"
       ],
-      "correctAnswer": "120",
-      "answer": "A",
-      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "correctAnswer": "7",
+      "answer": "E",
+      "explanation": "At £6.00 the money buys 40 items. After the rise each costs £7.20, and £240.00 / £7.20 is 33.33, so 33 whole items. That is 7 fewer. 33 is the new count rather than the drop, and a 20% rise in price does not mean a 20% fall in what can be bought.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
+      "prompt": "Solve for the positive value of x: x² = 3x + 28",
       "options": [
-        "20",
-        "24",
-        "48",
-        "12",
-        "16"
+        "-4",
+        "28",
+        "7",
+        "3",
+        "11"
       ],
-      "correctAnswer": "24",
-      "answer": "B",
-      "explanation": "Multiples of 8: 8, 16, 24 … 24 is divisible by 4 and 6, so LCM = 24.",
+      "correctAnswer": "7",
+      "answer": "C",
+      "explanation": "Bringing everything to one side gives x² − 3x − 28 = 0, which factorises as (x − 7)(x + 4) = 0 because 7 and -4 multiply to −28 and add to 3. The solutions are 7 and -4, and the positive one is 7. Checking: 7² is 49 and 3 × 7 + 28 is 49.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the greatest common divisor (GCD) of 24 and 36?",
+      "prompt": "Six numbers have a mean of 18. One is removed and the remaining five have a mean of 20. What was the number removed?",
       "options": [
-        "6",
         "8",
-        "12",
         "18",
-        "24"
+        "20",
+        "108",
+        "100"
       ],
-      "correctAnswer": "12",
-      "answer": "C",
-      "explanation": "24 = 12 × 2, 36 = 12 × 3. The largest common factor is 12.",
+      "correctAnswer": "8",
+      "answer": "A",
+      "explanation": "The six total 108 and the five total 100, so the number removed is the difference: 8. Removing a number below the mean must pull the mean up, which is why the answer had to be smaller than 18.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Three-quarters of a number is 60. What is the number?",
+      "prompt": "A rhombus has sides of 13 cm and a perpendicular height of 10 cm. What is its area?",
       "options": [
-        "90",
-        "70",
-        "75",
-        "80",
-        "85"
+        "169 cm²",
+        "65 cm²",
+        "260 cm²",
+        "130 cm²",
+        "120 cm²"
       ],
-      "correctAnswer": "80",
+      "correctAnswer": "130 cm²",
       "answer": "D",
-      "explanation": "(3/4)x = 60 → x = 60 × 4 ÷ 3 = 80.",
+      "explanation": "A rhombus is a parallelogram, so its area is base times height: 13 × 10 = 130 cm². 65 cm² halves it as though it were a triangle, and 169 cm² would be the area if the shape were a square of side 13.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If a : b = 2 : 3 and b : c = 4 : 5, what is a : c?",
+      "prompt": "One person invests twice as much as a second, and the second invests three quarters of what a third invests. What is the ratio of the three investments, in that order?",
       "options": [
-        "6 : 5",
-        "3 : 5",
-        "8 : 5",
-        "2 : 5",
-        "8 : 15"
+        "8 : 4 : 3",
+        "6 : 3 : 4",
+        "3 : 6 : 4",
+        "2 : 3 : 4",
+        "6 : 4 : 3"
       ],
-      "correctAnswer": "8 : 15",
-      "answer": "E",
-      "explanation": "Make b common: a:b = 8:12, b:c = 12:15. So a:c = 8:15.",
+      "correctAnswer": "6 : 3 : 4",
+      "answer": "B",
+      "explanation": "Take the third investment as 4. The second is three quarters of that, which is 3, and the first is twice the second, which is 6. So the ratio is 6 : 3 : 4. Choosing 4 for the third keeps every figure a whole number, since the fraction three quarters has a 4 underneath it.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangular box measures 2 × 3 × 4. What is its volume?",
+      "prompt": "How many whole numbers from 1 to 60 are divisible by neither 2 nor 3?",
       "options": [
-        "24",
-        "36",
-        "9",
-        "12",
-        "18"
+        "30",
+        "10",
+        "40",
+        "25",
+        "20"
       ],
-      "correctAnswer": "24",
-      "answer": "A",
-      "explanation": "Volume = length × width × height = 2 × 3 × 4 = 24.",
+      "correctAnswer": "20",
+      "answer": "E",
+      "explanation": "30 are divisible by 2 and 20 by 3, with 10 counted in both, so 30 + 20 − 10 = 40 are divisible by at least one. That leaves 60 − 40 = 20 divisible by neither. Forgetting to add the overlap back gives 10, which double-counts the multiples of 6 as excluded twice.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 20% of the students in a school is 120, how many students are there in total?",
+      "prompt": "A machine completes any single job successfully with probability 0.9. What is the probability that it completes three jobs in a row successfully?",
       "options": [
-        "540",
-        "600",
-        "640",
-        "720",
-        "480"
+        "90%",
+        "72.9%",
+        "81%",
+        "30.0%",
+        "27.0%"
       ],
-      "correctAnswer": "600",
+      "correctAnswer": "72.9%",
       "answer": "B",
-      "explanation": "0.20 × total = 120 → total = 120 ÷ 0.20 = 600.",
+      "explanation": "The three jobs are independent, so the chance of all three succeeding is 0.9 × 0.9 × 0.9 = 0.73, or 72.9%. Each extra job multiplies the chance again, so a machine that is 90% reliable on one job is only 72.9% reliable across three.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A traveller drives to a town at 60 mph and returns along the same road at 40 mph. What is the average speed for the round trip?",
+      "prompt": "Which is larger: 15% of 240, or 24% of 150?",
       "options": [
-        "55 mph",
-        "45 mph",
-        "48 mph",
-        "50 mph",
-        "52 mph"
+        "15% of 240 is larger",
+        "24% of 150 is larger",
+        "15% of 240 is larger by 6",
+        "They are equal",
+        "24% of 150 is larger by 6"
       ],
-      "correctAnswer": "48 mph",
-      "answer": "C",
-      "explanation": "Round-trip average = 2·v₁·v₂ ÷ (v₁+v₂) = 2 × 60 × 40 ÷ 100 = 4800 ÷ 100 = 48 mph.",
+      "correctAnswer": "They are equal",
+      "answer": "D",
+      "explanation": "15% of 240 is 36, and 24% of 150 is 36. The two come to the same figure. That is no accident: a percentage of a number is the two multiplied and divided by 100, and 15 × 240 equals 24 × 150, so the order can be swapped freely.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the simple interest on $2,000 at 5% per year for 3 years?",
+      "prompt": "A tank fills in 6 hours. A leak would empty a full tank in 12 hours. The leak is open for the first 2 hours only and is then sealed. How long does filling take altogether?",
       "options": [
-        "$400",
-        "$200",
-        "$250",
-        "$300",
-        "$350"
+        "7 hours",
+        "6 hours",
+        "12 hours",
+        "8 hours",
+        "5 hours"
       ],
-      "correctAnswer": "$300",
-      "answer": "D",
-      "explanation": "SI = P × r × t = 2000 × 0.05 × 3 = 300.",
+      "correctAnswer": "7 hours",
+      "answer": "A",
+      "explanation": "With the leak open the tank gains 1/6 − 1/12 = 1/12 of its volume an hour, so the first 2 hours fill 16.67% of it. The remaining 83.33% fills at the full 1/6 an hour, taking 5 hours: 7 hours in all, 1 more than if the tank had never leaked.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 5 identical pens cost $20, how much do 8 of the same pens cost?",
+      "prompt": "A right-angled triangle has a hypotenuse of 26 cm and one leg of 10 cm. What is its area?",
       "options": [
-        "$36",
-        "$40",
-        "$28",
-        "$30",
-        "$32"
+        "130 cm²",
+        "240 cm²",
+        "120 cm²",
+        "260 cm²",
+        "60 cm²"
       ],
-      "correctAnswer": "$32",
-      "answer": "E",
-      "explanation": "Unit price = 20 ÷ 5 = $4. 8 pens = 8 × 4 = $32.",
+      "correctAnswer": "120 cm²",
+      "answer": "C",
+      "explanation": "The other leg is the square root of 26² − 10² = 576, which is 24 cm. The area is half the product of the two legs: 10 × 24 / 2 = 120 cm². Using the hypotenuse as though it were a leg gives 130 cm², which overstates the area because the hypotenuse is the longest side.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A tank is 3/5 full. Adding 20 litres makes it 4/5 full. What is the tank's total capacity?",
+      "prompt": "What is the value of 97² + 2 × 97 × 3 + 3²?",
       "options": [
-        "100 litres",
-        "110 litres",
-        "120 litres",
-        "80 litres",
-        "90 litres"
+        "9,409",
+        "9,418",
+        "100",
+        "9,700",
+        "10,000"
       ],
-      "correctAnswer": "100 litres",
-      "answer": "A",
-      "explanation": "4/5 − 3/5 = 1/5 of capacity = 20 litres → capacity = 20 × 5 = 100 litres.",
+      "correctAnswer": "10,000",
+      "answer": "E",
+      "explanation": "The expression is (97 + 3)² written out in full, so it equals 100² = 10,000. Recognising the pattern avoids squaring 97 at all — 9,409 is 97² on its own, which is the answer to a different question.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of √144 + √81?",
+      "prompt": "What fraction of a day is a 7.5-hour shift?",
       "options": [
-        "20",
-        "21",
-        "25",
-        "15",
-        "18"
+        "15/48",
+        "1/3",
+        "5/8",
+        "5/16",
+        "3/16"
       ],
-      "correctAnswer": "21",
-      "answer": "B",
-      "explanation": "√144 = 12 and √81 = 9. 12 + 9 = 21.",
+      "correctAnswer": "5/16",
+      "answer": "D",
+      "explanation": "7.5 hours out of 24 is 7.5/24, which doubles to 15/48 and then divides by 3 to give 5/16. 15/48 is the same number but not in its lowest terms, and 1/3 would be 8 hours rather than 7.5.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A store sells notebooks for $3.50 each and pens for $1.25 each. Maria buys 4 notebooks and 6 pens. What is the total cost?",
+      "prompt": "What is 90 km/h in metres per second?",
       "options": [
-        "$14.00",
-        "$18.50",
-        "$21.50",
-        "$19.25",
-        "$20.00"
+        "90",
+        "0.42",
+        "25",
+        "32.4",
+        "250"
       ],
-      "correctAnswer": "$21.50",
+      "correctAnswer": "25",
       "answer": "C",
-      "explanation": "Notebooks: 4 × $3.50 = $14.00. Pens: 6 × $1.25 = $7.50. Total = $14.00 + $7.50 = $21.50.",
+      "explanation": "There are 1,000 metres in a kilometre and 3,600 seconds in an hour, so multiply by 1,000 and divide by 3,600 — that is, divide by 3.6: 90 / 3.6 = 25 m/s. Multiplying by 3.6 instead gives 324, and the two conversions differ by a factor of nearly thirteen, so the direction matters.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels 240 miles in 4 hours, then 180 miles in 3 hours. What is its average speed for the entire trip?",
+      "prompt": "An item sells for £48.00. Its cost rises from £30.00 to £36.00 while the price is held. What is the new profit as a percentage of the selling price?",
       "options": [
-        "70 mph",
-        "55 mph",
-        "58 mph",
-        "60 mph",
-        "65 mph"
+        "25%",
+        "37.5%",
+        "20%",
+        "33.3%",
+        "12.5%"
       ],
-      "correctAnswer": "60 mph",
-      "answer": "D",
-      "explanation": "Total distance = 240 + 180 = 420 miles. Total time = 4 + 3 = 7 hours. Average = 420 ÷ 7 = 60 mph.",
+      "correctAnswer": "25%",
+      "answer": "A",
+      "explanation": "The profit falls from £18.00 to £12.00, and £12.00 out of £48.00 is 25%. The margin was 37.5% before. The cost rose by 20%, but that is a change in the cost rather than the new margin.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 40% of a number is 64, what is 75% of that number?",
+      "prompt": "A grouped table records 40 values: 0 to 9: 5, 10 to 19: 8, 20 to 29: 12, 30 to 39: 9, 40 to 49: 6. Which class contains the median?",
       "options": [
-        "128",
-        "96",
-        "100",
-        "108",
-        "120"
+        "0 to 9",
+        "20 to 29",
+        "10 to 19",
+        "30 to 39",
+        "40 to 49"
       ],
-      "correctAnswer": "120",
-      "answer": "E",
-      "explanation": "0.40x = 64 → x = 160. 75% of 160 = 0.75 × 160 = 120.",
+      "correctAnswer": "20 to 29",
+      "answer": "B",
+      "explanation": "With 40 values the median lies between the 20th and 21th. Running totals are 0 to 9: 5, 10 to 19: 13, 20 to 29: 25, 30 to 39: 34, 40 to 49: 40. The 13th value ends the 10 to 19 class, so both the 20th and 21th fall in 20 to 29. That class also has the largest frequency, but the two facts are separate.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "One pipe fills a tank in 6 hours; another drains it in 9 hours. If both run on an empty tank, how long to fill it?",
+      "prompt": "Taking pi as 22/7, a cylinder has a curved surface area of 440 cm² and a height of 10 cm. What is its volume?",
       "options": [
-        "18 hours",
-        "21 hours",
-        "3 hours",
-        "12 hours",
-        "15 hours"
+        "440 cm³",
+        "154 cm³",
+        "3,080 cm³",
+        "770 cm³",
+        "1,540 cm³"
       ],
-      "correctAnswer": "18 hours",
-      "answer": "A",
-      "explanation": "Net rate = 1/6 − 1/9 = 3/18 − 2/18 = 1/18 tank per hour. Time = 18 hours.",
+      "correctAnswer": "1,540 cm³",
+      "answer": "E",
+      "explanation": "The curved surface is 2 pi r h, so 440 = 2 × 22/7 × r × 10, giving r = 7 cm. The volume is pi r² h = 22/7 × 7² × 10 = 1,540 cm³. 154 cm² is the area of one circular end, which is a step along the way rather than the answer.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A price is increased by 20% and then decreased by 25%. If the original price was $200, what is the final price?",
+      "prompt": "A printer charges £340.00 for 500 copies and £540.00 for 900, on the same tariff. What is the fixed charge that applies whatever the run?",
       "options": [
-        "$170",
-        "$180",
-        "$190",
-        "$200",
-        "$210"
+        "£90.00",
+        "£340.00",
+        "£68.00",
+        "£110.00",
+        "£70.00"
       ],
-      "correctAnswer": "$180",
-      "answer": "B",
-      "explanation": "200 × 1.20 = 240; 240 × 0.75 = 180. (Net factor 1.2 × 0.75 = 0.9, a 10% drop.)",
+      "correctAnswer": "£90.00",
+      "answer": "A",
+      "explanation": "The extra 400 copies cost £200.00, so each copy is £0.50. The 500-copy run therefore contains £250.00 of copy charge, leaving £90.00 that does not depend on the run. Checking on the larger run: £90.00 + 900 × £0.50 = £540.00.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
+      "prompt": "What is the units digit of 3⁴ × 7³?",
       "options": [
-        "$260",
-        "$200",
-        "$210",
-        "$220",
-        "$240"
+        "1",
+        "7",
+        "3",
+        "9",
+        "21"
       ],
-      "correctAnswer": "$210",
+      "correctAnswer": "3",
       "answer": "C",
-      "explanation": "Amount = 1000 × 1.10² = 1000 × 1.21 = 1210. Interest = 1210 − 1000 = 210.",
+      "explanation": "The units digits of powers of 3 run 3, 9, 7, 1 and repeat, so 3⁴ ends in 1. Those of 7 run 7, 9, 3, 1, so 7³ ends in 3. Multiplying the two units digits, 1 × 3, gives 3, and only the units digits matter for the units digit of a product.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
+      "prompt": "A service costs £45.00 a month or £486.00 paid for a year in advance. What percentage is saved by paying annually?",
       "options": [
-        "18",
-        "20",
-        "12",
-        "15",
-        "16"
+        "11.11%",
+        "12%",
+        "9%",
+        "10%",
+        "15%"
       ],
-      "correctAnswer": "15",
+      "correctAnswer": "10%",
       "answer": "D",
-      "explanation": "Sum of 5 = 5 × 20 = 100. Remove 40 → 60 left over 4 numbers. Average = 60 ÷ 4 = 15.",
+      "explanation": "Twelve months at £45.00 come to £540.00, so paying annually saves £54.00 — that is £54.00 out of £540.00, or 10%. Measuring the saving against the £486.00 actually paid gives 11.11%, which answers how much more the monthly route costs.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
+      "prompt": "A sequence begins 50, 46, 42, falling by 4 each time. What is the first term that is negative?",
       "options": [
-        "20",
-        "24",
-        "8",
-        "12",
-        "16"
+        "14",
+        "-2",
+        "2",
+        "-6",
+        "0"
       ],
-      "correctAnswer": "16",
-      "answer": "E",
-      "explanation": "Parts = 3 + 5 = 8 → each part = 64 ÷ 8 = 8. Amounts: 24 and 40. Difference = 40 − 24 = 16.",
+      "correctAnswer": "-2",
+      "answer": "B",
+      "explanation": "The terms fall by 4 from 50, reaching 2 at the 13th term and -2 at the 14th, which is the first below zero. 14 is the position of that term rather than its value — the question asks which term it is, meaning what it equals.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
+      "prompt": "One plan costs £1,200.00 paid at once. Another takes a deposit of £150.00 plus £95.00 a month for 12 months. How much more does the second plan cost?",
       "options": [
-        "136",
-        "140",
-        "152",
-        "96",
-        "120"
+        "£1,290.00",
+        "£150.00",
+        "£45.00",
+        "£-60.00",
+        "£90.00"
       ],
-      "correctAnswer": "136",
-      "answer": "A",
-      "explanation": "Area = 12 × 8 = 96. Perimeter = 2(12 + 8) = 40. Sum = 96 + 40 = 136.",
+      "correctAnswer": "£90.00",
+      "answer": "E",
+      "explanation": "The second plan comes to £150.00 + 12 × £95.00 = £1,290.00, which is £90.00 more than £1,200.00. Leaving the deposit out gives £-60.00 and treats money paid at the start as though it had not been paid.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-029-q001": "120",
-    "gmat-quant-029-q002": "24",
-    "gmat-quant-029-q003": "12",
-    "gmat-quant-029-q004": "80",
-    "gmat-quant-029-q005": "8 : 15",
-    "gmat-quant-029-q006": "24",
-    "gmat-quant-029-q007": "600",
-    "gmat-quant-029-q008": "48 mph",
-    "gmat-quant-029-q009": "$300",
-    "gmat-quant-029-q010": "$32",
-    "gmat-quant-029-q011": "100 litres",
-    "gmat-quant-029-q012": "21",
-    "gmat-quant-029-q013": "$21.50",
-    "gmat-quant-029-q014": "60 mph",
-    "gmat-quant-029-q015": "120",
-    "gmat-quant-029-q016": "18 hours",
-    "gmat-quant-029-q017": "$180",
-    "gmat-quant-029-q018": "$210",
-    "gmat-quant-029-q019": "15",
-    "gmat-quant-029-q020": "16",
-    "gmat-quant-029-q021": "136"
+    "gmat-quant-029-q001": "7",
+    "gmat-quant-029-q002": "7",
+    "gmat-quant-029-q003": "8",
+    "gmat-quant-029-q004": "130 cm²",
+    "gmat-quant-029-q005": "6 : 3 : 4",
+    "gmat-quant-029-q006": "20",
+    "gmat-quant-029-q007": "72.9%",
+    "gmat-quant-029-q008": "They are equal",
+    "gmat-quant-029-q009": "7 hours",
+    "gmat-quant-029-q010": "120 cm²",
+    "gmat-quant-029-q011": "10,000",
+    "gmat-quant-029-q012": "5/16",
+    "gmat-quant-029-q013": "25",
+    "gmat-quant-029-q014": "25%",
+    "gmat-quant-029-q015": "20 to 29",
+    "gmat-quant-029-q016": "1,540 cm³",
+    "gmat-quant-029-q017": "£90.00",
+    "gmat-quant-029-q018": "3",
+    "gmat-quant-029-q019": "10%",
+    "gmat-quant-029-q020": "-2",
+    "gmat-quant-029-q021": "£90.00"
   }
 }
