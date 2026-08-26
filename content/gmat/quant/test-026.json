@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "$1,000 is invested at 10% annual interest compounded yearly. How much interest is earned after 2 years?",
+      "prompt": "An item costing £40.00 is marked at £64.00. What is the largest discount that still leaves a profit of 20% on cost?",
       "options": [
-        "$210",
-        "$220",
-        "$240",
-        "$260",
-        "$200"
+        "20%",
+        "25%",
+        "22%",
+        "30%",
+        "15%"
       ],
-      "correctAnswer": "$210",
-      "answer": "A",
-      "explanation": "Amount = 1000 × 1.10² = 1000 × 1.21 = 1210. Interest = 1210 − 1000 = 210.",
+      "correctAnswer": "25%",
+      "answer": "B",
+      "explanation": "A 20% profit on £40.00 means selling at £48.00, which is £16.00 below the marked price: £16.00 / £64.00 = 25%. The 20% profit is measured against cost and the 25% discount against the marked price, so the two percentages are not comparable and need not match.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "The average of 5 numbers is 20. If the number 40 is removed, what is the average of the remaining 4 numbers?",
+      "prompt": "A sequence begins 7, 12, 17, 22, rising by 5 each time. Which term is 152?",
       "options": [
-        "12",
-        "15",
-        "16",
-        "18",
-        "20"
+        "the 29th",
+        "the 28th",
+        "the 32nd",
+        "the 25th",
+        "the 30th"
       ],
-      "correctAnswer": "15",
-      "answer": "B",
-      "explanation": "Sum of 5 = 5 × 20 = 100. Remove 40 → 60 left over 4 numbers. Average = 60 ÷ 4 = 15.",
+      "correctAnswer": "the 30th",
+      "answer": "E",
+      "explanation": "The nth term is 5n + 2. Setting that to 152 gives 5n = 150, so n = 30. The gap from 7 to 152 holds 29 steps, but the first term is reached in no steps at all, so the count of terms is one more.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
+      "prompt": "Of twelve numbers, the first 5 average 20 and the other 7 average 27. What is the mean of all twelve?",
       "options": [
-        "8",
-        "12",
-        "16",
-        "20",
-        "24"
+        "24.08",
+        "23.5",
+        "23.50",
+        "25.00",
+        "22.75"
       ],
-      "correctAnswer": "16",
-      "answer": "C",
-      "explanation": "Parts = 3 + 5 = 8 → each part = 64 ÷ 8 = 8. Amounts: 24 and 40. Difference = 40 − 24 = 16.",
+      "correctAnswer": "24.08",
+      "answer": "A",
+      "explanation": "The two groups total 5 × 20 = 100 and 7 × 27 = 189, giving 289 over 12 numbers: 24.08. Averaging the two group means gives 23.5, which would be right only if the groups were the same size.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
+      "prompt": "A cube of side 5 cm is painted all over and then cut into 1 cm cubes. How many of the small cubes have paint on exactly one face?",
       "options": [
-        "152",
-        "96",
-        "120",
-        "136",
-        "140"
+        "125",
+        "36",
+        "54",
+        "8",
+        "27"
       ],
-      "correctAnswer": "136",
-      "answer": "D",
-      "explanation": "Area = 12 × 8 = 96. Perimeter = 2(12 + 8) = 40. Sum = 96 + 40 = 136.",
+      "correctAnswer": "54",
+      "answer": "C",
+      "explanation": "The cubes with exactly one painted face are those in the middle of each of the six faces, away from every edge: 3 by 3 on each face, so 6 × 9 = 54. 36 is the count with two painted faces, along the edges, and the eight corners have three.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 2^5 × 2^3?",
+      "prompt": "60 kg of an alloy is 3 parts copper to 2 parts zinc. How much zinc must be added to make the two equal?",
       "options": [
-        "512",
-        "1024",
-        "64",
-        "128",
-        "256"
+        "24 kg",
+        "6 kg",
+        "18 kg",
+        "12 kg",
+        "30 kg"
       ],
-      "correctAnswer": "256",
-      "answer": "E",
-      "explanation": "2^5 × 2^3 = 2^(5+3) = 2^8 = 256.",
+      "correctAnswer": "12 kg",
+      "answer": "D",
+      "explanation": "The alloy holds 36 kg of copper and 24 kg of zinc. The copper does not change, so the zinc must rise to 36 kg, which needs 12 kg more. The alloy then weighs 72 kg, half of it each metal.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
+      "prompt": "What is the smallest whole number that 1, 2, 3, 4, 5 and 6 all divide into exactly?",
       "options": [
-        "21",
-        "24",
-        "27",
         "30",
-        "18"
+        "120",
+        "60",
+        "720",
+        "24"
       ],
-      "correctAnswer": "21",
-      "answer": "A",
-      "explanation": "Adding: 2x = 14 → x = 7. Then y = 3. xy = 7 × 3 = 21.",
+      "correctAnswer": "60",
+      "answer": "C",
+      "explanation": "Taking the highest power of each prime that appears — 2² from the 4, 3 from the 3 or 6, and 5 from the 5 — gives 4 × 3 × 5 = 60. 30 fails because 4 does not divide it, and 720 is 6 factorial, a common multiple but twelve times larger than the smallest.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is 15% of 15% of 400?",
+      "prompt": "A box holds 10 items, 3 of them faulty. Two are drawn together. What is the probability that exactly one is faulty?",
       "options": [
-        "6",
-        "9",
-        "12",
-        "15",
-        "18"
+        "3/10",
+        "1/3",
+        "8/15",
+        "2/15",
+        "7/15"
       ],
-      "correctAnswer": "9",
-      "answer": "B",
-      "explanation": "15% of 400 = 60. 15% of 60 = 9.",
+      "correctAnswer": "7/15",
+      "answer": "E",
+      "explanation": "A faulty one can be paired with a good one in 3 × 7 = 21 ways, out of 45 possible pairs: 21/45, which cancels to 7/15. 3/10 is the chance that a single item drawn is faulty, which is a different question.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
+      "prompt": "A firm of 200 people loses 15% of its staff and then takes on 10% more than it is left with. What is the net change in headcount?",
       "options": [
-        "$57",
-        "$60",
-        "$63",
-        "$66",
-        "$70"
+        "a fall of 5%",
+        "a fall of 6.5%",
+        "no change",
+        "a rise of 6.5%",
+        "a fall of 25%"
       ],
-      "correctAnswer": "$63",
-      "answer": "C",
-      "explanation": "Discount: 80 × 0.75 = 60. Tax: 60 × 1.05 = 63.",
+      "correctAnswer": "a fall of 6.5%",
+      "answer": "B",
+      "explanation": "The cut leaves 170 people, and hiring 10% more brings it to 187 — a fall of 13 from 200, or 6.5%. Netting the percentages to 5% treats both changes as shares of the original, when the hiring applies to the smaller figure.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
+      "prompt": "A moving walkway 120 m long travels at 0.8 m/s. Someone walks along it at 1.2 m/s relative to the walkway. How long does the trip take?",
       "options": [
-        "180 miles",
-        "120 miles",
-        "135 miles",
-        "150 miles",
-        "165 miles"
+        "100 seconds",
+        "150 seconds",
+        "120 seconds",
+        "60 seconds",
+        "80 seconds"
       ],
-      "correctAnswer": "150 miles",
+      "correctAnswer": "60 seconds",
       "answer": "D",
-      "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
+      "explanation": "Walking with the belt, the two speeds add: 1.2 + 0.8 = 2 m/s, so 120 m takes 60 seconds. Walking without the belt would take 100 seconds, and standing still on it 150 seconds — the answer is shorter than either.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "prompt": "A rectangle has an area of 216 cm² and its sides are in the ratio 2 : 3. How long is the longer side?",
       "options": [
-        "12",
-        "15",
-        "16",
-        "8",
-        "10"
+        "18 cm",
+        "12 cm",
+        "43.2 cm",
+        "24 cm",
+        "36 cm"
       ],
-      "correctAnswer": "10",
-      "answer": "E",
-      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "correctAnswer": "18 cm",
+      "answer": "A",
+      "explanation": "Write the sides as 2k and 3k. Their product is 6k² = 216, so k² = 36 and k = 6. The sides are 12 cm and 18 cm. 12 cm is the shorter side, and dividing the area by the 5 parts gives 43.2, which treats an area as though it shared out like a length.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "prompt": "If a divided by b is 3, what is the value of (2a + b) / (a − b)?",
       "options": [
-        "3/5",
-        "2/3",
-        "1/5",
-        "2/5",
-        "1/2"
+        "3",
+        "2",
+        "7",
+        "1.5",
+        "3.5"
       ],
-      "correctAnswer": "3/5",
-      "answer": "A",
-      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "correctAnswer": "3.5",
+      "answer": "E",
+      "explanation": "Writing a as 3b turns the expression into (6b + b) / (3b − b) = 7b / 2b, and the b cancels to leave 3.5. The answer does not depend on b at all, which is why a single ratio is enough to pin it down.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "How many days are there from 14 August to 3 November, counting 3 November but not 14 August?",
       "options": [
-        "30",
-        "32",
-        "35",
-        "38",
-        "29"
+        "82",
+        "81",
+        "80",
+        "78",
+        "84"
       ],
-      "correctAnswer": "32",
+      "correctAnswer": "81",
       "answer": "B",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "explanation": "August has 31 days, leaving 17 after the 14th. September adds 30, October 31 and November 3: 17 + 30 + 31 + 3 = 81. Counting the starting day too gives 82, the usual one-day slip in date arithmetic.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "A coach uses 45 litres of fuel at £1.52 a litre and carries 38 passengers. What is the fuel cost per passenger?",
       "options": [
-        "1225",
-        "1250",
-        "1275",
-        "1300",
-        "1175"
+        "£1.52",
+        "£68.40",
+        "£1.80",
+        "£2.25",
+        "£1.20"
       ],
-      "correctAnswer": "1275",
+      "correctAnswer": "£1.80",
       "answer": "C",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "explanation": "The fuel costs 45 × £1.52 = £68.40, and shared between 38 passengers that is £1.80 each. £1.52 is the price of a litre, which is close enough to the answer here to be worth checking rather than assuming.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "A figure rises by 20% and then by 20% again, reaching 720. What was it to begin with?",
       "options": [
-        "20",
-        "12",
-        "14",
-        "16",
-        "18"
+        "514.29",
+        "600",
+        "480",
+        "500",
+        "640"
       ],
-      "correctAnswer": "16",
+      "correctAnswer": "500",
       "answer": "D",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "explanation": "Two rises of 20% multiply the figure by 1.2 × 1.2 = 1.44, so the original is 720 / 1.44 = 500. Treating the two rises as a single 40% gives 514.29 and misses the second rise being charged on the first.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "Eight numbers have a mean of 15. How many further numbers, each equal to 24, must be added to raise the mean to 18?",
       "options": [
-        "30%",
-        "35%",
-        "40%",
-        "20%",
-        "25%"
+        "4",
+        "3",
+        "2",
+        "6",
+        "8"
       ],
-      "correctAnswer": "25%",
-      "answer": "E",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "correctAnswer": "4",
+      "answer": "A",
+      "explanation": "Each 24 added carries 24 − 18 = 6 more than the target, while the eight existing numbers fall 18 − 15 = 3 short each, a shortfall of 24 in all. Covering that needs 24 / 6 = 4 of them. Checking: 12 numbers totalling 216 do average 18.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "A lawn 12 m by 8 m has a path 1.5 m wide laid all the way round the outside. What area does the path cover?",
       "options": [
-        "9 days",
-        "10 days",
-        "11 days",
-        "16 days",
-        "8 days"
+        "32.25 m²",
+        "69 m²",
+        "60 m²",
+        "78 m²",
+        "165 m²"
       ],
-      "correctAnswer": "9 days",
-      "answer": "A",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "correctAnswer": "69 m²",
+      "answer": "B",
+      "explanation": "With the path outside, the whole rectangle measures 15 m by 11 m, an area of 165 m². Taking off the lawn's 96 m² leaves 69 m². Adding 1.5 m to each dimension rather than 3 gives 32.25 m² and counts the path on one side only.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "A vehicle travels at 60 km/h while it is moving, but is stationary for 20% of the time. What is its average speed over the whole period?",
       "options": [
-        "14",
-        "15",
-        "16",
-        "18",
-        "13"
+        "60 km/h",
+        "12 km/h",
+        "50 km/h",
+        "45 km/h",
+        "48 km/h"
       ],
-      "correctAnswer": "15",
-      "answer": "B",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "correctAnswer": "48 km/h",
+      "answer": "E",
+      "explanation": "In an hour the vehicle moves for 48 minutes and covers 60 × 0.8 = 48 km, so the average over the full hour is 48 km/h. 12 km/h applies the stationary share rather than the moving one, and 60 km/h ignores the stops altogether.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "How many zeros does 25 factorial end in?",
       "options": [
-        "20%",
-        "25%",
-        "30%",
-        "35%",
-        "15%"
+        "5",
+        "4",
+        "6",
+        "10",
+        "25"
       ],
-      "correctAnswer": "30%",
+      "correctAnswer": "6",
       "answer": "C",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "explanation": "Each trailing zero needs a 5 paired with a 2, and 2s are far more plentiful, so the count is the number of 5s. The multiples of 5 up to 25 give 5, and 25 itself contributes a second 5, adding 1 more: 6 zeros in all.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "prompt": "A price rises by one eighth of itself. By what percentage has it risen?",
       "options": [
-        "11",
-        "12",
-        "7",
-        "9",
-        "10"
+        "8%",
+        "8.8%",
+        "11.1%",
+        "12.5%",
+        "20%"
       ],
-      "correctAnswer": "9",
+      "correctAnswer": "12.5%",
       "answer": "D",
-      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "explanation": "One eighth is 1 / 8 = 0.13, which is 12.5%. The new price is 9/8 of the old. 8% would be the rise if the price went up by 8 hundredths rather than by an eighth.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3x = 18, what is the value of x² + x?",
+      "prompt": "What is the smallest integer x for which (x + 2) / 3 is greater than 5?",
       "options": [
-        "48",
-        "54",
-        "36",
-        "40",
-        "42"
+        "14",
+        "13",
+        "15",
+        "16",
+        "18"
       ],
-      "correctAnswer": "42",
-      "answer": "E",
-      "explanation": "x = 6. x² + x = 36 + 6 = 42.",
+      "correctAnswer": "14",
+      "answer": "A",
+      "explanation": "Multiplying both sides by 3 gives x + 2 > 15, so x > 13. The smallest integer above 13 is 14. At x = 13 the expression comes to exactly 5, which is not greater than 5 — the boundary itself never qualifies.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "prompt": "£2,400.00 is borrowed, 8% interest is added once, and the total is repaid in 12 equal monthly instalments. What is each instalment?",
       "options": [
-        "30",
-        "36",
-        "60",
-        "24",
-        "28"
+        "£200.00",
+        "£216.00",
+        "£16.00",
+        "£180.00",
+        "£224.00"
       ],
-      "correctAnswer": "30",
-      "answer": "A",
-      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "correctAnswer": "£216.00",
+      "answer": "B",
+      "explanation": "Adding 8% brings the debt to £2,592.00, and 12 equal instalments make that £216.00 each. Dividing the amount borrowed gives £200.00 and leaves the £192.00 of interest unpaid.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-026-q001": "$210",
-    "gmat-quant-026-q002": "15",
-    "gmat-quant-026-q003": "16",
-    "gmat-quant-026-q004": "136",
-    "gmat-quant-026-q005": "256",
-    "gmat-quant-026-q006": "21",
-    "gmat-quant-026-q007": "9",
-    "gmat-quant-026-q008": "$63",
-    "gmat-quant-026-q009": "150 miles",
-    "gmat-quant-026-q010": "10",
-    "gmat-quant-026-q011": "3/5",
-    "gmat-quant-026-q012": "32",
-    "gmat-quant-026-q013": "1275",
-    "gmat-quant-026-q014": "16",
-    "gmat-quant-026-q015": "25%",
-    "gmat-quant-026-q016": "9 days",
-    "gmat-quant-026-q017": "15",
-    "gmat-quant-026-q018": "30%",
-    "gmat-quant-026-q019": "9",
-    "gmat-quant-026-q020": "42",
-    "gmat-quant-026-q021": "30"
+    "gmat-quant-026-q001": "25%",
+    "gmat-quant-026-q002": "the 30th",
+    "gmat-quant-026-q003": "24.08",
+    "gmat-quant-026-q004": "54",
+    "gmat-quant-026-q005": "12 kg",
+    "gmat-quant-026-q006": "60",
+    "gmat-quant-026-q007": "7/15",
+    "gmat-quant-026-q008": "a fall of 6.5%",
+    "gmat-quant-026-q009": "60 seconds",
+    "gmat-quant-026-q010": "18 cm",
+    "gmat-quant-026-q011": "3.5",
+    "gmat-quant-026-q012": "81",
+    "gmat-quant-026-q013": "£1.80",
+    "gmat-quant-026-q014": "500",
+    "gmat-quant-026-q015": "4",
+    "gmat-quant-026-q016": "69 m²",
+    "gmat-quant-026-q017": "48 km/h",
+    "gmat-quant-026-q018": "6",
+    "gmat-quant-026-q019": "12.5%",
+    "gmat-quant-026-q020": "14",
+    "gmat-quant-026-q021": "£216.00"
   }
 }
