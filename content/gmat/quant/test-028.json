@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "Two amounts are in the ratio 3 : 5 and total 64. What is the difference between them?",
+      "prompt": "An item sells for £68.40 after 10% is taken off and then a further 5% off the reduced price. What was the price before either discount?",
       "options": [
-        "16",
-        "20",
-        "24",
-        "8",
-        "12"
+        "£78.66",
+        "£76.00",
+        "£84.00",
+        "£80.00",
+        "£72.00"
       ],
-      "correctAnswer": "16",
-      "answer": "A",
-      "explanation": "Parts = 3 + 5 = 8 → each part = 64 ÷ 8 = 8. Amounts: 24 and 40. Difference = 40 − 24 = 16.",
+      "correctAnswer": "£80.00",
+      "answer": "D",
+      "explanation": "The two discounts leave 85.5% of the original, so the original is £68.40 / 0.86 = £80.00. Adding 10% and 5% back onto £68.40 gives £78.66, because percentages taken off a larger figure are not recovered by adding them to a smaller one.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A rectangle has length 12 and width 8. What is the sum of its area and perimeter?",
+      "prompt": "Solve for x: 3(x − 4) = 2(x + 5)",
       "options": [
-        "120",
-        "136",
-        "140",
-        "152",
-        "96"
+        "-2",
+        "22",
+        "2",
+        "14",
+        "26"
       ],
-      "correctAnswer": "136",
+      "correctAnswer": "22",
       "answer": "B",
-      "explanation": "Area = 12 × 8 = 96. Perimeter = 2(12 + 8) = 40. Sum = 96 + 40 = 136.",
+      "explanation": "Expanding gives 3x − 12 = 2x + 10. Taking 2x from both sides leaves x − 12 = 10, so x = 22. Checking: 3 × (22 − 4) = 54 and 2 × (22 + 5) = 54. Reading the −12 as +12 gives x = -2.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 2^5 × 2^3?",
+      "prompt": "A set of 15 different numbers is written in order. How many of them lie below the median?",
       "options": [
-        "64",
-        "128",
-        "256",
-        "512",
-        "1024"
+        "8",
+        "14",
+        "15",
+        "6",
+        "7"
       ],
-      "correctAnswer": "256",
-      "answer": "C",
-      "explanation": "2^5 × 2^3 = 2^(5+3) = 2^8 = 256.",
+      "correctAnswer": "7",
+      "answer": "E",
+      "explanation": "With an odd count the median is the middle value — the 8th of 15 — so 7 lie below it and 7 above. The median itself is one of the numbers and sits in neither group, which is why the answer is 7 rather than 8.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
+      "prompt": "A sector of a circle has a perimeter of 32 cm and a radius of 7 cm. How long is its curved edge?",
       "options": [
-        "27",
-        "30",
-        "18",
-        "21",
-        "24"
+        "18 cm",
+        "25 cm",
+        "32 cm",
+        "14 cm",
+        "11 cm"
       ],
-      "correctAnswer": "21",
-      "answer": "D",
-      "explanation": "Adding: 2x = 14 → x = 7. Then y = 3. xy = 7 × 3 = 21.",
+      "correctAnswer": "18 cm",
+      "answer": "A",
+      "explanation": "The perimeter of a sector is the arc plus two radii, so the arc is 32 − 2 × 7 = 18 cm. Taking off one radius gives 25 cm and forgets that a sector is bounded by two straight edges, not one.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is 15% of 15% of 400?",
+      "prompt": "y is proportional to x and inversely proportional to z. When x is 4 and z is 3, y is 12. What is y when x is 10 and z is 5?",
       "options": [
-        "12",
-        "15",
+        "9",
+        "30",
         "18",
-        "6",
-        "9"
+        "24",
+        "6"
       ],
-      "correctAnswer": "9",
-      "answer": "E",
-      "explanation": "15% of 400 = 60. 15% of 60 = 9.",
+      "correctAnswer": "18",
+      "answer": "C",
+      "explanation": "Writing y = kx / z and substituting gives k = 12 × 3 / 4 = 9. Then y = 9 × 10 / 5 = 18. x has grown by a factor of 2.5 and z by 1.67, so y is multiplied by 2.5 / 1.67 — it rises, but by less than x did.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
+      "prompt": "How many of the factors of 60 are even?",
       "options": [
-        "$63",
-        "$66",
-        "$70",
-        "$57",
-        "$60"
+        "12",
+        "4",
+        "6",
+        "8",
+        "10"
       ],
-      "correctAnswer": "$63",
-      "answer": "A",
-      "explanation": "Discount: 80 × 0.75 = 60. Tax: 60 × 1.05 = 63.",
+      "correctAnswer": "8",
+      "answer": "D",
+      "explanation": "60 = 2² × 3 × 5, which has (2 + 1)(1 + 1)(1 + 1) = 12 factors in all. An even factor must contain at least one 2, and every such factor is twice a factor of 30. 30 = 2 × 3 × 5 has 8 factors, so 60 has 8 even ones — leaving 4 odd.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
+      "prompt": "Two fair dice are rolled and the total is 7. What is the probability that one of them shows a 3?",
       "options": [
-        "135 miles",
-        "150 miles",
-        "165 miles",
-        "180 miles",
-        "120 miles"
+        "1/3",
+        "1/6",
+        "1/2",
+        "2/11",
+        "1/9"
       ],
-      "correctAnswer": "150 miles",
-      "answer": "B",
-      "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
+      "correctAnswer": "1/3",
+      "answer": "A",
+      "explanation": "A total of 7 comes from six equally likely ordered pairs: 1 and 6, 2 and 5, 3 and 4, 4 and 3, 5 and 2, 6 and 1. Two of those six contain a 3, so the probability is 2/6 = 1/3. 1/6 is the chance of a particular die showing a 3 before anything is known about the total.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "prompt": "An item costs £48.00. It is to be sold at 20% off the marked price and still return a profit of 25% on cost. What must the marked price be?",
       "options": [
-        "16",
-        "8",
-        "10",
-        "12",
-        "15"
+        "£60.00",
+        "£48.00",
+        "£75.00",
+        "£90.00",
+        "£80.00"
       ],
-      "correctAnswer": "10",
+      "correctAnswer": "£75.00",
       "answer": "C",
-      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "explanation": "A 25% profit means selling at £60.00, and that must be what remains after 20% is taken off: £60.00 / 0.8 = £75.00. £60.00 is the price it must fetch, not the price it must be marked at — mark it there and the discount eats the profit.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "prompt": "12 people can finish a job in 15 days. How many people are needed to finish it in 9 days?",
       "options": [
-        "1/5",
-        "2/5",
-        "1/2",
-        "3/5",
-        "2/3"
+        "8",
+        "15",
+        "12",
+        "24",
+        "20"
       ],
-      "correctAnswer": "3/5",
-      "answer": "D",
-      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "correctAnswer": "20",
+      "answer": "E",
+      "explanation": "The job is 12 × 15 = 180 person-days however it is staffed. To fit into 9 days it needs 180 / 9 = 20 people. 8 is how many must be added to the 12 already there, which is a different question.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "Two similar solids have heights in the ratio 2 : 5. The smaller has a surface area of 48 cm². What is the surface area of the larger?",
       "options": [
-        "35",
-        "38",
-        "29",
-        "30",
-        "32"
+        "120 cm²",
+        "300 cm²",
+        "750 cm²",
+        "192 cm²",
+        "240 cm²"
       ],
-      "correctAnswer": "32",
-      "answer": "E",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "correctAnswer": "300 cm²",
+      "answer": "B",
+      "explanation": "Surface areas of similar solids scale as the square of the length ratio: 5² / 2² = 25/4. So the larger has 48 × 25/4 = 300 cm². Scaling by the heights gives 120 cm², and cubing — which is right for volumes — gives 750 cm².",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "What is the sum of the solutions of 2x² − 10x + 8 = 0?",
       "options": [
-        "1275",
-        "1300",
-        "1175",
-        "1225",
-        "1250"
+        "4",
+        "10",
+        "-5",
+        "5",
+        "2.5"
       ],
-      "correctAnswer": "1275",
-      "answer": "A",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "correctAnswer": "5",
+      "answer": "D",
+      "explanation": "For ax² + bx + c = 0 the solutions add to −b/a, which here is 10/2 = 5, and multiply to c/a = 4. The roots are 1 and 4, and they do add to 5. 4 is their product, and 10 is the coefficient before it is divided by the 2.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "A clock strikes once at one o'clock, twice at two o'clock, and so on up to twelve. How many times does it strike in twelve hours?",
       "options": [
-        "14",
-        "16",
-        "18",
-        "20",
-        "12"
+        "66",
+        "12",
+        "78",
+        "144",
+        "90"
       ],
-      "correctAnswer": "16",
-      "answer": "B",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "correctAnswer": "78",
+      "answer": "C",
+      "explanation": "The strikes are 1 + 2 + 3 + … + 12, which is 12 × 13 / 2 = 78. 66 is the total for eleven hours, and 144 would be twelve strikes at every hour rather than a rising count.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "45 units are used each week at £3.20 a unit. What is the cost over 52 weeks?",
       "options": [
-        "40%",
-        "20%",
-        "25%",
-        "30%",
-        "35%"
+        "£7,488.00",
+        "£144.00",
+        "£2,340.00",
+        "£8,320.00",
+        "£6,240.00"
       ],
-      "correctAnswer": "25%",
-      "answer": "C",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "correctAnswer": "£7,488.00",
+      "answer": "A",
+      "explanation": "45 × 52 = 2,340 units over the year, and at £3.20 each that is £7,488.00. £144.00 is the cost of a single week, which is the figure to be careful not to report as the year's.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "Of an income of £4,800.00, £900.00 goes on fixed costs and 30% of what is left goes in tax. How much remains?",
       "options": [
-        "11 days",
-        "16 days",
-        "8 days",
-        "9 days",
-        "10 days"
+        "£3,900.00",
+        "£3,360.00",
+        "£1,170.00",
+        "£2,100.00",
+        "£2,730.00"
       ],
-      "correctAnswer": "9 days",
-      "answer": "D",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "correctAnswer": "£2,730.00",
+      "answer": "E",
+      "explanation": "Fixed costs leave £3,900.00, and 30% of that is £1,170.00 in tax, leaving £2,730.00. Taxing the whole £4,800.00 gives £3,360.00 and charges tax on money already spent on fixed costs.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "Fifteen numbers have a mean of 22. 3 of them, averaging 30, are taken away. What is the mean of those that remain?",
       "options": [
-        "16",
+        "22",
+        "20",
         "18",
-        "13",
-        "14",
-        "15"
+        "24",
+        "21"
       ],
-      "correctAnswer": "15",
-      "answer": "E",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "correctAnswer": "20",
+      "answer": "B",
+      "explanation": "The fifteen total 330 and the three removed total 90, leaving 240 across 12 numbers: 20. Removing numbers above the mean must pull the mean down, so any answer at or above 22 can be ruled out before the arithmetic is done.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "A trapezium has an area of 105 cm² and parallel sides of 12 cm and 18 cm. How far apart are the parallel sides?",
       "options": [
-        "30%",
-        "35%",
-        "15%",
-        "20%",
-        "25%"
+        "3.5 cm",
+        "14 cm",
+        "8.75 cm",
+        "7 cm",
+        "6 cm"
       ],
-      "correctAnswer": "30%",
-      "answer": "A",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "correctAnswer": "7 cm",
+      "answer": "D",
+      "explanation": "The area is the average of the parallel sides times the distance between them: 15 × h = 105, so h = 7 cm. Dividing the area by the sum of the sides rather than by their average gives 3.5 cm, half the right answer.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "prompt": "£600.00 is changed into euros at 1.14 euros to the pound, with a 1.5% fee taken from the sterling first. How many euros are received?",
       "options": [
-        "7",
-        "9",
-        "10",
-        "11",
-        "12"
+        "684.00 euros",
+        "694.26 euros",
+        "600.00 euros",
+        "690.00 euros",
+        "673.74 euros"
       ],
-      "correctAnswer": "9",
-      "answer": "B",
-      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "correctAnswer": "673.74 euros",
+      "answer": "E",
+      "explanation": "The fee takes £9.00, leaving £591.00 to change: £591.00 × 1.14 = 673.74 euros. Ignoring the fee gives 684.00 euros, which is 10.26 euros more than is actually handed over.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3x = 18, what is the value of x² + x?",
+      "prompt": "What is the smallest number that must be subtracted from 4,321 to leave a multiple of 13?",
       "options": [
-        "36",
-        "40",
-        "42",
-        "48",
-        "54"
+        "8",
+        "3",
+        "5",
+        "12",
+        "1"
       ],
-      "correctAnswer": "42",
+      "correctAnswer": "5",
       "answer": "C",
-      "explanation": "x = 6. x² + x = 36 + 6 = 42.",
+      "explanation": "13 × 332 = 4,316, which is 5 below 4,321, so taking 5 away leaves a multiple of 13. 8 is what would have to be added instead, to reach the next multiple up at 4,329.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "prompt": "40 litres of solution is 25% acid. 10 litres of pure acid are added. What is the strength of the result?",
       "options": [
-        "60",
-        "24",
-        "28",
-        "30",
-        "36"
+        "40%",
+        "25%",
+        "20%",
+        "35%",
+        "50%"
       ],
-      "correctAnswer": "30",
-      "answer": "D",
-      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "correctAnswer": "40%",
+      "answer": "A",
+      "explanation": "The solution starts with 10 litres of acid, and the 10 litres added bring that to 20 litres in 50 litres of liquid: 40%. Both the acid and the total grow, but the acid grows proportionally faster, which is why the strength rises from 25% to 40%.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "prompt": "If f(x) = 4x − 7, for what value of x does f(x) equal 25?",
       "options": [
-        "168",
-        "176",
-        "132",
-        "144",
-        "154"
+        "25",
+        "8",
+        "93",
+        "4.5",
+        "32"
       ],
-      "correctAnswer": "154",
-      "answer": "E",
-      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "correctAnswer": "8",
+      "answer": "B",
+      "explanation": "Setting 4x − 7 = 25 gives 4x = 32, so x = 8. Checking: 4 × 8 − 7 = 25. 93 is f(25) — the function applied to 25 rather than run backwards from it.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "prompt": "£3,600.00 is repaid as 11 monthly instalments of £280.00 and one final payment. What is the final payment?",
       "options": [
-        "20 litres",
-        "22 litres",
-        "24 litres",
-        "16 litres",
-        "18 litres"
+        "£280.00",
+        "£3,080.00",
+        "£320.00",
+        "£520.00",
+        "£600.00"
       ],
-      "correctAnswer": "20 litres",
-      "answer": "A",
-      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "correctAnswer": "£520.00",
+      "answer": "D",
+      "explanation": "The 11 instalments come to 11 × £280.00 = £3,080.00, leaving £3,600.00 − £3,080.00 = £520.00 to settle. The final payment is larger than the others, which is what makes it a balloon rather than a twelfth instalment.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-028-q001": "16",
-    "gmat-quant-028-q002": "136",
-    "gmat-quant-028-q003": "256",
-    "gmat-quant-028-q004": "21",
-    "gmat-quant-028-q005": "9",
-    "gmat-quant-028-q006": "$63",
-    "gmat-quant-028-q007": "150 miles",
-    "gmat-quant-028-q008": "10",
-    "gmat-quant-028-q009": "3/5",
-    "gmat-quant-028-q010": "32",
-    "gmat-quant-028-q011": "1275",
-    "gmat-quant-028-q012": "16",
-    "gmat-quant-028-q013": "25%",
-    "gmat-quant-028-q014": "9 days",
-    "gmat-quant-028-q015": "15",
-    "gmat-quant-028-q016": "30%",
-    "gmat-quant-028-q017": "9",
-    "gmat-quant-028-q018": "42",
-    "gmat-quant-028-q019": "30",
-    "gmat-quant-028-q020": "154",
-    "gmat-quant-028-q021": "20 litres"
+    "gmat-quant-028-q001": "£80.00",
+    "gmat-quant-028-q002": "22",
+    "gmat-quant-028-q003": "7",
+    "gmat-quant-028-q004": "18 cm",
+    "gmat-quant-028-q005": "18",
+    "gmat-quant-028-q006": "8",
+    "gmat-quant-028-q007": "1/3",
+    "gmat-quant-028-q008": "£75.00",
+    "gmat-quant-028-q009": "20",
+    "gmat-quant-028-q010": "300 cm²",
+    "gmat-quant-028-q011": "5",
+    "gmat-quant-028-q012": "78",
+    "gmat-quant-028-q013": "£7,488.00",
+    "gmat-quant-028-q014": "£2,730.00",
+    "gmat-quant-028-q015": "20",
+    "gmat-quant-028-q016": "7 cm",
+    "gmat-quant-028-q017": "673.74 euros",
+    "gmat-quant-028-q018": "5",
+    "gmat-quant-028-q019": "40%",
+    "gmat-quant-028-q020": "8",
+    "gmat-quant-028-q021": "£520.00"
   }
 }
