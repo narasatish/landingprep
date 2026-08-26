@@ -13,17 +13,17 @@
       "questionNumber": 1,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 2^5 × 2^3?",
+      "prompt": "At 8% simple interest a year, how long does a sum take to double?",
       "options": [
-        "256",
-        "512",
-        "1024",
-        "64",
-        "128"
+        "8 years",
+        "12.5 years",
+        "25 years",
+        "10 years",
+        "20 years"
       ],
-      "correctAnswer": "256",
-      "answer": "A",
-      "explanation": "2^5 × 2^3 = 2^(5+3) = 2^8 = 256.",
+      "correctAnswer": "12.5 years",
+      "answer": "B",
+      "explanation": "Doubling means the interest earned equals the sum itself, which is 100% of it. At 8% a year that takes 100 / 8 = 12.5 years. The starting sum never enters the calculation — at simple interest the doubling time depends only on the rate.",
       "difficulty": "medium"
     },
     {
@@ -31,17 +31,17 @@
       "questionNumber": 2,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x + y = 10 and x − y = 4, what is the value of xy?",
+      "prompt": "A two-digit number has digits summing to 12 and is 18 more than the number written with its digits reversed. What is the number?",
       "options": [
-        "18",
-        "21",
-        "24",
-        "27",
-        "30"
+        "57",
+        "39",
+        "93",
+        "75",
+        "66"
       ],
-      "correctAnswer": "21",
-      "answer": "B",
-      "explanation": "Adding: 2x = 14 → x = 7. Then y = 3. xy = 7 × 3 = 21.",
+      "correctAnswer": "75",
+      "answer": "D",
+      "explanation": "Reversing a two-digit number changes it by 9 times the gap between the digits, so a gap of 18 / 9 = 2 is needed. Digits differing by 2 and summing to 12 are 7 and 5. The larger digit must lead for the number to exceed its reverse, giving 75; 57 is the reverse itself.",
       "difficulty": "medium"
     },
     {
@@ -49,17 +49,17 @@
       "questionNumber": 3,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is 15% of 15% of 400?",
+      "prompt": "A set of numbers has a mean of 20 and a range of 14. Every value is multiplied by 3. What is the new range?",
       "options": [
-        "18",
-        "6",
-        "9",
-        "12",
-        "15"
+        "14",
+        "20",
+        "42",
+        "60",
+        "17"
       ],
-      "correctAnswer": "9",
+      "correctAnswer": "42",
       "answer": "C",
-      "explanation": "15% of 400 = 60. 15% of 60 = 9.",
+      "explanation": "The range is the gap between the largest and smallest values, and multiplying every value by 3 multiplies that gap by 3 too: 14 × 3 = 42. The mean also triples, to 60, but that is a separate figure. Adding 3 to every value instead would have left the range at 14.",
       "difficulty": "medium"
     },
     {
@@ -67,17 +67,17 @@
       "questionNumber": 4,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A shirt is marked $80. It is discounted 25%, then 5% sales tax is added. What is the final price?",
+      "prompt": "The interior angles of a polygon add to 1,440 degrees. How many sides does it have?",
       "options": [
-        "$70",
-        "$57",
-        "$60",
-        "$63",
-        "$66"
+        "8",
+        "9",
+        "12",
+        "20",
+        "10"
       ],
-      "correctAnswer": "$63",
-      "answer": "D",
-      "explanation": "Discount: 80 × 0.75 = 60. Tax: 60 × 1.05 = 63.",
+      "correctAnswer": "10",
+      "answer": "E",
+      "explanation": "The interior angles of an n-sided polygon add to (n − 2) × 180 degrees, so n − 2 = 1,440 / 180 = 8 and n = 10. 8 is n − 2 rather than n — it counts the triangles the polygon splits into, which is always two fewer than the sides.",
       "difficulty": "medium"
     },
     {
@@ -85,17 +85,17 @@
       "questionNumber": 5,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car travels at a constant 60 mph for 2.5 hours. How far does it travel?",
+      "prompt": "A father is 4 times as old as his son. In 12 years he will be twice as old. How old is the father now?",
       "options": [
-        "165 miles",
-        "180 miles",
-        "120 miles",
-        "135 miles",
-        "150 miles"
+        "24",
+        "6",
+        "36",
+        "18",
+        "30"
       ],
-      "correctAnswer": "150 miles",
-      "answer": "E",
-      "explanation": "Distance = speed × time = 60 × 2.5 = 150 miles.",
+      "correctAnswer": "24",
+      "answer": "A",
+      "explanation": "If the son is s, the father is 4s, and in 12 years 4s + 12 = 2(s + 12). That gives 2s = 12, so s = 6 and the father is 24. Checking in 12 years: 18 and 36, and 36 is twice 18. 6 is the son's age, not the father's.",
       "difficulty": "medium"
     },
     {
@@ -103,17 +103,17 @@
       "questionNumber": 6,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A 40-litre solution is 25% acid. How many litres of pure acid does it contain?",
+      "prompt": "What is the lowest common multiple of 12, 18, 30?",
       "options": [
-        "10",
-        "12",
-        "15",
-        "16",
-        "8"
+        "360",
+        "180",
+        "90",
+        "60",
+        "6"
       ],
-      "correctAnswer": "10",
-      "answer": "A",
-      "explanation": "Acid = 25% of 40 = 0.25 × 40 = 10 litres.",
+      "correctAnswer": "180",
+      "answer": "B",
+      "explanation": "In prime factors these are 2² × 3, 2 × 3² and 2 × 3 × 5. The lowest common multiple takes the highest power of each prime: 2² × 3² × 5 = 180. 6 is their highest common factor, which takes the lowest power of each shared prime instead.",
       "difficulty": "medium"
     },
     {
@@ -121,17 +121,17 @@
       "questionNumber": 7,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A bag holds 3 red and 2 blue marbles. If one marble is drawn at random, what is the probability it is red?",
+      "prompt": "A bag holds 4 red counters and 6 blue. Two are drawn without replacement. What is the probability that both are red?",
       "options": [
-        "1/2",
-        "3/5",
-        "2/3",
-        "1/5",
-        "2/5"
+        "4/25",
+        "2/5",
+        "1/3",
+        "2/15",
+        "1/15"
       ],
-      "correctAnswer": "3/5",
-      "answer": "B",
-      "explanation": "P(red) = favourable ÷ total = 3 ÷ (3 + 2) = 3/5.",
+      "correctAnswer": "2/15",
+      "answer": "D",
+      "explanation": "The first draw is red with probability 4/10. With one red gone, the second is red with probability 3/9. Multiplying gives 12/90, which cancels to 2/15. Treating the draws as independent gives (4/10)² = 4/25, which is right only if the first counter is put back.",
       "difficulty": "medium"
     },
     {
@@ -139,17 +139,17 @@
       "questionNumber": 8,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "In an arithmetic sequence the first term is 5 and the common difference is 3. What is the 10th term?",
+      "prompt": "A bill of £144.00 includes VAT at 20%. How much of the bill is VAT?",
       "options": [
-        "29",
-        "30",
-        "32",
-        "35",
-        "38"
+        "£24.00",
+        "£28.80",
+        "£144.00",
+        "£120.00",
+        "£30.00"
       ],
-      "correctAnswer": "32",
-      "answer": "C",
-      "explanation": "aₙ = a₁ + (n−1)d = 5 + 9 × 3 = 5 + 27 = 32.",
+      "correctAnswer": "£24.00",
+      "answer": "A",
+      "explanation": "The bill is 120% of the pre-tax figure, so that figure is £144.00 / 1.2 = £120.00 and the VAT is £144.00 − £120.00 = £24.00. Taking 20% of £144.00 gives £28.80, which charges the tax on the tax as well as on the goods.",
       "difficulty": "medium"
     },
     {
@@ -157,17 +157,17 @@
       "questionNumber": 9,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the sum of the integers from 1 to 50 inclusive?",
+      "prompt": "A train 150 m long travels at 20 m/s. How long does it take to pass completely over a platform 250 m long?",
       "options": [
-        "1175",
-        "1225",
-        "1250",
-        "1275",
-        "1300"
+        "7.5 seconds",
+        "12.5 seconds",
+        "30 seconds",
+        "15 seconds",
+        "20 seconds"
       ],
-      "correctAnswer": "1275",
-      "answer": "D",
-      "explanation": "Sum = n(n+1)/2 = 50 × 51 ÷ 2 = 1275.",
+      "correctAnswer": "20 seconds",
+      "answer": "E",
+      "explanation": "The train is clear only when its back end leaves the platform, so it must cover its own length plus the platform: 150 + 250 = 400 m. At 20 m/s that takes 20 seconds. 12.5 seconds covers the platform alone and leaves the whole train still on it.",
       "difficulty": "medium"
     },
     {
@@ -175,17 +175,17 @@
       "questionNumber": 10,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If x = 5, what is the value of x² − 9?",
+      "prompt": "A cuboid measures 3 cm by 4 cm by 12 cm. How long is the diagonal from one corner to the opposite corner?",
       "options": [
-        "18",
-        "20",
-        "12",
-        "14",
-        "16"
+        "19 cm",
+        "5 cm",
+        "13 cm",
+        "12 cm",
+        "15 cm"
       ],
-      "correctAnswer": "16",
-      "answer": "E",
-      "explanation": "x² − 9 = 25 − 9 = 16.",
+      "correctAnswer": "13 cm",
+      "answer": "C",
+      "explanation": "The diagonal of a cuboid is the square root of the three edges squared and added: 3² + 4² + 12² = 169, whose square root is 13 cm. 5 cm is the diagonal across one face only, and adding the edges gives 19 cm, a route along the outside rather than through the middle.",
       "difficulty": "medium"
     },
     {
@@ -193,17 +193,17 @@
       "questionNumber": 11,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "30 is what percent of 120?",
+      "prompt": "Simplify (2⁵ × 3³) / (2³ × 3⁴).",
       "options": [
-        "25%",
-        "30%",
-        "35%",
-        "40%",
-        "20%"
+        "3/4",
+        "4/3",
+        "12",
+        "1/12",
+        "4/9"
       ],
-      "correctAnswer": "25%",
-      "answer": "A",
-      "explanation": "30 ÷ 120 = 0.25 = 25%.",
+      "correctAnswer": "4/3",
+      "answer": "B",
+      "explanation": "Dividing powers of the same base subtracts the indices: 2⁵ / 2³ is 2², which is 4, and 3³ / 3⁴ is 3⁻¹, which is 1/3. Multiplying gives 4/3. Subtracting the indices the wrong way round gives 3/4 instead, which is the reciprocal of the answer.",
       "difficulty": "medium"
     },
     {
@@ -211,17 +211,17 @@
       "questionNumber": 12,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3 workers can build a wall in 12 days, how many days would 4 workers take, working at the same rate?",
+      "prompt": "Three people split a bill of £112.00 so that the first pays twice the second, and the second pays twice the third. What does the first pay?",
       "options": [
-        "8 days",
-        "9 days",
-        "10 days",
-        "11 days",
-        "16 days"
+        "£32.00",
+        "£16.00",
+        "£56.00",
+        "£64.00",
+        "£37.33"
       ],
-      "correctAnswer": "9 days",
-      "answer": "B",
-      "explanation": "Work = 3 × 12 = 36 worker-days. With 4 workers: 36 ÷ 4 = 9 days.",
+      "correctAnswer": "£64.00",
+      "answer": "D",
+      "explanation": "Call the third person's share x. The second pays 2x and the first 4x, so the three shares come to 7x = £112.00 and x = £16.00. The first pays 4 × £16.00 = £64.00. The three shares £16.00, £32.00 and £64.00 do add to £112.00. Splitting evenly would give £37.33 each and ignore the doubling; half the bill, £56.00, would leave too little for the other two.",
       "difficulty": "medium"
     },
     {
@@ -229,17 +229,17 @@
       "questionNumber": 13,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 12 men finish a job in 10 days, how many men are needed to finish it in 8 days?",
+      "prompt": "What is the sum of the first 20 odd numbers?",
       "options": [
-        "13",
-        "14",
-        "15",
-        "16",
-        "18"
+        "210",
+        "39",
+        "441",
+        "200",
+        "400"
       ],
-      "correctAnswer": "15",
-      "answer": "C",
-      "explanation": "Work = 12 × 10 = 120 man-days. For 8 days: 120 ÷ 8 = 15 men.",
+      "correctAnswer": "400",
+      "answer": "E",
+      "explanation": "The first 20 odd numbers always add to 20², which is 400 — 1 and 3 make 4, the first three make 9, the first four make 16, and the pattern holds. 210 is the sum of the first 20 whole numbers, and 39 is the 20th odd number on its own.",
       "difficulty": "medium"
     },
     {
@@ -247,17 +247,17 @@
       "questionNumber": 14,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "An item costing $50 is sold for $65. What is the profit percentage?",
+      "prompt": "£3,000.00 has 25% taken in tax, and then 20% of what remains goes to a pension. How much is left?",
       "options": [
-        "15%",
-        "20%",
-        "25%",
-        "30%",
-        "35%"
+        "£1,650.00",
+        "£2,250.00",
+        "£1,800.00",
+        "£2,850.00",
+        "£2,100.00"
       ],
-      "correctAnswer": "30%",
-      "answer": "D",
-      "explanation": "Profit = 65 − 50 = 15. Profit % = 15 ÷ 50 = 30%.",
+      "correctAnswer": "£1,800.00",
+      "answer": "C",
+      "explanation": "Tax leaves £2,250.00, and the pension takes 20% of that — £450.00 — leaving £1,800.00. Adding the two rates and taking 45% off at once gives £1,650.00, which is too harsh: the pension is charged on the reduced figure, not the original.",
       "difficulty": "medium"
     },
     {
@@ -265,17 +265,17 @@
       "questionNumber": 15,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the median of the set {3, 7, 9, 12, 15}?",
+      "prompt": "Two circles share a centre, with radii of 10 cm and 6 cm. What is the area of the ring between them, in terms of pi?",
       "options": [
-        "10",
-        "11",
-        "12",
-        "7",
-        "9"
+        "64π cm²",
+        "16π cm²",
+        "136π cm²",
+        "8π cm²",
+        "100π cm²"
       ],
-      "correctAnswer": "9",
-      "answer": "E",
-      "explanation": "With 5 ordered values, the median is the 3rd value, which is 9.",
+      "correctAnswer": "64π cm²",
+      "answer": "A",
+      "explanation": "The ring is the larger circle minus the smaller: 10²π − 6²π = (100 − 36)π = 64π cm². Subtracting the radii first and then squaring gives 16π cm², which is the area of a circle of radius 4 — a different shape entirely.",
       "difficulty": "medium"
     },
     {
@@ -283,17 +283,17 @@
       "questionNumber": 16,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "If 3x = 18, what is the value of x² + x?",
+      "prompt": "The largest value in a large set is replaced by a figure larger still, and nothing else changes. Which of these is left unchanged?",
       "options": [
-        "42",
-        "48",
-        "54",
-        "36",
-        "40"
+        "The mean",
+        "The median",
+        "The range",
+        "The mean and the range",
+        "The mean and the median"
       ],
-      "correctAnswer": "42",
-      "answer": "A",
-      "explanation": "x = 6. x² + x = 36 + 6 = 42.",
+      "correctAnswer": "The median",
+      "answer": "B",
+      "explanation": "The median depends on position rather than size. Every other value keeps its place in the order and the one that moved was already at the top, so the middle value is untouched. The mean shifts because every value feeds into the total, and the range shifts because it is measured from the largest value itself.",
       "difficulty": "medium"
     },
     {
@@ -301,17 +301,17 @@
       "questionNumber": 17,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A triangle has a base of 10 and a height of 6. What is its area?",
+      "prompt": "What is the remainder when 2³⁰ is divided by 7?",
       "options": [
-        "28",
-        "30",
-        "36",
-        "60",
-        "24"
+        "2",
+        "4",
+        "0",
+        "1",
+        "6"
       ],
-      "correctAnswer": "30",
-      "answer": "B",
-      "explanation": "Area = ½ × base × height = ½ × 10 × 6 = 30.",
+      "correctAnswer": "1",
+      "answer": "D",
+      "explanation": "2³ is 8, which leaves a remainder of 1 when divided by 7. Since 30 is 3 × 10, 2³⁰ is (2³)¹⁰, and a number leaving remainder 1 leaves remainder 1 however often it is multiplied by itself. So the remainder is 1. The remainders of 2, 4, 8, 16 and so on cycle 2, 4, 1 and repeat, and the 30th sits at the end of a cycle.",
       "difficulty": "medium"
     },
     {
@@ -319,17 +319,17 @@
       "questionNumber": 18,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A circle has radius 7. Using π = 22/7, what is its area?",
+      "prompt": "A recipe for 8 people uses 300 g of flour. How much is needed for 14 people, at the same rate?",
       "options": [
-        "132",
-        "144",
-        "154",
-        "168",
-        "176"
+        "600 g",
+        "450 g",
+        "525 g",
+        "375 g",
+        "700 g"
       ],
-      "correctAnswer": "154",
+      "correctAnswer": "525 g",
       "answer": "C",
-      "explanation": "Area = πr² = (22/7) × 49 = 22 × 7 = 154.",
+      "explanation": "Each person needs 37.5 g, so 14 people need 14 × 37.5 = 525 g. 600 g would feed 16, which is more than 14 — doubling overshoots because 14 is short of twice 8.",
       "difficulty": "medium"
     },
     {
@@ -337,17 +337,17 @@
       "questionNumber": 19,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "A car consumes 8 litres of fuel per 100 km. How much fuel is needed for a 250 km trip?",
+      "prompt": "What is the largest whole number x for which 5 − 2x > 11?",
       "options": [
-        "24 litres",
-        "16 litres",
-        "18 litres",
-        "20 litres",
-        "22 litres"
+        "-3",
+        "3",
+        "-2",
+        "4",
+        "-4"
       ],
-      "correctAnswer": "20 litres",
-      "answer": "D",
-      "explanation": "Fuel = 8 × (250 ÷ 100) = 8 × 2.5 = 20 litres.",
+      "correctAnswer": "-4",
+      "answer": "E",
+      "explanation": "Taking 5 from both sides gives −2x > 6. Dividing by −2 reverses the inequality, so x < −3. The largest whole number below −3 is -4. -3 itself fails, because 5 − 2 × -3 is 11, which is not more than 11.",
       "difficulty": "medium"
     },
     {
@@ -355,17 +355,17 @@
       "questionNumber": 20,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the value of 5! (5 factorial)?",
+      "prompt": "Taking pi as 22/7, a cone has a volume of 1,232 cm³ and a base radius of 7 cm. What is its height?",
       "options": [
-        "150",
-        "720",
-        "60",
-        "100",
-        "120"
+        "24 cm",
+        "8 cm",
+        "72 cm",
+        "12 cm",
+        "16 cm"
       ],
-      "correctAnswer": "120",
-      "answer": "E",
-      "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+      "correctAnswer": "24 cm",
+      "answer": "A",
+      "explanation": "The volume of a cone is one third of pi r² h, so 1,232 = 1/3 × 22/7 × 7² × h, giving h = 24 cm. Leaving the one third out treats the cone as a cylinder and gives 8 cm — a third of the true height, since a cone holds a third of the cylinder around it.",
       "difficulty": "medium"
     },
     {
@@ -373,41 +373,41 @@
       "questionNumber": 21,
       "questionType": "problem_solving",
       "section": "quant",
-      "prompt": "What is the least common multiple (LCM) of 4, 6, and 8?",
+      "prompt": "Someone is paid £14.00 an hour for the first 40 hours of a week and time and a half beyond that. What is the pay for a 46-hour week?",
       "options": [
-        "24",
-        "48",
-        "12",
-        "16",
-        "20"
+        "£644.00",
+        "£686.00",
+        "£560.00",
+        "£630.00",
+        "£700.00"
       ],
-      "correctAnswer": "24",
-      "answer": "A",
-      "explanation": "Multiples of 8: 8, 16, 24 … 24 is divisible by 4 and 6, so LCM = 24.",
+      "correctAnswer": "£686.00",
+      "answer": "B",
+      "explanation": "The first 40 hours pay £560.00. The other 6 pay £21.00 an hour, which is £126.00. Together that is £686.00. Paying all 46 hours at the basic rate gives £644.00 and misses the £42.00 premium the overtime earns.",
       "difficulty": "medium"
     }
   ],
   "answerKey": {
-    "gmat-quant-030-q001": "256",
-    "gmat-quant-030-q002": "21",
-    "gmat-quant-030-q003": "9",
-    "gmat-quant-030-q004": "$63",
-    "gmat-quant-030-q005": "150 miles",
-    "gmat-quant-030-q006": "10",
-    "gmat-quant-030-q007": "3/5",
-    "gmat-quant-030-q008": "32",
-    "gmat-quant-030-q009": "1275",
-    "gmat-quant-030-q010": "16",
-    "gmat-quant-030-q011": "25%",
-    "gmat-quant-030-q012": "9 days",
-    "gmat-quant-030-q013": "15",
-    "gmat-quant-030-q014": "30%",
-    "gmat-quant-030-q015": "9",
-    "gmat-quant-030-q016": "42",
-    "gmat-quant-030-q017": "30",
-    "gmat-quant-030-q018": "154",
-    "gmat-quant-030-q019": "20 litres",
-    "gmat-quant-030-q020": "120",
-    "gmat-quant-030-q021": "24"
+    "gmat-quant-030-q001": "12.5 years",
+    "gmat-quant-030-q002": "75",
+    "gmat-quant-030-q003": "42",
+    "gmat-quant-030-q004": "10",
+    "gmat-quant-030-q005": "24",
+    "gmat-quant-030-q006": "180",
+    "gmat-quant-030-q007": "2/15",
+    "gmat-quant-030-q008": "£24.00",
+    "gmat-quant-030-q009": "20 seconds",
+    "gmat-quant-030-q010": "13 cm",
+    "gmat-quant-030-q011": "4/3",
+    "gmat-quant-030-q012": "£64.00",
+    "gmat-quant-030-q013": "400",
+    "gmat-quant-030-q014": "£1,800.00",
+    "gmat-quant-030-q015": "64π cm²",
+    "gmat-quant-030-q016": "The median",
+    "gmat-quant-030-q017": "1",
+    "gmat-quant-030-q018": "525 g",
+    "gmat-quant-030-q019": "-4",
+    "gmat-quant-030-q020": "24 cm",
+    "gmat-quant-030-q021": "£686.00"
   }
 }
