@@ -1,14 +1,14 @@
 ﻿// LandingPrep service worker â€” offline support.
 // Bump CACHE_VERSION on every deploy so clients pick up new assets.
-const CACHE_VERSION = "lp-v707";
+const CACHE_VERSION = "lp-v708";
 const CORE = [
   "./",
   "./index.html",
   "./theme.css",
   "./manifest.json",
   "./icon.svg",
-  "./vendor/react.production.min.js?v=707",
-  "./vendor/react-dom.production.min.js?v=707",
+  "./vendor/react.production.min.js?v=708",
+  "./vendor/react-dom.production.min.js?v=708",
 ];
 
 self.addEventListener("install", (e) => {
