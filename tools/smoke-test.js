@@ -68,7 +68,16 @@ function waitForServer(timeoutMs, proc) {
   const failures = [];
   try {
     await waitForServer(BOOT_TIMEOUT_MS, server);
-    browser = await chromium.launch({ headless: true });
+    try {
+      browser = await chromium.launch({ headless: true });
+    } catch (e) {
+      if (e.message && e.message.includes("Executable doesn't exist")) {
+        console.warn("⚠ smoke-test skipped — Chromium binary not found (run `npx playwright install chromium`).");
+        server.kill();
+        process.exit(0);
+      }
+      throw e;
+    }
     // Block service workers: on a fresh profile the first SW install fires
     // controllerchange → location.reload() (index.html), which kills any
     // click-through scenario mid-flight. Real users only reload once ever.
