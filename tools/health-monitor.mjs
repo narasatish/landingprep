@@ -40,6 +40,12 @@ async function hit(path, timeoutMs) {
   try {
     const r = await fetch(BASE + path, { signal: ctrl.signal, headers: { "x-monitor": "ci" } });
     const body = await r.text();
+    // Detect sandbox/proxy network egress blocks — these are not real site failures.
+    if (r.status === 403 && r.headers.get("x-deny-reason") === "host_not_allowed") {
+      console.error(`\n⛔ Network egress blocked: ${BASE} is not in the allowlist for this environment.`);
+      console.error(`   Add it via Claude Code → Settings → Network Egress, then re-run.`);
+      process.exit(2);
+    }
     return { ok: r.ok, status: r.status, body };
   } finally {
     clearTimeout(timer);
